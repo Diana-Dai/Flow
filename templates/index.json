@@ -71,7 +71,7 @@
       "name": "Rich text",
       "settings": {
         "full_width": true,
-        "content_width": "medium",
+        "content_width": "large",
         "text_position": "center",
         "background": "",
         "background_gradient": "",
@@ -170,110 +170,72 @@
         "button_text_color": "rgba(0,0,0,0)"
       }
     },
-    "image_link_blocks_NjFjmn": {
-      "type": "image-link-blocks",
+    "multi_column_QcVkek": {
+      "type": "multi-column",
       "blocks": {
-        "item_jLWQaM": {
+        "item_7TBByM": {
           "type": "item",
           "settings": {
-            "image": "shopify://shop_images/Baycrews_White_1.png",
-            "stretch_image": true,
-            "link_text": "",
+            "image": "shopify://shop_images/Snipaste_2026-04-22_17-50-31.png",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "Pure Customer Traffic",
+            "heading_tag": "h4",
+            "subheading": "<p>Layer 01: Measurement</p>",
+            "content": "<p>98% accuracy. AI-powered sensing excludes staff movement to capture only real customer traffic patterns.</p>",
             "link_url": "",
-            "background": "",
-            "text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
+            "link_text": "",
+            "link_style": "link"
           }
         },
-        "item_nhrUjj": {
+        "item_7tAMz6": {
           "type": "item",
           "settings": {
-            "image": "shopify://shop_images/Cole_Haan_White_836317d3-12dd-4e9a-b647-80aab91df0b2.png",
-            "stretch_image": true,
-            "link_text": "",
+            "image": "shopify://shop_images/Snipaste_2026-04-22_17-50-56.png",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "Identify The Gap",
+            "heading_tag": "h4",
+            "subheading": "<p>Layer 02: Analytics</p>",
+            "content": "<p>Detects when traffic surges but execution/conversion lags. The Execution Gap.</p>",
             "link_url": "",
-            "background": "",
-            "text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
+            "link_text": "",
+            "link_style": "link"
           }
         },
-        "item_UBYqHK": {
+        "item_HjWCwX": {
           "type": "item",
           "settings": {
-            "image": "shopify://shop_images/Daytona_White_e03a3f9c-40ca-45b1-8866-4528e821f7f5.png",
-            "stretch_image": true,
-            "link_text": "",
+            "image": "shopify://shop_images/image_37.jpg",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "Push Standardized Actions",
+            "heading_tag": "h4",
+            "subheading": "<p>Layer 03: Decision</p>",
+            "content": "<p>Commands deployed to staff devices instantly. iOS & Android native notifications.</p>",
             "link_url": "",
-            "background": "",
-            "text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        },
-        "item_PLkWwB": {
-          "type": "item",
-          "settings": {
-            "image": "shopify://shop_images/Stripe_White_f1ba215a-c741-4fa7-8b23-cd0b45a74f31.png",
-            "stretch_image": true,
             "link_text": "",
-            "link_url": "",
-            "background": "",
-            "text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        },
-        "item_yqAkaP": {
-          "type": "item",
-          "settings": {
-            "image": "shopify://shop_images/Plaza_White_d4060480-52ad-4a29-b53d-1f7b116f8343.png",
-            "stretch_image": true,
-            "link_text": "",
-            "link_url": "",
-            "background": "",
-            "text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        },
-        "item_LtcY98": {
-          "type": "item",
-          "settings": {
-            "image": "shopify://shop_images/Right_One_White_dbf02fb7-d61d-44d5-bde4-b757aaca5b61.png",
-            "stretch_image": true,
-            "link_text": "",
-            "link_url": "",
-            "background": "",
-            "text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
+            "link_style": "link"
           }
         }
       },
       "block_order": [
-        "item_jLWQaM",
-        "item_nhrUjj",
-        "item_UBYqHK",
-        "item_PLkWwB",
-        "item_yqAkaP",
-        "item_LtcY98"
+        "item_7TBByM",
+        "item_7tAMz6",
+        "item_HjWCwX"
       ],
-      "name": "Image link blocks",
+      "name": "Multi-column",
       "settings": {
         "full_width": true,
-        "block_size": "medium",
-        "subheading": "Used by",
-        "title": "",
-        "content": "",
-        "link_url": "",
-        "link_text": "",
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "center",
+        "subheading": "",
+        "title": "The 3-Layer Decision Engine",
+        "content": "<p>Stop staring at dashboards. Start driving results. Flow transforms raw store traffic into a continuous loop of high-performance execution.</p>",
         "background": "",
-        "background_gradient": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(240, 240, 240, 1) 50%)",
-        "text_color": "",
-        "heading_color": "",
-        "heading_gradient": ""
+        "background_gradient": "",
+        "text_color": ""
       }
     },
     "section-15": {
@@ -307,7 +269,7 @@
         "block-2": {
           "type": "values",
           "settings": {
-            "product": "flow",
+            "product": "",
             "value_1": "<p>40mm Beryllium</p>",
             "value_2": "<p>245g</p>",
             "value_3": "<p>165mm x 190mm x 66mm</p>",
@@ -366,21 +328,20 @@
         "block-2",
         "block-3"
       ],
-      "disabled": true,
       "settings": {
         "full_width": true,
-        "subheading": "Compare",
-        "title": "Highlight key differences at a glance",
-        "content": "<p>This section is perfect for showcasing product comparisons side-by-side. Use it to display key features, specifications, and pricing so customers can quickly decide which item fits their needs.</p>",
-        "button_text": "Learn more",
+        "subheading": "",
+        "title": "Why Dashboards Fail",
+        "content": "<p>Traditional analytics show you the problem. Flow solves it.</p>",
+        "button_text": "",
         "button_url": "",
-        "text_position": "start",
+        "text_position": "center",
         "max_rows": 5,
         "view_all_text": "View all",
         "view_less_text": "View less",
         "view_product": "View",
         "viewing_product": "",
-        "show_product_swatch": true,
+        "show_product_swatch": false,
         "background": "",
         "background_gradient": "",
         "text_color": "",
@@ -398,7 +359,7 @@
     "rich_text_AGR3yT",
     "rich_text_YiW9P3",
     "impact_text_gi97zd",
-    "image_link_blocks_NjFjmn",
+    "multi_column_QcVkek",
     "section-15"
   ]
 }
