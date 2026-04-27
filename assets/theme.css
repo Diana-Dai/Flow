@@ -7198,6 +7198,8 @@ shopify-account::part(signed-out-avatar) {
   gap: var(--multi-column-item-gap);
   grid-template-columns: minmax(0, 1fr);
   display: grid;
+  padding: 2rem;
+  border-radius: 15px;
 }
 
 @media screen and (min-width: 700px) {
@@ -10105,7 +10107,7 @@ shopify-accelerated-checkout, shopify-accelerated-checkout-cart {
   font-style: var(--heading-font-style);
   letter-spacing: var(--heading-letter-spacing);
   text-transform: var(--heading-text-transform);
-  overflow-wrap: anywhere;
+  /* overflow-wrap: anywhere; */
 }
 
 .h0 {
@@ -10236,8 +10238,6 @@ shopify-accelerated-checkout, shopify-accelerated-checkout-cart {
 
 .subheading_container{
 display: flex;
-  background: #f0f3ea;
-  color: rgb(var(--text-color));
   padding: 0.5rem 1rem;
   font-size: 1rem;
   gap: 10px;

@@ -89,24 +89,13 @@
             "show_menu_title": true,
             "menu_title": ""
           }
-        },
-        "newsletter": {
-          "type": "newsletter",
-          "disabled": true,
-          "settings": {
-            "image_width": 150,
-            "heading_size": "h3",
-            "title": "店舗データの活用を具体的に検討されていますか？",
-            "content": "<p>導入プロセスや費用感についてご説明します。</p>"
-          }
         }
       },
       "block_order": [
         "text",
         "links_RXAmkK",
         "links_WenWwz",
-        "links_TGJ6iX",
-        "newsletter"
+        "links_TGJ6iX"
       ],
       "settings": {
         "show_social_media": true,

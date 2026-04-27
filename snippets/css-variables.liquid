@@ -129,7 +129,7 @@ note that this may have impact on different places.
     --text-letter-spacing: {% if direction == 'rtl' %}0{% else %}{{ settings.text_font_letter_spacing | divided_by: 100.0 }}em{% endif %};
 
     /* Font sizes */
-    --text-h0: {% if settings.heading_font_size == 'small' %}2.5rem{% elsif settings.heading_font_size == 'medium' %}2.75rem{% else %}4rem{% endif %};
+    --text-h0: {% if settings.heading_font_size == 'small' %}2.5rem{% elsif settings.heading_font_size == 'medium' %}2.75rem{% else %}3rem{% endif %};
     --text-h1: {% if settings.heading_font_size == 'small' %}1.75rem{% elsif settings.heading_font_size == 'medium' %}2rem{% else %}2.5rem{% endif %};
     --text-h2: {% if settings.heading_font_size == 'small' %}1.5rem{% elsif settings.heading_font_size == 'medium' %}1.75rem{% else %}2rem{% endif %};
     --text-h3: {% if settings.heading_font_size == 'small' %}1.375rem{% elsif settings.heading_font_size == 'medium' %}1.375rem{% else %}1.5rem{% endif %};

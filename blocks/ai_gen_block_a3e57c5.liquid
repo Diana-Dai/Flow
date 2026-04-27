@@ -1,0 +1,718 @@
+{% doc %}
+  @prompt
+    Task: Generate a custom Liquid section for a "Comparison Grid" between "Traditional Dashboards" and "Flow Decisioning."
+    
+    Layout Structure:
+    
+    Two horizontal columns (flexbox).
+    
+    Left Column (Legacy): Title: "Passive Dashboards". Status Tag: "TRADITIONAL". Metric: "12-18 Hour Lag". List 4 items starting with a Red "✕" icon.
+    
+    Right Column (Flow): Title: "Flow Decisioning". Status Tag: "⚡ LIVE ACTIVE". Metric: "< 2 Minute Action". Highlight this metric in Neon Green (#00D66F). List 4 items starting with a Green "✓" icon.
+    
+    Bottom Element (Inside Right Column): A horizontal Progress Bar with a dual-color gradient (Purple to Green), labeled "Response Latency: Ultra-Low".
+    
+    Styling Requirements:
+    
+    Container: Max-width 1200px, 40px padding, rounded corners 16px.
+    
+    Colors: Left column should have a light gray border. Right column must have a Deep Navy background (#0A2540) with White text to emphasize authority.
+    
+    Typography: Use Bold Sans-serif. Metrics must be large (32px+).
+    
+    Responsive: Stack the columns vertically on mobile devices.
+    
+    Content for Lists:
+    
+    Left: Static Insights, Manual Interpretation, Inconsistent Execution, Reactive Management.
+    
+    Right: Real-Time Actionable, Automated Dispatch, +140% Consistency Lift, Proactive Command.
+    
+    Technical: Output as a standalone Custom Liquid block. Do not use external libraries., can you add a progress bar on the left bottom as well but make it red and only  a little bit progress to make it comparision and add 12-18hr above to progress bar but on the right side left side is text 
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-comparison-grid-{{ ai_gen_id }} {
+    display: block;
+    width: 100%;
+  }
+
+  .ai-comparison-grid-container-{{ ai_gen_id }} {
+    margin: 0 auto;
+    padding: -40px 0 40px 0;
+    background-color: {{ block.settings.container_background }};
+    border-radius: 16px;
+  }
+
+  .ai-comparison-grid-wrapper-{{ ai_gen_id }} {
+    display: flex;
+    gap: 32px;
+  }
+
+  .ai-comparison-grid-column-{{ ai_gen_id }} {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .ai-comparison-grid-column-left-{{ ai_gen_id }} {
+    border: 2px solid {{ block.settings.left_border_color }};
+    border-radius: 12px;
+    padding: 32px;
+    background-color: {{ block.settings.left_background }};
+  }
+
+  .ai-comparison-grid-column-right-{{ ai_gen_id }} {
+    background-color: {{ block.settings.right_background }};
+    border-radius: 12px;
+    padding: 32px;
+    color: {{ block.settings.right_text_color }};
+  }
+
+  .ai-comparison-grid-header-{{ ai_gen_id }} {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .ai-comparison-grid-title-{{ ai_gen_id }} {
+    font-size: {{ block.settings.title_size }}px;
+    font-weight: 700;
+    margin: 0;
+    line-height: 1.2;
+      color: var(--shopify-editor-template--20926413865097__1777013757bd1f6777__ai_gen_block_a3e57c5_EaJMxV-right_text_color);
+  }
+
+  .ai-comparison-grid-status-tag-{{ ai_gen_id }} {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    width: fit-content;
+  }
+
+  .ai-comparison-grid-status-tag-left-{{ ai_gen_id }} {
+    background-color: {{ block.settings.left_tag_background }};
+    color: {{ block.settings.left_tag_text }};
+  }
+
+  .ai-comparison-grid-status-tag-right-{{ ai_gen_id }} {
+    background-color: {{ block.settings.right_tag_background }};
+    color: {{ block.settings.right_tag_text }};
+  }
+
+  .ai-comparison-grid-metric-{{ ai_gen_id }} {
+    font-size: {{ block.settings.metric_size }}px;
+    font-weight: 700;
+    margin: 16px 0;
+    line-height: 1.2;
+  }
+
+  .ai-comparison-grid-metric-highlight-{{ ai_gen_id }} {
+    color: {{ block.settings.highlight_color }};
+  }
+
+  .ai-comparison-grid-list-{{ ai_gen_id }} {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .ai-comparison-grid-list-item-{{ ai_gen_id }} {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    font-size: {{ block.settings.list_item_size }}px;
+    line-height: 1.5;
+  }
+
+  .ai-comparison-grid-icon-{{ ai_gen_id }} {
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 2px;
+  }
+
+  .ai-comparison-grid-icon-negative-{{ ai_gen_id }} {
+    color: {{ block.settings.negative_icon_color }};
+  }
+
+  .ai-comparison-grid-icon-positive-{{ ai_gen_id }} {
+    color: {{ block.settings.positive_icon_color }};
+  }
+
+  .ai-comparison-grid-progress-wrapper-{{ ai_gen_id }} {
+    margin-top: 32px;
+    padding-top: 24px;
+  }
+
+  .ai-comparison-grid-progress-wrapper-left-{{ ai_gen_id }} {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .ai-comparison-grid-progress-wrapper-right-{{ ai_gen_id }} {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .ai-comparison-grid-progress-header-{{ ai_gen_id }} {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+  }
+
+  .ai-comparison-grid-progress-label-{{ ai_gen_id }} {
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .ai-comparison-grid-progress-label-left-{{ ai_gen_id }} {
+    color: {{ block.settings.text_color }};
+  }
+
+  .ai-comparison-grid-progress-label-right-{{ ai_gen_id }} {
+    color: {{ block.settings.right_text_color }};
+  }
+
+  .ai-comparison-grid-progress-time-{{ ai_gen_id }} {
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .ai-comparison-grid-progress-time-left-{{ ai_gen_id }} {
+    color: {{ block.settings.left_progress_color }};
+  }
+
+  .ai-comparison-grid-progress-time-right-{{ ai_gen_id }} {
+    color: {{ block.settings.highlight_color }};
+  }
+
+  .ai-comparison-grid-progress-track-{{ ai_gen_id }} {
+    width: 100%;
+    height: {{ block.settings.progress_bar_height }}px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: {{ block.settings.progress_bar_height | divided_by: 2 }}px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .ai-comparison-grid-progress-track-right-{{ ai_gen_id }} {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .ai-comparison-grid-progress-bar-{{ ai_gen_id }} {
+    height: 100%;
+    border-radius: {{ block.settings.progress_bar_height | divided_by: 2 }}px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .ai-comparison-grid-progress-bar-left-{{ ai_gen_id }} {
+    background-color: {{ block.settings.left_progress_color }};
+    width: {{ block.settings.left_progress_percent }}%;
+  }
+
+  .ai-comparison-grid-progress-bar-right-{{ ai_gen_id }} {
+    background: linear-gradient(
+      to right,
+      {{ block.settings.progress_gradient_start }},
+      {{ block.settings.progress_gradient_end }}
+    );
+    width: 100%;
+  }
+
+  .ai-comparison-grid-progress-bar-right-{{ ai_gen_id }}::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.3) 50%,
+      rgba(255, 255, 255, 0) 100%
+    );
+  }
+
+  @media screen and (max-width: 989px) {
+    .ai-comparison-grid-wrapper-{{ ai_gen_id }} {
+      flex-direction: column;
+    }
+
+
+    .ai-comparison-grid-column-left-{{ ai_gen_id }},
+    .ai-comparison-grid-column-right-{{ ai_gen_id }} {
+      padding: 24px;
+    }
+
+    .ai-comparison-grid-metric-{{ ai_gen_id }} {
+      font-size: {{ block.settings.metric_size | times: 0.8 }}px;
+    }
+
+    .ai-comparison-grid-title-{{ ai_gen_id }} {
+      font-size: {{ block.settings.title_size | times: 0.8 }}px;
+    }
+  }
+{% endstyle %}
+
+<comparison-grid-{{ ai_gen_id }}
+  class="ai-comparison-grid-{{ ai_gen_id }} comparison-grid"
+  {{ block.shopify_attributes }}
+>
+  <div class="ai-comparison-grid-container-{{ ai_gen_id }}">
+    <div class="ai-comparison-grid-wrapper-{{ ai_gen_id }}">
+      <div class="ai-comparison-grid-column-{{ ai_gen_id }} ai-comparison-grid-column-left-{{ ai_gen_id }}">
+        <div class="ai-comparison-grid-header-{{ ai_gen_id }}">
+          <h3 class="ai-comparison-grid-title-{{ ai_gen_id }}">{{ block.settings.left_title }}</h3>
+          <span class="ai-comparison-grid-status-tag-{{ ai_gen_id }} ai-comparison-grid-status-tag-left-{{ ai_gen_id }}">
+            {{ block.settings.left_tag }}
+          </span>
+        </div>
+
+        <div class="ai-comparison-grid-metric-{{ ai_gen_id }}">
+          {{ block.settings.left_metric }}
+        </div>
+
+        <ul class="ai-comparison-grid-list-{{ ai_gen_id }}">
+          <li class="ai-comparison-grid-list-item-{{ ai_gen_id }}">
+            <span class="ai-comparison-grid-icon-{{ ai_gen_id }} ai-comparison-grid-icon-negative-{{ ai_gen_id }}">✕</span>
+            <span>{{ block.settings.left_item_1 }}</span>
+          </li>
+          <li class="ai-comparison-grid-list-item-{{ ai_gen_id }}">
+            <span class="ai-comparison-grid-icon-{{ ai_gen_id }} ai-comparison-grid-icon-negative-{{ ai_gen_id }}">✕</span>
+            <span>{{ block.settings.left_item_2 }}</span>
+          </li>
+          <li class="ai-comparison-grid-list-item-{{ ai_gen_id }}">
+            <span class="ai-comparison-grid-icon-{{ ai_gen_id }} ai-comparison-grid-icon-negative-{{ ai_gen_id }}">✕</span>
+            <span>{{ block.settings.left_item_3 }}</span>
+          </li>
+          <li class="ai-comparison-grid-list-item-{{ ai_gen_id }}">
+            <span class="ai-comparison-grid-icon-{{ ai_gen_id }} ai-comparison-grid-icon-negative-{{ ai_gen_id }}">✕</span>
+            <span>{{ block.settings.left_item_4 }}</span>
+          </li>
+        </ul>
+
+        <div class="ai-comparison-grid-progress-wrapper-{{ ai_gen_id }} ai-comparison-grid-progress-wrapper-left-{{ ai_gen_id }}">
+          <div class="ai-comparison-grid-progress-header-{{ ai_gen_id }}">
+            <div class="ai-comparison-grid-progress-label-{{ ai_gen_id }} ai-comparison-grid-progress-label-left-{{ ai_gen_id }}">
+              {{ block.settings.left_progress_label }}
+            </div>
+            <div class="ai-comparison-grid-progress-time-{{ ai_gen_id }} ai-comparison-grid-progress-time-left-{{ ai_gen_id }}">
+              {{ block.settings.left_progress_time }}
+            </div>
+          </div>
+          <div class="ai-comparison-grid-progress-track-{{ ai_gen_id }}">
+            <div class="ai-comparison-grid-progress-bar-{{ ai_gen_id }} ai-comparison-grid-progress-bar-left-{{ ai_gen_id }}" data-progress-left></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="ai-comparison-grid-column-{{ ai_gen_id }} ai-comparison-grid-column-right-{{ ai_gen_id }}">
+        <div class="ai-comparison-grid-header-{{ ai_gen_id }}">
+          <h3 class="ai-comparison-grid-title-{{ ai_gen_id }}">{{ block.settings.right_title }}</h3>
+          <span class="ai-comparison-grid-status-tag-{{ ai_gen_id }} ai-comparison-grid-status-tag-right-{{ ai_gen_id }}">
+            {{ block.settings.right_tag }}
+          </span>
+        </div>
+
+        <div class="ai-comparison-grid-metric-{{ ai_gen_id }} ai-comparison-grid-metric-highlight-{{ ai_gen_id }}">
+          {{ block.settings.right_metric }}
+        </div>
+
+        <ul class="ai-comparison-grid-list-{{ ai_gen_id }}">
+          <li class="ai-comparison-grid-list-item-{{ ai_gen_id }}">
+            <span class="ai-comparison-grid-icon-{{ ai_gen_id }} ai-comparison-grid-icon-positive-{{ ai_gen_id }}">✓</span>
+            <span>{{ block.settings.right_item_1 }}</span>
+          </li>
+          <li class="ai-comparison-grid-list-item-{{ ai_gen_id }}">
+            <span class="ai-comparison-grid-icon-{{ ai_gen_id }} ai-comparison-grid-icon-positive-{{ ai_gen_id }}">✓</span>
+            <span>{{ block.settings.right_item_2 }}</span>
+          </li>
+          <li class="ai-comparison-grid-list-item-{{ ai_gen_id }}">
+            <span class="ai-comparison-grid-icon-{{ ai_gen_id }} ai-comparison-grid-icon-positive-{{ ai_gen_id }}">✓</span>
+            <span>{{ block.settings.right_item_3 }}</span>
+          </li>
+          <li class="ai-comparison-grid-list-item-{{ ai_gen_id }}">
+            <span class="ai-comparison-grid-icon-{{ ai_gen_id }} ai-comparison-grid-icon-positive-{{ ai_gen_id }}">✓</span>
+            <span>{{ block.settings.right_item_4 }}</span>
+          </li>
+        </ul>
+
+        <div class="ai-comparison-grid-progress-wrapper-{{ ai_gen_id }} ai-comparison-grid-progress-wrapper-right-{{ ai_gen_id }}">
+          <div class="ai-comparison-grid-progress-header-{{ ai_gen_id }}">
+            <div class="ai-comparison-grid-progress-label-{{ ai_gen_id }} ai-comparison-grid-progress-label-right-{{ ai_gen_id }}">
+              {{ block.settings.right_progress_label }}
+            </div>
+            <div class="ai-comparison-grid-progress-time-{{ ai_gen_id }} ai-comparison-grid-progress-time-right-{{ ai_gen_id }}">
+              {{ block.settings.right_progress_time }}
+            </div>
+          </div>
+          <div class="ai-comparison-grid-progress-track-{{ ai_gen_id }} ai-comparison-grid-progress-track-right-{{ ai_gen_id }}">
+            <div class="ai-comparison-grid-progress-bar-{{ ai_gen_id }} ai-comparison-grid-progress-bar-right-{{ ai_gen_id }}" data-progress-right></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</comparison-grid-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class ComparisonGrid{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+      }
+
+      connectedCallback() {
+        this.initProgressBars();
+      }
+
+      initProgressBars() {
+        const leftProgressBar = this.querySelector('[data-progress-left]');
+        const rightProgressBar = this.querySelector('[data-progress-right]');
+
+        if (leftProgressBar) {
+          leftProgressBar.style.transform = 'scaleX(0)';
+          leftProgressBar.style.transformOrigin = 'left';
+          leftProgressBar.style.transition = 'transform 0.8s ease';
+        }
+
+        if (rightProgressBar) {
+          rightProgressBar.style.transform = 'scaleX(0)';
+          rightProgressBar.style.transformOrigin = 'left';
+          rightProgressBar.style.transition = 'transform 0.8s ease';
+        }
+
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              setTimeout(() => {
+                if (leftProgressBar) {
+                  leftProgressBar.style.transform = 'scaleX(1)';
+                }
+                if (rightProgressBar) {
+                  rightProgressBar.style.transform = 'scaleX(1)';
+                }
+              }, 200);
+              observer.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.5 });
+
+        observer.observe(this);
+      }
+    }
+
+    customElements.define('comparison-grid-{{ ai_gen_id }}', ComparisonGrid{{ ai_gen_id }});
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "Comparison grid",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Container"
+    },
+    {
+      "type": "color",
+      "id": "container_background",
+      "label": "Background",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text color",
+      "default": "#000000"
+    },
+    {
+      "type": "header",
+      "content": "Left column"
+    },
+    {
+      "type": "text",
+      "id": "left_title",
+      "label": "Title",
+      "default": "Passive Dashboards"
+    },
+    {
+      "type": "text",
+      "id": "left_tag",
+      "label": "Status tag",
+      "default": "TRADITIONAL"
+    },
+    {
+      "type": "text",
+      "id": "left_metric",
+      "label": "Metric",
+      "default": "12-18 Hour Lag"
+    },
+    {
+      "type": "text",
+      "id": "left_item_1",
+      "label": "Item 1",
+      "default": "Static Insights"
+    },
+    {
+      "type": "text",
+      "id": "left_item_2",
+      "label": "Item 2",
+      "default": "Manual Interpretation"
+    },
+    {
+      "type": "text",
+      "id": "left_item_3",
+      "label": "Item 3",
+      "default": "Inconsistent Execution"
+    },
+    {
+      "type": "text",
+      "id": "left_item_4",
+      "label": "Item 4",
+      "default": "Reactive Management"
+    },
+    {
+      "type": "color",
+      "id": "left_background",
+      "label": "Background",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "left_border_color",
+      "label": "Border color",
+      "default": "#e5e7eb"
+    },
+    {
+      "type": "color",
+      "id": "left_tag_background",
+      "label": "Tag background",
+      "default": "#f3f4f6"
+    },
+    {
+      "type": "color",
+      "id": "left_tag_text",
+      "label": "Tag text",
+      "default": "#6b7280"
+    },
+    {
+      "type": "header",
+      "content": "Left progress bar"
+    },
+    {
+      "type": "text",
+      "id": "left_progress_label",
+      "label": "Label",
+      "default": "Response Latency"
+    },
+    {
+      "type": "text",
+      "id": "left_progress_time",
+      "label": "Time display",
+      "default": "12-18hr"
+    },
+    {
+      "type": "range",
+      "id": "left_progress_percent",
+      "label": "Progress percentage",
+      "min": 5,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "default": 20
+    },
+    {
+      "type": "color",
+      "id": "left_progress_color",
+      "label": "Progress bar color",
+      "default": "#ef4444"
+    },
+    {
+      "type": "header",
+      "content": "Right column"
+    },
+    {
+      "type": "text",
+      "id": "right_title",
+      "label": "Title",
+      "default": "Flow Decisioning"
+    },
+    {
+      "type": "text",
+      "id": "right_tag",
+      "label": "Status tag",
+      "default": "⚡ LIVE ACTIVE"
+    },
+    {
+      "type": "text",
+      "id": "right_metric",
+      "label": "Metric",
+      "default": "< 2 Minute Action"
+    },
+    {
+      "type": "text",
+      "id": "right_item_1",
+      "label": "Item 1",
+      "default": "Real-Time Actionable"
+    },
+    {
+      "type": "text",
+      "id": "right_item_2",
+      "label": "Item 2",
+      "default": "Automated Dispatch"
+    },
+    {
+      "type": "text",
+      "id": "right_item_3",
+      "label": "Item 3",
+      "default": "+140% Consistency Lift"
+    },
+    {
+      "type": "text",
+      "id": "right_item_4",
+      "label": "Item 4",
+      "default": "Proactive Command"
+    },
+    {
+      "type": "color",
+      "id": "right_background",
+      "label": "Background",
+      "default": "#0A2540"
+    },
+    {
+      "type": "color",
+      "id": "right_text_color",
+      "label": "Text color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "right_tag_background",
+      "label": "Tag background",
+      "default": "#1e3a5f"
+    },
+    {
+      "type": "color",
+      "id": "right_tag_text",
+      "label": "Tag text",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "highlight_color",
+      "label": "Metric highlight color",
+      "default": "#00D66F"
+    },
+    {
+      "type": "header",
+      "content": "Right progress bar"
+    },
+    {
+      "type": "text",
+      "id": "right_progress_label",
+      "label": "Label",
+      "default": "Response Latency"
+    },
+    {
+      "type": "text",
+      "id": "right_progress_time",
+      "label": "Time display",
+      "default": "< 2min"
+    },
+    {
+      "type": "range",
+      "id": "progress_bar_height",
+      "label": "Height",
+      "min": 4,
+      "max": 20,
+      "step": 2,
+      "unit": "px",
+      "default": 8
+    },
+    {
+      "type": "color",
+      "id": "progress_gradient_start",
+      "label": "Gradient start",
+      "default": "#803cee"
+    },
+    {
+      "type": "color",
+      "id": "progress_gradient_end",
+      "label": "Gradient end",
+      "default": "#00D66F"
+    },
+    {
+      "type": "header",
+      "content": "Icons"
+    },
+    {
+      "type": "color",
+      "id": "negative_icon_color",
+      "label": "Negative icon",
+      "default": "#ef4444"
+    },
+    {
+      "type": "color",
+      "id": "positive_icon_color",
+      "label": "Positive icon",
+      "default": "#00D66F"
+    },
+    {
+      "type": "header",
+      "content": "Typography"
+    },
+    {
+      "type": "range",
+      "id": "title_size",
+      "label": "Title size",
+      "min": 18,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "default": 24
+    },
+    {
+      "type": "range",
+      "id": "metric_size",
+      "label": "Metric size",
+      "min": 24,
+      "max": 48,
+      "step": 2,
+      "unit": "px",
+      "default": 32
+    },
+    {
+      "type": "range",
+      "id": "list_item_size",
+      "label": "List item size",
+      "min": 14,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "default": 16
+    }
+  ],
+  "presets": [
+    {
+      "name": "Comparison grid"
+    }
+  ]
+}
+{% endschema %}

@@ -10,7 +10,7 @@
   <style>
     #shopify-section-{{ section.id }} {
       --impact-text-font-size: calc(min(20vw, 65px) * {{ section.settings.impact_text_size_ratio }});
-      --impact-text-auto-columns: {% if section.blocks.size == 1 %}minmax(0, 1fr){% else %}{% if section.settings.text_divider != 'none' %}48vw auto{% else %}64vw{% endif %}{% endif %};
+      --impact-text-auto-columns: {% if section.blocks.size == 1 %}minmax(0, 1fr){% else %}{% if section.settings.text_divider != 'none' %}48vw auto{% else %}80vw{% endif %}{% endif %};
     }
 
     @media screen and (min-width: 700px) {
@@ -33,7 +33,7 @@
           {%- for block in section.blocks -%}
             <div class="snap-center" {{ block.shopify_attributes }}>
               {%- if block.settings.title != blank -%}
-                <h2 class="impact-text__text heading break-all">
+                <h2 class="impact-text__text heading">
                   <impact-text {% if block.settings.animate_impact_text %}count-up="{{ block.settings.animate_impact_text_duration }}"{% endif %} reveal-js>
                     {%- render 'styled-text', content: block.settings.title, text_color: section.settings.heading_text_color, gradient: section.settings.heading_gradient, style: section.settings.impact_text_style -%}
                   </impact-text>

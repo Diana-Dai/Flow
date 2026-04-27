@@ -24,7 +24,7 @@
 
           {%- case block.type -%}
             {%- when 'item' -%}
-              <div class="multi-column__item justify-{{ section.settings.text_alignment }} snap-start" style="--multi-column-item-column-count: span {{ 12.0 | divided_by: block.settings.column_size | round }}" {{ block.shopify_attributes }}>
+              <div class="multi-column__item justify-{{ section.settings.text_alignment }} snap-start" style="background:{{ block.settings.background_color }};--multi-column-item-column-count: span {{ 12.0 | divided_by: block.settings.column_size | round }};color: {{ block.settings.text_color }}; border: 1px solid {{ block.settings.border_color }};" {{ block.shopify_attributes }}>
                 {%- if block.settings.video != blank -%}
                   <video-media autoplay style="--aspect-ratio: {{ block.settings.video.aspect_ratio }}">
                     {{ block.settings.video | video_tag: playsinline: true, muted: true, controls: block.settings.show_controls, loop: true, preload: 'metadata', class: 'rounded' }}
@@ -40,7 +40,7 @@
                       <div class="text-xs" style=" margin-bottom: -0.9rem;">{{ block.settings.subheading}}</div>
                     {%- endif -%}
                     {%- if block.settings.title != blank -%}
-                      <p class="{{ block.settings.heading_tag }}">{{ block.settings.title | escape }}</p>
+                      <p style="color: {{ block.settings.text_color }};" class="{{ block.settings.heading_tag }}">{{ block.settings.title | escape }}</p>
                     {%- endif -%}
 
                     {%- if block.settings.content != blank or block.settings.link_text != blank -%}
@@ -194,6 +194,22 @@
           "info": "Video are muted automatically and will autoplay."
         },
         {
+          "type": "color",
+          "id": "background_color",
+          "label": "Background color"
+        },
+        {
+          "type": "color",
+          "id": "text_color",
+          "label": "Text color"
+        },
+
+        {
+          "type": "color",
+          "id": "border_color",
+          "label": "Border color"
+        },
+        {
           "type": "checkbox",
           "id": "show_controls",
           "label": "Show video controls",
@@ -235,6 +251,10 @@
           "id": "heading_tag",
           "label": "Heading style",
           "options": [
+            {
+              "value": "h0",
+              "label": "XX-Large"
+            },
             {
               "value": "h1",
               "label": "X-Large"

@@ -68,6 +68,9 @@
         "buttons_pt4Ted",
         "image_Dtind8"
       ],
+      "custom_css": [
+        ".subheading_container {background: #f0f3ea; color: rgb(var(--text-color));}"
+      ],
       "name": "Rich text",
       "settings": {
         "full_width": true,
@@ -156,7 +159,7 @@
       "name": "Impact text",
       "settings": {
         "full_width": true,
-        "stack_mobile": true,
+        "stack_mobile": false,
         "text_alignment": "center",
         "impact_text_style": "fill",
         "text_divider": "none",
@@ -170,6 +173,74 @@
         "button_text_color": "rgba(0,0,0,0)"
       }
     },
+    "logo_list_bzafjC": {
+      "type": "logo-list",
+      "blocks": {
+        "logo_xLkXDj": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/Cole_Haan_White_836317d3-12dd-4e9a-b647-80aab91df0b2.png",
+            "logo_width": 120,
+            "link": ""
+          }
+        },
+        "logo_E8jiQ6": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/Cole_Haan_White_836317d3-12dd-4e9a-b647-80aab91df0b2.png",
+            "logo_width": 120,
+            "link": ""
+          }
+        },
+        "logo_i8qW8H": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/Cole_Haan_White_836317d3-12dd-4e9a-b647-80aab91df0b2.png",
+            "logo_width": 120,
+            "link": ""
+          }
+        },
+        "logo_gHbbQF": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/Cole_Haan_White_836317d3-12dd-4e9a-b647-80aab91df0b2.png",
+            "logo_width": 120,
+            "link": ""
+          }
+        },
+        "logo_B8XxPT": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/Cole_Haan_White_836317d3-12dd-4e9a-b647-80aab91df0b2.png",
+            "logo_width": 120,
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "logo_xLkXDj",
+        "logo_E8jiQ6",
+        "logo_i8qW8H",
+        "logo_gHbbQF",
+        "logo_B8XxPT"
+      ],
+      "name": "Logo list",
+      "settings": {
+        "full_width": true,
+        "stack_mobile": false,
+        "title": "",
+        "content": "<p>Trusted by leading retailers</p>",
+        "text_alignment": "center",
+        "items_per_row": 5,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "logo_item_background": "",
+        "logo_item_border": ""
+      }
+    },
     "multi_column_QcVkek": {
       "type": "multi-column",
       "blocks": {
@@ -177,6 +248,9 @@
           "type": "item",
           "settings": {
             "image": "shopify://shop_images/Snipaste_2026-04-22_17-50-31.png",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "#ffffff",
             "show_controls": false,
             "column_size": "3",
             "title": "Pure Customer Traffic",
@@ -192,6 +266,9 @@
           "type": "item",
           "settings": {
             "image": "shopify://shop_images/Snipaste_2026-04-22_17-50-56.png",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "#ffffff",
             "show_controls": false,
             "column_size": "3",
             "title": "Identify The Gap",
@@ -206,7 +283,10 @@
         "item_HjWCwX": {
           "type": "item",
           "settings": {
-            "image": "shopify://shop_images/image_37.jpg",
+            "image": "shopify://shop_images/Snipaste_2026-04-23_16-12-16.png",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "#f9fafb",
             "show_controls": false,
             "column_size": "3",
             "title": "Push Standardized Actions",
@@ -233,7 +313,7 @@
         "subheading": "",
         "title": "The 3-Layer Decision Engine",
         "content": "<p>Stop staring at dashboards. Start driving results. Flow transforms raw store traffic into a continuous loop of high-performance execution.</p>",
-        "background": "",
+        "background": "#ffffff",
         "background_gradient": "",
         "text_color": ""
       }
@@ -328,6 +408,7 @@
         "block-2",
         "block-3"
       ],
+      "disabled": true,
       "settings": {
         "full_width": true,
         "subheading": "",
@@ -353,13 +434,471 @@
         "chart_text_color": "",
         "chart_true_false_color": ""
       }
+    },
+    "rich_text_pkymTT": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_X97dmW": {
+          "type": "heading",
+          "settings": {
+            "text": "Why Dashboards Fail",
+            "heading_tag": "h1",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_CmeGHi": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Traditional analytics show you the problem. Flow solves it.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_X97dmW",
+        "richtext_CmeGHi"
+      ],
+      "custom_css": [],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "#f9fafb",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "1777013757bd1f6777": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_a3e57c5_EaJMxV": {
+          "type": "ai_gen_block_a3e57c5",
+          "settings": {
+            "container_background": "#f9fafb",
+            "text_color": "#000000",
+            "left_title": "Passive Dashboards",
+            "left_tag": "TRADITIONAL",
+            "left_metric": "Show you data. You figure out what to do.",
+            "left_item_1": "Static Insights",
+            "left_item_2": "Manual Interpretation",
+            "left_item_3": "Inconsistent Execution",
+            "left_item_4": "Reactive Management",
+            "left_background": "#ffffff",
+            "left_border_color": "#e5e7eb",
+            "left_tag_background": "#f3f4f6",
+            "left_tag_text": "#6b7280",
+            "left_progress_label": "Response Latency",
+            "left_progress_time": "12-18hr",
+            "left_progress_percent": 20,
+            "left_progress_color": "#ef4444",
+            "right_title": "Flow Decisioning",
+            "right_tag": "⚡ LIVE ACTIVE",
+            "right_metric": "Tells you exactly what to do.",
+            "right_item_1": "Real-Time Actionable",
+            "right_item_2": "Automated Dispatch",
+            "right_item_3": "+140% Consistency Lift",
+            "right_item_4": "Proactive Command",
+            "right_background": "#0a2540",
+            "right_text_color": "#ffffff",
+            "right_tag_background": "#1e3a5f",
+            "right_tag_text": "#ffffff",
+            "highlight_color": "#00d66f",
+            "right_progress_label": "Response Latency",
+            "right_progress_time": "< 2min",
+            "progress_bar_height": 8,
+            "progress_gradient_start": "#803cee",
+            "progress_gradient_end": "#00d66f",
+            "negative_icon_color": "#ef4444",
+            "positive_icon_color": "#00d66f",
+            "title_size": 24,
+            "metric_size": 32,
+            "list_item_size": 16
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_a3e57c5_EaJMxV"
+      ],
+      "custom_css": [
+        "h2 {text-align: center;}"
+      ],
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "#f9fafb",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "multi_column_etdDPE": {
+      "type": "multi-column",
+      "blocks": {
+        "item_gQr9C9": {
+          "type": "item",
+          "settings": {
+            "background_color": "#a0b842",
+            "text_color": "#f9fafb",
+            "border_color": "#a0b842",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "+32%",
+            "heading_tag": "h1",
+            "subheading": "<p>Fitting Room Conversion</p>",
+            "content": "<p>Fitting Room Conversion</p><ul><li>18 flagship locations</li><li>90-day measurement window</li><li>ROI in 6 weeks</li></ul>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_tx7kCq": {
+          "type": "item",
+          "settings": {
+            "background_color": "#0e366a",
+            "text_color": "#f9fafb",
+            "border_color": "#0e366a",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "$2.4M",
+            "heading_tag": "h1",
+            "subheading": "<p>Fast Fashion Chain</p>",
+            "content": "<p>Annual Revenue Lift</p><ul><li>42 store locations</li><li>+27% peak hour conversion</li><li>Payback in 6 weeks</li></ul>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_zttdWV": {
+          "type": "item",
+          "settings": {
+            "background_color": "#ffffff",
+            "text_color": "",
+            "border_color": "#a0b842",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "140%",
+            "heading_tag": "h1",
+            "subheading": "<p>Specialty Retail</p>",
+            "content": "<p>Execution Consistency</p><ul><li>28 store network</li><li>Variance reduced 75%</li><li>94% action compliance</li></ul>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_gQr9C9",
+        "item_tx7kCq",
+        "item_zttdWV"
+      ],
+      "custom_css": [
+        "ul {font-size: 0.8rem; opacity: 0.7;}",
+        ".text-xs p {margin-bottom: 1rem; font-size: 0.6rem; letter-spacing: 0.02em; text-transform: uppercase;}"
+      ],
+      "name": "Multi-column",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "start",
+        "subheading": "",
+        "title": "Proven ROI",
+        "content": "<p>Real retailers. Real results. Quantified performance improvements.</p>",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "rich_text_iYFe9Q": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_iKjik8": {
+          "type": "subheading",
+          "settings": {
+            "text": "Case Study  • 156 Stores Active",
+            "icon": "picto-target"
+          }
+        },
+        "liquid_KW76d3": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<p class=\"h1\">156 Stores. <br>23% Revenue Lift. <br>6 Weeks.</p>"
+          }
+        },
+        "heading_9FwWXH": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "text": "156 Stores. 23% Revenue Lift. 6 Weeks.",
+            "heading_tag": "h1",
+            "text_color": "#ffffff",
+            "gradient": ""
+          }
+        },
+        "richtext_QmW9HL": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>National fashion retailer deployed Flow across their entire network. The Execution Gap closed. Sales spiked. Staff loved it.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_iKjik8",
+        "liquid_KW76d3",
+        "heading_9FwWXH",
+        "richtext_QmW9HL"
+      ],
+      "custom_css": [
+        ".subheading_container {background: rgba(37, 74, 77, 0.6); color: rgb(var(--text-color));}"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "start",
+        "background": "#0e366a",
+        "background_gradient": "",
+        "text_color": "#f9fafb"
+      }
+    },
+    "testimonials_98zPBi": {
+      "type": "testimonials",
+      "blocks": {
+        "testimonial_Prbwkq": {
+          "type": "testimonial",
+          "settings": {
+            "round_avatar": true,
+            "show_rating": true,
+            "rating": 4,
+            "author": "John S.",
+            "title": "Testimonial 1",
+            "content": "<p>Share what your customers are saying about your products, customer service or shipping rates.</p>"
+          }
+        },
+        "testimonial_qqBaRi": {
+          "type": "testimonial",
+          "settings": {
+            "round_avatar": true,
+            "show_rating": true,
+            "rating": 5,
+            "author": "Mary U.",
+            "title": "Testimonial 2",
+            "content": "<p>Share what your customers are saying about your products, customer service or shipping rates.</p>"
+          }
+        },
+        "testimonial_LkdFYb": {
+          "type": "testimonial",
+          "settings": {
+            "round_avatar": true,
+            "show_rating": true,
+            "rating": 4,
+            "author": "Joshua A.",
+            "title": "Testimonial 3",
+            "content": "<p>Share what your customers are saying about your products, customer service or shipping rates.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_Prbwkq",
+        "testimonial_qqBaRi",
+        "testimonial_LkdFYb"
+      ],
+      "name": "Testimonials",
+      "settings": {
+        "full_width": true,
+        "stack_testimonials": false,
+        "subheading": "",
+        "title": "In Their Own Words",
+        "content": "",
+        "link_url": "",
+        "link_text": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "testimonial_card_background": "",
+        "testimonial_card_text_color": ""
+      }
+    },
+    "multi_column_dQq9tA": {
+      "type": "multi-column",
+      "blocks": {
+        "item_PzHBWe": {
+          "type": "item",
+          "settings": {
+            "background_color": "#36465c",
+            "text_color": "#f9fafb",
+            "border_color": "#36465c",
+            "show_controls": false,
+            "column_size": "4",
+            "title": "98.2%",
+            "heading_tag": "h1",
+            "subheading": "",
+            "content": "<p>Action completion rate</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_K9C4mp": {
+          "type": "item",
+          "settings": {
+            "background_color": "#36465c",
+            "text_color": "",
+            "border_color": "#36465c",
+            "show_controls": false,
+            "column_size": "4",
+            "title": "1.8m",
+            "heading_tag": "h1",
+            "subheading": "",
+            "content": "<p>Response time</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_FBeYb7": {
+          "type": "item",
+          "settings": {
+            "background_color": "#36465c",
+            "text_color": "",
+            "border_color": "#36465c",
+            "show_controls": false,
+            "column_size": "4",
+            "title": "94%",
+            "heading_tag": "h1",
+            "subheading": "",
+            "content": "<p>Staff adoption</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_yGRne4": {
+          "type": "item",
+          "settings": {
+            "background_color": "#485c36",
+            "text_color": "#daf474",
+            "border_color": "#a0b842",
+            "show_controls": false,
+            "column_size": "4",
+            "title": "6wk",
+            "heading_tag": "h1",
+            "subheading": "",
+            "content": "<p>Time to ROI</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_PzHBWe",
+        "item_K9C4mp",
+        "item_FBeYb7",
+        "item_yGRne4"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".prose p {font-size: 0.8rem;}"
+      ],
+      "name": "Multi-column",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "start",
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "background": "#0e366a",
+        "background_gradient": "",
+        "text_color": "#f9fafb"
+      }
+    },
+    "image_with_text_overlay_MVHcWF": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "heading_W76pLA": {
+          "type": "heading",
+          "settings": {
+            "text": "Close Your Execution Gap",
+            "heading_tag": "h1"
+          }
+        },
+        "richtext_b7cQCP": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>See Flow in action. Get a live demo with your store data. See the ROI instantly.</p>"
+          }
+        },
+        "button_39CcgY": {
+          "type": "button",
+          "settings": {
+            "style": "fill",
+            "size": "base",
+            "text": "Book Live Demo",
+            "url": "",
+            "background": "",
+            "text_color": ""
+          }
+        },
+        "liquid_wJy64L": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<p></p><p></p><hr></hr>"
+          }
+        },
+        "richtext_8bpctG": {
+          "type": "richtext",
+          "settings": {
+            "content": "<ul><li>✓Live traffic analysis included</li><li>✓Custom ROI calculator</li><li>✓30-day pilot available</li></ul>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_W76pLA",
+        "richtext_b7cQCP",
+        "button_39CcgY",
+        "liquid_wJy64L",
+        "richtext_8bpctG"
+      ],
+      "custom_css": [
+        "ul {font-size: 0.8rem; display: flex; align-items: center; justify-content: space-around; list-style: none;}",
+        "@media screen and (max-width: 767px) {ul {flex-direction: column;}}",
+        "ul li {background: rgba(230, 247, 165, 0.2); padding: 0.2rem 0.8rem; border-radius: 20px;}"
+      ],
+      "name": "Image with text overlay",
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "auto",
+        "image": "shopify://shop_images/4a106d7f840b3d19bae46373c4dd4286.png",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "text_color": "#f9fafb",
+        "overlay_color": "#a0b842",
+        "overlay_opacity": 90
+      }
     }
   },
   "order": [
     "rich_text_AGR3yT",
     "rich_text_YiW9P3",
     "impact_text_gi97zd",
+    "logo_list_bzafjC",
     "multi_column_QcVkek",
-    "section-15"
+    "section-15",
+    "rich_text_pkymTT",
+    "1777013757bd1f6777",
+    "multi_column_etdDPE",
+    "rich_text_iYFe9Q",
+    "testimonials_98zPBi",
+    "multi_column_dQq9tA",
+    "image_with_text_overlay_MVHcWF"
   ]
 }
