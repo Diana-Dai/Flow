@@ -31,7 +31,7 @@
         "richtext_JWfj6P": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Retail fails when decisions are delayed under pressure. Flow Assistant translates real-time traffic data into aligned store action.</p>"
+            "content": "<p>Stop buying dashboards that nobody uses. Flow standardizes decision quality at the store level, turning raw traffic into a <strong>50x ROI</strong> execution engine.</p>"
           }
         },
         "buttons_pt4Ted": {
@@ -171,6 +171,104 @@
         "text_color": "#a0b842",
         "button_background": "rgba(0,0,0,0)",
         "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "rich_text_pkymTT": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_X97dmW": {
+          "type": "heading",
+          "settings": {
+            "text": "Why 98% of Retail Data is Wasted.",
+            "heading_tag": "h1",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_CmeGHi": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Traditional analytics show you the problem. Flow solves it.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_X97dmW",
+        "richtext_CmeGHi"
+      ],
+      "custom_css": [],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "#f9fafb",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "1777013757bd1f6777": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_a3e57c5_EaJMxV": {
+          "type": "ai_gen_block_a3e57c5",
+          "settings": {
+            "container_background": "#f9fafb",
+            "text_color": "#000000",
+            "left_title": "Passive Dashboards",
+            "left_tag": "TRADITIONAL REPORTING",
+            "left_metric": "The 18-Hour Blind Spot",
+            "left_item_1": "Static Insights",
+            "left_item_2": "Manual Interpretation",
+            "left_item_3": "Inconsistent Execution",
+            "left_item_4": "Reactive Management",
+            "left_background": "#ffffff",
+            "left_border_color": "#e5e7eb",
+            "left_tag_background": "#f3f4f6",
+            "left_tag_text": "#6b7280",
+            "left_progress_label": "Response Latency",
+            "left_progress_time": "12-18hr",
+            "left_progress_percent": 20,
+            "left_progress_color": "#ef4444",
+            "right_title": "Flow Decisioning",
+            "right_tag": "⚡ LIVE ACTIVE",
+            "right_metric": "Decisions in < 2 Minutes",
+            "right_item_1": "Real-Time Actionable",
+            "right_item_2": "Automated Dispatch",
+            "right_item_3": "+140% Consistency Lift",
+            "right_item_4": "Proactive Command",
+            "right_background": "#0a2540",
+            "right_text_color": "#ffffff",
+            "right_tag_background": "#1e3a5f",
+            "right_tag_text": "#ffffff",
+            "highlight_color": "#00d66f",
+            "right_progress_label": "Response Latency",
+            "right_progress_time": "< 2min",
+            "progress_bar_height": 8,
+            "progress_gradient_start": "#803cee",
+            "progress_gradient_end": "#00d66f",
+            "negative_icon_color": "#ef4444",
+            "positive_icon_color": "#00d66f",
+            "title_size": 24,
+            "metric_size": 32,
+            "list_item_size": 16
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_a3e57c5_EaJMxV"
+      ],
+      "custom_css": [
+        "h2 {text-align: center;}"
+      ],
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "#f9fafb",
+        "background_gradient": "",
+        "text_color": ""
       }
     },
     "logo_list_bzafjC": {
@@ -433,104 +531,6 @@
         "chart_background": "",
         "chart_text_color": "",
         "chart_true_false_color": ""
-      }
-    },
-    "rich_text_pkymTT": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_X97dmW": {
-          "type": "heading",
-          "settings": {
-            "text": "Why Dashboards Fail",
-            "heading_tag": "h1",
-            "text_color": "",
-            "gradient": ""
-          }
-        },
-        "richtext_CmeGHi": {
-          "type": "richtext",
-          "settings": {
-            "content": "<p>Traditional analytics show you the problem. Flow solves it.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading_X97dmW",
-        "richtext_CmeGHi"
-      ],
-      "custom_css": [],
-      "name": "Rich text",
-      "settings": {
-        "full_width": true,
-        "content_width": "small",
-        "text_position": "center",
-        "background": "#f9fafb",
-        "background_gradient": "",
-        "text_color": ""
-      }
-    },
-    "1777013757bd1f6777": {
-      "type": "_blocks",
-      "blocks": {
-        "ai_gen_block_a3e57c5_EaJMxV": {
-          "type": "ai_gen_block_a3e57c5",
-          "settings": {
-            "container_background": "#f9fafb",
-            "text_color": "#000000",
-            "left_title": "Passive Dashboards",
-            "left_tag": "TRADITIONAL",
-            "left_metric": "Show you data. You figure out what to do.",
-            "left_item_1": "Static Insights",
-            "left_item_2": "Manual Interpretation",
-            "left_item_3": "Inconsistent Execution",
-            "left_item_4": "Reactive Management",
-            "left_background": "#ffffff",
-            "left_border_color": "#e5e7eb",
-            "left_tag_background": "#f3f4f6",
-            "left_tag_text": "#6b7280",
-            "left_progress_label": "Response Latency",
-            "left_progress_time": "12-18hr",
-            "left_progress_percent": 20,
-            "left_progress_color": "#ef4444",
-            "right_title": "Flow Decisioning",
-            "right_tag": "⚡ LIVE ACTIVE",
-            "right_metric": "Tells you exactly what to do.",
-            "right_item_1": "Real-Time Actionable",
-            "right_item_2": "Automated Dispatch",
-            "right_item_3": "+140% Consistency Lift",
-            "right_item_4": "Proactive Command",
-            "right_background": "#0a2540",
-            "right_text_color": "#ffffff",
-            "right_tag_background": "#1e3a5f",
-            "right_tag_text": "#ffffff",
-            "highlight_color": "#00d66f",
-            "right_progress_label": "Response Latency",
-            "right_progress_time": "< 2min",
-            "progress_bar_height": 8,
-            "progress_gradient_start": "#803cee",
-            "progress_gradient_end": "#00d66f",
-            "negative_icon_color": "#ef4444",
-            "positive_icon_color": "#00d66f",
-            "title_size": 24,
-            "metric_size": 32,
-            "list_item_size": 16
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "ai_gen_block_a3e57c5_EaJMxV"
-      ],
-      "custom_css": [
-        "h2 {text-align: center;}"
-      ],
-      "settings": {
-        "full_width": true,
-        "remove_vertical_spacing": false,
-        "remove_horizontal_spacing": false,
-        "background": "#f9fafb",
-        "background_gradient": "",
-        "text_color": ""
       }
     },
     "multi_column_etdDPE": {
@@ -868,7 +868,7 @@
       ],
       "custom_css": [
         "ul {font-size: 0.8rem; display: flex; align-items: center; justify-content: space-around; list-style: none;}",
-        "@media screen and (max-width: 767px) {ul {flex-direction: column;}}",
+        "@media screen and (max-width: 767px) {ul {flex-direction: column; }}",
         "ul li {background: rgba(230, 247, 165, 0.2); padding: 0.2rem 0.8rem; border-radius: 20px;}"
       ],
       "name": "Image with text overlay",
@@ -890,11 +890,11 @@
     "rich_text_AGR3yT",
     "rich_text_YiW9P3",
     "impact_text_gi97zd",
+    "rich_text_pkymTT",
+    "1777013757bd1f6777",
     "logo_list_bzafjC",
     "multi_column_QcVkek",
     "section-15",
-    "rich_text_pkymTT",
-    "1777013757bd1f6777",
     "multi_column_etdDPE",
     "rich_text_iYFe9Q",
     "testimonials_98zPBi",
