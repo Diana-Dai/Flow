@@ -851,9 +851,9 @@
             "round_avatar": true,
             "show_rating": false,
             "rating": 5,
-            "author": "Atsushi Saito - Business Dev",
+            "author": "Atsushi Saito · Retail Operations",
             "title": "Daytona International",
-            "content": "<p>“Stores now act with confidence and speed.”</p>"
+            "content": "<p>“Store teams now act with speed and confidence.”</p>"
           }
         },
         "testimonial_qqBaRi": {
@@ -862,9 +862,9 @@
             "round_avatar": true,
             "show_rating": false,
             "rating": 5,
-            "author": "Satomi Kanazawa - Sales Dev",
+            "author": "Satomi Kanazawa · Sales",
             "title": "Baycrews Group",
-            "content": "<p>“Acting on  conversion data became a daily habit in our stores.”</p>"
+            "content": "<p>“Acting on  conversion data has become a daily habit.”</p>"
           }
         },
         "testimonial_LkdFYb": {
@@ -884,7 +884,7 @@
             "round_avatar": true,
             "show_rating": false,
             "rating": 4,
-            "author": "Takeshi Kase - Retail Operations",
+            "author": "Takeshi Kase · Retail Operations",
             "title": "Cole Haan",
             "content": "<p>“Every store can understand performance at a glance.”</p>"
           }
@@ -895,7 +895,7 @@
             "round_avatar": true,
             "show_rating": false,
             "rating": 4,
-            "author": "Mr. Iida - Retail Operations",
+            "author": "Mr. Iida · Retail Operations",
             "title": "Right-On",
             "content": "<p>“Data must be usable. Flow makes that possible.”</p>"
           }
@@ -926,8 +926,8 @@
         "full_width": true,
         "stack_testimonials": false,
         "subheading": "",
-        "title": "In Their Own Words",
-        "content": "",
+        "title": "Used by Retail Teams",
+        "content": "<p> Not Just Head Office</p>",
         "link_url": "",
         "link_text": "",
         "background": "",
