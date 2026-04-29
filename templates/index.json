@@ -849,32 +849,66 @@
           "type": "testimonial",
           "settings": {
             "round_avatar": true,
-            "show_rating": true,
+            "show_rating": false,
             "rating": 5,
-            "author": "John S.",
-            "title": "Daytona Internnational",
-            "content": "<p>“With data, store teams act with confidence.”</p>"
+            "author": "Atsushi Saito - Business Dev",
+            "title": "Daytona International",
+            "content": "<p>“Stores now act with confidence and speed.”</p>"
           }
         },
         "testimonial_qqBaRi": {
           "type": "testimonial",
           "settings": {
             "round_avatar": true,
-            "show_rating": true,
+            "show_rating": false,
             "rating": 5,
-            "author": "Mary U.",
+            "author": "Satomi Kanazawa - Sales Dev",
             "title": "Baycrews Group",
-            "content": "<p>“Checking conversion became a daily habit in our stores.”</p>"
+            "content": "<p>“Acting on  conversion data became a daily habit in our stores.”</p>"
           }
         },
         "testimonial_LkdFYb": {
           "type": "testimonial",
           "settings": {
             "round_avatar": true,
-            "show_rating": true,
+            "show_rating": false,
+            "rating": 5,
+            "author": "Shigeru Tamura · Store Operations",
+            "title": "Triumph International Japan",
+            "content": "<p>“Flow made it easy to turn data into action.”</p>"
+          }
+        },
+        "testimonial_H9jfqY": {
+          "type": "testimonial",
+          "settings": {
+            "round_avatar": true,
+            "show_rating": false,
             "rating": 4,
-            "author": "Joshua A.",
-            "title": "Testimonial 3",
+            "author": "Takeshi Kase - Retail Operations",
+            "title": "Cole Haan",
+            "content": "<p>“Every store can understand performance at a glance.”</p>"
+          }
+        },
+        "testimonial_ixpNG8": {
+          "type": "testimonial",
+          "settings": {
+            "round_avatar": true,
+            "show_rating": false,
+            "rating": 4,
+            "author": "Mr. Iida - Retail Operations",
+            "title": "Right-On",
+            "content": "<p>“Data must be usable. Flow makes that possible.”</p>"
+          }
+        },
+        "testimonial_tFy8x9": {
+          "type": "testimonial",
+          "disabled": true,
+          "settings": {
+            "round_avatar": true,
+            "show_rating": false,
+            "rating": 4,
+            "author": "",
+            "title": "Testimonial",
             "content": "<p>Share what your customers are saying about your products, customer service or shipping rates.</p>"
           }
         }
@@ -882,7 +916,10 @@
       "block_order": [
         "testimonial_Prbwkq",
         "testimonial_qqBaRi",
-        "testimonial_LkdFYb"
+        "testimonial_LkdFYb",
+        "testimonial_H9jfqY",
+        "testimonial_ixpNG8",
+        "testimonial_tFy8x9"
       ],
       "name": "Testimonials",
       "settings": {
