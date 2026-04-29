@@ -15,14 +15,21 @@
         "subheading_79idNw": {
           "type": "subheading",
           "settings": {
-            "text": "Trusted by 500+ retail locations",
-            "icon": "picto-like"
+            "text": "Japan’s retail analytics specialist. 990+ store deployments.",
+            "icon": "picto-validation"
+          }
+        },
+        "richtext_LcTpMq": {
+          "type": "richtext",
+          "disabled": true,
+          "settings": {
+            "content": "<h2>Your Stores Are Not Underperforming.</h2>"
           }
         },
         "heading_NHgw9k": {
           "type": "heading",
           "settings": {
-            "text": "Standardizing Retail Execution Quality",
+            "text": "Retail Needs Better Decisions.",
             "heading_tag": "h0",
             "text_color": "",
             "gradient": ""
@@ -31,7 +38,7 @@
         "richtext_JWfj6P": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Stop buying dashboards that nobody uses. Flow standardizes decision quality at the store level, turning raw traffic into a <strong>50x ROI</strong> execution engine.</p>"
+            "content": "<p>Most retail systems stop at reporting.<br/>Flow standardizes decisions across every store using real-time in-store analytics.</p>"
           }
         },
         "buttons_pt4Ted": {
@@ -39,7 +46,7 @@
           "settings": {
             "style_1": "fill",
             "size_1": "base",
-            "text_1": "See Flow Live",
+            "text_1": "See How It Works",
             "url_1": "",
             "background_1": "",
             "text_color_1": "",
@@ -63,6 +70,7 @@
       },
       "block_order": [
         "subheading_79idNw",
+        "richtext_LcTpMq",
         "heading_NHgw9k",
         "richtext_JWfj6P",
         "buttons_pt4Ted",
@@ -114,8 +122,8 @@
         "item_d3mHCM": {
           "type": "item",
           "settings": {
-            "title": "+140%",
-            "subheading": "Execution Consistency",
+            "title": "100+",
+            "subheading": "Retail Brands",
             "content": "",
             "button_text": "",
             "button_url": "",
@@ -126,8 +134,8 @@
         "item_rY3iEb": {
           "type": "item",
           "settings": {
-            "title": "+25%",
-            "subheading": "Sales Growth",
+            "title": "990+",
+            "subheading": "Store Deployments",
             "content": "",
             "button_text": "",
             "button_url": "",
@@ -138,8 +146,8 @@
         "item_9eNB9i": {
           "type": "item",
           "settings": {
-            "title": "98%",
-            "subheading": "Traffic Accuracy",
+            "title": "5.4",
+            "subheading": "Years Avg. Relationship",
             "content": "",
             "button_text": "",
             "button_url": "",
@@ -179,7 +187,7 @@
         "heading_X97dmW": {
           "type": "heading",
           "settings": {
-            "text": "Why 98% of Retail Data is Wasted.",
+            "text": "Retail Execution Fails. Not Data.",
             "heading_tag": "h1",
             "text_color": "",
             "gradient": ""
@@ -188,7 +196,7 @@
         "richtext_CmeGHi": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Traditional analytics show you the problem. Flow solves it.</p>"
+            "content": "<p>Store performance does not break on data.<br/>It breaks on how long it takes to act.</p>"
           }
         }
       },
@@ -200,7 +208,7 @@
       "name": "Rich text",
       "settings": {
         "full_width": true,
-        "content_width": "small",
+        "content_width": "medium",
         "text_position": "center",
         "background": "#f9fafb",
         "background_gradient": "",
@@ -218,10 +226,10 @@
             "left_title": "Passive Dashboards",
             "left_tag": "TRADITIONAL REPORTING",
             "left_metric": "The 18-Hour Blind Spot",
-            "left_item_1": "Static Insights",
-            "left_item_2": "Manual Interpretation",
-            "left_item_3": "Inconsistent Execution",
-            "left_item_4": "Reactive Management",
+            "left_item_1": "Data is reviewed too late",
+            "left_item_2": "Decisions happen hours after the opportunity",
+            "left_item_3": "Execution depends on who is on shift",
+            "left_item_4": "Performance varies across stores",
             "left_background": "#ffffff",
             "left_border_color": "#e5e7eb",
             "left_tag_background": "#f3f4f6",
@@ -230,25 +238,25 @@
             "left_progress_time": "12-18hr",
             "left_progress_percent": 20,
             "left_progress_color": "#ef4444",
-            "right_title": "Flow Decisioning",
-            "right_tag": "⚡ LIVE ACTIVE",
-            "right_metric": "Decisions in < 2 Minutes",
-            "right_item_1": "Real-Time Actionable",
-            "right_item_2": "Automated Dispatch",
-            "right_item_3": "+140% Consistency Lift",
-            "right_item_4": "Proactive Command",
+            "right_title": "Flow Platform",
+            "right_tag": "⚡ REAL-TIME STORE OPERATIONS",
+            "right_metric": "Decisions in Minutes, Not Hours",
+            "right_item_1": "Data is available in real time",
+            "right_item_2": "Key signals are surfaced instantly",
+            "right_item_3": "Teams align on the same metrics",
+            "right_item_4": "Consistent decision quality across stores",
             "right_background": "#0a2540",
             "right_text_color": "#ffffff",
             "right_tag_background": "#1e3a5f",
             "right_tag_text": "#ffffff",
-            "highlight_color": "#00d66f",
+            "highlight_color": "#a0b842",
             "right_progress_label": "Response Latency",
-            "right_progress_time": "< 2min",
+            "right_progress_time": "< 10 Minutes",
             "progress_bar_height": 8,
-            "progress_gradient_start": "#803cee",
-            "progress_gradient_end": "#00d66f",
+            "progress_gradient_start": "#a0b842",
+            "progress_gradient_end": "#803cee",
             "negative_icon_color": "#ef4444",
-            "positive_icon_color": "#00d66f",
+            "positive_icon_color": "#a0b842",
             "title_size": 24,
             "metric_size": 32,
             "list_item_size": 16
@@ -277,7 +285,7 @@
         "logo_xLkXDj": {
           "type": "logo",
           "settings": {
-            "logo": "shopify://shop_images/Cole_Haan_White_836317d3-12dd-4e9a-b647-80aab91df0b2.png",
+            "logo": "shopify://shop_images/Baycrews_White_1.png",
             "logo_width": 120,
             "link": ""
           }
@@ -293,7 +301,7 @@
         "logo_i8qW8H": {
           "type": "logo",
           "settings": {
-            "logo": "shopify://shop_images/Cole_Haan_White_836317d3-12dd-4e9a-b647-80aab91df0b2.png",
+            "logo": "shopify://shop_images/Stripe_White_f1ba215a-c741-4fa7-8b23-cd0b45a74f31.png",
             "logo_width": 120,
             "link": ""
           }
@@ -301,7 +309,7 @@
         "logo_gHbbQF": {
           "type": "logo",
           "settings": {
-            "logo": "shopify://shop_images/Cole_Haan_White_836317d3-12dd-4e9a-b647-80aab91df0b2.png",
+            "logo": "shopify://shop_images/Daytona_logo.png",
             "logo_width": 120,
             "link": ""
           }
@@ -309,7 +317,7 @@
         "logo_B8XxPT": {
           "type": "logo",
           "settings": {
-            "logo": "shopify://shop_images/Cole_Haan_White_836317d3-12dd-4e9a-b647-80aab91df0b2.png",
+            "logo": "shopify://shop_images/Plaza_White_d4060480-52ad-4a29-b53d-1f7b116f8343.png",
             "logo_width": 120,
             "link": ""
           }
@@ -327,9 +335,9 @@
         "full_width": true,
         "stack_mobile": false,
         "title": "",
-        "content": "<p>Trusted by leading retailers</p>",
+        "content": "<p>Supporting store operations for leading retail brands</p>",
         "text_alignment": "center",
-        "items_per_row": 5,
+        "items_per_row": 6,
         "background": "",
         "background_gradient": "",
         "text_color": "",
@@ -351,10 +359,10 @@
             "border_color": "#ffffff",
             "show_controls": false,
             "column_size": "3",
-            "title": "Pure Customer Traffic",
+            "title": "Real-Time Store Data",
             "heading_tag": "h4",
-            "subheading": "<p>Layer 01: Measurement</p>",
-            "content": "<p>98% accuracy. AI-powered sensing excludes staff movement to capture only real customer traffic patterns.</p>",
+            "subheading": "<p>Layer 01: See What Is Happening</p>",
+            "content": "<ul><li>Traffic</li><li>Sales</li><li>Staffing</li><li>In-store behavior<br/></li></ul><p><em><strong>Most systems stop here.</strong></em></p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -371,8 +379,8 @@
             "column_size": "3",
             "title": "Identify The Gap",
             "heading_tag": "h4",
-            "subheading": "<p>Layer 02: Analytics</p>",
-            "content": "<p>Detects when traffic surges but execution/conversion lags. The Execution Gap.</p>",
+            "subheading": "<p>Layer 02: Understand What Matters</p>",
+            "content": "<ul><li>Where performance is off</li><li>Where opportunity exists</li><li>Where action is needed<br/></li></ul><p><em><strong>This is where decisions begin</strong></em><em>.</em></p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -387,10 +395,10 @@
             "border_color": "#f9fafb",
             "show_controls": false,
             "column_size": "3",
-            "title": "Push Standardized Actions",
+            "title": "Standardize the Response",
             "heading_tag": "h4",
-            "subheading": "<p>Layer 03: Decision</p>",
-            "content": "<p>Commands deployed to staff devices instantly. iOS & Android native notifications.</p>",
+            "subheading": "<p>Layer 03: Act Consistently</p>",
+            "content": "<ul><li>Align actions across stores</li><li>Connect data to SOP standards</li><li>Reduce variation in execution</li><li>Improve speed and consistency</li></ul><p><strong>This is where execution improves.</strong></p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -407,10 +415,10 @@
         "full_width": true,
         "stack_on_mobile": false,
         "gap": "medium",
-        "text_alignment": "center",
+        "text_alignment": "start",
         "subheading": "",
-        "title": "The 3-Layer Decision Engine",
-        "content": "<p>Stop staring at dashboards. Start driving results. Flow transforms raw store traffic into a continuous loop of high-performance execution.</p>",
+        "title": "How Retail Decisions Actually Work",
+        "content": "<p>Retail performance depends on how decisions move from data to action.<br/>Flow improves decision speed and operational consistency across every store.</p>",
         "background": "#ffffff",
         "background_gradient": "",
         "text_color": ""
@@ -543,11 +551,11 @@
             "text_color": "#f9fafb",
             "border_color": "#a0b842",
             "show_controls": false,
-            "column_size": "3",
-            "title": "+32%",
+            "column_size": "2",
+            "title": "+23.9%",
             "heading_tag": "h1",
-            "subheading": "<p>Fitting Room Conversion</p>",
-            "content": "<p>Fitting Room Conversion</p><ul><li>18 flagship locations</li><li>90-day measurement window</li><li>ROI in 6 weeks</li></ul>",
+            "subheading": "<p>DAYTONA INTERNATIONAL</p>",
+            "content": "<p>Storefront Capture Rate</p><ul><li>Conversion: 19.9% → 25.2%</li><li>Active use of Flow → ~25% sales increase</li><li>Payback in weeks, not months</li></ul>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -560,11 +568,11 @@
             "text_color": "#f9fafb",
             "border_color": "#0e366a",
             "show_controls": false,
-            "column_size": "3",
-            "title": "$2.4M",
+            "column_size": "2",
+            "title": "+8.25%",
             "heading_tag": "h1",
-            "subheading": "<p>Fast Fashion Chain</p>",
-            "content": "<p>Annual Revenue Lift</p><ul><li>42 store locations</li><li>+27% peak hour conversion</li><li>Payback in 6 weeks</li></ul>",
+            "subheading": "<p>Major Japanese Retailer</p>",
+            "content": "<p>Sales Growth</p><ul><li>126 store locations</li><li>¥1.8B revenue impact</li><li>50x ROI</li></ul>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -572,6 +580,7 @@
         },
         "item_zttdWV": {
           "type": "item",
+          "disabled": true,
           "settings": {
             "background_color": "#ffffff",
             "text_color": "",
@@ -600,13 +609,87 @@
       "name": "Multi-column",
       "settings": {
         "full_width": true,
-        "stack_on_mobile": false,
+        "stack_on_mobile": true,
         "gap": "medium",
         "text_alignment": "start",
         "subheading": "",
-        "title": "Proven ROI",
-        "content": "<p>Real retailers. Real results. Quantified performance improvements.</p>",
+        "title": "Execution Drives Measurable ROI",
+        "content": "<p>When execution improves, performance follows.<br/>Measured across real retail operations.</p>",
         "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "multi_column_HCGJea": {
+      "type": "multi-column",
+      "blocks": {
+        "item_9cWFC9": {
+          "type": "item",
+          "settings": {
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "Store Teams",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<p><strong>Daily performance checks</strong></p><ul><li>Daily conversion tracking</li><li>Real-time response</li><li>Same-day decisions</li></ul>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_aqpNXK": {
+          "type": "item",
+          "settings": {
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "Area / HQ",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<p><strong>Execution aligned across stores</strong></p><ul><li>Actionable store comparisons</li><li>Clear performance gaps</li><li>Consistent direction</li></ul>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_tTyycj": {
+          "type": "item",
+          "settings": {
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "Organization Impact",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<p><strong>Data drives how teams operate</strong></p><ul><li>Shared KPI language</li><li>Faster decisions</li><li>Standardized execution</li></ul>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_9cWFC9",
+        "item_aqpNXK",
+        "item_tTyycj"
+      ],
+      "name": "Multi-column",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "start",
+        "subheading": "How Retail Teams Actually Use Flow",
+        "title": "From Reporting to Daily Store Execution",
+        "content": "",
+        "background": "",
         "background_gradient": "",
         "text_color": ""
       }
@@ -617,21 +700,21 @@
         "subheading_iKjik8": {
           "type": "subheading",
           "settings": {
-            "text": "Case Study  • 156 Stores Active",
+            "text": "Case Study  | SPA Retailer · 100+ Stores",
             "icon": "picto-target"
           }
         },
         "liquid_KW76d3": {
           "type": "liquid",
+          "disabled": true,
           "settings": {
-            "liquid": "<p class=\"h1\">156 Stores. <br>23% Revenue Lift. <br>6 Weeks.</p>"
+            "liquid": "<p class=\"h1\">From Weekly Reporting to Daily Decision-Making</p>"
           }
         },
         "heading_9FwWXH": {
           "type": "heading",
-          "disabled": true,
           "settings": {
-            "text": "156 Stores. 23% Revenue Lift. 6 Weeks.",
+            "text": "From Weekly Reporting to Daily Decisions",
             "heading_tag": "h1",
             "text_color": "#ffffff",
             "gradient": ""
@@ -640,7 +723,7 @@
         "richtext_QmW9HL": {
           "type": "richtext",
           "settings": {
-            "content": "<p>National fashion retailer deployed Flow across their entire network. The Execution Gap closed. Sales spiked. Staff loved it.</p>"
+            "content": "<p>Small conversion gains, applied across 100+ stores, drove significant revenue impact.</p>"
           }
         }
       },
@@ -663,6 +746,102 @@
         "text_color": "#f9fafb"
       }
     },
+    "multi_column_dQq9tA": {
+      "type": "multi-column",
+      "blocks": {
+        "item_K9C4mp": {
+          "type": "item",
+          "settings": {
+            "background_color": "#36465c",
+            "text_color": "",
+            "border_color": "#36465c",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "Before",
+            "heading_tag": "h1",
+            "subheading": "",
+            "content": "<ul><li>KPI tracked at head office</li><li>Weekly reporting cycle</li><li>Limited store action</li></ul>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_FBeYb7": {
+          "type": "item",
+          "settings": {
+            "background_color": "#36465c",
+            "text_color": "",
+            "border_color": "#36465c",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "After",
+            "heading_tag": "h1",
+            "subheading": "",
+            "content": "<ul><li>Daily KPI visibility in stores</li><li>Store managers act on data</li><li>Actions tied to performance</li></ul>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_PzHBWe": {
+          "type": "item",
+          "settings": {
+            "background_color": "#a0b842",
+            "text_color": "#f9fafb",
+            "border_color": "#36465c",
+            "show_controls": false,
+            "column_size": "4",
+            "title": "+2.3%",
+            "heading_tag": "h1",
+            "subheading": "<p>Conversion Lift</p>",
+            "content": "<p>¥140M+ impact over 8 months</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_yGRne4": {
+          "type": "item",
+          "disabled": true,
+          "settings": {
+            "background_color": "#485c36",
+            "text_color": "#daf474",
+            "border_color": "#a0b842",
+            "show_controls": false,
+            "column_size": "4",
+            "title": "6wk",
+            "heading_tag": "h1",
+            "subheading": "",
+            "content": "<p>Time to ROI</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_K9C4mp",
+        "item_FBeYb7",
+        "item_PzHBWe",
+        "item_yGRne4"
+      ],
+      "custom_css": [
+        ".prose p {font-size: 0.8rem;}"
+      ],
+      "name": "Multi-column",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": true,
+        "gap": "medium",
+        "text_alignment": "start",
+        "subheading": "",
+        "title": "What changed",
+        "content": "",
+        "background": "#0e366a",
+        "background_gradient": "",
+        "text_color": "#f9fafb"
+      }
+    },
     "testimonials_98zPBi": {
       "type": "testimonials",
       "blocks": {
@@ -671,10 +850,10 @@
           "settings": {
             "round_avatar": true,
             "show_rating": true,
-            "rating": 4,
+            "rating": 5,
             "author": "John S.",
-            "title": "Testimonial 1",
-            "content": "<p>Share what your customers are saying about your products, customer service or shipping rates.</p>"
+            "title": "Daytona Internnational",
+            "content": "<p>“With data, store teams act with confidence.”</p>"
           }
         },
         "testimonial_qqBaRi": {
@@ -684,8 +863,8 @@
             "show_rating": true,
             "rating": 5,
             "author": "Mary U.",
-            "title": "Testimonial 2",
-            "content": "<p>Share what your customers are saying about your products, customer service or shipping rates.</p>"
+            "title": "Baycrews Group",
+            "content": "<p>“Checking conversion became a daily habit in our stores.”</p>"
           }
         },
         "testimonial_LkdFYb": {
@@ -721,102 +900,6 @@
         "heading_gradient": "",
         "testimonial_card_background": "",
         "testimonial_card_text_color": ""
-      }
-    },
-    "multi_column_dQq9tA": {
-      "type": "multi-column",
-      "blocks": {
-        "item_PzHBWe": {
-          "type": "item",
-          "settings": {
-            "background_color": "#36465c",
-            "text_color": "#f9fafb",
-            "border_color": "#36465c",
-            "show_controls": false,
-            "column_size": "4",
-            "title": "98.2%",
-            "heading_tag": "h1",
-            "subheading": "",
-            "content": "<p>Action completion rate</p>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        },
-        "item_K9C4mp": {
-          "type": "item",
-          "settings": {
-            "background_color": "#36465c",
-            "text_color": "",
-            "border_color": "#36465c",
-            "show_controls": false,
-            "column_size": "4",
-            "title": "1.8m",
-            "heading_tag": "h1",
-            "subheading": "",
-            "content": "<p>Response time</p>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        },
-        "item_FBeYb7": {
-          "type": "item",
-          "settings": {
-            "background_color": "#36465c",
-            "text_color": "",
-            "border_color": "#36465c",
-            "show_controls": false,
-            "column_size": "4",
-            "title": "94%",
-            "heading_tag": "h1",
-            "subheading": "",
-            "content": "<p>Staff adoption</p>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        },
-        "item_yGRne4": {
-          "type": "item",
-          "settings": {
-            "background_color": "#485c36",
-            "text_color": "#daf474",
-            "border_color": "#a0b842",
-            "show_controls": false,
-            "column_size": "4",
-            "title": "6wk",
-            "heading_tag": "h1",
-            "subheading": "",
-            "content": "<p>Time to ROI</p>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        }
-      },
-      "block_order": [
-        "item_PzHBWe",
-        "item_K9C4mp",
-        "item_FBeYb7",
-        "item_yGRne4"
-      ],
-      "disabled": true,
-      "custom_css": [
-        ".prose p {font-size: 0.8rem;}"
-      ],
-      "name": "Multi-column",
-      "settings": {
-        "full_width": true,
-        "stack_on_mobile": false,
-        "gap": "medium",
-        "text_alignment": "start",
-        "subheading": "",
-        "title": "",
-        "content": "",
-        "background": "#0e366a",
-        "background_gradient": "",
-        "text_color": "#f9fafb"
       }
     },
     "image_with_text_overlay_MVHcWF": {
@@ -881,8 +964,8 @@
         "mobile_text_position": "place-self-center text-center",
         "desktop_text_position": "sm:place-self-center sm:text-center",
         "text_color": "#f9fafb",
-        "overlay_color": "#a0b842",
-        "overlay_opacity": 90
+        "overlay_color": "#0e366a",
+        "overlay_opacity": 80
       }
     }
   },
@@ -896,9 +979,10 @@
     "multi_column_QcVkek",
     "section-15",
     "multi_column_etdDPE",
+    "multi_column_HCGJea",
     "rich_text_iYFe9Q",
-    "testimonials_98zPBi",
     "multi_column_dQq9tA",
+    "testimonials_98zPBi",
     "image_with_text_overlay_MVHcWF"
   ]
 }
