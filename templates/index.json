@@ -884,9 +884,9 @@
             "round_avatar": true,
             "show_rating": false,
             "rating": 4,
-            "author": "Takeshi Kase · Retail Operations",
+            "author": "Takeshi Kase · Retail",
             "title": "Cole Haan",
-            "content": "<p>“Every store can understand performance at a glance.”</p>"
+            "content": "<p>“Every store understands performance at a glance.”</p>"
           }
         },
         "testimonial_ixpNG8": {
@@ -895,7 +895,7 @@
             "round_avatar": true,
             "show_rating": false,
             "rating": 4,
-            "author": "Mr. Iida · Retail Operations",
+            "author": "Takehito Iida · Operations",
             "title": "Right-On",
             "content": "<p>“Data must be usable. Flow makes that possible.”</p>"
           }
@@ -927,7 +927,7 @@
         "stack_testimonials": false,
         "subheading": "",
         "title": "Used by Retail Teams",
-        "content": "<p> Not Just Head Office</p>",
+        "content": "<h3>not just head office</h3>",
         "link_url": "",
         "link_text": "",
         "background": "",
