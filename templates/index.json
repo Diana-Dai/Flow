@@ -95,9 +95,9 @@
         "heading_DFkYUD": {
           "type": "heading",
           "settings": {
-            "text": "140% Consistency. 25% Sales Lift.",
+            "text": "Flow is a retail analytics platform that turns in-store data into consistent, high-quality decisions.",
             "heading_tag": "h2",
-            "text_color": "",
+            "text_color": "#11243e",
             "gradient": ""
           }
         }
@@ -105,13 +105,12 @@
       "block_order": [
         "heading_DFkYUD"
       ],
-      "disabled": true,
       "name": "Rich text",
       "settings": {
         "full_width": true,
         "content_width": "large",
         "text_position": "center",
-        "background": "#0e366a",
+        "background": "rgba(0,0,0,0)",
         "background_gradient": "",
         "text_color": "#ffffff"
       }
@@ -945,14 +944,14 @@
         "heading_W76pLA": {
           "type": "heading",
           "settings": {
-            "text": "Close Your Execution Gap",
+            "text": "Understand What Your Stores Should Be Doing",
             "heading_tag": "h1"
           }
         },
         "richtext_b7cQCP": {
           "type": "richtext",
           "settings": {
-            "content": "<p>See Flow in action. Get a live demo with your store data. See the ROI instantly.</p>"
+            "content": "<p>See how Flow connects data, surfaces actions, and improves execution across stores.</p>"
           }
         },
         "button_39CcgY": {
@@ -960,10 +959,10 @@
           "settings": {
             "style": "fill",
             "size": "base",
-            "text": "Book Live Demo",
+            "text": "See Flow in Action",
             "url": "",
-            "background": "",
-            "text_color": ""
+            "background": "#a0b842",
+            "text_color": "#ffffff"
           }
         },
         "liquid_wJy64L": {
@@ -975,7 +974,7 @@
         "richtext_8bpctG": {
           "type": "richtext",
           "settings": {
-            "content": "<ul><li>✓Live traffic analysis included</li><li>✓Custom ROI calculator</li><li>✓30-day pilot available</li></ul>"
+            "content": "<ul><li>✓Platform walkthrough</li><li>✓Custom ROI estimate for your business</li><li>✓30-day pilot available</li></ul>"
           }
         }
       },
