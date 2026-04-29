@@ -358,10 +358,10 @@
             "border_color": "#ffffff",
             "show_controls": false,
             "column_size": "3",
-            "title": "Real-Time Store Data",
+            "title": "Real-Time Store Analytics",
             "heading_tag": "h4",
             "subheading": "<p>Layer 01: See What Is Happening</p>",
-            "content": "<ul><li>Traffic</li><li>Sales</li><li>Staffing</li><li>In-store behavior<br/></li></ul><p><em><strong>Most systems stop here.</strong></em></p>",
+            "content": "<ul><li>Traffic (footfall)</li><li>Sales & Conversion</li><li>Dwell Time & Staffing levels</li><li>In-store behavior<br/></li></ul><p><em><strong>Most systems stop here.</strong></em></p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
