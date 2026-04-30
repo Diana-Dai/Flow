@@ -832,9 +832,7 @@
         "item_PzHBWe",
         "item_yGRne4"
       ],
-      "custom_css": [
-        ".prose p {font-size: 0.8rem;}"
-      ],
+      "custom_css": [],
       "name": "Multi-column",
       "settings": {
         "full_width": true,
