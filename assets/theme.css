@@ -10246,3 +10246,14 @@ display: flex;
 .subheading_container svg{
   width: 16px;
 }
+
+.multi-column__item ul {
+  font-size: 0.8rem;
+  opacity: 0.7;
+}
+.multi-column__item  .text-xs p {
+  margin-bottom: 1rem;
+  font-size: 0.6rem;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
