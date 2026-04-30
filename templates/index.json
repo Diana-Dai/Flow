@@ -839,9 +839,9 @@
         "stack_on_mobile": true,
         "gap": "medium",
         "text_alignment": "start",
-        "subheading": "What changed",
+        "subheading": "",
         "title": "",
-        "content": "",
+        "content": "<h4>What changed</h4>",
         "background": "#0e366a",
         "background_gradient": "",
         "text_color": "#f9fafb"
