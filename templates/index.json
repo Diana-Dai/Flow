@@ -683,6 +683,10 @@
         "item_aqpNXK",
         "item_tTyycj"
       ],
+      "custom_css": [
+        "ul {font-size: 0.8rem; opacity: 0.7;}",
+        ".text-xs p {margin-bottom: 1rem; font-size: 0.6rem; letter-spacing: 0.02em; text-transform: uppercase;}"
+      ],
       "name": "Multi-column",
       "settings": {
         "full_width": true,
