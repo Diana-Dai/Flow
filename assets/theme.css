@@ -2118,7 +2118,7 @@ scroll-carousel {
 
 @media screen and (min-width: 1150px) {
   .section-header {
-    grid-template-columns: 700px;
+    grid-template-columns: 1000px;
     justify-content: space-between;
     align-items: end;
   }
