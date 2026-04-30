@@ -10098,7 +10098,9 @@ shopify-accelerated-checkout, shopify-accelerated-checkout-cart {
 }
 
 .subheading {
-  font-weight: bold;
+  /* font-weight: bold; */
+      font-size: 0.9rem;
+
 }
 
 .heading, .h0, .h1, .h2, .h3, .h4, .h5, .h6, .prose :is(h1, h2, h3, h4, h5, h6) {
