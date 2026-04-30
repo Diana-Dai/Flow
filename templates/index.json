@@ -397,7 +397,7 @@
             "title": "Standardize the Response",
             "heading_tag": "h4",
             "subheading": "<p>Layer 03: Act Consistently</p>",
-            "content": "<ul><li>Align actions across stores</li><li>Connect data to SOP standards</li><li>Reduce variation in execution</li><li>Improve speed and consistency</li></ul><p><strong>This is where execution improves.</strong></p>",
+            "content": "<ul><li>Align actions across stores</li><li>Connect data to SOP standards</li><li>Reduce variation in execution</li><li>Improve speed and consistency</li></ul><p><em><strong>This is where execution improves.</strong></em></p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -408,6 +408,10 @@
         "item_7TBByM",
         "item_7tAMz6",
         "item_HjWCwX"
+      ],
+      "custom_css": [
+        "ul {font-size: 0.8rem; opacity: 0.7;}",
+        ".text-xs p {margin-bottom: 1rem; font-size: 0.6rem; letter-spacing: 0.02em; text-transform: uppercase;}"
       ],
       "name": "Multi-column",
       "settings": {
