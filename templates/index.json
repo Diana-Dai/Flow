@@ -15,7 +15,7 @@
         "subheading_79idNw": {
           "type": "subheading",
           "settings": {
-            "text": "Japan’s retail analytics specialist. 990+ store deployments.",
+            "text": "日本のリテール分析に特化。導入店舗数 990以上。",
             "icon": "picto-validation"
           }
         },
@@ -29,7 +29,7 @@
         "heading_NHgw9k": {
           "type": "heading",
           "settings": {
-            "text": "Retail Needs Better Decisions.",
+            "text": "リテールには、より良い判断が必要だ。",
             "heading_tag": "h0",
             "text_color": "",
             "gradient": ""
@@ -38,7 +38,7 @@
         "richtext_JWfj6P": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Most retail systems stop at reporting.<br/>Flow standardizes decisions across every store using real-time in-store analytics.</p>"
+            "content": "<p>多くのリテールシステムは、レポートで止まる。<br/>Flowは、リアルタイムの店舗データをもとに、<br/>全店舗の判断を揃える。</p>"
           }
         },
         "buttons_pt4Ted": {
@@ -46,13 +46,13 @@
           "settings": {
             "style_1": "fill",
             "size_1": "base",
-            "text_1": "See How It Works",
+            "text_1": "仕組みを見る",
             "url_1": "",
             "background_1": "",
             "text_color_1": "",
             "style_2": "outline",
             "size_2": "base",
-            "text_2": "Request Demo",
+            "text_2": "デモを依頼する",
             "url_2": "",
             "background_2": "",
             "text_color_2": ""
