@@ -222,10 +222,10 @@
           "settings": {
             "container_background": "#f9fafb",
             "text_color": "#000000",
-            "left_title": "パッシブダッシュボード",
-            "left_tag": "従来のレポーティング",
+            "left_title": "現場の現状",
+            "left_tag": "従来の店舗運営",
             "left_metric": "18時間の空白",
-            "left_item_1": "データの確認が遅い",
+            "left_item_1": "データの確認が後手になる",
             "left_item_2": "判断が機会の後になる",
             "left_item_3": "実行がシフトに依存する",
             "left_item_4": "店舗ごとに成果がばらつく",
