@@ -166,7 +166,7 @@
       "name": "Impact text",
       "settings": {
         "full_width": true,
-        "stack_mobile": false,
+        "stack_mobile": true,
         "text_alignment": "center",
         "impact_text_style": "fill",
         "text_divider": "none",
@@ -332,7 +332,7 @@
       "name": "Logo list",
       "settings": {
         "full_width": true,
-        "stack_mobile": false,
+        "stack_mobile": true,
         "title": "",
         "content": "<p>主要リテールブランドの店舗運営を支援</p>",
         "text_alignment": "center",
@@ -416,7 +416,7 @@
       "name": "Multi-column",
       "settings": {
         "full_width": true,
-        "stack_on_mobile": false,
+        "stack_on_mobile": true,
         "gap": "medium",
         "text_alignment": "start",
         "subheading": "",
