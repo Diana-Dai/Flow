@@ -856,9 +856,9 @@
             "round_avatar": true,
             "show_rating": false,
             "rating": 5,
-            "author": "Atsushi Saito · Retail Operations",
-            "title": "Daytona International",
-            "content": "<p>“Store teams now act with speed and confidence.”</p>"
+            "author": "斉藤 篤史様｜事業推進部 部長",
+            "title": "デイトナ・インターナショナル",
+            "content": "<p>「Flowの導入によって、データを軸にした意思決定が現場に定着しました。今では各店舗が主体的に動き、スピードと確信を持って判断できています。」</p>"
           }
         },
         "testimonial_qqBaRi": {
@@ -867,9 +867,9 @@
             "round_avatar": true,
             "show_rating": false,
             "rating": 5,
-            "author": "Satomi Kanazawa · Sales",
-            "title": "Baycrews Group",
-            "content": "<p>“Acting on  conversion data has become a daily habit.”</p>"
+            "author": "金沢 里美様｜営業開発Div",
+            "title": "ベイクルーズグループ",
+            "content": "<p>「購買率などの重要指標を日常的に確認し、データに基づいて行動することが当たり前になりました。<br/>現場と本部の意思決定が、同じデータでつながっています。」</p>"
           }
         },
         "testimonial_LkdFYb": {
@@ -878,31 +878,31 @@
             "round_avatar": true,
             "show_rating": false,
             "rating": 5,
-            "author": "Shigeru Tamura · Store Operations",
-            "title": "Triumph International Japan",
-            "content": "<p>“Flow made it easy to turn data into action.”</p>"
+            "author": "田村様｜ストアオペレーション部",
+            "title": "トリンプ・インターナショナル",
+            "content": "<p>「Flowによって、データが“見える・分かる・使える”状態になりました。これまでの感覚頼りから脱却し、現場でのアクションにつながっています。」</p>"
           }
         },
         "testimonial_H9jfqY": {
           "type": "testimonial",
           "settings": {
-            "round_avatar": true,
+            "round_avatar": false,
             "show_rating": false,
             "rating": 4,
-            "author": "Takeshi Kase · Retail",
-            "title": "Cole Haan",
-            "content": "<p>“Every store understands performance at a glance.”</p>"
+            "author": "加瀬 剛様 ｜ Retail Operations Mgr",
+            "title": "コールハーン",
+            "content": "<p>「Flowのレポートにより、全店舗が状況を即座に把握し、利益につながる行動が取れるようになりました。<br/>これまでにない精度で店舗パフォーマンスを理解できます。」</p>"
           }
         },
         "testimonial_ixpNG8": {
           "type": "testimonial",
           "settings": {
-            "round_avatar": true,
+            "round_avatar": false,
             "show_rating": false,
             "rating": 4,
-            "author": "Takehito Iida · Operations",
-            "title": "Right-On",
-            "content": "<p>“Data must be usable. Flow makes that possible.”</p>"
+            "author": "飯田 健人様  |  経営企画部",
+            "title": "ライトオン",
+            "content": "<p>「データは取れるだけでは意味がありません。<br/>重要なのは、現場で使えて判断につながること。Flowはそれを実現してくれました。」</p>"
           }
         },
         "testimonial_tFy8x9": {
@@ -930,9 +930,9 @@
       "settings": {
         "full_width": true,
         "stack_testimonials": false,
-        "subheading": "Customer Testimonials",
+        "subheading": "導入企業の声",
         "title": "",
-        "content": "<h2>Used by Retail Teams. Not Just Head Office.</h2>",
+        "content": "<h2><strong>現場で活用されているFlow</strong></h2>",
         "link_url": "",
         "link_text": "",
         "background": "",
@@ -950,14 +950,14 @@
         "heading_W76pLA": {
           "type": "heading",
           "settings": {
-            "text": "Understand What Your Stores Should Be Doing",
+            "text": "店舗データを、即時の判断へ",
             "heading_tag": "h1"
           }
         },
         "richtext_b7cQCP": {
           "type": "richtext",
           "settings": {
-            "content": "<p>See how Flow connects data, surfaces actions, and improves execution across stores.</p>"
+            "content": "<p>Flowは店内行動データを取得し、オペレーションデータと統合。<br/>取るべき行動を明確にし、すべての店舗で迅速かつ一貫した実行を実現します。</p>"
           }
         },
         "button_39CcgY": {
@@ -965,7 +965,7 @@
           "settings": {
             "style": "fill",
             "size": "base",
-            "text": "See Flow in Action",
+            "text": "Flowを見る",
             "url": "",
             "background": "#a0b842",
             "text_color": "#ffffff"
@@ -980,7 +980,7 @@
         "richtext_8bpctG": {
           "type": "richtext",
           "settings": {
-            "content": "<ul><li>✓Platform walkthrough</li><li>✓Custom ROI estimate for your business</li><li>✓30-day pilot available</li></ul>"
+            "content": "<ul><li>✓ プラットフォーム紹介</li><li>✓ ROI試算</li><li>✓ 30日間トライアル</li></ul>"
           }
         }
       },
