@@ -222,8 +222,8 @@
           "settings": {
             "container_background": "#f9fafb",
             "text_color": "#000000",
-            "left_title": "現場の現状",
-            "left_tag": "従来の店舗運営",
+            "left_title": "現場の実態",
+            "left_tag": "課題：判断が遅れ、実行がばらつく",
             "left_metric": "18時間の空白",
             "left_item_1": "データの確認が後手になる",
             "left_item_2": "判断が機会の後になる",
@@ -721,7 +721,7 @@
         "heading_9FwWXH": {
           "type": "heading",
           "settings": {
-            "text": "From Weekly Reporting to Daily Decisions",
+            "text": "週次レポートから、日々の判断へ",
             "heading_tag": "h1",
             "text_color": "#ffffff",
             "gradient": ""
@@ -730,7 +730,7 @@
         "richtext_QmW9HL": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Small conversion gains, applied across 100+ stores, drove significant revenue impact.</p>"
+            "content": "<p>小さな改善でも、全店舗で積み重なれば、<br/>売上に大きな差を生む。</p>"
           }
         }
       },
@@ -764,10 +764,10 @@
             "border_color": "#36465c",
             "show_controls": false,
             "column_size": "3",
-            "title": "Before",
+            "title": "現状",
             "heading_tag": "h3",
             "subheading": "",
-            "content": "<ul><li>KPI tracked at head office</li><li>Weekly reporting cycle</li><li>Limited store action</li></ul>",
+            "content": "<ul><li>KPIは本部で管理</li><li>週次レポートが中心</li><li>店舗でのアクションは限定的</li></ul>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -781,10 +781,10 @@
             "border_color": "#36465c",
             "show_controls": false,
             "column_size": "3",
-            "title": "After",
+            "title": "変化後",
             "heading_tag": "h3",
             "subheading": "",
-            "content": "<ul><li>Daily KPI visibility in stores</li><li>Store managers act on data</li><li>Actions tied to performance</li></ul>",
+            "content": "<ul><li>店舗で日次KPIを把握</li><li>現場がデータをもとに判断</li><li>アクションが成果に直結</li></ul>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -800,8 +800,8 @@
             "column_size": "3",
             "title": "+2.3%",
             "heading_tag": "h1",
-            "subheading": "<p>Conversion Lift</p>",
-            "content": "<p>¥140M+ impact over 8 months</p>",
+            "subheading": "<p>コンバージョン改善</p>",
+            "content": "<p>8ヶ月で 約1.4億円の売上効果</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -841,7 +841,7 @@
         "text_alignment": "start",
         "subheading": "",
         "title": "",
-        "content": "<h4>What changed</h4>",
+        "content": "<h4><strong>何が変わったのか</strong></h4>",
         "background": "#0e366a",
         "background_gradient": "",
         "text_color": "#f9fafb"
