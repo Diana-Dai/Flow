@@ -95,7 +95,7 @@
         "heading_DFkYUD": {
           "type": "heading",
           "settings": {
-            "text": "Flow is a retail analytics platform that turns store traffic data into consistent, high-quality decisions.",
+            "text": "Flowは、店舗トラフィックデータを全店舗で揃った「判断」に変えるリテール分析プラットフォーム。",
             "heading_tag": "h2",
             "text_color": "#11243e",
             "gradient": ""
@@ -122,7 +122,7 @@
           "type": "item",
           "settings": {
             "title": "100+",
-            "subheading": "Retail Brands",
+            "subheading": "導入ブランド数",
             "content": "",
             "button_text": "",
             "button_url": "",
@@ -134,7 +134,7 @@
           "type": "item",
           "settings": {
             "title": "990+",
-            "subheading": "Store Deployments",
+            "subheading": "導入店舗数",
             "content": "",
             "button_text": "",
             "button_url": "",
@@ -146,7 +146,7 @@
           "type": "item",
           "settings": {
             "title": "5.4",
-            "subheading": "Years Avg. Relationship",
+            "subheading": "平均継続年数",
             "content": "",
             "button_text": "",
             "button_url": "",
@@ -186,7 +186,7 @@
         "heading_X97dmW": {
           "type": "heading",
           "settings": {
-            "text": "Retail Execution Fails. Not Data.",
+            "text": "問題はデータではない。実行だ。",
             "heading_tag": "h1",
             "text_color": "",
             "gradient": ""
@@ -195,7 +195,7 @@
         "richtext_CmeGHi": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Store performance does not break on data.<br/>It breaks on how long it takes to act.</p>"
+            "content": "<p>店舗の成果は、データで崩れるのではない。<br/>行動までにかかる時間で崩れる。</p>"
           }
         }
       },
