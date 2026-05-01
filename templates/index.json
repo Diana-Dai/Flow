@@ -776,7 +776,7 @@
         "item_FBeYb7": {
           "type": "item",
           "settings": {
-            "background_color": "#36465c",
+            "background_color": "#a0b842",
             "text_color": "",
             "border_color": "#36465c",
             "show_controls": false,
@@ -793,11 +793,11 @@
         "item_PzHBWe": {
           "type": "item",
           "settings": {
-            "background_color": "#a0b842",
-            "text_color": "#f9fafb",
+            "background_color": "#ffffff",
+            "text_color": "#11243e",
             "border_color": "#36465c",
             "show_controls": false,
-            "column_size": "4",
+            "column_size": "3",
             "title": "+2.3%",
             "heading_tag": "h1",
             "subheading": "<p>Conversion Lift</p>",
@@ -930,9 +930,9 @@
       "settings": {
         "full_width": true,
         "stack_testimonials": false,
-        "subheading": "",
+        "subheading": "Customer Testimonials",
         "title": "",
-        "content": "<h2>Used by Retail Teams. Not just head office</h2>",
+        "content": "<h2>Used by Retail Teams. Not Just head office.</h2>",
         "link_url": "",
         "link_text": "",
         "background": "",
