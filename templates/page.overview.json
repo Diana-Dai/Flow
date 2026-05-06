@@ -492,10 +492,10 @@
           "settings": {
             "container_background": "#ffffff",
             "text_color": "#000000",
-            "left_title": "Old State: The 18-Hour Blind Spot",
+            "left_title": "Traditional HQ-Centric Model (Weekly)",
             "left_tag": "Delayed judgment",
             "left_metric": "The 18-Hour Gap",
-            "left_item_1": "Data Post-Mortem: KPIs are reviewed by HQ in weekly batches; by the time stores get feedback, the opportunity is gone.",
+            "left_item_1": "Information Bottleneck:Data is managed at HQ; store teams wait 168 hours for weekly reports, missing immediate opportunities.",
             "left_item_2": "Subjective Management: Execution depends on the individual manager's experience, leading to inconsistent performance.",
             "left_item_3": "Fragmented Logic: Action is disconnected from the data; stores \"do\" things without knowing if they work.",
             "left_item_4": "",
