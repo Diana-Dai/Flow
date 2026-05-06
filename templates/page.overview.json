@@ -247,6 +247,45 @@
         "logo_item_border": ""
       }
     },
+    "media_with_text_hMPTmL": {
+      "type": "media-with-text",
+      "blocks": {
+        "image_8hBn9C": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/blog_S_220_flow.jpg",
+            "media_width": 50,
+            "media_position": "end",
+            "text_position": "place-self-center-start text-start",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "Understanding the \"Why\" Behind the Gap.",
+            "title": "Unified Metrics – FIDA Contextual Analytics",
+            "content": "<p>Data is useless in a vacuum. FIDA answers whether a sales dip is a VMD issue (low capture) or a staffing issue (low conversion).</p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "#a0b842",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_8hBn9C"
+      ],
+      "custom_css": [
+        "* {background: #a0b842;}"
+      ],
+      "name": "Media with text",
+      "settings": {
+        "full_width": false,
+        "alternate_media_position": false,
+        "spacing": "small"
+      }
+    },
     "section-15": {
       "type": "feature-chart",
       "blocks": {
@@ -837,6 +876,7 @@
     "rich_text_CjaQaa",
     "images_with_text_scrolling_A4yLa8",
     "logo_list_bzafjC",
+    "media_with_text_hMPTmL",
     "section-15",
     "multi_column_etdDPE",
     "multi_column_HCGJea",
