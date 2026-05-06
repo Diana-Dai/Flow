@@ -45,7 +45,44 @@
       "settings": {
         "full_width": false,
         "alternate_media_position": false,
-        "spacing": "small"
+        "spacing": "medium"
+      }
+    },
+    "rich_text_6HjWXK": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_P3wkzP": {
+          "type": "subheading",
+          "settings": {
+            "text": "Why Data Isn't Enough",
+            "icon": "none"
+          }
+        },
+        "heading_grwjxY": {
+          "type": "heading",
+          "settings": {
+            "text": "Most systems stop at reporting, creating an \"18-Hour Blind Spot\" where insights arrive too late.",
+            "heading_tag": "h1",
+            "text_color": "",
+            "gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "subheading_P3wkzP",
+        "heading_grwjxY"
+      ],
+      "custom_css": [
+        ".rich-text{padding-block-start: var(--calculated-section-spacing-block-start);}"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "large",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
       }
     },
     "images_with_text_scrolling_A4yLa8": {
@@ -755,6 +792,7 @@
   },
   "order": [
     "media_with_text_RFxGYy",
+    "rich_text_6HjWXK",
     "images_with_text_scrolling_A4yLa8",
     "logo_list_bzafjC",
     "section-15",
