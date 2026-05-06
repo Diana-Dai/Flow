@@ -286,6 +286,46 @@
         "spacing": "small"
       }
     },
+    "media_with_text_NPc8ig": {
+      "type": "media-with-text",
+      "blocks": {
+        "image_ngkwNP": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/blog_Kpi_158.png",
+            "media_width": 50,
+            "media_position": "start",
+            "text_position": "place-self-center-start text-start",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "Operational Standard – The PDCA Loop",
+            "content": "<p><strong>Capture:</strong> Real-time behavior sensing.</p><p><strong>Analyze:</strong> Automated gap identification via FIDA.</p><p><strong>Instruct:</strong> AI-driven task assignment.</p><p><strong>Validate:</strong> Measuring the impact of actions.</p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#11243e",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_ngkwNP"
+      ],
+      "custom_css": [
+        "* {background: white;}",
+        "media-with-text {padding-block-start: var(--calculated-section-spacing-block-start);}"
+      ],
+      "name": "Media with text",
+      "settings": {
+        "full_width": false,
+        "alternate_media_position": false,
+        "spacing": "small"
+      }
+    },
     "section-15": {
       "type": "feature-chart",
       "blocks": {
@@ -401,85 +441,6 @@
         "chart_background": "",
         "chart_text_color": "",
         "chart_true_false_color": ""
-      }
-    },
-    "multi_column_etdDPE": {
-      "type": "multi-column",
-      "blocks": {
-        "item_gQr9C9": {
-          "type": "item",
-          "settings": {
-            "background_color": "#a0b842",
-            "text_color": "#f9fafb",
-            "border_color": "#a0b842",
-            "show_controls": false,
-            "column_size": "2",
-            "title": "+23.9%",
-            "heading_tag": "h1",
-            "subheading": "<h5>デイトナ・インターナショナル</h5>",
-            "content": "<p><strong>入店率（キャプチャ率）</strong></p><ul><li>購買率: 19.9% → 25.2%</li><li>Flow活用店舗では売上 約25%増</li><li>投資回収は数週間レベル</li></ul>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        },
-        "item_tx7kCq": {
-          "type": "item",
-          "settings": {
-            "background_color": "#f2f2f2",
-            "text_color": "#0e366a",
-            "border_color": "#0e366a",
-            "show_controls": false,
-            "column_size": "2",
-            "title": "+8.25%",
-            "heading_tag": "h1",
-            "subheading": "<h5>大手国内リテール企業</h5>",
-            "content": "<p><strong>売上成長</strong></p><ul><li>126店舗で導入</li><li>売上インパクト：約18億円</li><li>ROI 50倍</li></ul>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        },
-        "item_zttdWV": {
-          "type": "item",
-          "disabled": true,
-          "settings": {
-            "background_color": "#ffffff",
-            "text_color": "",
-            "border_color": "#a0b842",
-            "show_controls": false,
-            "column_size": "3",
-            "title": "140%",
-            "heading_tag": "h1",
-            "subheading": "<p>Specialty Retail</p>",
-            "content": "<p>Execution Consistency</p><ul><li>28 store network</li><li>Variance reduced 75%</li><li>94% action compliance</li></ul>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        }
-      },
-      "block_order": [
-        "item_gQr9C9",
-        "item_tx7kCq",
-        "item_zttdWV"
-      ],
-      "custom_css": [
-        "ul {font-size: 0.8rem; opacity: 0.7;}",
-        ".text-xs p {margin-bottom: 1rem; font-size: 0.6rem; letter-spacing: 0.02em; text-transform: uppercase;}"
-      ],
-      "name": "Multi-column",
-      "settings": {
-        "full_width": true,
-        "stack_on_mobile": true,
-        "gap": "medium",
-        "text_alignment": "start",
-        "subheading": "",
-        "title": "実行が、測定可能な成果を生む",
-        "content": "<p>実行が変われば、成果はついてくる。<br/>実際の店舗運営データで確認されている。</p>",
-        "background": "#ffffff",
-        "background_gradient": "",
-        "text_color": ""
       }
     },
     "multi_column_HCGJea": {
@@ -877,8 +838,8 @@
     "images_with_text_scrolling_A4yLa8",
     "logo_list_bzafjC",
     "media_with_text_hMPTmL",
+    "media_with_text_NPc8ig",
     "section-15",
-    "multi_column_etdDPE",
     "multi_column_HCGJea",
     "rich_text_iYFe9Q",
     "multi_column_dQq9tA",
