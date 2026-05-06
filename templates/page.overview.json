@@ -48,84 +48,57 @@
         "spacing": "small"
       }
     },
-    "rich_text_AGR3yT": {
-      "type": "rich-text",
+    "images_with_text_scrolling_A4yLa8": {
+      "type": "images-with-text-scrolling",
       "blocks": {
-        "subheading_79idNw": {
-          "type": "subheading",
+        "item_9HK6tM": {
+          "type": "item",
           "settings": {
-            "text": "日本のリテール分析特化。100以上のブランドで導入。",
-            "icon": "picto-validation"
+            "image": "shopify://shop_images/a-japanese-retail-executive-in-a-store-reviewing-a-checklist.png",
+            "icon": "none",
+            "icon_width": 48,
+            "title": "Layer 01: Precision Sensing",
+            "content": "<p>Most retail systems inflate traffic data by counting employees as customers. Flow’s AI-driven sensing identifies and subtracts staff movement in real-time.<br/><br/>Gain 100% accurate <strong>Net Customer Traffic</strong> and <strong>True Conversion Rates</strong>. Without filtering staff, metrics are based on noise, not reality.</p>"
           }
         },
-        "richtext_LcTpMq": {
-          "type": "richtext",
-          "disabled": true,
+        "item_4Jg6dW": {
+          "type": "item",
           "settings": {
-            "content": "<h2>Your Stores Are Not Underperforming.</h2>"
+            "image": "shopify://shop_images/analytics_mobile.png",
+            "icon": "none",
+            "icon_width": 48,
+            "title": "Layer 02: Unified Analytics",
+            "content": "<p>Data is useless in a vacuum. The <strong>FIDA Framework</strong> aggregates fragmented data—including POS Sales, Labor Schedules, Weather, and Marketing Calendars—into a single source of truth.</p><p>FIDA answers the \"Why\" behind performance gaps, identifying whether issues stem from storefront capture (VMD), conversion (staffing), or external factors.</p>"
           }
         },
-        "heading_NHgw9k": {
-          "type": "heading",
+        "item_a8jn8N": {
+          "type": "item",
           "settings": {
-            "text": "リテールには、より良い判断が必要だ。",
-            "heading_tag": "h1",
-            "text_color": "",
-            "gradient": ""
-          }
-        },
-        "richtext_JWfj6P": {
-          "type": "richtext",
-          "settings": {
-            "content": "<p>多くのリテールシステムは、レポートで止まる。<br/>Flowは、リアルタイムの店舗データをもとに、全店舗の判断を揃える。</p>"
-          }
-        },
-        "buttons_pt4Ted": {
-          "type": "buttons",
-          "settings": {
-            "style_1": "fill",
-            "size_1": "base",
-            "text_1": "仕組みを見る",
-            "url_1": "",
-            "background_1": "",
-            "text_color_1": "",
-            "style_2": "outline",
-            "size_2": "base",
-            "text_2": "デモを依頼する",
-            "url_2": "",
-            "background_2": "",
-            "text_color_2": ""
-          }
-        },
-        "image_Dtind8": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/manager_does_not_scale.png",
-            "width_mode": "full_width",
-            "max_width": 600,
-            "mobile_max_width": 400
+            "image": "shopify://shop_images/store_environmnet_x_1500_x_1900_px.png",
+            "icon": "none",
+            "icon_width": 48,
+            "title": "Layer 03: Decision Intelligence",
+            "content": "<p>We reduce response latency from <strong>18 hours to under 10 minutes</strong>. Instead of asking managers to analyze complex dashboards, Flow Assistant pushes prioritized, actionable tasks directly to their mobile devices.</p><p>Standardize excellence across the organization. Every store manager follows the same high-quality decision logic based on real-time opportunities.</p>"
           }
         }
       },
       "block_order": [
-        "subheading_79idNw",
-        "richtext_LcTpMq",
-        "heading_NHgw9k",
-        "richtext_JWfj6P",
-        "buttons_pt4Ted",
-        "image_Dtind8"
+        "item_9HK6tM",
+        "item_4Jg6dW",
+        "item_a8jn8N"
       ],
-      "custom_css": [
-        ".subheading_container {background: #f0f3ea; color: rgb(var(--text-color));}"
-      ],
-      "name": "Rich text",
+      "name": "Images and text scrolling",
       "settings": {
         "full_width": true,
-        "content_width": "large",
-        "text_position": "center",
+        "stack_on_mobile": false,
+        "show_counter": true,
+        "desktop_image_effect": "reveal",
+        "image_position": "end",
         "background": "",
         "background_gradient": "",
-        "text_color": ""
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": ""
       }
     },
     "rich_text_YiW9P3": {
@@ -1052,7 +1025,7 @@
   },
   "order": [
     "media_with_text_RFxGYy",
-    "rich_text_AGR3yT",
+    "images_with_text_scrolling_A4yLa8",
     "rich_text_YiW9P3",
     "impact_text_gi97zd",
     "rich_text_pkymTT",
