@@ -303,7 +303,7 @@
             "content": "<p><strong>Capture:</strong> Real-time behavior sensing.</p><p><strong>Analyze:</strong> Automated gap identification via FIDA.</p><p><strong>Instruct:</strong> AI-driven task assignment.</p><p><strong>Validate:</strong> Measuring the impact of actions.</p>",
             "link_text": "",
             "link_url": "",
-            "background": "#000000",
+            "background": "rgba(0,0,0,0)",
             "background_gradient": "",
             "text_color": "#11243e",
             "text_gradient": "",
@@ -441,6 +441,109 @@
         "chart_background": "",
         "chart_text_color": "",
         "chart_true_false_color": ""
+      }
+    },
+    "rich_text_NGpcWm": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_xweiHy": {
+          "type": "subheading",
+          "settings": {
+            "text": "",
+            "icon": "none"
+          }
+        },
+        "heading_eNzDD7": {
+          "type": "heading",
+          "settings": {
+            "text": "From Weekly Reports to Daily Decisions",
+            "heading_tag": "h1",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_xJyBWX": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Small daily improvements, when standardized across 100+ stores, create massive compounded financial returns.</p><h3></h3>"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_xweiHy",
+        "heading_eNzDD7",
+        "richtext_xJyBWX"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "blocks_QAQXJt": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_a3e57c5_ajF7jU": {
+          "type": "ai_gen_block_a3e57c5",
+          "settings": {
+            "container_background": "#ffffff",
+            "text_color": "#000000",
+            "left_title": "Passive Dashboards",
+            "left_tag": "TRADITIONAL",
+            "left_metric": "12-18 Hour Lag",
+            "left_item_1": "Static Insights",
+            "left_item_2": "Manual Interpretation",
+            "left_item_3": "Inconsistent Execution",
+            "left_item_4": "Reactive Management",
+            "left_background": "#ffffff",
+            "left_border_color": "#e5e7eb",
+            "left_tag_background": "#f3f4f6",
+            "left_tag_text": "#6b7280",
+            "left_progress_label": "Response Latency",
+            "left_progress_time": "12-18hr",
+            "left_progress_percent": 20,
+            "left_progress_color": "#ef4444",
+            "right_title": "Flow Decisioning",
+            "right_tag": "⚡ LIVE ACTIVE",
+            "right_metric": "< 2 Minute Action",
+            "right_item_1": "Real-Time Actionable",
+            "right_item_2": "Automated Dispatch",
+            "right_item_3": "+140% Consistency Lift",
+            "right_item_4": "Proactive Command",
+            "right_background": "#0A2540",
+            "right_text_color": "#ffffff",
+            "right_tag_background": "#1e3a5f",
+            "right_tag_text": "#ffffff",
+            "highlight_color": "#00D66F",
+            "right_progress_label": "Response Latency",
+            "right_progress_time": "< 2min",
+            "progress_bar_height": 8,
+            "progress_gradient_start": "#803cee",
+            "progress_gradient_end": "#00D66F",
+            "negative_icon_color": "#ef4444",
+            "positive_icon_color": "#00D66F",
+            "title_size": 24,
+            "metric_size": 32,
+            "list_item_size": 16
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_a3e57c5_ajF7jU"
+      ],
+      "name": "Comparison grid",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
       }
     },
     "multi_column_HCGJea": {
@@ -695,6 +798,8 @@
     "media_with_text_hMPTmL",
     "media_with_text_NPc8ig",
     "section-15",
+    "rich_text_NGpcWm",
+    "blocks_QAQXJt",
     "multi_column_HCGJea",
     "testimonials_98zPBi",
     "image_with_text_overlay_MVHcWF"
