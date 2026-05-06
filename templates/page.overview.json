@@ -73,12 +73,53 @@
         "heading_grwjxY"
       ],
       "custom_css": [
-        ".rich-text{padding-block-start: var(--calculated-section-spacing-block-start);}"
+        ".rich-text {padding-block-start: var(--calculated-section-spacing-block-start);}"
       ],
       "name": "Rich text",
       "settings": {
         "full_width": true,
         "content_width": "large",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "rich_text_CjaQaa": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_RVUamX": {
+          "type": "subheading",
+          "settings": {
+            "text": "The Blueprint for Standardized Execution",
+            "icon": "picto-target"
+          }
+        },
+        "heading_EyFYM9": {
+          "type": "heading",
+          "settings": {
+            "text": "A Three-Layer Decision Engine",
+            "heading_tag": "h1",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_fA7CVd": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Most retail systems fail not because they lack data, but because they lack a mechanism to turn that data into action. </p>"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_RVUamX",
+        "heading_EyFYM9",
+        "richtext_fA7CVd"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "medium",
         "text_position": "center",
         "background": "",
         "background_gradient": "",
@@ -793,6 +834,7 @@
   "order": [
     "media_with_text_RFxGYy",
     "rich_text_6HjWXK",
+    "rich_text_CjaQaa",
     "images_with_text_scrolling_A4yLa8",
     "logo_list_bzafjC",
     "section-15",
