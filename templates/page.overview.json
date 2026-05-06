@@ -586,7 +586,7 @@
         "item_tTyycj": {
           "type": "item",
           "settings": {
-            "background_color": "",
+            "background_color": "#a0b842",
             "text_color": "",
             "border_color": "",
             "show_controls": false,
@@ -620,7 +620,7 @@
         "subheading": "",
         "title": "Execution Leads to Measurable Results",
         "content": "",
-        "background": "",
+        "background": "#ffffff",
         "background_gradient": "",
         "text_color": ""
       }
@@ -713,7 +713,7 @@
         "content": "<p>Turn Store Data into Immediate Decisions.</p>",
         "link_url": "",
         "link_text": "",
-        "background": "#ffffff",
+        "background": "rgba(0,0,0,0)",
         "background_gradient": "",
         "text_color": "",
         "heading_color": "",
