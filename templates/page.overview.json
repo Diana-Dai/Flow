@@ -522,152 +522,6 @@
         "text_color": ""
       }
     },
-    "rich_text_iYFe9Q": {
-      "type": "rich-text",
-      "blocks": {
-        "subheading_iKjik8": {
-          "type": "subheading",
-          "settings": {
-            "text": "導入事例｜SPA・100店舗以上",
-            "icon": "picto-target"
-          }
-        },
-        "liquid_KW76d3": {
-          "type": "liquid",
-          "disabled": true,
-          "settings": {
-            "liquid": "<p class=\"h1\">From Weekly Reporting to Daily Decision-Making</p>"
-          }
-        },
-        "heading_9FwWXH": {
-          "type": "heading",
-          "settings": {
-            "text": "週次レポートから、日々の判断へ",
-            "heading_tag": "h1",
-            "text_color": "#ffffff",
-            "gradient": ""
-          }
-        },
-        "richtext_QmW9HL": {
-          "type": "richtext",
-          "settings": {
-            "content": "<p>小さな改善でも、全店舗で積み重なれば、<br/>売上に大きな差を生む。</p>"
-          }
-        }
-      },
-      "block_order": [
-        "subheading_iKjik8",
-        "liquid_KW76d3",
-        "heading_9FwWXH",
-        "richtext_QmW9HL"
-      ],
-      "custom_css": [
-        ".subheading_container {background: rgba(37, 74, 77, 0.6); color: rgb(var(--text-color));}"
-      ],
-      "name": "Rich text",
-      "settings": {
-        "full_width": true,
-        "content_width": "small",
-        "text_position": "start",
-        "background": "#0e366a",
-        "background_gradient": "",
-        "text_color": "#f9fafb"
-      }
-    },
-    "multi_column_dQq9tA": {
-      "type": "multi-column",
-      "blocks": {
-        "item_K9C4mp": {
-          "type": "item",
-          "settings": {
-            "background_color": "#36465c",
-            "text_color": "",
-            "border_color": "#36465c",
-            "show_controls": false,
-            "column_size": "3",
-            "title": "現状",
-            "heading_tag": "h3",
-            "subheading": "",
-            "content": "<ul><li>KPIは本部で管理</li><li>週次レポートが中心</li><li>店舗でのアクションは限定的</li></ul>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        },
-        "item_FBeYb7": {
-          "type": "item",
-          "settings": {
-            "background_color": "#a0b842",
-            "text_color": "",
-            "border_color": "#36465c",
-            "show_controls": false,
-            "column_size": "3",
-            "title": "変化後",
-            "heading_tag": "h3",
-            "subheading": "",
-            "content": "<ul><li>店舗で日次KPIを把握</li><li>現場がデータをもとに判断</li><li>アクションが成果に直結</li></ul>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        },
-        "item_PzHBWe": {
-          "type": "item",
-          "settings": {
-            "background_color": "#ffffff",
-            "text_color": "#11243e",
-            "border_color": "#36465c",
-            "show_controls": false,
-            "column_size": "3",
-            "title": "+2.3%",
-            "heading_tag": "h1",
-            "subheading": "<p>コンバージョン改善</p>",
-            "content": "<p>8ヶ月で 約1.4億円の売上効果</p>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        },
-        "item_yGRne4": {
-          "type": "item",
-          "disabled": true,
-          "settings": {
-            "background_color": "#485c36",
-            "text_color": "#daf474",
-            "border_color": "#a0b842",
-            "show_controls": false,
-            "column_size": "4",
-            "title": "6wk",
-            "heading_tag": "h1",
-            "subheading": "",
-            "content": "<p>Time to ROI</p>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        }
-      },
-      "block_order": [
-        "item_K9C4mp",
-        "item_FBeYb7",
-        "item_PzHBWe",
-        "item_yGRne4"
-      ],
-      "custom_css": [],
-      "name": "Multi-column",
-      "settings": {
-        "full_width": true,
-        "stack_on_mobile": true,
-        "gap": "medium",
-        "text_alignment": "start",
-        "subheading": "",
-        "title": "",
-        "content": "<h4><strong>何が変わったのか</strong></h4>",
-        "background": "#0e366a",
-        "background_gradient": "",
-        "text_color": "#f9fafb"
-      }
-    },
     "testimonials_98zPBi": {
       "type": "testimonials",
       "blocks": {
@@ -753,10 +607,10 @@
         "stack_testimonials": false,
         "subheading": "導入企業の声",
         "title": "",
-        "content": "<h2><strong>現場で活用されているFlow</strong></h2>",
+        "content": "<p>Turn Store Data into Immediate Decisions.</p>",
         "link_url": "",
         "link_text": "",
-        "background": "",
+        "background": "#ffffff",
         "background_gradient": "",
         "text_color": "",
         "heading_color": "",
@@ -778,7 +632,7 @@
         "richtext_b7cQCP": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Flowは店内行動データを取得し、オペレーションデータと統合。<br/>取るべき行動を明確にし、すべての店舗で迅速かつ一貫した実行を実現します。</p>"
+            "content": "<p>Request a Demo to see your potential ROI and start a 30-day execution trial.</p>"
           }
         },
         "button_39CcgY": {
@@ -786,7 +640,7 @@
           "settings": {
             "style": "fill",
             "size": "base",
-            "text": "Flowを見る",
+            "text": "Book Demo",
             "url": "",
             "background": "#a0b842",
             "text_color": "#ffffff"
@@ -842,8 +696,6 @@
     "media_with_text_NPc8ig",
     "section-15",
     "multi_column_HCGJea",
-    "rich_text_iYFe9Q",
-    "multi_column_dQq9tA",
     "testimonials_98zPBi",
     "image_with_text_overlay_MVHcWF"
   ]
