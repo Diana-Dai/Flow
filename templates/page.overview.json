@@ -454,10 +454,10 @@
             "border_color": "",
             "show_controls": false,
             "column_size": "3",
-            "title": "店舗チーム",
+            "title": "Case 01: Daytona International",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<p><strong>日々のパフォーマンス確認</strong></p><ul><li>コンバージョンを日次で把握</li><li>リアルタイムで対応</li><li>当日中に判断</li></ul>",
+            "content": "<ul><li><strong>+23.9%</strong> Increase in Storefront Capture Rate.</li><li><strong>Conversion Lift:</strong> Rose from 19.9% to 25.2%.</li><li><strong>Revenue Impact:</strong> ~25% sales growth in Flow-integrated stores.</li><li><strong>Payback Period:</strong> ROI achieved within weeks of deployment.</li></ul>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -471,10 +471,10 @@
             "border_color": "",
             "show_controls": false,
             "column_size": "3",
-            "title": "エリア / VMD",
+            "title": "Case 02: Major Domestic Retailer",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<p><strong>店舗間で実行を揃える</strong></p><ul><li>比較可能な店舗パフォーマンス</li><li>ギャップの明確な可視化</li><li>VMDと実行の一貫性</li></ul>",
+            "content": "<ul><li><strong>+8.25%</strong> Total Revenue Growth.</li><li><strong>Scale:</strong> Deployed across 126 flagship and regional stores.</li><li><strong>Sales Impact:</strong> Approximately <strong>¥1.8 Billion</strong> in total revenue lift.</li><li><strong>ROI:</strong> 50x return on investment.</li></ul>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -488,10 +488,10 @@
             "border_color": "",
             "show_controls": false,
             "column_size": "3",
-            "title": "本部 / 経営層",
+            "title": "Case 03: Major Global SPA Retailer (100+ Stores)",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<p><strong>全体の意思決定を揃える</strong></p><ul><li>KPIの共通言語化</li><li>判断スピードの向上</li><li>実行の標準化</li></ul>",
+            "content": "<ul><li><strong>Core Achievement:</strong> Shifting from weekly reporting to daily execution cycles.</li><li><strong>Conversion Impact:</strong> <strong>+2.3%</strong> sustained increase in purchase rate across the network.</li><li><strong>Financial Result:</strong> Generated over <strong>¥140 Million</strong> in additional revenue within 8 months.</li></ul>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -505,7 +505,8 @@
       ],
       "custom_css": [
         "ul {font-size: 0.8rem; opacity: 0.7;}",
-        ".text-xs p {margin-bottom: 1rem; font-size: 0.6rem; letter-spacing: 0.02em; text-transform: uppercase;}"
+        ".text-xs p {margin-bottom: 1rem; font-size: 0.6rem; letter-spacing: 0.02em; text-transform: uppercase;}",
+        ".section-stack {padding-block-start: var(--calculated-section-spacing-block-start);}"
       ],
       "name": "Multi-column",
       "settings": {
@@ -514,7 +515,7 @@
         "gap": "medium",
         "text_alignment": "start",
         "subheading": "",
-        "title": "レポートから、日々の店舗実行へ",
+        "title": "Execution Leads to Measurable Results",
         "content": "",
         "background": "",
         "background_gradient": "",
