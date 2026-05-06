@@ -9,6 +9,37 @@
  */
 {
   "sections": {
+    "multiple_images_with_text_qiy4zY": {
+      "type": "multiple-images-with-text",
+      "blocks": {
+        "item_cjEC6f": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/a-japanese-retail-executive-in-a-store-reviewing-a-checklist.png",
+            "image_rotation_degrees": -2,
+            "subheading": "",
+            "title": "Heading 1",
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
+            "button_url": "",
+            "button_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_cjEC6f"
+      ],
+      "name": "Multiple images with text",
+      "settings": {
+        "full_width": true,
+        "images_layout": "collage",
+        "collage_images_alignment": "middle",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "button_background": "",
+        "button_text_color": ""
+      }
+    },
     "rich_text_AGR3yT": {
       "type": "rich-text",
       "blocks": {
@@ -75,9 +106,6 @@
         "richtext_JWfj6P",
         "buttons_pt4Ted",
         "image_Dtind8"
-      ],
-      "custom_css": [
-        ".subheading_container {background: #f0f3ea; color: rgb(var(--text-color));}"
       ],
       "name": "Rich text",
       "settings": {
@@ -1012,6 +1040,7 @@
     }
   },
   "order": [
+    "multiple_images_with_text_qiy4zY",
     "rich_text_AGR3yT",
     "rich_text_YiW9P3",
     "impact_text_gi97zd",
