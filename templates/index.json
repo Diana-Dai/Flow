@@ -9,37 +9,6 @@
  */
 {
   "sections": {
-    "multiple_images_with_text_qiy4zY": {
-      "type": "multiple-images-with-text",
-      "blocks": {
-        "item_cjEC6f": {
-          "type": "item",
-          "settings": {
-            "image": "shopify://shop_images/a-japanese-retail-executive-in-a-store-reviewing-a-checklist.png",
-            "image_rotation_degrees": -2,
-            "subheading": "",
-            "title": "Heading 1",
-            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
-            "button_url": "",
-            "button_text": ""
-          }
-        }
-      },
-      "block_order": [
-        "item_cjEC6f"
-      ],
-      "name": "Multiple images with text",
-      "settings": {
-        "full_width": true,
-        "images_layout": "collage",
-        "collage_images_alignment": "middle",
-        "background": "",
-        "background_gradient": "",
-        "text_color": "",
-        "button_background": "",
-        "button_text_color": ""
-      }
-    },
     "rich_text_AGR3yT": {
       "type": "rich-text",
       "blocks": {
@@ -253,10 +222,10 @@
             "left_title": "現場の実態",
             "left_tag": "課題：判断が遅れ、実行がばらつく",
             "left_metric": "18時間の空白",
-            "left_item_1": "データの確認が後手になる",
-            "left_item_2": "判断が機会の後になる",
-            "left_item_3": "実行がシフトに依存する",
-            "left_item_4": "店舗ごとに成果がばらつく",
+            "left_item_1": "<p>データの確認が後手になる</p>",
+            "left_item_2": "<p>判断が機会の後になる</p>",
+            "left_item_3": "<p>実行がシフトに依存する</p>",
+            "left_item_4": "<p>店舗ごとに成果がばらつく</p>",
             "left_background": "#ffffff",
             "left_border_color": "#e5e7eb",
             "left_tag_background": "#f3f4f6",
@@ -268,10 +237,10 @@
             "right_title": "Flowプラットフォーム",
             "right_tag": "⚡ FIDAリアルタイム判断",
             "right_metric": "判断は数分で完了する",
-            "right_item_1": "データはリアルタイムで確認できる",
-            "right_item_2": "重要な変化をすぐに把握できる",
-            "right_item_3": "チーム全体で同じ指標を共有",
-            "right_item_4": "店舗ごとの判断の質を揃える",
+            "right_item_1": "<p>データはリアルタイムで確認できる</p>",
+            "right_item_2": "<p>重要な変化をすぐに把握できる</p>",
+            "right_item_3": "<p>チーム全体で同じ指標を共有</p>",
+            "right_item_4": "<p>店舗ごとの判断の質を揃える</p>",
             "right_background": "#0a2540",
             "right_text_color": "#ffffff",
             "right_tag_background": "#1e3a5f",
@@ -1040,7 +1009,6 @@
     }
   },
   "order": [
-    "multiple_images_with_text_qiy4zY",
     "rich_text_AGR3yT",
     "rich_text_YiW9P3",
     "impact_text_gi97zd",

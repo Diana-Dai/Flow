@@ -19,19 +19,19 @@
             "media_width": 30,
             "media_position": "end",
             "text_position": "place-self-center-start text-start",
-            "icon": "none",
+            "icon": "picto-star",
             "icon_width": 48,
             "subheading": "Powering 100+ brands with real-time analytics.",
-            "title": "The Operating System for High-Performance Retail.",
-            "content": "<p>Flow bridges the gap between HQ strategy and store-level execution. We provide a high-fidelity engine that unifies precision sensing, unified analytics, and AI-driven instructions to standardize decision quality across every location.</p>",
-            "link_text": "",
-            "link_url": "",
+            "title": "Close the Execution Gap. Standardize Excellence.",
+            "content": "<p>From delayed reporting to real-time execution. Flow is the operating system for the modern SPA.</p>",
+            "link_text": "Audit Your Speed",
+            "link_url": "#",
             "background": "#000000",
             "background_gradient": "",
             "text_color": "#ffffff",
             "text_gradient": "",
-            "button_background": "",
-            "button_text_color": ""
+            "button_background": "#a0b842",
+            "button_text_color": "#f9fafb"
           }
         }
       },
@@ -39,144 +39,15 @@
         "image_Bm3UGT"
       ],
       "custom_css": [
-        "* {background: #0e366a;}"
+        "div {background: #0e366a;}",
+        ".subheading_container {display: inline-flex;}",
+        ".subheading_container {background: rgba(37, 74, 77, 0.6); color: rgb(var(--text-color));}"
       ],
       "name": "Media with text",
       "settings": {
         "full_width": false,
         "alternate_media_position": false,
         "spacing": "medium"
-      }
-    },
-    "rich_text_6HjWXK": {
-      "type": "rich-text",
-      "blocks": {
-        "subheading_P3wkzP": {
-          "type": "subheading",
-          "settings": {
-            "text": "Why Data Isn't Enough",
-            "icon": "none"
-          }
-        },
-        "heading_grwjxY": {
-          "type": "heading",
-          "settings": {
-            "text": "Most systems stop at reporting, creating an \"18-Hour Blind Spot\" where insights arrive too late.",
-            "heading_tag": "h1",
-            "text_color": "",
-            "gradient": ""
-          }
-        }
-      },
-      "block_order": [
-        "subheading_P3wkzP",
-        "heading_grwjxY"
-      ],
-      "custom_css": [
-        ".rich-text {padding-block-start: var(--calculated-section-spacing-block-start);}"
-      ],
-      "name": "Rich text",
-      "settings": {
-        "full_width": true,
-        "content_width": "large",
-        "text_position": "center",
-        "background": "",
-        "background_gradient": "",
-        "text_color": ""
-      }
-    },
-    "rich_text_CjaQaa": {
-      "type": "rich-text",
-      "blocks": {
-        "subheading_RVUamX": {
-          "type": "subheading",
-          "settings": {
-            "text": "The Blueprint for Standardized Execution",
-            "icon": "picto-target"
-          }
-        },
-        "heading_EyFYM9": {
-          "type": "heading",
-          "settings": {
-            "text": "A Three-Layer Decision Engine",
-            "heading_tag": "h1",
-            "text_color": "",
-            "gradient": ""
-          }
-        },
-        "richtext_fA7CVd": {
-          "type": "richtext",
-          "settings": {
-            "content": "<p>Most retail systems fail not because they lack data, but because they lack a mechanism to turn that data into action. </p>"
-          }
-        }
-      },
-      "block_order": [
-        "subheading_RVUamX",
-        "heading_EyFYM9",
-        "richtext_fA7CVd"
-      ],
-      "name": "Rich text",
-      "settings": {
-        "full_width": true,
-        "content_width": "medium",
-        "text_position": "center",
-        "background": "",
-        "background_gradient": "",
-        "text_color": ""
-      }
-    },
-    "images_with_text_scrolling_A4yLa8": {
-      "type": "images-with-text-scrolling",
-      "blocks": {
-        "item_9HK6tM": {
-          "type": "item",
-          "settings": {
-            "image": "shopify://shop_images/Analytics_-_Entering_2.png",
-            "icon": "none",
-            "icon_width": 48,
-            "title": "Layer 01: Precision Sensing",
-            "content": "<p>Most retail systems inflate traffic data by counting employees as customers. Flow’s AI-driven sensing identifies and subtracts staff movement in real-time.<br/><br/>Gain 100% accurate <strong>Net Customer Traffic</strong> and <strong>True Conversion Rates</strong>. Without filtering staff, metrics are based on noise, not reality.</p>"
-          }
-        },
-        "item_4Jg6dW": {
-          "type": "item",
-          "settings": {
-            "image": "shopify://shop_images/analytics_mobile.png",
-            "icon": "none",
-            "icon_width": 48,
-            "title": "Layer 02: Unified Analytics",
-            "content": "<p>Data is useless in a vacuum. The <strong>FIDA Framework</strong> aggregates fragmented data—including POS Sales, Labor Schedules, Weather, and Marketing Calendars—into a single source of truth.</p><p>FIDA answers the \"Why\" behind performance gaps, identifying whether issues stem from storefront capture (VMD), conversion (staffing), or external factors.</p>"
-          }
-        },
-        "item_a8jn8N": {
-          "type": "item",
-          "settings": {
-            "image": "shopify://shop_images/store_environmnet_x_1500_x_1900_px.png",
-            "icon": "none",
-            "icon_width": 48,
-            "title": "Layer 03: Decision Intelligence",
-            "content": "<p>We reduce response latency from <strong>18 hours to under 10 minutes</strong>. Instead of asking managers to analyze complex dashboards, Flow Assistant pushes prioritized, actionable tasks directly to their mobile devices.</p><p>Standardize excellence across the organization. Every store manager follows the same high-quality decision logic based on real-time opportunities.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "item_9HK6tM",
-        "item_4Jg6dW",
-        "item_a8jn8N"
-      ],
-      "name": "Images and text scrolling",
-      "settings": {
-        "full_width": true,
-        "stack_on_mobile": false,
-        "show_counter": true,
-        "desktop_image_effect": "reveal",
-        "image_position": "end",
-        "background": "",
-        "background_gradient": "",
-        "text_color": "",
-        "heading_color": "",
-        "heading_gradient": ""
       }
     },
     "logo_list_bzafjC": {
@@ -247,6 +118,156 @@
         "logo_item_border": ""
       }
     },
+    "multi_column_GPkFTV": {
+      "type": "multi-column",
+      "blocks": {
+        "item_dU9BqG": {
+          "type": "item",
+          "settings": {
+            "background_color": "#1a1a1a",
+            "text_color": "#ffffff",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "2",
+            "title": "18h",
+            "heading_tag": "h1",
+            "subheading": "<p>Legacy Reporting</p>",
+            "content": "<p>Observation → Manual Log → HQ Review → Action</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_RnwDw8": {
+          "type": "item",
+          "settings": {
+            "background_color": "#a0b842",
+            "text_color": "#f9fafb",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "2",
+            "title": "10m",
+            "heading_tag": "h1",
+            "subheading": "<p>Flow Execution</p>",
+            "content": "<p>Real-time Sensing → FIDA Logic → Direct Action</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_dU9BqG",
+        "item_RnwDw8"
+      ],
+      "name": "Multi-column",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "start",
+        "subheading": "THE STRATEGY",
+        "title": "The Cost of the 18-Hour Delay",
+        "content": "<p>Flow eliminates this gap, moving your operations from<strong>Delayed Reporting</strong>to<strong>Real-Time Execution</strong>. We turn data into deterministic action, not just more charts.</p>",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "#11243e"
+      }
+    },
+    "rich_text_CjaQaa": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_RVUamX": {
+          "type": "subheading",
+          "settings": {
+            "text": "The Blueprint for Standardized Execution",
+            "icon": "picto-target"
+          }
+        },
+        "heading_EyFYM9": {
+          "type": "heading",
+          "settings": {
+            "text": "A Three-Layer Decision Engine",
+            "heading_tag": "h0",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_fA7CVd": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Most retail systems fail not because they lack data, but because they lack a mechanism to turn that data into action. </p>"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_RVUamX",
+        "heading_EyFYM9",
+        "richtext_fA7CVd"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "medium",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "images_with_text_scrolling_A4yLa8": {
+      "type": "images-with-text-scrolling",
+      "blocks": {
+        "item_9HK6tM": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Analytics_-_Entering_2.png",
+            "icon": "none",
+            "icon_width": 48,
+            "title": "Precision Sensing",
+            "content": "<p>Capture 100% accurate net customer traffic by automatically excluding staff movements in real-time.</p><p><em>Stop building strategies on noisy, false baselines.</em></p>"
+          }
+        },
+        "item_4Jg6dW": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/analytics_mobile.png",
+            "icon": "none",
+            "icon_width": 48,
+            "title": "FIDA Analytics",
+            "content": "<p> Connect POS sales, real-time traffic, labor schedules, and local weather into a unified diagnostic model.</p><p><em>Know exactly why performance fluctuates across your network.</em></p>"
+          }
+        },
+        "item_a8jn8N": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/store_environmnet_x_1500_x_1900_px.png",
+            "icon": "none",
+            "icon_width": 48,
+            "title": "Decision Intelligence",
+            "content": "<p>Push prioritized operational signals directly to mobile devices on the shop floor.</p><p><em>Ensure every store executes the right operational playbook within 10 minutes.</em></p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_9HK6tM",
+        "item_4Jg6dW",
+        "item_a8jn8N"
+      ],
+      "name": "Images and text scrolling",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "show_counter": true,
+        "desktop_image_effect": "reveal",
+        "image_position": "end",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": ""
+      }
+    },
     "media_with_text_hMPTmL": {
       "type": "media-with-text",
       "blocks": {
@@ -276,6 +297,7 @@
       "block_order": [
         "image_8hBn9C"
       ],
+      "disabled": true,
       "custom_css": [
         "* {background: #a0b842;}"
       ],
@@ -315,6 +337,7 @@
       "block_order": [
         "image_ngkwNP"
       ],
+      "disabled": true,
       "custom_css": [
         "* {background: white;}",
         "media-with-text {padding-block-start: var(--calculated-section-spacing-block-start);}"
@@ -456,7 +479,7 @@
         "heading_eNzDD7": {
           "type": "heading",
           "settings": {
-            "text": "From Weekly Reports to Daily Decisions",
+            "text": "The Cost of Inaction is measured in Hours, not Days.",
             "heading_tag": "h1",
             "text_color": "",
             "gradient": ""
@@ -464,6 +487,7 @@
         },
         "richtext_xJyBWX": {
           "type": "richtext",
+          "disabled": true,
           "settings": {
             "content": "<p>Small daily improvements, when standardized across 100+ stores, create massive compounded financial returns.</p><h3></h3>"
           }
@@ -474,6 +498,7 @@
         "heading_eNzDD7",
         "richtext_xJyBWX"
       ],
+      "disabled": true,
       "name": "Rich text",
       "settings": {
         "full_width": true,
@@ -492,13 +517,13 @@
           "settings": {
             "container_background": "#ffffff",
             "text_color": "#000000",
-            "left_title": "Traditional HQ-Centric Model (Weekly)",
-            "left_tag": "Delayed judgment",
+            "left_title": "The Strategic Challenge",
+            "left_tag": "THE RETAIL INERTIA",
             "left_metric": "The 18-Hour Gap",
-            "left_item_1": "<p><strong>Information Bottleneck:</strong><br/>Data is managed at HQ; store teams wait 168 hours for weekly reports, missing immediate opportunities.</p>",
-            "left_item_2": "<p><strong>Subjective Management: </strong><br/>Execution depends on the individual manager's experience, leading to inconsistent performance.</p>",
-            "left_item_3": "<p><strong>Post-Mortem Analysis: </strong><br/>52 weekly reviews per year provide limited opportunities to optimize storefront behavior or staff allocation.</p>",
-            "left_item_4": "<p><strong>\"Guess-Work\" Execution:</strong><br/>VMD or staffing changes are made without instant feedback, leaving HQ in the dark about what actually drives results.</p>",
+            "left_item_1": "<p>Traditional retail organizations are paralyzed by delayed data. HQ waits for weekly post-mortems, while the store floor suffers from unaddressed conversion drops. By the time a report is read, the sales opportunities are permanently lost.</p>",
+            "left_item_2": "",
+            "left_item_3": "",
+            "left_item_4": "",
             "left_background": "#ffffff",
             "left_border_color": "#e5e7eb",
             "left_tag_background": "#f3f4f6",
@@ -507,13 +532,13 @@
             "left_progress_time": "12-18hr",
             "left_progress_percent": 20,
             "left_progress_color": "#ef4444",
-            "right_title": "Flow State: Real-Time Decision Intelligence",
-            "right_tag": "⚡ FIDA Real-Time Judgment",
-            "right_metric": "Decisions Completed in Minutes",
-            "right_item_1": "<p><strong>Decentralized Intelligence: </strong><br/>Intelligence is moved to the store floor; teams confirm daily KPIs in real-time for immediate action.</p>",
-            "right_item_2": "<p><strong>Decision Standardization: </strong><br/>AI-driven FIDA metrics ensure every store—regardless of manager experience—operates at the same elite level.</p>",
-            "right_item_3": "<p><strong>Marginal Gains Engine: </strong><br/>2,000+ hourly micro-adjustments per year create a compounding effect on network-wide performance.</p>",
-            "right_item_4": "<p><strong>Closed-Loop Validation:</strong><br/>Every action is immediately validated by data, allowing stores to self-correct and prove impact within minutes.</p>",
+            "right_title": "The Operational Future",
+            "right_tag": "⚡ THE FLOW OPERATING MODEL",
+            "right_metric": "Standardized Execution in 10 Minutes",
+            "right_item_1": "<p>Flow decentralizes intelligence. We shift the burden of decision-making from high-stress post-mortems to automated, local action. Standardize how every manager reacts to traffic spikes, low capture rates, and staffing gaps—instantly.</p>",
+            "right_item_2": "",
+            "right_item_3": "",
+            "right_item_4": "",
             "right_background": "#0a2540",
             "right_text_color": "#ffffff",
             "right_tag_background": "#1e3a5f",
@@ -536,6 +561,7 @@
       "block_order": [
         "ai_gen_block_a3e57c5_ajF7jU"
       ],
+      "disabled": true,
       "name": "Comparison grid",
       "settings": {
         "full_width": true,
@@ -557,10 +583,10 @@
             "border_color": "",
             "show_controls": false,
             "column_size": "3",
-            "title": "Case 01: Daytona International",
-            "heading_tag": "h4",
-            "subheading": "",
-            "content": "<ul><li><strong>+23.9%</strong> Increase in Storefront Capture Rate.</li><li><strong>Conversion Lift:</strong> Rose from 19.9% to 25.2%.</li><li><strong>Revenue Impact:</strong> ~25% sales growth in Flow-integrated stores.</li><li><strong>Payback Period:</strong> ROI achieved within weeks of deployment.</li></ul>",
+            "title": "+23.9%",
+            "heading_tag": "h0",
+            "subheading": "<p>PERFORMANCE LIFT</p>",
+            "content": "<p>Achieved through real-time storefront display optimization and precise traffic-matching.</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -569,15 +595,15 @@
         "item_aqpNXK": {
           "type": "item",
           "settings": {
-            "background_color": "",
-            "text_color": "",
+            "background_color": "#a0b842",
+            "text_color": "#ffffff",
             "border_color": "",
             "show_controls": false,
             "column_size": "3",
-            "title": "Case 02: Major Domestic Retailer",
-            "heading_tag": "h4",
-            "subheading": "",
-            "content": "<ul><li><strong>+8.25%</strong> Total Revenue Growth.</li><li><strong>Scale:</strong> Deployed across 126 flagship and regional stores.</li><li><strong>Sales Impact:</strong> Approximately <strong>¥1.8 Billion</strong> in total revenue lift.</li><li><strong>ROI:</strong> 50x return on investment.</li></ul>",
+            "title": "¥1.8B",
+            "heading_tag": "h0",
+            "subheading": "<p>TOTAL IMPACT</p>",
+            "content": "<p> Driven by standardizing floor execution across a 126-store national network.</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -586,15 +612,15 @@
         "item_tTyycj": {
           "type": "item",
           "settings": {
-            "background_color": "#a0b842",
+            "background_color": "rgba(0,0,0,0)",
             "text_color": "",
             "border_color": "",
             "show_controls": false,
             "column_size": "3",
-            "title": "Case 03: Major Global SPA Retailer (100+ Stores)",
-            "heading_tag": "h4",
-            "subheading": "",
-            "content": "<ul><li><strong>Core Achievement:</strong> Shifting from weekly reporting to daily execution cycles.</li><li><strong>Conversion Impact:</strong> <strong>+2.3%</strong> sustained increase in purchase rate across the network.</li><li><strong>Financial Result:</strong> Generated over <strong>¥140 Million</strong> in additional revenue within 8 months.</li></ul>",
+            "title": "+2.3%",
+            "heading_tag": "h0",
+            "subheading": "<p>CONVERSION DELTA</p>",
+            "content": "<p> Delivered within 8 months of deploying mobile-led Decision Intelligence to frontline teams.</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -609,7 +635,7 @@
       "custom_css": [
         "ul {font-size: 0.8rem; opacity: 0.7;}",
         ".text-xs p {margin-bottom: 1rem; font-size: 0.6rem; letter-spacing: 0.02em; text-transform: uppercase;}",
-        ".section-stack {padding-block-start: var(--calculated-section-spacing-block-start);}"
+        ".prose p {font-size: 1rem;}"
       ],
       "name": "Multi-column",
       "settings": {
@@ -618,7 +644,7 @@
         "gap": "medium",
         "text_alignment": "start",
         "subheading": "",
-        "title": "Execution Leads to Measurable Results",
+        "title": "Proven Scale. Hard Financial Returns.",
         "content": "",
         "background": "#ffffff",
         "background_gradient": "",
@@ -704,6 +730,7 @@
         "testimonial_ixpNG8",
         "testimonial_tFy8x9"
       ],
+      "disabled": true,
       "name": "Testimonials",
       "settings": {
         "full_width": true,
@@ -769,6 +796,7 @@
         "liquid_wJy64L",
         "richtext_8bpctG"
       ],
+      "disabled": true,
       "custom_css": [
         "ul {font-size: 0.8rem; display: flex; align-items: center; justify-content: space-around; list-style: none;}",
         "@media screen and (max-width: 767px) {ul {flex-direction: column; }}",
@@ -787,14 +815,88 @@
         "overlay_color": "#0e366a",
         "overlay_opacity": 80
       }
+    },
+    "multi_column_UExWWX": {
+      "type": "multi-column",
+      "blocks": {
+        "item_kHMBXM": {
+          "type": "item",
+          "settings": {
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "Column title",
+            "heading_tag": "h4",
+            "subheading": "<p>Organize content into multiple columns to share useful information to your customers about your products, values...</p>",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_jzqLHt": {
+          "type": "item",
+          "settings": {
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "Column title",
+            "heading_tag": "h4",
+            "subheading": "<p>Organize content into multiple columns to share useful information to your customers about your products, values...</p>",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_rn7myV": {
+          "type": "item",
+          "settings": {
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "Column title",
+            "heading_tag": "h4",
+            "subheading": "<p>Organize content into multiple columns to share useful information to your customers about your products, values...</p>",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_kHMBXM",
+        "item_jzqLHt",
+        "item_rn7myV"
+      ],
+      "name": "Multi-column",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "start",
+        "subheading": "About",
+        "title": "Featured content",
+        "content": "<p>Organize content into multiple columns to share useful information to your customers about your products, values...</p>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
     }
   },
   "order": [
     "media_with_text_RFxGYy",
-    "rich_text_6HjWXK",
+    "logo_list_bzafjC",
+    "multi_column_GPkFTV",
     "rich_text_CjaQaa",
     "images_with_text_scrolling_A4yLa8",
-    "logo_list_bzafjC",
     "media_with_text_hMPTmL",
     "media_with_text_NPc8ig",
     "section-15",
@@ -802,6 +904,7 @@
     "blocks_QAQXJt",
     "multi_column_HCGJea",
     "testimonials_98zPBi",
-    "image_with_text_overlay_MVHcWF"
+    "image_with_text_overlay_MVHcWF",
+    "multi_column_UExWWX"
   ]
 }

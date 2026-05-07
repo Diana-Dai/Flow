@@ -122,20 +122,29 @@ LIQUID
         {%- capture content_class -%}media-with-text__content {% unless section.settings.spacing == 'none' %}rounded{% endunless %}{%- endcapture -%}
         <div {% render 'surface', class: content_class, background: block.settings.background, background_gradient: block.settings.background_gradient, text_color: block.settings.text_color %}>
           <div class="prose break-all {{ block.settings.text_position }}" reveal-on-scroll="true">
-            {%- if block.settings.custom_icon != blank -%}
+            {% comment %} {%- if block.settings.custom_icon != blank -%}
               {%- capture sizes -%}{{ block.settings.icon_width }}px{%- endcapture -%}
               {%- capture widths -%}{{ block.settings.icon_width }}, {{ block.settings.icon_width | times: 2 | at_most: block.settings.custom_icon.width }}{%- endcapture -%}
               {{- block.settings.custom_icon | image_url: width: block.settings.custom_icon.width | image_tag: loading: loading_strategy, sizes: sizes, widths: widths, class: 'media-with-text__icon' -}}
             {%- elsif block.settings.icon != 'none' -%}
               {%- render 'icon' with block.settings.icon, width: block.settings.icon_width, height: block.settings.icon_width, class: 'media-with-text__icon' -%}
-            {%- endif -%}
+            {%- endif -%} {% endcomment %}
 
             {%- if block.settings.subheading != blank -%}
-              <p class="subheading">{{ block.settings.subheading | escape }}</p>
+                <div class="subheading_container" {{ block.shopify_attributes }}>
+                  {%- if block.settings.icon != 'none' -%}
+                    {%- render 'icon' with block.settings.icon -%}
+                  {%- endif -%}
+                {%- if block.settings.subheading != blank -%}
+                  <span class="trust-badge__text">
+                    {{ block.settings.subheading }}
+                  </span>
+                {%- endif -%}
+              </div>
             {%- endif -%}
 
             {%- if block.settings.title != blank -%}
-              <p class="h2">
+              <p class="h1">
                 {%- render 'styled-text', content: block.settings.title, gradient: block.settings.text_gradient -%}
               </p>
             {%- endif -%}
@@ -143,7 +152,7 @@ LIQUID
             {{- block.settings.content -}}
 
             {%- if block.settings.link_text != blank -%}
-              {%- render 'button', href: block.settings.link_url, content: block.settings.link_text, size: 'xl', background: block.settings.button_background, text_color: block.settings.button_text_color -%}
+              {%- render 'button', href: block.settings.link_url, content: block.settings.link_text, background: block.settings.button_background, text_color: block.settings.button_text_color -%}
             {%- endif -%}
           </div>
         </div>
