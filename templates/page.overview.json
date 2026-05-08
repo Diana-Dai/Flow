@@ -9,45 +9,83 @@
  */
 {
   "sections": {
-    "media_with_text_RFxGYy": {
-      "type": "media-with-text",
+    "image_with_text_overlay_MVHcWF": {
+      "type": "image-with-text-overlay",
       "blocks": {
-        "image_Bm3UGT": {
-          "type": "image",
+        "heading_W76pLA": {
+          "type": "heading",
           "settings": {
-            "image": "shopify://shop_images/3_05197ad8-294f-4cc5-9d73-b73021906f0a.png",
-            "media_width": 40,
-            "media_position": "end",
-            "text_position": "place-self-center-start text-start",
-            "icon": "picto-star",
-            "icon_width": 48,
-            "subheading": "Powering 100+ brands with real-time analytics.",
-            "title": "Close the Execution Gap. Standardize Excellence.",
-            "content": "<p>From delayed reporting to real-time execution. Flow is the operating system for the modern SPA.</p>",
-            "link_text": "Audit Your Speed",
-            "link_url": "#",
-            "background": "#000000",
-            "background_gradient": "",
-            "text_color": "#ffffff",
-            "text_gradient": "",
-            "button_background": "#a0b842",
-            "button_text_color": "#f9fafb"
+            "text": "The Standard for Retail Execution.",
+            "heading_tag": "h0"
+          }
+        },
+        "richtext_b7cQCP": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Bridge the 18-hour gap between data and action. Flow is the operational layer that turns store behavior into measurable revenue.</p>"
+          }
+        },
+        "button_39CcgY": {
+          "type": "button",
+          "settings": {
+            "style": "fill",
+            "size": "base",
+            "text": "Audit Your Speed",
+            "url": "",
+            "background": "#a0b842",
+            "text_color": "#ffffff"
+          }
+        },
+        "button_fKeW9m": {
+          "type": "button",
+          "settings": {
+            "style": "fill",
+            "size": "lg",
+            "text": "Learn more",
+            "url": "",
+            "background": "#f9fafb",
+            "text_color": "#11243e"
+          }
+        },
+        "liquid_wJy64L": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<p></p><p></p><hr></hr>"
+          }
+        },
+        "richtext_8bpctG": {
+          "type": "richtext",
+          "disabled": true,
+          "settings": {
+            "content": "<ul><li>✓ プラットフォーム紹介</li><li>✓ ROI試算</li><li>✓ 30日間トライアル</li></ul>"
           }
         }
       },
       "block_order": [
-        "image_Bm3UGT"
+        "heading_W76pLA",
+        "richtext_b7cQCP",
+        "button_39CcgY",
+        "button_fKeW9m",
+        "liquid_wJy64L",
+        "richtext_8bpctG"
       ],
       "custom_css": [
-        "div {background: #0e366a;}",
-        ".subheading_container {display: inline-flex;}",
-        ".subheading_container {background: rgba(37, 74, 77, 0.6); color: rgb(var(--text-color));}"
+        "ul {font-size: 0.8rem; display: flex; align-items: center; justify-content: space-around; list-style: none;}",
+        "@media screen and (max-width: 767px) {ul {flex-direction: column; }}",
+        "ul li {background: rgba(230, 247, 165, 0.2); padding: 0.2rem 0.8rem; border-radius: 20px;}"
       ],
-      "name": "Media with text",
+      "name": "Image with text overlay",
       "settings": {
-        "full_width": false,
-        "alternate_media_position": false,
-        "spacing": "medium"
+        "full_width": true,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "auto",
+        "image": "shopify://shop_images/4a106d7f840b3d19bae46373c4dd4286.png",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "text_color": "#f9fafb",
+        "overlay_color": "#11243e",
+        "overlay_opacity": 80
       }
     },
     "logo_list_bzafjC": {
@@ -124,15 +162,15 @@
         "item_dU9BqG": {
           "type": "item",
           "settings": {
-            "background_color": "#1a1a1a",
-            "text_color": "#ffffff",
+            "background_color": "#f2f2f2",
+            "text_color": "#11243e",
             "border_color": "",
             "show_controls": false,
             "column_size": "2",
             "title": "18h",
             "heading_tag": "h1",
             "subheading": "<p>Legacy Reporting</p>",
-            "content": "<p>Observation → Manual Log → HQ Review → Action</p>",
+            "content": "<p>Observation → Manual Log → HQ Review → Action<br/><br/></p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -141,7 +179,7 @@
         "item_RnwDw8": {
           "type": "item",
           "settings": {
-            "background_color": "#a0b842",
+            "background_color": "#11243e",
             "text_color": "#f9fafb",
             "border_color": "",
             "show_controls": false,
@@ -168,7 +206,7 @@
         "text_alignment": "start",
         "subheading": "THE STRATEGY",
         "title": "The Cost of the 18-Hour Delay",
-        "content": "<p>Flow eliminates this gap, moving your operations from<strong>Delayed Reporting</strong>to<strong>Real-Time Execution</strong>. We turn data into deterministic action, not just more charts.</p>",
+        "content": "<p>Flow eliminates this gap, moving your operations from <strong>Delayed Reporting </strong>to <strong>Real-Time Execution</strong>. We turn data into deterministic action, not just more charts.</p>",
         "background": "#ffffff",
         "background_gradient": "",
         "text_color": "#11243e"
@@ -225,7 +263,7 @@
             "icon": "none",
             "icon_width": 48,
             "title": "Precision Sensing",
-            "content": "<p>Capture 100% accurate net customer traffic by automatically excluding staff movements in real-time.</p><p><em>Stop building strategies on noisy, false baselines.</em></p>"
+            "content": "<p>The Truth: 100% accurate customer behavior with AI Staff Exclusion.</p><p></p>"
           }
         },
         "item_4Jg6dW": {
@@ -235,7 +273,7 @@
             "icon": "none",
             "icon_width": 48,
             "title": "FIDA Analytics",
-            "content": "<p> Connect POS sales, real-time traffic, labor schedules, and local weather into a unified diagnostic model.</p><p><em>Know exactly why performance fluctuates across your network.</em></p>"
+            "content": "<p>The Context: Automated root-cause identification across POS and Traffic.</p>"
           }
         },
         "item_a8jn8N": {
@@ -245,7 +283,7 @@
             "icon": "none",
             "icon_width": 48,
             "title": "Decision Intelligence",
-            "content": "<p>Push prioritized operational signals directly to mobile devices on the shop floor.</p><p><em>Ensure every store executes the right operational playbook within 10 minutes.</em></p>"
+            "content": "<p>The Action: Standardized response network via Flow Assistant notifications.</p><p></p>"
           }
         }
       },
@@ -578,15 +616,16 @@
         "item_Eiqt4F": {
           "type": "item",
           "settings": {
-            "background_color": "#11243e",
+            "image": "shopify://shop_images/11.jpg",
+            "background_color": "#36465c",
             "text_color": "#ffffff",
-            "border_color": "#0e366a",
+            "border_color": "#36465c",
             "show_controls": false,
-            "column_size": "1",
-            "title": "Service/Staffing Issue Identified",
+            "column_size": "2",
+            "title": "SERVICE GAP",
             "heading_tag": "h4",
-            "subheading": "<p><strong>HIGH TRAFFIC + LOW CONVERSION</strong></p>",
-            "content": "<p>Optimize labor allocation and staff training to capture existing footfall.</p>",
+            "subheading": "<p>HIGH TRAFFIC + LOW CONVERSION</p>",
+            "content": "<ul><li>Optimize labor to capture peak-hour demand.</li></ul>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -595,15 +634,16 @@
         "item_QBtwgX": {
           "type": "item",
           "settings": {
-            "background_color": "#ffffff",
-            "text_color": "#11243e",
-            "border_color": "#f9fafb",
+            "image": "shopify://shop_images/22.jpg",
+            "background_color": "#36465c",
+            "text_color": "#ffffff",
+            "border_color": "#36465c",
             "show_controls": false,
-            "column_size": "1",
-            "title": "VMD/Window Display Issue Identified",
+            "column_size": "2",
+            "title": "VMD Issue",
             "heading_tag": "h4",
             "subheading": "<p>LOW TRAFFIC + LOW CAPTURE</p>",
-            "content": "<p>Adjust visual merchandising and storefront appeal to drive higher entry rates.</p>",
+            "content": "<ul><li>Refresh storefront to drive entry rates.</li></ul>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -615,7 +655,9 @@
         "item_QBtwgX"
       ],
       "custom_css": [
-        ".multi-column {gap: 1rem;}"
+        ".multi-column {gap: 1rem;}",
+        ".multi-column__item {align-items: center;}",
+        "ul {list-style: none;}"
       ],
       "name": "Multi-column",
       "settings": {
@@ -644,8 +686,8 @@
             "column_size": "3",
             "title": "+23.9%",
             "heading_tag": "h1",
-            "subheading": "<p>PERFORMANCE LIFT</p>",
-            "content": "<p>Achieved through real-time storefront display optimization and precise traffic-matching.</p>",
+            "subheading": "<p>Capture Rate Increase</p>",
+            "content": "<p><strong>Daytona International</strong></p><p></p><ul><li>Identifying missed store opportunities in real-time.</li></ul>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -661,8 +703,8 @@
             "column_size": "3",
             "title": "¥1.8B",
             "heading_tag": "h1",
-            "subheading": "<p>TOTAL IMPACT</p>",
-            "content": "<p> Driven by standardizing floor execution across a 126-store national network.</p>",
+            "subheading": "<p>Annual Sales Lift</p>",
+            "content": "<p><strong>126-Store Domestic Network</strong></p><ul><li>Standardizing performance across your entire retail footprint.</li></ul>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -678,8 +720,8 @@
             "column_size": "3",
             "title": "+2.3%",
             "heading_tag": "h1",
-            "subheading": "<p>CONVERSION DELTA</p>",
-            "content": "<p> Delivered within 8 months of deploying mobile-led Decision Intelligence to frontline teams.</p>",
+            "subheading": "<p>Net Conversion Improvement</p>",
+            "content": "<p><strong>Global SPA Retailer</strong></p><ul><li>Turning foot traffic into transactions through AI-driven staffing.</li></ul>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -692,7 +734,7 @@
         "item_tTyycj"
       ],
       "custom_css": [
-        "ul {font-size: 0.8rem; opacity: 0.7;}",
+        "ul {font-size: 0.8rem; opacity: 0.7; list-style: none;}",
         ".text-xs p {margin-bottom: 1rem; font-size: 0.6rem; letter-spacing: 0.02em; text-transform: uppercase;}",
         ".prose p {font-size: 1rem;}"
       ],
@@ -808,73 +850,6 @@
         "testimonial_card_text_color": ""
       }
     },
-    "image_with_text_overlay_MVHcWF": {
-      "type": "image-with-text-overlay",
-      "blocks": {
-        "heading_W76pLA": {
-          "type": "heading",
-          "settings": {
-            "text": "店舗データを、即時の判断へ",
-            "heading_tag": "h1"
-          }
-        },
-        "richtext_b7cQCP": {
-          "type": "richtext",
-          "settings": {
-            "content": "<p>Request a Demo to see your potential ROI and start a 30-day execution trial.</p>"
-          }
-        },
-        "button_39CcgY": {
-          "type": "button",
-          "settings": {
-            "style": "fill",
-            "size": "base",
-            "text": "Book Demo",
-            "url": "",
-            "background": "#a0b842",
-            "text_color": "#ffffff"
-          }
-        },
-        "liquid_wJy64L": {
-          "type": "liquid",
-          "settings": {
-            "liquid": "<p></p><p></p><hr></hr>"
-          }
-        },
-        "richtext_8bpctG": {
-          "type": "richtext",
-          "settings": {
-            "content": "<ul><li>✓ プラットフォーム紹介</li><li>✓ ROI試算</li><li>✓ 30日間トライアル</li></ul>"
-          }
-        }
-      },
-      "block_order": [
-        "heading_W76pLA",
-        "richtext_b7cQCP",
-        "button_39CcgY",
-        "liquid_wJy64L",
-        "richtext_8bpctG"
-      ],
-      "disabled": true,
-      "custom_css": [
-        "ul {font-size: 0.8rem; display: flex; align-items: center; justify-content: space-around; list-style: none;}",
-        "@media screen and (max-width: 767px) {ul {flex-direction: column; }}",
-        "ul li {background: rgba(230, 247, 165, 0.2); padding: 0.2rem 0.8rem; border-radius: 20px;}"
-      ],
-      "name": "Image with text overlay",
-      "settings": {
-        "full_width": true,
-        "allow_transparent_header": false,
-        "enable_parallax": false,
-        "image_size": "auto",
-        "image": "shopify://shop_images/4a106d7f840b3d19bae46373c4dd4286.png",
-        "mobile_text_position": "place-self-center text-center",
-        "desktop_text_position": "sm:place-self-center sm:text-center",
-        "text_color": "#f9fafb",
-        "overlay_color": "#0e366a",
-        "overlay_opacity": 80
-      }
-    },
     "multi_column_UExWWX": {
       "type": "multi-column",
       "blocks": {
@@ -957,7 +932,7 @@
     }
   },
   "order": [
-    "media_with_text_RFxGYy",
+    "image_with_text_overlay_MVHcWF",
     "logo_list_bzafjC",
     "multi_column_GPkFTV",
     "rich_text_CjaQaa",
@@ -970,7 +945,6 @@
     "multi_column_LeVzeG",
     "multi_column_HCGJea",
     "testimonials_98zPBi",
-    "image_with_text_overlay_MVHcWF",
     "multi_column_UExWWX"
   ]
 }
