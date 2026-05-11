@@ -617,15 +617,15 @@
           "type": "item",
           "settings": {
             "image": "shopify://shop_images/11.jpg",
-            "background_color": "#36465c",
-            "text_color": "#ffffff",
-            "border_color": "#36465c",
+            "background_color": "#f9fafb",
+            "text_color": "#1a1a1a",
+            "border_color": "#f9fafb",
             "show_controls": false,
-            "column_size": "2",
+            "column_size": "3",
             "title": "SERVICE GAP",
             "heading_tag": "h4",
             "subheading": "<p>HIGH TRAFFIC + LOW CONVERSION</p>",
-            "content": "<ul><li>Optimize labor to capture peak-hour demand.</li></ul>",
+            "content": "<p>Optimize staffing during peak traffic periods.</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -635,15 +635,87 @@
           "type": "item",
           "settings": {
             "image": "shopify://shop_images/22.jpg",
-            "background_color": "#36465c",
-            "text_color": "#ffffff",
-            "border_color": "#36465c",
+            "background_color": "#f9fafb",
+            "text_color": "#1a1a1a",
+            "border_color": "#f9fafb",
             "show_controls": false,
-            "column_size": "2",
-            "title": "VMD Issue",
+            "column_size": "3",
+            "title": "VMD ISSUE",
             "heading_tag": "h4",
-            "subheading": "<p>LOW TRAFFIC + LOW CAPTURE</p>",
-            "content": "<ul><li>Refresh storefront to drive entry rates.</li></ul>",
+            "subheading": "<p>LOW TRAFFIC + LOW ENTRY RATE</p>",
+            "content": "<p>Improve storefront visibility and customer capture.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_PriYPe": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/screen.png",
+            "background_color": "#f9fafb",
+            "text_color": "#1a1a1a",
+            "border_color": "#f9fafb",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "STAFFING IMBALANCE",
+            "heading_tag": "h4",
+            "subheading": "<p>HIGH TRAFFIC + LOW STAFF COVERAGE</p>",
+            "content": "<p>Identify labor allocation mismatches across trading hours.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_FHkbRB": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/11.jpg",
+            "background_color": "#f9fafb",
+            "text_color": "#1a1a1a",
+            "border_color": "#f9fafb",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "PEAK HOUR OPPORTUNITY",
+            "heading_tag": "h4",
+            "subheading": "<p>HIGH DWELL + LOW SALES</p>",
+            "content": "<p>Convert engagement into active selling during high-opportunity windows.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_PRArwb": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/11.jpg",
+            "background_color": "#f9fafb",
+            "text_color": "#1a1a1a",
+            "border_color": "#f9fafb",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "PRODUCT ZONE UNDERPERFORMANCE",
+            "heading_tag": "h4",
+            "subheading": "<p>HIGH TRAFFIC + LOW FIXTURE ENGAGEMENT<br/></p>",
+            "content": "<p>Identify weak merchandising or product presentation zones.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_eAtJbm": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/11.jpg",
+            "background_color": "#f9fafb",
+            "text_color": "#1a1a1a",
+            "border_color": "#1a1a1a",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "EXECUTION VARIANCE",
+            "heading_tag": "h4",
+            "subheading": "<p>STORE PERFORMANCE DEVIATION<br/></p><p></p>",
+            "content": "<p>Detect operational inconsistency across locations.</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -652,7 +724,11 @@
       },
       "block_order": [
         "item_Eiqt4F",
-        "item_QBtwgX"
+        "item_QBtwgX",
+        "item_PriYPe",
+        "item_FHkbRB",
+        "item_PRArwb",
+        "item_eAtJbm"
       ],
       "custom_css": [
         ".multi-column {gap: 1rem;}",
@@ -670,7 +746,7 @@
         "content": "<p>Flow removes the ambiguity from store management. The logic engine identifies exactly which lever to pull to maximize hourly P&L across your entire network.</p>",
         "background": "#0e366a",
         "background_gradient": "",
-        "text_color": "#ffffff"
+        "text_color": "#f9fafb"
       }
     },
     "multi_column_HCGJea": {
