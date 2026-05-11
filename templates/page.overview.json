@@ -15,21 +15,21 @@
         "heading_W76pLA": {
           "type": "heading",
           "settings": {
-            "text": "The Standard for Retail Execution.",
+            "text": "Turn Retail Data Into Operational Action.",
             "heading_tag": "h0"
           }
         },
         "richtext_b7cQCP": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Bridge the 18-hour gap between data and action. Flow is the operational layer that turns store behavior into measurable revenue.</p>"
+            "content": "<p>Bridge the gap between store analytics and execution. Flow transforms retail data into faster decisions, stronger conversion, and measurable sales impact.</p>"
           }
         },
         "button_39CcgY": {
           "type": "button",
           "settings": {
             "style": "fill",
-            "size": "base",
+            "size": "lg",
             "text": "Audit Your Speed",
             "url": "",
             "background": "#a0b842",
@@ -41,7 +41,7 @@
           "settings": {
             "style": "fill",
             "size": "lg",
-            "text": "Learn more",
+            "text": "Explore the Platform",
             "url": "",
             "background": "#f9fafb",
             "text_color": "#11243e"
@@ -144,7 +144,7 @@
         "full_width": true,
         "stack_mobile": true,
         "title": "",
-        "content": "<p>主要リテールブランドの店舗運営を支援</p>",
+        "content": "<p>Powering Retail Execution Across Leading Brands</p>",
         "text_alignment": "center",
         "items_per_row": 5,
         "background": "#ffffff",
@@ -167,10 +167,10 @@
             "border_color": "",
             "show_controls": false,
             "column_size": "2",
-            "title": "18h",
+            "title": "18 hours",
             "heading_tag": "h1",
-            "subheading": "<p>Legacy Reporting</p>",
-            "content": "<p>Observation → Manual Log → HQ Review → Action<br/><br/></p>",
+            "subheading": "<p>Traditional Reporting</p>",
+            "content": "<p>→ Store Observation<br/>→ Manual Reporting<br/>→ HQ Review<br/>→ Delayed Action</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -184,10 +184,10 @@
             "border_color": "",
             "show_controls": false,
             "column_size": "2",
-            "title": "10m",
+            "title": "10 minutes",
             "heading_tag": "h1",
-            "subheading": "<p>Flow Execution</p>",
-            "content": "<p>Real-time Sensing → FIDA Logic → Direct Action</p>",
+            "subheading": "<p>FLOW Real-Time Retail Execution</p>",
+            "content": "<p>→ Real-time Sensing <br/>→ FIDA Logic <br/>→ Direct Action</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -204,9 +204,9 @@
         "stack_on_mobile": false,
         "gap": "medium",
         "text_alignment": "start",
-        "subheading": "THE STRATEGY",
-        "title": "The Cost of the 18-Hour Delay",
-        "content": "<p>Flow eliminates this gap, moving your operations from <strong>Delayed Reporting </strong>to <strong>Real-Time Execution</strong>. We turn data into deterministic action, not just more charts.</p>",
+        "subheading": "EXECUTION GAP",
+        "title": "The 18-Hour Operational Delay",
+        "content": "<p>Flow transforms store data into real-time operational action. <strong>Reduce decision latency</strong> <strong>from hours to minutes</strong> across every store.</p>",
         "background": "#ffffff",
         "background_gradient": "",
         "text_color": "#11243e"
@@ -225,7 +225,7 @@
         "heading_EyFYM9": {
           "type": "heading",
           "settings": {
-            "text": "A Three-Layer Decision Engine",
+            "text": "The Retail Decision Layer",
             "heading_tag": "h2",
             "text_color": "",
             "gradient": ""
@@ -234,7 +234,7 @@
         "richtext_fA7CVd": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Most retail systems fail not because they lack data, but because they lack a mechanism to turn that data into action. </p>"
+            "content": "<p>Most retail systems collect data. Flow turns it into consistent store execution across every location.</p>"
           }
         }
       },
@@ -263,7 +263,7 @@
             "icon": "none",
             "icon_width": 48,
             "title": "Precision Sensing",
-            "content": "<p>The Truth: 100% accurate customer behavior with AI Staff Exclusion.</p><p></p>"
+            "content": "<p>Flow creates a continuous behavioral data layer across the store floor, enabling accurate traffic, engagement, and conversion measurement in real time.</p>"
           }
         },
         "item_4Jg6dW": {
@@ -273,7 +273,7 @@
             "icon": "none",
             "icon_width": 48,
             "title": "FIDA Analytics",
-            "content": "<p>The Context: Automated root-cause identification across POS and Traffic.</p>"
+            "content": "<p>Connect traffic, sales, staffing, and in-store behavior to identify what is driving performance in real time.</p>"
           }
         },
         "item_a8jn8N": {
@@ -283,7 +283,7 @@
             "icon": "none",
             "icon_width": 48,
             "title": "Decision Intelligence",
-            "content": "<p>The Action: Standardized response network via Flow Assistant notifications.</p><p></p>"
+            "content": "<p>Flow transforms retail analytics into operational guidance, helping teams respond consistently across every store.</p><p></p>"
           }
         }
       },
