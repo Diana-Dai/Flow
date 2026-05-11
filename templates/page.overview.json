@@ -762,8 +762,8 @@
             "column_size": "3",
             "title": "+23.9%",
             "heading_tag": "h1",
-            "subheading": "<p>Capture Rate Increase</p>",
-            "content": "<p><strong>Daytona International</strong></p><p></p><ul><li>Identifying missed store opportunities in real-time.</li></ul>",
+            "subheading": "<p>CONVERSION IMPROVEMENT</p><p></p>",
+            "content": "<p><strong>Daytona International</strong></p><p>Recover missed sales opportunities in real time.</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -779,8 +779,8 @@
             "column_size": "3",
             "title": "¥1.8B",
             "heading_tag": "h1",
-            "subheading": "<p>Annual Sales Lift</p>",
-            "content": "<p><strong>126-Store Domestic Network</strong></p><ul><li>Standardizing performance across your entire retail footprint.</li></ul>",
+            "subheading": "<p>ANNUAL SALES IMPACT</p>",
+            "content": "<p><strong>Leading Japanese Fashion Retailer</strong></p><p>Standardized performance across entire retail footprint.</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -796,8 +796,8 @@
             "column_size": "3",
             "title": "+2.3%",
             "heading_tag": "h1",
-            "subheading": "<p>Net Conversion Improvement</p>",
-            "content": "<p><strong>Global SPA Retailer</strong></p><ul><li>Turning foot traffic into transactions through AI-driven staffing.</li></ul>",
+            "subheading": "<p>STORE CONVERSION LIFT</p>",
+            "content": "<p><strong>Global SPA Retailer</strong></p><p>Turning traffic into measurable revenue growth.</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -817,7 +817,7 @@
       "name": "Multi-column",
       "settings": {
         "full_width": true,
-        "stack_on_mobile": false,
+        "stack_on_mobile": true,
         "gap": "medium",
         "text_alignment": "start",
         "subheading": "",
@@ -938,12 +938,12 @@
             "border_color": "#f9fafb",
             "show_controls": false,
             "column_size": "3",
-            "title": "Explore Precision Sensing:",
+            "title": "Precision Sensing",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<p>How our AI ensures 100% data integrity.</p>",
+            "content": "<p>Accurate traffic and shopper measurement built for retail operations.</p>",
             "link_url": "",
-            "link_text": "View all",
+            "link_text": "Learn More",
             "link_style": "link"
           }
         },
@@ -956,12 +956,12 @@
             "border_color": "#f9fafb",
             "show_controls": false,
             "column_size": "3",
-            "title": "Explore FIDA Analytics",
+            "title": "FIDA Analytics",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<p>Deep-dive into contextual data integration.</p>",
+            "content": "<p>Unified retail analytics across traffic, sales, staffing, and execution.</p>",
             "link_url": "#",
-            "link_text": "View all",
+            "link_text": "Learn More",
             "link_style": "link"
           }
         },
@@ -974,12 +974,12 @@
             "border_color": "#f9fafb",
             "show_controls": false,
             "column_size": "3",
-            "title": "Explore Decision Intelligence",
+            "title": "Decision Intelligence",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<p>See how Flow Assistant drives the PDCA loop.</p>",
+            "content": "<p>Operational recommendations that drive faster store-level action.</p>",
             "link_url": "#",
-            "link_text": "View all",
+            "link_text": "Learn More",
             "link_style": "link"
           }
         }
@@ -998,7 +998,7 @@
         "stack_on_mobile": false,
         "gap": "medium",
         "text_alignment": "start",
-        "subheading": "Resources",
+        "subheading": "Explore the Platform",
         "title": "Master Every Layer of Your Operation.",
         "content": "",
         "background": "",
