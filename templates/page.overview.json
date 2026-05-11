@@ -15,21 +15,21 @@
         "heading_W76pLA": {
           "type": "heading",
           "settings": {
-            "text": "Turn Retail Data Into Operational Action.",
+            "text": "The Standard for Retail Execution.",
             "heading_tag": "h0"
           }
         },
         "richtext_b7cQCP": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Bridge the gap between store analytics and execution. Flow transforms retail data into faster decisions, stronger conversion, and measurable sales impact.</p>"
+            "content": "<p>Bridge the 18-hour gap between data and action. Flow is the operational layer that turns store behavior into measurable revenue.</p>"
           }
         },
         "button_39CcgY": {
           "type": "button",
           "settings": {
             "style": "fill",
-            "size": "lg",
+            "size": "base",
             "text": "Audit Your Speed",
             "url": "",
             "background": "#a0b842",
@@ -41,7 +41,7 @@
           "settings": {
             "style": "fill",
             "size": "lg",
-            "text": "Explore the Platform",
+            "text": "Learn more",
             "url": "",
             "background": "#f9fafb",
             "text_color": "#11243e"
@@ -144,7 +144,7 @@
         "full_width": true,
         "stack_mobile": true,
         "title": "",
-        "content": "<p>Powering Retail Execution Across Leading Brands</p>",
+        "content": "<p>主要リテールブランドの店舗運営を支援</p>",
         "text_alignment": "center",
         "items_per_row": 5,
         "background": "#ffffff",
@@ -167,10 +167,10 @@
             "border_color": "",
             "show_controls": false,
             "column_size": "2",
-            "title": "18 hours",
+            "title": "18h",
             "heading_tag": "h1",
-            "subheading": "<p>Traditional Reporting</p>",
-            "content": "<p>→ Store Observation<br/>→ Manual Reporting<br/>→ HQ Review<br/>→ Delayed Action</p>",
+            "subheading": "<p>Legacy Reporting</p>",
+            "content": "<p>Observation → Manual Log → HQ Review → Action<br/><br/></p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -184,10 +184,10 @@
             "border_color": "",
             "show_controls": false,
             "column_size": "2",
-            "title": "10 minutes",
+            "title": "10m",
             "heading_tag": "h1",
-            "subheading": "<p>FLOW Real-Time Retail Execution</p>",
-            "content": "<p>→ Real-time Sensing <br/>→ FIDA Logic <br/>→ Direct Action</p>",
+            "subheading": "<p>Flow Execution</p>",
+            "content": "<p>Real-time Sensing → FIDA Logic → Direct Action</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -204,9 +204,9 @@
         "stack_on_mobile": false,
         "gap": "medium",
         "text_alignment": "start",
-        "subheading": "EXECUTION GAP",
-        "title": "The 18-Hour Operational Delay",
-        "content": "<p>Flow transforms store data into real-time operational action. <strong>Reduce decision latency</strong> <strong>from hours to minutes</strong> across every store.</p>",
+        "subheading": "THE STRATEGY",
+        "title": "The Cost of the 18-Hour Delay",
+        "content": "<p>Flow eliminates this gap, moving your operations from <strong>Delayed Reporting </strong>to <strong>Real-Time Execution</strong>. We turn data into deterministic action, not just more charts.</p>",
         "background": "#ffffff",
         "background_gradient": "",
         "text_color": "#11243e"
@@ -225,7 +225,7 @@
         "heading_EyFYM9": {
           "type": "heading",
           "settings": {
-            "text": "The Retail Decision Layer",
+            "text": "A Three-Layer Decision Engine",
             "heading_tag": "h2",
             "text_color": "",
             "gradient": ""
@@ -234,7 +234,7 @@
         "richtext_fA7CVd": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Most retail systems collect data. Flow turns it into consistent store execution across every location.</p>"
+            "content": "<p>Most retail systems fail not because they lack data, but because they lack a mechanism to turn that data into action. </p>"
           }
         }
       },
@@ -263,7 +263,7 @@
             "icon": "none",
             "icon_width": 48,
             "title": "Precision Sensing",
-            "content": "<p>Flow creates a continuous behavioral data layer across the store floor, enabling accurate traffic, engagement, and conversion measurement in real time.</p>"
+            "content": "<p>The Truth: 100% accurate customer behavior with AI Staff Exclusion.</p><p><a href=\"#\" title=\"#\">Learn more</a></p>"
           }
         },
         "item_4Jg6dW": {
@@ -273,7 +273,7 @@
             "icon": "none",
             "icon_width": 48,
             "title": "FIDA Analytics",
-            "content": "<p>Connect traffic, sales, staffing, and in-store behavior to identify what is driving performance in real time.</p>"
+            "content": "<p>The Context: Automated root-cause identification across POS and Traffic.</p><p><a href=\"#\" title=\"#\">Know more</a></p>"
           }
         },
         "item_a8jn8N": {
@@ -283,7 +283,7 @@
             "icon": "none",
             "icon_width": 48,
             "title": "Decision Intelligence",
-            "content": "<p>Flow transforms retail analytics into operational guidance, helping teams respond consistently across every store.</p><p></p>"
+            "content": "<p>The Action: Standardized response network via Flow Assistant notifications.</p><p><a href=\"#\" title=\"#\">Learn more </a></p>"
           }
         }
       },
@@ -617,15 +617,15 @@
           "type": "item",
           "settings": {
             "image": "shopify://shop_images/11.jpg",
-            "background_color": "#f9fafb",
-            "text_color": "#1a1a1a",
-            "border_color": "#f9fafb",
+            "background_color": "#36465c",
+            "text_color": "#ffffff",
+            "border_color": "#36465c",
             "show_controls": false,
-            "column_size": "3",
+            "column_size": "2",
             "title": "SERVICE GAP",
             "heading_tag": "h4",
             "subheading": "<p>HIGH TRAFFIC + LOW CONVERSION</p>",
-            "content": "<p>Optimize staffing during peak demand.</p>",
+            "content": "<ul><li>Optimize labor to capture peak-hour demand.</li></ul>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -635,87 +635,15 @@
           "type": "item",
           "settings": {
             "image": "shopify://shop_images/22.jpg",
-            "background_color": "#f9fafb",
-            "text_color": "#1a1a1a",
-            "border_color": "#f9fafb",
+            "background_color": "#36465c",
+            "text_color": "#ffffff",
+            "border_color": "#36465c",
             "show_controls": false,
-            "column_size": "3",
-            "title": "VMD ISSUE",
+            "column_size": "2",
+            "title": "VMD Issue",
             "heading_tag": "h4",
-            "subheading": "<p>LOW TRAFFIC + LOW ENTRY RATE</p>",
-            "content": "<p>Improve storefront visibility and capture.</p>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        },
-        "item_PriYPe": {
-          "type": "item",
-          "settings": {
-            "image": "shopify://shop_images/screen.png",
-            "background_color": "#f9fafb",
-            "text_color": "#1a1a1a",
-            "border_color": "#f9fafb",
-            "show_controls": false,
-            "column_size": "3",
-            "title": "STAFFING IMBALANCE",
-            "heading_tag": "h4",
-            "subheading": "<p>HIGH TRAFFIC + LOW STAFF COVERAGE</p>",
-            "content": "<p>Identify labor mismatches across trading hours.</p>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        },
-        "item_FHkbRB": {
-          "type": "item",
-          "settings": {
-            "image": "shopify://shop_images/11.jpg",
-            "background_color": "#f9fafb",
-            "text_color": "#1a1a1a",
-            "border_color": "#f9fafb",
-            "show_controls": false,
-            "column_size": "3",
-            "title": "PEAK HOUR OPPORTUNITY",
-            "heading_tag": "h4",
-            "subheading": "<p>HIGH DWELL + LOW SALES</p>",
-            "content": "<p>Convert engagement during high-traffic periods.</p>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        },
-        "item_PRArwb": {
-          "type": "item",
-          "settings": {
-            "image": "shopify://shop_images/11.jpg",
-            "background_color": "#f9fafb",
-            "text_color": "#1a1a1a",
-            "border_color": "#f9fafb",
-            "show_controls": false,
-            "column_size": "3",
-            "title": "FIXTURE PERFORMANCE",
-            "heading_tag": "h4",
-            "subheading": "<p>HIGH TRAFFIC + LOW FIXTURE ENGAGEMENT<br/></p>",
-            "content": "<p>Identify weak merchandising and fixture zones.</p>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        },
-        "item_eAtJbm": {
-          "type": "item",
-          "settings": {
-            "image": "shopify://shop_images/11.jpg",
-            "background_color": "#f9fafb",
-            "text_color": "#1a1a1a",
-            "border_color": "#1a1a1a",
-            "show_controls": false,
-            "column_size": "3",
-            "title": "EXECUTION VARIANCE",
-            "heading_tag": "h4",
-            "subheading": "<p>STORE PERFORMANCE DEVIATION<br/></p><p></p>",
-            "content": "<p>Detect inconsistent execution across locations.</p>",
+            "subheading": "<p>LOW TRAFFIC + LOW CAPTURE</p>",
+            "content": "<ul><li>Refresh storefront to drive entry rates.</li></ul>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -724,11 +652,7 @@
       },
       "block_order": [
         "item_Eiqt4F",
-        "item_QBtwgX",
-        "item_PriYPe",
-        "item_FHkbRB",
-        "item_PRArwb",
-        "item_eAtJbm"
+        "item_QBtwgX"
       ],
       "custom_css": [
         ".multi-column {gap: 1rem;}",
@@ -742,11 +666,11 @@
         "gap": "medium",
         "text_alignment": "start",
         "subheading": "DIAGNOSTIC LOGIC",
-        "title": "Identify the Drivers Behind Store Performance",
+        "title": "Stop Guessing. Start Solving.",
         "content": "<p>Flow removes the ambiguity from store management. The logic engine identifies exactly which lever to pull to maximize hourly P&L across your entire network.</p>",
         "background": "#0e366a",
         "background_gradient": "",
-        "text_color": "#f9fafb"
+        "text_color": "#ffffff"
       }
     },
     "multi_column_HCGJea": {
@@ -762,8 +686,8 @@
             "column_size": "3",
             "title": "+23.9%",
             "heading_tag": "h1",
-            "subheading": "<p>CONVERSION IMPROVEMENT</p><p></p>",
-            "content": "<p><strong>Daytona International</strong></p><p>Recover missed sales opportunities in real time.</p>",
+            "subheading": "<p>Capture Rate Increase</p>",
+            "content": "<p><strong>Daytona International</strong></p><p></p><ul><li>Identifying missed store opportunities in real-time.</li></ul>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -779,8 +703,8 @@
             "column_size": "3",
             "title": "¥1.8B",
             "heading_tag": "h1",
-            "subheading": "<p>ANNUAL SALES IMPACT</p>",
-            "content": "<p><strong>Leading Japanese Fashion Retailer</strong></p><p>Standardized performance across entire retail footprint.</p>",
+            "subheading": "<p>Annual Sales Lift</p>",
+            "content": "<p><strong>126-Store Domestic Network</strong></p><ul><li>Standardizing performance across your entire retail footprint.</li></ul>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -796,8 +720,8 @@
             "column_size": "3",
             "title": "+2.3%",
             "heading_tag": "h1",
-            "subheading": "<p>STORE CONVERSION LIFT</p>",
-            "content": "<p><strong>Global SPA Retailer</strong></p><p>Turning traffic into measurable revenue growth.</p>",
+            "subheading": "<p>Net Conversion Improvement</p>",
+            "content": "<p><strong>Global SPA Retailer</strong></p><ul><li>Turning foot traffic into transactions through AI-driven staffing.</li></ul>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -817,7 +741,7 @@
       "name": "Multi-column",
       "settings": {
         "full_width": true,
-        "stack_on_mobile": true,
+        "stack_on_mobile": false,
         "gap": "medium",
         "text_alignment": "start",
         "subheading": "",
@@ -938,12 +862,12 @@
             "border_color": "#f9fafb",
             "show_controls": false,
             "column_size": "3",
-            "title": "Precision Sensing",
+            "title": "Explore Precision Sensing:",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<p>Accurate traffic and shopper measurement built for retail operations.</p>",
+            "content": "<p>How our AI ensures 100% data integrity.</p>",
             "link_url": "",
-            "link_text": "Learn More",
+            "link_text": "View all",
             "link_style": "link"
           }
         },
@@ -956,12 +880,12 @@
             "border_color": "#f9fafb",
             "show_controls": false,
             "column_size": "3",
-            "title": "FIDA Analytics",
+            "title": "Explore FIDA Analytics",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<p>Unified retail analytics across traffic, sales, staffing, and execution.</p>",
+            "content": "<p>Deep-dive into contextual data integration.</p>",
             "link_url": "#",
-            "link_text": "Learn More",
+            "link_text": "View all",
             "link_style": "link"
           }
         },
@@ -974,12 +898,12 @@
             "border_color": "#f9fafb",
             "show_controls": false,
             "column_size": "3",
-            "title": "Decision Intelligence",
+            "title": "Explore Decision Intelligence",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<p>Operational recommendations that drive faster store-level action.</p>",
+            "content": "<p>See how Flow Assistant drives the PDCA loop.</p>",
             "link_url": "#",
-            "link_text": "Learn More",
+            "link_text": "View all",
             "link_style": "link"
           }
         }
@@ -998,7 +922,7 @@
         "stack_on_mobile": false,
         "gap": "medium",
         "text_alignment": "start",
-        "subheading": "Explore the Platform",
+        "subheading": "Resources",
         "title": "Master Every Layer of Your Operation.",
         "content": "",
         "background": "",
