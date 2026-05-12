@@ -15,22 +15,22 @@
         "heading_W76pLA": {
           "type": "heading",
           "settings": {
-            "text": "The Standard for Retail Execution.",
+            "text": "店舗データを、現場の行動へ。",
             "heading_tag": "h0"
           }
         },
         "richtext_b7cQCP": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Bridge the 18-hour gap between data and action. Flow is the operational layer that turns store behavior into measurable revenue.</p>"
+            "content": "<p>店舗分析と現場実行の分断をなくす。<br/>Flowは、来店・購買・売場行動データを、迅速な判断と売上成果につなげます。</p>"
           }
         },
         "button_39CcgY": {
           "type": "button",
           "settings": {
             "style": "fill",
-            "size": "base",
-            "text": "Audit Your Speed",
+            "size": "lg",
+            "text": "導入診断を始める",
             "url": "",
             "background": "#a0b842",
             "text_color": "#ffffff"
@@ -41,7 +41,7 @@
           "settings": {
             "style": "fill",
             "size": "lg",
-            "text": "Learn more",
+            "text": "プラットフォームを見る",
             "url": "",
             "background": "#f9fafb",
             "text_color": "#11243e"
@@ -78,7 +78,7 @@
       "settings": {
         "full_width": true,
         "allow_transparent_header": false,
-        "enable_parallax": false,
+        "enable_parallax": true,
         "image_size": "auto",
         "image": "shopify://shop_images/4a106d7f840b3d19bae46373c4dd4286.png",
         "mobile_text_position": "place-self-center text-center",
@@ -167,10 +167,10 @@
             "border_color": "",
             "show_controls": false,
             "column_size": "2",
-            "title": "18h",
+            "title": "18時間",
             "heading_tag": "h1",
-            "subheading": "<p>Legacy Reporting</p>",
-            "content": "<p>Observation → Manual Log → HQ Review → Action<br/><br/></p>",
+            "subheading": "<h5><strong>従来型レポーティング<br/><br/></strong></h5>",
+            "content": "<p>→ 店舗観測<br/>→ 手動レポート<br/>→ 本部確認<br/>→ 遅れた対応<br/><br/></p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -179,15 +179,15 @@
         "item_RnwDw8": {
           "type": "item",
           "settings": {
-            "background_color": "#11243e",
+            "background_color": "#a0b842",
             "text_color": "#f9fafb",
-            "border_color": "",
+            "border_color": "#a0b842",
             "show_controls": false,
             "column_size": "2",
-            "title": "10m",
+            "title": "10分",
             "heading_tag": "h1",
-            "subheading": "<p>Flow Execution</p>",
-            "content": "<p>Real-time Sensing → FIDA Logic → Direct Action</p>",
+            "subheading": "<h5><strong>Flow リアルタイム実行基盤<br/><br/></strong></h5>",
+            "content": "<p>→ リアルタイム計測<br/>→ FIDAロジック<br/>→ 即時アクション</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -204,9 +204,9 @@
         "stack_on_mobile": false,
         "gap": "medium",
         "text_alignment": "start",
-        "subheading": "THE STRATEGY",
-        "title": "The Cost of the 18-Hour Delay",
-        "content": "<p>Flow eliminates this gap, moving your operations from <strong>Delayed Reporting </strong>to <strong>Real-Time Execution</strong>. We turn data into deterministic action, not just more charts.</p>",
+        "subheading": "オペレーション遅延",
+        "title": "18時間の判断遅延",
+        "content": "<p>Flowは、店舗で起きていることと実際の対応までの時間差を解消します。<br/>全店舗の判断スピードを、数時間単位から数分単位へ。</p>",
         "background": "#ffffff",
         "background_gradient": "",
         "text_color": "#11243e"
@@ -218,14 +218,14 @@
         "subheading_RVUamX": {
           "type": "subheading",
           "settings": {
-            "text": "The Blueprint for Standardized Execution",
+            "text": "標準化された店舗実行の設計図",
             "icon": "picto-target"
           }
         },
         "heading_EyFYM9": {
           "type": "heading",
           "settings": {
-            "text": "A Three-Layer Decision Engine",
+            "text": "店舗運営の意思決定レイヤー",
             "heading_tag": "h2",
             "text_color": "",
             "gradient": ""
@@ -234,7 +234,7 @@
         "richtext_fA7CVd": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Most retail systems fail not because they lack data, but because they lack a mechanism to turn that data into action. </p>"
+            "content": "<p>多くのリテールシステムは、データを集めるだけで終わる。<br/>Flowは、そのデータを全店舗で統一された行動へ変える。</p>"
           }
         }
       },
@@ -262,8 +262,8 @@
             "image": "shopify://shop_images/Analytics_-_Entering_2.png",
             "icon": "none",
             "icon_width": 48,
-            "title": "Precision Sensing",
-            "content": "<p>The Truth: 100% accurate customer behavior with AI Staff Exclusion.</p><p><a href=\"#\" title=\"#\">Learn more</a></p>"
+            "title": "高精度店内計測",
+            "content": "<p>AIによるスタッフ除外機能を活用し、<br/>高精度な来店計測と顧客行動データをリアルタイムで取得します。</p><p>機能を見る →</p>"
           }
         },
         "item_4Jg6dW": {
@@ -272,8 +272,8 @@
             "image": "shopify://shop_images/analytics_mobile.png",
             "icon": "none",
             "icon_width": 48,
-            "title": "FIDA Analytics",
-            "content": "<p>The Context: Automated root-cause identification across POS and Traffic.</p><p><a href=\"#\" title=\"#\">Know more</a></p>"
+            "title": "FIDA分析基盤",
+            "content": "<p>来店・売上・人員配置・購買率を統合分析し、<br/>店舗運営上の課題と機会をリアルタイムで可視化します。</p><p>機能を見る →</p>"
           }
         },
         "item_a8jn8N": {
@@ -282,8 +282,8 @@
             "image": "shopify://shop_images/store_environmnet_x_1500_x_1900_px.png",
             "icon": "none",
             "icon_width": 48,
-            "title": "Decision Intelligence",
-            "content": "<p>The Action: Standardized response network via Flow Assistant notifications.</p><p><a href=\"#\" title=\"#\">Learn more </a></p>"
+            "title": "現場意思決定実行支援",
+            "content": "<p>現場がすぐに動ける推奨アクションを提示し、<br/>店舗実行のスピードと一貫性を向上させます。</p><p>機能を見る →</p>"
           }
         }
       },
@@ -617,15 +617,15 @@
           "type": "item",
           "settings": {
             "image": "shopify://shop_images/11.jpg",
-            "background_color": "#36465c",
-            "text_color": "#ffffff",
-            "border_color": "#36465c",
+            "background_color": "#f9fafb",
+            "text_color": "#1a1a1a",
+            "border_color": "#f9fafb",
             "show_controls": false,
-            "column_size": "2",
-            "title": "SERVICE GAP",
-            "heading_tag": "h4",
-            "subheading": "<p>HIGH TRAFFIC + LOW CONVERSION</p>",
-            "content": "<ul><li>Optimize labor to capture peak-hour demand.</li></ul>",
+            "column_size": "3",
+            "title": "接客ギャップ",
+            "heading_tag": "h3",
+            "subheading": "<p>来店数高 × 購買率低</p>",
+            "content": "<p>ピーク時間帯の接客体制を最適化。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -635,15 +635,87 @@
           "type": "item",
           "settings": {
             "image": "shopify://shop_images/22.jpg",
-            "background_color": "#36465c",
-            "text_color": "#ffffff",
-            "border_color": "#36465c",
+            "background_color": "#f9fafb",
+            "text_color": "#1a1a1a",
+            "border_color": "#f9fafb",
             "show_controls": false,
-            "column_size": "2",
-            "title": "VMD Issue",
+            "column_size": "3",
+            "title": "VMD課題",
             "heading_tag": "h4",
-            "subheading": "<p>LOW TRAFFIC + LOW CAPTURE</p>",
-            "content": "<ul><li>Refresh storefront to drive entry rates.</li></ul>",
+            "subheading": "<p><strong>来店数低 × 入店率低</strong></p>",
+            "content": "<p>店頭訴求と入店獲得を改善。</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_3hpThx": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/11.jpg",
+            "background_color": "#f9fafb",
+            "text_color": "#1a1a1a",
+            "border_color": "#f9fafb",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "人員配置ギャップ",
+            "heading_tag": "h4",
+            "subheading": "<p>来店数高 × 人員不足</p>",
+            "content": "<p>時間帯別の人員配置を最適化。</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_GaHE8P": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/11.jpg",
+            "background_color": "#f9fafb",
+            "text_color": "#1a1a1a",
+            "border_color": "#f9fafb",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "ピーク機会損失",
+            "heading_tag": "h4",
+            "subheading": "<p>滞在時間高 × 売上低</p>",
+            "content": "<p>高機会時間帯の販売転換を強化。</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_QMhiDg": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/22.jpg",
+            "background_color": "#f9fafb",
+            "text_color": "#1a1a1a",
+            "border_color": "#f9fafb",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "売場パフォーマンス",
+            "heading_tag": "h4",
+            "subheading": "<p>来店数高 × 売場接触低</p>",
+            "content": "<p>弱い売場導線や陳列を特定。</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_DHMrCJ": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/22.jpg",
+            "background_color": "#f9fafb",
+            "text_color": "#1a1a1a",
+            "border_color": "#f9fafb",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "実行差異",
+            "heading_tag": "h4",
+            "subheading": "<p>店舗間パフォーマンス差異</p>",
+            "content": "<p>店舗運営の実行差異を可視化。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -652,7 +724,11 @@
       },
       "block_order": [
         "item_Eiqt4F",
-        "item_QBtwgX"
+        "item_QBtwgX",
+        "item_3hpThx",
+        "item_GaHE8P",
+        "item_QMhiDg",
+        "item_DHMrCJ"
       ],
       "custom_css": [
         ".multi-column {gap: 1rem;}",
@@ -665,9 +741,9 @@
         "stack_on_mobile": false,
         "gap": "medium",
         "text_alignment": "start",
-        "subheading": "DIAGNOSTIC LOGIC",
-        "title": "Stop Guessing. Start Solving.",
-        "content": "<p>Flow removes the ambiguity from store management. The logic engine identifies exactly which lever to pull to maximize hourly P&L across your entire network.</p>",
+        "subheading": "診断ロジック",
+        "title": "店舗成果を左右する。要因を特定する。",
+        "content": "<p>Flowは、来店・人員配置・VMD・店舗実行など、<br/>売上に影響する運営課題を特定します。</p>",
         "background": "#0e366a",
         "background_gradient": "",
         "text_color": "#ffffff"
@@ -686,8 +762,8 @@
             "column_size": "3",
             "title": "+23.9%",
             "heading_tag": "h1",
-            "subheading": "<p>Capture Rate Increase</p>",
-            "content": "<p><strong>Daytona International</strong></p><p></p><ul><li>Identifying missed store opportunities in real-time.</li></ul>",
+            "subheading": "<h5><strong>購買率改善<br/><br/></strong></h5>",
+            "content": "<p><strong>Daytona International</strong></p><p></p><p>販売機会損失をリアルタイムで改善。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -701,10 +777,10 @@
             "border_color": "",
             "show_controls": false,
             "column_size": "3",
-            "title": "¥1.8B",
+            "title": "+18億円",
             "heading_tag": "h1",
-            "subheading": "<p>Annual Sales Lift</p>",
-            "content": "<p><strong>126-Store Domestic Network</strong></p><ul><li>Standardizing performance across your entire retail footprint.</li></ul>",
+            "subheading": "<h5><strong>年間売上インパクト<br/><br/></strong></h5>",
+            "content": "<p><strong>大手国内ファッションリテーラー</strong></p><p>全店舗で実行基準を標準化。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -720,8 +796,8 @@
             "column_size": "3",
             "title": "+2.3%",
             "heading_tag": "h1",
-            "subheading": "<p>Net Conversion Improvement</p>",
-            "content": "<p><strong>Global SPA Retailer</strong></p><ul><li>Turning foot traffic into transactions through AI-driven staffing.</li></ul>",
+            "subheading": "<h5><strong>店舗購買率向上<br/><br/></strong></h5>",
+            "content": "<p><strong>グローバルSPAリテーラー</strong></p><p>来店を売上成果へ転換。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -745,7 +821,7 @@
         "gap": "medium",
         "text_alignment": "start",
         "subheading": "",
-        "title": "Proven Scale. Hard Financial Returns.",
+        "title": "実績が証明する、店舗改善効果。",
         "content": "",
         "background": "#ffffff",
         "background_gradient": "",
@@ -862,12 +938,12 @@
             "border_color": "#f9fafb",
             "show_controls": false,
             "column_size": "3",
-            "title": "Explore Precision Sensing:",
+            "title": "高精度店内計測",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<p>How our AI ensures 100% data integrity.</p>",
+            "content": "<p>高精度な来店計測と顧客行動分析。</p>",
             "link_url": "",
-            "link_text": "View all",
+            "link_text": "詳しく見る →",
             "link_style": "link"
           }
         },
@@ -880,12 +956,12 @@
             "border_color": "#f9fafb",
             "show_controls": false,
             "column_size": "3",
-            "title": "Explore FIDA Analytics",
+            "title": "FIDA分析基盤",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<p>Deep-dive into contextual data integration.</p>",
+            "content": "<p>来店・売上・人員配置を統合分析。</p>",
             "link_url": "#",
-            "link_text": "View all",
+            "link_text": "詳しく見る →",
             "link_style": "link"
           }
         },
@@ -898,12 +974,12 @@
             "border_color": "#f9fafb",
             "show_controls": false,
             "column_size": "3",
-            "title": "Explore Decision Intelligence",
+            "title": "現場意思決定実行支援",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<p>See how Flow Assistant drives the PDCA loop.</p>",
+            "content": "<p>現場実行につながる推奨アクション。</p><h3></h3>",
             "link_url": "#",
-            "link_text": "View all",
+            "link_text": "詳しく見る →",
             "link_style": "link"
           }
         }
@@ -922,8 +998,8 @@
         "stack_on_mobile": false,
         "gap": "medium",
         "text_alignment": "start",
-        "subheading": "Resources",
-        "title": "Master Every Layer of Your Operation.",
+        "subheading": "プラットフォームを見る",
+        "title": "店舗運営のすべてのレイヤーを統合。",
         "content": "",
         "background": "",
         "background_gradient": "",
