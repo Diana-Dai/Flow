@@ -47,7 +47,7 @@
         "text_aecmjT": {
           "type": "text",
           "settings": {
-            "text": "<p>COMPATIBLE WITH YOUR EXISTING CAMERA INFRASTRUCTURE.</p>"
+            "text": "<p><em>The only sensor that understands the difference between a staff member and a sale.</em></p>"
           }
         },
         "payment_terms": {
@@ -101,7 +101,7 @@
             "icon": "picto-star",
             "icon_width": 20,
             "title": "Specs",
-            "content": "<p>Standard on all plans. Unifying Footfall, POS, Shift, Weather, and Inventory into a single source of truth.</p>",
+            "content": "<ul><li>[ SENSOR ] 120° Wide-Angle / 4K Sensing</li><li>[ COMPUTE ] Quad-Core Edge AI Engine</li><li>[ POWER ] 802.3af PoE (Class 2)</li><li>[ DIMENSIONS ] 110mm x 110mm x 45mm</li></ul>",
             "background": "#f2f2f2",
             "text_color": "#11243e"
           }
@@ -152,40 +152,6 @@
         "input_text_color": ""
       }
     },
-    "rich_text_peMmaV": {
-      "type": "rich-text",
-      "blocks": {
-        "subheading_KmVFm4": {
-          "type": "subheading",
-          "settings": {
-            "text": "Sensing to strategy",
-            "icon": "none"
-          }
-        },
-        "heading_GM8FNx": {
-          "type": "heading",
-          "settings": {
-            "text": "'If you have cameras, you already have the hardware. Now, give them a brain.'",
-            "heading_tag": "h1",
-            "text_color": "",
-            "gradient": ""
-          }
-        }
-      },
-      "block_order": [
-        "subheading_KmVFm4",
-        "heading_GM8FNx"
-      ],
-      "name": "Rich text",
-      "settings": {
-        "full_width": true,
-        "content_width": "large",
-        "text_position": "center",
-        "background": "#ffffff",
-        "background_gradient": "",
-        "text_color": ""
-      }
-    },
     "multi_column_HCGJea": {
       "type": "multi-column",
       "blocks": {
@@ -196,11 +162,11 @@
             "text_color": "",
             "border_color": "",
             "show_controls": false,
-            "column_size": "3",
-            "title": "",
+            "column_size": "4",
+            "title": "+25%",
             "heading_tag": "h1",
-            "subheading": "",
-            "content": "<h3>FRAGMENTED DATA</h3><p>Too many systems (POS/Staff/Weather). Zero synergy.</p>",
+            "subheading": "<p>REVENUE GROWTH</p>",
+            "content": "<p>Automated POS + Traffic integration. Identify and fix conversion leaks in real-time. (Proven by <em>Daytona International</em>).</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -213,11 +179,11 @@
             "text_color": "",
             "border_color": "",
             "show_controls": false,
-            "column_size": "3",
-            "title": "",
+            "column_size": "4",
+            "title": "15%",
             "heading_tag": "h1",
-            "subheading": "",
-            "content": "<h3>ANALYSIS PARALYSIS</h3><p>Data exists, but staff don't know the next move.</p>",
+            "subheading": "<p>OPEX REDUCTION</p>",
+            "content": "<p>Align scheduling to peak traffic hours. Eliminate 100% of overstaffing waste without compromising service quality.</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -230,11 +196,11 @@
             "text_color": "",
             "border_color": "",
             "show_controls": false,
-            "column_size": "3",
-            "title": "",
+            "column_size": "4",
+            "title": "3.5x",
             "heading_tag": "h1",
-            "subheading": "",
-            "content": "<h3>DELAYED DECISIONS</h3><p>Missing sales opportunities due to slow feedback loops.</p><h4></h4>",
+            "subheading": "<p>DWELL TIME</p>",
+            "content": "<p>Quantify engagement. Shift from \"gut feeling\" to measuring the exact \"stop rate\" at new product zones.</p><p></p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -242,7 +208,6 @@
         },
         "item_ztJTym": {
           "type": "item",
-          "disabled": true,
           "settings": {
             "background_color": "",
             "text_color": "",
@@ -275,11 +240,103 @@
         "gap": "medium",
         "text_alignment": "start",
         "subheading": "",
-        "title": "",
+        "title": "PROVEN SCALE.",
         "content": "",
         "background": "#0e366a",
         "background_gradient": "",
         "text_color": "#f9fafb"
+      }
+    },
+    "rich_text_peMmaV": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_DDAQPW": {
+          "type": "subheading",
+          "settings": {
+            "text": "AI CAMERA",
+            "icon": "none"
+          }
+        },
+        "heading_GM8FNx": {
+          "type": "heading",
+          "settings": {
+            "text": "THE SENSING ARRAY",
+            "heading_tag": "h0",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_DF74kd": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Edge-intelligent nodes transforming physical movement into data truth.</p>"
+          }
+        },
+        "image_GR6JYr": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/screen.png",
+            "width_mode": "full_width",
+            "max_width": 600,
+            "mobile_max_width": 350
+          }
+        }
+      },
+      "block_order": [
+        "subheading_DDAQPW",
+        "heading_GM8FNx",
+        "richtext_DF74kd",
+        "image_GR6JYr"
+      ],
+      "disabled": true,
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "large",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "media_with_text_hMPTmL": {
+      "type": "media-with-text",
+      "blocks": {
+        "image_8hBn9C": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/screen.png",
+            "media_width": 50,
+            "media_position": "end",
+            "text_position": "place-self-center-start text-start",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "DATA PURITY",
+            "title": "",
+            "content": "<h3>98.8%</h3><h4>OPERATIONAL ACCURACY.</h4><p>Using edge algorithms to automatically identify staff uniform signatures and patrol paths, precisely filtering 'operational noise' from traffic data.</p><p></p><p><a href=\"#\" title=\"#\">EXPLORE THE DECISION ENGINE →</a></p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "#ffffff",
+            "background_gradient": "",
+            "text_color": "#11243e",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_8hBn9C"
+      ],
+      "custom_css": [
+        "h3 {font-size: var(--text-h0); color: #a0b842;}",
+        "* {background: white;}"
+      ],
+      "name": "Media with text",
+      "settings": {
+        "full_width": false,
+        "alternate_media_position": false,
+        "spacing": "small"
       }
     },
     "multi_column_LeVzeG": {
@@ -343,7 +400,6 @@
         "item_Eiqt4F",
         "item_QBtwgX"
       ],
-      "disabled": true,
       "custom_css": [
         ".multi-column {gap: 1rem;}",
         ".multi-column__item:last-child {align-items: center; justify-content: center; display: flex;}",
@@ -481,141 +537,21 @@
         "chart_true_false_color": ""
       }
     },
-    "multi_column_x6bKQU": {
-      "type": "multi-column",
-      "blocks": {
-        "item_GrAewn": {
-          "type": "item",
-          "settings": {
-            "background_color": "#f2f2f2",
-            "text_color": "",
-            "border_color": "",
-            "show_controls": false,
-            "column_size": "3",
-            "title": "Legacy Sync",
-            "heading_tag": "h4",
-            "subheading": "",
-            "content": "<p>Compatible with existing camera infrastructure. Connect and activate AI intelligence in minutes.</p>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        },
-        "item_3rhR4q": {
-          "type": "item",
-          "settings": {
-            "background_color": "#f2f2f2",
-            "text_color": "",
-            "border_color": "",
-            "show_controls": false,
-            "column_size": "3",
-            "title": "POS Fusion",
-            "heading_tag": "h4",
-            "subheading": "",
-            "content": "<p>Automatic linkage between footfall and transaction data. Dissolve the barrier between traffic and revenue.</p><h4></h4>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        },
-        "item_KmVTXJ": {
-          "type": "item",
-          "settings": {
-            "background_color": "#f2f2f2",
-            "text_color": "",
-            "border_color": "",
-            "show_controls": false,
-            "column_size": "3",
-            "title": "External Data",
-            "heading_tag": "h4",
-            "subheading": "",
-            "content": "<p>Integrate Weather and Staffing data to identify true performance drivers behind客流量 fluctuations.</p>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        }
-      },
-      "block_order": [
-        "item_GrAewn",
-        "item_3rhR4q",
-        "item_KmVTXJ"
-      ],
-      "custom_css": [
-        ".prose p {font-size: 1rem;}",
-        ".text-xs p {font-size: 1rem;}",
-        ".h4 {font-size: 1.6rem;}"
-      ],
-      "name": "Multi-column",
-      "settings": {
-        "full_width": true,
-        "stack_on_mobile": false,
-        "gap": "medium",
-        "text_alignment": "start",
-        "subheading": "",
-        "title": "Unified Data Core",
-        "content": "",
-        "background": "#ffffff",
-        "background_gradient": "",
-        "text_color": "#11243e"
-      }
-    },
-    "media_with_text_hMPTmL": {
-      "type": "media-with-text",
-      "blocks": {
-        "image_8hBn9C": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/original-33d2ebd1cd09396d32d635fa4fdcfbb4.webp",
-            "media_width": 40,
-            "media_position": "end",
-            "text_position": "place-self-center-start text-start",
-            "icon": "none",
-            "icon_width": 48,
-            "subheading": "",
-            "title": "",
-            "content": "<h2>The Conversion Matrix</h2><h5>Visualize the Full Funnel.</h5><p>Move beyond total visits. Identify conversion leaks at every touchpoint: from street entry to fitting room engagement.</p><ul><li>ENTRY RATE </li><li>DWELL TIME </li><li>CVR_%</li></ul>",
-            "link_text": "",
-            "link_url": "",
-            "background": "#ffffff",
-            "background_gradient": "",
-            "text_color": "#11243e",
-            "text_gradient": "",
-            "button_background": "",
-            "button_text_color": ""
-          }
-        }
-      },
-      "block_order": [
-        "image_8hBn9C"
-      ],
-      "custom_css": [
-        "h3 {font-size: var(--text-h0); color: #a0b842;}",
-        "* {background: white;}",
-        "ul {font-size: 1rem;}"
-      ],
-      "name": "Media with text",
-      "settings": {
-        "full_width": false,
-        "alternate_media_position": false,
-        "spacing": "small"
-      }
-    },
     "media_with_text_mRGejd": {
       "type": "media-with-text",
       "blocks": {
         "image_enedX8": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/solution.png",
-            "media_width": 40,
+            "image": "shopify://shop_images/44.png",
+            "media_width": 50,
             "media_position": "start",
             "text_position": "place-self-center-start text-start",
             "icon": "none",
             "icon_width": 48,
-            "subheading": "",
-            "title": "Behavioral Geometry.",
-            "content": "<h5>Quantify Dwell Time.</h5><p>Scientific validation of store layout efficiency. Map invisible paths and measure the exact engagement of every product zone.</p><p></p><p><em>3.5x DWELL TIME VALIDATED</em></p>",
+            "subheading": "RAPID DEPLOYMENT WINDOW",
+            "title": "30 MINS.",
+            "content": "<p></p><p>PoE Interface: Single standard Ethernet cable for simultaneous power and data transmission.</p><p>Zero-Config: Automatic node discovery and network handshake. Reduces onsite engineering time by 90%.</p>",
             "link_text": "",
             "link_url": "",
             "background": "#f9fafb",
@@ -631,14 +567,110 @@
         "image_enedX8"
       ],
       "custom_css": [
-        "* {background: white;}",
-        "em {color: #a0b842;}"
+        "* {background: white;}"
       ],
       "name": "Media with text",
       "settings": {
         "full_width": false,
         "alternate_media_position": false,
         "spacing": "small"
+      }
+    },
+    "multi_column_x6bKQU": {
+      "type": "multi-column",
+      "blocks": {
+        "item_GrAewn": {
+          "type": "item",
+          "settings": {
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "4",
+            "title": "QUANTIFY DWELL TIME.",
+            "heading_tag": "h4",
+            "subheading": "<p>VMD</p>",
+            "content": "<p>Shift from gut feeling to evidence-backed merchandising.</p><h4></h4>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_3rhR4q": {
+          "type": "item",
+          "settings": {
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "4",
+            "title": "LINK POS + TRAFFIC.",
+            "heading_tag": "h4",
+            "subheading": "<p>CVR</p>",
+            "content": "<p>Identify conversion leaks and pinpoint transaction growth.</p><h4></h4>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_KmVTXJ": {
+          "type": "item",
+          "settings": {
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "4",
+            "title": "PRECISION SCHEDULING.",
+            "heading_tag": "h4",
+            "subheading": "<p>LABOR</p>",
+            "content": "<p>Align staff hours to peak traffic. 0% labor waste.</p><h4></h4>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_E9Cyby": {
+          "type": "item",
+          "settings": {
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "4",
+            "title": "REAL-TIME ACTION.",
+            "heading_tag": "h4",
+            "subheading": "<p>ASSISTANT</p>",
+            "content": "<p>AI-driven instruction cards for immediate sales improvement.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_GrAewn",
+        "item_3rhR4q",
+        "item_KmVTXJ",
+        "item_E9Cyby"
+      ],
+      "custom_css": [
+        ".prose p {font-size: 1rem;}",
+        ".text-xs p {font-size: 1rem;}",
+        ".h4 {font-size: 1.6rem;}"
+      ],
+      "name": "Multi-column",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "start",
+        "subheading": "",
+        "title": "The Actionable Use Cases",
+        "content": "",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "#11243e"
       }
     },
     "rich_text_6VmVgb": {
@@ -697,13 +729,13 @@
   },
   "order": [
     "main",
-    "rich_text_peMmaV",
     "multi_column_HCGJea",
+    "rich_text_peMmaV",
+    "media_with_text_hMPTmL",
     "multi_column_LeVzeG",
     "section-15",
-    "multi_column_x6bKQU",
-    "media_with_text_hMPTmL",
     "media_with_text_mRGejd",
+    "multi_column_x6bKQU",
     "rich_text_6VmVgb"
   ]
 }
