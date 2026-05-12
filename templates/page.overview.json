@@ -762,8 +762,8 @@
             "column_size": "3",
             "title": "+23.9%",
             "heading_tag": "h1",
-            "subheading": "<p>Capture Rate Increase</p>",
-            "content": "<p><strong>Daytona International</strong></p><p></p><ul><li>Identifying missed store opportunities in real-time.</li></ul>",
+            "subheading": "<h5><strong>購買率改善<br/><br/></strong></h5>",
+            "content": "<p><strong>Daytona International</strong></p><p></p><p>販売機会損失をリアルタイムで改善。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -779,8 +779,8 @@
             "column_size": "3",
             "title": "¥1.8B",
             "heading_tag": "h1",
-            "subheading": "<p>Annual Sales Lift</p>",
-            "content": "<p><strong>126-Store Domestic Network</strong></p><ul><li>Standardizing performance across your entire retail footprint.</li></ul>",
+            "subheading": "<h5><strong>年間売上インパクト<br/><br/></strong></h5>",
+            "content": "<p><strong>大手国内ファッションリテーラー</strong></p><p>全店舗で実行基準を標準化。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -796,8 +796,8 @@
             "column_size": "3",
             "title": "+2.3%",
             "heading_tag": "h1",
-            "subheading": "<p>Net Conversion Improvement</p>",
-            "content": "<p><strong>Global SPA Retailer</strong></p><ul><li>Turning foot traffic into transactions through AI-driven staffing.</li></ul>",
+            "subheading": "<h5><strong>店舗購買率向上<br/><br/></strong></h5>",
+            "content": "<p><strong>グローバルSPAリテーラー</strong></p><p>来店を売上成果へ転換。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -941,9 +941,9 @@
             "title": "Explore Precision Sensing:",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<p>How our AI ensures 100% data integrity.</p>",
+            "content": "<p>高精度な来店計測と顧客行動分析。</p>",
             "link_url": "",
-            "link_text": "View all",
+            "link_text": "詳しく見る →",
             "link_style": "link"
           }
         },
@@ -959,9 +959,9 @@
             "title": "Explore FIDA Analytics",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<p>Deep-dive into contextual data integration.</p>",
+            "content": "<p>来店・売上・人員配置を統合分析。</p>",
             "link_url": "#",
-            "link_text": "View all",
+            "link_text": "詳しく見る →",
             "link_style": "link"
           }
         },
@@ -977,9 +977,9 @@
             "title": "Explore Decision Intelligence",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<p>See how Flow Assistant drives the PDCA loop.</p>",
+            "content": "<p>現場実行につながる推奨アクション。</p><h3></h3>",
             "link_url": "#",
-            "link_text": "View all",
+            "link_text": "詳しく見る →",
             "link_style": "link"
           }
         }
@@ -998,8 +998,8 @@
         "stack_on_mobile": false,
         "gap": "medium",
         "text_alignment": "start",
-        "subheading": "Resources",
-        "title": "Master Every Layer of Your Operation.",
+        "subheading": "プラットフォームを見る",
+        "title": "店舗運営のすべてのレイヤーを統合。",
         "content": "",
         "background": "",
         "background_gradient": "",
