@@ -15,21 +15,21 @@
         "heading_W76pLA": {
           "type": "heading",
           "settings": {
-            "text": "The Standard for Retail Execution.",
+            "text": "Turn Retail Data Into Operational Action.",
             "heading_tag": "h0"
           }
         },
         "richtext_b7cQCP": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Bridge the 18-hour gap between data and action. Flow is the operational layer that turns store behavior into measurable revenue.</p>"
+            "content": "<p>Bridge the gap between store analytics and real-time execution. Flow transforms retail data into faster decisions, stronger conversion, and measurable sales impact.</p>"
           }
         },
         "button_39CcgY": {
           "type": "button",
           "settings": {
             "style": "fill",
-            "size": "base",
+            "size": "lg",
             "text": "Audit Your Speed",
             "url": "",
             "background": "#a0b842",
@@ -41,7 +41,7 @@
           "settings": {
             "style": "fill",
             "size": "lg",
-            "text": "Learn more",
+            "text": "Explore the Platform",
             "url": "",
             "background": "#f9fafb",
             "text_color": "#11243e"
@@ -78,7 +78,7 @@
       "settings": {
         "full_width": true,
         "allow_transparent_header": false,
-        "enable_parallax": false,
+        "enable_parallax": true,
         "image_size": "auto",
         "image": "shopify://shop_images/4a106d7f840b3d19bae46373c4dd4286.png",
         "mobile_text_position": "place-self-center text-center",
@@ -144,7 +144,7 @@
         "full_width": true,
         "stack_mobile": true,
         "title": "",
-        "content": "<p>主要リテールブランドの店舗運営を支援</p>",
+        "content": "<p>Powering Retail Execution Across Leading Brands</p>",
         "text_alignment": "center",
         "items_per_row": 5,
         "background": "#ffffff",
@@ -617,11 +617,11 @@
           "type": "item",
           "settings": {
             "image": "shopify://shop_images/11.jpg",
-            "background_color": "#36465c",
-            "text_color": "#ffffff",
-            "border_color": "#36465c",
+            "background_color": "#f9fafb",
+            "text_color": "#1a1a1a",
+            "border_color": "#f9fafb",
             "show_controls": false,
-            "column_size": "2",
+            "column_size": "3",
             "title": "SERVICE GAP",
             "heading_tag": "h4",
             "subheading": "<p>HIGH TRAFFIC + LOW CONVERSION</p>",
@@ -635,11 +635,11 @@
           "type": "item",
           "settings": {
             "image": "shopify://shop_images/22.jpg",
-            "background_color": "#36465c",
-            "text_color": "#ffffff",
-            "border_color": "#36465c",
+            "background_color": "#f9fafb",
+            "text_color": "#1a1a1a",
+            "border_color": "#f9fafb",
             "show_controls": false,
-            "column_size": "2",
+            "column_size": "3",
             "title": "VMD Issue",
             "heading_tag": "h4",
             "subheading": "<p>LOW TRAFFIC + LOW CAPTURE</p>",
@@ -648,11 +648,87 @@
             "link_text": "",
             "link_style": "link"
           }
+        },
+        "item_3hpThx": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/11.jpg",
+            "background_color": "#f9fafb",
+            "text_color": "#1a1a1a",
+            "border_color": "#f9fafb",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "Column title",
+            "heading_tag": "h4",
+            "subheading": "<p>Organize content into multiple columns to share useful information to your customers about your products, values...</p>",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_GaHE8P": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/11.jpg",
+            "background_color": "#f9fafb",
+            "text_color": "#1a1a1a",
+            "border_color": "#f9fafb",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "Column title",
+            "heading_tag": "h4",
+            "subheading": "<p>Organize content into multiple columns to share useful information to your customers about your products, values...</p>",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_QMhiDg": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/22.jpg",
+            "background_color": "#f9fafb",
+            "text_color": "#1a1a1a",
+            "border_color": "#f9fafb",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "Column title",
+            "heading_tag": "h4",
+            "subheading": "<p>Organize content into multiple columns to share useful information to your customers about your products, values...</p>",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_DHMrCJ": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/22.jpg",
+            "background_color": "#f9fafb",
+            "text_color": "#1a1a1a",
+            "border_color": "#f9fafb",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "Column title",
+            "heading_tag": "h4",
+            "subheading": "<p>Organize content into multiple columns to share useful information to your customers about your products, values...</p>",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
         }
       },
       "block_order": [
         "item_Eiqt4F",
-        "item_QBtwgX"
+        "item_QBtwgX",
+        "item_3hpThx",
+        "item_GaHE8P",
+        "item_QMhiDg",
+        "item_DHMrCJ"
       ],
       "custom_css": [
         ".multi-column {gap: 1rem;}",
