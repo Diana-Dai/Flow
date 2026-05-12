@@ -262,8 +262,8 @@
             "image": "shopify://shop_images/Analytics_-_Entering_2.png",
             "icon": "none",
             "icon_width": 48,
-            "title": "Precision Sensing",
-            "content": "<p>AIによるスタッフ除外機能を活用し、<br/>高精度な来店計測と顧客行動データをリアルタイムで取得します。</p><p><a href=\"#\" title=\"#\">Learn more</a></p>"
+            "title": "高精度店内計測",
+            "content": "<p>AIによるスタッフ除外機能を活用し、<br/>高精度な来店計測と顧客行動データをリアルタイムで取得します。</p><p>機能を見る →</p>"
           }
         },
         "item_4Jg6dW": {
@@ -272,8 +272,8 @@
             "image": "shopify://shop_images/analytics_mobile.png",
             "icon": "none",
             "icon_width": 48,
-            "title": "FIDA Analytics",
-            "content": "<p>来店・売上・人員配置・購買率を統合分析し、<br/>店舗運営上の課題と機会をリアルタイムで可視化します。</p><p><a href=\"#\" title=\"#\">Know more</a></p>"
+            "title": "FIDA分析基盤",
+            "content": "<p>来店・売上・人員配置・購買率を統合分析し、<br/>店舗運営上の課題と機会をリアルタイムで可視化します。</p><p>機能を見る →</p>"
           }
         },
         "item_a8jn8N": {
@@ -282,8 +282,8 @@
             "image": "shopify://shop_images/store_environmnet_x_1500_x_1900_px.png",
             "icon": "none",
             "icon_width": 48,
-            "title": "Decision Intelligence",
-            "content": "<p>現場がすぐに動ける推奨アクションを提示し、<br/>店舗実行のスピードと一貫性を向上させます。</p><p><a href=\"#\" title=\"#\">Learn more </a></p>"
+            "title": "現場意思決定実行支援",
+            "content": "<p>現場がすぐに動ける推奨アクションを提示し、<br/>店舗実行のスピードと一貫性を向上させます。</p><p>機能を見る →</p>"
           }
         }
       },
@@ -777,7 +777,7 @@
             "border_color": "",
             "show_controls": false,
             "column_size": "3",
-            "title": "¥1.8B",
+            "title": "+18億円",
             "heading_tag": "h1",
             "subheading": "<h5><strong>年間売上インパクト<br/><br/></strong></h5>",
             "content": "<p><strong>大手国内ファッションリテーラー</strong></p><p>全店舗で実行基準を標準化。</p>",
@@ -938,7 +938,7 @@
             "border_color": "#f9fafb",
             "show_controls": false,
             "column_size": "3",
-            "title": "Explore Precision Sensing:",
+            "title": "高精度店内計測",
             "heading_tag": "h4",
             "subheading": "",
             "content": "<p>高精度な来店計測と顧客行動分析。</p>",
@@ -956,7 +956,7 @@
             "border_color": "#f9fafb",
             "show_controls": false,
             "column_size": "3",
-            "title": "Explore FIDA Analytics",
+            "title": "FIDA分析基盤",
             "heading_tag": "h4",
             "subheading": "",
             "content": "<p>来店・売上・人員配置を統合分析。</p>",
@@ -974,7 +974,7 @@
             "border_color": "#f9fafb",
             "show_controls": false,
             "column_size": "3",
-            "title": "Explore Decision Intelligence",
+            "title": "現場意思決定実行支援",
             "heading_tag": "h4",
             "subheading": "",
             "content": "<p>現場実行につながる推奨アクション。</p><h3></h3>",
