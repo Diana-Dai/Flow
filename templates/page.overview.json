@@ -15,14 +15,14 @@
         "heading_W76pLA": {
           "type": "heading",
           "settings": {
-            "text": "Turn Retail Data Into Operational Action.",
+            "text": "店舗データを、現場の行動へ。",
             "heading_tag": "h0"
           }
         },
         "richtext_b7cQCP": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Bridge the gap between store analytics and real-time execution. Flow transforms retail data into faster decisions, stronger conversion, and measurable sales impact.</p>"
+            "content": "<p>店舗分析と現場実行の分断をなくす。<br/>Flowは、来店・購買・売場行動データを、迅速な判断と売上成果につなげます。</p>"
           }
         },
         "button_39CcgY": {
@@ -30,7 +30,7 @@
           "settings": {
             "style": "fill",
             "size": "lg",
-            "text": "Audit Your Speed",
+            "text": "導入診断を始める",
             "url": "",
             "background": "#a0b842",
             "text_color": "#ffffff"
@@ -41,7 +41,7 @@
           "settings": {
             "style": "fill",
             "size": "lg",
-            "text": "Explore the Platform",
+            "text": "プラットフォームを見る",
             "url": "",
             "background": "#f9fafb",
             "text_color": "#11243e"
