@@ -35,7 +35,7 @@ hr {
 h1, h2, h3, h4, h5, h6 {
   font-size: inherit;
   font-weight: inherit;
-  color: rgb(var(--text-color));
+  /* color: rgb(var(--text-color)); */
 
 }
 
@@ -881,7 +881,7 @@ scroll-carousel {
 }
 
 .content-over-media > :not(img, video, iframe, svg, video-media, picture) {
-  max-width: var(--content-over-media-content-max-width, 780px);
+  max-width: var(--content-over-media-content-max-width, 1080px);
   z-index: 1;
   grid-area: 2 / 2 / auto / span 1;
   position: relative;
@@ -4147,8 +4147,11 @@ tfoot td {
 }
 
 .icon-block {
-  padding: var(--spacing-6);
+  padding: var(--spacing-4);
   background: rgb(var(--background));
+  display:inline-block;
+  border-radius: 15px;
+
 }
 
 .image-icon {
@@ -10258,4 +10261,8 @@ display: flex;
   font-size: 0.6rem;
   letter-spacing: 0.02em;
   text-transform: uppercase;
+}
+.icon_container{
+    font-size: 0;
+    margin-bottom: -4px;
 }

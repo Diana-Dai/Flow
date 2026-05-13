@@ -165,7 +165,7 @@
         "heading_GM8FNx": {
           "type": "heading",
           "settings": {
-            "text": "If you have cameras, you already have the hardware. Now, give them a brain.",
+            "text": "'If you have cameras, you already have the hardware. Now, give them a brain.'",
             "heading_tag": "h1",
             "text_color": "",
             "gradient": ""
@@ -265,7 +265,6 @@
         "item_tTyycj",
         "item_ztJTym"
       ],
-      "disabled": true,
       "custom_css": [
         ".prose p {font-size: 0.9rem;}"
       ],
@@ -556,7 +555,7 @@
         "subheading": "",
         "title": "Unified Data Core",
         "content": "",
-        "background": "#f9fafb",
+        "background": "#ffffff",
         "background_gradient": "",
         "text_color": "#11243e"
       }
@@ -632,7 +631,7 @@
         "image_enedX8"
       ],
       "custom_css": [
-        "* {background: #f9fafb;}",
+        "* {background: white;}",
         "em {color: #a0b842;}"
       ],
       "name": "Media with text",
@@ -642,272 +641,20 @@
         "spacing": "small"
       }
     },
-    "multi_column_YabJJ6": {
-      "type": "multi-column",
-      "blocks": {
-        "item_CiqHBL": {
-          "type": "item",
-          "settings": {
-            "image": "shopify://shop_images/1_63ed0d82-717f-43b5-ac70-d781c4cd7647.png",
-            "background_color": "",
-            "text_color": "",
-            "border_color": "#ffffff",
-            "show_controls": false,
-            "column_size": "4",
-            "title": "Detection",
-            "heading_tag": "h4",
-            "subheading": "",
-            "content": "<p>Sensors identify operational anomalies.</p>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        },
-        "item_fbHjcc": {
-          "type": "item",
-          "settings": {
-            "image": "shopify://shop_images/2_85c5684d-f879-4469-9d8f-f93ee5ba4022.png",
-            "background_color": "",
-            "text_color": "",
-            "border_color": "#ffffff",
-            "show_controls": false,
-            "column_size": "4",
-            "title": "Processing",
-            "heading_tag": "h4",
-            "subheading": "",
-            "content": "<p>Flow AI correlates real-time streams.</p>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        },
-        "item_9dxz6G": {
-          "type": "item",
-          "settings": {
-            "image": "shopify://shop_images/3_7b3fbeb6-53ef-4fae-9ee7-668b2ad1c7bc.png",
-            "background_color": "",
-            "text_color": "",
-            "border_color": "#ffffff",
-            "show_controls": false,
-            "column_size": "4",
-            "title": "Alerting",
-            "heading_tag": "h4",
-            "subheading": "",
-            "content": "<p>Instant deployment commands issued.</p>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        },
-        "item_nqxyQz": {
-          "type": "item",
-          "settings": {
-            "image": "shopify://shop_images/4_05487be9-db60-4881-b3ae-51e0f8c75923.png",
-            "background_color": "",
-            "text_color": "",
-            "border_color": "#ffffff",
-            "show_controls": false,
-            "column_size": "4",
-            "title": "Execution",
-            "heading_tag": "h4",
-            "subheading": "",
-            "content": "<p>Staff confirms task completion.</p>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        }
-      },
-      "block_order": [
-        "item_CiqHBL",
-        "item_fbHjcc",
-        "item_9dxz6G",
-        "item_nqxyQz"
-      ],
-      "custom_css": [
-        ".multi-column__item {justify-content: center; align-items: center; display: flex; flex-direction: column;}",
-        ".multi-column__item img {width: 150px;}"
-      ],
-      "name": "Multi-column",
-      "settings": {
-        "full_width": true,
-        "stack_on_mobile": false,
-        "gap": "medium",
-        "text_alignment": "center",
-        "subheading": "",
-        "title": "Zero analysis. Total execution.",
-        "content": "",
-        "background": "#ffffff",
-        "background_gradient": "",
-        "text_color": ""
-      }
-    },
-    "comparison_table_CjJMzk": {
-      "type": "comparison-table",
-      "blocks": {
-        "headings_KgMUKJ": {
-          "type": "headings",
-          "settings": {
-            "heading_1": "Store Branch",
-            "heading_2": "Footfall Index",
-            "heading_3": "CVR %",
-            "heading_4": "Status",
-            "heading_5": "",
-            "heading_6": "",
-            "heading_7": "",
-            "heading_8": "",
-            "heading_9": "",
-            "heading_10": "",
-            "heading_11": "",
-            "heading_12": "",
-            "heading_13": "",
-            "heading_14": "",
-            "heading_15": "",
-            "heading_16": "",
-            "heading_17": "",
-            "heading_18": "",
-            "heading_19": "",
-            "heading_20": ""
-          }
-        },
-        "values_XeWzdx": {
-          "type": "values",
-          "settings": {
-            "product": "",
-            "value_1": "<p>TOKYO // SHIBUYA</p>",
-            "value_2": "<p>14,500</p>",
-            "value_3": "<p>28.4%</p>",
-            "value_4": "<p><strong>OPTIMIZED</strong></p>",
-            "value_5": "",
-            "value_6": "",
-            "value_7": "",
-            "value_8": "",
-            "value_9": "",
-            "value_10": "",
-            "value_11": "",
-            "value_12": "",
-            "value_13": "",
-            "value_14": "",
-            "value_15": "",
-            "value_16": "",
-            "value_17": "",
-            "value_18": "",
-            "value_19": "",
-            "value_20": "",
-            "view_button_background": "",
-            "view_button_text_color": ""
-          }
-        },
-        "values_JmFcqK": {
-          "type": "values",
-          "settings": {
-            "product": "",
-            "value_1": "<p>OSAKA // UMEDA</p>",
-            "value_2": "<p>11,200</p>",
-            "value_3": "<p>22.1%</p>",
-            "value_4": "<p>ALERT</p>",
-            "value_5": "",
-            "value_6": "",
-            "value_7": "",
-            "value_8": "",
-            "value_9": "",
-            "value_10": "",
-            "value_11": "",
-            "value_12": "",
-            "value_13": "",
-            "value_14": "",
-            "value_15": "",
-            "value_16": "",
-            "value_17": "",
-            "value_18": "",
-            "value_19": "",
-            "value_20": "",
-            "view_button_background": "",
-            "view_button_text_color": ""
-          }
-        },
-        "values_tDQeqH": {
-          "type": "values",
-          "settings": {
-            "product": "",
-            "value_1": "<p>LONDON // SOHO</p>",
-            "value_2": "<p>9,800</p>",
-            "value_3": "<p><strong>34.2%</strong></p>",
-            "value_4": "<p>PEAK</p>",
-            "value_5": "",
-            "value_6": "",
-            "value_7": "",
-            "value_8": "",
-            "value_9": "",
-            "value_10": "",
-            "value_11": "",
-            "value_12": "",
-            "value_13": "",
-            "value_14": "",
-            "value_15": "",
-            "value_16": "",
-            "value_17": "",
-            "value_18": "",
-            "value_19": "",
-            "value_20": "",
-            "view_button_background": "",
-            "view_button_text_color": ""
-          }
-        }
-      },
-      "block_order": [
-        "headings_KgMUKJ",
-        "values_XeWzdx",
-        "values_JmFcqK",
-        "values_tDQeqH"
-      ],
-      "custom_css": [
-        ".h2 {font-size: var(--text-h0);}",
-        "strong {color: #a0b842;}"
-      ],
-      "name": "Comparison table",
-      "settings": {
-        "full_width": true,
-        "subheading": "Performance & ROI",
-        "title": "+25%",
-        "content": "<h3>Revenue Recovery</h3>",
-        "button_text": "",
-        "button_url": "",
-        "text_position": "start",
-        "max_rows": 5,
-        "view_all_text": "View all",
-        "view_less_text": "View less",
-        "view_product": "View",
-        "show_product_info": false,
-        "show_product_image": false,
-        "show_product_swatch": true,
-        "viewing_product": "",
-        "background": "",
-        "background_gradient": "",
-        "text_color": "",
-        "heading_color": "",
-        "heading_gradient": "",
-        "button_background": "",
-        "button_text_color": "",
-        "chart_background": "",
-        "chart_text_color": "",
-        "chart_true_false_color": ""
-      }
-    },
     "rich_text_6VmVgb": {
       "type": "rich-text",
       "blocks": {
         "subheading_AK7Cjn": {
           "type": "subheading",
           "settings": {
-            "text": "FLOW PLATFORM",
+            "text": "INTERFACE: THE FLOW OS",
             "icon": "none"
           }
         },
         "heading_YXhiR8": {
           "type": "heading",
           "settings": {
-            "text": "READY TOANALYZE?",
+            "text": "FROM SENSING TO STRATEGY",
             "heading_tag": "h1",
             "text_color": "",
             "gradient": ""
@@ -916,7 +663,7 @@
         "richtext_qzAkak": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Connect your cameras. Activate your strategy.</p>"
+            "content": "<p>The V4 Node is the eyes; our OS is the brain.<br/>Raw traffic data is instantly synthesized into the <strong>FIDA Decision Engine</strong>, transforming every movement into actionable retail intelligence.</p>"
           }
         },
         "button_AVKAbi": {
@@ -924,7 +671,7 @@
           "settings": {
             "style": "outline",
             "size": "base",
-            "text": "GET IT NOW",
+            "text": "GO TO TRAFFIC & ANALYTICS",
             "url": "#",
             "background": "",
             "text_color": "#11243e"
@@ -957,8 +704,6 @@
     "multi_column_x6bKQU",
     "media_with_text_hMPTmL",
     "media_with_text_mRGejd",
-    "multi_column_YabJJ6",
-    "comparison_table_CjJMzk",
     "rich_text_6VmVgb"
   ]
 }
