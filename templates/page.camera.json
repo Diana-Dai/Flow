@@ -47,7 +47,7 @@
           "settings": {
             "style": "fill",
             "size": "lg",
-            "text": "EXPLORE ANALYTICS →",
+            "text": "Explore Analytics →",
             "url": "#",
             "background": "#ffffff",
             "text_color": "#11243e"
@@ -73,6 +73,439 @@
         "text_color": "#ffffff",
         "overlay_color": "#0e366a",
         "overlay_opacity": 64
+      }
+    },
+    "multi_column_QpdWAi": {
+      "type": "multi-column",
+      "blocks": {
+        "item_dVhEmH": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#ffffff",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h5>AI-Powered People Counting</h5><p>99.8% accurate customer counting across all lighting conditions</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_AC6yjk": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#ffffff",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h5>Staff Exclusion</h5><p>Algorithmic filtering that isolates associate movement from customer traffic metrics.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_qWKwbd": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#ffffff",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h5>Passerby & Capture Rate</h5><p>Quantify exterior storefront opportunity versus interior storefront engagement.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_yxawQp": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#ffffff",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h5>Zone & Fixture Engagement</h5><p>Dwell-time analytics for specific merchandise categories and VMD display units.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_9p7UkX": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#ffffff",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h5>Multi-Entrance Sync</h5><p>Unified pathing data across complex architectural layouts with multiple access points.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_DV6hAt": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#ffffff",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h5>API / Dashboard Ready</h5><p>Seamlessly push telemetry data into existing BI tools or the Flow enterprise dashboard.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_e7zcCc": {
+          "type": "item",
+          "disabled": true,
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h5>Multi-Entrance Support</h5><p>Handles complex store layouts with multiple entry points</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_EtFefY": {
+          "type": "item",
+          "disabled": true,
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h5>Dashboard & API Access</h5><p>Real-time data via web dashboard and REST API integration</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_aBwy9K": {
+          "type": "item",
+          "disabled": true,
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h5>Edge AI Processing</h5><p>Local computation ensures privacy and sub-100ms latency</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_dVhEmH",
+        "item_AC6yjk",
+        "item_qWKwbd",
+        "item_yxawQp",
+        "item_9p7UkX",
+        "item_DV6hAt",
+        "item_e7zcCc",
+        "item_EtFefY",
+        "item_aBwy9K"
+      ],
+      "custom_css": [
+        ".multi-column {gap: 15px;}",
+        ".multi-column__item {gap: 12px;}"
+      ],
+      "name": "Multi-column",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "small",
+        "text_alignment": "start",
+        "subheading": "TECHNICAL CAPABILITIES",
+        "title": "COMPLETE RETAIL SENSING PLATFORM.",
+        "content": "<p>Enterprise-grade AI camera with advanced people counting, behavior analytics, and real-time traffic measurement capabilities.</p>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "rich_text_efnkBL": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_r4dL8U": {
+          "type": "subheading",
+          "settings": {
+            "text": "PLATFORM POSITIONING",
+            "icon": "none"
+          }
+        },
+        "heading_tEJbnj": {
+          "type": "heading",
+          "settings": {
+            "text": "MORE THAN A PEOPLE COUNTER.",
+            "heading_tag": "h1",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_wcpU8E": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Generic traffic counters measure entries. Flow creates trusted retail behavior data that powers analytics, staffing, VMD validation, conversion analysis, and AI-driven decision support.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_r4dL8U",
+        "heading_tEJbnj",
+        "richtext_wcpU8E"
+      ],
+      "custom_css": [
+        "* {padding-bottom: 10px;}"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "blocks_ULkcay": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_a3e57c5_TFrNWY": {
+          "type": "ai_gen_block_a3e57c5",
+          "settings": {
+            "container_background": "#ffffff",
+            "text_color": "#000000",
+            "left_title": "",
+            "left_tag": "TRADITIONAL SOLUTION",
+            "left_metric": "Generic People Counters",
+            "left_item_1": "<ul><li>Counts total entries at door</li></ul><p></p>",
+            "left_item_2": "<ul><li>No staff vs. customer differentiation</li><li></li></ul>",
+            "left_item_3": "<ul><li>Limited to entrance measurement</li><li></li></ul>",
+            "left_item_4": "<ul><li>Isolated data with no ecosystem integration</li><li></li></ul>",
+            "left_background": "#ffffff",
+            "left_border_color": "#e5e7eb",
+            "left_tag_background": "#f3f4f6",
+            "left_tag_text": "#6b7280",
+            "left_progress_label": "USE CASE:\n\nBasic foot traffic reporting",
+            "left_progress_time": "12-18hr",
+            "left_progress_percent": 20,
+            "left_progress_color": "#ef4444",
+            "right_title": "",
+            "right_tag": "FLOW PLATFORM",
+            "right_metric": "Flow AI Camera + Ecosystem",
+            "right_item_1": "<p>Accurate customer counting with AI staff exclusion</p><p></p>",
+            "right_item_2": "<p>Zone-level dwell time and engagement tracking</p><p></p>",
+            "right_item_3": "<p>Multi-entrance support with directional flow</p>",
+            "right_item_4": "<p>Unified with POS, staffing, and analytics platform</p>",
+            "right_background": "#0A2540",
+            "right_text_color": "#ffffff",
+            "right_tag_background": "#1e3a5f",
+            "right_tag_text": "#ffffff",
+            "highlight_color": "#00D66F",
+            "right_progress_label": "USE CASE:\n\nComplete retail decision intelligence platform",
+            "right_progress_time": "< 2min",
+            "progress_bar_height": 4,
+            "progress_gradient_start": "#803cee",
+            "progress_gradient_end": "#00D66F",
+            "negative_icon_color": "#ef4444",
+            "positive_icon_color": "#00D66F",
+            "title_size": 24,
+            "metric_size": 32,
+            "list_item_size": 16
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_a3e57c5_TFrNWY"
+      ],
+      "custom_css": [
+        ".ai-comparison-grid-progress-track,.ai-comparison-grid-progress-time {display: none;}"
+      ],
+      "name": "Comparison grid",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "multi_column_RkceNG": {
+      "type": "multi-column",
+      "blocks": {
+        "item_9FWtj3": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-like",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h3>AI-Powered People Counting</h3><p>99.8% accurate customer counting across all lighting conditions</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_FxWUAK": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "Column title",
+            "heading_tag": "h4",
+            "subheading": "<p>Organize content into multiple columns to share useful information to your customers about your products, values...</p>",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_6zrj9E": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "Column title",
+            "heading_tag": "h4",
+            "subheading": "<p>Organize content into multiple columns to share useful information to your customers about your products, values...</p>",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_9FWtj3",
+        "item_FxWUAK",
+        "item_6zrj9E"
+      ],
+      "disabled": true,
+      "name": "Multi-column",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "start",
+        "subheading": "TECHNICAL CAPABILITIES",
+        "title": "COMPLETE RETAIL SENSING PLATFORM.",
+        "content": "<p>Enterprise-grade AI camera with advanced people counting, behavior analytics, and real-time traffic measurement capabilities.</p>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
       }
     },
     "multi_column_HCGJea": {
@@ -297,7 +730,7 @@
             "icon": "none",
             "icon_width": 48,
             "subheading": "SECURITY",
-            "title": "PRIVACY-FIRSTARCHITECTURE.",
+            "title": "PRIVACY-FIRST ARCHITECTURE.",
             "content": "<p>By utilizing Edge Computing, the Flow V4 processes visual data locally on the device. We count people, not faces. The system transmits only anonymous metadata to the cloud, reassuring enterprise legal and security teams that customer privacy is protected by design.</p><p></p><ul><li>GDPR Compliant</li><li>CCPA Compliant</li><li>SOC 2 Type II</li><li>Edge Processing</li></ul><p></p>",
             "link_text": "",
             "link_url": "",
@@ -1032,6 +1465,10 @@
   },
   "order": [
     "image_with_text_overlay_AcppEX",
+    "multi_column_QpdWAi",
+    "rich_text_efnkBL",
+    "blocks_ULkcay",
+    "multi_column_RkceNG",
     "multi_column_HCGJea",
     "multi_column_QjMJiW",
     "media_with_text_hMPTmL",
