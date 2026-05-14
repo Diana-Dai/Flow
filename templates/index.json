@@ -61,7 +61,7 @@
         "image_Dtind8": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/manager_does_not_scale.png",
+            "image": "shopify://shop_images/Flow_Banner_0526.png",
             "width_mode": "full_width",
             "max_width": 600,
             "mobile_max_width": 400
@@ -349,6 +349,11 @@
         "item_7TBByM": {
           "type": "item",
           "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
             "image": "shopify://shop_images/Snipaste_2026-04-22_17-50-31.png",
             "background_color": "",
             "text_color": "",
@@ -367,6 +372,11 @@
         "item_7tAMz6": {
           "type": "item",
           "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
             "image": "shopify://shop_images/Snipaste_2026-04-22_17-50-56.png",
             "background_color": "",
             "text_color": "",
@@ -385,6 +395,11 @@
         "item_HjWCwX": {
           "type": "item",
           "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
             "image": "shopify://shop_images/Snipaste_2026-04-23_16-12-16.png",
             "background_color": "",
             "text_color": "",
@@ -547,6 +562,11 @@
         "item_gQr9C9": {
           "type": "item",
           "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
             "background_color": "#a0b842",
             "text_color": "#f9fafb",
             "border_color": "#a0b842",
@@ -564,6 +584,11 @@
         "item_tx7kCq": {
           "type": "item",
           "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
             "background_color": "#f2f2f2",
             "text_color": "#0e366a",
             "border_color": "#0e366a",
@@ -582,6 +607,11 @@
           "type": "item",
           "disabled": true,
           "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
             "background_color": "#ffffff",
             "text_color": "",
             "border_color": "#a0b842",
@@ -626,6 +656,11 @@
         "item_9cWFC9": {
           "type": "item",
           "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
             "background_color": "",
             "text_color": "",
             "border_color": "",
@@ -643,6 +678,11 @@
         "item_aqpNXK": {
           "type": "item",
           "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
             "background_color": "",
             "text_color": "",
             "border_color": "",
@@ -660,6 +700,11 @@
         "item_tTyycj": {
           "type": "item",
           "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
             "background_color": "",
             "text_color": "",
             "border_color": "",
@@ -756,6 +801,11 @@
         "item_K9C4mp": {
           "type": "item",
           "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
             "background_color": "#36465c",
             "text_color": "",
             "border_color": "#36465c",
@@ -773,6 +823,11 @@
         "item_FBeYb7": {
           "type": "item",
           "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
             "background_color": "#a0b842",
             "text_color": "",
             "border_color": "#36465c",
@@ -790,6 +845,11 @@
         "item_PzHBWe": {
           "type": "item",
           "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
             "background_color": "#ffffff",
             "text_color": "#11243e",
             "border_color": "#36465c",
@@ -808,6 +868,11 @@
           "type": "item",
           "disabled": true,
           "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
             "background_color": "#485c36",
             "text_color": "#daf474",
             "border_color": "#a0b842",
