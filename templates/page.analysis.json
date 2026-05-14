@@ -75,6 +75,33 @@
         "overlay_opacity": 64
       }
     },
+    "rich_text_B8Y9rV": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_Amimh4": {
+          "type": "heading",
+          "settings": {
+            "text": "Your existing cameras provide the sight. Flow provides the insight.",
+            "heading_tag": "h2",
+            "text_color": "",
+            "gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_Amimh4"
+      ],
+      "custom_css": [],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "large",
+        "text_position": "center",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
     "multi_column_QjMJiW": {
       "type": "multi-column",
       "blocks": {
@@ -131,7 +158,7 @@
             "icon_background": "#e5e9d1",
             "icon_color": "#a0b842",
             "background_color": "#f9fafb",
-            "text_color": "rgba(0,0,0,0)",
+            "text_color": "",
             "border_color": "#f2f2f2",
             "show_controls": false,
             "column_size": "3",
@@ -168,28 +195,91 @@
         "text_color": ""
       }
     },
-    "rich_text_B8Y9rV": {
-      "type": "rich-text",
+    "multi_column_Rqk3xG": {
+      "type": "multi-column",
       "blocks": {
-        "heading_Amimh4": {
-          "type": "heading",
+        "item_NjRKb9": {
+          "type": "item",
           "settings": {
-            "text": "If you have cameras, you already have the hardware. Now, give them a brain.",
-            "heading_tag": "h1",
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#f9fafb",
             "text_color": "",
-            "gradient": ""
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h3>01. Existing Sources</h3><p>Direct sync with legacy CCTV, POS terminals, and staffing schedules via secure cloud handshakes.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_nR9kcV": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#f9fafb",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h3>02. Flow Data Layer</h3><p>Normalization of fragmented signals into a unified behavioral model. Edge processing for total privacy.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_nhi8GJ": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#f9fafb",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h3>03. Store Execution</h3><p>AI-driven tasking and real-time alerts delivered directly to the Flow Assistant for frontline action.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
           }
         }
       },
       "block_order": [
-        "heading_Amimh4"
+        "item_NjRKb9",
+        "item_nR9kcV",
+        "item_nhi8GJ"
       ],
-      "name": "Rich text",
+      "name": "Multi-column",
       "settings": {
         "full_width": true,
-        "content_width": "large",
-        "text_position": "center",
-        "background": "",
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "start",
+        "subheading": "",
+        "title": "How Flow Connects",
+        "content": "<p>Implementation without the anxiety. Connect your store in three clean layers.</p>",
+        "background": "#f2f2f2",
         "background_gradient": "",
         "text_color": ""
       }
@@ -306,11 +396,11 @@
         "gap": "medium",
         "text_alignment": "start",
         "subheading": "THE WHY",
-        "title": "DASHBOARDS DON'TDRIVE SALES. ANSWERS DO.",
+        "title": "DASHBOARDS DON'T DRIVE SALES. ANSWERS DO.",
         "content": "",
         "background": "#ffffff",
         "background_gradient": "",
-        "text_color": "rgba(0,0,0,0)"
+        "text_color": ""
       }
     },
     "multi_column_rPwdDt": {
@@ -353,7 +443,7 @@
             "column_size": "4",
             "title": "68%",
             "heading_tag": "h2",
-            "subheading": "<p>Step 02</p>",
+            "subheading": "<p>02</p>",
             "content": "<p>ENTRY RATE</p>",
             "link_url": "",
             "link_text": "",
@@ -418,7 +508,7 @@
         "gap": "medium",
         "text_alignment": "start",
         "subheading": "ANALYTICS",
-        "title": "VISUALIZE THE TOTALCUSTOMER JOURNEY.",
+        "title": "VISUALIZE THE TOTAL CUSTOMER JOURNEY.",
         "content": "<p>Identify exactly where you are losing customers in the funnel. Every metric connected. Every leak visible.</p>",
         "background": "",
         "background_gradient": "",
@@ -442,7 +532,7 @@
             "content": "<p>By utilizing Edge Computing, the Flow V4 processes visual data locally on the device. We count people, not faces. The system transmits only anonymous metadata to the cloud, reassuring enterprise legal and security teams that customer privacy is protected by design.</p><p></p><ul><li>GDPR Compliant</li><li>CCPA Compliant</li><li>SOC 2 Type II</li><li>Edge Processing</li></ul><p></p>",
             "link_text": "",
             "link_url": "",
-            "background": "rgba(0,0,0,0)",
+            "background": "",
             "background_gradient": "",
             "text_color": "#11243e",
             "text_gradient": "",
@@ -523,7 +613,7 @@
             "icon_background": "",
             "icon_color": "",
             "background_color": "#f2f2f2",
-            "text_color": "rgba(0,0,0,0)",
+            "text_color": "",
             "border_color": "#f2f2f2",
             "show_controls": false,
             "column_size": "3",
@@ -554,7 +644,7 @@
         "gap": "medium",
         "text_alignment": "start",
         "subheading": "VISIBILITY",
-        "title": "SEE THE STORE THROUGH YOURC USTOMERS' EYES.",
+        "title": "SEE THE STORE THROUGH YOUR CUSTOMERS' EYES.",
         "content": "<p>Quantify customer movement and product engagement. Use high-fidelity heatmaps and dwell-time analysis to validate store layouts and VMD effectiveness.</p>",
         "background": "#ffffff",
         "background_gradient": "",
@@ -881,7 +971,6 @@
       "block_order": [
         "image_enedX8"
       ],
-      "disabled": true,
       "custom_css": [
         "* {background: white;}"
       ],
@@ -1026,13 +1115,13 @@
           "settings": {
             "style_1": "fill",
             "size_1": "xl",
-            "text_1": "Book now →",
+            "text_1": "Book demo →",
             "url_1": "#",
             "background_1": "#0e366a",
             "text_color_1": "#ffffff",
             "style_2": "fill",
             "size_2": "xl",
-            "text_2": "LEARN ABOUT CAMERA →",
+            "text_2": "Learn  about camera →",
             "url_2": "#",
             "background_2": "#ffffff",
             "text_color_2": "#11243e"
@@ -1059,8 +1148,9 @@
   },
   "order": [
     "image_with_text_overlay_AcppEX",
-    "multi_column_QjMJiW",
     "rich_text_B8Y9rV",
+    "multi_column_QjMJiW",
+    "multi_column_Rqk3xG",
     "multi_column_HCGJea",
     "multi_column_rPwdDt",
     "media_with_text_hMPTmL",

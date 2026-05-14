@@ -15,7 +15,7 @@
         "heading_W76pLA": {
           "type": "heading",
           "settings": {
-            "text": "店舗データを、現場の行動へ。",
+            "text": "<h1>店舗データを、現場の行動へ。</h1>",
             "heading_tag": "h0"
           }
         },
@@ -372,7 +372,7 @@
             "content": "<p><strong>Capture:</strong> Real-time behavior sensing.</p><p><strong>Analyze:</strong> Automated gap identification via FIDA.</p><p><strong>Instruct:</strong> AI-driven task assignment.</p><p><strong>Validate:</strong> Measuring the impact of actions.</p>",
             "link_text": "",
             "link_url": "",
-            "background": "rgba(0,0,0,0)",
+            "background": "",
             "background_gradient": "",
             "text_color": "#11243e",
             "text_gradient": "",
@@ -798,7 +798,7 @@
         "item_tTyycj": {
           "type": "item",
           "settings": {
-            "background_color": "rgba(0,0,0,0)",
+            "background_color": "",
             "text_color": "",
             "border_color": "",
             "show_controls": false,
@@ -926,7 +926,7 @@
         "content": "<p>Turn Store Data into Immediate Decisions.</p>",
         "link_url": "",
         "link_text": "",
-        "background": "rgba(0,0,0,0)",
+        "background": "",
         "background_gradient": "",
         "text_color": "",
         "heading_color": "",
