@@ -1068,7 +1068,7 @@
         "subheading": "VALIDATION",
         "title": "VALIDATED OPERATIONAL IMPACT.",
         "content": "<p>Organize content into multiple columns to share useful information to your customers about your products, values...</p>",
-        "background": "",
+        "background": "#f2f2f2",
         "background_gradient": "",
         "text_color": ""
       }
