@@ -185,6 +185,34 @@
         "button_text_color": "rgba(0,0,0,0)"
       }
     },
+    "rich_text_E4i7Ea": {
+      "type": "rich-text",
+      "blocks": {
+        "button_n97gq3": {
+          "type": "button",
+          "settings": {
+            "style": "fill",
+            "size": "xl",
+            "text": "導入事例を見る",
+            "url": "",
+            "background": "#11243e",
+            "text_color": "#f9fafb"
+          }
+        }
+      },
+      "block_order": [
+        "button_n97gq3"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
     "rich_text_pkymTT": {
       "type": "rich-text",
       "blocks": {
@@ -372,8 +400,8 @@
             "heading_tag": "h4",
             "subheading": "<h5><strong>レイヤー01：現状を正しく把握する</strong></h5>",
             "content": "<ul><li>来店数（トラフィック）</li><li>売上・購買・コンバージョン</li><li>滞在時間・人員配置</li><li>店内行動<br/></li></ul><p><strong>多くのシステムはここで止まる。</strong></p>",
-            "link_url": "",
-            "link_text": "",
+            "link_url": "shopify://blogs/blog/20220216-traffic-count-sales",
+            "link_text": "高精度な店舗分析を見る",
             "link_style": "link"
           }
         },
@@ -396,7 +424,7 @@
             "subheading": "<h5><strong>レイヤー02：改善ポイントを見つける</strong></h5>",
             "content": "<ul><li>成果が出ていない箇所</li><li>機会がある箇所</li><li>対応が必要な時間帯</li><li>優先すべき課題</li></ul><p><strong>ここで判断の質が変わる。</strong></p>",
             "link_url": "",
-            "link_text": "",
+            "link_text": "分析プラットフォームを見る",
             "link_style": "link"
           }
         },
@@ -419,7 +447,7 @@
             "subheading": "<h5>レイヤー03：実行を揃える</h5>",
             "content": "<ul><li>店舗間で行動を揃える</li><li>データをSOPに紐づける</li><li>実行のばらつきを抑える</li><li>スピードと一貫性を高める</li></ul><p><strong>ここで成果が変わる。</strong></p>",
             "link_url": "",
-            "link_text": "",
+            "link_text": "Flow AIを見る",
             "link_style": "link"
           }
         }
@@ -654,6 +682,34 @@
         "title": "実行改善は、数字で確認できる",
         "content": "<p>実行が変われば、店舗成果も変わる。<br/>Flowは、実際の店舗運営データでその変化を確認します。</p>",
         "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "rich_text_Tictfp": {
+      "type": "rich-text",
+      "blocks": {
+        "button_eaFNbN": {
+          "type": "button",
+          "settings": {
+            "style": "fill",
+            "size": "xl",
+            "text": "事例を詳しく見る",
+            "url": "",
+            "background": "",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "button_eaFNbN"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "",
         "background_gradient": "",
         "text_color": ""
       }
@@ -1085,12 +1141,14 @@
     "rich_text_AGR3yT",
     "rich_text_YiW9P3",
     "impact_text_gi97zd",
+    "rich_text_E4i7Ea",
     "rich_text_pkymTT",
     "1777013757bd1f6777",
     "logo_list_bzafjC",
     "multi_column_QcVkek",
     "section-15",
     "multi_column_etdDPE",
+    "rich_text_Tictfp",
     "multi_column_HCGJea",
     "rich_text_iYFe9Q",
     "multi_column_dQq9tA",
