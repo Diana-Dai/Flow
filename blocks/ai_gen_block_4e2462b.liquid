@@ -1,0 +1,821 @@
+{% doc %}
+  @prompt
+    Act as an expert Shopify front-end developer and UI designer. Generate a custom, high-end Shopify section based on the following precise layout, typography, and mobile-first specifications.
+    
+    ### 1. Section Architecture & Grid Logic
+    - Desktop Layout: A balanced 2-column grid container with a max-width of 1440px and generous horizontal padding (e.g., 80px). 
+      - Left Column (Width: 45%): Content-heavy text, feature lists, and an isolated metric card at the bottom.
+      - Right Column (Width: 50%): A floating, clean white card containing a multi-step vertical conversion funnel with progress bars.
+    - Mobile Layout: Strict 1-column vertical stack. The Left Column content flows first, immediately followed by the Funnel Breakdown Card. Section horizontal padding drops to 20px on mobile for maximum readability.
+    
+    ### 2. Styling, Colors & Typography
+    - Background Color: Clean, premium off-white/light gray cream (e.g., #F8F9FA).
+    - Typography Hierarchy:
+      - Eyebrow Text: Uppercase, small font size (12px), tracked out letter-spacing, muted charcoal color. Enclosed in a subtle pill-shaped border or light background badge.
+      - Main Heading (H2): Bold, heavy sans-serif, deep navy/midnight blue (e.g., #0A2240). Large desktop sizing (~48px), scaling down fluidly to ~32px on mobile. Line-height: 1.1.
+      - Body Text: Smooth, legible medium gray (e.g., #5A6A85). Desktop size 16px, mobile 15px. Line-height: 1.6.
+    - Accent Color: A vibrant but sophisticated pear/olive green (e.g., #9CB73B) used strictly for checkmarks, progress bars, and positive metric highlights (+18%).
+    
+    ### 3. Left Column Content Elements (In Order)
+    1. Badge: "CONVERSION INTELLIGENCE"
+    2. Main Heading: "TRAFFIC TO SALES CORRELATION."
+    3. Paragraph: "The missing link between foot traffic and revenue. Flow automatically correlates traffic patterns to POS transactions, revealing your true conversion rate and identifying exactly where sales opportunities are lost."
+    4. Feature List (3 Items):
+       - Format: Small green circle checkmark icon inline with a bolded feature title, followed by a light gray description paragraph.
+       - Item 1: **Real-Time CVR Tracking** - Live conversion rate calculation updated every 15 minutes throughout the day.
+       - Item 2: **POS Integration** - Direct connection to major POS systems for automatic transaction correlation.
+       - Item 3: **Benchmark Comparison** - Compare performance against your store network, category, and historical trends.
+    5. Bottom Lift Card: 
+       - A subtle white container with rounded corners ($border-radius: 16px$).
+       - Layout: Split horizontally or flexed. Left side: "Average Conversion Lift After Optimization" over a full-width green progress bar. Right side: A massive green modern font display of "+18%".
+       - Subtext below bar: "Based on 156 stores using Flow conversion analytics" (small font size, muted gray).
+    
+    ### 4. Right Column Content Elements (Funnel Card)
+    - Card Container: A solid white card, distinct drop shadow ($box-shadow: 0 10px 30px rgba(0,0,0,0.05)$), rounded corners (24px), and deep internal padding (40px desktop, 20px mobile).
+    - Card Title: "Conversion Funnel Breakdown" (Bold, Navy, ~24px).
+    - Funnel Steps (Vertical Stack): 
+      - Each step contains a label on the left, a raw metric number on the right, and a horizontal progress bar underneath.
+      - Progress bars should have a light gray background track with colored fills corresponding to volume.
+      - Step 1: "Street Traffic (Passerby)" | Value: "2,847" | Bar color: Medium gray.
+      - *Drop indicator below Step 1*: "↓ 68% Capture Rate" (centered, muted text, small).
+      - Step 2: "Store Entries" | Value: "1,936" | Bar color: Dark slate blue.
+      - *Drop indicator below Step 2*: "↓ Zone Engagement" (centered, muted text, small).
+      - Step 3: "Product Interaction" | Value: "1,247" | Bar color: Light pear green.
+      - *Drop indicator below Step 3*: "↓ 34% Conversion" (centered, muted text, small).
+      - Step 4: "Completed Transactions" | Value: "424" | Bar color: Vibrant pear green.
+    - Bottom Insight Box:
+      - Enclosed in a very light cream/green tinted alert box with rounded corners.
+      - Content: A tiny flash/lightning icon next to the green uppercase word "**INSIGHT**".
+      - Main text: "**Biggest leak: Product interaction → Transaction (66% drop-off)**"
+      - Subtext: "Recommendation: Increase floor staff during peak hours"
+    
+    ### 5. Code & Performance Goals
+    - Implement using pure HTML/CSS or standard liquid components. 
+    - Ensure progress bars are native CSS divs (no heavy JS libraries) to maintain sub-3-second load times. 
+    - All SVGs (icons, checkmarks) must be inline for fast rendering.
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-conversion-section-{{ ai_gen_id }} {
+    display: block;
+    width: 100%;
+    background-color: {{ block.settings.background_color }};
+    padding: 80px 20px;
+  }
+
+  .ai-conversion-container-{{ ai_gen_id }} {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 45% 50%;
+    gap: 5%;
+    align-items: start;
+  }
+
+  .ai-conversion-left-{{ ai_gen_id }} {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .ai-conversion-badge-{{ ai_gen_id }} {
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 16px;
+    background-color: {{ block.settings.badge_background }};
+    border: 1px solid {{ block.settings.badge_border }};
+    border-radius: 24px;
+    width: fit-content;
+  }
+
+  .ai-conversion-badge-text-{{ ai_gen_id }} {
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: {{ block.settings.badge_text_color }};
+  }
+
+  .ai-conversion-heading-{{ ai_gen_id }} {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.1;
+    color: {{ block.settings.heading_color }};
+    margin: 0;
+  }
+
+  .ai-conversion-description-{{ ai_gen_id }} {
+    font-size: 16px;
+    line-height: 1.6;
+    color: {{ block.settings.body_text_color }};
+    margin: 0;
+  }
+
+  .ai-conversion-features-{{ ai_gen_id }} {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .ai-conversion-feature-{{ ai_gen_id }} {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+  }
+
+  .ai-conversion-feature-icon-{{ ai_gen_id }} {
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: {{ block.settings.accent_color }};
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2px;
+  }
+
+  .ai-conversion-feature-icon-{{ ai_gen_id }} svg {
+    width: 12px;
+    height: 12px;
+    stroke: #ffffff;
+    stroke-width: 2.5;
+    fill: none;
+  }
+
+  .ai-conversion-feature-content-{{ ai_gen_id }} {
+    flex: 1;
+  }
+
+  .ai-conversion-feature-title-{{ ai_gen_id }} {
+    font-size: 16px;
+    font-weight: 600;
+    color: {{ block.settings.heading_color }};
+    margin: 0 0 6px 0;
+  }
+
+  .ai-conversion-feature-desc-{{ ai_gen_id }} {
+    font-size: 15px;
+    line-height: 1.6;
+    color: {{ block.settings.body_text_color }};
+    margin: 0;
+  }
+
+  .ai-conversion-lift-card-{{ ai_gen_id }} {
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  }
+
+  .ai-conversion-lift-content-{{ ai_gen_id }} {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .ai-conversion-lift-left-{{ ai_gen_id }} {
+    flex: 1;
+  }
+
+  .ai-conversion-lift-label-{{ ai_gen_id }} {
+    font-size: 14px;
+    font-weight: 600;
+    color: {{ block.settings.heading_color }};
+    margin: 0 0 12px 0;
+  }
+
+  .ai-conversion-lift-bar-track-{{ ai_gen_id }} {
+    width: 100%;
+    height: 8px;
+    background-color: #e8eaed;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+
+  .ai-conversion-lift-bar-fill-{{ ai_gen_id }} {
+    height: 100%;
+    background-color: {{ block.settings.accent_color }};
+    width: 75%;
+    border-radius: 4px;
+  }
+
+  .ai-conversion-lift-percentage-{{ ai_gen_id }} {
+    font-size: 48px;
+    font-weight: 700;
+    color: {{ block.settings.accent_color }};
+    line-height: 1;
+  }
+
+  .ai-conversion-lift-subtext-{{ ai_gen_id }} {
+    font-size: 13px;
+    color: {{ block.settings.body_text_color }};
+    margin: 0;
+  }
+
+  .ai-conversion-right-{{ ai_gen_id }} {
+    position: sticky;
+    top: 40px;
+  }
+
+  .ai-conversion-funnel-card-{{ ai_gen_id }} {
+    background-color: #ffffff;
+    border-radius: 24px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  }
+
+  .ai-conversion-funnel-title-{{ ai_gen_id }} {
+    font-size: 24px;
+    font-weight: 700;
+    color: {{ block.settings.heading_color }};
+    margin: 0 0 32px 0;
+  }
+
+  .ai-conversion-funnel-steps-{{ ai_gen_id }} {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .ai-conversion-funnel-step-{{ ai_gen_id }} {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .ai-conversion-step-header-{{ ai_gen_id }} {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .ai-conversion-step-label-{{ ai_gen_id }} {
+    font-size: 14px;
+    font-weight: 500;
+    color: {{ block.settings.body_text_color }};
+  }
+
+  .ai-conversion-step-value-{{ ai_gen_id }} {
+    font-size: 18px;
+    font-weight: 700;
+    color: {{ block.settings.heading_color }};
+  }
+
+  .ai-conversion-step-bar-track-{{ ai_gen_id }} {
+    width: 100%;
+    height: 12px;
+    background-color: #f1f3f5;
+    border-radius: 6px;
+    overflow: hidden;
+  }
+
+  .ai-conversion-step-bar-fill-{{ ai_gen_id }} {
+    height: 100%;
+    border-radius: 6px;
+    transition: width 0.3s ease;
+  }
+
+  .ai-conversion-step-bar-fill-{{ ai_gen_id }}--gray {
+    background-color: #8b95a1;
+  }
+
+  .ai-conversion-step-bar-fill-{{ ai_gen_id }}--slate {
+    background-color: #475569;
+  }
+
+  .ai-conversion-step-bar-fill-{{ ai_gen_id }}--light-green {
+    background-color: #b8d45e;
+  }
+
+  .ai-conversion-step-bar-fill-{{ ai_gen_id }}--green {
+    background-color: {{ block.settings.accent_color }};
+  }
+
+  .ai-conversion-drop-indicator-{{ ai_gen_id }} {
+    text-align: center;
+    font-size: 13px;
+    color: {{ block.settings.body_text_color }};
+    margin: 8px 0;
+  }
+
+  .ai-conversion-insight-box-{{ ai_gen_id }} {
+    background-color: #f8faf5;
+    border: 1px solid #e8f0d8;
+    border-radius: 12px;
+    padding: 20px;
+    margin-top: 32px;
+  }
+
+  .ai-conversion-insight-header-{{ ai_gen_id }} {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 12px;
+  }
+
+  .ai-conversion-insight-icon-{{ ai_gen_id }} {
+    width: 16px;
+    height: 16px;
+  }
+
+  .ai-conversion-insight-icon-{{ ai_gen_id }} svg {
+    width: 100%;
+    height: 100%;
+    fill: {{ block.settings.accent_color }};
+  }
+
+  .ai-conversion-insight-badge-{{ ai_gen_id }} {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: {{ block.settings.accent_color }};
+  }
+
+  .ai-conversion-insight-main-{{ ai_gen_id }} {
+    font-size: 15px;
+    font-weight: 600;
+    color: {{ block.settings.heading_color }};
+    margin: 0 0 8px 0;
+  }
+
+  .ai-conversion-insight-sub-{{ ai_gen_id }} {
+    font-size: 14px;
+    color: {{ block.settings.body_text_color }};
+    margin: 0;
+  }
+
+  @media screen and (max-width: 999px) {
+    .ai-conversion-section-{{ ai_gen_id }} {
+      padding: 60px 20px;
+    }
+
+    .ai-conversion-container-{{ ai_gen_id }} {
+      grid-template-columns: 1fr;
+      gap: 48px;
+    }
+
+    .ai-conversion-heading-{{ ai_gen_id }} {
+      font-size: 32px;
+    }
+
+    .ai-conversion-description-{{ ai_gen_id }} {
+      font-size: 15px;
+    }
+
+    .ai-conversion-right-{{ ai_gen_id }} {
+      position: static;
+    }
+
+    .ai-conversion-funnel-card-{{ ai_gen_id }} {
+      padding: 24px 20px;
+    }
+
+    .ai-conversion-lift-content-{{ ai_gen_id }} {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .ai-conversion-lift-percentage-{{ ai_gen_id }} {
+      font-size: 36px;
+    }
+  }
+{% endstyle %}
+
+<conversion-intelligence-{{ ai_gen_id }}
+  class="ai-conversion-section-{{ ai_gen_id }}"
+  {{ block.shopify_attributes }}
+>
+  <div class="ai-conversion-container-{{ ai_gen_id }}">
+    <div class="ai-conversion-left-{{ ai_gen_id }}">
+      <div class="ai-conversion-badge-{{ ai_gen_id }}">
+        <span class="ai-conversion-badge-text-{{ ai_gen_id }}">{{ block.settings.badge_text }}</span>
+      </div>
+
+      <h2 class="ai-conversion-heading-{{ ai_gen_id }}">{{ block.settings.heading }}</h2>
+
+      <p class="ai-conversion-description-{{ ai_gen_id }}">{{ block.settings.description }}</p>
+
+      <div class="ai-conversion-features-{{ ai_gen_id }}">
+        <div class="ai-conversion-feature-{{ ai_gen_id }}">
+          <div class="ai-conversion-feature-icon-{{ ai_gen_id }}">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+          </div>
+          <div class="ai-conversion-feature-content-{{ ai_gen_id }}">
+            <h3 class="ai-conversion-feature-title-{{ ai_gen_id }}">{{ block.settings.feature_1_title }}</h3>
+            <p class="ai-conversion-feature-desc-{{ ai_gen_id }}">{{ block.settings.feature_1_description }}</p>
+          </div>
+        </div>
+
+        <div class="ai-conversion-feature-{{ ai_gen_id }}">
+          <div class="ai-conversion-feature-icon-{{ ai_gen_id }}">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+          </div>
+          <div class="ai-conversion-feature-content-{{ ai_gen_id }}">
+            <h3 class="ai-conversion-feature-title-{{ ai_gen_id }}">{{ block.settings.feature_2_title }}</h3>
+            <p class="ai-conversion-feature-desc-{{ ai_gen_id }}">{{ block.settings.feature_2_description }}</p>
+          </div>
+        </div>
+
+        <div class="ai-conversion-feature-{{ ai_gen_id }}">
+          <div class="ai-conversion-feature-icon-{{ ai_gen_id }}">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+          </div>
+          <div class="ai-conversion-feature-content-{{ ai_gen_id }}">
+            <h3 class="ai-conversion-feature-title-{{ ai_gen_id }}">{{ block.settings.feature_3_title }}</h3>
+            <p class="ai-conversion-feature-desc-{{ ai_gen_id }}">{{ block.settings.feature_3_description }}</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="ai-conversion-lift-card-{{ ai_gen_id }}">
+        <div class="ai-conversion-lift-content-{{ ai_gen_id }}">
+          <div class="ai-conversion-lift-left-{{ ai_gen_id }}">
+            <p class="ai-conversion-lift-label-{{ ai_gen_id }}">{{ block.settings.lift_label }}</p>
+            <div class="ai-conversion-lift-bar-track-{{ ai_gen_id }}">
+              <div class="ai-conversion-lift-bar-fill-{{ ai_gen_id }}"></div>
+            </div>
+          </div>
+          <div class="ai-conversion-lift-percentage-{{ ai_gen_id }}">{{ block.settings.lift_percentage }}</div>
+        </div>
+        <p class="ai-conversion-lift-subtext-{{ ai_gen_id }}">{{ block.settings.lift_subtext }}</p>
+      </div>
+    </div>
+
+    <div class="ai-conversion-right-{{ ai_gen_id }}">
+      <div class="ai-conversion-funnel-card-{{ ai_gen_id }}">
+        <h3 class="ai-conversion-funnel-title-{{ ai_gen_id }}">{{ block.settings.funnel_title }}</h3>
+
+        <div class="ai-conversion-funnel-steps-{{ ai_gen_id }}">
+          <div class="ai-conversion-funnel-step-{{ ai_gen_id }}">
+            <div class="ai-conversion-step-header-{{ ai_gen_id }}">
+              <span class="ai-conversion-step-label-{{ ai_gen_id }}">{{ block.settings.step_1_label }}</span>
+              <span class="ai-conversion-step-value-{{ ai_gen_id }}">{{ block.settings.step_1_value }}</span>
+            </div>
+            <div class="ai-conversion-step-bar-track-{{ ai_gen_id }}">
+              <div
+                class="ai-conversion-step-bar-fill-{{ ai_gen_id }} ai-conversion-step-bar-fill-{{ ai_gen_id }}--gray"
+                style="width: 100%;"
+              ></div>
+            </div>
+          </div>
+
+          <div class="ai-conversion-drop-indicator-{{ ai_gen_id }}">{{ block.settings.drop_1_text }}</div>
+
+          <div class="ai-conversion-funnel-step-{{ ai_gen_id }}">
+            <div class="ai-conversion-step-header-{{ ai_gen_id }}">
+              <span class="ai-conversion-step-label-{{ ai_gen_id }}">{{ block.settings.step_2_label }}</span>
+              <span class="ai-conversion-step-value-{{ ai_gen_id }}">{{ block.settings.step_2_value }}</span>
+            </div>
+            <div class="ai-conversion-step-bar-track-{{ ai_gen_id }}">
+              <div
+                class="ai-conversion-step-bar-fill-{{ ai_gen_id }} ai-conversion-step-bar-fill-{{ ai_gen_id }}--slate"
+                style="width: 68%;"
+              ></div>
+            </div>
+          </div>
+
+          <div class="ai-conversion-drop-indicator-{{ ai_gen_id }}">{{ block.settings.drop_2_text }}</div>
+
+          <div class="ai-conversion-funnel-step-{{ ai_gen_id }}">
+            <div class="ai-conversion-step-header-{{ ai_gen_id }}">
+              <span class="ai-conversion-step-label-{{ ai_gen_id }}">{{ block.settings.step_3_label }}</span>
+              <span class="ai-conversion-step-value-{{ ai_gen_id }}">{{ block.settings.step_3_value }}</span>
+            </div>
+            <div class="ai-conversion-step-bar-track-{{ ai_gen_id }}">
+              <div
+                class="ai-conversion-step-bar-fill-{{ ai_gen_id }} ai-conversion-step-bar-fill-{{ ai_gen_id }}--light-green"
+                style="width: 44%;"
+              ></div>
+            </div>
+          </div>
+
+          <div class="ai-conversion-drop-indicator-{{ ai_gen_id }}">{{ block.settings.drop_3_text }}</div>
+
+          <div class="ai-conversion-funnel-step-{{ ai_gen_id }}">
+            <div class="ai-conversion-step-header-{{ ai_gen_id }}">
+              <span class="ai-conversion-step-label-{{ ai_gen_id }}">{{ block.settings.step_4_label }}</span>
+              <span class="ai-conversion-step-value-{{ ai_gen_id }}">{{ block.settings.step_4_value }}</span>
+            </div>
+            <div class="ai-conversion-step-bar-track-{{ ai_gen_id }}">
+              <div
+                class="ai-conversion-step-bar-fill-{{ ai_gen_id }} ai-conversion-step-bar-fill-{{ ai_gen_id }}--green"
+                style="width: 15%;"
+              ></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="ai-conversion-insight-box-{{ ai_gen_id }}">
+          <div class="ai-conversion-insight-header-{{ ai_gen_id }}">
+            <div class="ai-conversion-insight-icon-{{ ai_gen_id }}">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+              </svg>
+            </div>
+            <span class="ai-conversion-insight-badge-{{ ai_gen_id }}">{{ block.settings.insight_badge }}</span>
+          </div>
+          <p class="ai-conversion-insight-main-{{ ai_gen_id }}">{{ block.settings.insight_main }}</p>
+          <p class="ai-conversion-insight-sub-{{ ai_gen_id }}">{{ block.settings.insight_recommendation }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</conversion-intelligence-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class ConversionIntelligence{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+      }
+
+      connectedCallback() {
+        this.animateBarsOnScroll();
+      }
+
+      animateBarsOnScroll() {
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+              }
+            });
+          },
+          { threshold: 0.2 }
+        );
+
+        const bars = this.querySelectorAll('.ai-conversion-step-bar-fill-{{ ai_gen_id }}');
+        bars.forEach((bar) => observer.observe(bar));
+      }
+    }
+
+    customElements.define('conversion-intelligence-{{ ai_gen_id }}', ConversionIntelligence{{ ai_gen_id }});
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "Conversion intelligence",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Section style"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background",
+      "default": "#F8F9FA"
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Heading",
+      "default": "#0A2240"
+    },
+    {
+      "type": "color",
+      "id": "body_text_color",
+      "label": "Body text",
+      "default": "#5A6A85"
+    },
+    {
+      "type": "color",
+      "id": "accent_color",
+      "label": "Accent",
+      "default": "#9CB73B"
+    },
+    {
+      "type": "header",
+      "content": "Badge"
+    },
+    {
+      "type": "text",
+      "id": "badge_text",
+      "label": "Text",
+      "default": "CONVERSION INTELLIGENCE"
+    },
+    {
+      "type": "color",
+      "id": "badge_background",
+      "label": "Background",
+      "default": "#F0F4F8"
+    },
+    {
+      "type": "color",
+      "id": "badge_border",
+      "label": "Border",
+      "default": "#E1E8ED"
+    },
+    {
+      "type": "color",
+      "id": "badge_text_color",
+      "label": "Text color",
+      "default": "#5A6A85"
+    },
+    {
+      "type": "header",
+      "content": "Main content"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "TRAFFIC TO SALES CORRELATION."
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description",
+      "default": "The missing link between foot traffic and revenue. Flow automatically correlates traffic patterns to POS transactions, revealing your true conversion rate and identifying exactly where sales opportunities are lost."
+    },
+    {
+      "type": "header",
+      "content": "Feature 1"
+    },
+    {
+      "type": "text",
+      "id": "feature_1_title",
+      "label": "Title",
+      "default": "Real-Time CVR Tracking"
+    },
+    {
+      "type": "textarea",
+      "id": "feature_1_description",
+      "label": "Description",
+      "default": "Live conversion rate calculation updated every 15 minutes throughout the day."
+    },
+    {
+      "type": "header",
+      "content": "Feature 2"
+    },
+    {
+      "type": "text",
+      "id": "feature_2_title",
+      "label": "Title",
+      "default": "POS Integration"
+    },
+    {
+      "type": "textarea",
+      "id": "feature_2_description",
+      "label": "Description",
+      "default": "Direct connection to major POS systems for automatic transaction correlation."
+    },
+    {
+      "type": "header",
+      "content": "Feature 3"
+    },
+    {
+      "type": "text",
+      "id": "feature_3_title",
+      "label": "Title",
+      "default": "Benchmark Comparison"
+    },
+    {
+      "type": "textarea",
+      "id": "feature_3_description",
+      "label": "Description",
+      "default": "Compare performance against your store network, category, and historical trends."
+    },
+    {
+      "type": "header",
+      "content": "Lift card"
+    },
+    {
+      "type": "text",
+      "id": "lift_label",
+      "label": "Label",
+      "default": "Average Conversion Lift After Optimization"
+    },
+    {
+      "type": "text",
+      "id": "lift_percentage",
+      "label": "Percentage",
+      "default": "+18%"
+    },
+    {
+      "type": "text",
+      "id": "lift_subtext",
+      "label": "Subtext",
+      "default": "Based on 156 stores using Flow conversion analytics"
+    },
+    {
+      "type": "header",
+      "content": "Funnel card"
+    },
+    {
+      "type": "text",
+      "id": "funnel_title",
+      "label": "Title",
+      "default": "Conversion Funnel Breakdown"
+    },
+    {
+      "type": "text",
+      "id": "step_1_label",
+      "label": "Step 1 label",
+      "default": "Street Traffic (Passerby)"
+    },
+    {
+      "type": "text",
+      "id": "step_1_value",
+      "label": "Step 1 value",
+      "default": "2,847"
+    },
+    {
+      "type": "text",
+      "id": "drop_1_text",
+      "label": "Drop 1 text",
+      "default": "↓ 68% Capture Rate"
+    },
+    {
+      "type": "text",
+      "id": "step_2_label",
+      "label": "Step 2 label",
+      "default": "Store Entries"
+    },
+    {
+      "type": "text",
+      "id": "step_2_value",
+      "label": "Step 2 value",
+      "default": "1,936"
+    },
+    {
+      "type": "text",
+      "id": "drop_2_text",
+      "label": "Drop 2 text",
+      "default": "↓ Zone Engagement"
+    },
+    {
+      "type": "text",
+      "id": "step_3_label",
+      "label": "Step 3 label",
+      "default": "Product Interaction"
+    },
+    {
+      "type": "text",
+      "id": "step_3_value",
+      "label": "Step 3 value",
+      "default": "1,247"
+    },
+    {
+      "type": "text",
+      "id": "drop_3_text",
+      "label": "Drop 3 text",
+      "default": "↓ 34% Conversion"
+    },
+    {
+      "type": "text",
+      "id": "step_4_label",
+      "label": "Step 4 label",
+      "default": "Completed Transactions"
+    },
+    {
+      "type": "text",
+      "id": "step_4_value",
+      "label": "Step 4 value",
+      "default": "424"
+    },
+    {
+      "type": "header",
+      "content": "Insight box"
+    },
+    {
+      "type": "text",
+      "id": "insight_badge",
+      "label": "Badge text",
+      "default": "INSIGHT"
+    },
+    {
+      "type": "text",
+      "id": "insight_main",
+      "label": "Main text",
+      "default": "Biggest leak: Product interaction → Transaction (66% drop-off)"
+    },
+    {
+      "type": "text",
+      "id": "insight_recommendation",
+      "label": "Recommendation",
+      "default": "Recommendation: Increase floor staff during peak hours"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Conversion intelligence"
+    }
+  ]
+}
+{% endschema %}

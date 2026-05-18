@@ -12,10 +12,17 @@
     "image_with_text_overlay_MVHcWF": {
       "type": "image-with-text-overlay",
       "blocks": {
+        "liquid_74Ndmm": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<h1 class=\"h0\">店舗データを、<br>現場の行動へ。\n</h1>"
+          }
+        },
         "heading_W76pLA": {
           "type": "heading",
+          "disabled": true,
           "settings": {
-            "text": "<h1>店舗データを、現場の行動へ。</h1>",
+            "text": "",
             "heading_tag": "h0"
           }
         },
@@ -52,22 +59,15 @@
           "settings": {
             "liquid": "<p></p><p></p><hr></hr>"
           }
-        },
-        "richtext_8bpctG": {
-          "type": "richtext",
-          "disabled": true,
-          "settings": {
-            "content": "<ul><li>✓ プラットフォーム紹介</li><li>✓ ROI試算</li><li>✓ 30日間トライアル</li></ul>"
-          }
         }
       },
       "block_order": [
+        "liquid_74Ndmm",
         "heading_W76pLA",
         "richtext_b7cQCP",
         "button_39CcgY",
         "button_fKeW9m",
-        "liquid_wJy64L",
-        "richtext_8bpctG"
+        "liquid_wJy64L"
       ],
       "custom_css": [
         "ul {font-size: 0.8rem; display: flex; align-items: center; justify-content: space-around; list-style: none;}",
@@ -162,6 +162,11 @@
         "item_dU9BqG": {
           "type": "item",
           "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
             "background_color": "#f2f2f2",
             "text_color": "#11243e",
             "border_color": "",
@@ -179,6 +184,11 @@
         "item_RnwDw8": {
           "type": "item",
           "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
             "background_color": "#a0b842",
             "text_color": "#f9fafb",
             "border_color": "#a0b842",
@@ -625,6 +635,11 @@
         "item_Eiqt4F": {
           "type": "item",
           "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
             "image": "shopify://shop_images/11.jpg",
             "background_color": "#f9fafb",
             "text_color": "#1a1a1a",
@@ -643,6 +658,11 @@
         "item_QBtwgX": {
           "type": "item",
           "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
             "image": "shopify://shop_images/22.jpg",
             "background_color": "#f9fafb",
             "text_color": "#1a1a1a",
@@ -661,6 +681,11 @@
         "item_3hpThx": {
           "type": "item",
           "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
             "image": "shopify://shop_images/11.jpg",
             "background_color": "#f9fafb",
             "text_color": "#1a1a1a",
@@ -679,6 +704,11 @@
         "item_GaHE8P": {
           "type": "item",
           "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
             "image": "shopify://shop_images/11.jpg",
             "background_color": "#f9fafb",
             "text_color": "#1a1a1a",
@@ -697,6 +727,11 @@
         "item_QMhiDg": {
           "type": "item",
           "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
             "image": "shopify://shop_images/22.jpg",
             "background_color": "#f9fafb",
             "text_color": "#1a1a1a",
@@ -715,6 +750,11 @@
         "item_DHMrCJ": {
           "type": "item",
           "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
             "image": "shopify://shop_images/22.jpg",
             "background_color": "#f9fafb",
             "text_color": "#1a1a1a",
@@ -764,6 +804,11 @@
         "item_9cWFC9": {
           "type": "item",
           "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
             "background_color": "",
             "text_color": "",
             "border_color": "",
@@ -781,6 +826,11 @@
         "item_aqpNXK": {
           "type": "item",
           "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
             "background_color": "#a0b842",
             "text_color": "#ffffff",
             "border_color": "",
@@ -798,6 +848,11 @@
         "item_tTyycj": {
           "type": "item",
           "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
             "background_color": "",
             "text_color": "",
             "border_color": "",
@@ -941,6 +996,11 @@
         "item_kHMBXM": {
           "type": "item",
           "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
             "image": "shopify://shop_images/unnamed.png",
             "background_color": "",
             "text_color": "",
@@ -959,6 +1019,11 @@
         "item_jzqLHt": {
           "type": "item",
           "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
             "image": "shopify://shop_images/1_1b5442dc-a679-4a23-a10f-8f39d2cc4234.png",
             "background_color": "",
             "text_color": "",
@@ -977,6 +1042,11 @@
         "item_rn7myV": {
           "type": "item",
           "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
             "image": "shopify://shop_images/3_05197ad8-294f-4cc5-9d73-b73021906f0a.png",
             "background_color": "",
             "text_color": "",
