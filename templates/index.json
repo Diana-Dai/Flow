@@ -400,8 +400,8 @@
             "heading_tag": "h4",
             "subheading": "<h5><strong>レイヤー01：現状を正しく把握する</strong></h5>",
             "content": "<ul><li>来店数（トラフィック）</li><li>売上・購買・コンバージョン</li><li>滞在時間・人員配置</li><li>店内行動<br/></li></ul><p><strong>多くのシステムはここで止まる。</strong></p>",
-            "link_url": "shopify://blogs/blog/20220216-traffic-count-sales",
-            "link_text": "高精度な店舗分析を見る",
+            "link_url": "",
+            "link_text": "高精度な店舗分析を見る ->",
             "link_style": "link"
           }
         },
@@ -424,7 +424,7 @@
             "subheading": "<h5><strong>レイヤー02：改善ポイントを見つける</strong></h5>",
             "content": "<ul><li>成果が出ていない箇所</li><li>機会がある箇所</li><li>対応が必要な時間帯</li><li>優先すべき課題</li></ul><p><strong>ここで判断の質が変わる。</strong></p>",
             "link_url": "",
-            "link_text": "分析プラットフォームを見る",
+            "link_text": "分析プラットフォームを見る ->",
             "link_style": "link"
           }
         },
@@ -447,7 +447,7 @@
             "subheading": "<h5>レイヤー03：実行を揃える</h5>",
             "content": "<ul><li>店舗間で行動を揃える</li><li>データをSOPに紐づける</li><li>実行のばらつきを抑える</li><li>スピードと一貫性を高める</li></ul><p><strong>ここで成果が変わる。</strong></p>",
             "link_url": "",
-            "link_text": "Flow AIを見る",
+            "link_text": "Flow AIを見る ->",
             "link_style": "link"
           }
         }
