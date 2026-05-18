@@ -38,7 +38,7 @@
         "richtext_JWfj6P": {
           "type": "richtext",
           "settings": {
-            "content": "<p>多くのリテールシステムは、レポートで止まる。<br/>Flowは、リアルタイムの店舗データをもとに、全店舗の判断を揃える。</p>"
+            "content": "<p>Flowは、来店分析・コンバージョン分析・人員最適化をもとに、店舗運営の判断を支援します。<br/>全国約1000店舗での導入・運用経験。</p>"
           }
         },
         "buttons_pt4Ted": {
@@ -92,15 +92,23 @@
         "heading_DFkYUD": {
           "type": "heading",
           "settings": {
-            "text": "多くのシステムはレポートで止まる。Flowは判断を揃える。",
+            "text": "多くのシステムはレポートで止まる。Flowは店舗判断を揃える。",
             "heading_tag": "h3",
             "text_color": "#11243e",
             "gradient": ""
           }
+        },
+        "subheading_6N4pe4": {
+          "type": "subheading",
+          "settings": {
+            "text": "Flowは、来店客数・回遊・滞在時間・コンバージョン・人員配置を統合し、店舗運営の判断を標準化します。",
+            "icon": "none"
+          }
         }
       },
       "block_order": [
-        "heading_DFkYUD"
+        "heading_DFkYUD",
+        "subheading_6N4pe4"
       ],
       "name": "Rich text",
       "settings": {
@@ -109,7 +117,7 @@
         "text_position": "center",
         "background": "rgba(0,0,0,0)",
         "background_gradient": "",
-        "text_color": "#ffffff"
+        "text_color": "#1a1a1a"
       }
     },
     "impact_text_gi97zd": {
@@ -131,7 +139,7 @@
           "type": "item",
           "settings": {
             "title": "990+",
-            "subheading": "導入店舗数",
+            "subheading": "累計導入・運用店舗実績",
             "content": "",
             "button_text": "",
             "button_url": "",
@@ -192,7 +200,7 @@
         "richtext_CmeGHi": {
           "type": "richtext",
           "settings": {
-            "content": "<p>店舗の成果は、データで崩れるのではない。<br/>行動までにかかる時間で崩れる。</p>"
+            "content": "<p>店舗の成果を左右するのは、データの量ではない。<br/>判断から実行までの速さです。</p>"
           }
         }
       },
@@ -235,12 +243,12 @@
             "left_progress_percent": 20,
             "left_progress_color": "#ef4444",
             "right_title": "Flowプラットフォーム",
-            "right_tag": "⚡ FIDAリアルタイム判断",
-            "right_metric": "判断は数分で完了する",
-            "right_item_1": "<p>データはリアルタイムで確認できる</p>",
-            "right_item_2": "<p>重要な変化をすぐに把握できる</p>",
+            "right_tag": "⚡ Flowリアルタイム支援",
+            "right_metric": "判断までの時間を数分単位へ",
+            "right_item_1": "<p>データをリアルタイムで確認</p>",
+            "right_item_2": "<p>重要な変化をすぐに把握</p>",
             "right_item_3": "<p>チーム全体で同じ指標を共有</p>",
-            "right_item_4": "<p>店舗ごとの判断の質を揃える</p>",
+            "right_item_4": "<p>店舗ごとの判断品質を揃える</p>",
             "right_background": "#0a2540",
             "right_text_color": "#ffffff",
             "right_tag_background": "#1e3a5f",
@@ -331,7 +339,7 @@
         "full_width": true,
         "stack_mobile": true,
         "title": "",
-        "content": "<p>主要リテールブランドの店舗運営を支援</p>",
+        "content": "<h4><strong>100以上のブランドで、店舗運営を支援</strong></h4>",
         "text_alignment": "center",
         "items_per_row": 5,
         "background": "",
@@ -362,8 +370,8 @@
             "column_size": "3",
             "title": "リアルタイム店舗分析",
             "heading_tag": "h4",
-            "subheading": "<h5>レイヤー01：現状を把握する</h5>",
-            "content": "<ul><li>来店数（トラフィック）</li><li>売上・コンバージョン</li><li>滞在時間・人員配置</li><li>店内行動<br/></li></ul><p><strong>多くのシステムはここで止まる。</strong></p>",
+            "subheading": "<h5><strong>レイヤー01：現状を正しく把握する</strong></h5>",
+            "content": "<ul><li>来店数（トラフィック）</li><li>売上・購買・コンバージョン</li><li>滞在時間・人員配置</li><li>店内行動<br/></li></ul><p><strong>多くのシステムはここで止まる。</strong></p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -383,10 +391,10 @@
             "border_color": "#ffffff",
             "show_controls": false,
             "column_size": "3",
-            "title": "ギャップを特定する",
+            "title": "成果ギャップを特定する",
             "heading_tag": "h4",
-            "subheading": "<h5>レイヤー02：重要な差を見つける</h5>",
-            "content": "<ul><li>成果が出ていない箇所</li><li>機会がある箇所</li><li>対応が必要な箇所<br/></li></ul><p><strong>ここで判断の質が変わる。</strong></p>",
+            "subheading": "<h5><strong>レイヤー02：改善ポイントを見つける</strong></h5>",
+            "content": "<ul><li>成果が出ていない箇所</li><li>機会がある箇所</li><li>対応が必要な時間帯</li><li>優先すべき課題</li></ul><p><strong>ここで判断の質が変わる。</strong></p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -432,8 +440,8 @@
         "gap": "medium",
         "text_alignment": "start",
         "subheading": "",
-        "title": "リテールの判断は、こう動いている",
-        "content": "<p>来店数、購買、店内データを、より速く、より揃った判断へ。<br/>Flowは、それを全店舗で実現する。</p>",
+        "title": "店舗判断を、3つのレイヤーで支える",
+        "content": "<p>来店数・購買・店内行動をつなぎ、より速く、より一貫した店舗判断へ。<br/>Flowは、その流れを全店舗で支援します。</p>",
         "background": "#ffffff",
         "background_gradient": "",
         "text_color": ""
@@ -567,15 +575,15 @@
             "icon_background_type": "circle",
             "icon_background": "",
             "icon_color": "",
-            "background_color": "#a0b842",
+            "background_color": "#11243e",
             "text_color": "#f9fafb",
-            "border_color": "#a0b842",
+            "border_color": "#11243e",
             "show_controls": false,
             "column_size": "2",
             "title": "+23.9%",
             "heading_tag": "h1",
             "subheading": "<h5>デイトナ・インターナショナル</h5>",
-            "content": "<p><strong>入店率（キャプチャ率）</strong></p><ul><li>購買率: 19.9% → 25.2%</li><li>Flow活用店舗では売上 約25%増</li><li>投資回収は数週間レベル</li></ul>",
+            "content": "<p><strong>入店率改善</strong></p><ul><li><strong>購買率: 19.9% → 25.2%</strong></li><li><strong>Flow活用店舗では売上 約25%増</strong></li><li><strong>投資回収は数週間レベル</strong></li></ul>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -597,7 +605,7 @@
             "title": "+8.25%",
             "heading_tag": "h1",
             "subheading": "<h5>大手国内リテール企業</h5>",
-            "content": "<p><strong>売上成長</strong></p><ul><li>126店舗で導入</li><li>売上インパクト：約18億円</li><li>ROI 50倍</li></ul>",
+            "content": "<p><strong>売上改善インパクト</strong></p><ul><li><strong>126店舗規模で検証</strong></li><li><strong>年間売上インパクト：約18億円</strong></li><li><strong>ROI：約50倍</strong></li></ul>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -643,8 +651,8 @@
         "gap": "medium",
         "text_alignment": "start",
         "subheading": "",
-        "title": "実行が、測定可能な成果を生む",
-        "content": "<p>実行が変われば、成果はついてくる。<br/>実際の店舗運営データで確認されている。</p>",
+        "title": "実行改善は、数字で確認できる",
+        "content": "<p>実行が変われば、店舗成果も変わる。<br/>Flowは、実際の店舗運営データでその変化を確認します。</p>",
         "background": "#ffffff",
         "background_gradient": "",
         "text_color": ""
@@ -669,7 +677,7 @@
             "title": "店舗チーム",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<p><strong>日々のパフォーマンス確認</strong></p><ul><li>コンバージョンを日次で把握</li><li>リアルタイムで対応</li><li>当日中に判断</li></ul>",
+            "content": "<p><strong>当日の売上機会を逃さない</strong></p><ul><li><strong>来店数・入店率を確認</strong></li><li><strong>コンバージョン低下を早期把握</strong></li><li><strong>ピーク時間帯に合わせて接客を調整</strong></li><li><strong>当日中に次の行動を判断</strong></li></ul>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -691,7 +699,7 @@
             "title": "エリア / VMD",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<p><strong>店舗間で実行を揃える</strong></p><ul><li>比較可能な店舗パフォーマンス</li><li>ギャップの明確な可視化</li><li>VMDと実行の一貫性</li></ul>",
+            "content": "<p><strong>店舗間の差と売場課題を見える化</strong></p><ul><li><strong>店舗別KPIを横比較</strong></li><li><strong>回遊・滞在時間・売場反応を確認</strong></li><li><strong>VMD変更後の効果を検証</strong></li><li><strong>改善が必要な店舗を優先把握</strong></li></ul>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -713,7 +721,7 @@
             "title": "本部 / 経営層",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<p><strong>全体の意思決定を揃える</strong></p><ul><li>KPIの共通言語化</li><li>判断スピードの向上</li><li>実行の標準化</li></ul>",
+            "content": "<p><strong>全店舗の判断基準を統一する</strong></p><ul><li>店舗KPIを共通指標で管理</li><li>売上・人員配置・来店傾向を把握</li><li>店舗施策の実行状況を確認</li><li>成果のばらつきを改善</li></ul>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -772,7 +780,7 @@
         "richtext_QmW9HL": {
           "type": "richtext",
           "settings": {
-            "content": "<p>小さな改善でも、全店舗で積み重なれば、<br/>売上に大きな差を生む。</p>"
+            "content": "<p>日々の小さな改善も、全店舗で継続すれば、<br/>売上に大きな差を生みます。</p>"
           }
         }
       },
@@ -814,7 +822,7 @@
             "title": "現状",
             "heading_tag": "h3",
             "subheading": "",
-            "content": "<ul><li>KPIは本部で管理</li><li>週次レポートが中心</li><li>店舗でのアクションは限定的</li></ul>",
+            "content": "<ul><li><strong>KPIは本部で管理</strong></li><li><strong>週次レポートが中心</strong></li><li><strong>店舗での改善行動が限定的</strong></li></ul>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -836,7 +844,7 @@
             "title": "変化後",
             "heading_tag": "h3",
             "subheading": "",
-            "content": "<ul><li>店舗で日次KPIを把握</li><li>現場がデータをもとに判断</li><li>アクションが成果に直結</li></ul>",
+            "content": "<ul><li><strong>店舗で日次KPIを把握</strong></li><li><strong>現場がデータをもとに判断</strong></li><li><strong>改善行動と成果を結びつける</strong></li></ul>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -857,8 +865,8 @@
             "column_size": "3",
             "title": "+2.3%",
             "heading_tag": "h1",
-            "subheading": "<p>コンバージョン改善</p>",
-            "content": "<p>8ヶ月で 約1.4億円の売上効果</p>",
+            "subheading": "<h5><strong>コンバージョン改善</strong></h5>",
+            "content": "<p>8ヶ月で約1.4億円の売上効果</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
