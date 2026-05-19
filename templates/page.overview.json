@@ -1099,7 +1099,7 @@
         "item_8W6aXf": {
           "type": "item",
           "settings": {
-            "title": "全店舗に一括導入する必要がありますか？",
+            "title": "何店舗から導入できますか？",
             "content": "<p>Flowは1店舗から導入できます。ただし、社内理解を深め、店舗間比較や本部・エリアでの活用イメージをつくるため、初期導入は3店舗以上を推奨しています。導入店舗数が増えるほど、1店舗あたりの費用は抑えやすくなります。</p>"
           }
         },
@@ -1160,7 +1160,7 @@
         "answer_time": "Average answer time: 24h",
         "button_text": "",
         "button_url": "",
-        "text_position": "center",
+        "text_position": "start",
         "background": "",
         "background_gradient": "",
         "text_color": "",
