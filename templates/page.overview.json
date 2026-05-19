@@ -1008,12 +1008,12 @@
             "border_color": "#f9fafb",
             "show_controls": false,
             "column_size": "3",
-            "title": "高精度店内計測",
+            "title": "来店分析",
             "heading_tag": "h4",
             "subheading": "",
             "content": "<p>高精度な来店計測と顧客行動分析。</p>",
             "link_url": "",
-            "link_text": "詳しく見る →",
+            "link_text": "来店分析を見る →",
             "link_style": "link"
           }
         },
@@ -1031,12 +1031,12 @@
             "border_color": "#f9fafb",
             "show_controls": false,
             "column_size": "3",
-            "title": "FIDA分析基盤",
+            "title": "分析プラットフォーム",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<p>来店・売上・人員配置を統合分析。</p>",
+            "content": "<p>来店・売上・購買率を統合分析。</p>",
             "link_url": "#",
-            "link_text": "詳しく見る →",
+            "link_text": "分析プラットフォームを見る →",
             "link_style": "link"
           }
         },
@@ -1054,12 +1054,12 @@
             "border_color": "#f9fafb",
             "show_controls": false,
             "column_size": "3",
-            "title": "現場意思決定実行支援",
+            "title": "FIDA 実行支援",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<p>現場実行につながる推奨アクション。</p><h3></h3>",
+            "content": "<p>AIで店舗判断と現場実行を支援。</p><p></p><p></p><h3></h3>",
             "link_url": "#",
-            "link_text": "詳しく見る →",
+            "link_text": "FIDAを見る →",
             "link_style": "link"
           }
         }
@@ -1079,7 +1079,7 @@
         "gap": "medium",
         "text_alignment": "start",
         "subheading": "プラットフォームを見る",
-        "title": "店舗運営のすべてのレイヤーを統合。",
+        "title": "店舗データを、ひとつの運営基盤へ。",
         "content": "",
         "background": "",
         "background_gradient": "",
