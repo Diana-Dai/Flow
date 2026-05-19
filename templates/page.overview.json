@@ -1085,6 +1085,92 @@
         "background_gradient": "",
         "text_color": ""
       }
+    },
+    "faq_prFJMQ": {
+      "type": "faq",
+      "blocks": {
+        "item_7wqHFK": {
+          "type": "item",
+          "settings": {
+            "title": "既存のPOSや売上データと連携できますか？",
+            "content": "<p>はい。Flowは、POSデータ、売上目標、店舗属性、人員データ、天候データなどと連携し、来店数や購買率とあわせて分析できます。連携方法は、API・CSV・FTPなど、既存システムの状況に応じて設計します。</p>"
+          }
+        },
+        "item_8W6aXf": {
+          "type": "item",
+          "settings": {
+            "title": "全店舗に一括導入する必要がありますか？",
+            "content": "<p>Flowは1店舗から導入できます。ただし、社内理解を深め、店舗間比較や本部・エリアでの活用イメージをつくるため、初期導入は3店舗以上を推奨しています。導入店舗数が増えるほど、1店舗あたりの費用は抑えやすくなります。</p>"
+          }
+        },
+        "item_hfHLVP": {
+          "type": "item",
+          "settings": {
+            "title": "店舗スタッフでも使えますか？",
+            "content": "<p>はい。Flowは、もともと店舗マネージャーが日々の店舗運営で使えるように設計されています。来店数、購買率、売上進捗、時間帯別の変化を確認し、朝礼・巡回・改善ミーティングで活用できます。最大の効果は、本部だけでなく店舗が積極的に活用したときに生まれます。</p>"
+          }
+        },
+        "item_kLcKBr": {
+          "type": "item",
+          "settings": {
+            "title": "カメラ映像は保存されますか？",
+            "content": "<p>いいえ。Flowの来店計測では、カメラ映像は保存されません。AIカメラは、来店数、通行量、滞在時間、属性傾向などの分析データを取得するために使用されます。詳細は、Flowの<a href=\"https://cdn.shopify.com/s/files/1/0704/4582/6185/files/Privacy_Policy.pdf?v=1749635230\" target=\"_blank\" title=\"https://cdn.shopify.com/s/files/1/0704/4582/6185/files/Privacy_Policy.pdf?v=1749635230\">プライバシーポリシー</a>および<a href=\"https://cdn.shopify.com/s/files/1/0704/4582/6185/files/Data_Protection_Policy.pdf?v=1773121905\" target=\"_blank\" title=\"https://cdn.shopify.com/s/files/1/0704/4582/6185/files/Data_Protection_Policy.pdf?v=1773121905\">データ保護方針</a>をご確認ください。</p>"
+          }
+        },
+        "item_tJtiUh": {
+          "type": "item",
+          "settings": {
+            "title": "来店数や購買率はリアルタイムで確認できますか？",
+            "content": "<p>はい。Flowでは、来店数、売上、購買率などの主要KPIをリアルタイムに近い形で確認できます。日次レポートを待つのではなく、店舗で起きている変化を早く把握し、営業時間中の改善判断につなげることができます。</p>"
+          }
+        },
+        "item_iPDGyT": {
+          "type": "item",
+          "settings": {
+            "title": "FIDAとは何ですか？",
+            "content": "<p>FIDAは、Flow AIの中核となる実行支援エンジンです。来店数、売上、購買率、人員配置、SOPなどの情報をもとに、店舗状況に応じた推奨アクションを提示し、現場実行のばらつきを抑えることを目指します。</p>"
+          }
+        },
+        "item_njw466": {
+          "type": "item",
+          "disabled": true,
+          "settings": {
+            "title": "導入後のサポートやトレーニングはありますか？",
+            "content": "<p>はい。Flowは、システム提供だけでなく、店舗・エリア・本部での活用定着を支援します。ダッシュボードの見方、KPIの考え方、購買率改善、店舗データを使った改善ミーティングなど、運用にあわせたトレーニングが可能です。</p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_7wqHFK",
+        "item_8W6aXf",
+        "item_hfHLVP",
+        "item_kLcKBr",
+        "item_tJtiUh",
+        "item_iPDGyT",
+        "item_njw466"
+      ],
+      "name": "FAQ",
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "よくあるご質問",
+        "content": "<p><strong>導入前に確認されることが多い内容をまとめました。</strong></p>",
+        "team_avatar_width": 160,
+        "support_hours": "Our customer support is available Monday to Friday: 8am-8:30pm.",
+        "answer_time": "Average answer time: 24h",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "",
+        "accordion_text_color": ""
+      }
     }
   },
   "order": [
@@ -1101,6 +1187,7 @@
     "multi_column_LeVzeG",
     "multi_column_HCGJea",
     "testimonials_98zPBi",
-    "multi_column_UExWWX"
+    "multi_column_UExWWX",
+    "faq_prFJMQ"
   ]
 }
