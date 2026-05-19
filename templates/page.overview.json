@@ -235,7 +235,7 @@
         "heading_EyFYM9": {
           "type": "heading",
           "settings": {
-            "text": "Flowの3つの基盤",
+            "text": "店舗運営を支える3つの基盤",
             "heading_tag": "h1",
             "text_color": "",
             "gradient": ""
@@ -273,7 +273,7 @@
             "icon": "none",
             "icon_width": 48,
             "title": "高精度店内計測",
-            "content": "<p>AIによるスタッフ除外機能を活用し、<br/>高精度な来店計測と顧客行動データをリアルタイムで取得します。</p><p></p>",
+            "content": "<p><strong>AIカメラによる来店計測、スタッフ除外、滞在時間、店内行動データを取得し、店舗分析の基盤をつくります。</strong></p><ul><li>来店数</li><li>スタッフ除外</li><li>滞在時間</li><li>店内行動</li><li>属性分析</li><li>店前通行人数計測</li></ul>",
             "link_url": "#",
             "link_text": "機能を見る →",
             "link_style": "button"
@@ -314,7 +314,7 @@
       "name": "Images and text scrolling",
       "settings": {
         "full_width": true,
-        "stack_on_mobile": false,
+        "stack_on_mobile": true,
         "show_counter": true,
         "desktop_image_effect": "reveal",
         "image_position": "end",
