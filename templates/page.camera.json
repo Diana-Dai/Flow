@@ -15,13 +15,13 @@
         "subheading_GmUMNm": {
           "type": "subheading",
           "settings": {
-            "text": "SENSING"
+            "text": "AIカメラ"
           }
         },
         "liquid_chBgy3": {
           "type": "liquid",
           "settings": {
-            "liquid": "<p>Use this text to output some custom Liquid code to include widget or dynamic code.</p>"
+            "liquid": "<h1 class=\"h1\">精度の高い来店計測が、<br>店舗分析の土台になる。\n</h1>"
           }
         },
         "heading_frXnfn": {
@@ -43,7 +43,7 @@
           "settings": {
             "style": "fill",
             "size": "lg",
-            "text": "Request demo",
+            "text": "無料デモを依頼する",
             "url": "#",
             "background": "#a0b842",
             "text_color": ""
@@ -54,7 +54,7 @@
           "settings": {
             "style": "fill",
             "size": "lg",
-            "text": "Explore Analytics →",
+            "text": "分析プラットフォームを見る",
             "url": "#",
             "background": "#ffffff",
             "text_color": "#11243e"
