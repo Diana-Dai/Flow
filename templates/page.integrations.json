@@ -1,0 +1,1068 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "image_with_text_overlay_AcppEX": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "subheading_GmUMNm": {
+          "type": "subheading",
+          "settings": {
+            "text": "INTEGRATIONS"
+          }
+        },
+        "heading_frXnfn": {
+          "type": "heading",
+          "settings": {
+            "text": "UNIFY YOUR RETAIL SIGNALS.",
+            "heading_tag": "h0"
+          }
+        },
+        "richtext_HwhtPj": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Flow bridges the gap between physical space and digital infrastructure. Connect your existing hardware, workforce data, and POS systems into a single, cohesive source of truth.</p>"
+          }
+        },
+        "button_7Prq3W": {
+          "type": "button",
+          "settings": {
+            "style": "fill",
+            "size": "lg",
+            "text": "Request Integration Demo →",
+            "url": "#",
+            "background": "#a0b842",
+            "text_color": ""
+          }
+        },
+        "button_cpqnfi": {
+          "type": "button",
+          "settings": {
+            "style": "fill",
+            "size": "lg",
+            "text": "View API Docs →",
+            "url": "#",
+            "background": "#ffffff",
+            "text_color": "#11243e"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_GmUMNm",
+        "heading_frXnfn",
+        "richtext_HwhtPj",
+        "button_7Prq3W",
+        "button_cpqnfi"
+      ],
+      "name": "Image with text overlay",
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "fill",
+        "image": "shopify://shop_images/ChatGPT_Image_May_12_2026_10_04_23_AM.png",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "text_color": "#ffffff",
+        "overlay_color": "#11243e",
+        "overlay_opacity": 43
+      }
+    },
+    "multi_column_HCGJea": {
+      "type": "multi-column",
+      "blocks": {
+        "item_GMdCj7": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-timer",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#ffffff",
+            "icon_color": "#a0b842",
+            "background_color": "#f2f2f2",
+            "text_color": "",
+            "border_color": "#ffffff",
+            "show_controls": false,
+            "column_size": "4",
+            "title": "Zero-Overhaul",
+            "heading_tag": "h3",
+            "subheading": "",
+            "content": "<h5>Plug-and-Play </h5><p>Compatible with your existing IP camera infrastructure.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_9cWFC9": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-target",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#ffffff",
+            "icon_color": "#a0b842",
+            "background_color": "#f2f2f2",
+            "text_color": "#11243e",
+            "border_color": "#ffffff",
+            "show_controls": false,
+            "column_size": "4",
+            "title": "Instant Sync",
+            "heading_tag": "h3",
+            "subheading": "",
+            "content": "<h5>POS Correlation</h5><p>Direct API connections to Shopify, NetSuite, and legacy enterprise POS platforms.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_aqpNXK": {
+          "type": "item",
+          "settings": {
+            "icon": "people",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#ffffff",
+            "icon_color": "#a0b842",
+            "background_color": "#f2f2f2",
+            "text_color": "#11243e",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "4",
+            "title": "Algorithmic Match",
+            "heading_tag": "h3",
+            "subheading": "",
+            "content": "<h5>Staffing Alignment</h5><p>Ingest real-time scheduling data from systems like Workday, Deputy, and Kronos.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_tTyycj": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-building",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#ffffff",
+            "icon_color": "#a0b842",
+            "background_color": "#f2f2f2",
+            "text_color": "#11243e",
+            "border_color": "#ffffff",
+            "show_controls": false,
+            "column_size": "4",
+            "title": "Open API",
+            "heading_tag": "h3",
+            "subheading": "",
+            "content": "<h5>Developer First</h5><p>Build custom workflows and internal triggers with our lightweight, secure REST API.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_TzaiMV": {
+          "type": "item",
+          "disabled": true,
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#11243e",
+            "text_color": "#ffffff",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "2",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h5>Multi-Entrance Support</h5><p>Handles complex store layouts with multiple entry points, side doors, and mall configurations. Unified traffic view across all access points.</p><p>✅ <em>Unlimited entrance tracking per location</em></p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_fyWETE": {
+          "type": "item",
+          "disabled": true,
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#a0b842",
+            "text_color": "#ffffff",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "2",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h5>Staff Exclusion</h5><p>AI-powered filtering removes employee movement from customer metrics. Get true customer-only traffic data for accurate conversion analysis.</p><p>✅ <em>Automatic staff identification and filtering</em></p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_GMdCj7",
+        "item_9cWFC9",
+        "item_aqpNXK",
+        "item_tTyycj",
+        "item_TzaiMV",
+        "item_fyWETE"
+      ],
+      "custom_css": [
+        ".prose p {font-size: 0.9rem;}",
+        ".multi-column__item .h3 {color: #a0b842 !important;}"
+      ],
+      "name": "Multi-column",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "start",
+        "subheading": "CONNECTIVITY",
+        "title": "COMPLETE INTEGRATION INTELLIGENCE.",
+        "content": "<p>From passerby counting to zone-level engagement, Flow captures every dimension of in-store traffic with enterprise-grade accuracy.</p>",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "#11243e"
+      }
+    },
+    "multi_column_HCGJea11": {
+      "type": "multi-column",
+      "blocks": {
+        "item_tTyycj": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-plane",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#e5e9d1",
+            "icon_color": "#a0b842",
+            "background_color": "#ffffff",
+            "text_color": "#11243e",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "2",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h4>Universal RTSP Camera Sync</h4><p>Connect within minutes. Flow ingests stream telemetry directly from your active store security hardware network without requiring proprietary sensor upgrades or structural rewiring.</p><p><strong>Active Streaming Protocol: Verified</strong></p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_ztJTym": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-secure-profile",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#a0b842",
+            "icon_color": "#ffffff",
+            "background_color": "#36465c",
+            "text_color": "#f9fafb",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "2",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h4>Enterprise Security & Privacy</h4><p>Anonymous by design. Flow decrypts video streams locally at the edge, outputting purely anonymous coordinate metadata. No local video storage, 100% compliant with global privacy standards.</p><p><strong>Data Privacy Protocol: Standardized</strong></p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_tTyycj",
+        "item_ztJTym"
+      ],
+      "custom_css": [
+        ".prose p {font-size: 0.9rem;}",
+        ".multi-column__item:first-child .h2 {color: #a0b842 !important;}"
+      ],
+      "name": "Multi-column",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "start",
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "background": "#f2f2f2",
+        "background_gradient": "",
+        "text_color": "#11243e"
+      }
+    },
+    "media_with_text_hMPTmL": {
+      "type": "media-with-text",
+      "blocks": {
+        "image_8hBn9C": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/44.png",
+            "media_width": 50,
+            "media_position": "end",
+            "text_position": "place-self-center-start text-start",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "SYSTEM INTEGRATION",
+            "title": "DATA STREAM CORRELATION.",
+            "content": "<p>Flow maps disparate enterprise software variables directly against live storefront physical movement to automate critical business logic.</p>",
+            "link_text": "View Performance",
+            "link_url": "#",
+            "background": "",
+            "background_gradient": "",
+            "text_color": "#11243e",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_8hBn9C"
+      ],
+      "custom_css": [
+        "h3 {font-size: var(--text-h0); color: #fff;}",
+        "ul {display: flex; flex-wrap: wrap; gap: 20px; font-size: 1rem;}",
+        "ul li {width: calc(50% - 20px);}"
+      ],
+      "name": "Media with text",
+      "settings": {
+        "full_width": false,
+        "alternate_media_position": false,
+        "spacing": "small"
+      }
+    },
+    "multi_column_RkceNG": {
+      "type": "multi-column",
+      "blocks": {
+        "item_9FWtj3": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-like",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h3>AI-Powered People Counting</h3><p>99.8% accurate customer counting across all lighting conditions</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_FxWUAK": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "Column title",
+            "heading_tag": "h4",
+            "subheading": "<p>Organize content into multiple columns to share useful information to your customers about your products, values...</p>",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_6zrj9E": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "Column title",
+            "heading_tag": "h4",
+            "subheading": "<p>Organize content into multiple columns to share useful information to your customers about your products, values...</p>",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_9FWtj3",
+        "item_FxWUAK",
+        "item_6zrj9E"
+      ],
+      "disabled": true,
+      "name": "Multi-column",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "start",
+        "subheading": "TECHNICAL CAPABILITIES",
+        "title": "COMPLETE RETAIL SENSING PLATFORM.",
+        "content": "<p>Enterprise-grade AI camera with advanced people counting, behavior analytics, and real-time traffic measurement capabilities.</p>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "multi_column_QjMJiW": {
+      "type": "multi-column",
+      "blocks": {
+        "item_mpQVCf": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-camera",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#a0b842",
+            "icon_color": "#ffffff",
+            "background_color": "#f9fafb",
+            "text_color": "",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h1",
+            "subheading": "",
+            "content": "<h5>Automated Sync</h5><p>Flow automatically polls integrated commerce and labor platform endpoints continuously, keeping baseline records perfectly updated without manual spreadsheet exports.</p><h4>&lt;15s</h4><p><em>Synchronization Latency Delta</em></p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_MVfQ7a": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-file",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#a0b842",
+            "icon_color": "#ffffff",
+            "background_color": "#f9fafb",
+            "text_color": "",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h1",
+            "subheading": "",
+            "content": "<h5>Data Normalization</h5><p>Raw unstructured telemetry from varied security feeds and cloud databases is clean-filtered and normalized into a unified, lightweight store efficiency metric.</p><h4>99.8%</h4><p><em>Core Data Ingestion Confidence</em></p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_Y47ifx": {
+          "type": "item",
+          "settings": {
+            "icon": "up",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#a0b842",
+            "icon_color": "#ffffff",
+            "background_color": "#f9fafb",
+            "text_color": "",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h1",
+            "subheading": "",
+            "content": "<h5>Instant Tasking</h5><p>System optimizations translate directly into live, actionable operational priorities dispatched via the automated frontline application for on-floor staff response.</p><h4>Real-time</h4><p><em>Automated Execution Target</em></p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_mpQVCf",
+        "item_MVfQ7a",
+        "item_Y47ifx"
+      ],
+      "custom_css": [
+        ".multi-column__item h4 ~ p {margin-top: 0; padding-top: 0;}",
+        "p {font-size: 1rem;}",
+        "em {font-size: 0.8rem;}",
+        ".multi-column__item .text-center {text-align: left;}"
+      ],
+      "name": "Multi-column",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "center",
+        "subheading": "STEPS",
+        "title": "FROM INSIGHT TO ACTION.",
+        "content": "",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "multi_column_QjMJiW11": {
+      "type": "multi-column",
+      "blocks": {
+        "item_mpQVCf": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#a0b842",
+            "icon_color": "#ffffff",
+            "background_color": "#36465c",
+            "text_color": "",
+            "border_color": "#36465c",
+            "show_controls": false,
+            "column_size": "2",
+            "title": "",
+            "heading_tag": "h1",
+            "subheading": "<p>MODE</p>",
+            "content": "<h3>Real-Time Monitoring</h3><p>Live traffic dashboard updated every 15 seconds. Monitor current store performance, detect anomalies, and trigger immediate staffing adjustments.</p><ul><li>15s Update Interval</li><li>&lt;2m Alert Response</li></ul>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_MVfQ7a": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#6e6e6e",
+            "icon_color": "",
+            "background_color": "#ffffff",
+            "text_color": "#11243e",
+            "border_color": "#36465c",
+            "show_controls": false,
+            "column_size": "2",
+            "title": "",
+            "heading_tag": "h1",
+            "subheading": "<p>MODE</p>",
+            "content": "<h3>Historical Analysis</h3><p>Deep-dive analytics with multi-year data retention. Identify seasonal trends, test hypotheses, and build predictive models for strategic planning.</p><ul><li>3yr Data Retention</li><li>CSV Export Ready</li></ul>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_mpQVCf",
+        "item_MVfQ7a"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".icon_container {text-align: center;}",
+        ".multi-column__item ul {font-size: 1rem;}"
+      ],
+      "name": "Multi-column",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "start",
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "#ffffff"
+      }
+    },
+    "multi_column_LeVzeG": {
+      "type": "multi-column",
+      "blocks": {
+        "item_M8EzQA": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "#f9fafb",
+            "show_controls": false,
+            "column_size": "4",
+            "title": "ANONYMOUS SOURCE",
+            "heading_tag": "h4",
+            "subheading": "<p>Protocol</p>",
+            "content": "<ul><li>NO FACIAL RECOGNITION</li><li>NO VIDEO STORAGE</li><li>GDPR COMPLIANT</li></ul>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_Eiqt4F": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "image": "shopify://shop_images/unnamed_2.png",
+            "background_color": "",
+            "text_color": "#ffffff",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "2",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_QBtwgX": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "",
+            "text_color": "#11243e",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "4",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<p>Video streams are destroyed instantly at the edge. No facial recognition at the physical level; only encrypted coordinates are transmitted. Fully compliant with global retail privacy standards.</p><p></p><ul><li>Encryption: <strong>AES-256</strong></li><li>Retention:  <strong>0 SECONDS</strong></li></ul>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_M8EzQA",
+        "item_Eiqt4F",
+        "item_QBtwgX"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".multi-column {gap: 1rem;}",
+        ".multi-column__item:last-child {align-items: center; justify-content: center; display: flex;}",
+        "ul {list-style: none;}",
+        "img {width: 100%;}"
+      ],
+      "name": "Multi-column",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": true,
+        "gap": "medium",
+        "text_alignment": "start",
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "background": "#f9fafb",
+        "background_gradient": "",
+        "text_color": "#11243e"
+      }
+    },
+    "section-15": {
+      "type": "feature-chart",
+      "blocks": {
+        "block-1": {
+          "type": "headings",
+          "settings": {
+            "heading_1": "主な提供価値",
+            "heading_2": "コアの設計思想",
+            "heading_3": "来店データの位置づけ",
+            "heading_4": "データの即時性",
+            "heading_5": "店舗での使いやすさ",
+            "heading_6": "判断へのつながり",
+            "heading_7": "店舗ごとの判断差",
+            "heading_8": "本部と店舗の連携",
+            "heading_9": "運用負荷",
+            "heading_10": "拡張性",
+            "heading_11": "",
+            "heading_12": "",
+            "heading_13": "",
+            "heading_14": "",
+            "heading_15": "",
+            "heading_16": "",
+            "heading_17": "",
+            "heading_18": "",
+            "heading_19": "",
+            "heading_20": ""
+          }
+        },
+        "block-2": {
+          "type": "values",
+          "settings": {
+            "product": "",
+            "value_1": "<p>40mm Beryllium</p>",
+            "value_2": "<p>245g</p>",
+            "value_3": "<p>165mm x 190mm x 66mm</p>",
+            "value_4": "<p>24 hours</p>",
+            "value_5": "",
+            "value_6": "",
+            "value_7": "",
+            "value_8": "",
+            "value_9": "",
+            "value_10": "",
+            "value_11": "",
+            "value_12": "",
+            "value_13": "",
+            "value_14": "",
+            "value_15": "",
+            "value_16": "",
+            "value_17": "",
+            "value_18": "",
+            "value_19": "",
+            "value_20": "",
+            "view_button_background": "",
+            "view_button_text_color": ""
+          }
+        },
+        "block-3": {
+          "type": "values",
+          "settings": {
+            "product": "",
+            "value_1": "<p>40mm Beryllium</p>",
+            "value_2": "<p>205g (On-Ear), 239g (Over-Ear)</p>",
+            "value_3": "<p>190mm x 155mm x 34mm (On-Ear), 200mm x 165mm x 40mm (Over-Ear)</p>",
+            "value_4": "<p>16 hours</p>",
+            "value_5": "",
+            "value_6": "",
+            "value_7": "",
+            "value_8": "",
+            "value_9": "",
+            "value_10": "",
+            "value_11": "",
+            "value_12": "",
+            "value_13": "",
+            "value_14": "",
+            "value_15": "",
+            "value_16": "",
+            "value_17": "",
+            "value_18": "",
+            "value_19": "",
+            "value_20": "",
+            "view_button_background": "",
+            "view_button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "Why Dashboards Fail",
+        "content": "<p>Traditional analytics show you the problem. Flow solves it.</p>",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "center",
+        "max_rows": 5,
+        "view_all_text": "View all",
+        "view_less_text": "View less",
+        "view_product": "View",
+        "viewing_product": "",
+        "show_product_swatch": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "chart_background": "",
+        "chart_text_color": "",
+        "chart_true_false_color": ""
+      }
+    },
+    "media_with_text_mRGejd": {
+      "type": "media-with-text",
+      "blocks": {
+        "image_enedX8": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/44.png",
+            "media_width": 50,
+            "media_position": "start",
+            "text_position": "place-self-center-start text-start",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "RAPID DEPLOYMENT WINDOW",
+            "title": "30 MINS.",
+            "content": "<p></p><p>PoE Interface: Single standard Ethernet cable for simultaneous power and data transmission.</p><p>Zero-Config: Automatic node discovery and network handshake. Reduces onsite engineering time by 90%.</p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "#f9fafb",
+            "background_gradient": "",
+            "text_color": "#11243e",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_enedX8"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "* {background: white;}"
+      ],
+      "name": "Media with text",
+      "settings": {
+        "full_width": false,
+        "alternate_media_position": false,
+        "spacing": "small"
+      }
+    },
+    "multi_column_x6bKQU": {
+      "type": "multi-column",
+      "blocks": {
+        "item_GrAewn": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "4",
+            "title": "QUANTIFY DWELL TIME.",
+            "heading_tag": "h4",
+            "subheading": "<p>VMD</p>",
+            "content": "<p>Shift from gut feeling to evidence-backed merchandising.</p><h4></h4>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_3rhR4q": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "4",
+            "title": "LINK POS + TRAFFIC.",
+            "heading_tag": "h4",
+            "subheading": "<p>CVR</p>",
+            "content": "<p>Identify conversion leaks and pinpoint transaction growth.</p><h4></h4>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_KmVTXJ": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "4",
+            "title": "PRECISION SCHEDULING.",
+            "heading_tag": "h4",
+            "subheading": "<p>LABOR</p>",
+            "content": "<p>Align staff hours to peak traffic. 0% labor waste.</p><h4></h4>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_E9Cyby": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "4",
+            "title": "REAL-TIME ACTION.",
+            "heading_tag": "h4",
+            "subheading": "<p>ASSISTANT</p>",
+            "content": "<p>AI-driven instruction cards for immediate sales improvement.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_GrAewn",
+        "item_3rhR4q",
+        "item_KmVTXJ",
+        "item_E9Cyby"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".prose p {font-size: 1rem;}",
+        ".text-xs p {font-size: 1rem;}",
+        ".h4 {font-size: 1.6rem;}"
+      ],
+      "name": "Multi-column",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "start",
+        "subheading": "",
+        "title": "The Actionable Use Cases",
+        "content": "",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "#11243e"
+      }
+    },
+    "rich_text_6VmVgb": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_AK7Cjn": {
+          "type": "subheading",
+          "settings": {
+            "text": "NEXT STEPS",
+            "icon": "none"
+          }
+        },
+        "heading_YXhiR8": {
+          "type": "heading",
+          "settings": {
+            "text": "READY TO CONNECT YOUR STORE DATA?",
+            "heading_tag": "h1",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_qzAkak": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Unify your hardware, workforce metrics, and conversion variables beneath a single intelligent retail operation layer.</p>"
+          }
+        },
+        "button_AVKAbi": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "style": "outline",
+            "size": "base",
+            "text": "Contact Solutions Architect",
+            "url": "#",
+            "background": "",
+            "text_color": "#11243e"
+          }
+        },
+        "buttons_jaKCGH": {
+          "type": "buttons",
+          "settings": {
+            "style_1": "fill",
+            "size_1": "xl",
+            "text_1": "Schedule Demo →",
+            "url_1": "#",
+            "background_1": "#a0b842",
+            "text_color_1": "#ffffff",
+            "style_2": "fill",
+            "size_2": "xl",
+            "text_2": "Explore Platform →",
+            "url_2": "#",
+            "background_2": "#ffffff",
+            "text_color_2": "#11243e"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_AK7Cjn",
+        "heading_YXhiR8",
+        "richtext_qzAkak",
+        "button_AVKAbi",
+        "buttons_jaKCGH"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "#0e366a",
+        "background_gradient": "",
+        "text_color": "#ffffff"
+      }
+    }
+  },
+  "order": [
+    "image_with_text_overlay_AcppEX",
+    "multi_column_HCGJea",
+    "multi_column_HCGJea11",
+    "media_with_text_hMPTmL",
+    "multi_column_RkceNG",
+    "multi_column_QjMJiW",
+    "multi_column_QjMJiW11",
+    "multi_column_LeVzeG",
+    "section-15",
+    "media_with_text_mRGejd",
+    "multi_column_x6bKQU",
+    "rich_text_6VmVgb"
+  ]
+}

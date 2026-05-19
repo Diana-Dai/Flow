@@ -15,7 +15,7 @@
         "liquid_74Ndmm": {
           "type": "liquid",
           "settings": {
-            "liquid": "<h1 class=\"h1\">店舗データを統合し、<br>売上改善の判断へ。\n</h1>"
+            "liquid": "<h1 class=\"h0\">店舗データを、<br>現場の行動へ。\n</h1>"
           }
         },
         "heading_W76pLA": {
@@ -29,7 +29,7 @@
         "richtext_b7cQCP": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Flowは、来店数・購買率・売上・店舗運営データをひとつに統合し、<br/>本部・エリア・店舗が同じ状況を把握し、より早く改善判断を行える分析プラットフォームです。</p>"
+            "content": "<p>店舗分析と現場実行の分断をなくす。<br/>Flowは、来店・購買・売場行動データを、迅速な判断と売上成果につなげます。</p>"
           }
         },
         "button_39CcgY": {
@@ -144,7 +144,7 @@
         "full_width": true,
         "stack_mobile": true,
         "title": "",
-        "content": "<p><strong>100以上のリテールブランドで、店舗データ活用を支援</strong></p>",
+        "content": "<p>主要リテールブランドの店舗運営を支援</p>",
         "text_alignment": "center",
         "items_per_row": 5,
         "background": "#ffffff",
@@ -175,7 +175,7 @@
             "title": "18時間",
             "heading_tag": "h1",
             "subheading": "<h5><strong>従来型レポーティング<br/><br/></strong></h5>",
-            "content": "<p><strong>→ 前日データ<br/>→ 手動集計<br/>→ 本部確認<br/>→ 翌日以降の対応</strong><br/><br/></p>",
+            "content": "<p>→ 店舗観測<br/>→ 手動レポート<br/>→ 本部確認<br/>→ 遅れた対応<br/><br/></p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -194,13 +194,13 @@
             "border_color": "#a0b842",
             "show_controls": false,
             "column_size": "2",
-            "title": "10分判断",
+            "title": "10分",
             "heading_tag": "h1",
-            "subheading": "<h5><strong>Flow 分析プラットフォーム<br/><br/></strong></h5>",
-            "content": "<p>→ 来店・売上を即時可視化<br/>→ 購買率の変化を把握<br/>→ 改善判断を早期化</p>",
+            "subheading": "<h5><strong>Flow リアルタイム実行基盤<br/><br/></strong></h5>",
+            "content": "<p>→ リアルタイム計測<br/>→ FIDAロジック<br/>→ 即時アクション</p>",
             "link_url": "",
-            "link_text": "来店分析を見る →",
-            "link_style": "button"
+            "link_text": "",
+            "link_style": "link"
           }
         }
       },
@@ -215,8 +215,8 @@
         "gap": "medium",
         "text_alignment": "start",
         "subheading": "オペレーション遅延",
-        "title": "18時間の判断遅延を短縮する。",
-        "content": "<p>日次レポートや手動集計では、店舗で起きた変化が本部・エリア・店舗に届くまでに時間がかかります。<br/>Flowは、来店数・購買率・売上状況をひとつの分析基盤に統合し、判断と対応までの時間を短縮します。</p>",
+        "title": "18時間の判断遅延",
+        "content": "<p>Flowは、店舗で起きていることと実際の対応までの時間差を解消します。<br/>全店舗の判断スピードを、数時間単位から数分単位へ。</p>",
         "background": "#ffffff",
         "background_gradient": "",
         "text_color": "#11243e"
@@ -228,15 +228,15 @@
         "subheading_RVUamX": {
           "type": "subheading",
           "settings": {
-            "text": "店舗データを、実行につなげる3つのレイヤー",
-            "icon": "none"
+            "text": "標準化された店舗実行の設計図",
+            "icon": "picto-target"
           }
         },
         "heading_EyFYM9": {
           "type": "heading",
           "settings": {
-            "text": "店舗運営を支える3つの基盤",
-            "heading_tag": "h1",
+            "text": "店舗運営の意思決定レイヤー",
+            "heading_tag": "h2",
             "text_color": "",
             "gradient": ""
           }
@@ -244,7 +244,7 @@
         "richtext_fA7CVd": {
           "type": "richtext",
           "settings": {
-            "content": "<p>多くのリテールシステムは、データの可視化で止まります。<br/>Flowは、来店計測・分析・改善判断をひとつにつなげ、全店舗でより一貫した店舗運営を支援します。</p>"
+            "content": "<p>多くのリテールシステムは、データを集めるだけで終わる。<br/>Flowは、そのデータを全店舗で統一された行動へ変える。</p>"
           }
         }
       },
@@ -273,9 +273,9 @@
             "icon": "none",
             "icon_width": 48,
             "title": "高精度店内計測",
-            "content": "<p><strong>AIカメラによる来店計測とスタッフ除外機能を活用し、店舗分析に必要な顧客行動データをリアルタイムで取得します。</strong></p><p>取得できる主なデータ：</p><ul><li>店前通行人数計測</li><li>来店数</li><li>スタッフ除外</li><li>滞在時間</li><li>店内行動</li><li>年齢・性別属性</li></ul>",
+            "content": "<p>AIによるスタッフ除外機能を活用し、<br/>高精度な来店計測と顧客行動データをリアルタイムで取得します。</p><p></p>",
             "link_url": "#",
-            "link_text": "来店分析を見る →",
+            "link_text": "機能を見る →",
             "link_style": "button"
           }
         },
@@ -285,10 +285,10 @@
             "image": "shopify://shop_images/analytics_mobile.png",
             "icon": "none",
             "icon_width": 48,
-            "title": "成果ギャップ分析",
-            "content": "<p>来店数・売上・購買率・人員配置を統合し、成果が出ている店舗と伸び悩む店舗の違いを可視化します。改善すべき時間帯・店舗・運営課題を見つけやすくします。</p><p><strong>分析できる主な領域：</strong></p><ul><li>売上・予算進捗</li><li>来店数・購買率</li><li>店舗別・エリア別比較</li><li>時間帯別パフォーマンス</li><li>人員配置との関係</li><li>改善優先度</li></ul>",
+            "title": "FIDA分析基盤",
+            "content": "<p>来店・売上・人員配置・購買率を統合分析し、<br/>店舗運営上の課題と機会をリアルタイムで可視化します。</p><p></p>",
             "link_url": "#",
-            "link_text": "分析プラットフォームを見る →",
+            "link_text": "機能を見る →",
             "link_style": "button"
           }
         },
@@ -298,10 +298,10 @@
             "image": "shopify://shop_images/store_environmnet_x_1500_x_1900_px.png",
             "icon": "none",
             "icon_width": 48,
-            "title": "対応を標準化する",
-            "content": "<p>店舗状況に応じた推奨アクションを提示し、店舗ごとの判断のばらつきを抑えます。SOPや運営ルールに沿った実行を支援し、全店舗でより一貫した対応を実現します。</p><p><strong>支援できる主な領域：</strong></p><ul><li>店舗別の推奨アクション</li><li>SOP・運営ルールとの連携</li><li>実行状況の確認</li><li>店舗間の判断ばらつき抑制</li><li>エリア・本部による状況把握</li></ul>",
+            "title": "現場意思決定実行支援",
+            "content": "<p>現場がすぐに動ける推奨アクションを提示し、<br/>店舗実行のスピードと一貫性を向上させます。</p><p></p>",
             "link_url": "#",
-            "link_text": "Flow AIを見る →",
+            "link_text": "機能を見る →",
             "link_style": "button"
           }
         }
@@ -314,7 +314,7 @@
       "name": "Images and text scrolling",
       "settings": {
         "full_width": true,
-        "stack_on_mobile": true,
+        "stack_on_mobile": false,
         "show_counter": true,
         "desktop_image_effect": "reveal",
         "image_position": "end",
