@@ -273,7 +273,7 @@
             "icon": "none",
             "icon_width": 48,
             "title": "高精度店内計測",
-            "content": "<p><strong>AIカメラによる来店計測、スタッフ除外、滞在時間、店内行動データを取得し、店舗分析の基盤をつくります。</strong></p><p>取得できる主なデータ：</p><ul><li>店前通行人数計測</li><li>来店数</li><li>スタッフ除外</li><li>滞在時間</li><li>店内行動</li><li>年齢・性別属性</li></ul>",
+            "content": "<p><strong>AIカメラによる来店計測とスタッフ除外機能を活用し、店舗分析に必要な顧客行動データをリアルタイムで取得します。</strong></p><p>取得できる主なデータ：</p><ul><li>店前通行人数計測</li><li>来店数</li><li>スタッフ除外</li><li>滞在時間</li><li>店内行動</li><li>年齢・性別属性</li></ul>",
             "link_url": "#",
             "link_text": "来店分析を見る →",
             "link_style": "button"
@@ -285,10 +285,10 @@
             "image": "shopify://shop_images/analytics_mobile.png",
             "icon": "none",
             "icon_width": 48,
-            "title": "FIDA分析基盤",
-            "content": "<p>来店・売上・人員配置・購買率を統合分析し、<br/>店舗運営上の課題と機会をリアルタイムで可視化します。</p><p></p>",
+            "title": "成果ギャップ分析",
+            "content": "<p>来店数・売上・購買率・人員配置を統合し、成果が出ている店舗と伸び悩む店舗の違いを可視化します。改善すべき時間帯・店舗・運営課題を見つけやすくします。</p><p><strong>分析できる主な領域：</strong></p><ul><li>売上・予算進捗</li><li>来店数・購買率</li><li>店舗別・エリア別比較</li><li>時間帯別パフォーマンス</li><li>人員配置との関係</li><li>改善優先度</li></ul>",
             "link_url": "#",
-            "link_text": "機能を見る →",
+            "link_text": "分析プラットフォームを見る →",
             "link_style": "button"
           }
         },
@@ -298,10 +298,10 @@
             "image": "shopify://shop_images/store_environmnet_x_1500_x_1900_px.png",
             "icon": "none",
             "icon_width": 48,
-            "title": "現場意思決定実行支援",
-            "content": "<p>現場がすぐに動ける推奨アクションを提示し、<br/>店舗実行のスピードと一貫性を向上させます。</p><p></p>",
+            "title": "対応を標準化する",
+            "content": "<p>店舗状況に応じた推奨アクションを提示し、店舗ごとの判断のばらつきを抑えます。SOPや運営ルールに沿った実行を支援し、全店舗でより一貫した対応を実現します。</p><p><strong>支援できる主な領域：</strong></p><ul><li>店舗別の推奨アクション</li><li>SOP・運営ルールとの連携</li><li>実行状況の確認</li><li>店舗間の判断ばらつき抑制</li><li>エリア・本部による状況把握</li></ul>",
             "link_url": "#",
-            "link_text": "機能を見る →",
+            "link_text": "Flow AIを見る →",
             "link_style": "button"
           }
         }
