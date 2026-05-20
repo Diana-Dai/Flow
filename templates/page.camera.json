@@ -337,6 +337,7 @@
         "heading_AML73y",
         "richtext_yQDm6R"
       ],
+      "disabled": true,
       "custom_css": [
         ".prose {margin-bottom: 0 !important;}",
         ".section-stack > * + * {margin-top: 20px !important;}",
@@ -423,11 +424,14 @@
         "item_awAjtg",
         "item_t4pNGV"
       ],
+      "custom_css": [
+        "h2 {text-shadow: 0 2px 8px rgba(0, 0, 0, 0.45);}"
+      ],
       "name": "Hot spots",
       "settings": {
         "full_width": true,
         "image": "shopify://shop_images/Lifestyle_Hotspots.png",
-        "title": "",
+        "title": "店内計測の例",
         "content": "",
         "button_text": "",
         "button_url": "",
