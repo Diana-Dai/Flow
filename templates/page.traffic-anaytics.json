@@ -1085,14 +1085,14 @@
         "subheading_AK7Cjn": {
           "type": "subheading",
           "settings": {
-            "text": "NEXT STEPS",
+            "text": "次のステップ",
             "icon": "none"
           }
         },
         "heading_YXhiR8": {
           "type": "heading",
           "settings": {
-            "text": "READY TO UNLOCK YOUR TRAFFIC DATA?",
+            "text": "来店データを、売上改善へ。",
             "heading_tag": "h1",
             "text_color": "",
             "gradient": ""
@@ -1101,7 +1101,7 @@
         "richtext_qzAkak": {
           "type": "richtext",
           "settings": {
-            "content": "<p>See how Flow transforms retail traffic analytics into strategic intelligence that drives measurable business outcomes.</p>"
+            "content": "<p><strong>Flowが、来店数・入店率・購買率をどのように店舗改善へつなげるか、実際の画面でご確認ください。</strong></p>"
           }
         },
         "button_AVKAbi": {
@@ -1121,13 +1121,13 @@
           "settings": {
             "style_1": "fill",
             "size_1": "xl",
-            "text_1": "Schedule Demo →",
+            "text_1": "無料デモを依頼する",
             "url_1": "#",
             "background_1": "#a0b842",
             "text_color_1": "#ffffff",
             "style_2": "fill",
             "size_2": "xl",
-            "text_2": "Explore Platform →",
+            "text_2": "プラットフォームを見る",
             "url_2": "#",
             "background_2": "#ffffff",
             "text_color_2": "#11243e"
