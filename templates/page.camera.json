@@ -314,6 +314,44 @@
         "text_color": ""
       }
     },
+    "rich_text_8PAipA": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_AML73y": {
+          "type": "heading",
+          "settings": {
+            "text": "実店舗での計測イメージ",
+            "heading_tag": "h2",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_yQDm6R": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Flow AIカメラは、店舗入口や売場での人の動きを計測し、店舗改善に使える行動データへ変換します。ホットスポットを選択して、属性傾向・スタッフ除外・同日リピート除外・現場活用の仕組みをご確認ください。</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_AML73y",
+        "richtext_yQDm6R"
+      ],
+      "custom_css": [
+        ".prose {margin-bottom: 0 !important;}",
+        ".section-stack > * + * {margin-top: 20px !important;}",
+        ".hot-spots {margin-top: -24px !important;}"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "medium",
+        "text_position": "start",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
     "hot_spots_MNDEX8": {
       "type": "hot-spots",
       "blocks": {
@@ -403,10 +441,10 @@
         "overlay_button_text_color": "",
         "hot_spot_dot_background": "#a0b842",
         "hot_spot_dot_text_color": "#f9fafb",
-        "hot_spot_content_background": "#ffffff",
-        "hot_spot_content_text_color": "#000000",
-        "hot_spot_content_opacity": 90,
-        "hot_spot_content_blur_radius": 3
+        "hot_spot_content_background": "#f2f2f2",
+        "hot_spot_content_text_color": "#1a1a1a",
+        "hot_spot_content_opacity": 80,
+        "hot_spot_content_blur_radius": 10
       }
     },
     "rich_text_efnkBL": {
@@ -1582,6 +1620,7 @@
   "order": [
     "image_with_text_overlay_AcppEX",
     "multi_column_QpdWAi",
+    "rich_text_8PAipA",
     "hot_spots_MNDEX8",
     "rich_text_efnkBL",
     "blocks_ULkcay",
