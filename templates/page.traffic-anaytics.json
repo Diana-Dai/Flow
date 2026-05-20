@@ -15,20 +15,20 @@
         "subheading_GmUMNm": {
           "type": "subheading",
           "settings": {
-            "text": "TRAFFIC INTELLIGENCE"
+            "text": "来店データ活用"
           }
         },
         "heading_frXnfn": {
           "type": "heading",
           "settings": {
-            "text": "THE SOURCE OF TRUTH.",
+            "text": "来店数から、売上機会を見える化。",
             "heading_tag": "h0"
           }
         },
         "richtext_HwhtPj": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Transform your stores into data-rich environments. Flow's behavioral analytics platform reveals exactly where customers go, what they engage with, and which merchandising strategies drive conversion.</p>"
+            "content": "<p>Flowは、来店数・店前通行量・入店率を可視化し、売上や購買率とつなげて店舗状況を把握しやすくします。<br/>感覚に頼らず、実際の来店データをもとに、集客・接客・人員配置の改善判断を支援します。</p>"
           }
         },
         "button_7Prq3W": {
@@ -36,7 +36,7 @@
           "settings": {
             "style": "fill",
             "size": "lg",
-            "text": "Request Analytics Demo →",
+            "text": "無料デモを依頼する",
             "url": "#",
             "background": "#a0b842",
             "text_color": ""
@@ -47,7 +47,7 @@
           "settings": {
             "style": "fill",
             "size": "lg",
-            "text": "View Platform →",
+            "text": "プラットフォームを見る",
             "url": "#",
             "background": "#ffffff",
             "text_color": "#11243e"
@@ -91,10 +91,10 @@
             "border_color": "#ffffff",
             "show_controls": false,
             "column_size": "4",
-            "title": "99.8%",
+            "title": "来店数",
             "heading_tag": "h3",
             "subheading": "",
-            "content": "<p><em>Accuracy</em></p><h6>Entry Counting</h6><p>Total customer entries with directional flow and exit tracking</p><p></p>",
+            "content": "<p><em>TRAFFIC</em></p><h6>店舗入口の来店数を継続的に取得</h6><p>店舗ごとの来店数を把握し、売上・購買率・人員配置の判断に使える基準データをつくります。</p><p></p><p></p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -113,10 +113,10 @@
             "border_color": "#ffffff",
             "show_controls": false,
             "column_size": "4",
-            "title": "Real-time",
+            "title": "店前通行量",
             "heading_tag": "h3",
             "subheading": "",
-            "content": "<p><em>Updates</em></p><h6>Passerby Analysis</h6><p>Street traffic vs. store entries for true capture rate measurement</p>",
+            "content": "<p><em>PASSERSBY</em></p><h6>店舗前の通行人数を可視化</h6><p>店前を通る人数と来店数を比較し、入店率や店頭訴求の効果を確認できます。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -135,10 +135,10 @@
             "border_color": "#f2f2f2",
             "show_controls": false,
             "column_size": "4",
-            "title": "15min",
+            "title": "属性傾向",
             "heading_tag": "h3",
             "subheading": "",
-            "content": "<p><em>Intervals</em></p><h6>Peak Detection</h6><p>Automatic identification of traffic peaks and valleys for staffing alignment</p>",
+            "content": "<p><em>DEMOGRAPGICS</em></p><h6>年齢・性別の傾向を確認</h6><p>来店客の年齢・性別などの傾向を把握し、店舗ごとの客層理解やVMD・販促施策の改善に活用できます。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -157,10 +157,10 @@
             "border_color": "#ffffff",
             "show_controls": false,
             "column_size": "4",
-            "title": "Second",
+            "title": "滞在傾向",
             "heading_tag": "h3",
             "subheading": "",
-            "content": "<p><em>Precision</em></p><h6>Dwell Time</h6><p>Store-wide and zone-level time spent measurement</p>",
+            "content": "<p><em>DWELL TIME</em></p><h6>店内や売場ごとの滞在を確認</h6><p>来店後の滞在傾向を確認し、売場改善やVMD検証につなげます。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -179,10 +179,10 @@
             "border_color": "",
             "show_controls": false,
             "column_size": "2",
-            "title": "",
+            "title": "複数入口対応",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<h5>Multi-Entrance Support</h5><p>Handles complex store layouts with multiple entry points, side doors, and mall configurations. Unified traffic view across all access points.</p><p>✅ <em>Unlimited entrance tracking per location</em></p>",
+            "content": "<h6>複数入口がある店舗でも、入口ごとの来店データを統合して把握できます。大型店、商業施設内店舗、百貨店インショップなどでも、店舗全体の来店傾向を見やすくします。</h6><p>✅ <strong>複数入口の来店傾向を一元化</strong></p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -201,10 +201,10 @@
             "border_color": "",
             "show_controls": false,
             "column_size": "2",
-            "title": "",
+            "title": "スタッフ除外",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<h5>Staff Exclusion</h5><p>AI-powered filtering removes employee movement from customer metrics. Get true customer-only traffic data for accurate conversion analysis.</p><p>✅ <em>Automatic staff identification and filtering</em></p>",
+            "content": "<h6>スタッフの動きを除外することで、実際の顧客来店に近いデータを取得します。来店数にスタッフ移動が含まれると購買率がずれやすくなるため、店舗評価や接客改善に重要です。</h6><p><strong>✅ 購買率をより正確に把握</strong></p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -229,9 +229,9 @@
         "stack_on_mobile": false,
         "gap": "medium",
         "text_alignment": "start",
-        "subheading": "MEASUREMENT LAYER",
-        "title": "COMPLETE TRAFFIC INTELLIGENCE.",
-        "content": "<p>From passerby counting to zone-level engagement, Flow captures every dimension of in-store traffic with enterprise-grade accuracy.</p>",
+        "subheading": "来店データ基盤",
+        "title": "来店・通行量・入店率を、ひとつの流れで把握。",
+        "content": "<h6>Flowは、店舗入口の来店数だけでなく、店前通行量、入店率、ピーク時間帯、滞在傾向、スタッフ除外、複数入口の来店傾向まで一元的に可視化します。売上や購買率と組み合わせることで、集客・接客・人員配置の改善判断に使える来店データをつくります。</h6>",
         "background": "#ffffff",
         "background_gradient": "",
         "text_color": "#11243e"
@@ -243,14 +243,14 @@
         "ai_gen_block_4e2462b_ACdRX4": {
           "type": "ai_gen_block_4e2462b",
           "settings": {
-            "background_color": "#F8F9FA",
-            "heading_color": "#0A2240",
-            "body_text_color": "#5A6A85",
-            "accent_color": "#9CB73B",
+            "background_color": "#f8f9fa",
+            "heading_color": "#0a2240",
+            "body_text_color": "#5a6a85",
+            "accent_color": "#9cb73b",
             "badge_text": "CONVERSION INTELLIGENCE",
-            "badge_background": "#F0F4F8",
-            "badge_border": "#E1E8ED",
-            "badge_text_color": "#5A6A85",
+            "badge_background": "#f0f4f8",
+            "badge_border": "#e1e8ed",
+            "badge_text_color": "#5a6a85",
             "heading": "TRAFFIC TO SALES CORRELATION.",
             "description": "The missing link between foot traffic and revenue. Flow automatically correlates traffic patterns to POS transactions, revealing your true conversion rate and identifying exactly where sales opportunities are lost.",
             "feature_1_title": "Real-Time CVR Tracking",
