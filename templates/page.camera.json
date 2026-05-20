@@ -15,20 +15,27 @@
         "subheading_GmUMNm": {
           "type": "subheading",
           "settings": {
-            "text": "SENSING"
+            "text": "AIカメラ"
+          }
+        },
+        "liquid_chBgy3": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<h1 class=\"h1\">精度の高い来店計測が、<br>店舗分析の土台になる。\n</h1>"
           }
         },
         "heading_frXnfn": {
           "type": "heading",
+          "disabled": true,
           "settings": {
-            "text": "THE FOUNDATION OF TRUTH.",
+            "text": "精度の高い来店計測が、店舗分析の土台になる。",
             "heading_tag": "h0"
           }
         },
         "richtext_HwhtPj": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Accurate retail analytics begin with high-precision sensing. The Flow AI Camera is the infrastructure for actionable intelligence.</p>"
+            "content": "<p>Flow AIカメラは、来店数・通行量・滞在時間・店内行動を取得し、購買率分析、人員配置、VMD改善、<br/>FIDA実行支援に活用できる店舗データをつくります。</p>"
           }
         },
         "button_7Prq3W": {
@@ -36,7 +43,7 @@
           "settings": {
             "style": "fill",
             "size": "lg",
-            "text": "Request demo",
+            "text": "無料デモを依頼する",
             "url": "#",
             "background": "#a0b842",
             "text_color": ""
@@ -47,7 +54,7 @@
           "settings": {
             "style": "fill",
             "size": "lg",
-            "text": "Explore Analytics →",
+            "text": "分析プラットフォームを見る",
             "url": "#",
             "background": "#ffffff",
             "text_color": "#11243e"
@@ -56,6 +63,7 @@
       },
       "block_order": [
         "subheading_GmUMNm",
+        "liquid_chBgy3",
         "heading_frXnfn",
         "richtext_HwhtPj",
         "button_7Prq3W",
@@ -67,7 +75,7 @@
         "allow_transparent_header": false,
         "enable_parallax": false,
         "image_size": "fill",
-        "image": "shopify://shop_images/screen.png",
+        "image": "shopify://shop_images/Untitled_design_1.png",
         "mobile_text_position": "place-self-center text-center",
         "desktop_text_position": "sm:place-self-center sm:text-center",
         "text_color": "#ffffff",
@@ -86,15 +94,15 @@
             "icon_background_type": "circle",
             "icon_background": "",
             "icon_color": "",
-            "background_color": "#ffffff",
-            "text_color": "",
-            "border_color": "",
+            "background_color": "rgba(0,0,0,0)",
+            "text_color": "#11243e",
+            "border_color": "#0e366a",
             "show_controls": false,
             "column_size": "3",
-            "title": "",
+            "title": "来店数計測",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<h5>AI-Powered People Counting</h5><p>99.8% accurate customer counting across all lighting conditions</p>",
+            "content": "<p>店舗入口の来店数をリアルタイムまたは約10分間隔で取得。売上や購買率と組み合わせることで、店舗成果の基準データになります。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -108,15 +116,15 @@
             "icon_background_type": "circle",
             "icon_background": "",
             "icon_color": "",
-            "background_color": "#ffffff",
+            "background_color": "rgba(0,0,0,0)",
             "text_color": "",
-            "border_color": "",
+            "border_color": "#0e366a",
             "show_controls": false,
             "column_size": "3",
-            "title": "",
+            "title": "スタッフ除外",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<h5>Staff Exclusion</h5><p>Algorithmic filtering that isolates associate movement from customer traffic metrics.</p>",
+            "content": "<p>スタッフの動きを除外し、実際の顧客来店と購買率をより正確に把握。店舗評価や接客改善に使いやすいデータを取得します。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -130,15 +138,15 @@
             "icon_background_type": "circle",
             "icon_background": "",
             "icon_color": "",
-            "background_color": "#ffffff",
-            "text_color": "",
-            "border_color": "",
+            "background_color": "rgba(0,0,0,0)",
+            "text_color": "#11243e",
+            "border_color": "#0e366a",
             "show_controls": false,
             "column_size": "3",
-            "title": "",
+            "title": "通行量・入店率分析",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<h5>Passerby & Capture Rate</h5><p>Quantify exterior storefront opportunity versus interior storefront engagement.</p>",
+            "content": "<p>店前通行人数と来店数を比較し、入店率を可視化。店頭VMD、入口訴求、販促施策の効果検証に活用できます。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -152,15 +160,15 @@
             "icon_background_type": "circle",
             "icon_background": "",
             "icon_color": "",
-            "background_color": "#ffffff",
+            "background_color": "rgba(0,0,0,0)",
             "text_color": "",
-            "border_color": "",
+            "border_color": "#0e366a",
             "show_controls": false,
             "column_size": "3",
-            "title": "",
+            "title": "滞在・ゾーン分析",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<h5>Zone & Fixture Engagement</h5><p>Dwell-time analytics for specific merchandise categories and VMD display units.</p>",
+            "content": "<p>売場別の滞在時間や回遊傾向を確認。どの売場に関心が集まり、どこで機会損失が起きているかを把握しやすくします。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -174,15 +182,15 @@
             "icon_background_type": "circle",
             "icon_background": "",
             "icon_color": "",
-            "background_color": "#ffffff",
+            "background_color": "rgba(0,0,0,0)",
             "text_color": "",
-            "border_color": "",
+            "border_color": "#0e366a",
             "show_controls": false,
             "column_size": "3",
-            "title": "",
+            "title": "複数入口対応",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<h5>Multi-Entrance Sync</h5><p>Unified pathing data across complex architectural layouts with multiple access points.</p>",
+            "content": "<p>複数入口の店舗でも、入口ごとの来店データを統合して把握。大型店や百貨店インショップでも店舗全体の来店傾向を確認できます。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -194,17 +202,17 @@
             "icon": "none",
             "icon_width": 32,
             "icon_background_type": "circle",
-            "icon_background": "",
-            "icon_color": "",
-            "background_color": "#ffffff",
+            "icon_background": "#a0b842",
+            "icon_color": "#f9fafb",
+            "background_color": "rgba(0,0,0,0)",
             "text_color": "",
-            "border_color": "",
+            "border_color": "#0e366a",
             "show_controls": false,
             "column_size": "3",
-            "title": "",
+            "title": "API・ダッシュボード連携",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<h5>API / Dashboard Ready</h5><p>Seamlessly push telemetry data into existing BI tools or the Flow enterprise dashboard.</p>",
+            "content": "<p>取得データをFlowダッシュボードや外部分析環境へ連携。POS、売上、人員データと組み合わせて店舗運営に活用できます。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -212,7 +220,6 @@
         },
         "item_e7zcCc": {
           "type": "item",
-          "disabled": true,
           "settings": {
             "icon": "none",
             "icon_width": 32,
@@ -221,13 +228,13 @@
             "icon_color": "",
             "background_color": "",
             "text_color": "",
-            "border_color": "",
+            "border_color": "#0e366a",
             "show_controls": false,
             "column_size": "3",
-            "title": "",
+            "title": "同日リピート除外",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<h5>Multi-Entrance Support</h5><p>Handles complex store layouts with multiple entry points</p>",
+            "content": "<p>同日の再入店や短時間の重複を抑え、来店数をより使いやすく補正。日次比較や購買率分析の精度向上に役立ちます。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -235,7 +242,6 @@
         },
         "item_EtFefY": {
           "type": "item",
-          "disabled": true,
           "settings": {
             "icon": "none",
             "icon_width": 32,
@@ -244,13 +250,13 @@
             "icon_color": "",
             "background_color": "",
             "text_color": "",
-            "border_color": "",
+            "border_color": "#0e366a",
             "show_controls": false,
             "column_size": "3",
-            "title": "",
+            "title": "属性傾向",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<h5>Dashboard & API Access</h5><p>Real-time data via web dashboard and REST API integration</p>",
+            "content": "<p>年齢・性別などの傾向を確認し、客層理解やVMD改善に活用。店舗ごとの来店客層の違いを把握しやすくします。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -258,7 +264,6 @@
         },
         "item_aBwy9K": {
           "type": "item",
-          "disabled": true,
           "settings": {
             "icon": "none",
             "icon_width": 32,
@@ -267,13 +272,13 @@
             "icon_color": "",
             "background_color": "",
             "text_color": "",
-            "border_color": "",
+            "border_color": "#0e366a",
             "show_controls": false,
             "column_size": "3",
-            "title": "",
+            "title": "売場接触計測",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<h5>Edge AI Processing</h5><p>Local computation ensures privacy and sub-100ms latency</p>",
+            "content": "<p>売場・什器ごとの接触や滞在を確認し、VMDや商品配置の改善に活用。売場の見られ方と売上の関係を把握しやすくします。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -301,12 +306,149 @@
         "stack_on_mobile": false,
         "gap": "small",
         "text_alignment": "start",
-        "subheading": "TECHNICAL CAPABILITIES",
-        "title": "COMPLETE RETAIL SENSING PLATFORM.",
-        "content": "<p>Enterprise-grade AI camera with advanced people counting, behavior analytics, and real-time traffic measurement capabilities.</p>",
+        "subheading": "計測機能",
+        "title": "店舗分析に必要なデータを取得。",
+        "content": "<p>Flow AIカメラは、単なる人数カウントではありません。来店数、通行量、入店率、滞在時間、スタッフ除外、ゾーン別行動、VMD接触など、店舗運営に必要な行動データを取得します。</p>",
         "background": "",
         "background_gradient": "",
         "text_color": ""
+      }
+    },
+    "rich_text_8PAipA": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_AML73y": {
+          "type": "heading",
+          "settings": {
+            "text": "実店舗での計測イメージ",
+            "heading_tag": "h2",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_yQDm6R": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Flow AIカメラは、店舗入口や売場での人の動きを計測し、店舗改善に使える行動データへ変換します。ホットスポットを選択して、属性傾向・スタッフ除外・同日リピート除外・現場活用の仕組みをご確認ください。</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_AML73y",
+        "richtext_yQDm6R"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".prose {margin-bottom: 0 !important;}",
+        ".section-stack > * + * {margin-top: 20px !important;}",
+        ".hot-spots {margin-top: -24px !important;}"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "medium",
+        "text_position": "start",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "hot_spots_MNDEX8": {
+      "type": "hot-spots",
+      "blocks": {
+        "item_xqUiFJ": {
+          "type": "item",
+          "settings": {
+            "horizontal_position": 47,
+            "vertical_position": 5,
+            "horizontal_position_mobile": 24,
+            "vertical_position_mobile": 70,
+            "icon_width": 32,
+            "title": "AIカメラ計測",
+            "content": "<p>天井設置型AIカメラで、入口や売場の人の動きを計測します。来店数、滞在時間、属性傾向、ゾーン行動など、店舗改善に使える行動データを取得します。</p>"
+          }
+        },
+        "item_rRrr9q": {
+          "type": "item",
+          "settings": {
+            "horizontal_position": 45,
+            "vertical_position": 23,
+            "horizontal_position_mobile": 62,
+            "vertical_position_mobile": 14,
+            "icon_width": 32,
+            "title": "属性傾向",
+            "content": "<p>年齢・性別などの傾向を集計し、来店客層の理解やVMD改善に活用できます。個人識別ではなく、店舗分析に必要な傾向データとして扱います。</p>"
+          }
+        },
+        "item_hctbUk": {
+          "type": "item",
+          "settings": {
+            "horizontal_position": 53,
+            "vertical_position": 16,
+            "horizontal_position_mobile": 83,
+            "vertical_position_mobile": 75,
+            "icon_width": 32,
+            "title": "同日リピート除外",
+            "content": "<p>同じ日に再入店した人物や短時間の重複を抑え、来店数をより使いやすく補正します。日次比較や購買率分析の精度向上に役立ちます。</p>"
+          }
+        },
+        "item_awAjtg": {
+          "type": "item",
+          "settings": {
+            "horizontal_position": 71,
+            "vertical_position": 23,
+            "horizontal_position_mobile": 30,
+            "vertical_position_mobile": 30,
+            "icon_width": 32,
+            "title": "スタッフ除外",
+            "content": "<p>スタッフの動きを来店数から除外し、購買率をより正確に把握しやすくします。正しい店舗評価や接客改善に重要です。</p>"
+          }
+        },
+        "item_t4pNGV": {
+          "type": "item",
+          "settings": {
+            "horizontal_position": 77,
+            "vertical_position": 47,
+            "horizontal_position_mobile": 30,
+            "vertical_position_mobile": 30,
+            "icon_width": 32,
+            "title": "店舗データの現場活用",
+            "content": "<p>店長やスタッフは、Flowダッシュボードで来店数・購買率・滞在傾向を確認できます。営業時間中の変化を把握し、接客体制、売場対応、VMD改善の判断に活用できます</p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_xqUiFJ",
+        "item_rRrr9q",
+        "item_hctbUk",
+        "item_awAjtg",
+        "item_t4pNGV"
+      ],
+      "custom_css": [
+        "h2 {text-shadow: 0 2px 8px rgba(0, 0, 0, 0.45);}"
+      ],
+      "name": "Hot spots",
+      "settings": {
+        "full_width": true,
+        "image": "shopify://shop_images/Lifestyle_Hotspots_3.png",
+        "title": "店内計測の例",
+        "content": "",
+        "button_text": "",
+        "button_url": "",
+        "desktop_text_position": "place-self-start text-start",
+        "image_background": "",
+        "image_background_gradient": "",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0,
+        "overlay_text_color": "#ffffff",
+        "overlay_button_background": "",
+        "overlay_button_text_color": "",
+        "hot_spot_dot_background": "#a0b842",
+        "hot_spot_dot_text_color": "#f9fafb",
+        "hot_spot_content_background": "#f2f2f2",
+        "hot_spot_content_text_color": "#1a1a1a",
+        "hot_spot_content_opacity": 80,
+        "hot_spot_content_blur_radius": 10
       }
     },
     "rich_text_efnkBL": {
@@ -315,14 +457,21 @@
         "subheading_r4dL8U": {
           "type": "subheading",
           "settings": {
-            "text": "PLATFORM POSITIONING",
+            "text": "一般的な人数カウンターとの違い",
             "icon": "none"
+          }
+        },
+        "liquid_APqXFc": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<h2 class=\"h2\"><b>人数を数えるだけでは、<br>店舗改善には足りない。</b>\n</h1>"
           }
         },
         "heading_tEJbnj": {
           "type": "heading",
+          "disabled": true,
           "settings": {
-            "text": "MORE THAN A PEOPLE COUNTER.",
+            "text": "人数を数えるだけでは、店舗改善には足りない。",
             "heading_tag": "h1",
             "text_color": "",
             "gradient": ""
@@ -331,12 +480,13 @@
         "richtext_wcpU8E": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Generic traffic counters measure entries. Flow creates trusted retail behavior data that powers analytics, staffing, VMD validation, conversion analysis, and AI-driven decision support.</p>"
+            "content": "<p>一般的な人数カウンターは、入口の通過人数を記録するだけで終わりがちです。Flowは、来店数を購買率、人員配置、VMD、売場行動、FIDA実行支援に結びつけ、店舗改善に使えるデータへ変えます。</p>"
           }
         }
       },
       "block_order": [
         "subheading_r4dL8U",
+        "liquid_APqXFc",
         "heading_tEJbnj",
         "richtext_wcpU8E"
       ],
@@ -362,39 +512,39 @@
             "container_background": "#ffffff",
             "text_color": "#000000",
             "left_title": "",
-            "left_tag": "TRADITIONAL SOLUTION",
-            "left_metric": "Generic People Counters",
-            "left_item_1": "<ul><li>Counts total entries at door</li></ul><p></p>",
-            "left_item_2": "<ul><li>No staff vs. customer differentiation</li><li></li></ul>",
-            "left_item_3": "<ul><li>Limited to entrance measurement</li><li></li></ul>",
-            "left_item_4": "<ul><li>Isolated data with no ecosystem integration</li><li></li></ul>",
+            "left_tag": "一般的な人数カウンター",
+            "left_metric": "入口通過数の記録",
+            "left_item_1": "<p>入口の通過人数が中心</p>",
+            "left_item_2": "<p>スタッフと顧客の区別が難しい</p>",
+            "left_item_3": "<p>通行量・入店率が見えにくい</p>",
+            "left_item_4": "<p>POSや人員データと分断されやすい</p>",
             "left_background": "#ffffff",
-            "left_border_color": "#e5e7eb",
-            "left_tag_background": "#f3f4f6",
+            "left_border_color": "#f83a3a",
+            "left_tag_background": "#fdc9c9",
             "left_tag_text": "#6b7280",
-            "left_progress_label": "USE CASE:\n\nBasic foot traffic reporting",
+            "left_progress_label": "用途：\n\n基本的な来店数の把握",
             "left_progress_time": "12-18hr",
             "left_progress_percent": 20,
             "left_progress_color": "#ef4444",
             "right_title": "",
-            "right_tag": "FLOW PLATFORM",
-            "right_metric": "Flow AI Camera + Ecosystem",
-            "right_item_1": "<p>Accurate customer counting with AI staff exclusion</p><p></p>",
-            "right_item_2": "<p>Zone-level dwell time and engagement tracking</p><p></p>",
-            "right_item_3": "<p>Multi-entrance support with directional flow</p>",
-            "right_item_4": "<p>Unified with POS, staffing, and analytics platform</p>",
-            "right_background": "#0A2540",
+            "right_tag": "Flow AIカメラ",
+            "right_metric": "Flow AIカメラ + 分析基盤",
+            "right_item_1": "<p>スタッフ除外を含む来店計測</p><p></p>",
+            "right_item_2": "<p>通行量・入店率・滞在時間を可視化</p><p></p>",
+            "right_item_3": "<p>POS・人員・天候データと連携</p>",
+            "right_item_4": "<p><strong>FIDA実行支援の基盤に</strong></p>",
+            "right_background": "#0a2540",
             "right_text_color": "#ffffff",
-            "right_tag_background": "#1e3a5f",
+            "right_tag_background": "#a0b842",
             "right_tag_text": "#ffffff",
-            "highlight_color": "#00D66F",
-            "right_progress_label": "USE CASE:\n\nComplete retail decision intelligence platform",
+            "highlight_color": "#a0b842",
+            "right_progress_label": "用途：\n\n店舗改善につながる分析・実行支援",
             "right_progress_time": "< 2min",
             "progress_bar_height": 4,
             "progress_gradient_start": "#803cee",
-            "progress_gradient_end": "#00D66F",
+            "progress_gradient_end": "#00d66f",
             "negative_icon_color": "#ef4444",
-            "positive_icon_color": "#00D66F",
+            "positive_icon_color": "#a0b842",
             "title_size": 24,
             "metric_size": 32,
             "list_item_size": 16
@@ -524,10 +674,10 @@
             "border_color": "#f2f2f2",
             "show_controls": false,
             "column_size": "2",
-            "title": "99.8%",
+            "title": "計測性能",
             "heading_tag": "h1",
             "subheading": "",
-            "content": "<h5>Measurement Accuracy.</h5><p>Industrial-grade people counting that remains precise across variable lighting, high-density crowds, and complex entrance configurations.</p>",
+            "content": "<h5>最大99%水準</h5><p>理想条件下では最大99%水準の人数計測が可能です。ただし、実店舗では入口形状、照明、混雑状況、カメラの設置位置などにより精度が変動します。Flowは、現場条件をふまえて計測設計を行います。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -536,20 +686,20 @@
         "item_aqpNXK": {
           "type": "item",
           "settings": {
-            "icon": "people",
+            "icon": "picto-validation",
             "icon_width": 32,
             "icon_background_type": "square",
-            "icon_background": "#36465c",
+            "icon_background": "#0a2540",
             "icon_color": "#a0b842",
             "background_color": "#ffffff",
             "text_color": "",
             "border_color": "#f2f2f2",
             "show_controls": false,
             "column_size": "2",
-            "title": "AI-POWERED",
-            "heading_tag": "h3",
+            "title": "設置設計",
+            "heading_tag": "h1",
             "subheading": "",
-            "content": "<h5>Intelligent Staff Exclusion</h5><p>Advanced AI filtering automatically identifies and removes employee movements to ensure your conversion data reflects real customer intent.</p>",
+            "content": "<h5>店舗環境に最適化</h5><p>入口幅、天井高、照明、人の流れ、スタッフ動線を確認し、店舗ごとに計測条件を設計します。画一的な設置ではなく、実際の店舗構造に合わせて調整することで、使いやすい来店データを取得します。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -558,20 +708,20 @@
         "item_tTyycj": {
           "type": "item",
           "settings": {
-            "icon": "picto-shield",
+            "icon": "people",
             "icon_width": 32,
             "icon_background_type": "square",
             "icon_background": "#a0b842",
             "icon_color": "#f9fafb",
-            "background_color": "#36465c",
+            "background_color": "#0a2540",
             "text_color": "#f9fafb",
             "border_color": "",
             "show_controls": false,
             "column_size": "2",
-            "title": "GDPR/CCPA",
-            "heading_tag": "h3",
+            "title": "スタッフ除外",
+            "heading_tag": "h1",
             "subheading": "",
-            "content": "<h5>Anonymous by Design</h5><p>100% GDPR/CCPA compliant. All image processing occurs locally on the edge; no identifiable biometric data ever leaves the store.</p>",
+            "content": "<h5>購買率をより正確に</h5><p>スタッフの動きを除外することで、実際の顧客来店に近いデータを取得します。来店数にスタッフ移動が含まれると購買率がずれやすくなるため、正しい店舗評価にはスタッフ除外が重要です。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -580,7 +730,7 @@
         "item_ztJTym": {
           "type": "item",
           "settings": {
-            "icon": "picto-target",
+            "icon": "picto-shield",
             "icon_width": 32,
             "icon_background_type": "square",
             "icon_background": "#f9fafb",
@@ -590,10 +740,10 @@
             "border_color": "",
             "show_controls": false,
             "column_size": "2",
-            "title": "PLUG & PLAY",
-            "heading_tag": "h3",
+            "title": "計測一貫性",
+            "heading_tag": "h1",
             "subheading": "",
-            "content": "<h5>Seamless Integration</h5><p>A plug-and-play measurement layer designed to scale across global retail networks with minimal technical friction.</p>",
+            "content": "<h5>比較できるデータへ</h5><p>店舗改善では、1回の計測精度だけでなく、同じ基準で継続的に測れることが重要です。日次・週次・店舗間の変化を比較しやすくすることで、売上改善、人員配置、VMD評価に使えるデータになります。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -616,9 +766,9 @@
         "stack_on_mobile": false,
         "gap": "medium",
         "text_alignment": "start",
-        "subheading": "VALIDATION",
-        "title": "Industrial-grade precision.",
-        "content": "",
+        "subheading": "精度と計測品質",
+        "title": "安定した計測が、判断を支える。",
+        "content": "<p>Flow AIカメラは、店舗環境に合わせた設計により、高精度な来店計測を実現します。<br/>センサー自体は理想条件下で最大99%水準の計測が可能ですが、実店舗では入口形状、照明、混雑状況、スタッフ動線などにより精度が変動します。重要なのは、単発の精度だけではありません。同じ店舗を同じ基準で継続的に測り、日次・週次・店舗間で比較できる一貫したデータをつくることです。</p>",
         "background": "",
         "background_gradient": "",
         "text_color": "#11243e"
@@ -640,10 +790,10 @@
             "border_color": "",
             "show_controls": false,
             "column_size": "3",
-            "title": "±10%",
+            "title": "購買率のズレ",
             "heading_tag": "h1",
             "subheading": "",
-            "content": "<p>Traditional Sensor Error Rate</p>",
+            "content": "<p>来店数が不正確だと、購買率も正しく見えません。「来店不足」なのか「接客・販売転換」の課題なのかを判断しにくくなります。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -662,10 +812,10 @@
             "border_color": "",
             "show_controls": false,
             "column_size": "3",
-            "title": "23%",
+            "title": "運営判断のズレ",
             "heading_tag": "h1",
             "subheading": "",
-            "content": "<p>Revenue Loss from Bad Data</p>",
+            "content": "<p>ピーク時間帯や来店傾向を誤ると、人員配置、VMD、販促評価の判断もずれやすくなります。改善優先度も曖昧になります。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -684,10 +834,10 @@
             "border_color": "",
             "show_controls": false,
             "column_size": "3",
-            "title": "99.8%",
+            "title": "一貫した計測",
             "heading_tag": "h1",
             "subheading": "",
-            "content": "<p>Flow Accuracy Standard</p>",
+            "content": "<p>同じ基準で継続的に測ることで、日次・週次・店舗間で比較でき、改善判断に使えるデータをつくります。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -706,12 +856,12 @@
       "name": "Multi-column",
       "settings": {
         "full_width": true,
-        "stack_on_mobile": false,
+        "stack_on_mobile": true,
         "gap": "medium",
         "text_alignment": "center",
-        "subheading": "RISK ASSESSMENT",
-        "title": "GARBAGE IN.GARBAGE OUT.",
-        "content": "<h5>A simple 10% margin of error in traffic counting creates a fatal flaw for enterprise strategy.</h5><h6></h6><p>Inaccurate data leads to misaligned labor schedules, flawed conversion analysis, and lost sales opportunities. Flow eliminates the \"noise\" of traditional sensors, providing the stable data foundation required for precise store execution and reliable ROI.</p>",
+        "subheading": "計測リスク",
+        "title": "計測がずれると、判断もずれる。",
+        "content": "<h5>来店数は、購買率・人員配置・VMD評価・販促効果検証の基準になります。</h5><h6></h6><p>計測データが不安定なままでは、売上不振の原因を正しく判断できず、接客体制や売場改善の優先順位もずれやすくなります。Flowは、店舗改善に使える一貫した来店データをつくることで、判断の精度を高めます。</p>",
         "background": "#ffffff",
         "background_gradient": "",
         "text_color": ""
@@ -723,17 +873,17 @@
         "image_8hBn9C": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Snipaste_2026-05-13_13-41-48.png",
+            "image": "shopify://shop_images/Traffic_Flow_2.png",
             "media_width": 50,
             "media_position": "end",
             "text_position": "place-self-center-start text-start",
             "icon": "none",
             "icon_width": 48,
-            "subheading": "SECURITY",
-            "title": "PRIVACY-FIRST ARCHITECTURE.",
-            "content": "<p>By utilizing Edge Computing, the Flow V4 processes visual data locally on the device. We count people, not faces. The system transmits only anonymous metadata to the cloud, reassuring enterprise legal and security teams that customer privacy is protected by design.</p><p></p><ul><li>GDPR Compliant</li><li>CCPA Compliant</li><li>SOC 2 Type II</li><li>Edge Processing</li></ul><p></p>",
-            "link_text": "",
-            "link_url": "",
+            "subheading": "プライバシーとデータ保護",
+            "title": "映像を保存せず、分析データへ。",
+            "content": "<p>Flowの来店計測では、カメラ映像は保存されません。AIカメラは、来店数・通行量・滞在時間・属性傾向など、店舗改善に必要な分析データを取得するために使用します。個人を識別することを目的とした運用ではなく、店舗分析・購買率分析・VMD改善に活用できる行動データとして扱います。詳しい取り扱いについては、Flowのプライバシーポリシーおよびデータ保護方針をご確認ください。</p><p></p><ul><li><strong>カメラ映像は保存しません</strong></li><li><strong>来店・通行量データを取得</strong></li><li><strong>個人識別目的ではありません</strong></li><li><strong>方針に基づきデータ管理</strong></li></ul><p></p>",
+            "link_text": "データ保護方針を見る →",
+            "link_url": "https://cdn.shopify.com/s/files/1/0704/4582/6185/files/Data_Protection_Policy.pdf?v=1773121905",
             "background": "",
             "background_gradient": "",
             "text_color": "#11243e",
@@ -774,10 +924,10 @@
             "border_color": "#f2f2f2",
             "show_controls": false,
             "column_size": "3",
-            "title": "2-4hr",
+            "title": "営業時間外対応",
             "heading_tag": "h1",
             "subheading": "",
-            "content": "<p>Per Location Install</p>",
+            "content": "<p><strong>店舗営業への影響を抑えて設置</strong></p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -796,10 +946,10 @@
             "border_color": "#f2f2f2",
             "show_controls": false,
             "column_size": "3",
-            "title": "<24hr",
+            "title": "導入目安",
             "heading_tag": "h1",
             "subheading": "",
-            "content": "<p>Data Validation</p>",
+            "content": "<p><strong>1店舗から導入可能。推奨は3店舗以上での検証</strong></p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -818,10 +968,10 @@
             "border_color": "#f2f2f2",
             "show_controls": false,
             "column_size": "3",
-            "title": "Zero",
+            "title": "段階展開に対応",
             "heading_tag": "h1",
             "subheading": "",
-            "content": "<p>Store Disruption</p>",
+            "content": "<p><strong>検証から多店舗展開まで支援</strong></p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -839,12 +989,12 @@
       "name": "Multi-column",
       "settings": {
         "full_width": true,
-        "stack_on_mobile": false,
+        "stack_on_mobile": true,
         "gap": "medium",
         "text_alignment": "center",
-        "subheading": "IMPLEMENTATION",
-        "title": "ZERO-DISRUPTION DEPLOYMENT.",
-        "content": "<p>Engineered for rapid scale. Our deployment protocol is optimized for after-hours installation, requiring minimal onsite IT support. We activate the measurement layer without impacting your daily trading or customer experience.</p>",
+        "subheading": "導入・設置",
+        "title": "店舗営業への影響を抑えて導入。",
+        "content": "<p>Flowは、店舗環境を確認したうえで、設置方法と導入スケジュールを設計します。入口形状、天井高、ネットワーク環境、電源、POS連携の有無を確認し、営業時間外の設置や段階導入にも対応します。店舗運営への負担を抑えながら、来店計測と分析活用を始められるよう支援します。</p>",
         "background": "#ffffff",
         "background_gradient": "",
         "text_color": ""
@@ -866,10 +1016,10 @@
             "border_color": "#f2f2f2",
             "show_controls": false,
             "column_size": "2",
-            "title": "Traffic & CVR",
+            "title": "来店・購買率把握",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<p>Turn raw footfall into validated conversion truth.</p>",
+            "content": "<h5>来店数と売上をつなぎ、購買率を可視化。</h5>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -878,7 +1028,7 @@
         "item_aqpNXK": {
           "type": "item",
           "settings": {
-            "icon": "picto-camera",
+            "icon": "picto-return",
             "icon_width": 32,
             "icon_background_type": "square",
             "icon_background": "#e5e9d1",
@@ -888,10 +1038,10 @@
             "border_color": "#f2f2f2",
             "show_controls": false,
             "column_size": "2",
-            "title": "Dwell & VMD",
+            "title": "滞在・VMD改善",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<p>Quantify the impact of store layouts and product engagement.</p>",
+            "content": "<h5>売場滞在や接触状況を、VMD改善に活用。</h5>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -910,10 +1060,10 @@
             "border_color": "#f2f2f2",
             "show_controls": false,
             "column_size": "2",
-            "title": "Staffing Optimization",
+            "title": "人員配置の最適化",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<p>Align labor hours with true customer peaks.</p>",
+            "content": "<h5>来店ピークと人員配置のズレを把握。</h5>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -932,10 +1082,10 @@
             "border_color": "",
             "show_controls": false,
             "column_size": "2",
-            "title": "Flow Assistant",
+            "title": "FIDA実行支援",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<p>Feed the AI Assistant the accurate data it needs to trigger high-priority operational alerts.</p>",
+            "content": "<h5>信頼できる店舗データを、推奨アクションへつなげる。</h5>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -955,12 +1105,12 @@
       "name": "Multi-column",
       "settings": {
         "full_width": true,
-        "stack_on_mobile": false,
+        "stack_on_mobile": true,
         "gap": "medium",
         "text_alignment": "start",
-        "subheading": "SYSTEM SYNERGY",
-        "title": "POWERING THE ECOSYSTEM.",
-        "content": "",
+        "subheading": "プラットフォーム連携",
+        "title": "計測データを、店舗改善へ。",
+        "content": "<h6>Flow AIカメラで取得した来店数・通行量・滞在時間・店内行動データは、購買率、人員配置、VMD改善、FIDA実行支援に活用できます。数字を見るだけではなく、店舗状況を把握し、次の改善判断につなげるデータとして使えます。</h6>",
         "background": "",
         "background_gradient": "",
         "text_color": "#11243e"
@@ -1396,23 +1546,30 @@
         "subheading_AK7Cjn": {
           "type": "subheading",
           "settings": {
-            "text": "NEXT STEPS",
-            "icon": "none"
+            "text": "次のステップ",
+            "icon": "picto-chat"
           }
         },
         "heading_YXhiR8": {
           "type": "heading",
+          "disabled": true,
           "settings": {
-            "text": "UPGRADE YOUR INFRASTRUCTURE.",
+            "text": "まずは、正確な来店計測から。",
             "heading_tag": "h1",
             "text_color": "",
             "gradient": ""
           }
         },
+        "liquid_h6UKea": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<h2 class=\"h1\">まずは、<br>正確な来店計測から。\n</h1>"
+          }
+        },
         "richtext_qzAkak": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Stop guessing. Start measuring with surgical precision. Contact a solutions architect today to schedule a live demo.</p>"
+            "content": "<p>来店数・通行量・滞在時間・店内行動を正しく把握することで、購買率分析、人員配置、VMD改善の判断がしやすくなります。Flow AIカメラと分析プラットフォームを、実際の店舗環境に合わせてご提案します。</p>"
           }
         },
         "button_AVKAbi": {
@@ -1432,13 +1589,13 @@
           "settings": {
             "style_1": "fill",
             "size_1": "xl",
-            "text_1": "Contact us →",
+            "text_1": "無料デモを依頼する →",
             "url_1": "#",
             "background_1": "#a0b842",
             "text_color_1": "#ffffff",
             "style_2": "fill",
             "size_2": "xl",
-            "text_2": "Explore Analytics Platform →",
+            "text_2": "分析基盤を見る →",
             "url_2": "#",
             "background_2": "#ffffff",
             "text_color_2": "#11243e"
@@ -1448,6 +1605,7 @@
       "block_order": [
         "subheading_AK7Cjn",
         "heading_YXhiR8",
+        "liquid_h6UKea",
         "richtext_qzAkak",
         "button_AVKAbi",
         "buttons_jaKCGH"
@@ -1466,6 +1624,8 @@
   "order": [
     "image_with_text_overlay_AcppEX",
     "multi_column_QpdWAi",
+    "rich_text_8PAipA",
+    "hot_spots_MNDEX8",
     "rich_text_efnkBL",
     "blocks_ULkcay",
     "multi_column_RkceNG",
