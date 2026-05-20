@@ -81,7 +81,7 @@
         "item_GMdCj7": {
           "type": "item",
           "settings": {
-            "icon": "people",
+            "icon": "picto-validation",
             "icon_width": 32,
             "icon_background_type": "square",
             "icon_background": "#ffffff",
@@ -103,7 +103,7 @@
         "item_9cWFC9": {
           "type": "item",
           "settings": {
-            "icon": "up",
+            "icon": "picto-building",
             "icon_width": 32,
             "icon_background_type": "square",
             "icon_background": "#ffffff",
@@ -116,7 +116,7 @@
             "title": "店前通行量",
             "heading_tag": "h3",
             "subheading": "",
-            "content": "<p><em>PASSERSBY</em></p><h6>店舗前の通行人数を可視化</h6><p>店前を通る人数と来店数を比較し、入店率や店頭訴求の効果を確認できます。</p>",
+            "content": "<p><em>PASSERSBY</em></p><h6>店前の通行人数を可視化</h6><p>店前を通る人数と来店数を比較し、入店率や店頭訴求の効果を確認できます。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -125,7 +125,7 @@
         "item_aqpNXK": {
           "type": "item",
           "settings": {
-            "icon": "picto-timer",
+            "icon": "people",
             "icon_width": 32,
             "icon_background_type": "square",
             "icon_background": "#ffffff",
@@ -147,7 +147,7 @@
         "item_tTyycj": {
           "type": "item",
           "settings": {
-            "icon": "picto-pin",
+            "icon": "picto-timer",
             "icon_width": 32,
             "icon_background_type": "square",
             "icon_background": "#ffffff",
@@ -422,10 +422,10 @@
             "text_position": "place-self-center-start text-start",
             "icon": "none",
             "icon_width": 48,
-            "subheading": "INTERFACE",
-            "title": "Your Behavioral Intelligence Dashboard",
-            "content": "<p>Real-time heatmaps, zone performance, and engagement analytics in a unified interface.</p>",
-            "link_text": "",
+            "subheading": "来店データの可視化",
+            "title": "来店状況を、店舗判断に使える画面へ。",
+            "content": "<p>Flowは、来店数・入店率・購買率・時間帯別の変化を、店舗運営で確認しやすい形に整理します。店長、エリアマネージャー、本部が同じ来店データを確認できるため、店舗ごとの状況把握や改善判断をスムーズに行えます。</p><p><strong>確認できること</strong></p><ul><li><strong>来店数・入店率・購買率の変化</strong></li><li><strong>時間帯別の来店ピーク</strong></li><li><strong>店舗別の改善余地</strong></li><li><strong>売上機会の変化</strong></li></ul>",
+            "link_text": "プラットフォームを見る →",
             "link_url": "",
             "background": "",
             "background_gradient": "",
@@ -558,9 +558,9 @@
             "show_controls": false,
             "column_size": "3",
             "title": "",
-            "heading_tag": "h1",
+            "heading_tag": "h0",
             "subheading": "<p></p><p></p>",
-            "content": "<h5>Staffing Optimization</h5><p>Align labor schedules with actual traffic patterns. Automatically identify when stores are over or understaffed based on real-time customer flow.</p><h4>18hrs</h4><p><em>Manager time saved per week</em></p>",
+            "content": "<h3>人員配置の最適化</h3><p>来店ピークとスタッフ配置のズレを確認し、混雑時間帯の接客体制を見直せます。</p><h4>ピーク時間帯</h4><p>接客体制の見直し</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -582,7 +582,7 @@
             "title": "",
             "heading_tag": "h1",
             "subheading": "",
-            "content": "<h5>Store Format Testing</h5><p>A/B test different layouts, merchandising strategies, and operational models with statistical rigor. Measure true impact on traffic and conversion.</p><h4>95%</h4><p><em>Confidence interval</em></p>",
+            "content": "<h3>入店率の改善</h3><p>店前通行量と来店数を比較し、店頭VMD、入口導線、販促施策の効果を確認できます。</p><h4>入店率</h4><p>店頭訴求の確認</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -604,7 +604,7 @@
             "title": "",
             "heading_tag": "h1",
             "subheading": "",
-            "content": "<h5>Marketing Attribution</h5><p>Measure the traffic lift from marketing campaigns, promotions, and seasonal events. Prove ROI with before/after traffic analysis.</p><h4>+42%</h4><p><em>Avg campaign lift</em></p>",
+            "content": "<h3>販促効果の把握</h3><p>販促・広告・イベントで増えた来店を、店舗が購買につなげられているか確認できます。</p><h4>販促効果</h4><p>来店変化を確認</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -629,9 +629,9 @@
         "stack_on_mobile": false,
         "gap": "medium",
         "text_alignment": "center",
-        "subheading": "APPLICATIONS",
-        "title": "FROM INSIGHT TO ACTION.",
-        "content": "",
+        "subheading": "活用シーン",
+        "title": "来店データを、改善判断へ。",
+        "content": "<p><strong>来店数・入店率・購買率・時間帯別の変化をもとに、人員配置、店頭改善、マーケティング効果の判断を支援します。</strong></p>",
         "background": "#ffffff",
         "background_gradient": "",
         "text_color": ""
@@ -655,8 +655,8 @@
             "column_size": "2",
             "title": "",
             "heading_tag": "h1",
-            "subheading": "<p>MODE</p>",
-            "content": "<h3>Real-Time Monitoring</h3><p>Live traffic dashboard updated every 15 seconds. Monitor current store performance, detect anomalies, and trigger immediate staffing adjustments.</p><ul><li>15s Update Interval</li><li>&lt;2m Alert Response</li></ul>",
+            "subheading": "<p><strong>リアルタイム把握</strong></p>",
+            "content": "<h3><strong>営業時間中の変化を確認。</strong></h3><p>来店数や購買率の変化をリアルタイムに近い形で確認し、当日の接客体制や売場対応の見直しに活用できます。</p><ul><li><strong>来店ピークを確認</strong></li><li><strong>接客体制を見直し</strong></li></ul>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -677,8 +677,8 @@
             "column_size": "2",
             "title": "",
             "heading_tag": "h1",
-            "subheading": "<p>MODE</p>",
-            "content": "<h3>Historical Analysis</h3><p>Deep-dive analytics with multi-year data retention. Identify seasonal trends, test hypotheses, and build predictive models for strategic planning.</p><ul><li>3yr Data Retention</li><li>CSV Export Ready</li></ul>",
+            "subheading": "<p><strong>傾向把握</strong></p>",
+            "content": "<h3><strong>店舗ごとの傾向を比較。</strong></h3><p>日次・週次・月次の来店傾向を確認し、店舗別の強みや課題、販促後の変化を把握しやすくします。</p><ul><li><strong>店舗別比較</strong></li><li><strong>期間別比較</strong></li></ul>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
