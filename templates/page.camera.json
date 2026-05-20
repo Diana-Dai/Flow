@@ -102,7 +102,7 @@
             "title": "来店数計測",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<p>店舗入口の来店数をリアルタイムまたは約10分間隔で取得。</p>",
+            "content": "<p>店舗入口の来店数をリアルタイムまたは約10分間隔で取得。売上や購買率と組み合わせることで、店舗成果の基準データになります。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -124,7 +124,7 @@
             "title": "スタッフ除外",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<p>スタッフの動きを除外し、実際の顧客来店と購買率をより正確に把握。</p>",
+            "content": "<p>スタッフの動きを除外し、実際の顧客来店と購買率をより正確に把握。店舗評価や接客改善に使いやすいデータを取得します。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -146,7 +146,7 @@
             "title": "通行量・入店率分析",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<p>店前通行人数と来店数を比較し、店頭訴求の効果を可視化。</p>",
+            "content": "<p>店前通行人数と来店数を比較し、入店率を可視化。店頭VMD、入口訴求、販促施策の効果検証に活用できます。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -168,7 +168,7 @@
             "title": "滞在・ゾーン分析",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<p>売場別の滞在時間や回遊傾向を確認し、売場改善に活用。</p>",
+            "content": "<p>売場別の滞在時間や回遊傾向を確認。どの売場に関心が集まり、どこで機会損失が起きているかを把握しやすくします。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -190,7 +190,7 @@
             "title": "複数入口対応",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<p>複数入口の店舗でも、来店数を統合して把握。</p>",
+            "content": "<p>複数入口の店舗でも、入口ごとの来店データを統合して把握。大型店や百貨店インショップでも店舗全体の来店傾向を確認できます。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -212,7 +212,7 @@
             "title": "API・ダッシュボード連携",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<p>取得データをFlowダッシュボードや外部分析環境へ連携。</p>",
+            "content": "<p>取得データをFlowダッシュボードや外部分析環境へ連携。POS、売上、人員データと組み合わせて店舗運営に活用できます。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -220,7 +220,6 @@
         },
         "item_e7zcCc": {
           "type": "item",
-          "disabled": true,
           "settings": {
             "icon": "none",
             "icon_width": 32,
@@ -232,10 +231,10 @@
             "border_color": "",
             "show_controls": false,
             "column_size": "3",
-            "title": "",
+            "title": "同日リピート除外",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<h5>Multi-Entrance Support</h5><p>Handles complex store layouts with multiple entry points</p>",
+            "content": "<p>同日の再入店や短時間の重複を抑え、来店数をより使いやすく補正。日次比較や購買率分析の精度向上に役立ちます。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -243,7 +242,6 @@
         },
         "item_EtFefY": {
           "type": "item",
-          "disabled": true,
           "settings": {
             "icon": "none",
             "icon_width": 32,
@@ -255,10 +253,10 @@
             "border_color": "",
             "show_controls": false,
             "column_size": "3",
-            "title": "",
+            "title": "属性傾向",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<h5>Dashboard & API Access</h5><p>Real-time data via web dashboard and REST API integration</p>",
+            "content": "<p>年齢・性別などの傾向を確認し、客層理解やVMD改善に活用。店舗ごとの来店客層の違いを把握しやすくします。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -266,7 +264,6 @@
         },
         "item_aBwy9K": {
           "type": "item",
-          "disabled": true,
           "settings": {
             "icon": "none",
             "icon_width": 32,
@@ -278,10 +275,10 @@
             "border_color": "",
             "show_controls": false,
             "column_size": "3",
-            "title": "",
+            "title": "売場接触計測",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<h5>Edge AI Processing</h5><p>Local computation ensures privacy and sub-100ms latency</p>",
+            "content": "<p>売場・什器ごとの接触や滞在を確認し、VMDや商品配置の改善に活用。売場の見られ方と売上の関係を把握しやすくします。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -310,11 +307,79 @@
         "gap": "small",
         "text_alignment": "start",
         "subheading": "計測機能",
-        "title": "店舗分析に必要な行動データを取得。",
+        "title": "店舗分析に必要なデータを取得。",
         "content": "<p>Flow AIカメラは、単なる人数カウントではありません。来店数、通行量、入店率、滞在時間、スタッフ除外、ゾーン別行動、VMD接触など、店舗運営に必要な行動データを取得します。</p>",
         "background": "",
         "background_gradient": "",
         "text_color": ""
+      }
+    },
+    "hot_spots_MNDEX8": {
+      "type": "hot-spots",
+      "blocks": {
+        "item_xqUiFJ": {
+          "type": "item",
+          "settings": {
+            "horizontal_position": 24,
+            "vertical_position": 70,
+            "horizontal_position_mobile": 24,
+            "vertical_position_mobile": 70,
+            "icon_width": 32,
+            "title": "Feature name",
+            "content": "<p>Share useful information about your product features.</p>"
+          }
+        },
+        "item_rRrr9q": {
+          "type": "item",
+          "settings": {
+            "horizontal_position": 62,
+            "vertical_position": 14,
+            "horizontal_position_mobile": 62,
+            "vertical_position_mobile": 14,
+            "icon_width": 32,
+            "title": "Feature name",
+            "content": "<p>Share useful information about your product features.</p>"
+          }
+        },
+        "item_hctbUk": {
+          "type": "item",
+          "settings": {
+            "horizontal_position": 83,
+            "vertical_position": 75,
+            "horizontal_position_mobile": 83,
+            "vertical_position_mobile": 75,
+            "icon_width": 32,
+            "title": "Feature name",
+            "content": "<p>Share useful information about your product features.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_xqUiFJ",
+        "item_rRrr9q",
+        "item_hctbUk"
+      ],
+      "name": "Hot spots",
+      "settings": {
+        "full_width": true,
+        "title": "",
+        "content": "",
+        "button_text": "",
+        "button_url": "",
+        "desktop_text_position": "place-self-start text-start",
+        "image_background": "",
+        "image_background_gradient": "",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0,
+        "overlay_text_color": "#ffffff",
+        "overlay_button_background": "",
+        "overlay_button_text_color": "",
+        "hot_spot_dot_background": "#ffffff",
+        "hot_spot_dot_text_color": "#000000",
+        "hot_spot_content_background": "#ffffff",
+        "hot_spot_content_text_color": "#000000",
+        "hot_spot_content_opacity": 90,
+        "hot_spot_content_blur_radius": 3
       }
     },
     "rich_text_efnkBL": {
@@ -1490,6 +1555,7 @@
   "order": [
     "image_with_text_overlay_AcppEX",
     "multi_column_QpdWAi",
+    "hot_spots_MNDEX8",
     "rich_text_efnkBL",
     "blocks_ULkcay",
     "multi_column_RkceNG",
