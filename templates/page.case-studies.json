@@ -1,0 +1,690 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "image_with_text_overlay_AcppEX": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "subheading_GmUMNm": {
+          "type": "subheading",
+          "settings": {
+            "text": "CASE STUDIES"
+          }
+        },
+        "heading_frXnfn": {
+          "type": "heading",
+          "settings": {
+            "text": "PROVEN AT SCALE.",
+            "heading_tag": "h0"
+          }
+        },
+        "richtext_HwhtPj": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Empirical validation of architectural integrity across global enterprise networks. Flow delivers measurable velocity and high-fidelity execution for market leaders.</p>"
+          }
+        },
+        "button_7Prq3W": {
+          "type": "button",
+          "settings": {
+            "style": "fill",
+            "size": "lg",
+            "text": "Request Demo →",
+            "url": "#",
+            "background": "#a0b842",
+            "text_color": ""
+          }
+        },
+        "button_cpqnfi": {
+          "type": "button",
+          "settings": {
+            "style": "fill",
+            "size": "lg",
+            "text": "Read Technical Papers →",
+            "url": "#",
+            "background": "#ffffff",
+            "text_color": "#11243e"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_GmUMNm",
+        "heading_frXnfn",
+        "richtext_HwhtPj",
+        "button_7Prq3W",
+        "button_cpqnfi"
+      ],
+      "name": "Image with text overlay",
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "fill",
+        "image": "shopify://shop_images/ChatGPT_Image_May_12_2026_10_04_23_AM.png",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "text_color": "#ffffff",
+        "overlay_color": "#11243e",
+        "overlay_opacity": 43
+      }
+    },
+    "multi_column_HCGJea": {
+      "type": "multi-column",
+      "blocks": {
+        "item_GMdCj7": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#ffffff",
+            "icon_color": "#a0b842",
+            "background_color": "#f2f2f2",
+            "text_color": "",
+            "border_color": "#ffffff",
+            "show_controls": false,
+            "column_size": "4",
+            "title": "+15.4%",
+            "heading_tag": "h1",
+            "subheading": "<p>VELOCITY</p>",
+            "content": "<h6>Conversion Velocity Lift</h6>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_9cWFC9": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#ffffff",
+            "icon_color": "#a0b842",
+            "background_color": "#f2f2f2",
+            "text_color": "#11243e",
+            "border_color": "#ffffff",
+            "show_controls": false,
+            "column_size": "4",
+            "title": "42s",
+            "heading_tag": "h1",
+            "subheading": "<p>ENGAGEMENT</p>",
+            "content": "<h6>Engagement Depth Peak</h6>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_aqpNXK": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#ffffff",
+            "icon_color": "#a0b842",
+            "background_color": "#f2f2f2",
+            "text_color": "#11243e",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "4",
+            "title": "<15s",
+            "heading_tag": "h1",
+            "subheading": "<p>EXECUTION</p>",
+            "content": "<h6>Task Execution Delta</h6>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_tTyycj": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#ffffff",
+            "icon_color": "#a0b842",
+            "background_color": "#f2f2f2",
+            "text_color": "#11243e",
+            "border_color": "#ffffff",
+            "show_controls": false,
+            "column_size": "4",
+            "title": "99.8%",
+            "heading_tag": "h1",
+            "subheading": "<p>FIDELITY</p>",
+            "content": "<h6>Data Stream Purity</h6>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_GMdCj7",
+        "item_9cWFC9",
+        "item_aqpNXK",
+        "item_tTyycj"
+      ],
+      "custom_css": [
+        ".prose p {font-size: 0.9rem;}",
+        ".multi-column__item .h1 {color: #a0b842 !important;}"
+      ],
+      "name": "Multi-column",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "center",
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "background": "#f9fafb",
+        "background_gradient": "",
+        "text_color": "#11243e"
+      }
+    },
+    "multi_column_QjMJiW": {
+      "type": "multi-column",
+      "blocks": {
+        "item_mpQVCf": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#a0b842",
+            "icon_color": "#ffffff",
+            "image": "shopify://shop_images/9022a705161ff42b7879d88f1fd6d0e8_1c38da5c-e58e-43d1-af2c-34b28086e697.png",
+            "background_color": "#f9fafb",
+            "text_color": "",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "2",
+            "title": "",
+            "heading_tag": "h1",
+            "subheading": "<p>01 // RETAIL</p>",
+            "content": "<h4>Global Apparel Group</h4><p>Re-engineering the omnichannel checkout pipeline for sub-second synchronization across 4,000+ nodes.</p><h4>+18.2%</h4><p>Revenue Recovery</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_MVfQ7a": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#a0b842",
+            "icon_color": "#ffffff",
+            "image": "shopify://shop_images/9022a705161ff42b7879d88f1fd6d0e8_1c38da5c-e58e-43d1-af2c-34b28086e697.png",
+            "background_color": "#f9fafb",
+            "text_color": "",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "2",
+            "title": "",
+            "heading_tag": "h1",
+            "subheading": "<p>02 // E-COMMERCE</p>",
+            "content": "<h5>Luxury Beauty Brand</h5><p>Deploying hyper-personalized visual layers powered by real-time inventory triggers.</p><h4>2.4x</h4><p>AOV Acceleration</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_cpEg8A": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "image": "shopify://shop_images/9022a705161ff42b7879d88f1fd6d0e8_1c38da5c-e58e-43d1-af2c-34b28086e697.png",
+            "background_color": "#f9fafb",
+            "text_color": "",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "2",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "<p>03 // MANUFACTURING</p>",
+            "content": "<h5>Global Luxury Watchmaker</h5><p>Precision data streaming from assembly lines to customer-facing traceability portals.</p><h4>-35%</h4><p>Latency Reduction</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_Y47ifx": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#a0b842",
+            "icon_color": "#ffffff",
+            "image": "shopify://shop_images/9022a705161ff42b7879d88f1fd6d0e8_1c38da5c-e58e-43d1-af2c-34b28086e697.png",
+            "background_color": "#f9fafb",
+            "text_color": "",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "2",
+            "title": "",
+            "heading_tag": "h1",
+            "subheading": "<p>04 // LOGISTICS</p>",
+            "content": "<h5>Multi-Store Footwear Network</h5><p>Unified operating system for inventory routing and last-mile predictive modeling.</p><h4>99.9%</h4><p>Stock Accuracy</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_mpQVCf",
+        "item_MVfQ7a",
+        "item_cpEg8A",
+        "item_Y47ifx"
+      ],
+      "custom_css": [
+        ".multi-column__item h4 ~ p {margin-top: 0; padding-top: 0;}",
+        "p {font-size: 1rem;}",
+        "em {font-size: 0.8rem;}",
+        ".multi-column__item .text-center {text-align: left;}"
+      ],
+      "name": "Multi-column",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "center",
+        "subheading": "PROVE",
+        "title": "ENTERPRISE VALIDATION",
+        "content": "",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "media_with_text_hMPTmL": {
+      "type": "media-with-text",
+      "blocks": {
+        "image_8hBn9C": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/44.png",
+            "media_width": 50,
+            "media_position": "end",
+            "text_position": "place-self-center-start text-start",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "METHODOLOGY",
+            "title": "THE SPEED OF DEPLOYMENT.",
+            "content": "<p>Our protocol prioritizes non-destructive integration. Flow layers over existing infrastructure, abstracting complexity into a singular, high-performance execution environment. No downtime. No legacy friction.</p><ul><li>ZERO-TRUST ARCHITECTURE</li><li>ASYNC DATA SYNCHRONIZATION</li><li>EDGE-NATIVE EXECUTION</li></ul>",
+            "link_text": "View Integration",
+            "link_url": "#",
+            "background": "",
+            "background_gradient": "",
+            "text_color": "#11243e",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_8hBn9C"
+      ],
+      "custom_css": [
+        "h3 {font-size: var(--text-h0); color: #fff;}",
+        "ul {display: flex; flex-wrap: wrap; gap: 20px; font-size: 1rem;}",
+        "ul li {width: calc(50% - 20px);}"
+      ],
+      "name": "Media with text",
+      "settings": {
+        "full_width": false,
+        "alternate_media_position": false,
+        "spacing": "small"
+      }
+    },
+    "section-15": {
+      "type": "feature-chart",
+      "blocks": {
+        "block-1": {
+          "type": "headings",
+          "settings": {
+            "heading_1": "主な提供価値",
+            "heading_2": "コアの設計思想",
+            "heading_3": "来店データの位置づけ",
+            "heading_4": "データの即時性",
+            "heading_5": "店舗での使いやすさ",
+            "heading_6": "判断へのつながり",
+            "heading_7": "店舗ごとの判断差",
+            "heading_8": "本部と店舗の連携",
+            "heading_9": "運用負荷",
+            "heading_10": "拡張性",
+            "heading_11": "",
+            "heading_12": "",
+            "heading_13": "",
+            "heading_14": "",
+            "heading_15": "",
+            "heading_16": "",
+            "heading_17": "",
+            "heading_18": "",
+            "heading_19": "",
+            "heading_20": ""
+          }
+        },
+        "block-2": {
+          "type": "values",
+          "settings": {
+            "product": "",
+            "value_1": "<p>40mm Beryllium</p>",
+            "value_2": "<p>245g</p>",
+            "value_3": "<p>165mm x 190mm x 66mm</p>",
+            "value_4": "<p>24 hours</p>",
+            "value_5": "",
+            "value_6": "",
+            "value_7": "",
+            "value_8": "",
+            "value_9": "",
+            "value_10": "",
+            "value_11": "",
+            "value_12": "",
+            "value_13": "",
+            "value_14": "",
+            "value_15": "",
+            "value_16": "",
+            "value_17": "",
+            "value_18": "",
+            "value_19": "",
+            "value_20": "",
+            "view_button_background": "",
+            "view_button_text_color": ""
+          }
+        },
+        "block-3": {
+          "type": "values",
+          "settings": {
+            "product": "",
+            "value_1": "<p>40mm Beryllium</p>",
+            "value_2": "<p>205g (On-Ear), 239g (Over-Ear)</p>",
+            "value_3": "<p>190mm x 155mm x 34mm (On-Ear), 200mm x 165mm x 40mm (Over-Ear)</p>",
+            "value_4": "<p>16 hours</p>",
+            "value_5": "",
+            "value_6": "",
+            "value_7": "",
+            "value_8": "",
+            "value_9": "",
+            "value_10": "",
+            "value_11": "",
+            "value_12": "",
+            "value_13": "",
+            "value_14": "",
+            "value_15": "",
+            "value_16": "",
+            "value_17": "",
+            "value_18": "",
+            "value_19": "",
+            "value_20": "",
+            "view_button_background": "",
+            "view_button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "Why Dashboards Fail",
+        "content": "<p>Traditional analytics show you the problem. Flow solves it.</p>",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "center",
+        "max_rows": 5,
+        "view_all_text": "View all",
+        "view_less_text": "View less",
+        "view_product": "View",
+        "viewing_product": "",
+        "show_product_swatch": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "chart_background": "",
+        "chart_text_color": "",
+        "chart_true_false_color": ""
+      }
+    },
+    "media_with_text_mRGejd": {
+      "type": "media-with-text",
+      "blocks": {
+        "image_enedX8": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/44.png",
+            "media_width": 50,
+            "media_position": "start",
+            "text_position": "place-self-center-start text-start",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "RAPID DEPLOYMENT WINDOW",
+            "title": "30 MINS.",
+            "content": "<p></p><p>PoE Interface: Single standard Ethernet cable for simultaneous power and data transmission.</p><p>Zero-Config: Automatic node discovery and network handshake. Reduces onsite engineering time by 90%.</p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "#f9fafb",
+            "background_gradient": "",
+            "text_color": "#11243e",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_enedX8"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "* {background: white;}"
+      ],
+      "name": "Media with text",
+      "settings": {
+        "full_width": false,
+        "alternate_media_position": false,
+        "spacing": "small"
+      }
+    },
+    "multi_column_3kB34x": {
+      "type": "multi-column",
+      "blocks": {
+        "item_h39GfT": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#0e366a",
+            "text_color": "#ffffff",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "Continuous A/B Testing",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<p>Every store layout adjustment or visual display shift is tracked against a historical baseline, scientifically proving revenue lift.<br/></p><h5>Active</h5><p>Continuous Validation Status</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_MCgNnE": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#ffffff",
+            "text_color": "#000000",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "Noise Elimination",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<p>Our case study metrics are completely untainted by employee movement. The platform's native staff exclusion ensures only true customer intent is recorded.<br/></p><h5>Filtered</h5><p>Staff Ingestion Noise Delta</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_hBcDpd": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#a0b842",
+            "text_color": "#ffffff",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "Network Standardization",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<p>Flow normalizes unstructured data across completely different store layouts, allowing corporate leaders to set network-wide performance benchmarks.<br/></p><h5>Global</h5><p>Portfolio Sync Range</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_h39GfT",
+        "item_MCgNnE",
+        "item_hBcDpd"
+      ],
+      "custom_css": [
+        ".multi-column__item h5 {color: #b9c87c;}",
+        ".multi-column__item h5 ~ p {margin-top: 0; padding-top: 0;}"
+      ],
+      "name": "Multi-column",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "start",
+        "subheading": "EVIDENCE",
+        "title": "HOW WE PROVE VALUE.",
+        "content": "",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "rich_text_6VmVgb": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_AK7Cjn": {
+          "type": "subheading",
+          "settings": {
+            "text": "VALIDATE YOUR STORES",
+            "icon": "none"
+          }
+        },
+        "heading_YXhiR8": {
+          "type": "heading",
+          "settings": {
+            "text": "READY TO WRITE YOUR SUCCESS STORY?",
+            "heading_tag": "h1",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_qzAkak": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Let us run a pilot program using your existing store cameras to expose hidden conversion opportunities and calculate your exact spatial value.<br/></p>"
+          }
+        },
+        "button_AVKAbi": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "style": "outline",
+            "size": "base",
+            "text": "Contact Solutions Architect",
+            "url": "#",
+            "background": "",
+            "text_color": "#11243e"
+          }
+        },
+        "buttons_jaKCGH": {
+          "type": "buttons",
+          "settings": {
+            "style_1": "fill",
+            "size_1": "xl",
+            "text_1": "Schedule Demo →",
+            "url_1": "#",
+            "background_1": "#a0b842",
+            "text_color_1": "#ffffff",
+            "style_2": "fill",
+            "size_2": "xl",
+            "text_2": "Explore Platform →",
+            "url_2": "#",
+            "background_2": "#ffffff",
+            "text_color_2": "#11243e"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_AK7Cjn",
+        "heading_YXhiR8",
+        "richtext_qzAkak",
+        "button_AVKAbi",
+        "buttons_jaKCGH"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "#0e366a",
+        "background_gradient": "",
+        "text_color": "#ffffff"
+      }
+    }
+  },
+  "order": [
+    "image_with_text_overlay_AcppEX",
+    "multi_column_HCGJea",
+    "multi_column_QjMJiW",
+    "media_with_text_hMPTmL",
+    "section-15",
+    "media_with_text_mRGejd",
+    "multi_column_3kB34x",
+    "rich_text_6VmVgb"
+  ]
+}
