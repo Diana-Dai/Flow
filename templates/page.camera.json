@@ -361,8 +361,8 @@
           "settings": {
             "horizontal_position": 47,
             "vertical_position": 5,
-            "horizontal_position_mobile": 24,
-            "vertical_position_mobile": 70,
+            "horizontal_position_mobile": 26,
+            "vertical_position_mobile": 6,
             "icon_width": 32,
             "title": "AIカメラ計測",
             "content": "<p>天井設置型AIカメラで、入口や売場の人の動きを計測します。来店数、滞在時間、属性傾向、ゾーン行動など、店舗改善に使える行動データを取得します。</p>"
@@ -373,8 +373,8 @@
           "settings": {
             "horizontal_position": 45,
             "vertical_position": 23,
-            "horizontal_position_mobile": 62,
-            "vertical_position_mobile": 14,
+            "horizontal_position_mobile": 20,
+            "vertical_position_mobile": 64,
             "icon_width": 32,
             "title": "属性傾向",
             "content": "<p>年齢・性別などの傾向を集計し、来店客層の理解やVMD改善に活用できます。個人識別ではなく、店舗分析に必要な傾向データとして扱います。</p>"
@@ -385,8 +385,8 @@
           "settings": {
             "horizontal_position": 53,
             "vertical_position": 16,
-            "horizontal_position_mobile": 83,
-            "vertical_position_mobile": 75,
+            "horizontal_position_mobile": 41,
+            "vertical_position_mobile": 49,
             "icon_width": 32,
             "title": "同日リピート除外",
             "content": "<p>同じ日に再入店した人物や短時間の重複を抑え、来店数をより使いやすく補正します。日次比較や購買率分析の精度向上に役立ちます。</p>"
@@ -397,8 +397,8 @@
           "settings": {
             "horizontal_position": 71,
             "vertical_position": 23,
-            "horizontal_position_mobile": 30,
-            "vertical_position_mobile": 30,
+            "horizontal_position_mobile": 79,
+            "vertical_position_mobile": 20,
             "icon_width": 32,
             "title": "スタッフ除外",
             "content": "<p>スタッフの動きを来店数から除外し、購買率をより正確に把握しやすくします。正しい店舗評価や接客改善に重要です。</p>"
@@ -409,8 +409,8 @@
           "settings": {
             "horizontal_position": 77,
             "vertical_position": 47,
-            "horizontal_position_mobile": 30,
-            "vertical_position_mobile": 30,
+            "horizontal_position_mobile": 84,
+            "vertical_position_mobile": 46,
             "icon_width": 32,
             "title": "店舗データの現場活用",
             "content": "<p>店長やスタッフは、Flowダッシュボードで来店数・購買率・滞在傾向を確認できます。営業時間中の変化を把握し、接客体制、売場対応、VMD改善の判断に活用できます</p>"
@@ -431,6 +431,7 @@
       "settings": {
         "full_width": true,
         "image": "shopify://shop_images/Lifestyle_Hotspots_3.png",
+        "mobile_image": "shopify://shop_images/Mobile_Hotspot.png",
         "title": "店内計測の例",
         "content": "",
         "button_text": "",
