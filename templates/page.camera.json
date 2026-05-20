@@ -739,7 +739,7 @@
         "image_8hBn9C": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Snipaste_2026-05-13_13-41-48.png",
+            "image": "shopify://shop_images/Traffic_Flow_2.png",
             "media_width": 50,
             "media_position": "end",
             "text_position": "place-self-center-start text-start",
@@ -747,7 +747,7 @@
             "icon_width": 48,
             "subheading": "プライバシーとデータ保護",
             "title": "映像を保存せず、分析データへ。",
-            "content": "<p>Flowの来店計測では、カメラ映像は保存されません。AIカメラは、来店数・通行量・滞在時間・属性傾向など、店舗改善に必要な分析データを取得するために使用されます。個人を識別することを目的とした運用ではなく、店舗分析・購買率分析・VMD改善に活用できる行動データとして扱います。詳しい取り扱いについては、Flowのプライバシーポリシーおよびデータ保護方針をご確認ください。</p><p></p><ul><li>カメラ映像は保存しません</li><li>来店・通行量データを取得</li><li>個人識別目的ではありません</li><li>方針に基づきデータ管理</li></ul><p></p>",
+            "content": "<p>Flowの来店計測では、カメラ映像は保存されません。AIカメラは、来店数・通行量・滞在時間・属性傾向など、店舗改善に必要な分析データを取得するために使用されます。個人を識別することを目的とした運用ではなく、店舗分析・購買率分析・VMD改善に活用できる行動データとして扱います。詳しい取り扱いについては、Flowのプライバシーポリシーおよびデータ保護方針をご確認ください。</p><p></p><ul><li><strong>カメラ映像は保存しません</strong></li><li><strong>来店・通行量データを取得</strong></li><li><strong>個人識別目的ではありません</strong></li><li><strong>方針に基づきデータ管理</strong></li></ul><p></p>",
             "link_text": "データ保護方針を見る →",
             "link_url": "https://cdn.shopify.com/s/files/1/0704/4582/6185/files/Data_Protection_Policy.pdf?v=1773121905",
             "background": "",
