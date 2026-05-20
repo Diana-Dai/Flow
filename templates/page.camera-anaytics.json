@@ -431,11 +431,11 @@
             "text_color": "#11243e",
             "border_color": "",
             "show_controls": false,
-            "column_size": "3",
+            "column_size": "2",
             "title": "Executive Live Feeds",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<p>Monitor network-wide VMD scorecards and layout efficiency grades across hundreds of physical locations from corporate headquarters instantly.</p>",
+            "content": "<p>Monitor real-time VMD scorecards and layout efficiency grades instantly.</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -453,33 +453,11 @@
             "text_color": "#11243e",
             "border_color": "",
             "show_controls": false,
-            "column_size": "3",
-            "title": "Staff Movement Exclusion",
+            "column_size": "2",
+            "title": "Data Honesty Guaranteed",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<p>Native edge algorithms ensure internal employee service rounds never taint customer dwell counts, securing 100% data honesty.</p>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        },
-        "item_Y47ifx": {
-          "type": "item",
-          "settings": {
-            "icon": "none",
-            "icon_width": 32,
-            "icon_background_type": "circle",
-            "icon_background": "",
-            "icon_color": "",
-            "background_color": "#f2f2f2",
-            "text_color": "#11243e",
-            "border_color": "",
-            "show_controls": false,
-            "column_size": "3",
-            "title": "Flow Assistant Integration",
-            "heading_tag": "h3",
-            "subheading": "",
-            "content": "<p>Directly routes optimization tasks and layout alerts to frontline team mobile applications when specific product zones drop below optimal dwell benchmarks.</p>",
+            "content": "<p>Built-in staff exclusion filters out employee service routines so your management decisions are backed by 100% pure customer data.</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -488,8 +466,7 @@
       },
       "block_order": [
         "item_mpQVCf",
-        "item_MVfQ7a",
-        "item_Y47ifx"
+        "item_MVfQ7a"
       ],
       "custom_css": [
         ".multi-column__item .h1 {color: #a0b842;}",
@@ -500,32 +477,13 @@
         "full_width": true,
         "stack_on_mobile": false,
         "gap": "medium",
-        "text_alignment": "center",
-        "subheading": "VISIBILITY",
-        "title": "VISIBILITY METRIC, SYSTEM SYNCHRONIZATION.",
-        "content": "<p>Flow automatically scrubs operational noise, providing real-time in-store behavior analytics seamlessly delivered to executive dashboards and frontline communication networks.</p>",
+        "text_alignment": "start",
+        "subheading": "MANAGEMENT INTELLIGENCE",
+        "title": "NETWORK-WIDE VISIBILITY. REAL-TIME OVERSIGHT.",
+        "content": "<p>Flow aggregates raw storefront behavioral data into a high-end corporate dashboard, giving regional managers and visual merchandisers instant alignment across hundreds of locations.</p>",
         "background": "#0e366a",
         "background_gradient": "",
         "text_color": "#f9fafb"
-      }
-    },
-    "image_with_text_overlay_NppbVr": {
-      "type": "image-with-text-overlay",
-      "custom_css": [
-        "* {background: #0e366a; margin-top: 0; padding-top: 0;}"
-      ],
-      "name": "Image with text overlay",
-      "settings": {
-        "full_width": false,
-        "allow_transparent_header": false,
-        "enable_parallax": false,
-        "image_size": "lg",
-        "image": "shopify://shop_images/Gemini_Generated_Image_rucb0prucb0prucb.png",
-        "mobile_text_position": "place-self-center text-center",
-        "desktop_text_position": "sm:place-self-center sm:text-center",
-        "text_color": "#0e366a",
-        "overlay_color": "#000000",
-        "overlay_opacity": 30
       }
     },
     "section-15": {
@@ -645,25 +603,92 @@
         "chart_true_false_color": ""
       }
     },
-    "rich_text_peMmaV": {
-      "type": "rich-text",
+    "multi_column_hcGfym": {
+      "type": "multi-column",
       "blocks": {
-        "divider_RGAUiw": {
-          "type": "divider",
-          "settings": {}
+        "item_kXheJt": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "2",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h5>Ecosystem Interoperability</h5><p>Connect smoothly with enterprise tools like Shopify Plus, legacy POS, and modern workforce roster systems.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_jEEGn7": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "2",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h5>Flow Assistant Dispatch</h5><p>Automatically trigger actionable, real-time layout adjustment tasks on frontline mobile apps the moment a fixture's dwell rate drops below baseline benchmarks.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
         }
       },
       "block_order": [
-        "divider_RGAUiw"
+        "item_kXheJt",
+        "item_jEEGn7"
       ],
-      "name": "Rich text",
+      "custom_css": [
+        ".section-stack {padding-bottom: 0;}"
+      ],
+      "name": "Multi-column",
       "settings": {
         "full_width": true,
-        "content_width": "large",
-        "text_position": "center",
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "center",
+        "subheading": "INTEROPERABLE ECOSYSTEM",
+        "title": "ZERO FRICTION CONNECTION. IMMEDIATE FRONTLINE ACTION.",
+        "content": "<p>Flow doesn't operate in a silo. Our core data engine seamlessly bridges the gap between physical space architecture, your existing enterprise tech stack, and the hands of your floor staff.</p>",
         "background": "",
         "background_gradient": "",
         "text_color": ""
+      }
+    },
+    "image_with_text_overlay_qFgaQ3": {
+      "type": "image-with-text-overlay",
+      "custom_css": [
+        "* {padding-top: 0;}"
+      ],
+      "name": "Image with text overlay",
+      "settings": {
+        "full_width": false,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "lg",
+        "image": "shopify://shop_images/Gemini_Generated_Image_rucb0prucb0prucb.png",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30
       }
     },
     "rich_text_6VmVgb": {
@@ -746,9 +771,9 @@
     "media_with_text_hMPTmL",
     "multi_column_RkceNG",
     "multi_column_QjMJiW",
-    "image_with_text_overlay_NppbVr",
     "section-15",
-    "rich_text_peMmaV",
+    "multi_column_hcGfym",
+    "image_with_text_overlay_qFgaQ3",
     "rich_text_6VmVgb"
   ]
 }
