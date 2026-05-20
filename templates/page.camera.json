@@ -882,10 +882,10 @@
             "border_color": "#f2f2f2",
             "show_controls": false,
             "column_size": "2",
-            "title": "Traffic & CVR",
+            "title": "来店・購買率把握",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<p>Turn raw footfall into validated conversion truth.</p>",
+            "content": "<h5>来店数と売上をつなぎ、購買率を可視化。</h5>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -894,7 +894,7 @@
         "item_aqpNXK": {
           "type": "item",
           "settings": {
-            "icon": "picto-camera",
+            "icon": "picto-return",
             "icon_width": 32,
             "icon_background_type": "square",
             "icon_background": "#e5e9d1",
@@ -904,10 +904,10 @@
             "border_color": "#f2f2f2",
             "show_controls": false,
             "column_size": "2",
-            "title": "Dwell & VMD",
+            "title": "滞在・VMD改善",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<p>Quantify the impact of store layouts and product engagement.</p>",
+            "content": "<h5>売場滞在や接触状況を、VMD改善に活用。</h5>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -926,10 +926,10 @@
             "border_color": "#f2f2f2",
             "show_controls": false,
             "column_size": "2",
-            "title": "Staffing Optimization",
+            "title": "人員配置の最適化",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<p>Align labor hours with true customer peaks.</p>",
+            "content": "<h5>来店ピークと人員配置のズレを把握。</h5>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -948,10 +948,10 @@
             "border_color": "",
             "show_controls": false,
             "column_size": "2",
-            "title": "Flow Assistant",
+            "title": "FIDA実行支援",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<p>Feed the AI Assistant the accurate data it needs to trigger high-priority operational alerts.</p>",
+            "content": "<h5>信頼できる店舗データを、推奨アクションへつなげる。</h5>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -974,9 +974,9 @@
         "stack_on_mobile": false,
         "gap": "medium",
         "text_alignment": "start",
-        "subheading": "SYSTEM SYNERGY",
-        "title": "POWERING THE ECOSYSTEM.",
-        "content": "",
+        "subheading": "プラットフォーム連携",
+        "title": "計測データを、店舗改善へ。",
+        "content": "<h6>Flow AIカメラで取得した来店数・通行量・滞在時間・店内行動データは、購買率、人員配置、VMD改善、FIDA実行支援に活用できます。数字を見るだけではなく、店舗状況を把握し、次の改善判断につなげるデータとして使えます。</h6>",
         "background": "",
         "background_gradient": "",
         "text_color": "#11243e"
@@ -1412,23 +1412,30 @@
         "subheading_AK7Cjn": {
           "type": "subheading",
           "settings": {
-            "text": "NEXT STEPS",
-            "icon": "none"
+            "text": "次のステップ",
+            "icon": "picto-chat"
           }
         },
         "heading_YXhiR8": {
           "type": "heading",
+          "disabled": true,
           "settings": {
-            "text": "UPGRADE YOUR INFRASTRUCTURE.",
+            "text": "まずは、正確な来店計測から。",
             "heading_tag": "h1",
             "text_color": "",
             "gradient": ""
           }
         },
+        "liquid_h6UKea": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<h2 class=\"h1\">まずは、<br>正確な来店計測から。\n</h1>"
+          }
+        },
         "richtext_qzAkak": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Stop guessing. Start measuring with surgical precision. Contact a solutions architect today to schedule a live demo.</p>"
+            "content": "<p>来店数・通行量・滞在時間・店内行動を正しく把握することで、購買率分析、人員配置、VMD改善の判断がしやすくなります。Flow AIカメラと分析プラットフォームを、実際の店舗環境に合わせてご提案します。</p>"
           }
         },
         "button_AVKAbi": {
@@ -1448,13 +1455,13 @@
           "settings": {
             "style_1": "fill",
             "size_1": "xl",
-            "text_1": "Contact us →",
+            "text_1": "無料デモを依頼する →",
             "url_1": "#",
             "background_1": "#a0b842",
             "text_color_1": "#ffffff",
             "style_2": "fill",
             "size_2": "xl",
-            "text_2": "Explore Analytics Platform →",
+            "text_2": "分析基盤を見る →",
             "url_2": "#",
             "background_2": "#ffffff",
             "text_color_2": "#11243e"
@@ -1464,6 +1471,7 @@
       "block_order": [
         "subheading_AK7Cjn",
         "heading_YXhiR8",
+        "liquid_h6UKea",
         "richtext_qzAkak",
         "button_AVKAbi",
         "buttons_jaKCGH"
