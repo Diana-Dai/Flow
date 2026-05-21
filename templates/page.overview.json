@@ -1126,22 +1126,22 @@
         "item_Lja638": {
           "type": "item",
           "settings": {
-            "title": "How long will it take to get my orders?",
-            "content": "<p>It depends on where you are. Orders processed here will take 5-7 business days to arrive. Overseas deliveries can take anywhere from 7-16 days. Delivery details will be provided in your confirmation email.</p>"
+            "title": "FIDAとは何ですか？",
+            "content": "<p>FIDAは、Flow’s Integrated Decision Architectureの略です。</p><p>FIDAは、Flowが店舗データ、売上データ、スタッフ情報、天候、店舗属性、SOPなどをつなげ、現場が判断しやすい形に整理するための基盤です。</p><p>単にデータを表示するだけではなく、店舗や本部が「何を確認し、次に何をすべきか」を判断しやすくするための仕組みです。データに慣れていない人でも、店舗状況を理解し、改善行動につなげやすくすることを目的としています。</p>"
           }
         },
         "item_LLbw6z": {
           "type": "item",
           "settings": {
-            "title": "Question",
-            "content": "<p>Write content to answer to common questions your customers may have about your products, shipping policies..</p>"
+            "title": "Flow AIは店舗スタッフの判断を置き換えますか？",
+            "content": "<p>いいえ。Flow AIは、店舗スタッフや店長の判断を置き換えるものではありません。</p><p>Flow AIは、店舗データやSOPをもとに、状況把握や改善判断を支援するための機能です。目的は、現場の判断負担を減らし、店舗ごとの対応品質を揃えやすくすることです。</p><p>最終的な判断や実行は人が行います。Flow AIは、店長やエリアマネージャーがより早く、より一貫した判断を行えるように支援します。これは「自動化」ではなく、店舗運営の判断を支える仕組みとして説明するのが安全です。Flow Assistantも、管理者を置き換えるものではなく、判断のばらつきや反応遅れを減らす支援機能として位置づけられています。</p>"
           }
         },
         "item_yUM9mP": {
           "type": "item",
           "settings": {
-            "title": "Any question?",
-            "content": "<p>You can contact us through our contact page! We will be happy to assist you.</p>"
+            "title": "導入後、どのように活用を定着させますか？",
+            "content": "<p>Flowは、導入して終わりではなく、店舗で使われる状態を重視しています。</p><p>本部だけがデータを見るのではなく、店長やエリアマネージャーが日々の店舗運営で確認できる状態をつくることが重要です。来店数、購買率、時間帯別の変化を確認しながら、接客体制、売場対応、販促施策の改善につなげていきます。</p><p>必要に応じて、店舗向けの説明や活用支援も行い、現場で継続的に使える状態を目指します。</p>"
           }
         }
       },
