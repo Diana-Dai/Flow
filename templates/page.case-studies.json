@@ -15,20 +15,20 @@
         "subheading_GmUMNm": {
           "type": "subheading",
           "settings": {
-            "text": "CASE STUDIES"
+            "text": "Brand Spotlight: Daytona"
           }
         },
         "heading_frXnfn": {
           "type": "heading",
           "settings": {
-            "text": "PROVEN AT SCALE.",
+            "text": "DRIVING +25.2% CONVERSION LIFT.",
             "heading_tag": "h0"
           }
         },
         "richtext_HwhtPj": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Empirical validation of architectural integrity across global enterprise networks. Flow delivers measurable velocity and high-fidelity execution for market leaders.</p>"
+            "content": "<p>How Japan's \"FREAK'S STORE\" flagship eliminated traffic blindspots and optimized spatial geometry at the edge.</p>"
           }
         },
         "button_7Prq3W": {
@@ -75,172 +75,105 @@
         "overlay_opacity": 43
       }
     },
-    "multi_column_HCGJea": {
-      "type": "multi-column",
+    "impact_text_L3JGpY": {
+      "type": "impact-text",
       "blocks": {
-        "item_GMdCj7": {
+        "item_UBHTFa": {
           "type": "item",
           "settings": {
-            "icon": "none",
-            "icon_width": 32,
-            "icon_background_type": "square",
-            "icon_background": "#ffffff",
-            "icon_color": "#a0b842",
-            "background_color": "#f2f2f2",
-            "text_color": "",
-            "border_color": "#ffffff",
-            "show_controls": false,
-            "column_size": "4",
-            "title": "+23.9%",
-            "heading_tag": "h1",
-            "subheading": "",
-            "content": "<h6>Capture Rate Growth</h6><p>Average storefront entry capture growth achieved within the first 6 months of enterprise deployment across active networks.</p>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        },
-        "item_9cWFC9": {
-          "type": "item",
-          "settings": {
-            "icon": "none",
-            "icon_width": 32,
-            "icon_background_type": "square",
-            "icon_background": "#ffffff",
-            "icon_color": "#a0b842",
-            "background_color": "#f2f2f2",
-            "text_color": "#11243e",
-            "border_color": "#ffffff",
-            "show_controls": false,
-            "column_size": "4",
             "title": "+25.2%",
-            "heading_tag": "h1",
             "subheading": "",
-            "content": "<h6>Optimized Conversion</h6><p>Peak storefront sales conversion recorded by retail partners following real-time workforce alignment data.</p>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
+            "content": "<p>Checkout Conversion Lift</p>",
+            "button_text": "",
+            "button_url": "",
+            "animate_impact_text": false,
+            "animate_impact_text_duration": 2
           }
         },
-        "item_aqpNXK": {
+        "item_aR7mDY": {
           "type": "item",
           "settings": {
-            "icon": "none",
-            "icon_width": 32,
-            "icon_background_type": "square",
-            "icon_background": "#ffffff",
-            "icon_color": "#a0b842",
-            "background_color": "#f2f2f2",
-            "text_color": "#11243e",
-            "border_color": "#f2f2f2",
-            "show_controls": false,
-            "column_size": "4",
+            "title": "+23.9%",
+            "subheading": "",
+            "content": "<p>Fixture Zone Engagement</p>",
+            "button_text": "",
+            "button_url": "",
+            "animate_impact_text": false,
+            "animate_impact_text_duration": 2
+          }
+        },
+        "item_zr7YfQ": {
+          "type": "item",
+          "settings": {
             "title": "<15s",
-            "heading_tag": "h1",
             "subheading": "",
-            "content": "<h6>Edge Synchronization</h6><p>Real-time pipeline processing latency from physical in-store motion sensor tracking to executive platforms.</p>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        },
-        "item_tTyycj": {
-          "type": "item",
-          "settings": {
-            "icon": "none",
-            "icon_width": 32,
-            "icon_background_type": "square",
-            "icon_background": "#ffffff",
-            "icon_color": "#a0b842",
-            "background_color": "#f2f2f2",
-            "text_color": "#11243e",
-            "border_color": "#ffffff",
-            "show_controls": false,
-            "column_size": "4",
-            "title": "99.8%",
-            "heading_tag": "h1",
-            "subheading": "",
-            "content": "<h6>Ingestion Accuracy</h6><p>Data stream filtering precision guaranteed by native AI staff-exclusion algorithms to remove operational noise.</p>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
+            "content": "<p>Data Sync Latency</p>",
+            "button_text": "",
+            "button_url": "",
+            "animate_impact_text": false,
+            "animate_impact_text_duration": 2
           }
         }
       },
       "block_order": [
-        "item_GMdCj7",
-        "item_9cWFC9",
-        "item_aqpNXK",
-        "item_tTyycj"
+        "item_UBHTFa",
+        "item_aR7mDY",
+        "item_zr7YfQ"
       ],
-      "custom_css": [
-        ".prose p {font-size: 0.9rem;}",
-        ".multi-column__item .h1 {color: #a0b842 !important;}"
-      ],
-      "name": "Multi-column",
+      "name": "Impact text",
       "settings": {
         "full_width": true,
-        "stack_on_mobile": false,
-        "gap": "medium",
+        "stack_mobile": true,
         "text_alignment": "center",
-        "subheading": "",
-        "title": "",
-        "content": "",
-        "background": "#f9fafb",
+        "impact_text_style": "fill",
+        "text_divider": "none",
+        "impact_text_size_ratio": 1,
+        "background": "",
         "background_gradient": "",
-        "text_color": "#11243e"
+        "heading_text_color": "#a0b842",
+        "heading_gradient": "",
+        "text_color": "",
+        "button_background": "",
+        "button_text_color": ""
       }
     },
-    "multi_column_QjMJiW": {
+    "rich_text_J4Jpbj": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_itcncp": {
+          "type": "heading",
+          "settings": {
+            "text": "THE QUEST FORRETAIL PURITY",
+            "heading_tag": "h1",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_YyJriK": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Eliminating \"Data Noise\" to establish a 100% honest baseline for physical storefront performance.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_itcncp",
+        "richtext_YyJriK"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "multi_column_TV4htr": {
       "type": "multi-column",
       "blocks": {
-        "item_mpQVCf": {
-          "type": "item",
-          "settings": {
-            "icon": "none",
-            "icon_width": 32,
-            "icon_background_type": "square",
-            "icon_background": "#a0b842",
-            "icon_color": "#ffffff",
-            "image": "shopify://shop_images/9022a705161ff42b7879d88f1fd6d0e8_1c38da5c-e58e-43d1-af2c-34b28086e697.png",
-            "background_color": "#f9fafb",
-            "text_color": "",
-            "border_color": "#f2f2f2",
-            "show_controls": false,
-            "column_size": "2",
-            "title": "",
-            "heading_tag": "h1",
-            "subheading": "<p>01 // RETAIL</p>",
-            "content": "<h4>Global Apparel Group</h4><p>Re-engineering the omnichannel checkout pipeline for sub-second synchronization across 4,000+ nodes.</p><h4>+18.2%</h4><p>Revenue Recovery</p>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        },
-        "item_MVfQ7a": {
-          "type": "item",
-          "settings": {
-            "icon": "none",
-            "icon_width": 32,
-            "icon_background_type": "square",
-            "icon_background": "#a0b842",
-            "icon_color": "#ffffff",
-            "image": "shopify://shop_images/9022a705161ff42b7879d88f1fd6d0e8_1c38da5c-e58e-43d1-af2c-34b28086e697.png",
-            "background_color": "#f9fafb",
-            "text_color": "",
-            "border_color": "#f2f2f2",
-            "show_controls": false,
-            "column_size": "2",
-            "title": "",
-            "heading_tag": "h1",
-            "subheading": "<p>02 // E-COMMERCE</p>",
-            "content": "<h5>Luxury Beauty Brand</h5><p>Deploying hyper-personalized visual layers powered by real-time inventory triggers.</p><h4>2.4x</h4><p>AOV Acceleration</p>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        },
-        "item_cpEg8A": {
+        "item_q9tYa7": {
           "type": "item",
           "settings": {
             "icon": "none",
@@ -248,39 +181,37 @@
             "icon_background_type": "circle",
             "icon_background": "",
             "icon_color": "",
-            "image": "shopify://shop_images/9022a705161ff42b7879d88f1fd6d0e8_1c38da5c-e58e-43d1-af2c-34b28086e697.png",
-            "background_color": "#f9fafb",
-            "text_color": "",
-            "border_color": "#f2f2f2",
+            "background_color": "#11243e",
+            "text_color": "#ffffff",
+            "border_color": "",
             "show_controls": false,
             "column_size": "2",
-            "title": "",
+            "title": "The Challenge",
             "heading_tag": "h4",
-            "subheading": "<p>03 // MANUFACTURING</p>",
-            "content": "<h5>Global Luxury Watchmaker</h5><p>Precision data streaming from assembly lines to customer-facing traceability portals.</p><h4>-35%</h4><p>Latency Reduction</p>",
+            "subheading": "",
+            "content": "<p>Daytona's high-touch service model meant frontline staff were constantly moving through high-value clothing zones. Legacy traffic counters counted staff movement as customer dwell time, inflating data by up to 40% and making it impossible to evaluate the true performance of visual merchandising (VMD).</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
           }
         },
-        "item_Y47ifx": {
+        "item_MxxBAU": {
           "type": "item",
           "settings": {
             "icon": "none",
             "icon_width": 32,
-            "icon_background_type": "square",
-            "icon_background": "#a0b842",
-            "icon_color": "#ffffff",
-            "image": "shopify://shop_images/9022a705161ff42b7879d88f1fd6d0e8_1c38da5c-e58e-43d1-af2c-34b28086e697.png",
-            "background_color": "#f9fafb",
-            "text_color": "",
-            "border_color": "#f2f2f2",
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#a0b842",
+            "text_color": "#ffffff",
+            "border_color": "",
             "show_controls": false,
             "column_size": "2",
-            "title": "",
-            "heading_tag": "h1",
-            "subheading": "<p>04 // LOGISTICS</p>",
-            "content": "<h5>Multi-Store Footwear Network</h5><p>Unified operating system for inventory routing and last-mile predictive modeling.</p><h4>99.9%</h4><p>Stock Accuracy</p>",
+            "title": "The Solution",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<p>Flow ingested Daytona's existing storefront RTSP camera feeds. Our edge-AI engine automatically isolated and subtracted employee operational routines. By scrubbing this \"data noise,\" Daytona achieved a 100% honest baseline of pure customer behavior for the first time.</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -288,27 +219,19 @@
         }
       },
       "block_order": [
-        "item_mpQVCf",
-        "item_MVfQ7a",
-        "item_cpEg8A",
-        "item_Y47ifx"
-      ],
-      "custom_css": [
-        ".multi-column__item h4 ~ p {margin-top: 0; padding-top: 0;}",
-        "p {font-size: 1rem;}",
-        "em {font-size: 0.8rem;}",
-        ".multi-column__item .text-center {text-align: left;}"
+        "item_q9tYa7",
+        "item_MxxBAU"
       ],
       "name": "Multi-column",
       "settings": {
         "full_width": true,
         "stack_on_mobile": false,
         "gap": "medium",
-        "text_alignment": "center",
-        "subheading": "PROVE",
-        "title": "ENTERPRISE VALIDATION",
-        "content": "",
-        "background": "#ffffff",
+        "text_alignment": "start",
+        "subheading": "STRATEGIC COMPLICATION",
+        "title": "THE QUEST FOR RETAIL PURITY.",
+        "content": "<p>Organize content into multiple columns to share useful information to your customers about your products, values...</p>",
+        "background": "#f9fafb",
         "background_gradient": "",
         "text_color": ""
       }
@@ -319,15 +242,15 @@
         "image_8hBn9C": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/44.png",
+            "image": "shopify://shop_images/Snipaste_2026-05-21_15-30-11.png",
             "media_width": 50,
             "media_position": "end",
             "text_position": "place-self-center-start text-start",
             "icon": "none",
             "icon_width": 48,
-            "subheading": "METHODOLOGY",
-            "title": "THE SPEED OF DEPLOYMENT.",
-            "content": "<p>Our protocol prioritizes non-destructive integration. Flow layers over existing infrastructure, abstracting complexity into a singular, high-performance execution environment. No downtime. No legacy friction.</p><ul><li>ZERO-TRUST ARCHITECTURE</li><li>ASYNC DATA SYNCHRONIZATION</li><li>EDGE-NATIVE EXECUTION</li></ul>",
+            "subheading": "RESULT",
+            "title": "Behavioral Optimization Lift",
+            "content": "<p>Data-driven layout shifts resulted in a 31% increase in deep-store penetration.</p>",
             "link_text": "View Integration",
             "link_url": "#",
             "background": "",
@@ -346,6 +269,45 @@
         "h3 {font-size: var(--text-h0); color: #fff;}",
         "ul {display: flex; flex-wrap: wrap; gap: 20px; font-size: 1rem;}",
         "ul li {width: calc(50% - 20px);}"
+      ],
+      "name": "Media with text",
+      "settings": {
+        "full_width": false,
+        "alternate_media_position": false,
+        "spacing": "small"
+      }
+    },
+    "media_with_text_mRGejd": {
+      "type": "media-with-text",
+      "blocks": {
+        "image_enedX8": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Snipaste_2026-05-21_15-30-11.png",
+            "media_width": 50,
+            "media_position": "start",
+            "text_position": "place-self-center-start text-start",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "Geometry Meets Velocity",
+            "title": "Physical vs Transactional Correlation",
+            "content": "<p>Data without commerce is just noise. Flow correlated the exact millisecond a customer lingered at Daytona's main window display with real-time purchasing velocity at their Shopify Plus POS terminals.</p><p>This unlocked a definitive <strong>\"Attraction Index\"</strong> for every square meter of their flagship floor, identifying \"dead zones\" previously masked by staff activity.</p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "#f9fafb",
+            "background_gradient": "",
+            "text_color": "#11243e",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_enedX8"
+      ],
+      "custom_css": [
+        "* {background: white;}"
       ],
       "name": "Media with text",
       "settings": {
@@ -471,50 +433,10 @@
         "chart_true_false_color": ""
       }
     },
-    "media_with_text_mRGejd": {
-      "type": "media-with-text",
-      "blocks": {
-        "image_enedX8": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/44.png",
-            "media_width": 50,
-            "media_position": "start",
-            "text_position": "place-self-center-start text-start",
-            "icon": "none",
-            "icon_width": 48,
-            "subheading": "RAPID DEPLOYMENT WINDOW",
-            "title": "30 MINS.",
-            "content": "<p></p><p>PoE Interface: Single standard Ethernet cable for simultaneous power and data transmission.</p><p>Zero-Config: Automatic node discovery and network handshake. Reduces onsite engineering time by 90%.</p>",
-            "link_text": "",
-            "link_url": "",
-            "background": "#f9fafb",
-            "background_gradient": "",
-            "text_color": "#11243e",
-            "text_gradient": "",
-            "button_background": "",
-            "button_text_color": ""
-          }
-        }
-      },
-      "block_order": [
-        "image_enedX8"
-      ],
-      "disabled": true,
-      "custom_css": [
-        "* {background: white;}"
-      ],
-      "name": "Media with text",
-      "settings": {
-        "full_width": false,
-        "alternate_media_position": false,
-        "spacing": "small"
-      }
-    },
-    "multi_column_3kB34x": {
+    "multi_column_ykywta": {
       "type": "multi-column",
       "blocks": {
-        "item_h39GfT": {
+        "item_fRf33R": {
           "type": "item",
           "settings": {
             "icon": "none",
@@ -522,43 +444,21 @@
             "icon_background_type": "circle",
             "icon_background": "",
             "icon_color": "",
-            "background_color": "#0e366a",
+            "background_color": "#11243e",
             "text_color": "#ffffff",
             "border_color": "",
             "show_controls": false,
             "column_size": "3",
-            "title": "Continuous A/B Testing",
-            "heading_tag": "h4",
+            "title": "88%",
+            "heading_tag": "h2",
             "subheading": "",
-            "content": "<p>Every store layout adjustment or visual display shift is tracked against a historical baseline, scientifically proving revenue lift.<br/></p><h5>Active</h5><p>Continuous Validation Status</p>",
+            "content": "<p>Attraction</p><h5>Primary Window (Main Drop)</h5>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
           }
         },
-        "item_MCgNnE": {
-          "type": "item",
-          "settings": {
-            "icon": "none",
-            "icon_width": 32,
-            "icon_background_type": "circle",
-            "icon_background": "",
-            "icon_color": "",
-            "background_color": "#ffffff",
-            "text_color": "#000000",
-            "border_color": "",
-            "show_controls": false,
-            "column_size": "3",
-            "title": "Noise Elimination",
-            "heading_tag": "h4",
-            "subheading": "",
-            "content": "<p>Our case study metrics are completely untainted by employee movement. The platform's native staff exclusion ensures only true customer intent is recorded.<br/></p><h5>Filtered</h5><p>Staff Ingestion Noise Delta</p>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        },
-        "item_hBcDpd": {
+        "item_zGNUAp": {
           "type": "item",
           "settings": {
             "icon": "none",
@@ -571,10 +471,32 @@
             "border_color": "",
             "show_controls": false,
             "column_size": "3",
-            "title": "Network Standardization",
-            "heading_tag": "h4",
+            "title": "45% ",
+            "heading_tag": "h2",
             "subheading": "",
-            "content": "<p>Flow normalizes unstructured data across completely different store layouts, allowing corporate leaders to set network-wide performance benchmarks.<br/></p><h5>Global</h5><p>Portfolio Sync Range</p>",
+            "content": "<p>Dwell Rate</p><h5>Accessory Wall (Mid-Floor)</h5>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_Vx6gWn": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "72% ",
+            "heading_tag": "h2",
+            "subheading": "",
+            "content": "<p>Engagement</p><h5>Footwear Threshold</h5>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -582,13 +504,14 @@
         }
       },
       "block_order": [
-        "item_h39GfT",
-        "item_MCgNnE",
-        "item_hBcDpd"
+        "item_fRf33R",
+        "item_zGNUAp",
+        "item_Vx6gWn"
       ],
       "custom_css": [
-        ".multi-column__item h5 {color: #b9c87c;}",
-        ".multi-column__item h5 ~ p {margin-top: 0; padding-top: 0;}"
+        ".prose p {font-size: 0.9rem;}",
+        ".multi-column__item:first-child .h1 {color: #a0b842 !important;}",
+        ".multi-column__item:last-child .h1 {color: #a0b842 !important;}"
       ],
       "name": "Multi-column",
       "settings": {
@@ -596,84 +519,12 @@
         "stack_on_mobile": false,
         "gap": "medium",
         "text_alignment": "start",
-        "subheading": "EVIDENCE",
-        "title": "HOW WE PROVE VALUE.",
-        "content": "",
-        "background": "#ffffff",
+        "subheading": "ANALYTICS",
+        "title": "Zone Attraction Benchmarks",
+        "content": "<p>Flow identified that the accessory wall was a bottleneck, leading to a layout pivot that recovered 15% of stagnant revenue.</p>",
+        "background": "#f2f2f2",
         "background_gradient": "",
         "text_color": ""
-      }
-    },
-    "rich_text_6VmVgb": {
-      "type": "rich-text",
-      "blocks": {
-        "subheading_AK7Cjn": {
-          "type": "subheading",
-          "settings": {
-            "text": "VALIDATE YOUR STORES",
-            "icon": "none"
-          }
-        },
-        "heading_YXhiR8": {
-          "type": "heading",
-          "settings": {
-            "text": "READY TO WRITE YOUR SUCCESS STORY?",
-            "heading_tag": "h1",
-            "text_color": "",
-            "gradient": ""
-          }
-        },
-        "richtext_qzAkak": {
-          "type": "richtext",
-          "settings": {
-            "content": "<p>Let us run a pilot program using your existing store cameras to expose hidden conversion opportunities and calculate your exact spatial value.<br/></p>"
-          }
-        },
-        "button_AVKAbi": {
-          "type": "button",
-          "disabled": true,
-          "settings": {
-            "style": "outline",
-            "size": "base",
-            "text": "Contact Solutions Architect",
-            "url": "#",
-            "background": "",
-            "text_color": "#11243e"
-          }
-        },
-        "buttons_jaKCGH": {
-          "type": "buttons",
-          "settings": {
-            "style_1": "fill",
-            "size_1": "xl",
-            "text_1": "Schedule Demo →",
-            "url_1": "#",
-            "background_1": "#a0b842",
-            "text_color_1": "#ffffff",
-            "style_2": "fill",
-            "size_2": "xl",
-            "text_2": "Explore Platform →",
-            "url_2": "#",
-            "background_2": "#ffffff",
-            "text_color_2": "#11243e"
-          }
-        }
-      },
-      "block_order": [
-        "subheading_AK7Cjn",
-        "heading_YXhiR8",
-        "richtext_qzAkak",
-        "button_AVKAbi",
-        "buttons_jaKCGH"
-      ],
-      "name": "Rich text",
-      "settings": {
-        "full_width": true,
-        "content_width": "small",
-        "text_position": "center",
-        "background": "#0e366a",
-        "background_gradient": "",
-        "text_color": "#ffffff"
       }
     },
     "comparison_table_LGYRYk": {
@@ -796,7 +647,7 @@
         "values_tf4MPP"
       ],
       "custom_css": [
-        "strong{color:#A0B842;}"
+        "strong {color: #a0b842;}"
       ],
       "name": "Comparison table",
       "settings": {
@@ -815,7 +666,7 @@
         "show_product_image": false,
         "show_product_swatch": false,
         "viewing_product": "",
-        "background": "",
+        "background": "#ffffff",
         "background_gradient": "",
         "text_color": "",
         "heading_color": "",
@@ -826,17 +677,300 @@
         "chart_text_color": "",
         "chart_true_false_color": ""
       }
+    },
+    "multi_column_jJh3QA": {
+      "type": "multi-column",
+      "blocks": {
+        "item_d9zryz": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#d0d4c1",
+            "text_color": "#11243e",
+            "border_color": "#ffffff",
+            "show_controls": false,
+            "column_size": "4",
+            "title": "Week 1",
+            "heading_tag": "h5",
+            "subheading": "",
+            "content": "<p>Remote RTSP Ingestion & Security Audit.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_UJmxTr": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#959c77",
+            "text_color": "#ffffff",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "4",
+            "title": "Week 2-4",
+            "heading_tag": "h5",
+            "subheading": "",
+            "content": "<p>Noise Calibration & Behavioral Baseline.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_4Vgjkc": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#a0b842",
+            "text_color": "#f9fafb",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "4",
+            "title": "Week 8",
+            "heading_tag": "h5",
+            "subheading": "",
+            "content": "<p>Spatial Layout Pivot & VMD Validation.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_gDV86Y": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#3e412f",
+            "text_color": "#ffffff",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "4",
+            "title": "Week 12",
+            "heading_tag": "h5",
+            "subheading": "",
+            "content": "<p>Full Regional Network ROI Scale-up.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_d9zryz",
+        "item_UJmxTr",
+        "item_4Vgjkc",
+        "item_gDV86Y"
+      ],
+      "name": "Multi-column",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "center",
+        "subheading": "ROADMAP",
+        "title": "Regional Network Roadmap",
+        "content": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "rich_text_6VmVgb": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_AK7Cjn": {
+          "type": "subheading",
+          "settings": {
+            "text": "NEXT STEPS",
+            "icon": "none"
+          }
+        },
+        "heading_YXhiR8": {
+          "type": "heading",
+          "settings": {
+            "text": "READY TO VALIDATE YOUR VMD ROI?",
+            "heading_tag": "h1",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_qzAkak": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Replicate Daytona's spatial intelligence framework in your own storefront.</p>"
+          }
+        },
+        "button_AVKAbi": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "style": "outline",
+            "size": "base",
+            "text": "Contact Solutions Architect",
+            "url": "#",
+            "background": "",
+            "text_color": "#11243e"
+          }
+        },
+        "buttons_jaKCGH": {
+          "type": "buttons",
+          "settings": {
+            "style_1": "fill",
+            "size_1": "xl",
+            "text_1": "Schedule Demo →",
+            "url_1": "#",
+            "background_1": "#a0b842",
+            "text_color_1": "#ffffff",
+            "style_2": "fill",
+            "size_2": "xl",
+            "text_2": "Explore Platform →",
+            "url_2": "#",
+            "background_2": "#ffffff",
+            "text_color_2": "#11243e"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_AK7Cjn",
+        "heading_YXhiR8",
+        "richtext_qzAkak",
+        "button_AVKAbi",
+        "buttons_jaKCGH"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "#0e366a",
+        "background_gradient": "",
+        "text_color": "#ffffff"
+      }
+    },
+    "multi_column_UExWWX": {
+      "type": "multi-column",
+      "blocks": {
+        "item_kHMBXM": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "image": "shopify://shop_images/unnamed.png",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "#f9fafb",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "高精度店内計測",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<p>高精度な来店計測と顧客行動分析。</p>",
+            "link_url": "",
+            "link_text": "詳しく見る →",
+            "link_style": "link"
+          }
+        },
+        "item_jzqLHt": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "image": "shopify://shop_images/1_1b5442dc-a679-4a23-a10f-8f39d2cc4234.png",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "#f9fafb",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "FIDA分析基盤",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<p>来店・売上・人員配置を統合分析。</p>",
+            "link_url": "#",
+            "link_text": "詳しく見る →",
+            "link_style": "link"
+          }
+        },
+        "item_rn7myV": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "image": "shopify://shop_images/3_05197ad8-294f-4cc5-9d73-b73021906f0a.png",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "#f9fafb",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "現場意思決定実行支援",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<p>現場実行につながる推奨アクション。</p><h3></h3>",
+            "link_url": "#",
+            "link_text": "詳しく見る →",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_kHMBXM",
+        "item_jzqLHt",
+        "item_rn7myV"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".multi-column__item {padding: 0;}"
+      ],
+      "name": "Multi-column",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "start",
+        "subheading": "プラットフォームを見る",
+        "title": "店舗運営のすべてのレイヤーを統合。",
+        "content": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
     }
   },
   "order": [
     "image_with_text_overlay_AcppEX",
-    "multi_column_HCGJea",
-    "multi_column_QjMJiW",
+    "impact_text_L3JGpY",
+    "rich_text_J4Jpbj",
+    "multi_column_TV4htr",
     "media_with_text_hMPTmL",
-    "section-15",
     "media_with_text_mRGejd",
-    "multi_column_3kB34x",
+    "section-15",
+    "multi_column_ykywta",
+    "comparison_table_LGYRYk",
+    "multi_column_jJh3QA",
     "rich_text_6VmVgb",
-    "comparison_table_LGYRYk"
+    "multi_column_UExWWX"
   ]
 }
