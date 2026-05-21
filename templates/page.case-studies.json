@@ -795,6 +795,9 @@
         "values_7tmAm7",
         "values_tf4MPP"
       ],
+      "custom_css": [
+        "strong{color:#A0B842;}"
+      ],
       "name": "Comparison table",
       "settings": {
         "full_width": true,
