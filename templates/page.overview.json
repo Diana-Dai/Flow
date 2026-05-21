@@ -1084,6 +1084,99 @@
         "background_gradient": "",
         "text_color": ""
       }
+    },
+    "faq_x6Uzbx": {
+      "type": "faq",
+      "blocks": {
+        "item_3mjmT4": {
+          "type": "item",
+          "settings": {
+            "title": "既存のPOSや売上データと連携できますか？",
+            "content": "<p>はい。Flowは、POSや売上データとの連携に対応しています。</p><p>来店数や通行量だけでなく、売上、購買率、販売点数、スタッフシフト、天候、店舗属性などを組み合わせて確認できます。これにより、売上結果だけを見るのではなく、その結果がどのような来店状況や店舗環境の中で生まれたのかを把握しやすくなります。</p><p>連携方法は、既存システムの仕様に応じて確認します。API、CSV、FTPなど、運用環境に合わせた連携方法を検討できます。</p>"
+          }
+        },
+        "item_jxrDaK": {
+          "type": "item",
+          "settings": {
+            "title": "何店舗から導入できますか？",
+            "content": "<p>推奨は3店舗以上ですが、1店舗からの導入も可能です。</p><p>Flowでは、社内理解を深め、店舗間で比較しながら活用を進めるために、まずは3店舗以上での導入をおすすめしています。複数店舗で開始することで、来店数、購買率、店舗運営の違いを比較しやすくなり、社内での納得感も高まりやすくなります。</p><p>ただし、1店舗からの導入にも対応しています。導入店舗数が増えるほど、1店舗あたりの費用は抑えやすくなります。</p>"
+          }
+        },
+        "item_Et9PAC": {
+          "type": "item",
+          "settings": {
+            "title": "店舗スタッフでも使えますか？",
+            "content": "<p>はい。Flowは、店長や店舗スタッフが日々の店舗運営で使うことを前提に設計されています。</p><p>Flowの価値が最も高まるのは、本部だけでなく、店舗側が来店数、購買率、売上、時間帯別の変化を確認し、日々の接客体制や売場対応に活用できる状態です。</p><p>本部、エリアマネージャー、店舗が同じデータを見ることで、感覚や経験だけに頼らず、共通の状況認識をもとに改善判断を行いやすくなります。Flowの考え方としても、店舗・エリア・本部が同じ運用データを見られることは、組織全体の実行力を高める重要な要素です。</p>"
+          }
+        },
+        "item_yMAg97": {
+          "type": "item",
+          "settings": {
+            "title": "カメラ映像は保存されますか？",
+            "content": "<p><strong>いいえ。Flowでは、カメラ映像を保存しません。</strong></p><p>Flowのカメラは、来店数や店舗内行動を計測するために使用されますが、映像そのものを保存する仕組みではありません。店舗運営に必要な数値データとして、来店数、滞在傾向、属性傾向などを確認できるようにします。</p><p>詳細は、Flowの<a href=\"https://cdn.shopify.com/s/files/1/0704/4582/6185/files/Privacy_Policy.pdf?v=1749635230\" target=\"_blank\" title=\"https://cdn.shopify.com/s/files/1/0704/4582/6185/files/Privacy_Policy.pdf?v=1749635230\">プライバシーポリシー</a>および<a href=\"https://cdn.shopify.com/s/files/1/0704/4582/6185/files/Data_Protection_Policy.pdf?v=1773121905\" target=\"_blank\" title=\"https://cdn.shopify.com/s/files/1/0704/4582/6185/files/Data_Protection_Policy.pdf?v=1773121905\">データ保護方針</a>をご確認ください。</p>"
+          }
+        },
+        "item_FXzfx6": {
+          "type": "item",
+          "settings": {
+            "title": "Question",
+            "content": "<p>Write content to answer to common questions your customers may have about your products, shipping policies..</p>"
+          }
+        },
+        "item_Lja638": {
+          "type": "item",
+          "settings": {
+            "title": "How long will it take to get my orders?",
+            "content": "<p>It depends on where you are. Orders processed here will take 5-7 business days to arrive. Overseas deliveries can take anywhere from 7-16 days. Delivery details will be provided in your confirmation email.</p>"
+          }
+        },
+        "item_LLbw6z": {
+          "type": "item",
+          "settings": {
+            "title": "Question",
+            "content": "<p>Write content to answer to common questions your customers may have about your products, shipping policies..</p>"
+          }
+        },
+        "item_yUM9mP": {
+          "type": "item",
+          "settings": {
+            "title": "Any question?",
+            "content": "<p>You can contact us through our contact page! We will be happy to assist you.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_3mjmT4",
+        "item_jxrDaK",
+        "item_Et9PAC",
+        "item_yMAg97",
+        "item_FXzfx6",
+        "item_Lja638",
+        "item_LLbw6z",
+        "item_yUM9mP"
+      ],
+      "name": "FAQ",
+      "settings": {
+        "full_width": true,
+        "subheading": "FAQ",
+        "title": "よくあるご質問",
+        "content": "<p>導入前に確認されることが多い内容をまとめました。POS連携、導入店舗数、店舗での活用、カメラ映像、リアルタイム性、FIDAについて確認できます。<br/><br/><strong>導入の目安<br/></strong>推奨：3店舗以上で検証<br/>1店舗から導入可能・段階展開に対応</p>",
+        "team_avatar_width": 160,
+        "support_hours": "",
+        "answer_time": "",
+        "button_text": "導入について相談する →",
+        "button_url": "",
+        "text_position": "start",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "",
+        "accordion_text_color": ""
+      }
     }
   },
   "order": [
@@ -1100,6 +1193,7 @@
     "multi_column_LeVzeG",
     "multi_column_HCGJea",
     "testimonials_98zPBi",
-    "multi_column_UExWWX"
+    "multi_column_UExWWX",
+    "faq_x6Uzbx"
   ]
 }
