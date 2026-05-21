@@ -1119,8 +1119,8 @@
         "item_FXzfx6": {
           "type": "item",
           "settings": {
-            "title": "Question",
-            "content": "<p>Write content to answer to common questions your customers may have about your products, shipping policies..</p>"
+            "title": "データはリアルタイムで確認できますか？",
+            "content": "<p>はい。Flowでは、来店数、売上、購買率などの主要KPIをリアルタイムに近い形で確認できます。</p><p>Flowセンサーのデータは、導入構成によりリアルタイムまたは10分間隔で更新されます。POS、スタッフシフト、天候などの外部データは、連携元システムの仕様や更新タイミングによって反映頻度が異なります。</p><p>そのため、すべてのデータが常に同じタイミングで更新されるわけではありませんが、各データソースが更新され次第、ダッシュボードやFlow AIで活用できる形に整理されます。日次レポートを待つのではなく、店舗で起きている変化を早く把握し、営業時間中の改善判断につなげることができます。</p>"
           }
         },
         "item_Lja638": {
