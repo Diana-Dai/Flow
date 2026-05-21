@@ -441,8 +441,7 @@
       ],
       "custom_css": [
         "h3 {font-size: var(--text-h0); color: #a0b842;}",
-        "ul {display: flex; flex-wrap: wrap; gap: 20px; font-size: 1rem;}",
-        "ul li {width: calc(50% - 20px);}"
+        "ul {font-size: 1rem;}"
       ],
       "name": "Media with text",
       "settings": {
