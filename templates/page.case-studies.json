@@ -675,6 +675,154 @@
         "background_gradient": "",
         "text_color": "#ffffff"
       }
+    },
+    "comparison_table_LGYRYk": {
+      "type": "comparison-table",
+      "blocks": {
+        "headings_cVHHY3": {
+          "type": "headings",
+          "settings": {
+            "heading_1": "Performance Metric",
+            "heading_2": "Legacy (Intuition)",
+            "heading_3": "Flow (Evidence)",
+            "heading_4": "Net Impact",
+            "heading_5": "",
+            "heading_6": "",
+            "heading_7": "",
+            "heading_8": "",
+            "heading_9": "",
+            "heading_10": "",
+            "heading_11": "",
+            "heading_12": "",
+            "heading_13": "",
+            "heading_14": "",
+            "heading_15": "",
+            "heading_16": "",
+            "heading_17": "",
+            "heading_18": "",
+            "heading_19": "",
+            "heading_20": ""
+          }
+        },
+        "values_rjMWW9": {
+          "type": "values",
+          "settings": {
+            "product": "",
+            "value_1": "<p>VMD Audit Speed</p>",
+            "value_2": "<p>Weekly / Subjective</p>",
+            "value_3": "<p>Real-Time / Quantitative</p>",
+            "value_4": "<p><strong>+15hr Staff Savings</strong></p>",
+            "value_5": "",
+            "value_6": "",
+            "value_7": "",
+            "value_8": "",
+            "value_9": "",
+            "value_10": "",
+            "value_11": "",
+            "value_12": "",
+            "value_13": "",
+            "value_14": "",
+            "value_15": "",
+            "value_16": "",
+            "value_17": "",
+            "value_18": "",
+            "value_19": "",
+            "value_20": "",
+            "view_button_background": "",
+            "view_button_text_color": ""
+          }
+        },
+        "values_7tmAm7": {
+          "type": "values",
+          "settings": {
+            "product": "",
+            "value_1": "<p>Data Accuracy</p>",
+            "value_2": "<p>~60% Accuracy</p>",
+            "value_3": "<p>99%+ Purity</p>",
+            "value_4": "<p><strong>Zero Staff Noise</strong></p>",
+            "value_5": "",
+            "value_6": "",
+            "value_7": "",
+            "value_8": "",
+            "value_9": "",
+            "value_10": "",
+            "value_11": "",
+            "value_12": "",
+            "value_13": "",
+            "value_14": "",
+            "value_15": "",
+            "value_16": "",
+            "value_17": "",
+            "value_18": "",
+            "value_19": "",
+            "value_20": "",
+            "view_button_background": "",
+            "view_button_text_color": ""
+          }
+        },
+        "values_tf4MPP": {
+          "type": "values",
+          "settings": {
+            "product": "",
+            "value_1": "<p>Layout Pivot Time</p>",
+            "value_2": "<p>14 Days</p>",
+            "value_3": "<p>&lt; 24 Hours</p>",
+            "value_4": "<p><strong>Hyper-Agile</strong></p>",
+            "value_5": "",
+            "value_6": "",
+            "value_7": "",
+            "value_8": "",
+            "value_9": "",
+            "value_10": "",
+            "value_11": "",
+            "value_12": "",
+            "value_13": "",
+            "value_14": "",
+            "value_15": "",
+            "value_16": "",
+            "value_17": "",
+            "value_18": "",
+            "value_19": "",
+            "value_20": "",
+            "view_button_background": "",
+            "view_button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "headings_cVHHY3",
+        "values_rjMWW9",
+        "values_7tmAm7",
+        "values_tf4MPP"
+      ],
+      "name": "Comparison table",
+      "settings": {
+        "full_width": true,
+        "subheading": "RESULT",
+        "title": "Evidence-Based Outcomes",
+        "content": "",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "start",
+        "max_rows": 5,
+        "view_all_text": "View all",
+        "view_less_text": "View less",
+        "view_product": "View",
+        "show_product_info": false,
+        "show_product_image": false,
+        "show_product_swatch": false,
+        "viewing_product": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "chart_background": "",
+        "chart_text_color": "",
+        "chart_true_false_color": ""
+      }
     }
   },
   "order": [
@@ -685,6 +833,7 @@
     "section-15",
     "media_with_text_mRGejd",
     "multi_column_3kB34x",
-    "rich_text_6VmVgb"
+    "rich_text_6VmVgb",
+    "comparison_table_LGYRYk"
   ]
 }
