@@ -741,6 +741,68 @@
         "text_color": ""
       }
     },
+    "blocks_PbNh4e": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_a3e57c5_fRbQGj": {
+          "type": "ai_gen_block_a3e57c5",
+          "settings": {
+            "container_background": "#ffffff",
+            "text_color": "#000000",
+            "left_title": "従来型レポート",
+            "left_tag": "課題：差が出た後に気づく",
+            "left_metric": "チャンスを後から知る",
+            "left_item_1": "<h2><strong>売上機会を事後に確認する</strong></h2><p></p>",
+            "left_item_2": "<h2><strong>来店ピークや購買率低下に間に合わない</strong></h2><p></p>",
+            "left_item_3": "<h2><strong>対応が店長やスタッフの経験に依存する</strong></h2><p></p>",
+            "left_item_4": "<h2><strong>店舗ごとに判断と実行がばらつく</strong></h2><p></p>",
+            "left_background": "#ffffff",
+            "left_border_color": "#e5e7eb",
+            "left_tag_background": "#f3f4f6",
+            "left_tag_text": "#6b7280",
+            "left_progress_label": "改善タイミング",
+            "left_progress_time": "翌日・週次確認",
+            "left_progress_percent": 20,
+            "left_progress_color": "#ef4444",
+            "right_title": "Flowプラットフォーム",
+            "right_tag": "⚡ 差が出る変化を早く捉える",
+            "right_metric": "チャンスをその場で活かす",
+            "right_item_1": "<h2><strong>来店ピークやKPI変化を早く把握</strong></h2>",
+            "right_item_2": "<h2><strong>購買率低下や人員配置のズレを確認</strong></h2><p></p>",
+            "right_item_3": "<h2><strong>本部・エリア・店舗で同じKPIを共有</strong></h2><p></p>",
+            "right_item_4": "<h2><strong>店舗ごとの判断と実行を標準化</strong></h2><p></p>",
+            "right_background": "#0A2540",
+            "right_text_color": "#ffffff",
+            "right_tag_background": "#1e3a5f",
+            "right_tag_text": "#ffffff",
+            "highlight_color": "#a0b842",
+            "right_progress_label": "改善タイミング",
+            "right_progress_time": "リアルタイム確認",
+            "progress_bar_height": 8,
+            "progress_gradient_start": "#803cee",
+            "progress_gradient_end": "#a0b842",
+            "negative_icon_color": "#ef4444",
+            "positive_icon_color": "#a0b842",
+            "title_size": 24,
+            "metric_size": 42,
+            "list_item_size": 19
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_a3e57c5_fRbQGj"
+      ],
+      "name": "Comparison grid",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
     "testimonials_MY9ERf": {
       "type": "testimonials",
       "blocks": {
@@ -1930,6 +1992,7 @@
     "rich_text_E4i7Ea",
     "rich_text_pkymTT",
     "1777013757bd1f6777",
+    "blocks_PbNh4e",
     "testimonials_MY9ERf",
     "multi_column_m98pty",
     "multi_column_QcVkek",
