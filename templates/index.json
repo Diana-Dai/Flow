@@ -1691,42 +1691,42 @@
           "type": "item",
           "settings": {
             "title": "何店舗から導入できますか？",
-            "content": "<p>Yes, we ship all over the world. Shipping costs will apply, and will be added at checkout. We run discounts and promotions all year, so stay tuned for exclusive deals.</p>"
+            "content": "<p>1店舗から導入可能です。<br/>ただし、店舗間比較や本部・エリア単位での改善に活用する場合は、複数店舗での導入がおすすめです。まずは一部店舗で検証し、効果を確認しながら段階的に展開できます。</p>"
           }
         },
         "item_PDKL9F": {
           "type": "item",
           "settings": {
             "title": "POS連携は必要ですか？",
-            "content": "<p>It depends on where you are. Orders processed here will take 5-7 business days to arrive. Overseas deliveries can take anywhere from 7-16 days. Delivery details will be provided in your confirmation email.</p>"
+            "content": "<p>POS連携なしでも来店数や通行量の計測から始められます。<br/>ただし、売上、購買率、客単価、予算達成率などを正確に分析するには、POSデータとの連携が効果的です。Flowでは、導入目的に合わせて必要なデータ連携を設計します。</p>"
           }
         },
         "item_BBeMmr": {
           "type": "item",
           "settings": {
             "title": "既存のカメラやPOSと連携できますか？",
-            "content": "<p>You can contact us through our contact page! We will be happy to assist you.</p>"
+            "content": "<p>連携できる場合があります。<br/>POS、売上データ、店舗情報などは、APIやCSV連携などの方法で対応できるケースがあります。既存カメラについては、設置位置、画角、精度要件によって判断が必要です。まずは現在の環境を確認したうえで、最適な方法をご提案します。</p>"
           }
         },
         "item_wC7RQN": {
           "type": "item",
           "settings": {
             "title": "カメラ映像は保存されますか？",
-            "content": "<p>Write content to answer to common questions your customers may have about your products, shipping policies..</p>"
+            "content": "<p>Flowは来店数や行動データの分析を目的としており、通常、店舗映像を閲覧・保存する監視カメラサービスではありません。<br/>取得するデータや運用方法は、導入環境や設定内容に応じて事前に確認します。プライバシーや社内ルールに配慮した形で運用設計を行います。</p>"
           }
         },
         "item_dzzyrg": {
           "type": "item",
           "settings": {
             "title": "店舗スタッフでも使えますか？",
-            "content": "<p>Write content to answer to common questions your customers may have about your products, shipping policies..</p>"
+            "content": "<p>はい。店長や店舗スタッフが日々の運用で使えるように設計されています。<br/>来店数、購買率、売上進捗などをわかりやすく確認できるため、専門的な分析スキルがなくても店舗改善に活用できます。本部、エリアマネージャー、店舗が同じKPIを見ながら改善を進められます。</p>"
           }
         },
         "item_PUBCj6": {
           "type": "item",
           "settings": {
             "title": "導入までどのくらいかかりますか？",
-            "content": "<p>Write content to answer to common questions your customers may have about your products, shipping policies..</p>"
+            "content": "<p>店舗数、カメラ設置、POS連携の有無によって異なります。<br/>小規模な導入であれば比較的短期間で開始できますが、複数店舗展開やPOS連携を含む場合は、事前設計と確認期間が必要です。まずは対象店舗、既存システム、確認したいKPIを整理し、導入スケジュールをご提案します。</p>"
           }
         }
       },
