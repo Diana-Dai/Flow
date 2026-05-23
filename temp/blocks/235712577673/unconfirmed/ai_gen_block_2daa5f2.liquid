@@ -1,6 +1,665 @@
+{% doc %}
+  @prompt
+    Create a new custom homepage section for a limited-time campaign.
+    
+    Section purpose:
+    A compact horizontal campaign banner to place directly after the customer logo section and before the “Flowでできること” section.
+    
+    Design requirements:
+    - Full-width section with a centered max-width content container.
+    - Modern SaaS style.
+    - Light background, preferably very pale green or light neutral.
+    - Rounded card with subtle border and soft shadow.
+    - Left side: campaign label, large heading, short description, CTA button, small condition note.
+    - Right side: three compact benefit points.
+    - Desktop layout: two columns, approximately 60% left and 40% right.
+    - Mobile layout: stack the right benefit points below the main text.
+    - Use Flow brand colors:
+      - Navy: #0e366a
+      - Green: #a0b842
+      - Light background: #f6f8f3 or #f7f9fb
+    - The section should be editable in the Shopify theme editor.
+    - Include settings for label, heading, description, button text, button link, condition note, and three benefit items.
+    - Do not include images.
+    - Keep the design clean, simple, and conversion-focused.
+    
+    Default content:
+    
+    Label:
+    期間限定キャンペーン
+    
+    Heading:
+    まずは3店舗から。1店舗分、3ヶ月無料。
+    
+    Description:
+    3店舗以上で導入をご検討の企業様に、1店舗分の月額費用を3ヶ月無料でご提供します。複数店舗で来店・売上・購買率を比較しながら、Flowの効果を確認できます。
+    
+    Benefit 1:
+    3店舗から比較検証
+    店舗ごとの来店数、購買率、売上KPIを確認
+    
+    Benefit 2:
+    1店舗分を3ヶ月無料
+    初期導入しやすい条件でスタート
+    
+    Benefit 3:
+    本格展開を見据えた設計
+    本部・エリア・店舗で活用できる運用を支援
+    
+    Button text:
+    キャンペーンについて相談する
+    
+    Condition note:
+    対象条件、店舗数、連携内容により適用条件が異なる場合があります.
+    
+    Technical requirements:
+    - Generate a Shopify Liquid section file.
+    - Include schema settings so all text and the button link can be edited.
+    - Include CSS inside the section file.
+    - Avoid external libraries.
+    - Ensure responsive design., Changes needed:
+    - Reduce the top and bottom padding of the whole section by about 35%.
+    - Reduce the internal padding of the campaign card by about 25%.
+    - Keep the card centered with a max-width around 1080px.
+    - Keep the two-column desktop layout and stacked mobile layout.
+    - Do not add images.
+    - Keep the visual style clean, modern, and premium., Please update the campaign banner section to add adjustable heading size controls.
+    
+    Keep the current design and layout, but add theme editor settings for:
+    - Desktop heading font size
+    - Mobile heading font size
+    
+    Default values:
+    - Desktop heading size: 32px
+    - Mobile heading size: 24px
+    
+    Also make sure the heading line-height is controlled and balanced:
+    - Desktop line-height: 1.25
+    - Mobile line-height: 1.3
+    
+    Do not change the section layout, colors, content, button style, or benefit items.
+    Only add the heading size controls and apply them to the campaign heading.
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-campaign-banner-{{ ai_gen_id }} {
+    width: 100%;
+    background-color: {{ block.settings.section_background }};
+    padding: 26px 20px;
+  }
+
+  .ai-campaign-banner-container-{{ ai_gen_id }} {
+    max-width: 1080px;
+    margin: 0 auto;
+  }
+
+  .ai-campaign-banner-card-{{ ai_gen_id }} {
+    background-color: {{ block.settings.card_background }};
+    border: 1px solid {{ block.settings.card_border_color }};
+    border-radius: {{ block.settings.card_border_radius }}px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, {{ block.settings.card_shadow_opacity | divided_by: 100.0 }});
+    padding: 30px;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+  }
+
+  .ai-campaign-banner-left-{{ ai_gen_id }} {
+    flex: 1 1 60%;
+  }
+
+  .ai-campaign-banner-label-{{ ai_gen_id }} {
+    display: inline-block;
+    background-color: {{ block.settings.label_background }};
+    color: {{ block.settings.label_text_color }};
+    font-size: {{ block.settings.label_font_size }}px;
+    font-weight: 600;
+    padding: 6px 14px;
+    border-radius: 20px;
+    margin-bottom: 16px;
+  }
+
+  .ai-campaign-banner-heading-{{ ai_gen_id }} {
+    color: {{ block.settings.heading_color }};
+    font-size: {{ block.settings.heading_font_size_desktop }}px;
+    font-weight: 700;
+    line-height: 1.25;
+    margin: 0 0 16px 0;
+  }
+
+  .ai-campaign-banner-description-{{ ai_gen_id }} {
+    color: {{ block.settings.text_color }};
+    font-size: {{ block.settings.text_font_size }}px;
+    line-height: 1.6;
+    margin-bottom: 24px;
+  }
+
+  .ai-campaign-banner-button-{{ ai_gen_id }} {
+    display: inline-block;
+    background-color: {{ block.settings.button_background }};
+    color: {{ block.settings.button_text_color }};
+    font-size: {{ block.settings.button_font_size }}px;
+    font-weight: 600;
+    padding: 14px 28px;
+    border-radius: {{ block.settings.button_border_radius }}px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    margin-bottom: 12px;
+  }
+
+  .ai-campaign-banner-button-{{ ai_gen_id }}:hover {
+    background-color: {{ block.settings.button_hover_background }};
+    transform: translateY(-2px);
+  }
+
+  .ai-campaign-banner-condition-{{ ai_gen_id }} {
+    color: {{ block.settings.condition_text_color }};
+    font-size: {{ block.settings.condition_font_size }}px;
+    line-height: 1.5;
+    margin-top: 12px;
+  }
+
+  .ai-campaign-banner-right-{{ ai_gen_id }} {
+    flex: 1 1 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .ai-campaign-banner-benefit-{{ ai_gen_id }} {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+  }
+
+  .ai-campaign-banner-benefit-icon-{{ ai_gen_id }} {
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    background-color: {{ block.settings.benefit_icon_background }};
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2px;
+  }
+
+  .ai-campaign-banner-benefit-icon-{{ ai_gen_id }} svg {
+    width: 14px;
+    height: 14px;
+    stroke: {{ block.settings.benefit_icon_color }};
+    fill: none;
+    stroke-width: 2.5;
+  }
+
+  .ai-campaign-banner-benefit-content-{{ ai_gen_id }} {
+    flex: 1;
+  }
+
+  .ai-campaign-banner-benefit-title-{{ ai_gen_id }} {
+    color: {{ block.settings.benefit_title_color }};
+    font-size: {{ block.settings.benefit_title_font_size }}px;
+    font-weight: 600;
+    margin: 0 0 4px 0;
+    line-height: 1.4;
+  }
+
+  .ai-campaign-banner-benefit-text-{{ ai_gen_id }} {
+    color: {{ block.settings.benefit_text_color }};
+    font-size: {{ block.settings.benefit_text_font_size }}px;
+    line-height: 1.5;
+    margin: 0;
+  }
+
+  @media screen and (max-width: 989px) {
+    .ai-campaign-banner-card-{{ ai_gen_id }} {
+      flex-direction: column;
+      padding: 24px 18px;
+      gap: 32px;
+    }
+
+    .ai-campaign-banner-left-{{ ai_gen_id }},
+    .ai-campaign-banner-right-{{ ai_gen_id }} {
+      flex: 1 1 100%;
+    }
+
+    .ai-campaign-banner-description-{{ ai_gen_id }} {
+      font-size: {{ block.settings.text_font_size | times: 0.9 }}px;
+    }
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-campaign-banner-{{ ai_gen_id }} {
+      padding: 16px 16px;
+    }
+
+    .ai-campaign-banner-card-{{ ai_gen_id }} {
+      padding: 18px 16px;
+    }
+
+    .ai-campaign-banner-heading-{{ ai_gen_id }} {
+      font-size: {{ block.settings.heading_font_size_mobile }}px;
+      line-height: 1.3;
+    }
+  }
+{% endstyle %}
+
+<div class="ai-campaign-banner-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-campaign-banner-container-{{ ai_gen_id }}">
+    <div class="ai-campaign-banner-card-{{ ai_gen_id }}">
+      <div class="ai-campaign-banner-left-{{ ai_gen_id }}">
+        {% if block.settings.label != blank %}
+          <div class="ai-campaign-banner-label-{{ ai_gen_id }}">
+            {{ block.settings.label }}
+          </div>
+        {% endif %}
+
+        {% if block.settings.heading != blank %}
+          <h2 class="ai-campaign-banner-heading-{{ ai_gen_id }}">
+            {{ block.settings.heading }}
+          </h2>
+        {% endif %}
+
+        {% if block.settings.description != blank %}
+          <div class="ai-campaign-banner-description-{{ ai_gen_id }}">
+            {{ block.settings.description }}
+          </div>
+        {% endif %}
+
+        {% if block.settings.button_text != blank %}
+          <a
+            href="{{ block.settings.button_link }}"
+            class="ai-campaign-banner-button-{{ ai_gen_id }}"
+          >
+            {{ block.settings.button_text }}
+          </a>
+        {% endif %}
+
+        {% if block.settings.condition_note != blank %}
+          <div class="ai-campaign-banner-condition-{{ ai_gen_id }}">
+            {{ block.settings.condition_note }}
+          </div>
+        {% endif %}
+      </div>
+
+      <div class="ai-campaign-banner-right-{{ ai_gen_id }}">
+        {% if block.settings.benefit_1_title != blank %}
+          <div class="ai-campaign-banner-benefit-{{ ai_gen_id }}">
+            <div class="ai-campaign-banner-benefit-icon-{{ ai_gen_id }}">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+            </div>
+            <div class="ai-campaign-banner-benefit-content-{{ ai_gen_id }}">
+              <h3 class="ai-campaign-banner-benefit-title-{{ ai_gen_id }}">
+                {{ block.settings.benefit_1_title }}
+              </h3>
+              {% if block.settings.benefit_1_text != blank %}
+                <p class="ai-campaign-banner-benefit-text-{{ ai_gen_id }}">
+                  {{ block.settings.benefit_1_text }}
+                </p>
+              {% endif %}
+            </div>
+          </div>
+        {% endif %}
+
+        {% if block.settings.benefit_2_title != blank %}
+          <div class="ai-campaign-banner-benefit-{{ ai_gen_id }}">
+            <div class="ai-campaign-banner-benefit-icon-{{ ai_gen_id }}">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+            </div>
+            <div class="ai-campaign-banner-benefit-content-{{ ai_gen_id }}">
+              <h3 class="ai-campaign-banner-benefit-title-{{ ai_gen_id }}">
+                {{ block.settings.benefit_2_title }}
+              </h3>
+              {% if block.settings.benefit_2_text != blank %}
+                <p class="ai-campaign-banner-benefit-text-{{ ai_gen_id }}">
+                  {{ block.settings.benefit_2_text }}
+                </p>
+              {% endif %}
+            </div>
+          </div>
+        {% endif %}
+
+        {% if block.settings.benefit_3_title != blank %}
+          <div class="ai-campaign-banner-benefit-{{ ai_gen_id }}">
+            <div class="ai-campaign-banner-benefit-icon-{{ ai_gen_id }}">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+            </div>
+            <div class="ai-campaign-banner-benefit-content-{{ ai_gen_id }}">
+              <h3 class="ai-campaign-banner-benefit-title-{{ ai_gen_id }}">
+                {{ block.settings.benefit_3_title }}
+              </h3>
+              {% if block.settings.benefit_3_text != blank %}
+                <p class="ai-campaign-banner-benefit-text-{{ ai_gen_id }}">
+                  {{ block.settings.benefit_3_text }}
+                </p>
+              {% endif %}
+            </div>
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "Campaign banner",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Campaign content"
+    },
+    {
+      "type": "text",
+      "id": "label",
+      "label": "Campaign label",
+      "default": "期間限定キャンペーン"
+    },
+    {
+      "type": "textarea",
+      "id": "heading",
+      "label": "Heading",
+      "default": "まずは3店舗から。1店舗分、3ヶ月無料。"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description",
+      "default": "3店舗以上で導入をご検討の企業様に、1店舗分の月額費用を3ヶ月無料でご提供します。複数店舗で来店・売上・購買率を比較しながら、Flowの効果を確認できます。"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button text",
+      "default": "キャンペーンについて相談する"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button link"
+    },
+    {
+      "type": "textarea",
+      "id": "condition_note",
+      "label": "Condition note",
+      "default": "対象条件、店舗数、連携内容により適用条件が異なる場合があります。"
+    },
+    {
+      "type": "header",
+      "content": "Benefits"
+    },
+    {
+      "type": "text",
+      "id": "benefit_1_title",
+      "label": "Benefit 1 title",
+      "default": "3店舗から比較検証"
+    },
+    {
+      "type": "text",
+      "id": "benefit_1_text",
+      "label": "Benefit 1 text",
+      "default": "店舗ごとの来店数、購買率、売上KPIを確認"
+    },
+    {
+      "type": "text",
+      "id": "benefit_2_title",
+      "label": "Benefit 2 title",
+      "default": "1店舗分を3ヶ月無料"
+    },
+    {
+      "type": "text",
+      "id": "benefit_2_text",
+      "label": "Benefit 2 text",
+      "default": "初期導入しやすい条件でスタート"
+    },
+    {
+      "type": "text",
+      "id": "benefit_3_title",
+      "label": "Benefit 3 title",
+      "default": "本格展開を見据えた設計"
+    },
+    {
+      "type": "text",
+      "id": "benefit_3_text",
+      "label": "Benefit 3 text",
+      "default": "本部・エリア・店舗で活用できる運用を支援"
+    },
+    {
+      "type": "header",
+      "content": "Section style"
+    },
+    {
+      "type": "color",
+      "id": "section_background",
+      "label": "Section background",
+      "default": "#f6f8f3"
+    },
+    {
+      "type": "color",
+      "id": "card_background",
+      "label": "Card background",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "card_border_color",
+      "label": "Card border",
+      "default": "#e5e7eb"
+    },
+    {
+      "type": "range",
+      "id": "card_border_radius",
+      "label": "Card border radius",
+      "min": 0,
+      "max": 40,
+      "step": 4,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "card_shadow_opacity",
+      "label": "Card shadow opacity",
+      "min": 0,
+      "max": 30,
+      "step": 5,
+      "unit": "%",
+      "default": 10
+    },
+    {
+      "type": "header",
+      "content": "Label style"
+    },
+    {
+      "type": "color",
+      "id": "label_background",
+      "label": "Background",
+      "default": "#a0b842"
+    },
+    {
+      "type": "color",
+      "id": "label_text_color",
+      "label": "Text",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "label_font_size",
+      "label": "Font size",
+      "min": 10,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "default": 13
+    },
+    {
+      "type": "header",
+      "content": "Heading style"
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Color",
+      "default": "#0e366a"
+    },
+    {
+      "type": "range",
+      "id": "heading_font_size_desktop",
+      "label": "Desktop font size",
+      "min": 20,
+      "max": 48,
+      "step": 2,
+      "unit": "px",
+      "default": 32
+    },
+    {
+      "type": "range",
+      "id": "heading_font_size_mobile",
+      "label": "Mobile font size",
+      "min": 16,
+      "max": 36,
+      "step": 2,
+      "unit": "px",
+      "default": 24
+    },
+    {
+      "type": "header",
+      "content": "Text style"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Description color",
+      "default": "#4b5563"
+    },
+    {
+      "type": "range",
+      "id": "text_font_size",
+      "label": "Description font size",
+      "min": 12,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "color",
+      "id": "condition_text_color",
+      "label": "Condition note color",
+      "default": "#9ca3af"
+    },
+    {
+      "type": "range",
+      "id": "condition_font_size",
+      "label": "Condition note font size",
+      "min": 10,
+      "max": 16,
+      "step": 1,
+      "unit": "px",
+      "default": 12
+    },
+    {
+      "type": "header",
+      "content": "Button style"
+    },
+    {
+      "type": "color",
+      "id": "button_background",
+      "label": "Background",
+      "default": "#0e366a"
+    },
+    {
+      "type": "color",
+      "id": "button_hover_background",
+      "label": "Hover background",
+      "default": "#0a2850"
+    },
+    {
+      "type": "color",
+      "id": "button_text_color",
+      "label": "Text",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "button_font_size",
+      "label": "Font size",
+      "min": 12,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "button_border_radius",
+      "label": "Border radius",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "default": 8
+    },
+    {
+      "type": "header",
+      "content": "Benefit style"
+    },
+    {
+      "type": "color",
+      "id": "benefit_icon_background",
+      "label": "Icon background",
+      "default": "#a0b842"
+    },
+    {
+      "type": "color",
+      "id": "benefit_icon_color",
+      "label": "Icon color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "benefit_title_color",
+      "label": "Title color",
+      "default": "#0e366a"
+    },
+    {
+      "type": "range",
+      "id": "benefit_title_font_size",
+      "label": "Title font size",
+      "min": 12,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "default": 15
+    },
+    {
+      "type": "color",
+      "id": "benefit_text_color",
+      "label": "Text color",
+      "default": "#6b7280"
+    },
+    {
+      "type": "range",
+      "id": "benefit_text_font_size",
+      "label": "Text font size",
+      "min": 11,
+      "max": 18,
+      "step": 1,
+      "unit": "px",
+      "default": 13
+    }
+  ],
+  "presets": [
+    {
+      "name": "Campaign banner"
+    }
+  ]
+}
 {% endschema %}
