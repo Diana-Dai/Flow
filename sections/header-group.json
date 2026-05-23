@@ -17,7 +17,7 @@
         "message": {
           "type": "message",
           "settings": {
-            "text": "期間限定｜3店舗スタートキャンペーン実施中。3店舗以上の導入で、1店舗分の月額費用を3ヶ月無料に。",
+            "text": "期間限定｜まずは3店舗から。1店舗分、3ヶ月無料。",
             "url": "shopify://pages/demo-booking"
           }
         }
@@ -28,7 +28,7 @@
       "settings": {
         "enable_sticky": true,
         "show_on_homepage_only": false,
-        "navigation_mode": "scrolling",
+        "navigation_mode": "arrows",
         "autoplay": true,
         "cycle_speed": 6,
         "scrolling_speed": 30,
