@@ -384,9 +384,9 @@
             "icon_background_type": "circle",
             "icon_background": "#a0b842",
             "icon_color": "#ffffff",
-            "background_color": "#11243e",
-            "text_color": "#f9fafb",
-            "border_color": "",
+            "background_color": "#ffffff",
+            "text_color": "#1a1a1a",
+            "border_color": "#11243e",
             "show_controls": false,
             "column_size": "3",
             "title": "改善アクションへ変える",
@@ -1704,28 +1704,28 @@
         "item_BBeMmr": {
           "type": "item",
           "settings": {
-            "title": "カメラ映像は保存されますか？",
+            "title": "既存のカメラやPOSと連携できますか？",
             "content": "<p>You can contact us through our contact page! We will be happy to assist you.</p>"
           }
         },
         "item_wC7RQN": {
           "type": "item",
           "settings": {
-            "title": "店舗スタッフでも使えますか？",
+            "title": "カメラ映像は保存されますか？",
             "content": "<p>Write content to answer to common questions your customers may have about your products, shipping policies..</p>"
           }
         },
         "item_dzzyrg": {
           "type": "item",
           "settings": {
-            "title": "導入までどのくらいかかりますか？",
+            "title": "店舗スタッフでも使えますか？",
             "content": "<p>Write content to answer to common questions your customers may have about your products, shipping policies..</p>"
           }
         },
         "item_PUBCj6": {
           "type": "item",
           "settings": {
-            "title": "Flow AIは何をしてくれますか？",
+            "title": "導入までどのくらいかかりますか？",
             "content": "<p>Write content to answer to common questions your customers may have about your products, shipping policies..</p>"
           }
         }
@@ -1774,7 +1774,7 @@
         "richtext_b7cQCP": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Flowは、来店・購買・人員配置などの店舗データを統合し、<br/>次に取るべき行動を見える化します。</p>"
+            "content": "<p><strong>来店計測、POS連携、店舗KPI、Flow AIの活用方法を、<br/>貴社の店舗運営に合わせてご提案します。</strong></p><p></p>"
           }
         },
         "button_39CcgY": {
@@ -1782,7 +1782,7 @@
           "settings": {
             "style": "fill",
             "size": "base",
-            "text": "無料デモを依頼する",
+            "text": "デモを相談する",
             "url": "",
             "background": "#a0b842",
             "text_color": "#ffffff"
