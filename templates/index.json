@@ -41,6 +41,13 @@
             "content": "<p>Flowは、店舗データを日々の判断と実行改善につなげるリテール分析プラットフォームです。<br/>来店数・通行量・POS・店舗運営データを統合し、売上改善に必要な次の一手を明確にします。</p><p></p>"
           }
         },
+        "subheading_LqYNpU": {
+          "type": "subheading",
+          "settings": {
+            "text": "来店計測 × POS連携 × 店舗KPI × Flow AI",
+            "icon": "none"
+          }
+        },
         "buttons_pt4Ted": {
           "type": "buttons",
           "settings": {
@@ -58,10 +65,10 @@
             "text_color_2": ""
           }
         },
-        "subheading_LqYNpU": {
+        "subheading_73kLKG": {
           "type": "subheading",
           "settings": {
-            "text": "来店計測 × POS連携 × 店舗KPI × Flow AI",
+            "text": "対象企業限定：スタートプログラム実施中",
             "icon": "none"
           }
         },
@@ -80,8 +87,9 @@
         "richtext_LcTpMq",
         "heading_NHgw9k",
         "richtext_JWfj6P",
-        "buttons_pt4Ted",
         "subheading_LqYNpU",
+        "buttons_pt4Ted",
+        "subheading_73kLKG",
         "image_Dtind8"
       ],
       "name": "Rich text",

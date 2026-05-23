@@ -26,9 +26,9 @@
         "message"
       ],
       "settings": {
-        "enable_sticky": false,
+        "enable_sticky": true,
         "show_on_homepage_only": false,
-        "navigation_mode": "scrolling",
+        "navigation_mode": "arrows",
         "autoplay": false,
         "cycle_speed": 6,
         "scrolling_speed": 10,
