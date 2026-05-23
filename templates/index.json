@@ -188,6 +188,164 @@
         "text_color": "#1a1a1a"
       }
     },
+    "multi_column_LJEQgi": {
+      "type": "multi-column",
+      "blocks": {
+        "item_zBQhUN": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-camera",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "#a0b842",
+            "icon_color": "#ffffff",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "来店数・通行量を計測",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_EQeKgc": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-money",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "#a0b842",
+            "icon_color": "#ffffff",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "POS・売上データと連携",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_4w9BQw": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-percent",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "#a0b842",
+            "icon_color": "#ffffff",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "購買率・入店率を可視化",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_ij8qGM": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-pin",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "#a0b842",
+            "icon_color": "#ffffff",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "店舗・エリア・本部でKPIを共有",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_UQ7Gha": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-target",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "#a0b842",
+            "icon_color": "#ffffff",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "売上未達の要因を分解",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_zEftHB": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-chat",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "#a0b842",
+            "icon_color": "#ffffff",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "改善アクションを店舗運営に反映",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_zBQhUN",
+        "item_EQeKgc",
+        "item_4w9BQw",
+        "item_ij8qGM",
+        "item_UQ7Gha",
+        "item_zEftHB"
+      ],
+      "name": "Multi-column",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "center",
+        "subheading": "",
+        "title": "Flowでできること",
+        "content": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
     "impact_text_gi97zd": {
       "type": "impact-text",
       "blocks": {
@@ -375,6 +533,164 @@
         "remove_vertical_spacing": false,
         "remove_horizontal_spacing": false,
         "background": "#f9fafb",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "multi_column_m98pty": {
+      "type": "multi-column",
+      "blocks": {
+        "item_cFWAib": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "来店・通行量データ",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<p>来店数、通行量、入店率、滞在時間、属性、回遊</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_giQcPz": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "POS・売上データ",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<p>売上、客単価、購買点数、購買率、予算達成率<br/></p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_idXPCH": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "店舗運営データ",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<p>シフト、人員配置、営業時間、店舗属性</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_jfU6Ra": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "外部環境データ",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<p>天候、曜日、イベント、商業施設要因</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_6h7RnV": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "業務ナレッジ",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<p>SOP、マニュアル、施策メモ、店舗コメント<br/></p><p></p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_AKntD7": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "Column title",
+            "heading_tag": "h4",
+            "subheading": "<p>Organize content into multiple columns to share useful information to your customers about your products, values...</p>",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_cFWAib",
+        "item_giQcPz",
+        "item_idXPCH",
+        "item_jfU6Ra",
+        "item_6h7RnV",
+        "item_AKntD7"
+      ],
+      "name": "Multi-column",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "start",
+        "subheading": "",
+        "title": "店舗データをつなぎ、判断できる状態へ",
+        "content": "",
+        "background": "",
         "background_gradient": "",
         "text_color": ""
       }
@@ -680,7 +996,7 @@
         "text_alignment": "start",
         "subheading": "",
         "title": "実行改善は、数字で確認できる",
-        "content": "<p>実行が変われば、店舗成果も変わる。<br/>Flowは、実際の店舗運営データでその変化を確認します。</p>",
+        "content": "<p>実行が変われば、店舗成果も変わる。<br/>Flowは、実際の店舗運営データでその変化を確認します。<br/><strong>Flowは、来店・購買・実行の変化を数字で確認しながら改善を進めます。</strong></p>",
         "background": "#ffffff",
         "background_gradient": "",
         "text_color": ""
@@ -870,7 +1186,7 @@
             "icon_background_type": "circle",
             "icon_background": "",
             "icon_color": "",
-            "background_color": "#36465c",
+            "background_color": "#11243e",
             "text_color": "",
             "border_color": "#36465c",
             "show_controls": false,
@@ -1070,6 +1386,123 @@
         "testimonial_card_text_color": ""
       }
     },
+    "1779516969a6df32a9": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_c94f27c_ewNMcR": {
+          "type": "ai_gen_block_c94f27c",
+          "settings": {
+            "heading": "100以上のブランドで、店舗運営を支援",
+            "heading_alignment": "center",
+            "heading_size": 32,
+            "heading_color": "#1a1a1a",
+            "heading_spacing": 40,
+            "logo_1": "shopify://shop_images/Baycrews_White_1.png",
+            "logo_2": "shopify://shop_images/Cole_Haan_White_836317d3-12dd-4e9a-b647-80aab91df0b2.png",
+            "logo_3": "shopify://shop_images/Plaza_White_d4060480-52ad-4a29-b53d-1f7b116f8343.png",
+            "logo_4": "shopify://shop_images/Triumph_logo.png",
+            "logo_5": "shopify://shop_images/Daytona_White_e03a3f9c-40ca-45b1-8866-4528e821f7f5.png",
+            "logo_6": "shopify://shop_images/Flow_Client_Case_Study_Banners_1.png",
+            "logo_7": "shopify://shop_images/Right_One_White_dbf02fb7-d61d-44d5-bde4-b757aaca5b61.png",
+            "logo_8": "shopify://shop_images/Stripe_White_f1ba215a-c741-4fa7-8b23-cd0b45a74f31.png",
+            "logo_width": 150,
+            "logo_height": 80,
+            "logo_spacing": 30,
+            "logo_inner_padding": 10,
+            "logo_border_radius": 8,
+            "logo_background": "#ffffff",
+            "logo_opacity": 0.7,
+            "scroll_speed": 30,
+            "pause_on_hover": "paused",
+            "desktop_width_percent": 100,
+            "background_color": "#f9fafb",
+            "section_padding": 60,
+            "logo_padding": 20
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_c94f27c_ewNMcR"
+      ],
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "faq_WEg6pU": {
+      "type": "faq",
+      "blocks": {
+        "item_nBmWqp": {
+          "type": "item",
+          "settings": {
+            "title": "Do you ship overseas?",
+            "content": "<p>Yes, we ship all over the world. Shipping costs will apply, and will be added at checkout. We run discounts and promotions all year, so stay tuned for exclusive deals.</p>"
+          }
+        },
+        "item_PDKL9F": {
+          "type": "item",
+          "settings": {
+            "title": "POS連携は必要ですか？",
+            "content": "<p>It depends on where you are. Orders processed here will take 5-7 business days to arrive. Overseas deliveries can take anywhere from 7-16 days. Delivery details will be provided in your confirmation email.</p>"
+          }
+        },
+        "item_BBeMmr": {
+          "type": "item",
+          "settings": {
+            "title": "カメラ映像は保存されますか？",
+            "content": "<p>You can contact us through our contact page! We will be happy to assist you.</p>"
+          }
+        },
+        "item_wC7RQN": {
+          "type": "item",
+          "settings": {
+            "title": "店舗スタッフでも使えますか？",
+            "content": "<p>Write content to answer to common questions your customers may have about your products, shipping policies..</p>"
+          }
+        },
+        "item_dzzyrg": {
+          "type": "item",
+          "settings": {
+            "title": "導入までどのくらいかかりますか？",
+            "content": "<p>Write content to answer to common questions your customers may have about your products, shipping policies..</p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_nBmWqp",
+        "item_PDKL9F",
+        "item_BBeMmr",
+        "item_wC7RQN",
+        "item_dzzyrg"
+      ],
+      "name": "FAQ",
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "FAQ",
+        "content": "<p>Use this text to share information about your product or shipping policies.</p>",
+        "team_avatar_width": 160,
+        "support_hours": "Our customer support is available Monday to Friday: 8am-8:30pm.",
+        "answer_time": "Average answer time: 24h",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "",
+        "accordion_text_color": ""
+      }
+    },
     "image_with_text_overlay_MVHcWF": {
       "type": "image-with-text-overlay",
       "blocks": {
@@ -1097,6 +1530,17 @@
             "text_color": "#ffffff"
           }
         },
+        "button_kMLqyz": {
+          "type": "button",
+          "settings": {
+            "style": "fill",
+            "size": "base",
+            "text": "店舗データ活用診断を受ける",
+            "url": "",
+            "background": "#ffffff",
+            "text_color": "#11243e"
+          }
+        },
         "liquid_wJy64L": {
           "type": "liquid",
           "settings": {
@@ -1114,6 +1558,7 @@
         "heading_W76pLA",
         "richtext_b7cQCP",
         "button_39CcgY",
+        "button_kMLqyz",
         "liquid_wJy64L",
         "richtext_8bpctG"
       ],
@@ -1141,10 +1586,12 @@
     "rich_text_AGR3yT",
     "logo_list_bzafjC",
     "rich_text_YiW9P3",
+    "multi_column_LJEQgi",
     "impact_text_gi97zd",
     "rich_text_E4i7Ea",
     "rich_text_pkymTT",
     "1777013757bd1f6777",
+    "multi_column_m98pty",
     "multi_column_QcVkek",
     "section-15",
     "multi_column_etdDPE",
@@ -1153,6 +1600,8 @@
     "rich_text_iYFe9Q",
     "multi_column_dQq9tA",
     "testimonials_98zPBi",
+    "1779516969a6df32a9",
+    "faq_WEg6pU",
     "image_with_text_overlay_MVHcWF"
   ]
 }
