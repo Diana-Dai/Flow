@@ -274,6 +274,9 @@
       "block_order": [
         "ai_gen_block_2daa5f2_XFW7cb"
       ],
+      "custom_css": [
+        "{padding-top: 90px;}"
+      ],
       "settings": {
         "full_width": true,
         "remove_vertical_spacing": false,
