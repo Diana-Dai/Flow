@@ -649,7 +649,7 @@
         "heading_X97dmW": {
           "type": "heading",
           "settings": {
-            "text": "問題はデータではない。実行だ。",
+            "text": "売上改善のチャンスは、一部の瞬間に集中する。",
             "heading_tag": "h1",
             "text_color": "",
             "gradient": ""
@@ -658,7 +658,7 @@
         "richtext_CmeGHi": {
           "type": "richtext",
           "settings": {
-            "content": "<p>店舗の成果を左右するのは、データの量ではない。<br/>判断から実行までの速さです。</p>"
+            "content": "<p>来店が増える時間帯、購買率が落ちるタイミング、人員配置が合わない売場。<br/>Flowは、成果に差が出る変化を早く捉え、店舗がその日のうちに動ける状態をつくります。</p>"
           }
         }
       },
@@ -729,6 +729,7 @@
       "block_order": [
         "ai_gen_block_a3e57c5_EaJMxV"
       ],
+      "disabled": true,
       "custom_css": [
         "h2 {text-align: center;}"
       ],
