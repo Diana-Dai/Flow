@@ -86,6 +86,54 @@
         "text_color": ""
       }
     },
+    "1779516969a6df32a9": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_c94f27c_ewNMcR": {
+          "type": "ai_gen_block_c94f27c",
+          "settings": {
+            "heading": "100以上のブランドで、店舗運営を支援",
+            "heading_alignment": "center",
+            "heading_size": 28,
+            "heading_color": "#1a1a1a",
+            "heading_spacing": 30,
+            "logo_1": "shopify://shop_images/Baycrews_White_1.png",
+            "logo_2": "shopify://shop_images/Cole_Haan_White_836317d3-12dd-4e9a-b647-80aab91df0b2.png",
+            "logo_3": "shopify://shop_images/Plaza_White_d4060480-52ad-4a29-b53d-1f7b116f8343.png",
+            "logo_4": "shopify://shop_images/Triumph_logo.png",
+            "logo_5": "shopify://shop_images/Daytona_White_e03a3f9c-40ca-45b1-8866-4528e821f7f5.png",
+            "logo_6": "shopify://shop_images/Flow_Client_Case_Study_Banners_1.png",
+            "logo_7": "shopify://shop_images/Right_One_White_dbf02fb7-d61d-44d5-bde4-b757aaca5b61.png",
+            "logo_8": "shopify://shop_images/Stripe_White_f1ba215a-c741-4fa7-8b23-cd0b45a74f31.png",
+            "logo_width": 150,
+            "logo_height": 80,
+            "logo_spacing": 30,
+            "logo_inner_padding": 10,
+            "logo_border_radius": 8,
+            "logo_background": "#ffffff",
+            "logo_opacity": 0.7,
+            "scroll_speed": 30,
+            "pause_on_hover": "paused",
+            "desktop_width_percent": 100,
+            "background_color": "#f9fafb",
+            "section_padding": 60,
+            "logo_padding": 20
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_c94f27c_ewNMcR"
+      ],
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
     "logo_list_bzafjC": {
       "type": "logo-list",
       "blocks": {
@@ -137,12 +185,13 @@
         "logo_gHbbQF",
         "logo_B8XxPT"
       ],
+      "disabled": true,
       "name": "Logo list",
       "settings": {
         "full_width": true,
         "stack_mobile": true,
         "title": "",
-        "content": "<h4><strong>100以上のブランドで、店舗運営を支援</strong></h4>",
+        "content": "<h5><strong>100以上のブランドで、店舗運営を支援</strong></h5>",
         "text_alignment": "center",
         "items_per_row": 5,
         "background": "",
@@ -1386,54 +1435,6 @@
         "testimonial_card_text_color": ""
       }
     },
-    "1779516969a6df32a9": {
-      "type": "_blocks",
-      "blocks": {
-        "ai_gen_block_c94f27c_ewNMcR": {
-          "type": "ai_gen_block_c94f27c",
-          "settings": {
-            "heading": "100以上のブランドで、店舗運営を支援",
-            "heading_alignment": "center",
-            "heading_size": 32,
-            "heading_color": "#1a1a1a",
-            "heading_spacing": 40,
-            "logo_1": "shopify://shop_images/Baycrews_White_1.png",
-            "logo_2": "shopify://shop_images/Cole_Haan_White_836317d3-12dd-4e9a-b647-80aab91df0b2.png",
-            "logo_3": "shopify://shop_images/Plaza_White_d4060480-52ad-4a29-b53d-1f7b116f8343.png",
-            "logo_4": "shopify://shop_images/Triumph_logo.png",
-            "logo_5": "shopify://shop_images/Daytona_White_e03a3f9c-40ca-45b1-8866-4528e821f7f5.png",
-            "logo_6": "shopify://shop_images/Flow_Client_Case_Study_Banners_1.png",
-            "logo_7": "shopify://shop_images/Right_One_White_dbf02fb7-d61d-44d5-bde4-b757aaca5b61.png",
-            "logo_8": "shopify://shop_images/Stripe_White_f1ba215a-c741-4fa7-8b23-cd0b45a74f31.png",
-            "logo_width": 150,
-            "logo_height": 80,
-            "logo_spacing": 30,
-            "logo_inner_padding": 10,
-            "logo_border_radius": 8,
-            "logo_background": "#ffffff",
-            "logo_opacity": 0.7,
-            "scroll_speed": 30,
-            "pause_on_hover": "paused",
-            "desktop_width_percent": 100,
-            "background_color": "#f9fafb",
-            "section_padding": 60,
-            "logo_padding": 20
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "ai_gen_block_c94f27c_ewNMcR"
-      ],
-      "settings": {
-        "full_width": true,
-        "remove_vertical_spacing": false,
-        "remove_horizontal_spacing": false,
-        "background": "",
-        "background_gradient": "",
-        "text_color": ""
-      }
-    },
     "faq_WEg6pU": {
       "type": "faq",
       "blocks": {
@@ -1584,6 +1585,7 @@
   },
   "order": [
     "rich_text_AGR3yT",
+    "1779516969a6df32a9",
     "logo_list_bzafjC",
     "rich_text_YiW9P3",
     "multi_column_LJEQgi",
@@ -1600,7 +1602,6 @@
     "rich_text_iYFe9Q",
     "multi_column_dQq9tA",
     "testimonials_98zPBi",
-    "1779516969a6df32a9",
     "faq_WEg6pU",
     "image_with_text_overlay_MVHcWF"
   ]
