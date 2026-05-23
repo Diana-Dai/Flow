@@ -313,6 +313,7 @@
         "item_MmBBUG",
         "item_4UgVar"
       ],
+      "disabled": true,
       "name": "Text with icons",
       "settings": {
         "full_width": true,
@@ -337,15 +338,15 @@
             "icon_background_type": "circle",
             "icon_background": "#a0b842",
             "icon_color": "#ffffff",
-            "background_color": "",
-            "text_color": "",
-            "border_color": "",
+            "background_color": "rgba(0,0,0,0)",
+            "text_color": "#1a1a1a",
+            "border_color": "#11243e",
             "show_controls": false,
             "column_size": "3",
-            "title": "来店数・通行量を計測",
+            "title": "店舗行動を計測する",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "",
+            "content": "<p>来店数、通行量、入店率、滞在時間を正確に把握。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -360,14 +361,14 @@
             "icon_background": "#a0b842",
             "icon_color": "#ffffff",
             "background_color": "",
-            "text_color": "",
-            "border_color": "",
+            "text_color": "#1a1a1a",
+            "border_color": "#11243e",
             "show_controls": false,
             "column_size": "3",
-            "title": "POS・売上データと連携",
+            "title": "売上データとつなぐ",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "",
+            "content": "<p>POS・売上・購買率・客単価を店舗KPIとして可視化。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -376,20 +377,20 @@
         "item_4w9BQw": {
           "type": "item",
           "settings": {
-            "icon": "picto-percent",
+            "icon": "picto-comment",
             "icon_width": 32,
             "icon_background_type": "circle",
             "icon_background": "#a0b842",
             "icon_color": "#ffffff",
-            "background_color": "",
-            "text_color": "",
+            "background_color": "#11243e",
+            "text_color": "#f9fafb",
             "border_color": "",
             "show_controls": false,
             "column_size": "3",
-            "title": "購買率・入店率を可視化",
+            "title": "改善アクションへ変える",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "",
+            "content": "<p>売上未達の要因を分解し、店舗・本部で次の行動を共有。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -397,6 +398,7 @@
         },
         "item_ij8qGM": {
           "type": "item",
+          "disabled": true,
           "settings": {
             "icon": "picto-pin",
             "icon_width": 32,
@@ -419,6 +421,7 @@
         },
         "item_UQ7Gha": {
           "type": "item",
+          "disabled": true,
           "settings": {
             "icon": "picto-target",
             "icon_width": 32,
@@ -441,6 +444,7 @@
         },
         "item_zEftHB": {
           "type": "item",
+          "disabled": true,
           "settings": {
             "icon": "picto-chat",
             "icon_width": 32,
@@ -470,16 +474,15 @@
         "item_UQ7Gha",
         "item_zEftHB"
       ],
-      "disabled": true,
       "name": "Multi-column",
       "settings": {
         "full_width": true,
         "stack_on_mobile": false,
         "gap": "medium",
-        "text_alignment": "center",
+        "text_alignment": "start",
         "subheading": "",
         "title": "Flowでできること",
-        "content": "",
+        "content": "<p><strong>来店・売上・店舗運営データをつなぎ、売上改善に必要な判断を支援します。</strong></p>",
         "background": "",
         "background_gradient": "",
         "text_color": ""
