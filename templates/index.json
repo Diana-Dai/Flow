@@ -1747,16 +1747,19 @@
         "item_iCLHQE",
         "item_PUBCj6"
       ],
+      "custom_css": [
+        "{padding-top: 90px;}"
+      ],
       "name": "FAQ",
       "settings": {
         "full_width": true,
-        "subheading": "",
+        "subheading": "導入前の不安を解消",
         "title": "よくある質問",
-        "content": "",
+        "content": "<p><strong>POS連携、カメラ、店舗スタッフの利用、Flow AIの活用方法など、導入前によく確認される内容をまとめました。</strong></p>",
         "team_avatar_width": 160,
         "support_hours": "",
         "answer_time": "",
-        "button_text": "",
+        "button_text": "導入について相談する",
         "button_url": "",
         "text_position": "start",
         "background": "",
