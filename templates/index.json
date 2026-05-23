@@ -709,7 +709,7 @@
         "full_width": true,
         "content_width": "small",
         "text_position": "center",
-        "background": "",
+        "background": "#f9fafb",
         "background_gradient": "",
         "text_color": ""
       }
