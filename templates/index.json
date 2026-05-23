@@ -226,13 +226,13 @@
     "1779530497bf2195e7": {
       "type": "_blocks",
       "blocks": {
-        "ai_gen_block_2daa5f2_V7eXcy": {
+        "ai_gen_block_2daa5f2_XFW7cb": {
           "type": "ai_gen_block_2daa5f2",
           "settings": {
             "label": "期間限定キャンペーン",
-            "heading": "まずは3店舗から。1店舗分、3ヶ月無料。",
-            "description": "3店舗以上で導入をご検討の企業様に、1店舗分の月額費用を3ヶ月無料でご提供します。複数店舗で来店・売上・購買率を比較しながら、Flowの効果を確認できます。",
-            "button_text": "キャンペーンについて相談する",
+            "heading": "まず3店舗導入で、1店舗分3ヶ月無料。",
+            "description": "3店舗以上の導入で、1店舗分の月額費用を3ヶ月無料に。来店・売上・購買率を店舗ごとに比較し、Flowの効果を確認できます。",
+            "button_text": "キャンペーンを相談する",
             "button_link": "",
             "condition_note": "対象条件、店舗数、連携内容により適用条件が異なる場合があります。",
             "benefit_1_title": "3店舗から比較検証",
@@ -241,7 +241,7 @@
             "benefit_2_text": "初期導入しやすい条件でスタート",
             "benefit_3_title": "本格展開を見据えた設計",
             "benefit_3_text": "本部・エリア・店舗で活用できる運用を支援",
-            "section_background": "#f6f8f3",
+            "section_background": "rgba(0,0,0,0)",
             "card_background": "#ffffff",
             "card_border_color": "#e5e7eb",
             "card_border_radius": 16,
@@ -272,7 +272,7 @@
         }
       },
       "block_order": [
-        "ai_gen_block_2daa5f2_V7eXcy"
+        "ai_gen_block_2daa5f2_XFW7cb"
       ],
       "settings": {
         "full_width": true,
