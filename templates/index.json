@@ -1169,7 +1169,7 @@
         "full_width": true,
         "content_width": "medium",
         "text_position": "center",
-        "background": "rgba(0,0,0,0)",
+        "background": "#ffffff",
         "background_gradient": "",
         "text_color": ""
       }
