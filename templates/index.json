@@ -38,7 +38,7 @@
         "richtext_JWfj6P": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Flowは、来店分析・コンバージョン分析・人員最適化をもとに、店舗運営の判断を支援します。<br/>全国約1000店舗での導入・運用経験。</p>"
+            "content": "<p>Flowは、来店数・通行量・POS・店舗運営データをつなぎ、売上改善に必要な判断と実行を支援するリテール分析プラットフォームです。</p><p></p>"
           }
         },
         "buttons_pt4Ted": {
@@ -46,13 +46,13 @@
           "settings": {
             "style_1": "fill",
             "size_1": "base",
-            "text_1": "仕組みを見る",
+            "text_1": "デモを相談する",
             "url_1": "",
             "background_1": "",
             "text_color_1": "",
             "style_2": "outline",
             "size_2": "base",
-            "text_2": "デモを依頼する",
+            "text_2": "導入事例を見る",
             "url_2": "",
             "background_2": "",
             "text_color_2": ""
@@ -81,6 +81,58 @@
         "full_width": true,
         "content_width": "large",
         "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "1779523683cd5e4ed9": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_3c85fdc_DqQckp": {
+          "type": "ai_gen_block_3c85fdc",
+          "settings": {
+            "heading": "<strong>100以上のブランドで、店舗運営を支援</strong>",
+            "content": "",
+            "text_alignment": "center",
+            "heading_size": 32,
+            "content_size": 16,
+            "heading_color": "#11243e",
+            "content_color": "#677279",
+            "logo_1": "shopify://shop_images/Baycrews_White_1.png",
+            "logo_2": "shopify://shop_images/Flow_Client_Case_Study_Banners_1.png",
+            "logo_3": "shopify://shop_images/Daytona_White_e03a3f9c-40ca-45b1-8866-4528e821f7f5.png",
+            "logo_4": "shopify://shop_images/Cole_Haan_White_836317d3-12dd-4e9a-b647-80aab91df0b2.png",
+            "logo_5": "shopify://shop_images/Triumph_logo.png",
+            "logo_6": "shopify://shop_images/Plaza_White_d4060480-52ad-4a29-b53d-1f7b116f8343.png",
+            "logo_7": "shopify://shop_images/Stripe_White_f1ba215a-c741-4fa7-8b23-cd0b45a74f31.png",
+            "logo_8": "shopify://shop_images/Brooks_B.png",
+            "logo_9": "shopify://shop_images/26.webp",
+            "logo_10": "shopify://shop_images/Right_One_White_dbf02fb7-d61d-44d5-bde4-b757aaca5b61.png",
+            "logo_width": 190,
+            "logo_height": 100,
+            "logo_spacing": 40,
+            "logo_opacity": 1,
+            "logo_background": "#ffffff",
+            "logo_border_radius": 8,
+            "scroll_speed": 35,
+            "footer_content": "<p><strong>全国約1,000店舗での導入・運用経験。アパレル、ライフスタイル、専門店、商業施設テナントの店舗改善を支援しています。</strong></p><p></p>",
+            "footer_content_size": 16,
+            "footer_content_color": "#677279",
+            "desktop_width_percent": 100,
+            "background_color": "#f9fafb",
+            "section_padding": 60
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_3c85fdc_DqQckp"
+      ],
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": true,
+        "remove_horizontal_spacing": false,
         "background": "",
         "background_gradient": "",
         "text_color": ""
@@ -127,6 +179,7 @@
       "block_order": [
         "ai_gen_block_c94f27c_ewNMcR"
       ],
+      "disabled": true,
       "settings": {
         "full_width": true,
         "remove_vertical_spacing": true,
@@ -709,8 +762,8 @@
             "show_rating": false,
             "rating": 5,
             "author": "",
-            "title": "現場で使える設計",
-            "content": "<p>本部だけでなく、店長・エリアマネージャーが日々の判断に使える画面と運用を支援します。</p>"
+            "title": "現場で使える運用",
+            "content": "<p>本部だけでなく、店長・エリアマネージャーが日々の判断に使える画面と運用を支援します。</p><h3></h3>"
           }
         },
         "testimonial_rdKH6M": {
@@ -720,8 +773,8 @@
             "show_rating": false,
             "rating": 4,
             "author": "",
-            "title": "分析から実行まで支援",
-            "content": "<p>数字を見て終わらせず、売上未達の要因を分解し、次に取るべき改善アクションにつなげます。</p>"
+            "title": "分析から実行へ",
+            "content": "<p>数字を見て終わらせず、売上未達の要因を分解し、次に取るべき行動につなげます。</p>"
           }
         }
       },
@@ -1867,6 +1920,7 @@
   },
   "order": [
     "rich_text_AGR3yT",
+    "1779523683cd5e4ed9",
     "1779516969a6df32a9",
     "logo_list_bzafjC",
     "rich_text_YiW9P3",
