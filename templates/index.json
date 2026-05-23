@@ -1584,7 +1584,7 @@
             "icon_background": "",
             "icon_color": "",
             "title": "運用開始",
-            "content": "<p>本部・店舗・エリアごとの活用方法を確認</p>"
+            "content": "<p>本部・店舗・エリア別の活用方法を確認</p>"
           }
         },
         "item_xWP8GR": {
@@ -1598,7 +1598,7 @@
             "icon_background": "",
             "icon_color": "",
             "title": "定着支援",
-            "content": "<p>KPI確認、改善アクション、活用習慣化を支援</p>"
+            "content": "<p>KPI確認、改善アクションの習慣化を支援</p>"
           }
         }
       },
@@ -1687,7 +1687,7 @@
         "answer_time": "",
         "button_text": "",
         "button_url": "",
-        "text_position": "center",
+        "text_position": "start",
         "background": "",
         "background_gradient": "",
         "text_color": "",
