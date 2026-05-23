@@ -68,14 +68,14 @@
         "subheading_73kLKG": {
           "type": "subheading",
           "settings": {
-            "text": "期間限定｜まずは3店舗から。1店舗分、3ヶ月無料。",
+            "text": "期間限定｜3店舗導入で、1店舗分3ヶ月無料。",
             "icon": "none"
           }
         },
         "image_Dtind8": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Flow_Banner_0526.png",
+            "image": "shopify://shop_images/Flow_Banner_0526_1.png",
             "width_mode": "full_width",
             "max_width": 600,
             "mobile_max_width": 400
