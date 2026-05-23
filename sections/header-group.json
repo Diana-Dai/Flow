@@ -17,7 +17,7 @@
         "message": {
           "type": "message",
           "settings": {
-            "text": "期間限定｜店舗データ活用スタートプログラム実施中。初期導入しやすい特別条件をご用意しています。",
+            "text": "期間限定｜3店舗スタートキャンペーン実施中。3店舗以上の導入で、1店舗分の月額費用を3ヶ月無料に。",
             "url": "shopify://pages/demo-booking"
           }
         }
@@ -28,10 +28,10 @@
       "settings": {
         "enable_sticky": true,
         "show_on_homepage_only": false,
-        "navigation_mode": "arrows",
-        "autoplay": false,
+        "navigation_mode": "scrolling",
+        "autoplay": true,
         "cycle_speed": 6,
-        "scrolling_speed": 10,
+        "scrolling_speed": 30,
         "text_size": "text-xs",
         "background": "#11243e",
         "background_gradient": "linear-gradient(180deg, rgba(17, 36, 62, 1) 51%, rgba(240, 240, 240, 1) 100%)",
