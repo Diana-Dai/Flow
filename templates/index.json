@@ -394,7 +394,7 @@
             "icon": "picto-camera",
             "icon_width": 32,
             "icon_background_type": "circle",
-            "icon_background": "#a0b842",
+            "icon_background": "#11243e",
             "icon_color": "#ffffff",
             "background_color": "rgba(0,0,0,0)",
             "text_color": "#1a1a1a",
@@ -416,7 +416,7 @@
             "icon": "picto-money",
             "icon_width": 32,
             "icon_background_type": "circle",
-            "icon_background": "#a0b842",
+            "icon_background": "#11243e",
             "icon_color": "#ffffff",
             "background_color": "",
             "text_color": "#1a1a1a",
@@ -435,7 +435,7 @@
         "item_4w9BQw": {
           "type": "item",
           "settings": {
-            "icon": "picto-comment",
+            "icon": "picto-validation",
             "icon_width": 32,
             "icon_background_type": "circle",
             "icon_background": "#a0b842",
@@ -863,8 +863,8 @@
         "text_color": "",
         "heading_color": "",
         "heading_gradient": "",
-        "testimonial_card_background": "",
-        "testimonial_card_text_color": ""
+        "testimonial_card_background": "#11243e",
+        "testimonial_card_text_color": "#f2f2f2"
       }
     },
     "multi_column_m98pty": {
@@ -873,11 +873,11 @@
         "item_cFWAib": {
           "type": "item",
           "settings": {
-            "icon": "none",
+            "icon": "picto-camera",
             "icon_width": 32,
             "icon_background_type": "circle",
-            "icon_background": "",
-            "icon_color": "",
+            "icon_background": "#11243e",
+            "icon_color": "#f9fafb",
             "background_color": "",
             "text_color": "",
             "border_color": "",
@@ -895,11 +895,11 @@
         "item_giQcPz": {
           "type": "item",
           "settings": {
-            "icon": "none",
+            "icon": "picto-money",
             "icon_width": 32,
             "icon_background_type": "circle",
-            "icon_background": "",
-            "icon_color": "",
+            "icon_background": "#11243e",
+            "icon_color": "#f9fafb",
             "background_color": "",
             "text_color": "",
             "border_color": "",
@@ -917,11 +917,11 @@
         "item_idXPCH": {
           "type": "item",
           "settings": {
-            "icon": "none",
+            "icon": "people",
             "icon_width": 32,
             "icon_background_type": "circle",
-            "icon_background": "",
-            "icon_color": "",
+            "icon_background": "#11243e",
+            "icon_color": "#f9fafb",
             "background_color": "",
             "text_color": "",
             "border_color": "",
@@ -939,11 +939,11 @@
         "item_jfU6Ra": {
           "type": "item",
           "settings": {
-            "icon": "none",
+            "icon": "picto-file",
             "icon_width": 32,
             "icon_background_type": "circle",
-            "icon_background": "",
-            "icon_color": "",
+            "icon_background": "#11243e",
+            "icon_color": "#f9fafb",
             "background_color": "",
             "text_color": "",
             "border_color": "",
@@ -961,11 +961,11 @@
         "item_6h7RnV": {
           "type": "item",
           "settings": {
-            "icon": "none",
+            "icon": "picto-document",
             "icon_width": 32,
             "icon_background_type": "circle",
-            "icon_background": "",
-            "icon_color": "",
+            "icon_background": "#11243e",
+            "icon_color": "#f9fafb",
             "background_color": "",
             "text_color": "",
             "border_color": "",
@@ -983,11 +983,11 @@
         "item_AKntD7": {
           "type": "item",
           "settings": {
-            "icon": "none",
+            "icon": "picto-validation",
             "icon_width": 32,
             "icon_background_type": "circle",
-            "icon_background": "",
-            "icon_color": "",
+            "icon_background": "#a0b842",
+            "icon_color": "#f9fafb",
             "background_color": "",
             "text_color": "",
             "border_color": "",
