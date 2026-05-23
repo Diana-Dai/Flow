@@ -17,7 +17,7 @@
         "message": {
           "type": "message",
           "settings": {
-            "text": "すべての意思決定は、正確な基盤から。Flow AI 詳細を見る",
+            "text": "期間限定｜店舗データ活用スタートプログラム実施中。初期導入しやすい特別条件をご用意しています。",
             "url": "shopify://pages/demo-booking"
           }
         }
@@ -25,17 +25,16 @@
       "block_order": [
         "message"
       ],
-      "disabled": true,
       "settings": {
         "enable_sticky": false,
         "show_on_homepage_only": false,
-        "navigation_mode": "arrows",
+        "navigation_mode": "scrolling",
         "autoplay": false,
         "cycle_speed": 6,
         "scrolling_speed": 10,
-        "text_size": "text-base",
-        "background": "#1a1a1a",
-        "background_gradient": "linear-gradient(180deg, rgba(26, 26, 26, 1) 51%, rgba(240, 240, 240, 1) 100%)",
+        "text_size": "text-xs",
+        "background": "#11243e",
+        "background_gradient": "linear-gradient(180deg, rgba(17, 36, 62, 1) 51%, rgba(240, 240, 240, 1) 100%)",
         "text_color": "#ffffff"
       }
     },
