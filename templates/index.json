@@ -129,7 +129,7 @@
       ],
       "settings": {
         "full_width": true,
-        "remove_vertical_spacing": false,
+        "remove_vertical_spacing": true,
         "remove_horizontal_spacing": false,
         "background": "",
         "background_gradient": "",
@@ -228,6 +228,9 @@
       "block_order": [
         "heading_DFkYUD",
         "subheading_6N4pe4"
+      ],
+      "custom_css": [
+        "{padding-top: 90px;}"
       ],
       "name": "Rich text",
       "settings": {
@@ -476,6 +479,9 @@
         "item_UQ7Gha",
         "item_zEftHB"
       ],
+      "custom_css": [
+        "{padding-top: 90px;}"
+      ],
       "name": "Multi-column",
       "settings": {
         "full_width": true,
@@ -536,7 +542,8 @@
         "item_9eNB9i"
       ],
       "custom_css": [
-        ".h6 {color: var(--text-secondary) !important; text-transform: uppercase; font-size: 0.9rem;}"
+        ".h6 {color: var(--text-secondary) !important; text-transform: uppercase; font-size: 0.9rem;}",
+        " {padding-top: 90px;}"
       ],
       "name": "Impact text",
       "settings": {
@@ -723,6 +730,9 @@
         "testimonial_FEqXLJ",
         "testimonial_rdKH6M"
       ],
+      "custom_css": [
+        "{padding-top: 90px;}"
+      ],
       "name": "Testimonials",
       "settings": {
         "full_width": true,
@@ -884,6 +894,9 @@
         "item_jfU6Ra",
         "item_6h7RnV",
         "item_AKntD7"
+      ],
+      "custom_css": [
+        "{padding-top: 90px;}"
       ],
       "name": "Multi-column",
       "settings": {
