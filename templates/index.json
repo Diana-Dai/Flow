@@ -681,6 +681,66 @@
         "text_color": ""
       }
     },
+    "testimonials_MY9ERf": {
+      "type": "testimonials",
+      "blocks": {
+        "testimonial_FedDfa": {
+          "type": "testimonial",
+          "settings": {
+            "round_avatar": false,
+            "show_rating": false,
+            "rating": 4,
+            "author": "",
+            "title": "店舗運営に特化",
+            "content": "<p>来店、購買、スタッフ配置、VMD、販促まで、店舗改善に必要なKPIを一つにつなぎます。</p>"
+          }
+        },
+        "testimonial_FEqXLJ": {
+          "type": "testimonial",
+          "settings": {
+            "round_avatar": false,
+            "show_rating": false,
+            "rating": 5,
+            "author": "",
+            "title": "現場で使える設計",
+            "content": "<p>本部だけでなく、店長・エリアマネージャーが日々の判断に使える画面と運用を支援します。</p>"
+          }
+        },
+        "testimonial_rdKH6M": {
+          "type": "testimonial",
+          "settings": {
+            "round_avatar": false,
+            "show_rating": false,
+            "rating": 4,
+            "author": "",
+            "title": "分析から実行まで支援",
+            "content": "<p>数字を見て終わらせず、売上未達の要因を分解し、次に取るべき改善アクションにつなげます。</p>"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_FedDfa",
+        "testimonial_FEqXLJ",
+        "testimonial_rdKH6M"
+      ],
+      "name": "Testimonials",
+      "settings": {
+        "full_width": true,
+        "stack_testimonials": true,
+        "subheading": "",
+        "title": "Flowが選ばれる理由",
+        "content": "",
+        "link_url": "",
+        "link_text": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "testimonial_card_background": "",
+        "testimonial_card_text_color": ""
+      }
+    },
     "multi_column_m98pty": {
       "type": "multi-column",
       "blocks": {
@@ -1791,6 +1851,7 @@
     "rich_text_E4i7Ea",
     "rich_text_pkymTT",
     "1777013757bd1f6777",
+    "testimonials_MY9ERf",
     "multi_column_m98pty",
     "multi_column_QcVkek",
     "section-15",
