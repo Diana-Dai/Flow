@@ -1800,6 +1800,9 @@
         "item_AK6yhH",
         "item_xWP8GR"
       ],
+      "custom_css": [
+        "{padding-top: 90px;}"
+      ],
       "name": "Text with icons",
       "settings": {
         "full_width": true,
