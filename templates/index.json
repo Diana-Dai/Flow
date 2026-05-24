@@ -19,13 +19,6 @@
             "icon": "picto-validation"
           }
         },
-        "richtext_LcTpMq": {
-          "type": "richtext",
-          "disabled": true,
-          "settings": {
-            "content": "<h2>Your Stores Are Not Underperforming.</h2>"
-          }
-        },
         "heading_NHgw9k": {
           "type": "heading",
           "settings": {
@@ -38,7 +31,7 @@
         "richtext_JWfj6P": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Flowは、店舗データを日々の判断と実行改善につなげるリテール分析プラットフォームです。<br/>来店数・通行量・POS・店舗運営データを統合し、売上改善に必要な次の一手を明確にします。</p><p></p>"
+            "content": "<p>Flowは、店舗データを日々の判断と実行改善につなげるリテール分析プラットフォームです。</p>"
           }
         },
         "subheading_LqYNpU": {
@@ -46,6 +39,21 @@
           "settings": {
             "text": "来店計測 × POS連携 × 店舗KPI × Flow AI",
             "icon": "none"
+          }
+        },
+        "image_Dtind8": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Flow_Banner_0526_1.png",
+            "width_mode": "full_width",
+            "max_width": 600,
+            "mobile_max_width": 400
+          }
+        },
+        "richtext_LcTpMq": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>来店数・通行量・POS・店舗運営データを統合し、売上改善に必要な次の一手を明確にします。</p>"
           }
         },
         "buttons_pt4Ted": {
@@ -65,32 +73,22 @@
             "text_color_2": ""
           }
         },
-        "subheading_73kLKG": {
-          "type": "subheading",
+        "richtext_gyC73r": {
+          "type": "richtext",
           "settings": {
-            "text": "期間限定｜3店舗導入で、1店舗分3ヶ月無料。",
-            "icon": "none"
-          }
-        },
-        "image_Dtind8": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Flow_Banner_0526_1.png",
-            "width_mode": "full_width",
-            "max_width": 600,
-            "mobile_max_width": 400
+            "content": "<p><strong>期間限定｜3店舗導入で、1店舗分3ヶ月無料。</strong></p>"
           }
         }
       },
       "block_order": [
         "subheading_79idNw",
-        "richtext_LcTpMq",
         "heading_NHgw9k",
         "richtext_JWfj6P",
         "subheading_LqYNpU",
+        "image_Dtind8",
+        "richtext_LcTpMq",
         "buttons_pt4Ted",
-        "subheading_73kLKG",
-        "image_Dtind8"
+        "richtext_gyC73r"
       ],
       "name": "Rich text",
       "settings": {
@@ -321,6 +319,53 @@
         "background": "rgba(0,0,0,0)",
         "background_gradient": "",
         "text_color": "#1a1a1a"
+      }
+    },
+    "images_with_text_scrolling_zRUByW": {
+      "type": "images-with-text-scrolling",
+      "blocks": {
+        "item_m3EDYj": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 48,
+            "title": "多くのシステムはレポートで止まる。Flowは店舗判断を揃える。",
+            "content": "<p>Flowは、来店客数・回遊・滞在時間・コンバージョン・人員配置を統合し、店舗運営の判断を標準化します。</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_R6nrz3": {
+          "type": "item",
+          "disabled": true,
+          "settings": {
+            "icon": "none",
+            "icon_width": 48,
+            "title": "Heading 2",
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_m3EDYj",
+        "item_R6nrz3"
+      ],
+      "name": "Images and text scrolling",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "show_counter": false,
+        "desktop_image_effect": "reveal",
+        "image_position": "start",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": ""
       }
     },
     "multi_column_LJEQgi": {
@@ -1928,6 +1973,7 @@
     "logo_list_bzafjC",
     "1779530497bf2195e7",
     "rich_text_YiW9P3",
+    "images_with_text_scrolling_zRUByW",
     "multi_column_LJEQgi",
     "impact_text_gi97zd",
     "rich_text_E4i7Ea",
