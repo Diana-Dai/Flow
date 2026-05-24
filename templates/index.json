@@ -321,51 +321,108 @@
         "text_color": "#1a1a1a"
       }
     },
-    "images_with_text_scrolling_zRUByW": {
-      "type": "images-with-text-scrolling",
+    "media_grid_KdAVbq": {
+      "type": "media-grid",
       "blocks": {
-        "item_m3EDYj": {
-          "type": "item",
+        "image_gRHEpe": {
+          "type": "image",
           "settings": {
-            "icon": "none",
-            "icon_width": 48,
-            "title": "多くのシステムはレポートで止まる。Flowは店舗判断を揃える。",
-            "content": "<p>Flowは、来店客数・回遊・滞在時間・コンバージョン・人員配置を統合し、店舗運営の判断を標準化します。</p>",
+            "title": "1",
+            "heading_tag": "h3",
             "link_url": "",
             "link_text": "",
-            "link_style": "link"
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_column_span": 1,
+            "desktop_row_span": 2,
+            "desktop_text_position": "sm:place-self-start sm:text-start",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#a0b842",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
           }
         },
-        "item_R6nrz3": {
-          "type": "item",
-          "disabled": true,
+        "image_9gCz74": {
+          "type": "image",
           "settings": {
-            "icon": "none",
-            "icon_width": 48,
-            "title": "Heading 2",
-            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
+            "title": "2",
+            "heading_tag": "h3",
             "link_url": "",
             "link_text": "",
-            "link_style": "link"
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_column_span": 1,
+            "desktop_row_span": 2,
+            "desktop_text_position": "sm:place-self-start sm:text-start",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#000000",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "image_AzpNFN": {
+          "type": "image",
+          "settings": {
+            "title": "3",
+            "heading_tag": "h3",
+            "link_url": "",
+            "link_text": "",
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_column_span": 1,
+            "desktop_row_span": 2,
+            "desktop_text_position": "sm:place-self-start sm:text-start",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#000000",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "image_LpmTAp": {
+          "type": "image",
+          "settings": {
+            "title": "4",
+            "heading_tag": "h3",
+            "link_url": "",
+            "link_text": "",
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_column_span": 1,
+            "desktop_row_span": 2,
+            "desktop_text_position": "sm:place-self-start sm:text-start",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#000000",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
           }
         }
       },
       "block_order": [
-        "item_m3EDYj",
-        "item_R6nrz3"
+        "image_gRHEpe",
+        "image_9gCz74",
+        "image_AzpNFN",
+        "image_LpmTAp"
       ],
-      "name": "Images and text scrolling",
+      "name": "Media grid",
       "settings": {
         "full_width": true,
-        "stack_on_mobile": false,
-        "show_counter": false,
-        "desktop_image_effect": "reveal",
-        "image_position": "start",
+        "reduce_width": false,
+        "desktop_row_height": 290,
+        "mobile_row_height": 150,
         "background": "",
-        "background_gradient": "",
-        "text_color": "",
-        "heading_color": "",
-        "heading_gradient": ""
+        "background_gradient": ""
       }
     },
     "multi_column_LJEQgi": {
@@ -1973,7 +2030,7 @@
     "logo_list_bzafjC",
     "1779530497bf2195e7",
     "rich_text_YiW9P3",
-    "images_with_text_scrolling_zRUByW",
+    "media_grid_KdAVbq",
     "multi_column_LJEQgi",
     "impact_text_gi97zd",
     "rich_text_E4i7Ea",
