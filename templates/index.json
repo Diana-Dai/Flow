@@ -402,7 +402,7 @@
             "desktop_column_span": 1,
             "desktop_row_span": 2,
             "desktop_text_position": "sm:place-self-start sm:text-start",
-            "background": "#000000",
+            "background": "rgba(0,0,0,0)",
             "background_gradient": "",
             "text_color": "#ffffff",
             "text_gradient": "",
