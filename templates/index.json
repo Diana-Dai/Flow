@@ -422,7 +422,7 @@
         "full_width": true,
         "reduce_width": false,
         "desktop_row_height": 290,
-        "mobile_row_height": 130,
+        "mobile_row_height": 120,
         "background": "",
         "background_gradient": ""
       }
