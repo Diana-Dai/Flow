@@ -328,7 +328,7 @@
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/1_Measure_2.png",
-            "title": "1. 店舗行動を計測",
+            "title": "",
             "heading_tag": "h6",
             "link_url": "",
             "link_text": "",
@@ -380,7 +380,7 @@
             "desktop_column_span": 1,
             "desktop_row_span": 2,
             "desktop_text_position": "sm:place-self-start-center sm:text-center",
-            "background": "#000000",
+            "background": "rgba(0,0,0,0)",
             "background_gradient": "",
             "text_color": "#ffffff",
             "text_gradient": "",
