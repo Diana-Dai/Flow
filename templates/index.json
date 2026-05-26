@@ -328,8 +328,8 @@
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/1_Measure_1.png",
-            "title": "1",
-            "heading_tag": "h3",
+            "title": "1. 店舗行動を計測",
+            "heading_tag": "h6",
             "link_url": "",
             "link_text": "",
             "mobile_text_position": "place-self-start text-start",
