@@ -327,7 +327,7 @@
         "image_gRHEpe": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/1_Measure_1.png",
+            "image": "shopify://shop_images/1_Measure_2.png",
             "title": "1. 店舗行動を計測",
             "heading_tag": "h6",
             "link_url": "",
@@ -349,9 +349,9 @@
         "image_9gCz74": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/2_integrate.png",
-            "title": "2",
-            "heading_tag": "h3",
+            "image": "shopify://shop_images/2_integrate_1.png",
+            "title": "",
+            "heading_tag": "h6",
             "link_url": "",
             "link_text": "",
             "mobile_text_position": "place-self-start-center text-center",
@@ -371,14 +371,15 @@
         "image_AzpNFN": {
           "type": "image",
           "settings": {
-            "title": "3",
-            "heading_tag": "h3",
+            "image": "shopify://shop_images/Dashboard_mockup_2.png",
+            "title": "",
+            "heading_tag": "h6",
             "link_url": "",
             "link_text": "",
-            "mobile_text_position": "place-self-start text-start",
+            "mobile_text_position": "place-self-start-center text-center",
             "desktop_column_span": 1,
             "desktop_row_span": 2,
-            "desktop_text_position": "sm:place-self-start sm:text-start",
+            "desktop_text_position": "sm:place-self-start-center sm:text-center",
             "background": "#000000",
             "background_gradient": "",
             "text_color": "#ffffff",
