@@ -141,74 +141,6 @@
         "text_color": ""
       }
     },
-    "logo_list_bzafjC": {
-      "type": "logo-list",
-      "blocks": {
-        "logo_xLkXDj": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify://shop_images/Baycrews_White_1.png",
-            "logo_width": 120,
-            "link": ""
-          }
-        },
-        "logo_E8jiQ6": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify://shop_images/Cole_Haan_White_836317d3-12dd-4e9a-b647-80aab91df0b2.png",
-            "logo_width": 120,
-            "link": ""
-          }
-        },
-        "logo_i8qW8H": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify://shop_images/Stripe_White_f1ba215a-c741-4fa7-8b23-cd0b45a74f31.png",
-            "logo_width": 120,
-            "link": ""
-          }
-        },
-        "logo_gHbbQF": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify://shop_images/Daytona_logo.png",
-            "logo_width": 120,
-            "link": ""
-          }
-        },
-        "logo_B8XxPT": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify://shop_images/Plaza_White_d4060480-52ad-4a29-b53d-1f7b116f8343.png",
-            "logo_width": 120,
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "logo_xLkXDj",
-        "logo_E8jiQ6",
-        "logo_i8qW8H",
-        "logo_gHbbQF",
-        "logo_B8XxPT"
-      ],
-      "name": "Logo list",
-      "settings": {
-        "full_width": true,
-        "stack_mobile": true,
-        "title": "",
-        "content": "<p><strong>100以上のリテールブランドで、店舗データ活用を支援</strong></p>",
-        "text_alignment": "center",
-        "items_per_row": 5,
-        "background": "#ffffff",
-        "background_gradient": "",
-        "text_color": "",
-        "heading_color": "",
-        "heading_gradient": "",
-        "logo_item_background": "",
-        "logo_item_border": ""
-      }
-    },
     "multi_column_GPkFTV": {
       "type": "multi-column",
       "blocks": {
@@ -1235,7 +1167,6 @@
   "order": [
     "image_with_text_overlay_MVHcWF",
     "blocks_E4newU",
-    "logo_list_bzafjC",
     "multi_column_GPkFTV",
     "rich_text_CjaQaa",
     "images_with_text_scrolling_A4yLa8",
