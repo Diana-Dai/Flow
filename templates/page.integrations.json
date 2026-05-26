@@ -1230,6 +1230,28 @@
             "link_text": "",
             "link_style": "link"
           }
+        },
+        "item_Kn4Yx8": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#a0b842",
+            "text_color": "#ffffff",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "1",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h3>Integration = Better Execution</h3><p>When your retail data is connected and structured, Flow transforms it from static reports into a living foundation for visibility, diagnosis, and action.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
         }
       },
       "block_order": [
@@ -1238,10 +1260,11 @@
         "item_X38UCn",
         "item_Mh8peA",
         "item_b6KjgK",
-        "item_R3RcPF"
+        "item_R3RcPF",
+        "item_Kn4Yx8"
       ],
       "custom_css": [
-        ".multi-column__item * {text-align: left;}"
+        ".multi-column__item:not(:last-child) * {text-align: left;}"
       ],
       "name": "Multi-column",
       "settings": {
