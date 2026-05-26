@@ -273,7 +273,7 @@
             "icon_background": "",
             "icon_color": "",
             "background_color": "#ffffff",
-            "text_color": "rgba(0,0,0,0)",
+            "text_color": "",
             "border_color": "#f2f2f2",
             "show_controls": false,
             "column_size": "4",
