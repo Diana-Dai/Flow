@@ -21,14 +21,14 @@
         "heading_frXnfn": {
           "type": "heading",
           "settings": {
-            "text": "UNIFY YOUR RETAIL SIGNALS.",
+            "text": "CONNECT YOURRETAIL DATA.",
             "heading_tag": "h0"
           }
         },
         "richtext_HwhtPj": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Flow bridges the gap between physical space and digital infrastructure. Connect your existing hardware, workforce data, and POS systems into a single, cohesive source of truth.</p>"
+            "content": "<p>Flow connects your existing POS, traffic, staffing, and operational data into a single foundation for visibility, analysis, and action. No rip-and-replace required.</p>"
           }
         },
         "button_7Prq3W": {
@@ -47,7 +47,7 @@
           "settings": {
             "style": "fill",
             "size": "lg",
-            "text": "View API Docs →",
+            "text": "View platform →",
             "url": "#",
             "background": "#ffffff",
             "text_color": "#11243e"
