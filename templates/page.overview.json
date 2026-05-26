@@ -88,6 +88,59 @@
         "overlay_opacity": 80
       }
     },
+    "blocks_E4newU": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_3c85fdc_AQDhKh": {
+          "type": "ai_gen_block_3c85fdc",
+          "settings": {
+            "heading": "<strong>100以上のブランドで、店舗運営を支援</strong>",
+            "content": "<p></p><p></p>",
+            "text_alignment": "center",
+            "heading_size": 32,
+            "content_size": 16,
+            "heading_color": "#11243e",
+            "content_color": "#677279",
+            "logo_1": "shopify://shop_images/Baycrews_White_1.png",
+            "logo_2": "shopify://shop_images/Cole_Haan_White_836317d3-12dd-4e9a-b647-80aab91df0b2.png",
+            "logo_3": "shopify://shop_images/Flow_Client_Case_Study_Banners_1.png",
+            "logo_4": "shopify://shop_images/Daytona_White_e03a3f9c-40ca-45b1-8866-4528e821f7f5.png",
+            "logo_5": "shopify://shop_images/Plaza_White_d4060480-52ad-4a29-b53d-1f7b116f8343.png",
+            "logo_6": "shopify://shop_images/Stripe_White_f1ba215a-c741-4fa7-8b23-cd0b45a74f31.png",
+            "logo_7": "shopify://shop_images/Triumph_logo.png",
+            "logo_8": "shopify://shop_images/26.webp",
+            "logo_9": "shopify://shop_images/Brooks_B.png",
+            "logo_10": "shopify://shop_images/Right_One_White_dbf02fb7-d61d-44d5-bde4-b757aaca5b61.png",
+            "logo_width": 160,
+            "logo_height": 80,
+            "logo_spacing": 40,
+            "logo_opacity": 0.7,
+            "logo_background": "#ffffff",
+            "logo_border_radius": 8,
+            "scroll_speed": 30,
+            "footer_content": "<p><strong>全国約1,000店舗での導入・運用経験。アパレル、ライフスタイル、専門店、商業施設テナントの店舗改善を支援しています。</strong></p><p></p>",
+            "footer_content_size": 16,
+            "footer_content_color": "#677279",
+            "desktop_width_percent": 100,
+            "background_color": "#f9fafb",
+            "section_padding": 60
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_3c85fdc_AQDhKh"
+      ],
+      "name": "Scrolling logos",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
     "logo_list_bzafjC": {
       "type": "logo-list",
       "blocks": {
@@ -1181,6 +1234,7 @@
   },
   "order": [
     "image_with_text_overlay_MVHcWF",
+    "blocks_E4newU",
     "logo_list_bzafjC",
     "multi_column_GPkFTV",
     "rich_text_CjaQaa",
