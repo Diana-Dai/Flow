@@ -282,7 +282,7 @@
         "item_4Jg6dW": {
           "type": "item",
           "settings": {
-            "image": "shopify://shop_images/analytics_mobile.png",
+            "image": "shopify://shop_images/Dashboard_Layer.png",
             "icon": "none",
             "icon_width": 48,
             "title": "成果ギャップ分析",
@@ -295,7 +295,7 @@
         "item_a8jn8N": {
           "type": "item",
           "settings": {
-            "image": "shopify://shop_images/store_environmnet_x_1500_x_1900_px.png",
+            "image": "shopify://shop_images/FIDA_Layer.png",
             "icon": "none",
             "icon_width": 48,
             "title": "対応を標準化する",
