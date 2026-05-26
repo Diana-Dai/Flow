@@ -395,6 +395,29 @@
             "link_text": "",
             "link_style": "link"
           }
+        },
+        "item_cMg3XB": {
+          "type": "item",
+          "disabled": true,
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#f2f4ed",
+            "text_color": "",
+            "border_color": "#a0b842",
+            "show_controls": false,
+            "column_size": "1",
+            "title": "IMPORTANT NOTE",
+            "heading_tag": "h5",
+            "subheading": "",
+            "content": "<p><strong>Flow can provide traffic measurement directly or ingest data from your existing counter systems</strong>.</p><p>This flexibility matters for chains using Flow in some stores while maintaining existing measurement systems in others during phased rollouts.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
         }
       },
       "block_order": [
@@ -405,7 +428,11 @@
         "item_mtQGUH",
         "item_ybJBgC",
         "item_7PCDzQ",
-        "item_gTUXzh"
+        "item_gTUXzh",
+        "item_cMg3XB"
+      ],
+      "custom_css": [
+        ".multi-column__item:last-child {font-size: 0.9rem;}"
       ],
       "name": "Multi-column",
       "settings": {
@@ -415,80 +442,10 @@
         "text_alignment": "start",
         "subheading": "DATA SOURCES",
         "title": "CONNECT YOUR COMPLETE RETAIL STACK.",
-        "content": "<p>Flow integrates with your existing systems across POS, traffic measurement, staffing, and operational data sources.</p>",
+        "content": "<p>Flow integrates with your existing systems across POS, traffic measurement, staffing, and operational data sources.</p><p>✅ <strong>Flow can provide traffic measurement directly or ingest data from your existing counter systems</strong>.</p>",
         "background": "",
         "background_gradient": "",
         "text_color": ""
-      }
-    },
-    "multi_column_HCGJea11": {
-      "type": "multi-column",
-      "blocks": {
-        "item_tTyycj": {
-          "type": "item",
-          "settings": {
-            "icon": "picto-plane",
-            "icon_width": 32,
-            "icon_background_type": "square",
-            "icon_background": "#e5e9d1",
-            "icon_color": "#a0b842",
-            "background_color": "#ffffff",
-            "text_color": "#11243e",
-            "border_color": "#f2f2f2",
-            "show_controls": false,
-            "column_size": "2",
-            "title": "",
-            "heading_tag": "h4",
-            "subheading": "",
-            "content": "<h4>Universal RTSP Camera Sync</h4><p>Connect within minutes. Flow ingests stream telemetry directly from your active store security hardware network without requiring proprietary sensor upgrades or structural rewiring.</p><p><strong>Active Streaming Protocol: Verified</strong></p>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        },
-        "item_ztJTym": {
-          "type": "item",
-          "settings": {
-            "icon": "picto-secure-profile",
-            "icon_width": 32,
-            "icon_background_type": "square",
-            "icon_background": "#a0b842",
-            "icon_color": "#ffffff",
-            "background_color": "#36465c",
-            "text_color": "#f9fafb",
-            "border_color": "",
-            "show_controls": false,
-            "column_size": "2",
-            "title": "",
-            "heading_tag": "h4",
-            "subheading": "",
-            "content": "<h4>Enterprise Security & Privacy</h4><p>Anonymous by design. Flow decrypts video streams locally at the edge, outputting purely anonymous coordinate metadata. No local video storage, 100% compliant with global privacy standards.</p><p><strong>Data Privacy Protocol: Standardized</strong></p>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        }
-      },
-      "block_order": [
-        "item_tTyycj",
-        "item_ztJTym"
-      ],
-      "custom_css": [
-        ".prose p {font-size: 0.9rem;}",
-        ".multi-column__item:first-child .h2 {color: #a0b842 !important;}"
-      ],
-      "name": "Multi-column",
-      "settings": {
-        "full_width": true,
-        "stack_on_mobile": false,
-        "gap": "medium",
-        "text_alignment": "start",
-        "subheading": "",
-        "title": "",
-        "content": "",
-        "background": "#f2f2f2",
-        "background_gradient": "",
-        "text_color": "#11243e"
       }
     },
     "media_with_text_hMPTmL": {
@@ -1237,7 +1194,6 @@
     "image_with_text_overlay_AcppEX",
     "multi_column_HCGJea",
     "multi_column_YtjcfP",
-    "multi_column_HCGJea11",
     "media_with_text_hMPTmL",
     "multi_column_RkceNG",
     "multi_column_QjMJiW",
