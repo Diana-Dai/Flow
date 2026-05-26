@@ -720,15 +720,60 @@
             "link_text": "",
             "link_style": "link"
           }
+        },
+        "item_ncmQqd": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#f2f2f2",
+            "text_color": "",
+            "border_color": "#f9fafb",
+            "show_controls": false,
+            "column_size": "2",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h4>Existing Format Review</h4><p>Before integration begins, Flow reviews your current data formats and system exports. We adapt to your existing structure rather than forcing format changes.</p><p>✅ <strong>No forced schema changes</strong></p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_knpTWy": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#f2f2f2",
+            "text_color": "",
+            "border_color": "#f9fafb",
+            "show_controls": false,
+            "column_size": "2",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h4>Phased Rollout Support</h4><p>Start with a pilot store or region. Expand to additional locations as you validate the integration and value. No requirement for all-at-once deployment.</p><p>✅ <strong>Regional or store-by-store expansion</strong></p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
         }
       },
       "block_order": [
         "item_MVfQ7a",
         "item_mpQVCf",
-        "item_Y47ifx"
+        "item_Y47ifx",
+        "item_ncmQqd",
+        "item_knpTWy"
       ],
       "custom_css": [
-        ".multi-column__item h4 ~ p {margin-top: 0; padding-top: 0;}",
         "p {font-size: 1rem;}",
         "em {font-size: 0.8rem;}",
         ".multi-column__item .text-center {text-align: left;}"
