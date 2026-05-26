@@ -1363,7 +1363,7 @@
         "subheading": "BUSINESS VALUE",
         "title": "WHAT INTEGRATION MAKES POSSIBLE.",
         "content": "<p>Integration isn't an IT feature. It's the foundation for better retail execution, aligned decision-making, and AI-powered operational recommendations.</p>",
-        "background": "",
+        "background": "#ffffff",
         "background_gradient": "",
         "text_color": ""
       }
@@ -1450,7 +1450,7 @@
         "button_text": "",
         "button_url": "",
         "text_position": "center",
-        "background": "",
+        "background": "rgba(0,0,0,0)",
         "background_gradient": "",
         "text_color": "",
         "heading_color": "",
