@@ -507,7 +507,7 @@
             "card_gap": 30,
             "card_padding": 50,
             "card_border_radius": 24,
-            "background_color": "#f9fafb",
+            "background_color": "#ffffff",
             "left_card_bg": "#f9fafb",
             "left_card_border": "#e5e7eb",
             "right_card_bg": "#1e3a5f",
@@ -742,7 +742,7 @@
         "subheading": "CONNECTION METHODS",
         "title": "FLEXIBLE INTEGRATION FOR REAL ENVIRONMENTS.",
         "content": "<p>Flow adapts to your existing infrastructure. We support API connections, FTP workflows, and scheduled file transfers based on what works for your enterprise environment.</p>",
-        "background": "#ffffff",
+        "background": "#f9fafb",
         "background_gradient": "",
         "text_color": ""
       }
