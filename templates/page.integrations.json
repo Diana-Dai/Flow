@@ -926,6 +926,28 @@
             "link_text": "",
             "link_style": "link"
           }
+        },
+        "item_x6w6GM": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-shield",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "#a0b842",
+            "icon_color": "#ffffff",
+            "background_color": "#36465c",
+            "text_color": "#ffffff",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "1",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h3>Flow Manages Complexity</h3><p>You define what data matters. Flow handles format transformation, connection monitoring, error handling, and ongoing reliability. The technical complexity stays with us.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
         }
       },
       "block_order": [
@@ -934,10 +956,15 @@
         "item_na8DJc",
         "item_qGg8JM",
         "item_b3cc7y",
-        "item_m3LkUr"
+        "item_m3LkUr",
+        "item_x6w6GM"
       ],
       "custom_css": [
-        ".multi-column__item ul {font-size: 1rem;}"
+        ".prose p {font-size: 0.9rem;}",
+        ".multi-column__item .h3 {color: #a0b842 !important;}",
+        ".multi-column__item h4 ~ p {margin-top: 0; padding-top: 0;}",
+        ".multi-column__item:last-child {display: flex; justify-content: left;}",
+        ".multi-column__item:last-child * {text-align: left;}"
       ],
       "name": "Multi-column",
       "settings": {
