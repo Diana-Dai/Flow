@@ -448,45 +448,118 @@
         "text_color": ""
       }
     },
-    "media_with_text_hMPTmL": {
-      "type": "media-with-text",
+    "rich_text_b9Cw9g": {
+      "type": "rich-text",
       "blocks": {
-        "image_8hBn9C": {
-          "type": "image",
+        "subheading_rch3yw": {
+          "type": "subheading",
           "settings": {
-            "image": "shopify://shop_images/44.png",
-            "media_width": 50,
-            "media_position": "end",
-            "text_position": "place-self-center-start text-start",
-            "icon": "none",
-            "icon_width": 48,
-            "subheading": "SYSTEM INTEGRATION",
-            "title": "DATA STREAM CORRELATION.",
-            "content": "<p>Flow maps disparate enterprise software variables directly against live storefront physical movement to automate critical business logic.</p>",
-            "link_text": "View Performance",
-            "link_url": "#",
-            "background": "",
-            "background_gradient": "",
-            "text_color": "#11243e",
-            "text_gradient": "",
-            "button_background": "",
-            "button_text_color": ""
+            "text": "FLOW INTEGRATED DATA FOUNDATION",
+            "icon": "none"
+          }
+        },
+        "heading_FEYa3b": {
+          "type": "heading",
+          "settings": {
+            "text": "FROM RAW DATA TO RETAIL INTELLIGENCE.",
+            "heading_tag": "h1",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_yRUqL4": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Flow doesn't just connect systems. FIDA organizes fragmented data into a structured retail performance model that supports visibility, comparison, diagnosis, and AI-powered recommendations.</p>"
+          }
+        },
+        "richtext_Chnnfz": {
+          "type": "richtext",
+          "settings": {
+            "content": "<h5>Data Sources   <strong>→    </strong>FIDA   <strong>→   </strong>Intelligence</h5><p></p>"
           }
         }
       },
       "block_order": [
-        "image_8hBn9C"
+        "subheading_rch3yw",
+        "heading_FEYa3b",
+        "richtext_yRUqL4",
+        "richtext_Chnnfz"
       ],
-      "custom_css": [
-        "h3 {font-size: var(--text-h0); color: #fff;}",
-        "ul {display: flex; flex-wrap: wrap; gap: 20px; font-size: 1rem;}",
-        "ul li {width: calc(50% - 20px);}"
-      ],
-      "name": "Media with text",
+      "name": "Rich text",
       "settings": {
-        "full_width": false,
-        "alternate_media_position": false,
-        "spacing": "small"
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "177976588974919423": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_c38635f_XUqPDe": {
+          "type": "ai_gen_block_c38635f",
+          "settings": {
+            "desktop_width_percent": 100,
+            "section_padding": 0,
+            "card_gap": 30,
+            "card_padding": 50,
+            "card_border_radius": 24,
+            "background_color": "#f9fafb",
+            "left_card_bg": "#f9fafb",
+            "left_card_border": "#e5e7eb",
+            "right_card_bg": "#1e3a5f",
+            "left_heading": "What FIDA Does",
+            "left_heading_color": "#1e293b",
+            "heading_size": 32,
+            "heading_margin": 30,
+            "feature_1_title": "Normalizes definitions",
+            "feature_1_text": "Creates common metrics across different systems and store formats",
+            "feature_2_title": "Connects relationships",
+            "feature_2_text": "Links traffic to sales, staffing to performance, weather to outcomes",
+            "feature_3_title": "Enables comparison",
+            "feature_3_text": "Makes stores, regions, and time periods directly comparable",
+            "feature_4_title": "Powers AI recommendations",
+            "feature_4_text": "Creates the structured foundation Flow AI needs for action guidance",
+            "feature_gap": 30,
+            "icon_size": 32,
+            "check_icon_bg": "#a0b842",
+            "check_icon_color": "#ffffff",
+            "feature_title_size": 18,
+            "feature_title_color": "#1e293b",
+            "feature_text_size": 15,
+            "feature_text_color": "#64748b",
+            "right_heading": "What This Enables",
+            "right_heading_color": "#ffffff",
+            "module_1_text": "Dashboards with real context",
+            "module_2_text": "Store-to-store comparisons",
+            "module_3_text": "Automated alerts and thresholds",
+            "module_4_text": "Flow AI action recommendations",
+            "module_5_text": "Predictive analytics",
+            "module_gap": 15,
+            "module_bg": "#2d4a6f",
+            "module_padding": 20,
+            "module_border_radius": 30,
+            "module_text_size": 17,
+            "module_text_color": "#ffffff",
+            "module_icon_size": 24,
+            "module_icon_color": "#a0b842"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_c38635f_XUqPDe"
+      ],
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
       }
     },
     "multi_column_RkceNG": {
@@ -582,10 +655,10 @@
     "multi_column_QjMJiW": {
       "type": "multi-column",
       "blocks": {
-        "item_mpQVCf": {
+        "item_MVfQ7a": {
           "type": "item",
           "settings": {
-            "icon": "picto-camera",
+            "icon": "picto-wifi",
             "icon_width": 32,
             "icon_background_type": "square",
             "icon_background": "#a0b842",
@@ -598,13 +671,35 @@
             "title": "",
             "heading_tag": "h1",
             "subheading": "",
-            "content": "<h5>Automated Sync</h5><p>Flow automatically polls integrated commerce and labor platform endpoints continuously, keeping baseline records perfectly updated without manual spreadsheet exports.</p><h4>&lt;15s</h4><p><em>Synchronization Latency Delta</em></p>",
+            "content": "<h5>API Connection</h5><p>Direct REST API integration for real-time data synchronization. Ideal for cloud-based systems with existing API support.</p><ul><li>Real-time updates</li><li>OAuth 2.0 security</li><li>Automatic retry handling</li></ul>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
           }
         },
-        "item_MVfQ7a": {
+        "item_mpQVCf": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-send",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#a0b842",
+            "icon_color": "#ffffff",
+            "background_color": "#f9fafb",
+            "text_color": "",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h1",
+            "subheading": "",
+            "content": "<h5>FTP Connection</h5><p>Secure FTP or SFTP for scheduled file transfers. Common for enterprise systems with batch processing workflows.</p><ul><li>Scheduled transfers</li><li>Encrypted connections</li><li>Automatic pickup</li></ul>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_Y47ifx": {
           "type": "item",
           "settings": {
             "icon": "picto-file",
@@ -620,29 +715,7 @@
             "title": "",
             "heading_tag": "h1",
             "subheading": "",
-            "content": "<h5>Data Normalization</h5><p>Raw unstructured telemetry from varied security feeds and cloud databases is clean-filtered and normalized into a unified, lightweight store efficiency metric.</p><h4>99.8%</h4><p><em>Core Data Ingestion Confidence</em></p>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        },
-        "item_Y47ifx": {
-          "type": "item",
-          "settings": {
-            "icon": "up",
-            "icon_width": 32,
-            "icon_background_type": "square",
-            "icon_background": "#a0b842",
-            "icon_color": "#ffffff",
-            "background_color": "#f9fafb",
-            "text_color": "",
-            "border_color": "#f2f2f2",
-            "show_controls": false,
-            "column_size": "3",
-            "title": "",
-            "heading_tag": "h1",
-            "subheading": "",
-            "content": "<h5>Instant Tasking</h5><p>System optimizations translate directly into live, actionable operational priorities dispatched via the automated frontline application for on-floor staff response.</p><h4>Real-time</h4><p><em>Automated Execution Target</em></p>",
+            "content": "<h5>CSV Upload</h5><p>Manual or scheduled CSV file uploads. Flexible format support for systems without API or FTP capabilities.</p><ul><li>Flexible formats</li><li>Format validation</li><li>Error reporting</li></ul>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -650,8 +723,8 @@
         }
       },
       "block_order": [
-        "item_mpQVCf",
         "item_MVfQ7a",
+        "item_mpQVCf",
         "item_Y47ifx"
       ],
       "custom_css": [
@@ -665,10 +738,10 @@
         "full_width": true,
         "stack_on_mobile": false,
         "gap": "medium",
-        "text_alignment": "center",
-        "subheading": "STEPS",
-        "title": "FROM INSIGHT TO ACTION.",
-        "content": "",
+        "text_alignment": "start",
+        "subheading": "CONNECTION METHODS",
+        "title": "FLEXIBLE INTEGRATION FOR REAL ENVIRONMENTS.",
+        "content": "<p>Flow adapts to your existing infrastructure. We support API connections, FTP workflows, and scheduled file transfers based on what works for your enterprise environment.</p>",
         "background": "#ffffff",
         "background_gradient": "",
         "text_color": ""
@@ -1194,7 +1267,8 @@
     "image_with_text_overlay_AcppEX",
     "multi_column_HCGJea",
     "multi_column_YtjcfP",
-    "media_with_text_hMPTmL",
+    "rich_text_b9Cw9g",
+    "177976588974919423",
     "multi_column_RkceNG",
     "multi_column_QjMJiW",
     "multi_column_QjMJiW11",
