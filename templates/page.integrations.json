@@ -217,6 +217,210 @@
         "text_color": "#11243e"
       }
     },
+    "multi_column_YtjcfP": {
+      "type": "multi-column",
+      "blocks": {
+        "item_epC9fA": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#ffffff",
+            "text_color": "",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "4",
+            "title": "POS Data",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<p>Transaction records, sales totals, basket analysis, SKU-level performance</p><ul><li>Major POS platforms</li><li>Custom enterprise systems</li></ul>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_YqzgP4": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#ffffff",
+            "text_color": "",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "4",
+            "title": "Sales Target Data",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<p>Budget targets, planned vs actual, regional goals, seasonal targets</p><ul><li>CSV upload</li><li>Planning system API</li></ul>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_LXyLeK": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#ffffff",
+            "text_color": "rgba(0,0,0,0)",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "4",
+            "title": "Traffic & Passerby",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<p>Entry counts, passerby traffic, dwell time, zone engagement data</p><ul><li>Flow traffic cameras</li><li>Existing counter systems</li></ul>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_iMB886": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#ffffff",
+            "text_color": "",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "4",
+            "title": "Staffing & Shift Data",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<p>Scheduled shifts, actual hours worked, labor cost, staff assignments</p><ul><li>Workforce management tools</li><li>Manual schedule uploads</li></ul>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_mtQGUH": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#ffffff",
+            "text_color": "",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "4",
+            "title": "Weather Data",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<p>Historical weather, forecasts, temperature, precipitation, regional conditions</p><ul><li>Automatic weather API</li><li>Store location correlation</li></ul>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_ybJBgC": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#ffffff",
+            "text_color": "",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "4",
+            "title": "Store Attributes",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<p>Store format, size, location type, region, opening hours, facility data</p><ul><li>Store master data</li><li>Hierarchy and groupings</li></ul>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_7PCDzQ": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#ffffff",
+            "text_color": "",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "4",
+            "title": "Operational Documents",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<p>Manuals, SOPs, memos, execution checklists, campaign instructions</p><ul><li>Document repository links</li><li>Flow AI knowledge base</li></ul>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_gTUXzh": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#ffffff",
+            "text_color": "",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "4",
+            "title": "API, FTP, CSV",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<p>Flexible connection methods for API-based, file transfer, or scheduled uploads</p><ul><li>REST API integration</li><li>FTP and scheduled transfers</li></ul>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_epC9fA",
+        "item_YqzgP4",
+        "item_LXyLeK",
+        "item_iMB886",
+        "item_mtQGUH",
+        "item_ybJBgC",
+        "item_7PCDzQ",
+        "item_gTUXzh"
+      ],
+      "name": "Multi-column",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "small",
+        "text_alignment": "start",
+        "subheading": "DATA SOURCES",
+        "title": "CONNECT YOUR COMPLETE RETAIL STACK.",
+        "content": "<p>Flow integrates with your existing systems across POS, traffic measurement, staffing, and operational data sources.</p>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
     "multi_column_HCGJea11": {
       "type": "multi-column",
       "blocks": {
@@ -1032,6 +1236,7 @@
   "order": [
     "image_with_text_overlay_AcppEX",
     "multi_column_HCGJea",
+    "multi_column_YtjcfP",
     "multi_column_HCGJea11",
     "media_with_text_hMPTmL",
     "multi_column_RkceNG",
