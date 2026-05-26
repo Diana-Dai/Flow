@@ -157,10 +157,10 @@
             "border_color": "",
             "show_controls": false,
             "column_size": "2",
-            "title": "18時間",
+            "title": "20%",
             "heading_tag": "h1",
-            "subheading": "<h5><strong>従来型レポーティング<br/><br/></strong></h5>",
-            "content": "<p><strong>→ 前日データ<br/>→ 手動集計<br/>→ 本部確認<br/>→ 翌日以降の対応</strong><br/><br/></p>",
+            "subheading": "<h5><strong>従来型レポーティング</strong></h5><h6>判断が属人化する<br/><br/></h6>",
+            "content": "<p>→ 優秀な店長だけが素早く判断<br/>→ レポート確認は翌日以降<br/>→ 対応品質が店舗ごとにばらつく<br/>→ 成果ギャップが広がる</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -179,12 +179,12 @@
             "border_color": "#a0b842",
             "show_controls": false,
             "column_size": "2",
-            "title": "10分判断",
+            "title": "全店舗",
             "heading_tag": "h1",
-            "subheading": "<h5><strong>Flow 分析プラットフォーム<br/><br/></strong></h5>",
-            "content": "<p>→ 来店・売上を即時可視化<br/>→ 購買率の変化を把握<br/>→ 改善判断を早期化</p>",
+            "subheading": "<h5><strong>Flow 分析プラットフォーム</strong></h5><h6>判断を標準化する<strong><br/><br/></strong></h6>",
+            "content": "<p>→ 来店・売上・購買率を即時可視化<br/>→ 改善ポイントを早期に把握<br/>→ ブランド方針に沿った対応を支援<br/>→ 成果ギャップを縮小</p>",
             "link_url": "",
-            "link_text": "来店分析を見る →",
+            "link_text": "店舗運営プラットフォームを見る →",
             "link_style": "button"
           }
         }
@@ -199,9 +199,9 @@
         "stack_on_mobile": false,
         "gap": "medium",
         "text_alignment": "start",
-        "subheading": "オペレーション遅延",
-        "title": "18時間の判断遅延を短縮する。",
-        "content": "<p>日次レポートや手動集計では、店舗で起きた変化が本部・エリア・店舗に届くまでに時間がかかります。<br/>Flowは、来店数・購買率・売上状況をひとつの分析基盤に統合し、判断と対応までの時間を短縮します。</p>",
+        "subheading": "オペレーション格差",
+        "title": "店舗ごとの判断格差を、縮める。",
+        "content": "<p>優秀な店長は、データを待たずに動けます。しかし、その判断力を全店舗に広げることは簡単ではありません。Flowは、来店・購買率・売上状況をリアルタイムに統合し、改善ポイントを早期に把握。店舗ごとの判断ばらつきを減らし、ブランド方針に沿った対応を支援します。</p>",
         "background": "#ffffff",
         "background_gradient": "",
         "text_color": "#11243e"
