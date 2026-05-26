@@ -969,7 +969,7 @@
       "settings": {
         "full_width": true,
         "stack_on_mobile": false,
-        "gap": "medium",
+        "gap": "small",
         "text_alignment": "center",
         "subheading": "IMPLEMENTATION PROCESS",
         "title": "SUPPORTED FROM START TO LAUNCH.",
@@ -1358,7 +1358,7 @@
       "settings": {
         "full_width": true,
         "stack_on_mobile": false,
-        "gap": "medium",
+        "gap": "small",
         "text_alignment": "center",
         "subheading": "BUSINESS VALUE",
         "title": "WHAT INTEGRATION MAKES POSSIBLE.",
