@@ -1105,7 +1105,7 @@
             "desktop_width_percent": 100,
             "section_padding_mobile": 40,
             "section_padding_desktop": 80,
-            "background_color": "#f5f5f5",
+            "background_color": "rgba(0,0,0,0)",
             "headline": "Continuous Data Monitoring.",
             "headline_size_mobile": 36,
             "headline_size_desktop": 56,
