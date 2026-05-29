@@ -202,17 +202,12 @@
   }
 
   .ai-case-study-headline-{{ ai_gen_id }} {
-    font-size: 32px;
     color: {{ block.settings.heading_color }};
     line-height: 1.2;
     margin: 8px 0 0 0;
   }
 
-  @media screen and (min-width: 750px) {
-    .ai-case-study-headline-{{ ai_gen_id }} {
-      font-size: 42px;
-    }
-  }
+
 
   .ai-case-study-description-{{ ai_gen_id }} {
     font-size: 16px;
@@ -342,9 +337,9 @@
       </div>
 
       {% if block.settings.headline != blank %}
-        <h2 class="ai-case-study-headline-{{ ai_gen_id }}">
+        <h1 class="ai-case-study-headline-{{ ai_gen_id }}">
           {{ block.settings.headline }}
-        </h2>
+        </h1>
       {% endif %}
 
       {% if block.settings.description != blank %}
