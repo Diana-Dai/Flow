@@ -1,6 +1,855 @@
+{% doc %}
+  @prompt
+    Create a premium Shopify landing page case study section with a clean enterprise SaaS aesthetic and modern editorial layout.
+    
+    SECTION STYLE:
+    - Soft light-gray background
+    - Large two-column layout
+    - Minimal high-end B2B technology design
+    - Spacious padding and elegant whitespace
+    - Rounded cards with subtle borders and soft shadows
+    - Navy blue typography with muted gray supporting text
+    - Olive-green accent color for metrics
+    - Premium consulting / analytics dashboard aesthetic
+    - Figma-style modern UI composition
+    
+    LEFT COLUMN:
+    
+    Top Label:
+    - Small rounded gray tag
+    - Uppercase text:
+      "CUSTOMER CASE STUDY"
+    
+    Company Header:
+    - Small navy icon beside company name
+    - Bold title:
+      "Premium Fashion Retailer"
+    - Small muted metadata underneath:
+      "Specialty Apparel • 45 Stores • Tokyo & Regional"
+    
+    Main Headline:
+    - Large bold navy typography
+    - Multi-line layout:
+      "Converting Traffic Data Into Actionable Store Insights"
+    
+    Supporting paragraph:
+    "A mid-sized specialty fashion chain deployed Flow to measure true customer traffic, understand conversion patterns, and give store managers data-driven visibility into daily performance."
+    
+    BOTTOM METRICS:
+    Create 3 compact metric cards aligned horizontally.
+    
+    Card 1:
+    - Large olive-green metric:
+      "+18%"
+    - Small label:
+      "Conversion Rate Improvement"
+    
+    Card 2:
+    - Large olive-green metric:
+      "45"
+    - Small label:
+      "Stores Deployed"
+    
+    Card 3:
+    - Large olive-green metric:
+      "6mo"
+    - Small label:
+      "Measurement Period"
+    
+    Each metric card:
+    - White/light-gray background
+    - Rounded corners
+    - Thin subtle border
+    - Minimal clean styling
+    
+    RIGHT COLUMN:
+    
+    Create a premium deployment overview card.
+    
+    Card title:
+    "DEPLOYMENT OVERVIEW"
+    
+    Inside the card create 4 clean horizontal info rows with soft gray backgrounds.
+    
+    Rows:
+    1.
+    Label: "Industry"
+    Value: "Specialty Fashion Retail"
+    
+    2.
+    Label: "Store Count"
+    Value: "45 locations"
+    
+    3.
+    Label: "Deployment Period"
+    Value: "Q2 2025 - Q4 2025"
+    
+    4.
+    Label: "Primary Use Case"
+    Value: "Traffic & Conversion Analytics"
+    
+    Row styling:
+    - Rounded pill-like containers
+    - Left aligned bold labels
+    - Right aligned muted values
+    - Consistent spacing and padding
+    
+    DESIGN DIRECTION:
+    - Premium enterprise SaaS website
+    - Modern analytics platform
+    - Minimal consulting presentation aesthetic
+    - Elegant typography hierarchy
+    - Apple-style spacing
+    - Soft shadows and rounded UI
+    - Clean modern B2B branding
+    - Highly polished landing page section
+    
+    RESPONSIVE BEHAVIOR:
+    - Two-column desktop layout
+    - Stack vertically on mobile
+    - Preserve clean spacing across breakpoints
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-case-study-{{ ai_gen_id }} {
+    display: block;
+    background-color: {{ block.settings.background_color }};
+    padding: {{ block.settings.section_padding_mobile }}px 20px;
+    width: 100%;
+  }
+
+  @media screen and (min-width: 750px) {
+    .ai-case-study-{{ ai_gen_id }} {
+      padding: {{ block.settings.section_padding_desktop }}px 40px;
+    }
+  }
+
+  .ai-case-study-container-{{ ai_gen_id }} {
+    max-width: {{ block.settings.max_width }}px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  @media screen and (min-width: 990px) {
+    .ai-case-study-container-{{ ai_gen_id }} {
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 48px;
+    }
+  }
+
+  .ai-case-study-left-{{ ai_gen_id }} {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .ai-case-study-tag-{{ ai_gen_id }} {
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 14px;
+    background-color: {{ block.settings.tag_background }};
+    color: {{ block.settings.tag_text_color }};
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    width: fit-content;
+  }
+
+  .ai-case-study-company-header-{{ ai_gen_id }} {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .ai-case-study-company-title-wrapper-{{ ai_gen_id }} {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .ai-case-study-company-icon-{{ ai_gen_id }} {
+    width: 24px;
+    height: 24px;
+    background-color: {{ block.settings.icon_background }};
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .ai-case-study-company-icon-{{ ai_gen_id }} svg {
+    width: 14px;
+    height: 14px;
+    fill: {{ block.settings.icon_color }};
+  }
+
+  .ai-case-study-company-name-{{ ai_gen_id }} {
+    font-size: 18px;
+    font-weight: 700;
+    color: {{ block.settings.heading_color }};
+    margin: 0;
+  }
+
+  .ai-case-study-company-meta-{{ ai_gen_id }} {
+    font-size: 13px;
+    color: {{ block.settings.meta_text_color }};
+    line-height: 1.5;
+  }
+
+  .ai-case-study-headline-{{ ai_gen_id }} {
+    font-size: 32px;
+    font-weight: 700;
+    color: {{ block.settings.heading_color }};
+    line-height: 1.2;
+    margin: 8px 0 0 0;
+  }
+
+  @media screen and (min-width: 750px) {
+    .ai-case-study-headline-{{ ai_gen_id }} {
+      font-size: 42px;
+    }
+  }
+
+  .ai-case-study-description-{{ ai_gen_id }} {
+    font-size: 16px;
+    line-height: 1.6;
+    color: {{ block.settings.body_text_color }};
+    margin: 0;
+  }
+
+  @media screen and (min-width: 750px) {
+    .ai-case-study-description-{{ ai_gen_id }} {
+      font-size: 17px;
+    }
+  }
+
+  .ai-case-study-metrics-{{ ai_gen_id }} {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 16px;
+    margin-top: 16px;
+  }
+
+  .ai-case-study-metric-card-{{ ai_gen_id }} {
+    background-color: {{ block.settings.metric_card_background }};
+    border: 1px solid {{ block.settings.metric_card_border }};
+    border-radius: {{ block.settings.card_border_radius }}px;
+    padding: 20px 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .ai-case-study-metric-value-{{ ai_gen_id }} {
+    font-size: 36px;
+    font-weight: 700;
+    color: {{ block.settings.metric_color }};
+    line-height: 1;
+  }
+
+  .ai-case-study-metric-label-{{ ai_gen_id }} {
+    font-size: 13px;
+    color: {{ block.settings.meta_text_color }};
+    line-height: 1.3;
+  }
+
+  .ai-case-study-right-{{ ai_gen_id }} {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ai-case-study-overview-card-{{ ai_gen_id }} {
+    background-color: {{ block.settings.card_background }};
+    border: 1px solid {{ block.settings.card_border }};
+    border-radius: {{ block.settings.card_border_radius }}px;
+    padding: 32px 28px;
+    box-shadow: {{ block.settings.card_shadow_x }}px {{ block.settings.card_shadow_y }}px {{ block.settings.card_shadow_blur }}px rgba(0, 0, 0, {{ block.settings.card_shadow_opacity }});
+  }
+
+  .ai-case-study-overview-title-{{ ai_gen_id }} {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    color: {{ block.settings.meta_text_color }};
+    margin: 0 0 24px 0;
+  }
+
+  .ai-case-study-info-rows-{{ ai_gen_id }} {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .ai-case-study-info-row-{{ ai_gen_id }} {
+    background-color: {{ block.settings.row_background }};
+    border-radius: 12px;
+    padding: 14px 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .ai-case-study-info-label-{{ ai_gen_id }} {
+    font-size: 14px;
+    font-weight: 600;
+    color: {{ block.settings.heading_color }};
+    flex-shrink: 0;
+  }
+
+  .ai-case-study-info-value-{{ ai_gen_id }} {
+    font-size: 14px;
+    color: {{ block.settings.meta_text_color }};
+    text-align: right;
+  }
+{% endstyle %}
+
+<div class="ai-case-study-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-case-study-container-{{ ai_gen_id }}">
+    <div class="ai-case-study-left-{{ ai_gen_id }}">
+      {% if block.settings.show_tag %}
+        <div class="ai-case-study-tag-{{ ai_gen_id }}">
+          {{ block.settings.tag_text }}
+        </div>
+      {% endif %}
+
+      <div class="ai-case-study-company-header-{{ ai_gen_id }}">
+        <div class="ai-case-study-company-title-wrapper-{{ ai_gen_id }}">
+          {% if block.settings.show_icon %}
+            <div class="ai-case-study-company-icon-{{ ai_gen_id }}">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                <polyline points="7.5 4.21 12 6.81 16.5 4.21"></polyline>
+                <polyline points="7.5 19.79 7.5 14.6 3 12"></polyline>
+                <polyline points="21 12 16.5 14.6 16.5 19.79"></polyline>
+                <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                <line x1="12" y1="22.08" x2="12" y2="12"></line>
+              </svg>
+            </div>
+          {% endif %}
+          <h3 class="ai-case-study-company-name-{{ ai_gen_id }}">
+            {{ block.settings.company_name }}
+          </h3>
+        </div>
+        {% if block.settings.company_metadata != blank %}
+          <div class="ai-case-study-company-meta-{{ ai_gen_id }}">
+            {{ block.settings.company_metadata }}
+          </div>
+        {% endif %}
+      </div>
+
+      {% if block.settings.headline != blank %}
+        <h2 class="ai-case-study-headline-{{ ai_gen_id }}">
+          {{ block.settings.headline }}
+        </h2>
+      {% endif %}
+
+      {% if block.settings.description != blank %}
+        <div class="ai-case-study-description-{{ ai_gen_id }}">
+          {{ block.settings.description }}
+        </div>
+      {% endif %}
+
+      <div class="ai-case-study-metrics-{{ ai_gen_id }}">
+        {% if block.settings.show_metric_1 %}
+          <div class="ai-case-study-metric-card-{{ ai_gen_id }}">
+            <div class="ai-case-study-metric-value-{{ ai_gen_id }}">
+              {{ block.settings.metric_1_value }}
+            </div>
+            <div class="ai-case-study-metric-label-{{ ai_gen_id }}">
+              {{ block.settings.metric_1_label }}
+            </div>
+          </div>
+        {% endif %}
+
+        {% if block.settings.show_metric_2 %}
+          <div class="ai-case-study-metric-card-{{ ai_gen_id }}">
+            <div class="ai-case-study-metric-value-{{ ai_gen_id }}">
+              {{ block.settings.metric_2_value }}
+            </div>
+            <div class="ai-case-study-metric-label-{{ ai_gen_id }}">
+              {{ block.settings.metric_2_label }}
+            </div>
+          </div>
+        {% endif %}
+
+        {% if block.settings.show_metric_3 %}
+          <div class="ai-case-study-metric-card-{{ ai_gen_id }}">
+            <div class="ai-case-study-metric-value-{{ ai_gen_id }}">
+              {{ block.settings.metric_3_value }}
+            </div>
+            <div class="ai-case-study-metric-label-{{ ai_gen_id }}">
+              {{ block.settings.metric_3_label }}
+            </div>
+          </div>
+        {% endif %}
+      </div>
+    </div>
+
+    <div class="ai-case-study-right-{{ ai_gen_id }}">
+      <div class="ai-case-study-overview-card-{{ ai_gen_id }}">
+        <h4 class="ai-case-study-overview-title-{{ ai_gen_id }}">
+          {{ block.settings.overview_title }}
+        </h4>
+        <div class="ai-case-study-info-rows-{{ ai_gen_id }}">
+          {% if block.settings.show_info_1 %}
+            <div class="ai-case-study-info-row-{{ ai_gen_id }}">
+              <div class="ai-case-study-info-label-{{ ai_gen_id }}">
+                {{ block.settings.info_1_label }}
+              </div>
+              <div class="ai-case-study-info-value-{{ ai_gen_id }}">
+                {{ block.settings.info_1_value }}
+              </div>
+            </div>
+          {% endif %}
+
+          {% if block.settings.show_info_2 %}
+            <div class="ai-case-study-info-row-{{ ai_gen_id }}">
+              <div class="ai-case-study-info-label-{{ ai_gen_id }}">
+                {{ block.settings.info_2_label }}
+              </div>
+              <div class="ai-case-study-info-value-{{ ai_gen_id }}">
+                {{ block.settings.info_2_value }}
+              </div>
+            </div>
+          {% endif %}
+
+          {% if block.settings.show_info_3 %}
+            <div class="ai-case-study-info-row-{{ ai_gen_id }}">
+              <div class="ai-case-study-info-label-{{ ai_gen_id }}">
+                {{ block.settings.info_3_label }}
+              </div>
+              <div class="ai-case-study-info-value-{{ ai_gen_id }}">
+                {{ block.settings.info_3_value }}
+              </div>
+            </div>
+          {% endif %}
+
+          {% if block.settings.show_info_4 %}
+            <div class="ai-case-study-info-row-{{ ai_gen_id }}">
+              <div class="ai-case-study-info-label-{{ ai_gen_id }}">
+                {{ block.settings.info_4_label }}
+              </div>
+              <div class="ai-case-study-info-value-{{ ai_gen_id }}">
+                {{ block.settings.info_4_value }}
+              </div>
+            </div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "Case study section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "range",
+      "id": "max_width",
+      "label": "Maximum width",
+      "min": 1000,
+      "max": 1600,
+      "step": 100,
+      "unit": "px",
+      "default": 1400
+    },
+    {
+      "type": "range",
+      "id": "section_padding_mobile",
+      "label": "Padding (mobile)",
+      "min": 20,
+      "max": 80,
+      "step": 5,
+      "unit": "px",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "section_padding_desktop",
+      "label": "Padding (desktop)",
+      "min": 40,
+      "max": 120,
+      "step": 10,
+      "unit": "px",
+      "default": 80
+    },
+    {
+      "type": "header",
+      "content": "Tag"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_tag",
+      "label": "Show tag",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "tag_text",
+      "label": "Tag text",
+      "default": "Customer Case Study"
+    },
+    {
+      "type": "header",
+      "content": "Company"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_icon",
+      "label": "Show company icon",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "company_name",
+      "label": "Company name",
+      "default": "Premium Fashion Retailer"
+    },
+    {
+      "type": "text",
+      "id": "company_metadata",
+      "label": "Company metadata",
+      "default": "Specialty Apparel • 45 Stores • Tokyo & Regional"
+    },
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "type": "textarea",
+      "id": "headline",
+      "label": "Headline",
+      "default": "Converting Traffic Data Into Actionable Store Insights"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description",
+      "default": "A mid-sized specialty fashion chain deployed Flow to measure true customer traffic, understand conversion patterns, and give store managers data-driven visibility into daily performance."
+    },
+    {
+      "type": "header",
+      "content": "Metric 1"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_metric_1",
+      "label": "Show metric 1",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "metric_1_value",
+      "label": "Value",
+      "default": "+18%"
+    },
+    {
+      "type": "text",
+      "id": "metric_1_label",
+      "label": "Label",
+      "default": "Conversion Rate Improvement"
+    },
+    {
+      "type": "header",
+      "content": "Metric 2"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_metric_2",
+      "label": "Show metric 2",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "metric_2_value",
+      "label": "Value",
+      "default": "45"
+    },
+    {
+      "type": "text",
+      "id": "metric_2_label",
+      "label": "Label",
+      "default": "Stores Deployed"
+    },
+    {
+      "type": "header",
+      "content": "Metric 3"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_metric_3",
+      "label": "Show metric 3",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "metric_3_value",
+      "label": "Value",
+      "default": "6mo"
+    },
+    {
+      "type": "text",
+      "id": "metric_3_label",
+      "label": "Label",
+      "default": "Measurement Period"
+    },
+    {
+      "type": "header",
+      "content": "Overview card"
+    },
+    {
+      "type": "text",
+      "id": "overview_title",
+      "label": "Overview title",
+      "default": "Deployment Overview"
+    },
+    {
+      "type": "header",
+      "content": "Info row 1"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_info_1",
+      "label": "Show info row 1",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "info_1_label",
+      "label": "Label",
+      "default": "Industry"
+    },
+    {
+      "type": "text",
+      "id": "info_1_value",
+      "label": "Value",
+      "default": "Specialty Fashion Retail"
+    },
+    {
+      "type": "header",
+      "content": "Info row 2"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_info_2",
+      "label": "Show info row 2",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "info_2_label",
+      "label": "Label",
+      "default": "Store Count"
+    },
+    {
+      "type": "text",
+      "id": "info_2_value",
+      "label": "Value",
+      "default": "45 locations"
+    },
+    {
+      "type": "header",
+      "content": "Info row 3"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_info_3",
+      "label": "Show info row 3",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "info_3_label",
+      "label": "Label",
+      "default": "Deployment Period"
+    },
+    {
+      "type": "text",
+      "id": "info_3_value",
+      "label": "Value",
+      "default": "Q2 2025 - Q4 2025"
+    },
+    {
+      "type": "header",
+      "content": "Info row 4"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_info_4",
+      "label": "Show info row 4",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "info_4_label",
+      "label": "Label",
+      "default": "Primary Use Case"
+    },
+    {
+      "type": "text",
+      "id": "info_4_value",
+      "label": "Value",
+      "default": "Traffic & Conversion Analytics"
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Section background",
+      "default": "#f5f7f9"
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Headings",
+      "default": "#1a2b4a"
+    },
+    {
+      "type": "color",
+      "id": "body_text_color",
+      "label": "Body text",
+      "default": "#5a6c7d"
+    },
+    {
+      "type": "color",
+      "id": "meta_text_color",
+      "label": "Metadata text",
+      "default": "#8b95a1"
+    },
+    {
+      "type": "color",
+      "id": "metric_color",
+      "label": "Metric values",
+      "default": "#6b7c3a"
+    },
+    {
+      "type": "color",
+      "id": "tag_background",
+      "label": "Tag background",
+      "default": "#e5e7eb"
+    },
+    {
+      "type": "color",
+      "id": "tag_text_color",
+      "label": "Tag text",
+      "default": "#6b7280"
+    },
+    {
+      "type": "color",
+      "id": "icon_background",
+      "label": "Icon background",
+      "default": "#1a2b4a"
+    },
+    {
+      "type": "color",
+      "id": "icon_color",
+      "label": "Icon color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "card_background",
+      "label": "Card background",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "card_border",
+      "label": "Card border",
+      "default": "#e5e7eb"
+    },
+    {
+      "type": "color",
+      "id": "metric_card_background",
+      "label": "Metric card background",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "metric_card_border",
+      "label": "Metric card border",
+      "default": "#e5e7eb"
+    },
+    {
+      "type": "color",
+      "id": "row_background",
+      "label": "Info row background",
+      "default": "#f9fafb"
+    },
+    {
+      "type": "header",
+      "content": "Card style"
+    },
+    {
+      "type": "range",
+      "id": "card_border_radius",
+      "label": "Border radius",
+      "min": 0,
+      "max": 24,
+      "step": 2,
+      "unit": "px",
+      "default": 12
+    },
+    {
+      "type": "range",
+      "id": "card_shadow_x",
+      "label": "Shadow horizontal offset",
+      "min": 0,
+      "max": 10,
+      "step": 1,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "card_shadow_y",
+      "label": "Shadow vertical offset",
+      "min": 0,
+      "max": 20,
+      "step": 2,
+      "unit": "px",
+      "default": 4
+    },
+    {
+      "type": "range",
+      "id": "card_shadow_blur",
+      "label": "Shadow blur",
+      "min": 0,
+      "max": 40,
+      "step": 5,
+      "unit": "px",
+      "default": 15
+    },
+    {
+      "type": "range",
+      "id": "card_shadow_opacity",
+      "label": "Shadow opacity",
+      "min": 0,
+      "max": 0.5,
+      "step": 0.1,
+      "default": 0.1
+    }
+  ],
+  "presets": [
+    {
+      "name": "Case study section"
+    }
+  ]
+}
 {% endschema %}
