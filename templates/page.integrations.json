@@ -792,6 +792,65 @@
         "text_color": ""
       }
     },
+    "178002033189ab5a8f": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_bcb8a38_BURAJp": {
+          "type": "ai_gen_block_bcb8a38",
+          "settings": {
+            "section_padding_mobile": 60,
+            "section_padding_desktop": 100,
+            "background_color": "#ffffff",
+            "badge_text": "IMPLEMENTATION PROCESS",
+            "badge_background_color": "#f4f4f4",
+            "badge_text_color": "#677279",
+            "headline": "SUPPORTED FROM START TO LAUNCH.",
+            "headline_size_mobile": 36,
+            "headline_size_desktop": 56,
+            "headline_color": "#0D2745",
+            "description": "Our team guides you through every phase of implementation, from initial planning to post-launch monitoring, ensuring a smooth and successful integration.",
+            "description_size_mobile": 16,
+            "description_size_desktop": 18,
+            "description_color": "#677279",
+            "timeline_line_color": "#e5e7eb",
+            "badge_green_color": "#A5BE3B",
+            "badge_navy_color": "#0D2745",
+            "badge_number_text_color": "#ffffff",
+            "badge_border_radius": 8,
+            "step_title_size_mobile": 18,
+            "step_title_size_desktop": 20,
+            "step_title_color": "#0D2745",
+            "step_description_size_mobile": 15,
+            "step_description_size_desktop": 16,
+            "step_description_color": "#677279",
+            "step_1_title": "Confirm Target Data",
+            "step_1_description": "Define which data sources to connect and the business purpose for each integration. Align on priority and scope.",
+            "step_2_title": "Review Systems & Formats",
+            "step_2_description": "Examine your existing systems and data formats. Understand current export capabilities and access methods.",
+            "step_3_title": "Design Connection",
+            "step_3_description": "Choose the appropriate connection method (API, FTP, CSV). Design the integration architecture and schedule.",
+            "step_4_title": "Configure & Test",
+            "step_4_description": "Set up the connection and run test data transfers. Validate format accuracy, completeness, and timing.",
+            "step_5_title": "Confirm in Flow",
+            "step_5_description": "Review how the data appears in dashboards and reports. Verify usability and accuracy for decision-making.",
+            "step_6_title": "Monitor After Launch",
+            "step_6_description": "Continuously monitor data availability and freshness. Alerts when data is delayed or missing."
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_bcb8a38_BURAJp"
+      ],
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
     "multi_column_a6PUjJ": {
       "type": "multi-column",
       "blocks": {
@@ -1542,6 +1601,7 @@
     "177976588974919423",
     "multi_column_RkceNG",
     "multi_column_QjMJiW",
+    "178002033189ab5a8f",
     "multi_column_a6PUjJ",
     "section-15",
     "1779770137b5ad3ce8",
