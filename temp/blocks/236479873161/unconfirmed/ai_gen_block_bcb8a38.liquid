@@ -1,6 +1,698 @@
+{% doc %}
+  @prompt
+    Create a modern SaaS “Implementation Process” section for a Shopify landing page. Clean enterprise design with strong typography, lots of white space, and a minimal corporate aesthetic.
+    
+    Layout:
+    
+    Centered small label badge at top: “IMPLEMENTATION PROCESS”
+    Large bold uppercase headline:
+    “SUPPORTED FROM
+    START TO LAUNCH.”
+    Supporting paragraph underneath, centered, medium gray text, max width around 700px
+    
+    Below the intro:
+    
+    Vertical timeline process layout aligned slightly left of center
+    Thin vertical line connecting all steps
+    6 stacked process items
+    Each step has a rounded square number badge on the left
+    First 3 badges in soft olive green
+    Last 3 badges in deep navy blue
+    Subtle shadow on badges
+    Content aligned horizontally beside each badge
+    
+    Each process item includes:
+    
+    Bold dark navy title
+    Smaller muted gray description text underneath
+    
+    Steps:
+    1 — Confirm Target Data
+    Define which data sources to connect and the business purpose for each integration. Align on priority and scope.
+    
+    2 — Review Systems & Formats
+    Examine your existing systems and data formats. Understand current export capabilities and access methods.
+    
+    3 — Design Connection
+    Choose the appropriate connection method (API, FTP, CSV). Design the integration architecture and schedule.
+    
+    4 — Configure & Test
+    Set up the connection and run test data transfers. Validate format accuracy, completeness, and timing.
+    
+    5 — Confirm in Flow
+    Review how the data appears in dashboards and reports. Verify usability and accuracy for decision-making.
+    
+    6 — Monitor After Launch
+    Continuously monitor data availability and freshness. Alerts when data is delayed or missing.
+    
+    Design style:
+    
+    Inspired by modern B2B SaaS companies
+    Minimalist, structured, professional
+    White/light gray background
+    Dark navy typography (#0D2745 style)
+    Muted gray body copy
+    Olive green accent (#A5BE3B style)
+    Spacious vertical rhythm
+    Large bold headline with tight line-height
+    Elegant typography hierarchy
+    Responsive Shopify section design
+    Slightly editorial / enterprise feel
+    No gradients
+    No illustrations
+    No icons except numbered badges
+    Premium modern web design aesthetic similar to Stripe, Segment, Linear, or enterprise SaaS landing pages
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-implementation-process-{{ ai_gen_id }} {
+    display: block;
+    width: 100%;
+    background-color: {{ block.settings.background_color }};
+    padding: {{ block.settings.section_padding_mobile }}px 20px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .ai-implementation-process-{{ ai_gen_id }} {
+      padding: {{ block.settings.section_padding_desktop }}px 40px;
+    }
+  }
+
+  .ai-implementation-process__container-{{ ai_gen_id }} {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .ai-implementation-process__header-{{ ai_gen_id }} {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .ai-implementation-process__header-{{ ai_gen_id }} {
+      margin-bottom: 80px;
+    }
+  }
+
+  .ai-implementation-process__badge-{{ ai_gen_id }} {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: {{ block.settings.badge_text_color }};
+    background-color: {{ block.settings.badge_background_color }};
+    padding: 8px 16px;
+    border-radius: 20px;
+    margin-bottom: 24px;
+  }
+
+  .ai-implementation-process__headline-{{ ai_gen_id }} {
+    font-size: {{ block.settings.headline_size_mobile }}px;
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: {{ block.settings.headline_color }};
+    margin: 0 0 24px 0;
+  }
+
+  @media screen and (min-width: 750px) {
+    .ai-implementation-process__headline-{{ ai_gen_id }} {
+      font-size: {{ block.settings.headline_size_desktop }}px;
+    }
+  }
+
+  .ai-implementation-process__description-{{ ai_gen_id }} {
+    font-size: {{ block.settings.description_size_mobile }}px;
+    line-height: 1.6;
+    color: {{ block.settings.description_color }};
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  @media screen and (min-width: 750px) {
+    .ai-implementation-process__description-{{ ai_gen_id }} {
+      font-size: {{ block.settings.description_size_desktop }}px;
+    }
+  }
+
+  .ai-implementation-process__timeline-{{ ai_gen_id }} {
+    max-width: 800px;
+    margin: 0 auto;
+    padding-left: 20px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .ai-implementation-process__timeline-{{ ai_gen_id }} {
+      padding-left: 60px;
+    }
+  }
+
+  .ai-implementation-process__step-{{ ai_gen_id }} {
+    position: relative;
+    padding-left: 60px;
+    padding-bottom: 48px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .ai-implementation-process__step-{{ ai_gen_id }} {
+      padding-left: 80px;
+      padding-bottom: 56px;
+    }
+  }
+
+  .ai-implementation-process__step-{{ ai_gen_id }}:last-child {
+    padding-bottom: 0;
+  }
+
+  .ai-implementation-process__step-{{ ai_gen_id }}::before {
+    content: '';
+    position: absolute;
+    left: 19px;
+    top: 48px;
+    width: 2px;
+    height: calc(100% - 24px);
+    background-color: {{ block.settings.timeline_line_color }};
+  }
+
+  @media screen and (min-width: 750px) {
+    .ai-implementation-process__step-{{ ai_gen_id }}::before {
+      left: 23px;
+      top: 56px;
+    }
+  }
+
+  .ai-implementation-process__step-{{ ai_gen_id }}:last-child::before {
+    display: none;
+  }
+
+  .ai-implementation-process__badge-number-{{ ai_gen_id }} {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: {{ block.settings.badge_border_radius }}px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 700;
+    color: {{ block.settings.badge_number_text_color }};
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  }
+
+  @media screen and (min-width: 750px) {
+    .ai-implementation-process__badge-number-{{ ai_gen_id }} {
+      width: 48px;
+      height: 48px;
+      font-size: 18px;
+    }
+  }
+
+  .ai-implementation-process__badge-number-{{ ai_gen_id }}--green {
+    background-color: {{ block.settings.badge_green_color }};
+  }
+
+  .ai-implementation-process__badge-number-{{ ai_gen_id }}--navy {
+    background-color: {{ block.settings.badge_navy_color }};
+  }
+
+  .ai-implementation-process__step-title-{{ ai_gen_id }} {
+    font-size: {{ block.settings.step_title_size_mobile }}px;
+    font-weight: 700;
+    line-height: 1.3;
+    color: {{ block.settings.step_title_color }};
+    margin: 0 0 8px 0;
+  }
+
+  @media screen and (min-width: 750px) {
+    .ai-implementation-process__step-title-{{ ai_gen_id }} {
+      font-size: {{ block.settings.step_title_size_desktop }}px;
+    }
+  }
+
+  .ai-implementation-process__step-description-{{ ai_gen_id }} {
+    font-size: {{ block.settings.step_description_size_mobile }}px;
+    line-height: 1.6;
+    color: {{ block.settings.step_description_color }};
+    margin: 0;
+  }
+
+  @media screen and (min-width: 750px) {
+    .ai-implementation-process__step-description-{{ ai_gen_id }} {
+      font-size: {{ block.settings.step_description_size_desktop }}px;
+    }
+  }
+{% endstyle %}
+
+<div class="ai-implementation-process-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-implementation-process__container-{{ ai_gen_id }}">
+    <div class="ai-implementation-process__header-{{ ai_gen_id }}">
+      {% if block.settings.badge_text != blank %}
+        <div class="ai-implementation-process__badge-{{ ai_gen_id }}">
+          {{ block.settings.badge_text }}
+        </div>
+      {% endif %}
+
+      {% if block.settings.headline != blank %}
+        <h2 class="ai-implementation-process__headline-{{ ai_gen_id }}">
+          {{ block.settings.headline }}
+        </h2>
+      {% endif %}
+
+      {% if block.settings.description != blank %}
+        <div class="ai-implementation-process__description-{{ ai_gen_id }}">
+          {{ block.settings.description }}
+        </div>
+      {% endif %}
+    </div>
+
+    <div class="ai-implementation-process__timeline-{{ ai_gen_id }}">
+      {% if block.settings.step_1_title != blank %}
+        <div class="ai-implementation-process__step-{{ ai_gen_id }}">
+          <div class="ai-implementation-process__badge-number-{{ ai_gen_id }} ai-implementation-process__badge-number-{{ ai_gen_id }}--green">
+            1
+          </div>
+          <h3 class="ai-implementation-process__step-title-{{ ai_gen_id }}">
+            {{ block.settings.step_1_title }}
+          </h3>
+          {% if block.settings.step_1_description != blank %}
+            <p class="ai-implementation-process__step-description-{{ ai_gen_id }}">
+              {{ block.settings.step_1_description }}
+            </p>
+          {% endif %}
+        </div>
+      {% endif %}
+
+      {% if block.settings.step_2_title != blank %}
+        <div class="ai-implementation-process__step-{{ ai_gen_id }}">
+          <div class="ai-implementation-process__badge-number-{{ ai_gen_id }} ai-implementation-process__badge-number-{{ ai_gen_id }}--green">
+            2
+          </div>
+          <h3 class="ai-implementation-process__step-title-{{ ai_gen_id }}">
+            {{ block.settings.step_2_title }}
+          </h3>
+          {% if block.settings.step_2_description != blank %}
+            <p class="ai-implementation-process__step-description-{{ ai_gen_id }}">
+              {{ block.settings.step_2_description }}
+            </p>
+          {% endif %}
+        </div>
+      {% endif %}
+
+      {% if block.settings.step_3_title != blank %}
+        <div class="ai-implementation-process__step-{{ ai_gen_id }}">
+          <div class="ai-implementation-process__badge-number-{{ ai_gen_id }} ai-implementation-process__badge-number-{{ ai_gen_id }}--green">
+            3
+          </div>
+          <h3 class="ai-implementation-process__step-title-{{ ai_gen_id }}">
+            {{ block.settings.step_3_title }}
+          </h3>
+          {% if block.settings.step_3_description != blank %}
+            <p class="ai-implementation-process__step-description-{{ ai_gen_id }}">
+              {{ block.settings.step_3_description }}
+            </p>
+          {% endif %}
+        </div>
+      {% endif %}
+
+      {% if block.settings.step_4_title != blank %}
+        <div class="ai-implementation-process__step-{{ ai_gen_id }}">
+          <div class="ai-implementation-process__badge-number-{{ ai_gen_id }} ai-implementation-process__badge-number-{{ ai_gen_id }}--navy">
+            4
+          </div>
+          <h3 class="ai-implementation-process__step-title-{{ ai_gen_id }}">
+            {{ block.settings.step_4_title }}
+          </h3>
+          {% if block.settings.step_4_description != blank %}
+            <p class="ai-implementation-process__step-description-{{ ai_gen_id }}">
+              {{ block.settings.step_4_description }}
+            </p>
+          {% endif %}
+        </div>
+      {% endif %}
+
+      {% if block.settings.step_5_title != blank %}
+        <div class="ai-implementation-process__step-{{ ai_gen_id }}">
+          <div class="ai-implementation-process__badge-number-{{ ai_gen_id }} ai-implementation-process__badge-number-{{ ai_gen_id }}--navy">
+            5
+          </div>
+          <h3 class="ai-implementation-process__step-title-{{ ai_gen_id }}">
+            {{ block.settings.step_5_title }}
+          </h3>
+          {% if block.settings.step_5_description != blank %}
+            <p class="ai-implementation-process__step-description-{{ ai_gen_id }}">
+              {{ block.settings.step_5_description }}
+            </p>
+          {% endif %}
+        </div>
+      {% endif %}
+
+      {% if block.settings.step_6_title != blank %}
+        <div class="ai-implementation-process__step-{{ ai_gen_id }}">
+          <div class="ai-implementation-process__badge-number-{{ ai_gen_id }} ai-implementation-process__badge-number-{{ ai_gen_id }}--navy">
+            6
+          </div>
+          <h3 class="ai-implementation-process__step-title-{{ ai_gen_id }}">
+            {{ block.settings.step_6_title }}
+          </h3>
+          {% if block.settings.step_6_description != blank %}
+            <p class="ai-implementation-process__step-description-{{ ai_gen_id }}">
+              {{ block.settings.step_6_description }}
+            </p>
+          {% endif %}
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</div>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "Implementation process",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Section"
+    },
+    {
+      "type": "range",
+      "id": "section_padding_mobile",
+      "label": "Padding (mobile)",
+      "min": 20,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "section_padding_desktop",
+      "label": "Padding (desktop)",
+      "min": 40,
+      "max": 200,
+      "step": 10,
+      "unit": "px",
+      "default": 100
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background",
+      "default": "#ffffff"
+    },
+    {
+      "type": "header",
+      "content": "Badge"
+    },
+    {
+      "type": "text",
+      "id": "badge_text",
+      "label": "Badge text",
+      "default": "IMPLEMENTATION PROCESS"
+    },
+    {
+      "type": "color",
+      "id": "badge_background_color",
+      "label": "Badge background",
+      "default": "#f4f4f4"
+    },
+    {
+      "type": "color",
+      "id": "badge_text_color",
+      "label": "Badge text",
+      "default": "#677279"
+    },
+    {
+      "type": "header",
+      "content": "Headline"
+    },
+    {
+      "type": "textarea",
+      "id": "headline",
+      "label": "Headline",
+      "default": "SUPPORTED FROM START TO LAUNCH."
+    },
+    {
+      "type": "range",
+      "id": "headline_size_mobile",
+      "label": "Size (mobile)",
+      "min": 24,
+      "max": 60,
+      "step": 2,
+      "unit": "px",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "headline_size_desktop",
+      "label": "Size (desktop)",
+      "min": 32,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "default": 56
+    },
+    {
+      "type": "color",
+      "id": "headline_color",
+      "label": "Headline color",
+      "default": "#0D2745"
+    },
+    {
+      "type": "header",
+      "content": "Description"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description",
+      "default": "Our team guides you through every phase of implementation, from initial planning to post-launch monitoring, ensuring a smooth and successful integration."
+    },
+    {
+      "type": "range",
+      "id": "description_size_mobile",
+      "label": "Size (mobile)",
+      "min": 14,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "description_size_desktop",
+      "label": "Size (desktop)",
+      "min": 16,
+      "max": 28,
+      "step": 1,
+      "unit": "px",
+      "default": 18
+    },
+    {
+      "type": "color",
+      "id": "description_color",
+      "label": "Description color",
+      "default": "#677279"
+    },
+    {
+      "type": "header",
+      "content": "Timeline style"
+    },
+    {
+      "type": "color",
+      "id": "timeline_line_color",
+      "label": "Timeline line",
+      "default": "#e5e7eb"
+    },
+    {
+      "type": "color",
+      "id": "badge_green_color",
+      "label": "Badge green",
+      "default": "#A5BE3B"
+    },
+    {
+      "type": "color",
+      "id": "badge_navy_color",
+      "label": "Badge navy",
+      "default": "#0D2745"
+    },
+    {
+      "type": "color",
+      "id": "badge_number_text_color",
+      "label": "Badge number text",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "badge_border_radius",
+      "label": "Badge border radius",
+      "min": 0,
+      "max": 24,
+      "step": 2,
+      "unit": "px",
+      "default": 8
+    },
+    {
+      "type": "header",
+      "content": "Step style"
+    },
+    {
+      "type": "range",
+      "id": "step_title_size_mobile",
+      "label": "Title size (mobile)",
+      "min": 16,
+      "max": 32,
+      "step": 1,
+      "unit": "px",
+      "default": 18
+    },
+    {
+      "type": "range",
+      "id": "step_title_size_desktop",
+      "label": "Title size (desktop)",
+      "min": 18,
+      "max": 36,
+      "step": 1,
+      "unit": "px",
+      "default": 20
+    },
+    {
+      "type": "color",
+      "id": "step_title_color",
+      "label": "Title color",
+      "default": "#0D2745"
+    },
+    {
+      "type": "range",
+      "id": "step_description_size_mobile",
+      "label": "Description size (mobile)",
+      "min": 13,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "default": 15
+    },
+    {
+      "type": "range",
+      "id": "step_description_size_desktop",
+      "label": "Description size (desktop)",
+      "min": 14,
+      "max": 22,
+      "step": 1,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "color",
+      "id": "step_description_color",
+      "label": "Description color",
+      "default": "#677279"
+    },
+    {
+      "type": "header",
+      "content": "Step 1"
+    },
+    {
+      "type": "text",
+      "id": "step_1_title",
+      "label": "Title",
+      "default": "Confirm Target Data"
+    },
+    {
+      "type": "textarea",
+      "id": "step_1_description",
+      "label": "Description",
+      "default": "Define which data sources to connect and the business purpose for each integration. Align on priority and scope."
+    },
+    {
+      "type": "header",
+      "content": "Step 2"
+    },
+    {
+      "type": "text",
+      "id": "step_2_title",
+      "label": "Title",
+      "default": "Review Systems & Formats"
+    },
+    {
+      "type": "textarea",
+      "id": "step_2_description",
+      "label": "Description",
+      "default": "Examine your existing systems and data formats. Understand current export capabilities and access methods."
+    },
+    {
+      "type": "header",
+      "content": "Step 3"
+    },
+    {
+      "type": "text",
+      "id": "step_3_title",
+      "label": "Title",
+      "default": "Design Connection"
+    },
+    {
+      "type": "textarea",
+      "id": "step_3_description",
+      "label": "Description",
+      "default": "Choose the appropriate connection method (API, FTP, CSV). Design the integration architecture and schedule."
+    },
+    {
+      "type": "header",
+      "content": "Step 4"
+    },
+    {
+      "type": "text",
+      "id": "step_4_title",
+      "label": "Title",
+      "default": "Configure & Test"
+    },
+    {
+      "type": "textarea",
+      "id": "step_4_description",
+      "label": "Description",
+      "default": "Set up the connection and run test data transfers. Validate format accuracy, completeness, and timing."
+    },
+    {
+      "type": "header",
+      "content": "Step 5"
+    },
+    {
+      "type": "text",
+      "id": "step_5_title",
+      "label": "Title",
+      "default": "Confirm in Flow"
+    },
+    {
+      "type": "textarea",
+      "id": "step_5_description",
+      "label": "Description",
+      "default": "Review how the data appears in dashboards and reports. Verify usability and accuracy for decision-making."
+    },
+    {
+      "type": "header",
+      "content": "Step 6"
+    },
+    {
+      "type": "text",
+      "id": "step_6_title",
+      "label": "Title",
+      "default": "Monitor After Launch"
+    },
+    {
+      "type": "textarea",
+      "id": "step_6_description",
+      "label": "Description",
+      "default": "Continuously monitor data availability and freshness. Alerts when data is delayed or missing."
+    }
+  ],
+  "presets": [
+    {
+      "name": "Implementation process"
+    }
+  ]
+}
 {% endschema %}
