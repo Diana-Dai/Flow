@@ -846,13 +846,14 @@
       "custom_css": [
         ".icon_container {text-align: center;}",
         ".prose p {font-size: 0.9rem;}",
-        ".multi-column__item {gap: 0;}"
+        ".multi-column__item {gap: 0;}",
+        ".multi-column{gap:2rem;}"
       ],
       "name": "Multi-column",
       "settings": {
         "full_width": true,
         "stack_on_mobile": false,
-        "gap": "medium",
+        "gap": "small",
         "text_alignment": "start",
         "subheading": "BEHAVIORAL CHANGE",
         "title": "How Teams Used Flow",
