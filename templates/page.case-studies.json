@@ -82,72 +82,6 @@
         "text_color": ""
       }
     },
-    "image_with_text_overlay_AcppEX": {
-      "type": "image-with-text-overlay",
-      "blocks": {
-        "subheading_GmUMNm": {
-          "type": "subheading",
-          "settings": {
-            "text": "Brand Spotlight: Daytona"
-          }
-        },
-        "heading_frXnfn": {
-          "type": "heading",
-          "settings": {
-            "text": "DRIVING +25.2% CONVERSION LIFT.",
-            "heading_tag": "h0"
-          }
-        },
-        "richtext_HwhtPj": {
-          "type": "richtext",
-          "settings": {
-            "content": "<p>How Japan's \"FREAK'S STORE\" flagship eliminated traffic blindspots and optimized spatial geometry at the edge.</p>"
-          }
-        },
-        "button_7Prq3W": {
-          "type": "button",
-          "settings": {
-            "style": "fill",
-            "size": "lg",
-            "text": "Request Demo →",
-            "url": "#",
-            "background": "#a0b842",
-            "text_color": ""
-          }
-        },
-        "button_cpqnfi": {
-          "type": "button",
-          "settings": {
-            "style": "fill",
-            "size": "lg",
-            "text": "Read Technical Papers →",
-            "url": "#",
-            "background": "#ffffff",
-            "text_color": "#11243e"
-          }
-        }
-      },
-      "block_order": [
-        "subheading_GmUMNm",
-        "heading_frXnfn",
-        "richtext_HwhtPj",
-        "button_7Prq3W",
-        "button_cpqnfi"
-      ],
-      "name": "Image with text overlay",
-      "settings": {
-        "full_width": true,
-        "allow_transparent_header": false,
-        "enable_parallax": false,
-        "image_size": "fill",
-        "image": "shopify://shop_images/ChatGPT_Image_May_12_2026_10_04_23_AM.png",
-        "mobile_text_position": "place-self-center text-center",
-        "desktop_text_position": "sm:place-self-center sm:text-center",
-        "text_color": "#ffffff",
-        "overlay_color": "#11243e",
-        "overlay_opacity": 43
-      }
-    },
     "multi_column_hNQjmA": {
       "type": "multi-column",
       "blocks": {
@@ -1512,7 +1446,6 @@
   },
   "order": [
     "1780026169d49df455",
-    "image_with_text_overlay_AcppEX",
     "multi_column_hNQjmA",
     "multi_column_TV4htr",
     "multi_column_qin4Pg",
