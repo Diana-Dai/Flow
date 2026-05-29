@@ -9,6 +9,79 @@
  */
 {
   "sections": {
+    "1780026169d49df455": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_952f74e_qYrbiY": {
+          "type": "ai_gen_block_952f74e",
+          "settings": {
+            "max_width": 1400,
+            "section_padding_mobile": 40,
+            "section_padding_desktop": 80,
+            "show_tag": true,
+            "tag_text": "Customer Case Study",
+            "show_icon": true,
+            "company_name": "Premium Fashion Retailer",
+            "company_metadata": "Specialty Apparel • 45 Stores • Tokyo & Regional",
+            "headline": "Converting Traffic Data Into Actionable Store Insights",
+            "description": "A mid-sized specialty fashion chain deployed Flow to measure true customer traffic, understand conversion patterns, and give store managers data-driven visibility into daily performance.",
+            "show_metric_1": true,
+            "metric_1_value": "+18%",
+            "metric_1_label": "Conversion Rate Improvement",
+            "show_metric_2": true,
+            "metric_2_value": "45",
+            "metric_2_label": "Stores Deployed",
+            "show_metric_3": true,
+            "metric_3_value": "6mo",
+            "metric_3_label": "Measurement Period",
+            "overview_title": "Deployment Overview",
+            "show_info_1": true,
+            "info_1_label": "Industry",
+            "info_1_value": "Specialty Fashion Retail",
+            "show_info_2": true,
+            "info_2_label": "Store Count",
+            "info_2_value": "45 locations",
+            "show_info_3": true,
+            "info_3_label": "Deployment Period",
+            "info_3_value": "Q2 2025 - Q4 2025",
+            "show_info_4": true,
+            "info_4_label": "Primary Use Case",
+            "info_4_value": "Traffic & Conversion Analytics",
+            "background_color": "#f5f7f9",
+            "heading_color": "#1a2b4a",
+            "body_text_color": "#5a6c7d",
+            "meta_text_color": "#8b95a1",
+            "metric_color": "#6b7c3a",
+            "tag_background": "#e5e7eb",
+            "tag_text_color": "#6b7280",
+            "icon_background": "#1a2b4a",
+            "icon_color": "#ffffff",
+            "card_background": "#ffffff",
+            "card_border": "#e5e7eb",
+            "metric_card_background": "#ffffff",
+            "metric_card_border": "#e5e7eb",
+            "row_background": "#f9fafb",
+            "card_border_radius": 12,
+            "card_shadow_x": 0,
+            "card_shadow_y": 4,
+            "card_shadow_blur": 15,
+            "card_shadow_opacity": 0.1
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_952f74e_qYrbiY"
+      ],
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
     "image_with_text_overlay_AcppEX": {
       "type": "image-with-text-overlay",
       "blocks": {
@@ -1079,6 +1152,7 @@
     }
   },
   "order": [
+    "1780026169d49df455",
     "image_with_text_overlay_AcppEX",
     "multi_column_hNQjmA",
     "impact_text_L3JGpY",
