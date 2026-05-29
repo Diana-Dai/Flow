@@ -15,9 +15,9 @@
         "ai_gen_block_952f74e_qYrbiY": {
           "type": "ai_gen_block_952f74e",
           "settings": {
-            "max_width": 1400,
+            "max_width": 1600,
             "section_padding_mobile": 40,
-            "section_padding_desktop": 80,
+            "section_padding_desktop": 40,
             "show_tag": true,
             "tag_text": "Customer Case Study",
             "show_icon": true,
@@ -47,7 +47,7 @@
             "show_info_4": true,
             "info_4_label": "Primary Use Case",
             "info_4_value": "Traffic & Conversion Analytics",
-            "background_color": "#f5f7f9",
+            "background_color": "#ffffff",
             "heading_color": "#1a2b4a",
             "body_text_color": "#5a6c7d",
             "meta_text_color": "#8b95a1",
