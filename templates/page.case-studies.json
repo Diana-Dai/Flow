@@ -847,7 +847,7 @@
         ".icon_container {text-align: center;}",
         ".prose p {font-size: 0.9rem;}",
         ".multi-column__item {gap: 0;}",
-        ".multi-column{gap:2rem;}"
+        ".multi-column {gap: 2rem;}"
       ],
       "name": "Multi-column",
       "settings": {
@@ -863,84 +863,84 @@
         "text_color": "#ffffff"
       }
     },
-    "media_with_text_hMPTmL": {
-      "type": "media-with-text",
+    "178003042955718f5f": {
+      "type": "_blocks",
       "blocks": {
-        "image_8hBn9C": {
-          "type": "image",
+        "ai_gen_block_11d4177_K3FTVb": {
+          "type": "ai_gen_block_11d4177",
           "settings": {
-            "image": "shopify://shop_images/Gemini_Generated_Image_dq9ap9dq9ap9dq9a.png",
-            "media_width": 50,
-            "media_position": "end",
-            "text_position": "place-self-center-start text-start",
-            "icon": "none",
-            "icon_width": 48,
-            "subheading": "RESULT",
-            "title": "Behavioral Optimization Lift",
-            "content": "<p>Data-driven layout shifts resulted in a 31% increase in deep-store penetration.</p>",
-            "link_text": "View Integration",
-            "link_url": "#",
-            "background": "",
-            "background_gradient": "",
-            "text_color": "#11243e",
-            "text_gradient": "",
-            "button_background": "",
-            "button_text_color": ""
-          }
+            "section_label": "MEASURED RESULTS",
+            "section_headline": "Documented Outcomes",
+            "section_description": "The following results were measured over a 6-month period following Flow deployment across all 45 stores.",
+            "card_1_enabled": true,
+            "card_1_title": "Conversion Rate",
+            "card_1_subtitle": "Traffic to transaction ratio",
+            "card_1_metric": "+18%",
+            "card_1_description": "Average conversion rate improvement across the store network. Stores that actively adjusted staffing based on Flow data saw conversion improvements ranging from 12% to 24%.",
+            "card_1_methodology": "Conversion rate calculated as (transaction count / total traffic entries) × 100, measured daily and averaged over 6-month period. Compared against 6-month baseline period before Flow deployment.",
+            "card_2_enabled": true,
+            "card_2_title": "Labor Cost Reduction",
+            "card_2_subtitle": "Staffing efficiency improvement",
+            "card_2_metric": "-12%",
+            "card_2_description": "Reduction in labor costs as a percentage of sales through better alignment of staffing with traffic patterns. Overstaffing during slow periods was reduced while peak coverage was maintained.",
+            "card_2_methodology": "Labor hours compared against traffic volume and sales results. Calculated as (total labor cost / total sales revenue) × 100, comparing 6-month periods before and after Flow deployment.",
+            "card_3_enabled": true,
+            "card_3_title": "Manager Dashboard Usage",
+            "card_3_subtitle": "Platform adoption rate",
+            "card_3_metric": "92%",
+            "card_3_description": "Percentage of store managers accessing Flow dashboards daily after 3-month deployment period. High adoption indicated managers found the platform valuable for daily operations.",
+            "card_3_methodology": "Login analytics tracking unique manager logins per day, averaged over weeks 12–16 following deployment across all stores.",
+            "card_4_enabled": true,
+            "card_4_title": "Issue Response Time",
+            "card_4_subtitle": "Time to identify and address problems",
+            "card_4_metric": "Same-Day",
+            "card_4_description": "Managers shifted from identifying performance issues the next day (via sales reports) to identifying and responding to issues during the same business day using real-time Flow data.",
+            "card_4_methodology": "Qualitative assessment based on manager interviews and timestamped records of staffing adjustments in response to observed traffic patterns.",
+            "show_note": true,
+            "note_title": "Important Note on Results",
+            "note_text": "These results reflect this specific customer's deployment and operational practices over a 6-month measurement period. Flow platform performance varies based on store format, market conditions, existing baseline performance, implementation quality, and how actively teams use the platform. These numbers should not be interpreted as guaranteed outcomes for other retailers.",
+            "container_max_width": 1100,
+            "desktop_width_percent": 100,
+            "section_background": "#f5f5f5",
+            "card_background": "#ffffff",
+            "card_border_color": "#e5e5e5",
+            "headline_color": "#1a2b4a",
+            "label_color": "#6b7280",
+            "text_color": "#4b5563",
+            "subtitle_color": "#6b7280",
+            "metric_color": "#6b8e23",
+            "icon_background": "#f3f4f6",
+            "icon_color": "#6b8e23",
+            "methodology_background": "#f9fafb",
+            "note_background": "#fefce8",
+            "note_border_color": "#d4d4a8",
+            "note_icon_color": "#6b8e23",
+            "headline_size": 42,
+            "description_size": 18,
+            "card_title_size": 24,
+            "card_subtitle_size": 14,
+            "metric_size": 48,
+            "body_text_size": 16,
+            "methodology_text_size": 14,
+            "note_title_size": 18,
+            "card_border_radius": 12,
+            "icon_border_radius": 8,
+            "methodology_border_radius": 8,
+            "card_shadow_opacity": 5
+          },
+          "blocks": {}
         }
       },
       "block_order": [
-        "image_8hBn9C"
+        "ai_gen_block_11d4177_K3FTVb"
       ],
-      "custom_css": [
-        "h3 {font-size: var(--text-h0); color: #fff;}",
-        "ul {display: flex; flex-wrap: wrap; gap: 20px; font-size: 1rem;}",
-        "ul li {width: calc(50% - 20px);}"
-      ],
-      "name": "Media with text",
       "settings": {
-        "full_width": false,
-        "alternate_media_position": false,
-        "spacing": "small"
-      }
-    },
-    "media_with_text_mRGejd": {
-      "type": "media-with-text",
-      "blocks": {
-        "image_enedX8": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Gemini_Generated_Image_r9e7z0r9e7z0r9e7.png",
-            "media_width": 50,
-            "media_position": "start",
-            "text_position": "place-self-center-start text-start",
-            "icon": "none",
-            "icon_width": 48,
-            "subheading": "Geometry Meets Velocity",
-            "title": "Physical vs Transactional Correlation",
-            "content": "<p>Data without commerce is just noise. Flow correlated the exact millisecond a customer lingered at Daytona's main window display with real-time purchasing velocity at their Shopify Plus POS terminals.</p><p>This unlocked a definitive <strong>\"Attraction Index\"</strong> for every square meter of their flagship floor, identifying \"dead zones\" previously masked by staff activity.</p>",
-            "link_text": "",
-            "link_url": "",
-            "background": "#f9fafb",
-            "background_gradient": "",
-            "text_color": "#11243e",
-            "text_gradient": "",
-            "button_background": "",
-            "button_text_color": ""
-          }
-        }
-      },
-      "block_order": [
-        "image_enedX8"
-      ],
-      "custom_css": [
-        "* {background: white;}"
-      ],
-      "name": "Media with text",
-      "settings": {
-        "full_width": false,
-        "alternate_media_position": false,
-        "spacing": "small"
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
       }
     },
     "section-15": {
@@ -1060,6 +1060,164 @@
         "chart_true_false_color": ""
       }
     },
+    "multi_column_AirP37": {
+      "type": "multi-column",
+      "blocks": {
+        "item_tqXUb9": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#f9fafb",
+            "text_color": "",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h5>Better Alignment Across Levels</h5><p>Store managers, area supervisors, and headquarters began using the same data foundation for performance discussions. This reduced miscommunication and aligned expectations across the organization.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_LLqU6x": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#f9fafb",
+            "text_color": "",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h5>Faster Decision Cycles</h5><p>Real-time visibility enabled faster decisions. Managers no longer waited for end-of-week reports to understand what was working. Adjustments happened during the week, sometimes during the same day.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_UaKx78": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#f9fafb",
+            "text_color": "",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h5>Improved Staff Awareness</h5><p>Store staff became more aware of traffic patterns and conversion rates. Managers shared Flow insights during daily briefings, helping teams understand the connection between their actions and store performance.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_Vmc6kG": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#f9fafb",
+            "text_color": "",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h5>Stronger KPI Habits</h5><p>Managers developed stronger habits around checking and acting on key performance indicators. This was especially valuable for newer managers who previously relied heavily on intuition.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_trQR3h": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#f9fafb",
+            "text_color": "",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h5>Cross-Department Understanding</h5><p>Operations, merchandising, and marketing teams gained better understanding of how their decisions affected store traffic and conversion. This improved collaboration on campaigns and seasonal planning.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_LkGEYj": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#f9fafb",
+            "text_color": "",
+            "border_color": "#f9fafb",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h5>Evidence-Based Planning</h5><p>Future store openings, renovations, and format changes now incorporate Flow traffic data. Location decisions and layout planning became more evidence-based rather than purely based on sales projections.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_tqXUb9",
+        "item_LLqU6x",
+        "item_UaKx78",
+        "item_Vmc6kG",
+        "item_trQR3h",
+        "item_LkGEYj"
+      ],
+      "name": "Multi-column",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "start",
+        "subheading": "ORGANIZATIONAL CHANGE",
+        "title": "Operational Impact",
+        "content": "<p>Beyond measurable performance metrics, Flow deployment changed how the organization operated day-to-day.</p>",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
     "multi_column_ykywta": {
       "type": "multi-column",
       "blocks": {
@@ -1154,269 +1312,6 @@
         "text_color": ""
       }
     },
-    "comparison_table_LGYRYk": {
-      "type": "comparison-table",
-      "blocks": {
-        "headings_cVHHY3": {
-          "type": "headings",
-          "settings": {
-            "heading_1": "Performance Metric",
-            "heading_2": "Legacy (Intuition)",
-            "heading_3": "Flow (Evidence)",
-            "heading_4": "Net Impact",
-            "heading_5": "",
-            "heading_6": "",
-            "heading_7": "",
-            "heading_8": "",
-            "heading_9": "",
-            "heading_10": "",
-            "heading_11": "",
-            "heading_12": "",
-            "heading_13": "",
-            "heading_14": "",
-            "heading_15": "",
-            "heading_16": "",
-            "heading_17": "",
-            "heading_18": "",
-            "heading_19": "",
-            "heading_20": ""
-          }
-        },
-        "values_rjMWW9": {
-          "type": "values",
-          "settings": {
-            "product": "",
-            "value_1": "<p>VMD Audit Speed</p>",
-            "value_2": "<p>Weekly / Subjective</p>",
-            "value_3": "<p>Real-Time / Quantitative</p>",
-            "value_4": "<p><strong>+15hr Staff Savings</strong></p>",
-            "value_5": "",
-            "value_6": "",
-            "value_7": "",
-            "value_8": "",
-            "value_9": "",
-            "value_10": "",
-            "value_11": "",
-            "value_12": "",
-            "value_13": "",
-            "value_14": "",
-            "value_15": "",
-            "value_16": "",
-            "value_17": "",
-            "value_18": "",
-            "value_19": "",
-            "value_20": "",
-            "view_button_background": "",
-            "view_button_text_color": ""
-          }
-        },
-        "values_7tmAm7": {
-          "type": "values",
-          "settings": {
-            "product": "",
-            "value_1": "<p>Data Accuracy</p>",
-            "value_2": "<p>~60% Accuracy</p>",
-            "value_3": "<p>99%+ Purity</p>",
-            "value_4": "<p><strong>Zero Staff Noise</strong></p>",
-            "value_5": "",
-            "value_6": "",
-            "value_7": "",
-            "value_8": "",
-            "value_9": "",
-            "value_10": "",
-            "value_11": "",
-            "value_12": "",
-            "value_13": "",
-            "value_14": "",
-            "value_15": "",
-            "value_16": "",
-            "value_17": "",
-            "value_18": "",
-            "value_19": "",
-            "value_20": "",
-            "view_button_background": "",
-            "view_button_text_color": ""
-          }
-        },
-        "values_tf4MPP": {
-          "type": "values",
-          "settings": {
-            "product": "",
-            "value_1": "<p>Layout Pivot Time</p>",
-            "value_2": "<p>14 Days</p>",
-            "value_3": "<p>&lt; 24 Hours</p>",
-            "value_4": "<p><strong>Hyper-Agile</strong></p>",
-            "value_5": "",
-            "value_6": "",
-            "value_7": "",
-            "value_8": "",
-            "value_9": "",
-            "value_10": "",
-            "value_11": "",
-            "value_12": "",
-            "value_13": "",
-            "value_14": "",
-            "value_15": "",
-            "value_16": "",
-            "value_17": "",
-            "value_18": "",
-            "value_19": "",
-            "value_20": "",
-            "view_button_background": "",
-            "view_button_text_color": ""
-          }
-        }
-      },
-      "block_order": [
-        "headings_cVHHY3",
-        "values_rjMWW9",
-        "values_7tmAm7",
-        "values_tf4MPP"
-      ],
-      "custom_css": [
-        "strong {color: #a0b842;}"
-      ],
-      "name": "Comparison table",
-      "settings": {
-        "full_width": true,
-        "subheading": "RESULT",
-        "title": "Evidence-Based Outcomes",
-        "content": "",
-        "button_text": "",
-        "button_url": "",
-        "text_position": "start",
-        "max_rows": 5,
-        "view_all_text": "View all",
-        "view_less_text": "View less",
-        "view_product": "View",
-        "show_product_info": false,
-        "show_product_image": false,
-        "show_product_swatch": false,
-        "viewing_product": "",
-        "background": "#ffffff",
-        "background_gradient": "",
-        "text_color": "",
-        "heading_color": "",
-        "heading_gradient": "",
-        "button_background": "",
-        "button_text_color": "",
-        "chart_background": "",
-        "chart_text_color": "",
-        "chart_true_false_color": ""
-      }
-    },
-    "multi_column_jJh3QA": {
-      "type": "multi-column",
-      "blocks": {
-        "item_d9zryz": {
-          "type": "item",
-          "settings": {
-            "icon": "none",
-            "icon_width": 32,
-            "icon_background_type": "circle",
-            "icon_background": "",
-            "icon_color": "",
-            "background_color": "#d0d4c1",
-            "text_color": "#11243e",
-            "border_color": "#ffffff",
-            "show_controls": false,
-            "column_size": "4",
-            "title": "Week 1",
-            "heading_tag": "h5",
-            "subheading": "",
-            "content": "<p>Remote RTSP Ingestion & Security Audit.</p>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        },
-        "item_UJmxTr": {
-          "type": "item",
-          "settings": {
-            "icon": "none",
-            "icon_width": 32,
-            "icon_background_type": "circle",
-            "icon_background": "",
-            "icon_color": "",
-            "background_color": "#959c77",
-            "text_color": "#ffffff",
-            "border_color": "",
-            "show_controls": false,
-            "column_size": "4",
-            "title": "Week 2-4",
-            "heading_tag": "h5",
-            "subheading": "",
-            "content": "<p>Noise Calibration & Behavioral Baseline.</p>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        },
-        "item_4Vgjkc": {
-          "type": "item",
-          "settings": {
-            "icon": "none",
-            "icon_width": 32,
-            "icon_background_type": "circle",
-            "icon_background": "",
-            "icon_color": "",
-            "background_color": "#a0b842",
-            "text_color": "#f9fafb",
-            "border_color": "",
-            "show_controls": false,
-            "column_size": "4",
-            "title": "Week 8",
-            "heading_tag": "h5",
-            "subheading": "",
-            "content": "<p>Spatial Layout Pivot & VMD Validation.</p>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        },
-        "item_gDV86Y": {
-          "type": "item",
-          "settings": {
-            "icon": "none",
-            "icon_width": 32,
-            "icon_background_type": "circle",
-            "icon_background": "",
-            "icon_color": "",
-            "background_color": "#3e412f",
-            "text_color": "#ffffff",
-            "border_color": "",
-            "show_controls": false,
-            "column_size": "4",
-            "title": "Week 12",
-            "heading_tag": "h5",
-            "subheading": "",
-            "content": "<p>Full Regional Network ROI Scale-up.</p>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        }
-      },
-      "block_order": [
-        "item_d9zryz",
-        "item_UJmxTr",
-        "item_4Vgjkc",
-        "item_gDV86Y"
-      ],
-      "name": "Multi-column",
-      "settings": {
-        "full_width": true,
-        "stack_on_mobile": false,
-        "gap": "medium",
-        "text_alignment": "center",
-        "subheading": "ROADMAP",
-        "title": "Regional Network Roadmap",
-        "content": "",
-        "background": "",
-        "background_gradient": "",
-        "text_color": ""
-      }
-    },
     "rich_text_6VmVgb": {
       "type": "rich-text",
       "blocks": {
@@ -1430,7 +1325,7 @@
         "heading_YXhiR8": {
           "type": "heading",
           "settings": {
-            "text": "READY TO VALIDATE YOUR VMD ROI?",
+            "text": "SEE WHAT FLOW COULD REVEAL INYOUR STORES",
             "heading_tag": "h1",
             "text_color": "",
             "gradient": ""
@@ -1439,7 +1334,7 @@
         "richtext_qzAkak": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Replicate Daytona's spatial intelligence framework in your own storefront.</p>"
+            "content": "<p>Every retail operation is different. Let's discuss what Flow could measure, analyze, and improve in your specific environment.</p>"
           }
         },
         "button_AVKAbi": {
@@ -1594,12 +1489,10 @@
     "multi_column_PBB8dw",
     "multi_column_bJtgmc",
     "multi_column_TbzGnm",
-    "media_with_text_hMPTmL",
-    "media_with_text_mRGejd",
+    "178003042955718f5f",
     "section-15",
+    "multi_column_AirP37",
     "multi_column_ykywta",
-    "comparison_table_LGYRYk",
-    "multi_column_jJh3QA",
     "rich_text_6VmVgb",
     "multi_column_UExWWX"
   ]
