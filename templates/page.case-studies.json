@@ -587,9 +587,9 @@
             "icon_background_type": "square",
             "icon_background": "#a0b842",
             "icon_color": "",
-            "background_color": "",
+            "background_color": "#f9fafb",
             "text_color": "",
-            "border_color": "",
+            "border_color": "#f2f2f2",
             "show_controls": false,
             "column_size": "3",
             "title": "",
@@ -625,6 +625,95 @@
         "title": "Why Flow Was Selected",
         "content": "<p>After evaluating several traffic analytics and retail intelligence platforms, the customer selected Flow based on several practical factors.</p>",
         "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "multi_column_bJtgmc": {
+      "type": "multi-column",
+      "blocks": {
+        "item_mRFw4X": {
+          "type": "item",
+          "settings": {
+            "icon": "people",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#a0b842",
+            "icon_color": "#ffffff",
+            "background_color": "#ffffff",
+            "text_color": "",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "2",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h5>Traffic Analytics</h5><p>Flow cameras installed at store entrances to measure customer entries, exits, and directional flow with 98%+ accuracy.</p><p>✅ Deployed across all 45 stores</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_r96Tt7": {
+          "type": "item",
+          "settings": {
+            "icon": "up",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#a0b842",
+            "icon_color": "#ffffff",
+            "background_color": "#ffffff",
+            "text_color": "",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "2",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h5>Passerby & Capture Rate</h5><p>Measurement of street traffic vs. store entries to calculate capture rate and understand location performance.</p><p>✅ Deployed at street-facing locations</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_KQtcVQ": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-document",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#a0b842",
+            "icon_color": "#ffffff",
+            "background_color": "#ffffff",
+            "text_color": "",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "2",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h5>POS Integration</h5><p>Direct connection to existing POS system to automatically correlate traffic data with transaction records and calculate conversion rates.</p><p>Automated daily sync</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_mRFw4X",
+        "item_r96Tt7",
+        "item_KQtcVQ"
+      ],
+      "name": "Multi-column",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "start",
+        "subheading": "DEPLOYMENT SCOPE",
+        "title": "What Was Implemented",
+        "content": "<p>The customer deployed the following Flow capabilities across their 45-store network.</p>",
+        "background": "",
         "background_gradient": "",
         "text_color": ""
       }
@@ -1359,6 +1448,7 @@
     "multi_column_TV4htr",
     "multi_column_qin4Pg",
     "multi_column_PBB8dw",
+    "multi_column_bJtgmc",
     "media_with_text_hMPTmL",
     "media_with_text_mRGejd",
     "section-15",
