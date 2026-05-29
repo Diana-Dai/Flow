@@ -265,103 +265,6 @@
         "text_color": ""
       }
     },
-    "impact_text_L3JGpY": {
-      "type": "impact-text",
-      "blocks": {
-        "item_UBHTFa": {
-          "type": "item",
-          "settings": {
-            "title": "+25.2%",
-            "subheading": "",
-            "content": "<p>Checkout Conversion Lift</p>",
-            "button_text": "",
-            "button_url": "",
-            "animate_impact_text": false,
-            "animate_impact_text_duration": 2
-          }
-        },
-        "item_aR7mDY": {
-          "type": "item",
-          "settings": {
-            "title": "+23.9%",
-            "subheading": "",
-            "content": "<p>Fixture Zone Engagement</p>",
-            "button_text": "",
-            "button_url": "",
-            "animate_impact_text": false,
-            "animate_impact_text_duration": 2
-          }
-        },
-        "item_zr7YfQ": {
-          "type": "item",
-          "settings": {
-            "title": "<15s",
-            "subheading": "",
-            "content": "<p>Data Sync Latency</p>",
-            "button_text": "",
-            "button_url": "",
-            "animate_impact_text": false,
-            "animate_impact_text_duration": 2
-          }
-        }
-      },
-      "block_order": [
-        "item_UBHTFa",
-        "item_aR7mDY",
-        "item_zr7YfQ"
-      ],
-      "disabled": true,
-      "name": "Impact text",
-      "settings": {
-        "full_width": true,
-        "stack_mobile": true,
-        "text_alignment": "center",
-        "impact_text_style": "fill",
-        "text_divider": "none",
-        "impact_text_size_ratio": 1,
-        "background": "",
-        "background_gradient": "",
-        "heading_text_color": "#a0b842",
-        "heading_gradient": "",
-        "text_color": "",
-        "button_background": "",
-        "button_text_color": ""
-      }
-    },
-    "rich_text_J4Jpbj": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_itcncp": {
-          "type": "heading",
-          "settings": {
-            "text": "THE QUEST FORRETAIL PURITY",
-            "heading_tag": "h1",
-            "text_color": "",
-            "gradient": ""
-          }
-        },
-        "richtext_YyJriK": {
-          "type": "richtext",
-          "settings": {
-            "content": "<p>Eliminating \"Data Noise\" to establish a 100% honest baseline for physical storefront performance.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading_itcncp",
-        "richtext_YyJriK"
-      ],
-      "disabled": true,
-      "name": "Rich text",
-      "settings": {
-        "full_width": true,
-        "content_width": "small",
-        "text_position": "center",
-        "background": "#ffffff",
-        "background_gradient": "",
-        "text_color": ""
-      }
-    },
     "multi_column_TV4htr": {
       "type": "multi-column",
       "blocks": {
@@ -424,6 +327,141 @@
         "title": "About the Customer",
         "content": "<p>This customer operates a specialty fashion retail chain with 45 stores across Tokyo, Osaka, and regional cities. Their stores range from 150-300 square meters and focus on premium casual apparel for women aged 25-45.</p><p>With approximately 30-50 staff per store and emphasis on customer service, the brand positioned itself as a higher-touch retail experience. Store managers had significant autonomy over merchandising, staffing, and local operations.</p>",
         "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "multi_column_qin4Pg": {
+      "type": "multi-column",
+      "blocks": {
+        "item_naEBJq": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#ffffff",
+            "text_color": "",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "2",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h4>No Accurate Traffic Measurement</h4><p>Traffic counts were estimated manually or extrapolated from POS transaction volume. Store managers had no reliable way to know how many customers actually entered the store each day or how that compared to street traffic.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_ity9Ac": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#ffffff",
+            "text_color": "",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "2",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h4>Limited Visibility Before Checkout</h4><p>Performance data only became visible after transactions were completed. Managers could not see real-time traffic surges, identify slow periods accurately, or understand conversion patterns during the day.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_DM9ThQ": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#ffffff",
+            "text_color": "",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "2",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h4>Difficulty Managing Conversion</h4><p>Without knowing true traffic volume, conversion rate could not be calculated. This made it difficult to diagnose whether low sales days were due to low traffic, poor conversion, or both.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_9PEAUU": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#ffffff",
+            "text_color": "",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "2",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h4>Intuition-Based Staffing and VMD Decisions</h4><p>Store managers scheduled staff based on experience and intuition rather than measured traffic patterns. Visual merchandising changes were evaluated based on sales results only, with no visibility into whether they affected customer engagement or dwell time.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_PADbQH": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#ffffff",
+            "text_color": "",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "2",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h4>No Real-Time Store-Level Data</h4><p>Headquarters received sales reports daily, but had no visibility into what was happening in stores during the day. Area managers could not identify performance issues until after the fact.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_naEBJq",
+        "item_ity9Ac",
+        "item_DM9ThQ",
+        "item_9PEAUU",
+        "item_PADbQH"
+      ],
+      "name": "Multi-column",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "start",
+        "subheading": "THE CHALLENGE",
+        "title": "Challenges Before Flow",
+        "content": "<p>Before deploying Flow, the chain faced several operational visibility gaps that limited data-driven decision-making.</p>",
+        "background": "",
         "background_gradient": "",
         "text_color": ""
       }
@@ -1155,9 +1193,8 @@
     "1780026169d49df455",
     "image_with_text_overlay_AcppEX",
     "multi_column_hNQjmA",
-    "impact_text_L3JGpY",
-    "rich_text_J4Jpbj",
     "multi_column_TV4htr",
+    "multi_column_qin4Pg",
     "media_with_text_hMPTmL",
     "media_with_text_mRGejd",
     "section-15",
