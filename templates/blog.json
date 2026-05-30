@@ -13,7 +13,7 @@
       "type": "main-blog",
       "settings": {
         "allow_transparent_header": false,
-        "content": "<p>小売の意思決定、店舗運営、Retail DX、AI活用について、経営視点で考える最新記事をお届けします。</p>",
+        "content": "<p>小売の意思決定、店舗運営、店舗DX、AI活用について、経営視点で考える最新記事をお届けします。</p>",
         "show_newsletter_form": true,
         "show_tags": true,
         "banner_background": "",
