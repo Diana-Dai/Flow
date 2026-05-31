@@ -15,20 +15,20 @@
         "subheading_GmUMNm": {
           "type": "subheading",
           "settings": {
-            "text": "INTEGRATIONS"
+            "text": "データ連携"
           }
         },
         "heading_frXnfn": {
           "type": "heading",
           "settings": {
-            "text": "CONNECT YOURRETAIL DATA.",
+            "text": "店舗データを、判断に使える形へ。",
             "heading_tag": "h0"
           }
         },
         "richtext_HwhtPj": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Flow connects your existing POS, traffic, staffing, and operational data into a single foundation for visibility, analysis, and action. No rip-and-replace required.</p>"
+            "content": "<p>Flowは、POS・来店計測・シフト・天候・店舗運営データを統合し、本部・エリア・店舗が同じ情報をもとに判断できる環境をつくります。</p>"
           }
         },
         "button_7Prq3W": {
@@ -36,7 +36,7 @@
           "settings": {
             "style": "fill",
             "size": "lg",
-            "text": "Request Integration Demo →",
+            "text": "連携について相談する →",
             "url": "#",
             "background": "#a0b842",
             "text_color": ""
@@ -47,7 +47,7 @@
           "settings": {
             "style": "fill",
             "size": "lg",
-            "text": "View platform →",
+            "text": "プラットフォームを見る →",
             "url": "#",
             "background": "#ffffff",
             "text_color": "#11243e"
@@ -81,7 +81,7 @@
         "item_GMdCj7": {
           "type": "item",
           "settings": {
-            "icon": "picto-envelope",
+            "icon": "picto-file",
             "icon_width": 32,
             "icon_background_type": "square",
             "icon_background": "#ffffff",
@@ -91,10 +91,10 @@
             "border_color": "#ffffff",
             "show_controls": false,
             "column_size": "3",
-            "title": "Siloed Data",
+            "title": "分断されたデータ",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<p>Sales data in POS, traffic in counter systems, schedules in spreadsheets. Each system tells a different story with no unified view.</p><h4>5-8</h4><p>Average disconnected systems per chain</p>",
+            "content": "<p>売上、来店数、シフト、天候、店舗情報が別々に管理されていると、店舗の状況を一つの視点で確認できません。</p><h4>5〜8種類</h4><p>分散しやすい主要データ</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -113,10 +113,10 @@
             "border_color": "#ffffff",
             "show_controls": false,
             "column_size": "3",
-            "title": "Misaligned Teams",
+            "title": "広がる実行力の差",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<p>Headquarters sees one metric, area managers track another, stores use different definitions. No shared operational reality.</p><h4>3.2x</h4><p>Performance variance without common data</p>",
+            "content": "<p>上位20%の店長は判断できても、<br/>その判断品質を全店で再現するには仕組みが必要です。</p><h4>80%</h4><p>実行力を伸ばせる店舗群</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -135,10 +135,10 @@
             "border_color": "#f2f2f2",
             "show_controls": false,
             "column_size": "3",
-            "title": "Slow Response",
+            "title": "対応の遅れ",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<p>Manual data collection and reconciliation delays decision-making. By the time insights arrive, the moment has passed.</p><h4>12-18hr</h4><p>Typical insight-to-action delay</p>",
+            "content": "<p>データの確認・集計・共有に時間がかかると、売場で起きている変化への対応も遅れます。</p><h4>12〜18時間</h4><p>典型的な判断遅延</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -160,7 +160,7 @@
             "title": "",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<h3>Flow Solves This</h3><p>Flow connects your existing systems into a unified retail data foundation. No system replacement required. Your data becomes comparable, analyzable, and actionable across the entire organization.</p>",
+            "content": "<h3>Flowが整える判断基盤</h3><p>Flowは、既存のPOS・来店計測・シフト・天候・店舗運営データを統合し、本部・エリア・店舗が同じ状況を見ながら判断できる共通基盤をつくります。データをつなぐことで、優れた判断を一部の店舗だけでなく、チェーン全体で再現しやすくします。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -209,9 +209,9 @@
         "stack_on_mobile": false,
         "gap": "medium",
         "text_alignment": "start",
-        "subheading": "THE PROBLEM",
-        "title": "DATA FRAGMENTATION BLOCKS EXECUTION.",
-        "content": "<p>Your retail data lives in different systems: POS, traffic counters, staffing tools, spreadsheets, weather services. When these remain disconnected, headquarters, area managers, and stores cannot work from the same understanding.</p>",
+        "subheading": "課題",
+        "title": "データが分かれるほど、実行力の差は広がります。",
+        "content": "<p>売上はPOS、来店数はカメラやカウンター、勤務情報はシフト表、天候は外部データ。必要な情報が別々に管理されていると、経験豊富な店長は判断できても、すべての店舗で同じ判断品質を再現することは難しくなります。</p>",
         "background": "#ffffff",
         "background_gradient": "",
         "text_color": "#11243e"
@@ -807,19 +807,19 @@
             "headline": "SUPPORTED FROM START TO LAUNCH.",
             "headline_size_mobile": 36,
             "headline_size_desktop": 56,
-            "headline_color": "#0D2745",
+            "headline_color": "#0d2745",
             "description": "Our team guides you through every phase of implementation, from initial planning to post-launch monitoring, ensuring a smooth and successful integration.",
             "description_size_mobile": 16,
             "description_size_desktop": 18,
             "description_color": "#677279",
             "timeline_line_color": "#e5e7eb",
-            "badge_green_color": "#A5BE3B",
-            "badge_navy_color": "#0D2745",
+            "badge_green_color": "#a5be3b",
+            "badge_navy_color": "#0d2745",
             "badge_number_text_color": "#ffffff",
             "badge_border_radius": 8,
             "step_title_size_mobile": 18,
             "step_title_size_desktop": 20,
-            "step_title_color": "#0D2745",
+            "step_title_color": "#0d2745",
             "step_description_size_mobile": 15,
             "step_description_size_desktop": 16,
             "step_description_color": "#677279",
