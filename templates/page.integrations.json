@@ -870,7 +870,7 @@
             "title": "",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<h4>Confirm Target Data</h4><p>Define which data sources to connect and the business purpose for each integration. Align on priority and scope.</p>",
+            "content": "<h4>既存フォーマットに対応</h4><p>POSや各種システムから出力されるCSV・XML・独自形式を確認し、Flowで活用できる形に整理します。既存ベンダー側の大きな改修を前提にしません。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -892,7 +892,7 @@
             "title": "",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<h4>Review Systems & Formats</h4><p>Examine your existing systems and data formats. Understand current export capabilities and access methods.</p>",
+            "content": "<h4>接続状態を継続監視</h4><p>連携後も、データの取得状況・更新状況・欠損・遅延をバックエンドで監視します。データソースに問題がある場合も、早期に把握できる体制を整えます。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -914,7 +914,7 @@
             "title": "",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<h4>Design Connection</h4><p>Choose the appropriate connection method (API, FTP, CSV). Design the integration architecture and schedule.</p>",
+            "content": "<h4>店舗展開に合わせて拡張</h4><p>一部店舗や一部データから開始し、確認しながら対象店舗・データ範囲を広げることができます。小さく始めて、チェーン全体へ段階的に展開できます。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -922,6 +922,7 @@
         },
         "item_qGg8JM": {
           "type": "item",
+          "disabled": true,
           "settings": {
             "icon": "none",
             "icon_width": 32,
@@ -944,6 +945,7 @@
         },
         "item_b3cc7y": {
           "type": "item",
+          "disabled": true,
           "settings": {
             "icon": "none",
             "icon_width": 32,
@@ -966,6 +968,7 @@
         },
         "item_m3LkUr": {
           "type": "item",
+          "disabled": true,
           "settings": {
             "icon": "none",
             "icon_width": 32,
@@ -1002,7 +1005,7 @@
             "title": "",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<h3>Flow Manages Complexity</h3><p>You define what data matters. Flow handles format transformation, connection monitoring, error handling, and ongoing reliability. The technical complexity stays with us.</p>",
+            "content": "<h3>Flowが連携の複雑さを管理します</h3><p>お客様は、連携したいデータと利用目的を確認するだけ。データ形式の整理、連携設計、取込テスト、接続監視、エラー確認、運用後の安定性まで、Flowが技術的な複雑さを引き受けます。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -1030,9 +1033,9 @@
         "stack_on_mobile": false,
         "gap": "small",
         "text_alignment": "center",
-        "subheading": "IMPLEMENTATION PROCESS",
-        "title": "SUPPORTED FROM START TO LAUNCH.",
-        "content": "<p>Flow guides you through the entire integration process. We don't hand off a technical task—we partner with you from requirements through ongoing monitoring.</p>",
+        "subheading": "導入負担を抑える",
+        "title": "複雑な連携設計は、Flowが整理します。",
+        "content": "<p>データ連携では、既存システムの仕様やCSV形式がそのまま使いにくい場合があります。Flowは、現在のデータ形式を確認し、無理な改修を前提にせず、導入時に実運用に合う連携方法を設計します。</p>",
         "background": "#ffffff",
         "background_gradient": "",
         "text_color": ""
