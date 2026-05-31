@@ -1491,28 +1491,28 @@
           "type": "item",
           "settings": {
             "title": "FTP連携には対応していますか？",
-            "content": "<p>Write content to answer to common questions your customers may have about your products, shipping policies..</p>"
+            "content": "<p>はい。CSVやXMLなどのデータファイルを、FTPまたはSFTPで定期的に受け取り、Flowに取り込む方法に対応しています。エンタープライズ環境でも利用しやすい連携方法です。</p>"
           }
         },
         "item_GgRUQn": {
           "type": "item",
           "settings": {
-            "title": "Question",
-            "content": "<p>Write content to answer to common questions your customers may have about your products, shipping policies..</p>"
+            "title": "既存の来店計測データも取り込めますか？",
+            "content": "<p>はい。FlowのAIカメラで来店計測を行うだけでなく、既存のカウンターや他社計測システムのデータを取り込むことも可能です。店舗や導入状況に応じて、現実的な方法をご提案します。</p>"
           }
         },
         "item_TaUFcx": {
           "type": "item",
           "settings": {
-            "title": "Can Flow connect without an API?",
-            "content": "<p>Yes. Flow supports FTP connections and scheduled CSV file uploads for systems that don't offer API access. We adapt to your existing infrastructure rather than requiring specific technical capabilities.</p>"
+            "title": "一部店舗から始めることはできますか？",
+            "content": "<p>はい。一部店舗、一部エリア、一部データから開始し、確認しながら対象範囲を広げることができます。段階的な導入にも対応しています。</p>"
           }
         },
         "item_MhBcfw": {
           "type": "item",
           "settings": {
-            "title": "Is FTP supported?",
-            "content": "<p>Yes. Flow supports secure FTP (SFTP) connections for scheduled file transfers. This is common for enterprise systems with batch processing workflows.</p>"
+            "title": "連携後のデータ欠損や遅延は確認できますか？",
+            "content": "<p>はい。Flowは連携後もデータの取得状況、更新状況、欠損、遅延を継続的に確認します。データソースに問題がある場合も、早期に把握できるようにします。</p>"
           }
         }
       },
