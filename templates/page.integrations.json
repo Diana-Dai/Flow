@@ -67,9 +67,9 @@
         "allow_transparent_header": false,
         "enable_parallax": false,
         "image_size": "fill",
-        "image": "shopify://shop_images/ChatGPT_Image_May_12_2026_10_04_23_AM.png",
+        "image": "shopify://shop_images/Integrations_1.png",
         "mobile_text_position": "place-self-center text-center",
-        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "desktop_text_position": "sm:place-self-center-start sm:text-start",
         "text_color": "#ffffff",
         "overlay_color": "#11243e",
         "overlay_opacity": 43
