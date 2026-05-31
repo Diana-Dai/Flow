@@ -75,13 +75,13 @@
         "allow_transparent_header": false,
         "enable_parallax": false,
         "image_size": "fill",
-        "image": "shopify://shop_images/Integrations_1.png",
+        "image": "shopify://shop_images/integrations_hero.png",
         "mobile_image": "shopify://shop_images/Mobile_Hero.png",
         "mobile_text_position": "place-self-center text-center",
-        "desktop_text_position": "sm:place-self-center-start sm:text-start",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
         "text_color": "#ffffff",
         "overlay_color": "#11243e",
-        "overlay_opacity": 43
+        "overlay_opacity": 50
       }
     },
     "multi_column_HCGJea": {
