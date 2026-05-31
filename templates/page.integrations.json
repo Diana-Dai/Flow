@@ -1553,14 +1553,20 @@
         "subheading_AK7Cjn": {
           "type": "subheading",
           "settings": {
-            "text": "NEXT STEPS",
+            "text": "次のステップ",
             "icon": "none"
+          }
+        },
+        "liquid_kYJakG": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<p>Write custom Liquid code to include widget or dynamic code.</p>"
           }
         },
         "heading_YXhiR8": {
           "type": "heading",
           "settings": {
-            "text": "READY TO CONNECT YOUR STORE DATA?",
+            "text": "既存システムとの連携可否を、個別に確認しませんか？",
             "heading_tag": "h1",
             "text_color": "",
             "gradient": ""
@@ -1569,7 +1575,7 @@
         "richtext_qzAkak": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Let's discuss your existing systems and design an integration approach that works for your environment.</p>"
+            "content": "<p>現在のPOS、来店計測、シフト、天候データなどの状況を確認し、貴社環境に合った現実的な連携方法をご提案します。</p>"
           }
         },
         "button_AVKAbi": {
@@ -1589,13 +1595,13 @@
           "settings": {
             "style_1": "fill",
             "size_1": "xl",
-            "text_1": "Schedule Demo →",
+            "text_1": "連携について相談する →",
             "url_1": "#",
             "background_1": "#a0b842",
             "text_color_1": "#ffffff",
             "style_2": "fill",
             "size_2": "xl",
-            "text_2": "Explore Platform →",
+            "text_2": "プラットフォームを見る →",
             "url_2": "#",
             "background_2": "#ffffff",
             "text_color_2": "#11243e"
@@ -1604,6 +1610,7 @@
       },
       "block_order": [
         "subheading_AK7Cjn",
+        "liquid_kYJakG",
         "heading_YXhiR8",
         "richtext_qzAkak",
         "button_AVKAbi",
