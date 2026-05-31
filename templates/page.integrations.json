@@ -18,8 +18,15 @@
             "text": "データ連携"
           }
         },
+        "liquid_KnLNrt": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<h1 class=\"h1\">店舗データを、<br>売判断に使える形へ。</br>\n</h1>"
+          }
+        },
         "heading_frXnfn": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "text": "店舗データを、判断に使える形へ。",
             "heading_tag": "h0"
@@ -56,6 +63,7 @@
       },
       "block_order": [
         "subheading_GmUMNm",
+        "liquid_KnLNrt",
         "heading_frXnfn",
         "richtext_HwhtPj",
         "button_7Prq3W",
