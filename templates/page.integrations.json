@@ -1261,11 +1261,11 @@
             "text_color": "",
             "border_color": "#f2f2f2",
             "show_controls": false,
-            "column_size": "2",
+            "column_size": "3",
             "title": "",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<h4>Understand Traffic-to-Sales Relationship</h4><p>See how foot traffic correlates with actual sales. Identify which stores convert well and which are losing opportunities despite healthy traffic.</p>",
+            "content": "<h4>来店と売上の関係が見える</h4><p>来店数と売上を組み合わせることで、機会を活かせている店舗と、改善余地のある店舗を確認できます。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -1283,11 +1283,11 @@
             "text_color": "",
             "border_color": "#f2f2f2",
             "show_controls": false,
-            "column_size": "2",
+            "column_size": "3",
             "title": "",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<h4>Compare Staffing to Performance</h4><p>Match labor schedules against traffic and sales outcomes. Identify understaffed peak periods and overstaffed slow hours.</p>",
+            "content": "<h4>人員配置のムダを減らす</h4><p>シフトや実働時間を来店・売上と照らし合わせ、ピーク時の人員不足や閑散時間帯の過剰配置を見直せます。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -1305,11 +1305,11 @@
             "text_color": "",
             "border_color": "#f2f2f2",
             "show_controls": false,
-            "column_size": "2",
+            "column_size": "3",
             "title": "",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<h4>Analyze Weather Impact</h4><p>Correlate weather conditions with store performance. Understand seasonal patterns and plan inventory and staffing accordingly.</p>",
+            "content": "<h4>天候要因を判断に活かす</h4><p>気温、雨天、天候変化と店舗実績を組み合わせ、外部要因を踏まえた店舗運営ができます。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -1327,11 +1327,11 @@
             "text_color": "",
             "border_color": "#f2f2f2",
             "show_controls": false,
-            "column_size": "2",
+            "column_size": "3",
             "title": "",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<h4>Compare Using Common Definitions</h4><p>Benchmark stores fairly by normalizing for size, format, and location type. Stop comparing incomparable units.</p>",
+            "content": "<h4>店舗比較の精度を高める</h4><p>店舗規模、立地、フォーマットなどを整理し、比較しにくい店舗同士も共通の基準で確認できます。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -1349,11 +1349,11 @@
             "text_color": "",
             "border_color": "#f2f2f2",
             "show_controls": false,
-            "column_size": "2",
+            "column_size": "3",
             "title": "",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<h4>Create Shared Organizational View</h4><p>Give headquarters, area managers, and stores access to the same data foundation. Align decision-making across the organization.</p>",
+            "content": "<h4>組織の認識をそろえる</h4><p>本部、エリアマネージャー、店舗が同じデータを見ながら、共通の状況認識を持ちやすくなります。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -1362,7 +1362,7 @@
         "item_R3RcPF": {
           "type": "item",
           "settings": {
-            "icon": "picto-gift",
+            "icon": "picto-comment",
             "icon_width": 32,
             "icon_background_type": "square",
             "icon_background": "#a0b842",
@@ -1371,11 +1371,11 @@
             "text_color": "#ffffff",
             "border_color": "#f2f2f2",
             "show_controls": false,
-            "column_size": "2",
+            "column_size": "3",
             "title": "",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<h4>Enable Flow AI Recommendations</h4><p>Flow AI requires integrated data to generate action recommendations. Integration creates the foundation for AI-powered operational guidance.</p>",
+            "content": "<h4>Flow AIの提案精度を高める</h4><p>統合されたデータは、Flow AIが店舗状況を理解し、実行につながるアクション提案を行うための土台になります。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -1397,7 +1397,7 @@
             "title": "",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<h3>Integration = Better Execution</h3><p>When your retail data is connected and structured, Flow transforms it from static reports into a living foundation for visibility, diagnosis, and action.</p>",
+            "content": "<h3><strong>連携は、実行力を高めるための基盤です。</strong></h3><p>データがつながり、構造化されることで、Flowは店舗運営を「見る」だけでなく、判断・改善・実行につながる状態へ変えていきます。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -1422,9 +1422,9 @@
         "stack_on_mobile": false,
         "gap": "small",
         "text_alignment": "center",
-        "subheading": "BUSINESS VALUE",
-        "title": "WHAT INTEGRATION MAKES POSSIBLE.",
-        "content": "<p>Integration isn't an IT feature. It's the foundation for better retail execution, aligned decision-making, and AI-powered operational recommendations.</p>",
+        "subheading": "導入効果",
+        "title": "データ連携で、店舗運営はここまで見える。",
+        "content": "<p>連携はIT機能ではありません。売上、来店、シフト、天候、店舗条件をつなぐことで、店舗運営の判断と実行をより正確にできます。</p>",
         "background": "#ffffff",
         "background_gradient": "",
         "text_color": ""
@@ -1476,8 +1476,29 @@
         "item_Vw43cq": {
           "type": "item",
           "settings": {
-            "title": "What systems can Flow connect with?",
-            "content": "<p>Flow connects with major POS systems (Shopify, Square, Lightspeed, custom enterprise POS), traffic counters (Flow cameras or existing systems), staffing/workforce management tools, weather APIs, and any data source that can export via API, FTP, or CSV format.</p>"
+            "title": "どのようなデータと連携できますか？",
+            "content": "<p>POSデータ、売上目標、来店計測データ、店前通行量、シフト・人員データ、天候データ、店舗属性データなどとの連携に対応しています。利用目的に応じて、必要なデータを確認しながら連携設計を行います。</p>"
+          }
+        },
+        "item_caNrg4": {
+          "type": "item",
+          "settings": {
+            "title": "APIがなくても連携できますか？",
+            "content": "<p>はい。APIが利用できない場合でも、FTP・SFTPによる定期ファイル連携やCSVアップロードなど、環境に応じた方法を検討できます。</p>"
+          }
+        },
+        "item_8wPKff": {
+          "type": "item",
+          "settings": {
+            "title": "FTP連携には対応していますか？",
+            "content": "<p>Write content to answer to common questions your customers may have about your products, shipping policies..</p>"
+          }
+        },
+        "item_GgRUQn": {
+          "type": "item",
+          "settings": {
+            "title": "Question",
+            "content": "<p>Write content to answer to common questions your customers may have about your products, shipping policies..</p>"
           }
         },
         "item_TaUFcx": {
@@ -1497,18 +1518,21 @@
       },
       "block_order": [
         "item_Vw43cq",
+        "item_caNrg4",
+        "item_8wPKff",
+        "item_GgRUQn",
         "item_TaUFcx",
         "item_MhBcfw"
       ],
       "name": "FAQ",
       "settings": {
         "full_width": true,
-        "subheading": "",
-        "title": "Integration FAQ",
-        "content": "<p>Answers to common questions about Flow integrations</p>",
+        "subheading": "FAQ",
+        "title": "データ連携に関するよくある質問",
+        "content": "<p>既存システムとの連携方法、API・FTP対応、データ更新、導入範囲についてよくある質問をまとめました</p>",
         "team_avatar_width": 160,
-        "support_hours": "Our customer support is available Monday to Friday: 8am-8:30pm.",
-        "answer_time": "Average answer time: 24h",
+        "support_hours": "連携可否や最適な方法は、現在のシステム環境に合わせて個別にご案内します。",
+        "answer_time": "",
         "button_text": "",
         "button_url": "",
         "text_position": "center",
