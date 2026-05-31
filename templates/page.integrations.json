@@ -454,14 +454,14 @@
         "subheading_rch3yw": {
           "type": "subheading",
           "settings": {
-            "text": "FLOW INTEGRATED DATA FOUNDATION",
+            "text": "FIDA：Flow Integrated Decision Architecture",
             "icon": "none"
           }
         },
         "heading_FEYa3b": {
           "type": "heading",
           "settings": {
-            "text": "FROM RAW DATA TO RETAIL INTELLIGENCE.",
+            "text": "バラバラのデータを、判断に使える構造へ",
             "heading_tag": "h1",
             "text_color": "",
             "gradient": ""
@@ -470,13 +470,13 @@
         "richtext_yRUqL4": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Flow doesn't just connect systems. FIDA organizes fragmented data into a structured retail performance model that supports visibility, comparison, diagnosis, and AI-powered recommendations.</p>"
+            "content": "<p>Flowは、単にシステム同士をつなぐだけではありません。FIDAは、売上・来店・シフト・天候・店舗属性などのデータを整理し、店舗運営に使える共通の判断基盤へ変換します。</p>"
           }
         },
         "richtext_Chnnfz": {
           "type": "richtext",
           "settings": {
-            "content": "<h5>Data Sources   <strong>→    </strong>FIDA   <strong>→   </strong>Intelligence</h5><p></p>"
+            "content": "<h5><strong>データソース  →  FIDA  →  判断・実行</strong></h5><p></p>"
           }
         }
       },
