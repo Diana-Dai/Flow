@@ -139,6 +139,198 @@
         "text_color": ""
       }
     },
+    "1780279655010b3d7a": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_8944212_j3AgXN": {
+          "type": "ai_gen_block_8944212",
+          "settings": {
+            "desktop_width_percent": 100,
+            "max_width": 1400,
+            "padding_top": 60,
+            "padding_bottom": 60,
+            "padding_horizontal": 0,
+            "background_color": "#FFFFFF",
+            "eyebrow_text": "HOW FLOW IS DIFFERENT",
+            "eyebrow_font_size": 12,
+            "eyebrow_bg_color": "#F3F4F6",
+            "eyebrow_text_color": "#6B7280",
+            "heading": "REAL-TIME CONVERSION INTELLIGENCE.",
+            "heading_font_size": 48,
+            "heading_color": "#0A1A2F",
+            "description": "Flow combines accurate traffic measurement with POS integration and behavioral analytics to give you complete conversion visibility and actionable operational guidance.",
+            "description_font_size": 16,
+            "description_color": "#6B7280",
+            "header_spacing": 50,
+            "card_gap": 24,
+            "card_padding": 32,
+            "card_border_radius": 12,
+            "cards_spacing": 32,
+            "card_heading_size": 20,
+            "card_text_size": 15,
+            "card_list_size": 14,
+            "card1_heading": "Accurate Traffic Measurement",
+            "card1_text": "AI-powered cameras measure every customer entry with 98%+ accuracy. Staff movements are automatically excluded. You know exactly how many customers entered your store at any given time.",
+            "card1_item1": "Real-time entry counting",
+            "card1_item2": "Staff exclusion active",
+            "card1_item3": "15-minute interval updates",
+            "dark_card_bg": "#0E2A3A",
+            "dark_card_text": "#FFFFFF",
+            "dark_icon_bg": "#A0B842",
+            "dark_checkmark_color": "#A0B842",
+            "card2_heading": "Automatic POS Correlation",
+            "card2_text": "Flow connects directly to your POS system to correlate traffic with transactions. Conversion rate is calculated automatically throughout the day.",
+            "card2_item1": "Direct POS integration",
+            "card2_item2": "Real-time CVR calculation",
+            "card2_item3": "Historical trend comparison",
+            "light_card_bg": "#FFFFFF",
+            "light_card_text": "#0A1A2F",
+            "light_icon_bg": "#F0F9F4",
+            "light_checkmark_color": "#A0B842",
+            "banner_title": "The Flow Advantage",
+            "banner_text": "Unlike basic people counters, Flow provides complete operational context. You don't just see conversion rate—you understand why it's changing, which stores are underperforming, and what operational adjustments will improve results.",
+            "banner_padding": 32,
+            "banner_border_radius": 12,
+            "banner_title_size": 20,
+            "banner_text_size": 15,
+            "banner_bg_color": "#F0F9F4",
+            "banner_icon_bg": "#A0B842",
+            "banner_icon_color": "#FFFFFF",
+            "banner_title_color": "#0A1A2F",
+            "banner_text_color": "#4B5563"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_8944212_j3AgXN"
+      ],
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "multi_column_bJtgmc": {
+      "type": "multi-column",
+      "blocks": {
+        "item_mRFw4X": {
+          "type": "item",
+          "settings": {
+            "icon": "people",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#a0b842",
+            "icon_color": "#ffffff",
+            "background_color": "#f2f2f2",
+            "text_color": "",
+            "border_color": "#e5e7e1",
+            "show_controls": false,
+            "column_size": "4",
+            "title": "Passerby Traffic",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<p>Street-level traffic measurement to understand capture rate and location performance</p><h4>Real-time</h4><p>Continuous measurement</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_r96Tt7": {
+          "type": "item",
+          "settings": {
+            "icon": "up",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#a0b842",
+            "icon_color": "#ffffff",
+            "background_color": "#f2f2f2",
+            "text_color": "",
+            "border_color": "#e5e7e1",
+            "show_controls": false,
+            "column_size": "4",
+            "title": "Store Entries",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<p>Accurate customer entry counting with directional flow and staff exclusion</p><h4>98.5%</h4><p>Measurement accuracy</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_KQtcVQ": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-timer",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#a0b842",
+            "icon_color": "#ffffff",
+            "background_color": "#f2f2f2",
+            "text_color": "",
+            "border_color": "#e5e7e1",
+            "show_controls": false,
+            "column_size": "4",
+            "title": "Dwell Time",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<p>Average time customers spend in store and zone-level engagement duration</p><h4>Second</h4><p>Precision level</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_jHGFzb": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-document",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#a0b842",
+            "icon_color": "#ffffff",
+            "background_color": "#f2f2f2",
+            "text_color": "",
+            "border_color": "#e5e7e1",
+            "show_controls": false,
+            "column_size": "4",
+            "title": "Transactions",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<p>Automated POS correlation to calculate conversion rate and basket metrics</p><h4>Auto</h4><p>Daily sync</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_mRFw4X",
+        "item_r96Tt7",
+        "item_KQtcVQ",
+        "item_jHGFzb"
+      ],
+      "custom_css": [
+        ".prose p {font-size: 0.9rem;}",
+        ".multi-column__item .h3 {color: #a0b842 !important;}",
+        ".multi-column__item h4 ~ p {margin-top: 0; padding-top: 0;}"
+      ],
+      "name": "Multi-column",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "start",
+        "subheading": "WHAT FLOW MEASURES",
+        "title": "COMPLETE CONVERSION VISIBILITY.",
+        "content": "<p>Flow tracks every stage of the conversion funnel, from street traffic to completed transactions, giving you actionable insights at each step.</p>",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
     "multi_column_hNQjmA": {
       "type": "multi-column",
       "blocks": {
@@ -452,165 +644,6 @@
         "subheading": "THE CHALLENGE",
         "title": "Challenges Before Flow",
         "content": "<p>Before deploying Flow, the chain faced several operational visibility gaps that limited data-driven decision-making.</p>",
-        "background": "",
-        "background_gradient": "",
-        "text_color": ""
-      }
-    },
-    "multi_column_bJtgmc": {
-      "type": "multi-column",
-      "blocks": {
-        "item_mRFw4X": {
-          "type": "item",
-          "settings": {
-            "icon": "people",
-            "icon_width": 32,
-            "icon_background_type": "square",
-            "icon_background": "#a0b842",
-            "icon_color": "#ffffff",
-            "background_color": "#ffffff",
-            "text_color": "",
-            "border_color": "#a0b842",
-            "show_controls": false,
-            "column_size": "2",
-            "title": "",
-            "heading_tag": "h4",
-            "subheading": "",
-            "content": "<h5>Traffic Analytics</h5><p>Flow cameras installed at store entrances to measure customer entries, exits, and directional flow with 98%+ accuracy.</p><p>✅ Deployed across all 45 stores</p>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        },
-        "item_r96Tt7": {
-          "type": "item",
-          "settings": {
-            "icon": "up",
-            "icon_width": 32,
-            "icon_background_type": "square",
-            "icon_background": "#a0b842",
-            "icon_color": "#ffffff",
-            "background_color": "#ffffff",
-            "text_color": "",
-            "border_color": "#a0b842",
-            "show_controls": false,
-            "column_size": "2",
-            "title": "",
-            "heading_tag": "h4",
-            "subheading": "",
-            "content": "<h5>Passerby & Capture Rate</h5><p>Measurement of street traffic vs. store entries to calculate capture rate and understand location performance.</p><p>✅ Deployed at street-facing locations</p>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        },
-        "item_KQtcVQ": {
-          "type": "item",
-          "settings": {
-            "icon": "picto-document",
-            "icon_width": 32,
-            "icon_background_type": "square",
-            "icon_background": "#a0b842",
-            "icon_color": "#ffffff",
-            "background_color": "#ffffff",
-            "text_color": "",
-            "border_color": "#a0b842",
-            "show_controls": false,
-            "column_size": "2",
-            "title": "",
-            "heading_tag": "h4",
-            "subheading": "",
-            "content": "<h5>POS Integration</h5><p>Direct connection to existing POS system to automatically correlate traffic data with transaction records and calculate conversion rates.</p><p>Automated daily sync</p>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        },
-        "item_jHGFzb": {
-          "type": "item",
-          "settings": {
-            "icon": "check",
-            "icon_width": 32,
-            "icon_background_type": "square",
-            "icon_background": "#a0b842",
-            "icon_color": "",
-            "background_color": "#ffffff",
-            "text_color": "",
-            "border_color": "#a0b842",
-            "show_controls": false,
-            "column_size": "2",
-            "title": "",
-            "heading_tag": "h4",
-            "subheading": "",
-            "content": "<h5>Dashboard Access</h5><p>Real-time dashboards accessible to store managers, area supervisors, and headquarters with role-based permissions.</p><p>Multi-level access control</p>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        },
-        "item_KeN4HJ": {
-          "type": "item",
-          "settings": {
-            "icon": "picto-target",
-            "icon_width": 32,
-            "icon_background_type": "square",
-            "icon_background": "",
-            "icon_color": "",
-            "background_color": "#ffffff",
-            "text_color": "",
-            "border_color": "#f2f2f2",
-            "show_controls": false,
-            "column_size": "2",
-            "title": "",
-            "heading_tag": "h4",
-            "subheading": "",
-            "content": "<h5>Zone Analytics</h5><p>Not deployed in initial phase. Planned for future expansion to measure engagement in specific store zones.</p><p>Phase 2 consideration</p>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        },
-        "item_kGDkaE": {
-          "type": "item",
-          "settings": {
-            "icon": "picto-customer-support",
-            "icon_width": 32,
-            "icon_background_type": "square",
-            "icon_background": "#a0b842",
-            "icon_color": "#ffffff",
-            "background_color": "#ffffff",
-            "text_color": "",
-            "border_color": "#a0b842",
-            "show_controls": false,
-            "column_size": "2",
-            "title": "",
-            "heading_tag": "h4",
-            "subheading": "",
-            "content": "<h5>Training & Support</h5><p>On-site training for all store managers, online resources, and ongoing customer success support during deployment.</p><p>Included in deployment</p>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        }
-      },
-      "block_order": [
-        "item_mRFw4X",
-        "item_r96Tt7",
-        "item_KQtcVQ",
-        "item_jHGFzb",
-        "item_KeN4HJ",
-        "item_kGDkaE"
-      ],
-      "custom_css": [],
-      "name": "Multi-column",
-      "settings": {
-        "full_width": true,
-        "stack_on_mobile": false,
-        "gap": "medium",
-        "text_alignment": "start",
-        "subheading": "DEPLOYMENT SCOPE",
-        "title": "What Was Implemented",
-        "content": "<p>The customer deployed the following Flow capabilities across their 45-store network.</p>",
         "background": "",
         "background_gradient": "",
         "text_color": ""
@@ -1400,10 +1433,11 @@
   "order": [
     "media_with_text_gMMfwV",
     "multi_column_PBB8dw",
+    "1780279655010b3d7a",
+    "multi_column_bJtgmc",
     "multi_column_hNQjmA",
     "multi_column_TV4htr",
     "multi_column_qin4Pg",
-    "multi_column_bJtgmc",
     "multi_column_TbzGnm",
     "178003042955718f5f",
     "section-15",
