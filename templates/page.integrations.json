@@ -1568,14 +1568,15 @@
         },
         "liquid_kYJakG": {
           "type": "liquid",
+          "disabled": true,
           "settings": {
-            "liquid": "<p>Write custom Liquid code to include widget or dynamic code.</p>"
+            "liquid": "<h1 class=\"h1\">既存システムとの連携可否を、<br>売判断に使える形へ。</br>\n</h1>"
           }
         },
         "heading_YXhiR8": {
           "type": "heading",
           "settings": {
-            "text": "既存システムとの連携可否を、個別に確認しませんか？",
+            "text": "既存システムとの連携を確認しませんか？",
             "heading_tag": "h1",
             "text_color": "",
             "gradient": ""
