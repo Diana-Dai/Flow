@@ -218,7 +218,7 @@
             "title": "",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<h3>Business Model</h3><ul><li>Premium specialty apparel retail</li><li>High-touch customer service model</li><li>Emphasis on store-level merchandising</li><li>Strong regional brand presence</li></ul>",
+            "content": "<h3>事業モデル</h3><ul><li>FREAK’S STOREを中心とした複数ブランド展開</li><li>ファッション・ライフスタイル領域での事業展開</li><li>実店舗を中心とした顧客接点</li><li>店舗スタッフによる接客・売場づくりを重視</li></ul>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -240,7 +240,7 @@
             "title": "",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<h3>Why Visibility Mattered</h3><p>With growing pressure on retail margins and competition from e-commerce, headquarters needed better visibility into what was driving store-level performance. Understanding traffic patterns, conversion rates, and operational efficiency became critical for maintaining profitability.</p>",
+            "content": "<h3>なぜ可視化が重要だったのか</h3><p>売上結果だけでは、改善すべきポイントが来店数にあるのか、購買率にあるのか、店頭施策にあるのかを判断しきれません。<br/>デイトナ様では、営業計数を重視する文化がすでにあったからこそ、来店数・店前通行量・購買率をつなげて把握することが、より具体的な売上対策と人材育成につながりました。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -257,9 +257,9 @@
         "stack_on_mobile": false,
         "gap": "medium",
         "text_alignment": "start",
-        "subheading": "CUSTOMER BACKGROUND",
-        "title": "About the Customer",
-        "content": "<p>This customer operates a specialty fashion retail chain with 45 stores across Tokyo, Osaka, and regional cities. Their stores range from 150-300 square meters and focus on premium casual apparel for women aged 25-45.</p><p>With approximately 30-50 staff per store and emphasis on customer service, the brand positioned itself as a higher-touch retail experience. Store managers had significant autonomy over merchandising, staffing, and local operations.</p>",
+        "subheading": "顧客背景",
+        "title": "デイトナ様について",
+        "content": "<p>株式会社デイトナ・インターナショナル様は、「FREAK’S STORE」をはじめ、「Firsthand」「Aresense」「2G」などを展開するファッション・ライフスタイル企業です。</p><p>同社では以前から、買上者数、購買率、セット率、客単価などの営業計数を重視し、店舗売上の改善に取り組まれていました。一方で、その母数となる来店数や店前通行量については、手動計測や売上からの逆算に頼る部分があり、店頭施策や売場改善をデータで検証しにくい状況がありました。</p><p>コロナ禍以降、より効率的で戦略的な店舗運営が求められる中、Flowは来店数の自動計測だけでなく、店舗スタッフが根拠を持って考え、行動するためのデータ活用基盤として導入されました。</p>",
         "background": "#ffffff",
         "background_gradient": "",
         "text_color": ""
