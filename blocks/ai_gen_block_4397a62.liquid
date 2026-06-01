@@ -167,15 +167,12 @@
   }
 
   .ai-trust-case-title-{{ ai_gen_id }} {
-    font-size: 20px;
-    font-weight: 700;
     color: {{ block.settings.case_study_title_color }};
     margin: 0 0 32px 0;
   }
 
   @media screen and (min-width: 750px) {
     .ai-trust-case-title-{{ ai_gen_id }} {
-      font-size: 24px;
       margin-bottom: 40px;
     }
   }
@@ -321,7 +318,7 @@
 
     <div class="ai-trust-case-study-{{ ai_gen_id }}">
       {% if block.settings.case_study_title != blank %}
-        <h3 class="ai-trust-case-title-{{ ai_gen_id }}">
+        <h3 class="h3 ai-trust-case-title-{{ ai_gen_id }}">
           {{ block.settings.case_study_title }}
         </h3>
       {% endif %}
