@@ -59,7 +59,6 @@
   }
 
   .ai-conversion-intelligence-container-{{ ai_gen_id }} {
-    max-width: {{ block.settings.max_width }}px;
     margin: 0 auto;
   }
 
@@ -458,16 +457,6 @@
       "step": 5,
       "unit": "%",
       "default": 100
-    },
-    {
-      "type": "range",
-      "id": "max_width",
-      "label": "Maximum content width",
-      "min": 1000,
-      "max": 1600,
-      "step": 50,
-      "unit": "px",
-      "default": 1400
     },
     {
       "type": "range",
