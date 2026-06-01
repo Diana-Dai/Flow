@@ -284,7 +284,7 @@
             "title": "",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<h4>No Accurate Traffic Measurement</h4><p>Traffic counts were estimated manually or extrapolated from POS transaction volume. Store managers had no reliable way to know how many customers actually entered the store each day or how that compared to street traffic.</p>",
+            "content": "<h4>正確な来店数を把握しにくい</h4><p>来店数は店舗スタッフによる手動計測や、売上からの逆算に頼る部分がありました。特に大型店では手動計測の負担が大きく、日々の店舗運営に活用できる精度で把握することが難しい状況でした。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -306,7 +306,7 @@
             "title": "",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<h4>Limited Visibility Before Checkout</h4><p>Performance data only became visible after transactions were completed. Managers could not see real-time traffic surges, identify slow periods accurately, or understand conversion patterns during the day.</p>",
+            "content": "<h4>店前通行量が見えない</h4><p>店舗前を通る人数が見えないため、来店数の増減が商業施設全体の人流によるものなのか、自店の店頭施策によるものなのかを判断しにくい状態でした。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -328,7 +328,7 @@
             "title": "",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<h4>Difficulty Managing Conversion</h4><p>Without knowing true traffic volume, conversion rate could not be calculated. This made it difficult to diagnose whether low sales days were due to low traffic, poor conversion, or both.</p>",
+            "content": "<h4>店頭施策を検証しにくい</h4><p>声出し、ファサード、店頭展示などの来店促進施策は行われていましたが、効果をデータで確認する仕組みがなく、売上結果やスタッフの肌感覚に頼る部分がありました。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -350,7 +350,7 @@
             "title": "",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<h4>Intuition-Based Staffing and VMD Decisions</h4><p>Store managers scheduled staff based on experience and intuition rather than measured traffic patterns. Visual merchandising changes were evaluated based on sales results only, with no visibility into whether they affected customer engagement or dwell time.</p>",
+            "content": "<h4>購買率の背景を分解しにくい</h4><p>売上や買上者数は確認できても、その母数となる来店数が正確でなければ、課題が来店数にあるのか、購買率にあるのかを判断しにくくなります。改善すべきポイントを明確にするには、来店前後のデータをつなげる必要がありました。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -372,7 +372,7 @@
             "title": "",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<h4>No Real-Time Store-Level Data</h4><p>Headquarters received sales reports daily, but had no visibility into what was happening in stores during the day. Area managers could not identify performance issues until after the fact.</p>",
+            "content": "<h4>スタッフが根拠を持って動きにくい</h4><p>店舗スタッフは日々の売上予算に対する責任感を持っていましたが、手元にあるデータが限られていたため、次に何を改善すべきかを判断しにくい場面がありました。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -392,9 +392,9 @@
         "stack_on_mobile": false,
         "gap": "medium",
         "text_alignment": "start",
-        "subheading": "THE CHALLENGE",
-        "title": "Challenges Before Flow",
-        "content": "<p>Before deploying Flow, the chain faced several operational visibility gaps that limited data-driven decision-making.</p>",
+        "subheading": "導入前の課題",
+        "title": "Flow導入前の課題",
+        "content": "<p>デイトナ様では以前から、買上者数、購買率、セット率、客単価などの営業計数を重視し、店舗売上の改善に取り組まれていました。一方で、その前段階にある来店数や店前通行量を正確に把握しにくく、店頭施策や売場改善をデータで検証しづらい状況がありました。</p>",
         "background": "",
         "background_gradient": "",
         "text_color": ""
