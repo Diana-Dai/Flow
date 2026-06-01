@@ -72,6 +72,14 @@
     align-items: start;
   }
 
+  {% if block.settings.only_show_lift_card %}
+    .ai-conversion-container-{{ ai_gen_id }} {
+      grid-template-columns: 100%;
+
+    }
+
+  {% endif %}
+
   .ai-conversion-left-{{ ai_gen_id }} {
     display: flex;
     flex-direction: column;
@@ -392,66 +400,68 @@
   {{ block.shopify_attributes }}
 >
   <div class="ai-conversion-container-{{ ai_gen_id }}">
-    <div class="ai-conversion-left-{{ ai_gen_id }}">
-      <div class="ai-conversion-badge-{{ ai_gen_id }}">
-        <span class="ai-conversion-badge-text-{{ ai_gen_id }}">{{ block.settings.badge_text }}</span>
-      </div>
-
-      <h2 class="ai-conversion-heading-{{ ai_gen_id }}">{{ block.settings.heading }}</h2>
-
-      <p class="ai-conversion-description-{{ ai_gen_id }}">{{ block.settings.description }}</p>
-
-      <div class="ai-conversion-features-{{ ai_gen_id }}">
-        <div class="ai-conversion-feature-{{ ai_gen_id }}">
-          <div class="ai-conversion-feature-icon-{{ ai_gen_id }}">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-              <polyline points="20 6 9 17 4 12"></polyline>
-            </svg>
-          </div>
-          <div class="ai-conversion-feature-content-{{ ai_gen_id }}">
-            <h3 class="ai-conversion-feature-title-{{ ai_gen_id }}">{{ block.settings.feature_1_title }}</h3>
-            <p class="ai-conversion-feature-desc-{{ ai_gen_id }}">{{ block.settings.feature_1_description }}</p>
-          </div>
+    {% unless block.settings.only_show_lift_card %}
+      <div class="ai-conversion-left-{{ ai_gen_id }}">
+        <div class="ai-conversion-badge-{{ ai_gen_id }}">
+          <span class="ai-conversion-badge-text-{{ ai_gen_id }}">{{ block.settings.badge_text }}</span>
         </div>
 
-        <div class="ai-conversion-feature-{{ ai_gen_id }}">
-          <div class="ai-conversion-feature-icon-{{ ai_gen_id }}">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-              <polyline points="20 6 9 17 4 12"></polyline>
-            </svg>
-          </div>
-          <div class="ai-conversion-feature-content-{{ ai_gen_id }}">
-            <h3 class="ai-conversion-feature-title-{{ ai_gen_id }}">{{ block.settings.feature_2_title }}</h3>
-            <p class="ai-conversion-feature-desc-{{ ai_gen_id }}">{{ block.settings.feature_2_description }}</p>
-          </div>
-        </div>
+        <h2 class="ai-conversion-heading-{{ ai_gen_id }}">{{ block.settings.heading }}</h2>
 
-        <div class="ai-conversion-feature-{{ ai_gen_id }}">
-          <div class="ai-conversion-feature-icon-{{ ai_gen_id }}">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-              <polyline points="20 6 9 17 4 12"></polyline>
-            </svg>
-          </div>
-          <div class="ai-conversion-feature-content-{{ ai_gen_id }}">
-            <h3 class="ai-conversion-feature-title-{{ ai_gen_id }}">{{ block.settings.feature_3_title }}</h3>
-            <p class="ai-conversion-feature-desc-{{ ai_gen_id }}">{{ block.settings.feature_3_description }}</p>
-          </div>
-        </div>
-      </div>
+        <p class="ai-conversion-description-{{ ai_gen_id }}">{{ block.settings.description }}</p>
 
-      <div class="ai-conversion-lift-card-{{ ai_gen_id }}">
-        <div class="ai-conversion-lift-content-{{ ai_gen_id }}">
-          <div class="ai-conversion-lift-left-{{ ai_gen_id }}">
-            <p class="ai-conversion-lift-label-{{ ai_gen_id }}">{{ block.settings.lift_label }}</p>
-            <div class="ai-conversion-lift-bar-track-{{ ai_gen_id }}">
-              <div class="ai-conversion-lift-bar-fill-{{ ai_gen_id }}"></div>
+        <div class="ai-conversion-features-{{ ai_gen_id }}">
+          <div class="ai-conversion-feature-{{ ai_gen_id }}">
+            <div class="ai-conversion-feature-icon-{{ ai_gen_id }}">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+            </div>
+            <div class="ai-conversion-feature-content-{{ ai_gen_id }}">
+              <h3 class="ai-conversion-feature-title-{{ ai_gen_id }}">{{ block.settings.feature_1_title }}</h3>
+              <p class="ai-conversion-feature-desc-{{ ai_gen_id }}">{{ block.settings.feature_1_description }}</p>
             </div>
           </div>
-          <div class="ai-conversion-lift-percentage-{{ ai_gen_id }}">{{ block.settings.lift_percentage }}</div>
+
+          <div class="ai-conversion-feature-{{ ai_gen_id }}">
+            <div class="ai-conversion-feature-icon-{{ ai_gen_id }}">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+            </div>
+            <div class="ai-conversion-feature-content-{{ ai_gen_id }}">
+              <h3 class="ai-conversion-feature-title-{{ ai_gen_id }}">{{ block.settings.feature_2_title }}</h3>
+              <p class="ai-conversion-feature-desc-{{ ai_gen_id }}">{{ block.settings.feature_2_description }}</p>
+            </div>
+          </div>
+
+          <div class="ai-conversion-feature-{{ ai_gen_id }}">
+            <div class="ai-conversion-feature-icon-{{ ai_gen_id }}">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+            </div>
+            <div class="ai-conversion-feature-content-{{ ai_gen_id }}">
+              <h3 class="ai-conversion-feature-title-{{ ai_gen_id }}">{{ block.settings.feature_3_title }}</h3>
+              <p class="ai-conversion-feature-desc-{{ ai_gen_id }}">{{ block.settings.feature_3_description }}</p>
+            </div>
+          </div>
         </div>
-        <p class="ai-conversion-lift-subtext-{{ ai_gen_id }}">{{ block.settings.lift_subtext }}</p>
+
+        <div class="ai-conversion-lift-card-{{ ai_gen_id }}">
+          <div class="ai-conversion-lift-content-{{ ai_gen_id }}">
+            <div class="ai-conversion-lift-left-{{ ai_gen_id }}">
+              <p class="ai-conversion-lift-label-{{ ai_gen_id }}">{{ block.settings.lift_label }}</p>
+              <div class="ai-conversion-lift-bar-track-{{ ai_gen_id }}">
+                <div class="ai-conversion-lift-bar-fill-{{ ai_gen_id }}"></div>
+              </div>
+            </div>
+            <div class="ai-conversion-lift-percentage-{{ ai_gen_id }}">{{ block.settings.lift_percentage }}</div>
+          </div>
+          <p class="ai-conversion-lift-subtext-{{ ai_gen_id }}">{{ block.settings.lift_subtext }}</p>
+        </div>
       </div>
-    </div>
+    {% endunless %}
 
     <div class="ai-conversion-right-{{ ai_gen_id }}">
       <div class="ai-conversion-funnel-card-{{ ai_gen_id }}">
@@ -693,6 +703,12 @@
     {
       "type": "header",
       "content": "Lift card"
+    },
+    {
+      "type": "checkbox",
+      "id":"only_show_lift_card",
+      "label": "Only show lift card",
+      "default":false
     },
     {
       "type": "text",
