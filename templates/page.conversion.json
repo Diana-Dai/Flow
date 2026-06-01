@@ -9,77 +9,40 @@
  */
 {
   "sections": {
-    "1780026169d49df455": {
-      "type": "_blocks",
+    "media_with_text_gMMfwV": {
+      "type": "media-with-text",
       "blocks": {
-        "ai_gen_block_952f74e_qYrbiY": {
-          "type": "ai_gen_block_952f74e",
+        "image_UFxtUk": {
+          "type": "image",
           "settings": {
-            "max_width": 1600,
-            "section_padding_mobile": 40,
-            "section_padding_desktop": 40,
-            "show_tag": true,
-            "tag_text": "Customer Case Study",
-            "show_icon": true,
-            "company_name": "Premium Fashion Retailer",
-            "company_metadata": "Specialty Apparel • 45 Stores • Tokyo & Regional",
-            "headline": "Converting Traffic Data Into Actionable Store Insights",
-            "description": "A mid-sized specialty fashion chain deployed Flow to measure true customer traffic, understand conversion patterns, and give store managers data-driven visibility into daily performance.",
-            "show_metric_1": true,
-            "metric_1_value": "+18%",
-            "metric_1_label": "Conversion Rate Improvement",
-            "show_metric_2": true,
-            "metric_2_value": "45",
-            "metric_2_label": "Stores Deployed",
-            "show_metric_3": true,
-            "metric_3_value": "6mo",
-            "metric_3_label": "Measurement Period",
-            "overview_title": "Deployment Overview",
-            "show_info_1": true,
-            "info_1_label": "Industry",
-            "info_1_value": "Specialty Fashion Retail",
-            "show_info_2": true,
-            "info_2_label": "Store Count",
-            "info_2_value": "45 locations",
-            "show_info_3": true,
-            "info_3_label": "Deployment Period",
-            "info_3_value": "Q2 2025 - Q4 2025",
-            "show_info_4": true,
-            "info_4_label": "Primary Use Case",
-            "info_4_value": "Traffic & Conversion Analytics",
-            "background_color": "#ffffff",
-            "heading_color": "#1a2b4a",
-            "body_text_color": "#5a6c7d",
-            "meta_text_color": "#8b95a1",
-            "metric_color": "#a0b842",
-            "tag_background": "#e5e7eb",
-            "tag_text_color": "#6b7280",
-            "icon_background": "#1a2b4a",
-            "icon_color": "#ffffff",
-            "card_background": "#ffffff",
-            "card_border": "#e5e7eb",
-            "metric_card_background": "#ffffff",
-            "metric_card_border": "#e5e7eb",
-            "row_background": "#f9fafb",
-            "card_border_radius": 12,
-            "card_shadow_x": 0,
-            "card_shadow_y": 4,
-            "card_shadow_blur": 15,
-            "card_shadow_opacity": 0.1
-          },
-          "blocks": {}
+            "image": "shopify://shop_images/1_fc235cd5-1411-4fb2-a407-7e31f031db39.png",
+            "media_width": 50,
+            "media_position": "end",
+            "text_position": "place-self-center-start text-start",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "CONVERSION OPTIMIZATION",
+            "title": "TURN TRAFFIC INTO TRANSACTIONS.",
+            "content": "<p><strong>Measure, Diagnose, and Improve Store Conversion Rates.</strong></p><p>Flow identifies exactly where conversion opportunities are lost and provides actionable operational guidance to improve sales outcomes across your store network.</p>",
+            "link_text": "Request Demo →",
+            "link_url": "",
+            "background": "rgba(0,0,0,0)",
+            "background_gradient": "",
+            "text_color": "#11243e",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
         }
       },
       "block_order": [
-        "ai_gen_block_952f74e_qYrbiY"
+        "image_UFxtUk"
       ],
+      "name": "Media with text",
       "settings": {
-        "full_width": true,
-        "remove_vertical_spacing": false,
-        "remove_horizontal_spacing": false,
-        "background": "#ffffff",
-        "background_gradient": "",
-        "text_color": ""
+        "full_width": false,
+        "alternate_media_position": false,
+        "spacing": "small"
       }
     },
     "multi_column_hNQjmA": {
@@ -1504,7 +1467,7 @@
     }
   },
   "order": [
-    "1780026169d49df455",
+    "media_with_text_gMMfwV",
     "multi_column_hNQjmA",
     "multi_column_TV4htr",
     "multi_column_qin4Pg",
