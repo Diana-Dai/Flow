@@ -186,6 +186,12 @@
     padding: 32px;
     box-shadow: 0 4px 16px rgba(0, 0, 0, {{ block.settings.card_shadow_opacity }});
   }
+  @media (max-width: 768px) {
+    .ai-saas-presentation__card-{{ ai_gen_id }} {
+      padding: 16px;
+    }
+
+  }
 
   .ai-saas-presentation__card-title-{{ ai_gen_id }} {
     font-size: {{ block.settings.card_title_size }}px;
