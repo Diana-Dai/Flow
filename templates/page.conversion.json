@@ -39,7 +39,8 @@
         "image_UFxtUk"
       ],
       "custom_css": [
-        ".media-with-text__media > * {object-fit: contain;}"
+        ".media-with-text__media > * {object-fit: contain;}",
+        ".h1 {font-size: var(--text-h1);}"
       ],
       "name": "Media with text",
       "settings": {
@@ -124,7 +125,6 @@
         "item_UKaPVf"
       ],
       "custom_css": [
-        ".icon_container {text-align: center;}",
         ".prose p {font-size: 0.9rem;}",
         ".multi-column__item .h1 {color: #a0b842 !important;}"
       ],
@@ -133,7 +133,7 @@
         "full_width": true,
         "stack_on_mobile": false,
         "gap": "medium",
-        "text_alignment": "center",
+        "text_alignment": "start",
         "subheading": "THE PROBLEM",
         "title": "YOU CAN'T IMPROVE WHAT YOU CAN'T MEASURE.",
         "content": "<p>Without accurate traffic measurement, conversion rate remains unknown. Store managers see sales results but have no visibility into how many customers entered, where they went, or why they left without purchasing.</p>",
@@ -751,17 +751,41 @@
             "link_text": "",
             "link_style": "link"
           }
+        },
+        "item_rqKyhB": {
+          "type": "item",
+          "settings": {
+            "icon": "check",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#a0b842",
+            "icon_color": "",
+            "background_color": "#f1f5ef",
+            "text_color": "",
+            "border_color": "#a0b842",
+            "show_controls": false,
+            "column_size": "1",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h3>Phased Rollout Supported</h3><p>Start with a pilot store or region to validate results before expanding. Flow supports phased deployment timelines that align with your operational calendar and budget planning.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
         }
       },
       "block_order": [
         "item_fRf33R",
         "item_zGNUAp",
-        "item_Vx6gWn"
+        "item_Vx6gWn",
+        "item_rqKyhB"
       ],
       "custom_css": [
         ".prose p {font-size: 0.9rem;}",
         ".multi-column__item .h3 {color: #a0b842 !important;}",
-        ".multi-column__item h4 ~ p {margin-top: 0; padding-top: 0;}"
+        ".multi-column__item h4 ~ p {margin-top: 0; padding-top: 0;}",
+        "@media (min-width: 769px) {.multi-column__item:last-child {display: flex; justify-content: left; }}"
       ],
       "name": "Multi-column",
       "settings": {
@@ -790,7 +814,7 @@
         "heading_YXhiR8": {
           "type": "heading",
           "settings": {
-            "text": "SEE WHAT FLOW COULD REVEAL INYOUR STORES",
+            "text": "READY TO IMPROVE CONVERSION?",
             "heading_tag": "h1",
             "text_color": "",
             "gradient": ""
@@ -799,7 +823,7 @@
         "richtext_qzAkak": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Every retail operation is different. Let's discuss what Flow could measure, analyze, and improve in your specific environment.</p>"
+            "content": "<p>See how Flow can measure, diagnose, and improve conversion rates across your store network.</p>"
           }
         },
         "button_AVKAbi": {
@@ -825,7 +849,7 @@
             "text_color_1": "#ffffff",
             "style_2": "fill",
             "size_2": "xl",
-            "text_2": "Explore Platform →",
+            "text_2": "View Case Study →",
             "url_2": "#",
             "background_2": "#ffffff",
             "text_color_2": "#11243e"
