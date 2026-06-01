@@ -216,64 +216,6 @@
         "text_color": ""
       }
     },
-    "blocks_BGj9cg": {
-      "type": "_blocks",
-      "blocks": {
-        "ai_gen_block_4e2462b_WThXwj": {
-          "type": "ai_gen_block_4e2462b",
-          "settings": {
-            "background_color": "#f8f9fa",
-            "heading_color": "#0a2240",
-            "body_text_color": "#5a6a85",
-            "accent_color": "#9cb73b",
-            "badge_text": "",
-            "badge_background": "#f0f4f8",
-            "badge_border": "#e1e8ed",
-            "badge_text_color": "#5a6a85",
-            "heading": "",
-            "description": "",
-            "feature_1_title": "",
-            "feature_1_description": "",
-            "feature_2_title": "",
-            "feature_2_description": "",
-            "feature_3_title": "",
-            "feature_3_description": "",
-            "only_show_lift_card": true,
-            "lift_label": "",
-            "lift_percentage": "",
-            "lift_subtext": "",
-            "funnel_title": "Conversion Funnel Breakdown",
-            "step_1_label": "Street Traffic (Passerby)",
-            "step_1_value": "2,847",
-            "drop_1_text": "↓ 68% Capture Rate",
-            "step_2_label": "Store Entries",
-            "step_2_value": "1,936",
-            "drop_2_text": "↓ Zone Engagement",
-            "step_3_label": "Product Interaction",
-            "step_3_value": "1,247",
-            "drop_3_text": "↓ 34% Conversion",
-            "step_4_label": "Completed Transactions",
-            "step_4_value": "424",
-            "insight_badge": "INSIGHT",
-            "insight_main": "Biggest leak: Product interaction → Transaction (66% drop-off)",
-            "insight_recommendation": "Recommendation: Increase floor staff during peak hours"
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "ai_gen_block_4e2462b_WThXwj"
-      ],
-      "name": "Conversion intelligence",
-      "settings": {
-        "full_width": true,
-        "remove_vertical_spacing": false,
-        "remove_horizontal_spacing": false,
-        "background": "",
-        "background_gradient": "",
-        "text_color": ""
-      }
-    },
     "multi_column_bJtgmc": {
       "type": "multi-column",
       "blocks": {
@@ -386,6 +328,64 @@
         "subheading": "WHAT FLOW MEASURES",
         "title": "COMPLETE CONVERSION VISIBILITY.",
         "content": "<p>Flow tracks every stage of the conversion funnel, from street traffic to completed transactions, giving you actionable insights at each step.</p>",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "blocks_BGj9cg": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_4e2462b_WThXwj": {
+          "type": "ai_gen_block_4e2462b",
+          "settings": {
+            "background_color": "#ffffff",
+            "heading_color": "#0a2240",
+            "body_text_color": "#5a6a85",
+            "accent_color": "#9cb73b",
+            "badge_text": "",
+            "badge_background": "#f0f4f8",
+            "badge_border": "#e1e8ed",
+            "badge_text_color": "#5a6a85",
+            "heading": "",
+            "description": "",
+            "feature_1_title": "",
+            "feature_1_description": "",
+            "feature_2_title": "",
+            "feature_2_description": "",
+            "feature_3_title": "",
+            "feature_3_description": "",
+            "only_show_lift_card": true,
+            "lift_label": "",
+            "lift_percentage": "",
+            "lift_subtext": "",
+            "funnel_title": "Conversion Funnel Breakdown",
+            "step_1_label": "Street Traffic (Passerby)",
+            "step_1_value": "2,847",
+            "drop_1_text": "↓ 68% Capture Rate",
+            "step_2_label": "Store Entries",
+            "step_2_value": "1,936",
+            "drop_2_text": "↓ Zone Engagement",
+            "step_3_label": "Product Interaction",
+            "step_3_value": "1,247",
+            "drop_3_text": "↓ 34% Conversion",
+            "step_4_label": "Completed Transactions",
+            "step_4_value": "424",
+            "insight_badge": "INSIGHT",
+            "insight_main": "Biggest leak: Product interaction → Transaction (66% drop-off)",
+            "insight_recommendation": "Recommendation: Increase floor staff during peak hours"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_4e2462b_WThXwj"
+      ],
+      "name": "Conversion intelligence",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
         "background": "#ffffff",
         "background_gradient": "",
         "text_color": ""
@@ -1494,8 +1494,8 @@
     "media_with_text_gMMfwV",
     "multi_column_PBB8dw",
     "1780279655010b3d7a",
-    "blocks_BGj9cg",
     "multi_column_bJtgmc",
+    "blocks_BGj9cg",
     "multi_column_hNQjmA",
     "multi_column_TV4htr",
     "multi_column_qin4Pg",
