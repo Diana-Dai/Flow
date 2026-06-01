@@ -40,7 +40,8 @@
       ],
       "custom_css": [
         ".media-with-text__media > * {object-fit: contain;}",
-        ".h1 {font-size: var(--text-h1);}"
+        ".h1 {font-size: var(--text-h1);}",
+        ".media-with-text__content{padding: 0;}"
       ],
       "name": "Media with text",
       "settings": {
