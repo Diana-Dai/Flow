@@ -38,6 +38,9 @@
       "block_order": [
         "image_UFxtUk"
       ],
+      "custom_css": [
+        ".media-with-text__media>*{object-fit: contain;}"
+      ],
       "name": "Media with text",
       "settings": {
         "full_width": false,
