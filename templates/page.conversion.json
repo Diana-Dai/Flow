@@ -698,11 +698,11 @@
             "text_color": "#11243e",
             "border_color": "#a0b842",
             "show_controls": false,
-            "column_size": "2",
+            "column_size": "3",
             "title": "",
             "heading_tag": "h2",
             "subheading": "",
-            "content": "<h4>Zone Analytics Pilot</h4><p>Planning to pilot zone-level analytics in 5 flagship stores to measure engagement with specific merchandise areas and validate visual merchandising decisions with traffic data.</p>",
+            "content": "<h3>After-Hours Installation</h3><p>Camera installation scheduled outside business hours to avoid disrupting store operations. Most stores complete hardware setup in a single evening.</p><h4>2-4hrs</h4><p>Typical install time per store</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -720,11 +720,11 @@
             "text_color": "#11243e",
             "border_color": "#a0b842",
             "show_controls": false,
-            "column_size": "2",
+            "column_size": "3",
             "title": "",
             "heading_tag": "h2",
             "subheading": "",
-            "content": "<h5>Flow AI Evaluation</h5><p>Evaluating Flow AI for automated staffing recommendations and predictive traffic forecasting to further reduce manual planning work for managers.</p>",
+            "content": "<h3>Existing System Integration</h3><p>Flow connects to your existing POS system without requiring replacement or major configuration changes. API, FTP, and CSV methods supported.</p><h4>Flexible</h4><p>Integration methods available</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -733,42 +733,20 @@
         "item_Vx6gWn": {
           "type": "item",
           "settings": {
-            "icon": "picto-tree",
+            "icon": "people",
             "icon_width": 32,
             "icon_background_type": "square",
             "icon_background": "#a0b842",
             "icon_color": "#ffffff",
             "background_color": "#f9fafb",
-            "text_color": "",
+            "text_color": "#11243e",
             "border_color": "#f2f2f2",
             "show_controls": false,
-            "column_size": "2",
+            "column_size": "3",
             "title": "",
             "heading_tag": "h2",
             "subheading": "",
-            "content": "<h5>New Store Rollout</h5><p>All new store openings will include Flow deployment from day one, using traffic data to optimize operations during the critical launch period.</p>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        },
-        "item_XQiyjf": {
-          "type": "item",
-          "settings": {
-            "icon": "picto-shield",
-            "icon_width": 32,
-            "icon_background_type": "square",
-            "icon_background": "#a0b842",
-            "icon_color": "#ffffff",
-            "background_color": "#ffffff",
-            "text_color": "",
-            "border_color": "#f2f2f2",
-            "show_controls": false,
-            "column_size": "2",
-            "title": "",
-            "heading_tag": "h4",
-            "subheading": "",
-            "content": "<h5>Advanced Benchmarking</h5><p>Working with Flow to develop more sophisticated store-to-store comparison frameworks that account for format, location type, and seasonal factors.</p>",
+            "content": "<h3>Training & Support Included</h3><p>On-site training for store managers, online resources for staff, and ongoing customer success support throughout deployment and beyond.</p><h4>Hands-On</h4><p>Implementation support</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -778,13 +756,12 @@
       "block_order": [
         "item_fRf33R",
         "item_zGNUAp",
-        "item_Vx6gWn",
-        "item_XQiyjf"
+        "item_Vx6gWn"
       ],
       "custom_css": [
         ".prose p {font-size: 0.9rem;}",
-        ".multi-column__item:first-child .h1 {color: #a0b842 !important;}",
-        ".multi-column__item:last-child .h1 {color: #a0b842 !important;}"
+        ".multi-column__item .h3 {color: #a0b842 !important;}",
+        ".multi-column__item h4 ~ p {margin-top: 0; padding-top: 0;}"
       ],
       "name": "Multi-column",
       "settings": {
@@ -792,9 +769,9 @@
         "stack_on_mobile": false,
         "gap": "medium",
         "text_alignment": "start",
-        "subheading": "FUTURE PLANS",
-        "title": "Expanding Flow Usage",
-        "content": "<p>Following successful initial deployment, the customer is exploring additional Flow capabilities.</p>",
+        "subheading": "IMPLEMENTATION",
+        "title": "LOW-DISRUPTION DEPLOYMENT.",
+        "content": "<p>Flow deployment is designed for minimal operational disruption. Installation happens after hours, integration adapts to existing systems, and training is included.</p>",
         "background": "#f2f2f2",
         "background_gradient": "",
         "text_color": ""
