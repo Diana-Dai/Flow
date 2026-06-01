@@ -159,7 +159,6 @@
   }
 
   .ai-trust-stat-label-{{ ai_gen_id }} {
-    font-family: var(--font-body-family);
     font-size: 14px;
     color: {{ block.settings.stat_label_color }};
     line-height: 1.4;
@@ -184,7 +183,6 @@
   }
 
   .ai-trust-case-title-{{ ai_gen_id }} {
-    font-family: var(--font-heading-family, var(--font-body-family));
     font-size: 20px;
     font-weight: 700;
     color: {{ block.settings.case_study_title_color }};
@@ -219,9 +217,8 @@
   }
 
   .ai-trust-metric-value-{{ ai_gen_id }} {
-    font-family: var(--font-heading-family, var(--font-body-family));
     font-size: 36px;
-    font-weight: 700;
+    font-weight: 500;
     color: {{ block.settings.metric_value_color }};
     line-height: 1;
     margin-bottom: 12px;
@@ -235,8 +232,6 @@
 
   .ai-trust-metric-description-{{ ai_gen_id }} {
     font-family: var(--font-body-family);
-    font-size: 14px;
-    line-height: 1.5;
     color: {{ block.settings.metric_description_color }};
   }
 
@@ -252,8 +247,6 @@
     gap: 8px;
     background-color: {{ block.settings.cta_button_background }};
     color: {{ block.settings.cta_button_text_color }};
-    font-family: var(--font-body-family);
-    font-size: 15px;
     font-weight: 600;
     padding: 14px 28px;
     border-radius: 50px;
