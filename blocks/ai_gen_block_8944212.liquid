@@ -80,7 +80,6 @@
 
   .ai-conversion-intelligence-heading-{{ ai_gen_id }} {
     color: {{ block.settings.heading_color }};
-    font-size: {{ block.settings.heading_font_size }}px;
     text-transform: uppercase;
     letter-spacing: -0.02em;
     line-height: 1.1;
@@ -530,16 +529,7 @@
       "label": "Heading",
       "default": "REAL-TIME CONVERSION INTELLIGENCE."
     },
-    {
-      "type": "range",
-      "id": "heading_font_size",
-      "label": "Heading font size",
-      "min": 24,
-      "max": 64,
-      "step": 2,
-      "unit": "px",
-      "default": 48
-    },
+
     {
       "type": "color",
       "id": "heading_color",
