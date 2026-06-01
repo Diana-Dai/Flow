@@ -237,6 +237,7 @@
             "feature_2_description": "",
             "feature_3_title": "",
             "feature_3_description": "",
+            "only_show_lift_card": true,
             "lift_label": "",
             "lift_percentage": "",
             "lift_subtext": "",
