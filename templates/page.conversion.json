@@ -1,0 +1,1521 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "1780026169d49df455": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_952f74e_qYrbiY": {
+          "type": "ai_gen_block_952f74e",
+          "settings": {
+            "max_width": 1600,
+            "section_padding_mobile": 40,
+            "section_padding_desktop": 40,
+            "show_tag": true,
+            "tag_text": "Customer Case Study",
+            "show_icon": true,
+            "company_name": "Premium Fashion Retailer",
+            "company_metadata": "Specialty Apparel • 45 Stores • Tokyo & Regional",
+            "headline": "Converting Traffic Data Into Actionable Store Insights",
+            "description": "A mid-sized specialty fashion chain deployed Flow to measure true customer traffic, understand conversion patterns, and give store managers data-driven visibility into daily performance.",
+            "show_metric_1": true,
+            "metric_1_value": "+18%",
+            "metric_1_label": "Conversion Rate Improvement",
+            "show_metric_2": true,
+            "metric_2_value": "45",
+            "metric_2_label": "Stores Deployed",
+            "show_metric_3": true,
+            "metric_3_value": "6mo",
+            "metric_3_label": "Measurement Period",
+            "overview_title": "Deployment Overview",
+            "show_info_1": true,
+            "info_1_label": "Industry",
+            "info_1_value": "Specialty Fashion Retail",
+            "show_info_2": true,
+            "info_2_label": "Store Count",
+            "info_2_value": "45 locations",
+            "show_info_3": true,
+            "info_3_label": "Deployment Period",
+            "info_3_value": "Q2 2025 - Q4 2025",
+            "show_info_4": true,
+            "info_4_label": "Primary Use Case",
+            "info_4_value": "Traffic & Conversion Analytics",
+            "background_color": "#ffffff",
+            "heading_color": "#1a2b4a",
+            "body_text_color": "#5a6c7d",
+            "meta_text_color": "#8b95a1",
+            "metric_color": "#a0b842",
+            "tag_background": "#e5e7eb",
+            "tag_text_color": "#6b7280",
+            "icon_background": "#1a2b4a",
+            "icon_color": "#ffffff",
+            "card_background": "#ffffff",
+            "card_border": "#e5e7eb",
+            "metric_card_background": "#ffffff",
+            "metric_card_border": "#e5e7eb",
+            "row_background": "#f9fafb",
+            "card_border_radius": 12,
+            "card_shadow_x": 0,
+            "card_shadow_y": 4,
+            "card_shadow_blur": 15,
+            "card_shadow_opacity": 0.1
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_952f74e_qYrbiY"
+      ],
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "multi_column_hNQjmA": {
+      "type": "multi-column",
+      "blocks": {
+        "item_HE4R79": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#ffffff",
+            "text_color": "",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "+18%",
+            "heading_tag": "h1",
+            "subheading": "<p>CONVERSION RATE</p>",
+            "content": "<p><strong>Average Conversion Improvement</strong></p><p>Store managers used traffic data to adjust staffing during peak hours, leading to measurable conversion rate improvements across the network.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_zKkNdD": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#ffffff",
+            "text_color": "",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "-12%",
+            "heading_tag": "h1",
+            "subheading": "<p>STAFFING EFFICIENCY</p>",
+            "content": "<p><strong>Labor Cost Reduction</strong></p><p>Better alignment between traffic patterns and staff schedules reduced overstaffing during slow periods while maintaining coverage during peaks.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_gkLzy8": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#ffffff",
+            "text_color": "",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "92%",
+            "heading_tag": "h1",
+            "subheading": "<p>MANAGER ADOPTION</p>",
+            "content": "<p><strong>Daily Dashboard Usage</strong></p><p>Store managers checked Flow dashboards daily to monitor performance, indicating strong adoption and perceived value.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_er7th9": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#f1f5ef",
+            "text_color": "#1a1a1a",
+            "border_color": "#a0b842",
+            "show_controls": false,
+            "column_size": "1",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<p><strong>Note:</strong> Results reflect this customer's specific deployment and operational practices. Flow performance varies based on store format, market conditions, existing operations, and how actively teams use the platform.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_HE4R79",
+        "item_zKkNdD",
+        "item_gkLzy8",
+        "item_er7th9"
+      ],
+      "custom_css": [
+        ".prose p {font-size: 0.9rem;}",
+        ".multi-column__item .h1 {color: #a0b842 !important;}",
+        ".multi-column__item:last-child {gap: 0;}"
+      ],
+      "name": "Multi-column",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "small",
+        "text_alignment": "center",
+        "subheading": "MEASURED OUTCOMES",
+        "title": "Results at a Glance",
+        "content": "<p>Results measured across 45 stores over 6-month period following Flow deployment. Individual results may vary based on store format, market conditions, and operational practices.</p>",
+        "background": "#f9fafb",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "multi_column_TV4htr": {
+      "type": "multi-column",
+      "blocks": {
+        "item_q9tYa7": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#f2f2f2",
+            "text_color": "#11243e",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "2",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h3>Business Model</h3><ul><li>Premium specialty apparel retail</li><li>High-touch customer service model</li><li>Emphasis on store-level merchandising</li><li>Strong regional brand presence</li></ul>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_MxxBAU": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#a0b842",
+            "text_color": "#ffffff",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "2",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h3>Why Visibility Mattered</h3><p>With growing pressure on retail margins and competition from e-commerce, headquarters needed better visibility into what was driving store-level performance. Understanding traffic patterns, conversion rates, and operational efficiency became critical for maintaining profitability.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_q9tYa7",
+        "item_MxxBAU"
+      ],
+      "name": "Multi-column",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "start",
+        "subheading": "CUSTOMER BACKGROUND",
+        "title": "About the Customer",
+        "content": "<p>This customer operates a specialty fashion retail chain with 45 stores across Tokyo, Osaka, and regional cities. Their stores range from 150-300 square meters and focus on premium casual apparel for women aged 25-45.</p><p>With approximately 30-50 staff per store and emphasis on customer service, the brand positioned itself as a higher-touch retail experience. Store managers had significant autonomy over merchandising, staffing, and local operations.</p>",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "multi_column_qin4Pg": {
+      "type": "multi-column",
+      "blocks": {
+        "item_naEBJq": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#ffffff",
+            "text_color": "",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "2",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h4>No Accurate Traffic Measurement</h4><p>Traffic counts were estimated manually or extrapolated from POS transaction volume. Store managers had no reliable way to know how many customers actually entered the store each day or how that compared to street traffic.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_ity9Ac": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#ffffff",
+            "text_color": "",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "2",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h4>Limited Visibility Before Checkout</h4><p>Performance data only became visible after transactions were completed. Managers could not see real-time traffic surges, identify slow periods accurately, or understand conversion patterns during the day.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_DM9ThQ": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#ffffff",
+            "text_color": "",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "2",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h4>Difficulty Managing Conversion</h4><p>Without knowing true traffic volume, conversion rate could not be calculated. This made it difficult to diagnose whether low sales days were due to low traffic, poor conversion, or both.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_9PEAUU": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#ffffff",
+            "text_color": "",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "2",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h4>Intuition-Based Staffing and VMD Decisions</h4><p>Store managers scheduled staff based on experience and intuition rather than measured traffic patterns. Visual merchandising changes were evaluated based on sales results only, with no visibility into whether they affected customer engagement or dwell time.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_PADbQH": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#ffffff",
+            "text_color": "",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "2",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h4>No Real-Time Store-Level Data</h4><p>Headquarters received sales reports daily, but had no visibility into what was happening in stores during the day. Area managers could not identify performance issues until after the fact.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_naEBJq",
+        "item_ity9Ac",
+        "item_DM9ThQ",
+        "item_9PEAUU",
+        "item_PADbQH"
+      ],
+      "name": "Multi-column",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "start",
+        "subheading": "THE CHALLENGE",
+        "title": "Challenges Before Flow",
+        "content": "<p>Before deploying Flow, the chain faced several operational visibility gaps that limited data-driven decision-making.</p>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "multi_column_PBB8dw": {
+      "type": "multi-column",
+      "blocks": {
+        "item_xB9zVU": {
+          "type": "item",
+          "settings": {
+            "icon": "check",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#a0b842",
+            "icon_color": "",
+            "background_color": "#f9fafb",
+            "text_color": "",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h5>Ease of Use</h5><p>Flow dashboards were simple enough for store managers to understand without extensive training. The interface focused on practical retail KPIs rather than overwhelming users with complex analytics.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_T6XWXH": {
+          "type": "item",
+          "settings": {
+            "icon": "check",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#a0b842",
+            "icon_color": "",
+            "background_color": "#f9fafb",
+            "text_color": "",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h5>Clear Dashboard Design</h5><p>Traffic, conversion, and sales data were displayed together in a single view, making it easy to understand store performance at a glance. Real-time updates helped managers make in-day adjustments.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_UKaPVf": {
+          "type": "item",
+          "settings": {
+            "icon": "check",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#a0b842",
+            "icon_color": "",
+            "background_color": "#f9fafb",
+            "text_color": "",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h5>Practical Retail Fit</h5><p>Flow was designed specifically for retail operations, not adapted from general-purpose analytics software. The metrics and workflows matched how store managers and area supervisors actually worked.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_4werVM": {
+          "type": "item",
+          "settings": {
+            "icon": "check",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#a0b842",
+            "icon_color": "",
+            "background_color": "#f9fafb",
+            "text_color": "",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h5>Cost and Value Balance</h5><p>Flow's pricing structure aligned with the chain's budget while delivering comprehensive traffic analytics and POS integration. The customer saw clear ROI potential through improved staffing efficiency.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_phFqrT": {
+          "type": "item",
+          "settings": {
+            "icon": "check",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#a0b842",
+            "icon_color": "",
+            "background_color": "#f9fafb",
+            "text_color": "",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h5>Customer Success Support</h5><p>Flow provided hands-on training for store managers and ongoing support during deployment. This was critical for a chain with varying levels of data literacy across locations.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_8Fhh3H": {
+          "type": "item",
+          "settings": {
+            "icon": "check",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#a0b842",
+            "icon_color": "",
+            "background_color": "#f9fafb",
+            "text_color": "",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h5>Data-Driven Operations</h5><p>Flow enabled the transition from intuition-based to data-informed store management without requiring managers to become data analysts. Insights were actionable and tied to daily operations.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_xB9zVU",
+        "item_T6XWXH",
+        "item_UKaPVf",
+        "item_4werVM",
+        "item_phFqrT",
+        "item_8Fhh3H"
+      ],
+      "custom_css": [
+        ".icon_container {text-align: center;}",
+        ".prose p {font-size: 0.9rem;}",
+        ".multi-column__item .h1 {color: #a0b842 !important;}"
+      ],
+      "name": "Multi-column",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "center",
+        "subheading": "SELECTION PROCESS",
+        "title": "Why Flow Was Selected",
+        "content": "<p>After evaluating several traffic analytics and retail intelligence platforms, the customer selected Flow based on several practical factors.</p>",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "multi_column_bJtgmc": {
+      "type": "multi-column",
+      "blocks": {
+        "item_mRFw4X": {
+          "type": "item",
+          "settings": {
+            "icon": "people",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#a0b842",
+            "icon_color": "#ffffff",
+            "background_color": "#ffffff",
+            "text_color": "",
+            "border_color": "#a0b842",
+            "show_controls": false,
+            "column_size": "2",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h5>Traffic Analytics</h5><p>Flow cameras installed at store entrances to measure customer entries, exits, and directional flow with 98%+ accuracy.</p><p>✅ Deployed across all 45 stores</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_r96Tt7": {
+          "type": "item",
+          "settings": {
+            "icon": "up",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#a0b842",
+            "icon_color": "#ffffff",
+            "background_color": "#ffffff",
+            "text_color": "",
+            "border_color": "#a0b842",
+            "show_controls": false,
+            "column_size": "2",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h5>Passerby & Capture Rate</h5><p>Measurement of street traffic vs. store entries to calculate capture rate and understand location performance.</p><p>✅ Deployed at street-facing locations</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_KQtcVQ": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-document",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#a0b842",
+            "icon_color": "#ffffff",
+            "background_color": "#ffffff",
+            "text_color": "",
+            "border_color": "#a0b842",
+            "show_controls": false,
+            "column_size": "2",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h5>POS Integration</h5><p>Direct connection to existing POS system to automatically correlate traffic data with transaction records and calculate conversion rates.</p><p>Automated daily sync</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_jHGFzb": {
+          "type": "item",
+          "settings": {
+            "icon": "check",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#a0b842",
+            "icon_color": "",
+            "background_color": "#ffffff",
+            "text_color": "",
+            "border_color": "#a0b842",
+            "show_controls": false,
+            "column_size": "2",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h5>Dashboard Access</h5><p>Real-time dashboards accessible to store managers, area supervisors, and headquarters with role-based permissions.</p><p>Multi-level access control</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_KeN4HJ": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-target",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#ffffff",
+            "text_color": "",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "2",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h5>Zone Analytics</h5><p>Not deployed in initial phase. Planned for future expansion to measure engagement in specific store zones.</p><p>Phase 2 consideration</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_kGDkaE": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-customer-support",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#a0b842",
+            "icon_color": "#ffffff",
+            "background_color": "#ffffff",
+            "text_color": "",
+            "border_color": "#a0b842",
+            "show_controls": false,
+            "column_size": "2",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h5>Training & Support</h5><p>On-site training for all store managers, online resources, and ongoing customer success support during deployment.</p><p>Included in deployment</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_mRFw4X",
+        "item_r96Tt7",
+        "item_KQtcVQ",
+        "item_jHGFzb",
+        "item_KeN4HJ",
+        "item_kGDkaE"
+      ],
+      "custom_css": [],
+      "name": "Multi-column",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "start",
+        "subheading": "DEPLOYMENT SCOPE",
+        "title": "What Was Implemented",
+        "content": "<p>The customer deployed the following Flow capabilities across their 45-store network.</p>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "multi_column_TbzGnm": {
+      "type": "multi-column",
+      "blocks": {
+        "item_qkyprL": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#3e4650",
+            "text_color": "",
+            "border_color": "#696969",
+            "show_controls": false,
+            "column_size": "1",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h5>Store Managers: Daily Performance Checks</h5><p>Store managers began checking Flow dashboards each morning to understand yesterday's performance and throughout the day to monitor real-time traffic. This became part of the daily routine within the first month of deployment.</p><p>✅ 92% of managers reported daily dashboard usage after 3 months</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_YXkcqb": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#3e4650",
+            "text_color": "",
+            "border_color": "#696969",
+            "show_controls": false,
+            "column_size": "1",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h5>Earlier Issue Identification</h5><p>Managers could identify problems during the day rather than discovering them in end-of-day sales reports. For example, seeing high traffic but low conversion during lunch hours prompted immediate staffing adjustments.</p><p>✅ Average response time to issues decreased from next-day to same-day</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_CtDYAK": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#3e4650",
+            "text_color": "",
+            "border_color": "#696969",
+            "show_controls": false,
+            "column_size": "1",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h5>Mid-Week Staffing Adjustments</h5><p>Instead of fixed weekly schedules, managers began making mid-week adjustments based on observed traffic patterns. Slow Monday mornings led to reduced staff, while unexpected Wednesday peaks triggered additional coverage.</p><p>✅ Staff schedule flexibility increased significantly</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_Wgc6iW": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#3e4650",
+            "text_color": "",
+            "border_color": "#696969",
+            "show_controls": false,
+            "column_size": "1",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h5>Data-Validated Assumptions</h5><p>Managers could test assumptions about what drove traffic. For example, one store believed rainy weather hurt traffic, but Flow data showed traffic was consistent—conversion dropped instead, suggesting an in-store service issue.</p><p>✅ Shifted decision-making from intuition to evidence</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_RKiW9c": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#3e4650",
+            "text_color": "",
+            "border_color": "#696969",
+            "show_controls": false,
+            "column_size": "1",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h5>Increased Manager Confidence</h5><p>Store managers reported feeling more confident in performance discussions with area supervisors. Having concrete traffic and conversion data reduced uncertainty and enabled more productive conversations about improvement strategies.</p><p>✅ Improved communication quality between store and HQ</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_qkyprL",
+        "item_YXkcqb",
+        "item_CtDYAK",
+        "item_Wgc6iW",
+        "item_RKiW9c"
+      ],
+      "custom_css": [
+        ".icon_container {text-align: center;}",
+        ".prose p {font-size: 0.9rem;}",
+        ".multi-column__item {gap: 0;}",
+        ".multi-column {gap: 2rem;}"
+      ],
+      "name": "Multi-column",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "small",
+        "text_alignment": "start",
+        "subheading": "BEHAVIORAL CHANGE",
+        "title": "How Teams Used Flow",
+        "content": "<p>Deployment success depended not just on technology, but on how store teams and management adopted Flow into daily operations.</p>",
+        "background": "#11243e",
+        "background_gradient": "",
+        "text_color": "#ffffff"
+      }
+    },
+    "178003042955718f5f": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_11d4177_K3FTVb": {
+          "type": "ai_gen_block_11d4177",
+          "settings": {
+            "section_label": "MEASURED RESULTS",
+            "section_headline": "Documented Outcomes",
+            "section_description": "The following results were measured over a 6-month period following Flow deployment across all 45 stores.",
+            "card_1_enabled": true,
+            "card_1_title": "Conversion Rate",
+            "card_1_subtitle": "Traffic to transaction ratio",
+            "card_1_metric": "+18%",
+            "card_1_description": "Average conversion rate improvement across the store network. Stores that actively adjusted staffing based on Flow data saw conversion improvements ranging from 12% to 24%.",
+            "card_1_methodology": "Conversion rate calculated as (transaction count / total traffic entries) × 100, measured daily and averaged over 6-month period. Compared against 6-month baseline period before Flow deployment.",
+            "card_2_enabled": true,
+            "card_2_title": "Labor Cost Reduction",
+            "card_2_subtitle": "Staffing efficiency improvement",
+            "card_2_metric": "-12%",
+            "card_2_description": "Reduction in labor costs as a percentage of sales through better alignment of staffing with traffic patterns. Overstaffing during slow periods was reduced while peak coverage was maintained.",
+            "card_2_methodology": "Labor hours compared against traffic volume and sales results. Calculated as (total labor cost / total sales revenue) × 100, comparing 6-month periods before and after Flow deployment.",
+            "card_3_enabled": true,
+            "card_3_title": "Manager Dashboard Usage",
+            "card_3_subtitle": "Platform adoption rate",
+            "card_3_metric": "92%",
+            "card_3_description": "Percentage of store managers accessing Flow dashboards daily after 3-month deployment period. High adoption indicated managers found the platform valuable for daily operations.",
+            "card_3_methodology": "Login analytics tracking unique manager logins per day, averaged over weeks 12–16 following deployment across all stores.",
+            "card_4_enabled": true,
+            "card_4_title": "Issue Response Time",
+            "card_4_subtitle": "Time to identify and address problems",
+            "card_4_metric": "Same-Day",
+            "card_4_description": "Managers shifted from identifying performance issues the next day (via sales reports) to identifying and responding to issues during the same business day using real-time Flow data.",
+            "card_4_methodology": "Qualitative assessment based on manager interviews and timestamped records of staffing adjustments in response to observed traffic patterns.",
+            "show_note": true,
+            "note_title": "Important Note on Results",
+            "note_text": "These results reflect this specific customer's deployment and operational practices over a 6-month measurement period. Flow platform performance varies based on store format, market conditions, existing baseline performance, implementation quality, and how actively teams use the platform. These numbers should not be interpreted as guaranteed outcomes for other retailers.",
+            "container_max_width": 1100,
+            "desktop_width_percent": 100,
+            "section_background": "rgba(0,0,0,0)",
+            "card_background": "#ffffff",
+            "card_border_color": "#e5e5e5",
+            "headline_color": "#1a2b4a",
+            "label_color": "#6b7280",
+            "text_color": "#4b5563",
+            "subtitle_color": "#6b7280",
+            "metric_color": "#a0b842",
+            "icon_background": "#f3f4f6",
+            "icon_color": "#a0b842",
+            "methodology_background": "#f9fafb",
+            "note_background": "#f1f5ef",
+            "note_border_color": "#f1f5ef",
+            "note_icon_color": "#a0b842",
+            "headline_size": 42,
+            "description_size": 18,
+            "card_subtitle_size": 14,
+            "metric_size": 48,
+            "body_text_size": 16,
+            "methodology_text_size": 14,
+            "note_title_size": 18,
+            "card_border_radius": 12,
+            "icon_border_radius": 8,
+            "methodology_border_radius": 8,
+            "card_shadow_opacity": 5
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_11d4177_K3FTVb"
+      ],
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "section-15": {
+      "type": "feature-chart",
+      "blocks": {
+        "block-1": {
+          "type": "headings",
+          "settings": {
+            "heading_1": "主な提供価値",
+            "heading_2": "コアの設計思想",
+            "heading_3": "来店データの位置づけ",
+            "heading_4": "データの即時性",
+            "heading_5": "店舗での使いやすさ",
+            "heading_6": "判断へのつながり",
+            "heading_7": "店舗ごとの判断差",
+            "heading_8": "本部と店舗の連携",
+            "heading_9": "運用負荷",
+            "heading_10": "拡張性",
+            "heading_11": "",
+            "heading_12": "",
+            "heading_13": "",
+            "heading_14": "",
+            "heading_15": "",
+            "heading_16": "",
+            "heading_17": "",
+            "heading_18": "",
+            "heading_19": "",
+            "heading_20": ""
+          }
+        },
+        "block-2": {
+          "type": "values",
+          "settings": {
+            "product": "",
+            "value_1": "<p>40mm Beryllium</p>",
+            "value_2": "<p>245g</p>",
+            "value_3": "<p>165mm x 190mm x 66mm</p>",
+            "value_4": "<p>24 hours</p>",
+            "value_5": "",
+            "value_6": "",
+            "value_7": "",
+            "value_8": "",
+            "value_9": "",
+            "value_10": "",
+            "value_11": "",
+            "value_12": "",
+            "value_13": "",
+            "value_14": "",
+            "value_15": "",
+            "value_16": "",
+            "value_17": "",
+            "value_18": "",
+            "value_19": "",
+            "value_20": "",
+            "view_button_background": "",
+            "view_button_text_color": ""
+          }
+        },
+        "block-3": {
+          "type": "values",
+          "settings": {
+            "product": "",
+            "value_1": "<p>40mm Beryllium</p>",
+            "value_2": "<p>205g (On-Ear), 239g (Over-Ear)</p>",
+            "value_3": "<p>190mm x 155mm x 34mm (On-Ear), 200mm x 165mm x 40mm (Over-Ear)</p>",
+            "value_4": "<p>16 hours</p>",
+            "value_5": "",
+            "value_6": "",
+            "value_7": "",
+            "value_8": "",
+            "value_9": "",
+            "value_10": "",
+            "value_11": "",
+            "value_12": "",
+            "value_13": "",
+            "value_14": "",
+            "value_15": "",
+            "value_16": "",
+            "value_17": "",
+            "value_18": "",
+            "value_19": "",
+            "value_20": "",
+            "view_button_background": "",
+            "view_button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "Why Dashboards Fail",
+        "content": "<p>Traditional analytics show you the problem. Flow solves it.</p>",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "center",
+        "max_rows": 5,
+        "view_all_text": "View all",
+        "view_less_text": "View less",
+        "view_product": "View",
+        "viewing_product": "",
+        "show_product_swatch": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "chart_background": "",
+        "chart_text_color": "",
+        "chart_true_false_color": ""
+      }
+    },
+    "multi_column_AirP37": {
+      "type": "multi-column",
+      "blocks": {
+        "item_tqXUb9": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#f9fafb",
+            "text_color": "",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h5>Better Alignment Across Levels</h5><p>Store managers, area supervisors, and headquarters began using the same data foundation for performance discussions. This reduced miscommunication and aligned expectations across the organization.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_LLqU6x": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#f9fafb",
+            "text_color": "",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h5>Faster Decision Cycles</h5><p>Real-time visibility enabled faster decisions. Managers no longer waited for end-of-week reports to understand what was working. Adjustments happened during the week, sometimes during the same day.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_UaKx78": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#f9fafb",
+            "text_color": "",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h5>Improved Staff Awareness</h5><p>Store staff became more aware of traffic patterns and conversion rates. Managers shared Flow insights during daily briefings, helping teams understand the connection between their actions and store performance.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_Vmc6kG": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#f9fafb",
+            "text_color": "",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h5>Stronger KPI Habits</h5><p>Managers developed stronger habits around checking and acting on key performance indicators. This was especially valuable for newer managers who previously relied heavily on intuition.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_trQR3h": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#f9fafb",
+            "text_color": "",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h5>Cross-Department Understanding</h5><p>Operations, merchandising, and marketing teams gained better understanding of how their decisions affected store traffic and conversion. This improved collaboration on campaigns and seasonal planning.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_LkGEYj": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#f9fafb",
+            "text_color": "",
+            "border_color": "#f9fafb",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h5>Evidence-Based Planning</h5><p>Future store openings, renovations, and format changes now incorporate Flow traffic data. Location decisions and layout planning became more evidence-based rather than purely based on sales projections.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_tqXUb9",
+        "item_LLqU6x",
+        "item_UaKx78",
+        "item_Vmc6kG",
+        "item_trQR3h",
+        "item_LkGEYj"
+      ],
+      "name": "Multi-column",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "start",
+        "subheading": "ORGANIZATIONAL CHANGE",
+        "title": "Operational Impact",
+        "content": "<p>Beyond measurable performance metrics, Flow deployment changed how the organization operated day-to-day.</p>",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "multi_column_ykywta": {
+      "type": "multi-column",
+      "blocks": {
+        "item_fRf33R": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-target",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#a0b842",
+            "icon_color": "#ffffff",
+            "background_color": "#f9fafb",
+            "text_color": "#11243e",
+            "border_color": "#a0b842",
+            "show_controls": false,
+            "column_size": "2",
+            "title": "",
+            "heading_tag": "h2",
+            "subheading": "",
+            "content": "<h4>Zone Analytics Pilot</h4><p>Planning to pilot zone-level analytics in 5 flagship stores to measure engagement with specific merchandise areas and validate visual merchandising decisions with traffic data.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_zGNUAp": {
+          "type": "item",
+          "settings": {
+            "icon": "check",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#a0b842",
+            "icon_color": "",
+            "background_color": "#ffffff",
+            "text_color": "#11243e",
+            "border_color": "#a0b842",
+            "show_controls": false,
+            "column_size": "2",
+            "title": "",
+            "heading_tag": "h2",
+            "subheading": "",
+            "content": "<h5>Flow AI Evaluation</h5><p>Evaluating Flow AI for automated staffing recommendations and predictive traffic forecasting to further reduce manual planning work for managers.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_Vx6gWn": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-tree",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#a0b842",
+            "icon_color": "#ffffff",
+            "background_color": "#f9fafb",
+            "text_color": "",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "2",
+            "title": "",
+            "heading_tag": "h2",
+            "subheading": "",
+            "content": "<h5>New Store Rollout</h5><p>All new store openings will include Flow deployment from day one, using traffic data to optimize operations during the critical launch period.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_XQiyjf": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-shield",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#a0b842",
+            "icon_color": "#ffffff",
+            "background_color": "#ffffff",
+            "text_color": "",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "2",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h5>Advanced Benchmarking</h5><p>Working with Flow to develop more sophisticated store-to-store comparison frameworks that account for format, location type, and seasonal factors.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_fRf33R",
+        "item_zGNUAp",
+        "item_Vx6gWn",
+        "item_XQiyjf"
+      ],
+      "custom_css": [
+        ".prose p {font-size: 0.9rem;}",
+        ".multi-column__item:first-child .h1 {color: #a0b842 !important;}",
+        ".multi-column__item:last-child .h1 {color: #a0b842 !important;}"
+      ],
+      "name": "Multi-column",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "start",
+        "subheading": "FUTURE PLANS",
+        "title": "Expanding Flow Usage",
+        "content": "<p>Following successful initial deployment, the customer is exploring additional Flow capabilities.</p>",
+        "background": "#f2f2f2",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "rich_text_6VmVgb": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_AK7Cjn": {
+          "type": "subheading",
+          "settings": {
+            "text": "NEXT STEPS",
+            "icon": "none"
+          }
+        },
+        "heading_YXhiR8": {
+          "type": "heading",
+          "settings": {
+            "text": "SEE WHAT FLOW COULD REVEAL INYOUR STORES",
+            "heading_tag": "h1",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_qzAkak": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Every retail operation is different. Let's discuss what Flow could measure, analyze, and improve in your specific environment.</p>"
+          }
+        },
+        "button_AVKAbi": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "style": "outline",
+            "size": "base",
+            "text": "Contact Solutions Architect",
+            "url": "#",
+            "background": "",
+            "text_color": "#11243e"
+          }
+        },
+        "buttons_jaKCGH": {
+          "type": "buttons",
+          "settings": {
+            "style_1": "fill",
+            "size_1": "xl",
+            "text_1": "Schedule Demo →",
+            "url_1": "#",
+            "background_1": "#a0b842",
+            "text_color_1": "#ffffff",
+            "style_2": "fill",
+            "size_2": "xl",
+            "text_2": "Explore Platform →",
+            "url_2": "#",
+            "background_2": "#ffffff",
+            "text_color_2": "#11243e"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_AK7Cjn",
+        "heading_YXhiR8",
+        "richtext_qzAkak",
+        "button_AVKAbi",
+        "buttons_jaKCGH"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "#0e366a",
+        "background_gradient": "",
+        "text_color": "#ffffff"
+      }
+    },
+    "multi_column_UExWWX": {
+      "type": "multi-column",
+      "blocks": {
+        "item_kHMBXM": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "image": "shopify://shop_images/unnamed.png",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "#f9fafb",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "高精度店内計測",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<p>高精度な来店計測と顧客行動分析。</p>",
+            "link_url": "",
+            "link_text": "詳しく見る →",
+            "link_style": "link"
+          }
+        },
+        "item_jzqLHt": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "image": "shopify://shop_images/1_1b5442dc-a679-4a23-a10f-8f39d2cc4234.png",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "#f9fafb",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "FIDA分析基盤",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<p>来店・売上・人員配置を統合分析。</p>",
+            "link_url": "#",
+            "link_text": "詳しく見る →",
+            "link_style": "link"
+          }
+        },
+        "item_rn7myV": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "image": "shopify://shop_images/3_05197ad8-294f-4cc5-9d73-b73021906f0a.png",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "#f9fafb",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "現場意思決定実行支援",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<p>現場実行につながる推奨アクション。</p><h3></h3>",
+            "link_url": "#",
+            "link_text": "詳しく見る →",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_kHMBXM",
+        "item_jzqLHt",
+        "item_rn7myV"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".multi-column__item {padding: 0;}"
+      ],
+      "name": "Multi-column",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "start",
+        "subheading": "プラットフォームを見る",
+        "title": "店舗運営のすべてのレイヤーを統合。",
+        "content": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    }
+  },
+  "order": [
+    "1780026169d49df455",
+    "multi_column_hNQjmA",
+    "multi_column_TV4htr",
+    "multi_column_qin4Pg",
+    "multi_column_PBB8dw",
+    "multi_column_bJtgmc",
+    "multi_column_TbzGnm",
+    "178003042955718f5f",
+    "section-15",
+    "multi_column_AirP37",
+    "multi_column_ykywta",
+    "rich_text_6VmVgb",
+    "multi_column_UExWWX"
+  ]
+}
