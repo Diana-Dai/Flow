@@ -45,6 +45,100 @@
         "spacing": "small"
       }
     },
+    "multi_column_PBB8dw": {
+      "type": "multi-column",
+      "blocks": {
+        "item_xB9zVU": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-stop",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#e5e7e1",
+            "icon_color": "#11243e",
+            "background_color": "#f9fafb",
+            "text_color": "",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h5>Unknown Conversion Rate</h5><p>POS shows transactions but not traffic. Managers don't know if low sales are due to poor conversion or simply low traffic.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_T6XWXH": {
+          "type": "item",
+          "settings": {
+            "icon": "people",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#e5e7e1",
+            "icon_color": "#11243e",
+            "background_color": "#f9fafb",
+            "text_color": "",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h5>Invisible Leak Points</h5><p>No visibility into where customers disengage. Is it understaffing during peaks? Product placement? Service quality? Data doesn't exist.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_UKaPVf": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-timer",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#e5e7e1",
+            "icon_color": "#11243e",
+            "background_color": "#f9fafb",
+            "text_color": "",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h5>Delayed Recognition</h5><p>Conversion issues only become apparent at end-of-day or end-of-week. By then, the opportunity to respond is gone.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_xB9zVU",
+        "item_T6XWXH",
+        "item_UKaPVf"
+      ],
+      "custom_css": [
+        ".icon_container {text-align: center;}",
+        ".prose p {font-size: 0.9rem;}",
+        ".multi-column__item .h1 {color: #a0b842 !important;}"
+      ],
+      "name": "Multi-column",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "center",
+        "subheading": "THE PROBLEM",
+        "title": "YOU CAN'T IMPROVE WHAT YOU CAN'T MEASURE.",
+        "content": "<p>Without accurate traffic measurement, conversion rate remains unknown. Store managers see sales results but have no visibility into how many customers entered, where they went, or why they left without purchasing.</p>",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
     "multi_column_hNQjmA": {
       "type": "multi-column",
       "blocks": {
@@ -359,169 +453,6 @@
         "title": "Challenges Before Flow",
         "content": "<p>Before deploying Flow, the chain faced several operational visibility gaps that limited data-driven decision-making.</p>",
         "background": "",
-        "background_gradient": "",
-        "text_color": ""
-      }
-    },
-    "multi_column_PBB8dw": {
-      "type": "multi-column",
-      "blocks": {
-        "item_xB9zVU": {
-          "type": "item",
-          "settings": {
-            "icon": "check",
-            "icon_width": 32,
-            "icon_background_type": "square",
-            "icon_background": "#a0b842",
-            "icon_color": "",
-            "background_color": "#f9fafb",
-            "text_color": "",
-            "border_color": "#f2f2f2",
-            "show_controls": false,
-            "column_size": "3",
-            "title": "",
-            "heading_tag": "h4",
-            "subheading": "",
-            "content": "<h5>Ease of Use</h5><p>Flow dashboards were simple enough for store managers to understand without extensive training. The interface focused on practical retail KPIs rather than overwhelming users with complex analytics.</p>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        },
-        "item_T6XWXH": {
-          "type": "item",
-          "settings": {
-            "icon": "check",
-            "icon_width": 32,
-            "icon_background_type": "square",
-            "icon_background": "#a0b842",
-            "icon_color": "",
-            "background_color": "#f9fafb",
-            "text_color": "",
-            "border_color": "#f2f2f2",
-            "show_controls": false,
-            "column_size": "3",
-            "title": "",
-            "heading_tag": "h4",
-            "subheading": "",
-            "content": "<h5>Clear Dashboard Design</h5><p>Traffic, conversion, and sales data were displayed together in a single view, making it easy to understand store performance at a glance. Real-time updates helped managers make in-day adjustments.</p>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        },
-        "item_UKaPVf": {
-          "type": "item",
-          "settings": {
-            "icon": "check",
-            "icon_width": 32,
-            "icon_background_type": "square",
-            "icon_background": "#a0b842",
-            "icon_color": "",
-            "background_color": "#f9fafb",
-            "text_color": "",
-            "border_color": "#f2f2f2",
-            "show_controls": false,
-            "column_size": "3",
-            "title": "",
-            "heading_tag": "h4",
-            "subheading": "",
-            "content": "<h5>Practical Retail Fit</h5><p>Flow was designed specifically for retail operations, not adapted from general-purpose analytics software. The metrics and workflows matched how store managers and area supervisors actually worked.</p>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        },
-        "item_4werVM": {
-          "type": "item",
-          "settings": {
-            "icon": "check",
-            "icon_width": 32,
-            "icon_background_type": "square",
-            "icon_background": "#a0b842",
-            "icon_color": "",
-            "background_color": "#f9fafb",
-            "text_color": "",
-            "border_color": "#f2f2f2",
-            "show_controls": false,
-            "column_size": "3",
-            "title": "",
-            "heading_tag": "h4",
-            "subheading": "",
-            "content": "<h5>Cost and Value Balance</h5><p>Flow's pricing structure aligned with the chain's budget while delivering comprehensive traffic analytics and POS integration. The customer saw clear ROI potential through improved staffing efficiency.</p>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        },
-        "item_phFqrT": {
-          "type": "item",
-          "settings": {
-            "icon": "check",
-            "icon_width": 32,
-            "icon_background_type": "square",
-            "icon_background": "#a0b842",
-            "icon_color": "",
-            "background_color": "#f9fafb",
-            "text_color": "",
-            "border_color": "#f2f2f2",
-            "show_controls": false,
-            "column_size": "3",
-            "title": "",
-            "heading_tag": "h4",
-            "subheading": "",
-            "content": "<h5>Customer Success Support</h5><p>Flow provided hands-on training for store managers and ongoing support during deployment. This was critical for a chain with varying levels of data literacy across locations.</p>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        },
-        "item_8Fhh3H": {
-          "type": "item",
-          "settings": {
-            "icon": "check",
-            "icon_width": 32,
-            "icon_background_type": "square",
-            "icon_background": "#a0b842",
-            "icon_color": "",
-            "background_color": "#f9fafb",
-            "text_color": "",
-            "border_color": "#f2f2f2",
-            "show_controls": false,
-            "column_size": "3",
-            "title": "",
-            "heading_tag": "h4",
-            "subheading": "",
-            "content": "<h5>Data-Driven Operations</h5><p>Flow enabled the transition from intuition-based to data-informed store management without requiring managers to become data analysts. Insights were actionable and tied to daily operations.</p>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        }
-      },
-      "block_order": [
-        "item_xB9zVU",
-        "item_T6XWXH",
-        "item_UKaPVf",
-        "item_4werVM",
-        "item_phFqrT",
-        "item_8Fhh3H"
-      ],
-      "custom_css": [
-        ".icon_container {text-align: center;}",
-        ".prose p {font-size: 0.9rem;}",
-        ".multi-column__item .h1 {color: #a0b842 !important;}"
-      ],
-      "name": "Multi-column",
-      "settings": {
-        "full_width": true,
-        "stack_on_mobile": false,
-        "gap": "medium",
-        "text_alignment": "center",
-        "subheading": "SELECTION PROCESS",
-        "title": "Why Flow Was Selected",
-        "content": "<p>After evaluating several traffic analytics and retail intelligence platforms, the customer selected Flow based on several practical factors.</p>",
-        "background": "#ffffff",
         "background_gradient": "",
         "text_color": ""
       }
@@ -1468,10 +1399,10 @@
   },
   "order": [
     "media_with_text_gMMfwV",
+    "multi_column_PBB8dw",
     "multi_column_hNQjmA",
     "multi_column_TV4htr",
     "multi_column_qin4Pg",
-    "multi_column_PBB8dw",
     "multi_column_bJtgmc",
     "multi_column_TbzGnm",
     "178003042955718f5f",
