@@ -1033,7 +1033,7 @@
       "custom_css": [
         ".prose p {font-size: 0.9rem;}",
         ".multi-column__item .h3 {color: #a0b842 !important;}",
-        ".multi-column__item:last-child {display: flex; justify-content: left;}",
+        " @media (min-width: 769px) {.multi-column__item:last-child {display: flex; justify-content: left;} }",
         ".multi-column__item:last-child * {text-align: left;}"
       ],
       "name": "Multi-column",
