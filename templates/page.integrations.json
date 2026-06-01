@@ -1174,7 +1174,7 @@
           "type": "ai_gen_block_b5b0090",
           "settings": {
             "desktop_width_percent": 100,
-            "section_padding_mobile": 40,
+            "section_padding_mobile": 20,
             "section_padding_desktop": 40,
             "background_color": "rgba(0,0,0,0)",
             "headline": "連携後も、データ状態を継続確認",
