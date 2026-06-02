@@ -316,7 +316,7 @@
         "item_kGDkaE": {
           "type": "item",
           "settings": {
-            "icon": "picto-customer-support",
+            "icon": "picto-target",
             "icon_width": 32,
             "icon_background_type": "square",
             "icon_background": "#a0b842",
@@ -329,9 +329,9 @@
             "title": "",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<h5>Training & Support</h5><p>On-site training for all store managers, online resources, and ongoing customer success support during deployment.</p><p>Included in deployment</p>",
-            "link_url": "",
-            "link_text": "",
+            "content": "<h4>Company-Wide Flow Deployment Impact</h4><p>Aggregate Analysis • Multiple customers</p><p>Flow examined performance across multiple customers who adopted Flow. Analysis shows significant outperformance vs. partial adopters and industry average.</p><h6></h6><h6>KEY RESULTS</h6><ul><li>2024: customers using Flow saw YoY sales growth of 108.9%</li><li>2023: companies deploying Flow in all stores achieved 108.5% YoY growth</li><li>Outperformed partial adopters and broader industry average</li></ul>",
+            "link_url": "#",
+            "link_text": "View details →",
             "link_style": "link"
           }
         }
