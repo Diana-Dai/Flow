@@ -40,13 +40,15 @@
         "heading_hjfyL9",
         "richtext_wjTJeB"
       ],
-      "custom_css": [],
+      "custom_css": [
+        "* {padding-bottom: 0.5rem;}"
+      ],
       "name": "Rich text",
       "settings": {
         "full_width": true,
         "content_width": "medium",
         "text_position": "start",
-        "background": "#0e366a",
+        "background": "#0e2a3a",
         "background_gradient": "",
         "text_color": "#ffffff"
       }
@@ -62,7 +64,7 @@
             "icon_background_type": "square",
             "icon_background": "",
             "icon_color": "",
-            "background_color": "",
+            "background_color": "#1a3a4a",
             "text_color": "",
             "border_color": "rgba(0,0,0,0)",
             "show_controls": false,
@@ -70,7 +72,7 @@
             "title": "4-6 weeks",
             "heading_tag": "h2",
             "subheading": "",
-            "content": "<p>Typical deployment</p>",
+            "content": "<p>#1a3a4a</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -84,7 +86,7 @@
             "icon_background_type": "square",
             "icon_background": "",
             "icon_color": "",
-            "background_color": "",
+            "background_color": "#1a3a4a",
             "text_color": "",
             "border_color": "#0e366a",
             "show_controls": false,
@@ -106,7 +108,7 @@
             "icon_background_type": "square",
             "icon_background": "",
             "icon_color": "",
-            "background_color": "",
+            "background_color": "#1a3a4a",
             "text_color": "",
             "border_color": "#0e366a",
             "show_controls": false,
@@ -128,7 +130,7 @@
             "icon_background_type": "square",
             "icon_background": "",
             "icon_color": "",
-            "background_color": "",
+            "background_color": "#1a3a4a",
             "text_color": "",
             "border_color": "#0e366a",
             "show_controls": false,
@@ -159,7 +161,7 @@
         "subheading": "",
         "title": "",
         "content": "",
-        "background": "#0e366a",
+        "background": "#0e2a3a",
         "background_gradient": "",
         "text_color": "#ffffff"
       }
