@@ -219,7 +219,7 @@
             "title": "",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<h3>Cole Haan Japan</h3><p>Premium Footwear & Accessories • Multiple formats</p><p>Required insights connected to selling behavior, fixture performance, and POS data. Different store formats made measurement inconsistent, and department store shops could not measure visitors.</p><h6></h6><h6>KEY RESULTS</h6><ul><li>Company-wide dashboards increased alignment</li><li>Store staff could see discrepancies between intuition and data</li><li>Gender and age attributes supported merchandising decisions</li></ul>",
+            "content": "<h4>Cole Haan Japan</h4><p>Premium Footwear & Accessories • Multiple formats</p><p>Required insights connected to selling behavior, fixture performance, and POS data. Different store formats made measurement inconsistent, and department store shops could not measure visitors.</p><h6></h6><h6>KEY RESULTS</h6><ul><li>Company-wide dashboards increased alignment</li><li>Store staff could see discrepancies between intuition and data</li><li>Gender and age attributes supported merchandising decisions</li></ul>",
             "link_url": "#",
             "link_text": "View details →",
             "link_style": "link"
@@ -228,7 +228,7 @@
         "item_r96Tt7": {
           "type": "item",
           "settings": {
-            "icon": "up",
+            "icon": "picto-target",
             "icon_width": 32,
             "icon_background_type": "square",
             "icon_background": "#a0b842",
@@ -241,16 +241,16 @@
             "title": "",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<h5>Passerby & Capture Rate</h5><p>Measurement of street traffic vs. store entries to calculate capture rate and understand location performance.</p><p>✅ Deployed at street-facing locations</p>",
+            "content": "<h4>Baycrews</h4><p>Fashion • Multi-Brand • Multiple locations</p><p>Implemented Flow early to support data-driven store operations across major brands and stores. Required group-wide visibility and role-specific dashboards.</p><h6></h6><h6>KEY RESULTS</h6><ul><li>Group-wide visibility of visitor counts</li><li>Clear identification of new store performance and conversion challenges</li><li>Dashboards tailored to role level: store, manager, executive</li></ul>",
             "link_url": "",
-            "link_text": "",
+            "link_text": "View details →",
             "link_style": "link"
           }
         },
         "item_KQtcVQ": {
           "type": "item",
           "settings": {
-            "icon": "picto-document",
+            "icon": "picto-target",
             "icon_width": 32,
             "icon_background_type": "square",
             "icon_background": "#a0b842",
@@ -263,20 +263,20 @@
             "title": "",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<h5>POS Integration</h5><p>Direct connection to existing POS system to automatically correlate traffic data with transaction records and calculate conversion rates.</p><p>Automated daily sync</p>",
-            "link_url": "",
-            "link_text": "",
+            "content": "<h4>Triumph International Japan</h4><p>Intimate Apparel • Multiple locations</p><p>Previously used a visitor counting system but found the support and UI insufficient. Staff could not easily interpret the data.</p><h6></h6><h6>KEY RESULTS</h6><ul><li>Data available in real-time instead of one day later</li><li>UI clarity allowed store staff to interpret KPI movement</li><li>Information sharing from HQ to stores accelerated</li></ul>",
+            "link_url": "#",
+            "link_text": "View details →",
             "link_style": "link"
           }
         },
         "item_jHGFzb": {
           "type": "item",
           "settings": {
-            "icon": "check",
+            "icon": "picto-target",
             "icon_width": 32,
             "icon_background_type": "square",
             "icon_background": "#a0b842",
-            "icon_color": "",
+            "icon_color": "#ffffff",
             "background_color": "#ffffff",
             "text_color": "",
             "border_color": "#a0b842",
@@ -285,9 +285,9 @@
             "title": "",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<h5>Dashboard Access</h5><p>Real-time dashboards accessible to store managers, area supervisors, and headquarters with role-based permissions.</p><p>Multi-level access control</p>",
-            "link_url": "",
-            "link_text": "",
+            "content": "<h4>TUMI Japan</h4><p>Premium Luggage & Accessories • Multiple locations</p><p>Pursues store-level DX. Combines fixed counters with Flow Clicker for stores where sensors cannot be installed.</p><h6></h6><h6>KEY RESULTS</h6><ul><li>Managers gained clearer understanding through visualized KPIs</li><li>Clicker automation reduced manual counting burden</li><li>Staff began documenting qualitative explanations in Pulse</li></ul>",
+            "link_url": "#",
+            "link_text": "View details →",
             "link_style": "link"
           }
         },
@@ -297,19 +297,19 @@
             "icon": "picto-target",
             "icon_width": 32,
             "icon_background_type": "square",
-            "icon_background": "",
-            "icon_color": "",
+            "icon_background": "#a0b842",
+            "icon_color": "#ffffff",
             "background_color": "#ffffff",
             "text_color": "",
-            "border_color": "#f2f2f2",
+            "border_color": "#a0b842",
             "show_controls": false,
             "column_size": "2",
             "title": "",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<h5>Zone Analytics</h5><p>Not deployed in initial phase. Planned for future expansion to measure engagement in specific store zones.</p><p>Phase 2 consideration</p>",
-            "link_url": "",
-            "link_text": "",
+            "content": "<h4>Global Jeans Brand</h4><p>Denim • VMD Optimization • Multiple locations</p><p>Major global denim brand sought to optimize VMD performance in multi-brand retail environments. Focused on identifying which fixture layouts produce higher engagement and conversion.</p><h6></h6><h6>KEY RESULTS</h6><ul><li>Identified optimal fixture placements</li><li>Improved engagement through layout adjustments</li><li>Standardized best practices across stores</li></ul>",
+            "link_url": "#",
+            "link_text": "View details →",
             "link_style": "link"
           }
         },
@@ -345,7 +345,7 @@
         "item_kGDkaE"
       ],
       "custom_css": [
-        "h3 + p {margin-top: 0; font-size: 1rem;}",
+        "h4 + p {margin-top: 0; font-size: 1rem;}",
         "h6 {font-size: 1rem; margin-top: 2rem;}"
       ],
       "name": "Multi-column",
