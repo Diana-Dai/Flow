@@ -492,7 +492,7 @@
         "heading_YXhiR8": {
           "type": "heading",
           "settings": {
-            "text": "SEE WHAT FLOW COULD REVEAL INYOUR STORES",
+            "text": "SEE WHAT FLOW COULD ACHIEVE INYOUR STORES",
             "heading_tag": "h1",
             "text_color": "",
             "gradient": ""
@@ -501,7 +501,7 @@
         "richtext_qzAkak": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Every retail operation is different. Let's discuss what Flow could measure, analyze, and improve in your specific environment.</p>"
+            "content": "<p>Every retail operation is unique. Let's discuss what Flow could measure, analyze, and improve in your specific environment.</p>"
           }
         },
         "button_AVKAbi": {
@@ -527,7 +527,7 @@
             "text_color_1": "#ffffff",
             "style_2": "fill",
             "size_2": "xl",
-            "text_2": "Explore Platform →",
+            "text_2": "Talk to Flow →",
             "url_2": "#",
             "background_2": "#ffffff",
             "text_color_2": "#11243e"
