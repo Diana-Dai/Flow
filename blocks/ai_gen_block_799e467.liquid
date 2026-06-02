@@ -57,15 +57,15 @@
     margin: 0 auto;
     padding: 0 var(--spacing-6);
   }
-
+{% comment %} 
   .ai-case-studies-proof-grid-{{ ai_gen_id }} {
-    display: grid;
     grid-template-columns: 1fr;
     gap: 40px;
-  }
+  } {% endcomment %}
 
-  @media screen and (min-width: 990px) {
+  @media screen and (min-width: 780px) {
     .ai-case-studies-proof-grid-{{ ai_gen_id }} {
+     display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 60px;
     }
