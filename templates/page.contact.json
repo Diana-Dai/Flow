@@ -15,14 +15,14 @@
         "subheading_nJjQnz": {
           "type": "subheading",
           "settings": {
-            "text": "FREQUENTLY ASKED QUESTIONS",
+            "text": "CONTACT FLOW",
             "icon": "none"
           }
         },
         "heading_hjfyL9": {
           "type": "heading",
           "settings": {
-            "text": "Implementation, Integration, and Operations",
+            "text": "Let's Discuss Your Retail Analytics Requirements",
             "heading_tag": "h1",
             "text_color": "",
             "gradient": ""
@@ -31,7 +31,7 @@
         "richtext_wjTJeB": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Technical and operational questions from enterprise retail buyers. Focused on deployment timelines, system requirements, data accuracy, privacy compliance, and ongoing maintenance.</p>"
+            "content": "<p>Schedule a technical consultation or demo. Our team will assess your deployment requirements, discuss integration scenarios, and outline implementation timelines.</p>"
           }
         }
       },
@@ -151,6 +151,7 @@
         "item_GLb7bG",
         "item_L9UbpA"
       ],
+      "disabled": true,
       "name": "Multi-column",
       "settings": {
         "full_width": true,
