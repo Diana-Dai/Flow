@@ -95,6 +95,69 @@
         "button_text_color": ""
       }
     },
+    "17803895307b8bdaca": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_34c6ce6_6CTeAj": {
+          "type": "ai_gen_block_34c6ce6",
+          "settings": {
+            "form_title": "Enterprise Inquiry Form",
+            "form_subtitle": "Complete the form below and our team will contact you to schedule a consultation.",
+            "inquiry_type_label": "Inquiry Type",
+            "show_inquiry_1": true,
+            "inquiry_1_title": "Schedule Demo",
+            "inquiry_1_desc": "See Flow in action",
+            "inquiry_1_value": "schedule_demo",
+            "show_inquiry_2": true,
+            "inquiry_2_title": "Technical Consultation",
+            "inquiry_2_desc": "Discuss requirements",
+            "inquiry_2_value": "technical_consultation",
+            "show_inquiry_3": true,
+            "inquiry_3_title": "General Inquiry",
+            "inquiry_3_desc": "Other questions",
+            "inquiry_3_value": "general_inquiry",
+            "company_info_title": "Company Information",
+            "company_name_label": "Company Name",
+            "company_name_placeholder": "Your Company Ltd.",
+            "industry_label": "Industry",
+            "industry_placeholder": "Select industry",
+            "stores_label": "Number of Stores",
+            "stores_placeholder": "Select range",
+            "timeline_label": "Implementation Timeline",
+            "timeline_placeholder": "Select timeline",
+            "contact_person_title": "Contact Person",
+            "full_name_label": "Full Name",
+            "full_name_placeholder": "Taro Tanaka",
+            "job_title_label": "Job Title",
+            "job_title_placeholder": "Operations Manager",
+            "email_label": "Business Email",
+            "email_placeholder": "tanaka@company.co.jp",
+            "phone_label": "Phone Number",
+            "phone_placeholder": "+81-90-xxxx-xxxx",
+            "additional_info_label": "Additional Information",
+            "additional_info_placeholder": "Please describe your specific requirements, technical constraints, or questions about Flow deployment...",
+            "additional_info_note": "Optional: Include details about current systems, integration requirements, or specific use cases",
+            "consent_text": "By submitting this form, you consent to Flow Solutions contacting you regarding your inquiry. We will not share your information with third parties. View our",
+            "privacy_policy_text": "Privacy Policy",
+            "privacy_policy_url": "",
+            "submit_button_text": "Submit Inquiry",
+            "success_message": "Thank you for your inquiry! Our team will contact you shortly."
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_34c6ce6_6CTeAj"
+      ],
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
     "section-15": {
       "type": "feature-chart",
       "blocks": {
@@ -435,6 +498,7 @@
   "order": [
     "rich_text_cqadYy",
     "contact_YHyTMR",
+    "17803895307b8bdaca",
     "section-15",
     "rich_text_EtLVJr",
     "rich_text_6VmVgb",
