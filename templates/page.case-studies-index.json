@@ -206,7 +206,7 @@
         "item_mRFw4X": {
           "type": "item",
           "settings": {
-            "icon": "people",
+            "icon": "picto-target",
             "icon_width": 32,
             "icon_background_type": "square",
             "icon_background": "#a0b842",
@@ -219,9 +219,9 @@
             "title": "",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<h5>Traffic Analytics</h5><p>Flow cameras installed at store entrances to measure customer entries, exits, and directional flow with 98%+ accuracy.</p><p>✅ Deployed across all 45 stores</p>",
-            "link_url": "",
-            "link_text": "",
+            "content": "<h3>Cole Haan Japan</h3><p>Premium Footwear & Accessories • Multiple formats</p><p>Required insights connected to selling behavior, fixture performance, and POS data. Different store formats made measurement inconsistent, and department store shops could not measure visitors.</p><h6>KEY RESULTS</h6><ul><li>Company-wide dashboards increased alignment</li><li>Store staff could see discrepancies between intuition and data</li><li>Gender and age attributes supported merchandising decisions</li></ul>",
+            "link_url": "#",
+            "link_text": "View details →",
             "link_style": "link"
           }
         },
@@ -344,7 +344,9 @@
         "item_KeN4HJ",
         "item_kGDkaE"
       ],
-      "custom_css": [],
+      "custom_css": [
+        "h3 + p {margin-top: 0; font-size: 1rem;}"
+      ],
       "name": "Multi-column",
       "settings": {
         "full_width": true,
