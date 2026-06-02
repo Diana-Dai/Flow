@@ -569,6 +569,50 @@
         "item_mRFw4X": {
           "type": "item",
           "settings": {
+            "icon": "picto-camera",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#a0b842",
+            "icon_color": "#ffffff",
+            "background_color": "#ffffff",
+            "text_color": "",
+            "border_color": "#a0b842",
+            "show_controls": false,
+            "column_size": "2",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h5>高精度3D来店計測</h5><p>店舗入口に設置した高精度3Dセンサーにより、来店数を自動計測。手動カウントや売上からの逆算に頼らず、店舗ごとの来店状況を正確に把握できるようにしました。</p><p>✅ 来店状況を正確に把握</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_r96Tt7": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-percent",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#a0b842",
+            "icon_color": "#ffffff",
+            "background_color": "#ffffff",
+            "text_color": "",
+            "border_color": "#a0b842",
+            "show_controls": false,
+            "column_size": "2",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h5>店前通行量・来店率分析</h5><p>店頭に設置したカメラで店舗前の通行量を計測し、来店数との関係から来店率を算出。商業施設全体の人流と、自店への入店状況を比較できるようにしました。</p><p>✅ 店頭施策の効果を検証</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_KQtcVQ": {
+          "type": "item",
+          "settings": {
             "icon": "people",
             "icon_width": 32,
             "icon_background_type": "square",
@@ -582,51 +626,7 @@
             "title": "",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<h5>Traffic Analytics</h5><p>Flow cameras installed at store entrances to measure customer entries, exits, and directional flow with 98%+ accuracy.</p><p>✅ Deployed across all 45 stores</p>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        },
-        "item_r96Tt7": {
-          "type": "item",
-          "settings": {
-            "icon": "up",
-            "icon_width": 32,
-            "icon_background_type": "square",
-            "icon_background": "#a0b842",
-            "icon_color": "#ffffff",
-            "background_color": "#ffffff",
-            "text_color": "",
-            "border_color": "#a0b842",
-            "show_controls": false,
-            "column_size": "2",
-            "title": "",
-            "heading_tag": "h4",
-            "subheading": "",
-            "content": "<h5>Passerby & Capture Rate</h5><p>Measurement of street traffic vs. store entries to calculate capture rate and understand location performance.</p><p>✅ Deployed at street-facing locations</p>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        },
-        "item_KQtcVQ": {
-          "type": "item",
-          "settings": {
-            "icon": "picto-document",
-            "icon_width": 32,
-            "icon_background_type": "square",
-            "icon_background": "#a0b842",
-            "icon_color": "#ffffff",
-            "background_color": "#ffffff",
-            "text_color": "",
-            "border_color": "#a0b842",
-            "show_controls": false,
-            "column_size": "2",
-            "title": "",
-            "heading_tag": "h4",
-            "subheading": "",
-            "content": "<h5>POS Integration</h5><p>Direct connection to existing POS system to automatically correlate traffic data with transaction records and calculate conversion rates.</p><p>Automated daily sync</p>",
+            "content": "<h5>来店属性の把握</h5><p>入口で取得した来店データから、性別や年代などの来店属性を把握。店舗ごとの顧客傾向を理解し、売場施策の検討に活用できるようにしました。</p><p>✅ 顧客傾向を売場改善に活用</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -648,7 +648,7 @@
             "title": "",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<h5>Dashboard Access</h5><p>Real-time dashboards accessible to store managers, area supervisors, and headquarters with role-based permissions.</p><p>Multi-level access control</p>",
+            "content": "<h5>POSデータ連携</h5><p>売上データと来店データを連携し、購買率や売上変化の背景を分析。売上課題が来店数にあるのか、購買率にあるのかを判断しやすくしました。</p><p>✅ 売上課題の要因を分析</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -670,7 +670,7 @@
             "title": "",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<h5>Zone Analytics</h5><p>Not deployed in initial phase. Planned for future expansion to measure engagement in specific store zones.</p><p>Phase 2 consideration</p>",
+            "content": "<h5>ダッシュボード・レポート</h5><p>Flowのダッシュボードやレポートにより、店舗データを確認しやすい形で可視化。店舗スタッフ、エリアマネージャー、本部が同じデータをもとに状況を確認できるようにしました。</p><p>✅ 同じデータで店舗状況を共有</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -692,7 +692,7 @@
             "title": "",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<h5>Training & Support</h5><p>On-site training for all store managers, online resources, and ongoing customer success support during deployment.</p><p>Included in deployment</p>",
+            "content": "<h5>活用トレーニング・運用支援</h5><p>導入後すぐに店舗改善へ活用できるよう、データの見方や改善ポイントの考え方を支援。店舗スタッフがデータをもとに対策を立て、実行できる運用づくりをサポートしました。</p><p>✅ データを改善行動に定着</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -714,9 +714,9 @@
         "stack_on_mobile": false,
         "gap": "medium",
         "text_alignment": "start",
-        "subheading": "DEPLOYMENT SCOPE",
-        "title": "What Was Implemented",
-        "content": "<p>The customer deployed the following Flow capabilities across their 45-store network.</p>",
+        "subheading": "導入内容",
+        "title": "店舗改善を支えるFlowの導入機能",
+        "content": "<p>デイトナ様では、来店数・店前通行量・来店属性・売上情報を組み合わせ、店舗ごとの状況を正確に把握し、改善アクションにつなげる環境を整備されました。</p>",
         "background": "",
         "background_gradient": "",
         "text_color": ""
