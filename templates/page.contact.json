@@ -233,6 +233,95 @@
         "chart_true_false_color": ""
       }
     },
+    "multi_column_aJHBDE": {
+      "type": "multi-column",
+      "blocks": {
+        "item_RYiwAL": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "Column title",
+            "heading_tag": "h4",
+            "subheading": "<p>Organize content into multiple columns to share useful information to your customers about your products, values...</p>",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_QiJVd9": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "Column title",
+            "heading_tag": "h4",
+            "subheading": "<p>Organize content into multiple columns to share useful information to your customers about your products, values...</p>",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_qUFtTT": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "Column title",
+            "heading_tag": "h4",
+            "subheading": "<p>Organize content into multiple columns to share useful information to your customers about your products, values...</p>",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_RYiwAL",
+        "item_QiJVd9",
+        "item_qUFtTT"
+      ],
+      "name": "Multi-column",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "start",
+        "subheading": "",
+        "title": "Contact Information",
+        "content": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
     "rich_text_6VmVgb": {
       "type": "rich-text",
       "blocks": {
@@ -296,109 +385,13 @@
         "background_gradient": "",
         "text_color": "#ffffff"
       }
-    },
-    "multi_column_UExWWX": {
-      "type": "multi-column",
-      "blocks": {
-        "item_kHMBXM": {
-          "type": "item",
-          "settings": {
-            "icon": "none",
-            "icon_width": 32,
-            "icon_background_type": "circle",
-            "icon_background": "",
-            "icon_color": "",
-            "image": "shopify://shop_images/unnamed.png",
-            "background_color": "",
-            "text_color": "",
-            "border_color": "#f9fafb",
-            "show_controls": false,
-            "column_size": "3",
-            "title": "高精度店内計測",
-            "heading_tag": "h4",
-            "subheading": "",
-            "content": "<p>高精度な来店計測と顧客行動分析。</p>",
-            "link_url": "",
-            "link_text": "詳しく見る →",
-            "link_style": "link"
-          }
-        },
-        "item_jzqLHt": {
-          "type": "item",
-          "settings": {
-            "icon": "none",
-            "icon_width": 32,
-            "icon_background_type": "circle",
-            "icon_background": "",
-            "icon_color": "",
-            "image": "shopify://shop_images/1_1b5442dc-a679-4a23-a10f-8f39d2cc4234.png",
-            "background_color": "",
-            "text_color": "",
-            "border_color": "#f9fafb",
-            "show_controls": false,
-            "column_size": "3",
-            "title": "FIDA分析基盤",
-            "heading_tag": "h4",
-            "subheading": "",
-            "content": "<p>来店・売上・人員配置を統合分析。</p>",
-            "link_url": "#",
-            "link_text": "詳しく見る →",
-            "link_style": "link"
-          }
-        },
-        "item_rn7myV": {
-          "type": "item",
-          "settings": {
-            "icon": "none",
-            "icon_width": 32,
-            "icon_background_type": "circle",
-            "icon_background": "",
-            "icon_color": "",
-            "image": "shopify://shop_images/3_05197ad8-294f-4cc5-9d73-b73021906f0a.png",
-            "background_color": "",
-            "text_color": "",
-            "border_color": "#f9fafb",
-            "show_controls": false,
-            "column_size": "3",
-            "title": "現場意思決定実行支援",
-            "heading_tag": "h4",
-            "subheading": "",
-            "content": "<p>現場実行につながる推奨アクション。</p><h3></h3>",
-            "link_url": "#",
-            "link_text": "詳しく見る →",
-            "link_style": "link"
-          }
-        }
-      },
-      "block_order": [
-        "item_kHMBXM",
-        "item_jzqLHt",
-        "item_rn7myV"
-      ],
-      "disabled": true,
-      "custom_css": [
-        ".multi-column__item {padding: 0;}"
-      ],
-      "name": "Multi-column",
-      "settings": {
-        "full_width": true,
-        "stack_on_mobile": false,
-        "gap": "medium",
-        "text_alignment": "start",
-        "subheading": "プラットフォームを見る",
-        "title": "店舗運営のすべてのレイヤーを統合。",
-        "content": "",
-        "background": "",
-        "background_gradient": "",
-        "text_color": ""
-      }
     }
   },
   "order": [
     "rich_text_cqadYy",
     "17803895307b8bdaca",
     "section-15",
-    "rich_text_6VmVgb",
-    "multi_column_UExWWX"
+    "multi_column_aJHBDE",
+    "rich_text_6VmVgb"
   ]
 }
