@@ -1,6 +1,443 @@
+{% doc %}
+  @prompt
+    Act as an expert Shopify frontend and Liquid developer. Build a fully responsive custom FAQ Accordion section that inherits the active theme's global styles and implements a modular, block-based architecture allowing users to dynamically add, remove, and reorder accordion blocks.
+    
+    The layout, visual hierarchy, and copy must 100% replicate the design structure seen in the reference "image_9d41fe.png".
+    
+    ### 1. Global Integration, Max Width & Basic Styles
+    - **Theme Variables:** The section wrapper must inherit the current theme's typography variables (`var(--font-heading-family)` and `var(--font-body-family)`), standard section maximum layout width (e.g., matching `.page-width` or `.container`), and default responsive side gutters/padding.
+    - **Section Background:** Pure white background (#FFFFFF) with comfortable top and bottom padding.
+    - **Structural Container:** The FAQ blocks must stack vertically centered within the theme's maximum width box, featuring a vertical gap/margin of approximately 16px to 20px between each individual accordion box.
+    
+    ### 2. Accordion Container Block Architecture (Modular Blocks)
+    The section must use a Liquid `{% for block in section.blocks %}` loop to render each FAQ accordion item. Each item is a separate block element featuring two visual states (Collapsed / Expanded):
+    - **Card Wrapper Layout:** Each FAQ item must be enclosed in its own independent box with a clean white background, a very faint light-gray outer border, and smooth rounded corners (border-radius: 12px). 
+    - **Header Trigger Row (Flexbox Layout):** The top row of each card acts as the clickable toggle zone. It should align items horizontally with a "space-between" layout distribution:
+      - **Left Side Element Group:** A row aligning an icon box and the text groupings:
+        - **Icon Box:** A small, rounded square badge with an ultra-light olive/green background tint. Inside, embed a clean line-art SVG icon corresponding to the question context.
+        - **Text Column:** Stacked vertically next to the icon box:
+          - **Category Tag:** A small, bold, olive-green text label (e.g., "Implementation & Deployment" or "Accuracy & Data Quality").
+          - **Question Heading:** A prominent, bold, deep dark navy blue heading text.
+      - **Right Side Toggle Element:** A clean chevron arrow icon (`svg`). 
+        - When the accordion block is collapsed, the chevron points DOWN. 
+        - When the accordion block is expanded, the chevron rotates 180 degrees to point UP.
+    - **Content Expansion Panel:** A hidden panel that slides or toggles open smoothly directly underneath the header trigger row when active. It contains a multi-line body paragraph styled in a comfortable line-height, muted dark navy/gray body text.
+    
+    ### 3. Exact Content Text & Asset Map for 100% Replication
+    Ensure the initial section code or default block setup correctly includes this transcription from image_9d41fe.png:
+    
+    #### Accordion Block 1 (Rendered as Open/Expanded by default in image):
+    - **Category Tag:** Implementation & Deployment
+    - **Question Heading:** How long does implementation take from contract to go-live?
+    - **Icon Type:** Clock / Timer line icon
+    - **Chevron State:** Points UP
+    - **Expanded Panel Body Text:** "Typical timeline is 4-6 weeks for a single store, 8-12 weeks for multi-store rollouts. Week 1-2: Infrastructure assessment and camera placement planning. Week 3-4: Hardware installation and network integration. Week 5-6: Calibration, validation, and staff training. For enterprise deployments (10+ stores), we follow a phased rollout: pilot store first (6 weeks), then standardized deployment at 2-3 stores per week. Timeline assumes existing network infrastructure meets requirements (PoE-capable switches, 100Mbps per camera). If network upgrades are needed, add 2-4 weeks for infrastructure work."
+    
+    #### Accordion Block 2 (Collapsed):
+    - **Category Tag:** Implementation & Deployment
+    - **Question Heading:** What infrastructure changes are required in our stores?
+    - **Icon Type:** Database / Server stack line icon
+    - **Chevron State:** Points DOWN
+    
+    #### Accordion Block 3 (Collapsed):
+    - **Category Tag:** Implementation & Deployment
+    - **Question Heading:** How do you handle partial deployments and expansion?
+    - **Icon Type:** Shield / Protection line icon
+    - **Chevron State:** Points DOWN
+    
+    #### Accordion Block 4 (Collapsed):
+    - **Category Tag:** Accuracy & Data Quality
+    - **Question Heading:** What does '98.5% accuracy' mean in operational terms?
+    - **Icon Type:** Badge / Checkmark line icon
+    - **Chevron State:** Points DOWN
+    
+    #### Accordion Block 5 (Collapsed):
+    - **Category Tag:** Accuracy & Data Quality
+    - **Question Heading:** How do you handle edge cases: children, groups, staff, after-hours?
+    - **Icon Type:** Warning / Exclamation alert line icon
+    - **Chevron State:** Points DOWN
+    
+    ### 4. Technical Logic & Interaction Requirements
+    - **JavaScript / Liquid Toggle Engine:** Write a lightweight, self-contained JavaScript script (or use native HTML `<details>` and `<summary>` ele
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-faq-accordion-{{ ai_gen_id }} {
+    display: block;
+    width: 100%;
+  }
+
+  .ai-faq-accordion-item-{{ ai_gen_id }} {
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    margin-bottom: 16px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+
+  .ai-faq-accordion-header-{{ ai_gen_id }} {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px;
+    cursor: pointer;
+    gap: 16px;
+    transition: background-color 0.2s ease;
+  }
+
+  .ai-faq-accordion-header-{{ ai_gen_id }}:hover {
+    background-color: #f9fafb;
+  }
+
+  .ai-faq-accordion-left-{{ ai_gen_id }} {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex: 1;
+  }
+
+  .ai-faq-accordion-icon-box-{{ ai_gen_id }} {
+    width: 48px;
+    height: 48px;
+    min-width: 48px;
+    background-color: {{ block.settings.icon_background_color }};
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .ai-faq-accordion-icon-box-{{ ai_gen_id }} svg {
+    width: 24px;
+    height: 24px;
+    stroke: {{ block.settings.icon_color }};
+    fill: none;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  .ai-faq-accordion-text-column-{{ ai_gen_id }} {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    flex: 1;
+  }
+
+  .ai-faq-accordion-category-{{ ai_gen_id }} {
+    font-family: var(--font-heading-family, inherit);
+    font-size: 13px;
+    font-weight: 700;
+    color: {{ block.settings.category_color }};
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .ai-faq-accordion-question-{{ ai_gen_id }} {
+    font-family: var(--font-heading-family, inherit);
+    font-size: 18px;
+    font-weight: 700;
+    color: {{ block.settings.question_color }};
+    line-height: 1.4;
+    margin: 0;
+  }
+
+  .ai-faq-accordion-chevron-{{ ai_gen_id }} {
+    width: 24px;
+    height: 24px;
+    min-width: 24px;
+    transition: transform 0.3s ease;
+    flex-shrink: 0;
+  }
+
+  .ai-faq-accordion-chevron-{{ ai_gen_id }} svg {
+    width: 100%;
+    height: 100%;
+    stroke: {{ block.settings.chevron_color }};
+    fill: none;
+    stroke-width: 2.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  .ai-faq-accordion-item-{{ ai_gen_id }}.active .ai-faq-accordion-chevron-{{ ai_gen_id }} {
+    transform: rotate(180deg);
+  }
+
+  .ai-faq-accordion-content-{{ ai_gen_id }} {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, padding 0.4s ease;
+  }
+
+  .ai-faq-accordion-item-{{ ai_gen_id }}.active .ai-faq-accordion-content-{{ ai_gen_id }} {
+    max-height: 1000px;
+  }
+
+  .ai-faq-accordion-content-inner-{{ ai_gen_id }} {
+    padding: 0 24px 24px 88px;
+  }
+
+  .ai-faq-accordion-answer-{{ ai_gen_id }} {
+    font-family: var(--font-body-family, inherit);
+    font-size: 16px;
+    line-height: 1.7;
+    color: {{ block.settings.answer_color }};
+    margin: 0;
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-faq-accordion-header-{{ ai_gen_id }} {
+      padding: 20px 16px;
+    }
+
+    .ai-faq-accordion-left-{{ ai_gen_id }} {
+      gap: 12px;
+    }
+
+    .ai-faq-accordion-icon-box-{{ ai_gen_id }} {
+      width: 40px;
+      height: 40px;
+      min-width: 40px;
+    }
+
+    .ai-faq-accordion-icon-box-{{ ai_gen_id }} svg {
+      width: 20px;
+      height: 20px;
+    }
+
+    .ai-faq-accordion-question-{{ ai_gen_id }} {
+      font-size: 16px;
+    }
+
+    .ai-faq-accordion-category-{{ ai_gen_id }} {
+      font-size: 11px;
+    }
+
+    .ai-faq-accordion-content-inner-{{ ai_gen_id }} {
+      padding: 0 16px 20px 16px;
+    }
+
+    .ai-faq-accordion-answer-{{ ai_gen_id }} {
+      font-size: 14px;
+    }
+  }
+{% endstyle %}
+
+<faq-accordion-{{ ai_gen_id }} class="ai-faq-accordion-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-faq-accordion-item-{{ ai_gen_id }} {% if block.settings.default_open %}active{% endif %}">
+    <div class="ai-faq-accordion-header-{{ ai_gen_id }}" role="button" aria-expanded="{% if block.settings.default_open %}true{% else %}false{% endif %}" tabindex="0">
+      <div class="ai-faq-accordion-left-{{ ai_gen_id }}">
+        <div class="ai-faq-accordion-icon-box-{{ ai_gen_id }}">
+          {% case block.settings.icon_type %}
+            {% when 'clock' %}
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+            {% when 'database' %}
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+              </svg>
+            {% when 'shield' %}
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+            {% when 'badge' %}
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+              </svg>
+            {% when 'alert' %}
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path>
+                <line x1="12" y1="9" x2="12" y2="13"></line>
+                <line x1="12" y1="17" x2="12.01" y2="17"></line>
+              </svg>
+            {% else %}
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="16" x2="12" y2="12"></line>
+                <line x1="12" y1="8" x2="12.01" y2="8"></line>
+              </svg>
+          {% endcase %}
+        </div>
+        <div class="ai-faq-accordion-text-column-{{ ai_gen_id }}">
+          {% if block.settings.category != blank %}
+            <div class="ai-faq-accordion-category-{{ ai_gen_id }}">{{ block.settings.category }}</div>
+          {% endif %}
+          {% if block.settings.question != blank %}
+            <h3 class="ai-faq-accordion-question-{{ ai_gen_id }}">{{ block.settings.question }}</h3>
+          {% endif %}
+        </div>
+      </div>
+      <div class="ai-faq-accordion-chevron-{{ ai_gen_id }}">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <polyline points="6 9 12 15 18 9"></polyline>
+        </svg>
+      </div>
+    </div>
+    <div class="ai-faq-accordion-content-{{ ai_gen_id }}">
+      <div class="ai-faq-accordion-content-inner-{{ ai_gen_id }}">
+        {% if block.settings.answer != blank %}
+          <div class="ai-faq-accordion-answer-{{ ai_gen_id }}">{{ block.settings.answer }}</div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</faq-accordion-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class FaqAccordion{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+      }
+
+      connectedCallback() {
+        this.item = this.querySelector('.ai-faq-accordion-item-{{ ai_gen_id }}');
+        this.header = this.querySelector('.ai-faq-accordion-header-{{ ai_gen_id }}');
+        this.content = this.querySelector('.ai-faq-accordion-content-{{ ai_gen_id }}');
+        
+        if (this.header) {
+          this.header.addEventListener('click', this.toggle.bind(this));
+          this.header.addEventListener('keydown', this.handleKeydown.bind(this));
+        }
+      }
+
+      toggle() {
+        const isActive = this.item.classList.contains('active');
+        this.item.classList.toggle('active');
+        this.header.setAttribute('aria-expanded', !isActive);
+      }
+
+      handleKeydown(event) {
+        if (event.key === 'Enter' || event.key === ' ') {
+          event.preventDefault();
+          this.toggle();
+        }
+      }
+    }
+
+    customElements.define('faq-accordion-{{ ai_gen_id }}', FaqAccordion{{ ai_gen_id }});
+  })();
+</script>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "FAQ accordion item",
+  "tag": null,
+  "settings": [
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "type": "text",
+      "id": "category",
+      "label": "Category tag",
+      "default": "Implementation & Deployment"
+    },
+    {
+      "type": "textarea",
+      "id": "question",
+      "label": "Question",
+      "default": "How long does implementation take from contract to go-live?"
+    },
+    {
+      "type": "textarea",
+      "id": "answer",
+      "label": "Answer",
+      "default": "Typical timeline is 4-6 weeks for a single store, 8-12 weeks for multi-store rollouts. Week 1-2: Infrastructure assessment and camera placement planning. Week 3-4: Hardware installation and network integration. Week 5-6: Calibration, validation, and staff training. For enterprise deployments (10+ stores), we follow a phased rollout: pilot store first (6 weeks), then standardized deployment at 2-3 stores per week. Timeline assumes existing network infrastructure meets requirements (PoE-capable switches, 100Mbps per camera). If network upgrades are needed, add 2-4 weeks for infrastructure work."
+    },
+    {
+      "type": "checkbox",
+      "id": "default_open",
+      "label": "Open by default",
+      "default": false
+    },
+    {
+      "type": "header",
+      "content": "Icon"
+    },
+    {
+      "type": "select",
+      "id": "icon_type",
+      "label": "Icon type",
+      "options": [
+        {
+          "value": "clock",
+          "label": "Clock / Timer"
+        },
+        {
+          "value": "database",
+          "label": "Database / Server"
+        },
+        {
+          "value": "shield",
+          "label": "Shield / Protection"
+        },
+        {
+          "value": "badge",
+          "label": "Badge / Checkmark"
+        },
+        {
+          "value": "alert",
+          "label": "Alert / Warning"
+        }
+      ],
+      "default": "clock"
+    },
+    {
+      "type": "color",
+      "id": "icon_background_color",
+      "label": "Icon background",
+      "default": "#f0f4e8"
+    },
+    {
+      "type": "color",
+      "id": "icon_color",
+      "label": "Icon color",
+      "default": "#6b7c3a"
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "category_color",
+      "label": "Category",
+      "default": "#6b7c3a"
+    },
+    {
+      "type": "color",
+      "id": "question_color",
+      "label": "Question",
+      "default": "#0f172a"
+    },
+    {
+      "type": "color",
+      "id": "answer_color",
+      "label": "Answer",
+      "default": "#475569"
+    },
+    {
+      "type": "color",
+      "id": "chevron_color",
+      "label": "Chevron",
+      "default": "#64748b"
+    }
+  ],
+  "presets": [
+    {
+      "name": "FAQ accordion item"
+    }
+  ]
+}
 {% endschema %}
