@@ -9,75 +9,45 @@
  */
 {
   "sections": {
-    "1780368357769f3a1e": {
-      "type": "_blocks",
+    "rich_text_cqadYy": {
+      "type": "rich-text",
       "blocks": {
-        "ai_gen_block_799e467_h7ydjQ": {
-          "type": "ai_gen_block_799e467",
+        "subheading_nJjQnz": {
+          "type": "subheading",
           "settings": {
-            "eyebrow_text": "PROOF // CUSTOMER RESULTS",
-            "main_heading": "PROVEN RETAIL OUTCOMES.",
-            "subheading": "Real Results from Flow Deployments Across Japan.",
-            "body_text": "Flow customers achieve measurable improvements in conversion, staffing efficiency, VMD performance, and operational execution. Each case study documents deployment scope, implementation approach, and verified business outcomes.",
-            "stat_1_number": "500+",
-            "stat_1_label": "Active Stores",
-            "stat_2_number": "50+",
-            "stat_2_label": "Retail Brands",
-            "stat_3_number": "98.5%",
-            "stat_3_label": "Measurement Accuracy",
-            "stat_4_number": "99.9%",
-            "stat_4_label": "Platform Uptime",
-            "dark_badge_text": "AGGREGATE IMPACT",
-            "dark_heading": "Measured Results Across Deployments",
-            "dark_subtext": "Representative outcomes from Flow customers in fashion, lifestyle, and specialty retail.",
-            "hero_metric_label": "SALES GROWTH (YoY)",
-            "hero_metric_value": "108.9%",
-            "hero_metric_detail": "2024 aggregate across Flow customers",
-            "metric_1_title": "CONVERSION LIFT",
-            "metric_1_value": "+8.93%",
-            "metric_1_detail": "Major retailer (220 stores)",
-            "metric_2_title": "ROI MULTIPLE",
-            "metric_2_value": "50x",
-            "metric_2_detail": "National fashion chain",
-            "metric_3_title": "CAPTURE RATE",
-            "metric_3_value": "+23.9%",
-            "metric_3_detail": "Multi-brand operator",
-            "metric_4_title": "SALES INCREASE",
-            "metric_4_value": "+25%",
-            "metric_4_detail": "Stores using dashboard",
-            "footer_disclaimer": "Results from documented case studies. Individual outcomes vary based on deployment scope, store operations, and market conditions.",
-            "eyebrow_bg_color": "#e8eaed",
-            "eyebrow_text_color": "#5f6368",
-            "heading_color": "#0e2a3a",
-            "subheading_color": "#0e2a3a",
-            "body_text_color": "#5f6368",
-            "stat_card_border_color": "#e8eaed",
-            "stat_number_color": "#0e2a3a",
-            "stat_label_color": "#5f6368",
-            "dark_card_bg_color": "#0e2a3a",
-            "dark_badge_bg_color": "#3d5a4a",
-            "dark_badge_text_color": "#ffffff",
-            "dark_subtext_color": "#9ca3af",
-            "metric_card_bg_color": "#1a3a4a",
-            "metric_label_color": "#9ca3af",
-            "metric_detail_color": "#9ca3af",
-            "icon_badge_bg_color": "#3d5a4a",
-            "icon_color": "#6ee7b7",
-            "footer_text_color": "#6b7280"
-          },
-          "blocks": {}
+            "text": "FREQUENTLY ASKED QUESTIONS",
+            "icon": "none"
+          }
+        },
+        "heading_hjfyL9": {
+          "type": "heading",
+          "settings": {
+            "text": "Implementation, Integration, and Operations",
+            "heading_tag": "h1",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_wjTJeB": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Technical and operational questions from enterprise retail buyers. Focused on deployment timelines, system requirements, data accuracy, privacy compliance, and ongoing maintenance.</p>"
+          }
         }
       },
       "block_order": [
-        "ai_gen_block_799e467_h7ydjQ"
+        "subheading_nJjQnz",
+        "heading_hjfyL9",
+        "richtext_wjTJeB"
       ],
+      "name": "Rich text",
       "settings": {
         "full_width": true,
-        "remove_vertical_spacing": true,
-        "remove_horizontal_spacing": false,
-        "background": "#ffffff",
+        "content_width": "medium",
+        "text_position": "start",
+        "background": "#0e366a",
         "background_gradient": "",
-        "text_color": ""
+        "text_color": "#ffffff"
       }
     },
     "1780368579b1b4691b": {
@@ -649,7 +619,7 @@
     }
   },
   "order": [
-    "1780368357769f3a1e",
+    "rich_text_cqadYy",
     "1780368579b1b4691b",
     "multi_column_bJtgmc",
     "section-15",
