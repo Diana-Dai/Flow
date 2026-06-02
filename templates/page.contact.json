@@ -46,53 +46,11 @@
       "name": "Rich text",
       "settings": {
         "full_width": true,
-        "content_width": "medium",
+        "content_width": "large",
         "text_position": "center",
         "background": "#0e2a3a",
         "background_gradient": "",
         "text_color": "#ffffff"
-      }
-    },
-    "contact_YHyTMR": {
-      "type": "contact",
-      "blocks": {
-        "text_9Tr3zC": {
-          "type": "text",
-          "settings": {
-            "title": "Custom field",
-            "use_long_text": false,
-            "required": false
-          }
-        },
-        "dropdown_eGrUhM": {
-          "type": "dropdown",
-          "settings": {
-            "title": "Custom field",
-            "values": "value 1, value 2, value 3"
-          }
-        }
-      },
-      "block_order": [
-        "text_9Tr3zC",
-        "dropdown_eGrUhM"
-      ],
-      "name": "Contact form",
-      "settings": {
-        "full_width": true,
-        "subheading": "",
-        "title": "",
-        "content": "",
-        "text_position": "start",
-        "contact_form_size": "large",
-        "background": "",
-        "background_gradient": "",
-        "text_color": "",
-        "heading_color": "",
-        "heading_gradient": "",
-        "contact_background": "",
-        "contact_text_color": "",
-        "button_background": "",
-        "button_text_color": ""
       }
     },
     "17803895307b8bdaca": {
@@ -497,7 +455,6 @@
   },
   "order": [
     "rich_text_cqadYy",
-    "contact_YHyTMR",
     "17803895307b8bdaca",
     "section-15",
     "rich_text_EtLVJr",
