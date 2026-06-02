@@ -1,6 +1,470 @@
+{% doc %}
+  @prompt
+    Act as a Senior Shopify Developer. Create a custom, highly responsive Shopify Liquid section called "Featured Case Studies" built with a modular, block-based architecture.
+    
+    ### 1. Section Architecture (Modular Blocks)
+    - The global section header (Eyebrow and Title) must be controlled via 'Section Settings'.
+    - The case study cards must be built as a 'blocks' array using a Liquid {% for block in section.blocks %} loop. This must allow the merchant to add, remove, and reorder an unlimited number of case study cards dynamically within the Shopify Theme Editor.
+    
+    ### 2. Layout, Structure & Theme Integration
+    - **Max Width & Spacing:** The section container must inherit the active Shopify theme's standard max-width class (e.g., `page-width`, `container`, or `wrapper`) and use the theme's native side padding.
+    - **Typography:** Force all text elements to use the theme's default fonts via variables like `var(--font-heading-family)` and `var(--font-body-family)`.
+    - **Desktop Grid:** Each case study block must render as a large, standalone card with a white background, a very light gray border, a subtle box-shadow, and deep rounded corners (border-radius: 16px). Inside the card, create a 3-column desktop layout:
+      - Column 1 (Left): ~30% width (Company Profile)
+      - Column 2 (Middle): ~40% width (Key Results & Challenges)
+      - Column 3 (Right): ~30% width (Operational Impact & CTA)
+    - **Mobile Grid:** On mobile screens, the 3 columns must collapse cleanly into a single vertical column, with text aligning correctly.
+    
+    ### 3. Block Schema Settings & Content Map
+    Each repeatable block must include fields in the schema to support the following exact text structure:
+    
+    #### Column 1: Company Profile (Left)
+    - **Badges:** A small inline layout featuring a light green icon badge next to a pill-shaped badge with the text "FEATURED" in olive green.
+    - **Company Name:** Bold, dark navy heading text.
+    - **Meta Tags:** A text field for categories separated by a dot (e.g., "Fashion • Enterprise Scale").
+    - **Metrics Line:** A small bold text line highlighting store scale (e.g., "124 → 220 stores").
+    - **Description:** A text area for a short multi-line summary paragraph in muted gray text.
+    
+    #### Column 2: Results & Challenges (Middle)
+    - **Key Results Section:** - Subheading: "KEY RESULTS" (Small, uppercase, gray text).
+      - List: A vertical list of points where each point is automatically prefixed with a small, lime-green upward-trending line chart SVG icon.
+    - **Challenges Section:** - Subheading: "CHALLENGES BEFORE FLOW" (Small, uppercase, gray text with top margin).
+      - List: A vertical bulleted list using clean, standard gray bullet points.
+    
+    #### Column 3: Operational Impact & CTA (Right)
+    - **Operational Impact Section:** - Subheading: "OPERATIONAL IMPACT" (Small, uppercase, gray text).
+      - List: A vertical list of points where each point is prefixed with an olive-green concentric circle/bullseye SVG icon.
+    - **Call-to-Action Button:** A solid, deep navy blue block button (#0E2A3A) fixed to the bottom right of the card.
+      - Text: "Full Case Study →" in crisp white text.
+      - Shape: Clean, slightly rounded corners (border-radius: 6px).
+    
+    ### 4. Technical Logic
+    - Ensure all text, headings, list arrays, and button links are fully editable via the block schema settings.
+    - All CSS must be self-contained and scoped using the `{{ section.id }}` handle to completely prevent style bleeding or layout conflicts with the rest of the Shopify theme.
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-case-study-card-{{ ai_gen_id }} {
+    display: block;
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    padding: 40px;
+    margin-bottom: 32px;
+    width: 100%;
+  }
+
+  .ai-case-study-grid-{{ ai_gen_id }} {
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    gap: 40px;
+  }
+
+  .ai-case-study-column-{{ ai_gen_id }} {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ai-case-study-badges-{{ ai_gen_id }} {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 16px;
+  }
+
+  .ai-case-study-icon-badge-{{ ai_gen_id }} {
+    width: 24px;
+    height: 24px;
+    background-color: #d1fae5;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ai-case-study-icon-badge-{{ ai_gen_id }} svg {
+    width: 14px;
+    height: 14px;
+  }
+
+  .ai-case-study-featured-badge-{{ ai_gen_id }} {
+    background-color: #f0fdf4;
+    color: #65a30d;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    padding: 4px 12px;
+    border-radius: 12px;
+    border: 1px solid #d9f99d;
+    font-family: var(--font-body-family);
+  }
+
+  .ai-case-study-company-name-{{ ai_gen_id }} {
+    font-family: var(--font-heading-family);
+    font-size: 24px;
+    font-weight: 700;
+    color: #0e2a3a;
+    margin: 0 0 8px 0;
+    line-height: 1.2;
+  }
+
+  .ai-case-study-meta-{{ ai_gen_id }} {
+    font-family: var(--font-body-family);
+    font-size: 14px;
+    color: #6b7280;
+    margin-bottom: 8px;
+  }
+
+  .ai-case-study-metrics-{{ ai_gen_id }} {
+    font-family: var(--font-body-family);
+    font-size: 14px;
+    font-weight: 700;
+    color: #0e2a3a;
+    margin-bottom: 16px;
+  }
+
+  .ai-case-study-description-{{ ai_gen_id }} {
+    font-family: var(--font-body-family);
+    font-size: 15px;
+    line-height: 1.6;
+    color: #6b7280;
+    margin: 0;
+  }
+
+  .ai-case-study-section-heading-{{ ai_gen_id }} {
+    font-family: var(--font-body-family);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #9ca3af;
+    margin: 0 0 16px 0;
+  }
+
+  .ai-case-study-list-{{ ai_gen_id }} {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .ai-case-study-list-item-{{ ai_gen_id }} {
+    font-family: var(--font-body-family);
+    font-size: 15px;
+    line-height: 1.6;
+    color: #374151;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .ai-case-study-list-item-{{ ai_gen_id }}:last-child {
+    margin-bottom: 0;
+  }
+
+  .ai-case-study-icon-{{ ai_gen_id }} {
+    flex-shrink: 0;
+    width: 18px;
+    height: 18px;
+    margin-top: 2px;
+  }
+
+  .ai-case-study-challenges-section-{{ ai_gen_id }} {
+    margin-top: 32px;
+  }
+
+  .ai-case-study-challenges-list-{{ ai_gen_id }} {
+    list-style: disc;
+    padding-left: 20px;
+    margin: 0;
+  }
+
+  .ai-case-study-challenges-list-{{ ai_gen_id }} li {
+    font-family: var(--font-body-family);
+    font-size: 15px;
+    line-height: 1.6;
+    color: #374151;
+    margin-bottom: 12px;
+  }
+
+  .ai-case-study-challenges-list-{{ ai_gen_id }} li:last-child {
+    margin-bottom: 0;
+  }
+
+  .ai-case-study-challenges-list-{{ ai_gen_id }} li::marker {
+    color: #9ca3af;
+  }
+
+  .ai-case-study-column-right-{{ ai_gen_id }} {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .ai-case-study-cta-{{ ai_gen_id }} {
+    display: inline-block;
+    background-color: #0e2a3a;
+    color: #ffffff;
+    font-family: var(--font-body-family);
+    font-size: 15px;
+    font-weight: 600;
+    padding: 14px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.2s ease;
+    margin-top: 24px;
+  }
+
+  .ai-case-study-cta-{{ ai_gen_id }}:hover {
+    background-color: #1a3a4f;
+  }
+
+  @media screen and (max-width: 989px) {
+    .ai-case-study-grid-{{ ai_gen_id }} {
+      grid-template-columns: 1fr;
+      gap: 32px;
+    }
+
+    .ai-case-study-card-{{ ai_gen_id }} {
+      padding: 32px 24px;
+    }
+
+    .ai-case-study-challenges-section-{{ ai_gen_id }} {
+      margin-top: 24px;
+    }
+
+    .ai-case-study-cta-{{ ai_gen_id }} {
+      width: 100%;
+    }
+  }
+{% endstyle %}
+
+<div class="ai-case-study-card-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-case-study-grid-{{ ai_gen_id }}">
+    <div class="ai-case-study-column-{{ ai_gen_id }}">
+      {% if block.settings.show_badges %}
+        <div class="ai-case-study-badges-{{ ai_gen_id }}">
+          <div class="ai-case-study-icon-badge-{{ ai_gen_id }}">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+          </div>
+          <span class="ai-case-study-featured-badge-{{ ai_gen_id }}">{{ block.settings.badge_text }}</span>
+        </div>
+      {% endif %}
+
+      {% if block.settings.company_name != blank %}
+        <h3 class="ai-case-study-company-name-{{ ai_gen_id }}">{{ block.settings.company_name }}</h3>
+      {% endif %}
+
+      {% if block.settings.meta_tags != blank %}
+        <div class="ai-case-study-meta-{{ ai_gen_id }}">{{ block.settings.meta_tags }}</div>
+      {% endif %}
+
+      {% if block.settings.metrics_line != blank %}
+        <div class="ai-case-study-metrics-{{ ai_gen_id }}">{{ block.settings.metrics_line }}</div>
+      {% endif %}
+
+      {% if block.settings.description != blank %}
+        <p class="ai-case-study-description-{{ ai_gen_id }}">{{ block.settings.description }}</p>
+      {% endif %}
+    </div>
+
+    <div class="ai-case-study-column-{{ ai_gen_id }}">
+      {% if block.settings.key_results_title != blank %}
+        <h4 class="ai-case-study-section-heading-{{ ai_gen_id }}">{{ block.settings.key_results_title }}</h4>
+      {% endif %}
+
+      {% if block.settings.key_results != blank %}
+        {% assign results_array = block.settings.key_results | newline_to_br | split: '<br />' %}
+        <ul class="ai-case-study-list-{{ ai_gen_id }}">
+          {% for result in results_array %}
+            {% assign trimmed_result = result | strip %}
+            {% if trimmed_result != blank %}
+              <li class="ai-case-study-list-item-{{ ai_gen_id }}">
+                <svg class="ai-case-study-icon-{{ ai_gen_id }}" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#84cc16" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                  <polyline points="17 6 23 6 23 12"></polyline>
+                </svg>
+                <span>{{ trimmed_result }}</span>
+              </li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      {% endif %}
+
+      <div class="ai-case-study-challenges-section-{{ ai_gen_id }}">
+        {% if block.settings.challenges_title != blank %}
+          <h4 class="ai-case-study-section-heading-{{ ai_gen_id }}">{{ block.settings.challenges_title }}</h4>
+        {% endif %}
+
+        {% if block.settings.challenges != blank %}
+          {% assign challenges_array = block.settings.challenges | newline_to_br | split: '<br />' %}
+          <ul class="ai-case-study-challenges-list-{{ ai_gen_id }}">
+            {% for challenge in challenges_array %}
+              {% assign trimmed_challenge = challenge | strip %}
+              {% if trimmed_challenge != blank %}
+                <li>{{ trimmed_challenge }}</li>
+              {% endif %}
+            {% endfor %}
+          </ul>
+        {% endif %}
+      </div>
+    </div>
+
+    <div class="ai-case-study-column-{{ ai_gen_id }} ai-case-study-column-right-{{ ai_gen_id }}">
+      <div>
+        {% if block.settings.operational_impact_title != blank %}
+          <h4 class="ai-case-study-section-heading-{{ ai_gen_id }}">{{ block.settings.operational_impact_title }}</h4>
+        {% endif %}
+
+        {% if block.settings.operational_impact != blank %}
+          {% assign impact_array = block.settings.operational_impact | newline_to_br | split: '<br />' %}
+          <ul class="ai-case-study-list-{{ ai_gen_id }}">
+            {% for impact in impact_array %}
+              {% assign trimmed_impact = impact | strip %}
+              {% if trimmed_impact != blank %}
+                <li class="ai-case-study-list-item-{{ ai_gen_id }}">
+                  <svg class="ai-case-study-icon-{{ ai_gen_id }}" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#65a30d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <circle cx="12" cy="12" r="6"></circle>
+                    <circle cx="12" cy="12" r="2"></circle>
+                  </svg>
+                  <span>{{ trimmed_impact }}</span>
+                </li>
+              {% endif %}
+            {% endfor %}
+          </ul>
+        {% endif %}
+      </div>
+
+      {% if block.settings.cta_url != blank %}
+        <a href="{{ block.settings.cta_url }}" class="ai-case-study-cta-{{ ai_gen_id }}">
+          {{ block.settings.cta_text }} →
+        </a>
+      {% endif %}
+    </div>
+  </div>
+</div>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "Case study card",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Company profile"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_badges",
+      "label": "Show badges",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "badge_text",
+      "label": "Badge text",
+      "default": "FEATURED"
+    },
+    {
+      "type": "text",
+      "id": "company_name",
+      "label": "Company name",
+      "default": "Company Name"
+    },
+    {
+      "type": "text",
+      "id": "meta_tags",
+      "label": "Category tags",
+      "default": "Fashion • Enterprise Scale"
+    },
+    {
+      "type": "text",
+      "id": "metrics_line",
+      "label": "Metrics line",
+      "default": "124 → 220 stores"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description",
+      "default": "A brief description of the company and their business model."
+    },
+    {
+      "type": "header",
+      "content": "Key results"
+    },
+    {
+      "type": "text",
+      "id": "key_results_title",
+      "label": "Section title",
+      "default": "KEY RESULTS"
+    },
+    {
+      "type": "textarea",
+      "id": "key_results",
+      "label": "Results list",
+      "info": "Enter each result on a new line",
+      "default": "80% reduction in manual work\n95% faster order processing\n3x increase in operational efficiency"
+    },
+    {
+      "type": "header",
+      "content": "Challenges"
+    },
+    {
+      "type": "text",
+      "id": "challenges_title",
+      "label": "Section title",
+      "default": "CHALLENGES BEFORE FLOW"
+    },
+    {
+      "type": "textarea",
+      "id": "challenges",
+      "label": "Challenges list",
+      "info": "Enter each challenge on a new line",
+      "default": "Manual data entry across multiple systems\nLack of real-time inventory visibility\nSlow order fulfillment process"
+    },
+    {
+      "type": "header",
+      "content": "Operational impact"
+    },
+    {
+      "type": "text",
+      "id": "operational_impact_title",
+      "label": "Section title",
+      "default": "OPERATIONAL IMPACT"
+    },
+    {
+      "type": "textarea",
+      "id": "operational_impact",
+      "label": "Impact list",
+      "info": "Enter each impact point on a new line",
+      "default": "Automated workflow integration\nReal-time data synchronization\nScalable infrastructure"
+    },
+    {
+      "type": "header",
+      "content": "Call to action"
+    },
+    {
+      "type": "text",
+      "id": "cta_text",
+      "label": "Button text",
+      "default": "Full Case Study"
+    },
+    {
+      "type": "url",
+      "id": "cta_url",
+      "label": "Button link"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Case study card"
+    }
+  ]
+}
 {% endschema %}
