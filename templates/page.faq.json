@@ -410,6 +410,57 @@
         "text_color": ""
       }
     },
+    "rich_text_EtLVJr": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_bNQkAX": {
+          "type": "heading",
+          "settings": {
+            "text": "Still have questions?",
+            "heading_tag": "h1",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_cRTfWf": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Our team is available to discuss your specific deployment requirements, integration scenarios, or compliance concerns.</p>"
+          }
+        },
+        "buttons_CT466j": {
+          "type": "buttons",
+          "settings": {
+            "style_1": "fill",
+            "size_1": "xl",
+            "text_1": "Contact Sales → Talk to Flow →",
+            "url_1": "",
+            "background_1": "#a0b842",
+            "text_color_1": "",
+            "style_2": "fill",
+            "size_2": "xl",
+            "text_2": "Schedule Demo",
+            "url_2": "",
+            "background_2": "",
+            "text_color_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_bNQkAX",
+        "richtext_cRTfWf",
+        "buttons_CT466j"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
     "rich_text_6VmVgb": {
       "type": "rich-text",
       "blocks": {
@@ -584,6 +635,7 @@
     "multi_column_L3Rbir",
     "section-15",
     "1780381311e4225ef9",
+    "rich_text_EtLVJr",
     "rich_text_6VmVgb",
     "multi_column_UExWWX"
   ]
