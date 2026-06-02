@@ -166,6 +166,9 @@
         "ai_gen_block_38907dd_Tkggfa",
         "ai_gen_block_38907dd_7wDWGy"
       ],
+      "custom_css": [
+        ".h6{padding: .5rem 0 1rem; font-size: 1rem;}"
+      ],
       "settings": {
         "full_width": true,
         "remove_vertical_spacing": false,
