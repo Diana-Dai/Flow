@@ -23,7 +23,7 @@
           "type": "heading",
           "settings": {
             "text": "Let's Discuss Your Retail Analytics Requirements",
-            "heading_tag": "h1",
+            "heading_tag": "h0",
             "text_color": "",
             "gradient": ""
           }
@@ -46,8 +46,8 @@
       "name": "Rich text",
       "settings": {
         "full_width": true,
-        "content_width": "medium",
-        "text_position": "start",
+        "content_width": "large",
+        "text_position": "center",
         "background": "#0e2a3a",
         "background_gradient": "",
         "text_color": "#ffffff"
