@@ -1107,7 +1107,7 @@
             "title": "",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<h5><strong>根拠ある行動が増えた</strong></h5><p>これまで感覚で行っていた施策も、来店数や売上データを確認しながら判断できるようになりました。店舗スタッフが納得感を持って行動しやすくなりました。</p>",
+            "content": "<h5><strong>店長のデータ活用が進んだ</strong></h5><p>店長がFlowにアクセスできるようになったことで、自店の来店数・購買率・売上状況を直接確認できるようになりました。本部中心のデータ活用から、店舗でも使える運用へと変化しました。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -1129,7 +1129,7 @@
             "title": "",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<h5><strong>店舗の前向きな意識変化</strong></h5><p>売上未達の日でも、来店数を見ることで「あと何人に接客すればよいか」という具体的な行動目標に変換できるようになりました。データが店舗の不安を減らし、前向きな行動につながりました。</p><h2></h2>",
+            "content": "<h5><strong>購買率への意識が高まった</strong></h5><p>購買率を最重要KPIとして確認することで、来店したお客様をどれだけ購買につなげられているかを店舗単位で見直すようになりました。販売活動や販促策の改善にもつながりました。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -1151,7 +1151,7 @@
             "title": "",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<h5><strong>改善サイクルが速くなった</strong></h5><p>Flowのデータをもとに、週次会議で状況を確認し、必要に応じて週の途中でも対策を見直せるようになりました。振り返りだけでなく、次の行動につなげやすくなりました。</p>",
+            "content": "<h5><strong>報告業務にFlowデータを活用</strong></h5><p>Flowのデータは、日次・週次・月次の報告にも組み込まれるようになりました。店舗ごとの状況を共通指標で確認し、継続的に改善を進める運用へと発展しました。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -1173,7 +1173,7 @@
             "title": "",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<h5><strong>店舗内の連携が進んだ</strong></h5><p>メンズ・レディスなど売場ごとに分かれていた視点も、店舗全体のデータを見ることで相互理解が進みました。売場を越えて協力しやすい体制づくりにもつながりました。</p>",
+            "content": "<h5><strong>店長・エリア間の会話が具体化</strong></h5><p>店長とエリアマネージャーが同じデータを見ながら、Before / After比較や週単位のPDCAを共有。改善点を感覚ではなく、数値をもとに話し合えるようになりました。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -1195,7 +1195,7 @@
             "title": "",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<h5><strong>データ活用が人材育成に貢献</strong></h5><p>データを分析し、対策を立て、実行し、結果を確認する流れが、スタッフの考える力と実行力を高める機会になりました。データを活用できる人材の育成にもつながっています。</p>",
+            "content": "<h5><strong>データ活用が標準運用へ</strong></h5><p>Flowは一部の分析担当者だけが見るデータではなく、店長が店舗運営に活用する日常的な指標へと変化しました。店舗単位でKPIを意識した運営が進みました。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -1209,15 +1209,15 @@
             "icon_background_type": "square",
             "icon_background": "",
             "icon_color": "",
-            "background_color": "#f9fafb",
-            "text_color": "",
+            "background_color": "#11243e",
+            "text_color": "#f9fafb",
             "border_color": "#f9fafb",
             "show_controls": false,
             "column_size": "3",
             "title": "",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<h5><strong>部門間の会話が具体化</strong></h5><p>Flowのデータを共通の判断材料として使うことで、店舗スタッフ、エリアマネージャー、運用担当者が同じ前提で改善点を話し合いやすくなりました。</p>",
+            "content": "<h5><strong>投資対効果が明確に</strong></h5><p>月額約24,000円/店舗の運用コストに対し、124店舗で18億円の売上増加を確認。高い投資対効果が示され、導入拡大の判断材料となりました。<br/><br/><strong>✅ ROI 50倍以上を確認</strong></p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -1240,7 +1240,7 @@
         "text_alignment": "start",
         "subheading": "組織変化",
         "title": "店舗運営にもたらした変化",
-        "content": "<p>数値面の改善だけでなく、Flowは店舗スタッフの考え方や行動にも変化を生みました。データをもとに店舗状況を確認し、対策を考え、実行する流れが、現場の納得感と成長につながっています。</p>",
+        "content": "<p>数値面の改善だけでなく、Flowは店舗でのデータ活用方法にも変化を生みました。店長が購買率を軸に店舗状況を確認し、日次・週次・月次の報告や改善活動にFlowデータを活用する運用へと移行しました。</p>",
         "background": "#ffffff",
         "background_gradient": "",
         "text_color": ""
