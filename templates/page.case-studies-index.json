@@ -345,7 +345,8 @@
         "item_kGDkaE"
       ],
       "custom_css": [
-        "h3 + p {margin-top: 0; font-size: 1rem;}"
+        "h3 + p {margin-top: 0; font-size: 1rem;}",
+        "h6 {font-size: 1rem; margin-top: 2rem;}"
       ],
       "name": "Multi-column",
       "settings": {
