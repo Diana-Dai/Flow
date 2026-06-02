@@ -1078,7 +1078,7 @@
             "title": "",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<h5>Better Alignment Across Levels</h5><p>Store managers, area supervisors, and headquarters began using the same data foundation for performance discussions. This reduced miscommunication and aligned expectations across the organization.</p>",
+            "content": "<h5><strong>根拠ある行動が増えた</strong></h5><p>これまで感覚で行っていた施策も、来店数や売上データを確認しながら判断できるようになりました。店舗スタッフが納得感を持って行動しやすくなりました。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -1100,7 +1100,7 @@
             "title": "",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<h5>Faster Decision Cycles</h5><p>Real-time visibility enabled faster decisions. Managers no longer waited for end-of-week reports to understand what was working. Adjustments happened during the week, sometimes during the same day.</p>",
+            "content": "<h5><strong>店舗の前向きな意識変化</strong></h5><p>売上未達の日でも、来店数を見ることで「あと何人に接客すればよいか」という具体的な行動目標に変換できるようになりました。データが店舗の不安を減らし、前向きな行動につながりました。</p><h2></h2>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -1122,7 +1122,7 @@
             "title": "",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<h5>Improved Staff Awareness</h5><p>Store staff became more aware of traffic patterns and conversion rates. Managers shared Flow insights during daily briefings, helping teams understand the connection between their actions and store performance.</p>",
+            "content": "<h5><strong>改善サイクルが速くなった</strong></h5><p>Flowのデータをもとに、週次会議で状況を確認し、必要に応じて週の途中でも対策を見直せるようになりました。振り返りだけでなく、次の行動につなげやすくなりました。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -1144,7 +1144,7 @@
             "title": "",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<h5>Stronger KPI Habits</h5><p>Managers developed stronger habits around checking and acting on key performance indicators. This was especially valuable for newer managers who previously relied heavily on intuition.</p>",
+            "content": "<h5><strong>店舗内の連携が進んだ</strong></h5><p>メンズ・レディスなど売場ごとに分かれていた視点も、店舗全体のデータを見ることで相互理解が進みました。売場を越えて協力しやすい体制づくりにもつながりました。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -1166,7 +1166,7 @@
             "title": "",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<h5>Cross-Department Understanding</h5><p>Operations, merchandising, and marketing teams gained better understanding of how their decisions affected store traffic and conversion. This improved collaboration on campaigns and seasonal planning.</p>",
+            "content": "<h5><strong>データ活用が人材育成に貢献</strong></h5><p>データを分析し、対策を立て、実行し、結果を確認する流れが、スタッフの考える力と実行力を高める機会になりました。データを活用できる人材の育成にもつながっています。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -1188,7 +1188,7 @@
             "title": "",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<h5>Evidence-Based Planning</h5><p>Future store openings, renovations, and format changes now incorporate Flow traffic data. Location decisions and layout planning became more evidence-based rather than purely based on sales projections.</p>",
+            "content": "<h5><strong>本部・エリア・店舗の会話が具体化</strong></h5><p>Flowのデータを共通の判断材料として使うことで、店舗スタッフ、エリアマネージャー、運用担当者が同じ前提で改善点を話し合いやすくなりました。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -1209,9 +1209,9 @@
         "stack_on_mobile": false,
         "gap": "medium",
         "text_alignment": "start",
-        "subheading": "ORGANIZATIONAL CHANGE",
-        "title": "Operational Impact",
-        "content": "<p>Beyond measurable performance metrics, Flow deployment changed how the organization operated day-to-day.</p>",
+        "subheading": "組織変化",
+        "title": "店舗運営にもたらした変化",
+        "content": "<p>数値面の改善だけでなく、Flowは店舗スタッフの考え方や行動にも変化を生みました。データをもとに店舗状況を確認し、対策を考え、実行する流れが、現場の納得感と成長につながっています。</p>",
         "background": "#ffffff",
         "background_gradient": "",
         "text_color": ""
