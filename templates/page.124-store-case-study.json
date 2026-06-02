@@ -683,6 +683,7 @@
         },
         "item_KeN4HJ": {
           "type": "item",
+          "disabled": true,
           "settings": {
             "icon": "picto-target",
             "icon_width": 32,
@@ -705,6 +706,7 @@
         },
         "item_kGDkaE": {
           "type": "item",
+          "disabled": true,
           "settings": {
             "icon": "picto-customer-support",
             "icon_width": 32,
