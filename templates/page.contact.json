@@ -1,1 +1,642 @@
-{"sections":{"main":{"type":"main-page","disabled":true,"settings":{}},"contact":{"type":"contact","settings":{}}},"order":["main","contact"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "rich_text_cqadYy": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_nJjQnz": {
+          "type": "subheading",
+          "settings": {
+            "text": "FREQUENTLY ASKED QUESTIONS",
+            "icon": "none"
+          }
+        },
+        "heading_hjfyL9": {
+          "type": "heading",
+          "settings": {
+            "text": "Implementation, Integration, and Operations",
+            "heading_tag": "h1",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_wjTJeB": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Technical and operational questions from enterprise retail buyers. Focused on deployment timelines, system requirements, data accuracy, privacy compliance, and ongoing maintenance.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_nJjQnz",
+        "heading_hjfyL9",
+        "richtext_wjTJeB"
+      ],
+      "custom_css": [
+        "* {padding-bottom: 1rem;}"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "medium",
+        "text_position": "start",
+        "background": "#0e2a3a",
+        "background_gradient": "",
+        "text_color": "#ffffff"
+      }
+    },
+    "multi_column_L3Rbir": {
+      "type": "multi-column",
+      "blocks": {
+        "item_TYrPjG": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#1a3a4a",
+            "text_color": "",
+            "border_color": "rgba(0,0,0,0)",
+            "show_controls": false,
+            "column_size": "4",
+            "title": "4-6 weeks",
+            "heading_tag": "h2",
+            "subheading": "",
+            "content": "<p>#1a3a4a</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_8N9HmD": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#1a3a4a",
+            "text_color": "",
+            "border_color": "#0e366a",
+            "show_controls": false,
+            "column_size": "4",
+            "title": "98.5%",
+            "heading_tag": "h2",
+            "subheading": "",
+            "content": "<p>Counting accuracy</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_GLb7bG": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#1a3a4a",
+            "text_color": "",
+            "border_color": "#0e366a",
+            "show_controls": false,
+            "column_size": "4",
+            "title": "99.9%",
+            "heading_tag": "h2",
+            "subheading": "",
+            "content": "<p>System uptime SLA</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_L9UbpA": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#1a3a4a",
+            "text_color": "",
+            "border_color": "#0e366a",
+            "show_controls": false,
+            "column_size": "4",
+            "title": "24/7",
+            "heading_tag": "h2",
+            "subheading": "",
+            "content": "<p>Enterprise support</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_TYrPjG",
+        "item_8N9HmD",
+        "item_GLb7bG",
+        "item_L9UbpA"
+      ],
+      "name": "Multi-column",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "start",
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "background": "#0e2a3a",
+        "background_gradient": "",
+        "text_color": "#ffffff"
+      }
+    },
+    "section-15": {
+      "type": "feature-chart",
+      "blocks": {
+        "block-1": {
+          "type": "headings",
+          "settings": {
+            "heading_1": "主な提供価値",
+            "heading_2": "コアの設計思想",
+            "heading_3": "来店データの位置づけ",
+            "heading_4": "データの即時性",
+            "heading_5": "店舗での使いやすさ",
+            "heading_6": "判断へのつながり",
+            "heading_7": "店舗ごとの判断差",
+            "heading_8": "本部と店舗の連携",
+            "heading_9": "運用負荷",
+            "heading_10": "拡張性",
+            "heading_11": "",
+            "heading_12": "",
+            "heading_13": "",
+            "heading_14": "",
+            "heading_15": "",
+            "heading_16": "",
+            "heading_17": "",
+            "heading_18": "",
+            "heading_19": "",
+            "heading_20": ""
+          }
+        },
+        "block-2": {
+          "type": "values",
+          "settings": {
+            "product": "",
+            "value_1": "<p>40mm Beryllium</p>",
+            "value_2": "<p>245g</p>",
+            "value_3": "<p>165mm x 190mm x 66mm</p>",
+            "value_4": "<p>24 hours</p>",
+            "value_5": "",
+            "value_6": "",
+            "value_7": "",
+            "value_8": "",
+            "value_9": "",
+            "value_10": "",
+            "value_11": "",
+            "value_12": "",
+            "value_13": "",
+            "value_14": "",
+            "value_15": "",
+            "value_16": "",
+            "value_17": "",
+            "value_18": "",
+            "value_19": "",
+            "value_20": "",
+            "view_button_background": "",
+            "view_button_text_color": ""
+          }
+        },
+        "block-3": {
+          "type": "values",
+          "settings": {
+            "product": "",
+            "value_1": "<p>40mm Beryllium</p>",
+            "value_2": "<p>205g (On-Ear), 239g (Over-Ear)</p>",
+            "value_3": "<p>190mm x 155mm x 34mm (On-Ear), 200mm x 165mm x 40mm (Over-Ear)</p>",
+            "value_4": "<p>16 hours</p>",
+            "value_5": "",
+            "value_6": "",
+            "value_7": "",
+            "value_8": "",
+            "value_9": "",
+            "value_10": "",
+            "value_11": "",
+            "value_12": "",
+            "value_13": "",
+            "value_14": "",
+            "value_15": "",
+            "value_16": "",
+            "value_17": "",
+            "value_18": "",
+            "value_19": "",
+            "value_20": "",
+            "view_button_background": "",
+            "view_button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "Why Dashboards Fail",
+        "content": "<p>Traditional analytics show you the problem. Flow solves it.</p>",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "center",
+        "max_rows": 5,
+        "view_all_text": "View all",
+        "view_less_text": "View less",
+        "view_product": "View",
+        "viewing_product": "",
+        "show_product_swatch": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "chart_background": "",
+        "chart_text_color": "",
+        "chart_true_false_color": ""
+      }
+    },
+    "1780381311e4225ef9": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_0c78d27_YX4xYt": {
+          "type": "ai_gen_block_0c78d27",
+          "settings": {
+            "category": "Implementation & Deployment",
+            "question": "How long does implementation take from contract to go-live?",
+            "answer": "Typical timeline is 4-6 weeks for a single store, 8-12 weeks for multi-store rollouts. Week 1-2: Infrastructure assessment and camera placement planning. Week 3-4: Hardware installation and network integration. Week 5-6: Calibration, validation, and staff training. For enterprise deployments (10+ stores), we follow a phased rollout: pilot store first (6 weeks), then standardized deployment at 2-3 stores per week. Timeline assumes existing network infrastructure meets requirements (PoE-capable switches, 100Mbps per camera). If network upgrades are needed, add 2-4 weeks for infrastructure work.",
+            "default_open": false,
+            "icon_type": "clock",
+            "icon_background_color": "#f0f4e8",
+            "icon_color": "#a0b842",
+            "category_color": "#a0b842",
+            "question_color": "#0f172a",
+            "answer_color": "#475569",
+            "chevron_color": "#64748b"
+          },
+          "blocks": {}
+        },
+        "ai_gen_block_0c78d27_WirR34": {
+          "type": "ai_gen_block_0c78d27",
+          "name": "FAQ accordion item",
+          "settings": {
+            "category": "Implementation & Deployment",
+            "question": "What infrastructure changes are required in our stores?",
+            "answer": "Minimal physical infrastructure changes. Requirements: (1) Network: PoE-capable switches with 100Mbps per camera, VLAN segmentation recommended. (2) Power: Existing PoE provides camera power—no new electrical work. (3) Mounting: Ceiling-mounted cameras use standard drop-ceiling brackets or drywall anchors. No structural modifications. (4) Server: Edge processing unit (compact, fanless) mounts in existing server rack or wall-mount bracket. Dimensions: 30cm × 20cm × 5cm. (5) Internet: 10Mbps upload minimum for cloud sync. Most stores require no construction—installation is non-invasive. Site survey confirms requirements before contract.",
+            "default_open": false,
+            "icon_type": "database",
+            "icon_background_color": "#f0f4e8",
+            "icon_color": "#a0b842",
+            "category_color": "#a0b842",
+            "question_color": "#0f172a",
+            "answer_color": "#475569",
+            "chevron_color": "#64748b"
+          },
+          "blocks": {}
+        },
+        "ai_gen_block_0c78d27_RyXDaD": {
+          "type": "ai_gen_block_0c78d27",
+          "name": "FAQ accordion item",
+          "settings": {
+            "category": "Implementation & Deployment",
+            "question": "How do you handle partial deployments and expansion?",
+            "answer": "Flow is designed for incremental deployment. Start with high-value zones (fitting rooms, checkout, featured displays) then expand. Each zone operates independently—no requirement to deploy store-wide. Zone-level licensing available. Common approach: Phase 1 (2-4 weeks) = 3-5 priority zones. Phase 2 (4-8 weeks) = expand to full floor coverage. Phase 3 (ongoing) = add stockroom, entrance, or seasonal zones as needed. Configuration and insights transfer between zones—no re-training. Multi-store rollouts follow the same pattern: pilot store proves ROI, then standardized deployment to additional locations.",
+            "default_open": false,
+            "icon_type": "shield",
+            "icon_background_color": "#f0f4e8",
+            "icon_color": "#a0b842",
+            "category_color": "#a0b842",
+            "question_color": "#0f172a",
+            "answer_color": "#475569",
+            "chevron_color": "#64748b"
+          },
+          "blocks": {}
+        },
+        "ai_gen_block_0c78d27_x8E7tc": {
+          "type": "ai_gen_block_0c78d27",
+          "name": "FAQ accordion item",
+          "settings": {
+            "category": "Accuracy & Data Quality",
+            "question": "What does '98.5% accuracy' mean in operational terms?",
+            "answer": "98.5% is our people-counting accuracy measured against manual ground truth counts in production environments. Operationally: In a store with 1,000 daily visitors, expect ~15 count variance. Accuracy is measured per camera view, not per person—crossed paths and occlusions are handled. Accuracy holds across lighting conditions, crowd density, and demographic diversity. Dwell time accuracy: ±3 seconds for sessions under 2 minutes. Zone transition accuracy: 97.2% (person moving between zones correctly tracked). Heatmap spatial accuracy: 30cm grid resolution. Conversion tracking accuracy: 99.1% when POS integration is enabled (compares Flow visit count to POS transaction count). We provide weekly accuracy reports with sample imagery for validation.",
+            "default_open": false,
+            "icon_type": "badge",
+            "icon_background_color": "#f0f4e8",
+            "icon_color": "#a0b842",
+            "category_color": "#a0b842",
+            "question_color": "#0f172a",
+            "answer_color": "#475569",
+            "chevron_color": "#64748b"
+          },
+          "blocks": {}
+        },
+        "ai_gen_block_0c78d27_cAnRTW": {
+          "type": "ai_gen_block_0c78d27",
+          "name": "FAQ accordion item",
+          "settings": {
+            "category": "Accuracy & Data Quality",
+            "question": "How do you handle edge cases: children, groups, staff, after-hours?",
+            "answer": "Children: Tracked if height >90cm (typical 3-year-old). Strollers counted as +1 if occupied. Groups: Each individual counted separately—Flow tracks group movement patterns but reports per-person metrics. Staff: Identified by (1) time-of-day patterns, (2) zone access (staff-only areas), or (3) badge integration if available. Staff metrics separated from customer metrics. After-hours: Cleaning crews and restocking automatically filtered by time-based rules (configurable threshold, e.g., <5 people after closing = staff mode). Manual override available. Delivery personnel: Brief visits (<2 min) auto-classified as non-customer. All edge cases appear in audit log—review and adjust classification rules as needed.",
+            "default_open": false,
+            "icon_type": "alert",
+            "icon_background_color": "#f0f4e8",
+            "icon_color": "#a0b842",
+            "category_color": "#a0b842",
+            "question_color": "#0f172a",
+            "answer_color": "#475569",
+            "chevron_color": "#64748b"
+          },
+          "blocks": {}
+        },
+        "ai_gen_block_0c78d27_hiR4G8": {
+          "type": "ai_gen_block_0c78d27",
+          "name": "FAQ accordion item",
+          "settings": {
+            "category": "Accuracy & Data Quality",
+            "question": "What happens during system downtime or camera obstructions?",
+            "answer": "Edge processing provides resilience: cameras store up to 24 hours of data locally if internet fails. Data syncs when connection restores—no data loss. Obstructions (e.g., maintenance ladder blocking camera): Flow detects coverage gaps and flags affected zones in real-time. Historical data marked as 'partial coverage'—reports indicate data quality per zone per hour. Scheduled maintenance: Set cameras to 'maintenance mode' to suppress alerts. Unplanned outages: System auto-detects and logs. Camera failure: Redundant coverage design means adjacent cameras provide fallback data (lower resolution). SLA: 99.9% uptime measured monthly. Downtime notifications sent via email/SMS to designated contacts.",
+            "default_open": false,
+            "icon_type": "database",
+            "icon_background_color": "#f0f4e8",
+            "icon_color": "#a0b842",
+            "category_color": "#a0b842",
+            "question_color": "#0f172a",
+            "answer_color": "#475569",
+            "chevron_color": "#64748b"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_0c78d27_YX4xYt",
+        "ai_gen_block_0c78d27_WirR34",
+        "ai_gen_block_0c78d27_RyXDaD",
+        "ai_gen_block_0c78d27_x8E7tc",
+        "ai_gen_block_0c78d27_cAnRTW",
+        "ai_gen_block_0c78d27_hiR4G8"
+      ],
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "rich_text_EtLVJr": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_bNQkAX": {
+          "type": "heading",
+          "settings": {
+            "text": "Still have questions?",
+            "heading_tag": "h1",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_cRTfWf": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Our team is available to discuss your specific deployment requirements, integration scenarios, or compliance concerns.</p>"
+          }
+        },
+        "buttons_CT466j": {
+          "type": "buttons",
+          "settings": {
+            "style_1": "fill",
+            "size_1": "xl",
+            "text_1": "Contact Sales → Talk to Flow →",
+            "url_1": "",
+            "background_1": "#a0b842",
+            "text_color_1": "",
+            "style_2": "fill",
+            "size_2": "xl",
+            "text_2": "Schedule Demo",
+            "url_2": "",
+            "background_2": "",
+            "text_color_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_bNQkAX",
+        "richtext_cRTfWf",
+        "buttons_CT466j"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "rich_text_6VmVgb": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_AK7Cjn": {
+          "type": "subheading",
+          "settings": {
+            "text": "NEXT STEPS",
+            "icon": "none"
+          }
+        },
+        "heading_YXhiR8": {
+          "type": "heading",
+          "settings": {
+            "text": "SEE WHAT FLOW COULD ACHIEVE INYOUR STORES",
+            "heading_tag": "h1",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_qzAkak": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Every retail operation is unique. Let's discuss what Flow could measure, analyze, and improve in your specific environment.</p>"
+          }
+        },
+        "button_AVKAbi": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "style": "outline",
+            "size": "base",
+            "text": "Contact Solutions Architect",
+            "url": "#",
+            "background": "",
+            "text_color": "#11243e"
+          }
+        },
+        "buttons_jaKCGH": {
+          "type": "buttons",
+          "settings": {
+            "style_1": "fill",
+            "size_1": "xl",
+            "text_1": "Schedule Demo →",
+            "url_1": "#",
+            "background_1": "#a0b842",
+            "text_color_1": "#ffffff",
+            "style_2": "fill",
+            "size_2": "xl",
+            "text_2": "Talk to Flow →",
+            "url_2": "#",
+            "background_2": "#ffffff",
+            "text_color_2": "#11243e"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_AK7Cjn",
+        "heading_YXhiR8",
+        "richtext_qzAkak",
+        "button_AVKAbi",
+        "buttons_jaKCGH"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "#0e366a",
+        "background_gradient": "",
+        "text_color": "#ffffff"
+      }
+    },
+    "multi_column_UExWWX": {
+      "type": "multi-column",
+      "blocks": {
+        "item_kHMBXM": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "image": "shopify://shop_images/unnamed.png",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "#f9fafb",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "高精度店内計測",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<p>高精度な来店計測と顧客行動分析。</p>",
+            "link_url": "",
+            "link_text": "詳しく見る →",
+            "link_style": "link"
+          }
+        },
+        "item_jzqLHt": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "image": "shopify://shop_images/1_1b5442dc-a679-4a23-a10f-8f39d2cc4234.png",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "#f9fafb",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "FIDA分析基盤",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<p>来店・売上・人員配置を統合分析。</p>",
+            "link_url": "#",
+            "link_text": "詳しく見る →",
+            "link_style": "link"
+          }
+        },
+        "item_rn7myV": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "image": "shopify://shop_images/3_05197ad8-294f-4cc5-9d73-b73021906f0a.png",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "#f9fafb",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "現場意思決定実行支援",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<p>現場実行につながる推奨アクション。</p><h3></h3>",
+            "link_url": "#",
+            "link_text": "詳しく見る →",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_kHMBXM",
+        "item_jzqLHt",
+        "item_rn7myV"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".multi-column__item {padding: 0;}"
+      ],
+      "name": "Multi-column",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "start",
+        "subheading": "プラットフォームを見る",
+        "title": "店舗運営のすべてのレイヤーを統合。",
+        "content": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    }
+  },
+  "order": [
+    "rich_text_cqadYy",
+    "multi_column_L3Rbir",
+    "section-15",
+    "1780381311e4225ef9",
+    "rich_text_EtLVJr",
+    "rich_text_6VmVgb",
+    "multi_column_UExWWX"
+  ]
+}
