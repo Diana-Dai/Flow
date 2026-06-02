@@ -1223,7 +1223,7 @@
         "item_fRf33R": {
           "type": "item",
           "settings": {
-            "icon": "picto-target",
+            "icon": "picto-pin",
             "icon_width": 32,
             "icon_background_type": "square",
             "icon_background": "#a0b842",
@@ -1236,7 +1236,7 @@
             "title": "",
             "heading_tag": "h2",
             "subheading": "",
-            "content": "<h4>Zone Analytics Pilot</h4><p>Planning to pilot zone-level analytics in 5 flagship stores to measure engagement with specific merchandise areas and validate visual merchandising decisions with traffic data.</p>",
+            "content": "<h4>店舗展開の継続</h4><p>初期導入店舗での成果を踏まえ、デイトナ様はFlowの展開拡大方針を公表されています。導入は、新店オープンや店舗改装のタイミングに合わせて段階的に進められています。</p><h3></h3>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -1245,11 +1245,11 @@
         "item_zGNUAp": {
           "type": "item",
           "settings": {
-            "icon": "check",
+            "icon": "up",
             "icon_width": 32,
             "icon_background_type": "square",
             "icon_background": "#a0b842",
-            "icon_color": "",
+            "icon_color": "#f9fafb",
             "background_color": "#ffffff",
             "text_color": "#11243e",
             "border_color": "#a0b842",
@@ -1258,7 +1258,7 @@
             "title": "",
             "heading_tag": "h2",
             "subheading": "",
-            "content": "<h5>Flow AI Evaluation</h5><p>Evaluating Flow AI for automated staffing recommendations and predictive traffic forecasting to further reduce manual planning work for managers.</p>",
+            "content": "<h5>売上対策への活用</h5><p>来店数、店前通行量、買い上げ率を組み合わせることで、店舗ごとの改善ポイントをより具体的に把握。売上改善に向けた対策検討に活用されています。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -1267,7 +1267,7 @@
         "item_Vx6gWn": {
           "type": "item",
           "settings": {
-            "icon": "picto-tree",
+            "icon": "people",
             "icon_width": 32,
             "icon_background_type": "square",
             "icon_background": "#a0b842",
@@ -1280,7 +1280,7 @@
             "title": "",
             "heading_tag": "h2",
             "subheading": "",
-            "content": "<h5>New Store Rollout</h5><p>All new store openings will include Flow deployment from day one, using traffic data to optimize operations during the critical launch period.</p>",
+            "content": "<h5>人材育成への活用</h5><p>データを見て、考え、対策を立て、結果を検証する流れが、店舗スタッフの成長機会になっています。Flowは、データを使える人材を育てるための材料としても活用されています。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -1289,7 +1289,7 @@
         "item_XQiyjf": {
           "type": "item",
           "settings": {
-            "icon": "picto-shield",
+            "icon": "picto-target",
             "icon_width": 32,
             "icon_background_type": "square",
             "icon_background": "#a0b842",
@@ -1302,7 +1302,7 @@
             "title": "",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<h5>Advanced Benchmarking</h5><p>Working with Flow to develop more sophisticated store-to-store comparison frameworks that account for format, location type, and seasonal factors.</p>",
+            "content": "<h5>店舗間の学びの共有</h5><p>店舗ごとの状況を共通のデータで確認することで、うまくいった施策や改善ポイントを他店舗にも展開しやすくなります。店舗単位の学びを、組織全体の運用改善につなげる土台になります。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -1326,9 +1326,9 @@
         "stack_on_mobile": false,
         "gap": "medium",
         "text_alignment": "start",
-        "subheading": "FUTURE PLANS",
-        "title": "Expanding Flow Usage",
-        "content": "<p>Following successful initial deployment, the customer is exploring additional Flow capabilities.</p>",
+        "subheading": "今後の活用",
+        "title": "Flow活用の広がり",
+        "content": "<p>デイトナ様では、Flowを来店数計測だけのツールとしてではなく、店舗運営と人材育成を支えるデータ基盤として活用されています。今後も、店舗ごとの状況把握、売上対策、スタッフ育成、店舗間の連携強化に向けて、段階的に活用の幅を広げていくことが期待されます。</p>",
         "background": "#f2f2f2",
         "background_gradient": "",
         "text_color": ""
