@@ -5560,7 +5560,7 @@ product-rerender {
 }
 
 .contact-form {
-  padding: var(--spacing-6);
+  padding: var(--spacing-6) 0;
 }
 
 @media screen and (min-width: 700px) {
