@@ -41,7 +41,7 @@
         "richtext_wjTJeB"
       ],
       "custom_css": [
-        "* {padding-bottom: 0.5rem;}"
+        "* {padding-bottom: 1rem;}"
       ],
       "name": "Rich text",
       "settings": {
@@ -151,7 +151,6 @@
         "item_GLb7bG",
         "item_L9UbpA"
       ],
-      "custom_css": [],
       "name": "Multi-column",
       "settings": {
         "full_width": true,
@@ -164,288 +163,6 @@
         "background": "#0e2a3a",
         "background_gradient": "",
         "text_color": "#ffffff"
-      }
-    },
-    "1780368579b1b4691b": {
-      "type": "_blocks",
-      "blocks": {
-        "heading_nLUiFr": {
-          "type": "heading",
-          "name": "Heading",
-          "settings": {
-            "text": "FEATURED CASE STUDIES",
-            "size": "h6",
-            "html_tag": "p",
-            "text_color": "",
-            "gradient": ""
-          },
-          "blocks": {}
-        },
-        "heading_VxHiDP": {
-          "type": "heading",
-          "name": "Heading",
-          "settings": {
-            "text": "Enterprise-Scale Transformations",
-            "size": "h1",
-            "html_tag": "h1",
-            "text_color": "",
-            "gradient": ""
-          },
-          "blocks": {}
-        },
-        "rich_text_Ya6Kni": {
-          "type": "rich-text",
-          "name": "Rich text",
-          "settings": {
-            "text": "<p></p><p></p><p></p>",
-            "content_width": "small",
-            "text_alignment": "center"
-          },
-          "blocks": {}
-        },
-        "ai_gen_block_38907dd_Tkggfa": {
-          "type": "ai_gen_block_38907dd",
-          "name": "Case study card",
-          "settings": {
-            "show_badges": true,
-            "badge_text": "FEATURED",
-            "company_name": "Major Japanese Fashion Retailer",
-            "meta_tags": "Fashion • Enterprise Scale",
-            "metrics_line": "124 → 220 stores",
-            "description": "A brief description of the company and their business model.",
-            "key_results_title": "KEY RESULTS",
-            "key_results": "80% reduction in manual work\n95% faster order processing\n3x increase in operational efficiency",
-            "challenges_title": "CHALLENGES BEFORE FLOW",
-            "challenges": "Manual data entry across multiple systems\nLack of real-time inventory visibility\nSlow order fulfillment process",
-            "operational_impact_title": "OPERATIONAL IMPACT",
-            "operational_impact": "Automated workflow integration\nReal-time data synchronization\nScalable infrastructure",
-            "cta_text": "Full Case Study",
-            "cta_url": ""
-          },
-          "blocks": {}
-        },
-        "ai_gen_block_38907dd_7wDWGy": {
-          "type": "ai_gen_block_38907dd",
-          "settings": {
-            "show_badges": true,
-            "badge_text": "FEATURED",
-            "company_name": "Daytona International",
-            "meta_tags": "Fashion • Multi-Brand",
-            "metrics_line": "Multiple locations",
-            "description": "Operates multiple fashion and lifestyle brands. Deployed Flow to automate visitor counting and improve store-level KPI management across diverse retail concepts.",
-            "key_results_title": "KEY RESULTS",
-            "key_results": "Capture rate improved 23.9%\nTraffic increased 6.3%\nConversion improved from 19.9% to 25.2%\nStores using dashboard achieved 25% sales increase",
-            "challenges_title": "CHALLENGES BEFORE FLOW",
-            "challenges": "Traffic counts were estimated or back-calculated\nFront zone performance judged by intuition\nLarge stores could not manually measure traffic\nStore managers lacked data to improve visitor rate and conversion",
-            "operational_impact_title": "OPERATIONAL IMPACT",
-            "operational_impact": "Store teams gained confidence through actual visitor data\nStaff recognized higher than expected volumes, creating positive mindset changes\nFlow became tool for both sales improvement and staff development\nReal-time data allowed mid-week tactical adjustments instead of weekly cycles\nImproved analytical capability and strategic thinking",
-            "cta_text": "Full Case Study",
-            "cta_url": ""
-          },
-          "blocks": {}
-        },
-        "ai_gen_block_38907dd_itbcYY": {
-          "type": "ai_gen_block_38907dd",
-          "name": "Case study card",
-          "settings": {
-            "show_badges": true,
-            "badge_text": "FEATURED",
-            "company_name": "Right On",
-            "meta_tags": "Jeans • National Chain",
-            "metrics_line": "400 stores",
-            "description": "Major national jeans chain needed objective evaluation of promotional strategies and storefront tactics. Moved away from assumptions and intuition to data-driven decision making.",
-            "key_results_title": "KEY RESULTS",
-            "key_results": "Revealed unexpected differences in visitor movement across stores\nEnabled hypothesis-driven decision making\nSupported fixture-level VMD evaluation\nHelped plan adjustments to weekly promotional cycles",
-            "challenges_title": "CHALLENGES BEFORE FLOW",
-            "challenges": "Determine which promotions truly increase visitors\nMeasure VMD and front zone impact using data\nMove away from assumptions and intuition",
-            "operational_impact_title": "OPERATIONAL IMPACT",
-            "operational_impact": "Superior UI easily adopted by store staff\nClear dashboards enabled evaluation of promotions, VMD and visitor trends together\nEstablished baseline KPIs using visitor and conversion trends\nImproved promotion prediction accuracy",
-            "cta_text": "Full Case Study",
-            "cta_url": ""
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "heading_nLUiFr",
-        "heading_VxHiDP",
-        "rich_text_Ya6Kni",
-        "ai_gen_block_38907dd_Tkggfa",
-        "ai_gen_block_38907dd_7wDWGy",
-        "ai_gen_block_38907dd_itbcYY"
-      ],
-      "custom_css": [
-        ".h6 {padding: 0.5rem 0 1rem; font-size: 1rem;}"
-      ],
-      "settings": {
-        "full_width": true,
-        "remove_vertical_spacing": false,
-        "remove_horizontal_spacing": false,
-        "background": "",
-        "background_gradient": "",
-        "text_color": ""
-      }
-    },
-    "multi_column_bJtgmc": {
-      "type": "multi-column",
-      "blocks": {
-        "item_mRFw4X": {
-          "type": "item",
-          "settings": {
-            "icon": "picto-target",
-            "icon_width": 32,
-            "icon_background_type": "square",
-            "icon_background": "#a0b842",
-            "icon_color": "#ffffff",
-            "background_color": "#ffffff",
-            "text_color": "",
-            "border_color": "#a0b842",
-            "show_controls": false,
-            "column_size": "2",
-            "title": "",
-            "heading_tag": "h4",
-            "subheading": "",
-            "content": "<h4>Cole Haan Japan</h4><p>Premium Footwear & Accessories • Multiple formats</p><p>Required insights connected to selling behavior, fixture performance, and POS data. Different store formats made measurement inconsistent, and department store shops could not measure visitors.</p><h6></h6><h6>KEY RESULTS</h6><ul><li>Company-wide dashboards increased alignment</li><li>Store staff could see discrepancies between intuition and data</li><li>Gender and age attributes supported merchandising decisions</li></ul>",
-            "link_url": "#",
-            "link_text": "View details →",
-            "link_style": "link"
-          }
-        },
-        "item_r96Tt7": {
-          "type": "item",
-          "settings": {
-            "icon": "picto-target",
-            "icon_width": 32,
-            "icon_background_type": "square",
-            "icon_background": "#a0b842",
-            "icon_color": "#ffffff",
-            "background_color": "#ffffff",
-            "text_color": "",
-            "border_color": "#a0b842",
-            "show_controls": false,
-            "column_size": "2",
-            "title": "",
-            "heading_tag": "h4",
-            "subheading": "",
-            "content": "<h4>Baycrews</h4><p>Fashion • Multi-Brand • Multiple locations</p><p>Implemented Flow early to support data-driven store operations across major brands and stores. Required group-wide visibility and role-specific dashboards.</p><h6></h6><h6>KEY RESULTS</h6><ul><li>Group-wide visibility of visitor counts</li><li>Clear identification of new store performance and conversion challenges</li><li>Dashboards tailored to role level: store, manager, executive</li></ul>",
-            "link_url": "",
-            "link_text": "View details →",
-            "link_style": "link"
-          }
-        },
-        "item_KQtcVQ": {
-          "type": "item",
-          "settings": {
-            "icon": "picto-target",
-            "icon_width": 32,
-            "icon_background_type": "square",
-            "icon_background": "#a0b842",
-            "icon_color": "#ffffff",
-            "background_color": "#ffffff",
-            "text_color": "",
-            "border_color": "#a0b842",
-            "show_controls": false,
-            "column_size": "2",
-            "title": "",
-            "heading_tag": "h4",
-            "subheading": "",
-            "content": "<h4>Triumph International Japan</h4><p>Intimate Apparel • Multiple locations</p><p>Previously used a visitor counting system but found the support and UI insufficient. Staff could not easily interpret the data.</p><h6></h6><h6>KEY RESULTS</h6><ul><li>Data available in real-time instead of one day later</li><li>UI clarity allowed store staff to interpret KPI movement</li><li>Information sharing from HQ to stores accelerated</li></ul>",
-            "link_url": "#",
-            "link_text": "View details →",
-            "link_style": "link"
-          }
-        },
-        "item_jHGFzb": {
-          "type": "item",
-          "settings": {
-            "icon": "picto-target",
-            "icon_width": 32,
-            "icon_background_type": "square",
-            "icon_background": "#a0b842",
-            "icon_color": "#ffffff",
-            "background_color": "#ffffff",
-            "text_color": "",
-            "border_color": "#a0b842",
-            "show_controls": false,
-            "column_size": "2",
-            "title": "",
-            "heading_tag": "h4",
-            "subheading": "",
-            "content": "<h4>TUMI Japan</h4><p>Premium Luggage & Accessories • Multiple locations</p><p>Pursues store-level DX. Combines fixed counters with Flow Clicker for stores where sensors cannot be installed.</p><h6></h6><h6>KEY RESULTS</h6><ul><li>Managers gained clearer understanding through visualized KPIs</li><li>Clicker automation reduced manual counting burden</li><li>Staff began documenting qualitative explanations in Pulse</li></ul>",
-            "link_url": "#",
-            "link_text": "View details →",
-            "link_style": "link"
-          }
-        },
-        "item_KeN4HJ": {
-          "type": "item",
-          "settings": {
-            "icon": "picto-target",
-            "icon_width": 32,
-            "icon_background_type": "square",
-            "icon_background": "#a0b842",
-            "icon_color": "#ffffff",
-            "background_color": "#ffffff",
-            "text_color": "",
-            "border_color": "#a0b842",
-            "show_controls": false,
-            "column_size": "2",
-            "title": "",
-            "heading_tag": "h4",
-            "subheading": "",
-            "content": "<h4>Global Jeans Brand</h4><p>Denim • VMD Optimization • Multiple locations</p><p>Major global denim brand sought to optimize VMD performance in multi-brand retail environments. Focused on identifying which fixture layouts produce higher engagement and conversion.</p><h6></h6><h6>KEY RESULTS</h6><ul><li>Identified optimal fixture placements</li><li>Improved engagement through layout adjustments</li><li>Standardized best practices across stores</li></ul>",
-            "link_url": "#",
-            "link_text": "View details →",
-            "link_style": "link"
-          }
-        },
-        "item_kGDkaE": {
-          "type": "item",
-          "settings": {
-            "icon": "picto-target",
-            "icon_width": 32,
-            "icon_background_type": "square",
-            "icon_background": "#a0b842",
-            "icon_color": "#ffffff",
-            "background_color": "#ffffff",
-            "text_color": "",
-            "border_color": "#a0b842",
-            "show_controls": false,
-            "column_size": "2",
-            "title": "",
-            "heading_tag": "h4",
-            "subheading": "",
-            "content": "<h4>Company-Wide Flow Deployment Impact</h4><p>Aggregate Analysis • Multiple customers</p><p>Flow examined performance across multiple customers who adopted Flow. Analysis shows significant outperformance vs. partial adopters and industry average.</p><h6></h6><h6>KEY RESULTS</h6><ul><li>2024: customers using Flow saw YoY sales growth of 108.9%</li><li>2023: companies deploying Flow in all stores achieved 108.5% YoY growth</li><li>Outperformed partial adopters and broader industry average</li></ul>",
-            "link_url": "#",
-            "link_text": "View details →",
-            "link_style": "link"
-          }
-        }
-      },
-      "block_order": [
-        "item_mRFw4X",
-        "item_r96Tt7",
-        "item_KQtcVQ",
-        "item_jHGFzb",
-        "item_KeN4HJ",
-        "item_kGDkaE"
-      ],
-      "custom_css": [
-        "h4 + p {margin-top: 0; font-size: 1rem;}",
-        "h6 {font-size: 1rem; margin-top: 2rem;}"
-      ],
-      "name": "Multi-column",
-      "settings": {
-        "full_width": true,
-        "stack_on_mobile": false,
-        "gap": "medium",
-        "text_alignment": "start",
-        "subheading": "FEATURED CASE STUDIES",
-        "title": "Enterprise-Scale Transformations",
-        "content": "",
-        "background": "",
-        "background_gradient": "",
-        "text_color": ""
       }
     },
     "section-15": {
@@ -563,6 +280,59 @@
         "chart_background": "",
         "chart_text_color": "",
         "chart_true_false_color": ""
+      }
+    },
+    "faq_heMYaW": {
+      "type": "faq",
+      "blocks": {
+        "item_MkzwAt": {
+          "type": "item",
+          "settings": {
+            "title": "Do you ship overseas?",
+            "content": "<p>Yes, we ship all over the world. Shipping costs will apply, and will be added at checkout. We run discounts and promotions all year, so stay tuned for exclusive deals.</p>"
+          }
+        },
+        "item_WU6L4p": {
+          "type": "item",
+          "settings": {
+            "title": "How long will it take to get my orders?",
+            "content": "<p>It depends on where you are. Orders processed here will take 5-7 business days to arrive. Overseas deliveries can take anywhere from 7-16 days. Delivery details will be provided in your confirmation email.</p>"
+          }
+        },
+        "item_AwVggN": {
+          "type": "item",
+          "settings": {
+            "title": "Any question?",
+            "content": "<p>You can contact us through our contact page! We will be happy to assist you.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_MkzwAt",
+        "item_WU6L4p",
+        "item_AwVggN"
+      ],
+      "name": "FAQ",
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "team_avatar_width": 160,
+        "support_hours": "Our customer support is available Monday to Friday: 8am-8:30pm.",
+        "answer_time": "Average answer time: 24h",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "",
+        "accordion_text_color": ""
       }
     },
     "rich_text_6VmVgb": {
@@ -737,9 +507,8 @@
   "order": [
     "rich_text_cqadYy",
     "multi_column_L3Rbir",
-    "1780368579b1b4691b",
-    "multi_column_bJtgmc",
     "section-15",
+    "faq_heMYaW",
     "rich_text_6VmVgb",
     "multi_column_UExWWX"
   ]
