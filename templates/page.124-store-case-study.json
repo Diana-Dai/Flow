@@ -1239,8 +1239,8 @@
         "gap": "medium",
         "text_alignment": "start",
         "subheading": "組織変化",
-        "title": "店舗運営にもたらした変化",
-        "content": "<p>数値面の改善だけでなく、Flowは店舗でのデータ活用方法にも変化を生みました。店長が購買率を軸に店舗状況を確認し、日次・週次・月次の報告や改善活動にFlowデータを活用する運用へと移行しました。</p>",
+        "title": "店舗運営に定着したデータ活用",
+        "content": "<p>124店舗での検証後、Flowは店舗運営の標準的なデータ基盤として活用範囲を広げています。新店オープンや店舗改装のタイミングに合わせて導入が進み、店長が日次・週次・月次の報告や改善活動にFlowデータを活用する運用へと発展しています。</p>",
         "background": "#ffffff",
         "background_gradient": "",
         "text_color": ""
@@ -1265,7 +1265,7 @@
             "title": "",
             "heading_tag": "h2",
             "subheading": "",
-            "content": "<h5>店舗展開の継続</h5><p>初期導入店舗での成果を踏まえ、デイトナ様はFlowの展開拡大方針を公表されています。導入は、新店オープンや店舗改装のタイミングに合わせて段階的に進められています。</p>",
+            "content": "<h5>220店舗以上へ展開</h5><p>124店舗での検証後、Flowの活用は220店舗以上へ拡大。新店オープンや店舗改装のタイミングに合わせて、段階的に導入が進められています。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -1274,7 +1274,7 @@
         "item_zGNUAp": {
           "type": "item",
           "settings": {
-            "icon": "up",
+            "icon": "picto-building",
             "icon_width": 32,
             "icon_background_type": "square",
             "icon_background": "#a0b842",
@@ -1287,7 +1287,7 @@
             "title": "",
             "heading_tag": "h2",
             "subheading": "",
-            "content": "<h5>売上対策への活用</h5><p>来店数、店前通行量、買い上げ率を組み合わせることで、店舗ごとの改善ポイントをより具体的に把握。売上改善に向けた対策検討に活用されています。</p>",
+            "content": "<h5>標準導入として拡大</h5><p>Flowは一部店舗だけの検証ツールではなく、新店や改装店舗に導入される標準的な店舗データ基盤として活用が広がっています。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -1296,7 +1296,7 @@
         "item_Vx6gWn": {
           "type": "item",
           "settings": {
-            "icon": "people",
+            "icon": "picto-document",
             "icon_width": 32,
             "icon_background_type": "square",
             "icon_background": "#a0b842",
@@ -1309,7 +1309,7 @@
             "title": "",
             "heading_tag": "h2",
             "subheading": "",
-            "content": "<h5>人材育成への活用</h5><p>データを見て、考え、対策を立て、結果を検証する流れが、店舗スタッフの成長機会になっています。Flowは、データを使える人材を育てるための材料としても活用されています。</p>",
+            "content": "<h5>報告業務への定着</h5><p>店長はFlowデータを日次・週次・月次の報告にも活用。売上、来店数、購買率を共通指標として確認し、店舗運営の改善に役立てています。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -1331,7 +1331,7 @@
             "title": "",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<h5>店舗間の学びの共有</h5><p>店舗ごとの状況を共通のデータで確認することで、うまくいった施策や改善ポイントを他店舗にも展開しやすくなります。店舗単位の学びを、組織全体の運用改善につなげる土台になります。</p>",
+            "content": "<h5>購買率改善の継続</h5><p>来店数が変動する中でも、購買率を継続的に確認することで、販売活動や販促策の効果を検証しやすくなりました。店舗ごとの改善点を見つけるための指標として活用されています。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
