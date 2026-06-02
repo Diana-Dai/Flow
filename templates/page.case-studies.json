@@ -419,7 +419,7 @@
             "title": "",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<h5>Ease of Use</h5><p>Flow dashboards were simple enough for store managers to understand without extensive training. The interface focused on practical retail KPIs rather than overwhelming users with complex analytics.</p>",
+            "content": "<h5>コストと運用価値のバランス</h5><p>来店数計測の自動化は以前から検討されていましたが、導入コストが課題でした。Flowは、必要な店舗データを取得しながら、実運用に合うコストバランスが評価されました。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -441,7 +441,7 @@
             "title": "",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<h5>Clear Dashboard Design</h5><p>Traffic, conversion, and sales data were displayed together in a single view, making it easy to understand store performance at a glance. Real-time updates helped managers make in-day adjustments.</p>",
+            "content": "<h5>レポート画面の見やすさ</h5><p>店舗データは、取得するだけでは活用につながりません。Flowは、来店数や売上に関わるデータを確認しやすく、店舗側でも理解しやすい画面設計が導入判断のポイントになりました。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -463,7 +463,7 @@
             "title": "",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<h5>Practical Retail Fit</h5><p>Flow was designed specifically for retail operations, not adapted from general-purpose analytics software. The metrics and workflows matched how store managers and area supervisors actually worked.</p>",
+            "content": "<h5>来店数の自動計測</h5><p>店舗スタッフによる手動計測や売上からの逆算では、正確な来店数を把握しにくい課題がありました。Flowにより、来店数を自動で把握できることが導入目的のひとつでした。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -556,8 +556,8 @@
         "gap": "medium",
         "text_alignment": "center",
         "subheading": "SELECTION PROCESS",
-        "title": "Why Flow Was Selected",
-        "content": "<p>After evaluating several traffic analytics and retail intelligence platforms, the customer selected Flow based on several practical factors.</p>",
+        "title": "Flowが選ばれた理由",
+        "content": "<p>デイトナ様では、効率的で戦略的な店舗運営を進めるため、複数の計測ツールを比較検討。<br/>コスト面とレポート画面の見やすさを評価し、Flowの導入を決定されました。</p>",
         "background": "#ffffff",
         "background_gradient": "",
         "text_color": ""
