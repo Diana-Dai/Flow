@@ -1340,14 +1340,14 @@
         "subheading_AK7Cjn": {
           "type": "subheading",
           "settings": {
-            "text": "NEXT STEPS",
+            "text": "次のステップ",
             "icon": "none"
           }
         },
         "heading_YXhiR8": {
           "type": "heading",
           "settings": {
-            "text": "SEE WHAT FLOW COULD REVEAL INYOUR STORES",
+            "text": "店舗データで、改善の打ち手を見つけませんか？",
             "heading_tag": "h1",
             "text_color": "",
             "gradient": ""
@@ -1356,7 +1356,7 @@
         "richtext_qzAkak": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Every retail operation is different. Let's discuss what Flow could measure, analyze, and improve in your specific environment.</p>"
+            "content": "<p>Flowは、来店数・店前通行量・購買率・売上情報をつなげ、店舗ごとの改善ポイントを見える化します。まずは、自社の店舗でどのようなデータを取得し、どのように活用できるかをご相談ください。</p>"
           }
         },
         "button_AVKAbi": {
@@ -1376,13 +1376,13 @@
           "settings": {
             "style_1": "fill",
             "size_1": "xl",
-            "text_1": "Schedule Demo →",
+            "text_1": "無料デモを予約する →",
             "url_1": "#",
             "background_1": "#a0b842",
             "text_color_1": "#ffffff",
             "style_2": "fill",
             "size_2": "xl",
-            "text_2": "Explore Platform →",
+            "text_2": "プラットフォームを見る →",
             "url_2": "#",
             "background_2": "#ffffff",
             "text_color_2": "#11243e"
