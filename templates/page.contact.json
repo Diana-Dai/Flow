@@ -233,71 +233,13 @@
         "chart_true_false_color": ""
       }
     },
-    "rich_text_EtLVJr": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_bNQkAX": {
-          "type": "heading",
-          "settings": {
-            "text": "Still have questions?",
-            "heading_tag": "h1",
-            "text_color": "",
-            "gradient": ""
-          }
-        },
-        "richtext_cRTfWf": {
-          "type": "richtext",
-          "settings": {
-            "content": "<p>Our team is available to discuss your specific deployment requirements, integration scenarios, or compliance concerns.</p>"
-          }
-        },
-        "buttons_CT466j": {
-          "type": "buttons",
-          "settings": {
-            "style_1": "fill",
-            "size_1": "xl",
-            "text_1": "Contact Sales → Talk to Flow →",
-            "url_1": "",
-            "background_1": "#a0b842",
-            "text_color_1": "",
-            "style_2": "fill",
-            "size_2": "xl",
-            "text_2": "Schedule Demo",
-            "url_2": "",
-            "background_2": "",
-            "text_color_2": ""
-          }
-        }
-      },
-      "block_order": [
-        "heading_bNQkAX",
-        "richtext_cRTfWf",
-        "buttons_CT466j"
-      ],
-      "name": "Rich text",
-      "settings": {
-        "full_width": true,
-        "content_width": "small",
-        "text_position": "center",
-        "background": "#ffffff",
-        "background_gradient": "",
-        "text_color": ""
-      }
-    },
     "rich_text_6VmVgb": {
       "type": "rich-text",
       "blocks": {
-        "subheading_AK7Cjn": {
-          "type": "subheading",
-          "settings": {
-            "text": "NEXT STEPS",
-            "icon": "none"
-          }
-        },
         "heading_YXhiR8": {
           "type": "heading",
           "settings": {
-            "text": "SEE WHAT FLOW COULD ACHIEVE INYOUR STORES",
+            "text": "Prefer to talk immediately?",
             "heading_tag": "h1",
             "text_color": "",
             "gradient": ""
@@ -306,7 +248,7 @@
         "richtext_qzAkak": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Every retail operation is unique. Let's discuss what Flow could measure, analyze, and improve in your specific environment.</p>"
+            "content": "<p>Our team is available during business hours for immediate consultation.</p>"
           }
         },
         "button_AVKAbi": {
@@ -326,13 +268,13 @@
           "settings": {
             "style_1": "fill",
             "size_1": "xl",
-            "text_1": "Schedule Demo →",
+            "text_1": "Call Now: +81-3-xxxx-xxxx →",
             "url_1": "#",
             "background_1": "#a0b842",
             "text_color_1": "#ffffff",
             "style_2": "fill",
             "size_2": "xl",
-            "text_2": "Talk to Flow →",
+            "text_2": "Email: contact@flow-solutions.com",
             "url_2": "#",
             "background_2": "#ffffff",
             "text_color_2": "#11243e"
@@ -340,7 +282,6 @@
         }
       },
       "block_order": [
-        "subheading_AK7Cjn",
         "heading_YXhiR8",
         "richtext_qzAkak",
         "button_AVKAbi",
@@ -457,7 +398,6 @@
     "rich_text_cqadYy",
     "17803895307b8bdaca",
     "section-15",
-    "rich_text_EtLVJr",
     "rich_text_6VmVgb",
     "multi_column_UExWWX"
   ]
