@@ -438,7 +438,7 @@
             "text_color": "",
             "border_color": "#f2f2f2",
             "show_controls": false,
-            "column_size": "3",
+            "column_size": "2",
             "title": "",
             "heading_tag": "h4",
             "subheading": "",
@@ -460,7 +460,7 @@
             "text_color": "",
             "border_color": "#f2f2f2",
             "show_controls": false,
-            "column_size": "3",
+            "column_size": "2",
             "title": "",
             "heading_tag": "h4",
             "subheading": "",
@@ -482,7 +482,7 @@
             "text_color": "",
             "border_color": "#f2f2f2",
             "show_controls": false,
-            "column_size": "3",
+            "column_size": "2",
             "title": "",
             "heading_tag": "h4",
             "subheading": "",
@@ -494,6 +494,7 @@
         },
         "item_4werVM": {
           "type": "item",
+          "disabled": true,
           "settings": {
             "icon": "check",
             "icon_width": 32,
@@ -526,7 +527,7 @@
             "text_color": "",
             "border_color": "#f2f2f2",
             "show_controls": false,
-            "column_size": "3",
+            "column_size": "2",
             "title": "",
             "heading_tag": "h4",
             "subheading": "",
@@ -538,6 +539,7 @@
         },
         "item_8Fhh3H": {
           "type": "item",
+          "disabled": true,
           "settings": {
             "icon": "check",
             "icon_width": 32,
