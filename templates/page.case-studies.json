@@ -24,7 +24,7 @@
             "company_name": "株式会社デイトナ・インターナショナル様",
             "company_metadata": "FREAK’S STORE / Firsthand / Aresense / 2G ほか",
             "headline": "店舗データを、売上改善と人材育成の力に変える",
-            "description": "株式会社デイトナ・インターナショナル様は、Flowを活用して来店数・店前通行量・購買率などの店舗データを可視化。店舗スタッフが根拠を持って考え、行動し、改善できる体制を築かれました。",
+            "description": "株式会社デイトナ・インターナショナル様は、Flowを活用して来店数・店前通行量・買い上げ率などの店舗データを可視化。店舗スタッフが根拠を持って考え、行動し、改善できる体制を築かれました。",
             "show_metric_1": true,
             "metric_1_value": "25%",
             "metric_1_label": "売上高 前年同期比",
@@ -259,7 +259,7 @@
         "text_alignment": "start",
         "subheading": "顧客背景",
         "title": "デイトナ様について",
-        "content": "<p>株式会社デイトナ・インターナショナル様は、「FREAK’S STORE」をはじめ、「Firsthand」「Aresense」「2G」などを展開するファッション・ライフスタイル企業です。</p><p>同社では以前から、買上者数、購買率、セット率、客単価などの営業計数を重視し、店舗売上の改善に取り組まれていました。一方で、その母数となる来店数や店前通行量については、手動計測や売上からの逆算に頼る部分があり、店頭施策や売場改善をデータで検証しにくい状況がありました。</p><p>コロナ禍以降、より効率的で戦略的な店舗運営が求められる中、Flowは来店数の自動計測だけでなく、店舗スタッフが根拠を持って考え、行動するためのデータ活用基盤として導入されました。</p>",
+        "content": "<p>株式会社デイトナ・インターナショナル様は、「FREAK’S STORE」をはじめ、「Firsthand」「Aresense」「2G」などを展開するファッション・ライフスタイル企業です。</p><p>同社では以前から、買上者数、購買率、セット率、客単価などの営業計数を重視し、店舗売上の改善に取り組まれていました。一方で、その母数となる来店数や店前通行量については、手動計測や売上からの逆算に頼る部分があり、店頭施策や売場改善をデータで検証しにくい状況がありました。</p><p>コロナ禍以降、より効率的で戦略的な店舗運営が求められる中、Flowは来店数の自動計測だけでなく、店舗スタッフが根拠を持って考え、行動するための仕組みとして導入されました。</p>",
         "background": "#ffffff",
         "background_gradient": "",
         "text_color": ""
@@ -377,6 +377,28 @@
             "link_text": "",
             "link_style": "link"
           }
+        },
+        "item_jQjKrF": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "2",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h4>改善サイクルに時間がかかる</h4><p>売上結果を見てから振り返るだけでは、週の途中で施策を変える判断が遅れます。店舗状況を早く把握し、必要に応じて対策を見直すためのデータが必要でした。</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
         }
       },
       "block_order": [
@@ -384,7 +406,8 @@
         "item_ity9Ac",
         "item_DM9ThQ",
         "item_9PEAUU",
-        "item_PADbQH"
+        "item_PADbQH",
+        "item_jQjKrF"
       ],
       "name": "Multi-column",
       "settings": {
