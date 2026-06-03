@@ -10276,7 +10276,7 @@ display: flex;
 }
 @media screen and (min-width: 700px) {
   #shopify-section-template--20969776709769__1780470974bb22e153 .section .shopify-block{
-    width:50%;
+      width: calc(50% - 20px);
   }
 
 }
