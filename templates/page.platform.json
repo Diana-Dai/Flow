@@ -633,6 +633,63 @@
         "text_color": ""
       }
     },
+    "rich_text_peMmaV": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_DDAQPW": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "text": "AI CAMERA",
+            "icon": "none"
+          }
+        },
+        "heading_GM8FNx": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "text": "THE SENSING ARRAY",
+            "heading_tag": "h0",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_DF74kd": {
+          "type": "richtext",
+          "disabled": true,
+          "settings": {
+            "content": "<p>Edge-intelligent nodes transforming physical movement into data truth.</p>"
+          }
+        },
+        "image_GR6JYr": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/KPITree_1600_x_800_1.png",
+            "width_mode": "full_width",
+            "max_width": 600,
+            "mobile_max_width": 350
+          }
+        }
+      },
+      "block_order": [
+        "subheading_DDAQPW",
+        "heading_GM8FNx",
+        "richtext_DF74kd",
+        "image_GR6JYr"
+      ],
+      "custom_css": [
+        "* {padding-top: 0;}"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "large",
+        "text_position": "center",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
     "multi_column_q8BX4d": {
       "type": "multi-column",
       "blocks": {
@@ -1073,67 +1130,6 @@
         "text_color": ""
       }
     },
-    "17804582541ba48621": {
-      "type": "_blocks",
-      "blocks": {
-        "ai_gen_block_79fb6e4_WYFM6M": {
-          "type": "ai_gen_block_79fb6e4",
-          "settings": {
-            "subheader": "abc",
-            "subheader_size": 14,
-            "subheader_color": "#666666",
-            "heading": "Our features",
-            "heading_size": 36,
-            "heading_color": "#000000",
-            "header_text": "<p>dhdhhdhd</p>",
-            "text_size": 16,
-            "text_color": "#666666",
-            "header_alignment": "left",
-            "image": "shopify://shop_images/Layer_2.png",
-            "image_position": "left",
-            "image_border_radius": 8,
-            "box_width": "50",
-            "box_spacing": 16,
-            "box_padding": 20,
-            "box_background": "#f9fafb",
-            "box_border_width": 1,
-            "box_border_color": "#a0b842",
-            "box_border_radius": 8,
-            "mobile_layout": "stack",
-            "icon_size": 32,
-            "icon_color": "#0e366a",
-            "box_header_size": 18,
-            "box_header_color": "#000000",
-            "box_text_size": 14,
-            "box_text_color": "#666666",
-            "box_1_icon": "check",
-            "box_1_header": "Feature one",
-            "box_1_text": "<p>Describe your feature with rich text and formatting options.</p>",
-            "box_2_icon": "star",
-            "box_2_header": "Feature two",
-            "box_2_text": "<p>Describe your feature with rich text and formatting options.</p>",
-            "box_3_icon": "heart",
-            "box_3_header": "Feature three",
-            "box_3_text": "<p>Describe your feature with rich text and formatting options.</p>",
-            "box_4_icon": "shield",
-            "box_4_header": "Feature four",
-            "box_4_text": "<p>Describe your feature with rich text and formatting options.</p>"
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "ai_gen_block_79fb6e4_WYFM6M"
-      ],
-      "settings": {
-        "full_width": true,
-        "remove_vertical_spacing": false,
-        "remove_horizontal_spacing": false,
-        "background": "",
-        "background_gradient": "",
-        "text_color": ""
-      }
-    },
     "178047465242fd23a6": {
       "type": "_blocks",
       "blocks": {
@@ -1252,7 +1248,7 @@
             "title": "",
             "heading_tag": "h1",
             "subheading": "",
-            "content": "<h5>Movement Patterns</h5><p>Track customer flow paths and identify high-traffic corridors</p><h2>94%</h2><p>ACCURACY</p>",
+            "content": "<h5>「今日、売上目標に届くために何を優先すべきですか？」</h5><h2>状況を聞く</h2><p></p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -1274,7 +1270,7 @@
             "title": "",
             "heading_tag": "h1",
             "subheading": "",
-            "content": "<h5>Dwell Time Analysis</h5><p>Measure engagement duration at product displays and zones</p><h2>2.4min</h2><p>AVG DWELL</p>",
+            "content": "<h5>「来店数はあるのに購買率が低い理由は何ですか？」</h5><h2>理由を聞く</h2>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -1296,7 +1292,7 @@
             "title": "",
             "heading_tag": "h1",
             "subheading": "",
-            "content": "<h5>VMD Validation</h5><p>Quantify visual merchandising impact on customer behavior</p><h2>+28%</h2><p>ENGAGEMENT LIFT</p>",
+            "content": "<h5>「この状況では、接客・VMD・スタッフ配置のどこを見直すべきですか？」</h5><h2>次の打ち手を聞く</h2><p></p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -1319,66 +1315,9 @@
         "stack_on_mobile": false,
         "gap": "medium",
         "text_alignment": "start",
-        "subheading": "VISIBILITY",
-        "title": "SEE THE STORE THROUGH YOUR CUSTOMERS' EYES.",
+        "subheading": "Flow AI",
+        "title": "Flow AIに聞けば、店舗データと社内ルールをもとに確認できる。",
         "content": "<p>Quantify customer movement and product engagement. Use high-fidelity heatmaps and dwell-time analysis to validate store layouts and VMD effectiveness.</p>",
-        "background": "#ffffff",
-        "background_gradient": "",
-        "text_color": ""
-      }
-    },
-    "rich_text_peMmaV": {
-      "type": "rich-text",
-      "blocks": {
-        "subheading_DDAQPW": {
-          "type": "subheading",
-          "disabled": true,
-          "settings": {
-            "text": "AI CAMERA",
-            "icon": "none"
-          }
-        },
-        "heading_GM8FNx": {
-          "type": "heading",
-          "disabled": true,
-          "settings": {
-            "text": "THE SENSING ARRAY",
-            "heading_tag": "h0",
-            "text_color": "",
-            "gradient": ""
-          }
-        },
-        "richtext_DF74kd": {
-          "type": "richtext",
-          "disabled": true,
-          "settings": {
-            "content": "<p>Edge-intelligent nodes transforming physical movement into data truth.</p>"
-          }
-        },
-        "image_GR6JYr": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/KPITree_1600_x_800_1.png",
-            "width_mode": "full_width",
-            "max_width": 600,
-            "mobile_max_width": 350
-          }
-        }
-      },
-      "block_order": [
-        "subheading_DDAQPW",
-        "heading_GM8FNx",
-        "richtext_DF74kd",
-        "image_GR6JYr"
-      ],
-      "custom_css": [
-        "* {padding-top: 0;}"
-      ],
-      "name": "Rich text",
-      "settings": {
-        "full_width": true,
-        "content_width": "large",
-        "text_position": "center",
         "background": "#ffffff",
         "background_gradient": "",
         "text_color": ""
@@ -1704,6 +1643,72 @@
             "link_style": "link"
           }
         },
+        "item_kncgUf": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "Column title",
+            "heading_tag": "h4",
+            "subheading": "<p>Organize content into multiple columns to share useful information to your customers about your products, values...</p>",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_YPXWMM": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "Column title",
+            "heading_tag": "h4",
+            "subheading": "<p>Organize content into multiple columns to share useful information to your customers about your products, values...</p>",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_QhMfj6": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "Column title",
+            "heading_tag": "h4",
+            "subheading": "<p>Organize content into multiple columns to share useful information to your customers about your products, values...</p>",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
         "item_dJ3Txk": {
           "type": "item",
           "settings": {
@@ -1730,6 +1735,9 @@
       "block_order": [
         "item_JgDPrh",
         "item_r88DC8",
+        "item_kncgUf",
+        "item_YPXWMM",
+        "item_QhMfj6",
         "item_dJ3Txk"
       ],
       "custom_css": [
@@ -1742,7 +1750,7 @@
         "gap": "medium",
         "text_alignment": "start",
         "subheading": "VALIDATION",
-        "title": "VALIDATED OPERATIONAL IMPACT.",
+        "title": "店舗運営の変化を、数字と行動で確認する。",
         "content": "<p>Organize content into multiple columns to share useful information to your customers about your products, values...</p>",
         "background": "#f2f2f2",
         "background_gradient": "",
@@ -1887,7 +1895,6 @@
     "multi_column_HCGJea",
     "media_with_text_hMPTmL",
     "blocks_YJHkDA",
-    "17804582541ba48621",
     "178047465242fd23a6",
     "multi_column_QjMJiW11",
     "multi_column_HCGJea11",
