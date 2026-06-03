@@ -486,21 +486,6 @@
             </select>
           </div>
 
-          <div class="ai-enterprise-form__field-{{ ai_gen_id }}">
-            <label class="ai-enterprise-form__label-{{ ai_gen_id }}" for="timeline-{{ ai_gen_id }}">{{ block.settings.timeline_label }}</label>
-            <select
-              id="timeline-{{ ai_gen_id }}"
-              name="contact[implementation_timeline]"
-              class="ai-enterprise-form__select-{{ ai_gen_id }}"
-            >
-              <option value="">{{ block.settings.timeline_placeholder }}</option>
-              <option value="immediate">即時</option>
-              <option value="1-3-months">1-3ヶ月</option>
-              <option value="3-6-months">3-6ヶ月</option>
-              <option value="6-12-months">6-12ヶ月</option>
-              <option value="exploring">検討中</option>
-            </select>
-          </div>
         </div>
       </div>
 
@@ -765,12 +750,6 @@
       "id": "stores_placeholder",
       "label": "Number of stores placeholder",
       "default": "Select range"
-    },
-    {
-      "type": "text",
-      "id": "timeline_label",
-      "label": "Timeline label",
-      "default": "Implementation Timeline"
     },
     {
       "type": "text",
