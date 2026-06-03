@@ -121,18 +121,15 @@
     "rich_text_B8Y9rV": {
       "type": "rich-text",
       "blocks": {
-        "heading_Amimh4": {
-          "type": "heading",
+        "richtext_FCxqzE": {
+          "type": "richtext",
           "settings": {
-            "text": "Your existing cameras provide the sight. Flow provides the insight.",
-            "heading_tag": "h2",
-            "text_color": "",
-            "gradient": ""
+            "content": "<h2>Your store data and manuals provide the foundation. <br/>Flow let's you see your stores and turns eveything into action.</h2>"
           }
         }
       },
       "block_order": [
-        "heading_Amimh4"
+        "richtext_FCxqzE"
       ],
       "custom_css": [],
       "name": "Rich text",
@@ -161,7 +158,7 @@
             "border_color": "#f2f2f2",
             "show_controls": false,
             "column_size": "4",
-            "title": "Traffic & Behavior",
+            "title": "POS・売上データ",
             "heading_tag": "h4",
             "subheading": "",
             "content": "<p>Accurate people counting and dwell</p>",
@@ -183,7 +180,7 @@
             "border_color": "#f2f2f2",
             "show_controls": false,
             "column_size": "4",
-            "title": "POS & Sales",
+            "title": "来店・通行・行動データ",
             "heading_tag": "h4",
             "subheading": "",
             "content": "<p>Real-time transaction correlation</p>",
@@ -195,20 +192,20 @@
         "item_aGN9Xz": {
           "type": "item",
           "settings": {
-            "icon": "none",
+            "icon": "people",
             "icon_width": 32,
             "icon_background_type": "square",
             "icon_background": "",
-            "icon_color": "",
+            "icon_color": "#a0b842",
             "background_color": "",
             "text_color": "",
             "border_color": "",
             "show_controls": false,
             "column_size": "4",
-            "title": "Column title",
+            "title": "スタッフ・シフトデータ",
             "heading_tag": "h4",
-            "subheading": "<p>Organize content into multiple columns to share useful information to your customers about your products, values...</p>",
-            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "subheading": "",
+            "content": "",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -217,7 +214,7 @@
         "item_AeTC4p": {
           "type": "item",
           "settings": {
-            "icon": "none",
+            "icon": "picto-document",
             "icon_width": 32,
             "icon_background_type": "square",
             "icon_background": "",
@@ -227,10 +224,10 @@
             "border_color": "",
             "show_controls": false,
             "column_size": "4",
-            "title": "Column title",
+            "title": "天候・曜日・店舗属性",
             "heading_tag": "h4",
-            "subheading": "<p>Organize content into multiple columns to share useful information to your customers about your products, values...</p>",
-            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "subheading": "",
+            "content": "",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -239,7 +236,7 @@
         "item_rn7d7D": {
           "type": "item",
           "settings": {
-            "icon": "none",
+            "icon": "picto-document",
             "icon_width": 32,
             "icon_background_type": "square",
             "icon_background": "",
@@ -249,10 +246,10 @@
             "border_color": "",
             "show_controls": false,
             "column_size": "4",
-            "title": "Column title",
+            "title": "メモ・Pulse",
             "heading_tag": "h4",
-            "subheading": "<p>Organize content into multiple columns to share useful information to your customers about your products, values...</p>",
-            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "subheading": "",
+            "content": "",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -261,7 +258,7 @@
         "item_nXKkDm": {
           "type": "item",
           "settings": {
-            "icon": "none",
+            "icon": "picto-document",
             "icon_width": 32,
             "icon_background_type": "square",
             "icon_background": "",
@@ -271,10 +268,10 @@
             "border_color": "",
             "show_controls": false,
             "column_size": "4",
-            "title": "Column title",
+            "title": "マニュアル・SOP",
             "heading_tag": "h4",
-            "subheading": "<p>Organize content into multiple columns to share useful information to your customers about your products, values...</p>",
-            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "subheading": "",
+            "content": "",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -293,7 +290,7 @@
             "border_color": "#f2f2f2",
             "show_controls": false,
             "column_size": "4",
-            "title": "Contextual Signals",
+            "title": "社内資料・リンク",
             "heading_tag": "h4",
             "subheading": "",
             "content": "<p>Staffing, weather, campaigns</p>",
@@ -305,7 +302,7 @@
         "item_EwTVgd": {
           "type": "item",
           "settings": {
-            "icon": "none",
+            "icon": "picto-file",
             "icon_width": 32,
             "icon_background_type": "square",
             "icon_background": "",
@@ -315,10 +312,10 @@
             "border_color": "",
             "show_controls": false,
             "column_size": "4",
-            "title": "Column title",
+            "title": "API / CSV / FTP連携",
             "heading_tag": "h4",
-            "subheading": "<p>Organize content into multiple columns to share useful information to your customers about your products, values...</p>",
-            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "subheading": "",
+            "content": "",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -346,7 +343,7 @@
         "gap": "small",
         "text_alignment": "start",
         "subheading": "",
-        "title": "",
+        "title": "What Flow Connects",
         "content": "",
         "background": "#ffffff",
         "background_gradient": "",
@@ -1234,6 +1231,59 @@
         "text_color": ""
       }
     },
+    "blocks_nwzRNT": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_0c78d27_Gxk68e": {
+          "type": "ai_gen_block_0c78d27",
+          "name": "FAQ accordion item",
+          "settings": {
+            "category": "Implementation & Deployment",
+            "question": "How long does implementation take from contract to go-live?",
+            "answer": "Typical timeline is 4-6 weeks for a single store, 8-12 weeks for multi-store rollouts. Week 1-2: Infrastructure assessment and camera placement planning. Week 3-4: Hardware installation and network integration. Week 5-6: Calibration, validation, and staff training. For enterprise deployments (10+ stores), we follow a phased rollout: pilot store first (6 weeks), then standardized deployment at 2-3 stores per week. Timeline assumes existing network infrastructure meets requirements (PoE-capable switches, 100Mbps per camera). If network upgrades are needed, add 2-4 weeks for infrastructure work.",
+            "default_open": false,
+            "icon_type": "clock",
+            "icon_background_color": "#f0f4e8",
+            "icon_color": "#6b7c3a",
+            "category_color": "#6b7c3a",
+            "question_color": "#0f172a",
+            "answer_color": "#475569",
+            "chevron_color": "#64748b"
+          },
+          "blocks": {}
+        },
+        "ai_gen_block_0c78d27_AV7tPk": {
+          "type": "ai_gen_block_0c78d27",
+          "settings": {
+            "category": "Implementation & Deployment",
+            "question": "How long does implementation take from contract to go-live?",
+            "answer": "Typical timeline is 4-6 weeks for a single store, 8-12 weeks for multi-store rollouts. Week 1-2: Infrastructure assessment and camera placement planning. Week 3-4: Hardware installation and network integration. Week 5-6: Calibration, validation, and staff training. For enterprise deployments (10+ stores), we follow a phased rollout: pilot store first (6 weeks), then standardized deployment at 2-3 stores per week. Timeline assumes existing network infrastructure meets requirements (PoE-capable switches, 100Mbps per camera). If network upgrades are needed, add 2-4 weeks for infrastructure work.",
+            "default_open": false,
+            "icon_type": "clock",
+            "icon_background_color": "#f0f4e8",
+            "icon_color": "#6b7c3a",
+            "category_color": "#6b7c3a",
+            "question_color": "#0f172a",
+            "answer_color": "#475569",
+            "chevron_color": "#64748b"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_0c78d27_Gxk68e",
+        "ai_gen_block_0c78d27_AV7tPk"
+      ],
+      "name": "FAQ accordion item",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
     "rich_text_6VmVgb": {
       "type": "rich-text",
       "blocks": {
@@ -1322,6 +1372,7 @@
     "section-15",
     "media_with_text_mRGejd",
     "multi_column_ELgLhR",
+    "blocks_nwzRNT",
     "rich_text_6VmVgb"
   ]
 }
