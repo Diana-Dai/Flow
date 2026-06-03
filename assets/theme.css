@@ -10272,6 +10272,7 @@ display: flex;
 #shopify-section-template--20969776709769__1780470974bb22e153 .section{
   display: flex;
     gap: 40px;
+    flex-wrap:wrap;
 }
 
 @media screen and (max-width: 699px) {
