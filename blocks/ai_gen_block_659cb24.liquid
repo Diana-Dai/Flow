@@ -195,7 +195,7 @@
   }
 {% endstyle %}
 
-<faq-card-{{ ai_gen_id }} class="ai-faq-card-{{ ai_gen_id }}" data-width="{{ block.settings.desktop_width_percent }}" {{ block.shopify_attributes }}>
+<faq-card-{{ ai_gen_id }} class="ai-faq-card-{{ ai_gen_id }}"  {{ block.shopify_attributes }}>
   <div class="ai-faq-card-header-{{ ai_gen_id }}">
     <div class="ai-faq-card-icon-badge-{{ ai_gen_id }}">
       {% if block.settings.icon_type == 'clock' %}
@@ -387,22 +387,6 @@
     {
       "type": "header",
       "content": "Layout"
-    },
-    {
-      "type": "select",
-      "id": "desktop_width_percent",
-      "label": "Desktop width",
-      "options": [
-        {
-          "value": "50",
-          "label": "Half width (50%)"
-        },
-        {
-          "value": "100",
-          "label": "Full width (100%)"
-        }
-      ],
-      "default": "50"
     },
     {
       "type": "header",
