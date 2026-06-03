@@ -1,6 +1,815 @@
+{% doc %}
+  @prompt
+    A section with an image on one half of the screen and 4 content boxes on the other half.  the section should provide controls for choosing which side of the screen the image will appear.  each content box will have a space for an icon in the top left corner.  There will be fields for a header and text.  text should have ability to adjust since and bold and the options for bullets.  options should exist to adjust the colour of the icon, the background of the content boxes, the header, the box outlines. There should be options to make the boxes either 50% or 25% of the screen size.  Boxes should stack naturally with options to adjust spacing.The section should have a header, subheader that appears above the header and text that appears below the header.  options should exist to left align or center align the section header components. 
+    On mobile stacking order should the header then the image then the content boxes.  The content boxes should have an option to stack or scroll. 
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-image-content-section-{{ ai_gen_id }} {
+    width: 100%;
+    display: block;
+  }
+
+  .ai-image-content-header-{{ ai_gen_id }} {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px 40px;
+    text-align: {{ block.settings.header_alignment }};
+  }
+
+  .ai-image-content-subheader-{{ ai_gen_id }} {
+    font-size: {{ block.settings.subheader_size }}px;
+    color: {{ block.settings.subheader_color }};
+    margin: 0 0 8px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .ai-image-content-heading-{{ ai_gen_id }} {
+    font-size: {{ block.settings.heading_size }}px;
+    color: {{ block.settings.heading_color }};
+    margin: 0 0 16px;
+  }
+
+  .ai-image-content-text-{{ ai_gen_id }} {
+    font-size: {{ block.settings.text_size }}px;
+    color: {{ block.settings.text_color }};
+    margin: 0;
+  }
+
+  .ai-image-content-main-{{ ai_gen_id }} {
+    display: flex;
+    align-items: stretch;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 40px;
+    padding: 0 20px;
+  }
+
+  .ai-image-content-main-{{ ai_gen_id }}--reverse {
+    flex-direction: row-reverse;
+  }
+
+  .ai-image-content-image-wrapper-{{ ai_gen_id }} {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .ai-image-content-image-{{ ai_gen_id }} {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: {{ block.settings.image_border_radius }}px;
+  }
+
+  .ai-image-content-image-placeholder-{{ ai_gen_id }} {
+    width: 100%;
+    height: 100%;
+    min-height: 400px;
+    background-color: #f4f4f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: {{ block.settings.image_border_radius }}px;
+    position: relative;
+  }
+
+  .ai-image-content-image-placeholder-{{ ai_gen_id }} svg {
+    width: 100%;
+    height: 100%;
+    max-width: 300px;
+    max-height: 300px;
+  }
+
+  .ai-image-content-boxes-wrapper-{{ ai_gen_id }} {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .ai-image-content-boxes-{{ ai_gen_id }} {
+    display: flex;
+    flex-wrap: wrap;
+    gap: {{ block.settings.box_spacing }}px;
+  }
+
+  .ai-image-content-box-{{ ai_gen_id }} {
+    background-color: {{ block.settings.box_background }};
+    border: {{ block.settings.box_border_width }}px solid {{ block.settings.box_border_color }};
+    border-radius: {{ block.settings.box_border_radius }}px;
+    padding: {{ block.settings.box_padding }}px;
+    {% if block.settings.box_width == '50' %}
+      width: calc(50% - {{ block.settings.box_spacing | divided_by: 2.0 }}px);
+    {% elsif block.settings.box_width == '25' %}
+      width: calc(25% - {{ block.settings.box_spacing | times: 0.75 }}px);
+    {% else %}
+      width: 100%;
+    {% endif %}
+  }
+
+  .ai-image-content-box-header-{{ ai_gen_id }} {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 12px;
+  }
+
+  .ai-image-content-icon-{{ ai_gen_id }} {
+    flex-shrink: 0;
+    width: {{ block.settings.icon_size }}px;
+    height: {{ block.settings.icon_size }}px;
+    color: {{ block.settings.icon_color }};
+  }
+
+  .ai-image-content-icon-{{ ai_gen_id }} svg {
+    width: 100%;
+    height: 100%;
+  }
+
+  .ai-image-content-box-title-{{ ai_gen_id }} {
+    font-size: {{ block.settings.box_header_size }}px;
+    font-weight: 600;
+    color: {{ block.settings.box_header_color }};
+    margin: 0;
+  }
+
+  .ai-image-content-box-text-{{ ai_gen_id }} {
+    font-size: {{ block.settings.box_text_size }}px;
+    color: {{ block.settings.box_text_color }};
+    line-height: 1.6;
+  }
+
+  .ai-image-content-box-text-{{ ai_gen_id }} ul {
+    margin: 0;
+    padding-left: 20px;
+  }
+
+  .ai-image-content-box-text-{{ ai_gen_id }} p {
+    margin: 0 0 8px;
+  }
+
+  .ai-image-content-box-text-{{ ai_gen_id }} p:last-child {
+    margin-bottom: 0;
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-image-content-main-{{ ai_gen_id }} {
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    .ai-image-content-main-{{ ai_gen_id }}--reverse {
+      flex-direction: column;
+    }
+
+    .ai-image-content-boxes-{{ ai_gen_id }} {
+      {% if block.settings.mobile_layout == 'scroll' %}
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: thin;
+      {% endif %}
+    }
+
+    .ai-image-content-box-{{ ai_gen_id }} {
+      {% if block.settings.mobile_layout == 'scroll' %}
+        flex-shrink: 0;
+        width: 80%;
+      {% else %}
+        width: 100%;
+      {% endif %}
+    }
+
+    .ai-image-content-image-placeholder-{{ ai_gen_id }} {
+      min-height: 300px;
+    }
+  }
+
+  @media screen and (max-width: 989px) and (min-width: 750px) {
+    .ai-image-content-box-{{ ai_gen_id }} {
+      {% if block.settings.box_width == '25' %}
+        width: calc(50% - {{ block.settings.box_spacing | divided_by: 2.0 }}px);
+      {% endif %}
+    }
+  }
+{% endstyle %}
+
+<image-content-section-{{ ai_gen_id }} class="ai-image-content-section-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  {% if block.settings.subheader != blank or block.settings.heading != blank or block.settings.header_text != blank %}
+    <div class="ai-image-content-header-{{ ai_gen_id }}">
+      {% if block.settings.subheader != blank %}
+        <div class="ai-image-content-subheader-{{ ai_gen_id }}">{{ block.settings.subheader }}</div>
+      {% endif %}
+      {% if block.settings.heading != blank %}
+        <h2 class="ai-image-content-heading-{{ ai_gen_id }}">{{ block.settings.heading }}</h2>
+      {% endif %}
+      {% if block.settings.header_text != blank %}
+        <div class="ai-image-content-text-{{ ai_gen_id }}">{{ block.settings.header_text }}</div>
+      {% endif %}
+    </div>
+  {% endif %}
+
+  <div class="ai-image-content-main-{{ ai_gen_id }} {% if block.settings.image_position == 'right' %}ai-image-content-main-{{ ai_gen_id }}--reverse{% endif %}">
+    <div class="ai-image-content-image-wrapper-{{ ai_gen_id }}">
+      {% if block.settings.image %}
+        <img
+          src="{{ block.settings.image | image_url: width: 1200 }}"
+          alt="{{ block.settings.image.alt | escape }}"
+          loading="lazy"
+          width="{{ block.settings.image.width }}"
+          height="{{ block.settings.image.height }}"
+          class="ai-image-content-image-{{ ai_gen_id }}"
+        >
+      {% else %}
+        <div class="ai-image-content-image-placeholder-{{ ai_gen_id }}">
+          {{ 'image' | placeholder_svg_tag }}
+        </div>
+      {% endif %}
+    </div>
+
+    <div class="ai-image-content-boxes-wrapper-{{ ai_gen_id }}">
+      <div class="ai-image-content-boxes-{{ ai_gen_id }}">
+        {% for i in (1..4) %}
+          {% liquid
+            assign header_key = 'box_' | append: i | append: '_header'
+            assign text_key = 'box_' | append: i | append: '_text'
+            assign icon_key = 'box_' | append: i | append: '_icon'
+            
+            assign box_header = block.settings[header_key]
+            assign box_text = block.settings[text_key]
+            assign box_icon = block.settings[icon_key]
+          %}
+          
+          <div class="ai-image-content-box-{{ ai_gen_id }}">
+            <div class="ai-image-content-box-header-{{ ai_gen_id }}">
+              <div class="ai-image-content-icon-{{ ai_gen_id }}">
+                {% if box_icon == 'check' %}
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                {% elsif box_icon == 'star' %}
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                  </svg>
+                {% elsif box_icon == 'heart' %}
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                  </svg>
+                {% elsif box_icon == 'shield' %}
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                  </svg>
+                {% elsif box_icon == 'zap' %}
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                  </svg>
+                {% elsif box_icon == 'gift' %}
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 12 20 22 4 22 4 12"></polyline>
+                    <rect x="2" y="7" width="20" height="5"></rect>
+                    <line x1="12" y1="22" x2="12" y2="7"></line>
+                    <path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"></path>
+                    <path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"></path>
+                  </svg>
+                {% elsif box_icon == 'award' %}
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="8" r="7"></circle>
+                    <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                  </svg>
+                {% else %}
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="12" y1="16" x2="12" y2="12"></line>
+                    <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                  </svg>
+                {% endif %}
+              </div>
+              <h3 class="ai-image-content-box-title-{{ ai_gen_id }}">{{ box_header }}</h3>
+            </div>
+            <div class="ai-image-content-box-text-{{ ai_gen_id }}">{{ box_text }}</div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</image-content-section-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class ImageContentSection{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+      }
+
+      connectedCallback() {
+      }
+    }
+
+    customElements.define('image-content-section-{{ ai_gen_id }}', ImageContentSection{{ ai_gen_id }});
+  })();
+</script>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "Image with content boxes",
+  "tag": null,
+  "settings": [
+    {
+      "type": "header",
+      "content": "Section header"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "subheader",
+      "label": "Subheader"
+    },
+    {
+      "type": "range",
+      "id": "subheader_size",
+      "label": "Subheader size",
+      "min": 10,
+      "max": 30,
+      "step": 1,
+      "unit": "px",
+      "default": 14
+    },
+    {
+      "type": "color",
+      "id": "subheader_color",
+      "label": "Subheader color",
+      "default": "#666666"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Our features"
+    },
+    {
+      "type": "range",
+      "id": "heading_size",
+      "label": "Heading size",
+      "min": 20,
+      "max": 60,
+      "step": 2,
+      "unit": "px",
+      "default": 36
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Heading color",
+      "default": "#000000"
+    },
+    {
+      "type": "richtext",
+      "id": "header_text",
+      "label": "Text"
+    },
+    {
+      "type": "range",
+      "id": "text_size",
+      "label": "Text size",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text color",
+      "default": "#666666"
+    },
+    {
+      "type": "select",
+      "id": "header_alignment",
+      "label": "Header alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "header",
+      "content": "Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "select",
+      "id": "image_position",
+      "label": "Image position",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "range",
+      "id": "image_border_radius",
+      "label": "Image border radius",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "default": 8
+    },
+    {
+      "type": "header",
+      "content": "Content boxes"
+    },
+    {
+      "type": "select",
+      "id": "box_width",
+      "label": "Box width",
+      "options": [
+        {
+          "value": "100",
+          "label": "Full width"
+        },
+        {
+          "value": "50",
+          "label": "50%"
+        },
+        {
+          "value": "25",
+          "label": "25%"
+        }
+      ],
+      "default": "50"
+    },
+    {
+      "type": "range",
+      "id": "box_spacing",
+      "label": "Box spacing",
+      "min": 0,
+      "max": 40,
+      "step": 4,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "box_padding",
+      "label": "Box padding",
+      "min": 10,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "default": 20
+    },
+    {
+      "type": "color",
+      "id": "box_background",
+      "label": "Box background",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "box_border_width",
+      "label": "Box border width",
+      "min": 0,
+      "max": 5,
+      "step": 1,
+      "unit": "px",
+      "default": 1
+    },
+    {
+      "type": "color",
+      "id": "box_border_color",
+      "label": "Box border color",
+      "default": "#e0e0e0"
+    },
+    {
+      "type": "range",
+      "id": "box_border_radius",
+      "label": "Box border radius",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "default": 8
+    },
+    {
+      "type": "select",
+      "id": "mobile_layout",
+      "label": "Mobile layout",
+      "options": [
+        {
+          "value": "stack",
+          "label": "Stack"
+        },
+        {
+          "value": "scroll",
+          "label": "Scroll"
+        }
+      ],
+      "default": "stack"
+    },
+    {
+      "type": "header",
+      "content": "Icon style"
+    },
+    {
+      "type": "range",
+      "id": "icon_size",
+      "label": "Icon size",
+      "min": 20,
+      "max": 60,
+      "step": 4,
+      "unit": "px",
+      "default": 32
+    },
+    {
+      "type": "color",
+      "id": "icon_color",
+      "label": "Icon color",
+      "default": "#0e366a"
+    },
+    {
+      "type": "header",
+      "content": "Box text style"
+    },
+    {
+      "type": "range",
+      "id": "box_header_size",
+      "label": "Header size",
+      "min": 14,
+      "max": 30,
+      "step": 1,
+      "unit": "px",
+      "default": 18
+    },
+    {
+      "type": "color",
+      "id": "box_header_color",
+      "label": "Header color",
+      "default": "#000000"
+    },
+    {
+      "type": "range",
+      "id": "box_text_size",
+      "label": "Text size",
+      "min": 12,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "default": 14
+    },
+    {
+      "type": "color",
+      "id": "box_text_color",
+      "label": "Text color",
+      "default": "#666666"
+    },
+    {
+      "type": "header",
+      "content": "Box 1"
+    },
+    {
+      "type": "select",
+      "id": "box_1_icon",
+      "label": "Icon",
+      "options": [
+        {
+          "value": "check",
+          "label": "Check"
+        },
+        {
+          "value": "star",
+          "label": "Star"
+        },
+        {
+          "value": "heart",
+          "label": "Heart"
+        },
+        {
+          "value": "shield",
+          "label": "Shield"
+        },
+        {
+          "value": "zap",
+          "label": "Lightning"
+        },
+        {
+          "value": "gift",
+          "label": "Gift"
+        },
+        {
+          "value": "award",
+          "label": "Award"
+        },
+        {
+          "value": "info",
+          "label": "Info"
+        }
+      ],
+      "default": "check"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "box_1_header",
+      "label": "Header",
+      "default": "Feature one"
+    },
+    {
+      "type": "richtext",
+      "id": "box_1_text",
+      "label": "Text",
+      "default": "<p>Describe your feature with rich text and formatting options.</p>"
+    },
+    {
+      "type": "header",
+      "content": "Box 2"
+    },
+    {
+      "type": "select",
+      "id": "box_2_icon",
+      "label": "Icon",
+      "options": [
+        {
+          "value": "check",
+          "label": "Check"
+        },
+        {
+          "value": "star",
+          "label": "Star"
+        },
+        {
+          "value": "heart",
+          "label": "Heart"
+        },
+        {
+          "value": "shield",
+          "label": "Shield"
+        },
+        {
+          "value": "zap",
+          "label": "Lightning"
+        },
+        {
+          "value": "gift",
+          "label": "Gift"
+        },
+        {
+          "value": "award",
+          "label": "Award"
+        },
+        {
+          "value": "info",
+          "label": "Info"
+        }
+      ],
+      "default": "star"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "box_2_header",
+      "label": "Header",
+      "default": "Feature two"
+    },
+    {
+      "type": "richtext",
+      "id": "box_2_text",
+      "label": "Text",
+      "default": "<p>Describe your feature with rich text and formatting options.</p>"
+    },
+    {
+      "type": "header",
+      "content": "Box 3"
+    },
+    {
+      "type": "select",
+      "id": "box_3_icon",
+      "label": "Icon",
+      "options": [
+        {
+          "value": "check",
+          "label": "Check"
+        },
+        {
+          "value": "star",
+          "label": "Star"
+        },
+        {
+          "value": "heart",
+          "label": "Heart"
+        },
+        {
+          "value": "shield",
+          "label": "Shield"
+        },
+        {
+          "value": "zap",
+          "label": "Lightning"
+        },
+        {
+          "value": "gift",
+          "label": "Gift"
+        },
+        {
+          "value": "award",
+          "label": "Award"
+        },
+        {
+          "value": "info",
+          "label": "Info"
+        }
+      ],
+      "default": "heart"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "box_3_header",
+      "label": "Header",
+      "default": "Feature three"
+    },
+    {
+      "type": "richtext",
+      "id": "box_3_text",
+      "label": "Text",
+      "default": "<p>Describe your feature with rich text and formatting options.</p>"
+    },
+    {
+      "type": "header",
+      "content": "Box 4"
+    },
+    {
+      "type": "select",
+      "id": "box_4_icon",
+      "label": "Icon",
+      "options": [
+        {
+          "value": "check",
+          "label": "Check"
+        },
+        {
+          "value": "star",
+          "label": "Star"
+        },
+        {
+          "value": "heart",
+          "label": "Heart"
+        },
+        {
+          "value": "shield",
+          "label": "Shield"
+        },
+        {
+          "value": "zap",
+          "label": "Lightning"
+        },
+        {
+          "value": "gift",
+          "label": "Gift"
+        },
+        {
+          "value": "award",
+          "label": "Award"
+        },
+        {
+          "value": "info",
+          "label": "Info"
+        }
+      ],
+      "default": "shield"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "box_4_header",
+      "label": "Header",
+      "default": "Feature four"
+    },
+    {
+      "type": "richtext",
+      "id": "box_4_text",
+      "label": "Text",
+      "default": "<p>Describe your feature with rich text and formatting options.</p>"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Image with content boxes"
+    }
+  ]
+}
 {% endschema %}
