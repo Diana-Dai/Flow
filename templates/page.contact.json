@@ -296,7 +296,7 @@
             "title": "",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<p>PHONE</p><p><a href=\"tel:+81-3-xxxx-xxxx\">+81-3-xxxx-xxxx</a></p><p>Japan toll-free available</p>",
+            "content": "<h6>PHONE</h6><p><a href=\"tel:+81-3-xxxx-xxxx\">+81-3-xxxx-xxxx</a></p><h6>Japan toll-free available</h6>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -330,6 +330,9 @@
         "item_QiJVd9",
         "item_qUFtTT",
         "item_c38VVk"
+      ],
+      "custom_css": [
+        "h6 {font-size: 0.9rem; margin-top: 0.5rem;}"
       ],
       "name": "Multi-column",
       "settings": {
