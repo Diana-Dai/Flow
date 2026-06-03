@@ -10266,3 +10266,10 @@ display: flex;
     font-size: 0;
     margin-bottom: -4px;
 }
+
+/* faq page */
+
+#shopify-section-template--20969776709769__1780470974bb22e153 .section{
+  display: flex;
+    gap: 40px;
+}
