@@ -468,25 +468,6 @@
             >
           </div>
 
-          <div class="ai-enterprise-form__field-{{ ai_gen_id }}">
-            <label class="ai-enterprise-form__label-{{ ai_gen_id }}" for="industry-{{ ai_gen_id }}">{{ block.settings.industry_label }} *</label>
-            <select
-              id="industry-{{ ai_gen_id }}"
-              name="contact[industry]"
-              class="ai-enterprise-form__select-{{ ai_gen_id }}"
-              required
-            >
-              <option value="">{{ block.settings.industry_placeholder }}</option>
-              <option value="retail">小売業</option>
-              <option value="manufacturing">製造業</option>
-              <option value="logistics">物流業</option>
-              <option value="ecommerce">Eコマース</option>
-              <option value="wholesale">卸売業</option>
-              <option value="other">その他</option>
-            </select>
-          </div>
-        </div>
-
         <div class="ai-enterprise-form__row-{{ ai_gen_id }}">
           <div class="ai-enterprise-form__field-{{ ai_gen_id }}">
             <label class="ai-enterprise-form__label-{{ ai_gen_id }}" for="stores-{{ ai_gen_id }}">{{ block.settings.stores_label }} *</label>
@@ -766,12 +747,6 @@
       "id": "company_name_placeholder",
       "label": "Company name placeholder",
       "default": "Your Company Ltd."
-    },
-    {
-      "type": "text",
-      "id": "industry_label",
-      "label": "Industry label",
-      "default": "Industry"
     },
     {
       "type": "text",
