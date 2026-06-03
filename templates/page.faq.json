@@ -349,11 +349,79 @@
             "answer_color": "#677279"
           },
           "blocks": {}
+        },
+        "ai_gen_block_659cb24_A8Jq6p": {
+          "type": "ai_gen_block_659cb24",
+          "name": "FAQ card",
+          "settings": {
+            "desktop_width_percent": "50",
+            "card_title": "Integration & Compatibility",
+            "card_subtitle": "POS, scheduling, and system connections",
+            "icon_type": "chart",
+            "question_1": "Which POS systems integrate with Flow?",
+            "answer_1": "Flow integrates with major POS platforms via FIDA (Flow Integration & Data Aggregation). Direct integrations: Square, Shopify POS, Lightspeed Retail, Vend, ERPLY, Oracle Xstore. Generic integration: Any POS with CSV export, API, or database access. Integration methods: (1) API: Real-time transaction sync (preferred). (2) Database connector: Direct read from POS database (requires db credentials). (3) File sync: Automated CSV/JSON file import (daily or hourly). (4) Webhook: POS sends transaction events to Flow endpoint. Data required: transaction timestamp, amount, items (optional), location ID. Personally identifiable info (PII) not required. Integration setup takes 1-3 days depending on POS platform. Custom POS systems: Contact us for compatibility assessment.",
+            "question_1_open": false,
+            "question_2": "Can Flow connect to our existing staff scheduling or labor management system?",
+            "answer_2": "Yes. Flow ingests staff schedules to correlate staffing levels with traffic patterns. Supported systems: When I Work, Deputy, Homebase, HotSchedules, Kronos, ADP Workforce. Integration method: API sync (preferred) or CSV import (manual or automated). Data required: employee ID (anonymized), shift start/end time, assigned zones/departments, role. Names and contact info not required—Flow operates on role-based data. Use case: Flow compares scheduled vs. optimal staffing based on real-time traffic. Alerts when understaffed zones detected. Reports show staff-to-customer ratio by hour, zone, and day. Integration is optional—Flow provides value without staff data, but correlation unlocks deeper insights.",
+            "question_2_open": false,
+            "question_3": "Does Flow integrate with our existing security camera system?",
+            "answer_3": "Flow operates independently—dedicated cameras optimized for analytics, not repurposed security cameras. Why: Security cameras prioritize forensics (high resolution, recording), while Flow prioritizes real-time processing (wide field of view, edge AI). Security cameras face doorways and cash registers; Flow cameras face customer zones for behavior tracking. Integration option: Flow can sync timestamps with security system for incident correlation (e.g., 'show security footage from 14:35 when Zone C had traffic spike'). Flow does not access or store security camera footage. Both systems coexist on separate network VLANs. Existing cameras remain unchanged—Flow is an additive system.",
+            "question_3_open": false,
+            "question_4": "",
+            "answer_4": "",
+            "question_4_open": false,
+            "question_5": "",
+            "answer_5": "",
+            "question_5_open": false,
+            "header_background_color": "#0E2A3A",
+            "title_color": "#ffffff",
+            "subtitle_color": "rgba(255, 255, 255, 0.7)",
+            "icon_badge_background": "rgba(160, 184, 66, 0.15)",
+            "icon_color": "#a0b842",
+            "question_color": "#0E2A3A",
+            "answer_color": "#677279"
+          },
+          "blocks": {}
+        },
+        "ai_gen_block_659cb24_EBQNTg": {
+          "type": "ai_gen_block_659cb24",
+          "name": "FAQ card",
+          "settings": {
+            "desktop_width_percent": "50",
+            "card_title": "Implementation & Deployment",
+            "card_subtitle": "Timelines, requirements, and deployment approach",
+            "icon_type": "clock",
+            "question_1": "How long does implementation take from contract to go-live?",
+            "answer_1": "Typical implementation takes 4-6 weeks from contract signing to full deployment. This includes site survey, hardware installation, system configuration, and staff training. We can expedite to 2-3 weeks for urgent deployments.",
+            "question_1_open": false,
+            "question_2": "What infrastructure changes are required in our stores?",
+            "answer_2": "Minimal infrastructure changes are needed. Our system requires standard power outlets and network connectivity. Cameras are ceiling-mounted using existing infrastructure. No major construction or downtime is required.",
+            "question_2_open": false,
+            "question_3": "How do you handle partial deployments and expansion?",
+            "answer_3": "We support phased rollouts starting with pilot stores. Our modular architecture allows you to expand coverage zone by zone or store by store. Each deployment is independent, allowing flexible scaling based on your budget and priorities.",
+            "question_3_open": false,
+            "question_4": "",
+            "answer_4": "",
+            "question_4_open": false,
+            "question_5": "",
+            "answer_5": "",
+            "question_5_open": false,
+            "header_background_color": "#0E2A3A",
+            "title_color": "#ffffff",
+            "subtitle_color": "rgba(255, 255, 255, 0.7)",
+            "icon_badge_background": "rgba(160, 184, 66, 0.15)",
+            "icon_color": "#a0b842",
+            "question_color": "#0E2A3A",
+            "answer_color": "#677279"
+          },
+          "blocks": {}
         }
       },
       "block_order": [
         "ai_gen_block_659cb24_ckmcrH",
-        "ai_gen_block_659cb24_RjWCfb"
+        "ai_gen_block_659cb24_RjWCfb",
+        "ai_gen_block_659cb24_A8Jq6p",
+        "ai_gen_block_659cb24_EBQNTg"
       ],
       "settings": {
         "full_width": true,
