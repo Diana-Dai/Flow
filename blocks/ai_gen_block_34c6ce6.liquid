@@ -470,12 +470,11 @@
 
         <div class="ai-enterprise-form__row-{{ ai_gen_id }}">
           <div class="ai-enterprise-form__field-{{ ai_gen_id }}">
-            <label class="ai-enterprise-form__label-{{ ai_gen_id }}" for="stores-{{ ai_gen_id }}">{{ block.settings.stores_label }} *</label>
+            <label class="ai-enterprise-form__label-{{ ai_gen_id }}" for="stores-{{ ai_gen_id }}">{{ block.settings.stores_label }}</label>
             <select
               id="stores-{{ ai_gen_id }}"
               name="contact[number_of_stores]"
               class="ai-enterprise-form__select-{{ ai_gen_id }}"
-              required
             >
               <option value="">{{ block.settings.stores_placeholder }}</option>
               <option value="1-5">1-5店舗</option>
