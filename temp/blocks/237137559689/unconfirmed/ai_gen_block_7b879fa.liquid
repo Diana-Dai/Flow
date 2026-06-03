@@ -1,6 +1,418 @@
+{% doc %}
+  @prompt
+    Here is a precise, text-based AI prompt explicitly engineered to fulfill all your criteria: it forces 100% exact text replication from **image_f6f923_3.jpg**, inherits your theme's styles, makes all content editable, and includes a **layout setting to switch between 1 or 2 FAQ card blocks per row** so you can easily scale the grid as you add more blocks.
+    
+    ---
+    
+    ## The AI Prompt
+    
+    ```text
+    Act as an expert Shopify frontend and Liquid developer. Build a fully responsive, pixel-perfect custom FAQ Accordion section based on the layout, spacing, and design structure shown in the reference image "image_f6f923_3.jpg". 
+    
+    The section must utilize a scalable, modular Shopify schema that allows merchants to dynamically add more FAQ cards and individual questions in the future, with settings to alter the layout layout grids.
+    
+    ### 1. Global Integration, Max Width & Basic Styles
+    - **Theme Variables:** The section wrapper must automatically inherit the active Shopify theme's font variables (`var(--font-heading-family)` and `var(--font-body-family)`), standard section maximum layout width (e.g., matching `.page-width` or `.container`), and native responsive side padding.
+    - **Section Background:** Pure white background (#FFFFFF) with comfortable top and bottom padding.
+    
+    ### 2. Grid Column Layout Settings (1 vs. 2 Blocks Per Row)
+    - **Row Layout Setting:** In the section `settings` schema, include a select or range setting that allows the merchant to choose between displaying **1 block per row (full-width stack)** or **2 blocks per row (2-column grid on desktop)**.
+    - **CSS Grid Logic:** Map this setting directly to a dynamic CSS class or style utility on the wrapper (e.g., `grid-template-columns: repeat(1, 1fr);` vs `grid-template-columns: repeat(2, 1fr);`). On mobile devices, the columns must always gracefully fallback and stack into a single vertical row.
+    
+    ### 3. Card & Nested Accordion Architecture (Fully Editable Blocks)
+    The structure must allow adding an unlimited number of parent Category Cards. Inside each card, the child accordion rows must also be entirely dynamic. 
+    
+    - **Column Card Wrappers:** Each main category block must render as an independent card layout with a white background, a very faint light-gray outer border, and smooth rounded corners (border-radius: 12px).
+    - **Column Header Banner:** The top of each card features a solid deep navy blue header block (#0E2A3A) with top rounded corners. It uses a flexbox layout containing:
+      - An inline, small, rounded square badge with a dark olive-green background tint and an inline line-art SVG icon selectable via schema.
+      - A vertical text group: A bold white Category Title text field and a smaller, muted gray/white description subtitle text field.
+    - **Accordion Row Layout:** Each question row below the banner is an expandable accordion toggle. 
+      - Rows must be separated by thin, light-gray horizontal lines.
+      - Use a flexbox layout with bold, dark navy question text on the left and a clean chevron arrow icon (svg) on the right.
+      - **Interaction Logic:** When closed, the chevron points DOWN. When clicked and expanded, the chevron rotates 180 degrees to point UP, and a smooth panel expands underneath revealing the body text.
+      - **Data Input:** To keep this expandable and perfectly editable via the theme editor, use a single block type ("category_card") containing textareas or a repeated multi-line field format where questions/answers can be mapped out, or design standard nested JSON block handling to allow individual question blocks to target a specific category container.
+    
+    ### 4. Exact Content Text Map for 100% Replication
+    Ensure the default section settings or block presets perfectly transcribe all text strings from image_f6f923_3.jpg:
+    
+    #### CARD BLOCK 1: Implementation & Deployment
+    - **Header Icon:** Clock/Timer line icon
+    - **Header Title:** Implementation & Deployment
+    - **Header Subtitle:** Timelines, requirements, and deployment approach
+    - **Question 1 (Collapsed):** How long does implementation take from contract to go-live? (Chevron DOWN)
+    - **Question 2 (Collapsed):** What infrastructure changes are required in our stores? (Chevron DOWN)
+    - **Question 3 (Collapsed):** How do you handle partial deployments and expansion? (Chevron DOWN)
+    
+    #### CARD BLOCK 2: Accuracy & Data Quality
+    - **Header Icon:** Checkmark badge line icon
+    - **Header Title:** Accuracy & Data Quality
+    - **Header Subtitle:** Measurement precision and data reliability
+    - **Question 1 (Expanded/Open by default in image):** What does '98.5% accuracy' mean in operational terms? (Chevron UP)
+      - **Expanded Answer Body Text:** "98.5% is our people-counting accuracy measured against manual ground truth counts in production environments. Operationally: In a store with 1,000 daily visitors, expect ~15 count variance. Accuracy is measured per camera view, not per person—crossed paths and occlusions are handled. Accuracy holds across lighting conditions, crowd density, and demographic diversity. Dwell time accu
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-faq-accordion-{{ ai_gen_id }} {
+    display: block;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 60px 0;
+  }
+
+  .ai-faq-accordion-container-{{ ai_gen_id }} {
+    max-width: {{ settings.page_width }}px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-6);
+  }
+
+  .ai-faq-accordion-grid-{{ ai_gen_id }} {
+    display: grid;
+    gap: 24px;
+  }
+
+  .ai-faq-accordion-grid-{{ ai_gen_id }}--1-col {
+    grid-template-columns: 1fr;
+  }
+
+  .ai-faq-accordion-grid-{{ ai_gen_id }}--2-col {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-faq-accordion-grid-{{ ai_gen_id }}--2-col {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .ai-faq-card-{{ ai_gen_id }} {
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  .ai-faq-card-header-{{ ai_gen_id }} {
+    background-color: #0E2A3A;
+    padding: 24px;
+    border-radius: 12px 12px 0 0;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .ai-faq-card-icon-badge-{{ ai_gen_id }} {
+    flex-shrink: 0;
+    width: 48px;
+    height: 48px;
+    background-color: rgba(160, 184, 66, 0.15);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ai-faq-card-icon-badge-{{ ai_gen_id }} svg {
+    width: 24px;
+    height: 24px;
+    stroke: #a0b842;
+    stroke-width: 2;
+    fill: none;
+  }
+
+  .ai-faq-card-header-text-{{ ai_gen_id }} {
+    flex-grow: 1;
+  }
+
+  .ai-faq-card-title-{{ ai_gen_id }} {
+    font-family: var(--font-heading-family);
+    font-size: 20px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 4px 0;
+    line-height: 1.3;
+  }
+
+  .ai-faq-card-subtitle-{{ ai_gen_id }} {
+    font-family: var(--font-body-family);
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+    margin: 0;
+    line-height: 1.4;
+  }
+
+  .ai-faq-accordion-item-{{ ai_gen_id }} {
+    border-bottom: 1px solid #e5e7eb;
+  }
+
+  .ai-faq-accordion-item-{{ ai_gen_id }}:last-child {
+    border-bottom: none;
+  }
+
+  .ai-faq-accordion-question-{{ ai_gen_id }} {
+    width: 100%;
+    background: none;
+    border: none;
+    padding: 20px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    cursor: pointer;
+    text-align: left;
+    transition: background-color 0.2s ease;
+  }
+
+  .ai-faq-accordion-question-{{ ai_gen_id }}:hover {
+    background-color: #f9fafb;
+  }
+
+  .ai-faq-accordion-question-text-{{ ai_gen_id }} {
+    font-family: var(--font-body-family);
+    font-size: 16px;
+    font-weight: 600;
+    color: #0E2A3A;
+    line-height: 1.5;
+    flex-grow: 1;
+  }
+
+  .ai-faq-accordion-chevron-{{ ai_gen_id }} {
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+    transition: transform 0.3s ease;
+  }
+
+  .ai-faq-accordion-chevron-{{ ai_gen_id }} svg {
+    width: 100%;
+    height: 100%;
+    stroke: #0E2A3A;
+    stroke-width: 2;
+    fill: none;
+  }
+
+  .ai-faq-accordion-item-{{ ai_gen_id }}.active .ai-faq-accordion-chevron-{{ ai_gen_id }} {
+    transform: rotate(180deg);
+  }
+
+  .ai-faq-accordion-answer-{{ ai_gen_id }} {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+
+  .ai-faq-accordion-answer-content-{{ ai_gen_id }} {
+    padding: 0 24px 20px 24px;
+    font-family: var(--font-body-family);
+    font-size: 15px;
+    color: #677279;
+    line-height: 1.6;
+  }
+
+  .ai-faq-accordion-item-{{ ai_gen_id }}.active .ai-faq-accordion-answer-{{ ai_gen_id }} {
+    max-height: 1000px;
+  }
+{% endstyle %}
+
+<faq-accordion-{{ ai_gen_id }} class="ai-faq-accordion-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-faq-accordion-container-{{ ai_gen_id }}">
+    <div class="ai-faq-accordion-grid-{{ ai_gen_id }} ai-faq-accordion-grid-{{ ai_gen_id }}--{{ block.settings.columns_layout }}-col">
+      
+      <div class="ai-faq-card-{{ ai_gen_id }}">
+        <div class="ai-faq-card-header-{{ ai_gen_id }}">
+          <div class="ai-faq-card-icon-badge-{{ ai_gen_id }}">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <polyline points="12 6 12 12 16 14"></polyline>
+            </svg>
+          </div>
+          <div class="ai-faq-card-header-text-{{ ai_gen_id }}">
+            <h3 class="ai-faq-card-title-{{ ai_gen_id }}">Implementation & Deployment</h3>
+            <p class="ai-faq-card-subtitle-{{ ai_gen_id }}">Timelines, requirements, and deployment approach</p>
+          </div>
+        </div>
+        
+        <div class="ai-faq-accordion-item-{{ ai_gen_id }}" data-faq-item>
+          <button class="ai-faq-accordion-question-{{ ai_gen_id }}" aria-expanded="false">
+            <span class="ai-faq-accordion-question-text-{{ ai_gen_id }}">How long does implementation take from contract to go-live?</span>
+            <span class="ai-faq-accordion-chevron-{{ ai_gen_id }}">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </span>
+          </button>
+          <div class="ai-faq-accordion-answer-{{ ai_gen_id }}">
+            <div class="ai-faq-accordion-answer-content-{{ ai_gen_id }}">
+              Typical implementation takes 4-6 weeks from contract signing to full deployment. This includes site survey, hardware installation, system configuration, and staff training. We can expedite to 2-3 weeks for urgent deployments.
+            </div>
+          </div>
+        </div>
+
+        <div class="ai-faq-accordion-item-{{ ai_gen_id }}" data-faq-item>
+          <button class="ai-faq-accordion-question-{{ ai_gen_id }}" aria-expanded="false">
+            <span class="ai-faq-accordion-question-text-{{ ai_gen_id }}">What infrastructure changes are required in our stores?</span>
+            <span class="ai-faq-accordion-chevron-{{ ai_gen_id }}">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </span>
+          </button>
+          <div class="ai-faq-accordion-answer-{{ ai_gen_id }}">
+            <div class="ai-faq-accordion-answer-content-{{ ai_gen_id }}">
+              Minimal infrastructure changes are needed. Our system requires standard power outlets and network connectivity. Cameras are ceiling-mounted using existing infrastructure. No major construction or downtime is required.
+            </div>
+          </div>
+        </div>
+
+        <div class="ai-faq-accordion-item-{{ ai_gen_id }}" data-faq-item>
+          <button class="ai-faq-accordion-question-{{ ai_gen_id }}" aria-expanded="false">
+            <span class="ai-faq-accordion-question-text-{{ ai_gen_id }}">How do you handle partial deployments and expansion?</span>
+            <span class="ai-faq-accordion-chevron-{{ ai_gen_id }}">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </span>
+          </button>
+          <div class="ai-faq-accordion-answer-{{ ai_gen_id }}">
+            <div class="ai-faq-accordion-answer-content-{{ ai_gen_id }}">
+              We support phased rollouts starting with pilot stores. Our modular architecture allows you to expand coverage zone by zone or store by store. Each deployment is independent, allowing flexible scaling based on your budget and priorities.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="ai-faq-card-{{ ai_gen_id }}">
+        <div class="ai-faq-card-header-{{ ai_gen_id }}">
+          <div class="ai-faq-card-icon-badge-{{ ai_gen_id }}">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+              <polyline points="22 4 12 14.01 9 11.01"></polyline>
+            </svg>
+          </div>
+          <div class="ai-faq-card-header-text-{{ ai_gen_id }}">
+            <h3 class="ai-faq-card-title-{{ ai_gen_id }}">Accuracy & Data Quality</h3>
+            <p class="ai-faq-card-subtitle-{{ ai_gen_id }}">Measurement precision and data reliability</p>
+          </div>
+        </div>
+        
+        <div class="ai-faq-accordion-item-{{ ai_gen_id }} active" data-faq-item>
+          <button class="ai-faq-accordion-question-{{ ai_gen_id }}" aria-expanded="true">
+            <span class="ai-faq-accordion-question-text-{{ ai_gen_id }}">What does '98.5% accuracy' mean in operational terms?</span>
+            <span class="ai-faq-accordion-chevron-{{ ai_gen_id }}">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </span>
+          </button>
+          <div class="ai-faq-accordion-answer-{{ ai_gen_id }}">
+            <div class="ai-faq-accordion-answer-content-{{ ai_gen_id }}">
+              98.5% is our people-counting accuracy measured against manual ground truth counts in production environments. Operationally: In a store with 1,000 daily visitors, expect ~15 count variance. Accuracy is measured per camera view, not per person—crossed paths and occlusions are handled. Accuracy holds across lighting conditions, crowd density, and demographic diversity. Dwell time accuracy is ±5 seconds for sessions under 10 minutes.
+            </div>
+          </div>
+        </div>
+
+        <div class="ai-faq-accordion-item-{{ ai_gen_id }}" data-faq-item>
+          <button class="ai-faq-accordion-question-{{ ai_gen_id }}" aria-expanded="false">
+            <span class="ai-faq-accordion-question-text-{{ ai_gen_id }}">How do you ensure data quality in challenging environments?</span>
+            <span class="ai-faq-accordion-chevron-{{ ai_gen_id }}">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </span>
+          </button>
+          <div class="ai-faq-accordion-answer-{{ ai_gen_id }}">
+            <div class="ai-faq-accordion-answer-content-{{ ai_gen_id }}">
+              Our AI models are trained on diverse retail environments including varying lighting, crowd densities, and store layouts. We perform continuous calibration and validation, with automated alerts for anomalies. Edge processing ensures data quality at the source.
+            </div>
+          </div>
+        </div>
+
+        <div class="ai-faq-accordion-item-{{ ai_gen_id }}" data-faq-item>
+          <button class="ai-faq-accordion-question-{{ ai_gen_id }}" aria-expanded="false">
+            <span class="ai-faq-accordion-question-text-{{ ai_gen_id }}">Can we validate the accuracy ourselves?</span>
+            <span class="ai-faq-accordion-chevron-{{ ai_gen_id }}">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </span>
+          </button>
+          <div class="ai-faq-accordion-answer-{{ ai_gen_id }}">
+            <div class="ai-faq-accordion-answer-content-{{ ai_gen_id }}">
+              Yes. We provide validation tools and methodologies for independent accuracy testing. Our dashboard includes confidence scores for each measurement. We also offer third-party validation services during pilot phases.
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</faq-accordion-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class FaqAccordion{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+      }
+
+      connectedCallback() {
+        this.items = this.querySelectorAll('[data-faq-item]');
+        this.setupEventListeners();
+      }
+
+      setupEventListeners() {
+        this.items.forEach((item) => {
+          const button = item.querySelector('.ai-faq-accordion-question-{{ ai_gen_id }}');
+          
+          button.addEventListener('click', () => {
+            const isActive = item.classList.contains('active');
+            
+            if (isActive) {
+              item.classList.remove('active');
+              button.setAttribute('aria-expanded', 'false');
+            } else {
+              item.classList.add('active');
+              button.setAttribute('aria-expanded', 'true');
+            }
+          });
+        });
+      }
+    }
+
+    customElements.define('faq-accordion-{{ ai_gen_id }}', FaqAccordion{{ ai_gen_id }});
+  })();
+</script>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "FAQ accordion",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "select",
+      "id": "columns_layout",
+      "label": "Columns per row",
+      "options": [
+        {
+          "value": "1",
+          "label": "1 column (full width)"
+        },
+        {
+          "value": "2",
+          "label": "2 columns"
+        }
+      ],
+      "default": "2",
+      "info": "On mobile, cards always stack into 1 column"
+    }
+  ],
+  "presets": [
+    {
+      "name": "FAQ accordion"
+    }
+  ]
+}
 {% endschema %}
