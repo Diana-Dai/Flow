@@ -480,14 +480,33 @@
         <div class="ai-measured-results__card-{{ ai_gen_id }}">
           <div class="ai-measured-results__card-header-{{ ai_gen_id }}">
             <div class="ai-measured-results__card-left-{{ ai_gen_id }}">
-              <div class="ai-measured-results__icon-container-{{ ai_gen_id }}">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-                  <circle cx="9" cy="7" r="4"></circle>
-                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-                </svg>
-              </div>
+                <div class="icon_container">
+                  {%- capture icon -%}
+                    {%- if block.settings.custom_icon_2 != blank -%}
+                      {%- capture sizes -%}{{ block.settings.icon_width_2 }}px{%- endcapture -%}
+                      {%- capture widths -%}{{ block.settings.icon_width_2 }}, {{ block.settings.icon_width_2 | times: 2 | at_most: block.settings.custom_icon_2.width }}{%- endcapture -%}
+                      {%- capture style -%}--icon-max-width: {{ block.settings.icon_width }}px{%- endcapture -%}
+                      {{- block.settings.custom_icon_2 | image_url: width: block.settings.custom_icon_2.width | image_tag: sizes: sizes, widths: widths, style: style, class: 'image-icon' -}}
+                    {%- else -%}
+                      {%- render 'icon' with block.settings.icon_2, width: block.settings.icon_width_2, height: block.settings.icon_width_2 -%}
+                    {%- endif -%}
+                  {%- endcapture -%}
+
+                  {%- if icon != blank -%}
+                    <div {{ block.shopify_attributes }}>
+                      {%- if block.settings.icon_background_type_2 == 'none' -%}
+                        <div {% render 'surface', text_color: block.settings.icon_color_2 %}>
+                          {{- icon -}}
+                        </div>
+                      {%- else -%}
+                        {%- capture surface_class -%}icon-block {% if block.settings.icon_background_type_2 == 'circle' %}rounded-full{% endif %}{%- endcapture -%}
+                        <div {% render 'surface', class: surface_class, background: block.settings.icon_background_2, text_color: block.settings.icon_color_2, background_fallback: 'bg-secondary' %}>
+                          {{- icon -}}
+                        </div>
+                      {%- endif -%}
+                    </div>
+                  {%- endif -%}                
+                </div>
               <div class="ai-measured-results__card-title-group-{{ ai_gen_id }}">
                 <h3 class="ai-measured-results__card-title-{{ ai_gen_id }}">
                   {{ block.settings.card_2_title }}
@@ -921,23 +940,23 @@
               "group": "Other"
             },
                {
-          "value": "people",
-          "label": "People",
-          "group": "Other"
-        },
+            "value": "people",
+            "label": "People",
+            "group": "Other"
+            },
                        {
-          "value": "check",
-          "label": "Check",
-          "group": "Other"
-        },
-           {
-          "value": "up",
-          "label": "Up",
-          "group": "Other"
-        }
-          ],
-          "default": "none"
-        },
+            "value": "check",
+            "label": "Check",
+            "group": "Other"
+          },
+            {
+            "value": "up",
+            "label": "Up",
+            "group": "Other"
+          }
+            ],
+            "default": "none"
+          },
                 {
           "type": "range",
           "id": "icon_width_1",
