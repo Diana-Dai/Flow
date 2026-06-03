@@ -282,124 +282,78 @@
         "chart_true_false_color": ""
       }
     },
-    "1780381311e4225ef9": {
+    "1780470974bb22e153": {
       "type": "_blocks",
       "blocks": {
-        "ai_gen_block_0c78d27_YX4xYt": {
-          "type": "ai_gen_block_0c78d27",
+        "ai_gen_block_659cb24_ckmcrH": {
+          "type": "ai_gen_block_659cb24",
           "settings": {
-            "category": "Implementation & Deployment",
-            "question": "How long does implementation take from contract to go-live?",
-            "answer": "Typical timeline is 4-6 weeks for a single store, 8-12 weeks for multi-store rollouts. Week 1-2: Infrastructure assessment and camera placement planning. Week 3-4: Hardware installation and network integration. Week 5-6: Calibration, validation, and staff training. For enterprise deployments (10+ stores), we follow a phased rollout: pilot store first (6 weeks), then standardized deployment at 2-3 stores per week. Timeline assumes existing network infrastructure meets requirements (PoE-capable switches, 100Mbps per camera). If network upgrades are needed, add 2-4 weeks for infrastructure work.",
-            "default_open": false,
+            "desktop_width_percent": "100",
+            "card_title": "Implementation & Deployment",
+            "card_subtitle": "Timelines, requirements, and deployment approach",
             "icon_type": "clock",
-            "icon_background_color": "#f0f4e8",
+            "question_1": "How long does implementation take from contract to go-live?",
+            "answer_1": "Typical implementation takes 4-6 weeks from contract signing to full deployment. This includes site survey, hardware installation, system configuration, and staff training. We can expedite to 2-3 weeks for urgent deployments.",
+            "question_1_open": false,
+            "question_2": "What infrastructure changes are required in our stores?",
+            "answer_2": "Minimal infrastructure changes are needed. Our system requires standard power outlets and network connectivity. Cameras are ceiling-mounted using existing infrastructure. No major construction or downtime is required.",
+            "question_2_open": false,
+            "question_3": "How do you handle partial deployments and expansion?",
+            "answer_3": "We support phased rollouts starting with pilot stores. Our modular architecture allows you to expand coverage zone by zone or store by store. Each deployment is independent, allowing flexible scaling based on your budget and priorities.",
+            "question_3_open": false,
+            "question_4": "",
+            "answer_4": "",
+            "question_4_open": false,
+            "question_5": "",
+            "answer_5": "",
+            "question_5_open": false,
+            "header_background_color": "#0E2A3A",
+            "title_color": "#ffffff",
+            "subtitle_color": "rgba(255, 255, 255, 0.7)",
+            "icon_badge_background": "rgba(160, 184, 66, 0.15)",
             "icon_color": "#a0b842",
-            "category_color": "#a0b842",
-            "question_color": "#0f172a",
-            "answer_color": "#475569",
-            "chevron_color": "#64748b"
+            "question_color": "#0E2A3A",
+            "answer_color": "#677279"
           },
           "blocks": {}
         },
-        "ai_gen_block_0c78d27_WirR34": {
-          "type": "ai_gen_block_0c78d27",
-          "name": "FAQ accordion item",
+        "ai_gen_block_659cb24_RjWCfb": {
+          "type": "ai_gen_block_659cb24",
+          "name": "FAQ card",
           "settings": {
-            "category": "Implementation & Deployment",
-            "question": "What infrastructure changes are required in our stores?",
-            "answer": "Minimal physical infrastructure changes. Requirements: (1) Network: PoE-capable switches with 100Mbps per camera, VLAN segmentation recommended. (2) Power: Existing PoE provides camera power—no new electrical work. (3) Mounting: Ceiling-mounted cameras use standard drop-ceiling brackets or drywall anchors. No structural modifications. (4) Server: Edge processing unit (compact, fanless) mounts in existing server rack or wall-mount bracket. Dimensions: 30cm × 20cm × 5cm. (5) Internet: 10Mbps upload minimum for cloud sync. Most stores require no construction—installation is non-invasive. Site survey confirms requirements before contract.",
-            "default_open": false,
-            "icon_type": "database",
-            "icon_background_color": "#f0f4e8",
+            "desktop_width_percent": "100",
+            "card_title": "Implementation & Deployment",
+            "card_subtitle": "Timelines, requirements, and deployment approach",
+            "icon_type": "clock",
+            "question_1": "How long does implementation take from contract to go-live?",
+            "answer_1": "Typical implementation takes 4-6 weeks from contract signing to full deployment. This includes site survey, hardware installation, system configuration, and staff training. We can expedite to 2-3 weeks for urgent deployments.",
+            "question_1_open": false,
+            "question_2": "What infrastructure changes are required in our stores?",
+            "answer_2": "Minimal infrastructure changes are needed. Our system requires standard power outlets and network connectivity. Cameras are ceiling-mounted using existing infrastructure. No major construction or downtime is required.",
+            "question_2_open": false,
+            "question_3": "How do you handle partial deployments and expansion?",
+            "answer_3": "We support phased rollouts starting with pilot stores. Our modular architecture allows you to expand coverage zone by zone or store by store. Each deployment is independent, allowing flexible scaling based on your budget and priorities.",
+            "question_3_open": false,
+            "question_4": "",
+            "answer_4": "",
+            "question_4_open": false,
+            "question_5": "",
+            "answer_5": "",
+            "question_5_open": false,
+            "header_background_color": "#0E2A3A",
+            "title_color": "#ffffff",
+            "subtitle_color": "rgba(255, 255, 255, 0.7)",
+            "icon_badge_background": "rgba(160, 184, 66, 0.15)",
             "icon_color": "#a0b842",
-            "category_color": "#a0b842",
-            "question_color": "#0f172a",
-            "answer_color": "#475569",
-            "chevron_color": "#64748b"
-          },
-          "blocks": {}
-        },
-        "ai_gen_block_0c78d27_RyXDaD": {
-          "type": "ai_gen_block_0c78d27",
-          "name": "FAQ accordion item",
-          "settings": {
-            "category": "Implementation & Deployment",
-            "question": "How do you handle partial deployments and expansion?",
-            "answer": "Flow is designed for incremental deployment. Start with high-value zones (fitting rooms, checkout, featured displays) then expand. Each zone operates independently—no requirement to deploy store-wide. Zone-level licensing available. Common approach: Phase 1 (2-4 weeks) = 3-5 priority zones. Phase 2 (4-8 weeks) = expand to full floor coverage. Phase 3 (ongoing) = add stockroom, entrance, or seasonal zones as needed. Configuration and insights transfer between zones—no re-training. Multi-store rollouts follow the same pattern: pilot store proves ROI, then standardized deployment to additional locations.",
-            "default_open": false,
-            "icon_type": "shield",
-            "icon_background_color": "#f0f4e8",
-            "icon_color": "#a0b842",
-            "category_color": "#a0b842",
-            "question_color": "#0f172a",
-            "answer_color": "#475569",
-            "chevron_color": "#64748b"
-          },
-          "blocks": {}
-        },
-        "ai_gen_block_0c78d27_x8E7tc": {
-          "type": "ai_gen_block_0c78d27",
-          "name": "FAQ accordion item",
-          "settings": {
-            "category": "Accuracy & Data Quality",
-            "question": "What does '98.5% accuracy' mean in operational terms?",
-            "answer": "98.5% is our people-counting accuracy measured against manual ground truth counts in production environments. Operationally: In a store with 1,000 daily visitors, expect ~15 count variance. Accuracy is measured per camera view, not per person—crossed paths and occlusions are handled. Accuracy holds across lighting conditions, crowd density, and demographic diversity. Dwell time accuracy: ±3 seconds for sessions under 2 minutes. Zone transition accuracy: 97.2% (person moving between zones correctly tracked). Heatmap spatial accuracy: 30cm grid resolution. Conversion tracking accuracy: 99.1% when POS integration is enabled (compares Flow visit count to POS transaction count). We provide weekly accuracy reports with sample imagery for validation.",
-            "default_open": false,
-            "icon_type": "badge",
-            "icon_background_color": "#f0f4e8",
-            "icon_color": "#a0b842",
-            "category_color": "#a0b842",
-            "question_color": "#0f172a",
-            "answer_color": "#475569",
-            "chevron_color": "#64748b"
-          },
-          "blocks": {}
-        },
-        "ai_gen_block_0c78d27_cAnRTW": {
-          "type": "ai_gen_block_0c78d27",
-          "name": "FAQ accordion item",
-          "settings": {
-            "category": "Accuracy & Data Quality",
-            "question": "How do you handle edge cases: children, groups, staff, after-hours?",
-            "answer": "Children: Tracked if height >90cm (typical 3-year-old). Strollers counted as +1 if occupied. Groups: Each individual counted separately—Flow tracks group movement patterns but reports per-person metrics. Staff: Identified by (1) time-of-day patterns, (2) zone access (staff-only areas), or (3) badge integration if available. Staff metrics separated from customer metrics. After-hours: Cleaning crews and restocking automatically filtered by time-based rules (configurable threshold, e.g., <5 people after closing = staff mode). Manual override available. Delivery personnel: Brief visits (<2 min) auto-classified as non-customer. All edge cases appear in audit log—review and adjust classification rules as needed.",
-            "default_open": false,
-            "icon_type": "alert",
-            "icon_background_color": "#f0f4e8",
-            "icon_color": "#a0b842",
-            "category_color": "#a0b842",
-            "question_color": "#0f172a",
-            "answer_color": "#475569",
-            "chevron_color": "#64748b"
-          },
-          "blocks": {}
-        },
-        "ai_gen_block_0c78d27_hiR4G8": {
-          "type": "ai_gen_block_0c78d27",
-          "name": "FAQ accordion item",
-          "settings": {
-            "category": "Accuracy & Data Quality",
-            "question": "What happens during system downtime or camera obstructions?",
-            "answer": "Edge processing provides resilience: cameras store up to 24 hours of data locally if internet fails. Data syncs when connection restores—no data loss. Obstructions (e.g., maintenance ladder blocking camera): Flow detects coverage gaps and flags affected zones in real-time. Historical data marked as 'partial coverage'—reports indicate data quality per zone per hour. Scheduled maintenance: Set cameras to 'maintenance mode' to suppress alerts. Unplanned outages: System auto-detects and logs. Camera failure: Redundant coverage design means adjacent cameras provide fallback data (lower resolution). SLA: 99.9% uptime measured monthly. Downtime notifications sent via email/SMS to designated contacts.",
-            "default_open": false,
-            "icon_type": "database",
-            "icon_background_color": "#f0f4e8",
-            "icon_color": "#a0b842",
-            "category_color": "#a0b842",
-            "question_color": "#0f172a",
-            "answer_color": "#475569",
-            "chevron_color": "#64748b"
+            "question_color": "#0E2A3A",
+            "answer_color": "#677279"
           },
           "blocks": {}
         }
       },
       "block_order": [
-        "ai_gen_block_0c78d27_YX4xYt",
-        "ai_gen_block_0c78d27_WirR34",
-        "ai_gen_block_0c78d27_RyXDaD",
-        "ai_gen_block_0c78d27_x8E7tc",
-        "ai_gen_block_0c78d27_cAnRTW",
-        "ai_gen_block_0c78d27_hiR4G8"
+        "ai_gen_block_659cb24_ckmcrH",
+        "ai_gen_block_659cb24_RjWCfb"
       ],
       "settings": {
         "full_width": true,
@@ -635,7 +589,7 @@
     "rich_text_cqadYy",
     "multi_column_L3Rbir",
     "section-15",
-    "1780381311e4225ef9",
+    "1780470974bb22e153",
     "rich_text_EtLVJr",
     "rich_text_6VmVgb",
     "multi_column_UExWWX"
