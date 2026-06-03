@@ -521,13 +521,14 @@
 
         <div class="ai-enterprise-form__row-{{ ai_gen_id }}">
           <div class="ai-enterprise-form__field-{{ ai_gen_id }}">
-            <label class="ai-enterprise-form__label-{{ ai_gen_id }}" for="email-{{ ai_gen_id }}">{{ block.settings.email_label }}</label>
+            <label class="ai-enterprise-form__label-{{ ai_gen_id }}" for="email-{{ ai_gen_id }}">{{ block.settings.email_label }} *</label>
             <input
               type="email"
               id="email-{{ ai_gen_id }}"
               name="contact[email]"
               class="ai-enterprise-form__input-{{ ai_gen_id }}"
               placeholder="{{ block.settings.email_placeholder }}"
+              required
             >
           </div>
 
