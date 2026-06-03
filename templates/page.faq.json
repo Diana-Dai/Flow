@@ -288,7 +288,7 @@
         "ai_gen_block_659cb24_ckmcrH": {
           "type": "ai_gen_block_659cb24",
           "settings": {
-            "desktop_width_percent": "100",
+            "desktop_width_percent": "50",
             "card_title": "Implementation & Deployment",
             "card_subtitle": "Timelines, requirements, and deployment approach",
             "icon_type": "clock",
@@ -321,7 +321,7 @@
           "type": "ai_gen_block_659cb24",
           "name": "FAQ card",
           "settings": {
-            "desktop_width_percent": "100",
+            "desktop_width_percent": "50",
             "card_title": "Accuracy & Data Quality",
             "card_subtitle": "Measurement precision and data reliability",
             "icon_type": "check",
