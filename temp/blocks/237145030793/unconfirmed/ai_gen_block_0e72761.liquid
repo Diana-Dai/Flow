@@ -1,6 +1,1310 @@
+{% doc %}
+  @prompt
+    Act as an expert Shopify frontend developer.
+    
+    Build a fully responsive, production-ready Shopify Liquid section for a B2B retail intelligence website.
+    
+    The section should use the same visual styling, polish, spacing, rounded corners, typography, badge treatment, card styling, color system, and premium SaaS feel as the section shown in image_5c8022.jpg.
+    
+    Important: Do not recreate the exact layout from image_5c8022.jpg. Use it only as the visual style reference. The new section layout is described below.
+    
+    SECTION OBJECTIVE
+    
+    Create a flexible split-layout section that explains how Flow connects operational knowledge sources into its retail intelligence platform.
+    
+    The left side should display an image of the Flow connection screen or platform interface.
+    
+    The right side should contain four content boxes explaining the types of information that can be connected through the connection screen, such as:
+    
+    * Links and web pages
+    * PDFs and documents
+    * Internal memos and store notes
+    * Snippets, manuals, SOPs, and other operational knowledge
+    
+    This section should help visitors understand that Flow can connect retail operational knowledge, company documents, and store-level context into a structured system that supports better recommendations and decision-making.
+    
+    The section should feel calm, practical, enterprise-grade, and credible. Avoid flashy AI styling, futuristic visuals, or generic dashboard marketing.
+    
+    POSITIONING CONTEXT
+    
+    Flow helps physical retailers improve performance through retail traffic, conversion, and operational intelligence.
+    
+    Flow is not a generic AI chatbot or a document storage tool. This section should position the connection screen as a way to bring retail knowledge, operational context, and approved company information into Flow’s decision-support environment.
+    
+    The message should be:
+    Flow can connect the knowledge your teams already use, organize it into a retail-aware system, and make it available for practical operational guidance.
+    
+    DESKTOP LAYOUT
+    
+    Create a two-column desktop layout.
+    
+    Column A:
+    
+    * Image block
+    * This will usually show the Flow connection screen or platform UI
+    * The image should fill its column cleanly
+    * Add controls for image upload, image alt text, object position, border radius, and optional shadow
+    * Image should maintain a premium SaaS/platform appearance
+    * Allow image height controls for desktop and mobile
+    
+    Column B:
+    
+    * Four content boxes
+    * Each content box should include:
+    
+      * Icon area in the top-left corner
+      * Heading field
+      * Rich text field
+      * Optional bullet list support
+    * The boxes should stack naturally in a grid
+    * Add a setting to choose box layout:
+    
+      * 2x2 grid, where each box takes approximately 50% of the content column width
+      * 4-column compact row, where each box takes approximately 25% width when layout allows
+      * Single-column stack
+    * Add responsive behavior so the layout never breaks on tablet or mobile
+    
+    IMAGE SIDE CONTROL
+    
+    Add a Theme Editor setting that allows the merchant to choose:
+    
+    * Image left / content right
+    * Content left / image right
+    
+    HEADER AREA
+    
+    Above the split layout, include a section header group with:
+    
+    * Eyebrow / subheader text
+    * Main heading
+    * Description text
+    
+    Add controls for:
+    
+    * Eyebrow text
+    * Heading text
+    * Description rich text
+    * Header alignment: left or center
+    * Header max width
+    * Header spacing below
+    * Eyebrow badge background color
+    * Eyebrow text color
+    * Heading color
+    * Description color
+    
+    STYLE REFERENCE FROM image_5c8022.jpg
+    
+    Use the following visual style:
+    
+    * Background: pure white #FFFFFF or ultra-light off-white
+    * Generous top and bottom padding
+    * Clean professional sans-serif typography such as Inter, Helvetica, or Shopify system font
+    * Premium SaaS section spacing
+    * Rounded card corners, around 12px to 18px
+    * Subtle shadows and/or thin borders
+    * Dark navy/slate heading color, similar to #0A1A2F
+    * Flow-style green accent, similar to #A0B842
+    * Deep navy option, similar to #0E2A3A
+    * Muted gray body text
+    * Eyebrow badge should use a light gray or soft neutral pill with rounded corners
+    * Overall appearance should be calm, structured, and executive-grade
+    
+    CONTENT BOX CONTROLS
+    
+    Each content box should be implemented as a Shopify block.
+    
+    Each block should include these settings:
+    
+    * Icon selector or icon SVG textarea
+    * Icon background color
+    * Icon color
+    * Box heading
+    * Box heading color
+    * Box rich text content
+    * Box text color
+    * Box background color
+    * Box border color
+    * Box border width
+    * Box border radius
+    * Box padding
+    * Optional bullet list text, using newline-separated entries
+    * Bullet/check icon color
+    * Optional link label
+    * Optional link URL
+    
+    GLOBAL BOX STYLE CONTROLS
+    
+    At the section level, include settings for:
+    
+    * Default box background color
+    * Default box border color
+    * Default box heading color
+    * Default box text color
+    * Default icon color
+    * Default icon background color
+    * Box gap / spacing
+    * Box padding
+    * Box border radius
+    * Box shadow on/off
+    * Box hover lift on/off
+    * Equal height boxes on/off
+    
+    TEXT TYPOGRAPHY CONTROLS
+    
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-flow-connect-section-{{ ai_gen_id }} {
+    display: block;
+    width: 100%;
+    background-color: {{ block.settings.section_background }};
+    padding: {{ block.settings.section_padding_top }}px {{ block.settings.section_padding_horizontal }}px {{ block.settings.section_padding_bottom }}px;
+  }
+
+  .ai-flow-connect-container-{{ ai_gen_id }} {
+    max-width: {{ block.settings.container_max_width }}px;
+    margin: 0 auto;
+  }
+
+  .ai-flow-connect-header-{{ ai_gen_id }} {
+    margin-bottom: {{ block.settings.header_spacing_below }}px;
+    {% if block.settings.header_alignment == 'center' %}
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    {% endif %}
+    {% if block.settings.header_max_width > 0 %}
+      max-width: {{ block.settings.header_max_width }}px;
+    {% endif %}
+  }
+
+  .ai-flow-connect-eyebrow-{{ ai_gen_id }} {
+    display: inline-block;
+    padding: 6px 14px;
+    background-color: {{ block.settings.eyebrow_bg_color }};
+    color: {{ block.settings.eyebrow_text_color }};
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    margin-bottom: 16px;
+  }
+
+  .ai-flow-connect-heading-{{ ai_gen_id }} {
+    color: {{ block.settings.heading_color }};
+    font-size: {{ block.settings.heading_size_mobile }}px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin: 0 0 16px;
+    letter-spacing: -0.02em;
+  }
+
+  .ai-flow-connect-description-{{ ai_gen_id }} {
+    color: {{ block.settings.description_color }};
+    font-size: {{ block.settings.description_size_mobile }}px;
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  .ai-flow-connect-split-{{ ai_gen_id }} {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: {{ block.settings.split_gap }}px;
+    align-items: {{ block.settings.vertical_alignment }};
+    margin-top: {{ block.settings.header_spacing_below }}px;
+  }
+
+  .ai-flow-connect-image-column-{{ ai_gen_id }} {
+    {% if block.settings.image_side == 'left' %}
+      order: 1;
+    {% else %}
+      order: 2;
+    {% endif %}
+  }
+
+  .ai-flow-connect-content-column-{{ ai_gen_id }} {
+    {% if block.settings.image_side == 'left' %}
+      order: 2;
+    {% else %}
+      order: 1;
+    {% endif %}
+  }
+
+  .ai-flow-connect-image-wrapper-{{ ai_gen_id }} {
+    position: relative;
+    width: 100%;
+    height: {{ block.settings.image_height_mobile }}px;
+    border-radius: {{ block.settings.image_border_radius }}px;
+    overflow: hidden;
+    {% if block.settings.image_shadow %}
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+    {% endif %}
+  }
+
+  .ai-flow-connect-image-wrapper-{{ ai_gen_id }} img {
+    width: 100%;
+    height: 100%;
+    object-fit: {{ block.settings.image_object_fit }};
+    object-position: {{ block.settings.image_object_position }};
+  }
+
+  .ai-flow-connect-image-placeholder-{{ ai_gen_id }} {
+    width: 100%;
+    height: 100%;
+    background-color: #f4f6f8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ai-flow-connect-image-placeholder-{{ ai_gen_id }} svg {
+    width: 100%;
+    height: 100%;
+    max-width: 400px;
+    max-height: 400px;
+    opacity: 0.3;
+  }
+
+  .ai-flow-connect-boxes-{{ ai_gen_id }} {
+    display: grid;
+    gap: {{ block.settings.box_gap }}px;
+    {% if block.settings.box_layout == 'grid_2x2' %}
+      grid-template-columns: 1fr;
+    {% elsif block.settings.box_layout == 'row_4' %}
+      grid-template-columns: 1fr;
+    {% else %}
+      grid-template-columns: 1fr;
+    {% endif %}
+  }
+
+  .ai-flow-connect-box-{{ ai_gen_id }} {
+    background-color: {{ block.settings.default_box_bg }};
+    border: {{ block.settings.box_border_width }}px solid {{ block.settings.default_box_border }};
+    border-radius: {{ block.settings.box_border_radius }}px;
+    padding: {{ block.settings.box_padding }}px;
+    {% if block.settings.box_shadow %}
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+    {% endif %}
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    {% if block.settings.equal_height %}
+      height: 100%;
+    {% endif %}
+  }
+
+  .ai-flow-connect-box-{{ ai_gen_id }}:hover {
+    {% if block.settings.box_hover_lift %}
+      transform: translateY(-4px);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    {% endif %}
+  }
+
+  .ai-flow-connect-box-icon-{{ ai_gen_id }} {
+    width: {{ block.settings.icon_size }}px;
+    height: {{ block.settings.icon_size }}px;
+    background-color: {{ block.settings.default_icon_bg }};
+    border-radius: {{ block.settings.icon_border_radius }}px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+    flex-shrink: 0;
+  }
+
+  .ai-flow-connect-box-icon-{{ ai_gen_id }} svg {
+    width: {{ block.settings.icon_size | times: 0.5 }}px;
+    height: {{ block.settings.icon_size | times: 0.5 }}px;
+    stroke: {{ block.settings.default_icon_color }};
+    fill: none;
+    stroke-width: 2;
+  }
+
+  .ai-flow-connect-box-heading-{{ ai_gen_id }} {
+    color: {{ block.settings.default_box_heading_color }};
+    font-size: {{ block.settings.box_heading_size }}px;
+    font-weight: 600;
+    line-height: 1.3;
+    margin: 0 0 10px;
+    letter-spacing: -0.01em;
+  }
+
+  .ai-flow-connect-box-text-{{ ai_gen_id }} {
+    color: {{ block.settings.default_box_text_color }};
+    font-size: {{ block.settings.box_text_size }}px;
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  .ai-flow-connect-box-bullets-{{ ai_gen_id }} {
+    margin-top: 12px;
+    list-style: none;
+    padding: 0;
+  }
+
+  .ai-flow-connect-box-bullets-{{ ai_gen_id }} li {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    margin-bottom: 8px;
+    color: {{ block.settings.default_box_text_color }};
+    font-size: {{ block.settings.box_text_size }}px;
+    line-height: 1.5;
+  }
+
+  .ai-flow-connect-box-bullets-{{ ai_gen_id }} li:before {
+    content: "✓";
+    color: {{ block.settings.bullet_icon_color }};
+    font-weight: 600;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+
+  .ai-flow-connect-box-link-{{ ai_gen_id }} {
+    display: inline-block;
+    margin-top: 12px;
+    color: {{ block.settings.link_color }};
+    font-size: {{ block.settings.box_text_size }}px;
+    font-weight: 500;
+    text-decoration: none;
+    border-bottom: 1px solid currentColor;
+    transition: opacity 0.2s ease;
+  }
+
+  .ai-flow-connect-box-link-{{ ai_gen_id }}:hover {
+    opacity: 0.7;
+  }
+
+  @media screen and (min-width: 750px) {
+    .ai-flow-connect-heading-{{ ai_gen_id }} {
+      font-size: {{ block.settings.heading_size_desktop }}px;
+    }
+
+    .ai-flow-connect-description-{{ ai_gen_id }} {
+      font-size: {{ block.settings.description_size_desktop }}px;
+    }
+
+    .ai-flow-connect-split-{{ ai_gen_id }} {
+      grid-template-columns: {% if block.settings.image_width_percent < 100 %}{{ block.settings.image_width_percent }}% 1fr{% else %}1fr 1fr{% endif %};
+    }
+
+    .ai-flow-connect-image-wrapper-{{ ai_gen_id }} {
+      height: {{ block.settings.image_height_desktop }}px;
+    }
+
+    .ai-flow-connect-boxes-{{ ai_gen_id }} {
+      {% if block.settings.box_layout == 'grid_2x2' %}
+        grid-template-columns: repeat(2, 1fr);
+      {% elsif block.settings.box_layout == 'row_4' %}
+        grid-template-columns: repeat(4, 1fr);
+      {% else %}
+        grid-template-columns: 1fr;
+      {% endif %}
+    }
+  }
+
+  @media screen and (min-width: 990px) {
+    .ai-flow-connect-section-{{ ai_gen_id }} {
+      padding: {{ block.settings.section_padding_top_desktop }}px {{ block.settings.section_padding_horizontal }}px {{ block.settings.section_padding_bottom_desktop }}px;
+    }
+  }
+{% endstyle %}
+
+<flow-connect-section-{{ ai_gen_id }} class="ai-flow-connect-section-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-flow-connect-container-{{ ai_gen_id }}">
+    {% if block.settings.eyebrow_text != blank or block.settings.heading_text != blank or block.settings.description_text != blank %}
+      <div class="ai-flow-connect-header-{{ ai_gen_id }}">
+        {% if block.settings.eyebrow_text != blank %}
+          <div class="ai-flow-connect-eyebrow-{{ ai_gen_id }}">
+            {{ block.settings.eyebrow_text }}
+          </div>
+        {% endif %}
+
+        {% if block.settings.heading_text != blank %}
+          <h2 class="ai-flow-connect-heading-{{ ai_gen_id }}">
+            {{ block.settings.heading_text }}
+          </h2>
+        {% endif %}
+
+        {% if block.settings.description_text != blank %}
+          <div class="ai-flow-connect-description-{{ ai_gen_id }}">
+            {{ block.settings.description_text }}
+          </div>
+        {% endif %}
+      </div>
+    {% endif %}
+
+    <div class="ai-flow-connect-split-{{ ai_gen_id }}">
+      <div class="ai-flow-connect-image-column-{{ ai_gen_id }}">
+        <div class="ai-flow-connect-image-wrapper-{{ ai_gen_id }}">
+          {% if block.settings.image %}
+            <img
+              src="{{ block.settings.image | image_url: width: 1600 }}"
+              alt="{{ block.settings.image_alt | escape }}"
+              loading="lazy"
+              width="{{ block.settings.image.width }}"
+              height="{{ block.settings.image.height }}"
+            >
+          {% else %}
+            <div class="ai-flow-connect-image-placeholder-{{ ai_gen_id }}">
+              {{ 'image' | placeholder_svg_tag }}
+            </div>
+          {% endif %}
+        </div>
+      </div>
+
+      <div class="ai-flow-connect-content-column-{{ ai_gen_id }}">
+        <div class="ai-flow-connect-boxes-{{ ai_gen_id }}">
+          {% if block.settings.box_1_heading != blank %}
+            <div class="ai-flow-connect-box-{{ ai_gen_id }}">
+              {% if block.settings.box_1_icon_svg != blank %}
+                <div class="ai-flow-connect-box-icon-{{ ai_gen_id }}">
+                  <div>{{ block.settings.box_1_icon_svg }}</div>
+                </div>
+              {% endif %}
+
+              <h3 class="ai-flow-connect-box-heading-{{ ai_gen_id }}">
+                {{ block.settings.box_1_heading }}
+              </h3>
+
+              {% if block.settings.box_1_text != blank %}
+                <div class="ai-flow-connect-box-text-{{ ai_gen_id }}">
+                  {{ block.settings.box_1_text }}
+                </div>
+              {% endif %}
+
+              {% if block.settings.box_1_bullets != blank %}
+                {% assign bullets = block.settings.box_1_bullets | newline_to_br | split: '<br />' %}
+                <ul class="ai-flow-connect-box-bullets-{{ ai_gen_id }}">
+                  {% for bullet in bullets %}
+                    {% assign trimmed = bullet | strip %}
+                    {% if trimmed != blank %}
+                      <li>{{ trimmed }}</li>
+                    {% endif %}
+                  {% endfor %}
+                </ul>
+              {% endif %}
+
+              {% if block.settings.box_1_link_label != blank and block.settings.box_1_link_url != blank %}
+                <a href="{{ block.settings.box_1_link_url }}" class="ai-flow-connect-box-link-{{ ai_gen_id }}">
+                  {{ block.settings.box_1_link_label }}
+                </a>
+              {% endif %}
+            </div>
+          {% endif %}
+
+          {% if block.settings.box_2_heading != blank %}
+            <div class="ai-flow-connect-box-{{ ai_gen_id }}">
+              {% if block.settings.box_2_icon_svg != blank %}
+                <div class="ai-flow-connect-box-icon-{{ ai_gen_id }}">
+                  <div>{{ block.settings.box_2_icon_svg }}</div>
+                </div>
+              {% endif %}
+
+              <h3 class="ai-flow-connect-box-heading-{{ ai_gen_id }}">
+                {{ block.settings.box_2_heading }}
+              </h3>
+
+              {% if block.settings.box_2_text != blank %}
+                <div class="ai-flow-connect-box-text-{{ ai_gen_id }}">
+                  {{ block.settings.box_2_text }}
+                </div>
+              {% endif %}
+
+              {% if block.settings.box_2_bullets != blank %}
+                {% assign bullets = block.settings.box_2_bullets | newline_to_br | split: '<br />' %}
+                <ul class="ai-flow-connect-box-bullets-{{ ai_gen_id }}">
+                  {% for bullet in bullets %}
+                    {% assign trimmed = bullet | strip %}
+                    {% if trimmed != blank %}
+                      <li>{{ trimmed }}</li>
+                    {% endif %}
+                  {% endfor %}
+                </ul>
+              {% endif %}
+
+              {% if block.settings.box_2_link_label != blank and block.settings.box_2_link_url != blank %}
+                <a href="{{ block.settings.box_2_link_url }}" class="ai-flow-connect-box-link-{{ ai_gen_id }}">
+                  {{ block.settings.box_2_link_label }}
+                </a>
+              {% endif %}
+            </div>
+          {% endif %}
+
+          {% if block.settings.box_3_heading != blank %}
+            <div class="ai-flow-connect-box-{{ ai_gen_id }}">
+              {% if block.settings.box_3_icon_svg != blank %}
+                <div class="ai-flow-connect-box-icon-{{ ai_gen_id }}">
+                  <div>{{ block.settings.box_3_icon_svg }}</div>
+                </div>
+              {% endif %}
+
+              <h3 class="ai-flow-connect-box-heading-{{ ai_gen_id }}">
+                {{ block.settings.box_3_heading }}
+              </h3>
+
+              {% if block.settings.box_3_text != blank %}
+                <div class="ai-flow-connect-box-text-{{ ai_gen_id }}">
+                  {{ block.settings.box_3_text }}
+                </div>
+              {% endif %}
+
+              {% if block.settings.box_3_bullets != blank %}
+                {% assign bullets = block.settings.box_3_bullets | newline_to_br | split: '<br />' %}
+                <ul class="ai-flow-connect-box-bullets-{{ ai_gen_id }}">
+                  {% for bullet in bullets %}
+                    {% assign trimmed = bullet | strip %}
+                    {% if trimmed != blank %}
+                      <li>{{ trimmed }}</li>
+                    {% endif %}
+                  {% endfor %}
+                </ul>
+              {% endif %}
+
+              {% if block.settings.box_3_link_label != blank and block.settings.box_3_link_url != blank %}
+                <a href="{{ block.settings.box_3_link_url }}" class="ai-flow-connect-box-link-{{ ai_gen_id }}">
+                  {{ block.settings.box_3_link_label }}
+                </a>
+              {% endif %}
+            </div>
+          {% endif %}
+
+          {% if block.settings.box_4_heading != blank %}
+            <div class="ai-flow-connect-box-{{ ai_gen_id }}">
+              {% if block.settings.box_4_icon_svg != blank %}
+                <div class="ai-flow-connect-box-icon-{{ ai_gen_id }}">
+                  <div>{{ block.settings.box_4_icon_svg }}</div>
+                </div>
+              {% endif %}
+
+              <h3 class="ai-flow-connect-box-heading-{{ ai_gen_id }}">
+                {{ block.settings.box_4_heading }}
+              </h3>
+
+              {% if block.settings.box_4_text != blank %}
+                <div class="ai-flow-connect-box-text-{{ ai_gen_id }}">
+                  {{ block.settings.box_4_text }}
+                </div>
+              {% endif %}
+
+              {% if block.settings.box_4_bullets != blank %}
+                {% assign bullets = block.settings.box_4_bullets | newline_to_br | split: '<br />' %}
+                <ul class="ai-flow-connect-box-bullets-{{ ai_gen_id }}">
+                  {% for bullet in bullets %}
+                    {% assign trimmed = bullet | strip %}
+                    {% if trimmed != blank %}
+                      <li>{{ trimmed }}</li>
+                    {% endif %}
+                  {% endfor %}
+                </ul>
+              {% endif %}
+
+              {% if block.settings.box_4_link_label != blank and block.settings.box_4_link_url != blank %}
+                <a href="{{ block.settings.box_4_link_url }}" class="ai-flow-connect-box-link-{{ ai_gen_id }}">
+                  {{ block.settings.box_4_link_label }}
+                </a>
+              {% endif %}
+            </div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</flow-connect-section-{{ ai_gen_id }}>
+
+<script>
+(function() {
+  class FlowConnectSection{{ ai_gen_id }} extends HTMLElement {
+    constructor() {
+      super();
+    }
+
+    connectedCallback() {
+      this.init();
+    }
+
+    init() {
+      const boxes = this.querySelectorAll('.ai-flow-connect-box-{{ ai_gen_id }}');
+      
+      if (boxes.length > 0) {
+        this.equalizeHeights(boxes);
+        window.addEventListener('resize', () => this.equalizeHeights(boxes));
+      }
+    }
+
+    equalizeHeights(boxes) {
+      const container = this.querySelector('.ai-flow-connect-section-{{ ai_gen_id }}');
+      const equalHeight = {{ block.settings.equal_height | json }};
+      
+      if (!equalHeight) return;
+
+      boxes.forEach(box => box.style.height = 'auto');
+
+      if (window.innerWidth >= 750) {
+        let maxHeight = 0;
+        boxes.forEach(box => {
+          const height = box.offsetHeight;
+          if (height > maxHeight) maxHeight = height;
+        });
+
+        boxes.forEach(box => box.style.height = maxHeight + 'px');
+      }
+    }
+  }
+
+  customElements.define('flow-connect-section-{{ ai_gen_id }}', FlowConnectSection{{ ai_gen_id }});
+})();
+</script>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "Flow connection platform",
+  "tag": null,
+  "class": "flow-connect-section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Section header"
+    },
+    {
+      "type": "text",
+      "id": "eyebrow_text",
+      "label": "Eyebrow text",
+      "default": "Knowledge Integration"
+    },
+    {
+      "type": "text",
+      "id": "heading_text",
+      "label": "Heading",
+      "default": "Connect your retail knowledge"
+    },
+    {
+      "type": "richtext",
+      "id": "description_text",
+      "label": "Description",
+      "default": "<p>Flow organizes operational knowledge, company documents, and store-level context into a structured system that supports better recommendations and decision-making.</p>"
+    },
+    {
+      "type": "select",
+      "id": "header_alignment",
+      "label": "Header alignment",
+      "options": [
+        { "value": "left", "label": "Left" },
+        { "value": "center", "label": "Center" }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "range",
+      "id": "header_max_width",
+      "label": "Header max width",
+      "min": 0,
+      "max": 1000,
+      "step": 50,
+      "unit": "px",
+      "default": 700
+    },
+    {
+      "type": "range",
+      "id": "header_spacing_below",
+      "label": "Header spacing below",
+      "min": 20,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "default": 50
+    },
+    {
+      "type": "header",
+      "content": "Header colors"
+    },
+    {
+      "type": "color",
+      "id": "eyebrow_bg_color",
+      "label": "Eyebrow background",
+      "default": "#f0f4f8"
+    },
+    {
+      "type": "color",
+      "id": "eyebrow_text_color",
+      "label": "Eyebrow text",
+      "default": "#0A1A2F"
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Heading",
+      "default": "#0A1A2F"
+    },
+    {
+      "type": "color",
+      "id": "description_color",
+      "label": "Description",
+      "default": "#677279"
+    },
+    {
+      "type": "header",
+      "content": "Header typography"
+    },
+    {
+      "type": "range",
+      "id": "heading_size_mobile",
+      "label": "Heading size (mobile)",
+      "min": 20,
+      "max": 50,
+      "step": 2,
+      "unit": "px",
+      "default": 28
+    },
+    {
+      "type": "range",
+      "id": "heading_size_desktop",
+      "label": "Heading size (desktop)",
+      "min": 24,
+      "max": 72,
+      "step": 2,
+      "unit": "px",
+      "default": 42
+    },
+    {
+      "type": "range",
+      "id": "description_size_mobile",
+      "label": "Description size (mobile)",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "description_size_desktop",
+      "label": "Description size (desktop)",
+      "min": 14,
+      "max": 28,
+      "step": 1,
+      "unit": "px",
+      "default": 18
+    },
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "select",
+      "id": "image_side",
+      "label": "Image position",
+      "options": [
+        { "value": "left", "label": "Left" },
+        { "value": "right", "label": "Right" }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "range",
+      "id": "image_width_percent",
+      "label": "Image column width",
+      "min": 30,
+      "max": 60,
+      "step": 5,
+      "unit": "%",
+      "default": 45
+    },
+    {
+      "type": "range",
+      "id": "split_gap",
+      "label": "Gap between columns",
+      "min": 20,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "default": 50
+    },
+    {
+      "type": "select",
+      "id": "vertical_alignment",
+      "label": "Vertical alignment",
+      "options": [
+        { "value": "start", "label": "Top" },
+        { "value": "center", "label": "Center" },
+        { "value": "end", "label": "Bottom" }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "select",
+      "id": "box_layout",
+      "label": "Content box layout",
+      "options": [
+        { "value": "grid_2x2", "label": "2×2 grid" },
+        { "value": "row_4", "label": "4-column row" },
+        { "value": "stack", "label": "Single column stack" }
+      ],
+      "default": "grid_2x2"
+    },
+    {
+      "type": "header",
+      "content": "Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "image_alt",
+      "label": "Image alt text",
+      "default": "Flow connection platform interface"
+    },
+    {
+      "type": "range",
+      "id": "image_height_mobile",
+      "label": "Image height (mobile)",
+      "min": 200,
+      "max": 600,
+      "step": 20,
+      "unit": "px",
+      "default": 300
+    },
+    {
+      "type": "range",
+      "id": "image_height_desktop",
+      "label": "Image height (desktop)",
+      "min": 300,
+      "max": 800,
+      "step": 20,
+      "unit": "px",
+      "default": 500
+    },
+    {
+      "type": "select",
+      "id": "image_object_fit",
+      "label": "Image fit",
+      "options": [
+        { "value": "cover", "label": "Cover" },
+        { "value": "contain", "label": "Contain" },
+        { "value": "fill", "label": "Fill" }
+      ],
+      "default": "cover"
+    },
+    {
+      "type": "select",
+      "id": "image_object_position",
+      "label": "Image position",
+      "options": [
+        { "value": "center", "label": "Center" },
+        { "value": "top", "label": "Top" },
+        { "value": "bottom", "label": "Bottom" },
+        { "value": "left", "label": "Left" },
+        { "value": "right", "label": "Right" }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "range",
+      "id": "image_border_radius",
+      "label": "Border radius",
+      "min": 0,
+      "max": 32,
+      "step": 2,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "checkbox",
+      "id": "image_shadow",
+      "label": "Show shadow",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "Box style"
+    },
+    {
+      "type": "color",
+      "id": "default_box_bg",
+      "label": "Background",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "default_box_border",
+      "label": "Border",
+      "default": "#e5e7eb"
+    },
+    {
+      "type": "color",
+      "id": "default_box_heading_color",
+      "label": "Heading",
+      "default": "#0A1A2F"
+    },
+    {
+      "type": "color",
+      "id": "default_box_text_color",
+      "label": "Text",
+      "default": "#677279"
+    },
+    {
+      "type": "range",
+      "id": "box_gap",
+      "label": "Gap between boxes",
+      "min": 10,
+      "max": 50,
+      "step": 5,
+      "unit": "px",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "box_padding",
+      "label": "Box padding",
+      "min": 15,
+      "max": 50,
+      "step": 5,
+      "unit": "px",
+      "default": 25
+    },
+    {
+      "type": "range",
+      "id": "box_border_radius",
+      "label": "Border radius",
+      "min": 0,
+      "max": 32,
+      "step": 2,
+      "unit": "px",
+      "default": 12
+    },
+    {
+      "type": "range",
+      "id": "box_border_width",
+      "label": "Border width",
+      "min": 0,
+      "max": 4,
+      "step": 1,
+      "unit": "px",
+      "default": 1
+    },
+    {
+      "type": "checkbox",
+      "id": "box_shadow",
+      "label": "Show shadow",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "box_hover_lift",
+      "label": "Lift on hover",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "equal_height",
+      "label": "Equal height boxes",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "Box typography"
+    },
+    {
+      "type": "range",
+      "id": "box_heading_size",
+      "label": "Heading size",
+      "min": 14,
+      "max": 28,
+      "step": 1,
+      "unit": "px",
+      "default": 18
+    },
+    {
+      "type": "range",
+      "id": "box_text_size",
+      "label": "Text size",
+      "min": 12,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "default": 15
+    },
+    {
+      "type": "header",
+      "content": "Icon style"
+    },
+    {
+      "type": "color",
+      "id": "default_icon_bg",
+      "label": "Background",
+      "default": "#f0f9ff"
+    },
+    {
+      "type": "color",
+      "id": "default_icon_color",
+      "label": "Icon color",
+      "default": "#0E2A3A"
+    },
+    {
+      "type": "range",
+      "id": "icon_size",
+      "label": "Icon container size",
+      "min": 30,
+      "max": 80,
+      "step": 5,
+      "unit": "px",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "icon_border_radius",
+      "label": "Border radius",
+      "min": 0,
+      "max": 32,
+      "step": 2,
+      "unit": "px",
+      "default": 10
+    },
+    {
+      "type": "header",
+      "content": "Bullet list"
+    },
+    {
+      "type": "color",
+      "id": "bullet_icon_color",
+      "label": "Bullet icon",
+      "default": "#A0B842"
+    },
+    {
+      "type": "header",
+      "content": "Link style"
+    },
+    {
+      "type": "color",
+      "id": "link_color",
+      "label": "Link color",
+      "default": "#0E366A"
+    },
+    {
+      "type": "header",
+      "content": "Box 1"
+    },
+    {
+      "type": "html",
+      "id": "box_1_icon_svg",
+      "label": "Icon SVG",
+      "default": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71\"></path><path d=\"M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71\"></path></svg>"
+    },
+    {
+      "type": "text",
+      "id": "box_1_heading",
+      "label": "Heading",
+      "default": "Links and web pages"
+    },
+    {
+      "type": "richtext",
+      "id": "box_1_text",
+      "label": "Text",
+      "default": "<p>Connect approved company resources, product guides, and operational documentation.</p>"
+    },
+    {
+      "type": "textarea",
+      "id": "box_1_bullets",
+      "label": "Bullet list (one per line)"
+    },
+    {
+      "type": "text",
+      "id": "box_1_link_label",
+      "label": "Link label"
+    },
+    {
+      "type": "url",
+      "id": "box_1_link_url",
+      "label": "Link URL"
+    },
+    {
+      "type": "header",
+      "content": "Box 2"
+    },
+    {
+      "type": "html",
+      "id": "box_2_icon_svg",
+      "label": "Icon SVG",
+      "default": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z\"></path><polyline points=\"14 2 14 8 20 8\"></polyline><line x1=\"16\" y1=\"13\" x2=\"8\" y2=\"13\"></line><line x1=\"16\" y1=\"17\" x2=\"8\" y2=\"17\"></line><polyline points=\"10 9 9 9 8 9\"></polyline></svg>"
+    },
+    {
+      "type": "text",
+      "id": "box_2_heading",
+      "label": "Heading",
+      "default": "PDFs and documents"
+    },
+    {
+      "type": "richtext",
+      "id": "box_2_text",
+      "label": "Text",
+      "default": "<p>Upload training materials, SOPs, and internal knowledge bases.</p>"
+    },
+    {
+      "type": "textarea",
+      "id": "box_2_bullets",
+      "label": "Bullet list (one per line)"
+    },
+    {
+      "type": "text",
+      "id": "box_2_link_label",
+      "label": "Link label"
+    },
+    {
+      "type": "url",
+      "id": "box_2_link_url",
+      "label": "Link URL"
+    },
+    {
+      "type": "header",
+      "content": "Box 3"
+    },
+    {
+      "type": "html",
+      "id": "box_3_icon_svg",
+      "label": "Icon SVG",
+      "default": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M21.21 15.89A10 10 0 1 1 8 2.83\"></path><path d=\"M22 12A10 10 0 0 0 12 2v10z\"></path></svg>"
+    },
+    {
+      "type": "text",
+      "id": "box_3_heading",
+      "label": "Heading",
+      "default": "Internal memos"
+    },
+    {
+      "type": "richtext",
+      "id": "box_3_text",
+      "label": "Text",
+      "default": "<p>Bring store-level context and operational updates into the system.</p>"
+    },
+    {
+      "type": "textarea",
+      "id": "box_3_bullets",
+      "label": "Bullet list (one per line)"
+    },
+    {
+      "type": "text",
+      "id": "box_3_link_label",
+      "label": "Link label"
+    },
+    {
+      "type": "url",
+      "id": "box_3_link_url",
+      "label": "Link URL"
+    },
+    {
+      "type": "header",
+      "content": "Box 4"
+    },
+    {
+      "type": "html",
+      "id": "box_4_icon_svg",
+      "label": "Icon SVG",
+      "default": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"9 11 12 14 22 4\"></polyline><path d=\"M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11\"></path></svg>"
+    },
+    {
+      "type": "text",
+      "id": "box_4_heading",
+      "label": "Heading",
+      "default": "Snippets and manuals"
+    },
+    {
+      "type": "richtext",
+      "id": "box_4_text",
+      "label": "Text",
+      "default": "<p>Add quick-reference guides, checklists, and operational best practices.</p>"
+    },
+    {
+      "type": "textarea",
+      "id": "box_4_bullets",
+      "label": "Bullet list (one per line)"
+    },
+    {
+      "type": "text",
+      "id": "box_4_link_label",
+      "label": "Link label"
+    },
+    {
+      "type": "url",
+      "id": "box_4_link_url",
+      "label": "Link URL"
+    },
+    {
+      "type": "header",
+      "content": "Section spacing"
+    },
+    {
+      "type": "range",
+      "id": "section_padding_top",
+      "label": "Top padding (mobile)",
+      "min": 20,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "section_padding_bottom",
+      "label": "Bottom padding (mobile)",
+      "min": 20,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "section_padding_top_desktop",
+      "label": "Top padding (desktop)",
+      "min": 40,
+      "max": 200,
+      "step": 10,
+      "unit": "px",
+      "default": 80
+    },
+    {
+      "type": "range",
+      "id": "section_padding_bottom_desktop",
+      "label": "Bottom padding (desktop)",
+      "min": 40,
+      "max": 200,
+      "step": 10,
+      "unit": "px",
+      "default": 80
+    },
+    {
+      "type": "range",
+      "id": "section_padding_horizontal",
+      "label": "Horizontal padding",
+      "min": 15,
+      "max": 60,
+      "step": 5,
+      "unit": "px",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "container_max_width",
+      "label": "Container max width",
+      "min": 1000,
+      "max": 1600,
+      "step": 50,
+      "unit": "px",
+      "default": 1400
+    },
+    {
+      "type": "color",
+      "id": "section_background",
+      "label": "Section background",
+      "default": "#ffffff"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Flow connection platform"
+    }
+  ]
+}
 {% endschema %}
