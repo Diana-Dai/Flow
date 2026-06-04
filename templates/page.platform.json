@@ -2084,14 +2084,25 @@
     "blocks_nwzRNT": {
       "type": "_blocks",
       "blocks": {
+        "badge_hfWyUc": {
+          "type": "badge",
+          "name": "Badge",
+          "settings": {
+            "text": "FAQ",
+            "alignment": "left",
+            "text_color": "#ffffff",
+            "background": "#11243e"
+          },
+          "blocks": {}
+        },
         "heading_tUHxq4": {
           "type": "heading",
           "name": "Heading",
           "settings": {
-            "text": "Heading",
-            "size": "h1",
-            "html_tag": "p",
-            "text_color": "",
+            "text": "よくある質問",
+            "size": "h2",
+            "html_tag": "h2",
+            "text_color": "#11243e",
             "gradient": ""
           },
           "blocks": {}
@@ -2205,6 +2216,7 @@
         }
       },
       "block_order": [
+        "badge_hfWyUc",
         "heading_tUHxq4",
         "ai_gen_block_0c78d27_Gxk68e",
         "ai_gen_block_0c78d27_AV7tPk",
