@@ -537,7 +537,7 @@
             "column_size": "4",
             "title": "客単価",
             "heading_tag": "h2",
-            "subheading": "<p>ATV / UPT</p>",
+            "subheading": "<p>ATV</p>",
             "content": "",
             "link_url": "",
             "link_text": "",
@@ -651,7 +651,7 @@
         "text_alignment": "start",
         "subheading": "可視化できるKPI",
         "title": "売上の流れを、ひとつに。",
-        "content": "<p>来店、通行、入店率、購買率、客単価、滞在時間を同じ画面で確認し、店舗ごとの変化や改善余地を見つけやすくします。</p>",
+        "content": "<p>通行量、来店数、購買率、客単価、売上進捗をつなげて確認し、スタッフ配置や滞在時間と合わせて改善余地を見つけやすくします。</p>",
         "background": "",
         "background_gradient": "",
         "text_color": ""
