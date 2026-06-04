@@ -15,15 +15,15 @@
         "subheading_nJjQnz": {
           "type": "subheading",
           "settings": {
-            "text": "FREQUENTLY ASKED QUESTIONS",
+            "text": "よくあるご質問",
             "icon": "none"
           }
         },
         "heading_hjfyL9": {
           "type": "heading",
           "settings": {
-            "text": "Implementation, Integration, and Operations",
-            "heading_tag": "h1",
+            "text": "導入・連携・店舗運用について",
+            "heading_tag": "h2",
             "text_color": "",
             "gradient": ""
           }
@@ -31,7 +31,7 @@
         "richtext_wjTJeB": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Technical and operational questions from enterprise retail buyers. Focused on deployment timelines, system requirements, data accuracy, privacy compliance, and ongoing maintenance.</p>"
+            "content": "<p>Flowの導入期間、システム連携、計測精度、プライバシー、サポート、店舗での運用について、よく確認される内容をまとめました。</p>"
           }
         }
       },
@@ -48,7 +48,7 @@
         "full_width": true,
         "content_width": "medium",
         "text_position": "start",
-        "background": "#0e2a3a",
+        "background": "#11243e",
         "background_gradient": "",
         "text_color": "#ffffff"
       }
@@ -69,10 +69,10 @@
             "border_color": "rgba(0,0,0,0)",
             "show_controls": false,
             "column_size": "4",
-            "title": "4-6 weeks",
+            "title": "4〜6週間",
             "heading_tag": "h2",
             "subheading": "",
-            "content": "<p>#1a3a4a</p>",
+            "content": "<p>標準的な導入期間</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -91,10 +91,10 @@
             "border_color": "#0e366a",
             "show_controls": false,
             "column_size": "4",
-            "title": "98.5%",
+            "title": "95%以上",
             "heading_tag": "h2",
             "subheading": "",
-            "content": "<p>Counting accuracy</p>",
+            "content": "<p>入口計測の精度目安</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -113,10 +113,10 @@
             "border_color": "#0e366a",
             "show_controls": false,
             "column_size": "4",
-            "title": "99.9%",
+            "title": "API  / FTP",
             "heading_tag": "h2",
             "subheading": "",
-            "content": "<p>System uptime SLA</p>",
+            "content": "<p>柔軟なデータ連携</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -135,10 +135,10 @@
             "border_color": "#0e366a",
             "show_controls": false,
             "column_size": "4",
-            "title": "24/7",
+            "title": "導入支援あり",
             "heading_tag": "h2",
             "subheading": "",
-            "content": "<p>Enterprise support</p>",
+            "content": "<p>設定・研修・運用サポート</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -160,7 +160,7 @@
         "subheading": "",
         "title": "",
         "content": "",
-        "background": "#0e2a3a",
+        "background": "#11243e",
         "background_gradient": "",
         "text_color": "#ffffff"
       }
@@ -288,18 +288,17 @@
         "ai_gen_block_659cb24_ckmcrH": {
           "type": "ai_gen_block_659cb24",
           "settings": {
-            "desktop_width_percent": "100",
-            "card_title": "Implementation & Deployment",
-            "card_subtitle": "Timelines, requirements, and deployment approach",
-            "icon_type": "clock",
-            "question_1": "How long does implementation take from contract to go-live?",
-            "answer_1": "Typical implementation takes 4-6 weeks from contract signing to full deployment. This includes site survey, hardware installation, system configuration, and staff training. We can expedite to 2-3 weeks for urgent deployments.",
+            "card_title": "導入・展開について",
+            "card_subtitle": "導入期間、設置条件、段階展開について",
+            "icon_type": "check",
+            "question_1": "Flowの導入にはどのくらいの期間がかかりますか？",
+            "answer_1": "一般的には、要件確認から導入開始まで4〜6週間程度が目安です。店舗数、カメラ設置環境、POS連携の有無、社内確認フローによって期間は変動します。まずは対象店舗、必要な計測項目、連携データを確認したうえで、現実的な導入スケジュールをご提案します。",
             "question_1_open": false,
-            "question_2": "What infrastructure changes are required in our stores?",
-            "answer_2": "Minimal infrastructure changes are needed. Our system requires standard power outlets and network connectivity. Cameras are ceiling-mounted using existing infrastructure. No major construction or downtime is required.",
+            "question_2": "店舗側で事前に準備するものはありますか？",
+            "answer_2": "主に、店舗図面、入口や計測エリアの情報、ネットワーク環境、POSやシフトなど連携したいデータの確認が必要です。カメラ設置が必要な場合は、天井高、入口幅、照明、設置位置なども確認します。店舗運営への影響を抑えられるよう、事前確認の段階で必要事項を整理します。",
             "question_2_open": false,
-            "question_3": "How do you handle partial deployments and expansion?",
-            "answer_3": "We support phased rollouts starting with pilot stores. Our modular architecture allows you to expand coverage zone by zone or store by store. Each deployment is independent, allowing flexible scaling based on your budget and priorities.",
+            "question_3": "一部店舗から開始し、段階的に展開できますか？",
+            "answer_3": "はい、可能です。まずは一部店舗で計測精度、データ連携、店舗での活用方法を確認し、その結果をもとに展開範囲を広げることができます。複数店舗へ展開する場合も、店舗タイプや優先度に応じて段階的に導入計画を設計できます。",
             "question_3_open": false,
             "question_4": "",
             "answer_4": "",
@@ -307,7 +306,7 @@
             "question_5": "",
             "answer_5": "",
             "question_5_open": false,
-            "header_background_color": "#0e2a3a",
+            "header_background_color": "#11243e",
             "title_color": "#ffffff",
             "subtitle_color": "#ffffffb3",
             "icon_badge_background": "#a0b84226",
@@ -321,18 +320,17 @@
           "type": "ai_gen_block_659cb24",
           "name": "FAQ card",
           "settings": {
-            "desktop_width_percent": "100",
-            "card_title": "Accuracy & Data Quality",
-            "card_subtitle": "Measurement precision and data reliability",
-            "icon_type": "check",
-            "question_1": "What does '98.5% accuracy' mean in operational terms?",
-            "answer_1": "98.5% is our people-counting accuracy measured against manual ground truth counts in production environments. Operationally: In a store with 1,000 daily visitors, expect ~15 count variance. Accuracy is measured per camera view, not per person—crossed paths and occlusions are handled. Accuracy holds across lighting conditions, crowd density, and demographic diversity. Dwell time accuracy: ±3 seconds for sessions under 2 minutes. Zone transition accuracy: 97.2% (person moving between zones correctly tracked). Heatmap spatial accuracy: 30cm grid resolution. Conversion tracking accuracy: 99.1% when POS integration is enabled (compares Flow visit count to POS transaction count). We provide weekly accuracy reports with sample imagery for validation.",
+            "card_title": "計測精度・データ品質について",
+            "card_subtitle": "来店計測の精度、除外処理、データ確認について",
+            "icon_type": "chart",
+            "question_1": "来店客数はどのくらいの精度で計測できますか？",
+            "answer_1": "入口計測では、店舗環境が適切な場合、95%以上の精度を目安としています。ただし、精度は入口の幅、天井高、照明、混雑状況、スタッフの動き、カメラの設置位置によって変動します。Flowでは、店舗環境を確認したうえで適切な設置方法を設計し、安定した計測ができるよう調整します。",
             "question_1_open": false,
-            "question_2": "How do you handle edge cases: children, groups, staff, after-hours?",
-            "answer_2": "Children: Tracked if height >90cm (typical 3-year-old). Strollers counted as +1 if occupied. Groups: Each individual counted separately—Flow tracks group movement patterns but reports per-person metrics. Staff: Identified by (1) time-of-day patterns, (2) zone access (staff-only areas), or (3) badge integration if available. Staff metrics separated from customer metrics. After-hours: Cleaning crews and restocking automatically filtered by time-based rules (configurable threshold, e.g., <5 people after closing = staff mode). Manual override available. Delivery personnel: Brief visits (<2 min) auto-classified as non-customer. All edge cases appear in audit log—review and adjust classification rules as needed.",
+            "question_2": "スタッフ、再来店、グループ来店などはどのように扱われますか？",
+            "answer_2": "Flowでは、スタッフ除外や同日内の再来店除外など、店舗運用に合わせたフィルタリング設定が可能です。グループ来店についても、来店者を個別に計測することを基本としています。ただし、混雑状況や入口環境によって計測条件は変わるため、導入前に店舗ごとの環境を確認します。",
             "question_2_open": false,
-            "question_3": "What happens during system downtime or camera obstructions?",
-            "answer_3": "Edge processing provides resilience: cameras store up to 24 hours of data locally if internet fails. Data syncs when connection restores—no data loss. Obstructions (e.g., maintenance ladder blocking camera): Flow detects coverage gaps and flags affected zones in real-time. Historical data marked as 'partial coverage'—reports indicate data quality per zone per hour. Scheduled maintenance: Set cameras to 'maintenance mode' to suppress alerts. Unplanned outages: System auto-detects and logs. Camera failure: Redundant coverage design means adjacent cameras provide fallback data (lower resolution). SLA: 99.9% uptime measured monthly. Downtime notifications sent via email/SMS to designated contacts.",
+            "question_3": "AIカメラではどのようなデータを計測できますか？",
+            "answer_3": "FlowのAIカメラでは、来店客数、店前通行量、滞在時間、性別・年代などの属性、店内導線、ゾーン別の回遊や滞在などを計測できます。計測できる内容は、店舗環境、カメラの設置位置、導入する計測メニューによって異なります。導入前に、目的に合わせて必要な計測項目を確認します。",
             "question_3_open": false,
             "question_4": "",
             "answer_4": "",
@@ -340,7 +338,7 @@
             "question_5": "",
             "answer_5": "",
             "question_5_open": false,
-            "header_background_color": "#0e2a3a",
+            "header_background_color": "#11243e",
             "title_color": "#ffffff",
             "subtitle_color": "#ffffffb3",
             "icon_badge_background": "#a0b84226",
@@ -354,9 +352,8 @@
           "type": "ai_gen_block_659cb24",
           "name": "FAQ card",
           "settings": {
-            "desktop_width_percent": "100",
-            "card_title": "Integration & Compatibility",
-            "card_subtitle": "POS, scheduling, and system connections",
+            "card_title": "システム連携について",
+            "card_subtitle": "POS、シフト、天候、既存システムとの連携について",
             "icon_type": "chart",
             "question_1": "Which POS systems integrate with Flow?",
             "answer_1": "Flow integrates with major POS platforms via FIDA (Flow Integration & Data Aggregation). Direct integrations: Square, Shopify POS, Lightspeed Retail, Vend, ERPLY, Oracle Xstore. Generic integration: Any POS with CSV export, API, or database access. Integration methods: (1) API: Real-time transaction sync (preferred). (2) Database connector: Direct read from POS database (requires db credentials). (3) File sync: Automated CSV/JSON file import (daily or hourly). (4) Webhook: POS sends transaction events to Flow endpoint. Data required: transaction timestamp, amount, items (optional), location ID. Personally identifiable info (PII) not required. Integration setup takes 1-3 days depending on POS platform. Custom POS systems: Contact us for compatibility assessment.",
@@ -373,12 +370,12 @@
             "question_5": "",
             "answer_5": "",
             "question_5_open": false,
-            "header_background_color": "#0E2A3A",
+            "header_background_color": "#11243e",
             "title_color": "#ffffff",
-            "subtitle_color": "rgba(255, 255, 255, 0.7)",
-            "icon_badge_background": "rgba(160, 184, 66, 0.15)",
+            "subtitle_color": "#ffffffb3",
+            "icon_badge_background": "#a0b84226",
             "icon_color": "#a0b842",
-            "question_color": "#0E2A3A",
+            "question_color": "#0e2a3a",
             "answer_color": "#677279"
           },
           "blocks": {}
@@ -387,9 +384,8 @@
           "type": "ai_gen_block_659cb24",
           "name": "FAQ card",
           "settings": {
-            "desktop_width_percent": "50",
-            "card_title": "Privacy & Compliance",
-            "card_subtitle": "GDPR, data storage, and privacy protection",
+            "card_title": "プライバシー・セキュリティについて",
+            "card_subtitle": "映像、個人情報、データ管理について",
             "icon_type": "shield",
             "question_1": "How does Flow handle customer privacy and GDPR/CCPA compliance?",
             "answer_1": "Flow is designed privacy-first: (1) No facial recognition. Flow detects and tracks human shapes, not identities. (2) No video storage. Raw camera feeds processed in real-time then discarded—only aggregate metrics stored. (3) No PII. Flow does not collect names, contact info, or personal identifiers. (4) Data minimization. Only essential metrics stored: timestamps, zone IDs, anonymous session IDs. (5) Anonymization. Even combined with POS data, individuals not identifiable. GDPR compliance: Flow qualifies as 'non-personal data' under GDPR Article 4 (data cannot identify individuals). No DPIA required for typical deployments. CCPA compliance: Flow does not 'sell' data. Store data isolated per customer—not shared across retailers. Audit trail: Full data lineage and access logs available. Privacy policy template provided for in-store signage.",
@@ -406,12 +402,12 @@
             "question_5": "",
             "answer_5": "",
             "question_5_open": false,
-            "header_background_color": "#0E2A3A",
+            "header_background_color": "#11243e",
             "title_color": "#ffffff",
-            "subtitle_color": "rgba(255, 255, 255, 0.7)",
-            "icon_badge_background": "rgba(160, 184, 66, 0.15)",
+            "subtitle_color": "#ffffffb3",
+            "icon_badge_background": "#a0b84226",
             "icon_color": "#a0b842",
-            "question_color": "#0E2A3A",
+            "question_color": "#0e2a3a",
             "answer_color": "#677279"
           },
           "blocks": {}
@@ -420,9 +416,8 @@
           "type": "ai_gen_block_659cb24",
           "name": "FAQ card",
           "settings": {
-            "desktop_width_percent": "50",
-            "card_title": "Support & Operations",
-            "card_subtitle": "Timelines, Maintenance, SLAs, and ongoing support, and deployment approach",
+            "card_title": "サポート・運用定着について",
+            "card_subtitle": "導入後の支援、研修、店舗での活用について",
             "icon_type": "users",
             "question_1": "What ongoing maintenance does Flow require?",
             "answer_1": "Flow is designed for low-touch operation. Required maintenance: (1) Camera cleaning: Quarterly (dust/fingerprints affect accuracy). Takes 5 minutes per camera—standard microfiber cloth. (2) Software updates: Automatic, overnight. No downtime. Rollback available if issues detected. (3) Calibration checks: Semi-annual. Flow auto-detects calibration drift and prompts re-calibration (15-minute process per camera). Optional maintenance: (1) Hardware refresh: Cameras rated for 5-year lifespan. Edge units rated for 7 years. (2) Network monitoring: Flow monitors bandwidth usage and alerts if degradation detected. Store staff maintenance: None. System is fully automated. Store managers review alerts and reports, but no daily interaction required unless investigating specific incidents.",
@@ -439,12 +434,12 @@
             "question_5": "",
             "answer_5": "",
             "question_5_open": false,
-            "header_background_color": "#0E2A3A",
+            "header_background_color": "#11243e",
             "title_color": "#ffffff",
-            "subtitle_color": "rgba(255, 255, 255, 0.7)",
-            "icon_badge_background": "rgba(160, 184, 66, 0.15)",
+            "subtitle_color": "#ffffffb3",
+            "icon_badge_background": "#a0b84226",
             "icon_color": "#a0b842",
-            "question_color": "#0E2A3A",
+            "question_color": "#0e2a3a",
             "answer_color": "#677279"
           },
           "blocks": {}
