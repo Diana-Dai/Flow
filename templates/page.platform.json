@@ -445,9 +445,9 @@
         "stack_on_mobile": true,
         "gap": "medium",
         "text_alignment": "start",
-        "subheading": "",
-        "title": "How Flow Connects",
-        "content": "<p>Implementation without the anxiety. Connect your store in three clean layers.</p>",
+        "subheading": "3つのレイヤー",
+        "title": "データを、店舗運営で使える形に整理する",
+        "content": "<p>既存システムや店舗現場の情報をFlowに集約し、店長・エリアマネージャー・本部が同じ文脈で確認できる状態にします。</p>",
         "background": "#f2f2f2",
         "background_gradient": "",
         "text_color": ""
