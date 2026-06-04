@@ -2267,7 +2267,7 @@
             "size_1": "xl",
             "text_1": "Book demo →",
             "url_1": "#",
-            "background_1": "#0e366a",
+            "background_1": "#a0b842",
             "text_color_1": "#ffffff",
             "style_2": "fill",
             "size_2": "xl",
@@ -2290,7 +2290,7 @@
         "full_width": true,
         "content_width": "small",
         "text_position": "center",
-        "background": "#a0b842",
+        "background": "#0e366a",
         "background_gradient": "",
         "text_color": "#ffffff"
       }
