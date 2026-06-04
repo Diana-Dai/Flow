@@ -86,7 +86,7 @@
             "full_name_placeholder": "山田 太郎",
             "job_title_label": "部署・役職",
             "job_title_placeholder": "店舗運営部 マネージャー",
-            "email_label": "メールアドレス",
+            "email_label": "会社メールアドレス",
             "email_placeholder": "taro@example.co.jp",
             "phone_label": "電話番号",
             "phone_placeholder": "03-XXXX-XXXX",
@@ -97,7 +97,7 @@
             "privacy_policy_text": "プライバシーポリシー",
             "privacy_policy_url": "",
             "submit_button_text": "送信する →",
-            "success_message": "Thank you for your inquiry! Our team will contact you shortly."
+            "success_message": "送信が完了しました。お問い合わせありがとうございます。内容を確認のうえ、担当者よりご連絡いたします。通常、1〜2営業日以内にご返信いたします。"
           },
           "blocks": {}
         }
@@ -250,7 +250,7 @@
             "title": "",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<h5><strong>本社</strong></h5><p>株式会社Flow Solutions<br/>横浜<br/>Japan</p>",
+            "content": "<h5><strong>本社</strong></h5><p>株式会社Flow Solutions<br/><a href=\"https://maps.app.goo.gl/qL146EBhCBzoHjQN7\" target=\"_blank\" title=\"https://maps.app.goo.gl/qL146EBhCBzoHjQN7\">横浜市桜木町</a><br/></p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -272,7 +272,7 @@
             "title": "",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<h5><strong>メール</strong></h5><p><a href=\"mailto:contact@flow-solutions.com\">clientrelations@flow-solutions.com</a></p><p>お問い合わせはこちら</p>",
+            "content": "<h5><strong>メール</strong></h5><p>フォーム以外のお問い合わせ</p><p><a href=\"mailto:clientrelations@flow-solutions.com\" target=\"_blank\" title=\"mailto:clientrelations@flow-solutions.com\">メールで問い合わせる</a></p><p></p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -294,7 +294,7 @@
             "title": "",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<h5><strong>電話</strong></h5><p>03-</p><h6>日本国内からのお問い合わせに対応</h6>",
+            "content": "<h5><strong>電話</strong></h5><p><a href=\"tel:045-306-8276\" target=\"_blank\">045-306-8276</a></p><h6>日本国内からのお問い合わせに対応</h6>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -400,6 +400,7 @@
         "button_AVKAbi",
         "buttons_jaKCGH"
       ],
+      "disabled": true,
       "name": "Rich text",
       "settings": {
         "full_width": true,
