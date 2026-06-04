@@ -404,7 +404,7 @@
             "title": "",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<h4>02. 店舗文脈として整理</h4><p>売上、来店、店舗報告、メモ、マニュアルを同じ店舗文脈で整理し、状況を比較しやすくします。</p>",
+            "content": "<h4>02. 店舗の状況として整理</h4><p>売上、来店、店舗報告、メモ、マニュアルを店舗ごとの状況として整理し、比較しやすくします。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -427,7 +427,7 @@
             "title": "",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<h4>03. 日々の実行につなげる</h4><p>店長、エリアマネージャー、本部が、同じ情報をもとに次の確認・報告・打ち手を進められます。</p>",
+            "content": "<h4>03. 日々の実行につなげる</h4><p>店長、エリアマネージャー、本部が同じ情報をもとに、次の確認・報告・打ち手を進められます。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -445,9 +445,9 @@
         "stack_on_mobile": true,
         "gap": "medium",
         "text_alignment": "start",
-        "subheading": "3つのレイヤー",
+        "subheading": "データ活用の流れ",
         "title": "データを、店舗運営で使える形に整理する",
-        "content": "<p>既存システムや店舗現場の情報をFlowに集約し、店長・エリアマネージャー・本部が同じ文脈で確認できる状態にします。</p>",
+        "content": "<p>既存システムや店舗現場の情報をFlowに集約し、店長・エリアマネージャー・本部が同じ情報をもとに状況を確認できる状態にします。</p>",
         "background": "#f2f2f2",
         "background_gradient": "",
         "text_color": ""
