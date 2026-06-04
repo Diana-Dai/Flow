@@ -2229,15 +2229,15 @@
         "subheading_AK7Cjn": {
           "type": "subheading",
           "settings": {
-            "text": "PLATFORM READY",
+            "text": "次のステップ",
             "icon": "none"
           }
         },
         "heading_YXhiR8": {
           "type": "heading",
           "settings": {
-            "text": "READY TO UNIFY YOUR STORE DATA?",
-            "heading_tag": "h1",
+            "text": "店舗データを、判断と実行につなげませんか？",
+            "heading_tag": "h2",
             "text_color": "",
             "gradient": ""
           }
@@ -2245,7 +2245,7 @@
         "richtext_qzAkak": {
           "type": "richtext",
           "settings": {
-            "content": "<p>See how Flow connects your traffic, sales, and labor into a single decision engine.</p>"
+            "content": "<p>Flow Platformが、貴社の来店・売上・店舗報告・社内ナレッジをどのように統合できるかをご相談ください。</p>"
           }
         },
         "button_AVKAbi": {
@@ -2265,13 +2265,13 @@
           "settings": {
             "style_1": "fill",
             "size_1": "xl",
-            "text_1": "Book demo →",
+            "text_1": "デモを予約する →",
             "url_1": "#",
             "background_1": "#a0b842",
             "text_color_1": "#ffffff",
             "style_2": "fill",
             "size_2": "xl",
-            "text_2": "Learn  about camera →",
+            "text_2": "連携できるデータを見る →",
             "url_2": "#",
             "background_2": "#ffffff",
             "text_color_2": "#11243e"
