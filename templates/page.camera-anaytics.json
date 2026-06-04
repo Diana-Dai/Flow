@@ -328,8 +328,8 @@
             "icon_background_type": "square",
             "icon_background": "",
             "icon_color": "",
-            "background_color": "",
-            "text_color": "",
+            "background_color": "#11243e",
+            "text_color": "#ffffff",
             "border_color": "",
             "show_controls": false,
             "column_size": "2",
@@ -358,6 +358,60 @@
         "subheading": "分析できること",
         "title": "売場で起きている変化を、具体的に把握する。",
         "content": "<p>店内行動分析では、来店後のお客様の動き、滞在、売場ごとの反応を確認できます。売上結果だけでは分からない、購買前の行動や機会損失を見える化します。</p>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "rich_text_MakEBA": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_EBVwNW": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "text": "Subheading",
+            "icon": "none"
+          }
+        },
+        "heading_cyeQRE": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "text": "Heading",
+            "heading_tag": "h1",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "image_zkxgK8": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/ChatGPT_Image_Jun_4_2026_08_09_19_PM.png",
+            "width_mode": "full_width",
+            "max_width": 690,
+            "mobile_max_width": 400
+          }
+        },
+        "richtext_i6tmBe": {
+          "type": "richtext",
+          "disabled": true,
+          "settings": {
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_EBVwNW",
+        "heading_cyeQRE",
+        "image_zkxgK8",
+        "richtext_i6tmBe"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
         "background": "",
         "background_gradient": "",
         "text_color": ""
@@ -963,6 +1017,7 @@
     "multi_column_HCGJea",
     "blocks_TgELTa",
     "multi_column_ge9wwi",
+    "rich_text_MakEBA",
     "multi_column_HCGJea11",
     "media_with_text_hMPTmL",
     "multi_column_RkceNG",
