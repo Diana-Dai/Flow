@@ -21,11 +21,12 @@
         "liquid_LFRJQk": {
           "type": "liquid",
           "settings": {
-            "liquid": "<p>Use this text to output some custom Liquid code to include widget or dynamic code.</p>"
+            "liquid": "<h1 class=\"h1\">店内で何が起きているかを、<br>売場改善と店舗運営に活かす。\n</h1>"
           }
         },
         "heading_frXnfn": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "text": "店内で何が起きているかを、売場改善と店舗運営に活かす。",
             "heading_tag": "h1"
