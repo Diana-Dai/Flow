@@ -15,14 +15,14 @@
         "subheading_nJjQnz": {
           "type": "subheading",
           "settings": {
-            "text": "CONTACT FLOW",
+            "text": "お問い合わせ",
             "icon": "none"
           }
         },
         "heading_hjfyL9": {
           "type": "heading",
           "settings": {
-            "text": "Let's Discuss Your Retail Analytics Requirements",
+            "text": "店舗分析・来店計測について相談する",
             "heading_tag": "h1",
             "text_color": "",
             "gradient": ""
@@ -31,7 +31,7 @@
         "richtext_wjTJeB": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Schedule a technical consultation or demo. Our team will assess your deployment requirements, discuss integration scenarios, and outline implementation timelines.</p>"
+            "content": "<p>導入店舗数、計測したいKPI、既存システムとの連携、導入スケジュールなどを確認し、貴社に合った導入方法をご案内します。</p>"
           }
         }
       },
@@ -48,7 +48,7 @@
         "full_width": true,
         "content_width": "large",
         "text_position": "center",
-        "background": "#0e2a3a",
+        "background": "#11243e",
         "background_gradient": "",
         "text_color": "#ffffff"
       }
@@ -59,46 +59,44 @@
         "ai_gen_block_34c6ce6_6CTeAj": {
           "type": "ai_gen_block_34c6ce6",
           "settings": {
-            "form_title": "Enterprise Inquiry Form",
-            "form_subtitle": "Complete the form below and our team will contact you to schedule a consultation.",
-            "inquiry_type_label": "Inquiry Type",
+            "form_title": "お問い合わせ内容",
+            "form_subtitle": "以下の内容をご入力ください。担当者よりご連絡いたします。",
+            "inquiry_type_label": "お問い合わせ種別",
             "show_inquiry_1": true,
-            "inquiry_1_title": "Schedule Demo",
+            "inquiry_1_title": "無料デモを希望",
             "inquiry_1_desc": "See Flow in action",
             "inquiry_1_value": "schedule_demo",
             "show_inquiry_2": true,
-            "inquiry_2_title": "Technical Consultation",
+            "inquiry_2_title": "導入について相談",
             "inquiry_2_desc": "Discuss requirements",
             "inquiry_2_value": "technical_consultation",
             "show_inquiry_3": true,
-            "inquiry_3_title": "General Inquiry",
+            "inquiry_3_title": "その他のお問い合わせ",
             "inquiry_3_desc": "Other questions",
             "inquiry_3_value": "general_inquiry",
-            "company_info_title": "Company Information",
-            "company_name_label": "Company Name",
-            "company_name_placeholder": "Your Company Ltd.",
-            "industry_label": "Industry",
+            "company_info_title": "会社情報",
+            "company_name_label": "会社名",
+            "company_name_placeholder": "株式会社〇〇",
             "industry_placeholder": "Select industry",
-            "stores_label": "Number of Stores",
-            "stores_placeholder": "Select range",
-            "timeline_label": "Implementation Timeline",
+            "stores_label": "店舗数",
+            "stores_placeholder": "選択してください",
             "timeline_placeholder": "Select timeline",
-            "contact_person_title": "Contact Person",
-            "full_name_label": "Full Name",
-            "full_name_placeholder": "Taro Tanaka",
-            "job_title_label": "Job Title",
-            "job_title_placeholder": "Operations Manager",
-            "email_label": "Business Email",
-            "email_placeholder": "tanaka@company.co.jp",
-            "phone_label": "Phone Number",
-            "phone_placeholder": "+81-90-xxxx-xxxx",
-            "additional_info_label": "Additional Information",
-            "additional_info_placeholder": "Please describe your specific requirements, technical constraints, or questions about Flow deployment...",
-            "additional_info_note": "Optional: Include details about current systems, integration requirements, or specific use cases",
-            "consent_text": "By submitting this form, you consent to Flow Solutions contacting you regarding your inquiry. We will not share your information with third parties. View our",
-            "privacy_policy_text": "Privacy Policy",
+            "contact_person_title": "ご担当者情報",
+            "full_name_label": "お名前",
+            "full_name_placeholder": "山田 太郎",
+            "job_title_label": "部署・役職",
+            "job_title_placeholder": "店舗運営部 マネージャー",
+            "email_label": "メールアドレス",
+            "email_placeholder": "taro@example.co.jp",
+            "phone_label": "電話番号",
+            "phone_placeholder": "03-XXXX-XXXX",
+            "additional_info_label": "ご相談内容",
+            "additional_info_placeholder": "導入を検討している店舗数、計測したい内容、既存システムとの連携、導入時期などをご記入ください。",
+            "additional_info_note": "POS連携、スタッフシフト、既存カメラ、VMD・売場分析、来店計測などについてもご記入いただけます",
+            "consent_text": "送信いただいた情報は、お問い合わせへの対応のみに使用します。個人情報の取り扱いについては、プライバシーポリシーをご確認ください",
+            "privacy_policy_text": "プライバシーポリシー",
             "privacy_policy_url": "",
-            "submit_button_text": "Submit Inquiry →",
+            "submit_button_text": "送信する →",
             "success_message": "Thank you for your inquiry! Our team will contact you shortly."
           },
           "blocks": {}
@@ -252,7 +250,7 @@
             "title": "",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<h6>HEADQUARTERS</h6><p>Flow Solutions Inc.<br/>Shibuya, Tokyo<br/>Japan</p>",
+            "content": "<h5><strong>本社</strong></h5><p>株式会社Flow Solutions<br/>横浜<br/>Japan</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -261,7 +259,7 @@
         "item_QiJVd9": {
           "type": "item",
           "settings": {
-            "icon": "picto-mailbox",
+            "icon": "picto-envelope",
             "icon_width": 32,
             "icon_background_type": "square",
             "icon_background": "#a0b842",
@@ -274,7 +272,7 @@
             "title": "",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<h6>EMAIL</h6><p><a href=\"mailto:contact@flow-solutions.com\">contact@flow-solutions.com</a></p><h6>Enterprise inquiries</h6>",
+            "content": "<h5><strong>メール</strong></h5><p><a href=\"mailto:contact@flow-solutions.com\">clientrelations@flow-solutions.com</a></p><p>お問い合わせはこちら</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -296,7 +294,7 @@
             "title": "",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<h6>PHONE</h6><p><a href=\"tel:+81-3-xxxx-xxxx\">+81-3-xxxx-xxxx</a></p><h6>Japan toll-free available</h6>",
+            "content": "<h5><strong>電話</strong></h5><p>03-</p><h6>日本国内からのお問い合わせに対応</h6>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -318,7 +316,7 @@
             "title": "",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<h6>BUSINESS HOURS</h6><p>Monday - Friday<br/>9:00 AM - 6:00 PM JST</p><h6>24/7 support available for Enterprise customers</h6>",
+            "content": "<h5><strong>営業時間</strong></h5><p>月曜日〜金曜日<br/>10:00〜19:00</p><h6>法人のお客様は、内容に応じて個別に対応いたします。</h6>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -354,7 +352,7 @@
         "heading_YXhiR8": {
           "type": "heading",
           "settings": {
-            "text": "Prefer to talk immediately?",
+            "text": "お急ぎの場合はこちら",
             "heading_tag": "h1",
             "text_color": "",
             "gradient": ""
@@ -363,7 +361,7 @@
         "richtext_qzAkak": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Our team is available during business hours for immediate consultation.</p>"
+            "content": "<p>営業時間内であれば、お電話またはメールでのお問い合わせにも対応しています。</p>"
           }
         },
         "button_AVKAbi": {
