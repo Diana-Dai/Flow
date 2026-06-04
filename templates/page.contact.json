@@ -15,7 +15,7 @@
         "subheading_nJjQnz": {
           "type": "subheading",
           "settings": {
-            "text": "お問い合わせ",
+            "text": "ご相談・お問い合わせ",
             "icon": "none"
           }
         },
@@ -31,7 +31,7 @@
         "richtext_wjTJeB": {
           "type": "richtext",
           "settings": {
-            "content": "<p>導入店舗数、計測したいKPI、既存システムとの連携、導入スケジュールなどを確認し、貴社に合った導入方法をご案内します。</p>"
+            "content": "<p>導入店舗数、計測したいKPI、既存システムとの連携、導入時期を確認し、貴社に合った導入方法をご案内します。</p>"
           }
         }
       },
@@ -60,19 +60,19 @@
           "type": "ai_gen_block_34c6ce6",
           "settings": {
             "form_title": "お問い合わせ内容",
-            "form_subtitle": "以下の内容をご入力ください。担当者よりご連絡いたします。",
+            "form_subtitle": "以下の内容をご入力ください。内容を確認のうえ、担当者よりご連絡いたします。",
             "inquiry_type_label": "お問い合わせ種別",
             "show_inquiry_1": true,
             "inquiry_1_title": "無料デモを希望",
-            "inquiry_1_desc": "See Flow in action",
+            "inquiry_1_desc": "Flowの画面や活用方法を確認したい方",
             "inquiry_1_value": "schedule_demo",
             "show_inquiry_2": true,
             "inquiry_2_title": "導入について相談",
-            "inquiry_2_desc": "Discuss requirements",
+            "inquiry_2_desc": "店舗数・計測内容・連携方法を相談したい方",
             "inquiry_2_value": "technical_consultation",
             "show_inquiry_3": true,
             "inquiry_3_title": "その他のお問い合わせ",
-            "inquiry_3_desc": "Other questions",
+            "inquiry_3_desc": "資料請求・確認事項・その他のご相談",
             "inquiry_3_value": "general_inquiry",
             "company_info_title": "会社情報",
             "company_name_label": "会社名",
@@ -87,12 +87,12 @@
             "job_title_label": "部署・役職",
             "job_title_placeholder": "店舗運営部 マネージャー",
             "email_label": "会社メールアドレス",
-            "email_placeholder": "taro@example.co.jp",
+            "email_placeholder": "会社で使用しているメールアドレスをご入力ください。",
             "phone_label": "電話番号",
             "phone_placeholder": "03-XXXX-XXXX",
             "additional_info_label": "ご相談内容",
-            "additional_info_placeholder": "導入を検討している店舗数、計測したい内容、既存システムとの連携、導入時期などをご記入ください。",
-            "additional_info_note": "POS連携、スタッフシフト、既存カメラ、VMD・売場分析、来店計測などについてもご記入いただけます",
+            "additional_info_placeholder": "検討中の店舗数、計測したい内容、連携したいシステム、導入希望時期などをご記入ください。",
+            "additional_info_note": "POS連携、スタッフシフト、既存カメラ、VMD・売場分析、来店計測などについてもご記入いただけます。",
             "consent_text": "送信いただいた情報は、お問い合わせへの対応のみに使用します。個人情報の取り扱いについては、プライバシーポリシーをご確認ください",
             "privacy_policy_text": "プライバシーポリシー",
             "privacy_policy_url": "",
@@ -294,7 +294,7 @@
             "title": "",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<h5><strong>電話</strong></h5><p><a href=\"tel:045-306-8276\" target=\"_blank\">045-306-8276</a></p><h6>日本国内からのお問い合わせに対応</h6>",
+            "content": "<h5><strong>電話</strong></h5><p><a href=\"tel:045-306-8276\" target=\"_blank\">045-306-8276</a></p><p></p><h6>日本国内のお問い合わせに対応</h6>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
