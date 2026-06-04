@@ -922,6 +922,7 @@
     },
     "image_with_text_overlay_qFgaQ3": {
       "type": "image-with-text-overlay",
+      "disabled": true,
       "custom_css": [
         "* {padding-top: 0;}"
       ],
