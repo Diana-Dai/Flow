@@ -82,8 +82,8 @@
         "ai_gen_block_3c85fdc_mHbENN": {
           "type": "ai_gen_block_3c85fdc",
           "settings": {
-            "heading": "Trusted by leading brands",
-            "content": "<p>Join thousands of companies who trust our products and services</p>",
+            "heading": "100以上のブランドで活用されています",
+            "content": "<p>ファッション、ライフスタイル、専門店など、店舗運営の改善に取り組む小売企業がFlowを活用しています。</p>",
             "text_alignment": "center",
             "heading_size": 32,
             "content_size": 16,
@@ -106,7 +106,7 @@
             "logo_background": "#ffffff",
             "logo_border_radius": 8,
             "scroll_speed": 30,
-            "footer_content": "<p>Ready to join them? Get started today.</p>",
+            "footer_content": "",
             "footer_content_size": 16,
             "footer_content_color": "#677279",
             "desktop_width_percent": 100,
@@ -123,7 +123,7 @@
       "settings": {
         "full_width": true,
         "remove_vertical_spacing": true,
-        "remove_horizontal_spacing": false,
+        "remove_horizontal_spacing": true,
         "background": "",
         "background_gradient": "",
         "text_color": ""
@@ -135,7 +135,7 @@
         "richtext_FCxqzE": {
           "type": "richtext",
           "settings": {
-            "content": "<h2>店舗データと社内知識が、判断の土台になる。</h2><h5>Flowは、来店・売上・店舗報告・マニュアルをひとつの文脈で整理し、現場の判断と実行につなげます。</h5>"
+            "content": "<h2>店舗データと社内知識を、現場で使える判断材料に。</h2><h5>Flowは、来店・売上・店舗報告・マニュアルをひとつの文脈で整理し、<br/>店長・エリアマネージャー・本部が同じ情報をもとに動ける環境をつくります。</h5>"
           }
         }
       },
