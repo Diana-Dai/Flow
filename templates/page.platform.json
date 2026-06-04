@@ -15,20 +15,20 @@
         "subheading_GmUMNm": {
           "type": "subheading",
           "settings": {
-            "text": "PLATFORM"
+            "text": "FLOW PLATFORM"
           }
         },
         "heading_frXnfn": {
           "type": "heading",
           "settings": {
-            "text": "Unify your signals. Execute with  clarity.",
-            "heading_tag": "h0"
+            "text": "店舗データを、現場の判断と実行へ。",
+            "heading_tag": "h1"
           }
         },
         "richtext_HwhtPj": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Stop managing fragmented data. Flow connects your traffic, sales, and labor into a single source of truth for store performance.</p>"
+            "content": "<p>Flowは、来店・売上・スタッフ・天候・店舗メモ・社内マニュアルをひとつの文脈で統合し、店舗運営の判断を支えるリテールプラットフォームです。</p>"
           }
         },
         "button_7Prq3W": {
@@ -36,7 +36,7 @@
           "settings": {
             "style": "fill",
             "size": "lg",
-            "text": "Request demo",
+            "text": "デモを予約する →",
             "url": "#",
             "background": "#a0b842",
             "text_color": ""
@@ -47,7 +47,7 @@
           "settings": {
             "style": "fill",
             "size": "lg",
-            "text": "View integrations →",
+            "text": "連携できるデータを見る →",
             "url": "#",
             "background": "#ffffff",
             "text_color": "#11243e"
@@ -134,7 +134,7 @@
         "richtext_FCxqzE": {
           "type": "richtext",
           "settings": {
-            "content": "<h2>Your store data and manuals provide the foundation. <br/>Flow let's you see your stores and turns eveything into action.</h2>"
+            "content": "<h2>店舗データと社内知識が、判断の土台になる。</h2><h5>Flowは、来店・売上・店舗報告・マニュアルをひとつの文脈で整理し、現場の判断と実行につなげます。</h5>"
           }
         }
       },
