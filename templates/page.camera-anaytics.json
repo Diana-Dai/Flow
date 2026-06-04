@@ -15,20 +15,26 @@
         "subheading_GmUMNm": {
           "type": "subheading",
           "settings": {
-            "text": "BEHAVIORAL GEOMETRY"
+            "text": "店内行動分析"
+          }
+        },
+        "liquid_LFRJQk": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<p>Use this text to output some custom Liquid code to include widget or dynamic code.</p>"
           }
         },
         "heading_frXnfn": {
           "type": "heading",
           "settings": {
-            "text": "QUANTIFY THE INVISIBLE.",
-            "heading_tag": "h0"
+            "text": "店内で何が起きているかを、売場改善と店舗運営に活かす。",
+            "heading_tag": "h1"
           }
         },
         "richtext_HwhtPj": {
           "type": "richtext",
           "settings": {
-            "content": "<p> Move beyond entry counts. Flow tracks anonymous post-entry pathing, dwell time velocity, and fixture engagement to unlock the true revenue potential of your retail square footage.</p>"
+            "content": "<p>Flowは、AIカメラで取得した来店数、滞在時間、ゾーン別の反応、導線、什器・売場への関心を分析し、店舗運営、MD、VMD、マーケティング、本部判断に活用できるデータへ変換します。</p>"
           }
         },
         "button_7Prq3W": {
@@ -36,7 +42,7 @@
           "settings": {
             "style": "fill",
             "size": "lg",
-            "text": "Request a VMD Audit →",
+            "text": "店内行動分析について相談する →",
             "url": "#",
             "background": "#a0b842",
             "text_color": ""
@@ -47,7 +53,7 @@
           "settings": {
             "style": "fill",
             "size": "lg",
-            "text": "See Case Studies →",
+            "text": "導入事例を見る →",
             "url": "#",
             "background": "#ffffff",
             "text_color": "#11243e"
@@ -56,6 +62,7 @@
       },
       "block_order": [
         "subheading_GmUMNm",
+        "liquid_LFRJQk",
         "heading_frXnfn",
         "richtext_HwhtPj",
         "button_7Prq3W",
