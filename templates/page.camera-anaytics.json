@@ -946,15 +946,15 @@
         "subheading_AK7Cjn": {
           "type": "subheading",
           "settings": {
-            "text": "GET STARTED",
+            "text": "次のアクション",
             "icon": "none"
           }
         },
         "heading_YXhiR8": {
           "type": "heading",
           "settings": {
-            "text": "READY TO VALIDATE YOUR VMD STRATEGY?",
-            "heading_tag": "h1",
+            "text": "購買前の行動を、店舗改善の判断材料に。",
+            "heading_tag": "h2",
             "text_color": "",
             "gradient": ""
           }
@@ -962,7 +962,7 @@
         "richtext_qzAkak": {
           "type": "richtext",
           "settings": {
-            "content": "<p>See how Flow's behavioral analytics platform turns customer movement into merchandising intelligence.</p>"
+            "content": "<p>売上だけでは見えない来店後の動き、滞在、導線、ゾーン反応を把握し、売場改善・店舗運営・本部判断に活用できます。</p>"
           }
         },
         "button_AVKAbi": {
@@ -982,13 +982,13 @@
           "settings": {
             "style_1": "fill",
             "size_1": "xl",
-            "text_1": "Schedule Demo →",
+            "text_1": "店内行動分析について相談する →",
             "url_1": "#",
-            "background_1": "#0e366a",
+            "background_1": "#a0b842",
             "text_color_1": "#ffffff",
             "style_2": "fill",
             "size_2": "xl",
-            "text_2": "View Case Studies →",
+            "text_2": "導入事例を見る →",
             "url_2": "#",
             "background_2": "#ffffff",
             "text_color_2": "#11243e"
