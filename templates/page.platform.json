@@ -709,7 +709,7 @@
         "full_width": true,
         "content_width": "large",
         "text_position": "center",
-        "background": "#ffffff",
+        "background": "rgba(0,0,0,0)",
         "background_gradient": "",
         "text_color": ""
       }
@@ -1122,9 +1122,9 @@
             "card2_item1": "売場変更や施策を記録",
             "card2_item2": "在庫・スタッフ状況を補足",
             "card2_item3": "後日の振り返りに活用",
-            "light_card_bg": "#ffffff",
+            "light_card_bg": "#f2f2f2",
             "light_card_text": "#0a1a2f",
-            "light_icon_bg": "#f0f9f4",
+            "light_icon_bg": "#a0b842",
             "light_checkmark_color": "#a0b842",
             "banner_title": "Flowの強み",
             "banner_text": "Flowは、数値データと現場の定性情報を同じ文脈で管理します。何が起きたのか、なぜ変化したのかを確認しやすくなり、報告・分析・改善判断がつながります。",
@@ -1340,8 +1340,8 @@
         "gap": "medium",
         "text_alignment": "start",
         "subheading": "Flow AI",
-        "title": "店舗データと社内ルールを、Flow AIに聞く。",
-        "content": "<p>Flow AIは、売上・来店・購買率などの店舗データと、マニュアル・SOP・店舗報告を参照しながら、状況確認、要因整理、次の打ち手の検討を支援します。</p>",
+        "title": "",
+        "content": "<h2>店舗データと社内ルールを、<br/>Flow AIに聞く。</h2><p>Flow AIは、売上・来店・購買率などの店舗データと、マニュアル・SOP・店舗報告を参照しながら、状況確認、要因整理、次の打ち手の検討を支援します。</p>",
         "background": "#ffffff",
         "background_gradient": "",
         "text_color": ""
@@ -1972,51 +1972,9 @@
         "gap": "medium",
         "text_alignment": "start",
         "subheading": "実行改善",
-        "title": "店舗運営の変化を、行動まで確認する。",
-        "content": "<p>Flowは、KPIの変化だけでなく、店舗報告、メモ、Pulse、対応内容を同じ文脈で確認できるようにし、改善活動を振り返りやすくします。</p>",
+        "title": "",
+        "content": "<h2>店舗運営の変化を、<br/>行動まで確認する。</h2><p>Flowは、KPIの変化だけでなく、店舗報告、メモ、Pulse、対応内容を同じ文脈で確認できるようにし、改善活動を振り返りやすくします。</p>",
         "background": "#f2f2f2",
-        "background_gradient": "",
-        "text_color": ""
-      }
-    },
-    "rich_text_gD4zYC": {
-      "type": "rich-text",
-      "blocks": {
-        "subheading_B4T9GM": {
-          "type": "subheading",
-          "settings": {
-            "text": "導入・連携",
-            "icon": "none"
-          }
-        },
-        "heading_AMzVnx": {
-          "type": "heading",
-          "settings": {
-            "text": "既存システムと店舗運用に合わせて、段階的に導入できます。",
-            "heading_tag": "h2",
-            "text_color": "",
-            "gradient": ""
-          }
-        },
-        "richtext_6RGLzJ": {
-          "type": "richtext",
-          "settings": {
-            "content": "<p>Flowは、現在のPOS、来店計測、スタッフデータ、店舗運用に合わせて連携方法を確認します。すべてを一度に変える必要はありません。必要なデータから接続し、店舗・エリア・本部で使える形に整えていきます。</p>"
-          }
-        }
-      },
-      "block_order": [
-        "subheading_B4T9GM",
-        "heading_AMzVnx",
-        "richtext_6RGLzJ"
-      ],
-      "custom_css": [],
-      "name": "Rich text",
-      "settings": {
-        "full_width": true,
-        "content_width": "medium",
-        "text_position": "start",
-        "background": "",
         "background_gradient": "",
         "text_color": ""
       }
@@ -2024,6 +1982,37 @@
     "blocks_rwYEMm": {
       "type": "_blocks",
       "blocks": {
+        "badge_6bECTU": {
+          "type": "badge",
+          "name": "Badge",
+          "settings": {
+            "text": "導入・連携",
+            "alignment": "left",
+            "text_color": "#ffffff",
+            "background": "#11243e"
+          },
+          "blocks": {}
+        },
+        "rich_text_KFm7fX": {
+          "type": "rich-text",
+          "name": "Rich text",
+          "settings": {
+            "text": "<h2>既存システムと店舗運用に合わせて、<br/>段階的に導入できます。</h2>",
+            "content_width": "large",
+            "text_alignment": "left"
+          },
+          "blocks": {}
+        },
+        "rich_text_BxigGJ": {
+          "type": "rich-text",
+          "name": "Rich text",
+          "settings": {
+            "text": "<p>Flowは、現在のPOS、来店計測、スタッフデータ、店舗運用に合わせて連携方法を確認します。すべてを一度に変える必要はありません。必要なデータから接続し、店舗・エリア・本部で使える形に整えていきます。</p>",
+            "content_width": "medium",
+            "text_alignment": "left"
+          },
+          "blocks": {}
+        },
         "ai_gen_block_c38635f_L8NpUd": {
           "type": "ai_gen_block_c38635f",
           "settings": {
@@ -2076,6 +2065,9 @@
         }
       },
       "block_order": [
+        "badge_6bECTU",
+        "rich_text_KFm7fX",
+        "rich_text_BxigGJ",
         "ai_gen_block_c38635f_L8NpUd"
       ],
       "custom_css": [],
@@ -2092,13 +2084,25 @@
     "blocks_nwzRNT": {
       "type": "_blocks",
       "blocks": {
+        "heading_tUHxq4": {
+          "type": "heading",
+          "name": "Heading",
+          "settings": {
+            "text": "Heading",
+            "size": "h1",
+            "html_tag": "p",
+            "text_color": "",
+            "gradient": ""
+          },
+          "blocks": {}
+        },
         "ai_gen_block_0c78d27_Gxk68e": {
           "type": "ai_gen_block_0c78d27",
           "name": "FAQ accordion item",
           "settings": {
-            "category": "Implementation & Deployment",
-            "question": "How long does implementation take from contract to go-live?",
-            "answer": "Typical timeline is 4-6 weeks for a single store, 8-12 weeks for multi-store rollouts. Week 1-2: Infrastructure assessment and camera placement planning. Week 3-4: Hardware installation and network integration. Week 5-6: Calibration, validation, and staff training. For enterprise deployments (10+ stores), we follow a phased rollout: pilot store first (6 weeks), then standardized deployment at 2-3 stores per week. Timeline assumes existing network infrastructure meets requirements (PoE-capable switches, 100Mbps per camera). If network upgrades are needed, add 2-4 weeks for infrastructure work.",
+            "category": "データ連携",
+            "question": "POS連携は必要ですか？",
+            "answer": "POS連携は推奨されます。売上、購買率、客単価、購買点数を来店データと組み合わせることで、店舗成果の要因を確認しやすくなります。ただし、導入初期は利用できるデータから段階的に始めることも可能です。",
             "default_open": false,
             "icon_type": "clock",
             "icon_background_color": "#f0f4e8",
@@ -2113,9 +2117,81 @@
         "ai_gen_block_0c78d27_AV7tPk": {
           "type": "ai_gen_block_0c78d27",
           "settings": {
-            "category": "Implementation & Deployment",
-            "question": "How long does implementation take from contract to go-live?",
-            "answer": "Typical timeline is 4-6 weeks for a single store, 8-12 weeks for multi-store rollouts. Week 1-2: Infrastructure assessment and camera placement planning. Week 3-4: Hardware installation and network integration. Week 5-6: Calibration, validation, and staff training. For enterprise deployments (10+ stores), we follow a phased rollout: pilot store first (6 weeks), then standardized deployment at 2-3 stores per week. Timeline assumes existing network infrastructure meets requirements (PoE-capable switches, 100Mbps per camera). If network upgrades are needed, add 2-4 weeks for infrastructure work.",
+            "category": "既存データ",
+            "question": "既存の来店計測データも使えますか？",
+            "answer": "既存の来店計測データやカメラデータを活用できるかは、データ形式、取得精度、連携方法によって異なります。Flowでは、既存データの活用可否を確認した上で、必要に応じてAPI、CSV、FTPなどの連携方法を検討します。",
+            "default_open": false,
+            "icon_type": "clock",
+            "icon_background_color": "#f0f4e8",
+            "icon_color": "#6b7c3a",
+            "category_color": "#6b7c3a",
+            "question_color": "#0f172a",
+            "answer_color": "#475569",
+            "chevron_color": "#64748b"
+          },
+          "blocks": {}
+        },
+        "ai_gen_block_0c78d27_zrf8V4": {
+          "type": "ai_gen_block_0c78d27",
+          "name": "FAQ accordion item",
+          "settings": {
+            "category": "Pulse・メモ",
+            "question": "Pulseやメモでは何を記録できますか？",
+            "answer": "売場変更、イベント、在庫状況、スタッフ体制、天候影響、店舗での気づきなど、数字だけでは残りにくい現場情報を記録できます。これにより、売上や来店数の変化を、現場の状況と合わせて振り返りやすくなります。",
+            "default_open": false,
+            "icon_type": "clock",
+            "icon_background_color": "#f0f4e8",
+            "icon_color": "#6b7c3a",
+            "category_color": "#6b7c3a",
+            "question_color": "#0f172a",
+            "answer_color": "#475569",
+            "chevron_color": "#64748b"
+          },
+          "blocks": {}
+        },
+        "ai_gen_block_0c78d27_eMXbWy": {
+          "type": "ai_gen_block_0c78d27",
+          "name": "FAQ accordion item",
+          "settings": {
+            "category": "Flow AI",
+            "question": "Flow AIはどの情報を参照しますか？",
+            "answer": "Flow AIは、接続された店舗データ、POSデータ、Pulse、メモ、店舗報告、マニュアル、SOP、社内資料などを参照できるように設計されています。回答は店舗運営の判断を支援するためのものであり、店長やエリアマネージャーの判断を置き換えるものではありません。",
+            "default_open": false,
+            "icon_type": "clock",
+            "icon_background_color": "#f0f4e8",
+            "icon_color": "#6b7c3a",
+            "category_color": "#6b7c3a",
+            "question_color": "#0f172a",
+            "answer_color": "#475569",
+            "chevron_color": "#64748b"
+          },
+          "blocks": {}
+        },
+        "ai_gen_block_0c78d27_77WPEM": {
+          "type": "ai_gen_block_0c78d27",
+          "name": "FAQ accordion item",
+          "settings": {
+            "category": "利用部門",
+            "question": "誰がFlow Platformを利用できますか？",
+            "answer": "主な利用者は、店舗スタッフ、店長、エリアマネージャー、本部チームです。店舗では日々のKPI確認や報告に、本部やエリアでは複数店舗の比較、状況把握、改善活動の確認に活用できます。権限設定により、役割ごとに必要な情報を表示できます。",
+            "default_open": false,
+            "icon_type": "clock",
+            "icon_background_color": "#f0f4e8",
+            "icon_color": "#6b7c3a",
+            "category_color": "#6b7c3a",
+            "question_color": "#0f172a",
+            "answer_color": "#475569",
+            "chevron_color": "#64748b"
+          },
+          "blocks": {}
+        },
+        "ai_gen_block_0c78d27_jqMeJG": {
+          "type": "ai_gen_block_0c78d27",
+          "name": "FAQ accordion item",
+          "settings": {
+            "category": "導入・展開",
+            "question": "何店舗から導入できますか？",
+            "answer": "導入範囲は目的や連携内容によって変わります。小規模な検証から開始し、利用状況や運用設計を確認しながら、店舗、エリア、本部へ段階的に展開することが可能です。複数店舗での比較やエリア管理を行う場合は、一定数の店舗での導入がより効果的です。",
             "default_open": false,
             "icon_type": "clock",
             "icon_background_color": "#f0f4e8",
@@ -2129,8 +2205,13 @@
         }
       },
       "block_order": [
+        "heading_tUHxq4",
         "ai_gen_block_0c78d27_Gxk68e",
-        "ai_gen_block_0c78d27_AV7tPk"
+        "ai_gen_block_0c78d27_AV7tPk",
+        "ai_gen_block_0c78d27_zrf8V4",
+        "ai_gen_block_0c78d27_eMXbWy",
+        "ai_gen_block_0c78d27_77WPEM",
+        "ai_gen_block_0c78d27_jqMeJG"
       ],
       "name": "FAQ accordion item",
       "settings": {
@@ -2235,7 +2316,6 @@
     "section-15",
     "media_with_text_mRGejd",
     "multi_column_ELgLhR",
-    "rich_text_gD4zYC",
     "blocks_rwYEMm",
     "blocks_nwzRNT",
     "rich_text_6VmVgb"
