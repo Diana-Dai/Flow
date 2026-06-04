@@ -1347,6 +1347,66 @@
         "text_color": ""
       }
     },
+    "blocks_4YeEQJ": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_bcb8a38_CCdY63": {
+          "type": "ai_gen_block_bcb8a38",
+          "settings": {
+            "section_padding_mobile": 60,
+            "section_padding_desktop": 100,
+            "background_color": "#f9fafb",
+            "badge_text": "エリア管理",
+            "badge_background_color": "#11243e",
+            "badge_text_color": "#ffffff",
+            "headline": "エリアマネージャーは、担当店舗の変化を短時間で把握。",
+            "headline_size_mobile": 36,
+            "headline_size_desktop": 56,
+            "headline_color": "#11243e",
+            "description": "Flowは、担当店舗のKPI、Pulse、メモ、店舗報告をまとめて確認できるようにし、優先して見るべき店舗や変化を把握しやすくします。",
+            "description_size_mobile": 16,
+            "description_size_desktop": 18,
+            "description_color": "#11243e",
+            "timeline_line_color": "#11243e",
+            "badge_green_color": "#a0b842",
+            "badge_navy_color": "#a0b842",
+            "badge_number_text_color": "#ffffff",
+            "badge_border_radius": 8,
+            "step_title_size_mobile": 18,
+            "step_title_size_desktop": 20,
+            "step_title_color": "#11243e",
+            "step_description_size_mobile": 15,
+            "step_description_size_desktop": 16,
+            "step_description_color": "#11243e",
+            "step_1_title": "Pulse報告を要約",
+            "step_1_description": "複数店舗から上がる報告をまとめて確認。",
+            "step_2_title": "KPI変化と照合",
+            "step_2_description": "売上、来店数、購買率の変化と現場情報を確認。",
+            "step_3_title": "注意店舗を抽出",
+            "step_3_description": "優先して確認すべき店舗を見つけやすく。",
+            "step_4_title": "訪問前に確認",
+            "step_4_description": "直近のKPI、メモ、過去の変化を確認。",
+            "step_5_title": "本部報告を効率化",
+            "step_5_description": "担当エリアの変化と課題を整理。",
+            "step_6_title": "",
+            "step_6_description": ""
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_bcb8a38_CCdY63"
+      ],
+      "name": "Implementation process",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
     "multi_column_qz9jhR": {
       "type": "multi-column",
       "blocks": {
@@ -2058,6 +2118,7 @@
     "blocks_YJHkDA",
     "178047465242fd23a6",
     "multi_column_QjMJiW11",
+    "blocks_4YeEQJ",
     "multi_column_qz9jhR",
     "multi_column_HCGJea11",
     "section-15",
