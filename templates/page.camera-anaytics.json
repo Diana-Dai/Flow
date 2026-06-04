@@ -89,7 +89,7 @@
         "item_9cWFC9": {
           "type": "item",
           "settings": {
-            "icon": "picto-secure-profile",
+            "icon": "people",
             "icon_width": 32,
             "icon_background_type": "square",
             "icon_background": "#a0b842",
