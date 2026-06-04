@@ -196,7 +196,7 @@
             "title": "どのように計測するか？",
             "heading_tag": "h3",
             "subheading": "",
-            "content": "<p>AIカメラ計測ページで、来店計測、スタッフ除外、計測設計、導入方法について確認できます。</p>",
+            "content": "<h5>AIカメラ計測ページで、来店計測、スタッフ除外、計測設計、導入方法を確認できます。</h5>",
             "link_url": "",
             "link_text": "AIカメラ計測を見る →",
             "link_style": "button"
