@@ -449,11 +449,11 @@
         "subheading": "データ活用の流れ",
         "title": "データを、実行につなげる",
         "content": "<p>既存システムや店舗現場の情報をFlowに集約し、店長・エリアマネージャー・本部が同じ情報をもとに状況を確認できる状態にします。</p>",
-        "background": "#f2f2f2",
+        "background": "rgba(0,0,0,0)",
         "background_gradient": "",
         "text_color": "",
-        "subheading_background_color": "#a0b842",
-        "subheading_text_color": "#ffffff"
+        "subheading_background_color": "#f0f3e9",
+        "subheading_text_color": "#11243e"
       }
     },
     "multi_column_rPwdDt": {
@@ -658,8 +658,8 @@
         "background": "",
         "background_gradient": "",
         "text_color": "",
-        "subheading_background_color": "#11243e",
-        "subheading_text_color": "#ffffff"
+        "subheading_background_color": "#f0f3e9",
+        "subheading_text_color": "#11243e"
       }
     },
     "rich_text_peMmaV": {
@@ -1043,8 +1043,8 @@
         "background": "#ffffff",
         "background_gradient": "",
         "text_color": "",
-        "subheading_background_color": "#a0b842",
-        "subheading_text_color": "#ffffff"
+        "subheading_background_color": "#f0f3e9",
+        "subheading_text_color": "#11243e"
       }
     },
     "media_with_text_hMPTmL": {
@@ -1102,8 +1102,8 @@
             "background_color": "rgba(0,0,0,0)",
             "eyebrow_text": "定性 × 定量",
             "eyebrow_font_size": 12,
-            "eyebrow_bg_color": "#a0b842",
-            "eyebrow_text_color": "#ffffff",
+            "eyebrow_bg_color": "#f0f3e9",
+            "eyebrow_text_color": "#11243e",
             "heading": "数字に、現場の理由を残す。",
             "heading_color": "#0a1a2f",
             "description": "売上や来店数の変化には、売場変更、在庫状況、イベント、スタッフ体制など、現場にしか分からない理由があります。Flowでは、店舗の定性情報をKPIと一緒に記録できます。",
