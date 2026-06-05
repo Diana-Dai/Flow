@@ -15,14 +15,14 @@
         "subheading_nJjQnz": {
           "type": "subheading",
           "settings": {
-            "text": "よくあるご質問",
+            "text": "About flow",
             "icon": "none"
           }
         },
         "heading_hjfyL9": {
           "type": "heading",
           "settings": {
-            "text": "導入・連携・店舗運用について",
+            "text": "Building Retail Operational Infrastructure",
             "heading_tag": "h2",
             "text_color": "",
             "gradient": ""
@@ -31,7 +31,7 @@
         "richtext_wjTJeB": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Flowの導入期間、システム連携、計測精度、プライバシー、サポート、店舗での運用について、よく確認される内容をまとめました。</p>"
+            "content": "<p>Flow transforms physical retail operations through precise measurement, real-time analytics, and execution infrastructure. We help retailers understand what happens in their stores and act on it.</p>"
           }
         }
       },
@@ -69,10 +69,10 @@
             "border_color": "rgba(0,0,0,0)",
             "show_controls": false,
             "column_size": "4",
-            "title": "4〜6週間",
-            "heading_tag": "h2",
+            "title": "500+",
+            "heading_tag": "h1",
             "subheading": "",
-            "content": "<p>標準的な導入期間</p>",
+            "content": "<p>Active Retail Locations</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -91,10 +91,10 @@
             "border_color": "#0e366a",
             "show_controls": false,
             "column_size": "4",
-            "title": "95%以上",
-            "heading_tag": "h2",
+            "title": "50+",
+            "heading_tag": "h1",
             "subheading": "",
-            "content": "<p>入口計測の精度目安</p>",
+            "content": "<p>Retail Brands</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -113,10 +113,10 @@
             "border_color": "#0e366a",
             "show_controls": false,
             "column_size": "4",
-            "title": "API  / FTP",
-            "heading_tag": "h2",
+            "title": "2019",
+            "heading_tag": "h1",
             "subheading": "",
-            "content": "<p>柔軟なデータ連携</p>",
+            "content": "<p>Founded</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -135,10 +135,10 @@
             "border_color": "#0e366a",
             "show_controls": false,
             "column_size": "4",
-            "title": "導入支援あり",
-            "heading_tag": "h2",
+            "title": "108.9%",
+            "heading_tag": "h1",
             "subheading": "",
-            "content": "<p>設定・研修・運用サポート</p>",
+            "content": "<p>Customer YoY Growth (2024)</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -162,7 +162,9 @@
         "content": "",
         "background": "#11243e",
         "background_gradient": "",
-        "text_color": "#ffffff"
+        "text_color": "#ffffff",
+        "subheading_background_color": "",
+        "subheading_text_color": ""
       }
     },
     "section-15": {
@@ -678,7 +680,9 @@
         "content": "",
         "background": "",
         "background_gradient": "",
-        "text_color": ""
+        "text_color": "",
+        "subheading_background_color": "",
+        "subheading_text_color": ""
       }
     }
   },
