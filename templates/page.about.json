@@ -220,7 +220,7 @@
             "heading_color": "#0e366a",
             "subheading_color": "#677279",
             "left_card_title": "What Flow Is",
-            "left_card_bg": "#f4f7e8",
+            "left_card_bg": "rgba(0,0,0,0)",
             "left_badge_bg": "#a0b842",
             "left_icon_color": "#ffffff",
             "left_bullet_color": "#a0b842",
@@ -316,7 +316,7 @@
         "full_width": true,
         "remove_vertical_spacing": false,
         "remove_horizontal_spacing": false,
-        "background": "",
+        "background": "#ffffff",
         "background_gradient": "",
         "text_color": ""
       }
