@@ -2083,8 +2083,8 @@
           "name": "Heading",
           "settings": {
             "text": "よくある質問",
-            "size": "h2",
-            "html_tag": "h1",
+            "size": "h1",
+            "html_tag": "h3",
             "text_color": "#11243e",
             "gradient": ""
           },
