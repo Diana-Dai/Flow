@@ -1270,6 +1270,92 @@
         "text_color": ""
       }
     },
+    "1780630742eb183a6c": {
+      "type": "_blocks",
+      "blocks": {
+        "badge_3w7frk": {
+          "type": "badge",
+          "name": "Badge",
+          "settings": {
+            "text": "Flow AI",
+            "alignment": "center",
+            "text_color": "#11243e",
+            "background": "#f0f3e9"
+          },
+          "blocks": {}
+        },
+        "rich_text_Y96TtQ": {
+          "type": "rich-text",
+          "name": "Rich text",
+          "settings": {
+            "text": "<h1>店舗データと社内ルールを、Flow AIに聞く。</h1><p>Flow AIは、売上・来店・購買率などの店舗データと、マニュアル・SOP・店舗報告を参照しながら、状況確認、要因整理、次の打ち手の検討を支援します。</p>",
+            "content_width": "small",
+            "text_alignment": "left"
+          },
+          "blocks": {}
+        },
+        "ai_gen_block_e67956f_GtQPMA": {
+          "type": "ai_gen_block_e67956f",
+          "settings": {
+            "section_padding_top": 50,
+            "section_padding_bottom": 50,
+            "section_background": "rgba(0,0,0,0)",
+            "max_content_width": 1400,
+            "box_background": "#fafaf8",
+            "box_border_color": "#c8d4b8",
+            "box_border_width": 1,
+            "box_border_radius": 16,
+            "box_padding": 40,
+            "row_gap": 14,
+            "avatar_gap": 12,
+            "avatar_size": 36,
+            "avatar_fallback_bg": "#e5e7eb",
+            "avatar_fallback_color": "#9ca3af",
+            "bubble_background": "#eeeeea",
+            "bubble_border_radius": 24,
+            "bubble_padding_vertical": 12,
+            "bubble_padding_horizontal": 20,
+            "bubble_content_gap": 10,
+            "label_color": "#84a842",
+            "label_font_size": 14,
+            "label_font_weight": 600,
+            "message_color": "#1a1a1a",
+            "message_font_size": 14,
+            "message_font_weight": 400,
+            "show_item_1": true,
+            "label_1": "[状況]",
+            "message_1": "「今日、何を優先すべきですか？」",
+            "show_item_2": true,
+            "label_2": "[理由]",
+            "message_2": "「なぜ購買率が下がっていますか？」",
+            "show_item_3": true,
+            "label_3": "[次の打ち手]",
+            "message_3": "「次に何を確認すべきですか？」",
+            "show_item_4": false,
+            "label_4": "",
+            "message_4": "",
+            "show_item_5": false,
+            "label_5": "",
+            "message_5": "",
+            "desktop_width_percent": 100
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "badge_3w7frk",
+        "rich_text_Y96TtQ",
+        "ai_gen_block_e67956f_GtQPMA"
+      ],
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
     "multi_column_QjMJiW11": {
       "type": "multi-column",
       "blocks": {
@@ -1345,6 +1431,7 @@
         "item_MVfQ7a",
         "item_Y47ifx"
       ],
+      "disabled": true,
       "custom_css": [
         ".multi-column__item h2 {margin-bottom: 0; padding-bottom: 0; color: #a0b842 !important;}",
         ".multi-column__item h2 ~ p {margin-top: 0;}",
@@ -2336,6 +2423,7 @@
     "media_with_text_hMPTmL",
     "blocks_YJHkDA",
     "178047465242fd23a6",
+    "1780630742eb183a6c",
     "multi_column_QjMJiW11",
     "blocks_4YeEQJ",
     "multi_column_qz9jhR",
