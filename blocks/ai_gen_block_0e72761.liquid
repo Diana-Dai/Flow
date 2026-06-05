@@ -296,25 +296,6 @@
     {% endif %}
   }
 
-  .ai-flow-connect-box-icon-{{ ai_gen_id }} {
-    width: {{ block.settings.icon_size }}px;
-    height: {{ block.settings.icon_size }}px;
-    background-color: {{ block.settings.default_icon_bg }};
-    border-radius: {{ block.settings.icon_border_radius }}px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 16px;
-    flex-shrink: 0;
-  }
-
-  .ai-flow-connect-box-icon-{{ ai_gen_id }} svg {
-    width: {{ block.settings.icon_size | times: 0.5 }}px;
-    height: {{ block.settings.icon_size | times: 0.5 }}px;
-    stroke: {{ block.settings.default_icon_color }};
-    fill: none;
-    stroke-width: 2;
-  }
 
   .ai-flow-connect-box-heading-{{ ai_gen_id }} {
     color: {{ block.settings.default_box_heading_color }};
