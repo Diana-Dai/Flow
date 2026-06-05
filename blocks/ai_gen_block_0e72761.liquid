@@ -163,7 +163,6 @@
   }
 
   .ai-flow-connect-container-{{ ai_gen_id }} {
-    max-width: {{ block.settings.container_max_width }}px;
     margin: 0 auto;
   }
 
@@ -2555,16 +2554,6 @@
       "step": 5,
       "unit": "px",
       "default": 20
-    },
-    {
-      "type": "range",
-      "id": "container_max_width",
-      "label": "Container max width",
-      "min": 1000,
-      "max": 1600,
-      "step": 50,
-      "unit": "px",
-      "default": 1400
     },
     {
       "type": "color",
