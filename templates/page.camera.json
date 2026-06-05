@@ -314,6 +314,123 @@
         "text_color": ""
       }
     },
+    "section-15": {
+      "type": "feature-chart",
+      "blocks": {
+        "block-1": {
+          "type": "headings",
+          "settings": {
+            "heading_1": "主な提供価値",
+            "heading_2": "コアの設計思想",
+            "heading_3": "来店データの位置づけ",
+            "heading_4": "データの即時性",
+            "heading_5": "店舗での使いやすさ",
+            "heading_6": "判断へのつながり",
+            "heading_7": "店舗ごとの判断差",
+            "heading_8": "本部と店舗の連携",
+            "heading_9": "運用負荷",
+            "heading_10": "拡張性",
+            "heading_11": "",
+            "heading_12": "",
+            "heading_13": "",
+            "heading_14": "",
+            "heading_15": "",
+            "heading_16": "",
+            "heading_17": "",
+            "heading_18": "",
+            "heading_19": "",
+            "heading_20": ""
+          }
+        },
+        "block-2": {
+          "type": "values",
+          "settings": {
+            "product": "",
+            "value_1": "<p>40mm Beryllium</p>",
+            "value_2": "<p>245g</p>",
+            "value_3": "<p>165mm x 190mm x 66mm</p>",
+            "value_4": "<p>24 hours</p>",
+            "value_5": "",
+            "value_6": "",
+            "value_7": "",
+            "value_8": "",
+            "value_9": "",
+            "value_10": "",
+            "value_11": "",
+            "value_12": "",
+            "value_13": "",
+            "value_14": "",
+            "value_15": "",
+            "value_16": "",
+            "value_17": "",
+            "value_18": "",
+            "value_19": "",
+            "value_20": "",
+            "view_button_background": "",
+            "view_button_text_color": ""
+          }
+        },
+        "block-3": {
+          "type": "values",
+          "settings": {
+            "product": "",
+            "value_1": "<p>40mm Beryllium</p>",
+            "value_2": "<p>205g (On-Ear), 239g (Over-Ear)</p>",
+            "value_3": "<p>190mm x 155mm x 34mm (On-Ear), 200mm x 165mm x 40mm (Over-Ear)</p>",
+            "value_4": "<p>16 hours</p>",
+            "value_5": "",
+            "value_6": "",
+            "value_7": "",
+            "value_8": "",
+            "value_9": "",
+            "value_10": "",
+            "value_11": "",
+            "value_12": "",
+            "value_13": "",
+            "value_14": "",
+            "value_15": "",
+            "value_16": "",
+            "value_17": "",
+            "value_18": "",
+            "value_19": "",
+            "value_20": "",
+            "view_button_background": "",
+            "view_button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "Why Dashboards Fail",
+        "content": "<p>Traditional analytics show you the problem. Flow solves it.</p>",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "center",
+        "max_rows": 5,
+        "view_all_text": "View all",
+        "view_less_text": "View less",
+        "view_product": "View",
+        "viewing_product": "",
+        "show_product_swatch": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "chart_background": "",
+        "chart_text_color": "",
+        "chart_true_false_color": ""
+      }
+    },
     "rich_text_8PAipA": {
       "type": "rich-text",
       "blocks": {
@@ -348,6 +465,67 @@
         "full_width": true,
         "content_width": "medium",
         "text_position": "start",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "blocks_GwtFjK": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_79fb6e4_hNJrtP": {
+          "type": "ai_gen_block_79fb6e4",
+          "settings": {
+            "subheader": "<strong>AIカメラ</strong>",
+            "subheader_size": 14,
+            "subheader_color": "#666666",
+            "heading": "<strong>店舗計測に合わせて、AIカメラを設計・配置します。</strong>",
+            "heading_size": 36,
+            "heading_color": "#000000",
+            "header_text": "<p>Flowは、店舗レイアウト、入口幅、天井高、照明、計測したいKPIに合わせてAIカメラの設置位置を設計します。来店数、滞在時間、導線、ゾーン反応、スタッフ除外など、店舗分析に必要な行動データを正確に取得できるように調整します。</p><p></p>",
+            "text_size": 16,
+            "text_color": "#666666",
+            "header_alignment": "left",
+            "image_position": "left",
+            "image_border_radius": 8,
+            "box_width": "50",
+            "box_spacing": 16,
+            "box_padding": 20,
+            "box_background": "#ffffff",
+            "box_border_width": 1,
+            "box_border_color": "#e0e0e0",
+            "box_border_radius": 8,
+            "mobile_layout": "stack",
+            "icon_size": 32,
+            "icon_color": "#0e366a",
+            "box_header_size": 18,
+            "box_header_color": "#000000",
+            "box_text_size": 14,
+            "box_text_color": "#666666",
+            "box_1_icon": "check",
+            "box_1_header": "主な計測項目",
+            "box_1_text": "<p>来店数、店前通行量、入店タイミング、滞在時間、導線、ゾーン反応などを計測します。必要に応じて、スタッフ除外、同日再来店除外、属性推定にも対応します。</p>",
+            "box_2_icon": "check",
+            "box_2_header": "映像確認とレポート",
+            "box_2_text": "<p>カメラ映像は標準では保存されません。計測精度の確認や設定調整で映像を使用する場合は、お客様と運用方法を確認し、精度確認レポートや確認に使用した映像を共有します。</p>",
+            "box_3_icon": "check",
+            "box_3_header": "設置場所の設計",
+            "box_3_text": "<p>入口、売場ゾーン、什器周辺など、店舗ごとのレイアウトと計測目的に合わせて設置位置を設計します。主なAIカメラは天井から約20mm程度の突出に抑えられ、店舗空間に目立ちにくく設置できます。</p>",
+            "box_4_icon": "check",
+            "box_4_header": "計測精度の維持",
+            "box_4_text": "<p>入口幅、天井高、照明、混雑状況、スタッフ動線などを確認して初期設定を行います。導入後も精度確認の運用を継続し、長期的に安定した計測ができるようにサポートします。</p><h3></h3>"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_79fb6e4_hNJrtP"
+      ],
+      "name": "Image with content boxes",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
         "background": "",
         "background_gradient": "",
         "text_color": ""
@@ -1309,123 +1487,6 @@
         "text_color": "#11243e"
       }
     },
-    "section-15": {
-      "type": "feature-chart",
-      "blocks": {
-        "block-1": {
-          "type": "headings",
-          "settings": {
-            "heading_1": "主な提供価値",
-            "heading_2": "コアの設計思想",
-            "heading_3": "来店データの位置づけ",
-            "heading_4": "データの即時性",
-            "heading_5": "店舗での使いやすさ",
-            "heading_6": "判断へのつながり",
-            "heading_7": "店舗ごとの判断差",
-            "heading_8": "本部と店舗の連携",
-            "heading_9": "運用負荷",
-            "heading_10": "拡張性",
-            "heading_11": "",
-            "heading_12": "",
-            "heading_13": "",
-            "heading_14": "",
-            "heading_15": "",
-            "heading_16": "",
-            "heading_17": "",
-            "heading_18": "",
-            "heading_19": "",
-            "heading_20": ""
-          }
-        },
-        "block-2": {
-          "type": "values",
-          "settings": {
-            "product": "",
-            "value_1": "<p>40mm Beryllium</p>",
-            "value_2": "<p>245g</p>",
-            "value_3": "<p>165mm x 190mm x 66mm</p>",
-            "value_4": "<p>24 hours</p>",
-            "value_5": "",
-            "value_6": "",
-            "value_7": "",
-            "value_8": "",
-            "value_9": "",
-            "value_10": "",
-            "value_11": "",
-            "value_12": "",
-            "value_13": "",
-            "value_14": "",
-            "value_15": "",
-            "value_16": "",
-            "value_17": "",
-            "value_18": "",
-            "value_19": "",
-            "value_20": "",
-            "view_button_background": "",
-            "view_button_text_color": ""
-          }
-        },
-        "block-3": {
-          "type": "values",
-          "settings": {
-            "product": "",
-            "value_1": "<p>40mm Beryllium</p>",
-            "value_2": "<p>205g (On-Ear), 239g (Over-Ear)</p>",
-            "value_3": "<p>190mm x 155mm x 34mm (On-Ear), 200mm x 165mm x 40mm (Over-Ear)</p>",
-            "value_4": "<p>16 hours</p>",
-            "value_5": "",
-            "value_6": "",
-            "value_7": "",
-            "value_8": "",
-            "value_9": "",
-            "value_10": "",
-            "value_11": "",
-            "value_12": "",
-            "value_13": "",
-            "value_14": "",
-            "value_15": "",
-            "value_16": "",
-            "value_17": "",
-            "value_18": "",
-            "value_19": "",
-            "value_20": "",
-            "view_button_background": "",
-            "view_button_text_color": ""
-          }
-        }
-      },
-      "block_order": [
-        "block-1",
-        "block-2",
-        "block-3"
-      ],
-      "disabled": true,
-      "settings": {
-        "full_width": true,
-        "subheading": "",
-        "title": "Why Dashboards Fail",
-        "content": "<p>Traditional analytics show you the problem. Flow solves it.</p>",
-        "button_text": "",
-        "button_url": "",
-        "text_position": "center",
-        "max_rows": 5,
-        "view_all_text": "View all",
-        "view_less_text": "View less",
-        "view_product": "View",
-        "viewing_product": "",
-        "show_product_swatch": false,
-        "background": "",
-        "background_gradient": "",
-        "text_color": "",
-        "heading_color": "",
-        "heading_gradient": "",
-        "button_background": "",
-        "button_text_color": "",
-        "chart_background": "",
-        "chart_text_color": "",
-        "chart_true_false_color": ""
-      }
-    },
     "media_with_text_mRGejd": {
       "type": "media-with-text",
       "blocks": {
@@ -1668,7 +1729,9 @@
   "order": [
     "image_with_text_overlay_AcppEX",
     "multi_column_QpdWAi",
+    "section-15",
     "rich_text_8PAipA",
+    "blocks_GwtFjK",
     "hot_spots_MNDEX8",
     "rich_text_efnkBL",
     "blocks_ULkcay",
@@ -1681,7 +1744,6 @@
     "multi_column_HCGJea11",
     "rich_text_peMmaV",
     "multi_column_LeVzeG",
-    "section-15",
     "media_with_text_mRGejd",
     "multi_column_x6bKQU",
     "rich_text_6VmVgb"
