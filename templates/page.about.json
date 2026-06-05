@@ -23,7 +23,7 @@
           "type": "heading",
           "settings": {
             "text": "Building Retail Operational Infrastructure",
-            "heading_tag": "h2",
+            "heading_tag": "h0",
             "text_color": "",
             "gradient": ""
           }
@@ -46,7 +46,7 @@
       "name": "Rich text",
       "settings": {
         "full_width": true,
-        "content_width": "medium",
+        "content_width": "large",
         "text_position": "start",
         "background": "#11243e",
         "background_gradient": "",
@@ -166,6 +166,47 @@
         "text_color": "#ffffff",
         "subheading_background_color": "",
         "subheading_text_color": ""
+      }
+    },
+    "rich_text_Jd4kLQ": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_w49bE4": {
+          "type": "subheading",
+          "settings": {
+            "text": "OUR MISSION",
+            "icon": "none"
+          }
+        },
+        "heading_3JB3K8": {
+          "type": "heading",
+          "settings": {
+            "text": "Making Physical Retail Operationally Transparent",
+            "heading_tag": "h1",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_Acbxct": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Physical retail has operated on intuition, estimates, and delayed feedback for decades. Store managers make critical decisions—staffing, merchandising, promotions—without knowing what actually happened on their sales floor yesterday, let alone what's happening right now.</p><p>Flow was founded to change that. We believe retail operations should run on measurement, not guesswork. That store teams should see real visitor traffic, understand conversion patterns, and optimize execution based on what customers actually do—not what we think they do.</p><p>Our mission is to build the operational infrastructure that makes this possible: accurate measurement, real-time analytics, and tools that turn insight into execution.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_w49bE4",
+        "heading_3JB3K8",
+        "richtext_Acbxct"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "medium",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
       }
     },
     "section-15": {
@@ -511,6 +552,7 @@
   "order": [
     "rich_text_cqadYy",
     "multi_column_L3Rbir",
+    "rich_text_Jd4kLQ",
     "section-15",
     "rich_text_EtLVJr",
     "rich_text_6VmVgb",
