@@ -209,6 +209,118 @@
         "text_color": ""
       }
     },
+    "blocks_9dtdLX": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_f23c343_qKDEyj": {
+          "type": "ai_gen_block_f23c343",
+          "settings": {
+            "heading": "Positioning & Focus",
+            "subheading": "Understanding what Flow is—and what we deliberately are not—clarifies how we serve retail operations.",
+            "heading_color": "#0e366a",
+            "subheading_color": "#677279",
+            "left_card_title": "What Flow Is",
+            "left_card_bg": "#f4f7e8",
+            "left_badge_bg": "#a0b842",
+            "left_icon_color": "#ffffff",
+            "left_bullet_color": "#a0b842",
+            "left_item_1_header": "Retail Operational Infrastructure",
+            "left_item_1_description": "Platform for measuring, analyzing, and optimizing physical retail operations",
+            "left_item_2_header": "Analytics & Execution Platform",
+            "left_item_2_description": "Real-time insights connected to daily store operations and execution",
+            "left_item_3_header": "Measurement-First System",
+            "left_item_3_description": "Accurate visitor counting, zone analytics, and conversion tracking",
+            "left_item_4_header": "Enterprise Retail Software",
+            "left_item_4_description": "Multi-store deployment, role-based access, integration-ready",
+            "right_card_title": "What Flow Is Not",
+            "right_card_bg": "#f4f6f8",
+            "right_badge_bg": "#d1d5db",
+            "right_icon_color": "#6b7280",
+            "right_bullet_color": "#6b7280",
+            "right_item_1_header": "Not a Dashboard Company",
+            "right_item_1_description": "Charts are outputs, not the product. Flow is operational infrastructure.",
+            "right_item_2_header": "Not a Hardware Company",
+            "right_item_2_description": "Cameras are sensors, not the solution. Value is in measurement accuracy and platform.",
+            "right_item_3_header": "Not an AI Chatbot",
+            "right_item_3_description": "AI enables measurement. The product is reliable operational data and execution tools.",
+            "right_item_4_header": "Not Security Surveillance",
+            "right_item_4_description": "Flow measures behavior, not identity. Privacy-first, no facial recognition."
+          },
+          "blocks": {}
+        },
+        "ai_gen_block_8944212_ih7U3V": {
+          "type": "ai_gen_block_8944212",
+          "disabled": true,
+          "settings": {
+            "desktop_width_percent": 100,
+            "padding_top": 60,
+            "padding_bottom": 60,
+            "padding_horizontal": 40,
+            "background_color": "#FFFFFF",
+            "eyebrow_text": "HOW FLOW IS DIFFERENT",
+            "eyebrow_font_size": 12,
+            "eyebrow_bg_color": "#F3F4F6",
+            "eyebrow_text_color": "#6B7280",
+            "heading": "Positioning & Focus",
+            "heading_color": "#0A1A2F",
+            "description": "Understanding what Flow is—and what we deliberately are not—clarifies how we serve retail operations.",
+            "description_font_size": 16,
+            "description_color": "#6B7280",
+            "header_spacing": 50,
+            "card_gap": 24,
+            "card_padding": 32,
+            "card_border_radius": 12,
+            "cards_spacing": 32,
+            "card_heading_size": 20,
+            "card_text_size": 15,
+            "card_list_size": 14,
+            "card1_heading": "What Flow Is Not",
+            "card1_text": "",
+            "card1_item1": "Not a Dashboard Company",
+            "card1_item2": "Not a Hardware Company",
+            "card1_item3": "Not an AI Chatbot",
+            "dark_card_bg": "#f2f2f2",
+            "dark_card_text": "#11243e",
+            "dark_icon_bg": "#0e366a",
+            "dark_checkmark_color": "#A0B842",
+            "card2_heading": "Automatic POS Correlation",
+            "card2_text": "Flow connects directly to your POS system to correlate traffic with transactions. Conversion rate is calculated automatically throughout the day.",
+            "card2_item1": "Direct POS integration",
+            "card2_item2": "Real-time CVR calculation",
+            "card2_item3": "Historical trend comparison",
+            "light_card_bg": "#FFFFFF",
+            "light_card_text": "#0A1A2F",
+            "light_icon_bg": "#a0b842",
+            "light_checkmark_color": "#A0B842",
+            "banner_title": "The Flow Advantage",
+            "banner_text": "Unlike basic people counters, Flow provides complete operational context. You don't just see conversion rate—you understand why it's changing, which stores are underperforming, and what operational adjustments will improve results.",
+            "banner_padding": 32,
+            "banner_border_radius": 12,
+            "banner_title_size": 20,
+            "banner_text_size": 15,
+            "banner_bg_color": "#F0F9F4",
+            "banner_icon_bg": "#A0B842",
+            "banner_icon_color": "#11243e",
+            "banner_title_color": "#0A1A2F",
+            "banner_text_color": "#4B5563"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_f23c343_qKDEyj",
+        "ai_gen_block_8944212_ih7U3V"
+      ],
+      "name": "Conversion intelligence",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
     "section-15": {
       "type": "feature-chart",
       "blocks": {
@@ -324,6 +436,166 @@
         "chart_background": "",
         "chart_text_color": "",
         "chart_true_false_color": ""
+      }
+    },
+    "multi_column_nMex9i": {
+      "type": "multi-column",
+      "blocks": {
+        "item_DJBQjz": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-target",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#a0b842",
+            "icon_color": "#ffffff",
+            "background_color": "#ffffff",
+            "text_color": "",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "Measurement First",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<p>Accuracy matters. We obsess over measurement precision because retail decisions depend on it. 98.5% counting accuracy isn't marketing—it's our standard.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_7ArUj3": {
+          "type": "item",
+          "settings": {
+            "icon": "people",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#a0b842",
+            "icon_color": "#ffffff",
+            "background_color": "#ffffff",
+            "text_color": "",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "Store-Level Empowerment",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<p>Data at HQ doesn't improve stores. We build for store managers and staff—the people who execute daily and need actionable insights now.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_PXwwUg": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-document",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#a0b842",
+            "icon_color": "#ffffff",
+            "background_color": "#ffffff",
+            "text_color": "",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "Operational, Not Theoretical",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<p>We don't build research tools or experimental platforms. Flow runs in production every day. Uptime, accuracy, and reliability are non-negotiable.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_qYcBUm": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-shield",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#a0b842",
+            "icon_color": "#ffffff",
+            "background_color": "#ffffff",
+            "text_color": "",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "Privacy by Design",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_gA6Gny": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-earth",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#a0b842",
+            "icon_color": "#ffffff",
+            "background_color": "#ffffff",
+            "text_color": "",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "Japanese Market Focus",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<p>We understand Japanese retail operations, procurement processes, and enterprise decision-making. Our platform and support are built for this market.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_FiKn8m": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-gift",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#a0b842",
+            "icon_color": "#ffffff",
+            "background_color": "#ffffff",
+            "text_color": "",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "Long-Term Partnerships",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<p>Customer success defines our success. We provide training, support, and continuous improvement—not just software delivery. ROI is measured in years, not quarters.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_DJBQjz",
+        "item_7ArUj3",
+        "item_PXwwUg",
+        "item_qYcBUm",
+        "item_gA6Gny",
+        "item_FiKn8m"
+      ],
+      "name": "Multi-column",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "start",
+        "subheading": "CORE VALUES",
+        "title": "How We Build and Operate",
+        "content": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "subheading_background_color": "",
+        "subheading_text_color": ""
       }
     },
     "rich_text_EtLVJr": {
@@ -553,7 +825,9 @@
     "rich_text_cqadYy",
     "multi_column_L3Rbir",
     "rich_text_Jd4kLQ",
+    "blocks_9dtdLX",
     "section-15",
+    "multi_column_nMex9i",
     "rich_text_EtLVJr",
     "rich_text_6VmVgb",
     "multi_column_UExWWX"
