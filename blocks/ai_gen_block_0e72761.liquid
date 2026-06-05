@@ -174,9 +174,7 @@
       margin-left: auto;
       margin-right: auto;
     {% endif %}
-    {% if block.settings.header_max_width > 0 %}
-      max-width: {{ block.settings.header_max_width }}px;
-    {% endif %}
+
   }
 
   .ai-flow-connect-eyebrow-{{ ai_gen_id }} {
@@ -688,16 +686,6 @@
         { "value": "center", "label": "Center" }
       ],
       "default": "left"
-    },
-    {
-      "type": "range",
-      "id": "header_max_width",
-      "label": "Header max width",
-      "min": 0,
-      "max": 1000,
-      "step": 50,
-      "unit": "px",
-      "default": 700
     },
     {
       "type": "range",
