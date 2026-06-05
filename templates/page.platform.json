@@ -937,7 +937,7 @@
             "title": "",
             "heading_tag": "h1",
             "subheading": "<p><strong>見えること</strong></p>",
-            "content": "<h4><strong>何が起きたかを見る</strong></h4><ul><li>来店数の変化</li><li>購買率の低下</li><li>売上進捗の遅れ</li></ul>",
+            "content": "<h4>何が起きたかを見る</h4><ul><li>来店数の変化</li><li>購買率の低下</li><li>売上進捗の遅れ</li></ul>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -959,7 +959,7 @@
             "title": "",
             "heading_tag": "h3",
             "subheading": "<p><strong>判断できること</strong></p><h3></h3>",
-            "content": "<h4><strong>なぜ起きたか、どう動くかを考える</strong></h4><ul><li>KPIをつなげて要因を整理</li><li>店舗報告やスタッフ状況と照合</li><li>次に確認すべき打ち手を明確化</li></ul>",
+            "content": "<h4>なぜ起きたか、どう動くかを考える</h4><ul><li>KPIをつなげて要因を整理</li><li>店舗報告やスタッフ状況と照合</li><li>次に確認すべき打ち手を明確化</li></ul>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
