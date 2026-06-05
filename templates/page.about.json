@@ -9,284 +9,147 @@
  */
 {
   "sections": {
-    "1780368357769f3a1e": {
-      "type": "_blocks",
-      "settings": {
-        "full_width": true,
-        "remove_vertical_spacing": true,
-        "remove_horizontal_spacing": false,
-        "background": "#ffffff",
-        "background_gradient": "",
-        "text_color": ""
-      }
-    },
-    "1780368579b1b4691b": {
-      "type": "_blocks",
+    "rich_text_cqadYy": {
+      "type": "rich-text",
       "blocks": {
-        "heading_nLUiFr": {
-          "type": "heading",
-          "name": "Heading",
+        "subheading_nJjQnz": {
+          "type": "subheading",
           "settings": {
-            "text": "FEATURED CASE STUDIES",
-            "size": "h6",
-            "html_tag": "p",
+            "text": "よくあるご質問",
+            "icon": "none"
+          }
+        },
+        "heading_hjfyL9": {
+          "type": "heading",
+          "settings": {
+            "text": "導入・連携・店舗運用について",
+            "heading_tag": "h2",
             "text_color": "",
             "gradient": ""
-          },
-          "blocks": {}
+          }
         },
-        "heading_VxHiDP": {
-          "type": "heading",
-          "name": "Heading",
+        "richtext_wjTJeB": {
+          "type": "richtext",
           "settings": {
-            "text": "Enterprise-Scale Transformations",
-            "size": "h1",
-            "html_tag": "h1",
-            "text_color": "",
-            "gradient": ""
-          },
-          "blocks": {}
-        },
-        "rich_text_Ya6Kni": {
-          "type": "rich-text",
-          "name": "Rich text",
-          "settings": {
-            "text": "<p></p><p></p><p></p>",
-            "content_width": "small",
-            "text_alignment": "center"
-          },
-          "blocks": {}
-        },
-        "ai_gen_block_38907dd_Tkggfa": {
-          "type": "ai_gen_block_38907dd",
-          "name": "Case study card",
-          "settings": {
-            "show_badges": true,
-            "badge_text": "FEATURED",
-            "company_name": "Major Japanese Fashion Retailer",
-            "meta_tags": "Fashion • Enterprise Scale",
-            "metrics_line": "124 → 220 stores",
-            "description": "A brief description of the company and their business model.",
-            "key_results_title": "KEY RESULTS",
-            "key_results": "80% reduction in manual work\n95% faster order processing\n3x increase in operational efficiency",
-            "challenges_title": "CHALLENGES BEFORE FLOW",
-            "challenges": "Manual data entry across multiple systems\nLack of real-time inventory visibility\nSlow order fulfillment process",
-            "operational_impact_title": "OPERATIONAL IMPACT",
-            "operational_impact": "Automated workflow integration\nReal-time data synchronization\nScalable infrastructure",
-            "cta_text": "Full Case Study",
-            "cta_url": ""
-          },
-          "blocks": {}
-        },
-        "ai_gen_block_38907dd_7wDWGy": {
-          "type": "ai_gen_block_38907dd",
-          "settings": {
-            "show_badges": true,
-            "badge_text": "FEATURED",
-            "company_name": "Daytona International",
-            "meta_tags": "Fashion • Multi-Brand",
-            "metrics_line": "Multiple locations",
-            "description": "Operates multiple fashion and lifestyle brands. Deployed Flow to automate visitor counting and improve store-level KPI management across diverse retail concepts.",
-            "key_results_title": "KEY RESULTS",
-            "key_results": "Capture rate improved 23.9%\nTraffic increased 6.3%\nConversion improved from 19.9% to 25.2%\nStores using dashboard achieved 25% sales increase",
-            "challenges_title": "CHALLENGES BEFORE FLOW",
-            "challenges": "Traffic counts were estimated or back-calculated\nFront zone performance judged by intuition\nLarge stores could not manually measure traffic\nStore managers lacked data to improve visitor rate and conversion",
-            "operational_impact_title": "OPERATIONAL IMPACT",
-            "operational_impact": "Store teams gained confidence through actual visitor data\nStaff recognized higher than expected volumes, creating positive mindset changes\nFlow became tool for both sales improvement and staff development\nReal-time data allowed mid-week tactical adjustments instead of weekly cycles\nImproved analytical capability and strategic thinking",
-            "cta_text": "Full Case Study",
-            "cta_url": ""
-          },
-          "blocks": {}
-        },
-        "ai_gen_block_38907dd_itbcYY": {
-          "type": "ai_gen_block_38907dd",
-          "name": "Case study card",
-          "settings": {
-            "show_badges": true,
-            "badge_text": "FEATURED",
-            "company_name": "Right On",
-            "meta_tags": "Jeans • National Chain",
-            "metrics_line": "400 stores",
-            "description": "Major national jeans chain needed objective evaluation of promotional strategies and storefront tactics. Moved away from assumptions and intuition to data-driven decision making.",
-            "key_results_title": "KEY RESULTS",
-            "key_results": "Revealed unexpected differences in visitor movement across stores\nEnabled hypothesis-driven decision making\nSupported fixture-level VMD evaluation\nHelped plan adjustments to weekly promotional cycles",
-            "challenges_title": "CHALLENGES BEFORE FLOW",
-            "challenges": "Determine which promotions truly increase visitors\nMeasure VMD and front zone impact using data\nMove away from assumptions and intuition",
-            "operational_impact_title": "OPERATIONAL IMPACT",
-            "operational_impact": "Superior UI easily adopted by store staff\nClear dashboards enabled evaluation of promotions, VMD and visitor trends together\nEstablished baseline KPIs using visitor and conversion trends\nImproved promotion prediction accuracy",
-            "cta_text": "Full Case Study",
-            "cta_url": ""
-          },
-          "blocks": {}
+            "content": "<p>Flowの導入期間、システム連携、計測精度、プライバシー、サポート、店舗での運用について、よく確認される内容をまとめました。</p>"
+          }
         }
       },
       "block_order": [
-        "heading_nLUiFr",
-        "heading_VxHiDP",
-        "rich_text_Ya6Kni",
-        "ai_gen_block_38907dd_Tkggfa",
-        "ai_gen_block_38907dd_7wDWGy",
-        "ai_gen_block_38907dd_itbcYY"
+        "subheading_nJjQnz",
+        "heading_hjfyL9",
+        "richtext_wjTJeB"
       ],
       "custom_css": [
-        ".h6 {padding: 0.5rem 0 1rem; font-size: 1rem;}"
+        "* {padding-bottom: 1rem;}"
       ],
+      "name": "Rich text",
       "settings": {
         "full_width": true,
-        "remove_vertical_spacing": false,
-        "remove_horizontal_spacing": false,
-        "background": "",
+        "content_width": "medium",
+        "text_position": "start",
+        "background": "#11243e",
         "background_gradient": "",
-        "text_color": ""
+        "text_color": "#ffffff"
       }
     },
-    "multi_column_bJtgmc": {
+    "multi_column_L3Rbir": {
       "type": "multi-column",
       "blocks": {
-        "item_mRFw4X": {
+        "item_TYrPjG": {
           "type": "item",
           "settings": {
-            "icon": "picto-target",
+            "icon": "none",
             "icon_width": 32,
             "icon_background_type": "square",
-            "icon_background": "#a0b842",
-            "icon_color": "#ffffff",
-            "background_color": "#ffffff",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#1a3a4a",
             "text_color": "",
-            "border_color": "#a0b842",
+            "border_color": "rgba(0,0,0,0)",
             "show_controls": false,
-            "column_size": "2",
-            "title": "",
-            "heading_tag": "h4",
+            "column_size": "4",
+            "title": "4〜6週間",
+            "heading_tag": "h2",
             "subheading": "",
-            "content": "<h4>Cole Haan Japan</h4><p>Premium Footwear & Accessories • Multiple formats</p><p>Required insights connected to selling behavior, fixture performance, and POS data. Different store formats made measurement inconsistent, and department store shops could not measure visitors.</p><h6></h6><h6>KEY RESULTS</h6><ul><li>Company-wide dashboards increased alignment</li><li>Store staff could see discrepancies between intuition and data</li><li>Gender and age attributes supported merchandising decisions</li></ul>",
-            "link_url": "#",
-            "link_text": "View details →",
-            "link_style": "link"
-          }
-        },
-        "item_r96Tt7": {
-          "type": "item",
-          "settings": {
-            "icon": "picto-target",
-            "icon_width": 32,
-            "icon_background_type": "square",
-            "icon_background": "#a0b842",
-            "icon_color": "#ffffff",
-            "background_color": "#ffffff",
-            "text_color": "",
-            "border_color": "#a0b842",
-            "show_controls": false,
-            "column_size": "2",
-            "title": "",
-            "heading_tag": "h4",
-            "subheading": "",
-            "content": "<h4>Baycrews</h4><p>Fashion • Multi-Brand • Multiple locations</p><p>Implemented Flow early to support data-driven store operations across major brands and stores. Required group-wide visibility and role-specific dashboards.</p><h6></h6><h6>KEY RESULTS</h6><ul><li>Group-wide visibility of visitor counts</li><li>Clear identification of new store performance and conversion challenges</li><li>Dashboards tailored to role level: store, manager, executive</li></ul>",
+            "content": "<p>標準的な導入期間</p>",
             "link_url": "",
-            "link_text": "View details →",
+            "link_text": "",
             "link_style": "link"
           }
         },
-        "item_KQtcVQ": {
+        "item_8N9HmD": {
           "type": "item",
           "settings": {
-            "icon": "picto-target",
+            "icon": "none",
             "icon_width": 32,
             "icon_background_type": "square",
-            "icon_background": "#a0b842",
-            "icon_color": "#ffffff",
-            "background_color": "#ffffff",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#1a3a4a",
             "text_color": "",
-            "border_color": "#a0b842",
+            "border_color": "#0e366a",
             "show_controls": false,
-            "column_size": "2",
-            "title": "",
-            "heading_tag": "h4",
+            "column_size": "4",
+            "title": "95%以上",
+            "heading_tag": "h2",
             "subheading": "",
-            "content": "<h4>Triumph International Japan</h4><p>Intimate Apparel • Multiple locations</p><p>Previously used a visitor counting system but found the support and UI insufficient. Staff could not easily interpret the data.</p><h6></h6><h6>KEY RESULTS</h6><ul><li>Data available in real-time instead of one day later</li><li>UI clarity allowed store staff to interpret KPI movement</li><li>Information sharing from HQ to stores accelerated</li></ul>",
-            "link_url": "#",
-            "link_text": "View details →",
+            "content": "<p>入口計測の精度目安</p>",
+            "link_url": "",
+            "link_text": "",
             "link_style": "link"
           }
         },
-        "item_jHGFzb": {
+        "item_GLb7bG": {
           "type": "item",
           "settings": {
-            "icon": "picto-target",
+            "icon": "none",
             "icon_width": 32,
             "icon_background_type": "square",
-            "icon_background": "#a0b842",
-            "icon_color": "#ffffff",
-            "background_color": "#ffffff",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#1a3a4a",
             "text_color": "",
-            "border_color": "#a0b842",
+            "border_color": "#0e366a",
             "show_controls": false,
-            "column_size": "2",
-            "title": "",
-            "heading_tag": "h4",
+            "column_size": "4",
+            "title": "API  / FTP",
+            "heading_tag": "h2",
             "subheading": "",
-            "content": "<h4>TUMI Japan</h4><p>Premium Luggage & Accessories • Multiple locations</p><p>Pursues store-level DX. Combines fixed counters with Flow Clicker for stores where sensors cannot be installed.</p><h6></h6><h6>KEY RESULTS</h6><ul><li>Managers gained clearer understanding through visualized KPIs</li><li>Clicker automation reduced manual counting burden</li><li>Staff began documenting qualitative explanations in Pulse</li></ul>",
-            "link_url": "#",
-            "link_text": "View details →",
+            "content": "<p>柔軟なデータ連携</p>",
+            "link_url": "",
+            "link_text": "",
             "link_style": "link"
           }
         },
-        "item_KeN4HJ": {
+        "item_L9UbpA": {
           "type": "item",
           "settings": {
-            "icon": "picto-target",
+            "icon": "none",
             "icon_width": 32,
             "icon_background_type": "square",
-            "icon_background": "#a0b842",
-            "icon_color": "#ffffff",
-            "background_color": "#ffffff",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#1a3a4a",
             "text_color": "",
-            "border_color": "#a0b842",
+            "border_color": "#0e366a",
             "show_controls": false,
-            "column_size": "2",
-            "title": "",
-            "heading_tag": "h4",
+            "column_size": "4",
+            "title": "導入支援あり",
+            "heading_tag": "h2",
             "subheading": "",
-            "content": "<h4>Global Jeans Brand</h4><p>Denim • VMD Optimization • Multiple locations</p><p>Major global denim brand sought to optimize VMD performance in multi-brand retail environments. Focused on identifying which fixture layouts produce higher engagement and conversion.</p><h6></h6><h6>KEY RESULTS</h6><ul><li>Identified optimal fixture placements</li><li>Improved engagement through layout adjustments</li><li>Standardized best practices across stores</li></ul>",
-            "link_url": "#",
-            "link_text": "View details →",
-            "link_style": "link"
-          }
-        },
-        "item_kGDkaE": {
-          "type": "item",
-          "settings": {
-            "icon": "picto-target",
-            "icon_width": 32,
-            "icon_background_type": "square",
-            "icon_background": "#a0b842",
-            "icon_color": "#ffffff",
-            "background_color": "#ffffff",
-            "text_color": "",
-            "border_color": "#a0b842",
-            "show_controls": false,
-            "column_size": "2",
-            "title": "",
-            "heading_tag": "h4",
-            "subheading": "",
-            "content": "<h4>Company-Wide Flow Deployment Impact</h4><p>Aggregate Analysis • Multiple customers</p><p>Flow examined performance across multiple customers who adopted Flow. Analysis shows significant outperformance vs. partial adopters and industry average.</p><h6></h6><h6>KEY RESULTS</h6><ul><li>2024: customers using Flow saw YoY sales growth of 108.9%</li><li>2023: companies deploying Flow in all stores achieved 108.5% YoY growth</li><li>Outperformed partial adopters and broader industry average</li></ul>",
-            "link_url": "#",
-            "link_text": "View details →",
+            "content": "<p>設定・研修・運用サポート</p>",
+            "link_url": "",
+            "link_text": "",
             "link_style": "link"
           }
         }
       },
       "block_order": [
-        "item_mRFw4X",
-        "item_r96Tt7",
-        "item_KQtcVQ",
-        "item_jHGFzb",
-        "item_KeN4HJ",
-        "item_kGDkaE"
-      ],
-      "custom_css": [
-        "h4 + p {margin-top: 0; font-size: 1rem;}",
-        "h6 {font-size: 1rem; margin-top: 2rem;}"
+        "item_TYrPjG",
+        "item_8N9HmD",
+        "item_GLb7bG",
+        "item_L9UbpA"
       ],
       "name": "Multi-column",
       "settings": {
@@ -294,14 +157,12 @@
         "stack_on_mobile": false,
         "gap": "medium",
         "text_alignment": "start",
-        "subheading": "FEATURED CASE STUDIES",
-        "title": "Enterprise-Scale Transformations",
+        "subheading": "",
+        "title": "",
         "content": "",
-        "background": "",
+        "background": "#11243e",
         "background_gradient": "",
-        "text_color": "",
-        "subheading_background_color": "",
-        "subheading_text_color": ""
+        "text_color": "#ffffff"
       }
     },
     "section-15": {
@@ -421,6 +282,236 @@
         "chart_true_false_color": ""
       }
     },
+    "1780470974bb22e153": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_659cb24_ckmcrH": {
+          "type": "ai_gen_block_659cb24",
+          "settings": {
+            "card_title": "導入・展開について",
+            "card_subtitle": "導入期間、設置条件、段階展開について",
+            "icon_type": "check",
+            "question_1": "Flowの導入にはどのくらいの期間がかかりますか？",
+            "answer_1": "一般的には、要件確認から導入開始まで4〜6週間程度が目安です。店舗数、カメラ設置環境、POS連携の有無、社内確認フローによって期間は変動します。まずは対象店舗、必要な計測項目、連携データを確認したうえで、現実的な導入スケジュールをご提案します。",
+            "question_1_open": false,
+            "question_2": "店舗側で事前に準備するものはありますか？",
+            "answer_2": "主に、店舗図面、入口や計測エリアの情報、ネットワーク環境、POSやシフトなど連携したいデータの確認が必要です。カメラ設置が必要な場合は、天井高、入口幅、照明、設置位置なども確認します。店舗運営への影響を抑えられるよう、事前確認の段階で必要事項を整理します。",
+            "question_2_open": false,
+            "question_3": "一部店舗から開始し、段階的に展開できますか？",
+            "answer_3": "はい、可能です。まずは一部店舗で計測精度、データ連携、店舗での活用方法を確認し、その結果をもとに展開範囲を広げることができます。複数店舗へ展開する場合も、店舗タイプや優先度に応じて段階的に導入計画を設計できます。",
+            "question_3_open": false,
+            "question_4": "",
+            "answer_4": "",
+            "question_4_open": false,
+            "question_5": "",
+            "answer_5": "",
+            "question_5_open": false,
+            "header_background_color": "#11243e",
+            "title_color": "#ffffff",
+            "subtitle_color": "#ffffffb3",
+            "icon_badge_background": "#a0b84226",
+            "icon_color": "#a0b842",
+            "question_color": "#0e2a3a",
+            "answer_color": "#677279"
+          },
+          "blocks": {}
+        },
+        "ai_gen_block_659cb24_RjWCfb": {
+          "type": "ai_gen_block_659cb24",
+          "name": "FAQ card",
+          "settings": {
+            "card_title": "計測精度・データ品質について",
+            "card_subtitle": "来店計測の精度、除外処理、データ確認について",
+            "icon_type": "chart",
+            "question_1": "来店客数はどのくらいの精度で計測できますか？",
+            "answer_1": "入口計測では、店舗環境が適切な場合、95%以上の精度を目安としています。ただし、精度は入口の幅、天井高、照明、混雑状況、スタッフの動き、カメラの設置位置によって変動します。Flowでは、店舗環境を確認したうえで適切な設置方法を設計し、安定した計測ができるよう調整します。",
+            "question_1_open": false,
+            "question_2": "スタッフ、再来店、グループ来店などはどのように扱われますか？",
+            "answer_2": "Flowでは、スタッフ除外や同日内の再来店除外など、店舗運用に合わせたフィルタリング設定が可能です。グループ来店についても、来店者を個別に計測することを基本としています。ただし、混雑状況や入口環境によって計測条件は変わるため、導入前に店舗ごとの環境を確認します。",
+            "question_2_open": false,
+            "question_3": "AIカメラではどのようなデータを計測できますか？",
+            "answer_3": "FlowのAIカメラでは、来店客数、店前通行量、滞在時間、性別・年代などの属性、店内導線、ゾーン別の回遊や滞在などを計測できます。計測できる内容は、店舗環境、カメラの設置位置、導入する計測メニューによって異なります。導入前に、目的に合わせて必要な計測項目を確認します。",
+            "question_3_open": false,
+            "question_4": "",
+            "answer_4": "",
+            "question_4_open": false,
+            "question_5": "",
+            "answer_5": "",
+            "question_5_open": false,
+            "header_background_color": "#11243e",
+            "title_color": "#ffffff",
+            "subtitle_color": "#ffffffb3",
+            "icon_badge_background": "#a0b84226",
+            "icon_color": "#a0b842",
+            "question_color": "#0e2a3a",
+            "answer_color": "#677279"
+          },
+          "blocks": {}
+        },
+        "ai_gen_block_659cb24_A8Jq6p": {
+          "type": "ai_gen_block_659cb24",
+          "name": "FAQ card",
+          "settings": {
+            "card_title": "システム連携について",
+            "card_subtitle": "POS、シフト、天候、既存システムとの連携について",
+            "icon_type": "chart",
+            "question_1": "POSデータはどのように連携できますか？",
+            "answer_1": "Flowでは、POSデータを取り込み、来店客数、売上、購入率、客単価などを組み合わせて分析できます。連携方法は、お客様のPOSシステムや社内運用に合わせて設計します。API連携が適している場合もあれば、CSVデータをFTPで連携する方法が現実的な場合もあります。まずは現在のデータ形式、更新頻度、運用フローを確認し、最適な連携方法をご提案します。",
+            "question_1_open": false,
+            "question_2": "シフトデータや天候データも連携できますか？",
+            "answer_2": "はい。シフトデータは、POSデータと同様にAPI、CSV、FTPなどの方法で取り込み、来店客数や売上と組み合わせて分析できます。天候データについては、Flow側で標準的に連携しており、登録された店舗住所に基づいて各店舗の天候情報を紐づけます。これにより、スタッフ配置、天候、店舗属性などの運用条件と店舗実績をあわせて確認できます。",
+            "question_2_open": false,
+            "question_3": "API、CSV、FTPなど、どのような連携方法に対応していますか？",
+            "answer_3": "Flowは、API、CSV、FTPなど複数の連携方法に対応しています。お客様の既存システムや社内運用に合わせて、現実的な連携方法を確認します。連携内容や更新頻度は、利用するデータの種類やシステム環境によって設計します。",
+            "question_3_open": false,
+            "question_4": "",
+            "answer_4": "",
+            "question_4_open": false,
+            "question_5": "",
+            "answer_5": "",
+            "question_5_open": false,
+            "header_background_color": "#11243e",
+            "title_color": "#ffffff",
+            "subtitle_color": "#ffffffb3",
+            "icon_badge_background": "#a0b84226",
+            "icon_color": "#a0b842",
+            "question_color": "#0e2a3a",
+            "answer_color": "#677279"
+          },
+          "blocks": {}
+        },
+        "ai_gen_block_659cb24_EBQNTg": {
+          "type": "ai_gen_block_659cb24",
+          "name": "FAQ card",
+          "settings": {
+            "card_title": "プライバシー・セキュリティについて",
+            "card_subtitle": "映像、個人情報、データ管理について",
+            "icon_type": "shield",
+            "question_1": "カメラ映像は保存されますか？",
+            "answer_1": "カメラ映像は、標準では保存されません。FlowのAIカメラは、来店客数や行動傾向を計測するためのものであり、監視カメラや防犯カメラとして映像を閲覧・保存することを目的としていません。一部のケースでは、計測精度の確認や調整のために映像を確認する場合がありますが、その場合も目的と範囲を明確にしたうえで対応します。",
+            "question_1_open": false,
+            "question_2": "個人を特定できる情報は取得されますか？",
+            "answer_2": "Flowは、来店客数、属性傾向、滞在時間、導線など、店舗運営に必要な集計データの取得を目的としています。個人を特定するための氏名、連絡先、顔認証IDなどを取得するものではありません。必要な計測項目とデータの扱いは、導入前に確認します。",
+            "question_2_open": false,
+            "question_3": "データの閲覧権限や管理方法はどのように設定できますか？",
+            "answer_3": "Flowでは、利用者の役割に応じて閲覧範囲を設定できます。本部、エリアマネージャー、店舗責任者など、担当業務に応じた情報だけを確認できるようにすることで、必要な人が必要なデータを安全に活用できる環境を整えます。",
+            "question_3_open": false,
+            "question_4": "",
+            "answer_4": "",
+            "question_4_open": false,
+            "question_5": "",
+            "answer_5": "",
+            "question_5_open": false,
+            "header_background_color": "#11243e",
+            "title_color": "#ffffff",
+            "subtitle_color": "#ffffffb3",
+            "icon_badge_background": "#a0b84226",
+            "icon_color": "#a0b842",
+            "question_color": "#0e2a3a",
+            "answer_color": "#677279"
+          },
+          "blocks": {}
+        },
+        "ai_gen_block_659cb24_GP3jjk": {
+          "type": "ai_gen_block_659cb24",
+          "name": "FAQ card",
+          "settings": {
+            "card_title": "サポート・運用定着について",
+            "card_subtitle": "導入後の支援、研修、店舗での活用について",
+            "icon_type": "users",
+            "question_1": "導入後のサポートには何が含まれますか？",
+            "answer_1": "Flowでは、導入時の設定支援、データ確認、基本操作の案内、運用開始後のサポートを行います。店舗や本部がデータを確認できるだけでなく、日々の店舗運用に活用できるよう、導入目的や利用部門に合わせて支援内容を整理します。",
+            "question_1_open": false,
+            "question_2": "店舗スタッフや店長向けの研修はありますか？",
+            "answer_2": "はい、必要に応じて店舗責任者、本部担当者、エリアマネージャー向けの研修を実施できます。Flowの画面操作だけでなく、来店客数、購入率、客単価、時間帯別の動きなどをどのように読み取り、店舗改善につなげるかを実務に近い形で説明します。",
+            "question_2_open": false,
+            "question_3": "Flowのデータを日々の店舗運用に定着させるにはどうすればよいですか？",
+            "answer_3": "重要なのは、データを見ること自体を目的にしないことです。朝礼、日中の進捗確認、週次ミーティング、VMD確認、シフト調整など、既存の店舗業務の中にFlowの確認タイミングを組み込むことで、データを日々の判断に活用しやすくなります。Flowでは、店舗や本部の運用に合わせた活用方法もご相談いただけます。",
+            "question_3_open": false,
+            "question_4": "",
+            "answer_4": "",
+            "question_4_open": false,
+            "question_5": "",
+            "answer_5": "",
+            "question_5_open": false,
+            "header_background_color": "#11243e",
+            "title_color": "#ffffff",
+            "subtitle_color": "#ffffffb3",
+            "icon_badge_background": "#a0b84226",
+            "icon_color": "#a0b842",
+            "question_color": "#0e2a3a",
+            "answer_color": "#677279"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_659cb24_ckmcrH",
+        "ai_gen_block_659cb24_RjWCfb",
+        "ai_gen_block_659cb24_A8Jq6p",
+        "ai_gen_block_659cb24_EBQNTg",
+        "ai_gen_block_659cb24_GP3jjk"
+      ],
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "rich_text_EtLVJr": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_bNQkAX": {
+          "type": "heading",
+          "settings": {
+            "text": "Still have questions?",
+            "heading_tag": "h1",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_cRTfWf": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Our team is available to discuss your specific deployment requirements, integration scenarios, or compliance concerns.</p>"
+          }
+        },
+        "buttons_CT466j": {
+          "type": "buttons",
+          "settings": {
+            "style_1": "fill",
+            "size_1": "xl",
+            "text_1": "Contact Sales",
+            "url_1": "",
+            "background_1": "#a0b842",
+            "text_color_1": "",
+            "style_2": "fill",
+            "size_2": "xl",
+            "text_2": "Schedule Demo",
+            "url_2": "",
+            "background_2": "",
+            "text_color_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_bNQkAX",
+        "richtext_cRTfWf",
+        "buttons_CT466j"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
     "rich_text_6VmVgb": {
       "type": "rich-text",
       "blocks": {
@@ -483,10 +574,11 @@
         "button_AVKAbi",
         "buttons_jaKCGH"
       ],
+      "disabled": true,
       "name": "Rich text",
       "settings": {
         "full_width": true,
-        "content_width": "medium",
+        "content_width": "small",
         "text_position": "center",
         "background": "#0e366a",
         "background_gradient": "",
@@ -586,17 +678,16 @@
         "content": "",
         "background": "",
         "background_gradient": "",
-        "text_color": "",
-        "subheading_background_color": "",
-        "subheading_text_color": ""
+        "text_color": ""
       }
     }
   },
   "order": [
-    "1780368357769f3a1e",
-    "1780368579b1b4691b",
-    "multi_column_bJtgmc",
+    "rich_text_cqadYy",
+    "multi_column_L3Rbir",
     "section-15",
+    "1780470974bb22e153",
+    "rich_text_EtLVJr",
     "rich_text_6VmVgb",
     "multi_column_UExWWX"
   ]
