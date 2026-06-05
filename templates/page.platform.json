@@ -1987,21 +1987,11 @@
           },
           "blocks": {}
         },
-        "rich_text_KFm7fX": {
-          "type": "rich-text",
-          "name": "Rich text",
-          "settings": {
-            "text": "<h2>既存システムと店舗運用に合わせて、<br/>段階的に導入できます。</h2>",
-            "content_width": "large",
-            "text_alignment": "left"
-          },
-          "blocks": {}
-        },
         "rich_text_BxigGJ": {
           "type": "rich-text",
           "name": "Rich text",
           "settings": {
-            "text": "<p>Flowは、現在のPOS、来店計測、スタッフデータ、店舗運用に合わせて連携方法を確認します。すべてを一度に変える必要はありません。必要なデータから接続し、店舗・エリア・本部で使える形に整えていきます。</p>",
+            "text": "<h1>既存システムと店舗運用に合わせて、<br/>段階的に導入できます。</h1><p>Flowは、現在のPOS、来店計測、スタッフデータ、店舗運用に合わせて連携方法を確認します。すべてを一度に変える必要はありません。必要なデータから接続し、店舗・エリア・本部で使える形に整えていきます。</p>",
             "content_width": "medium",
             "text_alignment": "left"
           },
@@ -2060,7 +2050,6 @@
       },
       "block_order": [
         "badge_6bECTU",
-        "rich_text_KFm7fX",
         "rich_text_BxigGJ",
         "ai_gen_block_c38635f_L8NpUd"
       ],
