@@ -869,9 +869,9 @@
       ],
       "name": "Multi-column",
       "settings": {
-        "full_width": true,
+        "full_width": false,
         "stack_on_mobile": false,
-        "gap": "medium",
+        "gap": "small",
         "text_alignment": "center",
         "subheading": "",
         "title": "",
