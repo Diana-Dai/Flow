@@ -193,8 +193,7 @@
 
   .ai-flow-connect-heading-{{ ai_gen_id }} {
     color: {{ block.settings.heading_color }};
-    font-size: {{ block.settings.heading_size_mobile }}px;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 1.2;
     margin: 0 0 16px;
     letter-spacing: -0.02em;
@@ -375,9 +374,6 @@
   }
 
   @media screen and (min-width: 750px) {
-    .ai-flow-connect-heading-{{ ai_gen_id }} {
-      font-size: {{ block.settings.heading_size_desktop }}px;
-    }
 
     .ai-flow-connect-description-{{ ai_gen_id }} {
       font-size: {{ block.settings.description_size_desktop }}px;
@@ -744,26 +740,6 @@
     {
       "type": "header",
       "content": "Header typography"
-    },
-    {
-      "type": "range",
-      "id": "heading_size_mobile",
-      "label": "Heading size (mobile)",
-      "min": 20,
-      "max": 50,
-      "step": 2,
-      "unit": "px",
-      "default": 28
-    },
-    {
-      "type": "range",
-      "id": "heading_size_desktop",
-      "label": "Heading size (desktop)",
-      "min": 24,
-      "max": 72,
-      "step": 2,
-      "unit": "px",
-      "default": 42
     },
     {
       "type": "range",
