@@ -1,0 +1,659 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "1780368357769f3a1e": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_799e467_h7ydjQ": {
+          "type": "ai_gen_block_799e467",
+          "settings": {
+            "eyebrow_text": "PROOF // CUSTOMER RESULTS",
+            "main_heading": "PROVEN RETAIL OUTCOMES.",
+            "subheading": "Real Results from Flow Deployments Across Japan.",
+            "body_text": "Flow customers achieve measurable improvements in conversion, staffing efficiency, VMD performance, and operational execution. Each case study documents deployment scope, implementation approach, and verified business outcomes.",
+            "stat_1_number": "500+",
+            "stat_1_label": "Active Stores",
+            "stat_2_number": "50+",
+            "stat_2_label": "Retail Brands",
+            "stat_3_number": "98.5%",
+            "stat_3_label": "Measurement Accuracy",
+            "stat_4_number": "99.9%",
+            "stat_4_label": "Platform Uptime",
+            "dark_badge_text": "AGGREGATE IMPACT",
+            "dark_heading": "Measured Results Across Deployments",
+            "dark_subtext": "Representative outcomes from Flow customers in fashion, lifestyle, and specialty retail.",
+            "hero_metric_label": "SALES GROWTH (YoY)",
+            "hero_metric_value": "108.9%",
+            "hero_metric_detail": "2024 aggregate across Flow customers",
+            "metric_1_title": "CONVERSION LIFT",
+            "metric_1_value": "+8.93%",
+            "metric_1_detail": "Major retailer (220 stores)",
+            "metric_2_title": "ROI MULTIPLE",
+            "metric_2_value": "50x",
+            "metric_2_detail": "National fashion chain",
+            "metric_3_title": "CAPTURE RATE",
+            "metric_3_value": "+23.9%",
+            "metric_3_detail": "Multi-brand operator",
+            "metric_4_title": "SALES INCREASE",
+            "metric_4_value": "+25%",
+            "metric_4_detail": "Stores using dashboard",
+            "footer_disclaimer": "Results from documented case studies. Individual outcomes vary based on deployment scope, store operations, and market conditions.",
+            "eyebrow_bg_color": "#e8eaed",
+            "eyebrow_text_color": "#5f6368",
+            "heading_color": "#0e2a3a",
+            "subheading_color": "#0e2a3a",
+            "body_text_color": "#5f6368",
+            "stat_card_border_color": "#e8eaed",
+            "stat_number_color": "#0e2a3a",
+            "stat_label_color": "#5f6368",
+            "dark_card_bg_color": "#0e2a3a",
+            "dark_badge_bg_color": "#3d5a4a",
+            "dark_badge_text_color": "#ffffff",
+            "dark_subtext_color": "#9ca3af",
+            "metric_card_bg_color": "#1a3a4a",
+            "metric_label_color": "#9ca3af",
+            "metric_detail_color": "#9ca3af",
+            "icon_badge_bg_color": "#3d5a4a",
+            "icon_color": "#6ee7b7",
+            "footer_text_color": "#6b7280"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_799e467_h7ydjQ"
+      ],
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": true,
+        "remove_horizontal_spacing": false,
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "1780368579b1b4691b": {
+      "type": "_blocks",
+      "blocks": {
+        "heading_nLUiFr": {
+          "type": "heading",
+          "name": "Heading",
+          "settings": {
+            "text": "FEATURED CASE STUDIES",
+            "size": "h6",
+            "html_tag": "p",
+            "text_color": "",
+            "gradient": ""
+          },
+          "blocks": {}
+        },
+        "heading_VxHiDP": {
+          "type": "heading",
+          "name": "Heading",
+          "settings": {
+            "text": "Enterprise-Scale Transformations",
+            "size": "h1",
+            "html_tag": "h1",
+            "text_color": "",
+            "gradient": ""
+          },
+          "blocks": {}
+        },
+        "rich_text_Ya6Kni": {
+          "type": "rich-text",
+          "name": "Rich text",
+          "settings": {
+            "text": "<p></p><p></p><p></p>",
+            "content_width": "small",
+            "text_alignment": "center"
+          },
+          "blocks": {}
+        },
+        "ai_gen_block_38907dd_Tkggfa": {
+          "type": "ai_gen_block_38907dd",
+          "name": "Case study card",
+          "settings": {
+            "show_badges": true,
+            "badge_text": "FEATURED",
+            "company_name": "Major Japanese Fashion Retailer",
+            "meta_tags": "Fashion • Enterprise Scale",
+            "metrics_line": "124 → 220 stores",
+            "description": "A brief description of the company and their business model.",
+            "key_results_title": "KEY RESULTS",
+            "key_results": "80% reduction in manual work\n95% faster order processing\n3x increase in operational efficiency",
+            "challenges_title": "CHALLENGES BEFORE FLOW",
+            "challenges": "Manual data entry across multiple systems\nLack of real-time inventory visibility\nSlow order fulfillment process",
+            "operational_impact_title": "OPERATIONAL IMPACT",
+            "operational_impact": "Automated workflow integration\nReal-time data synchronization\nScalable infrastructure",
+            "cta_text": "Full Case Study",
+            "cta_url": ""
+          },
+          "blocks": {}
+        },
+        "ai_gen_block_38907dd_7wDWGy": {
+          "type": "ai_gen_block_38907dd",
+          "settings": {
+            "show_badges": true,
+            "badge_text": "FEATURED",
+            "company_name": "Daytona International",
+            "meta_tags": "Fashion • Multi-Brand",
+            "metrics_line": "Multiple locations",
+            "description": "Operates multiple fashion and lifestyle brands. Deployed Flow to automate visitor counting and improve store-level KPI management across diverse retail concepts.",
+            "key_results_title": "KEY RESULTS",
+            "key_results": "Capture rate improved 23.9%\nTraffic increased 6.3%\nConversion improved from 19.9% to 25.2%\nStores using dashboard achieved 25% sales increase",
+            "challenges_title": "CHALLENGES BEFORE FLOW",
+            "challenges": "Traffic counts were estimated or back-calculated\nFront zone performance judged by intuition\nLarge stores could not manually measure traffic\nStore managers lacked data to improve visitor rate and conversion",
+            "operational_impact_title": "OPERATIONAL IMPACT",
+            "operational_impact": "Store teams gained confidence through actual visitor data\nStaff recognized higher than expected volumes, creating positive mindset changes\nFlow became tool for both sales improvement and staff development\nReal-time data allowed mid-week tactical adjustments instead of weekly cycles\nImproved analytical capability and strategic thinking",
+            "cta_text": "Full Case Study",
+            "cta_url": ""
+          },
+          "blocks": {}
+        },
+        "ai_gen_block_38907dd_itbcYY": {
+          "type": "ai_gen_block_38907dd",
+          "name": "Case study card",
+          "settings": {
+            "show_badges": true,
+            "badge_text": "FEATURED",
+            "company_name": "Right On",
+            "meta_tags": "Jeans • National Chain",
+            "metrics_line": "400 stores",
+            "description": "Major national jeans chain needed objective evaluation of promotional strategies and storefront tactics. Moved away from assumptions and intuition to data-driven decision making.",
+            "key_results_title": "KEY RESULTS",
+            "key_results": "Revealed unexpected differences in visitor movement across stores\nEnabled hypothesis-driven decision making\nSupported fixture-level VMD evaluation\nHelped plan adjustments to weekly promotional cycles",
+            "challenges_title": "CHALLENGES BEFORE FLOW",
+            "challenges": "Determine which promotions truly increase visitors\nMeasure VMD and front zone impact using data\nMove away from assumptions and intuition",
+            "operational_impact_title": "OPERATIONAL IMPACT",
+            "operational_impact": "Superior UI easily adopted by store staff\nClear dashboards enabled evaluation of promotions, VMD and visitor trends together\nEstablished baseline KPIs using visitor and conversion trends\nImproved promotion prediction accuracy",
+            "cta_text": "Full Case Study",
+            "cta_url": ""
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "heading_nLUiFr",
+        "heading_VxHiDP",
+        "rich_text_Ya6Kni",
+        "ai_gen_block_38907dd_Tkggfa",
+        "ai_gen_block_38907dd_7wDWGy",
+        "ai_gen_block_38907dd_itbcYY"
+      ],
+      "custom_css": [
+        ".h6 {padding: 0.5rem 0 1rem; font-size: 1rem;}"
+      ],
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "multi_column_bJtgmc": {
+      "type": "multi-column",
+      "blocks": {
+        "item_mRFw4X": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-target",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#a0b842",
+            "icon_color": "#ffffff",
+            "background_color": "#ffffff",
+            "text_color": "",
+            "border_color": "#a0b842",
+            "show_controls": false,
+            "column_size": "2",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h4>Cole Haan Japan</h4><p>Premium Footwear & Accessories • Multiple formats</p><p>Required insights connected to selling behavior, fixture performance, and POS data. Different store formats made measurement inconsistent, and department store shops could not measure visitors.</p><h6></h6><h6>KEY RESULTS</h6><ul><li>Company-wide dashboards increased alignment</li><li>Store staff could see discrepancies between intuition and data</li><li>Gender and age attributes supported merchandising decisions</li></ul>",
+            "link_url": "#",
+            "link_text": "View details →",
+            "link_style": "link"
+          }
+        },
+        "item_r96Tt7": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-target",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#a0b842",
+            "icon_color": "#ffffff",
+            "background_color": "#ffffff",
+            "text_color": "",
+            "border_color": "#a0b842",
+            "show_controls": false,
+            "column_size": "2",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h4>Baycrews</h4><p>Fashion • Multi-Brand • Multiple locations</p><p>Implemented Flow early to support data-driven store operations across major brands and stores. Required group-wide visibility and role-specific dashboards.</p><h6></h6><h6>KEY RESULTS</h6><ul><li>Group-wide visibility of visitor counts</li><li>Clear identification of new store performance and conversion challenges</li><li>Dashboards tailored to role level: store, manager, executive</li></ul>",
+            "link_url": "",
+            "link_text": "View details →",
+            "link_style": "link"
+          }
+        },
+        "item_KQtcVQ": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-target",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#a0b842",
+            "icon_color": "#ffffff",
+            "background_color": "#ffffff",
+            "text_color": "",
+            "border_color": "#a0b842",
+            "show_controls": false,
+            "column_size": "2",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h4>Triumph International Japan</h4><p>Intimate Apparel • Multiple locations</p><p>Previously used a visitor counting system but found the support and UI insufficient. Staff could not easily interpret the data.</p><h6></h6><h6>KEY RESULTS</h6><ul><li>Data available in real-time instead of one day later</li><li>UI clarity allowed store staff to interpret KPI movement</li><li>Information sharing from HQ to stores accelerated</li></ul>",
+            "link_url": "#",
+            "link_text": "View details →",
+            "link_style": "link"
+          }
+        },
+        "item_jHGFzb": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-target",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#a0b842",
+            "icon_color": "#ffffff",
+            "background_color": "#ffffff",
+            "text_color": "",
+            "border_color": "#a0b842",
+            "show_controls": false,
+            "column_size": "2",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h4>TUMI Japan</h4><p>Premium Luggage & Accessories • Multiple locations</p><p>Pursues store-level DX. Combines fixed counters with Flow Clicker for stores where sensors cannot be installed.</p><h6></h6><h6>KEY RESULTS</h6><ul><li>Managers gained clearer understanding through visualized KPIs</li><li>Clicker automation reduced manual counting burden</li><li>Staff began documenting qualitative explanations in Pulse</li></ul>",
+            "link_url": "#",
+            "link_text": "View details →",
+            "link_style": "link"
+          }
+        },
+        "item_KeN4HJ": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-target",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#a0b842",
+            "icon_color": "#ffffff",
+            "background_color": "#ffffff",
+            "text_color": "",
+            "border_color": "#a0b842",
+            "show_controls": false,
+            "column_size": "2",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h4>Global Jeans Brand</h4><p>Denim • VMD Optimization • Multiple locations</p><p>Major global denim brand sought to optimize VMD performance in multi-brand retail environments. Focused on identifying which fixture layouts produce higher engagement and conversion.</p><h6></h6><h6>KEY RESULTS</h6><ul><li>Identified optimal fixture placements</li><li>Improved engagement through layout adjustments</li><li>Standardized best practices across stores</li></ul>",
+            "link_url": "#",
+            "link_text": "View details →",
+            "link_style": "link"
+          }
+        },
+        "item_kGDkaE": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-target",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#a0b842",
+            "icon_color": "#ffffff",
+            "background_color": "#ffffff",
+            "text_color": "",
+            "border_color": "#a0b842",
+            "show_controls": false,
+            "column_size": "2",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h4>Company-Wide Flow Deployment Impact</h4><p>Aggregate Analysis • Multiple customers</p><p>Flow examined performance across multiple customers who adopted Flow. Analysis shows significant outperformance vs. partial adopters and industry average.</p><h6></h6><h6>KEY RESULTS</h6><ul><li>2024: customers using Flow saw YoY sales growth of 108.9%</li><li>2023: companies deploying Flow in all stores achieved 108.5% YoY growth</li><li>Outperformed partial adopters and broader industry average</li></ul>",
+            "link_url": "#",
+            "link_text": "View details →",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_mRFw4X",
+        "item_r96Tt7",
+        "item_KQtcVQ",
+        "item_jHGFzb",
+        "item_KeN4HJ",
+        "item_kGDkaE"
+      ],
+      "custom_css": [
+        "h4 + p {margin-top: 0; font-size: 1rem;}",
+        "h6 {font-size: 1rem; margin-top: 2rem;}"
+      ],
+      "name": "Multi-column",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "start",
+        "subheading": "FEATURED CASE STUDIES",
+        "title": "Enterprise-Scale Transformations",
+        "content": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "section-15": {
+      "type": "feature-chart",
+      "blocks": {
+        "block-1": {
+          "type": "headings",
+          "settings": {
+            "heading_1": "主な提供価値",
+            "heading_2": "コアの設計思想",
+            "heading_3": "来店データの位置づけ",
+            "heading_4": "データの即時性",
+            "heading_5": "店舗での使いやすさ",
+            "heading_6": "判断へのつながり",
+            "heading_7": "店舗ごとの判断差",
+            "heading_8": "本部と店舗の連携",
+            "heading_9": "運用負荷",
+            "heading_10": "拡張性",
+            "heading_11": "",
+            "heading_12": "",
+            "heading_13": "",
+            "heading_14": "",
+            "heading_15": "",
+            "heading_16": "",
+            "heading_17": "",
+            "heading_18": "",
+            "heading_19": "",
+            "heading_20": ""
+          }
+        },
+        "block-2": {
+          "type": "values",
+          "settings": {
+            "product": "",
+            "value_1": "<p>40mm Beryllium</p>",
+            "value_2": "<p>245g</p>",
+            "value_3": "<p>165mm x 190mm x 66mm</p>",
+            "value_4": "<p>24 hours</p>",
+            "value_5": "",
+            "value_6": "",
+            "value_7": "",
+            "value_8": "",
+            "value_9": "",
+            "value_10": "",
+            "value_11": "",
+            "value_12": "",
+            "value_13": "",
+            "value_14": "",
+            "value_15": "",
+            "value_16": "",
+            "value_17": "",
+            "value_18": "",
+            "value_19": "",
+            "value_20": "",
+            "view_button_background": "",
+            "view_button_text_color": ""
+          }
+        },
+        "block-3": {
+          "type": "values",
+          "settings": {
+            "product": "",
+            "value_1": "<p>40mm Beryllium</p>",
+            "value_2": "<p>205g (On-Ear), 239g (Over-Ear)</p>",
+            "value_3": "<p>190mm x 155mm x 34mm (On-Ear), 200mm x 165mm x 40mm (Over-Ear)</p>",
+            "value_4": "<p>16 hours</p>",
+            "value_5": "",
+            "value_6": "",
+            "value_7": "",
+            "value_8": "",
+            "value_9": "",
+            "value_10": "",
+            "value_11": "",
+            "value_12": "",
+            "value_13": "",
+            "value_14": "",
+            "value_15": "",
+            "value_16": "",
+            "value_17": "",
+            "value_18": "",
+            "value_19": "",
+            "value_20": "",
+            "view_button_background": "",
+            "view_button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "Why Dashboards Fail",
+        "content": "<p>Traditional analytics show you the problem. Flow solves it.</p>",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "center",
+        "max_rows": 5,
+        "view_all_text": "View all",
+        "view_less_text": "View less",
+        "view_product": "View",
+        "viewing_product": "",
+        "show_product_swatch": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "chart_background": "",
+        "chart_text_color": "",
+        "chart_true_false_color": ""
+      }
+    },
+    "rich_text_6VmVgb": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_AK7Cjn": {
+          "type": "subheading",
+          "settings": {
+            "text": "NEXT STEPS",
+            "icon": "none"
+          }
+        },
+        "heading_YXhiR8": {
+          "type": "heading",
+          "settings": {
+            "text": "SEE WHAT FLOW COULD ACHIEVE INYOUR STORES",
+            "heading_tag": "h1",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_qzAkak": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Every retail operation is unique. Let's discuss what Flow could measure, analyze, and improve in your specific environment.</p>"
+          }
+        },
+        "button_AVKAbi": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "style": "outline",
+            "size": "base",
+            "text": "Contact Solutions Architect",
+            "url": "#",
+            "background": "",
+            "text_color": "#11243e"
+          }
+        },
+        "buttons_jaKCGH": {
+          "type": "buttons",
+          "settings": {
+            "style_1": "fill",
+            "size_1": "xl",
+            "text_1": "Schedule Demo →",
+            "url_1": "#",
+            "background_1": "#a0b842",
+            "text_color_1": "#ffffff",
+            "style_2": "fill",
+            "size_2": "xl",
+            "text_2": "Talk to Flow →",
+            "url_2": "#",
+            "background_2": "#ffffff",
+            "text_color_2": "#11243e"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_AK7Cjn",
+        "heading_YXhiR8",
+        "richtext_qzAkak",
+        "button_AVKAbi",
+        "buttons_jaKCGH"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "medium",
+        "text_position": "center",
+        "background": "#0e366a",
+        "background_gradient": "",
+        "text_color": "#ffffff"
+      }
+    },
+    "multi_column_UExWWX": {
+      "type": "multi-column",
+      "blocks": {
+        "item_kHMBXM": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "image": "shopify://shop_images/unnamed.png",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "#f9fafb",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "高精度店内計測",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<p>高精度な来店計測と顧客行動分析。</p>",
+            "link_url": "",
+            "link_text": "詳しく見る →",
+            "link_style": "link"
+          }
+        },
+        "item_jzqLHt": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "image": "shopify://shop_images/1_1b5442dc-a679-4a23-a10f-8f39d2cc4234.png",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "#f9fafb",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "FIDA分析基盤",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<p>来店・売上・人員配置を統合分析。</p>",
+            "link_url": "#",
+            "link_text": "詳しく見る →",
+            "link_style": "link"
+          }
+        },
+        "item_rn7myV": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "image": "shopify://shop_images/3_05197ad8-294f-4cc5-9d73-b73021906f0a.png",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "#f9fafb",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "現場意思決定実行支援",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<p>現場実行につながる推奨アクション。</p><h3></h3>",
+            "link_url": "#",
+            "link_text": "詳しく見る →",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_kHMBXM",
+        "item_jzqLHt",
+        "item_rn7myV"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".multi-column__item {padding: 0;}"
+      ],
+      "name": "Multi-column",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "start",
+        "subheading": "プラットフォームを見る",
+        "title": "店舗運営のすべてのレイヤーを統合。",
+        "content": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    }
+  },
+  "order": [
+    "1780368357769f3a1e",
+    "1780368579b1b4691b",
+    "multi_column_bJtgmc",
+    "section-15",
+    "rich_text_6VmVgb",
+    "multi_column_UExWWX"
+  ]
+}
