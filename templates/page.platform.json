@@ -1992,7 +1992,7 @@
           "name": "Rich text",
           "settings": {
             "text": "<h1>既存システムと店舗運用に合わせて、<br/>段階的に導入できます。</h1><p>Flowは、現在のPOS、来店計測、スタッフデータ、店舗運用に合わせて連携方法を確認します。すべてを一度に変える必要はありません。必要なデータから接続し、店舗・エリア・本部で使える形に整えていきます。</p>",
-            "content_width": "medium",
+            "content_width": "large",
             "text_alignment": "left"
           },
           "blocks": {}
@@ -2084,7 +2084,7 @@
           "settings": {
             "text": "よくある質問",
             "size": "h2",
-            "html_tag": "h2",
+            "html_tag": "h1",
             "text_color": "#11243e",
             "gradient": ""
           },
