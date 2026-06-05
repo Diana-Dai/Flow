@@ -1253,7 +1253,6 @@
             "section_padding_top_desktop": 80,
             "section_padding_bottom_desktop": 80,
             "section_padding_horizontal": 20,
-            "container_max_width": 1400,
             "section_background": "#ffffff"
           },
           "blocks": {}
@@ -1363,8 +1362,8 @@
         "background": "#ffffff",
         "background_gradient": "",
         "text_color": "",
-        "subheading_background_color": "#a0b842",
-        "subheading_text_color": "#ffffff"
+        "subheading_background_color": "#f0f3e9",
+        "subheading_text_color": "#11243e"
       }
     },
     "blocks_4YeEQJ": {
@@ -1374,11 +1373,11 @@
           "type": "ai_gen_block_bcb8a38",
           "settings": {
             "section_padding_mobile": 60,
-            "section_padding_desktop": 100,
+            "section_padding_desktop": 40,
             "background_color": "#f9fafb",
             "badge_text": "エリア管理",
-            "badge_background_color": "#11243e",
-            "badge_text_color": "#ffffff",
+            "badge_background_color": "#f0f3e9",
+            "badge_text_color": "#11243e",
             "headline": "エリアマネージャーは、担当店舗の変化を短時間で把握。",
             "headline_color": "#11243e",
             "description": "Flowは、担当店舗のKPI、Pulse、メモ、店舗報告をまとめて確認できるようにし、優先して見るべき店舗や変化を把握しやすくします。",
@@ -1996,11 +1995,11 @@
         "subheading": "実行改善",
         "title": "店舗運営の変化を、行動まで確認する。",
         "content": "<p>Flowは、KPIの変化だけでなく、店舗報告、メモ、Pulse、対応内容を同じ文脈で確認できるようにし、改善活動を振り返りやすくします。</p>",
-        "background": "#f2f2f2",
+        "background": "#ffffff",
         "background_gradient": "",
         "text_color": "",
-        "subheading_background_color": "#a0b842",
-        "subheading_text_color": "#ffffff"
+        "subheading_background_color": "#f0f3e9",
+        "subheading_text_color": "#11243e"
       }
     },
     "blocks_rwYEMm": {
@@ -2012,8 +2011,8 @@
           "settings": {
             "text": "導入・連携",
             "alignment": "left",
-            "text_color": "#ffffff",
-            "background": "#11243e"
+            "text_color": "#11243e",
+            "background": "#f0f3e9"
           },
           "blocks": {}
         },
@@ -2103,8 +2102,8 @@
           "settings": {
             "text": "FAQ",
             "alignment": "left",
-            "text_color": "#ffffff",
-            "background": "#11243e"
+            "text_color": "#11243e",
+            "background": "#f0f3e9"
           },
           "blocks": {}
         },
