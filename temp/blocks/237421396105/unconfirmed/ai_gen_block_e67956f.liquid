@@ -43,12 +43,55 @@
     - All strings, color variables, block avatars, and tags must be mapped to fields in the Liquid schema (`"type": "text"`, `"type": "image_picker"`, etc.) to stay completely editable in the theme editor window.
     - Use explicit CSS Flexbox utilities (`display: flex; align-items: center;`) to make sure avatars map properly beside the message bubbles.
     - Wrap all CSS selectors directly into a style sheet scoped strictly to the section ID (`#shopify-section-{{ section.id }}`) to maintain code modularity without layout bleed across other pages.
+    - Handle responsiveness cleanly: Ensure text drops down safely without spilling outside the horizontal bounds of the message pills on narrow mobile viewpoints., Act as an expert Shopify frontend and Liquid developer. Build a fully responsive custom section that replicates the layout, colors, spacing, and content of the provided reference "image_c58f25.png".
+    
+    ### 1. Global Integration, Max Width & Basic Styles
+    - **Theme Consistency:** The section must automatically inherit the current theme's typography family variables (e.g., `var(--font-heading-family)`, `var(--font-body-family)`), standard section maximum layout width (e.g., matching `.page-width` or `.container` wrappers), and default responsive side padding.
+    - **Section Background:** Clean white background (#FFFFFF) or ultra-light gray tint with comfortable top/bottom padding.
+    - **Main Box Container:** Wrap the entire content section in a large, horizontally centered card banner. 
+      - Background: A very soft off-white or soft gray background tint.
+      - Border: A thin, solid border featuring a muted light-olive green color tint.
+      - Shape: Smooth rounded corners (border-radius: 16px).
+      - Spacing: Generous internal padding layout to separate the chat bubble elements cleanly from the outer border.
+    
+    ### 2. Chat Bubble List Layout (Modular Blocks)
+    The rows inside the main card container must stack vertically with a comfortable gap (approx. 12px to 14px) separating each row. Each chat item must be built as a repeatable block using a Liquid `{% for block in section.blocks %}` loop so more chat strings can be added or updated via the Shopify Customizer.
+    
+    Each individual row uses a dynamic layout structure:
+    - **Left Column Asset (Avatar Box):** A small circular avatar container (~36px width). It should support an image picker (or fallback to an icon graphic) representing different user profile silhouettes.
+    - **Right Column Content (Bubble Container):** A horizontally stretching bubble container pill.
+      - Background: A slightly dark, desaturated off-white/gray tone to give contrast from the parent box.
+      - Border Radius: Highly pill-shaped rounded corners (border-radius: 24px).
+      - Alignment: Flex items row layout displaying the inline metadata label alongside the string.
+    
+    ### 3. Exact Text Content Map for 100% Replication
+    Ensure the default section layout or blocks feature the exact Japanese text extracted from image_c58f25.png:
+    
+    #### Row Block 1:
+    - **Avatar Graphic:** Male profile image
+    - **Label Tag:** [状況] (Styled in a bright olive/lime green text font color)
+    - **Message Content:** 「今日、何を優先すべきですか？」 (Dark navy/black text color)
+    
+    #### Row Block 2:
+    - **Avatar Graphic:** Outline user profile line icon
+    - **Label Tag:** [理由] (Styled in a bright olive/lime green text font color)
+    - **Message Content:** 「なぜ購買率が下がっていますか？」 (Dark navy/black text color)
+    
+    #### Row Block 3:
+    - **Avatar Graphic:** Female profile image
+    - **Label Tag:** [次の打ち手] (Styled in a bright olive/lime green text font color)
+    - **Message Content:** 「次に何を確認すべきですか？」 (Dark navy/black text color)
+    
+    ### 4. Shopify Coding & Theme Schema Requirements
+    - All strings, color variables, block avatars, and tags must be mapped to fields in the Liquid schema (`"type": "text"`, `"type": "image_picker"`, etc.) to stay completely editable in the theme editor window.
+    - Use explicit CSS Flexbox utilities (`display: flex; align-items: center;`) to make sure avatars map properly beside the message bubbles.
+    - Wrap all CSS selectors directly into a style sheet scoped strictly to the section ID (`#shopify-section-{{ section.id }}`) to maintain code modularity without layout bleed across other pages.
     - Handle responsiveness cleanly: Ensure text drops down safely without spilling outside the horizontal bounds of the message pills on narrow mobile viewpoints.
 {% enddoc %}
 {% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
 
 {% style %}
-  .ai-chat-bubble-section-{{ ai_gen_id }} {
+  .ai-chat-bubble-wrapper-{{ ai_gen_id }} {
     background-color: {{ block.settings.section_background }};
     padding: {{ block.settings.section_padding_top }}px 0 {{ block.settings.section_padding_bottom }}px;
     width: 100%;
@@ -157,90 +200,154 @@
   }
 {% endstyle %}
 
-<chat-bubble-section-{{ ai_gen_id }} class="ai-chat-bubble-section-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+<chat-bubble-section-{{ ai_gen_id }} class="ai-chat-bubble-wrapper-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
   <div class="ai-chat-bubble-container-{{ ai_gen_id }}">
     <div class="ai-chat-bubble-main-box-{{ ai_gen_id }}">
       <div class="ai-chat-bubble-list-{{ ai_gen_id }}">
-        <div class="ai-chat-bubble-row-{{ ai_gen_id }}">
-          <div class="ai-chat-bubble-avatar-{{ ai_gen_id }}">
-            {% if block.settings.avatar_1 %}
-              <img
-                src="{{ block.settings.avatar_1 | image_url: width: 100 }}"
-                alt="{{ block.settings.avatar_1.alt | escape }}"
-                loading="lazy"
-                width="100"
-                height="100"
-              >
-            {% else %}
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-                <circle cx="12" cy="7" r="4"></circle>
-              </svg>
-            {% endif %}
+        {% if block.settings.show_item_1 %}
+          <div class="ai-chat-bubble-row-{{ ai_gen_id }}">
+            <div class="ai-chat-bubble-avatar-{{ ai_gen_id }}">
+              {% if block.settings.avatar_1 %}
+                <img
+                  src="{{ block.settings.avatar_1 | image_url: width: 100 }}"
+                  alt="{{ block.settings.avatar_1.alt | escape }}"
+                  loading="lazy"
+                  width="100"
+                  height="100"
+                >
+              {% else %}
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+              {% endif %}
+            </div>
+            <div class="ai-chat-bubble-content-{{ ai_gen_id }}">
+              {% if block.settings.label_1 != blank %}
+                <span class="ai-chat-bubble-label-{{ ai_gen_id }}">{{ block.settings.label_1 }}</span>
+              {% endif %}
+              {% if block.settings.message_1 != blank %}
+                <span class="ai-chat-bubble-message-{{ ai_gen_id }}">{{ block.settings.message_1 }}</span>
+              {% endif %}
+            </div>
           </div>
-          <div class="ai-chat-bubble-content-{{ ai_gen_id }}">
-            {% if block.settings.label_1 != blank %}
-              <span class="ai-chat-bubble-label-{{ ai_gen_id }}">{{ block.settings.label_1 }}</span>
-            {% endif %}
-            {% if block.settings.message_1 != blank %}
-              <span class="ai-chat-bubble-message-{{ ai_gen_id }}">{{ block.settings.message_1 }}</span>
-            {% endif %}
-          </div>
-        </div>
+        {% endif %}
 
-        <div class="ai-chat-bubble-row-{{ ai_gen_id }}">
-          <div class="ai-chat-bubble-avatar-{{ ai_gen_id }}">
-            {% if block.settings.avatar_2 %}
-              <img
-                src="{{ block.settings.avatar_2 | image_url: width: 100 }}"
-                alt="{{ block.settings.avatar_2.alt | escape }}"
-                loading="lazy"
-                width="100"
-                height="100"
-              >
-            {% else %}
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-                <circle cx="12" cy="7" r="4"></circle>
-              </svg>
-            {% endif %}
+        {% if block.settings.show_item_2 %}
+          <div class="ai-chat-bubble-row-{{ ai_gen_id }}">
+            <div class="ai-chat-bubble-avatar-{{ ai_gen_id }}">
+              {% if block.settings.avatar_2 %}
+                <img
+                  src="{{ block.settings.avatar_2 | image_url: width: 100 }}"
+                  alt="{{ block.settings.avatar_2.alt | escape }}"
+                  loading="lazy"
+                  width="100"
+                  height="100"
+                >
+              {% else %}
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+              {% endif %}
+            </div>
+            <div class="ai-chat-bubble-content-{{ ai_gen_id }}">
+              {% if block.settings.label_2 != blank %}
+                <span class="ai-chat-bubble-label-{{ ai_gen_id }}">{{ block.settings.label_2 }}</span>
+              {% endif %}
+              {% if block.settings.message_2 != blank %}
+                <span class="ai-chat-bubble-message-{{ ai_gen_id }}">{{ block.settings.message_2 }}</span>
+              {% endif %}
+            </div>
           </div>
-          <div class="ai-chat-bubble-content-{{ ai_gen_id }}">
-            {% if block.settings.label_2 != blank %}
-              <span class="ai-chat-bubble-label-{{ ai_gen_id }}">{{ block.settings.label_2 }}</span>
-            {% endif %}
-            {% if block.settings.message_2 != blank %}
-              <span class="ai-chat-bubble-message-{{ ai_gen_id }}">{{ block.settings.message_2 }}</span>
-            {% endif %}
-          </div>
-        </div>
+        {% endif %}
 
-        <div class="ai-chat-bubble-row-{{ ai_gen_id }}">
-          <div class="ai-chat-bubble-avatar-{{ ai_gen_id }}">
-            {% if block.settings.avatar_3 %}
-              <img
-                src="{{ block.settings.avatar_3 | image_url: width: 100 }}"
-                alt="{{ block.settings.avatar_3.alt | escape }}"
-                loading="lazy"
-                width="100"
-                height="100"
-              >
-            {% else %}
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-                <circle cx="12" cy="7" r="4"></circle>
-              </svg>
-            {% endif %}
+        {% if block.settings.show_item_3 %}
+          <div class="ai-chat-bubble-row-{{ ai_gen_id }}">
+            <div class="ai-chat-bubble-avatar-{{ ai_gen_id }}">
+              {% if block.settings.avatar_3 %}
+                <img
+                  src="{{ block.settings.avatar_3 | image_url: width: 100 }}"
+                  alt="{{ block.settings.avatar_3.alt | escape }}"
+                  loading="lazy"
+                  width="100"
+                  height="100"
+                >
+              {% else %}
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+              {% endif %}
+            </div>
+            <div class="ai-chat-bubble-content-{{ ai_gen_id }}">
+              {% if block.settings.label_3 != blank %}
+                <span class="ai-chat-bubble-label-{{ ai_gen_id }}">{{ block.settings.label_3 }}</span>
+              {% endif %}
+              {% if block.settings.message_3 != blank %}
+                <span class="ai-chat-bubble-message-{{ ai_gen_id }}">{{ block.settings.message_3 }}</span>
+              {% endif %}
+            </div>
           </div>
-          <div class="ai-chat-bubble-content-{{ ai_gen_id }}">
-            {% if block.settings.label_3 != blank %}
-              <span class="ai-chat-bubble-label-{{ ai_gen_id }}">{{ block.settings.label_3 }}</span>
-            {% endif %}
-            {% if block.settings.message_3 != blank %}
-              <span class="ai-chat-bubble-message-{{ ai_gen_id }}">{{ block.settings.message_3 }}</span>
-            {% endif %}
+        {% endif %}
+
+        {% if block.settings.show_item_4 %}
+          <div class="ai-chat-bubble-row-{{ ai_gen_id }}">
+            <div class="ai-chat-bubble-avatar-{{ ai_gen_id }}">
+              {% if block.settings.avatar_4 %}
+                <img
+                  src="{{ block.settings.avatar_4 | image_url: width: 100 }}"
+                  alt="{{ block.settings.avatar_4.alt | escape }}"
+                  loading="lazy"
+                  width="100"
+                  height="100"
+                >
+              {% else %}
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+              {% endif %}
+            </div>
+            <div class="ai-chat-bubble-content-{{ ai_gen_id }}">
+              {% if block.settings.label_4 != blank %}
+                <span class="ai-chat-bubble-label-{{ ai_gen_id }}">{{ block.settings.label_4 }}</span>
+              {% endif %}
+              {% if block.settings.message_4 != blank %}
+                <span class="ai-chat-bubble-message-{{ ai_gen_id }}">{{ block.settings.message_4 }}</span>
+              {% endif %}
+            </div>
           </div>
-        </div>
+        {% endif %}
+
+        {% if block.settings.show_item_5 %}
+          <div class="ai-chat-bubble-row-{{ ai_gen_id }}">
+            <div class="ai-chat-bubble-avatar-{{ ai_gen_id }}">
+              {% if block.settings.avatar_5 %}
+                <img
+                  src="{{ block.settings.avatar_5 | image_url: width: 100 }}"
+                  alt="{{ block.settings.avatar_5.alt | escape }}"
+                  loading="lazy"
+                  width="100"
+                  height="100"
+                >
+              {% else %}
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+              {% endif %}
+            </div>
+            <div class="ai-chat-bubble-content-{{ ai_gen_id }}">
+              {% if block.settings.label_5 != blank %}
+                <span class="ai-chat-bubble-label-{{ ai_gen_id }}">{{ block.settings.label_5 }}</span>
+              {% endif %}
+              {% if block.settings.message_5 != blank %}
+                <span class="ai-chat-bubble-message-{{ ai_gen_id }}">{{ block.settings.message_5 }}</span>
+              {% endif %}
+            </div>
+          </div>
+        {% endif %}
       </div>
     </div>
   </div>
@@ -514,6 +621,12 @@
       "content": "Chat item 1"
     },
     {
+      "type": "checkbox",
+      "id": "show_item_1",
+      "label": "Show item 1",
+      "default": true
+    },
+    {
       "type": "image_picker",
       "id": "avatar_1",
       "label": "Avatar image"
@@ -533,6 +646,12 @@
     {
       "type": "header",
       "content": "Chat item 2"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_item_2",
+      "label": "Show item 2",
+      "default": true
     },
     {
       "type": "image_picker",
@@ -556,6 +675,12 @@
       "content": "Chat item 3"
     },
     {
+      "type": "checkbox",
+      "id": "show_item_3",
+      "label": "Show item 3",
+      "default": true
+    },
+    {
       "type": "image_picker",
       "id": "avatar_3",
       "label": "Avatar image"
@@ -571,6 +696,56 @@
       "id": "message_3",
       "label": "Message text",
       "default": "「次に何を確認すべきですか？」"
+    },
+    {
+      "type": "header",
+      "content": "Chat item 4"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_item_4",
+      "label": "Show item 4",
+      "default": false
+    },
+    {
+      "type": "image_picker",
+      "id": "avatar_4",
+      "label": "Avatar image"
+    },
+    {
+      "type": "text",
+      "id": "label_4",
+      "label": "Label text"
+    },
+    {
+      "type": "text",
+      "id": "message_4",
+      "label": "Message text"
+    },
+    {
+      "type": "header",
+      "content": "Chat item 5"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_item_5",
+      "label": "Show item 5",
+      "default": false
+    },
+    {
+      "type": "image_picker",
+      "id": "avatar_5",
+      "label": "Avatar image"
+    },
+    {
+      "type": "text",
+      "id": "label_5",
+      "label": "Label text"
+    },
+    {
+      "type": "text",
+      "id": "message_5",
+      "label": "Message text"
     },
     {
       "type": "range",
