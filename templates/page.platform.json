@@ -1228,7 +1228,7 @@
             "box_2_bullets": "",
             "box_2_link_label": "",
             "box_2_link_url": "",
-            "icon_3": "picto-printer",
+            "icon_3": "picto-comment",
             "icon_width_3": 32,
             "icon_background_type_3": "square",
             "icon_background_3": "#a0b842",
@@ -1431,7 +1431,6 @@
         "item_MVfQ7a",
         "item_Y47ifx"
       ],
-      "disabled": true,
       "custom_css": [
         ".multi-column__item h2 {margin-bottom: 0; padding-bottom: 0; color: #a0b842 !important;}",
         ".multi-column__item h2 ~ p {margin-top: 0;}",
