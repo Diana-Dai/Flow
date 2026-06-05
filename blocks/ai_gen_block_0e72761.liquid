@@ -452,33 +452,33 @@
             <div class="ai-flow-connect-box-{{ ai_gen_id }}">
               {% if block.settings.box_1_icon_svg != blank %}
                 <div class="ai-flow-connect-box-icon-{{ ai_gen_id }}">
-                                  <div class="icon_container">
-                  {%- capture icon -%}
-                    {%- if block.settings.custom_icon != blank -%}
-                      {%- capture sizes -%}{{ block.settings.icon_width }}px{%- endcapture -%}
-                      {%- capture widths -%}{{ block.settings.icon_width }}, {{ block.settings.icon_width | times: 2 | at_most: block.settings.custom_icon.width }}{%- endcapture -%}
-                      {%- capture style -%}--icon-max-width: {{ block.settings.icon_width }}px{%- endcapture -%}
-                      {{- block.settings.custom_icon | image_url: width: block.settings.custom_icon.width | image_tag: sizes: sizes, widths: widths, style: style, class: 'image-icon' -}}
-                    {%- else -%}
-                      {%- render 'icon' with block.settings.icon, width: block.settings.icon_width, height: block.settings.icon_width -%}
-                    {%- endif -%}
-                  {%- endcapture -%}
+                    <div class="icon_container">
+                      {%- capture icon -%}
+                        {%- if block.settings.custom_icon_1 != blank -%}
+                          {%- capture sizes -%}{{ block.settings.icon_width_1 }}px{%- endcapture -%}
+                          {%- capture widths -%}{{ block.settings.icon_width_1 }}, {{ block.settings.icon_width_1 | times: 2 | at_most: block.settings.custom_icon_1.width }}{%- endcapture -%}
+                          {%- capture style -%}--icon-max-width: {{ block.settings.icon_width_1 }}px{%- endcapture -%}
+                          {{- block.settings.custom_icon_1 | image_url: width: block.settings.custom_icon_1.width | image_tag: sizes: sizes, widths: widths, style: style, class: 'image-icon' -}}
+                        {%- else -%}
+                          {%- render 'icon' with block.settings.icon_1, width: block.settings.icon_width_1, height: block.settings.icon_width_1 -%}
+                        {%- endif -%}
+                      {%- endcapture -%}
 
-                  {%- if icon != blank -%}
-                    <div {{ block.shopify_attributes }}>
-                      {%- if block.settings.icon_background_type == 'none' -%}
-                        <div {% render 'surface', text_color: block.settings.icon_color %}>
-                          {{- icon -}}
+                      {%- if icon != blank -%}
+                        <div {{ block.shopify_attributes }}>
+                          {%- if block.settings.icon_background_1_type == 'none' -%}
+                            <div {% render 'surface', text_color: block.settings.icon_color_1 %}>
+                              {{- icon -}}
+                            </div>
+                          {%- else -%}
+                            {%- capture surface_class -%}icon-block {% if block.settings.icon_background_1_type == 'circle' %}rounded-full{% endif %}{%- endcapture -%}
+                            <div {% render 'surface', class: surface_class, background: block.settings.icon_background_1, text_color: block.settings.icon_color_1, background_fallback: 'bg-secondary' %}>
+                              {{- icon -}}
+                            </div>
+                          {%- endif -%}
                         </div>
-                      {%- else -%}
-                        {%- capture surface_class -%}icon-block {% if block.settings.icon_background_type == 'circle' %}rounded-full{% endif %}{%- endcapture -%}
-                        <div {% render 'surface', class: surface_class, background: block.settings.icon_background, text_color: block.settings.icon_color, background_fallback: 'bg-secondary' %}>
-                          {{- icon -}}
-                        </div>
-                      {%- endif -%}
+                      {%- endif -%}                
                     </div>
-                  {%- endif -%}                
-                </div>
                 </div>
               {% endif %}
 
@@ -516,7 +516,34 @@
             <div class="ai-flow-connect-box-{{ ai_gen_id }}">
               {% if block.settings.box_2_icon_svg != blank %}
                 <div class="ai-flow-connect-box-icon-{{ ai_gen_id }}">
-                  <div>{{ block.settings.box_2_icon_svg }}</div>
+                    <div class="icon_container">
+                      {%- capture icon -%}
+                        {%- if block.settings.custom_icon_2 != blank -%}
+                          {%- capture sizes -%}{{ block.settings.icon_width_2 }}px{%- endcapture -%}
+                          {%- capture widths -%}{{ block.settings.icon_width_2 }}, {{ block.settings.icon_width_2 | times: 2 | at_most: block.settings.custom_icon_2.width }}{%- endcapture -%}
+                          {%- capture style -%}--icon-max-width: {{ block.settings.icon_width_2 }}px{%- endcapture -%}
+                          {{- block.settings.custom_icon_2 | image_url: width: block.settings.custom_icon_2.width | image_tag: sizes: sizes, widths: widths, style: style, class: 'image-icon' -}}
+                        {%- else -%}
+                          {%- render 'icon' with block.settings.icon_2, width: block.settings.icon_width_2, height: block.settings.icon_width_2 -%}
+                        {%- endif -%}
+                      {%- endcapture -%}
+
+                      {%- if icon != blank -%}
+                        <div {{ block.shopify_attributes }}>
+                          {%- if block.settings.icon_background_2_type == 'none' -%}
+                            <div {% render 'surface', text_color: block.settings.icon_color_2 %}>
+                              {{- icon -}}
+                            </div>
+                          {%- else -%}
+                            {%- capture surface_class -%}icon-block {% if block.settings.icon_background_2_type == 'circle' %}rounded-full{% endif %}{%- endcapture -%}
+                            <div {% render 'surface', class: surface_class, background: block.settings.icon_background_2, text_color: block.settings.icon_color_2, background_fallback: 'bg-secondary' %}>
+                              {{- icon -}}
+                            </div>
+                          {%- endif -%}
+                        </div>
+                      {%- endif -%}                
+                    </div>
+
                 </div>
               {% endif %}
 
@@ -554,7 +581,33 @@
             <div class="ai-flow-connect-box-{{ ai_gen_id }}">
               {% if block.settings.box_3_icon_svg != blank %}
                 <div class="ai-flow-connect-box-icon-{{ ai_gen_id }}">
-                  <div>{{ block.settings.box_3_icon_svg }}</div>
+                    <div class="icon_container">
+                      {%- capture icon -%}
+                        {%- if block.settings.custom_icon_3 != blank -%}
+                          {%- capture sizes -%}{{ block.settings.icon_width_3 }}px{%- endcapture -%}
+                          {%- capture widths -%}{{ block.settings.icon_width_3 }}, {{ block.settings.icon_width_3 | times: 2 | at_most: block.settings.custom_icon_3.width }}{%- endcapture -%}
+                          {%- capture style -%}--icon-max-width: {{ block.settings.icon_width_3 }}px{%- endcapture -%}
+                          {{- block.settings.custom_icon_3 | image_url: width: block.settings.custom_icon_3.width | image_tag: sizes: sizes, widths: widths, style: style, class: 'image-icon' -}}
+                        {%- else -%}
+                          {%- render 'icon' with block.settings.icon_3, width: block.settings.icon_width_3, height: block.settings.icon_width_3 -%}
+                        {%- endif -%}
+                      {%- endcapture -%}
+
+                      {%- if icon != blank -%}
+                        <div {{ block.shopify_attributes }}>
+                          {%- if block.settings.icon_background_3_type == 'none' -%}
+                            <div {% render 'surface', text_color: block.settings.icon_color_3 %}>
+                              {{- icon -}}
+                            </div>
+                          {%- else -%}
+                            {%- capture surface_class -%}icon-block {% if block.settings.icon_background_3_type == 'circle' %}rounded-full{% endif %}{%- endcapture -%}
+                            <div {% render 'surface', class: surface_class, background: block.settings.icon_background_3, text_color: block.settings.icon_color_3, background_fallback: 'bg-secondary' %}>
+                              {{- icon -}}
+                            </div>
+                          {%- endif -%}
+                        </div>
+                      {%- endif -%}                
+                    </div>
                 </div>
               {% endif %}
 
@@ -592,7 +645,35 @@
             <div class="ai-flow-connect-box-{{ ai_gen_id }}">
               {% if block.settings.box_4_icon_svg != blank %}
                 <div class="ai-flow-connect-box-icon-{{ ai_gen_id }}">
-                  <div>{{ block.settings.box_4_icon_svg }}</div>
+                  
+                                    <div class="icon_container">
+                      {%- capture icon -%}
+                        {%- if block.settings.custom_icon_4 != blank -%}
+                          {%- capture sizes -%}{{ block.settings.icon_width_4 }}px{%- endcapture -%}
+                          {%- capture widths -%}{{ block.settings.icon_width_4 }}, {{ block.settings.icon_width_4 | times: 2 | at_most: block.settings.custom_icon_4.width }}{%- endcapture -%}
+                          {%- capture style -%}--icon-max-width: {{ block.settings.icon_width_4 }}px{%- endcapture -%}
+                          {{- block.settings.custom_icon_4 | image_url: width: block.settings.custom_icon_4.width | image_tag: sizes: sizes, widths: widths, style: style, class: 'image-icon' -}}
+                        {%- else -%}
+                          {%- render 'icon' with block.settings.icon_4, width: block.settings.icon_width_4, height: block.settings.icon_width_4 -%}
+                        {%- endif -%}
+                      {%- endcapture -%}
+
+                      {%- if icon != blank -%}
+                        <div {{ block.shopify_attributes }}>
+                          {%- if block.settings.icon_background_4_type == 'none' -%}
+                            <div {% render 'surface', text_color: block.settings.icon_color_4 %}>
+                              {{- icon -}}
+                            </div>
+                          {%- else -%}
+                            {%- capture surface_class -%}icon-block {% if block.settings.icon_background_4_type == 'circle' %}rounded-full{% endif %}{%- endcapture -%}
+                            <div {% render 'surface', class: surface_class, background: block.settings.icon_background_4, text_color: block.settings.icon_color_4, background_fallback: 'bg-secondary' %}>
+                              {{- icon -}}
+                            </div>
+                          {%- endif -%}
+                        </div>
+                      {%- endif -%}                
+                    </div>
+
                 </div>
               {% endif %}
 
