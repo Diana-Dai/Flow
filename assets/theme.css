@@ -1471,8 +1471,7 @@ scroll-carousel {
 
 @media screen and (min-width: 700px) {
   .badge:not(.badge--lg) {
-    padding-block-start: var(--spacing-0-5);
-    padding-block-end: var(--spacing-0-5);
+    padding: 8px 16px;
   }
 }
 
