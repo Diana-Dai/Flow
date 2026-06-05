@@ -1433,14 +1433,15 @@ scroll-carousel {
 .badge {
   --badge-background: var(--text-color) / .05;
   --badge-color: var(--text-color);
-
-      display: inline-block;
+    display: inline-block;
     font-size: 11px;
     font-weight: 600;
     letter-spacing: 1.5px;
     text-transform: uppercase;
     padding: 8px 16px;
     border-radius: 20px;
+    margin-block-end: var(--spacing-6);
+
 }
 
 .badge--primary {
@@ -1470,7 +1471,6 @@ scroll-carousel {
 
 @media screen and (min-width: 700px) {
   .badge:not(.badge--lg) {
-    font-size: var(--text-xs);
     padding-block-start: var(--spacing-0-5);
     padding-block-end: var(--spacing-0-5);
   }
