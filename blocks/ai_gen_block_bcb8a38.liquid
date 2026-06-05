@@ -108,21 +108,10 @@
     margin-bottom: 24px;
   }
 
-  .ai-implementation-process__headline-{{ ai_gen_id }} {
-    font-size: {{ block.settings.headline_size_mobile }}px;
-    font-weight: 700;
-    line-height: 1.1;
-    letter-spacing: -0.02em;
-    text-transform: uppercase;
     color: {{ block.settings.headline_color }};
     margin: 0 0 24px 0;
   }
 
-  @media screen and (min-width: 750px) {
-    .ai-implementation-process__headline-{{ ai_gen_id }} {
-      font-size: {{ block.settings.headline_size_desktop }}px;
-    }
-  }
 
   .ai-implementation-process__description-{{ ai_gen_id }} {
     font-size: {{ block.settings.description_size_mobile }}px;
@@ -258,7 +247,7 @@
       {% endif %}
 
       {% if block.settings.headline != blank %}
-        <h2 class="ai-implementation-process__headline-{{ ai_gen_id }}">
+        <h2 class="ai-implementation-process__headline-{{ ai_gen_id }} h1">
           {{ block.settings.headline }}
         </h2>
       {% endif %}
@@ -435,26 +424,6 @@
       "id": "headline",
       "label": "Headline",
       "default": "SUPPORTED FROM START TO LAUNCH."
-    },
-    {
-      "type": "range",
-      "id": "headline_size_mobile",
-      "label": "Size (mobile)",
-      "min": 24,
-      "max": 60,
-      "step": 2,
-      "unit": "px",
-      "default": 36
-    },
-    {
-      "type": "range",
-      "id": "headline_size_desktop",
-      "label": "Size (desktop)",
-      "min": 32,
-      "max": 100,
-      "step": 2,
-      "unit": "px",
-      "default": 56
     },
     {
       "type": "color",
