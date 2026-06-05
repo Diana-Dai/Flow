@@ -357,7 +357,9 @@
         "content": "<p>売上、来店、スタッフ、天候、店舗報告、マニュアルをひとつの基盤に集約し、店舗運営の判断に使える状態にします。</p>",
         "background": "#ffffff",
         "background_gradient": "",
-        "text_color": ""
+        "text_color": "",
+        "subheading_background_color": "",
+        "subheading_text_color": ""
       }
     },
     "multi_column_Rqk3xG": {
@@ -449,7 +451,9 @@
         "content": "<p>既存システムや店舗現場の情報をFlowに集約し、店長・エリアマネージャー・本部が同じ情報をもとに状況を確認できる状態にします。</p>",
         "background": "#f2f2f2",
         "background_gradient": "",
-        "text_color": ""
+        "text_color": "",
+        "subheading_background_color": "#a0b842",
+        "subheading_text_color": "#ffffff"
       }
     },
     "multi_column_rPwdDt": {
@@ -653,7 +657,9 @@
         "content": "<p>通行量、来店数、購買率、客単価、売上進捗をつなげて確認し、スタッフ配置や滞在時間と合わせて改善余地を見つけやすくします。</p>",
         "background": "",
         "background_gradient": "",
-        "text_color": ""
+        "text_color": "",
+        "subheading_background_color": "#11243e",
+        "subheading_text_color": "#ffffff"
       }
     },
     "rich_text_peMmaV": {
@@ -915,7 +921,9 @@
         "content": "",
         "background": "",
         "background_gradient": "",
-        "text_color": ""
+        "text_color": "",
+        "subheading_background_color": "",
+        "subheading_text_color": ""
       }
     },
     "multi_column_HCGJea": {
@@ -1034,7 +1042,9 @@
         "content": "",
         "background": "#ffffff",
         "background_gradient": "",
-        "text_color": ""
+        "text_color": "",
+        "subheading_background_color": "#a0b842",
+        "subheading_text_color": "#ffffff"
       }
     },
     "media_with_text_hMPTmL": {
@@ -1092,7 +1102,7 @@
             "background_color": "rgba(0,0,0,0)",
             "eyebrow_text": "定性 × 定量",
             "eyebrow_font_size": 12,
-            "eyebrow_bg_color": "#11243e",
+            "eyebrow_bg_color": "#a0b842",
             "eyebrow_text_color": "#ffffff",
             "heading": "数字に、現場の理由を残す。",
             "heading_color": "#0a1a2f",
@@ -1352,7 +1362,9 @@
         "content": "<p>Flow AIは、売上・来店・購買率などの店舗データと、マニュアル・SOP・店舗報告を参照しながら、状況確認、要因整理、次の打ち手の検討を支援します。</p>",
         "background": "#ffffff",
         "background_gradient": "",
-        "text_color": ""
+        "text_color": "",
+        "subheading_background_color": "#a0b842",
+        "subheading_text_color": "#ffffff"
       }
     },
     "blocks_4YeEQJ": {
@@ -1547,7 +1559,9 @@
         "content": "<p>Flowは、担当店舗のKPI、Pulse、メモ、店舗報告をまとめて確認できるようにし、優先して見るべき店舗や変化を把握しやすくします。</p>",
         "background": "#11243e",
         "background_gradient": "",
-        "text_color": "#f9fafb"
+        "text_color": "#f9fafb",
+        "subheading_background_color": "",
+        "subheading_text_color": ""
       }
     },
     "multi_column_HCGJea11": {
@@ -1664,7 +1678,9 @@
         "content": "<p>Average Response Time: &lt;2 minutes from detection to action</p>",
         "background": "#0e366a",
         "background_gradient": "",
-        "text_color": "#ffffff"
+        "text_color": "#ffffff",
+        "subheading_background_color": "",
+        "subheading_text_color": ""
       }
     },
     "section-15": {
@@ -1982,7 +1998,9 @@
         "content": "<p>Flowは、KPIの変化だけでなく、店舗報告、メモ、Pulse、対応内容を同じ文脈で確認できるようにし、改善活動を振り返りやすくします。</p>",
         "background": "#f2f2f2",
         "background_gradient": "",
-        "text_color": ""
+        "text_color": "",
+        "subheading_background_color": "#a0b842",
+        "subheading_text_color": "#ffffff"
       }
     },
     "blocks_rwYEMm": {
