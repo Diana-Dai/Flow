@@ -217,8 +217,6 @@
           "settings": {
             "heading": "Positioning & Focus",
             "subheading": "Understanding what Flow is—and what we deliberately are not—clarifies how we serve retail operations.",
-            "heading_color": "#11243e",
-            "subheading_color": "#677279",
             "left_card_title": "What Flow Is",
             "left_card_bg": "rgba(0,0,0,0)",
             "left_badge_bg": "#a0b842",
@@ -604,7 +602,7 @@
         "heading_bNQkAX": {
           "type": "heading",
           "settings": {
-            "text": "Still have questions?",
+            "text": "Join Leading Retailers Building on Flow",
             "heading_tag": "h1",
             "text_color": "",
             "gradient": ""
@@ -613,7 +611,7 @@
         "richtext_cRTfWf": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Our team is available to discuss your specific deployment requirements, integration scenarios, or compliance concerns.</p>"
+            "content": "<p>From single-store pilots to 220+ store deployments, Flow scales with your retail operations.<br/><br/></p>"
           }
         },
         "buttons_CT466j": {
@@ -621,13 +619,13 @@
           "settings": {
             "style_1": "fill",
             "size_1": "xl",
-            "text_1": "Contact Sales",
+            "text_1": "Contact us",
             "url_1": "",
             "background_1": "#a0b842",
             "text_color_1": "",
             "style_2": "fill",
             "size_2": "xl",
-            "text_2": "Schedule Demo",
+            "text_2": "View Case Studies",
             "url_2": "",
             "background_2": "",
             "text_color_2": ""
@@ -644,9 +642,9 @@
         "full_width": true,
         "content_width": "small",
         "text_position": "center",
-        "background": "#ffffff",
+        "background": "#11243e",
         "background_gradient": "",
-        "text_color": ""
+        "text_color": "#ffffff"
       }
     },
     "rich_text_6VmVgb": {
