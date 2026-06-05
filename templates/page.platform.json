@@ -655,7 +655,7 @@
         "subheading": "可視化できるKPI",
         "title": "売上の流れを、ひとつに。",
         "content": "<p>通行量、来店数、購買率、客単価、売上進捗をつなげて確認し、スタッフ配置や滞在時間と合わせて改善余地を見つけやすくします。</p>",
-        "background": "",
+        "background": "#ffffff",
         "background_gradient": "",
         "text_color": "",
         "subheading_background_color": "#f0f3e9",
@@ -714,7 +714,7 @@
         "full_width": true,
         "content_width": "large",
         "text_position": "center",
-        "background": "rgba(0,0,0,0)",
+        "background": "#ffffff",
         "background_gradient": "",
         "text_color": ""
       }
@@ -1096,8 +1096,8 @@
           "type": "ai_gen_block_8944212",
           "settings": {
             "desktop_width_percent": 100,
-            "padding_top": 60,
-            "padding_bottom": 60,
+            "padding_top": 0,
+            "padding_bottom": 0,
             "padding_horizontal": 0,
             "background_color": "rgba(0,0,0,0)",
             "eyebrow_text": "定性 × 定量",
@@ -1248,10 +1248,10 @@
             "box_4_bullets": "",
             "box_4_link_label": "",
             "box_4_link_url": "",
-            "section_padding_top": 50,
-            "section_padding_bottom": 50,
-            "section_padding_top_desktop": 80,
-            "section_padding_bottom_desktop": 80,
+            "section_padding_top": 20,
+            "section_padding_bottom": 20,
+            "section_padding_top_desktop": 40,
+            "section_padding_bottom_desktop": 40,
             "section_padding_horizontal": 20,
             "section_background": "#ffffff"
           },
