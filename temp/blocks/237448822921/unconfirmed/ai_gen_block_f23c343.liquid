@@ -1,6 +1,567 @@
+{% doc %}
+  @prompt
+    Here is a comprehensive, text-based AI developer prompt meticulously crafted to replicate the layout, styles, color palette, and full content of **image_b53664.jpg**.
+    
+    It is structured with editable schema settings and block loops so you can change text or swap bullet points directly inside the Shopify Customizer.
+    
+    ---
+    
+    ## The AI Prompt
+    
+    ```text
+    Act as an expert Shopify frontend and Liquid developer. Build a fully responsive, custom dual-card feature grid section based entirely on the visual layout, spacing, and copy structure shown in the reference "image_b53664.jpg".
+    
+    ### 1. Global Integration, Max Width & Basic Styles
+    - **Theme Identity:** The section must automatically inherit the current theme's typography variables (e.g., `var(--font-heading-family)` and `var(--font-body-family)`), standard layout maximum width rules (e.g., matching your storefront's `.page-width` or `.container` layout wrappers), and native side padding.
+    - **Header Text Formatting:** Use deep navy blue text for headings and subheadings.
+    - **Section Layout:** On desktop screens, the section displays a top header group centered above a 2-column horizontal card grid. On mobile viewports, the layout must stack vertically with equal spacing.
+    
+    ### 2. Section Header Group
+    Centered at the top of the section layout:
+    - **Main Heading:** "Positioning & Focus" (Large, bold, dark navy).
+    - **Subheading:** "Understanding what Flow is—and what we deliberately are not—clarifies how we serve retail operations." (Muted gray text, centered, with comfortable line-height and max-width bounds to prevent awkward text wrapping).
+    
+    ### 3. Dual-Card Architecture & Specific Styles
+    The layout features two distinct parallel feature blocks side by side. Each card must have smooth rounded corners (border-radius: 16px) and an ultra-subtle border line.
+    
+    - **Left Card Block ("What Flow Is"):**
+      - **Background Styling:** Light, soft lime-green gradient tint or solid wash (#A0B842 opacity/tint or light pastel lime wash) shifting subtly into a creamy white.
+      - **Card Header Group:** Features an inline flex layout containing:
+        - A vibrant lime-green square badge with rounded corners (border-radius: 8px) containing a crisp white concentric target/bullseye inline SVG icon.
+        - Title Text: "What Flow Is" (Bold, prominent, dark navy).
+      - **Bullet Point Items List:** A vertical column of 4 list items. Each item uses a custom solid olive/lime-green circular bullet point marker, a bold dark-navy item header, and a smaller muted-gray explanatory text string nested cleanly beneath it.
+    
+    - **Right Card Block ("What Flow Is Not"):**
+      - **Background Styling:** Clean, ultra-light desaturated gray-blue background wash or solid crisp light gray pill style.
+      - **Card Header Group:** Features an inline flex layout containing:
+        - A soft muted-gray square badge with rounded corners containing a gray shield outline inline SVG icon.
+        - Title Text: "What Flow Is Not" (Bold, prominent, dark navy).
+      - **Bullet Point Items List:** A vertical column of 4 list items. Each item uses a custom solid dark-slate/gray circular bullet point marker, a bold dark-navy item header, and a smaller muted-gray explanatory text string nested cleanly beneath it.
+    
+    ### 4. Exact Content Text Map for 100% Replication
+    Ensure the default schema presets or output fields perfectly transcribe all copy verbatim from image_b53664.jpg:
+    
+    #### LEFT CARD ITEMS:
+    1. **Header:** Retail Operational Infrastructure
+       - **Description:** Platform for measuring, analyzing, and optimizing physical retail operations
+    2. **Header:** Analytics & Execution Platform
+       - **Description:** Real-time insights connected to daily store operations and execution
+    3. **Header:** Measurement-First System
+       - **Description:** Accurate visitor counting, zone analytics, and conversion tracking
+    4. **Header:** Enterprise Retail Software
+       - **Description:** Multi-store deployment, role-based access, integration-ready
+    
+    #### RIGHT CARD ITEMS:
+    1. **Header:** Not a Dashboard Company
+       - **Description:** Charts are outputs, not the product. Flow is operational infrastructure.
+    2. **Header:** Not a Hardware Company
+       - **Description:** Cameras are sensors, not the solution. Value is in measurement accuracy and platform.
+    3. **Header:** Not an AI Chatbot
+       - **Description:** AI enables measurement. The product is reliable operational data and execution tools.
+    4. **Header:** Not Security Surveillance
+       - **Description:** Flow measures behavior, not identity. Privacy-first, no facial recognition.
+    
+    ### 5. Liquid Schema & Custom CSS Requirements
+    - Make all titles, subheadings, card titles, icons, and list rows completely editable by creating structured list blocks (`blocks`) inside the section schema. 
+    - All custom CSS styles must be tightly scoped using the `#shopify-section-{{ section.id }}` handle to guarantee absolutely zero layout or style leaking across your store pages.
+    
+    ```
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-positioning-focus-{{ ai_gen_id }} {
+    display: block;
+    width: 100%;
+    max-width: var(--page-width, 1600px);
+    margin: 0 auto;
+    padding: 60px var(--spacing-large, 40px);
+  }
+
+  .ai-positioning-focus__header-{{ ai_gen_id }} {
+    text-align: center;
+    margin-bottom: 48px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .ai-positioning-focus__heading-{{ ai_gen_id }} {
+    font-family: var(--font-heading-family, 'Inter', sans-serif);
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.2;
+    color: {{ block.settings.heading_color }};
+    margin: 0 0 16px 0;
+  }
+
+  .ai-positioning-focus__subheading-{{ ai_gen_id }} {
+    font-family: var(--font-body-family, 'Inter', sans-serif);
+    font-size: 18px;
+    line-height: 1.6;
+    color: {{ block.settings.subheading_color }};
+    margin: 0;
+  }
+
+  .ai-positioning-focus__grid-{{ ai_gen_id }} {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+  }
+
+  .ai-positioning-focus__card-{{ ai_gen_id }} {
+    border-radius: 16px;
+    padding: 40px;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+  }
+
+  .ai-positioning-focus__card--left-{{ ai_gen_id }} {
+    background: {{ block.settings.left_card_bg }};
+  }
+
+  .ai-positioning-focus__card--right-{{ ai_gen_id }} {
+    background: {{ block.settings.right_card_bg }};
+  }
+
+  .ai-positioning-focus__card-header-{{ ai_gen_id }} {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 32px;
+  }
+
+  .ai-positioning-focus__badge-{{ ai_gen_id }} {
+    width: 48px;
+    height: 48px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .ai-positioning-focus__badge--left-{{ ai_gen_id }} {
+    background-color: {{ block.settings.left_badge_bg }};
+  }
+
+  .ai-positioning-focus__badge--right-{{ ai_gen_id }} {
+    background-color: {{ block.settings.right_badge_bg }};
+  }
+
+  .ai-positioning-focus__badge-{{ ai_gen_id }} svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .ai-positioning-focus__card-title-{{ ai_gen_id }} {
+    font-family: var(--font-heading-family, 'Inter', sans-serif);
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.3;
+    color: {{ block.settings.heading_color }};
+    margin: 0;
+  }
+
+  .ai-positioning-focus__list-{{ ai_gen_id }} {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .ai-positioning-focus__list-item-{{ ai_gen_id }} {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+  }
+
+  .ai-positioning-focus__bullet-{{ ai_gen_id }} {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    margin-top: 8px;
+  }
+
+  .ai-positioning-focus__bullet--left-{{ ai_gen_id }} {
+    background-color: {{ block.settings.left_bullet_color }};
+  }
+
+  .ai-positioning-focus__bullet--right-{{ ai_gen_id }} {
+    background-color: {{ block.settings.right_bullet_color }};
+  }
+
+  .ai-positioning-focus__item-content-{{ ai_gen_id }} {
+    flex: 1;
+  }
+
+  .ai-positioning-focus__item-header-{{ ai_gen_id }} {
+    font-family: var(--font-heading-family, 'Inter', sans-serif);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.4;
+    color: {{ block.settings.heading_color }};
+    margin: 0 0 4px 0;
+  }
+
+  .ai-positioning-focus__item-description-{{ ai_gen_id }} {
+    font-family: var(--font-body-family, 'Inter', sans-serif);
+    font-size: 14px;
+    line-height: 1.5;
+    color: {{ block.settings.subheading_color }};
+    margin: 0;
+  }
+
+  @media screen and (max-width: 989px) {
+    .ai-positioning-focus-{{ ai_gen_id }} {
+      padding: 40px var(--spacing-medium, 24px);
+    }
+
+    .ai-positioning-focus__heading-{{ ai_gen_id }} {
+      font-size: 32px;
+    }
+
+    .ai-positioning-focus__subheading-{{ ai_gen_id }} {
+      font-size: 16px;
+    }
+
+    .ai-positioning-focus__grid-{{ ai_gen_id }} {
+      grid-template-columns: 1fr;
+      gap: 24px;
+    }
+
+    .ai-positioning-focus__card-{{ ai_gen_id }} {
+      padding: 32px 24px;
+    }
+
+    .ai-positioning-focus__card-title-{{ ai_gen_id }} {
+      font-size: 20px;
+    }
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-positioning-focus-{{ ai_gen_id }} {
+      padding: 32px var(--spacing-small, 16px);
+    }
+
+    .ai-positioning-focus__heading-{{ ai_gen_id }} {
+      font-size: 28px;
+    }
+
+    .ai-positioning-focus__header-{{ ai_gen_id }} {
+      margin-bottom: 32px;
+    }
+
+    .ai-positioning-focus__card-{{ ai_gen_id }} {
+      padding: 24px 20px;
+    }
+
+    .ai-positioning-focus__badge-{{ ai_gen_id }} {
+      width: 40px;
+      height: 40px;
+    }
+
+    .ai-positioning-focus__badge-{{ ai_gen_id }} svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+{% endstyle %}
+
+<positioning-focus-{{ ai_gen_id }} class="ai-positioning-focus-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-positioning-focus__header-{{ ai_gen_id }}">
+    {% if block.settings.heading != blank %}
+      <h2 class="ai-positioning-focus__heading-{{ ai_gen_id }}">{{ block.settings.heading }}</h2>
+    {% endif %}
+    {% if block.settings.subheading != blank %}
+      <p class="ai-positioning-focus__subheading-{{ ai_gen_id }}">{{ block.settings.subheading }}</p>
+    {% endif %}
+  </div>
+
+  <div class="ai-positioning-focus__grid-{{ ai_gen_id }}">
+    <div class="ai-positioning-focus__card-{{ ai_gen_id }} ai-positioning-focus__card--left-{{ ai_gen_id }}">
+      <div class="ai-positioning-focus__card-header-{{ ai_gen_id }}">
+        <div class="ai-positioning-focus__badge-{{ ai_gen_id }} ai-positioning-focus__badge--left-{{ ai_gen_id }}">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="{{ block.settings.left_icon_color }}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"></circle>
+            <circle cx="12" cy="12" r="6"></circle>
+            <circle cx="12" cy="12" r="2"></circle>
+          </svg>
+        </div>
+        <h3 class="ai-positioning-focus__card-title-{{ ai_gen_id }}">{{ block.settings.left_card_title }}</h3>
+      </div>
+      <ul class="ai-positioning-focus__list-{{ ai_gen_id }}">
+        {% for i in (1..4) %}
+          {% assign header_key = 'left_item_' | append: i | append: '_header' %}
+          {% assign desc_key = 'left_item_' | append: i | append: '_description' %}
+          {% assign header = block.settings[header_key] %}
+          {% assign description = block.settings[desc_key] %}
+          {% if header != blank %}
+            <li class="ai-positioning-focus__list-item-{{ ai_gen_id }}">
+              <span class="ai-positioning-focus__bullet-{{ ai_gen_id }} ai-positioning-focus__bullet--left-{{ ai_gen_id }}"></span>
+              <div class="ai-positioning-focus__item-content-{{ ai_gen_id }}">
+                <h4 class="ai-positioning-focus__item-header-{{ ai_gen_id }}">{{ header }}</h4>
+                {% if description != blank %}
+                  <p class="ai-positioning-focus__item-description-{{ ai_gen_id }}">{{ description }}</p>
+                {% endif %}
+              </div>
+            </li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
+
+    <div class="ai-positioning-focus__card-{{ ai_gen_id }} ai-positioning-focus__card--right-{{ ai_gen_id }}">
+      <div class="ai-positioning-focus__card-header-{{ ai_gen_id }}">
+        <div class="ai-positioning-focus__badge-{{ ai_gen_id }} ai-positioning-focus__badge--right-{{ ai_gen_id }}">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="{{ block.settings.right_icon_color }}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+          </svg>
+        </div>
+        <h3 class="ai-positioning-focus__card-title-{{ ai_gen_id }}">{{ block.settings.right_card_title }}</h3>
+      </div>
+      <ul class="ai-positioning-focus__list-{{ ai_gen_id }}">
+        {% for i in (1..4) %}
+          {% assign header_key = 'right_item_' | append: i | append: '_header' %}
+          {% assign desc_key = 'right_item_' | append: i | append: '_description' %}
+          {% assign header = block.settings[header_key] %}
+          {% assign description = block.settings[desc_key] %}
+          {% if header != blank %}
+            <li class="ai-positioning-focus__list-item-{{ ai_gen_id }}">
+              <span class="ai-positioning-focus__bullet-{{ ai_gen_id }} ai-positioning-focus__bullet--right-{{ ai_gen_id }}"></span>
+              <div class="ai-positioning-focus__item-content-{{ ai_gen_id }}">
+                <h4 class="ai-positioning-focus__item-header-{{ ai_gen_id }}">{{ header }}</h4>
+                {% if description != blank %}
+                  <p class="ai-positioning-focus__item-description-{{ ai_gen_id }}">{{ description }}</p>
+                {% endif %}
+              </div>
+            </li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</positioning-focus-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class PositioningFocus{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+      }
+    }
+    customElements.define('positioning-focus-{{ ai_gen_id }}', PositioningFocus{{ ai_gen_id }});
+  })();
+</script>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "Positioning & Focus",
+  "tag": null,
+  "settings": [
+    {
+      "type": "header",
+      "content": "Section header"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Positioning & Focus"
+    },
+    {
+      "type": "textarea",
+      "id": "subheading",
+      "label": "Subheading",
+      "default": "Understanding what Flow is—and what we deliberately are not—clarifies how we serve retail operations."
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Heading color",
+      "default": "#0e366a"
+    },
+    {
+      "type": "color",
+      "id": "subheading_color",
+      "label": "Subheading color",
+      "default": "#677279"
+    },
+    {
+      "type": "header",
+      "content": "Left card - What Flow Is"
+    },
+    {
+      "type": "text",
+      "id": "left_card_title",
+      "label": "Card title",
+      "default": "What Flow Is"
+    },
+    {
+      "type": "color",
+      "id": "left_card_bg",
+      "label": "Background color",
+      "default": "#f4f7e8"
+    },
+    {
+      "type": "color",
+      "id": "left_badge_bg",
+      "label": "Badge background",
+      "default": "#a0b842"
+    },
+    {
+      "type": "color",
+      "id": "left_icon_color",
+      "label": "Icon color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "left_bullet_color",
+      "label": "Bullet color",
+      "default": "#a0b842"
+    },
+    {
+      "type": "text",
+      "id": "left_item_1_header",
+      "label": "Item 1 header",
+      "default": "Retail Operational Infrastructure"
+    },
+    {
+      "type": "textarea",
+      "id": "left_item_1_description",
+      "label": "Item 1 description",
+      "default": "Platform for measuring, analyzing, and optimizing physical retail operations"
+    },
+    {
+      "type": "text",
+      "id": "left_item_2_header",
+      "label": "Item 2 header",
+      "default": "Analytics & Execution Platform"
+    },
+    {
+      "type": "textarea",
+      "id": "left_item_2_description",
+      "label": "Item 2 description",
+      "default": "Real-time insights connected to daily store operations and execution"
+    },
+    {
+      "type": "text",
+      "id": "left_item_3_header",
+      "label": "Item 3 header",
+      "default": "Measurement-First System"
+    },
+    {
+      "type": "textarea",
+      "id": "left_item_3_description",
+      "label": "Item 3 description",
+      "default": "Accurate visitor counting, zone analytics, and conversion tracking"
+    },
+    {
+      "type": "text",
+      "id": "left_item_4_header",
+      "label": "Item 4 header",
+      "default": "Enterprise Retail Software"
+    },
+    {
+      "type": "textarea",
+      "id": "left_item_4_description",
+      "label": "Item 4 description",
+      "default": "Multi-store deployment, role-based access, integration-ready"
+    },
+    {
+      "type": "header",
+      "content": "Right card - What Flow Is Not"
+    },
+    {
+      "type": "text",
+      "id": "right_card_title",
+      "label": "Card title",
+      "default": "What Flow Is Not"
+    },
+    {
+      "type": "color",
+      "id": "right_card_bg",
+      "label": "Background color",
+      "default": "#f4f6f8"
+    },
+    {
+      "type": "color",
+      "id": "right_badge_bg",
+      "label": "Badge background",
+      "default": "#d1d5db"
+    },
+    {
+      "type": "color",
+      "id": "right_icon_color",
+      "label": "Icon color",
+      "default": "#6b7280"
+    },
+    {
+      "type": "color",
+      "id": "right_bullet_color",
+      "label": "Bullet color",
+      "default": "#6b7280"
+    },
+    {
+      "type": "text",
+      "id": "right_item_1_header",
+      "label": "Item 1 header",
+      "default": "Not a Dashboard Company"
+    },
+    {
+      "type": "textarea",
+      "id": "right_item_1_description",
+      "label": "Item 1 description",
+      "default": "Charts are outputs, not the product. Flow is operational infrastructure."
+    },
+    {
+      "type": "text",
+      "id": "right_item_2_header",
+      "label": "Item 2 header",
+      "default": "Not a Hardware Company"
+    },
+    {
+      "type": "textarea",
+      "id": "right_item_2_description",
+      "label": "Item 2 description",
+      "default": "Cameras are sensors, not the solution. Value is in measurement accuracy and platform."
+    },
+    {
+      "type": "text",
+      "id": "right_item_3_header",
+      "label": "Item 3 header",
+      "default": "Not an AI Chatbot"
+    },
+    {
+      "type": "textarea",
+      "id": "right_item_3_description",
+      "label": "Item 3 description",
+      "default": "AI enables measurement. The product is reliable operational data and execution tools."
+    },
+    {
+      "type": "text",
+      "id": "right_item_4_header",
+      "label": "Item 4 header",
+      "default": "Not Security Surveillance"
+    },
+    {
+      "type": "textarea",
+      "id": "right_item_4_description",
+      "label": "Item 4 description",
+      "default": "Flow measures behavior, not identity. Privacy-first, no facial recognition."
+    }
+  ],
+  "presets": [
+    {
+      "name": "Positioning & Focus"
+    }
+  ]
+}
 {% endschema %}
