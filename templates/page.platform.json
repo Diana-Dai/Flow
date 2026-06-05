@@ -1124,7 +1124,7 @@
             "light_card_bg": "#f2f2f2",
             "light_card_text": "#0a1a2f",
             "light_icon_bg": "#a0b842",
-            "light_checkmark_color": "#a0b842",
+            "light_checkmark_color": "#ffffff",
             "banner_title": "Flowの強み",
             "banner_text": "Flowは、数値データと現場の定性情報を同じ文脈で管理します。何が起きたのか、なぜ変化したのかを確認しやすくなり、報告・分析・改善判断がつながります。",
             "banner_padding": 32,
