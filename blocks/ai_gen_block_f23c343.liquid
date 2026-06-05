@@ -85,15 +85,12 @@
   }
 
   .ai-positioning-focus__heading-{{ ai_gen_id }} {
-    color: {{ block.settings.heading_color }};
     margin: 0 0 16px 0;
   }
 
   .ai-positioning-focus__subheading-{{ ai_gen_id }} {
     font-family: var(--font-body-family, 'Inter', sans-serif);
     font-size: 18px;
-    line-height: 1.6;
-    color: {{ block.settings.subheading_color }};
     margin: 0;
   }
 
@@ -196,7 +193,6 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 1.4;
-    color: {{ block.settings.heading_color }};
     margin: 0 0 4px 0;
   }
 
@@ -204,7 +200,6 @@
     font-family: var(--font-body-family, 'Inter', sans-serif);
     font-size: 14px;
     line-height: 1.5;
-    color: {{ block.settings.subheading_color }};
     margin: 0;
   }
 
@@ -365,22 +360,6 @@
       "id": "subheading",
       "label": "Subheading",
       "default": "Understanding what Flow is—and what we deliberately are not—clarifies how we serve retail operations."
-    },
-    {
-      "type": "header",
-      "content": "Colors"
-    },
-    {
-      "type": "color",
-      "id": "heading_color",
-      "label": "Heading color",
-      "default": "#0e366a"
-    },
-    {
-      "type": "color",
-      "id": "subheading_color",
-      "label": "Subheading color",
-      "default": "#677279"
     },
     {
       "type": "header",
