@@ -214,10 +214,6 @@
   }
 
   .ai-workflow-headline-{{ ai_gen_id }} {
-    font-size: {{ block.settings.headline_size }}px;
-    font-weight: 700;
-    color: {{ block.settings.headline_color }};
-    line-height: 1.2;
     margin: 0 0 24px;
     letter-spacing: -0.02em;
   }
@@ -400,9 +396,6 @@
       margin-bottom: 60px;
     }
 
-    .ai-workflow-headline-{{ ai_gen_id }} {
-      font-size: {{ block.settings.headline_size | times: 0.6 }}px;
-    }
 
     .ai-workflow-description-{{ ai_gen_id }} {
       font-size: {{ block.settings.description_size | times: 0.9 }}px;
@@ -468,7 +461,7 @@
       {% endif %}
 
       {% if block.settings.headline != blank %}
-        <h2 class="ai-workflow-headline-{{ ai_gen_id }}">
+        <h2 class="ai-workflow-headline-{{ ai_gen_id }} h1">
           {{ block.settings.headline }}
         </h2>
       {% endif %}
@@ -1035,12 +1028,6 @@
     },
     {
       "type": "color",
-      "id": "headline_color",
-      "label": "Headline",
-      "default": "#1a2b4a"
-    },
-    {
-      "type": "color",
       "id": "description_color",
       "label": "Description",
       "default": "#5a6c7d"
@@ -1120,16 +1107,6 @@
     {
       "type": "header",
       "content": "Typography"
-    },
-    {
-      "type": "range",
-      "id": "headline_size",
-      "label": "Headline size",
-      "min": 24,
-      "max": 56,
-      "step": 2,
-      "unit": "px",
-      "default": 42
     },
     {
       "type": "range",
