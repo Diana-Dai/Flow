@@ -1,6 +1,729 @@
+{% doc %}
+  @prompt
+    Act as an expert Shopify frontend and Liquid developer. Build a fully responsive, pixel-perfect custom split-feature section based entirely on the visual layout, spacing, and copy structure shown in the reference images "image_83e611.jpg" and "image_83e610.jpg".
+    
+    ### 1. Global Integration, Max Width & Basic Styles
+    - **Theme Identity:** The section must automatically inherit the current theme's typography variables (e.g., `var(--font-heading-family)` and `var(--font-body-family)`), standard layout maximum width rules (e.g., matching your storefront's `.page-width` or `.container` layout wrappers), and native responsive side padding.
+    - **Section Layout:** On desktop screens, the section displays a balanced 2-column layout (Left Column: Bold Copy & Description; Right Column: Mock UI Interface Card Container). On mobile viewports, the layout must stack vertically with the right column sliding cleanly underneath the left column.
+    - **Section Background:** Pure white background (#FFFFFF) with comfortable top and bottom padding.
+    
+    ### 2. Left Column Layout (Text Copy Block)
+    - **Top Badge Content:** A small, pill-shaped badge displaying the text "FLOW AI". 
+      - Background: A very light, soft pastel lime-green background wash.
+      - Text Color: A distinct olive/lime green accent color.
+      - Border-Radius: 20px.
+    - **Main Heading:** "店舗データと社内ルールを、\nFlow AIに聞く。" 
+      - Formatting: Large, bold, deep navy blue text with a distinct line break as shown in the image to maintain editorial structure.
+    - **Body Text Paragraph:** A smaller paragraph positioned below the heading using a muted slate-gray or dark-navy text color with proper line-height to ensure the Japanese text is highly legible:
+      "Flow AIは、売上・来店・購買率などの店舗データと、\nマニュアル・SOP・店舗報告を参照しながら、\n状況確認、要因整理、次の打ち手の検討を支援します。"
+    
+    ### 3. Right Column Layout (Mock UI Feature Card)
+    The right element is contained within a large white multi-layered interface block designed to look like a clean interactive card window.
+    - **Parent Card Styling:** 
+      - Background: Ultra-soft, off-white or light gray background card wash.
+      - Border: A very thin, light gray outer stroke.
+      - Shape: Rounded corners (border-radius: 16px).
+      - Spacing: Substantial internal padding to isolate the inner chat blocks.
+    
+    - **Card Header Group:** Features a horizontal flex layout containing:
+      - A subtle 4-point sparkle line-art SVG icon in an accent green color.
+      - A vertical text cluster: Title text reading "Flow AI" (Bold, prominent, dark navy) and smaller description text reading "店舗運営について質問できます" (Muted gray text).
+    
+    - **Inner Chat Block Rows:** A vertical stack of 3 individual message containers. Each container must be a separate card row with a pure white background, smooth rounded corners (border-radius: 12px), an ultra-faint gray border, and embedded flex items:
+      - **Left Asset:** A small, rounded light gray or green-outlined container housing a custom line-art SVG icon matching the context (Data Bar Chart icon for row 1, Search/Magnifying Glass icon for row 2, Target/Gear circle icon for row 3).
+      - **Right Content:** A vertical text grouping containing an olive-green label and bold dark-navy quote copy exactly as follows:
+        - **Row 1 Label:** 状況を聞く  |  **Row 1 Quote:** 「今日、売上目標に届くために何を優先すべきですか？」
+        - **Row 2 Label:** 理由を聞く  |  **Row 2 Quote:** 「来店数はあるのに購買率が低い理由は何ですか？」
+        - **Row 3 Label:** 次の打ち手を聞く  |  **Row 3 Quote:** 「接客・VMD・スタッフ配置のどこを見直すべきですか？」
+    
+    - **Card Footer Tag List:** A thin divider separator or spacing block followed by a bottom horizontal flex wrap section containing:
+      - **Label:** An inline database icon followed by text reading "参照データ" (Dark navy/black text).
+      - **Pill Tags System:** A row of light gray pill blocks with soft rounded corners, light gray background fills, and tiny crisp black font text: "売上", "来店", "購買率", "Pulse", "SOP", "メモ", and a trailing multi-dot option icon button ("...").
+    
+    ### 4. Liquid Schema & Custom CSS Requirements
+    - Make all titles, content, badge text, and the row quotes completely editable by mapping them to appropriate text, textarea, and block loops inside the section schema settings.
+    - All custom CSS styles must be tightly scoped using the `#shopify-section-{{ section.id }}` handle to guarantee absolutely zero layout or style leaking across your theme.
+    - Ensure the right interface card scales cleanly down on tablet or mobile dimensions without any inner text overflowing or cutting off.
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  #shopify-section-{{ section.id }} .ai-split-feature-{{ ai_gen_id }} {
+    display: block;
+    background-color: {{ block.settings.section_background }};
+    padding: {{ block.settings.section_padding_mobile }}px 0;
+    width: 100%;
+  }
+
+  @media screen and (min-width: 750px) {
+    #shopify-section-{{ section.id }} .ai-split-feature-{{ ai_gen_id }} {
+      padding: {{ block.settings.section_padding_desktop }}px 0;
+    }
+  }
+
+  #shopify-section-{{ section.id }} .ai-split-feature-container-{{ ai_gen_id }} {
+    max-width: {{ settings.page_width }}px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-6);
+  }
+
+  #shopify-section-{{ section.id }} .ai-split-feature-grid-{{ ai_gen_id }} {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    align-items: center;
+  }
+
+  @media screen and (min-width: 990px) {
+    #shopify-section-{{ section.id }} .ai-split-feature-grid-{{ ai_gen_id }} {
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+    }
+  }
+
+  #shopify-section-{{ section.id }} .ai-split-feature-left-{{ ai_gen_id }} {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  #shopify-section-{{ section.id }} .ai-split-feature-badge-{{ ai_gen_id }} {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 16px;
+    background-color: {{ block.settings.badge_background }};
+    color: {{ block.settings.badge_text_color }};
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    width: fit-content;
+    font-family: var(--font-body-family);
+  }
+
+  #shopify-section-{{ section.id }} .ai-split-feature-heading-{{ ai_gen_id }} {
+    font-family: var(--font-heading-family);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.3;
+    color: {{ block.settings.heading_color }};
+    margin: 0;
+    white-space: pre-line;
+  }
+
+  @media screen and (min-width: 750px) {
+    #shopify-section-{{ section.id }} .ai-split-feature-heading-{{ ai_gen_id }} {
+      font-size: 42px;
+    }
+  }
+
+  @media screen and (min-width: 990px) {
+    #shopify-section-{{ section.id }} .ai-split-feature-heading-{{ ai_gen_id }} {
+      font-size: 48px;
+    }
+  }
+
+  #shopify-section-{{ section.id }} .ai-split-feature-description-{{ ai_gen_id }} {
+    font-family: var(--font-body-family);
+    font-size: 15px;
+    line-height: 1.7;
+    color: {{ block.settings.body_text_color }};
+    margin: 0;
+    white-space: pre-line;
+  }
+
+  @media screen and (min-width: 750px) {
+    #shopify-section-{{ section.id }} .ai-split-feature-description-{{ ai_gen_id }} {
+      font-size: 16px;
+    }
+  }
+
+  #shopify-section-{{ section.id }} .ai-split-feature-right-{{ ai_gen_id }} {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #shopify-section-{{ section.id }} .ai-split-feature-card-{{ ai_gen_id }} {
+    background-color: {{ block.settings.card_background }};
+    border: 1px solid {{ block.settings.card_border_color }};
+    border-radius: 16px;
+    padding: 28px;
+    width: 100%;
+    max-width: 560px;
+  }
+
+  #shopify-section-{{ section.id }} .ai-split-feature-card-header-{{ ai_gen_id }} {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 24px;
+  }
+
+  #shopify-section-{{ section.id }} .ai-split-feature-card-icon-{{ ai_gen_id }} {
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    color: {{ block.settings.accent_color }};
+  }
+
+  #shopify-section-{{ section.id }} .ai-split-feature-card-header-text-{{ ai_gen_id }} {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  #shopify-section-{{ section.id }} .ai-split-feature-card-title-{{ ai_gen_id }} {
+    font-family: var(--font-heading-family);
+    font-size: 18px;
+    font-weight: 700;
+    color: {{ block.settings.card_title_color }};
+    margin: 0;
+  }
+
+  #shopify-section-{{ section.id }} .ai-split-feature-card-subtitle-{{ ai_gen_id }} {
+    font-family: var(--font-body-family);
+    font-size: 13px;
+    color: {{ block.settings.card_subtitle_color }};
+    margin: 0;
+  }
+
+  #shopify-section-{{ section.id }} .ai-split-feature-chat-rows-{{ ai_gen_id }} {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 20px;
+  }
+
+  #shopify-section-{{ section.id }} .ai-split-feature-chat-row-{{ ai_gen_id }} {
+    background-color: {{ block.settings.chat_row_background }};
+    border: 1px solid {{ block.settings.chat_row_border }};
+    border-radius: 12px;
+    padding: 16px;
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+  }
+
+  #shopify-section-{{ section.id }} .ai-split-feature-chat-icon-wrapper-{{ ai_gen_id }} {
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    background-color: {{ block.settings.chat_icon_background }};
+    border: 1px solid {{ block.settings.chat_icon_border }};
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #shopify-section-{{ section.id }} .ai-split-feature-chat-icon-{{ ai_gen_id }} {
+    width: 20px;
+    height: 20px;
+    color: {{ block.settings.accent_color }};
+  }
+
+  #shopify-section-{{ section.id }} .ai-split-feature-chat-content-{{ ai_gen_id }} {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  #shopify-section-{{ section.id }} .ai-split-feature-chat-label-{{ ai_gen_id }} {
+    font-family: var(--font-body-family);
+    font-size: 12px;
+    font-weight: 600;
+    color: {{ block.settings.accent_color }};
+    margin: 0;
+  }
+
+  #shopify-section-{{ section.id }} .ai-split-feature-chat-quote-{{ ai_gen_id }} {
+    font-family: var(--font-body-family);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.5;
+    color: {{ block.settings.card_title_color }};
+    margin: 0;
+  }
+
+  #shopify-section-{{ section.id }} .ai-split-feature-divider-{{ ai_gen_id }} {
+    height: 1px;
+    background-color: {{ block.settings.card_border_color }};
+    margin: 20px 0;
+  }
+
+  #shopify-section-{{ section.id }} .ai-split-feature-footer-{{ ai_gen_id }} {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  #shopify-section-{{ section.id }} .ai-split-feature-footer-label-{{ ai_gen_id }} {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: var(--font-body-family);
+    font-size: 13px;
+    font-weight: 600;
+    color: {{ block.settings.card_title_color }};
+  }
+
+  #shopify-section-{{ section.id }} .ai-split-feature-footer-icon-{{ ai_gen_id }} {
+    width: 16px;
+    height: 16px;
+    color: {{ block.settings.card_title_color }};
+  }
+
+  #shopify-section-{{ section.id }} .ai-split-feature-tags-{{ ai_gen_id }} {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
+  }
+
+  #shopify-section-{{ section.id }} .ai-split-feature-tag-{{ ai_gen_id }} {
+    padding: 6px 12px;
+    background-color: {{ block.settings.tag_background }};
+    color: {{ block.settings.tag_text_color }};
+    border-radius: 16px;
+    font-family: var(--font-body-family);
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  #shopify-section-{{ section.id }} .ai-split-feature-more-icon-{{ ai_gen_id }} {
+    width: 20px;
+    height: 20px;
+    color: {{ block.settings.card_subtitle_color }};
+    cursor: pointer;
+  }
+{% endstyle %}
+
+<ai-split-feature-{{ ai_gen_id }} class="ai-split-feature-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-split-feature-container-{{ ai_gen_id }}">
+    <div class="ai-split-feature-grid-{{ ai_gen_id }}">
+      <div class="ai-split-feature-left-{{ ai_gen_id }}">
+        {% if block.settings.badge_text != blank %}
+          <div class="ai-split-feature-badge-{{ ai_gen_id }}">
+            {{ block.settings.badge_text }}
+          </div>
+        {% endif %}
+
+        {% if block.settings.heading != blank %}
+          <h2 class="ai-split-feature-heading-{{ ai_gen_id }}">
+            {{ block.settings.heading }}
+          </h2>
+        {% endif %}
+
+        {% if block.settings.description != blank %}
+          <p class="ai-split-feature-description-{{ ai_gen_id }}">
+            {{ block.settings.description }}
+          </p>
+        {% endif %}
+      </div>
+
+      <div class="ai-split-feature-right-{{ ai_gen_id }}">
+        <div class="ai-split-feature-card-{{ ai_gen_id }}">
+          <div class="ai-split-feature-card-header-{{ ai_gen_id }}">
+            <svg class="ai-split-feature-card-icon-{{ ai_gen_id }}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2L15 8L22 9L17 14L18 21L12 18L6 21L7 14L2 9L9 8L12 2Z"/>
+            </svg>
+            <div class="ai-split-feature-card-header-text-{{ ai_gen_id }}">
+              <h3 class="ai-split-feature-card-title-{{ ai_gen_id }}">{{ block.settings.card_title }}</h3>
+              <p class="ai-split-feature-card-subtitle-{{ ai_gen_id }}">{{ block.settings.card_subtitle }}</p>
+            </div>
+          </div>
+
+          <div class="ai-split-feature-chat-rows-{{ ai_gen_id }}">
+            {% if block.settings.row_1_label != blank %}
+              <div class="ai-split-feature-chat-row-{{ ai_gen_id }}">
+                <div class="ai-split-feature-chat-icon-wrapper-{{ ai_gen_id }}">
+                  <svg class="ai-split-feature-chat-icon-{{ ai_gen_id }}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="3" width="18" height="18" rx="2"/>
+                    <path d="M3 9h18"/>
+                    <path d="M9 21V9"/>
+                  </svg>
+                </div>
+                <div class="ai-split-feature-chat-content-{{ ai_gen_id }}">
+                  <p class="ai-split-feature-chat-label-{{ ai_gen_id }}">{{ block.settings.row_1_label }}</p>
+                  <p class="ai-split-feature-chat-quote-{{ ai_gen_id }}">{{ block.settings.row_1_quote }}</p>
+                </div>
+              </div>
+            {% endif %}
+
+            {% if block.settings.row_2_label != blank %}
+              <div class="ai-split-feature-chat-row-{{ ai_gen_id }}">
+                <div class="ai-split-feature-chat-icon-wrapper-{{ ai_gen_id }}">
+                  <svg class="ai-split-feature-chat-icon-{{ ai_gen_id }}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="8"/>
+                    <path d="M21 21l-4.35-4.35"/>
+                  </svg>
+                </div>
+                <div class="ai-split-feature-chat-content-{{ ai_gen_id }}">
+                  <p class="ai-split-feature-chat-label-{{ ai_gen_id }}">{{ block.settings.row_2_label }}</p>
+                  <p class="ai-split-feature-chat-quote-{{ ai_gen_id }}">{{ block.settings.row_2_quote }}</p>
+                </div>
+              </div>
+            {% endif %}
+
+            {% if block.settings.row_3_label != blank %}
+              <div class="ai-split-feature-chat-row-{{ ai_gen_id }}">
+                <div class="ai-split-feature-chat-icon-wrapper-{{ ai_gen_id }}">
+                  <svg class="ai-split-feature-chat-icon-{{ ai_gen_id }}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"/>
+                    <circle cx="12" cy="12" r="6"/>
+                    <circle cx="12" cy="12" r="2"/>
+                  </svg>
+                </div>
+                <div class="ai-split-feature-chat-content-{{ ai_gen_id }}">
+                  <p class="ai-split-feature-chat-label-{{ ai_gen_id }}">{{ block.settings.row_3_label }}</p>
+                  <p class="ai-split-feature-chat-quote-{{ ai_gen_id }}">{{ block.settings.row_3_quote }}</p>
+                </div>
+              </div>
+            {% endif %}
+          </div>
+
+          <div class="ai-split-feature-divider-{{ ai_gen_id }}"></div>
+
+          <div class="ai-split-feature-footer-{{ ai_gen_id }}">
+            <div class="ai-split-feature-footer-label-{{ ai_gen_id }}">
+              <svg class="ai-split-feature-footer-icon-{{ ai_gen_id }}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                <line x1="3" y1="9" x2="21" y2="9"/>
+                <line x1="9" y1="21" x2="9" y2="9"/>
+              </svg>
+              {{ block.settings.footer_label }}
+            </div>
+
+            <div class="ai-split-feature-tags-{{ ai_gen_id }}">
+              {% if block.settings.tag_1 != blank %}
+                <span class="ai-split-feature-tag-{{ ai_gen_id }}">{{ block.settings.tag_1 }}</span>
+              {% endif %}
+              {% if block.settings.tag_2 != blank %}
+                <span class="ai-split-feature-tag-{{ ai_gen_id }}">{{ block.settings.tag_2 }}</span>
+              {% endif %}
+              {% if block.settings.tag_3 != blank %}
+                <span class="ai-split-feature-tag-{{ ai_gen_id }}">{{ block.settings.tag_3 }}</span>
+              {% endif %}
+              {% if block.settings.tag_4 != blank %}
+                <span class="ai-split-feature-tag-{{ ai_gen_id }}">{{ block.settings.tag_4 }}</span>
+              {% endif %}
+              {% if block.settings.tag_5 != blank %}
+                <span class="ai-split-feature-tag-{{ ai_gen_id }}">{{ block.settings.tag_5 }}</span>
+              {% endif %}
+              {% if block.settings.tag_6 != blank %}
+                <span class="ai-split-feature-tag-{{ ai_gen_id }}">{{ block.settings.tag_6 }}</span>
+              {% endif %}
+              <svg class="ai-split-feature-more-icon-{{ ai_gen_id }}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="1"/>
+                <circle cx="19" cy="12" r="1"/>
+                <circle cx="5" cy="12" r="1"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</ai-split-feature-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class AiSplitFeature{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+      }
+
+      connectedCallback() {
+      }
+    }
+
+    customElements.define('ai-split-feature-{{ ai_gen_id }}', AiSplitFeature{{ ai_gen_id }});
+  })();
+</script>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "Flow AI split feature",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Section"
+    },
+    {
+      "type": "range",
+      "id": "section_padding_mobile",
+      "label": "Padding (mobile)",
+      "min": 20,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "section_padding_desktop",
+      "label": "Padding (desktop)",
+      "min": 40,
+      "max": 160,
+      "step": 10,
+      "unit": "px",
+      "default": 80
+    },
+    {
+      "type": "color",
+      "id": "section_background",
+      "label": "Background",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "desktop_width_percent",
+      "label": "Desktop width",
+      "min": 50,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "default": 100
+    },
+    {
+      "type": "header",
+      "content": "Left column"
+    },
+    {
+      "type": "text",
+      "id": "badge_text",
+      "label": "Badge text",
+      "default": "FLOW AI"
+    },
+    {
+      "type": "color",
+      "id": "badge_background",
+      "label": "Badge background",
+      "default": "#e8f5e9"
+    },
+    {
+      "type": "color",
+      "id": "badge_text_color",
+      "label": "Badge text color",
+      "default": "#558b2f"
+    },
+    {
+      "type": "textarea",
+      "id": "heading",
+      "label": "Heading",
+      "default": "店舗データと社内ルールを、\nFlow AIに聞く。"
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Heading color",
+      "default": "#0e366a"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description",
+      "default": "Flow AIは、売上・来店・購買率などの店舗データと、\nマニュアル・SOP・店舗報告を参照しながら、\n状況確認、要因整理、次の打ち手の検討を支援します。"
+    },
+    {
+      "type": "color",
+      "id": "body_text_color",
+      "label": "Description color",
+      "default": "#546e7a"
+    },
+    {
+      "type": "header",
+      "content": "Card style"
+    },
+    {
+      "type": "color",
+      "id": "card_background",
+      "label": "Card background",
+      "default": "#f8f9fa"
+    },
+    {
+      "type": "color",
+      "id": "card_border_color",
+      "label": "Card border",
+      "default": "#e0e0e0"
+    },
+    {
+      "type": "color",
+      "id": "accent_color",
+      "label": "Accent color",
+      "default": "#558b2f"
+    },
+    {
+      "type": "header",
+      "content": "Card header"
+    },
+    {
+      "type": "text",
+      "id": "card_title",
+      "label": "Title",
+      "default": "Flow AI"
+    },
+    {
+      "type": "color",
+      "id": "card_title_color",
+      "label": "Title color",
+      "default": "#0e366a"
+    },
+    {
+      "type": "text",
+      "id": "card_subtitle",
+      "label": "Subtitle",
+      "default": "店舗運営について質問できます"
+    },
+    {
+      "type": "color",
+      "id": "card_subtitle_color",
+      "label": "Subtitle color",
+      "default": "#78909c"
+    },
+    {
+      "type": "header",
+      "content": "Chat rows"
+    },
+    {
+      "type": "color",
+      "id": "chat_row_background",
+      "label": "Row background",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "chat_row_border",
+      "label": "Row border",
+      "default": "#e8eaed"
+    },
+    {
+      "type": "color",
+      "id": "chat_icon_background",
+      "label": "Icon background",
+      "default": "#f1f8e9"
+    },
+    {
+      "type": "color",
+      "id": "chat_icon_border",
+      "label": "Icon border",
+      "default": "#c5e1a5"
+    },
+    {
+      "type": "header",
+      "content": "Row 1"
+    },
+    {
+      "type": "text",
+      "id": "row_1_label",
+      "label": "Label",
+      "default": "状況を聞く"
+    },
+    {
+      "type": "textarea",
+      "id": "row_1_quote",
+      "label": "Quote",
+      "default": "「今日、売上目標に届くために何を優先すべきですか？」"
+    },
+    {
+      "type": "header",
+      "content": "Row 2"
+    },
+    {
+      "type": "text",
+      "id": "row_2_label",
+      "label": "Label",
+      "default": "理由を聞く"
+    },
+    {
+      "type": "textarea",
+      "id": "row_2_quote",
+      "label": "Quote",
+      "default": "「来店数はあるのに購買率が低い理由は何ですか？」"
+    },
+    {
+      "type": "header",
+      "content": "Row 3"
+    },
+    {
+      "type": "text",
+      "id": "row_3_label",
+      "label": "Label",
+      "default": "次の打ち手を聞く"
+    },
+    {
+      "type": "textarea",
+      "id": "row_3_quote",
+      "label": "Quote",
+      "default": "「接客・VMD・スタッフ配置のどこを見直すべきですか？」"
+    },
+    {
+      "type": "header",
+      "content": "Footer"
+    },
+    {
+      "type": "text",
+      "id": "footer_label",
+      "label": "Footer label",
+      "default": "参照データ"
+    },
+    {
+      "type": "text",
+      "id": "tag_1",
+      "label": "Tag 1",
+      "default": "売上"
+    },
+    {
+      "type": "text",
+      "id": "tag_2",
+      "label": "Tag 2",
+      "default": "来店"
+    },
+    {
+      "type": "text",
+      "id": "tag_3",
+      "label": "Tag 3",
+      "default": "購買率"
+    },
+    {
+      "type": "text",
+      "id": "tag_4",
+      "label": "Tag 4",
+      "default": "Pulse"
+    },
+    {
+      "type": "text",
+      "id": "tag_5",
+      "label": "Tag 5",
+      "default": "SOP"
+    },
+    {
+      "type": "text",
+      "id": "tag_6",
+      "label": "Tag 6",
+      "default": "メモ"
+    },
+    {
+      "type": "color",
+      "id": "tag_background",
+      "label": "Tag background",
+      "default": "#eceff1"
+    },
+    {
+      "type": "color",
+      "id": "tag_text_color",
+      "label": "Tag text",
+      "default": "#37474f"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Flow AI split feature"
+    }
+  ],
+  "tag": null
+}
 {% endschema %}
