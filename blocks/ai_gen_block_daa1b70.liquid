@@ -60,7 +60,6 @@
   #shopify-section-{{ section.id }} .ai-split-feature-container-{{ ai_gen_id }} {
     max-width: {{ settings.page_width }}px;
     margin: 0 auto;
-    padding: 0 var(--spacing-gutter, 24px);
   }
 
   #shopify-section-{{ section.id }} .ai-split-feature-grid-{{ ai_gen_id }} {
@@ -108,27 +107,6 @@
     height: 100%;
     stroke: currentColor;
     fill: none;
-  }
-
-  #shopify-section-{{ section.id }} .ai-split-feature-heading-{{ ai_gen_id }} {
-    margin: 0;
-    white-space: pre-line;
-  }
-
-
-  #shopify-section-{{ section.id }} .ai-split-feature-description-{{ ai_gen_id }} {
-    font-family: var(--font-body-family, {{ settings.text_font.family }}, {{ settings.text_font.fallback_families }});
-    font-size: {{ block.settings.description_size_mobile }}px;
-    line-height: 1.7;
-    color: {{ block.settings.description_color }};
-    margin: 0;
-    white-space: pre-line;
-  }
-
-  @media screen and (min-width: 750px) {
-    #shopify-section-{{ section.id }} .ai-split-feature-description-{{ ai_gen_id }} {
-      font-size: {{ block.settings.description_size_desktop }}px;
-    }
   }
 
   #shopify-section-{{ section.id }} .ai-split-feature-right-{{ ai_gen_id }} {
@@ -716,32 +694,6 @@
       "id": "description",
       "label": "Text",
       "default": "Flow AIは、売上・来店・購買率などの店舗データと、\nマニュアル・SOP・店舗報告を参照しながら、\n状況確認、要因整理、次の打ち手の検討を支援します。"
-    },
-    {
-      "type": "color",
-      "id": "description_color",
-      "label": "Color",
-      "default": "#546e7a"
-    },
-    {
-      "type": "range",
-      "id": "description_size_mobile",
-      "label": "Size (mobile)",
-      "min": 12,
-      "max": 24,
-      "step": 1,
-      "unit": "px",
-      "default": 14
-    },
-    {
-      "type": "range",
-      "id": "description_size_desktop",
-      "label": "Size (desktop)",
-      "min": 14,
-      "max": 28,
-      "step": 1,
-      "unit": "px",
-      "default": 16
     },
     {
       "type": "header",
