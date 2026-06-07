@@ -1193,7 +1193,7 @@
             "image_object_position": "center",
             "image_border_radius": 16,
             "image_shadow": true,
-            "default_box_bg": "rgba(0,0,0,0)",
+            "default_box_bg": "#f2f2f2",
             "default_box_border": "#e5e7eb",
             "default_box_heading_color": "#0a1a2f",
             "default_box_text_color": "#677279",
@@ -1252,8 +1252,7 @@
             "section_padding_bottom": 0,
             "section_padding_top_desktop": 0,
             "section_padding_bottom_desktop": 0,
-            "section_padding_horizontal": 20,
-            "section_background": "#ffffff"
+            "section_padding_horizontal": 20
           },
           "blocks": {}
         }
@@ -1283,8 +1282,8 @@
             "show_badge": true,
             "badge_text": "FLOW AI",
             "badge_icon": "none",
-            "badge_background": "#e8f5e9",
-            "badge_text_color": "#558b2f",
+            "badge_background": "#f2f2f2",
+            "badge_text_color": "#11243e",
             "heading": "店舗データと社内ルールを、\nFlow AIに聞く。",
             "description": "Flow AIは、売上・来店・購買率などの店舗データと、\nマニュアル・SOP・店舗報告を参照しながら、\n状況確認、要因整理、次の打ち手の検討を支援します。",
             "card_background": "#fafafa",
@@ -1326,33 +1325,10 @@
             "show_more_button": true
           },
           "blocks": {}
-        },
-        "badge_3w7frk": {
-          "type": "badge",
-          "name": "Badge",
-          "settings": {
-            "text": "Flow AI",
-            "alignment": "center",
-            "text_color": "#11243e",
-            "background": "#f0f3e9"
-          },
-          "blocks": {}
-        },
-        "rich_text_Y96TtQ": {
-          "type": "rich-text",
-          "name": "Rich text",
-          "settings": {
-            "text": "<h1>店舗データと社内ルールを、Flow AIに聞く。</h1><p>Flow AIは、売上・来店・購買率などの店舗データと、マニュアル・SOP・店舗報告を参照しながら、状況確認、要因整理、次の打ち手の検討を支援します。</p>",
-            "content_width": "small",
-            "text_alignment": "left"
-          },
-          "blocks": {}
         }
       },
       "block_order": [
-        "ai_gen_block_daa1b70_FAfYkd",
-        "badge_3w7frk",
-        "rich_text_Y96TtQ"
+        "ai_gen_block_daa1b70_FAfYkd"
       ],
       "settings": {
         "full_width": true,
@@ -1463,50 +1439,61 @@
     "blocks_4YeEQJ": {
       "type": "_blocks",
       "blocks": {
-        "ai_gen_block_bcb8a38_CCdY63": {
-          "type": "ai_gen_block_bcb8a38",
+        "ai_gen_block_3504708_wmYtzW": {
+          "type": "ai_gen_block_3504708",
           "settings": {
-            "section_padding_mobile": 60,
-            "section_padding_desktop": 40,
-            "background_color": "#f9fafb",
             "badge_text": "エリア管理",
-            "badge_background_color": "#f0f3e9",
-            "badge_text_color": "#11243e",
             "headline": "エリアマネージャーは、担当店舗の変化を短時間で把握。",
-            "headline_color": "#11243e",
             "description": "Flowは、担当店舗のKPI、Pulse、メモ、店舗報告をまとめて確認できるようにし、優先して見るべき店舗や変化を把握しやすくします。",
-            "description_size_mobile": 16,
-            "description_size_desktop": 18,
-            "description_color": "#11243e",
-            "timeline_line_color": "#11243e",
-            "badge_green_color": "#a0b842",
-            "badge_navy_color": "#a0b842",
-            "badge_number_text_color": "#ffffff",
-            "badge_border_radius": 8,
-            "step_title_size_mobile": 18,
-            "step_title_size_desktop": 20,
-            "step_title_color": "#11243e",
-            "step_description_size_mobile": 15,
-            "step_description_size_desktop": 16,
-            "step_description_color": "#11243e",
-            "step_1_title": "Pulse報告を要約",
-            "step_1_description": "複数店舗から上がる報告をまとめて確認。",
-            "step_2_title": "KPI変化と照合",
-            "step_2_description": "売上、来店数、購買率の変化と現場情報を確認。",
-            "step_3_title": "注意店舗を抽出",
-            "step_3_description": "優先して確認すべき店舗を見つけやすく。",
-            "step_4_title": "訪問前に確認",
-            "step_4_description": "直近のKPI、メモ、過去の変化を確認。",
-            "step_5_title": "本部報告を効率化",
-            "step_5_description": "担当エリアの変化と課題を整理。",
-            "step_6_title": "",
-            "step_6_description": ""
+            "step1_icon": "document",
+            "step1_title": "レポートをサマリー",
+            "step1_desc": "すべての担当店舗から上がった報告をまとめて確認します。",
+            "step2_icon": "chart",
+            "step2_title": "KPIを比較・分析",
+            "step2_desc": "売上・来店数・購買率の変化を比較し、傾向を把握します。",
+            "step3_icon": "alert",
+            "step3_title": "優先対応店舗を特定",
+            "step3_desc": "変化やアラートをもとに、優先して見るべき店舗を抽出します。",
+            "step4_icon": "store",
+            "step4_title": "訪問準備を整える",
+            "step4_desc": "店舗のKPI履歴やメモ、直近の変化を確認し、訪問に備えます。",
+            "step5_icon": "checklist",
+            "step5_title": "本部へ報告・共有",
+            "step5_desc": "担当エリアの状況とアクションを整理し、効率的に報告します。",
+            "banner_text": "データの収集から報告までを一気通貫でつなぎ、エリアの成果最大化をサポートします。",
+            "max_width": 1400,
+            "background_color": "#fafbfc",
+            "badge_bg_color": "#e8ede5",
+            "badge_text_color": "#5a6c4d",
+            "headline_color": "#1a2b4a",
+            "description_color": "#5a6c7d",
+            "line_color": "#7a9b6f",
+            "icon_circle_bg": "#ffffff",
+            "icon_color": "#7a9b6f",
+            "card_bg_color": "#ffffff",
+            "card_border_color": "#e5e8eb",
+            "card_hover_border": "#7a9b6f",
+            "number_color": "#7a9b6f",
+            "step_title_color": "#1a2b4a",
+            "step_desc_color": "#6b7c8d",
+            "banner_bg_color": "#eef3f8",
+            "banner_icon_color": "#5a7a9b",
+            "banner_text_color": "#2a3b5a",
+            "headline_size": 42,
+            "description_size": 18,
+            "step_title_size": 18,
+            "step_desc_size": 15,
+            "banner_text_size": 16,
+            "icon_border_radius": 50,
+            "icon_circle_size": 80,
+            "icon_size": 36,
+            "card_border_radius": 18
           },
           "blocks": {}
         }
       },
       "block_order": [
-        "ai_gen_block_bcb8a38_CCdY63"
+        "ai_gen_block_3504708_wmYtzW"
       ],
       "name": "Implementation process",
       "settings": {
