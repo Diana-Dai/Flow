@@ -1286,13 +1286,7 @@
             "badge_background": "#e8f5e9",
             "badge_text_color": "#558b2f",
             "heading": "店舗データと社内ルールを、\nFlow AIに聞く。",
-            "heading_color": "#11243e",
-            "heading_size_mobile": 32,
-            "heading_size_desktop": 48,
             "description": "Flow AIは、売上・来店・購買率などの店舗データと、\nマニュアル・SOP・店舗報告を参照しながら、\n状況確認、要因整理、次の打ち手の検討を支援します。",
-            "description_color": "#546e7a",
-            "description_size_mobile": 14,
-            "description_size_desktop": 16,
             "card_background": "#fafafa",
             "card_border_color": "#e0e0e0",
             "card_border_radius": 16,
@@ -1444,6 +1438,7 @@
         "item_MVfQ7a",
         "item_Y47ifx"
       ],
+      "disabled": true,
       "custom_css": [
         ".multi-column__item h2 {margin-bottom: 0; padding-bottom: 0; color: #a0b842 !important;}",
         ".multi-column__item h2 ~ p {margin-top: 0;}",
