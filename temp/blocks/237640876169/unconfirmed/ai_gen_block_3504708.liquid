@@ -1,6 +1,1229 @@
+{% doc %}
+  @prompt
+    Create a premium enterprise SaaS workflow section that visually explains the Area Manager workflow inside a retail operations platform.
+    
+    STYLE DIRECTION:
+    - Modern SaaS landing page
+    - Clean Japanese enterprise software aesthetic
+    - Soft off-white background
+    - Navy blue typography
+    - Olive-green accent color
+    - Minimal line icons
+    - Rounded cards
+    - Elegant whitespace
+    - Figma-quality UI
+    - Apple-style spacing and hierarchy
+    
+    SECTION HEADER:
+    
+    Top pill badge:
+    "エリア管理"
+    
+    Large centered headline:
+    "エリアマネージャーは、担当店舗の変化を短時間で把握。"
+    
+    Supporting paragraph:
+    "Flowは、担当店舗のKPI、Pulse、メモ、店舗報告をまとめて確認できるようにし、優先して見るべき店舗や変化を把握しやすくします。"
+    
+    Maximum width centered layout.
+    
+    ---
+    
+    WORKFLOW VISUALIZATION
+    
+    Create a horizontal workflow timeline connecting 5 process cards.
+    
+    Design requirements:
+    
+    - Thin olive-green connecting line running through all steps
+    - Small circular milestones between steps
+    - Floating icon circles above each card
+    - Large step numbers
+    - Modern workflow feel
+    - Clean visual hierarchy
+    - Equal spacing between steps
+    
+    Desktop:
+    5 cards in one horizontal row
+    
+    Tablet:
+    Scrollable horizontal workflow
+    
+    Mobile:
+    Vertical workflow timeline
+    
+    ---
+    
+    STEP 01
+    
+    Icon:
+    Document / Report icon
+    
+    Number:
+    01
+    
+    Title:
+    レポートをサマリー
+    
+    Description:
+    すべての担当店舗から上がった報告をまとめて確認します。
+    
+    ---
+    
+    STEP 02
+    
+    Icon:
+    Analytics / KPI chart icon
+    
+    Number:
+    02
+    
+    Title:
+    KPIを比較・分析
+    
+    Description:
+    売上・来店数・購買率の変化を比較し、傾向を把握します。
+    
+    ---
+    
+    STEP 03
+    
+    Icon:
+    Alert / Priority icon
+    
+    Number:
+    03
+    
+    Title:
+    優先対応店舗を特定
+    
+    Description:
+    変化やアラートをもとに、優先して見るべき店舗を抽出します。
+    
+    ---
+    
+    STEP 04
+    
+    Icon:
+    Store icon
+    
+    Number:
+    04
+    
+    Title:
+    訪問準備を整える
+    
+    Description:
+    店舗のKPI履歴やメモ、直近の変化を確認し、訪問に備えます。
+    
+    ---
+    
+    STEP 05
+    
+    Icon:
+    Checklist / Clipboard icon
+    
+    Number:
+    05
+    
+    Title:
+    本部へ報告・共有
+    
+    Description:
+    担当エリアの状況とアクションを整理し、効率的に報告します。
+    
+    ---
+    
+    CARD DESIGN
+    
+    Each step card should have:
+    
+    - White background
+    - Rounded corners (16-20px)
+    - Thin subtle border
+    - Soft shadow
+    - Large icon circle overlapping the top edge
+    - Olive-green line icon
+    - Large olive-green step number
+    - Bold navy title
+    - Muted gray description
+    - Consistent card heights
+    
+    Hover state:
+    - Slight lift
+    - Stronger shadow
+    - Subtle olive accent
+    
+    ---
+    
+    BOTTOM INSIGHT BANNER
+    
+    Add a centered highlight banner beneath the workflow.
+    
+    Style:
+    - Soft blue-gray background
+    - Rounded pill shape
+    - Light bulb icon
+    - Subtle shadow
+    
+    Text:
+    "データの収集から報告までを一気通貫でつなぎ、エリアの成果最大化をサポートします。"
+    
+    ---
+    
+    OVERALL FEEL
+    
+    The section should feel like:
+    - A clear operational workflow
+    - A process visualization rather than a feature list
+    - Enterprise retail management software
+    - Modern SaaS product marketing
+    - Clean, trustworthy, professional, and highly polished, make the icons selectable and we cam change the border radius of t he icons
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-workflow-section-{{ ai_gen_id }} {
+    display: block;
+    width: 100%;
+    background-color: {{ block.settings.background_color }};
+    padding: 80px 20px;
+  }
+
+  .ai-workflow-container-{{ ai_gen_id }} {
+    max-width: {{ block.settings.max_width }}px;
+    margin: 0 auto;
+  }
+
+  .ai-workflow-header-{{ ai_gen_id }} {
+    text-align: center;
+    margin-bottom: 80px;
+  }
+
+  .ai-workflow-badge-{{ ai_gen_id }} {
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 20px;
+    background-color: {{ block.settings.badge_bg_color }};
+    color: {{ block.settings.badge_text_color }};
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 24px;
+    letter-spacing: 0.02em;
+  }
+
+  .ai-workflow-headline-{{ ai_gen_id }} {
+    font-size: {{ block.settings.headline_size }}px;
+    font-weight: 700;
+    color: {{ block.settings.headline_color }};
+    line-height: 1.2;
+    margin: 0 0 24px;
+    letter-spacing: -0.02em;
+  }
+
+  .ai-workflow-description-{{ ai_gen_id }} {
+    font-size: {{ block.settings.description_size }}px;
+    color: {{ block.settings.description_color }};
+    line-height: 1.7;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .ai-workflow-timeline-{{ ai_gen_id }} {
+    position: relative;
+    display: flex;
+    gap: 32px;
+    margin-bottom: 60px;
+    align-items: flex-start;
+  }
+
+  .ai-workflow-line-{{ ai_gen_id }} {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: {{ block.settings.line_color }};
+    z-index: 1;
+  }
+
+  .ai-workflow-step-{{ ai_gen_id }} {
+    position: relative;
+    flex: 1;
+    z-index: 2;
+  }
+
+  .ai-workflow-icon-circle-{{ ai_gen_id }} {
+    width: {{ block.settings.icon_circle_size }}px;
+    height: {{ block.settings.icon_circle_size }}px;
+    background-color: {{ block.settings.icon_circle_bg }};
+    border-radius: {{ block.settings.icon_border_radius }}%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 24px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    position: relative;
+    z-index: 3;
+  }
+
+  .ai-workflow-icon-circle-{{ ai_gen_id }} svg {
+    width: {{ block.settings.icon_size }}px;
+    height: {{ block.settings.icon_size }}px;
+    stroke: {{ block.settings.icon_color }};
+    fill: none;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  .ai-workflow-milestone-{{ ai_gen_id }} {
+    position: absolute;
+    top: 74px;
+    right: -18px;
+    width: 12px;
+    height: 12px;
+    background-color: {{ block.settings.line_color }};
+    border: 3px solid {{ block.settings.background_color }};
+    border-radius: 50%;
+    z-index: 3;
+  }
+
+  .ai-workflow-step-{{ ai_gen_id }}:last-child .ai-workflow-milestone-{{ ai_gen_id }} {
+    display: none;
+  }
+
+  .ai-workflow-card-{{ ai_gen_id }} {
+    background-color: {{ block.settings.card_bg_color }};
+    border: 1px solid {{ block.settings.card_border_color }};
+    border-radius: {{ block.settings.card_border_radius }}px;
+    padding: 32px 24px 28px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    transition: all 0.3s ease;
+    min-height: 240px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ai-workflow-card-{{ ai_gen_id }}:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    border-color: {{ block.settings.card_hover_border }};
+  }
+
+  .ai-workflow-step-number-{{ ai_gen_id }} {
+    font-size: 48px;
+    font-weight: 700;
+    color: {{ block.settings.number_color }};
+    line-height: 1;
+    margin-bottom: 16px;
+    opacity: 0.15;
+  }
+
+  .ai-workflow-step-title-{{ ai_gen_id }} {
+    font-size: {{ block.settings.step_title_size }}px;
+    font-weight: 700;
+    color: {{ block.settings.step_title_color }};
+    margin: 0 0 12px;
+    line-height: 1.4;
+  }
+
+  .ai-workflow-step-desc-{{ ai_gen_id }} {
+    font-size: {{ block.settings.step_desc_size }}px;
+    color: {{ block.settings.step_desc_color }};
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  .ai-workflow-banner-{{ ai_gen_id }} {
+    background-color: {{ block.settings.banner_bg_color }};
+    border-radius: 50px;
+    padding: 20px 40px;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+    margin: 0 auto;
+    max-width: 900px;
+  }
+
+  .ai-workflow-banner-wrapper-{{ ai_gen_id }} {
+    text-align: center;
+  }
+
+  .ai-workflow-banner-icon-{{ ai_gen_id }} {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+  }
+
+  .ai-workflow-banner-icon-{{ ai_gen_id }} svg {
+    width: 100%;
+    height: 100%;
+    fill: {{ block.settings.banner_icon_color }};
+  }
+
+  .ai-workflow-banner-text-{{ ai_gen_id }} {
+    font-size: {{ block.settings.banner_text_size }}px;
+    color: {{ block.settings.banner_text_color }};
+    line-height: 1.5;
+    font-weight: 500;
+  }
+
+  @media screen and (max-width: 1024px) {
+    .ai-workflow-timeline-{{ ai_gen_id }} {
+      overflow-x: auto;
+      overflow-y: hidden;
+      -webkit-overflow-scrolling: touch;
+      scroll-snap-type: x mandatory;
+      padding-bottom: 20px;
+    }
+
+    .ai-workflow-step-{{ ai_gen_id }} {
+      min-width: 280px;
+      scroll-snap-align: start;
+    }
+
+    .ai-workflow-line-{{ ai_gen_id }} {
+      width: max-content;
+      min-width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-workflow-section-{{ ai_gen_id }} {
+      padding: 60px 16px;
+    }
+
+    .ai-workflow-header-{{ ai_gen_id }} {
+      margin-bottom: 60px;
+    }
+
+    .ai-workflow-headline-{{ ai_gen_id }} {
+      font-size: {{ block.settings.headline_size | times: 0.6 }}px;
+    }
+
+    .ai-workflow-description-{{ ai_gen_id }} {
+      font-size: {{ block.settings.description_size | times: 0.9 }}px;
+    }
+
+    .ai-workflow-timeline-{{ ai_gen_id }} {
+      flex-direction: column;
+      gap: 40px;
+      margin-bottom: 40px;
+    }
+
+    .ai-workflow-line-{{ ai_gen_id }} {
+      width: 2px;
+      height: 100%;
+      top: 0;
+      left: 39px;
+      right: auto;
+    }
+
+    .ai-workflow-icon-circle-{{ ai_gen_id }} {
+      margin: 0 0 0 0;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+
+    .ai-workflow-milestone-{{ ai_gen_id }} {
+      top: auto;
+      bottom: -26px;
+      left: 33px;
+      right: auto;
+    }
+
+    .ai-workflow-card-{{ ai_gen_id }} {
+      margin-left: 100px;
+      min-height: auto;
+    }
+
+    .ai-workflow-step-{{ ai_gen_id }} {
+      min-width: auto;
+    }
+
+    .ai-workflow-banner-{{ ai_gen_id }} {
+      flex-direction: column;
+      text-align: center;
+      padding: 24px 28px;
+      border-radius: 24px;
+    }
+
+    .ai-workflow-banner-text-{{ ai_gen_id }} {
+      font-size: {{ block.settings.banner_text_size | times: 0.9 }}px;
+    }
+  }
+{% endstyle %}
+
+<area-manager-workflow-{{ ai_gen_id }} class="ai-workflow-section-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-workflow-container-{{ ai_gen_id }}">
+    <div class="ai-workflow-header-{{ ai_gen_id }}">
+      {% if block.settings.badge_text != blank %}
+        <div class="ai-workflow-badge-{{ ai_gen_id }}">
+          {{ block.settings.badge_text }}
+        </div>
+      {% endif %}
+
+      {% if block.settings.headline != blank %}
+        <h2 class="ai-workflow-headline-{{ ai_gen_id }}">
+          {{ block.settings.headline }}
+        </h2>
+      {% endif %}
+
+      {% if block.settings.description != blank %}
+        <div class="ai-workflow-description-{{ ai_gen_id }}">
+          {{ block.settings.description }}
+        </div>
+      {% endif %}
+    </div>
+
+    <div class="ai-workflow-timeline-{{ ai_gen_id }}">
+      <div class="ai-workflow-line-{{ ai_gen_id }}"></div>
+
+      <div class="ai-workflow-step-{{ ai_gen_id }}">
+        <div class="ai-workflow-icon-circle-{{ ai_gen_id }}">
+          {% if block.settings.step1_icon == 'document' %}
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+              <line x1="16" y1="13" x2="8" y2="13"></line>
+              <line x1="16" y1="17" x2="8" y2="17"></line>
+              <polyline points="10 9 9 9 8 9"></polyline>
+            </svg>
+          {% elsif block.settings.step1_icon == 'chart' %}
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <line x1="18" y1="20" x2="18" y2="10"></line>
+              <line x1="12" y1="20" x2="12" y2="4"></line>
+              <line x1="6" y1="20" x2="6" y2="14"></line>
+            </svg>
+          {% elsif block.settings.step1_icon == 'alert' %}
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="12" y1="8" x2="12" y2="12"></line>
+              <line x1="12" y1="16" x2="12.01" y2="16"></line>
+            </svg>
+          {% elsif block.settings.step1_icon == 'store' %}
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+              <polyline points="9 22 9 12 15 12 15 22"></polyline>
+            </svg>
+          {% elsif block.settings.step1_icon == 'checklist' %}
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M9 11l3 3L22 4"></path>
+              <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
+            </svg>
+          {% endif %}
+        </div>
+        <div class="ai-workflow-milestone-{{ ai_gen_id }}"></div>
+        <div class="ai-workflow-card-{{ ai_gen_id }}">
+          <div class="ai-workflow-step-number-{{ ai_gen_id }}">01</div>
+          <h3 class="ai-workflow-step-title-{{ ai_gen_id }}">{{ block.settings.step1_title }}</h3>
+          <p class="ai-workflow-step-desc-{{ ai_gen_id }}">{{ block.settings.step1_desc }}</p>
+        </div>
+      </div>
+
+      <div class="ai-workflow-step-{{ ai_gen_id }}">
+        <div class="ai-workflow-icon-circle-{{ ai_gen_id }}">
+          {% if block.settings.step2_icon == 'document' %}
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+              <line x1="16" y1="13" x2="8" y2="13"></line>
+              <line x1="16" y1="17" x2="8" y2="17"></line>
+              <polyline points="10 9 9 9 8 9"></polyline>
+            </svg>
+          {% elsif block.settings.step2_icon == 'chart' %}
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <line x1="18" y1="20" x2="18" y2="10"></line>
+              <line x1="12" y1="20" x2="12" y2="4"></line>
+              <line x1="6" y1="20" x2="6" y2="14"></line>
+            </svg>
+          {% elsif block.settings.step2_icon == 'alert' %}
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="12" y1="8" x2="12" y2="12"></line>
+              <line x1="12" y1="16" x2="12.01" y2="16"></line>
+            </svg>
+          {% elsif block.settings.step2_icon == 'store' %}
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+              <polyline points="9 22 9 12 15 12 15 22"></polyline>
+            </svg>
+          {% elsif block.settings.step2_icon == 'checklist' %}
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M9 11l3 3L22 4"></path>
+              <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
+            </svg>
+          {% endif %}
+        </div>
+        <div class="ai-workflow-milestone-{{ ai_gen_id }}"></div>
+        <div class="ai-workflow-card-{{ ai_gen_id }}">
+          <div class="ai-workflow-step-number-{{ ai_gen_id }}">02</div>
+          <h3 class="ai-workflow-step-title-{{ ai_gen_id }}">{{ block.settings.step2_title }}</h3>
+          <p class="ai-workflow-step-desc-{{ ai_gen_id }}">{{ block.settings.step2_desc }}</p>
+        </div>
+      </div>
+
+      <div class="ai-workflow-step-{{ ai_gen_id }}">
+        <div class="ai-workflow-icon-circle-{{ ai_gen_id }}">
+          {% if block.settings.step3_icon == 'document' %}
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+              <line x1="16" y1="13" x2="8" y2="13"></line>
+              <line x1="16" y1="17" x2="8" y2="17"></line>
+              <polyline points="10 9 9 9 8 9"></polyline>
+            </svg>
+          {% elsif block.settings.step3_icon == 'chart' %}
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <line x1="18" y1="20" x2="18" y2="10"></line>
+              <line x1="12" y1="20" x2="12" y2="4"></line>
+              <line x1="6" y1="20" x2="6" y2="14"></line>
+            </svg>
+          {% elsif block.settings.step3_icon == 'alert' %}
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="12" y1="8" x2="12" y2="12"></line>
+              <line x1="12" y1="16" x2="12.01" y2="16"></line>
+            </svg>
+          {% elsif block.settings.step3_icon == 'store' %}
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+              <polyline points="9 22 9 12 15 12 15 22"></polyline>
+            </svg>
+          {% elsif block.settings.step3_icon == 'checklist' %}
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M9 11l3 3L22 4"></path>
+              <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
+            </svg>
+          {% endif %}
+        </div>
+        <div class="ai-workflow-milestone-{{ ai_gen_id }}"></div>
+        <div class="ai-workflow-card-{{ ai_gen_id }}">
+          <div class="ai-workflow-step-number-{{ ai_gen_id }}">03</div>
+          <h3 class="ai-workflow-step-title-{{ ai_gen_id }}">{{ block.settings.step3_title }}</h3>
+          <p class="ai-workflow-step-desc-{{ ai_gen_id }}">{{ block.settings.step3_desc }}</p>
+        </div>
+      </div>
+
+      <div class="ai-workflow-step-{{ ai_gen_id }}">
+        <div class="ai-workflow-icon-circle-{{ ai_gen_id }}">
+          {% if block.settings.step4_icon == 'document' %}
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+              <line x1="16" y1="13" x2="8" y2="13"></line>
+              <line x1="16" y1="17" x2="8" y2="17"></line>
+              <polyline points="10 9 9 9 8 9"></polyline>
+            </svg>
+          {% elsif block.settings.step4_icon == 'chart' %}
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <line x1="18" y1="20" x2="18" y2="10"></line>
+              <line x1="12" y1="20" x2="12" y2="4"></line>
+              <line x1="6" y1="20" x2="6" y2="14"></line>
+            </svg>
+          {% elsif block.settings.step4_icon == 'alert' %}
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="12" y1="8" x2="12" y2="12"></line>
+              <line x1="12" y1="16" x2="12.01" y2="16"></line>
+            </svg>
+          {% elsif block.settings.step4_icon == 'store' %}
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+              <polyline points="9 22 9 12 15 12 15 22"></polyline>
+            </svg>
+          {% elsif block.settings.step4_icon == 'checklist' %}
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M9 11l3 3L22 4"></path>
+              <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
+            </svg>
+          {% endif %}
+        </div>
+        <div class="ai-workflow-milestone-{{ ai_gen_id }}"></div>
+        <div class="ai-workflow-card-{{ ai_gen_id }}">
+          <div class="ai-workflow-step-number-{{ ai_gen_id }}">04</div>
+          <h3 class="ai-workflow-step-title-{{ ai_gen_id }}">{{ block.settings.step4_title }}</h3>
+          <p class="ai-workflow-step-desc-{{ ai_gen_id }}">{{ block.settings.step4_desc }}</p>
+        </div>
+      </div>
+
+      <div class="ai-workflow-step-{{ ai_gen_id }}">
+        <div class="ai-workflow-icon-circle-{{ ai_gen_id }}">
+          {% if block.settings.step5_icon == 'document' %}
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+              <line x1="16" y1="13" x2="8" y2="13"></line>
+              <line x1="16" y1="17" x2="8" y2="17"></line>
+              <polyline points="10 9 9 9 8 9"></polyline>
+            </svg>
+          {% elsif block.settings.step5_icon == 'chart' %}
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <line x1="18" y1="20" x2="18" y2="10"></line>
+              <line x1="12" y1="20" x2="12" y2="4"></line>
+              <line x1="6" y1="20" x2="6" y2="14"></line>
+            </svg>
+          {% elsif block.settings.step5_icon == 'alert' %}
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="12" y1="8" x2="12" y2="12"></line>
+              <line x1="12" y1="16" x2="12.01" y2="16"></line>
+            </svg>
+          {% elsif block.settings.step5_icon == 'store' %}
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+              <polyline points="9 22 9 12 15 12 15 22"></polyline>
+            </svg>
+          {% elsif block.settings.step5_icon == 'checklist' %}
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M9 11l3 3L22 4"></path>
+              <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
+            </svg>
+          {% endif %}
+        </div>
+        <div class="ai-workflow-milestone-{{ ai_gen_id }}"></div>
+        <div class="ai-workflow-card-{{ ai_gen_id }}">
+          <div class="ai-workflow-step-number-{{ ai_gen_id }}">05</div>
+          <h3 class="ai-workflow-step-title-{{ ai_gen_id }}">{{ block.settings.step5_title }}</h3>
+          <p class="ai-workflow-step-desc-{{ ai_gen_id }}">{{ block.settings.step5_desc }}</p>
+        </div>
+      </div>
+    </div>
+
+    {% if block.settings.banner_text != blank %}
+      <div class="ai-workflow-banner-wrapper-{{ ai_gen_id }}">
+        <div class="ai-workflow-banner-{{ ai_gen_id }}">
+          <div class="ai-workflow-banner-icon-{{ ai_gen_id }}">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/>
+            </svg>
+          </div>
+          <div class="ai-workflow-banner-text-{{ ai_gen_id }}">
+            {{ block.settings.banner_text }}
+          </div>
+        </div>
+      </div>
+    {% endif %}
+  </div>
+</area-manager-workflow-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class AreaManagerWorkflow{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+      }
+
+      connectedCallback() {
+        this.initializeScrollBehavior();
+      }
+
+      initializeScrollBehavior() {
+        const timeline = this.querySelector('.ai-workflow-timeline-{{ ai_gen_id }}');
+        if (!timeline) return;
+
+        if (window.innerWidth <= 1024 && window.innerWidth > 749) {
+          timeline.addEventListener('wheel', function(e) {
+            if (e.deltaY !== 0) {
+              e.preventDefault();
+              timeline.scrollLeft += e.deltaY;
+            }
+          });
+        }
+      }
+    }
+
+    customElements.define('area-manager-workflow-{{ ai_gen_id }}', AreaManagerWorkflow{{ ai_gen_id }});
+  })();
+</script>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "Area manager workflow",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Section header"
+    },
+    {
+      "type": "text",
+      "id": "badge_text",
+      "label": "Badge text",
+      "default": "エリア管理"
+    },
+    {
+      "type": "textarea",
+      "id": "headline",
+      "label": "Headline",
+      "default": "エリアマネージャーは、担当店舗の変化を短時間で把握。"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description",
+      "default": "Flowは、担当店舗のKPI、Pulse、メモ、店舗報告をまとめて確認できるようにし、優先して見るべき店舗や変化を把握しやすくします。"
+    },
+    {
+      "type": "header",
+      "content": "Step 1"
+    },
+    {
+      "type": "select",
+      "id": "step1_icon",
+      "label": "Icon",
+      "options": [
+        {
+          "value": "document",
+          "label": "Document"
+        },
+        {
+          "value": "chart",
+          "label": "Chart"
+        },
+        {
+          "value": "alert",
+          "label": "Alert"
+        },
+        {
+          "value": "store",
+          "label": "Store"
+        },
+        {
+          "value": "checklist",
+          "label": "Checklist"
+        }
+      ],
+      "default": "document"
+    },
+    {
+      "type": "text",
+      "id": "step1_title",
+      "label": "Title",
+      "default": "レポートをサマリー"
+    },
+    {
+      "type": "textarea",
+      "id": "step1_desc",
+      "label": "Description",
+      "default": "すべての担当店舗から上がった報告をまとめて確認します。"
+    },
+    {
+      "type": "header",
+      "content": "Step 2"
+    },
+    {
+      "type": "select",
+      "id": "step2_icon",
+      "label": "Icon",
+      "options": [
+        {
+          "value": "document",
+          "label": "Document"
+        },
+        {
+          "value": "chart",
+          "label": "Chart"
+        },
+        {
+          "value": "alert",
+          "label": "Alert"
+        },
+        {
+          "value": "store",
+          "label": "Store"
+        },
+        {
+          "value": "checklist",
+          "label": "Checklist"
+        }
+      ],
+      "default": "chart"
+    },
+    {
+      "type": "text",
+      "id": "step2_title",
+      "label": "Title",
+      "default": "KPIを比較・分析"
+    },
+    {
+      "type": "textarea",
+      "id": "step2_desc",
+      "label": "Description",
+      "default": "売上・来店数・購買率の変化を比較し、傾向を把握します。"
+    },
+    {
+      "type": "header",
+      "content": "Step 3"
+    },
+    {
+      "type": "select",
+      "id": "step3_icon",
+      "label": "Icon",
+      "options": [
+        {
+          "value": "document",
+          "label": "Document"
+        },
+        {
+          "value": "chart",
+          "label": "Chart"
+        },
+        {
+          "value": "alert",
+          "label": "Alert"
+        },
+        {
+          "value": "store",
+          "label": "Store"
+        },
+        {
+          "value": "checklist",
+          "label": "Checklist"
+        }
+      ],
+      "default": "alert"
+    },
+    {
+      "type": "text",
+      "id": "step3_title",
+      "label": "Title",
+      "default": "優先対応店舗を特定"
+    },
+    {
+      "type": "textarea",
+      "id": "step3_desc",
+      "label": "Description",
+      "default": "変化やアラートをもとに、優先して見るべき店舗を抽出します。"
+    },
+    {
+      "type": "header",
+      "content": "Step 4"
+    },
+    {
+      "type": "select",
+      "id": "step4_icon",
+      "label": "Icon",
+      "options": [
+        {
+          "value": "document",
+          "label": "Document"
+        },
+        {
+          "value": "chart",
+          "label": "Chart"
+        },
+        {
+          "value": "alert",
+          "label": "Alert"
+        },
+        {
+          "value": "store",
+          "label": "Store"
+        },
+        {
+          "value": "checklist",
+          "label": "Checklist"
+        }
+      ],
+      "default": "store"
+    },
+    {
+      "type": "text",
+      "id": "step4_title",
+      "label": "Title",
+      "default": "訪問準備を整える"
+    },
+    {
+      "type": "textarea",
+      "id": "step4_desc",
+      "label": "Description",
+      "default": "店舗のKPI履歴やメモ、直近の変化を確認し、訪問に備えます。"
+    },
+    {
+      "type": "header",
+      "content": "Step 5"
+    },
+    {
+      "type": "select",
+      "id": "step5_icon",
+      "label": "Icon",
+      "options": [
+        {
+          "value": "document",
+          "label": "Document"
+        },
+        {
+          "value": "chart",
+          "label": "Chart"
+        },
+        {
+          "value": "alert",
+          "label": "Alert"
+        },
+        {
+          "value": "store",
+          "label": "Store"
+        },
+        {
+          "value": "checklist",
+          "label": "Checklist"
+        }
+      ],
+      "default": "checklist"
+    },
+    {
+      "type": "text",
+      "id": "step5_title",
+      "label": "Title",
+      "default": "本部へ報告・共有"
+    },
+    {
+      "type": "textarea",
+      "id": "step5_desc",
+      "label": "Description",
+      "default": "担当エリアの状況とアクションを整理し、効率的に報告します。"
+    },
+    {
+      "type": "header",
+      "content": "Bottom banner"
+    },
+    {
+      "type": "textarea",
+      "id": "banner_text",
+      "label": "Banner text",
+      "default": "データの収集から報告までを一気通貫でつなぎ、エリアの成果最大化をサポートします。"
+    },
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "range",
+      "id": "max_width",
+      "label": "Maximum width",
+      "min": 1000,
+      "max": 1600,
+      "step": 100,
+      "unit": "px",
+      "default": 1400
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background",
+      "default": "#fafbfc"
+    },
+    {
+      "type": "color",
+      "id": "badge_bg_color",
+      "label": "Badge background",
+      "default": "#e8ede5"
+    },
+    {
+      "type": "color",
+      "id": "badge_text_color",
+      "label": "Badge text",
+      "default": "#5a6c4d"
+    },
+    {
+      "type": "color",
+      "id": "headline_color",
+      "label": "Headline",
+      "default": "#1a2b4a"
+    },
+    {
+      "type": "color",
+      "id": "description_color",
+      "label": "Description",
+      "default": "#5a6c7d"
+    },
+    {
+      "type": "color",
+      "id": "line_color",
+      "label": "Timeline line",
+      "default": "#7a9b6f"
+    },
+    {
+      "type": "color",
+      "id": "icon_circle_bg",
+      "label": "Icon circle background",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "icon_color",
+      "label": "Icon",
+      "default": "#7a9b6f"
+    },
+    {
+      "type": "color",
+      "id": "card_bg_color",
+      "label": "Card background",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "card_border_color",
+      "label": "Card border",
+      "default": "#e5e8eb"
+    },
+    {
+      "type": "color",
+      "id": "card_hover_border",
+      "label": "Card hover border",
+      "default": "#7a9b6f"
+    },
+    {
+      "type": "color",
+      "id": "number_color",
+      "label": "Step number",
+      "default": "#7a9b6f"
+    },
+    {
+      "type": "color",
+      "id": "step_title_color",
+      "label": "Step title",
+      "default": "#1a2b4a"
+    },
+    {
+      "type": "color",
+      "id": "step_desc_color",
+      "label": "Step description",
+      "default": "#6b7c8d"
+    },
+    {
+      "type": "color",
+      "id": "banner_bg_color",
+      "label": "Banner background",
+      "default": "#eef3f8"
+    },
+    {
+      "type": "color",
+      "id": "banner_icon_color",
+      "label": "Banner icon",
+      "default": "#5a7a9b"
+    },
+    {
+      "type": "color",
+      "id": "banner_text_color",
+      "label": "Banner text",
+      "default": "#2a3b5a"
+    },
+    {
+      "type": "header",
+      "content": "Typography"
+    },
+    {
+      "type": "range",
+      "id": "headline_size",
+      "label": "Headline size",
+      "min": 24,
+      "max": 56,
+      "step": 2,
+      "unit": "px",
+      "default": 42
+    },
+    {
+      "type": "range",
+      "id": "description_size",
+      "label": "Description size",
+      "min": 14,
+      "max": 22,
+      "step": 1,
+      "unit": "px",
+      "default": 18
+    },
+    {
+      "type": "range",
+      "id": "step_title_size",
+      "label": "Step title size",
+      "min": 14,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "default": 18
+    },
+    {
+      "type": "range",
+      "id": "step_desc_size",
+      "label": "Step description size",
+      "min": 12,
+      "max": 18,
+      "step": 1,
+      "unit": "px",
+      "default": 15
+    },
+    {
+      "type": "range",
+      "id": "banner_text_size",
+      "label": "Banner text size",
+      "min": 13,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "header",
+      "content": "Icon style"
+    },
+    {
+      "type": "range",
+      "id": "icon_border_radius",
+      "label": "Icon border radius",
+      "min": 0,
+      "max": 50,
+      "step": 5,
+      "unit": "%",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "icon_circle_size",
+      "label": "Icon circle size",
+      "min": 60,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "default": 80
+    },
+    {
+      "type": "range",
+      "id": "icon_size",
+      "label": "Icon size",
+      "min": 24,
+      "max": 48,
+      "step": 2,
+      "unit": "px",
+      "default": 36
+    },
+    {
+      "type": "header",
+      "content": "Card style"
+    },
+    {
+      "type": "range",
+      "id": "card_border_radius",
+      "label": "Border radius",
+      "min": 8,
+      "max": 32,
+      "step": 2,
+      "unit": "px",
+      "default": 18
+    }
+  ],
+  "presets": [
+    {
+      "name": "Area manager workflow"
+    }
+  ]
+}
 {% endschema %}
