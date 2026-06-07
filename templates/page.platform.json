@@ -1286,7 +1286,7 @@
             "badge_background": "#e8f5e9",
             "badge_text_color": "#558b2f",
             "heading": "店舗データと社内ルールを、\nFlow AIに聞く。",
-            "heading_color": "#1a237e",
+            "heading_color": "#11243e",
             "heading_size_mobile": 32,
             "heading_size_desktop": 48,
             "description": "Flow AIは、売上・来店・購買率などの店舗データと、\nマニュアル・SOP・店舗報告を参照しながら、\n状況確認、要因整理、次の打ち手の検討を支援します。",
