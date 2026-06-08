@@ -162,7 +162,9 @@
         "content": "",
         "background": "#11243e",
         "background_gradient": "",
-        "text_color": "#ffffff"
+        "text_color": "#ffffff",
+        "subheading_background_color": "",
+        "subheading_text_color": ""
       }
     },
     "section-15": {
@@ -467,7 +469,7 @@
         "heading_bNQkAX": {
           "type": "heading",
           "settings": {
-            "text": "Still have questions?",
+            "text": "まだご不明な点がありますか？",
             "heading_tag": "h1",
             "text_color": "",
             "gradient": ""
@@ -476,7 +478,7 @@
         "richtext_cRTfWf": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Our team is available to discuss your specific deployment requirements, integration scenarios, or compliance concerns.</p>"
+            "content": "<p>導入条件、システム連携、計測精度、プライバシー対応など、お客様の環境に合わせてご相談いただけます。</p>"
           }
         },
         "buttons_CT466j": {
@@ -484,13 +486,13 @@
           "settings": {
             "style_1": "fill",
             "size_1": "xl",
-            "text_1": "Contact Sales",
+            "text_1": "導入条件を確認する",
             "url_1": "",
             "background_1": "#a0b842",
             "text_color_1": "",
             "style_2": "fill",
             "size_2": "xl",
-            "text_2": "Schedule Demo",
+            "text_2": "無料デモを予約する",
             "url_2": "",
             "background_2": "",
             "text_color_2": ""
@@ -678,7 +680,9 @@
         "content": "",
         "background": "",
         "background_gradient": "",
-        "text_color": ""
+        "text_color": "",
+        "subheading_background_color": "",
+        "subheading_text_color": ""
       }
     }
   },
