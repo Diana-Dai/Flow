@@ -1034,7 +1034,7 @@
       "name": "Multi-column",
       "settings": {
         "full_width": true,
-        "stack_on_mobile": false,
+        "stack_on_mobile": true,
         "gap": "medium",
         "text_alignment": "start",
         "subheading": "可視化の先へ",
