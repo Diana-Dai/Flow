@@ -1276,8 +1276,8 @@
           "type": "ai_gen_block_daa1b70",
           "settings": {
             "section_background": "#ffffff",
-            "section_padding_top": 60,
-            "section_padding_bottom": 60,
+            "section_padding_top": 0,
+            "section_padding_bottom": 0,
             "column_gap": 60,
             "show_badge": true,
             "badge_text": "FLOW AI",
