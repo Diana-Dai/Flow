@@ -254,19 +254,12 @@
   }
 
   .ai-case-studies-proof-hero-metric-value-{{ ai_gen_id }} {
-    font-family: var(--font-heading-family);
-    font-size: 48px;
-    font-weight: 500;
     line-height: 1;
     color: #ffffff;
     margin: 0;
   }
 
-  @media screen and (min-width: 990px) {
-    .ai-case-studies-proof-hero-metric-value-{{ ai_gen_id }} {
-      font-size: 56px;
-    }
-  }
+
 
   .ai-case-studies-proof-hero-metric-detail-{{ ai_gen_id }} {
     font-family: var(--font-body-family);
@@ -403,7 +396,7 @@
           <div class="ai-case-studies-proof-hero-metric-{{ ai_gen_id }}">
             <div class="ai-case-studies-proof-hero-metric-content-{{ ai_gen_id }}">
               <p class="ai-case-studies-proof-hero-metric-label-{{ ai_gen_id }}">{{ block.settings.hero_metric_label }}</p>
-              <p class="ai-case-studies-proof-hero-metric-value-{{ ai_gen_id }}">{{ block.settings.hero_metric_value }}</p>
+              <p class="ai-case-studies-proof-hero-metric-value-{{ ai_gen_id }} h0">{{ block.settings.hero_metric_value }}</p>
               <p class="ai-case-studies-proof-hero-metric-detail-{{ ai_gen_id }}">{{ block.settings.hero_metric_detail }}</p>
             </div>
             
