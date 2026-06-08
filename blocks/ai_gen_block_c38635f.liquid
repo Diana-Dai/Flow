@@ -55,6 +55,12 @@
     padding: {{ block.settings.section_padding }}px 20px;
     background-color: {{ block.settings.background_color }};
   }
+  @media screen and (max-width: 989px) {
+  .ai-saas-infographic-{{ ai_gen_id }} {
+    padding: {{ block.settings.section_padding }}px 0;
+
+  }
+  }
 
   .ai-saas-infographic__container-{{ ai_gen_id }} {
     display: grid;
