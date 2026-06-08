@@ -198,13 +198,16 @@
   }
 
   .ai-case-studies-proof-dark-badge-text-{{ ai_gen_id }} {
-    font-family: var(--font-heading-family);
-    font-size: 11px;
+    font-size: 11px !important;
     font-weight: 600;
-    letter-spacing: 0.5px;
+    letter-spacing: 1.5px;
     text-transform: uppercase;
-    color: {{ block.settings.dark_badge_text_color }};
-    margin: 0;
+    padding: 8px 16px;
+    border-radius: 20px;
+    display: inline-block;
+    box-sizing: border-box;
+    background: #f0f3e9;
+    color: #11243e;
   }
 
   .ai-case-studies-proof-dark-heading-{{ ai_gen_id }} {
