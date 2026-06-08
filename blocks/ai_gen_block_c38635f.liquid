@@ -75,6 +75,12 @@
     border-radius: {{ block.settings.card_border_radius }}px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
   }
+  @media screen and (max-width: 989px) {
+  .ai-saas-infographic-{{ ai_gen_id }} {
+    padding: {{ block.settings.section_padding }}px 20 px;
+
+  }
+  }
 
   .ai-saas-infographic__card--left-{{ ai_gen_id }} {
     background-color: {{ block.settings.left_card_bg }};
