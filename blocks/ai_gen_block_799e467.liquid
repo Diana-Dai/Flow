@@ -78,6 +78,7 @@
     gap: 24px;
   }
 
+
   .ai-case-studies-proof-badge-text-{{ ai_gen_id }} {
     font-size: 11px !important;
     font-weight: 600;
@@ -87,8 +88,8 @@
     border-radius: 20px;
     display: inline-block;
     box-sizing: border-box;
-    background: #f0f3e9;
-    color: #11243e;
+      background-color: {{ block.settings.dark_badge_bg_color }};
+    color: #fff;
   }
 
   .ai-case-studies-proof-heading-{{ ai_gen_id }} {
@@ -188,17 +189,23 @@
     gap: 12px;
   }
 
-  .ai-case-studies-proof-dark-badge-text-{{ ai_gen_id }} {
-    font-size: 11px !important;
-    font-weight: 600;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
-    padding: 8px 16px;
-    border-radius: 20px;
-    display: inline-block;
-    box-sizing: border-box;
+  .ai-case-studies-proof-dark-badge-{{ ai_gen_id }} {
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 12px;
     background-color: {{ block.settings.dark_badge_bg_color }};
-    color: #11243e;
+    border-radius: 4px;
+    width: fit-content;
+  }
+
+  .ai-case-studies-proof-dark-badge-text-{{ ai_gen_id }} {
+    font-family: var(--font-heading-family);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: {{ block.settings.dark_badge_text_color }};
+    margin: 0;
   }
 
   .ai-case-studies-proof-dark-heading-{{ ai_gen_id }} {
