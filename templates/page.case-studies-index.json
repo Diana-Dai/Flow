@@ -134,7 +134,7 @@
             "operational_impact_title": "OPERATIONAL IMPACT",
             "operational_impact": "Automated workflow integration\nReal-time data synchronization\nScalable infrastructure",
             "cta_text": "Full Case Study",
-            "cta_url": ""
+            "cta_url": "#"
           },
           "blocks": {}
         },
@@ -154,7 +154,7 @@
             "operational_impact_title": "OPERATIONAL IMPACT",
             "operational_impact": "Store teams gained confidence through actual visitor data\nStaff recognized higher than expected volumes, creating positive mindset changes\nFlow became tool for both sales improvement and staff development\nReal-time data allowed mid-week tactical adjustments instead of weekly cycles\nImproved analytical capability and strategic thinking",
             "cta_text": "Full Case Study",
-            "cta_url": ""
+            "cta_url": "#"
           },
           "blocks": {}
         },
@@ -175,7 +175,7 @@
             "operational_impact_title": "OPERATIONAL IMPACT",
             "operational_impact": "Superior UI easily adopted by store staff\nClear dashboards enabled evaluation of promotions, VMD and visitor trends together\nEstablished baseline KPIs using visitor and conversion trends\nImproved promotion prediction accuracy",
             "cta_text": "Full Case Study",
-            "cta_url": ""
+            "cta_url": "#"
           },
           "blocks": {}
         }
@@ -359,7 +359,9 @@
         "content": "",
         "background": "",
         "background_gradient": "",
-        "text_color": ""
+        "text_color": "",
+        "subheading_background_color": "",
+        "subheading_text_color": ""
       }
     },
     "section-15": {
@@ -644,7 +646,9 @@
         "content": "",
         "background": "",
         "background_gradient": "",
-        "text_color": ""
+        "text_color": "",
+        "subheading_background_color": "",
+        "subheading_text_color": ""
       }
     }
   },
