@@ -156,27 +156,6 @@
             "cta_url": "#"
           },
           "blocks": {}
-        },
-        "ai_gen_block_38907dd_itbcYY": {
-          "type": "ai_gen_block_38907dd",
-          "name": "Case study card",
-          "settings": {
-            "show_badges": true,
-            "badge_text": "FEATURED",
-            "company_name": "Right On",
-            "meta_tags": "Jeans • National Chain",
-            "metrics_line": "400 stores",
-            "description": "Major national jeans chain needed objective evaluation of promotional strategies and storefront tactics. Moved away from assumptions and intuition to data-driven decision making.",
-            "key_results_title": "KEY RESULTS",
-            "key_results": "Revealed unexpected differences in visitor movement across stores\nEnabled hypothesis-driven decision making\nSupported fixture-level VMD evaluation\nHelped plan adjustments to weekly promotional cycles",
-            "challenges_title": "CHALLENGES BEFORE FLOW",
-            "challenges": "Determine which promotions truly increase visitors\nMeasure VMD and front zone impact using data\nMove away from assumptions and intuition",
-            "operational_impact_title": "OPERATIONAL IMPACT",
-            "operational_impact": "Superior UI easily adopted by store staff\nClear dashboards enabled evaluation of promotions, VMD and visitor trends together\nEstablished baseline KPIs using visitor and conversion trends\nImproved promotion prediction accuracy",
-            "cta_text": "Full Case Study",
-            "cta_url": "#"
-          },
-          "blocks": {}
         }
       },
       "block_order": [
@@ -184,8 +163,7 @@
         "heading_VxHiDP",
         "rich_text_Ya6Kni",
         "ai_gen_block_38907dd_Tkggfa",
-        "ai_gen_block_38907dd_7wDWGy",
-        "ai_gen_block_38907dd_itbcYY"
+        "ai_gen_block_38907dd_7wDWGy"
       ],
       "custom_css": [
         ".h6 {padding: 0.5rem 0 1rem; font-size: 1rem;}"
