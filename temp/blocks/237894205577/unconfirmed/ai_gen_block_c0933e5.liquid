@@ -1,6 +1,539 @@
+{% doc %}
+  @prompt
+    Act as an expert Shopify frontend and Liquid developer. Build a fully responsive, pixel-perfect custom "Operational Workflow Process" section based entirely on the visual layout, typography structure, and content shown in the reference images "image_5036db.png" and "image_5036c1.png".
+    
+    ### 1. Global Integration, Max Width & Basic Styles
+    - **Theme Identity:** The section must automatically inherit the active Shopify theme's font variables (e.g., `var(--font-heading-family)` and `var(--font-body-family)`), standard section maximum layout width (e.g., matching `.page-width` or `.container` wrappers), and native responsive side padding.
+    - **Section Layout:** The section contains a left-aligned header group followed by a vertically stacked list of process cards. On desktop, each card features a horizontal split layout. On mobile viewports, the card layout collapses and elements stack vertically.
+    - **Section Background:** Pure white background (#FFFFFF) with generous, clean padding at the top and bottom.
+    
+    ### 2. Section Header Group
+    Left-aligned at the very top of the section with comfortable bottom margin separation:
+    - **Eyebrow Tag:** "OPERATIONAL METHODOLOGY"
+      - Styling: Small, uppercase letters, deep navy blue or dark olive-green text with subtle letter-spacing.
+    - **Main Section Heading:** "How Flow Drives Transformation"
+      - Styling: Large, exceptionally bold, deep navy blue text (#11243E).
+    - **Introduction Subheading:** "A structured, data-driven methodology that embeds measurement directly into daily store routines and enterprise management."
+      - Styling: Muted slate-gray text with comfortable line-height for elite scannability.
+    
+    ### 3. Repeatable Process Card Architecture (Modular Blocks)
+    The workflow blocks must stack vertically with a uniform gap (approx. 24px) separating each card. Each step must be built as a repeatable block using a Liquid `{% for block in section.blocks %}` loop so more process blocks can be added, deleted, or reordered dynamically in the future.
+    
+    Each individual card container features:
+    - **Card Background:** An ultra-soft, light gray or off-white background wash with smooth rounded corners (border-radius: 16px) and a very thin light-gray outer border stroke.
+    - **Card Padding:** Deep, even internal padding to frame the content elements comfortably.
+    - **Desktop Layout Grid:** Split horizontally into two clear structural zones:
+      - **Left Meta Zone (approx. 25% width):** Vertically stacked alignment containing:
+        - **Step Number:** A large, prominent, bold dark-navy numeral (e.g., "01", "02").
+        - **Category Badge/Tag:** A small, uppercase text label inside a pill-shaped layout with a very faint light-gray background wash.
+      - **Right Content Zone (approx. 75% width):** A vertical stack containing:
+        - **Step Title:** Bold, crisp dark navy blue heading text (#11243E).
+        - **Step Description:** A multi-line narrative paragraph in muted slate-gray text outlining the operational step details.
+    
+    ### 4. Exact Content Text Map for 100% Replication
+    Ensure the default theme blocks perfectly transcribe all text strings from the references:
+    
+    #### BLOCK 1:
+    - **Step Number:** 01
+    - **Category Badge:** METHODOLOGY
+    - **Step Title:** Establish Baseline Metrics
+    - **Step Description:** Deploy Flow sensors to measure historical foot traffic, entry capture rates, and core conversion paths. Establish clean, objective baseline data before implementing organizational changes or frontend tactical experiments.
+    
+    #### BLOCK 2:
+    - **Step Number:** 02
+    - **Category Badge:** METHODOLOGY
+    - **Step Title:** Democratize Performance Data
+    - **Step Description:** Provide intuitive, real-time dashboard access to store managers and frontline staff. Shift data visibility away from corporate-only analysis, fostering individual store level accountability and immediate execution capability.
+    
+    #### BLOCK 3:
+    - **Step Number:** 03
+    - **Category Badge:** METHODOLOGY
+    - **Step Title:** Run Structured Hypotheses
+    - **Step Description:** Utilize precise traffic and dwell data to evaluate weekly promotional changes, visual merchandising strategies (VMD), and labor schedule adjustments. Measure exact behavioral variations against real baseline metrics.
+    
+    ### 5. Shopify Coding & Theme Schema Requirements
+    - Make all titles, descriptions, step numbers, and badge labels completely dynamic and editable using structured block settings inside the Liquid schema architecture.
+    - Wrap all custom styling selectors into a `<style>` block scoped directly to the unique section ID (`#shopify-section-{{ section.id }}`) to strictly enforce absolute zero style leakage across other pages.
+    - Handle responsiveness cleanly: Ensure text drops down safely and containers scale fluidly without text overflowing or cutting off on narrow mobile viewports.
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-workflow-section-{{ ai_gen_id }} {
+    background-color: #ffffff;
+    padding: 80px 0;
+    width: 100%;
+    display: block;
+  }
+
+  .ai-workflow-container-{{ ai_gen_id }} {
+    max-width: {{ settings.page_width }}px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-6);
+  }
+
+  .ai-workflow-header-{{ ai_gen_id }} {
+    margin-bottom: 48px;
+  }
+
+  .ai-workflow-eyebrow-{{ ai_gen_id }} {
+    font-family: var(--font-heading-family);
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: {{ block.settings.eyebrow_color }};
+    margin-bottom: 12px;
+  }
+
+  .ai-workflow-title-{{ ai_gen_id }} {
+    font-family: var(--font-heading-family);
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.1;
+    color: #11243E;
+    margin: 0 0 16px 0;
+  }
+
+  .ai-workflow-subtitle-{{ ai_gen_id }} {
+    font-family: var(--font-body-family);
+    font-size: 18px;
+    line-height: 1.6;
+    color: #677279;
+    max-width: 800px;
+    margin: 0;
+  }
+
+  .ai-workflow-cards-{{ ai_gen_id }} {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .ai-workflow-card-{{ ai_gen_id }} {
+    background-color: {{ block.settings.card_background }};
+    border: 1px solid {{ block.settings.card_border_color }};
+    border-radius: 16px;
+    padding: 40px;
+    display: grid;
+    grid-template-columns: 25% 75%;
+    gap: 40px;
+    align-items: start;
+  }
+
+  .ai-workflow-card-meta-{{ ai_gen_id }} {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .ai-workflow-step-number-{{ ai_gen_id }} {
+    font-family: var(--font-heading-family);
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1;
+    color: #11243E;
+    margin: 0;
+  }
+
+  .ai-workflow-badge-{{ ai_gen_id }} {
+    display: inline-block;
+    font-family: var(--font-body-family);
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #677279;
+    background-color: #f3f5f6;
+    padding: 6px 14px;
+    border-radius: 20px;
+    width: fit-content;
+  }
+
+  .ai-workflow-card-content-{{ ai_gen_id }} {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .ai-workflow-step-title-{{ ai_gen_id }} {
+    font-family: var(--font-heading-family);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.3;
+    color: #11243E;
+    margin: 0;
+  }
+
+  .ai-workflow-step-description-{{ ai_gen_id }} {
+    font-family: var(--font-body-family);
+    font-size: 16px;
+    line-height: 1.7;
+    color: #677279;
+    margin: 0;
+  }
+
+  @media screen and (max-width: 989px) {
+    .ai-workflow-section-{{ ai_gen_id }} {
+      padding: 60px 0;
+    }
+
+    .ai-workflow-title-{{ ai_gen_id }} {
+      font-size: 36px;
+    }
+
+    .ai-workflow-subtitle-{{ ai_gen_id }} {
+      font-size: 16px;
+    }
+
+    .ai-workflow-card-{{ ai_gen_id }} {
+      grid-template-columns: 1fr;
+      gap: 24px;
+      padding: 32px;
+    }
+
+    .ai-workflow-step-number-{{ ai_gen_id }} {
+      font-size: 48px;
+    }
+
+    .ai-workflow-step-title-{{ ai_gen_id }} {
+      font-size: 20px;
+    }
+
+    .ai-workflow-step-description-{{ ai_gen_id }} {
+      font-size: 15px;
+    }
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-workflow-section-{{ ai_gen_id }} {
+      padding: 48px 0;
+    }
+
+    .ai-workflow-container-{{ ai_gen_id }} {
+      padding: 0 var(--spacing-4);
+    }
+
+    .ai-workflow-header-{{ ai_gen_id }} {
+      margin-bottom: 32px;
+    }
+
+    .ai-workflow-title-{{ ai_gen_id }} {
+      font-size: 28px;
+    }
+
+    .ai-workflow-subtitle-{{ ai_gen_id }} {
+      font-size: 15px;
+    }
+
+    .ai-workflow-card-{{ ai_gen_id }} {
+      padding: 24px;
+      gap: 20px;
+    }
+
+    .ai-workflow-step-number-{{ ai_gen_id }} {
+      font-size: 40px;
+    }
+
+    .ai-workflow-step-title-{{ ai_gen_id }} {
+      font-size: 18px;
+    }
+
+    .ai-workflow-cards-{{ ai_gen_id }} {
+      gap: 20px;
+    }
+  }
+{% endstyle %}
+
+<div class="ai-workflow-section-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-workflow-container-{{ ai_gen_id }}">
+    <div class="ai-workflow-header-{{ ai_gen_id }}">
+      {% if block.settings.eyebrow_text != blank %}
+        <div class="ai-workflow-eyebrow-{{ ai_gen_id }}">
+          {{ block.settings.eyebrow_text }}
+        </div>
+      {% endif %}
+      
+      {% if block.settings.section_title != blank %}
+        <h2 class="ai-workflow-title-{{ ai_gen_id }}">
+          {{ block.settings.section_title }}
+        </h2>
+      {% endif %}
+      
+      {% if block.settings.section_subtitle != blank %}
+        <p class="ai-workflow-subtitle-{{ ai_gen_id }}">
+          {{ block.settings.section_subtitle }}
+        </p>
+      {% endif %}
+    </div>
+
+    <div class="ai-workflow-cards-{{ ai_gen_id }}">
+      {% if block.settings.step_1_enabled %}
+        <div class="ai-workflow-card-{{ ai_gen_id }}">
+          <div class="ai-workflow-card-meta-{{ ai_gen_id }}">
+            {% if block.settings.step_1_number != blank %}
+              <div class="ai-workflow-step-number-{{ ai_gen_id }}">
+                {{ block.settings.step_1_number }}
+              </div>
+            {% endif %}
+            
+            {% if block.settings.step_1_badge != blank %}
+              <div class="ai-workflow-badge-{{ ai_gen_id }}">
+                {{ block.settings.step_1_badge }}
+              </div>
+            {% endif %}
+          </div>
+
+          <div class="ai-workflow-card-content-{{ ai_gen_id }}">
+            {% if block.settings.step_1_title != blank %}
+              <h3 class="ai-workflow-step-title-{{ ai_gen_id }}">
+                {{ block.settings.step_1_title }}
+              </h3>
+            {% endif %}
+            
+            {% if block.settings.step_1_description != blank %}
+              <p class="ai-workflow-step-description-{{ ai_gen_id }}">
+                {{ block.settings.step_1_description }}
+              </p>
+            {% endif %}
+          </div>
+        </div>
+      {% endif %}
+
+      {% if block.settings.step_2_enabled %}
+        <div class="ai-workflow-card-{{ ai_gen_id }}">
+          <div class="ai-workflow-card-meta-{{ ai_gen_id }}">
+            {% if block.settings.step_2_number != blank %}
+              <div class="ai-workflow-step-number-{{ ai_gen_id }}">
+                {{ block.settings.step_2_number }}
+              </div>
+            {% endif %}
+            
+            {% if block.settings.step_2_badge != blank %}
+              <div class="ai-workflow-badge-{{ ai_gen_id }}">
+                {{ block.settings.step_2_badge }}
+              </div>
+            {% endif %}
+          </div>
+
+          <div class="ai-workflow-card-content-{{ ai_gen_id }}">
+            {% if block.settings.step_2_title != blank %}
+              <h3 class="ai-workflow-step-title-{{ ai_gen_id }}">
+                {{ block.settings.step_2_title }}
+              </h3>
+            {% endif %}
+            
+            {% if block.settings.step_2_description != blank %}
+              <p class="ai-workflow-step-description-{{ ai_gen_id }}">
+                {{ block.settings.step_2_description }}
+              </p>
+            {% endif %}
+          </div>
+        </div>
+      {% endif %}
+
+      {% if block.settings.step_3_enabled %}
+        <div class="ai-workflow-card-{{ ai_gen_id }}">
+          <div class="ai-workflow-card-meta-{{ ai_gen_id }}">
+            {% if block.settings.step_3_number != blank %}
+              <div class="ai-workflow-step-number-{{ ai_gen_id }}">
+                {{ block.settings.step_3_number }}
+              </div>
+            {% endif %}
+            
+            {% if block.settings.step_3_badge != blank %}
+              <div class="ai-workflow-badge-{{ ai_gen_id }}">
+                {{ block.settings.step_3_badge }}
+              </div>
+            {% endif %}
+          </div>
+
+          <div class="ai-workflow-card-content-{{ ai_gen_id }}">
+            {% if block.settings.step_3_title != blank %}
+              <h3 class="ai-workflow-step-title-{{ ai_gen_id }}">
+                {{ block.settings.step_3_title }}
+              </h3>
+            {% endif %}
+            
+            {% if block.settings.step_3_description != blank %}
+              <p class="ai-workflow-step-description-{{ ai_gen_id }}">
+                {{ block.settings.step_3_description }}
+              </p>
+            {% endif %}
+          </div>
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</div>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "Operational workflow",
+  "tag": null,
+  "class": "shopify-block-operational-workflow",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Section header"
+    },
+    {
+      "type": "text",
+      "id": "eyebrow_text",
+      "label": "Eyebrow text",
+      "default": "OPERATIONAL METHODOLOGY"
+    },
+    {
+      "type": "color",
+      "id": "eyebrow_color",
+      "label": "Eyebrow color",
+      "default": "#0e366a"
+    },
+    {
+      "type": "text",
+      "id": "section_title",
+      "label": "Section title",
+      "default": "How Flow Drives Transformation"
+    },
+    {
+      "type": "textarea",
+      "id": "section_subtitle",
+      "label": "Section subtitle",
+      "default": "A structured, data-driven methodology that embeds measurement directly into daily store routines and enterprise management."
+    },
+    {
+      "type": "header",
+      "content": "Card style"
+    },
+    {
+      "type": "color",
+      "id": "card_background",
+      "label": "Card background",
+      "default": "#f9fafb"
+    },
+    {
+      "type": "color",
+      "id": "card_border_color",
+      "label": "Card border color",
+      "default": "#e5e7eb"
+    },
+    {
+      "type": "range",
+      "id": "desktop_width_percent",
+      "label": "Desktop width",
+      "min": 50,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "default": 100
+    },
+    {
+      "type": "header",
+      "content": "Step 1"
+    },
+    {
+      "type": "checkbox",
+      "id": "step_1_enabled",
+      "label": "Enable step 1",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "step_1_number",
+      "label": "Step number",
+      "default": "01"
+    },
+    {
+      "type": "text",
+      "id": "step_1_badge",
+      "label": "Category badge",
+      "default": "METHODOLOGY"
+    },
+    {
+      "type": "text",
+      "id": "step_1_title",
+      "label": "Step title",
+      "default": "Establish Baseline Metrics"
+    },
+    {
+      "type": "textarea",
+      "id": "step_1_description",
+      "label": "Step description",
+      "default": "Deploy Flow sensors to measure historical foot traffic, entry capture rates, and core conversion paths. Establish clean, objective baseline data before implementing organizational changes or frontend tactical experiments."
+    },
+    {
+      "type": "header",
+      "content": "Step 2"
+    },
+    {
+      "type": "checkbox",
+      "id": "step_2_enabled",
+      "label": "Enable step 2",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "step_2_number",
+      "label": "Step number",
+      "default": "02"
+    },
+    {
+      "type": "text",
+      "id": "step_2_badge",
+      "label": "Category badge",
+      "default": "METHODOLOGY"
+    },
+    {
+      "type": "text",
+      "id": "step_2_title",
+      "label": "Step title",
+      "default": "Democratize Performance Data"
+    },
+    {
+      "type": "textarea",
+      "id": "step_2_description",
+      "label": "Step description",
+      "default": "Provide intuitive, real-time dashboard access to store managers and frontline staff. Shift data visibility away from corporate-only analysis, fostering individual store level accountability and immediate execution capability."
+    },
+    {
+      "type": "header",
+      "content": "Step 3"
+    },
+    {
+      "type": "checkbox",
+      "id": "step_3_enabled",
+      "label": "Enable step 3",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "step_3_number",
+      "label": "Step number",
+      "default": "03"
+    },
+    {
+      "type": "text",
+      "id": "step_3_badge",
+      "label": "Category badge",
+      "default": "METHODOLOGY"
+    },
+    {
+      "type": "text",
+      "id": "step_3_title",
+      "label": "Step title",
+      "default": "Run Structured Hypotheses"
+    },
+    {
+      "type": "textarea",
+      "id": "step_3_description",
+      "label": "Step description",
+      "default": "Utilize precise traffic and dwell data to evaluate weekly promotional changes, visual merchandising strategies (VMD), and labor schedule adjustments. Measure exact behavioral variations against real baseline metrics."
+    }
+  ],
+  "presets": [
+    {
+      "name": "Operational workflow"
+    }
+  ]
+}
 {% endschema %}
