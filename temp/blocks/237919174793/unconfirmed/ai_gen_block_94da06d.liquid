@@ -1,6 +1,676 @@
+{% doc %}
+  @prompt
+    Act as an expert Shopify theme developer. Generate a responsive, pixel-perfect, custom sections block for a Case Study Spotlight component. The design must precisely mirror the layout, spacing, and styling details provided below while automatically inheriting the current Shopify theme's global typography, primary max-width (e.g., 1200px), and core button styles.
+    
+    ---
+    
+    ### 1. SECTION ARCHITECTURE & LAYOUT
+    
+    Create a parent container that wraps individual "Case Study" blocks. Each block consists of distinct vertical zones stacked with intentional, clean whitespace:
+    
+    #### ZONE 1: HEADER (Flex Row, Space-Between)
+    - Left Side: A dynamic flex row containing a Brand Image and the Title block side-by-side:
+      - Brand Image: A placeholder/setting for an uploaded image asset (rendered in a square container, border-radius: 12px, subtle light-grey border). Ensure it scales cleanly without distortion.
+      - Title Stack (stacked vertically next to the image):
+        - Meta-info: "Fashion • Enterprise Scale" (Small, muted grey text)
+        - Case Study Title: "Major Japanese Fashion Retailer" (Bold, prominent, dark navy/slate color)
+        - Sub-info: "124 → 220 stores" (Muted text showing scale change)
+    - Right Side: A solid pill-shaped badge labeled "FEATURED" using a muted olive/moss green background (`#a4b953` or similar theme variant) with white uppercase text.
+    
+    #### ZONE 2: INTRODUCTORY PARAGRAPH
+    - A full-width, 2-3 sentence summary paragraph. 
+    - Styling: Medium-grey text color, comfortable line-height (e.g., 1.6), and generous top/bottom margin to separate it from the header and the results card.
+    
+    #### ZONE 3: MEASURED RESULTS CARD (Grid Container)
+    - A full-width callout box with a very soft, light cream/green tinted background, rounded corners (border-radius: 16px), and internal padding (around 24px-32px).
+    - Inside, lay out a 2x2 grid (collapsing to a 1x4 stack on mobile devices):
+      - Each grid item contains a small, solid moss-green square icon (`#a4b953`) with a white upward-trending arrow.
+      - Text inline or stacked next to the icon: Bold the metric or main phrase, followed by regular weight for details (e.g., "**Conversion improved 8.93%**", "**Sales increased 8.25%** = ¥1.8 billion additional revenue").
+    
+    #### ZONE 4: TWO-COLUMN DETAILS (Flex/Grid, 50/50 Split)
+    - Below the results card, split the layout into two columns on desktop (stacked on mobile):
+      - Column 1 (CHALLENGES BEFORE): A bulleted list with a subtle grey disc. Text color is a muted slate grey.
+      - Column 2 (OPERATIONAL IMPACT): A list utilizing thin green checkmarks instead of bullet points. Text color is a darker slate grey.
+    - Ensure clear headings for both columns in muted, uppercase typography.
+    
+    #### ZONE 5: FOOTER & BUTTON
+    - A full-width dark navy button (`#0a2240` or the theme's primary dark color) aligned to the bottom left. 
+    - Features white text, an right-facing arrow icon (→), and explicit padding to match the theme’s standard button styling.
+    - A thin, full-width neutral divider line separates this section block from the next block.
+    
+    ---
+    
+    ### 2. DESIGN & BRAND ALIGNMENT RULES
+    
+    - Image Block Logic: The section setting must explicitly allow an image upload (`type": "image_picker"`) for each case study block to replace the brand placeholder.
+    - Typography: Do NOT hardcode font families. Inherit the Shopify theme's heading font for titles/metrics and the theme's body font for lists and descriptions.
+    - Sizing & Max-Width: Constrain the component within the theme's standard section wrapper max-width (`var(--page-width)`). Ensure it centers automatically on large viewports.
+    - Repeatable Logic: Structure this as a repeatable Shopify theme block schema so that multiple case studies can be stacked or added sequentially.
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-case-study-spotlight-{{ ai_gen_id }} {
+    display: block;
+    width: 100%;
+    max-width: var(--page-width);
+    margin: 0 auto;
+    padding: 0 var(--spacing-section-horizontal);
+  }
+
+  .ai-case-study-container-{{ ai_gen_id }} {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding-bottom: 48px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .ai-case-study-header-{{ ai_gen_id }} {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+
+  .ai-case-study-header-left-{{ ai_gen_id }} {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    flex: 1;
+    min-width: 0;
+  }
+
+  .ai-case-study-brand-image-{{ ai_gen_id }} {
+    flex-shrink: 0;
+    width: 80px;
+    height: 80px;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+    overflow: hidden;
+    background-color: #ffffff;
+  }
+
+  .ai-case-study-brand-image-{{ ai_gen_id }} img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .ai-case-study-brand-placeholder-{{ ai_gen_id }} {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f9fafb;
+  }
+
+  .ai-case-study-brand-placeholder-{{ ai_gen_id }} svg {
+    width: 40px;
+    height: 40px;
+    opacity: 0.3;
+  }
+
+  .ai-case-study-title-stack-{{ ai_gen_id }} {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    flex: 1;
+    min-width: 0;
+  }
+
+  .ai-case-study-meta-{{ ai_gen_id }} {
+    font-size: 14px;
+    color: #6b7280;
+    font-weight: 400;
+  }
+
+  .ai-case-study-title-{{ ai_gen_id }} {
+    font-size: 28px;
+    font-weight: 700;
+    color: #0a2240;
+    margin: 0;
+    line-height: 1.2;
+  }
+
+  .ai-case-study-sub-info-{{ ai_gen_id }} {
+    font-size: 15px;
+    color: #6b7280;
+    font-weight: 400;
+  }
+
+  .ai-case-study-badge-{{ ai_gen_id }} {
+    flex-shrink: 0;
+    padding: 8px 20px;
+    background-color: {{ block.settings.badge_color }};
+    color: #ffffff;
+    border-radius: 50px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+  }
+
+  .ai-case-study-intro-{{ ai_gen_id }} {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #4b5563;
+    margin: 0;
+  }
+
+  .ai-case-study-results-card-{{ ai_gen_id }} {
+    background-color: {{ block.settings.results_bg_color }};
+    border-radius: 16px;
+    padding: 32px;
+  }
+
+  .ai-case-study-results-grid-{{ ai_gen_id }} {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  .ai-case-study-result-item-{{ ai_gen_id }} {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+  }
+
+  .ai-case-study-result-icon-{{ ai_gen_id }} {
+    flex-shrink: 0;
+    width: 32px;
+    height: 32px;
+    background-color: {{ block.settings.icon_color }};
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ai-case-study-result-icon-{{ ai_gen_id }} svg {
+    width: 18px;
+    height: 18px;
+    stroke: #ffffff;
+    fill: none;
+    stroke-width: 2.5;
+  }
+
+  .ai-case-study-result-text-{{ ai_gen_id }} {
+    flex: 1;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #1f2937;
+  }
+
+  .ai-case-study-result-text-{{ ai_gen_id }} strong {
+    font-weight: 700;
+    color: #111827;
+  }
+
+  .ai-case-study-details-{{ ai_gen_id }} {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+
+  .ai-case-study-detail-column-{{ ai_gen_id }} {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .ai-case-study-detail-heading-{{ ai_gen_id }} {
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #6b7280;
+    margin: 0;
+  }
+
+  .ai-case-study-detail-list-{{ ai_gen_id }} {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .ai-case-study-detail-list-{{ ai_gen_id }} li {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #4b5563;
+  }
+
+  .ai-case-study-detail-list-{{ ai_gen_id }} li::before {
+    content: '';
+    flex-shrink: 0;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #9ca3af;
+    margin-top: 8px;
+  }
+
+  .ai-case-study-detail-list-{{ ai_gen_id }}.ai-case-study-checkmark-list-{{ ai_gen_id }} li::before {
+    content: '✓';
+    width: auto;
+    height: auto;
+    border-radius: 0;
+    background-color: transparent;
+    color: {{ block.settings.icon_color }};
+    font-weight: 700;
+    font-size: 18px;
+    margin-top: 2px;
+  }
+
+  .ai-case-study-footer-{{ ai_gen_id }} {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .ai-case-study-button-{{ ai_gen_id }} {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px 32px;
+    background-color: {{ block.settings.button_bg_color }};
+    color: {{ block.settings.button_text_color }};
+    text-decoration: none;
+    border-radius: var(--button-border-radius, 8px);
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+  }
+
+  .ai-case-study-button-{{ ai_gen_id }}:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+  }
+
+  .ai-case-study-button-{{ ai_gen_id }} svg {
+    width: 20px;
+    height: 20px;
+    stroke: currentColor;
+    fill: none;
+    stroke-width: 2;
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-case-study-header-{{ ai_gen_id }} {
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .ai-case-study-header-left-{{ ai_gen_id }} {
+      width: 100%;
+    }
+
+    .ai-case-study-brand-image-{{ ai_gen_id }} {
+      width: 64px;
+      height: 64px;
+    }
+
+    .ai-case-study-title-{{ ai_gen_id }} {
+      font-size: 22px;
+    }
+
+    .ai-case-study-badge-{{ ai_gen_id }} {
+      align-self: flex-start;
+    }
+
+    .ai-case-study-intro-{{ ai_gen_id }} {
+      font-size: 16px;
+    }
+
+    .ai-case-study-results-card-{{ ai_gen_id }} {
+      padding: 24px;
+    }
+
+    .ai-case-study-results-grid-{{ ai_gen_id }} {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+
+    .ai-case-study-details-{{ ai_gen_id }} {
+      grid-template-columns: 1fr;
+      gap: 32px;
+    }
+
+    .ai-case-study-button-{{ ai_gen_id }} {
+      width: 100%;
+      justify-content: center;
+    }
+  }
+{% endstyle %}
+
+<div class="ai-case-study-spotlight-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-case-study-container-{{ ai_gen_id }}">
+    <div class="ai-case-study-header-{{ ai_gen_id }}">
+      <div class="ai-case-study-header-left-{{ ai_gen_id }}">
+        <div class="ai-case-study-brand-image-{{ ai_gen_id }}">
+          {% if block.settings.brand_image %}
+            <img
+              src="{{ block.settings.brand_image | image_url: width: 160 }}"
+              alt="{{ block.settings.brand_image.alt | escape }}"
+              loading="lazy"
+              width="80"
+              height="80"
+            >
+          {% else %}
+            <div class="ai-case-study-brand-placeholder-{{ ai_gen_id }}">
+              {{ 'image' | placeholder_svg_tag }}
+            </div>
+          {% endif %}
+        </div>
+
+        <div class="ai-case-study-title-stack-{{ ai_gen_id }}">
+          {% if block.settings.meta_info != blank %}
+            <div class="ai-case-study-meta-{{ ai_gen_id }}">{{ block.settings.meta_info }}</div>
+          {% endif %}
+          {% if block.settings.title != blank %}
+            <h2 class="ai-case-study-title-{{ ai_gen_id }}">{{ block.settings.title }}</h2>
+          {% endif %}
+          {% if block.settings.sub_info != blank %}
+            <div class="ai-case-study-sub-info-{{ ai_gen_id }}">{{ block.settings.sub_info }}</div>
+          {% endif %}
+        </div>
+      </div>
+
+      {% if block.settings.show_badge %}
+        <div class="ai-case-study-badge-{{ ai_gen_id }}">{{ block.settings.badge_text }}</div>
+      {% endif %}
+    </div>
+
+    {% if block.settings.intro_text != blank %}
+      <div class="ai-case-study-intro-{{ ai_gen_id }}">{{ block.settings.intro_text }}</div>
+    {% endif %}
+
+    <div class="ai-case-study-results-card-{{ ai_gen_id }}">
+      <div class="ai-case-study-results-grid-{{ ai_gen_id }}">
+        {% if block.settings.result_1 != blank %}
+          <div class="ai-case-study-result-item-{{ ai_gen_id }}">
+            <div class="ai-case-study-result-icon-{{ ai_gen_id }}">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline>
+                <polyline points="16 7 22 7 22 13"></polyline>
+              </svg>
+            </div>
+            <div class="ai-case-study-result-text-{{ ai_gen_id }}">{{ block.settings.result_1 }}</div>
+          </div>
+        {% endif %}
+
+        {% if block.settings.result_2 != blank %}
+          <div class="ai-case-study-result-item-{{ ai_gen_id }}">
+            <div class="ai-case-study-result-icon-{{ ai_gen_id }}">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline>
+                <polyline points="16 7 22 7 22 13"></polyline>
+              </svg>
+            </div>
+            <div class="ai-case-study-result-text-{{ ai_gen_id }}">{{ block.settings.result_2 }}</div>
+          </div>
+        {% endif %}
+
+        {% if block.settings.result_3 != blank %}
+          <div class="ai-case-study-result-item-{{ ai_gen_id }}">
+            <div class="ai-case-study-result-icon-{{ ai_gen_id }}">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline>
+                <polyline points="16 7 22 7 22 13"></polyline>
+              </svg>
+            </div>
+            <div class="ai-case-study-result-text-{{ ai_gen_id }}">{{ block.settings.result_3 }}</div>
+          </div>
+        {% endif %}
+
+        {% if block.settings.result_4 != blank %}
+          <div class="ai-case-study-result-item-{{ ai_gen_id }}">
+            <div class="ai-case-study-result-icon-{{ ai_gen_id }}">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline>
+                <polyline points="16 7 22 7 22 13"></polyline>
+              </svg>
+            </div>
+            <div class="ai-case-study-result-text-{{ ai_gen_id }}">{{ block.settings.result_4 }}</div>
+          </div>
+        {% endif %}
+      </div>
+    </div>
+
+    <div class="ai-case-study-details-{{ ai_gen_id }}">
+      <div class="ai-case-study-detail-column-{{ ai_gen_id }}">
+        {% if block.settings.challenges_heading != blank %}
+          <h3 class="ai-case-study-detail-heading-{{ ai_gen_id }}">{{ block.settings.challenges_heading }}</h3>
+        {% endif %}
+        {% if block.settings.challenges_list != blank %}
+          <ul class="ai-case-study-detail-list-{{ ai_gen_id }}">
+            {% assign challenges = block.settings.challenges_list | split: '|' %}
+            {% for challenge in challenges %}
+              <li>{{ challenge | strip }}</li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+      </div>
+
+      <div class="ai-case-study-detail-column-{{ ai_gen_id }}">
+        {% if block.settings.impact_heading != blank %}
+          <h3 class="ai-case-study-detail-heading-{{ ai_gen_id }}">{{ block.settings.impact_heading }}</h3>
+        {% endif %}
+        {% if block.settings.impact_list != blank %}
+          <ul class="ai-case-study-detail-list-{{ ai_gen_id }} ai-case-study-checkmark-list-{{ ai_gen_id }}">
+            {% assign impacts = block.settings.impact_list | split: '|' %}
+            {% for impact in impacts %}
+              <li>{{ impact | strip }}</li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+      </div>
+    </div>
+
+    {% if block.settings.button_text != blank %}
+      <div class="ai-case-study-footer-{{ ai_gen_id }}">
+        <a href="{{ block.settings.button_link }}" class="ai-case-study-button-{{ ai_gen_id }}">
+          {{ block.settings.button_text }}
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </a>
+      </div>
+    {% endif %}
+  </div>
+</div>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "Case study spotlight",
+  "tag": null,
+  "settings": [
+    {
+      "type": "header",
+      "content": "Brand and title"
+    },
+    {
+      "type": "image_picker",
+      "id": "brand_image",
+      "label": "Brand image"
+    },
+    {
+      "type": "text",
+      "id": "meta_info",
+      "label": "Meta info",
+      "default": "Fashion • Enterprise Scale"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Case study title",
+      "default": "Major Japanese Fashion Retailer"
+    },
+    {
+      "type": "text",
+      "id": "sub_info",
+      "label": "Sub info",
+      "default": "124 → 220 stores"
+    },
+    {
+      "type": "header",
+      "content": "Badge"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_badge",
+      "label": "Show badge",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "badge_text",
+      "label": "Badge text",
+      "default": "FEATURED"
+    },
+    {
+      "type": "color",
+      "id": "badge_color",
+      "label": "Badge color",
+      "default": "#a4b953"
+    },
+    {
+      "type": "header",
+      "content": "Introduction"
+    },
+    {
+      "type": "richtext",
+      "id": "intro_text",
+      "label": "Intro paragraph",
+      "default": "<p>This major Japanese fashion retailer transformed their omnichannel operations, achieving significant improvements in conversion rates and revenue while expanding their store network across the country.</p>"
+    },
+    {
+      "type": "header",
+      "content": "Results card"
+    },
+    {
+      "type": "color",
+      "id": "results_bg_color",
+      "label": "Background color",
+      "default": "#f0f4e8"
+    },
+    {
+      "type": "color",
+      "id": "icon_color",
+      "label": "Icon color",
+      "default": "#a4b953"
+    },
+    {
+      "type": "richtext",
+      "id": "result_1",
+      "label": "Result 1",
+      "default": "<p><strong>Conversion improved 8.93%</strong></p>"
+    },
+    {
+      "type": "richtext",
+      "id": "result_2",
+      "label": "Result 2",
+      "default": "<p><strong>Sales increased 8.25%</strong> = ¥1.8 billion additional revenue</p>"
+    },
+    {
+      "type": "richtext",
+      "id": "result_3",
+      "label": "Result 3",
+      "default": "<p><strong>Store network expanded</strong> from 124 to 220 locations</p>"
+    },
+    {
+      "type": "richtext",
+      "id": "result_4",
+      "label": "Result 4",
+      "default": "<p><strong>Operational efficiency</strong> improved across all channels</p>"
+    },
+    {
+      "type": "header",
+      "content": "Challenges before"
+    },
+    {
+      "type": "text",
+      "id": "challenges_heading",
+      "label": "Heading",
+      "default": "CHALLENGES BEFORE"
+    },
+    {
+      "type": "textarea",
+      "id": "challenges_list",
+      "label": "List items",
+      "info": "Separate each item with a pipe character (|)",
+      "default": "Fragmented inventory across channels|Limited real-time visibility|Manual processes slowing operations|Inconsistent customer experience"
+    },
+    {
+      "type": "header",
+      "content": "Operational impact"
+    },
+    {
+      "type": "text",
+      "id": "impact_heading",
+      "label": "Heading",
+      "default": "OPERATIONAL IMPACT"
+    },
+    {
+      "type": "textarea",
+      "id": "impact_list",
+      "label": "List items",
+      "info": "Separate each item with a pipe character (|)",
+      "default": "Unified inventory management system|Real-time stock visibility across all locations|Automated fulfillment workflows|Seamless omnichannel customer journey"
+    },
+    {
+      "type": "header",
+      "content": "Call to action"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button text",
+      "default": "Read full case study"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button link"
+    },
+    {
+      "type": "color",
+      "id": "button_bg_color",
+      "label": "Button background",
+      "default": "#0a2240"
+    },
+    {
+      "type": "color",
+      "id": "button_text_color",
+      "label": "Button text",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "desktop_width_percent",
+      "label": "Desktop width",
+      "min": 50,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "default": 100
+    }
+  ],
+  "presets": [
+    {
+      "name": "Case study spotlight"
+    }
+  ]
+}
 {% endschema %}
