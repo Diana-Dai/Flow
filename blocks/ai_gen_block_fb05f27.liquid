@@ -181,12 +181,7 @@
   }
 
   .ai-founder-story-heading-{{ ai_gen_id }} {
-    font-size: 42px;
-    font-weight: 700;
-    color: #ffffff;
     margin: 0 0 32px;
-    line-height: 1.2;
-    letter-spacing: -1px;
   }
 
   .ai-founder-story-text-{{ ai_gen_id }} {
@@ -233,10 +228,6 @@
       padding: 60px 40px;
     }
 
-    .ai-founder-story-heading-{{ ai_gen_id }} {
-      font-size: 32px;
-    }
-
     .ai-founder-story-avatar-wrapper-{{ ai_gen_id }} {
       width: 140px;
       height: 140px;
@@ -266,7 +257,6 @@
     }
 
     .ai-founder-story-heading-{{ ai_gen_id }} {
-      font-size: 28px;
       margin-bottom: 24px;
     }
 
@@ -320,7 +310,7 @@
       <div class="ai-founder-story-right-{{ ai_gen_id }}">
         <div class="ai-founder-story-content-{{ ai_gen_id }}">
           {% if block.settings.heading != blank %}
-            <h2 class="ai-founder-story-heading-{{ ai_gen_id }}">{{ block.settings.heading }}</h2>
+            <h2 class="ai-founder-story-heading-{{ ai_gen_id }} h2">{{ block.settings.heading }}</h2>
           {% endif %}
           {% if block.settings.story_content != blank %}
             <div class="ai-founder-story-text-{{ ai_gen_id }}">
