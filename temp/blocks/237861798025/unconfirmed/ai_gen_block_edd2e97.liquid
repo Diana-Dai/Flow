@@ -244,10 +244,10 @@
         {% endif %}
 
         <div class="ai-company-overview-details-{{ ai_gen_id }}">
-          {% for detail_block in block.settings.details %}
+          {% if block.settings.detail_1_label != blank %}
             <div class="ai-company-overview-detail-row-{{ ai_gen_id }}">
               <div class="ai-company-overview-icon-box-{{ ai_gen_id }}">
-                {% case detail_block.icon %}
+                {% case block.settings.detail_1_icon %}
                   {% when 'building' %}
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
                       <rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect>
@@ -281,21 +281,171 @@
                 {% endcase %}
               </div>
               <div class="ai-company-overview-text-cluster-{{ ai_gen_id }}">
-                <p class="ai-company-overview-label-{{ ai_gen_id }}">{{ detail_block.label }}</p>
-                <p class="ai-company-overview-value-{{ ai_gen_id }}">{{ detail_block.value }}</p>
+                <p class="ai-company-overview-label-{{ ai_gen_id }}">{{ block.settings.detail_1_label }}</p>
+                <p class="ai-company-overview-value-{{ ai_gen_id }}">{{ block.settings.detail_1_value }}</p>
               </div>
             </div>
-          {% endfor %}
+          {% endif %}
+
+          {% if block.settings.detail_2_label != blank %}
+            <div class="ai-company-overview-detail-row-{{ ai_gen_id }}">
+              <div class="ai-company-overview-icon-box-{{ ai_gen_id }}">
+                {% case block.settings.detail_2_icon %}
+                  {% when 'building' %}
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect>
+                      <line x1="9" y1="6" x2="9" y2="6.01"></line>
+                      <line x1="15" y1="6" x2="15" y2="6.01"></line>
+                      <line x1="9" y1="10" x2="9" y2="10.01"></line>
+                      <line x1="15" y1="10" x2="15" y2="10.01"></line>
+                      <line x1="9" y1="14" x2="9" y2="14.01"></line>
+                      <line x1="15" y1="14" x2="15" y2="14.01"></line>
+                      <line x1="9" y1="18" x2="15" y2="18"></line>
+                    </svg>
+                  {% when 'globe' %}
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <line x1="2" y1="12" x2="22" y2="12"></line>
+                      <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                    </svg>
+                  {% when 'target' %}
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <circle cx="12" cy="12" r="6"></circle>
+                      <circle cx="12" cy="12" r="2"></circle>
+                    </svg>
+                  {% when 'users' %}
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                      <circle cx="9" cy="7" r="4"></circle>
+                      <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                      <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                    </svg>
+                {% endcase %}
+              </div>
+              <div class="ai-company-overview-text-cluster-{{ ai_gen_id }}">
+                <p class="ai-company-overview-label-{{ ai_gen_id }}">{{ block.settings.detail_2_label }}</p>
+                <p class="ai-company-overview-value-{{ ai_gen_id }}">{{ block.settings.detail_2_value }}</p>
+              </div>
+            </div>
+          {% endif %}
+
+          {% if block.settings.detail_3_label != blank %}
+            <div class="ai-company-overview-detail-row-{{ ai_gen_id }}">
+              <div class="ai-company-overview-icon-box-{{ ai_gen_id }}">
+                {% case block.settings.detail_3_icon %}
+                  {% when 'building' %}
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect>
+                      <line x1="9" y1="6" x2="9" y2="6.01"></line>
+                      <line x1="15" y1="6" x2="15" y2="6.01"></line>
+                      <line x1="9" y1="10" x2="9" y2="10.01"></line>
+                      <line x1="15" y1="10" x2="15" y2="10.01"></line>
+                      <line x1="9" y1="14" x2="9" y2="14.01"></line>
+                      <line x1="15" y1="14" x2="15" y2="14.01"></line>
+                      <line x1="9" y1="18" x2="15" y2="18"></line>
+                    </svg>
+                  {% when 'globe' %}
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <line x1="2" y1="12" x2="22" y2="12"></line>
+                      <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                    </svg>
+                  {% when 'target' %}
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <circle cx="12" cy="12" r="6"></circle>
+                      <circle cx="12" cy="12" r="2"></circle>
+                    </svg>
+                  {% when 'users' %}
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                      <circle cx="9" cy="7" r="4"></circle>
+                      <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                      <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                    </svg>
+                {% endcase %}
+              </div>
+              <div class="ai-company-overview-text-cluster-{{ ai_gen_id }}">
+                <p class="ai-company-overview-label-{{ ai_gen_id }}">{{ block.settings.detail_3_label }}</p>
+                <p class="ai-company-overview-value-{{ ai_gen_id }}">{{ block.settings.detail_3_value }}</p>
+              </div>
+            </div>
+          {% endif %}
+
+          {% if block.settings.detail_4_label != blank %}
+            <div class="ai-company-overview-detail-row-{{ ai_gen_id }}">
+              <div class="ai-company-overview-icon-box-{{ ai_gen_id }}">
+                {% case block.settings.detail_4_icon %}
+                  {% when 'building' %}
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect>
+                      <line x1="9" y1="6" x2="9" y2="6.01"></line>
+                      <line x1="15" y1="6" x2="15" y2="6.01"></line>
+                      <line x1="9" y1="10" x2="9" y2="10.01"></line>
+                      <line x1="15" y1="10" x2="15" y2="10.01"></line>
+                      <line x1="9" y1="14" x2="9" y2="14.01"></line>
+                      <line x1="15" y1="14" x2="15" y2="14.01"></line>
+                      <line x1="9" y1="18" x2="15" y2="18"></line>
+                    </svg>
+                  {% when 'globe' %}
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <line x1="2" y1="12" x2="22" y2="12"></line>
+                      <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                    </svg>
+                  {% when 'target' %}
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <circle cx="12" cy="12" r="6"></circle>
+                      <circle cx="12" cy="12" r="2"></circle>
+                    </svg>
+                  {% when 'users' %}
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                      <circle cx="9" cy="7" r="4"></circle>
+                      <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                      <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                    </svg>
+                {% endcase %}
+              </div>
+              <div class="ai-company-overview-text-cluster-{{ ai_gen_id }}">
+                <p class="ai-company-overview-label-{{ ai_gen_id }}">{{ block.settings.detail_4_label }}</p>
+                <p class="ai-company-overview-value-{{ ai_gen_id }}">{{ block.settings.detail_4_value }}</p>
+              </div>
+            </div>
+          {% endif %}
         </div>
       </div>
 
       <div class="ai-company-overview-stats-grid-{{ ai_gen_id }}">
-        {% for stat_block in block.settings.stats %}
+        {% if block.settings.stat_1_metric != blank %}
           <div class="ai-company-overview-stat-card-{{ ai_gen_id }}">
-            <p class="ai-company-overview-stat-number-{{ ai_gen_id }}">{{ stat_block.metric }}</p>
-            <p class="ai-company-overview-stat-label-{{ ai_gen_id }}">{{ stat_block.label }}</p>
+            <p class="ai-company-overview-stat-number-{{ ai_gen_id }}">{{ block.settings.stat_1_metric }}</p>
+            <p class="ai-company-overview-stat-label-{{ ai_gen_id }}">{{ block.settings.stat_1_label }}</p>
           </div>
-        {% endfor %}
+        {% endif %}
+
+        {% if block.settings.stat_2_metric != blank %}
+          <div class="ai-company-overview-stat-card-{{ ai_gen_id }}">
+            <p class="ai-company-overview-stat-number-{{ ai_gen_id }}">{{ block.settings.stat_2_metric }}</p>
+            <p class="ai-company-overview-stat-label-{{ ai_gen_id }}">{{ block.settings.stat_2_label }}</p>
+          </div>
+        {% endif %}
+
+        {% if block.settings.stat_3_metric != blank %}
+          <div class="ai-company-overview-stat-card-{{ ai_gen_id }}">
+            <p class="ai-company-overview-stat-number-{{ ai_gen_id }}">{{ block.settings.stat_3_metric }}</p>
+            <p class="ai-company-overview-stat-label-{{ ai_gen_id }}">{{ block.settings.stat_3_label }}</p>
+          </div>
+        {% endif %}
+
+        {% if block.settings.stat_4_metric != blank %}
+          <div class="ai-company-overview-stat-card-{{ ai_gen_id }}">
+            <p class="ai-company-overview-stat-number-{{ ai_gen_id }}">{{ block.settings.stat_4_metric }}</p>
+            <p class="ai-company-overview-stat-label-{{ ai_gen_id }}">{{ block.settings.stat_4_label }}</p>
+          </div>
+        {% endif %}
       </div>
     </div>
   </div>
@@ -324,25 +474,227 @@
     },
     {
       "type": "header",
-      "content": "Company details"
+      "content": "Detail 1"
+    },
+    {
+      "type": "select",
+      "id": "detail_1_icon",
+      "label": "Icon",
+      "options": [
+        {
+          "value": "building",
+          "label": "Building"
+        },
+        {
+          "value": "globe",
+          "label": "Globe"
+        },
+        {
+          "value": "target",
+          "label": "Target"
+        },
+        {
+          "value": "users",
+          "label": "Users"
+        }
+      ],
+      "default": "building"
     },
     {
       "type": "text",
-      "id": "details",
-      "label": "Details (JSON)",
-      "default": "[{\"icon\":\"building\",\"label\":\"Company Name\",\"value\":\"Flow Solutions Inc.\"},{\"icon\":\"globe\",\"label\":\"Headquarters\",\"value\":\"Tokyo, Japan\"},{\"icon\":\"target\",\"label\":\"Founded\",\"value\":\"2019\"},{\"icon\":\"users\",\"label\":\"Core Business\",\"value\":\"Retail analytics and operational infrastructure for physical stores\"}]",
-      "info": "JSON array of detail objects with icon, label, and value properties"
+      "id": "detail_1_label",
+      "label": "Label",
+      "default": "Company Name"
+    },
+    {
+      "type": "text",
+      "id": "detail_1_value",
+      "label": "Value",
+      "default": "Flow Solutions Inc."
     },
     {
       "type": "header",
-      "content": "Statistics"
+      "content": "Detail 2"
+    },
+    {
+      "type": "select",
+      "id": "detail_2_icon",
+      "label": "Icon",
+      "options": [
+        {
+          "value": "building",
+          "label": "Building"
+        },
+        {
+          "value": "globe",
+          "label": "Globe"
+        },
+        {
+          "value": "target",
+          "label": "Target"
+        },
+        {
+          "value": "users",
+          "label": "Users"
+        }
+      ],
+      "default": "globe"
     },
     {
       "type": "text",
-      "id": "stats",
-      "label": "Stats (JSON)",
-      "default": "[{\"metric\":\"500+\",\"label\":\"Active Retail Locations\"},{\"metric\":\"50+\",\"label\":\"Retail Brands\"},{\"metric\":\"98.5%\",\"label\":\"Measurement Accuracy\"},{\"metric\":\"99.9%\",\"label\":\"Platform Uptime SLA\"}]",
-      "info": "JSON array of stat objects with metric and label properties"
+      "id": "detail_2_label",
+      "label": "Label",
+      "default": "Headquarters"
+    },
+    {
+      "type": "text",
+      "id": "detail_2_value",
+      "label": "Value",
+      "default": "Tokyo, Japan"
+    },
+    {
+      "type": "header",
+      "content": "Detail 3"
+    },
+    {
+      "type": "select",
+      "id": "detail_3_icon",
+      "label": "Icon",
+      "options": [
+        {
+          "value": "building",
+          "label": "Building"
+        },
+        {
+          "value": "globe",
+          "label": "Globe"
+        },
+        {
+          "value": "target",
+          "label": "Target"
+        },
+        {
+          "value": "users",
+          "label": "Users"
+        }
+      ],
+      "default": "target"
+    },
+    {
+      "type": "text",
+      "id": "detail_3_label",
+      "label": "Label",
+      "default": "Founded"
+    },
+    {
+      "type": "text",
+      "id": "detail_3_value",
+      "label": "Value",
+      "default": "2019"
+    },
+    {
+      "type": "header",
+      "content": "Detail 4"
+    },
+    {
+      "type": "select",
+      "id": "detail_4_icon",
+      "label": "Icon",
+      "options": [
+        {
+          "value": "building",
+          "label": "Building"
+        },
+        {
+          "value": "globe",
+          "label": "Globe"
+        },
+        {
+          "value": "target",
+          "label": "Target"
+        },
+        {
+          "value": "users",
+          "label": "Users"
+        }
+      ],
+      "default": "users"
+    },
+    {
+      "type": "text",
+      "id": "detail_4_label",
+      "label": "Label",
+      "default": "Core Business"
+    },
+    {
+      "type": "textarea",
+      "id": "detail_4_value",
+      "label": "Value",
+      "default": "Retail analytics and operational infrastructure for physical stores"
+    },
+    {
+      "type": "header",
+      "content": "Stat 1"
+    },
+    {
+      "type": "text",
+      "id": "stat_1_metric",
+      "label": "Metric",
+      "default": "500+"
+    },
+    {
+      "type": "text",
+      "id": "stat_1_label",
+      "label": "Label",
+      "default": "Active Retail Locations"
+    },
+    {
+      "type": "header",
+      "content": "Stat 2"
+    },
+    {
+      "type": "text",
+      "id": "stat_2_metric",
+      "label": "Metric",
+      "default": "50+"
+    },
+    {
+      "type": "text",
+      "id": "stat_2_label",
+      "label": "Label",
+      "default": "Retail Brands"
+    },
+    {
+      "type": "header",
+      "content": "Stat 3"
+    },
+    {
+      "type": "text",
+      "id": "stat_3_metric",
+      "label": "Metric",
+      "default": "98.5%"
+    },
+    {
+      "type": "text",
+      "id": "stat_3_label",
+      "label": "Label",
+      "default": "Measurement Accuracy"
+    },
+    {
+      "type": "header",
+      "content": "Stat 4"
+    },
+    {
+      "type": "text",
+      "id": "stat_4_metric",
+      "label": "Metric",
+      "default": "99.9%"
+    },
+    {
+      "type": "text",
+      "id": "stat_4_label",
+      "label": "Label",
+      "default": "Platform Uptime SLA"
     },
     {
       "type": "range",
