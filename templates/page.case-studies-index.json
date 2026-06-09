@@ -83,15 +83,14 @@
     "1780368579b1b4691b": {
       "type": "_blocks",
       "blocks": {
-        "heading_nLUiFr": {
-          "type": "heading",
-          "name": "Heading",
+        "badge_PmaQhf": {
+          "type": "badge",
+          "name": "Badge",
           "settings": {
             "text": "FEATURED CASE STUDIES",
-            "size": "h6",
-            "html_tag": "p",
-            "text_color": "",
-            "gradient": ""
+            "alignment": "center",
+            "text_color": "#11243e",
+            "background": "#f0f3e9"
           },
           "blocks": {}
         },
@@ -101,7 +100,7 @@
           "settings": {
             "text": "Enterprise-Scale Transformations",
             "size": "h1",
-            "html_tag": "h1",
+            "html_tag": "h2",
             "text_color": "",
             "gradient": ""
           },
@@ -181,7 +180,7 @@
         }
       },
       "block_order": [
-        "heading_nLUiFr",
+        "badge_PmaQhf",
         "heading_VxHiDP",
         "rich_text_Ya6Kni",
         "ai_gen_block_38907dd_Tkggfa",
