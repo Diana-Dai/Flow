@@ -731,6 +731,97 @@
         "text_color": ""
       }
     },
+    "multi_column_JqUxrC": {
+      "type": "multi-column",
+      "blocks": {
+        "item_6UDaAt": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-target",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#a0b842",
+            "icon_color": "#f9fafb",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h3>Measurement First</h3><p>Accuracy matters. We obsess over measurement precision because retail decisions depend on it.</p><p><strong>98.5% counting accuracy isn't marketing—it's our standard, validated weekly.</strong></p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_yicgXD": {
+          "type": "item",
+          "settings": {
+            "icon": "people",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#a0b842",
+            "icon_color": "#ffffff",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h3>Store-Level Focus</h3><p>Data at HQ doesn't improve stores. We build for store managers and staff who execute daily.</p><p><strong>Stores with dashboard access achieve 25% higher sales—proven across deployments.</strong></p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_PMKDk3": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h3>Production-Ready Only</h3><p>Flow runs in production every day. Uptime, accuracy, and reliability are non-negotiable.</p><p><strong>99.9% uptime SLA, 24/7 monitoring, instant failover. Not a research tool—operational infrastructure.</strong></p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_6UDaAt",
+        "item_yicgXD",
+        "item_PMKDk3"
+      ],
+      "name": "Multi-column",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "center",
+        "subheading": "",
+        "title": "How We Build and Operate",
+        "content": "<p>Principles that guide product development, customer relationships, and operational decisions.</p>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "subheading_background_color": "",
+        "subheading_text_color": ""
+      }
+    },
     "rich_text_EtLVJr": {
       "type": "rich-text",
       "blocks": {
@@ -964,6 +1055,7 @@
     "section-15",
     "multi_column_nMex9i",
     "1780976305e3abab06",
+    "multi_column_JqUxrC",
     "rich_text_EtLVJr",
     "rich_text_6VmVgb",
     "multi_column_UExWWX"
