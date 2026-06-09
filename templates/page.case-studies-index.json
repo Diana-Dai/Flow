@@ -199,6 +199,127 @@
         "text_color": ""
       }
     },
+    "multi_column_84hYYM": {
+      "type": "multi-column",
+      "blocks": {
+        "item_BERnBF": {
+          "type": "item",
+          "settings": {
+            "icon": "up",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#425857",
+            "icon_color": "#f9fafb",
+            "background_color": "#30465e",
+            "text_color": "",
+            "border_color": "#2e4747",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "108.9%",
+            "heading_tag": "h2",
+            "subheading": "",
+            "content": "<h6>YoY Sales Growth (2024)</h6><p>Customers using Flow across all stores</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_EehF6x": {
+          "type": "item",
+          "settings": {
+            "icon": "check",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#465a59",
+            "icon_color": "#a0b842",
+            "background_color": "#30465e",
+            "text_color": "",
+            "border_color": "#2e4747",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "108.5%",
+            "heading_tag": "h2",
+            "subheading": "",
+            "content": "<h6>YoY Growth (2023)</h6><p>Companies with full deployment</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_XzRzqE": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-timer",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#495d5b",
+            "icon_color": "#ffffff",
+            "background_color": "#30465e",
+            "text_color": "",
+            "border_color": "#2e4747",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "Real-Time",
+            "heading_tag": "h2",
+            "subheading": "",
+            "content": "<h6>Operational Data</h6><p>Morning briefings, budget tracking, staffing optimization</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_yV6KX4": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#30465e",
+            "text_color": "",
+            "border_color": "#30465e",
+            "show_controls": false,
+            "column_size": "1",
+            "title": "Key Success Factors",
+            "heading_tag": "h5",
+            "subheading": "",
+            "content": "<ul><li>✅ Morning briefing using KPI overview</li><li>✅ Staffing optimization using peak traffic</li><li>✅ Real-time budget progress monitoring</li><li>✅ Better meeting quality using visualized KPIs</li></ul>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_BERnBF",
+        "item_EehF6x",
+        "item_XzRzqE",
+        "item_yV6KX4"
+      ],
+      "custom_css": [
+        ".subheading {font-size: 11px !important; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; padding: 8px 16px; border-radius: 20px; display: inline-block; box-sizing: border-box;}",
+        ".icon_container {text-align: center;}",
+        ".multi-column__item:last-child p {text-align: left;}",
+        ".multi-column__item:last-child ul {list-style: none; display: flex; padding-left: 0; margin-left: 0;}",
+        ".multi-column__item:last-child ul li {width: 50%; text-align: left;}"
+      ],
+      "name": "Multi-column",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "center",
+        "subheading": "DEPLOYMENT IMPACT",
+        "title": "Company-Wide Flow Adoption",
+        "content": "<p>Analysis across multiple customers who deployed Flow shows significant outperformance versus partial adopters and industry average.</p>",
+        "background": "#11243e",
+        "background_gradient": "",
+        "text_color": "#ffffff",
+        "subheading_background_color": "#2e4747",
+        "subheading_text_color": ""
+      }
+    },
     "multi_column_bJtgmc": {
       "type": "multi-column",
       "blocks": {
@@ -654,6 +775,7 @@
   "order": [
     "1780368357769f3a1e",
     "1780368579b1b4691b",
+    "multi_column_84hYYM",
     "multi_column_bJtgmc",
     "section-15",
     "rich_text_6VmVgb",
