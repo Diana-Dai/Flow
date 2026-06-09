@@ -174,10 +174,6 @@
       padding: 40px 30px;
     }
 
-    .ai-featured-heading-{{ ai_gen_id }} {
-      font-size: 28px;
-    }
-
     .ai-featured-subheading-{{ ai_gen_id }} {
       font-size: 16px;
     }
@@ -193,10 +189,6 @@
       padding: 30px 20px;
     }
 
-    .ai-featured-heading-{{ ai_gen_id }} {
-      font-size: 24px;
-    }
-
     .ai-featured-subheading-{{ ai_gen_id }} {
       font-size: 15px;
     }
@@ -207,7 +199,7 @@
   <div class="ai-featured-container-{{ ai_gen_id }}">
     <div class="ai-featured-card-{{ ai_gen_id }}">
       <div class="ai-featured-header-{{ ai_gen_id }}">
-        <h2 class="ai-featured-heading-{{ ai_gen_id }}">{{ block.settings.heading }}</h2>
+        <h2 class="ai-featured-heading-{{ ai_gen_id }} h2">{{ block.settings.heading }}</h2>
         <p class="ai-featured-subheading-{{ ai_gen_id }}">{{ block.settings.subheading }}</p>
       </div>
 
