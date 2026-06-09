@@ -229,6 +229,38 @@
         "text_color": ""
       }
     },
+    "178097413274cdfbe8": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_fb05f27_6KXTRQ": {
+          "type": "ai_gen_block_fb05f27",
+          "settings": {
+            "founder_name": "Sarah Chen",
+            "founder_title": "Founder & CEO",
+            "heading": "Why We Built Flow",
+            "story_content": "<p>In 2019, I watched talented teams struggle with fragmented workflows and disconnected tools. Every company I consulted with faced the same challenge: their processes were broken across dozens of platforms, making collaboration painful and progress slow.</p><p>We built Flow to solve this. Not with another feature-packed tool that tries to do everything, but with a focused platform that connects your existing systems and makes work flow naturally.</p><p>Today, over 10,000 teams use Flow to streamline their operations, reduce context switching, and focus on what matters: building great products and serving their customers.</p>",
+            "highlight_statement": "<p>Our mission is simple: help teams work better together, without the complexity.</p>",
+            "left_panel_bg": "#2F4B47",
+            "right_panel_bg": "#0B3553",
+            "border_radius": 20,
+            "section_spacing_top": 0,
+            "section_spacing_bottom": 60
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_fb05f27_6KXTRQ"
+      ],
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
     "rich_text_Jd4kLQ": {
       "type": "rich-text",
       "blocks": {
@@ -884,6 +916,7 @@
     "rich_text_cqadYy",
     "multi_column_L3Rbir",
     "blocks_kKwWcf",
+    "178097413274cdfbe8",
     "rich_text_Jd4kLQ",
     "blocks_9dtdLX",
     "section-15",
