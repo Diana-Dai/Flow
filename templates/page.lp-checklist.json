@@ -9,21 +9,138 @@
  */
 {
   "sections": {
+    "1780993864e604db88": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_f46e12e_dgHdVy": {
+          "type": "ai_gen_block_f46e12e",
+          "settings": {
+            "eyebrow": "チェックリスト",
+            "heading": "売上未達の原因を、店舗データから見極める",
+            "description": "<p>売上が目標に届かないとき、確認すべきことは「売上が低い」という結果ではなく、来店数・購買率・店舗運営のどこに原因があるのかです。</p><p>このチェックリストでは、店舗データをもとに改善ポイントを整理できます。</p>",
+            "bullet_1": "来店数と購買率の確認ポイントを整理",
+            "bullet_2": "見落としやすい店舗運営の課題を確認",
+            "bullet_3": "本部と店舗で共有しやすい改善アクションを明確化",
+            "bullet_4": "",
+            "primary_button_label": "チェックリストをダウンロード",
+            "primary_button_link": "#checklist",
+            "secondary_button_label": "",
+            "secondary_button_link": "",
+            "caption": "小売本部・店舗運営・DX担当者向けの無料PDFです。",
+            "trust_1": "無料PDF",
+            "trust_2": "店舗運営向け",
+            "trust_3": "実務で使えるチェックリスト",
+            "trust_4": "",
+            "image": "shopify://shop_images/Checklist_LP_Top_2.png",
+            "image_alt": "",
+            "image_position": "right",
+            "image_aspect_ratio": "natural",
+            "image_fit": "cover",
+            "image_border_radius": 12,
+            "image_shadow": true,
+            "image_border": false,
+            "image_panel": false,
+            "eyebrow_font_size": 15,
+            "eyebrow_font_weight": "700",
+            "eyebrow_letter_spacing": 0.1,
+            "eyebrow_bottom_spacing": 22,
+            "eyebrow_color": "#0e366a",
+            "heading_font_size": 52,
+            "heading_font_size_mobile": 36,
+            "heading_line_height": 1.1,
+            "heading_font_weight": "800",
+            "heading_max_width": 600,
+            "heading_color": "#11243e",
+            "description_font_size": 18,
+            "description_line_height": 1.6,
+            "description_max_width": 600,
+            "description_top_spacing": 26,
+            "description_bottom_spacing": 0,
+            "description_color": "#4a5568",
+            "bullet_font_size": 15,
+            "bullet_line_height": 1.5,
+            "bullet_item_spacing": 14,
+            "bullet_list_top_spacing": 32,
+            "bullet_list_bottom_spacing": 0,
+            "checkmark_size": 20,
+            "checkmark_color": "#a0b842",
+            "bullet_text_color": "#11243e",
+            "button_font_size": 16,
+            "button_font_weight": "700",
+            "button_border_radius": 8,
+            "button_vertical_padding": 16,
+            "button_horizontal_padding": 28,
+            "button_top_spacing": 36,
+            "button_alignment": "left",
+            "primary_button_background": "#0e366a",
+            "primary_button_text": "#ffffff",
+            "primary_button_hover_background": "#0a2850",
+            "primary_button_hover_text": "#ffffff",
+            "secondary_button_background": "transparent",
+            "secondary_button_text": "#0e366a",
+            "secondary_button_border": "#0e366a",
+            "secondary_button_hover_background": "#0e366a",
+            "secondary_button_hover_text": "#ffffff",
+            "secondary_button_hover_border": "#0e366a",
+            "caption_font_size": 15,
+            "caption_line_height": 1.5,
+            "caption_max_width": 560,
+            "caption_top_spacing": 16,
+            "caption_bottom_spacing": 0,
+            "caption_color": "#11243e",
+            "trust_font_size": 15,
+            "trust_item_gap": 26,
+            "trust_row_gap": 16,
+            "trust_top_spacing": 26,
+            "trust_alignment": "left",
+            "trust_text_color": "#11243e",
+            "trust_checkmark_color": "#a0b842",
+            "column_ratio": "50-50",
+            "vertical_alignment": "center",
+            "mobile_order": "text-first",
+            "mobile_text_alignment": "left",
+            "mobile_button_width": "auto",
+            "max_width": 1300,
+            "column_gap": 70,
+            "mobile_column_gap": 45,
+            "padding_top": 90,
+            "padding_bottom": 90,
+            "padding_top_mobile": 60,
+            "padding_bottom_mobile": 60,
+            "section_background": "#ffffff",
+            "text_color": "#4a5568",
+            "image_panel_background": "#f7fafc"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_f46e12e_dgHdVy"
+      ],
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
     "rich_text_peMmaV": {
       "type": "rich-text",
       "blocks": {
         "subheading_DDAQPW": {
           "type": "subheading",
           "settings": {
-            "text": "AI CAMERA",
-            "icon": "none"
+            "text": "チェックリスト",
+            "icon": "picto-validation"
           }
         },
         "heading_GM8FNx": {
           "type": "heading",
           "settings": {
-            "text": "THE SENSING ARRAY",
-            "heading_tag": "h0",
+            "text": "来店数・購買率・店舗運営から、売上未達の原因を見極める",
+            "heading_tag": "h2",
             "text_color": "",
             "gradient": ""
           }
@@ -31,13 +148,24 @@
         "richtext_DF74kd": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Edge-intelligent nodes transforming physical movement into data truth.</p>"
+            "content": "<p>売上が目標に届かないとき、確認すべきことは「売上が低い」という結果ではなく、原因が来店数・購買率・店舗運営のどこにあるのかです。Flowは、小売店舗の来店数・売上・店舗運営データをもとに、店舗ごとの改善判断を支援する店舗分析プラットフォームです。</p>"
+          }
+        },
+        "button_f9Ex8f": {
+          "type": "button",
+          "settings": {
+            "style": "fill",
+            "size": "xl",
+            "text": "確認ポイントを見る",
+            "url": "#checklist",
+            "background": "",
+            "text_color": ""
           }
         },
         "image_GR6JYr": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/screen.png",
+            "image": "shopify://shop_images/Checklist_Banner.png",
             "width_mode": "full_width",
             "max_width": 600,
             "mobile_max_width": 350
@@ -48,6 +176,7 @@
         "subheading_DDAQPW",
         "heading_GM8FNx",
         "richtext_DF74kd",
+        "button_f9Ex8f",
         "image_GR6JYr"
       ],
       "name": "Rich text",
@@ -105,6 +234,11 @@
         "item_M8EzQA": {
           "type": "item",
           "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
             "background_color": "",
             "text_color": "",
             "border_color": "#0e366a",
@@ -122,6 +256,11 @@
         "item_Eiqt4F": {
           "type": "item",
           "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
             "image": "shopify://shop_images/unnamed_2.png",
             "background_color": "",
             "text_color": "#ffffff",
@@ -140,6 +279,11 @@
         "item_QBtwgX": {
           "type": "item",
           "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
             "background_color": "",
             "text_color": "#ffffff",
             "border_color": "",
@@ -177,7 +321,9 @@
         "content": "",
         "background": "#0e366a",
         "background_gradient": "",
-        "text_color": "#ffffff"
+        "text_color": "#ffffff",
+        "subheading_background_color": "",
+        "subheading_text_color": ""
       }
     },
     "section-15": {
@@ -339,6 +485,11 @@
         "item_3rhR4q": {
           "type": "item",
           "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
             "background_color": "",
             "text_color": "",
             "border_color": "",
@@ -356,6 +507,11 @@
         "item_KmVTXJ": {
           "type": "item",
           "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
             "background_color": "",
             "text_color": "",
             "border_color": "",
@@ -373,6 +529,11 @@
         "item_E9Cyby": {
           "type": "item",
           "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
             "background_color": "",
             "text_color": "",
             "border_color": "",
@@ -404,7 +565,9 @@
         "content": "",
         "background": "#ffffff",
         "background_gradient": "",
-        "text_color": "#11243e"
+        "text_color": "#11243e",
+        "subheading_background_color": "",
+        "subheading_text_color": ""
       }
     },
     "rich_text_6VmVgb": {
@@ -462,6 +625,7 @@
     }
   },
   "order": [
+    "1780993864e604db88",
     "rich_text_peMmaV",
     "media_with_text_hMPTmL",
     "multi_column_LeVzeG",
