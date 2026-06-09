@@ -1,6 +1,374 @@
+{% doc %}
+  @prompt
+    Act as an expert Shopify Liquid and CSS developer. Build a fully responsive custom section that perfectly replicates the layout, design hierarchy, spacing, and typography of the provided reference image "image_6c0066.png".
+    
+    ### 1. Global Integration, Max Width & Basic Styles
+    - **Theme Typography & Width:** The section must seamlessly inherit the active theme's native font styles (via `var(--font-heading-family)` and `var(--font-body-family)`) and strictly honor the standard maximum section layout width (e.g., matching `.page-width` or `.container` wrappers).
+    - **Section Background:** Pure white background (#FFFFFF) with comfortable, clean padding at the top and bottom.
+    - **Main Box Container:** Wrap the internal content elements inside a large, horizontally centered card card.
+      - Background: A very clean, ultra-light desaturated gray-blue or off-white wash background tint.
+      - Border: A very thin, crisp light-gray outline stroke.
+      - Shape: Clean rounded corners (border-radius: 16px).
+      - Spacing: Deep, even internal padding to frame the grid column elements comfortably.
+    
+    ### 2. Section Header Group
+    Centered perfectly at the top of the internal card, with ample breathing room underneath:
+    - **Main Heading:** "Featured & Referenced"
+      - Styling: Exceptionally bold, clean, deep navy blue text color (#11243E).
+    - **Subheading Text:** "Flow's approach to retail analytics has been recognized by industry publications and research."
+      - Styling: Muted slate-gray text with generous line-height to ensure pristine readability.
+    
+    ### 3. Asymmetric 3-Column Feature Grid
+    Below the header group, render a 3-column horizontal block configuration on desktop. On mobile, the grid items must stack vertically with uniform spacing.
+    - **Grid Item Architecture:** Each block must align everything perfectly center and feature:
+      - **Icon Box Element:** A crisp white, floating square card element featuring comfortable padding, smooth rounded corners (border-radius: 12px), and a very thin light-gray outline border. Each container must anchor a clean, thin line-art SVG icon matching the context:
+        - Block 1 Icon: An open book line-art SVG icon.
+        - Block 2 Icon: A hanging ribbon/award badge line-art SVG icon.
+        - Block 3 Icon: A user/profile outline group line-art SVG icon.
+      - **Feature Title:** A short, bold title using the deep navy blue color theme (#11243E).
+      - **Feature Description:** A small, lower-contrast slate-gray text paragraph nestled tightly below the title.
+    
+    ### 4. Centered Call-To-Action (CTA) Button
+    Positioned perfectly center-aligned below the 3-column layout structure:
+    - **Button Styling:** A prominent rectangular capsule button.
+      - Background Color: Solid deep navy blue (#11243E).
+      - Text Color: High-contrast crisp white (#FFFFFF).
+      - Shape: Rounded corners (border-radius: 8px or pill shape).
+      - Interaction Elements: Inline right-facing arrow asset (`→`) trailing the button string label.
+    
+    ### 5. Exact Content Text Map for 100% Replication
+    Ensure the theme schema default settings map exactly to this English copy copy:
+    
+    - **Block 1 (Left):**
+      - Title: Industry Publications
+      - Description: Featured in retail technology research and case studies
+    - **Block 2 (Center):**
+      - Title: Customer Success Stories
+      - Description: Documented deployments across major retail brands
+    - **Block 3 (Right):**
+      - Title: Retail Community
+      - Description: Active participation in Japanese retail industry forums
+    - **CTA Button Label:** View Customer Case Studies
+    
+    ### 6. Liquid Schema & Custom CSS Requirements
+    - Code the layout to make titles, descriptions, icons, and button URLs dynamically manageable using structured block entries (`blocks`) inside the Liquid schema architecture.
+    - Wrap all custom styling selectors into a `<style>` block scoped directly to the unique section ID (`#shopify-section-{{ section.id }}`) to strictly enforce absolute zero style leakage across other templates.
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-featured-section-{{ ai_gen_id }} {
+    background-color: #ffffff;
+    padding: 60px 20px;
+    width: 100%;
+    display: block;
+  }
+
+  .ai-featured-container-{{ ai_gen_id }} {
+    max-width: 1600px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .ai-featured-card-{{ ai_gen_id }} {
+    background-color: #f8f9fb;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    padding: 60px 40px;
+  }
+
+  .ai-featured-header-{{ ai_gen_id }} {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .ai-featured-heading-{{ ai_gen_id }} {
+    font-family: var(--font-heading-family);
+    font-weight: 700;
+    color: #11243E;
+    font-size: 36px;
+    line-height: 1.2;
+    margin: 0 0 16px 0;
+  }
+
+  .ai-featured-subheading-{{ ai_gen_id }} {
+    font-family: var(--font-body-family);
+    color: #64748b;
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .ai-featured-grid-{{ ai_gen_id }} {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 50px;
+  }
+
+  .ai-featured-item-{{ ai_gen_id }} {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ai-featured-icon-box-{{ ai_gen_id }} {
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .ai-featured-icon-box-{{ ai_gen_id }} svg {
+    width: 40px;
+    height: 40px;
+    stroke: #11243E;
+    fill: none;
+    stroke-width: 1.5;
+  }
+
+  .ai-featured-item-title-{{ ai_gen_id }} {
+    font-family: var(--font-heading-family);
+    font-weight: 700;
+    color: #11243E;
+    font-size: 20px;
+    line-height: 1.3;
+    margin: 0 0 12px 0;
+  }
+
+  .ai-featured-item-description-{{ ai_gen_id }} {
+    font-family: var(--font-body-family);
+    color: #64748b;
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 0;
+  }
+
+  .ai-featured-cta-{{ ai_gen_id }} {
+    text-align: center;
+  }
+
+  .ai-featured-button-{{ ai_gen_id }} {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #11243E;
+    color: #ffffff;
+    font-family: var(--font-body-family);
+    font-weight: 600;
+    font-size: 16px;
+    padding: 14px 28px;
+    border-radius: 8px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .ai-featured-button-{{ ai_gen_id }}:hover {
+    background-color: #0d1b2f;
+  }
+
+  @media screen and (max-width: 989px) {
+    .ai-featured-section-{{ ai_gen_id }} {
+      padding: 40px 20px;
+    }
+
+    .ai-featured-card-{{ ai_gen_id }} {
+      padding: 40px 30px;
+    }
+
+    .ai-featured-heading-{{ ai_gen_id }} {
+      font-size: 28px;
+    }
+
+    .ai-featured-subheading-{{ ai_gen_id }} {
+      font-size: 16px;
+    }
+
+    .ai-featured-grid-{{ ai_gen_id }} {
+      grid-template-columns: 1fr;
+      gap: 40px;
+    }
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-featured-card-{{ ai_gen_id }} {
+      padding: 30px 20px;
+    }
+
+    .ai-featured-heading-{{ ai_gen_id }} {
+      font-size: 24px;
+    }
+
+    .ai-featured-subheading-{{ ai_gen_id }} {
+      font-size: 15px;
+    }
+  }
+{% endstyle %}
+
+<featured-section-{{ ai_gen_id }} class="ai-featured-section-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-featured-container-{{ ai_gen_id }}">
+    <div class="ai-featured-card-{{ ai_gen_id }}">
+      <div class="ai-featured-header-{{ ai_gen_id }}">
+        <h2 class="ai-featured-heading-{{ ai_gen_id }}">{{ block.settings.heading }}</h2>
+        <p class="ai-featured-subheading-{{ ai_gen_id }}">{{ block.settings.subheading }}</p>
+      </div>
+
+      <div class="ai-featured-grid-{{ ai_gen_id }}">
+        <div class="ai-featured-item-{{ ai_gen_id }}">
+          <div class="ai-featured-icon-box-{{ ai_gen_id }}">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+              <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+            </svg>
+          </div>
+          <h3 class="ai-featured-item-title-{{ ai_gen_id }}">{{ block.settings.feature_1_title }}</h3>
+          <p class="ai-featured-item-description-{{ ai_gen_id }}">{{ block.settings.feature_1_description }}</p>
+        </div>
+
+        <div class="ai-featured-item-{{ ai_gen_id }}">
+          <div class="ai-featured-icon-box-{{ ai_gen_id }}">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="8" r="6"></circle>
+              <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"></path>
+            </svg>
+          </div>
+          <h3 class="ai-featured-item-title-{{ ai_gen_id }}">{{ block.settings.feature_2_title }}</h3>
+          <p class="ai-featured-item-description-{{ ai_gen_id }}">{{ block.settings.feature_2_description }}</p>
+        </div>
+
+        <div class="ai-featured-item-{{ ai_gen_id }}">
+          <div class="ai-featured-icon-box-{{ ai_gen_id }}">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+              <circle cx="9" cy="7" r="4"></circle>
+              <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+            </svg>
+          </div>
+          <h3 class="ai-featured-item-title-{{ ai_gen_id }}">{{ block.settings.feature_3_title }}</h3>
+          <p class="ai-featured-item-description-{{ ai_gen_id }}">{{ block.settings.feature_3_description }}</p>
+        </div>
+      </div>
+
+      <div class="ai-featured-cta-{{ ai_gen_id }}">
+        <a href="{{ block.settings.button_link }}" class="ai-featured-button-{{ ai_gen_id }}">
+          {{ block.settings.button_text }}
+          <span>→</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</featured-section-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class FeaturedSection{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+      }
+    }
+    customElements.define('featured-section-{{ ai_gen_id }}', FeaturedSection{{ ai_gen_id }});
+  })();
+</script>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "Featured & referenced",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Section header"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Featured & Referenced"
+    },
+    {
+      "type": "textarea",
+      "id": "subheading",
+      "label": "Subheading",
+      "default": "Flow's approach to retail analytics has been recognized by industry publications and research."
+    },
+    {
+      "type": "header",
+      "content": "Feature 1"
+    },
+    {
+      "type": "text",
+      "id": "feature_1_title",
+      "label": "Title",
+      "default": "Industry Publications"
+    },
+    {
+      "type": "textarea",
+      "id": "feature_1_description",
+      "label": "Description",
+      "default": "Featured in retail technology research and case studies"
+    },
+    {
+      "type": "header",
+      "content": "Feature 2"
+    },
+    {
+      "type": "text",
+      "id": "feature_2_title",
+      "label": "Title",
+      "default": "Customer Success Stories"
+    },
+    {
+      "type": "textarea",
+      "id": "feature_2_description",
+      "label": "Description",
+      "default": "Documented deployments across major retail brands"
+    },
+    {
+      "type": "header",
+      "content": "Feature 3"
+    },
+    {
+      "type": "text",
+      "id": "feature_3_title",
+      "label": "Title",
+      "default": "Retail Community"
+    },
+    {
+      "type": "textarea",
+      "id": "feature_3_description",
+      "label": "Description",
+      "default": "Active participation in Japanese retail industry forums"
+    },
+    {
+      "type": "header",
+      "content": "Call to action"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button text",
+      "default": "View Customer Case Studies"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button link"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Featured & referenced"
+    }
+  ]
+}
 {% endschema %}
