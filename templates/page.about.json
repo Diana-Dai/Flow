@@ -699,6 +699,38 @@
         "subheading_text_color": ""
       }
     },
+    "1780976305e3abab06": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_c690089_Hw4T6q": {
+          "type": "ai_gen_block_c690089",
+          "settings": {
+            "heading": "Featured & Referenced",
+            "subheading": "Flow's approach to retail analytics has been recognized by industry publications and research.",
+            "feature_1_title": "Industry Publications",
+            "feature_1_description": "Featured in retail technology research and case studies",
+            "feature_2_title": "Customer Success Stories",
+            "feature_2_description": "Documented deployments across major retail brands",
+            "feature_3_title": "Retail Community",
+            "feature_3_description": "Active participation in Japanese retail industry forums",
+            "button_text": "View Customer Case Studies",
+            "button_link": ""
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_c690089_Hw4T6q"
+      ],
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
     "rich_text_EtLVJr": {
       "type": "rich-text",
       "blocks": {
@@ -931,6 +963,7 @@
     "1780975575f5f43498",
     "section-15",
     "multi_column_nMex9i",
+    "1780976305e3abab06",
     "rich_text_EtLVJr",
     "rich_text_6VmVgb",
     "multi_column_UExWWX"
