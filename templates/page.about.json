@@ -240,8 +240,8 @@
             "heading": "Why We Built Flow",
             "story_content": "<p>In 2019, I watched talented teams struggle with fragmented workflows and disconnected tools. Every company I consulted with faced the same challenge: their processes were broken across dozens of platforms, making collaboration painful and progress slow.</p><p>We built Flow to solve this. Not with another feature-packed tool that tries to do everything, but with a focused platform that connects your existing systems and makes work flow naturally.</p><p>Today, over 10,000 teams use Flow to streamline their operations, reduce context switching, and focus on what matters: building great products and serving their customers.</p>",
             "highlight_statement": "<p>Our mission is simple: help teams work better together, without the complexity.</p>",
-            "left_panel_bg": "#2F4B47",
-            "right_panel_bg": "#0B3553",
+            "left_panel_bg": "#2f4b47",
+            "right_panel_bg": "#0b3553",
             "border_radius": 20,
             "section_spacing_top": 0,
             "section_spacing_bottom": 60
@@ -261,45 +261,95 @@
         "text_color": ""
       }
     },
-    "rich_text_Jd4kLQ": {
-      "type": "rich-text",
+    "multi_column_3tnATm": {
+      "type": "multi-column",
       "blocks": {
-        "subheading_w49bE4": {
-          "type": "subheading",
+        "item_LTjn3h": {
+          "type": "item",
           "settings": {
-            "text": "OUR MISSION",
-            "icon": "none"
-          }
-        },
-        "heading_3JB3K8": {
-          "type": "heading",
-          "settings": {
-            "text": "Making Physical Retail Operationally Transparent",
-            "heading_tag": "h1",
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "",
             "text_color": "",
-            "gradient": ""
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "2",
+            "title": "Column title",
+            "heading_tag": "h4",
+            "subheading": "<p>Organize content into multiple columns to share useful information to your customers about your products, values...</p>",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
           }
         },
-        "richtext_Acbxct": {
-          "type": "richtext",
+        "item_jAdBnT": {
+          "type": "item",
           "settings": {
-            "content": "<p>Physical retail has operated on intuition, estimates, and delayed feedback for decades. Store managers make critical decisions—staffing, merchandising, promotions—without knowing what actually happened on their sales floor yesterday, let alone what's happening right now.</p><p>Flow was founded to change that. We believe retail operations should run on measurement, not guesswork. That store teams should see real visitor traffic, understand conversion patterns, and optimize execution based on what customers actually do—not what we think they do.</p><p>Our mission is to build the operational infrastructure that makes this possible: accurate measurement, real-time analytics, and tools that turn insight into execution.</p>"
+            "icon": "picto-camera",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "2",
+            "title": "Column title",
+            "heading_tag": "h4",
+            "subheading": "<p>Organize content into multiple columns to share useful information to your customers about your products, values...</p>",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_wA6Lwn": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "Column title",
+            "heading_tag": "h4",
+            "subheading": "<p>Organize content into multiple columns to share useful information to your customers about your products, values...</p>",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
           }
         }
       },
       "block_order": [
-        "subheading_w49bE4",
-        "heading_3JB3K8",
-        "richtext_Acbxct"
+        "item_LTjn3h",
+        "item_jAdBnT",
+        "item_wA6Lwn"
       ],
-      "name": "Rich text",
+      "name": "Multi-column",
       "settings": {
         "full_width": true,
-        "content_width": "medium",
-        "text_position": "center",
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "center",
+        "subheading": "OUR BUSINESS",
+        "title": "What Flow Provides",
+        "content": "<p>End-to-end platform for measuring, analyzing, and optimizing physical retail operations.</p>",
         "background": "",
         "background_gradient": "",
-        "text_color": ""
+        "text_color": "",
+        "subheading_background_color": "",
+        "subheading_text_color": ""
       }
     },
     "blocks_9dtdLX": {
@@ -917,7 +967,7 @@
     "multi_column_L3Rbir",
     "blocks_kKwWcf",
     "178097413274cdfbe8",
-    "rich_text_Jd4kLQ",
+    "multi_column_3tnATm",
     "blocks_9dtdLX",
     "section-15",
     "multi_column_nMex9i",
