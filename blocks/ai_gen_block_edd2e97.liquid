@@ -103,8 +103,8 @@
 
   #shopify-section-{{ section.id }} .ai-company-overview-icon-box-{{ ai_gen_id }} {
     flex-shrink: 0;
-    width: 48px;
-    height: 48px;
+    width: 64px;
+    height: 64px;
     background-color: #E8EBE0;
     border-radius: 8px;
     display: flex;
@@ -113,8 +113,8 @@
   }
 
   #shopify-section-{{ section.id }} .ai-company-overview-icon-box-{{ ai_gen_id }} svg {
-    width: 24px;
-    height: 24px;
+    width: 32px;
+    height: 32px;
     stroke: #6B7A5F;
     fill: none;
     stroke-width: 1.5;
@@ -128,18 +128,13 @@
   }
 
   #shopify-section-{{ section.id }} .ai-company-overview-label-{{ ai_gen_id }} {
-    font-family: var(--font-body-family, 'Inter', sans-serif);
     font-size: 13px;
     color: #64748B;
-    font-weight: 400;
     margin: 0;
   }
 
   #shopify-section-{{ section.id }} .ai-company-overview-value-{{ ai_gen_id }} {
-    font-family: var(--font-body-family, 'Inter', sans-serif);
-    font-size: 16px;
-    color: #0E2A3A;
-    font-weight: 600;
+    font-size: 1rem;
     margin: 0;
     line-height: 1.5;
   }
@@ -164,18 +159,11 @@
   }
 
   #shopify-section-{{ section.id }} .ai-company-overview-stat-number-{{ ai_gen_id }} {
-    font-family: var(--font-heading-family, 'Inter', sans-serif);
-    font-size: 40px;
-    font-weight: 700;
-    color: #0E2A3A;
     margin: 0;
-    line-height: 1;
   }
 
   #shopify-section-{{ section.id }} .ai-company-overview-stat-label-{{ ai_gen_id }} {
-    font-family: var(--font-body-family, 'Inter', sans-serif);
     font-size: 14px;
-    color: #64748B;
     font-weight: 400;
     margin: 0;
     line-height: 1.4;
@@ -187,13 +175,6 @@
       gap: 48px;
     }
 
-    #shopify-section-{{ section.id }} .ai-company-overview-heading-{{ ai_gen_id }} {
-      font-size: 28px;
-    }
-
-    #shopify-section-{{ section.id }} .ai-company-overview-stat-number-{{ ai_gen_id }} {
-      font-size: 32px;
-    }
   }
 
   @media screen and (max-width: 749px) {
@@ -207,24 +188,6 @@
 
     #shopify-section-{{ section.id }} .ai-company-overview-stat-card-{{ ai_gen_id }} {
       padding: 24px 16px;
-    }
-
-    #shopify-section-{{ section.id }} .ai-company-overview-heading-{{ ai_gen_id }} {
-      font-size: 24px;
-    }
-
-    #shopify-section-{{ section.id }} .ai-company-overview-stat-number-{{ ai_gen_id }} {
-      font-size: 28px;
-    }
-
-    #shopify-section-{{ section.id }} .ai-company-overview-icon-box-{{ ai_gen_id }} {
-      width: 40px;
-      height: 40px;
-    }
-
-    #shopify-section-{{ section.id }} .ai-company-overview-icon-box-{{ ai_gen_id }} svg {
-      width: 20px;
-      height: 20px;
     }
   }
 {% endstyle %}
