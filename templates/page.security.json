@@ -180,120 +180,6 @@
         "subheading_text_color": ""
       }
     },
-    "multi_column_ge9wwi": {
-      "type": "multi-column",
-      "blocks": {
-        "item_RcmCJc": {
-          "type": "item",
-          "settings": {
-            "icon": "none",
-            "icon_width": 32,
-            "icon_background_type": "square",
-            "icon_background": "",
-            "icon_color": "",
-            "background_color": "",
-            "text_color": "",
-            "border_color": "",
-            "show_controls": false,
-            "column_size": "2",
-            "title": "End-to-End Encryption",
-            "heading_tag": "h3",
-            "subheading": "",
-            "content": "<p>Data protected at every stage of processing and transmission</p>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        },
-        "item_DrpwHf": {
-          "type": "item",
-          "settings": {
-            "icon": "none",
-            "icon_width": 32,
-            "icon_background_type": "square",
-            "icon_background": "",
-            "icon_color": "",
-            "background_color": "",
-            "text_color": "",
-            "border_color": "",
-            "show_controls": false,
-            "column_size": "2",
-            "title": "見落とされる売場",
-            "heading_tag": "h3",
-            "subheading": "<p>どこが見られていないか</p>",
-            "content": "<p>通行量が少ないエリア、滞在が短いゾーン、反応が弱い売場を発見できます。レイアウトや商品配置の改善ポイントを明確にできます。</p>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        },
-        "item_9TV36C": {
-          "type": "item",
-          "settings": {
-            "icon": "none",
-            "icon_width": 32,
-            "icon_background_type": "square",
-            "icon_background": "",
-            "icon_color": "",
-            "background_color": "",
-            "text_color": "",
-            "border_color": "",
-            "show_controls": false,
-            "column_size": "2",
-            "title": "導線と回遊",
-            "heading_tag": "h3",
-            "subheading": "<p>どのように回遊しているか</p>",
-            "content": "<p>お客様が店内をどのように移動し、どの売場を通過・回遊しているかを把握できます。デッドゾーンや混雑、売場間のつながりを確認できます。</p>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        },
-        "item_kh6n8d": {
-          "type": "item",
-          "settings": {
-            "icon": "none",
-            "icon_width": 32,
-            "icon_background_type": "square",
-            "icon_background": "",
-            "icon_color": "",
-            "background_color": "#11243e",
-            "text_color": "#ffffff",
-            "border_color": "",
-            "show_controls": false,
-            "column_size": "2",
-            "title": "施策の反応",
-            "heading_tag": "h3",
-            "subheading": "<p>施策は行動を変えたか</p>",
-            "content": "<p>レイアウト変更、販促、ディスプレイ変更が、来店行動や売場反応に影響しているかを確認できます。施策の効果を、感覚ではなく行動データで検証できます。</p>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        }
-      },
-      "block_order": [
-        "item_RcmCJc",
-        "item_DrpwHf",
-        "item_9TV36C",
-        "item_kh6n8d"
-      ],
-      "name": "Multi-column",
-      "settings": {
-        "full_width": true,
-        "stack_on_mobile": false,
-        "gap": "medium",
-        "text_alignment": "center",
-        "subheading": "",
-        "title": "Infrastructure Security",
-        "content": "<p>Multi-layered security controls protecting data in transit, at rest, and during processing.</p>",
-        "background": "#ffffff",
-        "background_gradient": "",
-        "text_color": "#11243e",
-        "subheading_background_color": "",
-        "subheading_text_color": ""
-      }
-    },
     "rich_text_MakEBA": {
       "type": "rich-text",
       "blocks": {
@@ -955,7 +841,6 @@
   "order": [
     "blocks_E8LBYQ",
     "multi_column_HCGJea",
-    "multi_column_ge9wwi",
     "rich_text_MakEBA",
     "multi_column_HCGJea11",
     "media_with_text_hMPTmL",
