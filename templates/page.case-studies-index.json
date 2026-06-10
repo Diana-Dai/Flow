@@ -87,6 +87,7 @@
           "type": "ai_gen_block_94da06d",
           "settings": {
             "brand_image": "shopify://shop_images/Daytona_White_e03a3f9c-40ca-45b1-8866-4528e821f7f5.png",
+            "brand_text": "",
             "meta_info": "Fashion • Enterprise Scale",
             "title": "Major Japanese Fashion Retailer",
             "sub_info": "124 → 220 stores",
@@ -116,6 +117,7 @@
           "type": "ai_gen_block_94da06d",
           "name": "Case study spotlight",
           "settings": {
+            "brand_text": "Daytona",
             "meta_info": "Fashion • Multi-Brand",
             "title": "Daytona International",
             "sub_info": "Multiple locations",
@@ -145,6 +147,7 @@
           "type": "ai_gen_block_94da06d",
           "name": "Case study spotlight",
           "settings": {
+            "brand_text": "",
             "meta_info": "Jeans • National Chain",
             "title": "Right On",
             "sub_info": "400 stores",
