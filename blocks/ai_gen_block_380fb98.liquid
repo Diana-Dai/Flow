@@ -173,6 +173,9 @@
   <div class="ai-split-feature-container-{{ ai_gen_id }}">
     <div class="ai-split-feature-grid-{{ ai_gen_id }}">
       <div class="ai-split-feature-left-{{ ai_gen_id }}">
+        {% if block.settings.subheading != blank %}
+            <div class="text-xs" style=" margin-bottom: -0.9rem;">{{ block.settings.subheading}}</div>
+        {% endif %}
         {% if block.settings.main_heading != blank %}
           <h2 class="ai-split-feature-heading-{{ ai_gen_id }} h1">{{ block.settings.main_heading }}</h2>
         {% endif %}
@@ -265,6 +268,11 @@
     {
       "type": "header",
       "content": "Left panel content"
+    },
+        {
+      "type": "text",
+      "id": "subheading",
+      "label": "Subheading"
     },
     {
       "type": "text",
