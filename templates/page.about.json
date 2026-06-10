@@ -540,164 +540,43 @@
         "chart_true_false_color": ""
       }
     },
-    "multi_column_nMex9i": {
-      "type": "multi-column",
+    "blocks_Jz7jFf": {
+      "type": "_blocks",
       "blocks": {
-        "item_DJBQjz": {
-          "type": "item",
+        "ai_gen_block_380fb98_r8DmMG": {
+          "type": "ai_gen_block_380fb98",
           "settings": {
-            "icon": "picto-target",
-            "icon_width": 32,
-            "icon_background_type": "square",
-            "icon_background": "#a0b842",
-            "icon_color": "#ffffff",
-            "background_color": "#ffffff",
-            "text_color": "",
-            "border_color": "#f2f2f2",
-            "show_controls": false,
-            "column_size": "3",
-            "title": "Retail-Specific Expertise",
-            "heading_tag": "h4",
-            "subheading": "",
-            "content": "<p>Built exclusively for retail operations. We understand store KPIs, merchandising cycles, staffing constraints, and multi-store execution. Not repurposed security tech or generic analytics.</p>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        },
-        "item_7ArUj3": {
-          "type": "item",
-          "settings": {
-            "icon": "check",
-            "icon_width": 32,
-            "icon_background_type": "square",
-            "icon_background": "#a0b842",
-            "icon_color": "#ffffff",
-            "background_color": "#ffffff",
-            "text_color": "",
-            "border_color": "#f2f2f2",
-            "show_controls": false,
-            "column_size": "3",
-            "title": "Accurate Measurement Foundation",
-            "heading_tag": "h4",
-            "subheading": "",
-            "content": "<p>98.5% people counting accuracy, validated weekly. Data quality you can trust for operational decisions. Every recommendation and insight built on reliable measurement, not estimates.</p>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        },
-        "item_PXwwUg": {
-          "type": "item",
-          "settings": {
-            "icon": "picto-timer",
-            "icon_width": 32,
-            "icon_background_type": "square",
-            "icon_background": "#a0b842",
-            "icon_color": "#ffffff",
-            "background_color": "#ffffff",
-            "text_color": "",
-            "border_color": "#f2f2f2",
-            "show_controls": false,
-            "column_size": "3",
-            "title": "Real-Time Operational Visibility",
-            "heading_tag": "h4",
-            "subheading": "",
-            "content": "<p>Store managers see traffic, conversion, and zone performance as it happens. Make mid-day staffing adjustments. Validate VMD changes immediately. No waiting for weekly reports.</p>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        },
-        "item_qYcBUm": {
-          "type": "item",
-          "settings": {
-            "icon": "people",
-            "icon_width": 32,
-            "icon_background_type": "square",
-            "icon_background": "#a0b842",
-            "icon_color": "#ffffff",
-            "background_color": "#ffffff",
-            "text_color": "",
-            "border_color": "#f2f2f2",
-            "show_controls": false,
-            "column_size": "3",
-            "title": "Store-Level Adoption Support",
-            "heading_tag": "h4",
-            "subheading": "",
-            "content": "<p>Customer success proven: stores with dashboard access achieve 25% higher sales. We train store teams, not just HQ analysts. Flow Academy courses and ongoing support ensure adoption.</p>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        },
-        "item_gA6Gny": {
-          "type": "item",
-          "settings": {
-            "icon": "picto-earth",
-            "icon_width": 32,
-            "icon_background_type": "square",
-            "icon_background": "#a0b842",
-            "icon_color": "#ffffff",
-            "background_color": "#ffffff",
-            "text_color": "",
-            "border_color": "#f2f2f2",
-            "show_controls": false,
-            "column_size": "3",
-            "title": "Japan-Ready Implementation",
-            "heading_tag": "h4",
-            "subheading": "",
-            "content": "<p>Japanese and English support. AWS Tokyo region for data residency. Understanding of Japanese enterprise procurement and decision-making. Built for the Japanese retail market.</p>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        },
-        "item_FiKn8m": {
-          "type": "item",
-          "settings": {
-            "icon": "picto-shield",
-            "icon_width": 32,
-            "icon_background_type": "square",
-            "icon_background": "#a0b842",
-            "icon_color": "#ffffff",
-            "background_color": "#ffffff",
-            "text_color": "",
-            "border_color": "#f2f2f2",
-            "show_controls": false,
-            "column_size": "3",
-            "title": "Enterprise-Grade Reliability",
-            "heading_tag": "h4",
-            "subheading": "",
-            "content": "<p>99.9% uptime SLA. SOC 2 Type II certified. GDPR/CCPA compliant. 24/7 support for enterprise customers. Flow runs in production 24/7/365—reliability is non-negotiable.</p>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
+            "main_heading": "Why Retailers Choose Flow",
+            "main_description": "Discover how Flow Solutions empowers retailers with innovative technology and seamless integration to drive growth and efficiency.",
+            "cta_text": "Talk to our team",
+            "cta_url": "",
+            "feature_1_title": "Seamless Integration",
+            "feature_1_description": "Connect effortlessly with your existing systems and start seeing results immediately.",
+            "feature_2_title": "Real-Time Analytics",
+            "feature_2_description": "Make data-driven decisions with comprehensive insights delivered in real-time.",
+            "feature_3_title": "Dedicated Support",
+            "feature_3_description": "Our expert team is available 24/7 to ensure your success every step of the way.",
+            "feature_4_title": "",
+            "feature_4_description": "",
+            "feature_5_title": "",
+            "feature_5_description": "",
+            "feature_6_title": "",
+            "feature_6_description": ""
+          },
+          "blocks": {}
         }
       },
       "block_order": [
-        "item_DJBQjz",
-        "item_7ArUj3",
-        "item_PXwwUg",
-        "item_qYcBUm",
-        "item_gA6Gny",
-        "item_FiKn8m"
+        "ai_gen_block_380fb98_r8DmMG"
       ],
-      "name": "Multi-column",
+      "name": "Why retailers choose Flow",
       "settings": {
         "full_width": true,
-        "stack_on_mobile": false,
-        "gap": "medium",
-        "text_alignment": "start",
-        "subheading": "",
-        "title": "Why Retailers Choose Flow",
-        "content": "<p>Enterprise buyers choose Flow for measurement accuracy, operational focus, and Japanese retail expertise.</p>",
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
         "background": "",
         "background_gradient": "",
-        "text_color": "",
-        "subheading_background_color": "",
-        "subheading_text_color": ""
+        "text_color": ""
       }
     },
     "multi_column_wT8tcm": {
@@ -1140,6 +1019,55 @@
         "subheading_background_color": "",
         "subheading_text_color": ""
       }
+    },
+    "1781062247f5bcf096": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_a04872a_mGeCTQ": {
+          "type": "ai_gen_block_a04872a",
+          "settings": {
+            "section_title": "Featured & Referenced",
+            "section_subtitle": "Flow's approach to retail analytics has been recognized by industry leaders and trusted by innovative brands worldwide.",
+            "press_1_description": "Flow Solutions delivers cutting-edge retail analytics that transform how businesses understand their customers and optimize operations.",
+            "press_1_metadata": "Industry Research, 2024",
+            "press_2_description": "Innovative technology that provides actionable insights for modern retailers seeking to enhance customer experience and drive growth.",
+            "press_2_metadata": "Press Coverage, 2023",
+            "results_header": "CUSTOMER RESULTS",
+            "results_metric": "108.9%",
+            "results_description": "Average increase in conversion rates for retail clients using Flow's analytics platform.",
+            "results_cta_text": "View Case Studies",
+            "results_cta_url": "",
+            "section_background": "#f9fafb",
+            "title_color": "#11243e",
+            "subtitle_color": "#677279",
+            "press_card_background": "#ffffff",
+            "press_card_border": "#e2e8f0",
+            "press_text_color": "#677279",
+            "press_meta_color": "#94a3b8",
+            "results_card_background": "#003b64",
+            "results_header_color": "#94a3b8",
+            "results_metric_color": "#ffffff",
+            "results_description_color": "#e2e8f0",
+            "results_cta_color": "#a4b953",
+            "title_font": "inter_n5",
+            "subtitle_font": "inter_n4",
+            "body_font": "inter_n4",
+            "desktop_width_percent": 100
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_a04872a_mGeCTQ"
+      ],
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
     }
   },
   "order": [
@@ -1150,12 +1078,13 @@
     "multi_column_3tnATm",
     "1780975575f5f43498",
     "section-15",
-    "multi_column_nMex9i",
+    "blocks_Jz7jFf",
     "multi_column_wT8tcm",
     "1780976305e3abab06",
     "multi_column_JqUxrC",
     "rich_text_EtLVJr",
     "rich_text_6VmVgb",
-    "multi_column_UExWWX"
+    "multi_column_UExWWX",
+    "1781062247f5bcf096"
   ]
 }
