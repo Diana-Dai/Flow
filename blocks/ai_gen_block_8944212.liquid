@@ -383,11 +383,33 @@
       </div>
 
       <div class="ai-conversion-intelligence-card-{{ ai_gen_id }} ai-conversion-intelligence-card-light-{{ ai_gen_id }}">
-        <div class="ai-conversion-intelligence-card-icon-{{ ai_gen_id }} ai-conversion-intelligence-card-icon-light-{{ ai_gen_id }}">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
-          </svg>
-        </div>
+                    <div class="icon_container">
+                      {%- capture icon -%}
+                        {%- if block.settings.custom_icon_1 != blank -%}
+                          {%- capture sizes -%}{{ block.settings.icon_width_1 }}px{%- endcapture -%}
+                          {%- capture widths -%}{{ block.settings.icon_width_1 }}, {{ block.settings.icon_width_1 | times: 2 | at_most: block.settings.custom_icon_1.width }}{%- endcapture -%}
+                          {%- capture style -%}--icon-max-width: {{ block.settings.icon_width_1 }}px{%- endcapture -%}
+                          {{- block.settings.custom_icon_1 | image_url: width: block.settings.custom_icon_1.width | image_tag: sizes: sizes, widths: widths, style: style, class: 'image-icon' -}}
+                        {%- else -%}
+                          {%- render 'icon' with block.settings.icon_1, width: block.settings.icon_width_1, height: block.settings.icon_width_1 -%}
+                        {%- endif -%}
+                      {%- endcapture -%}
+
+                      {%- if icon != blank -%}
+                        <div {{ block.shopify_attributes }}>
+                          {%- if block.settings.icon_background_1_type == 'none' -%}
+                            <div {% render 'surface', text_color: block.settings.icon_color_1 %}>
+                              {{- icon -}}
+                            </div>
+                          {%- else -%}
+                            {%- capture surface_class -%}icon-block {% if block.settings.icon_background_1_type == 'circle' %}rounded-full{% endif %}{%- endcapture -%}
+                            <div {% render 'surface', class: surface_class, background: block.settings.icon_background_1, text_color: block.settings.icon_color_1, background_fallback: 'bg-secondary' %}>
+                              {{- icon -}}
+                            </div>
+                          {%- endif -%}
+                        </div>
+                      {%- endif -%}                
+                    </div>
 
         {% if block.settings.card2_heading != blank %}
           <h3 class="ai-conversion-intelligence-card-heading-{{ ai_gen_id }}">
@@ -429,6 +451,7 @@
         </ul>
       </div>
     </div>
+        {% if block.settings.banner_title != blank or  block.settings.banner_text != blank %}
 
     <div class="ai-conversion-intelligence-banner-{{ ai_gen_id }}">
       <div class="ai-conversion-intelligence-banner-icon-{{ ai_gen_id }}">
@@ -449,6 +472,8 @@
         {% endif %}
       </div>
     </div>
+        {% endif %}
+
   </div>
 </div>
 
