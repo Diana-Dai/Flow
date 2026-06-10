@@ -239,7 +239,7 @@
             "heading": "Why We Built Flow",
             "story_content": "<p>In 2019, I watched talented teams struggle with fragmented workflows and disconnected tools. Every company I consulted with faced the same challenge: their processes were broken across dozens of platforms, making collaboration painful and progress slow.</p><p>We built Flow to solve this. Not with another feature-packed tool that tries to do everything, but with a focused platform that connects your existing systems and makes work flow naturally.</p><p>Today, over 10,000 teams use Flow to streamline their operations, reduce context switching, and focus on what matters: building great products and serving their customers.</p>",
             "highlight_statement": "<p>Our mission is simple: help teams work better together, without the complexity.</p>",
-            "left_panel_bg": "#11243e",
+            "left_panel_bg": "#10334e",
             "right_panel_bg": "#0b3553",
             "border_radius": 0,
             "section_spacing_top": 0,
