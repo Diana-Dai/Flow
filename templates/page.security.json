@@ -87,7 +87,7 @@
         "item_aqpNXK": {
           "type": "item",
           "settings": {
-            "icon": "picto-timer",
+            "icon": "picto-camera",
             "icon_width": 32,
             "icon_background_type": "square",
             "icon_background": "#b9c87c",
@@ -97,10 +97,10 @@
             "border_color": "#f2f2f2",
             "show_controls": false,
             "column_size": "3",
-            "title": "滞在反応",
+            "title": "",
             "heading_tag": "h1",
             "subheading": "",
-            "content": "<h5>お客様がどこで立ち止まり、どの売場や什器に関心を示しているかを確認できます。商品・売場・キャンペーンへの反応を、行動データで捉えます。</h5>",
+            "content": "<h3>No Video Storage</h3><p>Raw camera feeds are processed in real-time at the edge, then discarded. Only aggregate metrics (counts, dwell times, zones) are stored.</p><p><strong>Edge processing: Metrics extracted locally, video never leaves the device, no cloud storage of footage.</strong></p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -109,7 +109,7 @@
         "item_tTyycj": {
           "type": "item",
           "settings": {
-            "icon": "picto-pin",
+            "icon": "picto-lock",
             "icon_width": 32,
             "icon_background_type": "square",
             "icon_background": "#a0b842",
@@ -119,10 +119,10 @@
             "border_color": "",
             "show_controls": false,
             "column_size": "3",
-            "title": "導線分析",
+            "title": "",
             "heading_tag": "h1",
             "subheading": "",
-            "content": "<h5>売場ごとの通行量、滞在、回遊パターンを分析し、デッドゾーンや混雑、見落とされている売場を発見できます。</h5>",
+            "content": "<h3>No Personal Identifiers</h3><p>Flow does not collect names, contact information, payment details, or any PII. Anonymous session IDs are generated per visit and cannot be linked to individuals.</p><p>Data minimization: Only metrics required for operational analytics. No tracking across visits or stores.</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
