@@ -210,14 +210,7 @@
                 {% if feature_icon != blank %}
                 <div class="icon_container">
                   {%- capture icon -%}
-                    {%- if block.settings.custom_icon != blank -%}
-                      {%- capture sizes -%}{{ block.settings.icon_width }}px{%- endcapture -%}
-                      {%- capture widths -%}{{ block.settings.icon_width }}, {{ block.settings.icon_width | times: 2 | at_most: block.settings.custom_icon.width }}{%- endcapture -%}
-                      {%- capture style -%}--icon-max-width: {{ block.settings.icon_width }}px{%- endcapture -%}
-                      {{- block.settings.custom_icon | image_url: width: block.settings.custom_icon.width | image_tag: sizes: sizes, widths: widths, style: style, class: 'image-icon' -}}
-                    {%- else -%}
-                      {%- render 'icon' with block.settings.icon, width: block.settings.icon_width, height: block.settings.icon_width -%}
-                    {%- endif -%}
+                      {%- render 'icon' with feature_icon, width: block.settings.icon_width, height: block.settings.icon_width -%}
                   {%- endcapture -%}
 
                   {%- if icon != blank -%}
