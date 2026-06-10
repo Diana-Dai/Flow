@@ -241,7 +241,7 @@
             "highlight_statement": "<p>Our mission is simple: help teams work better together, without the complexity.</p>",
             "left_panel_bg": "#11243e",
             "right_panel_bg": "#0b3553",
-            "border_radius": 20,
+            "border_radius": 0,
             "section_spacing_top": 0,
             "section_spacing_bottom": 60
           },
@@ -255,7 +255,7 @@
         "full_width": true,
         "remove_vertical_spacing": false,
         "remove_horizontal_spacing": false,
-        "background": "#ffffff",
+        "background": "#0b3553",
         "background_gradient": "",
         "text_color": ""
       }
