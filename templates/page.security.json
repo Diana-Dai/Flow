@@ -9,6 +9,45 @@
  */
 {
   "sections": {
+    "blocks_E8LBYQ": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_380fb98_dqGpxD": {
+          "type": "ai_gen_block_380fb98",
+          "settings": {
+            "main_heading": "Enterprise-Grade Security and Operational Reliability",
+            "main_description": "Flow operates in production retail environments 24/7/365. Our infrastructure is built for privacy-first measurement, regulatory compliance, and continuous uptime.",
+            "cta_text": "Talk to our team",
+            "cta_url": "",
+            "feature_1_title": "SOC 2 Type II Certified",
+            "feature_1_description": "Third-party audited security controls",
+            "feature_2_title": "GDPR & CCPA Compliant",
+            "feature_2_description": "Privacy-first data architecture",
+            "feature_3_title": "99.9% Uptime SLA",
+            "feature_3_description": "Measured monthly, compensated if breached",
+            "feature_4_title": "98.5% Accuracy SLA",
+            "feature_4_description": "Weekly validation against ground truth",
+            "feature_5_title": "",
+            "feature_5_description": "",
+            "feature_6_title": "",
+            "feature_6_description": ""
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_380fb98_dqGpxD"
+      ],
+      "name": "Why retailers choose Flow",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "#162f49",
+        "background_gradient": "",
+        "text_color": "#ffffff"
+      }
+    },
     "image_with_text_overlay_AcppEX": {
       "type": "image-with-text-overlay",
       "blocks": {
@@ -166,7 +205,9 @@
         "content": "",
         "background": "",
         "background_gradient": "",
-        "text_color": "#11243e"
+        "text_color": "#11243e",
+        "subheading_background_color": "",
+        "subheading_text_color": ""
       }
     },
     "multi_column_HCGJea11": {
@@ -282,7 +323,9 @@
         "content": "<p>Stop guessing about merchandising effectiveness. Flow quantifies the exact impact of your VMD strategies with objective behavioral data.</p>",
         "background": "#ffffff",
         "background_gradient": "",
-        "text_color": "#11243e"
+        "text_color": "#11243e",
+        "subheading_background_color": "",
+        "subheading_text_color": ""
       }
     },
     "media_with_text_hMPTmL": {
@@ -413,7 +456,9 @@
         "content": "<p>Enterprise-grade AI camera with advanced people counting, behavior analytics, and real-time traffic measurement capabilities.</p>",
         "background": "",
         "background_gradient": "",
-        "text_color": ""
+        "text_color": "",
+        "subheading_background_color": "",
+        "subheading_text_color": ""
       }
     },
     "multi_column_QjMJiW": {
@@ -483,7 +528,9 @@
         "content": "<p>Flow aggregates raw storefront behavioral data into a high-end corporate dashboard, giving regional managers and visual merchandisers instant alignment across hundreds of locations.</p>",
         "background": "#0e366a",
         "background_gradient": "",
-        "text_color": "#f9fafb"
+        "text_color": "#f9fafb",
+        "subheading_background_color": "",
+        "subheading_text_color": ""
       }
     },
     "section-15": {
@@ -669,7 +716,9 @@
         "content": "<p>Flow doesn't operate in a silo. Our core data engine seamlessly bridges the gap between physical space architecture, your existing enterprise tech stack, and the hands of your floor staff.</p>",
         "background": "",
         "background_gradient": "",
-        "text_color": ""
+        "text_color": "",
+        "subheading_background_color": "",
+        "subheading_text_color": ""
       }
     },
     "image_with_text_overlay_qFgaQ3": {
@@ -765,6 +814,7 @@
     }
   },
   "order": [
+    "blocks_E8LBYQ",
     "image_with_text_overlay_AcppEX",
     "multi_column_HCGJea",
     "multi_column_HCGJea11",
