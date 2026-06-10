@@ -857,7 +857,7 @@
             "title": "",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<h3>Measurement First</h3><p>Accuracy matters. We obsess over measurement precision because retail decisions depend on it.</p><p><strong>98.5% counting accuracy isn't marketing—it's our standard, validated weekly.</strong></p>",
+            "content": "<h3>正確に測定する</h3><p>来店数、通行量、滞在、店内行動を正確に測定し、売上だけでは見えない店舗の状態を把握します。判断の土台は、信頼できるデータです。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -879,7 +879,7 @@
             "title": "",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<h3>Store-Level Focus</h3><p>Data at HQ doesn't improve stores. We build for store managers and staff who execute daily.</p><p><strong>Stores with dashboard access achieve 25% higher sales—proven across deployments.</strong></p>",
+            "content": "<h3>運営データを構造化する</h3><p>POS、スタッフ、天候、店舗属性、メモなどの情報をつなぎ、現場と本部が同じ文脈で店舗状況を理解できる状態をつくります。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -901,7 +901,7 @@
             "title": "",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<h3>Production-Ready Only</h3><p>Flow runs in production every day. Uptime, accuracy, and reliability are non-negotiable.</p><p><strong>99.9% uptime SLA, 24/7 monitoring, instant failover. Not a research tool—operational infrastructure.</strong></p>",
+            "content": "<h3>実行につなげる</h3><p>分析結果を見て終わらせず、売上目標に向けた次の判断や行動につなげます。Flowは、現場が動けるデータ活用を重視しています。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -924,8 +924,8 @@
         "gap": "medium",
         "text_alignment": "center",
         "subheading": "",
-        "title": "How We Build and Operate",
-        "content": "<p>Principles that guide product development, customer relationships, and operational decisions.</p>",
+        "title": "Flowの考え方",
+        "content": "<p>Flowは、正確な測定、運営データの構造化、実行につながる判断支援を一つの流れとして設計しています。</p>",
         "background": "",
         "background_gradient": "",
         "text_color": "",
