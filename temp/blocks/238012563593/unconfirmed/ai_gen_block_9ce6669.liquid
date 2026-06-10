@@ -1,6 +1,1178 @@
+{% doc %}
+  @prompt
+    Act as an expert Shopify theme developer. Generate a responsive, pixel-perfect custom grid section containing exactly 6 cards (arranged in a 3-column by 2-row layout on desktop). The design must 100% replicate the layout, card styling, visual hierarchy, and details provided below while automatically inheriting the active Shopify theme's global typography, standard button styles, and maximum page width constraints.
+    
+    ---
+    
+    ### 1. GRID & CONTAINER ARCHITECTURE
+    
+    - Section Layout: Create a parent container restricted to the theme's core page width max-width layout (e.g., `var(--page-width)` or `1200px`). It must center automatically on large screens.
+    - Desktop Grid Layout: Exactly 3 equal-width columns across 2 rows, totaling 6 distinct blocks. Use a uniform grid gap between 24px and 32px.
+    - Mobile Grid Layout: Dynamically collapse the layout into a single vertical column (1 column wide, 6 rows down).
+    - Card Style: Each of the 6 cards must feature a pure white background, rounded corners (border-radius: 12px or 16px), a thin neutral-light border (1px solid `#e2e8f0` or theme variant), and uniform internal padding (24px to 32px) on all sides.
+    
+    ---
+    
+    ### 2. INDIVIDUAL CARD ANATOMY (UP TO 6 REPEATABLE BLOCKS)
+    
+    Inside each card, stack the following 5 distinct structural zones vertically:
+    
+    #### ZONE 1: HEADER (Flex Row Layout)
+    - Layout: A horizontal flex row grouping a brand image and text fields side-by-side.
+      - Left Side (Brand Image): A dedicated schema setting for an uploaded image logo asset, contained within a crisp, square frame featuring a subtle border-radius (12px) and a light grey border outline.
+      - Right Side (Title & Subtitle Stack): A vertical text stack positioned right next to the uploaded brand image:
+        - Main Title: Bold, prominent text (e.g., "Cole Haan Japan", "Baycrews", "TUMI Japan").
+        - Subtitle Metatext: Small, muted grey text directly below the title (e.g., "Premium Footwear & Accessories", "Fashion • Multi-Brand").
+    
+    #### ZONE 2: ACCENT BADGE
+    - A single line of text or mini-tag positioned directly under the header. It must use a distinct corporate blue or navy color tone, reading text such as "Multiple locations" or "Multiple formats".
+    
+    #### ZONE 3: INTRODUCTORY PARAGRAPH
+    - A brief 2-3 line body text block outlining the case study summary. 
+    - Style: Medium-grey text color with a clean, consistent line-height (e.g., 1.5). Add a uniform height or a truncation layout property to ensure that all 3 cards in a desktop row maintain an identical vertical alignment regardless of text length.
+    
+    #### ZONE 4: KEY RESULTS (Bullet-less Icon List)
+    - List Section Title: A small, bold, all-caps header reading "KEY RESULTS" styled in muted grey typography.
+    - Performance List Items: A vertical list of exactly 3 impact points.
+      - Bullet Icon: Replace standard list bullets with a small, custom, thin upward-trending chart arrow icon rendered in a muted olive/moss green color (`#a4b953` or theme equivalent).
+      - List Text: Small, regular-weight body text in a dark slate grey or deep navy.
+    
+    #### ZONE 5: FOOTER BUTTON
+    - A full-width ghost/outline button stretching uniformly across the base of the card.
+    - Style: Transparent background, thin crisp dark navy/slate border outline, matching text reading "View Details", accompanied by an inline right-facing arrow icon (→).
+    
+    ---
+    
+    ### 3. BACKEND CONFIGURATION & SCHEMAS
+    
+    - Content Dynamic Blocks: The schema architecture must accept a repeatable block structure array with a maximum limit of 6 blocks, utilizing an `"image_picker"` field type named `brand_logo` alongside individual standard text line IDs for the titles, categories, paragraphs, and list arrays.
+    - Global Styles Inheritance: Do NOT inject system or hardcoded web font families. Ensure headings inherit the primary theme font-family and lists/descriptions inherit the theme’s core body font-family.
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-case-study-grid-{{ ai_gen_id }} {
+    display: block;
+    width: 100%;
+    padding: 0 var(--section-outer-spacing-inline, 24px);
+  }
+
+  .ai-case-study-grid__container-{{ ai_gen_id }} {
+    max-width: var(--page-width, 1600px);
+    margin: 0 auto;
+  }
+
+  .ai-case-study-grid__grid-{{ ai_gen_id }} {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+  }
+
+  .ai-case-study-card-{{ ai_gen_id }} {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .ai-case-study-card__header-{{ ai_gen_id }} {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+  }
+
+  .ai-case-study-card__brand-image-wrapper-{{ ai_gen_id }} {
+    flex-shrink: 0;
+    width: 64px;
+    height: 64px;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f9fafb;
+  }
+
+  .ai-case-study-card__brand-image-{{ ai_gen_id }} {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .ai-case-study-card__brand-placeholder-{{ ai_gen_id }} {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ai-case-study-card__brand-placeholder-{{ ai_gen_id }} svg {
+    width: 32px;
+    height: 32px;
+    opacity: 0.3;
+  }
+
+  .ai-case-study-card__header-text-{{ ai_gen_id }} {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .ai-case-study-card__title-{{ ai_gen_id }} {
+    font-family: var(--heading-font-family);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.3;
+    color: #11243e;
+    margin: 0;
+  }
+
+  .ai-case-study-card__subtitle-{{ ai_gen_id }} {
+    font-family: var(--text-font-family);
+    font-size: 13px;
+    line-height: 1.4;
+    color: #64748b;
+    margin: 0;
+  }
+
+  .ai-case-study-card__badge-{{ ai_gen_id }} {
+    font-family: var(--text-font-family);
+    font-size: 13px;
+    font-weight: 500;
+    color: #0e366a;
+    line-height: 1.4;
+  }
+
+  .ai-case-study-card__description-{{ ai_gen_id }} {
+    font-family: var(--text-font-family);
+    font-size: 15px;
+    line-height: 1.6;
+    color: #475569;
+    min-height: 72px;
+  }
+
+  .ai-case-study-card__results-{{ ai_gen_id }} {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .ai-case-study-card__results-title-{{ ai_gen_id }} {
+    font-family: var(--text-font-family);
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #94a3b8;
+    margin: 0;
+  }
+
+  .ai-case-study-card__results-list-{{ ai_gen_id }} {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .ai-case-study-card__result-item-{{ ai_gen_id }} {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+  }
+
+  .ai-case-study-card__result-icon-{{ ai_gen_id }} {
+    flex-shrink: 0;
+    width: 16px;
+    height: 16px;
+    margin-top: 2px;
+  }
+
+  .ai-case-study-card__result-icon-{{ ai_gen_id }} svg {
+    width: 100%;
+    height: 100%;
+    fill: none;
+    stroke: #a4b953;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  .ai-case-study-card__result-text-{{ ai_gen_id }} {
+    font-family: var(--text-font-family);
+    font-size: 14px;
+    line-height: 1.5;
+    color: #334155;
+  }
+
+  .ai-case-study-card__button-{{ ai_gen_id }} {
+    width: 100%;
+    padding: 12px 20px;
+    background-color: transparent;
+    border: 1px solid #334155;
+    border-radius: var(--button-border-radius, 14px);
+    font-family: var(--text-font-family);
+    font-size: 14px;
+    font-weight: 500;
+    color: #334155;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    margin-top: auto;
+  }
+
+  .ai-case-study-card__button-{{ ai_gen_id }}:hover {
+    background-color: #334155;
+    color: #ffffff;
+  }
+
+  .ai-case-study-card__button-{{ ai_gen_id }}:hover .ai-case-study-card__button-arrow-{{ ai_gen_id }} svg {
+    stroke: #ffffff;
+  }
+
+  .ai-case-study-card__button-arrow-{{ ai_gen_id }} {
+    width: 16px;
+    height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ai-case-study-card__button-arrow-{{ ai_gen_id }} svg {
+    width: 100%;
+    height: 100%;
+    fill: none;
+    stroke: #334155;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    transition: stroke 0.2s ease;
+  }
+
+  @media screen and (max-width: 989px) {
+    .ai-case-study-grid__grid-{{ ai_gen_id }} {
+      grid-template-columns: 1fr;
+      gap: 24px;
+    }
+
+    .ai-case-study-card-{{ ai_gen_id }} {
+      padding: 24px;
+    }
+
+    .ai-case-study-card__description-{{ ai_gen_id }} {
+      min-height: auto;
+    }
+  }
+{% endstyle %}
+
+<case-study-grid-{{ ai_gen_id }} class="ai-case-study-grid-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-case-study-grid__container-{{ ai_gen_id }}">
+    <div class="ai-case-study-grid__grid-{{ ai_gen_id }}">
+      <div class="ai-case-study-card-{{ ai_gen_id }}">
+        <div class="ai-case-study-card__header-{{ ai_gen_id }}">
+          <div class="ai-case-study-card__brand-image-wrapper-{{ ai_gen_id }}">
+            {% if block.settings.brand_logo_1 %}
+              <img
+                src="{{ block.settings.brand_logo_1 | image_url: width: 128 }}"
+                alt="{{ block.settings.brand_logo_1.alt | escape }}"
+                class="ai-case-study-card__brand-image-{{ ai_gen_id }}"
+                loading="lazy"
+                width="64"
+                height="64"
+              >
+            {% else %}
+              <div class="ai-case-study-card__brand-placeholder-{{ ai_gen_id }}">
+                {{ 'image' | placeholder_svg_tag }}
+              </div>
+            {% endif %}
+          </div>
+          <div class="ai-case-study-card__header-text-{{ ai_gen_id }}">
+            {% if block.settings.title_1 != blank %}
+              <h3 class="ai-case-study-card__title-{{ ai_gen_id }}">{{ block.settings.title_1 }}</h3>
+            {% endif %}
+            {% if block.settings.subtitle_1 != blank %}
+              <p class="ai-case-study-card__subtitle-{{ ai_gen_id }}">{{ block.settings.subtitle_1 }}</p>
+            {% endif %}
+          </div>
+        </div>
+        {% if block.settings.badge_1 != blank %}
+          <div class="ai-case-study-card__badge-{{ ai_gen_id }}">{{ block.settings.badge_1 }}</div>
+        {% endif %}
+        {% if block.settings.description_1 != blank %}
+          <div class="ai-case-study-card__description-{{ ai_gen_id }}">{{ block.settings.description_1 }}</div>
+        {% endif %}
+        <div class="ai-case-study-card__results-{{ ai_gen_id }}">
+          <h4 class="ai-case-study-card__results-title-{{ ai_gen_id }}">KEY RESULTS</h4>
+          <ul class="ai-case-study-card__results-list-{{ ai_gen_id }}">
+            {% if block.settings.result_1_1 != blank %}
+              <li class="ai-case-study-card__result-item-{{ ai_gen_id }}">
+                <span class="ai-case-study-card__result-icon-{{ ai_gen_id }}">
+                  <svg viewBox="0 0 24 24">
+                    <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline>
+                    <polyline points="16 7 22 7 22 13"></polyline>
+                  </svg>
+                </span>
+                <span class="ai-case-study-card__result-text-{{ ai_gen_id }}">{{ block.settings.result_1_1 }}</span>
+              </li>
+            {% endif %}
+            {% if block.settings.result_1_2 != blank %}
+              <li class="ai-case-study-card__result-item-{{ ai_gen_id }}">
+                <span class="ai-case-study-card__result-icon-{{ ai_gen_id }}">
+                  <svg viewBox="0 0 24 24">
+                    <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline>
+                    <polyline points="16 7 22 7 22 13"></polyline>
+                  </svg>
+                </span>
+                <span class="ai-case-study-card__result-text-{{ ai_gen_id }}">{{ block.settings.result_1_2 }}</span>
+              </li>
+            {% endif %}
+            {% if block.settings.result_1_3 != blank %}
+              <li class="ai-case-study-card__result-item-{{ ai_gen_id }}">
+                <span class="ai-case-study-card__result-icon-{{ ai_gen_id }}">
+                  <svg viewBox="0 0 24 24">
+                    <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline>
+                    <polyline points="16 7 22 7 22 13"></polyline>
+                  </svg>
+                </span>
+                <span class="ai-case-study-card__result-text-{{ ai_gen_id }}">{{ block.settings.result_1_3 }}</span>
+              </li>
+            {% endif %}
+          </ul>
+        </div>
+        <a href="{{ block.settings.button_link_1 }}" class="ai-case-study-card__button-{{ ai_gen_id }}">
+          <span>{{ block.settings.button_text_1 }}</span>
+          <span class="ai-case-study-card__button-arrow-{{ ai_gen_id }}">
+            <svg viewBox="0 0 24 24">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </span>
+        </a>
+      </div>
+
+      <div class="ai-case-study-card-{{ ai_gen_id }}">
+        <div class="ai-case-study-card__header-{{ ai_gen_id }}">
+          <div class="ai-case-study-card__brand-image-wrapper-{{ ai_gen_id }}">
+            {% if block.settings.brand_logo_2 %}
+              <img
+                src="{{ block.settings.brand_logo_2 | image_url: width: 128 }}"
+                alt="{{ block.settings.brand_logo_2.alt | escape }}"
+                class="ai-case-study-card__brand-image-{{ ai_gen_id }}"
+                loading="lazy"
+                width="64"
+                height="64"
+              >
+            {% else %}
+              <div class="ai-case-study-card__brand-placeholder-{{ ai_gen_id }}">
+                {{ 'image' | placeholder_svg_tag }}
+              </div>
+            {% endif %}
+          </div>
+          <div class="ai-case-study-card__header-text-{{ ai_gen_id }}">
+            {% if block.settings.title_2 != blank %}
+              <h3 class="ai-case-study-card__title-{{ ai_gen_id }}">{{ block.settings.title_2 }}</h3>
+            {% endif %}
+            {% if block.settings.subtitle_2 != blank %}
+              <p class="ai-case-study-card__subtitle-{{ ai_gen_id }}">{{ block.settings.subtitle_2 }}</p>
+            {% endif %}
+          </div>
+        </div>
+        {% if block.settings.badge_2 != blank %}
+          <div class="ai-case-study-card__badge-{{ ai_gen_id }}">{{ block.settings.badge_2 }}</div>
+        {% endif %}
+        {% if block.settings.description_2 != blank %}
+          <div class="ai-case-study-card__description-{{ ai_gen_id }}">{{ block.settings.description_2 }}</div>
+        {% endif %}
+        <div class="ai-case-study-card__results-{{ ai_gen_id }}">
+          <h4 class="ai-case-study-card__results-title-{{ ai_gen_id }}">KEY RESULTS</h4>
+          <ul class="ai-case-study-card__results-list-{{ ai_gen_id }}">
+            {% if block.settings.result_2_1 != blank %}
+              <li class="ai-case-study-card__result-item-{{ ai_gen_id }}">
+                <span class="ai-case-study-card__result-icon-{{ ai_gen_id }}">
+                  <svg viewBox="0 0 24 24">
+                    <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline>
+                    <polyline points="16 7 22 7 22 13"></polyline>
+                  </svg>
+                </span>
+                <span class="ai-case-study-card__result-text-{{ ai_gen_id }}">{{ block.settings.result_2_1 }}</span>
+              </li>
+            {% endif %}
+            {% if block.settings.result_2_2 != blank %}
+              <li class="ai-case-study-card__result-item-{{ ai_gen_id }}">
+                <span class="ai-case-study-card__result-icon-{{ ai_gen_id }}">
+                  <svg viewBox="0 0 24 24">
+                    <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline>
+                    <polyline points="16 7 22 7 22 13"></polyline>
+                  </svg>
+                </span>
+                <span class="ai-case-study-card__result-text-{{ ai_gen_id }}">{{ block.settings.result_2_2 }}</span>
+              </li>
+            {% endif %}
+            {% if block.settings.result_2_3 != blank %}
+              <li class="ai-case-study-card__result-item-{{ ai_gen_id }}">
+                <span class="ai-case-study-card__result-icon-{{ ai_gen_id }}">
+                  <svg viewBox="0 0 24 24">
+                    <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline>
+                    <polyline points="16 7 22 7 22 13"></polyline>
+                  </svg>
+                </span>
+                <span class="ai-case-study-card__result-text-{{ ai_gen_id }}">{{ block.settings.result_2_3 }}</span>
+              </li>
+            {% endif %}
+          </ul>
+        </div>
+        <a href="{{ block.settings.button_link_2 }}" class="ai-case-study-card__button-{{ ai_gen_id }}">
+          <span>{{ block.settings.button_text_2 }}</span>
+          <span class="ai-case-study-card__button-arrow-{{ ai_gen_id }}">
+            <svg viewBox="0 0 24 24">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </span>
+        </a>
+      </div>
+
+      <div class="ai-case-study-card-{{ ai_gen_id }}">
+        <div class="ai-case-study-card__header-{{ ai_gen_id }}">
+          <div class="ai-case-study-card__brand-image-wrapper-{{ ai_gen_id }}">
+            {% if block.settings.brand_logo_3 %}
+              <img
+                src="{{ block.settings.brand_logo_3 | image_url: width: 128 }}"
+                alt="{{ block.settings.brand_logo_3.alt | escape }}"
+                class="ai-case-study-card__brand-image-{{ ai_gen_id }}"
+                loading="lazy"
+                width="64"
+                height="64"
+              >
+            {% else %}
+              <div class="ai-case-study-card__brand-placeholder-{{ ai_gen_id }}">
+                {{ 'image' | placeholder_svg_tag }}
+              </div>
+            {% endif %}
+          </div>
+          <div class="ai-case-study-card__header-text-{{ ai_gen_id }}">
+            {% if block.settings.title_3 != blank %}
+              <h3 class="ai-case-study-card__title-{{ ai_gen_id }}">{{ block.settings.title_3 }}</h3>
+            {% endif %}
+            {% if block.settings.subtitle_3 != blank %}
+              <p class="ai-case-study-card__subtitle-{{ ai_gen_id }}">{{ block.settings.subtitle_3 }}</p>
+            {% endif %}
+          </div>
+        </div>
+        {% if block.settings.badge_3 != blank %}
+          <div class="ai-case-study-card__badge-{{ ai_gen_id }}">{{ block.settings.badge_3 }}</div>
+        {% endif %}
+        {% if block.settings.description_3 != blank %}
+          <div class="ai-case-study-card__description-{{ ai_gen_id }}">{{ block.settings.description_3 }}</div>
+        {% endif %}
+        <div class="ai-case-study-card__results-{{ ai_gen_id }}">
+          <h4 class="ai-case-study-card__results-title-{{ ai_gen_id }}">KEY RESULTS</h4>
+          <ul class="ai-case-study-card__results-list-{{ ai_gen_id }}">
+            {% if block.settings.result_3_1 != blank %}
+              <li class="ai-case-study-card__result-item-{{ ai_gen_id }}">
+                <span class="ai-case-study-card__result-icon-{{ ai_gen_id }}">
+                  <svg viewBox="0 0 24 24">
+                    <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline>
+                    <polyline points="16 7 22 7 22 13"></polyline>
+                  </svg>
+                </span>
+                <span class="ai-case-study-card__result-text-{{ ai_gen_id }}">{{ block.settings.result_3_1 }}</span>
+              </li>
+            {% endif %}
+            {% if block.settings.result_3_2 != blank %}
+              <li class="ai-case-study-card__result-item-{{ ai_gen_id }}">
+                <span class="ai-case-study-card__result-icon-{{ ai_gen_id }}">
+                  <svg viewBox="0 0 24 24">
+                    <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline>
+                    <polyline points="16 7 22 7 22 13"></polyline>
+                  </svg>
+                </span>
+                <span class="ai-case-study-card__result-text-{{ ai_gen_id }}">{{ block.settings.result_3_2 }}</span>
+              </li>
+            {% endif %}
+            {% if block.settings.result_3_3 != blank %}
+              <li class="ai-case-study-card__result-item-{{ ai_gen_id }}">
+                <span class="ai-case-study-card__result-icon-{{ ai_gen_id }}">
+                  <svg viewBox="0 0 24 24">
+                    <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline>
+                    <polyline points="16 7 22 7 22 13"></polyline>
+                  </svg>
+                </span>
+                <span class="ai-case-study-card__result-text-{{ ai_gen_id }}">{{ block.settings.result_3_3 }}</span>
+              </li>
+            {% endif %}
+          </ul>
+        </div>
+        <a href="{{ block.settings.button_link_3 }}" class="ai-case-study-card__button-{{ ai_gen_id }}">
+          <span>{{ block.settings.button_text_3 }}</span>
+          <span class="ai-case-study-card__button-arrow-{{ ai_gen_id }}">
+            <svg viewBox="0 0 24 24">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </span>
+        </a>
+      </div>
+
+      <div class="ai-case-study-card-{{ ai_gen_id }}">
+        <div class="ai-case-study-card__header-{{ ai_gen_id }}">
+          <div class="ai-case-study-card__brand-image-wrapper-{{ ai_gen_id }}">
+            {% if block.settings.brand_logo_4 %}
+              <img
+                src="{{ block.settings.brand_logo_4 | image_url: width: 128 }}"
+                alt="{{ block.settings.brand_logo_4.alt | escape }}"
+                class="ai-case-study-card__brand-image-{{ ai_gen_id }}"
+                loading="lazy"
+                width="64"
+                height="64"
+              >
+            {% else %}
+              <div class="ai-case-study-card__brand-placeholder-{{ ai_gen_id }}">
+                {{ 'image' | placeholder_svg_tag }}
+              </div>
+            {% endif %}
+          </div>
+          <div class="ai-case-study-card__header-text-{{ ai_gen_id }}">
+            {% if block.settings.title_4 != blank %}
+              <h3 class="ai-case-study-card__title-{{ ai_gen_id }}">{{ block.settings.title_4 }}</h3>
+            {% endif %}
+            {% if block.settings.subtitle_4 != blank %}
+              <p class="ai-case-study-card__subtitle-{{ ai_gen_id }}">{{ block.settings.subtitle_4 }}</p>
+            {% endif %}
+          </div>
+        </div>
+        {% if block.settings.badge_4 != blank %}
+          <div class="ai-case-study-card__badge-{{ ai_gen_id }}">{{ block.settings.badge_4 }}</div>
+        {% endif %}
+        {% if block.settings.description_4 != blank %}
+          <div class="ai-case-study-card__description-{{ ai_gen_id }}">{{ block.settings.description_4 }}</div>
+        {% endif %}
+        <div class="ai-case-study-card__results-{{ ai_gen_id }}">
+          <h4 class="ai-case-study-card__results-title-{{ ai_gen_id }}">KEY RESULTS</h4>
+          <ul class="ai-case-study-card__results-list-{{ ai_gen_id }}">
+            {% if block.settings.result_4_1 != blank %}
+              <li class="ai-case-study-card__result-item-{{ ai_gen_id }}">
+                <span class="ai-case-study-card__result-icon-{{ ai_gen_id }}">
+                  <svg viewBox="0 0 24 24">
+                    <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline>
+                    <polyline points="16 7 22 7 22 13"></polyline>
+                  </svg>
+                </span>
+                <span class="ai-case-study-card__result-text-{{ ai_gen_id }}">{{ block.settings.result_4_1 }}</span>
+              </li>
+            {% endif %}
+            {% if block.settings.result_4_2 != blank %}
+              <li class="ai-case-study-card__result-item-{{ ai_gen_id }}">
+                <span class="ai-case-study-card__result-icon-{{ ai_gen_id }}">
+                  <svg viewBox="0 0 24 24">
+                    <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline>
+                    <polyline points="16 7 22 7 22 13"></polyline>
+                  </svg>
+                </span>
+                <span class="ai-case-study-card__result-text-{{ ai_gen_id }}">{{ block.settings.result_4_2 }}</span>
+              </li>
+            {% endif %}
+            {% if block.settings.result_4_3 != blank %}
+              <li class="ai-case-study-card__result-item-{{ ai_gen_id }}">
+                <span class="ai-case-study-card__result-icon-{{ ai_gen_id }}">
+                  <svg viewBox="0 0 24 24">
+                    <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline>
+                    <polyline points="16 7 22 7 22 13"></polyline>
+                  </svg>
+                </span>
+                <span class="ai-case-study-card__result-text-{{ ai_gen_id }}">{{ block.settings.result_4_3 }}</span>
+              </li>
+            {% endif %}
+          </ul>
+        </div>
+        <a href="{{ block.settings.button_link_4 }}" class="ai-case-study-card__button-{{ ai_gen_id }}">
+          <span>{{ block.settings.button_text_4 }}</span>
+          <span class="ai-case-study-card__button-arrow-{{ ai_gen_id }}">
+            <svg viewBox="0 0 24 24">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </span>
+        </a>
+      </div>
+
+      <div class="ai-case-study-card-{{ ai_gen_id }}">
+        <div class="ai-case-study-card__header-{{ ai_gen_id }}">
+          <div class="ai-case-study-card__brand-image-wrapper-{{ ai_gen_id }}">
+            {% if block.settings.brand_logo_5 %}
+              <img
+                src="{{ block.settings.brand_logo_5 | image_url: width: 128 }}"
+                alt="{{ block.settings.brand_logo_5.alt | escape }}"
+                class="ai-case-study-card__brand-image-{{ ai_gen_id }}"
+                loading="lazy"
+                width="64"
+                height="64"
+              >
+            {% else %}
+              <div class="ai-case-study-card__brand-placeholder-{{ ai_gen_id }}">
+                {{ 'image' | placeholder_svg_tag }}
+              </div>
+            {% endif %}
+          </div>
+          <div class="ai-case-study-card__header-text-{{ ai_gen_id }}">
+            {% if block.settings.title_5 != blank %}
+              <h3 class="ai-case-study-card__title-{{ ai_gen_id }}">{{ block.settings.title_5 }}</h3>
+            {% endif %}
+            {% if block.settings.subtitle_5 != blank %}
+              <p class="ai-case-study-card__subtitle-{{ ai_gen_id }}">{{ block.settings.subtitle_5 }}</p>
+            {% endif %}
+          </div>
+        </div>
+        {% if block.settings.badge_5 != blank %}
+          <div class="ai-case-study-card__badge-{{ ai_gen_id }}">{{ block.settings.badge_5 }}</div>
+        {% endif %}
+        {% if block.settings.description_5 != blank %}
+          <div class="ai-case-study-card__description-{{ ai_gen_id }}">{{ block.settings.description_5 }}</div>
+        {% endif %}
+        <div class="ai-case-study-card__results-{{ ai_gen_id }}">
+          <h4 class="ai-case-study-card__results-title-{{ ai_gen_id }}">KEY RESULTS</h4>
+          <ul class="ai-case-study-card__results-list-{{ ai_gen_id }}">
+            {% if block.settings.result_5_1 != blank %}
+              <li class="ai-case-study-card__result-item-{{ ai_gen_id }}">
+                <span class="ai-case-study-card__result-icon-{{ ai_gen_id }}">
+                  <svg viewBox="0 0 24 24">
+                    <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline>
+                    <polyline points="16 7 22 7 22 13"></polyline>
+                  </svg>
+                </span>
+                <span class="ai-case-study-card__result-text-{{ ai_gen_id }}">{{ block.settings.result_5_1 }}</span>
+              </li>
+            {% endif %}
+            {% if block.settings.result_5_2 != blank %}
+              <li class="ai-case-study-card__result-item-{{ ai_gen_id }}">
+                <span class="ai-case-study-card__result-icon-{{ ai_gen_id }}">
+                  <svg viewBox="0 0 24 24">
+                    <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline>
+                    <polyline points="16 7 22 7 22 13"></polyline>
+                  </svg>
+                </span>
+                <span class="ai-case-study-card__result-text-{{ ai_gen_id }}">{{ block.settings.result_5_2 }}</span>
+              </li>
+            {% endif %}
+            {% if block.settings.result_5_3 != blank %}
+              <li class="ai-case-study-card__result-item-{{ ai_gen_id }}">
+                <span class="ai-case-study-card__result-icon-{{ ai_gen_id }}">
+                  <svg viewBox="0 0 24 24">
+                    <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline>
+                    <polyline points="16 7 22 7 22 13"></polyline>
+                  </svg>
+                </span>
+                <span class="ai-case-study-card__result-text-{{ ai_gen_id }}">{{ block.settings.result_5_3 }}</span>
+              </li>
+            {% endif %}
+          </ul>
+        </div>
+        <a href="{{ block.settings.button_link_5 }}" class="ai-case-study-card__button-{{ ai_gen_id }}">
+          <span>{{ block.settings.button_text_5 }}</span>
+          <span class="ai-case-study-card__button-arrow-{{ ai_gen_id }}">
+            <svg viewBox="0 0 24 24">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </span>
+        </a>
+      </div>
+
+      <div class="ai-case-study-card-{{ ai_gen_id }}">
+        <div class="ai-case-study-card__header-{{ ai_gen_id }}">
+          <div class="ai-case-study-card__brand-image-wrapper-{{ ai_gen_id }}">
+            {% if block.settings.brand_logo_6 %}
+              <img
+                src="{{ block.settings.brand_logo_6 | image_url: width: 128 }}"
+                alt="{{ block.settings.brand_logo_6.alt | escape }}"
+                class="ai-case-study-card__brand-image-{{ ai_gen_id }}"
+                loading="lazy"
+                width="64"
+                height="64"
+              >
+            {% else %}
+              <div class="ai-case-study-card__brand-placeholder-{{ ai_gen_id }}">
+                {{ 'image' | placeholder_svg_tag }}
+              </div>
+            {% endif %}
+          </div>
+          <div class="ai-case-study-card__header-text-{{ ai_gen_id }}">
+            {% if block.settings.title_6 != blank %}
+              <h3 class="ai-case-study-card__title-{{ ai_gen_id }}">{{ block.settings.title_6 }}</h3>
+            {% endif %}
+            {% if block.settings.subtitle_6 != blank %}
+              <p class="ai-case-study-card__subtitle-{{ ai_gen_id }}">{{ block.settings.subtitle_6 }}</p>
+            {% endif %}
+          </div>
+        </div>
+        {% if block.settings.badge_6 != blank %}
+          <div class="ai-case-study-card__badge-{{ ai_gen_id }}">{{ block.settings.badge_6 }}</div>
+        {% endif %}
+        {% if block.settings.description_6 != blank %}
+          <div class="ai-case-study-card__description-{{ ai_gen_id }}">{{ block.settings.description_6 }}</div>
+        {% endif %}
+        <div class="ai-case-study-card__results-{{ ai_gen_id }}">
+          <h4 class="ai-case-study-card__results-title-{{ ai_gen_id }}">KEY RESULTS</h4>
+          <ul class="ai-case-study-card__results-list-{{ ai_gen_id }}">
+            {% if block.settings.result_6_1 != blank %}
+              <li class="ai-case-study-card__result-item-{{ ai_gen_id }}">
+                <span class="ai-case-study-card__result-icon-{{ ai_gen_id }}">
+                  <svg viewBox="0 0 24 24">
+                    <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline>
+                    <polyline points="16 7 22 7 22 13"></polyline>
+                  </svg>
+                </span>
+                <span class="ai-case-study-card__result-text-{{ ai_gen_id }}">{{ block.settings.result_6_1 }}</span>
+              </li>
+            {% endif %}
+            {% if block.settings.result_6_2 != blank %}
+              <li class="ai-case-study-card__result-item-{{ ai_gen_id }}">
+                <span class="ai-case-study-card__result-icon-{{ ai_gen_id }}">
+                  <svg viewBox="0 0 24 24">
+                    <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline>
+                    <polyline points="16 7 22 7 22 13"></polyline>
+                  </svg>
+                </span>
+                <span class="ai-case-study-card__result-text-{{ ai_gen_id }}">{{ block.settings.result_6_2 }}</span>
+              </li>
+            {% endif %}
+            {% if block.settings.result_6_3 != blank %}
+              <li class="ai-case-study-card__result-item-{{ ai_gen_id }}">
+                <span class="ai-case-study-card__result-icon-{{ ai_gen_id }}">
+                  <svg viewBox="0 0 24 24">
+                    <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline>
+                    <polyline points="16 7 22 7 22 13"></polyline>
+                  </svg>
+                </span>
+                <span class="ai-case-study-card__result-text-{{ ai_gen_id }}">{{ block.settings.result_6_3 }}</span>
+              </li>
+            {% endif %}
+          </ul>
+        </div>
+        <a href="{{ block.settings.button_link_6 }}" class="ai-case-study-card__button-{{ ai_gen_id }}">
+          <span>{{ block.settings.button_text_6 }}</span>
+          <span class="ai-case-study-card__button-arrow-{{ ai_gen_id }}">
+            <svg viewBox="0 0 24 24">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </span>
+        </a>
+      </div>
+    </div>
+  </div>
+</case-study-grid-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class CaseStudyGrid{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+      }
+
+      connectedCallback() {
+        this.style.display = 'block';
+      }
+    }
+
+    customElements.define('case-study-grid-{{ ai_gen_id }}', CaseStudyGrid{{ ai_gen_id }});
+  })();
+</script>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "Case study grid",
+  "tag": null,
+  "class": "ai-case-study-section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Card 1"
+    },
+    {
+      "type": "image_picker",
+      "id": "brand_logo_1",
+      "label": "Brand logo"
+    },
+    {
+      "type": "text",
+      "id": "title_1",
+      "label": "Brand name",
+      "default": "Cole Haan Japan"
+    },
+    {
+      "type": "text",
+      "id": "subtitle_1",
+      "label": "Category",
+      "default": "Premium Footwear & Accessories"
+    },
+    {
+      "type": "text",
+      "id": "badge_1",
+      "label": "Badge text",
+      "default": "Multiple locations"
+    },
+    {
+      "type": "textarea",
+      "id": "description_1",
+      "label": "Description",
+      "default": "Flow Solutions implemented a comprehensive omnichannel retail strategy, integrating online and offline experiences to drive customer engagement and sales growth."
+    },
+    {
+      "type": "text",
+      "id": "result_1_1",
+      "label": "Result 1",
+      "default": "35% increase in conversion rate"
+    },
+    {
+      "type": "text",
+      "id": "result_1_2",
+      "label": "Result 2",
+      "default": "50% reduction in cart abandonment"
+    },
+    {
+      "type": "text",
+      "id": "result_1_3",
+      "label": "Result 3",
+      "default": "2x growth in customer lifetime value"
+    },
+    {
+      "type": "text",
+      "id": "button_text_1",
+      "label": "Button text",
+      "default": "View Details"
+    },
+    {
+      "type": "url",
+      "id": "button_link_1",
+      "label": "Button link"
+    },
+    {
+      "type": "header",
+      "content": "Card 2"
+    },
+    {
+      "type": "image_picker",
+      "id": "brand_logo_2",
+      "label": "Brand logo"
+    },
+    {
+      "type": "text",
+      "id": "title_2",
+      "label": "Brand name",
+      "default": "Baycrews"
+    },
+    {
+      "type": "text",
+      "id": "subtitle_2",
+      "label": "Category",
+      "default": "Fashion • Multi-Brand"
+    },
+    {
+      "type": "text",
+      "id": "badge_2",
+      "label": "Badge text",
+      "default": "Multiple formats"
+    },
+    {
+      "type": "textarea",
+      "id": "description_2",
+      "label": "Description",
+      "default": "Unified inventory management across all channels, enabling seamless shopping experiences and maximizing product availability for customers."
+    },
+    {
+      "type": "text",
+      "id": "result_2_1",
+      "label": "Result 1",
+      "default": "40% improvement in inventory turnover"
+    },
+    {
+      "type": "text",
+      "id": "result_2_2",
+      "label": "Result 2",
+      "default": "25% increase in average order value"
+    },
+    {
+      "type": "text",
+      "id": "result_2_3",
+      "label": "Result 3",
+      "default": "60% faster checkout process"
+    },
+    {
+      "type": "text",
+      "id": "button_text_2",
+      "label": "Button text",
+      "default": "View Details"
+    },
+    {
+      "type": "url",
+      "id": "button_link_2",
+      "label": "Button link"
+    },
+    {
+      "type": "header",
+      "content": "Card 3"
+    },
+    {
+      "type": "image_picker",
+      "id": "brand_logo_3",
+      "label": "Brand logo"
+    },
+    {
+      "type": "text",
+      "id": "title_3",
+      "label": "Brand name",
+      "default": "TUMI Japan"
+    },
+    {
+      "type": "text",
+      "id": "subtitle_3",
+      "label": "Category",
+      "default": "Luxury Travel & Business"
+    },
+    {
+      "type": "text",
+      "id": "badge_3",
+      "label": "Badge text",
+      "default": "Premium experience"
+    },
+    {
+      "type": "textarea",
+      "id": "description_3",
+      "label": "Description",
+      "default": "Enhanced customer experience through personalized recommendations and streamlined purchase journey across all touchpoints."
+    },
+    {
+      "type": "text",
+      "id": "result_3_1",
+      "label": "Result 1",
+      "default": "45% increase in customer satisfaction"
+    },
+    {
+      "type": "text",
+      "id": "result_3_2",
+      "label": "Result 2",
+      "default": "30% growth in repeat purchases"
+    },
+    {
+      "type": "text",
+      "id": "result_3_3",
+      "label": "Result 3",
+      "default": "55% reduction in return rate"
+    },
+    {
+      "type": "text",
+      "id": "button_text_3",
+      "label": "Button text",
+      "default": "View Details"
+    },
+    {
+      "type": "url",
+      "id": "button_link_3",
+      "label": "Button link"
+    },
+    {
+      "type": "header",
+      "content": "Card 4"
+    },
+    {
+      "type": "image_picker",
+      "id": "brand_logo_4",
+      "label": "Brand logo"
+    },
+    {
+      "type": "text",
+      "id": "title_4",
+      "label": "Brand name",
+      "default": "Brand Name"
+    },
+    {
+      "type": "text",
+      "id": "subtitle_4",
+      "label": "Category",
+      "default": "Industry Category"
+    },
+    {
+      "type": "text",
+      "id": "badge_4",
+      "label": "Badge text",
+      "default": "Multiple locations"
+    },
+    {
+      "type": "textarea",
+      "id": "description_4",
+      "label": "Description",
+      "default": "Flow Solutions delivered innovative retail solutions that transformed the customer experience and drove measurable business results."
+    },
+    {
+      "type": "text",
+      "id": "result_4_1",
+      "label": "Result 1",
+      "default": "Significant performance improvement"
+    },
+    {
+      "type": "text",
+      "id": "result_4_2",
+      "label": "Result 2",
+      "default": "Enhanced customer engagement"
+    },
+    {
+      "type": "text",
+      "id": "result_4_3",
+      "label": "Result 3",
+      "default": "Increased operational efficiency"
+    },
+    {
+      "type": "text",
+      "id": "button_text_4",
+      "label": "Button text",
+      "default": "View Details"
+    },
+    {
+      "type": "url",
+      "id": "button_link_4",
+      "label": "Button link"
+    },
+    {
+      "type": "header",
+      "content": "Card 5"
+    },
+    {
+      "type": "image_picker",
+      "id": "brand_logo_5",
+      "label": "Brand logo"
+    },
+    {
+      "type": "text",
+      "id": "title_5",
+      "label": "Brand name",
+      "default": "Brand Name"
+    },
+    {
+      "type": "text",
+      "id": "subtitle_5",
+      "label": "Category",
+      "default": "Industry Category"
+    },
+    {
+      "type": "text",
+      "id": "badge_5",
+      "label": "Badge text",
+      "default": "Multiple locations"
+    },
+    {
+      "type": "textarea",
+      "id": "description_5",
+      "label": "Description",
+      "default": "Flow Solutions delivered innovative retail solutions that transformed the customer experience and drove measurable business results."
+    },
+    {
+      "type": "text",
+      "id": "result_5_1",
+      "label": "Result 1",
+      "default": "Significant performance improvement"
+    },
+    {
+      "type": "text",
+      "id": "result_5_2",
+      "label": "Result 2",
+      "default": "Enhanced customer engagement"
+    },
+    {
+      "type": "text",
+      "id": "result_5_3",
+      "label": "Result 3",
+      "default": "Increased operational efficiency"
+    },
+    {
+      "type": "text",
+      "id": "button_text_5",
+      "label": "Button text",
+      "default": "View Details"
+    },
+    {
+      "type": "url",
+      "id": "button_link_5",
+      "label": "Button link"
+    },
+    {
+      "type": "header",
+      "content": "Card 6"
+    },
+    {
+      "type": "image_picker",
+      "id": "brand_logo_6",
+      "label": "Brand logo"
+    },
+    {
+      "type": "text",
+      "id": "title_6",
+      "label": "Brand name",
+      "default": "Brand Name"
+    },
+    {
+      "type": "text",
+      "id": "subtitle_6",
+      "label": "Category",
+      "default": "Industry Category"
+    },
+    {
+      "type": "text",
+      "id": "badge_6",
+      "label": "Badge text",
+      "default": "Multiple locations"
+    },
+    {
+      "type": "textarea",
+      "id": "description_6",
+      "label": "Description",
+      "default": "Flow Solutions delivered innovative retail solutions that transformed the customer experience and drove measurable business results."
+    },
+    {
+      "type": "text",
+      "id": "result_6_1",
+      "label": "Result 1",
+      "default": "Significant performance improvement"
+    },
+    {
+      "type": "text",
+      "id": "result_6_2",
+      "label": "Result 2",
+      "default": "Enhanced customer engagement"
+    },
+    {
+      "type": "text",
+      "id": "result_6_3",
+      "label": "Result 3",
+      "default": "Increased operational efficiency"
+    },
+    {
+      "type": "text",
+      "id": "button_text_6",
+      "label": "Button text",
+      "default": "View Details"
+    },
+    {
+      "type": "url",
+      "id": "button_link_6",
+      "label": "Button link"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Case study grid"
+    }
+  ]
+}
 {% endschema %}
