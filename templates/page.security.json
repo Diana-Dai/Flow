@@ -116,7 +116,7 @@
             "icon_color": "#f9fafb",
             "background_color": "#ffffff",
             "text_color": "#11243e",
-            "border_color": "",
+            "border_color": "#f2f2f2",
             "show_controls": false,
             "column_size": "3",
             "title": "",
@@ -127,17 +127,42 @@
             "link_text": "",
             "link_style": "link"
           }
+        },
+        "item_RnmbJT": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#f2f2f2",
+            "text_color": "",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "1",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h3>GDPR & CCPA Compliance by Architecture</h3><p>Flow qualifies as \"non-personal data\" under GDPR Article 4 because the data cannot identify individuals. No DPIA (Data Protection Impact Assessment) is required for typical retail deployments.</p><p>GDPR Principles Applied:</p><ul><li>Data minimization: Only essential operational metrics</li><li>Purpose limitation: Retail operations only, no secondary use</li><li>Storage limitation: 13-month retention, configurable</li><li>Integrity & confidentiality: AES-256 encryption, access controls</li></ul><p>CCPA Compliance:</p><ul><li>No \"sale\" of data—customer data stays isolated per retailer</li><li>Customer data ownership maintained</li><li>Full data export available on request</li><li>Deletion within 30 days upon request</li></ul>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
         }
       },
       "block_order": [
         "item_9cWFC9",
         "item_aqpNXK",
-        "item_tTyycj"
+        "item_tTyycj",
+        "item_RnmbJT"
       ],
       "custom_css": [
         ".prose p {font-size: 0.9rem;}",
         ".multi-column__item:first-child .h1 {color: #a0b842 !important;}",
-        ".multi-column__item:last-child .h1 {color: #a0b842 !important;}"
+        ".multi-column__item:last-child .h1 {color: #a0b842 !important;}",
+        ".multi-column__item ul {display: flex; flex-wrap: wrap;}",
+        ".multi-column__item ul li {width: 50%;}"
       ],
       "name": "Multi-column",
       "settings": {
@@ -153,125 +178,6 @@
         "text_color": "#11243e",
         "subheading_background_color": "",
         "subheading_text_color": ""
-      }
-    },
-    "multi_column_8yXaXX": {
-      "type": "multi-column",
-      "blocks": {
-        "item_BPFKDk": {
-          "type": "item",
-          "settings": {
-            "icon": "none",
-            "icon_width": 32,
-            "icon_background_type": "square",
-            "icon_background": "",
-            "icon_color": "",
-            "background_color": "",
-            "text_color": "",
-            "border_color": "#ffffff",
-            "show_controls": false,
-            "column_size": "1",
-            "title": "どのように計測するか？",
-            "heading_tag": "h3",
-            "subheading": "",
-            "content": "<h5>AIカメラ計測ページで、来店計測、スタッフ除外、計測設計、導入方法を確認できます。</h5>",
-            "link_url": "",
-            "link_text": "AIカメラ計測を見る →",
-            "link_style": "button"
-          }
-        }
-      },
-      "block_order": [
-        "item_BPFKDk"
-      ],
-      "name": "Multi-column",
-      "settings": {
-        "full_width": true,
-        "stack_on_mobile": false,
-        "gap": "medium",
-        "text_alignment": "center",
-        "subheading": "",
-        "title": "",
-        "content": "",
-        "background": "",
-        "background_gradient": "",
-        "text_color": "",
-        "subheading_background_color": "",
-        "subheading_text_color": ""
-      }
-    },
-    "blocks_aQrBq7": {
-      "type": "_blocks",
-      "blocks": {
-        "ai_gen_block_8944212_rBXVkW": {
-          "type": "ai_gen_block_8944212",
-          "settings": {
-            "desktop_width_percent": 100,
-            "padding_top": 60,
-            "padding_bottom": 60,
-            "padding_horizontal": 40,
-            "background_color": "#ffffff",
-            "eyebrow_text": "活用部門",
-            "eyebrow_font_size": 13,
-            "eyebrow_bg_color": "#11243e",
-            "eyebrow_text_color": "#ffffff",
-            "heading": "店内行動データを、部門横断の判断に活かす",
-            "heading_color": "#0a1a2f",
-            "description": "AIカメラで取得した店内行動データは、VMDだけでなく、店舗運営、エリアマネジメント、MD、マーケティング、経営判断まで幅広く活用できます。部門ごとに異なる課題を、同じ行動データをもとに確認できます。",
-            "description_font_size": 16,
-            "description_color": "#6b7280",
-            "header_spacing": 50,
-            "card_gap": 24,
-            "card_padding": 32,
-            "card_border_radius": 12,
-            "cards_spacing": 32,
-            "card_heading_size": 24,
-            "card_text_size": 17,
-            "card_list_size": 17,
-            "card1_heading": "店舗・現場での活用",
-            "card1_text": "店舗運営、店長、エリアマネージャーは、来店数、滞在、導線、ゾーン別の反応をもとに、スタッフ配置、接客タイミング、売場運営、店舗間比較に活用できます。",
-            "card1_item1": "店舗運営：スタッフ配置や接客タイミングの改善",
-            "card1_item2": "店長：売場ごとの反応や機会損失の確認",
-            "card1_item3": "エリアマネージャー：店舗ごとの行動傾向を比較",
-            "dark_card_bg": "#11243e",
-            "dark_card_text": "#ffffff",
-            "dark_icon_bg": "#a0b842",
-            "dark_checkmark_color": "#a0b842",
-            "card2_heading": "本部・戦略部門での活用",
-            "card2_text": "MD、VMD、マーケティング、経営・DX部門は、商品配置、什器、ディスプレイ、販促施策、店舗投資の判断に、購買前の行動データを活用できます。",
-            "card2_item1": "MD・商品部：カテゴリーや重点商品の反応確認",
-            "card2_item2": "VMD：ディスプレイやレイアウト変更の検証",
-            "card2_item3": "マーケティング・経営：販促効果や投資判断の精度向上",
-            "light_card_bg": "#f2f2f2",
-            "light_card_text": "#0a1a2f",
-            "light_icon_bg": "#f0f4e8",
-            "light_checkmark_color": "#a0b842",
-            "banner_title": "Flowの強み",
-            "banner_text": "Flowは、店内行動データを単独で見るだけではなく、POS、スタッフ配置、天候、店舗属性などのデータと組み合わせて分析できます。現場と本部が同じ事実をもとに、より早く、より一貫した判断を行えるようにします。",
-            "banner_padding": 32,
-            "banner_border_radius": 12,
-            "banner_title_size": 24,
-            "banner_text_size": 17,
-            "banner_bg_color": "#f0f4e8",
-            "banner_icon_bg": "#a0b842",
-            "banner_icon_color": "#ffffff",
-            "banner_title_color": "#0a1a2f",
-            "banner_text_color": "#4b5563"
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "ai_gen_block_8944212_rBXVkW"
-      ],
-      "name": "Conversion intelligence",
-      "settings": {
-        "full_width": true,
-        "remove_vertical_spacing": false,
-        "remove_horizontal_spacing": false,
-        "background": "",
-        "background_gradient": "",
-        "text_color": ""
       }
     },
     "multi_column_ge9wwi": {
@@ -290,10 +196,10 @@
             "border_color": "",
             "show_controls": false,
             "column_size": "2",
-            "title": "注目される売場",
+            "title": "End-to-End Encryption",
             "heading_tag": "h3",
-            "subheading": "<p>どこに人が集まっているか</p>",
-            "content": "<p>どの売場、什器、ディスプレイに人が集まり、どこで滞在が生まれているかを確認できます。売上だけでは見えない、売場への関心を把握できます。</p>",
+            "subheading": "",
+            "content": "<p>Data protected at every stage of processing and transmission</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -377,13 +283,13 @@
         "full_width": true,
         "stack_on_mobile": false,
         "gap": "medium",
-        "text_alignment": "start",
-        "subheading": "分析できること",
-        "title": "売場で起きている変化を、具体的に把握する。",
-        "content": "<p>店内行動分析では、来店後のお客様の動き、滞在、売場ごとの反応を確認できます。売上結果だけでは分からない、購買前の行動や機会損失を見える化します。</p>",
-        "background": "",
+        "text_alignment": "center",
+        "subheading": "",
+        "title": "Infrastructure Security",
+        "content": "<p>Multi-layered security controls protecting data in transit, at rest, and during processing.</p>",
+        "background": "#ffffff",
         "background_gradient": "",
-        "text_color": "",
+        "text_color": "#11243e",
         "subheading_background_color": "",
         "subheading_text_color": ""
       }
@@ -1049,8 +955,6 @@
   "order": [
     "blocks_E8LBYQ",
     "multi_column_HCGJea",
-    "multi_column_8yXaXX",
-    "blocks_aQrBq7",
     "multi_column_ge9wwi",
     "rich_text_MakEBA",
     "multi_column_HCGJea11",
