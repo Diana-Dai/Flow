@@ -253,8 +253,8 @@
       ],
       "settings": {
         "full_width": true,
-        "remove_vertical_spacing": false,
-        "remove_horizontal_spacing": false,
+        "remove_vertical_spacing": true,
+        "remove_horizontal_spacing": true,
         "background": "#0b3553",
         "background_gradient": "",
         "text_color": ""
