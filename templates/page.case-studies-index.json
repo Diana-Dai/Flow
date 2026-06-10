@@ -404,6 +404,93 @@
         "subheading_text_color": ""
       }
     },
+    "178105728290b22f98": {
+      "type": "_blocks",
+      "blocks": {
+        "rich_text_4igAAA": {
+          "type": "rich-text",
+          "name": "Rich text",
+          "settings": {
+            "text": "<h2>More Customer Stories</h2>",
+            "content_width": "small",
+            "text_alignment": "center"
+          },
+          "blocks": {}
+        },
+        "ai_gen_block_9ce6669_Adxx7t": {
+          "type": "ai_gen_block_9ce6669",
+          "settings": {
+            "title_1": "Cole Haan Japan",
+            "subtitle_1": "Premium Footwear & Accessories",
+            "badge_1": "Multiple locations",
+            "description_1": "Flow Solutions implemented a comprehensive omnichannel retail strategy, integrating online and offline experiences to drive customer engagement and sales growth.",
+            "result_1_1": "35% increase in conversion rate",
+            "result_1_2": "50% reduction in cart abandonment",
+            "result_1_3": "2x growth in customer lifetime value",
+            "button_text_1": "View Details",
+            "button_link_1": "",
+            "title_2": "Baycrews",
+            "subtitle_2": "Fashion • Multi-Brand",
+            "badge_2": "Multiple formats",
+            "description_2": "Unified inventory management across all channels, enabling seamless shopping experiences and maximizing product availability for customers.",
+            "result_2_1": "40% improvement in inventory turnover",
+            "result_2_2": "25% increase in average order value",
+            "result_2_3": "60% faster checkout process",
+            "button_text_2": "View Details",
+            "button_link_2": "",
+            "title_3": "TUMI Japan",
+            "subtitle_3": "Luxury Travel & Business",
+            "badge_3": "Premium experience",
+            "description_3": "Enhanced customer experience through personalized recommendations and streamlined purchase journey across all touchpoints.",
+            "result_3_1": "45% increase in customer satisfaction",
+            "result_3_2": "30% growth in repeat purchases",
+            "result_3_3": "55% reduction in return rate",
+            "button_text_3": "View Details",
+            "button_link_3": "",
+            "title_4": "Brand Name",
+            "subtitle_4": "Industry Category",
+            "badge_4": "Multiple locations",
+            "description_4": "Flow Solutions delivered innovative retail solutions that transformed the customer experience and drove measurable business results.",
+            "result_4_1": "Significant performance improvement",
+            "result_4_2": "Enhanced customer engagement",
+            "result_4_3": "Increased operational efficiency",
+            "button_text_4": "View Details",
+            "button_link_4": "",
+            "title_5": "Brand Name",
+            "subtitle_5": "Industry Category",
+            "badge_5": "Multiple locations",
+            "description_5": "Flow Solutions delivered innovative retail solutions that transformed the customer experience and drove measurable business results.",
+            "result_5_1": "Significant performance improvement",
+            "result_5_2": "Enhanced customer engagement",
+            "result_5_3": "Increased operational efficiency",
+            "button_text_5": "View Details",
+            "button_link_5": "",
+            "title_6": "Brand Name",
+            "subtitle_6": "Industry Category",
+            "badge_6": "Multiple locations",
+            "description_6": "Flow Solutions delivered innovative retail solutions that transformed the customer experience and drove measurable business results.",
+            "result_6_1": "Significant performance improvement",
+            "result_6_2": "Enhanced customer engagement",
+            "result_6_3": "Increased operational efficiency",
+            "button_text_6": "View Details",
+            "button_link_6": ""
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "rich_text_4igAAA",
+        "ai_gen_block_9ce6669_Adxx7t"
+      ],
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
     "multi_column_bJtgmc": {
       "type": "multi-column",
       "blocks": {
@@ -548,6 +635,7 @@
         "item_KeN4HJ",
         "item_kGDkaE"
       ],
+      "disabled": true,
       "custom_css": [
         "h4 + p {margin-top: 0; font-size: 1rem;}",
         "h6 {font-size: 1rem; margin-top: 2rem;}"
@@ -861,6 +949,7 @@
     "178101025889134aaf",
     "1780368579b1b4691b",
     "multi_column_84hYYM",
+    "178105728290b22f98",
     "multi_column_bJtgmc",
     "section-15",
     "rich_text_6VmVgb",
