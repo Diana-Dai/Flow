@@ -278,21 +278,8 @@
   }
 
   .ai-case-study-button-{{ ai_gen_id }} {
-    display: inline-flex;
-    align-items: center;
-    gap: 12px;
-    padding: 16px 32px;
     background-color: {{ block.settings.button_bg_color }};
     color: {{ block.settings.button_text_color }};
-  }
-
-
-  .ai-case-study-button-{{ ai_gen_id }} svg {
-    width: 20px;
-    height: 20px;
-    stroke: currentColor;
-    fill: none;
-    stroke-width: 2;
   }
 
   @media screen and (max-width: 749px) {
@@ -471,10 +458,6 @@
       <div class="ai-case-study-footer-{{ ai_gen_id }}">
         <a href="{{ block.settings.button_link }}" class="ai-case-study-button-{{ ai_gen_id }}  btn btn--primary">
           {{ block.settings.button_text }}
-          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <line x1="5" y1="12" x2="19" y2="12"></line>
-            <polyline points="12 5 19 12 12 19"></polyline>
-          </svg>
         </a>
       </div>
     {% endif %}
