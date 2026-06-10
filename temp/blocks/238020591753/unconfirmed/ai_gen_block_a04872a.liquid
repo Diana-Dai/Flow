@@ -1,6 +1,574 @@
+{% doc %}
+  @prompt
+    Act as an expert Shopify theme developer. Generate a responsive, pixel-perfect custom section titled "Featured & Referenced". The layout must 100% replicate the spacing, mixed card styles, alignment, and sizing of the provided reference design while automatically inheriting the active Shopify theme's global typography and maximum page width constraints.
+    
+    ---
+    
+    ### 1. SECTION ARCHITECTURE & GRID SETTINGS
+    
+    #### GLOBAL WRAPPER
+    - Constrain the entire section to the theme's core standard page width max-width layout (e.g., `var(--page-width)` or `1200px`) and ensure it centers automatically on large viewports.
+    - Apply generous top and bottom section padding to preserve an editorial, spacious look.
+    
+    #### INTRODUCTORY HEADER BLOCK
+    - Create a full-width text block layout at the top:
+      - Section Title: Bold, large typography styled in a deep navy/slate tone (e.g., "Featured & Referenced").
+      - Section Subtitle: Placed directly below the title. Medium-grey, highly legible text with comfortable line-height (e.g., "Flow's approach to retail analytics..."). Add an intentional margin below this subtitle to separate it cleanly from the grid cards.
+    
+    #### DESKTOP & MOBILE GRID LAYOUT
+    - Desktop: Exactly 3 equal-width columns arranged in a single row. Use a uniform grid gap between 24px and 32px.
+    - Mobile: Dynamically collapse the layout into a single vertical column (1 column wide, 3 rows down).
+    - All 3 cards must share identical, matching vertical heights (`display: flex; flex-direction: column; justify-content: space-between; height: 100%;`) within a desktop row.
+    
+    ---
+    
+    ### 2. CARD-SPECIFIC TYPE & ANATOMY
+    
+    The 3-column layout must accommodate two distinct block styles, all fully customizable via the theme editor:
+    
+    #### CARD STYLE A: PRESS/LOGO CARDS (Columns 1 and 2)
+    - Container Style: Pure white background, rounded corners (border-radius: 16px), and a thin, crisp, neutral-light border (1px solid `#e2e8f0` or theme equivalent). Uniform internal padding on all sides.
+    - Top Element (Dynamic Logo Container): A dedicated setting to upload a custom publication or partner brand image logo. Ensure the image scales proportionally within a fixed-height layout zone to prevent distortions.
+    - Middle Element (Quote/Description): A multi-line paragraph block. Style with a medium-grey body text color and comfortable line-height (1.5) for quotes or feature summaries.
+    - Base Element (Meta Stamp): Positioned cleanly at the very bottom left of the card container using small, muted grey, uppercase typography indicating context and dates (e.g., "Industry Research, 2024", "Press Coverage, 2023").
+    
+    #### CARD STYLE B: HIGHLIGHT RESULTS CARD (Column 3)
+    - Container Style: Solid, high-contrast block using a rich dark navy/deep blue background (`#003b64` or the theme's primary deep brand color). Rounded corners (border-radius: 16px) with matching internal padding. No borders.
+    - Top Element (Caps Header): Small, bold, wide-tracked (letter-spacing) uppercase text in a light, desaturated blue or grey tone reading "CUSTOMER RESULTS".
+    - Middle Element (Hero Statistic Value): Giant, high-impact, bold metric text rendered in pure white typography (e.g., "108.9%").
+    - Description Element: Positioned directly beneath the metric value. Light-weight, clean body text in a soft off-white/light-grey tone for the metric context.
+    - Base Element (Call to Action Link): Positioned at the very bottom left. A text-link styled in an accent tone (e.g., moss green `#a4b953` or bright gold/white) reading "View Case Studies" followed by an inline right chevron character (›).
+    
+    ---
+    
+    ### 3. BACKEND CONFIGURATION & CUSTOMIZATION SETTINGS
+    
+    Ensure every piece of text, metric value, link target, and media element can be updated in the customizer. The section block array schema must accept two custom block types:
+    1. Block Type: "press_card" (Max instances: 2)
+       - Image Settings: `image_picker` for the brand logo upload.
+       - Textarea Settings: Rich text or text block for the description/quote body.
+       - Text Settings: Single-line field for the bottom metadata stamp.
+    2. Block Type: "results_card" (Max instances: 1)
+       - Text Settings: Single-line field for upper header, hero metric, and paragraph description.
+       - URL & Text Settings: Fields to define the CTA link path and label text.
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-featured-section-{{ ai_gen_id }} {
+    display: block;
+    width: 100%;
+    padding: 80px 0;
+    background-color: {{ block.settings.section_background }};
+  }
+
+  .ai-featured-container-{{ ai_gen_id }} {
+    max-width: var(--page-width, 1600px);
+    margin: 0 auto;
+    padding: 0 var(--section-horizontal-spacing, 40px);
+  }
+
+  .ai-featured-header-{{ ai_gen_id }} {
+    margin-bottom: 56px;
+  }
+
+  .ai-featured-title-{{ ai_gen_id }} {
+    font-family: {{ block.settings.title_font.family }}, {{ block.settings.title_font.fallback_families }};
+    font-weight: {{ block.settings.title_font.weight }};
+    font-style: {{ block.settings.title_font.style }};
+    font-size: 48px;
+    line-height: 1.2;
+    color: {{ block.settings.title_color }};
+    margin: 0 0 16px 0;
+  }
+
+  .ai-featured-subtitle-{{ ai_gen_id }} {
+    font-family: {{ block.settings.subtitle_font.family }}, {{ block.settings.subtitle_font.fallback_families }};
+    font-weight: {{ block.settings.subtitle_font.weight }};
+    font-style: {{ block.settings.subtitle_font.style }};
+    font-size: 18px;
+    line-height: 1.6;
+    color: {{ block.settings.subtitle_color }};
+    margin: 0;
+    max-width: 800px;
+  }
+
+  .ai-featured-grid-{{ ai_gen_id }} {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+  }
+
+  .ai-press-card-{{ ai_gen_id }} {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    border-radius: 16px;
+    padding: 32px;
+    background-color: {{ block.settings.press_card_background }};
+    border: 1px solid {{ block.settings.press_card_border }};
+  }
+
+  .ai-press-logo-{{ ai_gen_id }} {
+    height: 48px;
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+  }
+
+  .ai-press-logo-{{ ai_gen_id }} img {
+    max-height: 100%;
+    width: auto;
+    object-fit: contain;
+  }
+
+  .ai-press-logo-placeholder-{{ ai_gen_id }} {
+    height: 100%;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+  }
+
+  .ai-press-logo-placeholder-{{ ai_gen_id }} svg {
+    width: 100%;
+    height: 100%;
+    max-width: 120px;
+    max-height: 48px;
+  }
+
+  .ai-press-description-{{ ai_gen_id }} {
+    font-family: {{ block.settings.body_font.family }}, {{ block.settings.body_font.fallback_families }};
+    font-weight: {{ block.settings.body_font.weight }};
+    font-style: {{ block.settings.body_font.style }};
+    font-size: 16px;
+    line-height: 1.5;
+    color: {{ block.settings.press_text_color }};
+    margin: 0 0 24px 0;
+    flex-grow: 1;
+  }
+
+  .ai-press-meta-{{ ai_gen_id }} {
+    font-family: {{ block.settings.body_font.family }}, {{ block.settings.body_font.fallback_families }};
+    font-weight: {{ block.settings.body_font.weight }};
+    font-style: {{ block.settings.body_font.style }};
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: {{ block.settings.press_meta_color }};
+    margin: 0;
+  }
+
+  .ai-results-card-{{ ai_gen_id }} {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    border-radius: 16px;
+    padding: 32px;
+    background-color: {{ block.settings.results_card_background }};
+  }
+
+  .ai-results-header-{{ ai_gen_id }} {
+    font-family: {{ block.settings.body_font.family }}, {{ block.settings.body_font.fallback_families }};
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    color: {{ block.settings.results_header_color }};
+    margin: 0 0 24px 0;
+  }
+
+  .ai-results-metric-{{ ai_gen_id }} {
+    font-family: {{ block.settings.title_font.family }}, {{ block.settings.title_font.fallback_families }};
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 1;
+    color: {{ block.settings.results_metric_color }};
+    margin: 0 0 12px 0;
+  }
+
+  .ai-results-description-{{ ai_gen_id }} {
+    font-family: {{ block.settings.body_font.family }}, {{ block.settings.body_font.fallback_families }};
+    font-weight: {{ block.settings.body_font.weight }};
+    font-style: {{ block.settings.body_font.style }};
+    font-size: 16px;
+    line-height: 1.5;
+    color: {{ block.settings.results_description_color }};
+    margin: 0 0 24px 0;
+    flex-grow: 1;
+  }
+
+  .ai-results-cta-{{ ai_gen_id }} {
+    font-family: {{ block.settings.body_font.family }}, {{ block.settings.body_font.fallback_families }};
+    font-weight: 600;
+    font-size: 14px;
+    color: {{ block.settings.results_cta_color }};
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    transition: opacity 0.2s ease;
+  }
+
+  .ai-results-cta-{{ ai_gen_id }}:hover {
+    opacity: 0.8;
+  }
+
+  @media screen and (max-width: 989px) {
+    .ai-featured-section-{{ ai_gen_id }} {
+      padding: 60px 0;
+    }
+
+    .ai-featured-title-{{ ai_gen_id }} {
+      font-size: 36px;
+    }
+
+    .ai-featured-subtitle-{{ ai_gen_id }} {
+      font-size: 16px;
+    }
+
+    .ai-featured-grid-{{ ai_gen_id }} {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+
+    .ai-results-metric-{{ ai_gen_id }} {
+      font-size: 48px;
+    }
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-featured-section-{{ ai_gen_id }} {
+      padding: 40px 0;
+    }
+
+    .ai-featured-header-{{ ai_gen_id }} {
+      margin-bottom: 40px;
+    }
+
+    .ai-featured-title-{{ ai_gen_id }} {
+      font-size: 28px;
+    }
+
+    .ai-press-card-{{ ai_gen_id }},
+    .ai-results-card-{{ ai_gen_id }} {
+      padding: 24px;
+    }
+  }
+{% endstyle %}
+
+<div class="ai-featured-section-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-featured-container-{{ ai_gen_id }}">
+    <div class="ai-featured-header-{{ ai_gen_id }}">
+      {% if block.settings.section_title != blank %}
+        <h2 class="ai-featured-title-{{ ai_gen_id }}">{{ block.settings.section_title }}</h2>
+      {% endif %}
+      {% if block.settings.section_subtitle != blank %}
+        <div class="ai-featured-subtitle-{{ ai_gen_id }}">{{ block.settings.section_subtitle }}</div>
+      {% endif %}
+    </div>
+
+    <div class="ai-featured-grid-{{ ai_gen_id }}">
+      <div class="ai-press-card-{{ ai_gen_id }}">
+        <div class="ai-press-logo-{{ ai_gen_id }}">
+          {% if block.settings.press_1_logo != blank %}
+            <img
+              src="{{ block.settings.press_1_logo | image_url: width: 300 }}"
+              alt="{{ block.settings.press_1_logo.alt | escape }}"
+              loading="lazy"
+              width="{{ block.settings.press_1_logo.width }}"
+              height="{{ block.settings.press_1_logo.height }}"
+            >
+          {% else %}
+            <div class="ai-press-logo-placeholder-{{ ai_gen_id }}">
+              {{ 'image' | placeholder_svg_tag }}
+            </div>
+          {% endif %}
+        </div>
+        <div class="ai-press-description-{{ ai_gen_id }}">
+          {{ block.settings.press_1_description }}
+        </div>
+        {% if block.settings.press_1_metadata != blank %}
+          <div class="ai-press-meta-{{ ai_gen_id }}">
+            {{ block.settings.press_1_metadata }}
+          </div>
+        {% endif %}
+      </div>
+
+      <div class="ai-press-card-{{ ai_gen_id }}">
+        <div class="ai-press-logo-{{ ai_gen_id }}">
+          {% if block.settings.press_2_logo != blank %}
+            <img
+              src="{{ block.settings.press_2_logo | image_url: width: 300 }}"
+              alt="{{ block.settings.press_2_logo.alt | escape }}"
+              loading="lazy"
+              width="{{ block.settings.press_2_logo.width }}"
+              height="{{ block.settings.press_2_logo.height }}"
+            >
+          {% else %}
+            <div class="ai-press-logo-placeholder-{{ ai_gen_id }}">
+              {{ 'image' | placeholder_svg_tag }}
+            </div>
+          {% endif %}
+        </div>
+        <div class="ai-press-description-{{ ai_gen_id }}">
+          {{ block.settings.press_2_description }}
+        </div>
+        {% if block.settings.press_2_metadata != blank %}
+          <div class="ai-press-meta-{{ ai_gen_id }}">
+            {{ block.settings.press_2_metadata }}
+          </div>
+        {% endif %}
+      </div>
+
+      <div class="ai-results-card-{{ ai_gen_id }}">
+        {% if block.settings.results_header != blank %}
+          <div class="ai-results-header-{{ ai_gen_id }}">
+            {{ block.settings.results_header }}
+          </div>
+        {% endif %}
+        {% if block.settings.results_metric != blank %}
+          <div class="ai-results-metric-{{ ai_gen_id }}">
+            {{ block.settings.results_metric }}
+          </div>
+        {% endif %}
+        {% if block.settings.results_description != blank %}
+          <div class="ai-results-description-{{ ai_gen_id }}">
+            {{ block.settings.results_description }}
+          </div>
+        {% endif %}
+        {% if block.settings.results_cta_text != blank and block.settings.results_cta_url != blank %}
+          <a href="{{ block.settings.results_cta_url }}" class="ai-results-cta-{{ ai_gen_id }}">
+            {{ block.settings.results_cta_text }} ›
+          </a>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "Featured & Referenced",
+  "tag": null,
+  "class": "ai-featured-referenced-section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Section header"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "section_title",
+      "label": "Title",
+      "default": "Featured & Referenced"
+    },
+    {
+      "type": "textarea",
+      "id": "section_subtitle",
+      "label": "Subtitle",
+      "default": "Flow's approach to retail analytics has been recognized by industry leaders and trusted by innovative brands worldwide."
+    },
+    {
+      "type": "header",
+      "content": "Press card 1"
+    },
+    {
+      "type": "image_picker",
+      "id": "press_1_logo",
+      "label": "Publication logo"
+    },
+    {
+      "type": "textarea",
+      "id": "press_1_description",
+      "label": "Quote or description",
+      "default": "Flow Solutions delivers cutting-edge retail analytics that transform how businesses understand their customers and optimize operations."
+    },
+    {
+      "type": "text",
+      "id": "press_1_metadata",
+      "label": "Metadata",
+      "default": "Industry Research, 2024"
+    },
+    {
+      "type": "header",
+      "content": "Press card 2"
+    },
+    {
+      "type": "image_picker",
+      "id": "press_2_logo",
+      "label": "Publication logo"
+    },
+    {
+      "type": "textarea",
+      "id": "press_2_description",
+      "label": "Quote or description",
+      "default": "Innovative technology that provides actionable insights for modern retailers seeking to enhance customer experience and drive growth."
+    },
+    {
+      "type": "text",
+      "id": "press_2_metadata",
+      "label": "Metadata",
+      "default": "Press Coverage, 2023"
+    },
+    {
+      "type": "header",
+      "content": "Results card"
+    },
+    {
+      "type": "text",
+      "id": "results_header",
+      "label": "Header",
+      "default": "CUSTOMER RESULTS"
+    },
+    {
+      "type": "text",
+      "id": "results_metric",
+      "label": "Metric value",
+      "default": "108.9%"
+    },
+    {
+      "type": "textarea",
+      "id": "results_description",
+      "label": "Description",
+      "default": "Average increase in conversion rates for retail clients using Flow's analytics platform."
+    },
+    {
+      "type": "text",
+      "id": "results_cta_text",
+      "label": "CTA text",
+      "default": "View Case Studies"
+    },
+    {
+      "type": "url",
+      "id": "results_cta_url",
+      "label": "CTA link"
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "section_background",
+      "label": "Section background",
+      "default": "#f9fafb"
+    },
+    {
+      "type": "color",
+      "id": "title_color",
+      "label": "Title",
+      "default": "#11243e"
+    },
+    {
+      "type": "color",
+      "id": "subtitle_color",
+      "label": "Subtitle",
+      "default": "#677279"
+    },
+    {
+      "type": "header",
+      "content": "Press card style"
+    },
+    {
+      "type": "color",
+      "id": "press_card_background",
+      "label": "Background",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "press_card_border",
+      "label": "Border",
+      "default": "#e2e8f0"
+    },
+    {
+      "type": "color",
+      "id": "press_text_color",
+      "label": "Text",
+      "default": "#677279"
+    },
+    {
+      "type": "color",
+      "id": "press_meta_color",
+      "label": "Metadata",
+      "default": "#94a3b8"
+    },
+    {
+      "type": "header",
+      "content": "Results card style"
+    },
+    {
+      "type": "color",
+      "id": "results_card_background",
+      "label": "Background",
+      "default": "#003b64"
+    },
+    {
+      "type": "color",
+      "id": "results_header_color",
+      "label": "Header",
+      "default": "#94a3b8"
+    },
+    {
+      "type": "color",
+      "id": "results_metric_color",
+      "label": "Metric",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "results_description_color",
+      "label": "Description",
+      "default": "#e2e8f0"
+    },
+    {
+      "type": "color",
+      "id": "results_cta_color",
+      "label": "CTA link",
+      "default": "#a4b953"
+    },
+    {
+      "type": "header",
+      "content": "Typography"
+    },
+    {
+      "type": "font_picker",
+      "id": "title_font",
+      "label": "Title font",
+      "default": "inter_n5"
+    },
+    {
+      "type": "font_picker",
+      "id": "subtitle_font",
+      "label": "Subtitle font",
+      "default": "inter_n4"
+    },
+    {
+      "type": "font_picker",
+      "id": "body_font",
+      "label": "Body font",
+      "default": "inter_n4"
+    },
+    {
+      "type": "range",
+      "id": "desktop_width_percent",
+      "label": "Desktop width",
+      "min": 50,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "default": 100
+    }
+  ],
+  "presets": [
+    {
+      "name": "Featured & Referenced"
+    }
+  ]
+}
 {% endschema %}
