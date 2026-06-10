@@ -938,17 +938,24 @@
       "blocks": {
         "heading_bNQkAX": {
           "type": "heading",
+          "disabled": true,
           "settings": {
-            "text": "Learn More About Flow",
+            "text": "小売店舗の成果を、より安定して伸ばすために",
             "heading_tag": "h1",
             "text_color": "",
             "gradient": ""
           }
         },
+        "liquid_393be4": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<h2 class=\"h1\">小売店舗の成果を、<br>より安定して伸ばすために\n</h1>"
+          }
+        },
         "richtext_cRTfWf": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Explore our customer case studies or contact us to discuss your retail analytics requirements.</p>"
+            "content": "<p>Flowの導入事例をご覧いただくか、貴社の店舗運営・分析課題についてご相談ください。</p>"
           }
         },
         "buttons_CT466j": {
@@ -956,13 +963,13 @@
           "settings": {
             "style_1": "fill",
             "size_1": "xl",
-            "text_1": "View Case Studies →",
+            "text_1": "導入事例を見る →",
             "url_1": "",
             "background_1": "#a0b842",
             "text_color_1": "",
             "style_2": "fill",
             "size_2": "xl",
-            "text_2": "Contact Us",
+            "text_2": "相談する →",
             "url_2": "",
             "background_2": "",
             "text_color_2": ""
@@ -971,6 +978,7 @@
       },
       "block_order": [
         "heading_bNQkAX",
+        "liquid_393be4",
         "richtext_cRTfWf",
         "buttons_CT466j"
       ],
