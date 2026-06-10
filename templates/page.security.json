@@ -180,6 +180,101 @@
         "subheading_text_color": ""
       }
     },
+    "multi_column_LbWzJW": {
+      "type": "multi-column",
+      "blocks": {
+        "item_KChKaF": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "End-to-End Encryption",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<p>Data protected at every stage of processing and transmission</p><ul><li>✅ At Rest: AES-256All stored data encrypted with industry-standard AES-256. Keys rotated quarterly.</li><li>✅ In Transit: TLS 1.3 - All network communication uses TLS 1.3 with forward secrecy. No deprecated protocols.</li><li>✅ Edge Devices: Hardware Security - Tamper-resistant edge units with encrypted storage and secure boot.</li></ul>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_YMdFx8": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "Column title",
+            "heading_tag": "h4",
+            "subheading": "<p>Organize content into multiple columns to share useful information to your customers about your products, values...</p>",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_cbdYNP": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "Column title",
+            "heading_tag": "h4",
+            "subheading": "<p>Organize content into multiple columns to share useful information to your customers about your products, values...</p>",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_KChKaF",
+        "item_YMdFx8",
+        "item_cbdYNP"
+      ],
+      "custom_css": [
+        ".prose p {font-size: 0.9rem;}",
+        ".multi-column__item ul{list-style: none;}"
+      ],
+      "name": "Multi-column",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "start",
+        "subheading": "",
+        "title": "Infrastructure Security",
+        "content": "<p>Multi-layered security controls protecting data in transit, at rest, and during processing.</p>",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "#11243e",
+        "subheading_background_color": "",
+        "subheading_text_color": ""
+      }
+    },
     "rich_text_MakEBA": {
       "type": "rich-text",
       "blocks": {
@@ -841,6 +936,7 @@
   "order": [
     "blocks_E8LBYQ",
     "multi_column_HCGJea",
+    "multi_column_LbWzJW",
     "rich_text_MakEBA",
     "multi_column_HCGJea11",
     "media_with_text_hMPTmL",
