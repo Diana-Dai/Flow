@@ -59,79 +59,13 @@
         "text_color": "#ffffff"
       }
     },
-    "image_with_text_overlay_AcppEX": {
-      "type": "image-with-text-overlay",
-      "blocks": {
-        "subheading_GmUMNm": {
-          "type": "subheading",
-          "settings": {
-            "text": "BEHAVIORAL GEOMETRY"
-          }
-        },
-        "heading_frXnfn": {
-          "type": "heading",
-          "settings": {
-            "text": "QUANTIFY THE INVISIBLE.",
-            "heading_tag": "h0"
-          }
-        },
-        "richtext_HwhtPj": {
-          "type": "richtext",
-          "settings": {
-            "content": "<p> Move beyond entry counts. Flow tracks anonymous post-entry pathing, dwell time velocity, and fixture engagement to unlock the true revenue potential of your retail square footage.</p>"
-          }
-        },
-        "button_7Prq3W": {
-          "type": "button",
-          "settings": {
-            "style": "fill",
-            "size": "lg",
-            "text": "Request a VMD Audit →",
-            "url": "#",
-            "background": "#a0b842",
-            "text_color": ""
-          }
-        },
-        "button_cpqnfi": {
-          "type": "button",
-          "settings": {
-            "style": "fill",
-            "size": "lg",
-            "text": "See Case Studies →",
-            "url": "#",
-            "background": "#ffffff",
-            "text_color": "#11243e"
-          }
-        }
-      },
-      "block_order": [
-        "subheading_GmUMNm",
-        "heading_frXnfn",
-        "richtext_HwhtPj",
-        "button_7Prq3W",
-        "button_cpqnfi"
-      ],
-      "name": "Image with text overlay",
-      "settings": {
-        "full_width": true,
-        "allow_transparent_header": false,
-        "enable_parallax": false,
-        "image_size": "fill",
-        "image": "shopify://shop_images/1_e4f118f3-cb96-4351-8fa4-39ce3600a339.png",
-        "mobile_text_position": "place-self-center text-center",
-        "desktop_text_position": "sm:place-self-center sm:text-center",
-        "text_color": "#ffffff",
-        "overlay_color": "#11243e",
-        "overlay_opacity": 43
-      }
-    },
-    "multi_column_HCGJea": {
+     "multi_column_HCGJea": {
       "type": "multi-column",
       "blocks": {
         "item_9cWFC9": {
           "type": "item",
           "settings": {
-            "icon": "picto-secure-profile",
+            "icon": "people",
             "icon_width": 32,
             "icon_background_type": "square",
             "icon_background": "#a0b842",
@@ -141,10 +75,10 @@
             "border_color": "#f2f2f2",
             "show_controls": false,
             "column_size": "3",
-            "title": "94%",
+            "title": "来店行動",
             "heading_tag": "h1",
             "subheading": "",
-            "content": "<p><em>Path Accuracy</em></p><h5>Measurement Accuracy.</h5><p>Industrial-grade people counting that remains precise across variable lighting, high-density crowds, and complex entrance configurations.</p>",
+            "content": "<h5>AIカメラで来店数、入店タイミング、時間帯別の変化を計測します。売上だけでは見えない、店舗に入る前後の動きを把握できます。</h5>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -163,10 +97,10 @@
             "border_color": "#f2f2f2",
             "show_controls": false,
             "column_size": "3",
-            "title": "2.4m",
+            "title": "滞在反応",
             "heading_tag": "h1",
             "subheading": "",
-            "content": "<p><em>Avg Dwell</em></p><h5>Dwell Time Analysis</h5><p>Measure engagement duration at product displays, fixtures, and promotional zones with second-level precision.</p>",
+            "content": "<h5>お客様がどこで立ち止まり、どの売場や什器に関心を示しているかを確認できます。商品・売場・キャンペーンへの反応を、行動データで捉えます。</h5>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -185,10 +119,10 @@
             "border_color": "",
             "show_controls": false,
             "column_size": "3",
-            "title": "50+",
+            "title": "導線分析",
             "heading_tag": "h1",
             "subheading": "",
-            "content": "<p><em>Zones/Store</em></p><h5>Zone Engagement</h5><p>Define custom zones and fixtures to track customer interaction with specific product areas and merchandising displays.</p>",
+            "content": "<h5>売場ごとの通行量、滞在、回遊パターンを分析し、デッドゾーンや混雑、見落とされている売場を発見できます。</h5>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -211,14 +145,295 @@
         "stack_on_mobile": false,
         "gap": "medium",
         "text_alignment": "start",
-        "subheading": "MEASUREMENT",
-        "title": "In-store behavior measurement",
+        "subheading": "計測データ",
+        "title": "店内行動を判断に使えるデータへ。",
         "content": "",
         "background": "",
         "background_gradient": "",
-        "text_color": "#11243e",
-        "subheading_background_color": "",
-        "subheading_text_color": ""
+        "text_color": "#11243e"
+      }
+    },
+    "multi_column_8yXaXX": {
+      "type": "multi-column",
+      "blocks": {
+        "item_BPFKDk": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "#ffffff",
+            "show_controls": false,
+            "column_size": "1",
+            "title": "どのように計測するか？",
+            "heading_tag": "h3",
+            "subheading": "",
+            "content": "<h5>AIカメラ計測ページで、来店計測、スタッフ除外、計測設計、導入方法を確認できます。</h5>",
+            "link_url": "",
+            "link_text": "AIカメラ計測を見る →",
+            "link_style": "button"
+          }
+        }
+      },
+      "block_order": [
+        "item_BPFKDk"
+      ],
+      "name": "Multi-column",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "center",
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "blocks_aQrBq7": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_8944212_rBXVkW": {
+          "type": "ai_gen_block_8944212",
+          "settings": {
+            "desktop_width_percent": 100,
+            "padding_top": 60,
+            "padding_bottom": 60,
+            "padding_horizontal": 40,
+            "background_color": "#FFFFFF",
+            "eyebrow_text": "活用部門",
+            "eyebrow_font_size": 13,
+            "eyebrow_bg_color": "#11243e",
+            "eyebrow_text_color": "#ffffff",
+            "heading": "店内行動データを、部門横断の判断に活かす",
+            "heading_color": "#0A1A2F",
+            "description": "AIカメラで取得した店内行動データは、VMDだけでなく、店舗運営、エリアマネジメント、MD、マーケティング、経営判断まで幅広く活用できます。部門ごとに異なる課題を、同じ行動データをもとに確認できます。",
+            "description_font_size": 16,
+            "description_color": "#6B7280",
+            "header_spacing": 50,
+            "card_gap": 24,
+            "card_padding": 32,
+            "card_border_radius": 12,
+            "cards_spacing": 32,
+            "card_heading_size": 24,
+            "card_text_size": 17,
+            "card_list_size": 17,
+            "card1_heading": "店舗・現場での活用",
+            "card1_text": "店舗運営、店長、エリアマネージャーは、来店数、滞在、導線、ゾーン別の反応をもとに、スタッフ配置、接客タイミング、売場運営、店舗間比較に活用できます。",
+            "card1_item1": "店舗運営：スタッフ配置や接客タイミングの改善",
+            "card1_item2": "店長：売場ごとの反応や機会損失の確認",
+            "card1_item3": "エリアマネージャー：店舗ごとの行動傾向を比較",
+            "dark_card_bg": "#11243e",
+            "dark_card_text": "#FFFFFF",
+            "dark_icon_bg": "#A0B842",
+            "dark_checkmark_color": "#A0B842",
+            "card2_heading": "本部・戦略部門での活用",
+            "card2_text": "MD、VMD、マーケティング、経営・DX部門は、商品配置、什器、ディスプレイ、販促施策、店舗投資の判断に、購買前の行動データを活用できます。",
+            "card2_item1": "MD・商品部：カテゴリーや重点商品の反応確認",
+            "card2_item2": "VMD：ディスプレイやレイアウト変更の検証",
+            "card2_item3": "マーケティング・経営：販促効果や投資判断の精度向上",
+            "light_card_bg": "#f2f2f2",
+            "light_card_text": "#0A1A2F",
+            "light_icon_bg": "#f0f4e8",
+            "light_checkmark_color": "#A0B842",
+            "banner_title": "Flowの強み",
+            "banner_text": "Flowは、店内行動データを単独で見るだけではなく、POS、スタッフ配置、天候、店舗属性などのデータと組み合わせて分析できます。現場と本部が同じ事実をもとに、より早く、より一貫した判断を行えるようにします。",
+            "banner_padding": 32,
+            "banner_border_radius": 12,
+            "banner_title_size": 24,
+            "banner_text_size": 17,
+            "banner_bg_color": "#f0f4e8",
+            "banner_icon_bg": "#A0B842",
+            "banner_icon_color": "#FFFFFF",
+            "banner_title_color": "#0A1A2F",
+            "banner_text_color": "#4B5563"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_8944212_rBXVkW"
+      ],
+      "name": "Conversion intelligence",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "multi_column_ge9wwi": {
+      "type": "multi-column",
+      "blocks": {
+        "item_RcmCJc": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "2",
+            "title": "注目される売場",
+            "heading_tag": "h3",
+            "subheading": "<p>どこに人が集まっているか</p>",
+            "content": "<p>どの売場、什器、ディスプレイに人が集まり、どこで滞在が生まれているかを確認できます。売上だけでは見えない、売場への関心を把握できます。</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_DrpwHf": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "2",
+            "title": "見落とされる売場",
+            "heading_tag": "h3",
+            "subheading": "<p>どこが見られていないか</p>",
+            "content": "<p>通行量が少ないエリア、滞在が短いゾーン、反応が弱い売場を発見できます。レイアウトや商品配置の改善ポイントを明確にできます。</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_9TV36C": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "2",
+            "title": "導線と回遊",
+            "heading_tag": "h3",
+            "subheading": "<p>どのように回遊しているか</p>",
+            "content": "<p>お客様が店内をどのように移動し、どの売場を通過・回遊しているかを把握できます。デッドゾーンや混雑、売場間のつながりを確認できます。</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_kh6n8d": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#11243e",
+            "text_color": "#ffffff",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "2",
+            "title": "施策の反応",
+            "heading_tag": "h3",
+            "subheading": "<p>施策は行動を変えたか</p>",
+            "content": "<p>レイアウト変更、販促、ディスプレイ変更が、来店行動や売場反応に影響しているかを確認できます。施策の効果を、感覚ではなく行動データで検証できます。</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_RcmCJc",
+        "item_DrpwHf",
+        "item_9TV36C",
+        "item_kh6n8d"
+      ],
+      "name": "Multi-column",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "start",
+        "subheading": "分析できること",
+        "title": "売場で起きている変化を、具体的に把握する。",
+        "content": "<p>店内行動分析では、来店後のお客様の動き、滞在、売場ごとの反応を確認できます。売上結果だけでは分からない、購買前の行動や機会損失を見える化します。</p>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "rich_text_MakEBA": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_EBVwNW": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "text": "Subheading",
+            "icon": "none"
+          }
+        },
+        "heading_cyeQRE": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "text": "Heading",
+            "heading_tag": "h1",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "image_zkxgK8": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/ChatGPT_Image_Jun_4_2026_08_09_19_PM.png",
+            "width_mode": "full_width",
+            "max_width": 690,
+            "mobile_max_width": 400
+          }
+        },
+        "richtext_i6tmBe": {
+          "type": "richtext",
+          "disabled": true,
+          "settings": {
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_EBVwNW",
+        "heading_cyeQRE",
+        "image_zkxgK8",
+        "richtext_i6tmBe"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
       }
     },
     "multi_column_HCGJea11": {
@@ -227,20 +442,20 @@
         "item_aqpNXK": {
           "type": "item",
           "settings": {
-            "icon": "picto-camera",
+            "icon": "picto-validation",
             "icon_width": 32,
             "icon_background_type": "square",
-            "icon_background": "#e5e9d1",
+            "icon_background": "#f0f4e8",
             "icon_color": "#a0b842",
             "background_color": "#ffffff",
             "text_color": "",
             "border_color": "#f2f2f2",
             "show_controls": false,
             "column_size": "2",
-            "title": "1. Window Appeal",
-            "heading_tag": "h4",
+            "title": "入店後の流れ",
+            "heading_tag": "h3",
             "subheading": "",
-            "content": "<p>Correlate street traffic with instant entry to measure the financial ROI of window displays.</p>",
+            "content": "<h6>入店後のお客様がどの方向へ進み、どの売場に最初に反応しているかを確認できます。入口付近の導線や売場配置の見直しに活用できます。</h6>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -249,20 +464,20 @@
         "item_9cWFC9": {
           "type": "item",
           "settings": {
-            "icon": "up",
+            "icon": "picto-target",
             "icon_width": 32,
             "icon_background_type": "square",
-            "icon_background": "#e5e9d1",
+            "icon_background": "#f0f4e8",
             "icon_color": "#a0b842",
             "background_color": "#ffffff",
             "text_color": "#11243e",
             "border_color": "#f2f2f2",
             "show_controls": false,
             "column_size": "2",
-            "title": "2. Fixture Attraction",
-            "heading_tag": "h4",
+            "title": "重点売場の反応",
+            "heading_tag": "h3",
             "subheading": "",
-            "content": "<p>Isolate the exact conversion power of individual clothing racks, product bays, or cosmetics islands.</p>",
+            "content": "<h6>キャンペーン商品、重点カテゴリー、主力什器に人が集まっているか、滞在が生まれているかを確認できます。</h6>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -271,20 +486,20 @@
         "item_tTyycj": {
           "type": "item",
           "settings": {
-            "icon": "people",
+            "icon": "picto-pin",
             "icon_width": 32,
             "icon_background_type": "square",
-            "icon_background": "#e5e9d1",
+            "icon_background": "#f0f4e8",
             "icon_color": "#a0b842",
             "background_color": "#ffffff",
             "text_color": "#11243e",
             "border_color": "#f2f2f2",
             "show_controls": false,
             "column_size": "2",
-            "title": "3. Dead Zone Discovery",
-            "heading_tag": "h4",
+            "title": "デッドゾーン発見",
+            "heading_tag": "h3",
             "subheading": "",
-            "content": "<p>Identify spatial cold spots and stagnant layout areas to dynamically redistribute high-margin inventory.</p>",
+            "content": "<h6>通行量が少ないエリア、立ち止まりが少ない売場、見落とされている什器を把握し、レイアウト改善の候補を見つけられます。</h6>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -293,20 +508,20 @@
         "item_ztJTym": {
           "type": "item",
           "settings": {
-            "icon": "picto-target",
+            "icon": "people",
             "icon_width": 32,
             "icon_background_type": "square",
             "icon_background": "#a0b842",
             "icon_color": "#ffffff",
-            "background_color": "#36465c",
+            "background_color": "#11243e",
             "text_color": "#f9fafb",
             "border_color": "",
             "show_controls": false,
             "column_size": "2",
-            "title": "4. Cross-Shopping",
-            "heading_tag": "h4",
+            "title": "売場間の回遊",
+            "heading_tag": "h3",
             "subheading": "",
-            "content": "<p>Track how traffic moves across major departments (e.g., Footwear to Apparel) to refine adjacency mapping.</p>",
+            "content": "<h6>お客様がどの売場からどの売場へ移動しているかを確認し、関連商品の配置や回遊設計の改善に活用できます。</h6>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -329,14 +544,12 @@
         "stack_on_mobile": false,
         "gap": "medium",
         "text_alignment": "start",
-        "subheading": "ZONE",
-        "title": "PROVE WHAT WORKS.",
-        "content": "<p>Stop guessing about merchandising effectiveness. Flow quantifies the exact impact of your VMD strategies with objective behavioral data.</p>",
+        "subheading": "改善ポイント",
+        "title": "改善すべき売場を、具体的に見つける。",
+        "content": "<h6>店内行動データを使うことで、売場のどこに機会があり、どこでお客様の反応が弱いのかを確認できます。レイアウト、什器、販促、接客配置を、感覚ではなく行動データをもとに見直せます。</h6>",
         "background": "#ffffff",
         "background_gradient": "",
-        "text_color": "#11243e",
-        "subheading_background_color": "",
-        "subheading_text_color": ""
+        "text_color": "#11243e"
       }
     },
     "media_with_text_hMPTmL": {
@@ -345,17 +558,17 @@
         "image_8hBn9C": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/solution.png",
+            "image": "shopify://shop_images/ChatGPT_Image_Jun_4_2026_08_30_15_PM.png",
             "media_width": 50,
             "media_position": "end",
             "text_position": "place-self-center-start text-start",
             "icon": "none",
             "icon_width": 48,
-            "subheading": "VMD and layout validation",
-            "title": "FROM INTUITION TO EVIDENCE.",
-            "content": "<p>Stop guessing your visual merchandising ROI. Flow translates physical customer geometry into a digital grid, scientifically validating every layout shift.</p>",
-            "link_text": "See how Triumph Japan validates VMD layout",
-            "link_url": "",
+            "subheading": "売場改善",
+            "title": "",
+            "content": "<h2>売場変更の効果を、行動データで確かめる。</h2><p>レイアウト変更、重点什器、ディスプレイ、販促展開が、来店客の動きや滞在に影響しているかを確認できます。売場改善を、経験や印象だけでなく、実際の行動データにもとづいて進められます。</p>",
+            "link_text": "売場改善について相談する →",
+            "link_url": "shopify://pages/contact",
             "background": "",
             "background_gradient": "",
             "text_color": "#11243e",
@@ -467,9 +680,7 @@
         "content": "<p>Enterprise-grade AI camera with advanced people counting, behavior analytics, and real-time traffic measurement capabilities.</p>",
         "background": "",
         "background_gradient": "",
-        "text_color": "",
-        "subheading_background_color": "",
-        "subheading_text_color": ""
+        "text_color": ""
       }
     },
     "multi_column_QjMJiW": {
@@ -478,20 +689,20 @@
         "item_mpQVCf": {
           "type": "item",
           "settings": {
-            "icon": "none",
+            "icon": "picto-building",
             "icon_width": 32,
-            "icon_background_type": "circle",
-            "icon_background": "",
-            "icon_color": "",
+            "icon_background_type": "square",
+            "icon_background": "#a0b842",
+            "icon_color": "#ffffff",
             "background_color": "#f2f2f2",
             "text_color": "#11243e",
             "border_color": "",
             "show_controls": false,
             "column_size": "2",
-            "title": "Executive Live Feeds",
-            "heading_tag": "h4",
+            "title": "店舗ごとの状況把握",
+            "heading_tag": "h3",
             "subheading": "",
-            "content": "<p>Monitor real-time VMD scorecards and layout efficiency grades instantly.</p>",
+            "content": "<h6>来店数、滞在、ゾーン別の反応、導線の変化を店舗ごとに確認できます。エリアマネージャーや本部は、どの店舗で何が起きているかを把握しやすくなります。</h6>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -500,20 +711,20 @@
         "item_MVfQ7a": {
           "type": "item",
           "settings": {
-            "icon": "none",
+            "icon": "picto-validation",
             "icon_width": 32,
-            "icon_background_type": "circle",
-            "icon_background": "",
-            "icon_color": "",
+            "icon_background_type": "square",
+            "icon_background": "#a0b842",
+            "icon_color": "#ffffff",
             "background_color": "#f2f2f2",
             "text_color": "#11243e",
             "border_color": "",
             "show_controls": false,
             "column_size": "2",
-            "title": "Data Honesty Guaranteed",
-            "heading_tag": "h4",
+            "title": "同じ基準で店舗比較",
+            "heading_tag": "h3",
             "subheading": "",
-            "content": "<p>Built-in staff exclusion filters out employee service routines so your management decisions are backed by 100% pure customer data.</p>",
+            "content": "<h6>店舗ごとのレイアウト、売場条件、来店傾向の違いをふまえながら、行動データを共通指標として比較できます。改善が必要な店舗や売場を見つけやすくなります。</h6>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -534,14 +745,12 @@
         "stack_on_mobile": false,
         "gap": "medium",
         "text_alignment": "start",
-        "subheading": "MANAGEMENT INTELLIGENCE",
-        "title": "NETWORK-WIDE VISIBILITY. REAL-TIME OVERSIGHT.",
-        "content": "<p>Flow aggregates raw storefront behavioral data into a high-end corporate dashboard, giving regional managers and visual merchandisers instant alignment across hundreds of locations.</p>",
-        "background": "#0e366a",
+        "subheading": "多店舗管理",
+        "title": "",
+        "content": "<h2>全店舗の店内行動を、<br/>同じ基準で確認する。</h2><h6>Flowは、店舗ごとの来店数、滞在、ゾーン反応、導線データを一元化し、本部・エリアマネージャー・店舗が同じ事実をもとに判断できる環境をつくります。店舗ごとの違いや改善余地を、感覚ではなく共通指標で確認できます。</h6>",
+        "background": "#11243e",
         "background_gradient": "",
-        "text_color": "#f9fafb",
-        "subheading_background_color": "",
-        "subheading_text_color": ""
+        "text_color": "#f9fafb"
       }
     },
     "section-15": {
@@ -669,18 +878,18 @@
           "settings": {
             "icon": "none",
             "icon_width": 32,
-            "icon_background_type": "circle",
-            "icon_background": "",
-            "icon_color": "",
+            "icon_background_type": "square",
+            "icon_background": "#f0f4e8",
+            "icon_color": "#a0b842",
             "background_color": "",
             "text_color": "",
             "border_color": "",
             "show_controls": false,
             "column_size": "2",
-            "title": "",
+            "title": "POS・売上データとの連携",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<h5>Ecosystem Interoperability</h5><p>Connect smoothly with enterprise tools like Shopify Plus, legacy POS, and modern workforce roster systems.</p>",
+            "content": "<p>来店後の行動データを、売上、コンバージョン、客単価、購買点数などと組み合わせて確認できます。売れた・売れなかった理由を、購買前の行動から考えやすくなります。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -691,18 +900,18 @@
           "settings": {
             "icon": "none",
             "icon_width": 32,
-            "icon_background_type": "circle",
-            "icon_background": "",
-            "icon_color": "",
+            "icon_background_type": "square",
+            "icon_background": "#f0f4e8",
+            "icon_color": "#a0b842",
             "background_color": "",
             "text_color": "",
             "border_color": "",
             "show_controls": false,
             "column_size": "2",
-            "title": "",
+            "title": "スタッフ・天候・店舗条件との連携",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<h5>Flow Assistant Dispatch</h5><p>Automatically trigger actionable, real-time layout adjustment tasks on frontline mobile apps the moment a fixture's dwell rate drops below baseline benchmarks.</p>",
+            "content": "<p>スタッフ配置、天候、曜日、店舗規模、立地などの条件とあわせて分析することで、行動データを単なる数値ではなく、店舗運営の判断材料として活用できます。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -722,18 +931,17 @@
         "stack_on_mobile": false,
         "gap": "medium",
         "text_alignment": "center",
-        "subheading": "INTEROPERABLE ECOSYSTEM",
-        "title": "ZERO FRICTION CONNECTION. IMMEDIATE FRONTLINE ACTION.",
-        "content": "<p>Flow doesn't operate in a silo. Our core data engine seamlessly bridges the gap between physical space architecture, your existing enterprise tech stack, and the hands of your floor staff.</p>",
+        "subheading": "データ連携",
+        "title": "店内行動データを、店舗運営の文脈につなげる。",
+        "content": "<p>AIカメラで取得した来店数、滞在、導線、ゾーン反応は、Flowプラットフォーム上でPOS、スタッフ配置、天候、店舗属性などのデータと組み合わせて分析できます。売場で起きた行動を、売上や運営状況とあわせて確認できます。</p>",
         "background": "",
         "background_gradient": "",
-        "text_color": "",
-        "subheading_background_color": "",
-        "subheading_text_color": ""
+        "text_color": ""
       }
     },
     "image_with_text_overlay_qFgaQ3": {
       "type": "image-with-text-overlay",
+      "disabled": true,
       "custom_css": [
         "* {padding-top: 0;}"
       ],
@@ -757,15 +965,15 @@
         "subheading_AK7Cjn": {
           "type": "subheading",
           "settings": {
-            "text": "GET STARTED",
+            "text": "次のアクション",
             "icon": "none"
           }
         },
         "heading_YXhiR8": {
           "type": "heading",
           "settings": {
-            "text": "READY TO VALIDATE YOUR VMD STRATEGY?",
-            "heading_tag": "h1",
+            "text": "購買前の行動を、店舗改善の判断材料に。",
+            "heading_tag": "h2",
             "text_color": "",
             "gradient": ""
           }
@@ -773,7 +981,7 @@
         "richtext_qzAkak": {
           "type": "richtext",
           "settings": {
-            "content": "<p>See how Flow's behavioral analytics platform turns customer movement into merchandising intelligence.</p>"
+            "content": "<p>売上だけでは見えない来店後の動き、滞在、導線、ゾーン反応を把握し、売場改善・店舗運営・本部判断に活用できます。</p>"
           }
         },
         "button_AVKAbi": {
@@ -793,13 +1001,13 @@
           "settings": {
             "style_1": "fill",
             "size_1": "xl",
-            "text_1": "Schedule Demo →",
+            "text_1": "店内行動分析について相談する →",
             "url_1": "#",
-            "background_1": "#0e366a",
+            "background_1": "#a0b842",
             "text_color_1": "#ffffff",
             "style_2": "fill",
             "size_2": "xl",
-            "text_2": "View Case Studies →",
+            "text_2": "導入事例を見る →",
             "url_2": "#",
             "background_2": "#ffffff",
             "text_color_2": "#11243e"
@@ -818,7 +1026,7 @@
         "full_width": true,
         "content_width": "small",
         "text_position": "center",
-        "background": "#a0b842",
+        "background": "#0e366a",
         "background_gradient": "",
         "text_color": "#ffffff"
       }
@@ -826,8 +1034,11 @@
   },
   "order": [
     "blocks_E8LBYQ",
-    "image_with_text_overlay_AcppEX",
     "multi_column_HCGJea",
+    "multi_column_8yXaXX",
+    "blocks_aQrBq7",
+    "multi_column_ge9wwi",
+    "rich_text_MakEBA",
     "multi_column_HCGJea11",
     "media_with_text_hMPTmL",
     "multi_column_RkceNG",
