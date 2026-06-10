@@ -97,7 +97,6 @@
             "heading": "<strong>100以上のブランドで、店舗運営を支援</strong>",
             "content": "<p></p><p></p>",
             "text_alignment": "center",
-            "heading_size": 32,
             "content_size": 16,
             "heading_color": "#11243e",
             "content_color": "#677279",
@@ -204,7 +203,9 @@
         "content": "<p>優秀な店長は、データを待たずに動けます。しかし、その判断力を全店舗に広げることは簡単ではありません。Flowは、来店・購買率・売上状況をリアルタイムに統合し、改善ポイントを早期に把握。店舗ごとの判断ばらつきを減らし、ブランド方針に沿った対応を支援します。</p>",
         "background": "#ffffff",
         "background_gradient": "",
-        "text_color": "#11243e"
+        "text_color": "#11243e",
+        "subheading_background_color": "",
+        "subheading_text_color": ""
       }
     },
     "rich_text_CjaQaa": {
@@ -625,7 +626,7 @@
             "icon_background_type": "circle",
             "icon_background": "",
             "icon_color": "",
-            "image": "shopify://shop_images/11.jpg",
+            "image": "shopify://shop_images/ChatGPT_Image_Jun_10_2026_11_05_28_AM.png",
             "background_color": "#f9fafb",
             "text_color": "#1a1a1a",
             "border_color": "#f9fafb",
@@ -780,7 +781,9 @@
         "content": "<p>Flowは、来店・人員配置・VMD・店舗実行など、<br/>売上に影響する運営課題を特定します。</p>",
         "background": "#0e366a",
         "background_gradient": "",
-        "text_color": "#ffffff"
+        "text_color": "#ffffff",
+        "subheading_background_color": "",
+        "subheading_text_color": ""
       }
     },
     "multi_column_HCGJea": {
@@ -874,7 +877,9 @@
         "content": "",
         "background": "#ffffff",
         "background_gradient": "",
-        "text_color": ""
+        "text_color": "",
+        "subheading_background_color": "",
+        "subheading_text_color": ""
       }
     },
     "testimonials_98zPBi": {
@@ -1067,7 +1072,9 @@
         "content": "",
         "background": "",
         "background_gradient": "",
-        "text_color": ""
+        "text_color": "",
+        "subheading_background_color": "",
+        "subheading_text_color": ""
       }
     },
     "faq_x6Uzbx": {
