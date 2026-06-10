@@ -268,6 +268,50 @@
         "text_color": ""
       }
     },
+    "1780975575f5f43498": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_edd2e97_AgMMzz": {
+          "type": "ai_gen_block_edd2e97",
+          "settings": {
+            "heading": "会社概要",
+            "detail_1_icon": "globe",
+            "detail_1_label": "会社名",
+            "detail_1_value": "株式会社Flow Solutions",
+            "detail_2_icon": "building",
+            "detail_2_label": "本社所在地",
+            "detail_2_value": "神奈川県横浜市中区桜木町2-2 港陽ビル 4F",
+            "detail_3_icon": "target",
+            "detail_3_label": "会社設立",
+            "detail_3_value": "2006年",
+            "detail_4_icon": "users",
+            "detail_4_label": "事業内容",
+            "detail_4_value": "小売店舗向けデータ分析・運営改善支援",
+            "stat_1_metric": "9,900万円",
+            "stat_1_label": "資本金",
+            "stat_2_metric": "2016",
+            "stat_2_label": "Flow提供開始",
+            "stat_3_metric": "990+",
+            "stat_3_label": "導入拠点",
+            "stat_4_metric": "100+",
+            "stat_4_label": "導入ブランド",
+            "desktop_width_percent": 100
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_edd2e97_AgMMzz"
+      ],
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
     "multi_column_3tnATm": {
       "type": "multi-column",
       "blocks": {
@@ -366,6 +410,7 @@
         "item_wA6Lwn",
         "item_ifUhXk"
       ],
+      "disabled": true,
       "custom_css": [
         ".multi-column__item * {text-align: left;}",
         ".multi-column__item ul {display: flex; list-style: none; padding-left: 0; font-size: 11px; font-weight: 400; gap: 1rem; flex-wrap: wrap;}",
@@ -385,50 +430,6 @@
         "text_color": "",
         "subheading_background_color": "",
         "subheading_text_color": ""
-      }
-    },
-    "1780975575f5f43498": {
-      "type": "_blocks",
-      "blocks": {
-        "ai_gen_block_edd2e97_AgMMzz": {
-          "type": "ai_gen_block_edd2e97",
-          "settings": {
-            "heading": "Company Overview",
-            "detail_1_icon": "building",
-            "detail_1_label": "Company Name",
-            "detail_1_value": "Flow Solutions Inc.",
-            "detail_2_icon": "globe",
-            "detail_2_label": "Headquarters",
-            "detail_2_value": "Tokyo, Japan",
-            "detail_3_icon": "target",
-            "detail_3_label": "Founded",
-            "detail_3_value": "2019",
-            "detail_4_icon": "users",
-            "detail_4_label": "Core Business",
-            "detail_4_value": "Retail analytics and operational infrastructure for physical stores",
-            "stat_1_metric": "500+",
-            "stat_1_label": "Active Retail Locations",
-            "stat_2_metric": "50+",
-            "stat_2_label": "Retail Brands",
-            "stat_3_metric": "98.5%",
-            "stat_3_label": "Measurement Accuracy",
-            "stat_4_metric": "99.9%",
-            "stat_4_label": "Platform Uptime SLA",
-            "desktop_width_percent": 100
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "ai_gen_block_edd2e97_AgMMzz"
-      ],
-      "settings": {
-        "full_width": true,
-        "remove_vertical_spacing": false,
-        "remove_horizontal_spacing": false,
-        "background": "#ffffff",
-        "background_gradient": "",
-        "text_color": ""
       }
     },
     "section-15": {
@@ -823,6 +824,7 @@
       "block_order": [
         "ai_gen_block_c690089_Hw4T6q"
       ],
+      "disabled": true,
       "settings": {
         "full_width": true,
         "remove_vertical_spacing": false,
@@ -1155,8 +1157,8 @@
     "multi_column_L3Rbir",
     "blocks_kKwWcf",
     "178097413274cdfbe8",
-    "multi_column_3tnATm",
     "1780975575f5f43498",
+    "multi_column_3tnATm",
     "section-15",
     "multi_column_nMex9i",
     "multi_column_wT8tcm",
