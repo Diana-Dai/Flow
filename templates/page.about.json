@@ -19,6 +19,12 @@
             "icon": "none"
           }
         },
+        "liquid_R3c38x": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<p>Write custom Liquid code to include widget or dynamic code.</p>"
+          }
+        },
         "heading_hjfyL9": {
           "type": "heading",
           "settings": {
@@ -37,6 +43,7 @@
       },
       "block_order": [
         "subheading_nJjQnz",
+        "liquid_R3c38x",
         "heading_hjfyL9",
         "richtext_wjTJeB"
       ],
