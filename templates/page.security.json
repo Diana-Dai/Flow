@@ -310,7 +310,7 @@
             "icon_background": "",
             "icon_color": "",
             "background_color": "#ffffff",
-            "text_color": "",
+            "text_color": "#12243e",
             "border_color": "#f2f2f2",
             "show_controls": false,
             "column_size": "3",
@@ -332,7 +332,7 @@
             "icon_background": "",
             "icon_color": "",
             "background_color": "#ffffff",
-            "text_color": "",
+            "text_color": "#11243e",
             "border_color": "#f2f2f2",
             "show_controls": false,
             "column_size": "3",
@@ -354,7 +354,7 @@
             "icon_background": "",
             "icon_color": "",
             "background_color": "#f9fafb",
-            "text_color": "",
+            "text_color": "#11243e",
             "border_color": "#f2f2f2",
             "show_controls": false,
             "column_size": "3",
@@ -376,7 +376,7 @@
             "icon_background": "#f5f8ed",
             "icon_color": "#a0b842",
             "background_color": "#ffffff",
-            "text_color": "",
+            "text_color": "#12243e",
             "border_color": "#f2f2f2",
             "show_controls": false,
             "column_size": "2",
@@ -398,7 +398,7 @@
             "icon_background": "#f5f8ed",
             "icon_color": "#a0b842",
             "background_color": "#ffffff",
-            "text_color": "",
+            "text_color": "#12243e",
             "border_color": "#f2f2f2",
             "show_controls": false,
             "column_size": "2",
@@ -423,7 +423,7 @@
         ".prose p {font-size: 0.9rem;}",
         ".prose p + p {margin-top: 0;}",
         ".multi-column__item:nth-child(5) *,.multi-column__item:nth-child(4) * {text-align: left;}",
-        ".multi-column__item .h1 {color: #a0b842;}"
+        ".multi-column__item .h1 {color: #a0b842 !important;}"
       ],
       "name": "Multi-column",
       "settings": {
@@ -434,170 +434,11 @@
         "subheading": "OPERATIONAL RELIABILITY",
         "title": "Built for 24/7 Retail Operations",
         "content": "<p>Flow is production infrastructure. Our architecture prioritizes uptime, resilience, and graceful degradation.</p>",
-        "background": "",
+        "background": "#12243e",
         "background_gradient": "",
-        "text_color": "#11243e",
+        "text_color": "#ffffff",
         "subheading_background_color": "",
         "subheading_text_color": ""
-      }
-    },
-    "multi_column_HCGJea11": {
-      "type": "multi-column",
-      "blocks": {
-        "item_aqpNXK": {
-          "type": "item",
-          "settings": {
-            "icon": "picto-validation",
-            "icon_width": 32,
-            "icon_background_type": "square",
-            "icon_background": "#f0f4e8",
-            "icon_color": "#a0b842",
-            "background_color": "#ffffff",
-            "text_color": "",
-            "border_color": "#f2f2f2",
-            "show_controls": false,
-            "column_size": "2",
-            "title": "入店後の流れ",
-            "heading_tag": "h3",
-            "subheading": "",
-            "content": "<h6>入店後のお客様がどの方向へ進み、どの売場に最初に反応しているかを確認できます。入口付近の導線や売場配置の見直しに活用できます。</h6>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        },
-        "item_9cWFC9": {
-          "type": "item",
-          "settings": {
-            "icon": "picto-target",
-            "icon_width": 32,
-            "icon_background_type": "square",
-            "icon_background": "#f0f4e8",
-            "icon_color": "#a0b842",
-            "background_color": "#ffffff",
-            "text_color": "#11243e",
-            "border_color": "#f2f2f2",
-            "show_controls": false,
-            "column_size": "2",
-            "title": "重点売場の反応",
-            "heading_tag": "h3",
-            "subheading": "",
-            "content": "<h6>キャンペーン商品、重点カテゴリー、主力什器に人が集まっているか、滞在が生まれているかを確認できます。</h6>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        },
-        "item_tTyycj": {
-          "type": "item",
-          "settings": {
-            "icon": "picto-pin",
-            "icon_width": 32,
-            "icon_background_type": "square",
-            "icon_background": "#f0f4e8",
-            "icon_color": "#a0b842",
-            "background_color": "#ffffff",
-            "text_color": "#11243e",
-            "border_color": "#f2f2f2",
-            "show_controls": false,
-            "column_size": "2",
-            "title": "デッドゾーン発見",
-            "heading_tag": "h3",
-            "subheading": "",
-            "content": "<h6>通行量が少ないエリア、立ち止まりが少ない売場、見落とされている什器を把握し、レイアウト改善の候補を見つけられます。</h6>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        },
-        "item_ztJTym": {
-          "type": "item",
-          "settings": {
-            "icon": "people",
-            "icon_width": 32,
-            "icon_background_type": "square",
-            "icon_background": "#a0b842",
-            "icon_color": "#ffffff",
-            "background_color": "#11243e",
-            "text_color": "#f9fafb",
-            "border_color": "",
-            "show_controls": false,
-            "column_size": "2",
-            "title": "売場間の回遊",
-            "heading_tag": "h3",
-            "subheading": "",
-            "content": "<h6>お客様がどの売場からどの売場へ移動しているかを確認し、関連商品の配置や回遊設計の改善に活用できます。</h6>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        }
-      },
-      "block_order": [
-        "item_aqpNXK",
-        "item_9cWFC9",
-        "item_tTyycj",
-        "item_ztJTym"
-      ],
-      "custom_css": [
-        ".prose p {font-size: 0.9rem;}",
-        ".multi-column__item:first-child .h2 {color: #a0b842 !important;}"
-      ],
-      "name": "Multi-column",
-      "settings": {
-        "full_width": true,
-        "stack_on_mobile": false,
-        "gap": "medium",
-        "text_alignment": "start",
-        "subheading": "改善ポイント",
-        "title": "改善すべき売場を、具体的に見つける。",
-        "content": "<h6>店内行動データを使うことで、売場のどこに機会があり、どこでお客様の反応が弱いのかを確認できます。レイアウト、什器、販促、接客配置を、感覚ではなく行動データをもとに見直せます。</h6>",
-        "background": "#ffffff",
-        "background_gradient": "",
-        "text_color": "#11243e",
-        "subheading_background_color": "",
-        "subheading_text_color": ""
-      }
-    },
-    "media_with_text_hMPTmL": {
-      "type": "media-with-text",
-      "blocks": {
-        "image_8hBn9C": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/ChatGPT_Image_Jun_4_2026_08_30_15_PM.png",
-            "media_width": 50,
-            "media_position": "end",
-            "text_position": "place-self-center-start text-start",
-            "icon": "none",
-            "icon_width": 48,
-            "subheading": "売場改善",
-            "title": "",
-            "content": "<h2>売場変更の効果を、行動データで確かめる。</h2><p>レイアウト変更、重点什器、ディスプレイ、販促展開が、来店客の動きや滞在に影響しているかを確認できます。売場改善を、経験や印象だけでなく、実際の行動データにもとづいて進められます。</p>",
-            "link_text": "売場改善について相談する →",
-            "link_url": "shopify://pages/contact",
-            "background": "",
-            "background_gradient": "",
-            "text_color": "#11243e",
-            "text_gradient": "",
-            "button_background": "",
-            "button_text_color": ""
-          }
-        }
-      },
-      "block_order": [
-        "image_8hBn9C"
-      ],
-      "custom_css": [
-        "h3 {font-size: var(--text-h0); color: #a0b842;}",
-        "ul {display: flex; flex-wrap: wrap; gap: 20px; font-size: 1rem;}",
-        "ul li {width: calc(50% - 20px);}"
-      ],
-      "name": "Media with text",
-      "settings": {
-        "full_width": false,
-        "alternate_media_position": false,
-        "spacing": "small"
       }
     },
     "multi_column_RkceNG": {
@@ -688,78 +529,6 @@
         "background": "",
         "background_gradient": "",
         "text_color": "",
-        "subheading_background_color": "",
-        "subheading_text_color": ""
-      }
-    },
-    "multi_column_QjMJiW": {
-      "type": "multi-column",
-      "blocks": {
-        "item_mpQVCf": {
-          "type": "item",
-          "settings": {
-            "icon": "picto-building",
-            "icon_width": 32,
-            "icon_background_type": "square",
-            "icon_background": "#a0b842",
-            "icon_color": "#ffffff",
-            "background_color": "#f2f2f2",
-            "text_color": "#11243e",
-            "border_color": "",
-            "show_controls": false,
-            "column_size": "2",
-            "title": "店舗ごとの状況把握",
-            "heading_tag": "h3",
-            "subheading": "",
-            "content": "<h6>来店数、滞在、ゾーン別の反応、導線の変化を店舗ごとに確認できます。エリアマネージャーや本部は、どの店舗で何が起きているかを把握しやすくなります。</h6>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        },
-        "item_MVfQ7a": {
-          "type": "item",
-          "settings": {
-            "icon": "picto-validation",
-            "icon_width": 32,
-            "icon_background_type": "square",
-            "icon_background": "#a0b842",
-            "icon_color": "#ffffff",
-            "background_color": "#f2f2f2",
-            "text_color": "#11243e",
-            "border_color": "",
-            "show_controls": false,
-            "column_size": "2",
-            "title": "同じ基準で店舗比較",
-            "heading_tag": "h3",
-            "subheading": "",
-            "content": "<h6>店舗ごとのレイアウト、売場条件、来店傾向の違いをふまえながら、行動データを共通指標として比較できます。改善が必要な店舗や売場を見つけやすくなります。</h6>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        }
-      },
-      "block_order": [
-        "item_mpQVCf",
-        "item_MVfQ7a"
-      ],
-      "custom_css": [
-        ".multi-column__item .h1 {color: #a0b842;}",
-        ".prose p {font-size: 0.9rem;}"
-      ],
-      "name": "Multi-column",
-      "settings": {
-        "full_width": true,
-        "stack_on_mobile": false,
-        "gap": "medium",
-        "text_alignment": "start",
-        "subheading": "多店舗管理",
-        "title": "",
-        "content": "<h2>全店舗の店内行動を、<br/>同じ基準で確認する。</h2><h6>Flowは、店舗ごとの来店数、滞在、ゾーン反応、導線データを一元化し、本部・エリアマネージャー・店舗が同じ事実をもとに判断できる環境をつくります。店舗ごとの違いや改善余地を、感覚ではなく共通指標で確認できます。</h6>",
-        "background": "#11243e",
-        "background_gradient": "",
-        "text_color": "#f9fafb",
         "subheading_background_color": "",
         "subheading_text_color": ""
       }
@@ -881,77 +650,6 @@
         "chart_true_false_color": ""
       }
     },
-    "multi_column_hcGfym": {
-      "type": "multi-column",
-      "blocks": {
-        "item_kXheJt": {
-          "type": "item",
-          "settings": {
-            "icon": "none",
-            "icon_width": 32,
-            "icon_background_type": "square",
-            "icon_background": "#f0f4e8",
-            "icon_color": "#a0b842",
-            "background_color": "",
-            "text_color": "",
-            "border_color": "",
-            "show_controls": false,
-            "column_size": "2",
-            "title": "POS・売上データとの連携",
-            "heading_tag": "h4",
-            "subheading": "",
-            "content": "<p>来店後の行動データを、売上、コンバージョン、客単価、購買点数などと組み合わせて確認できます。売れた・売れなかった理由を、購買前の行動から考えやすくなります。</p>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        },
-        "item_jEEGn7": {
-          "type": "item",
-          "settings": {
-            "icon": "none",
-            "icon_width": 32,
-            "icon_background_type": "square",
-            "icon_background": "#f0f4e8",
-            "icon_color": "#a0b842",
-            "background_color": "",
-            "text_color": "",
-            "border_color": "",
-            "show_controls": false,
-            "column_size": "2",
-            "title": "スタッフ・天候・店舗条件との連携",
-            "heading_tag": "h4",
-            "subheading": "",
-            "content": "<p>スタッフ配置、天候、曜日、店舗規模、立地などの条件とあわせて分析することで、行動データを単なる数値ではなく、店舗運営の判断材料として活用できます。</p>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        }
-      },
-      "block_order": [
-        "item_kXheJt",
-        "item_jEEGn7"
-      ],
-      "custom_css": [
-        ".section-stack {padding-bottom: 0;}"
-      ],
-      "name": "Multi-column",
-      "settings": {
-        "full_width": true,
-        "stack_on_mobile": false,
-        "gap": "medium",
-        "text_alignment": "center",
-        "subheading": "データ連携",
-        "title": "店内行動データを、店舗運営の文脈につなげる。",
-        "content": "<p>AIカメラで取得した来店数、滞在、導線、ゾーン反応は、Flowプラットフォーム上でPOS、スタッフ配置、天候、店舗属性などのデータと組み合わせて分析できます。売場で起きた行動を、売上や運営状況とあわせて確認できます。</p>",
-        "background": "",
-        "background_gradient": "",
-        "text_color": "",
-        "subheading_background_color": "",
-        "subheading_text_color": ""
-      }
-    },
     "image_with_text_overlay_qFgaQ3": {
       "type": "image-with-text-overlay",
       "disabled": true,
@@ -975,17 +673,10 @@
     "rich_text_6VmVgb": {
       "type": "rich-text",
       "blocks": {
-        "subheading_AK7Cjn": {
-          "type": "subheading",
-          "settings": {
-            "text": "次のアクション",
-            "icon": "none"
-          }
-        },
         "heading_YXhiR8": {
           "type": "heading",
           "settings": {
-            "text": "購買前の行動を、店舗改善の判断材料に。",
+            "text": "Security and Compliance Questions?",
             "heading_tag": "h2",
             "text_color": "",
             "gradient": ""
@@ -994,7 +685,7 @@
         "richtext_qzAkak": {
           "type": "richtext",
           "settings": {
-            "content": "<p>売上だけでは見えない来店後の動き、滞在、導線、ゾーン反応を把握し、売場改善・店舗運営・本部判断に活用できます。</p>"
+            "content": "<p>Our team is available to discuss specific security requirements, compliance certifications, or infrastructure concerns for your deployment.</p>"
           }
         },
         "button_AVKAbi": {
@@ -1016,7 +707,7 @@
             "size_1": "xl",
             "text_1": "店内行動分析について相談する →",
             "url_1": "#",
-            "background_1": "#a0b842",
+            "background_1": "#0e366a",
             "text_color_1": "#ffffff",
             "style_2": "fill",
             "size_2": "xl",
@@ -1028,7 +719,6 @@
         }
       },
       "block_order": [
-        "subheading_AK7Cjn",
         "heading_YXhiR8",
         "richtext_qzAkak",
         "button_AVKAbi",
@@ -1039,7 +729,7 @@
         "full_width": true,
         "content_width": "small",
         "text_position": "center",
-        "background": "#0e366a",
+        "background": "#a0b842",
         "background_gradient": "",
         "text_color": "#ffffff"
       }
@@ -1050,12 +740,8 @@
     "multi_column_HCGJea",
     "multi_column_LbWzJW",
     "multi_column_UHGh3a",
-    "multi_column_HCGJea11",
-    "media_with_text_hMPTmL",
     "multi_column_RkceNG",
-    "multi_column_QjMJiW",
     "section-15",
-    "multi_column_hcGfym",
     "image_with_text_overlay_qFgaQ3",
     "rich_text_6VmVgb"
   ]
