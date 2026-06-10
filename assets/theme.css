@@ -2056,10 +2056,7 @@ scroll-carousel {
   padding-inline-start: max(var(--calculated-section-spacing-inline), 50% - var(--container-max-width) / 2);
   padding-inline-end: max(var(--calculated-section-spacing-inline), 50% - var(--container-max-width) / 2);
 }
-section-full{
-  padding-inline-start:0;
-  padding-inline-end: 0;
-}
+
 .section--tight {
   --calculated-section-spacing-block-start: min(48px, var(--section-spacing-block-start, var(--section-spacing-block, var(--context-section-spacing-block-start))));
   --calculated-section-spacing-block-end: min(48px, var(--section-spacing-block-end, var(--section-spacing-block, var(--context-section-spacing-block-end))));
@@ -2074,7 +2071,10 @@ section-full{
   padding-block-start: calc(var(--background-differs-from-previous) * var(--calculated-section-spacing-block-start));
   padding-block-end: var(--calculated-section-spacing-block-end);
 }
-
+section-full{
+  padding-inline-start:0;
+  padding-inline-end: 0;
+}
 @media screen and (min-width: 700px) {
   .section--tight {
     --calculated-section-spacing-block-start: min(48px, var(--section-spacing-block-start, var(--section-spacing-block, var(--context-section-spacing-block-start, 0px))));
