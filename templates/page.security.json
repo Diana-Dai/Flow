@@ -186,16 +186,16 @@
         "item_KChKaF": {
           "type": "item",
           "settings": {
-            "icon": "none",
+            "icon": "picto-lock",
             "icon_width": 32,
             "icon_background_type": "square",
-            "icon_background": "",
-            "icon_color": "",
-            "background_color": "",
+            "icon_background": "#11243e",
+            "icon_color": "#ffffff",
+            "background_color": "#f2f2f2",
             "text_color": "",
-            "border_color": "",
+            "border_color": "#f2f2f2",
             "show_controls": false,
-            "column_size": "3",
+            "column_size": "2",
             "title": "End-to-End Encryption",
             "heading_tag": "h4",
             "subheading": "",
@@ -208,26 +208,48 @@
         "item_YMdFx8": {
           "type": "item",
           "settings": {
-            "icon": "none",
+            "icon": "picto-shield",
             "icon_width": 32,
             "icon_background_type": "square",
-            "icon_background": "",
-            "icon_color": "",
-            "background_color": "",
+            "icon_background": "#11243e",
+            "icon_color": "#ffffff",
+            "background_color": "#f2f2f2",
             "text_color": "",
-            "border_color": "",
+            "border_color": "#f2f2f2",
             "show_controls": false,
-            "column_size": "3",
-            "title": "Column title",
+            "column_size": "2",
+            "title": "Access Control & Authentication",
             "heading_tag": "h4",
-            "subheading": "<p>Organize content into multiple columns to share useful information to your customers about your products, values...</p>",
-            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "subheading": "",
+            "content": "<p>Role-based permissions with audit logging</p><ul><li>✅ Admin, analyst, and viewer roles with granular permissions per store/zone.</li><li>✅ SAML 2.0 integration with enterprise identity providers. MFA enforcement available.</li><li>✅ All access, data exports, and configuration changes logged with timestamp and user attribution.<br/><br/></li></ul>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
           }
         },
         "item_cbdYNP": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-earth",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#11243e",
+            "icon_color": "#ffffff",
+            "background_color": "#f2f2f2",
+            "text_color": "",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "2",
+            "title": "Network Isolation & Segmentation",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<p>Defense in depth through network architecture</p><ul><li>✅ Flow cameras operate on isolated VLAN, separate from POS and guest WiFi networks.</li><li>✅ Cloud infrastructure protected by WAF, DDoS mitigation, and IDS/IPS systems.</li><li>✅ All internal services authenticate and authorize per request—no implicit trust.<br/></li></ul>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_xtec8d": {
           "type": "item",
           "settings": {
             "icon": "none",
@@ -253,11 +275,12 @@
       "block_order": [
         "item_KChKaF",
         "item_YMdFx8",
-        "item_cbdYNP"
+        "item_cbdYNP",
+        "item_xtec8d"
       ],
       "custom_css": [
         ".prose p {font-size: 0.9rem;}",
-        ".multi-column__item ul{list-style: none;}"
+        ".multi-column__item ul {list-style: none;}"
       ],
       "name": "Multi-column",
       "settings": {
