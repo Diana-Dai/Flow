@@ -298,58 +298,145 @@
         "subheading_text_color": ""
       }
     },
-    "rich_text_MakEBA": {
-      "type": "rich-text",
+    "multi_column_UHGh3a": {
+      "type": "multi-column",
       "blocks": {
-        "subheading_EBVwNW": {
-          "type": "subheading",
-          "disabled": true,
+        "item_aEqEqr": {
+          "type": "item",
           "settings": {
-            "text": "Subheading",
-            "icon": "none"
-          }
-        },
-        "heading_cyeQRE": {
-          "type": "heading",
-          "disabled": true,
-          "settings": {
-            "text": "Heading",
-            "heading_tag": "h1",
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "",
             "text_color": "",
-            "gradient": ""
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "99.9%",
+            "heading_tag": "h1",
+            "subheading": "",
+            "content": "<p><strong>Platform Uptime SLA</strong></p><p>Measured monthly. Service credits for breaches.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
           }
         },
-        "image_zkxgK8": {
-          "type": "image",
+        "item_Fg9QnL": {
+          "type": "item",
           "settings": {
-            "image": "shopify://shop_images/ChatGPT_Image_Jun_4_2026_08_09_19_PM.png",
-            "width_mode": "full_width",
-            "max_width": 690,
-            "mobile_max_width": 400
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "24hr",
+            "heading_tag": "h1",
+            "subheading": "",
+            "content": "<p><strong>Edge Data Buffer</strong></p><p>Local storage during internet outages.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
           }
         },
-        "richtext_i6tmBe": {
-          "type": "richtext",
-          "disabled": true,
+        "item_3rHcDF": {
+          "type": "item",
           "settings": {
-            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "<1hr",
+            "heading_tag": "h1",
+            "subheading": "",
+            "content": "<p><strong>Critical Response Time</strong></p><p>Enterprise 24/7 support SLA.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_bYNUKY": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "2",
+            "title": "Column title",
+            "heading_tag": "h4",
+            "subheading": "<p>Organize content into multiple columns to share useful information to your customers about your products, values...</p>",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_w6AXVk": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "2",
+            "title": "Column title",
+            "heading_tag": "h4",
+            "subheading": "<p>Organize content into multiple columns to share useful information to your customers about your products, values...</p>",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
           }
         }
       },
       "block_order": [
-        "subheading_EBVwNW",
-        "heading_cyeQRE",
-        "image_zkxgK8",
-        "richtext_i6tmBe"
+        "item_aEqEqr",
+        "item_Fg9QnL",
+        "item_3rHcDF",
+        "item_bYNUKY",
+        "item_w6AXVk"
       ],
-      "name": "Rich text",
+      "custom_css": [
+        ".prose p {font-size: 0.9rem;}",
+        ".multi-column__item ul {list-style: none;}"
+      ],
+      "name": "Multi-column",
       "settings": {
         "full_width": true,
-        "content_width": "small",
-        "text_position": "center",
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "center",
+        "subheading": "OPERATIONAL RELIABILITY",
+        "title": "Built for 24/7 Retail Operations",
+        "content": "<p>Flow is production infrastructure. Our architecture prioritizes uptime, resilience, and graceful degradation.</p>",
         "background": "",
         "background_gradient": "",
-        "text_color": ""
+        "text_color": "",
+        "subheading_background_color": "",
+        "subheading_text_color": ""
       }
     },
     "multi_column_HCGJea11": {
@@ -960,7 +1047,7 @@
     "blocks_E8LBYQ",
     "multi_column_HCGJea",
     "multi_column_LbWzJW",
-    "rich_text_MakEBA",
+    "multi_column_UHGh3a",
     "multi_column_HCGJea11",
     "media_with_text_hMPTmL",
     "multi_column_RkceNG",
