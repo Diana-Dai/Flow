@@ -2071,7 +2071,7 @@ scroll-carousel {
   padding-block-start: calc(var(--background-differs-from-previous) * var(--calculated-section-spacing-block-start));
   padding-block-end: var(--calculated-section-spacing-block-end);
 }
-section-full{
+.section-full{
   padding-inline-start:0;
   padding-inline-end: 0;
 }
