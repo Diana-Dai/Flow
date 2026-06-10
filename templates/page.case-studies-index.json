@@ -411,7 +411,7 @@
           "type": "rich-text",
           "name": "Rich text",
           "settings": {
-            "text": "<h2>More Customer Stories</h2>",
+            "text": "<h2>More Customer Stories</h2><h2></h2>",
             "content_width": "small",
             "text_alignment": "center"
           },
