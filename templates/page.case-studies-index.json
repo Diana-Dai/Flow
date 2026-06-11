@@ -391,8 +391,7 @@
         ".icon_container {text-align: center;}",
         ".multi-column__item:last-child p {text-align: left;}",
         ".multi-column__item:last-child ul {list-style: none; display: flex; padding-left: 0; margin-left: 0; flex-wrap: wrap;}",
-        ".multi-column__item:last-child ul li {width: 50%; text-align: left;}",
-        "@media only screen and (max-width: 799px) {}"
+        ".multi-column__item:last-child ul li {width: 50%; text-align: left;}"
       ],
       "name": "Multi-column",
       "settings": {
