@@ -31,8 +31,8 @@
     - A brief 2-3 line body text block outlining the case study summary. 
     - Style: Medium-grey text color with a clean, consistent line-height (e.g., 1.5). Add a uniform height or a truncation layout property to ensure that all 3 cards in a desktop row maintain an identical vertical alignment regardless of text length.
     
-    #### ZONE 4: KEY RESULTS (Bullet-less Icon List)
-    - List Section Title: A small, bold, all-caps header reading "KEY RESULTS" styled in muted grey typography.
+    #### ZONE 4: {{ block.settings.results }} (Bullet-less Icon List)
+    - List Section Title: A small, bold, all-caps header reading "{{ block.settings.results }}" styled in muted grey typography.
     - Performance List Items: A vertical list of exactly 3 impact points.
       - Bullet Icon: Replace standard list bullets with a small, custom, thin upward-trending chart arrow icon rendered in a muted olive/moss green color (`#a4b953` or theme equivalent).
       - List Text: Small, regular-weight body text in a dark slate grey or deep navy.
@@ -312,7 +312,7 @@
           <div class="ai-case-study-card__description-{{ ai_gen_id }}">{{ block.settings.description_1 }}</div>
         {% endif %}
         <div class="ai-case-study-card__results-{{ ai_gen_id }}">
-          <h4 class="ai-case-study-card__results-title-{{ ai_gen_id }}">KEY RESULTS</h4>
+          <h4 class="ai-case-study-card__results-title-{{ ai_gen_id }}">{{ block.settings.results }}</h4>
           <ul class="ai-case-study-card__results-list-{{ ai_gen_id }}">
             {% if block.settings.result_1_1 != blank %}
               <li class="ai-case-study-card__result-item-{{ ai_gen_id }}">
@@ -396,7 +396,7 @@
           <div class="ai-case-study-card__description-{{ ai_gen_id }}">{{ block.settings.description_2 }}</div>
         {% endif %}
         <div class="ai-case-study-card__results-{{ ai_gen_id }}">
-          <h4 class="ai-case-study-card__results-title-{{ ai_gen_id }}">KEY RESULTS</h4>
+          <h4 class="ai-case-study-card__results-title-{{ ai_gen_id }}">{{ block.settings.results }}</h4>
           <ul class="ai-case-study-card__results-list-{{ ai_gen_id }}">
             {% if block.settings.result_2_1 != blank %}
               <li class="ai-case-study-card__result-item-{{ ai_gen_id }}">
@@ -481,7 +481,7 @@
           <div class="ai-case-study-card__description-{{ ai_gen_id }}">{{ block.settings.description_3 }}</div>
         {% endif %}
         <div class="ai-case-study-card__results-{{ ai_gen_id }}">
-          <h4 class="ai-case-study-card__results-title-{{ ai_gen_id }}">KEY RESULTS</h4>
+          <h4 class="ai-case-study-card__results-title-{{ ai_gen_id }}">{{ block.settings.results }}</h4>
           <ul class="ai-case-study-card__results-list-{{ ai_gen_id }}">
             {% if block.settings.result_3_1 != blank %}
               <li class="ai-case-study-card__result-item-{{ ai_gen_id }}">
@@ -567,7 +567,7 @@
           <div class="ai-case-study-card__description-{{ ai_gen_id }}">{{ block.settings.description_4 }}</div>
         {% endif %}
         <div class="ai-case-study-card__results-{{ ai_gen_id }}">
-          <h4 class="ai-case-study-card__results-title-{{ ai_gen_id }}">KEY RESULTS</h4>
+          <h4 class="ai-case-study-card__results-title-{{ ai_gen_id }}">{{ block.settings.results }}</h4>
           <ul class="ai-case-study-card__results-list-{{ ai_gen_id }}">
             {% if block.settings.result_4_1 != blank %}
               <li class="ai-case-study-card__result-item-{{ ai_gen_id }}">
@@ -653,7 +653,7 @@
           <div class="ai-case-study-card__description-{{ ai_gen_id }}">{{ block.settings.description_5 }}</div>
         {% endif %}
         <div class="ai-case-study-card__results-{{ ai_gen_id }}">
-          <h4 class="ai-case-study-card__results-title-{{ ai_gen_id }}">KEY RESULTS</h4>
+          <h4 class="ai-case-study-card__results-title-{{ ai_gen_id }}">{{ block.settings.results }}</h4>
           <ul class="ai-case-study-card__results-list-{{ ai_gen_id }}">
             {% if block.settings.result_5_1 != blank %}
               <li class="ai-case-study-card__result-item-{{ ai_gen_id }}">
@@ -739,7 +739,7 @@
           <div class="ai-case-study-card__description-{{ ai_gen_id }}">{{ block.settings.description_6 }}</div>
         {% endif %}
         <div class="ai-case-study-card__results-{{ ai_gen_id }}">
-          <h4 class="ai-case-study-card__results-title-{{ ai_gen_id }}">KEY RESULTS</h4>
+          <h4 class="ai-case-study-card__results-title-{{ ai_gen_id }}">{{ block.settings.results }}</h4>
           <ul class="ai-case-study-card__results-list-{{ ai_gen_id }}">
             {% if block.settings.result_6_1 != blank %}
               <li class="ai-case-study-card__result-item-{{ ai_gen_id }}">
@@ -819,8 +819,8 @@
       {
       "type": "text",
       "id": "results",
-      "label": "Key results",
-      "default": "Key results"
+      "label": "{{ block.settings.results }}",
+      "default": "{{ block.settings.results }}"
     },
     {
       "type": "header",
