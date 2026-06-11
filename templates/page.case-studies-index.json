@@ -83,40 +83,11 @@
     "178101025889134aaf": {
       "type": "_blocks",
       "blocks": {
-        "ai_gen_block_94da06d_4FmLiw": {
-          "type": "ai_gen_block_94da06d",
-          "settings": {
-            "brand_image": "shopify://shop_images/Daytona_White_e03a3f9c-40ca-45b1-8866-4528e821f7f5.png",
-            "brand_text": "",
-            "meta_info": "Fashion • Enterprise Scale",
-            "title": "Major Japanese Fashion Retailer",
-            "sub_info": "124 → 220 stores",
-            "show_badge": true,
-            "badge_text": "FEATURED",
-            "badge_color": "#a4b953",
-            "intro_text": "<p>This major Japanese fashion retailer transformed their omnichannel operations, achieving significant improvements in conversion rates and revenue while expanding their store network across the country.</p>",
-            "results_bg_color": "#f0f4e8",
-            "icon_color": "#a4b953",
-            "result_1": "<p><strong>Conversion improved 8.93%</strong></p>",
-            "result_2": "<p><strong>Sales increased 8.25%</strong> = ¥1.8 billion additional revenue</p>",
-            "result_3": "<p><strong>Store network expanded</strong> from 124 to 220 locations</p>",
-            "result_4": "<p><strong>Operational efficiency</strong> improved across all channels</p>",
-            "challenges_heading": "CHALLENGES BEFORE",
-            "challenges_list": "Fragmented inventory across channels|Limited real-time visibility|Manual processes slowing operations|Inconsistent customer experience",
-            "impact_heading": "OPERATIONAL IMPACT",
-            "impact_list": "Unified inventory management system|Real-time stock visibility across all locations|Automated fulfillment workflows|Seamless omnichannel customer journey",
-            "button_text": "Read full case study",
-            "button_link": "",
-            "button_bg_color": "#0e366a",
-            "button_text_color": "#ffffff",
-            "desktop_width_percent": 100
-          },
-          "blocks": {}
-        },
         "ai_gen_block_94da06d_MninE8": {
           "type": "ai_gen_block_94da06d",
           "name": "Case study spotlight",
           "settings": {
+            "brand_image": "shopify://shop_images/Daytona_White_e03a3f9c-40ca-45b1-8866-4528e821f7f5.png",
             "brand_text": "Daytona",
             "meta_info": "Fashion • Multi-Brand",
             "title": "Daytona International",
@@ -143,9 +114,40 @@
           },
           "blocks": {}
         },
+        "ai_gen_block_94da06d_4FmLiw": {
+          "type": "ai_gen_block_94da06d",
+          "settings": {
+            "brand_image": "shopify://shop_images/Major_Chain.png",
+            "brand_text": "",
+            "meta_info": "Fashion • Enterprise Scale",
+            "title": "Major Japanese Fashion Retailer",
+            "sub_info": "124 → 220 stores",
+            "show_badge": true,
+            "badge_text": "FEATURED",
+            "badge_color": "#a4b953",
+            "intro_text": "<p>This major Japanese fashion retailer transformed their omnichannel operations, achieving significant improvements in conversion rates and revenue while expanding their store network across the country.</p>",
+            "results_bg_color": "#f0f4e8",
+            "icon_color": "#a4b953",
+            "result_1": "<p><strong>Conversion improved 8.93%</strong></p>",
+            "result_2": "<p><strong>Sales increased 8.25%</strong> = ¥1.8 billion additional revenue</p>",
+            "result_3": "<p><strong>Store network expanded</strong> from 124 to 220 locations</p>",
+            "result_4": "<p><strong>Operational efficiency</strong> improved across all channels</p>",
+            "challenges_heading": "CHALLENGES BEFORE",
+            "challenges_list": "Fragmented inventory across channels|Limited real-time visibility|Manual processes slowing operations|Inconsistent customer experience",
+            "impact_heading": "OPERATIONAL IMPACT",
+            "impact_list": "Unified inventory management system|Real-time stock visibility across all locations|Automated fulfillment workflows|Seamless omnichannel customer journey",
+            "button_text": "Read full case study",
+            "button_link": "",
+            "button_bg_color": "#0e366a",
+            "button_text_color": "#ffffff",
+            "desktop_width_percent": 100
+          },
+          "blocks": {}
+        },
         "ai_gen_block_94da06d_cpFDtk": {
           "type": "ai_gen_block_94da06d",
           "name": "Case study spotlight",
+          "disabled": true,
           "settings": {
             "brand_text": "",
             "meta_info": "Jeans • National Chain",
@@ -175,8 +177,8 @@
         }
       },
       "block_order": [
-        "ai_gen_block_94da06d_4FmLiw",
         "ai_gen_block_94da06d_MninE8",
+        "ai_gen_block_94da06d_4FmLiw",
         "ai_gen_block_94da06d_cpFDtk"
       ],
       "settings": {
@@ -423,6 +425,7 @@
         "ai_gen_block_9ce6669_Adxx7t": {
           "type": "ai_gen_block_9ce6669",
           "settings": {
+            "brand_logo_1": "shopify://shop_images/Cole_Haan_White_836317d3-12dd-4e9a-b647-80aab91df0b2.png",
             "title_1": "Cole Haan Japan",
             "subtitle_1": "Premium Footwear & Accessories",
             "badge_1": "Multiple locations",
@@ -430,8 +433,9 @@
             "result_1_1": "35% increase in conversion rate",
             "result_1_2": "50% reduction in cart abandonment",
             "result_1_3": "2x growth in customer lifetime value",
-            "button_text_1": "View Details",
+            "button_text_1": "",
             "button_link_1": "",
+            "brand_logo_2": "shopify://shop_images/Baycrews_White_1.png",
             "title_2": "Baycrews",
             "subtitle_2": "Fashion • Multi-Brand",
             "badge_2": "Multiple formats",
