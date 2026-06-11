@@ -690,7 +690,7 @@
             {% endif %}
           </ul>
         </div>
-              {% if block.settings.button_text_5 %}
+              {% if block.settings.button_text_5 != blank %}
 
         <a href="{{ block.settings.button_link_5 }}" class="ai-case-study-card__button-{{ ai_gen_id }}">
           <span>{{ block.settings.button_text_5 }}</span>
@@ -776,7 +776,7 @@
             {% endif %}
           </ul>
         </div>
-              {% if block.settings.button_text_6 %}
+              {% if block.settings.button_text_6 != blank %}
 
         <a href="{{ block.settings.button_link_6 }}" class="ai-case-study-card__button-{{ ai_gen_id }}">
           <span>{{ block.settings.button_text_6 }}</span>
