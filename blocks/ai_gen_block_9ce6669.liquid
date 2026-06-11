@@ -349,7 +349,7 @@
             {% endif %}
           </ul>
         </div>
-      {% if block.settings.button_text_1 %}
+      {% if block.settings.button_text_1  != blank %}
         <a href="{{ block.settings.button_link_1 }}" class="ai-case-study-card__button-{{ ai_gen_id }}">
           <span>{{ block.settings.button_text_1 }}</span>
           <span class="ai-case-study-card__button-arrow-{{ ai_gen_id }}">
@@ -433,7 +433,7 @@
             {% endif %}
           </ul>
         </div>
-      {% if block.settings.button_text_2 %}
+      {% if block.settings.button_text_2 != blank %}
 
         <a href="{{ block.settings.button_link_2 }}" class="ai-case-study-card__button-{{ ai_gen_id }}">
           <span>{{ block.settings.button_text_2 }}</span>
@@ -518,7 +518,7 @@
             {% endif %}
           </ul>
         </div>
-              {% if block.settings.button_text_3 %}
+              {% if block.settings.button_text_3 != blank %}
 
         <a href="{{ block.settings.button_link_3 }}" class="ai-case-study-card__button-{{ ai_gen_id }}">
           <span>{{ block.settings.button_text_3 }}</span>
@@ -604,7 +604,7 @@
             {% endif %}
           </ul>
         </div>
-              {% if block.settings.button_text_4 %}
+              {% if block.settings.button_text_4 != blank %}
 
         <a href="{{ block.settings.button_link_4 }}" class="ai-case-study-card__button-{{ ai_gen_id }}">
           <span>{{ block.settings.button_text_4 }}</span>
