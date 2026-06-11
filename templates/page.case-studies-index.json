@@ -790,14 +790,14 @@
         "subheading_AK7Cjn": {
           "type": "subheading",
           "settings": {
-            "text": "NEXT STEPS",
+            "text": "次のステップ",
             "icon": "none"
           }
         },
         "heading_YXhiR8": {
           "type": "heading",
           "settings": {
-            "text": "SEE WHAT FLOW COULD ACHIEVE INYOUR STORES",
+            "text": "自社店舗で改善できるポイントを確認しませんか？",
             "heading_tag": "h1",
             "text_color": "",
             "gradient": ""
@@ -806,7 +806,7 @@
         "richtext_qzAkak": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Every retail operation is unique. Let's discuss what Flow could measure, analyze, and improve in your specific environment.</p>"
+            "content": "<p>店舗ごとに課題は異なります。Flowで計測できるデータ、可視化できるKPI、改善につなげられる運用ポイントを一緒に整理します。</p>"
           }
         },
         "button_AVKAbi": {
@@ -832,7 +832,7 @@
             "text_color_1": "#ffffff",
             "style_2": "fill",
             "size_2": "xl",
-            "text_2": "Talk to Flow →",
+            "text_2": "相談する →",
             "url_2": "#",
             "background_2": "#ffffff",
             "text_color_2": "#11243e"
