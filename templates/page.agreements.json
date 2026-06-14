@@ -298,14 +298,14 @@
             "text_color": "",
             "border_color": "",
             "show_controls": false,
-            "column_size": "3",
-            "title": "Column title",
+            "column_size": "2",
+            "title": "プライバシーポリシー",
             "heading_tag": "h4",
-            "subheading": "<p>Organize content into multiple columns to share useful information to your customers about your products, values...</p>",
-            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
+            "subheading": "",
+            "content": "<p>個人情報保護に関するFlowのプライバシーポリシーをご確認いただけます。</p>",
+            "link_url": "https://cdn.shopify.com/s/files/1/0704/4582/6185/files/Privacy_Policy.pdf?v=1749635230",
+            "link_text": "詳細を読む",
+            "link_style": "button"
           }
         },
         "item_VxhUUY": {
@@ -320,18 +320,19 @@
             "text_color": "",
             "border_color": "",
             "show_controls": false,
-            "column_size": "3",
-            "title": "Column title",
+            "column_size": "2",
+            "title": "データ保護方針",
             "heading_tag": "h4",
-            "subheading": "<p>Organize content into multiple columns to share useful information to your customers about your products, values...</p>",
-            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
+            "subheading": "",
+            "content": "<p>Flowのサービスにおけるデータの取扱いおよび保護方針をご確認いただけます。<br/></p><p></p>",
+            "link_url": "https://cdn.shopify.com/s/files/1/0704/4582/6185/files/Data_Protection_Policy.pdf?v=1773121905",
+            "link_text": "詳細を読む",
+            "link_style": "button"
           }
         },
         "item_H7BaWh": {
           "type": "item",
+          "disabled": true,
           "settings": {
             "icon": "none",
             "icon_width": 32,
@@ -364,8 +365,8 @@
         "stack_on_mobile": false,
         "gap": "medium",
         "text_alignment": "start",
-        "subheading": "About",
-        "title": "Featured content",
+        "subheading": "",
+        "title": "",
         "content": "<h3>データ保護・プライバシー</h3>",
         "background": "",
         "background_gradient": "",
