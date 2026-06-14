@@ -419,7 +419,7 @@
             "content": "<p>商品返品・RMAの手続きについて詳しくご確認いただけます。<br/></p><p></p>",
             "link_url": "https://cdn.shopify.com/s/files/1/0704/4582/6185/files/Return_Material_Authorization.pdf?v=1749635230",
             "link_text": "詳細を読む",
-            "link_style": "link"
+            "link_style": "button"
           }
         },
         "item_ycbtAm": {
