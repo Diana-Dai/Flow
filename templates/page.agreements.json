@@ -29,7 +29,7 @@
         "heading_UFppez": {
           "type": "heading",
           "settings": {
-            "text": "規約・ポリシー一覧",
+            "text": "規約・契約書類一覧",
             "heading_tag": "h1",
             "text_color": "",
             "gradient": ""
@@ -38,7 +38,7 @@
         "richtext_xaPj84": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Flowのサービス利用規約、プライバシーポリシー、データ保護方針、各種契約関連資料をまとめています。必要な項目をご確認ください。</p>"
+            "content": "<p>Flowのサービス利用規約、契約関連書類、データ保護方針、サポート関連資料をまとめています。必要な項目をご確認ください。</p>"
           }
         }
       },
@@ -207,7 +207,7 @@
             "border_color": "",
             "show_controls": false,
             "column_size": "2",
-            "title": "サービス申込書テンプレート",
+            "title": "テンプレートを確認する",
             "heading_tag": "h4",
             "subheading": "",
             "content": "<p>店内分析サービスの申込書テンプレートをダウンロードしてご利用いただけます。</p>",
@@ -552,7 +552,7 @@
         "text_alignment": "start",
         "subheading": "",
         "title": "",
-        "content": "<h3>企業方針・責任</h3>",
+        "content": "<h3>企業方針・社会的責任</h3>",
         "background": "",
         "background_gradient": "",
         "text_color": "",
@@ -565,6 +565,7 @@
       "blocks": {
         "subheading_nLJPa8": {
           "type": "subheading",
+          "disabled": true,
           "settings": {
             "text": "Subheading",
             "icon": "none"
@@ -573,7 +574,7 @@
         "heading_kPTxPJ": {
           "type": "heading",
           "settings": {
-            "text": "必要な書類が見つからない場合",
+            "text": "必要な書類についてのお問い合わせ",
             "heading_tag": "h1",
             "text_color": "",
             "gradient": ""
