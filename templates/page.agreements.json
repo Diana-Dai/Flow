@@ -16,6 +16,47 @@
         "content_width": "80ch"
       }
     },
+    "rich_text_X6fXNw": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_9nG9rT": {
+          "type": "subheading",
+          "settings": {
+            "text": "Agreements & Policies",
+            "icon": "none"
+          }
+        },
+        "heading_UFppez": {
+          "type": "heading",
+          "settings": {
+            "text": "規約・ポリシー一覧",
+            "heading_tag": "h1",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_xaPj84": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Flowのサービス利用規約、プライバシーポリシー、データ保護方針、各種契約関連資料をまとめています。必要な項目をご確認ください。</p>"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_9nG9rT",
+        "heading_UFppez",
+        "richtext_xaPj84"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(14, 54, 106, 1) 56%, rgba(247, 249, 253, 1) 99%)",
+        "text_color": "#FFFFFF"
+      }
+    },
     "image_with_text_overlay_9jXQ6b": {
       "type": "image-with-text-overlay",
       "blocks": {
@@ -44,6 +85,7 @@
         "heading_HUDrHF",
         "richtext_jRcjkq"
       ],
+      "disabled": true,
       "name": "Image with text overlay",
       "settings": {
         "full_width": true,
@@ -152,6 +194,7 @@
   },
   "order": [
     "main",
+    "rich_text_X6fXNw",
     "image_with_text_overlay_9jXQ6b",
     "multi_column_djBrai"
   ]
