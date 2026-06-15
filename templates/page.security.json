@@ -705,13 +705,13 @@
           "settings": {
             "style_1": "fill",
             "size_1": "xl",
-            "text_1": "店内行動分析について相談する →",
+            "text_1": "Contact Security Team",
             "url_1": "#",
             "background_1": "#0e366a",
             "text_color_1": "#ffffff",
             "style_2": "fill",
             "size_2": "xl",
-            "text_2": "導入事例を見る →",
+            "text_2": "View FAQ",
             "url_2": "#",
             "background_2": "#ffffff",
             "text_color_2": "#11243e"
