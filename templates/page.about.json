@@ -760,29 +760,53 @@
         "item_DK6qHy": {
           "type": "item",
           "settings": {
-            "title": "Do you ship overseas?",
-            "content": "<p>Yes, we ship all over the world. Shipping costs will apply, and will be added at checkout. We run discounts and promotions all year, so stay tuned for exclusive deals.</p>"
+            "title": "Is hardware included in the implementation fee?",
+            "content": "<p>Yes. The implementation fee covers hardware procurement, shipping, and installation. There is no separate hardware purchase — it is included in the one-time per-store fee.</p>"
           }
         },
         "item_VtrfC4": {
           "type": "item",
           "settings": {
-            "title": "How long will it take to get my orders?",
-            "content": "<p>It depends on where you are. Orders processed here will take 5-7 business days to arrive. Overseas deliveries can take anywhere from 7-16 days. Delivery details will be provided in your confirmation email.</p>"
+            "title": "What happens after the implementation fee is paid?",
+            "content": "<p>Nothing else hardware-related. The monthly subscription covers all ongoing costs — platform access, software updates, maintenance, and support. If a camera requires replacement due to hardware fault, Flow covers it under the SLA.</p>"
           }
         },
         "item_tfHEdg": {
           "type": "item",
           "settings": {
-            "title": "Any question?",
-            "content": "<p>You can contact us through our contact page! We will be happy to assist you.</p>"
+            "title": "Can we start with a pilot store before committing to a full rollout?",
+            "content": "<p>Yes. Flow supports phased deployment. Many customers begin with a single store or small pilot group, validate results over 60–90 days, and then expand. Pilot pricing is consistent with standard per-store rates.</p>"
+          }
+        },
+        "item_L73kEp": {
+          "type": "item",
+          "settings": {
+            "title": "How does pricing scale for large networks?",
+            "content": "<p>Volume discounts apply from 10 stores onward, with significant reductions at 50+ and 100+ store thresholds. Multi-year agreements provide additional savings. Contact us for a custom quote based on your network size.</p>"
+          }
+        },
+        "item_gLpXYE": {
+          "type": "item",
+          "settings": {
+            "title": "Is there a setup or onboarding fee separate from implementation?",
+            "content": "<p>No. The implementation fee is the single one-time cost. There are no additional onboarding, training, or project management fees.</p>"
+          }
+        },
+        "item_UTgqRx": {
+          "type": "item",
+          "settings": {
+            "title": "What contract lengths are available?",
+            "content": "<p>Flow is typically contracted on an annual basis. Multi-year agreements (2 or 3 years) are available and include pricing benefits. Month-to-month is not currently offered.</p>"
           }
         }
       },
       "block_order": [
         "item_DK6qHy",
         "item_VtrfC4",
-        "item_tfHEdg"
+        "item_tfHEdg",
+        "item_L73kEp",
+        "item_gLpXYE",
+        "item_UTgqRx"
       ],
       "name": "FAQ",
       "settings": {
