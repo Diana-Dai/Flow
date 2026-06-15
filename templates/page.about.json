@@ -362,6 +362,17 @@
         "subheading_text_color": ""
       }
     },
+    "17815078000b3a5249": {
+      "type": "_blocks",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
     "section-15": {
       "type": "feature-chart",
       "blocks": {
@@ -1099,6 +1110,7 @@
     "1781505750d4c92acf",
     "multi_column_L3Rbir",
     "multi_column_3tnATm",
+    "17815078000b3a5249",
     "section-15",
     "multi_column_nMex9i",
     "multi_column_wT8tcm",
