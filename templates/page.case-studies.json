@@ -18,6 +18,8 @@
             "max_width": 1600,
             "section_padding_mobile": 40,
             "section_padding_desktop": 40,
+            "brand_image": "shopify://shop_images/embedded_device_logo_standard_1200x400_7420f8fe-9df3-4033-80c2-a1dfe68674b8.png",
+            "brand_text": "Brand name",
             "show_tag": true,
             "tag_text": "導入事例",
             "show_icon": true,
@@ -196,7 +198,9 @@
         "content": "<p>Flow導入後、デイトナ様では来店数と売上の関係をより正確に把握できるようになり、店舗施策の検証と改善にデータを活用する体制が進みました。<br/>6か月間の検証では、導入店舗において売上高、来店者数、買い上げ率の改善が確認されています。</p>",
         "background": "#f9fafb",
         "background_gradient": "",
-        "text_color": ""
+        "text_color": "",
+        "subheading_background_color": "",
+        "subheading_text_color": ""
       }
     },
     "multi_column_TV4htr": {
@@ -262,7 +266,9 @@
         "content": "<p>株式会社デイトナ・インターナショナル様は、「FREAK’S STORE」をはじめ、「Firsthand」「Aresense」「2G」などを展開するファッション・ライフスタイル企業です。</p><p>同社では以前から、買上者数、購買率、セット率、客単価などの営業計数を重視し、店舗売上の改善に取り組まれていました。一方で、その母数となる来店数や店前通行量については、手動計測や売上からの逆算に頼る部分があり、店頭施策や売場改善をデータで検証しにくい状況がありました。</p><p>コロナ禍以降、より効率的で戦略的な店舗運営が求められる中、Flowは来店数の自動計測だけでなく、店舗スタッフが根拠を持って考え、行動するための仕組みとして導入されました。</p>",
         "background": "#ffffff",
         "background_gradient": "",
-        "text_color": ""
+        "text_color": "",
+        "subheading_background_color": "",
+        "subheading_text_color": ""
       }
     },
     "multi_column_qin4Pg": {
@@ -420,7 +426,9 @@
         "content": "<p>デイトナ様では以前から、買上者数、購買率、セット率、客単価などの営業計数を重視し、店舗売上の改善に取り組まれていました。一方で、来店数や店前通行量を正確に把握しにくく、店頭施策や売場改善をデータで検証しづらい状況がありました。</p>",
         "background": "",
         "background_gradient": "",
-        "text_color": ""
+        "text_color": "",
+        "subheading_background_color": "",
+        "subheading_text_color": ""
       }
     },
     "multi_column_PBB8dw": {
@@ -585,7 +593,9 @@
         "content": "<p>デイトナ様では、効率的で戦略的な店舗運営を進めるため、複数の計測ツールを比較検討。<br/>コスト面とレポート画面の見やすさを評価し、Flowの導入を決定されました。</p>",
         "background": "#ffffff",
         "background_gradient": "",
-        "text_color": ""
+        "text_color": "",
+        "subheading_background_color": "",
+        "subheading_text_color": ""
       }
     },
     "multi_column_bJtgmc": {
@@ -744,7 +754,9 @@
         "content": "<p>デイトナ様では、来店数・店前通行量・来店属性・売上情報を組み合わせ、店舗ごとの状況を正確に把握し、改善アクションにつなげる環境を整備されました。</p>",
         "background": "",
         "background_gradient": "",
-        "text_color": ""
+        "text_color": "",
+        "subheading_background_color": "",
+        "subheading_text_color": ""
       }
     },
     "multi_column_TbzGnm": {
@@ -885,7 +897,9 @@
         "content": "<p>Flowの導入効果は、データを取得したことだけではありません。デイトナ様では、Flowのデータを店舗会議や改善活動に組み込み、店舗スタッフが根拠を持って考え、行動できる運用へとつなげました。</p>",
         "background": "#11243e",
         "background_gradient": "",
-        "text_color": "#ffffff"
+        "text_color": "#ffffff",
+        "subheading_background_color": "",
+        "subheading_text_color": ""
       }
     },
     "178003042955718f5f": {
@@ -1263,7 +1277,9 @@
         "content": "<p>数値面の改善だけでなく、Flowは店舗スタッフの考え方や行動にも変化を生みました。データをもとに店舗状況を確認し、対策を考え、実行する流れが、現場の納得感と成長につながっています。</p>",
         "background": "#ffffff",
         "background_gradient": "",
-        "text_color": ""
+        "text_color": "",
+        "subheading_background_color": "",
+        "subheading_text_color": ""
       }
     },
     "multi_column_ykywta": {
@@ -1380,7 +1396,9 @@
         "content": "<p>デイトナ様では、Flowを来店数計測だけのツールとしてではなく、店舗運営と人材育成を支えるデータ基盤として活用されています。今後も、店舗ごとの状況把握、売上対策、スタッフ育成、店舗間の学びの共有に向けて、段階的に活用の幅を広げていくことが期待されます。</p>",
         "background": "#f2f2f2",
         "background_gradient": "",
-        "text_color": ""
+        "text_color": "",
+        "subheading_background_color": "",
+        "subheading_text_color": ""
       }
     },
     "rich_text_6VmVgb": {
@@ -1548,7 +1566,9 @@
         "content": "",
         "background": "",
         "background_gradient": "",
-        "text_color": ""
+        "text_color": "",
+        "subheading_background_color": "",
+        "subheading_text_color": ""
       }
     }
   },
