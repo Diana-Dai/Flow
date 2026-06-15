@@ -429,8 +429,8 @@
           "settings": {
             "text": "ONGOING SUPPORT",
             "alignment": "center",
-            "text_color": "#11243E",
-            "background": "#F0F3E9"
+            "text_color": "#11243e",
+            "background": "#f0f3e9"
           },
           "blocks": {}
         },
@@ -462,10 +462,10 @@
             "featured_border_color": "#1e3a8a",
             "badge_background": "#1e3a8a",
             "badge_text_color": "#ffffff",
-            "title_color": "#11243E",
+            "title_color": "#11243e",
             "subtitle_color": "#64748b",
             "feature_text_color": "#334155",
-            "checkmark_color": "#A7BC59",
+            "checkmark_color": "#a7bc59",
             "desktop_width_percent": 100
           },
           "blocks": {}
@@ -480,9 +480,9 @@
         "full_width": true,
         "remove_vertical_spacing": false,
         "remove_horizontal_spacing": false,
-        "background": "#FFFFFF",
+        "background": "#ffffff",
         "background_gradient": "",
-        "text_color": "#11243E"
+        "text_color": "#11243e"
       }
     },
     "section-15": {
@@ -602,6 +602,60 @@
         "chart_true_false_color": ""
       }
     },
+    "blocks_rKWXJX": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_0c78d27_NLQEHG": {
+          "type": "ai_gen_block_0c78d27",
+          "name": "FAQ accordion item",
+          "settings": {
+            "category": "Implementation & Deployment",
+            "question": "How long does implementation take from contract to go-live?",
+            "answer": "Typical timeline is 4-6 weeks for a single store, 8-12 weeks for multi-store rollouts. Week 1-2: Infrastructure assessment and camera placement planning. Week 3-4: Hardware installation and network integration. Week 5-6: Calibration, validation, and staff training. For enterprise deployments (10+ stores), we follow a phased rollout: pilot store first (6 weeks), then standardized deployment at 2-3 stores per week. Timeline assumes existing network infrastructure meets requirements (PoE-capable switches, 100Mbps per camera). If network upgrades are needed, add 2-4 weeks for infrastructure work.",
+            "default_open": false,
+            "icon_type": "clock",
+            "icon_background_color": "#f0f4e8",
+            "icon_color": "#6b7c3a",
+            "category_color": "#6b7c3a",
+            "question_color": "#0f172a",
+            "answer_color": "#475569",
+            "chevron_color": "#64748b"
+          },
+          "blocks": {}
+        },
+        "ai_gen_block_0c78d27_86nKKi": {
+          "type": "ai_gen_block_0c78d27",
+          "settings": {
+            "category": "Implementation & Deployment",
+            "question": "How long does implementation take from contract to go-live?",
+            "answer": "Typical timeline is 4-6 weeks for a single store, 8-12 weeks for multi-store rollouts. Week 1-2: Infrastructure assessment and camera placement planning. Week 3-4: Hardware installation and network integration. Week 5-6: Calibration, validation, and staff training. For enterprise deployments (10+ stores), we follow a phased rollout: pilot store first (6 weeks), then standardized deployment at 2-3 stores per week. Timeline assumes existing network infrastructure meets requirements (PoE-capable switches, 100Mbps per camera). If network upgrades are needed, add 2-4 weeks for infrastructure work.",
+            "default_open": false,
+            "icon_type": "clock",
+            "icon_background_color": "#f0f4e8",
+            "icon_color": "#6b7c3a",
+            "category_color": "#6b7c3a",
+            "question_color": "#0f172a",
+            "answer_color": "#475569",
+            "chevron_color": "#64748b"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_0c78d27_NLQEHG",
+        "ai_gen_block_0c78d27_86nKKi"
+      ],
+      "disabled": true,
+      "name": "FAQ accordion item",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
     "multi_column_UExWWX": {
       "type": "multi-column",
       "blocks": {
@@ -699,6 +753,59 @@
         "subheading_background_color": "",
         "subheading_text_color": ""
       }
+    },
+    "faq_wCCUww": {
+      "type": "faq",
+      "blocks": {
+        "item_DK6qHy": {
+          "type": "item",
+          "settings": {
+            "title": "Do you ship overseas?",
+            "content": "<p>Yes, we ship all over the world. Shipping costs will apply, and will be added at checkout. We run discounts and promotions all year, so stay tuned for exclusive deals.</p>"
+          }
+        },
+        "item_VtrfC4": {
+          "type": "item",
+          "settings": {
+            "title": "How long will it take to get my orders?",
+            "content": "<p>It depends on where you are. Orders processed here will take 5-7 business days to arrive. Overseas deliveries can take anywhere from 7-16 days. Delivery details will be provided in your confirmation email.</p>"
+          }
+        },
+        "item_tfHEdg": {
+          "type": "item",
+          "settings": {
+            "title": "Any question?",
+            "content": "<p>You can contact us through our contact page! We will be happy to assist you.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_DK6qHy",
+        "item_VtrfC4",
+        "item_tfHEdg"
+      ],
+      "name": "FAQ",
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "Common pricing questions",
+        "content": "",
+        "team_avatar_width": 160,
+        "support_hours": "Our customer support is available Monday to Friday: 8am-8:30pm.",
+        "answer_time": "Average answer time: 24h",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "",
+        "accordion_text_color": ""
+      }
     }
   },
   "order": [
@@ -709,6 +816,8 @@
     "17815078000b3a5249",
     "17815090283832c03e",
     "section-15",
-    "multi_column_UExWWX"
+    "blocks_rKWXJX",
+    "multi_column_UExWWX",
+    "faq_wCCUww"
   ]
 }
