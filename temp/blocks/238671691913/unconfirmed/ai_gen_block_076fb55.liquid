@@ -1,6 +1,584 @@
+{% doc %}
+  @prompt
+    Shopify AI Prompt
+    
+    Create a premium "Founder Story" / "Why We Built This" section for a Shopify homepage.
+    
+    Layout
+    Full-width section with a large rounded container (24-32px border radius)
+    Split layout: 35% left column, 65% right column
+    Desktop: two-column layout
+    Mobile: stacked layout with founder card on top
+    Generous padding (80-120px desktop)
+    Left Column — Founder Card
+    Deep forest green background (#2F4B47)
+    Centered founder profile area
+    Large minimalist line-art avatar inside a subtle circular outline
+    Founder name displayed prominently
+    Role/title beneath in lighter text
+    Plenty of negative space to create a premium, trustworthy feel
+    Optional Shopify image picker for founder photo replacement
+    
+    Content:
+    
+    Founder Name
+    Founder Title
+    Right Column — Story Content
+    Deep navy background (#0B3553)
+    White typography
+    Large bold heading:
+    Why We Built Flow
+    Multiple rich-text paragraphs with comfortable reading width
+    Maximum text width around 700px
+    Strong typography hierarchy
+    Spacious vertical rhythm between paragraphs
+    
+    Include:
+    
+    Heading field
+    Rich text editor field
+    Optional highlighted closing statement at bottom
+    Visual Style
+    Enterprise SaaS aesthetic
+    Inspired by Stripe, Figma, Linear, Vercel, and modern B2B software websites
+    Premium, trustworthy, founder-led brand storytelling
+    No unnecessary decorations
+    Clean geometric layout
+    Strong contrast between green founder panel and navy content panel
+    Rounded corners on entire container
+    Subtle hover effect on container
+    Smooth fade-in animation on scroll
+    Shopify Customizer Settings
+    Founder image picker
+    Founder name
+    Founder title
+    Section heading
+    Rich text content
+    Highlight statement
+    Left panel background color
+    Right panel background color
+    Border radius
+    Top and bottom spacing
+    Design Goals
+    Build trust and credibility
+    Feel like a founder letter rather than marketing copy
+    Professional, established SaaS company aesthetic
+    Optimized for readability and storytelling
+    Premium enterprise software landing page quality
+    Strong visual balance between founder identity and company mission
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-founder-story-{{ ai_gen_id }} {
+    width: 100%;
+    padding: {{ block.settings.section_spacing_top }}px 0 {{ block.settings.section_spacing_bottom }}px;
+    display: block;
+  }
+
+  .ai-founder-story-container-{{ ai_gen_id }} {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .ai-founder-story-wrapper-{{ ai_gen_id }} {
+    display: grid;
+    grid-template-columns: 35% 65%;
+    border-radius: {{ block.settings.container_border_radius }}px;
+    overflow: hidden;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0;
+    animation: ai-founder-story-fade-in-{{ ai_gen_id }} 0.8s ease-out 0.2s forwards;
+  }
+
+  .ai-founder-story-wrapper-{{ ai_gen_id }}:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+  }
+
+  @keyframes ai-founder-story-fade-in-{{ ai_gen_id }} {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .ai-founder-story-left-{{ ai_gen_id }} {
+    background-color: {{ block.settings.left_panel_bg_color }};
+    padding: {{ block.settings.left_panel_padding }}px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+  }
+
+  .ai-founder-story-avatar-wrapper-{{ ai_gen_id }} {
+    position: relative;
+    width: 180px;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ai-founder-story-avatar-circle-{{ ai_gen_id }} {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+  }
+
+  .ai-founder-story-avatar-{{ ai_gen_id }} {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .ai-founder-story-avatar-placeholder-{{ ai_gen_id }} {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ai-founder-story-avatar-placeholder-{{ ai_gen_id }} svg {
+    width: 80px;
+    height: 80px;
+    stroke: rgba(255, 255, 255, 0.4);
+    stroke-width: 1.5;
+  }
+
+  .ai-founder-story-founder-info-{{ ai_gen_id }} {
+    text-align: center;
+  }
+
+  .ai-founder-story-founder-name-{{ ai_gen_id }} {
+    font-size: 24px;
+    font-weight: 600;
+    color: #ffffff;
+    margin: 0 0 8px;
+    letter-spacing: -0.5px;
+  }
+
+  .ai-founder-story-founder-title-{{ ai_gen_id }} {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.7);
+    margin: 0;
+    font-weight: 400;
+  }
+
+  .ai-founder-story-right-{{ ai_gen_id }} {
+    background-color: {{ block.settings.right_panel_bg_color }};
+    padding: {{ block.settings.right_panel_padding }}px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .ai-founder-story-content-{{ ai_gen_id }} {
+    max-width: 700px;
+  }
+
+  .ai-founder-story-heading-{{ ai_gen_id }} {
+    font-size: {{ block.settings.heading_size }}px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 32px;
+    line-height: 1.2;
+    letter-spacing: -1px;
+  }
+
+  .ai-founder-story-text-{{ ai_gen_id }} {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: {{ block.settings.text_size }}px;
+    line-height: 1.7;
+    margin-bottom: 24px;
+  }
+
+  .ai-founder-story-text-{{ ai_gen_id }} p {
+    margin: 0 0 24px;
+  }
+
+  .ai-founder-story-text-{{ ai_gen_id }} p:last-child {
+    margin-bottom: 0;
+  }
+
+  .ai-founder-story-highlight-{{ ai_gen_id }} {
+    margin-top: 32px;
+    padding: 24px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-left: 3px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+  }
+
+  .ai-founder-story-highlight-{{ ai_gen_id }} p {
+    color: rgba(255, 255, 255, 0.95);
+    font-size: {{ block.settings.text_size }}px;
+    line-height: 1.6;
+    margin: 0;
+    font-weight: 500;
+  }
+
+  @media screen and (max-width: 989px) {
+    .ai-founder-story-wrapper-{{ ai_gen_id }} {
+      grid-template-columns: 1fr;
+    }
+
+    .ai-founder-story-left-{{ ai_gen_id }} {
+      padding: 60px 40px;
+    }
+
+    .ai-founder-story-right-{{ ai_gen_id }} {
+      padding: 60px 40px;
+    }
+
+    .ai-founder-story-heading-{{ ai_gen_id }} {
+      font-size: {{ block.settings.heading_size | times: 0.8 }}px;
+    }
+
+    .ai-founder-story-text-{{ ai_gen_id }} {
+      font-size: {{ block.settings.text_size | times: 0.9 }}px;
+    }
+
+    .ai-founder-story-highlight-{{ ai_gen_id }} p {
+      font-size: {{ block.settings.text_size | times: 0.9 }}px;
+    }
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-founder-story-{{ ai_gen_id }} {
+      padding: {{ block.settings.section_spacing_top | times: 0.6 }}px 0 {{ block.settings.section_spacing_bottom | times: 0.6 }}px;
+    }
+
+    .ai-founder-story-wrapper-{{ ai_gen_id }} {
+      border-radius: {{ block.settings.container_border_radius | times: 0.7 }}px;
+    }
+
+    .ai-founder-story-left-{{ ai_gen_id }} {
+      padding: 48px 24px;
+      gap: 24px;
+    }
+
+    .ai-founder-story-right-{{ ai_gen_id }} {
+      padding: 48px 24px;
+    }
+
+    .ai-founder-story-avatar-wrapper-{{ ai_gen_id }} {
+      width: 140px;
+      height: 140px;
+    }
+
+    .ai-founder-story-avatar-{{ ai_gen_id }} {
+      width: 120px;
+      height: 120px;
+    }
+
+    .ai-founder-story-avatar-placeholder-{{ ai_gen_id }} {
+      width: 120px;
+      height: 120px;
+    }
+
+    .ai-founder-story-avatar-placeholder-{{ ai_gen_id }} svg {
+      width: 60px;
+      height: 60px;
+    }
+
+    .ai-founder-story-founder-name-{{ ai_gen_id }} {
+      font-size: 20px;
+    }
+
+    .ai-founder-story-founder-title-{{ ai_gen_id }} {
+      font-size: 14px;
+    }
+
+    .ai-founder-story-heading-{{ ai_gen_id }} {
+      font-size: {{ block.settings.heading_size | times: 0.65 }}px;
+      margin-bottom: 24px;
+    }
+
+    .ai-founder-story-text-{{ ai_gen_id }} {
+      font-size: {{ block.settings.text_size | times: 0.85 }}px;
+      margin-bottom: 20px;
+    }
+
+    .ai-founder-story-text-{{ ai_gen_id }} p {
+      margin-bottom: 20px;
+    }
+
+    .ai-founder-story-highlight-{{ ai_gen_id }} {
+      margin-top: 24px;
+      padding: 20px;
+    }
+
+    .ai-founder-story-highlight-{{ ai_gen_id }} p {
+      font-size: {{ block.settings.text_size | times: 0.85 }}px;
+    }
+  }
+{% endstyle %}
+
+<founder-story-{{ ai_gen_id }} class="ai-founder-story-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-founder-story-container-{{ ai_gen_id }}">
+    <div class="ai-founder-story-wrapper-{{ ai_gen_id }}">
+      <div class="ai-founder-story-left-{{ ai_gen_id }}">
+        <div class="ai-founder-story-avatar-wrapper-{{ ai_gen_id }}">
+          <div class="ai-founder-story-avatar-circle-{{ ai_gen_id }}"></div>
+          {% if block.settings.founder_image %}
+            <img
+              src="{{ block.settings.founder_image | image_url: width: 320 }}"
+              alt="{{ block.settings.founder_name | escape }}"
+              class="ai-founder-story-avatar-{{ ai_gen_id }}"
+              loading="lazy"
+              width="160"
+              height="160"
+            >
+          {% else %}
+            <div class="ai-founder-story-avatar-placeholder-{{ ai_gen_id }}">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+            </div>
+          {% endif %}
+        </div>
+        <div class="ai-founder-story-founder-info-{{ ai_gen_id }}">
+          {% if block.settings.founder_name != blank %}
+            <h3 class="ai-founder-story-founder-name-{{ ai_gen_id }}">{{ block.settings.founder_name }}</h3>
+          {% endif %}
+          {% if block.settings.founder_title != blank %}
+            <p class="ai-founder-story-founder-title-{{ ai_gen_id }}">{{ block.settings.founder_title }}</p>
+          {% endif %}
+        </div>
+      </div>
+
+      <div class="ai-founder-story-right-{{ ai_gen_id }}">
+        <div class="ai-founder-story-content-{{ ai_gen_id }}">
+          {% if block.settings.heading != blank %}
+            <h2 class="ai-founder-story-heading-{{ ai_gen_id }}">{{ block.settings.heading }}</h2>
+          {% endif %}
+
+          {% if block.settings.story_content != blank %}
+            <div class="ai-founder-story-text-{{ ai_gen_id }}">
+              {{ block.settings.story_content }}
+            </div>
+          {% endif %}
+
+          {% if block.settings.highlight_statement != blank %}
+            <div class="ai-founder-story-highlight-{{ ai_gen_id }}">
+              {{ block.settings.highlight_statement }}
+            </div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</founder-story-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class FounderStory{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+      }
+
+      connectedCallback() {
+        this.setupIntersectionObserver();
+      }
+
+      setupIntersectionObserver() {
+        const wrapper = this.querySelector('.ai-founder-story-wrapper-{{ ai_gen_id }}');
+        
+        if (!wrapper || !('IntersectionObserver' in window)) {
+          return;
+        }
+
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.style.animationPlayState = 'running';
+              observer.unobserve(entry.target);
+            }
+          });
+        }, {
+          threshold: 0.1,
+          rootMargin: '0px 0px -50px 0px'
+        });
+
+        observer.observe(wrapper);
+      }
+    }
+
+    customElements.define('founder-story-{{ ai_gen_id }}', FounderStory{{ ai_gen_id }});
+  })();
+</script>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "Founder story",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Founder information"
+    },
+    {
+      "type": "image_picker",
+      "id": "founder_image",
+      "label": "Founder photo"
+    },
+    {
+      "type": "text",
+      "id": "founder_name",
+      "label": "Founder name",
+      "default": "Alex Chen"
+    },
+    {
+      "type": "text",
+      "id": "founder_title",
+      "label": "Founder title",
+      "default": "Founder & CEO"
+    },
+    {
+      "type": "header",
+      "content": "Story content"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Why We Built Flow"
+    },
+    {
+      "type": "richtext",
+      "id": "story_content",
+      "label": "Story text",
+      "default": "<p>In 2019, I watched countless businesses struggle with fragmented workflows and disconnected tools. Teams were spending more time managing software than building their products.</p><p>We started Flow Solutions with a simple belief: enterprise-grade automation shouldn't require enterprise-level complexity. Every business deserves tools that work as hard as they do.</p><p>Today, Flow powers operations for over 10,000 companies worldwide. But we're just getting started.</p>"
+    },
+    {
+      "type": "richtext",
+      "id": "highlight_statement",
+      "label": "Highlight statement",
+      "default": "<p>Our mission is to help every business unlock their full potential through intelligent automation.</p>"
+    },
+    {
+      "type": "header",
+      "content": "Typography"
+    },
+    {
+      "type": "range",
+      "id": "heading_size",
+      "label": "Heading size",
+      "min": 28,
+      "max": 64,
+      "step": 2,
+      "unit": "px",
+      "default": 48
+    },
+    {
+      "type": "range",
+      "id": "text_size",
+      "label": "Text size",
+      "min": 14,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "default": 18
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "left_panel_bg_color",
+      "label": "Left panel background",
+      "default": "#2F4B47"
+    },
+    {
+      "type": "color",
+      "id": "right_panel_bg_color",
+      "label": "Right panel background",
+      "default": "#0B3553"
+    },
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "range",
+      "id": "container_border_radius",
+      "label": "Container border radius",
+      "min": 0,
+      "max": 48,
+      "step": 4,
+      "unit": "px",
+      "default": 28
+    },
+    {
+      "type": "range",
+      "id": "left_panel_padding",
+      "label": "Left panel padding",
+      "min": 40,
+      "max": 120,
+      "step": 10,
+      "unit": "px",
+      "default": 80
+    },
+    {
+      "type": "range",
+      "id": "right_panel_padding",
+      "label": "Right panel padding",
+      "min": 40,
+      "max": 120,
+      "step": 10,
+      "unit": "px",
+      "default": 80
+    },
+    {
+      "type": "range",
+      "id": "section_spacing_top",
+      "label": "Top spacing",
+      "min": 0,
+      "max": 120,
+      "step": 10,
+      "unit": "px",
+      "default": 80
+    },
+    {
+      "type": "range",
+      "id": "section_spacing_bottom",
+      "label": "Bottom spacing",
+      "min": 0,
+      "max": 120,
+      "step": 10,
+      "unit": "px",
+      "default": 80
+    },
+    {
+      "type": "range",
+      "id": "desktop_width_percent",
+      "label": "Desktop width",
+      "min": 50,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "default": 100
+    }
+  ],
+  "presets": [
+    {
+      "name": "Founder story"
+    }
+  ]
+}
 {% endschema %}
