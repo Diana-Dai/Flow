@@ -427,6 +427,7 @@ height-observer, visibility-progress, scroll-area, video-media, model-media, med
   padding-block-start: var(--accordion-spacing);
   padding-block-end: var(--accordion-spacing);
   display: flex;
+  font-weight:500;
 }
 
 .accordion__content {
