@@ -420,6 +420,71 @@
         "text_color": ""
       }
     },
+    "17815090283832c03e": {
+      "type": "_blocks",
+      "blocks": {
+        "badge_wxVHMp": {
+          "type": "badge",
+          "name": "Badge",
+          "settings": {
+            "text": "ONGOING SUPPORT",
+            "alignment": "center",
+            "text_color": "#11243E",
+            "background": "#F0F3E9"
+          },
+          "blocks": {}
+        },
+        "rich_text_w3Kj9C": {
+          "type": "rich-text",
+          "name": "Rich text",
+          "settings": {
+            "text": "<h4>Support included at every level.</h4><p>Every Flow subscription includes baseline support. Larger networks receive dedicated resources and enhanced SLAs.</p>",
+            "content_width": "small",
+            "text_alignment": "left"
+          },
+          "blocks": {}
+        },
+        "ai_gen_block_114bb1b_i6fAeh": {
+          "type": "ai_gen_block_114bb1b",
+          "settings": {
+            "card_1_title": "Standard",
+            "card_1_subtitle": "1–9 stores",
+            "card_1_features": "99.9% uptime SLA\nEmail and chat support\nFlow Academy (online)\nMonthly performance report\nSoftware updates included",
+            "featured_badge_text": "MOST COMMON",
+            "card_2_title": "Professional",
+            "card_2_subtitle": "10–49 stores",
+            "card_2_features": "Everything in Standard\nDedicated customer success manager\nQuarterly business reviews\nPriority support response\nOn-site training (initial + annual)\nCustom reporting configuration",
+            "card_3_title": "Enterprise",
+            "card_3_subtitle": "50+ stores",
+            "card_3_features": "Everything in Professional\n24/7 phone support\nCustom SLA options\nExecutive steering sessions\nMulti-region deployment support\nAPI priority lane\nCustom integration development",
+            "card_1_background": "#ffffff",
+            "card_border_color": "#e5e7eb",
+            "featured_border_color": "#1e3a8a",
+            "badge_background": "#1e3a8a",
+            "badge_text_color": "#ffffff",
+            "title_color": "#11243E",
+            "subtitle_color": "#64748b",
+            "feature_text_color": "#334155",
+            "checkmark_color": "#A7BC59",
+            "desktop_width_percent": 100
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "badge_wxVHMp",
+        "rich_text_w3Kj9C",
+        "ai_gen_block_114bb1b_i6fAeh"
+      ],
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "#11243E"
+      }
+    },
     "section-15": {
       "type": "feature-chart",
       "blocks": {
@@ -642,6 +707,7 @@
     "multi_column_L3Rbir",
     "multi_column_3tnATm",
     "17815078000b3a5249",
+    "17815090283832c03e",
     "section-15",
     "multi_column_UExWWX"
   ]
