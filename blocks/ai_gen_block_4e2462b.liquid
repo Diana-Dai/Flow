@@ -62,6 +62,8 @@
     width: 100%;
     background-color: {{ block.settings.background_color }};
     padding: 0 20px 80px 20px;
+        border-radius: 24px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
   }
 
   .ai-conversion-container-{{ ai_gen_id }} {
@@ -226,10 +228,9 @@
   }
 
   .ai-conversion-right-{{ ai_gen_id }} {
-    border-radius: 24px;
     position: sticky;
     top: 40px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+
 
   }
 
@@ -348,13 +349,11 @@
   .ai-conversion-insight-main-{{ ai_gen_id }} {
     font-size: 15px;
     font-weight: 600;
-    color: {{ block.settings.heading_color }};
     margin: 0 0 8px 0;
   }
 
   .ai-conversion-insight-sub-{{ ai_gen_id }} {
     font-size: 14px;
-    color: {{ block.settings.body_text_color }};
     margin: 0;
   }
 
