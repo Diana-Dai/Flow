@@ -9,12 +9,1175 @@
  */
 {
   "sections": {
-    "main": {
-      "type": "main-page",
-      "settings": {}
+    "rich_text_cqadYy": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_nJjQnz": {
+          "type": "subheading",
+          "settings": {
+            "text": "Flow Solutionsについて",
+            "icon": "none"
+          }
+        },
+        "liquid_R3c38x": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<h1 class=\"h1\">小売店舗運営を支える<br>データ基盤をつくる。\n</h1>"
+          }
+        },
+        "heading_hjfyL9": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "text": "小売店舗運営を支えるインフラをつくる",
+            "heading_tag": "h1",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_wjTJeB": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Flow Solutionsは、来店計測、店舗分析、売上・スタッフ・天候などの運営データをつなぎ、小売現場で起きていることを正確に把握し、日々の判断と実行につなげる小売インテリジェンスプラットフォームです。</p>"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_nJjQnz",
+        "liquid_R3c38x",
+        "heading_hjfyL9",
+        "richtext_wjTJeB"
+      ],
+      "custom_css": [
+        "* {padding-bottom: 1rem;}"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "medium",
+        "text_position": "start",
+        "background": "#11243e",
+        "background_gradient": "",
+        "text_color": "#ffffff"
+      }
+    },
+    "multi_column_L3Rbir": {
+      "type": "multi-column",
+      "blocks": {
+        "item_TYrPjG": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#0e366a",
+            "text_color": "",
+            "border_color": "rgba(0,0,0,0)",
+            "show_controls": false,
+            "column_size": "4",
+            "title": "990+",
+            "heading_tag": "h1",
+            "subheading": "",
+            "content": "<p>導入拠点</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_8N9HmD": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#0e366a",
+            "text_color": "",
+            "border_color": "#0e366a",
+            "show_controls": false,
+            "column_size": "4",
+            "title": "100+",
+            "heading_tag": "h1",
+            "subheading": "",
+            "content": "<p>導入ブランド</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_GLb7bG": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#0e366a",
+            "text_color": "",
+            "border_color": "#0e366a",
+            "show_controls": false,
+            "column_size": "4",
+            "title": "2016",
+            "heading_tag": "h1",
+            "subheading": "",
+            "content": "<p>Flow提供開始</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_L9UbpA": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#0e366a",
+            "text_color": "",
+            "border_color": "#0e366a",
+            "show_controls": false,
+            "column_size": "4",
+            "title": "10年以上",
+            "heading_tag": "h1",
+            "subheading": "",
+            "content": "<p>分析運用実績</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_TYrPjG",
+        "item_8N9HmD",
+        "item_GLb7bG",
+        "item_L9UbpA"
+      ],
+      "custom_css": [],
+      "name": "Multi-column",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "start",
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "background": "#11243e",
+        "background_gradient": "",
+        "text_color": "#ffffff",
+        "subheading_background_color": "",
+        "subheading_text_color": ""
+      }
+    },
+    "blocks_kKwWcf": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_2daa5f2_bAmgGL": {
+          "type": "ai_gen_block_2daa5f2",
+          "settings": {
+            "label": "私たちのミッション",
+            "heading": "小売現場の状況を可視化し、<br>\n次の行動につなげる",
+            "description": "小売店舗では、売上だけでは見えないことが日々起きています。来店数、通行量、コンバージョン、スタッフ体制、天候、販促、VMDの変化が重なり、現場の判断は常に複雑です。\n<br><br>\nFlowは、これらのデータをつなぎ、店舗で何が起きているかを正確に把握できる状態をつくります。現場と本部が同じ情報をもとに、より早く、一貫した判断ができるよう支援します。\n<strong>\n<br><br>\n私たちのミッションは、小売現場を正しく測定し、理解し、実行につなげるための運営基盤をつくることです。\n\n</strong>",
+            "button_text": "",
+            "button_link": "",
+            "condition_note": "",
+            "benefit_1_title": "正確な測定",
+            "benefit_1_text": "来店・通行量・店内行動を、現場判断の土台として可視化します。",
+            "benefit_2_title": "リアルタイムの把握",
+            "benefit_2_text": "売上、コンバージョン、スタッフ、天候などをつなぎ、変化をすばやく捉えます。",
+            "benefit_3_title": "実行への接続",
+            "benefit_3_text": "データを見て終わらせず、店舗と本部の次の行動につなげます。",
+            "section_background": "rgba(0,0,0,0)",
+            "card_background": "rgba(0,0,0,0)",
+            "card_border_color": "#e5e7eb",
+            "card_border_radius": 16,
+            "card_shadow_opacity": 10,
+            "label_background": "#f0f3e9",
+            "label_text_color": "#11243e",
+            "label_font_size": 11,
+            "heading_color": "#11243e",
+            "text_color": "#4b5563",
+            "text_font_size": 16,
+            "condition_text_color": "#9ca3af",
+            "condition_font_size": 16,
+            "button_background": "#11243e",
+            "button_hover_background": "#0a2850",
+            "button_text_color": "#ffffff",
+            "button_font_size": 18,
+            "button_border_radius": 8,
+            "benefit_icon_background": "#a0b842",
+            "benefit_icon_color": "#ffffff",
+            "benefit_title_color": "#11243e",
+            "benefit_title_font_size": 18,
+            "benefit_text_color": "#6b7280",
+            "benefit_text_font_size": 18
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_2daa5f2_bAmgGL"
+      ],
+      "name": "Campaign banner",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "178097413274cdfbe8": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_fb05f27_6KXTRQ": {
+          "type": "ai_gen_block_fb05f27",
+          "settings": {
+            "founder_image": "shopify://shop_images/Chad2022.jpg",
+            "founder_name": "チャド・スチュワート",
+            "founder_title": "代表取締役",
+            "heading": "なぜFlowをつくったのか",
+            "story_content": "<p><strong>私が小売の現場を深く考えるようになったきっかけは、大学でビジネスを学びながら、カナディアンロッキーのスキーショップで働いていた頃でした。店舗の成果は、売上だけで決まるものではありません。来店数、時間帯、コンバージョン、スタッフ配置、そしてその日の現場判断によって大きく変わることを、実際の店舗で学びました。</strong></p><p><strong>その経験は、今のFlowの考え方につながっています。店舗スタッフは、売上を伸ばし、お客様を支え、日々の変化にすばやく対応することを求められています。しかし、その判断に必要な情報が十分に届いていないことも少なくありません。</strong></p><p><strong>Flowは、その状況を変えるためにつくりました。小売企業が店舗で本当に起きていることを理解し、現場のチームがより自信を持って判断し、行動できるようにする。それがFlowの役割です。</strong></p>",
+            "highlight_statement": "<p><strong>データは、現場を評価するためだけのものではありません。現場が次の判断をしやすくするためにあるべきだと考えています。</strong></p>",
+            "left_panel_bg": "#0e366a",
+            "right_panel_bg": "#11243e",
+            "border_radius": 20,
+            "section_spacing_top": 0,
+            "section_spacing_bottom": 60
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_fb05f27_6KXTRQ"
+      ],
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "1780975575f5f43498": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_edd2e97_AgMMzz": {
+          "type": "ai_gen_block_edd2e97",
+          "settings": {
+            "heading": "会社概要",
+            "detail_1_icon": "globe",
+            "detail_1_label": "会社名",
+            "detail_1_value": "株式会社 Flow Solutions",
+            "detail_2_icon": "building",
+            "detail_2_label": "本社所在地",
+            "detail_2_value": "神奈川県横浜市中区桜木町2-2 港陽ビル 4F",
+            "detail_3_icon": "target",
+            "detail_3_label": "会社設立",
+            "detail_3_value": "2006年3月16日",
+            "detail_4_icon": "users",
+            "detail_4_label": "事業内容",
+            "detail_4_value": "小売店舗向けデータ分析・運営改善支援",
+            "stat_1_metric": "990+",
+            "stat_1_label": "導入拠点",
+            "stat_2_metric": "100+",
+            "stat_2_label": "導入ブランド",
+            "stat_3_metric": "9,900万円",
+            "stat_3_label": "資本金",
+            "stat_4_metric": "2016",
+            "stat_4_label": "Flow提供開始",
+            "desktop_width_percent": 100
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_edd2e97_AgMMzz"
+      ],
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "multi_column_3tnATm": {
+      "type": "multi-column",
+      "blocks": {
+        "item_LTjn3h": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-camera",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#a0b842",
+            "icon_color": "#f9fafb",
+            "background_color": "#f2f2f2",
+            "text_color": "",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "2",
+            "title": "AI Camera Measurement",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<p>Ceiling-mounted cameras with edge AI processing. Accurate people counting (98.5%), zone tracking, dwell time, heatmaps, and passerby measurement. Privacy-first—no facial recognition, no video storage.</p><ul><li><strong>People Counting</strong></li><li><strong>Zone Analytics</strong></li><li><strong>Dwell Time</strong></li><li><strong>Heatmaps</strong></li></ul>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_jAdBnT": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-document",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#a0b842",
+            "icon_color": "#f9fafb",
+            "background_color": "#f2f2f2",
+            "text_color": "",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "2",
+            "title": "Retail Analytics Platform",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<p>Web-based dashboard and mobile app for store managers, analysts, and executives. Real-time KPIs, conversion tracking, traffic trends, staff-to-customer ratios, and role-based views across single or multi-store deployments.</p><ul><li>Conversion Tracking</li><li>Traffic Trends</li><li>Multi-Store</li></ul>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_wA6Lwn": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-file",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#a0b842",
+            "icon_color": "#f9fafb",
+            "background_color": "#f2f2f2",
+            "text_color": "",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "2",
+            "title": "FIDA / Integrations",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<p>Flow Integration & Data Aggregation (FIDA) connects POS systems, staff scheduling, and external data sources. API-first architecture supports custom integrations and data export for enterprise BI tools.</p><ul><li>POS Integration</li><li>Scheduling Sync</li><li>API Access</li></ul>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_ifUhXk": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-customer-support",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#a0b842",
+            "icon_color": "#f9fafb",
+            "background_color": "#f2f2f2",
+            "text_color": "",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "2",
+            "title": "Flow AI / Decision Support",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<p>Staffing recommendations, anomaly detection, performance alerts, and trend forecasting. AI layer helps store teams understand what's happening and what to do about it—built on accurate measurement, not speculation.</p><ul><li>Staffing Alerts</li><li>Anomaly Detection</li><li>Forecasting</li></ul>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_LTjn3h",
+        "item_jAdBnT",
+        "item_wA6Lwn",
+        "item_ifUhXk"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".multi-column__item * {text-align: left;}",
+        ".multi-column__item ul {display: flex; list-style: none; padding-left: 0; font-size: 11px; font-weight: 400; gap: 1rem; flex-wrap: wrap;}",
+        ".multi-column__item ul li {display: inline-flex; align-items: center; padding: 6px 14px; background-color: #e5e7eb; color: #6b7280; border-radius: 20px; font-size: 11px; font-weight: 600; letter-spacing: 0.5px; text-transform: uppercase; width: fit-content;}"
+      ],
+      "name": "Multi-column",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "center",
+        "subheading": "OUR BUSINESS",
+        "title": "What Flow Provides",
+        "content": "<p>End-to-end platform for measuring, analyzing, and optimizing physical retail operations.</p>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "subheading_background_color": "",
+        "subheading_text_color": ""
+      }
+    },
+    "section-15": {
+      "type": "feature-chart",
+      "blocks": {
+        "block-1": {
+          "type": "headings",
+          "settings": {
+            "heading_1": "主な提供価値",
+            "heading_2": "コアの設計思想",
+            "heading_3": "来店データの位置づけ",
+            "heading_4": "データの即時性",
+            "heading_5": "店舗での使いやすさ",
+            "heading_6": "判断へのつながり",
+            "heading_7": "店舗ごとの判断差",
+            "heading_8": "本部と店舗の連携",
+            "heading_9": "運用負荷",
+            "heading_10": "拡張性",
+            "heading_11": "",
+            "heading_12": "",
+            "heading_13": "",
+            "heading_14": "",
+            "heading_15": "",
+            "heading_16": "",
+            "heading_17": "",
+            "heading_18": "",
+            "heading_19": "",
+            "heading_20": ""
+          }
+        },
+        "block-2": {
+          "type": "values",
+          "settings": {
+            "product": "",
+            "value_1": "<p>40mm Beryllium</p>",
+            "value_2": "<p>245g</p>",
+            "value_3": "<p>165mm x 190mm x 66mm</p>",
+            "value_4": "<p>24 hours</p>",
+            "value_5": "",
+            "value_6": "",
+            "value_7": "",
+            "value_8": "",
+            "value_9": "",
+            "value_10": "",
+            "value_11": "",
+            "value_12": "",
+            "value_13": "",
+            "value_14": "",
+            "value_15": "",
+            "value_16": "",
+            "value_17": "",
+            "value_18": "",
+            "value_19": "",
+            "value_20": "",
+            "view_button_background": "",
+            "view_button_text_color": ""
+          }
+        },
+        "block-3": {
+          "type": "values",
+          "settings": {
+            "product": "",
+            "value_1": "<p>40mm Beryllium</p>",
+            "value_2": "<p>205g (On-Ear), 239g (Over-Ear)</p>",
+            "value_3": "<p>190mm x 155mm x 34mm (On-Ear), 200mm x 165mm x 40mm (Over-Ear)</p>",
+            "value_4": "<p>16 hours</p>",
+            "value_5": "",
+            "value_6": "",
+            "value_7": "",
+            "value_8": "",
+            "value_9": "",
+            "value_10": "",
+            "value_11": "",
+            "value_12": "",
+            "value_13": "",
+            "value_14": "",
+            "value_15": "",
+            "value_16": "",
+            "value_17": "",
+            "value_18": "",
+            "value_19": "",
+            "value_20": "",
+            "view_button_background": "",
+            "view_button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "Why Dashboards Fail",
+        "content": "<p>Traditional analytics show you the problem. Flow solves it.</p>",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "center",
+        "max_rows": 5,
+        "view_all_text": "View all",
+        "view_less_text": "View less",
+        "view_product": "View",
+        "viewing_product": "",
+        "show_product_swatch": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "chart_background": "",
+        "chart_text_color": "",
+        "chart_true_false_color": ""
+      }
+    },
+    "multi_column_nMex9i": {
+      "type": "multi-column",
+      "blocks": {
+        "item_DJBQjz": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-target",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#a0b842",
+            "icon_color": "#ffffff",
+            "background_color": "#ffffff",
+            "text_color": "",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "2",
+            "title": "売上目標に向けた判断支援",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<p>売上、来店、コンバージョン、客単価、スタッフ体制をつなぎ、目標達成に必要な打ち手を考えやすくします。感覚だけに頼らず、現場が今すべきことを判断しやすい状態をつくります。</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_7ArUj3": {
+          "type": "item",
+          "settings": {
+            "icon": "check",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#a0b842",
+            "icon_color": "#ffffff",
+            "background_color": "#ffffff",
+            "text_color": "",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "2",
+            "title": "小売現場に特化した設計",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<p>Flowは汎用的な分析ツールではありません。来店数、通行量、コンバージョン、VMD、スタッフ配置など、小売店舗の運営判断に必要な指標を前提に設計されています</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_PXwwUg": {
+          "type": "item",
+          "settings": {
+            "icon": "people",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#a0b842",
+            "icon_color": "#ffffff",
+            "background_color": "#ffffff",
+            "text_color": "",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "2",
+            "title": "本部と店舗の共通理解",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<p>本部、エリアマネージャー、店舗スタッフが同じデータを見ながら、売上変化の背景を確認できます。報告のための分析ではなく、判断をそろえ、実行を早めるための可視化です。</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_qYcBUm": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-operator",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#a0b842",
+            "icon_color": "#ffffff",
+            "background_color": "#ffffff",
+            "text_color": "",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "2",
+            "title": "導入後の活用支援",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<p>Flowは導入して終わりではありません。店舗チームがデータを理解し、日々の運営改善に活用できるよう、トレーニング、運用設計、継続的なサポートを行います。</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_gA6Gny": {
+          "type": "item",
+          "disabled": true,
+          "settings": {
+            "icon": "picto-earth",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#a0b842",
+            "icon_color": "#ffffff",
+            "background_color": "#ffffff",
+            "text_color": "",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "Japan-Ready Implementation",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<p>Japanese and English support. AWS Tokyo region for data residency. Understanding of Japanese enterprise procurement and decision-making. Built for the Japanese retail market.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_FiKn8m": {
+          "type": "item",
+          "disabled": true,
+          "settings": {
+            "icon": "picto-shield",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#a0b842",
+            "icon_color": "#ffffff",
+            "background_color": "#ffffff",
+            "text_color": "",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "Enterprise-Grade Reliability",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<p>99.9% uptime SLA. SOC 2 Type II certified. GDPR/CCPA compliant. 24/7 support for enterprise customers. Flow runs in production 24/7/365—reliability is non-negotiable.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_DJBQjz",
+        "item_7ArUj3",
+        "item_PXwwUg",
+        "item_qYcBUm",
+        "item_gA6Gny",
+        "item_FiKn8m"
+      ],
+      "name": "Multi-column",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "start",
+        "subheading": "",
+        "title": "Flowが選ばれる理由",
+        "content": "<p>Flowは、来店計測と店舗データをもとに、現場と本部が売上目標に向けてより早く、より一貫した判断ができる状態をつくります。</p>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "subheading_background_color": "",
+        "subheading_text_color": ""
+      }
+    },
+    "multi_column_wT8tcm": {
+      "type": "multi-column",
+      "blocks": {
+        "item_xxEt9f": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "image": "shopify://shop_images/media.png",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "業界メディア掲載",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<p>小売DX、店舗分析、AIカメラ、データ活用に関する取り組みが、業界メディアで紹介されています。</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_zAeWpQ": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "image": "shopify://shop_images/Awards.png",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "受賞・外部評価",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<p>Flowは、Frost & Sullivan Best Practices Awardsにおいて、2020年と2021年にアジア太平洋地域の人流分析領域で評価を受けました。</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_BD4EwD": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "image": "shopify://shop_images/Book_Cover.png",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "書籍・専門資料での紹介",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<p>小売・テクノロジー・DXに関する専門書籍や資料の中で、Flowの取り組みが紹介されています。</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_xxEt9f",
+        "item_zAeWpQ",
+        "item_BD4EwD"
+      ],
+      "name": "Multi-column",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "center",
+        "subheading": "外部実績",
+        "title": "外部評価・掲載実績",
+        "content": "<p>Flowの小売分析・店舗運営支援の取り組みは、外部機関、業界メディア、専門書籍などで紹介されています。</p>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "subheading_background_color": "",
+        "subheading_text_color": ""
+      }
+    },
+    "1780976305e3abab06": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_c690089_Hw4T6q": {
+          "type": "ai_gen_block_c690089",
+          "settings": {
+            "heading": "Featured & Referenced",
+            "subheading": "Flow's approach to retail analytics has been recognized by industry publications and research.",
+            "feature_1_title": "Industry Publications",
+            "feature_1_description": "Featured in retail technology research and case studies",
+            "feature_2_title": "Customer Success Stories",
+            "feature_2_description": "Documented deployments across major retail brands",
+            "feature_3_title": "Retail Community",
+            "feature_3_description": "Active participation in Japanese retail industry forums",
+            "button_text": "View Customer Case Studies",
+            "button_link": ""
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_c690089_Hw4T6q"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "multi_column_JqUxrC": {
+      "type": "multi-column",
+      "blocks": {
+        "item_6UDaAt": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-target",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#a0b842",
+            "icon_color": "#f9fafb",
+            "background_color": "#ffffff",
+            "text_color": "",
+            "border_color": "#f9fafb",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h3>正確に測定する</h3><p>来店数、通行量、滞在、店内行動を正確に測定し、売上だけでは見えない店舗の状態を把握します。判断の土台は、信頼できるデータです。</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_yicgXD": {
+          "type": "item",
+          "settings": {
+            "icon": "people",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#a0b842",
+            "icon_color": "#ffffff",
+            "background_color": "#ffffff",
+            "text_color": "",
+            "border_color": "#f9fafb",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h3>データをつなぐ</h3><p>POS、スタッフ、天候、店舗属性、メモなどの情報をつなぎ、現場と本部が同じ文脈で店舗状況を理解できる状態をつくります。</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_PMKDk3": {
+          "type": "item",
+          "settings": {
+            "icon": "up",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#a0b842",
+            "icon_color": "#ffffff",
+            "background_color": "#ffffff",
+            "text_color": "",
+            "border_color": "#f9fafb",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h3>実行につなげる</h3><p>分析結果を見て終わらせず、売上目標に向けた次の判断や行動につなげます。Flowは、現場が動けるデータ活用を重視しています。</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_6UDaAt",
+        "item_yicgXD",
+        "item_PMKDk3"
+      ],
+      "custom_css": [
+        ".multi-column__item * {text-align: left;}",
+        ".multi-column__item p {font-size: 1rem;}"
+      ],
+      "name": "Multi-column",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "center",
+        "subheading": "",
+        "title": "Flowの考え方",
+        "content": "<p>Flowは、正確な測定、運営データの構造化、実行につながる判断支援を一つの流れとして設計しています。</p>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "subheading_background_color": "",
+        "subheading_text_color": ""
+      }
+    },
+    "rich_text_EtLVJr": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_bNQkAX": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "text": "小売店舗の成果を、より安定して伸ばすために",
+            "heading_tag": "h1",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "liquid_393be4": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<h2 class=\"h1\">小売店舗の成果を、<br>より安定して伸ばすために\n</h1>"
+          }
+        },
+        "richtext_cRTfWf": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Flowの導入事例をご覧いただくか、貴社の店舗運営・分析課題についてご相談ください。</p>"
+          }
+        },
+        "buttons_CT466j": {
+          "type": "buttons",
+          "settings": {
+            "style_1": "fill",
+            "size_1": "xl",
+            "text_1": "導入事例を見る →",
+            "url_1": "",
+            "background_1": "#a0b842",
+            "text_color_1": "",
+            "style_2": "fill",
+            "size_2": "xl",
+            "text_2": "相談する →",
+            "url_2": "",
+            "background_2": "",
+            "text_color_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_bNQkAX",
+        "liquid_393be4",
+        "richtext_cRTfWf",
+        "buttons_CT466j"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "#11243e",
+        "background_gradient": "",
+        "text_color": "#ffffff"
+      }
+    },
+    "rich_text_6VmVgb": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_AK7Cjn": {
+          "type": "subheading",
+          "settings": {
+            "text": "NEXT STEPS",
+            "icon": "none"
+          }
+        },
+        "heading_YXhiR8": {
+          "type": "heading",
+          "settings": {
+            "text": "SEE WHAT FLOW COULD ACHIEVE INYOUR STORES",
+            "heading_tag": "h1",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_qzAkak": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Every retail operation is unique. Let's discuss what Flow could measure, analyze, and improve in your specific environment.</p>"
+          }
+        },
+        "button_AVKAbi": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "style": "outline",
+            "size": "base",
+            "text": "Contact Solutions Architect",
+            "url": "#",
+            "background": "",
+            "text_color": "#11243e"
+          }
+        },
+        "buttons_jaKCGH": {
+          "type": "buttons",
+          "settings": {
+            "style_1": "fill",
+            "size_1": "xl",
+            "text_1": "Schedule Demo →",
+            "url_1": "#",
+            "background_1": "#a0b842",
+            "text_color_1": "#ffffff",
+            "style_2": "fill",
+            "size_2": "xl",
+            "text_2": "Talk to Flow →",
+            "url_2": "#",
+            "background_2": "#ffffff",
+            "text_color_2": "#11243e"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_AK7Cjn",
+        "heading_YXhiR8",
+        "richtext_qzAkak",
+        "button_AVKAbi",
+        "buttons_jaKCGH"
+      ],
+      "disabled": true,
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "#0e366a",
+        "background_gradient": "",
+        "text_color": "#ffffff"
+      }
+    },
+    "multi_column_UExWWX": {
+      "type": "multi-column",
+      "blocks": {
+        "item_kHMBXM": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "image": "shopify://shop_images/unnamed.png",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "#f9fafb",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "高精度店内計測",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<p>高精度な来店計測と顧客行動分析。</p>",
+            "link_url": "",
+            "link_text": "詳しく見る →",
+            "link_style": "link"
+          }
+        },
+        "item_jzqLHt": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "image": "shopify://shop_images/1_1b5442dc-a679-4a23-a10f-8f39d2cc4234.png",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "#f9fafb",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "FIDA分析基盤",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<p>来店・売上・人員配置を統合分析。</p>",
+            "link_url": "#",
+            "link_text": "詳しく見る →",
+            "link_style": "link"
+          }
+        },
+        "item_rn7myV": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "image": "shopify://shop_images/3_05197ad8-294f-4cc5-9d73-b73021906f0a.png",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "#f9fafb",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "現場意思決定実行支援",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<p>現場実行につながる推奨アクション。</p><h3></h3>",
+            "link_url": "#",
+            "link_text": "詳しく見る →",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_kHMBXM",
+        "item_jzqLHt",
+        "item_rn7myV"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".multi-column__item {padding: 0;}"
+      ],
+      "name": "Multi-column",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "start",
+        "subheading": "プラットフォームを見る",
+        "title": "店舗運営のすべてのレイヤーを統合。",
+        "content": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "subheading_background_color": "",
+        "subheading_text_color": ""
+      }
     }
   },
   "order": [
-    "main"
+    "rich_text_cqadYy",
+    "multi_column_L3Rbir",
+    "blocks_kKwWcf",
+    "178097413274cdfbe8",
+    "1780975575f5f43498",
+    "multi_column_3tnATm",
+    "section-15",
+    "multi_column_nMex9i",
+    "multi_column_wT8tcm",
+    "1780976305e3abab06",
+    "multi_column_JqUxrC",
+    "rich_text_EtLVJr",
+    "rich_text_6VmVgb",
+    "multi_column_UExWWX"
   ]
 }
