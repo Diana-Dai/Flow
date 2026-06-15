@@ -22,7 +22,7 @@
             "brand_text": "Brand name",
             "show_tag": true,
             "tag_text": "導入事例",
-            "show_icon": true,
+            "show_icon": false,
             "company_name": "株式会社デイトナ・インターナショナル様",
             "company_metadata": "FREAK’S STORE / Firsthand / Aresense / 2G ほか",
             "headline": "店舗データを、売上改善と人材育成の力に変える",
