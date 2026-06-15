@@ -364,6 +364,53 @@
     },
     "17815078000b3a5249": {
       "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_cdfd9e7_yMxmwk": {
+          "type": "ai_gen_block_cdfd9e7",
+          "settings": {
+            "eyebrow_text": "IMPLEMENTATION",
+            "heading": "From contract to live data in under 4 weeks.",
+            "description": "Our streamlined implementation process ensures you're up and running quickly with minimal disruption to your operations. Every step is designed for efficiency and clarity.",
+            "highlight_title": "Typical go-live: 2–4 weeks",
+            "highlight_text": "Per store, from contract to live data",
+            "week_1_label": "Week 1",
+            "week_1_title": "Kickoff & Survey",
+            "week_1_description": "Store survey, planning, requirements gathering, and integration scoping.",
+            "week_2_label": "Week 1–2",
+            "week_2_title": "Hardware Installation",
+            "week_2_description": "Equipment setup and configuration with minimal operational disruption.",
+            "week_3_label": "Week 2–3",
+            "week_3_title": "System Configuration",
+            "week_3_description": "Dashboard setup, integrations, testing, validation, and calibration.",
+            "week_4_label": "Week 3–4",
+            "week_4_title": "Training & Launch",
+            "week_4_description": "Team onboarding, final verification, launch preparation, and handover.",
+            "week_5_label": "Ongoing",
+            "week_5_title": "Customer Success Support",
+            "week_5_description": "Monitoring, optimization, reporting, and dedicated support.",
+            "background_color": "#ffffff",
+            "heading_color": "#123A73",
+            "text_color": "#677279",
+            "accent_color": "#A7BE3A",
+            "eyebrow_background": "#F3F5F6",
+            "eyebrow_color": "#677279",
+            "card_background": "#FFFFFF",
+            "card_border_color": "#E5E7EB",
+            "divider_color": "#E5E7EB",
+            "heading_size": 42,
+            "text_size": 16,
+            "section_padding": 40,
+            "desktop_width_percent": 100,
+            "eyebrow_radius": 20,
+            "card_radius": 12,
+            "card_shadow_opacity": 0.1
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_cdfd9e7_yMxmwk"
+      ],
       "settings": {
         "full_width": true,
         "remove_vertical_spacing": false,
