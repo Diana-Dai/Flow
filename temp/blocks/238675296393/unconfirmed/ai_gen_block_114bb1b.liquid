@@ -1,0 +1,455 @@
+{% doc %}
+  @prompt
+    Act as an expert Shopify Liquid and CSS developer. Build a fully responsive, custom multi-tier tier grid section based entirely on the visual layout, spacing, and copy structure shown in the reference image "image_bad772.png".
+    
+    ### 1. Global Integration, Max Width & Basic Styles
+    - **Theme Identity:** The section wrapper must automatically inherit the active theme's native font family variables (via `var(--font-heading-family)` and `var(--font-body-family)`), standard section maximum layout width (matching `.page-width` or `.container` layout wrappers), and native side padding.
+    - **Section Layout:** On desktop viewports, the layout is a 3-column horizontal card row. On mobile viewports, the layout must collapse and stack into a single vertical column with equal spacing.
+    - **Section Background:** Pure white background (#FFFFFF) with comfortable top and bottom padding.
+    
+    ### 2. Card Grid Architecture & Modular Block Styles
+    Build the layout using a dynamic block loop (`{% for block in section.blocks %}`) so that each card can be managed independently. Each card features smooth rounded corners (border-radius: 16px), deep internal padding, and an ultra-faint gray border stroke. The loop must support two visual block themes:
+    
+    - **Standard / Enterprise Card Style (Light Variant):**
+      - Background Styling: Pure white background wash (#FFFFFF).
+      - Border: A subtle, thin light-gray outer border stroke.
+    - **Professional Card Style (Highlighted / Featured Variant):**
+      - Background Styling: Pure white background wash (#FFFFFF), but wrapped with a more defined dark navy border stroke.
+      - Header Accent Badge: Features a solid, deep navy blue horizontal header bar spanning the full width of the card's top edge. The bar contains the centered text "MOST COMMON" in a small, all-caps crisp white font with slight letter-spacing.
+    
+    ### 3. Internal Card Typography & Content Elements
+    Inside each card block, items are left-aligned and vertically stacked as follows:
+    - **Card Tier Title:** Large, prominent, bold text using a deep navy blue color theme.
+    - **Card Subtitle Metric:** A smaller, lower-contrast slate-gray text string positioned directly under the title (e.g., "1–9 stores").
+    - **Bullet Point Features List:** A vertical column of features rows. Each row must use a horizontal flex layout consisting of:
+      - An inline green circular checkmark outline SVG icon.
+      - Crisp text rendering right next to the icon, styled with a clean text color and generous line-height to maintain scannability.
+    
+    ### 4. Exact Content Text Map for 100% Replication
+    Ensure the default schema presets or output fields perfectly transcribe all copy verbatim from image_bad772.png:
+    
+    #### CARD 1 (Left - Light Style):
+    - **Title:** Standard
+    - **Subtitle:** 1–9 stores
+    - **Features List:**
+      1. 99.9% uptime SLA
+      2. Email and chat support
+      3. Flow Academy (online)
+      4. Monthly performance report
+      5. Software updates included
+    
+    #### CARD 2 (Center - Highlighted Variant Style):
+    - **Top Bar Badge:** MOST COMMON
+    - **Title:** Professional
+    - **Subtitle:** 10–49 stores
+    - **Features List:**
+      1. Everything in Standard
+      2. Dedicated customer success manager
+      3. Quarterly business reviews
+      4. Priority support response
+      5. On-site training (initial + annual)
+      6. Custom reporting configuration
+    
+    #### CARD 3 (Right - Light Style):
+    - **Title:** Enterprise
+    - **Subtitle:** 50+ stores
+    - **Features List:**
+      1. Everything in Professional
+      2. 24/7 phone support
+      3. Custom SLA options
+      4. Executive steering sessions
+      5. Multi-region deployment support
+      6. API priority lane
+      7. Custom integration development
+    
+    ### 5. Shopify Coding & Theme Schema Requirements
+    - Map all tier titles, subtitle metrics, list points, highlight text badges, and color presets to block inputs within the Liquid schema settings to make the entire section completely customizable in the Shopify editor.
+    - All custom CSS styles must be tightly scoped using the `#shopify-section-{{ section.id }}` handle to guarantee absolutely zero layout or style leaking across other templates.
+    - Ensure the cards scale fluidly across tablet layouts without cropping the checkmark icons or causing any textual overlapping.
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-tier-grid-wrapper-{{ ai_gen_id }} {
+    background-color: #ffffff;
+    padding: 60px 0;
+    width: 100%;
+  }
+
+  .ai-tier-grid-container-{{ ai_gen_id }} {
+    max-width: {{ settings.page_width }}px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-6);
+  }
+
+  .ai-tier-grid-{{ ai_gen_id }} {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+  }
+
+  .ai-tier-card-{{ ai_gen_id }} {
+    background-color: {{ block.settings.card_1_background }};
+    border: 1px solid {{ block.settings.card_border_color }};
+    border-radius: 16px;
+    padding: 40px 32px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .ai-tier-card-{{ ai_gen_id }}:nth-child(2) {
+    border: 2px solid {{ block.settings.featured_border_color }};
+  }
+
+  .ai-tier-badge-{{ ai_gen_id }} {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: {{ block.settings.badge_background }};
+    color: {{ block.settings.badge_text_color }};
+    text-align: center;
+    padding: 8px 16px;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-family: var(--font-heading-family);
+  }
+
+  .ai-tier-card-{{ ai_gen_id }}:nth-child(2) .ai-tier-content-{{ ai_gen_id }} {
+    margin-top: 36px;
+  }
+
+  .ai-tier-title-{{ ai_gen_id }} {
+    font-family: var(--font-heading-family);
+    font-size: 28px;
+    font-weight: 700;
+    color: {{ block.settings.title_color }};
+    margin: 0 0 8px 0;
+    line-height: 1.2;
+  }
+
+  .ai-tier-subtitle-{{ ai_gen_id }} {
+    font-family: var(--font-body-family);
+    font-size: 15px;
+    color: {{ block.settings.subtitle_color }};
+    margin: 0 0 32px 0;
+    line-height: 1.4;
+  }
+
+  .ai-tier-features-{{ ai_gen_id }} {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .ai-tier-feature-{{ ai_gen_id }} {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    font-family: var(--font-body-family);
+    font-size: 15px;
+    color: {{ block.settings.feature_text_color }};
+    line-height: 1.6;
+  }
+
+  .ai-tier-checkmark-{{ ai_gen_id }} {
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+    margin-top: 2px;
+  }
+
+  .ai-tier-checkmark-{{ ai_gen_id }} svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+
+  @media screen and (max-width: 989px) {
+    .ai-tier-grid-{{ ai_gen_id }} {
+      grid-template-columns: 1fr;
+      gap: 24px;
+    }
+
+    .ai-tier-grid-wrapper-{{ ai_gen_id }} {
+      padding: 40px 0;
+    }
+
+    .ai-tier-card-{{ ai_gen_id }} {
+      padding: 32px 24px;
+    }
+
+    .ai-tier-title-{{ ai_gen_id }} {
+      font-size: 24px;
+    }
+  }
+{% endstyle %}
+
+<div class="ai-tier-grid-wrapper-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-tier-grid-container-{{ ai_gen_id }}">
+    <div class="ai-tier-grid-{{ ai_gen_id }}">
+      <div class="ai-tier-card-{{ ai_gen_id }}">
+        <div class="ai-tier-content-{{ ai_gen_id }}">
+          {% if block.settings.card_1_title != blank %}
+            <h3 class="ai-tier-title-{{ ai_gen_id }}">{{ block.settings.card_1_title }}</h3>
+          {% endif %}
+          
+          {% if block.settings.card_1_subtitle != blank %}
+            <p class="ai-tier-subtitle-{{ ai_gen_id }}">{{ block.settings.card_1_subtitle }}</p>
+          {% endif %}
+          
+          {% if block.settings.card_1_features != blank %}
+            <ul class="ai-tier-features-{{ ai_gen_id }}">
+              {% assign features_list = block.settings.card_1_features | newline_to_br | split: '<br />' %}
+              {% for feature in features_list %}
+                {% assign trimmed_feature = feature | strip %}
+                {% if trimmed_feature != blank %}
+                  <li class="ai-tier-feature-{{ ai_gen_id }}">
+                    <span class="ai-tier-checkmark-{{ ai_gen_id }}">
+                      <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="10" cy="10" r="9" stroke="{{ block.settings.checkmark_color }}" stroke-width="1.5"/>
+                        <path d="M6 10L9 13L14 7" stroke="{{ block.settings.checkmark_color }}" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </span>
+                    <span>{{ trimmed_feature }}</span>
+                  </li>
+                {% endif %}
+              {% endfor %}
+            </ul>
+          {% endif %}
+        </div>
+      </div>
+
+      <div class="ai-tier-card-{{ ai_gen_id }}">
+        {% if block.settings.featured_badge_text != blank %}
+          <div class="ai-tier-badge-{{ ai_gen_id }}">{{ block.settings.featured_badge_text }}</div>
+        {% endif %}
+        
+        <div class="ai-tier-content-{{ ai_gen_id }}">
+          {% if block.settings.card_2_title != blank %}
+            <h3 class="ai-tier-title-{{ ai_gen_id }}">{{ block.settings.card_2_title }}</h3>
+          {% endif %}
+          
+          {% if block.settings.card_2_subtitle != blank %}
+            <p class="ai-tier-subtitle-{{ ai_gen_id }}">{{ block.settings.card_2_subtitle }}</p>
+          {% endif %}
+          
+          {% if block.settings.card_2_features != blank %}
+            <ul class="ai-tier-features-{{ ai_gen_id }}">
+              {% assign features_list = block.settings.card_2_features | newline_to_br | split: '<br />' %}
+              {% for feature in features_list %}
+                {% assign trimmed_feature = feature | strip %}
+                {% if trimmed_feature != blank %}
+                  <li class="ai-tier-feature-{{ ai_gen_id }}">
+                    <span class="ai-tier-checkmark-{{ ai_gen_id }}">
+                      <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="10" cy="10" r="9" stroke="{{ block.settings.checkmark_color }}" stroke-width="1.5"/>
+                        <path d="M6 10L9 13L14 7" stroke="{{ block.settings.checkmark_color }}" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </span>
+                    <span>{{ trimmed_feature }}</span>
+                  </li>
+                {% endif %}
+              {% endfor %}
+            </ul>
+          {% endif %}
+        </div>
+      </div>
+
+      <div class="ai-tier-card-{{ ai_gen_id }}">
+        <div class="ai-tier-content-{{ ai_gen_id }}">
+          {% if block.settings.card_3_title != blank %}
+            <h3 class="ai-tier-title-{{ ai_gen_id }}">{{ block.settings.card_3_title }}</h3>
+          {% endif %}
+          
+          {% if block.settings.card_3_subtitle != blank %}
+            <p class="ai-tier-subtitle-{{ ai_gen_id }}">{{ block.settings.card_3_subtitle }}</p>
+          {% endif %}
+          
+          {% if block.settings.card_3_features != blank %}
+            <ul class="ai-tier-features-{{ ai_gen_id }}">
+              {% assign features_list = block.settings.card_3_features | newline_to_br | split: '<br />' %}
+              {% for feature in features_list %}
+                {% assign trimmed_feature = feature | strip %}
+                {% if trimmed_feature != blank %}
+                  <li class="ai-tier-feature-{{ ai_gen_id }}">
+                    <span class="ai-tier-checkmark-{{ ai_gen_id }}">
+                      <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="10" cy="10" r="9" stroke="{{ block.settings.checkmark_color }}" stroke-width="1.5"/>
+                        <path d="M6 10L9 13L14 7" stroke="{{ block.settings.checkmark_color }}" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </span>
+                    <span>{{ trimmed_feature }}</span>
+                  </li>
+                {% endif %}
+              {% endfor %}
+            </ul>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Multi-tier pricing grid",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Card 1 - Standard"
+    },
+    {
+      "type": "text",
+      "id": "card_1_title",
+      "label": "Title",
+      "default": "Standard"
+    },
+    {
+      "type": "text",
+      "id": "card_1_subtitle",
+      "label": "Subtitle",
+      "default": "1–9 stores"
+    },
+    {
+      "type": "textarea",
+      "id": "card_1_features",
+      "label": "Features list",
+      "info": "Enter one feature per line",
+      "default": "99.9% uptime SLA\nEmail and chat support\nFlow Academy (online)\nMonthly performance report\nSoftware updates included"
+    },
+    {
+      "type": "header",
+      "content": "Card 2 - Professional (Featured)"
+    },
+    {
+      "type": "text",
+      "id": "featured_badge_text",
+      "label": "Badge text",
+      "default": "MOST COMMON"
+    },
+    {
+      "type": "text",
+      "id": "card_2_title",
+      "label": "Title",
+      "default": "Professional"
+    },
+    {
+      "type": "text",
+      "id": "card_2_subtitle",
+      "label": "Subtitle",
+      "default": "10–49 stores"
+    },
+    {
+      "type": "textarea",
+      "id": "card_2_features",
+      "label": "Features list",
+      "info": "Enter one feature per line",
+      "default": "Everything in Standard\nDedicated customer success manager\nQuarterly business reviews\nPriority support response\nOn-site training (initial + annual)\nCustom reporting configuration"
+    },
+    {
+      "type": "header",
+      "content": "Card 3 - Enterprise"
+    },
+    {
+      "type": "text",
+      "id": "card_3_title",
+      "label": "Title",
+      "default": "Enterprise"
+    },
+    {
+      "type": "text",
+      "id": "card_3_subtitle",
+      "label": "Subtitle",
+      "default": "50+ stores"
+    },
+    {
+      "type": "textarea",
+      "id": "card_3_features",
+      "label": "Features list",
+      "info": "Enter one feature per line",
+      "default": "Everything in Professional\n24/7 phone support\nCustom SLA options\nExecutive steering sessions\nMulti-region deployment support\nAPI priority lane\nCustom integration development"
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "card_1_background",
+      "label": "Card background",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "card_border_color",
+      "label": "Standard border",
+      "default": "#e5e7eb"
+    },
+    {
+      "type": "color",
+      "id": "featured_border_color",
+      "label": "Featured border",
+      "default": "#1e3a8a"
+    },
+    {
+      "type": "color",
+      "id": "badge_background",
+      "label": "Badge background",
+      "default": "#1e3a8a"
+    },
+    {
+      "type": "color",
+      "id": "badge_text_color",
+      "label": "Badge text",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "title_color",
+      "label": "Title",
+      "default": "#1e3a8a"
+    },
+    {
+      "type": "color",
+      "id": "subtitle_color",
+      "label": "Subtitle",
+      "default": "#64748b"
+    },
+    {
+      "type": "color",
+      "id": "feature_text_color",
+      "label": "Feature text",
+      "default": "#334155"
+    },
+    {
+      "type": "color",
+      "id": "checkmark_color",
+      "label": "Checkmark",
+      "default": "#10b981"
+    },
+    {
+      "type": "range",
+      "id": "desktop_width_percent",
+      "label": "Desktop width",
+      "min": 50,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "default": 100
+    }
+  ],
+  "presets": [
+    {
+      "name": "Multi-tier pricing grid"
+    }
+  ]
+}
+{% endschema %}
