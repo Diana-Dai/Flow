@@ -1,6 +1,590 @@
+{% doc %}
+  @prompt
+    Shopify AI Prompt
+    
+    Create a modern SaaS pricing components section featuring two side-by-side pricing cards. The design should feel professional, enterprise-focused, and highly readable, similar to Stripe, Linear, Segment, or enterprise software pricing pages.
+    
+    Layout
+    Two equal-width cards displayed in a 2-column grid on desktop
+    Stack vertically on mobile
+    Large spacing between cards
+    Rounded corners (24-32px radius)
+    Clean white/light gray background
+    Consistent card heights regardless of content length
+    Card Structure
+    Header Area
+    Full-width colored header section occupying approximately 25% of card height
+    Dark navy blue background
+    Small uppercase label above title:
+    "COMPONENT 01"
+    "COMPONENT 02"
+    Large bold title
+    Smaller subtitle below title
+    Strong typography hierarchy
+    Content Area
+    White background
+    Generous padding (40-60px)
+    Introductory description paragraph
+    Feature list underneath
+    Feature List
+    Vertical list layout
+    Each feature includes:
+    Small circular checkmark icon
+    Feature text
+    Comfortable spacing between items
+    Icons use subtle olive-green accent color
+    Clean alignment and consistent spacing
+    Example Card 1
+    
+    Label:
+    COMPONENT 01
+    
+    Title:
+    Monthly Subscription
+    
+    Subtitle:
+    Per store • Billed annually
+    
+    Description:
+    A flat monthly fee per active store location. Covers the full platform, users, analytics, and integrations.
+    
+    Features:
+    
+    Full analytics dashboard
+    Real-time reporting
+    Staff scheduling recommendations
+    Multi-location management
+    API access and integrations
+    Training resources
+    Enterprise-grade reliability
+    Example Card 2
+    
+    Label:
+    COMPONENT 02
+    
+    Title:
+    Implementation Fee
+    
+    Subtitle:
+    One-time • Per location
+    
+    Description:
+    A one-time onboarding and setup fee covering installation, configuration, integrations, and training.
+    
+    Features:
+    
+    Hardware setup
+    Professional installation
+    System configuration
+    POS integration
+    Dashboard customization
+    Staff training
+    Post-launch support
+    Shopify Section Settings
+    Number of cards can be added dynamically as blocks
+    Card title
+    Card subtitle
+    Component label
+    Rich text description
+    Feature repeater list
+    Header background color
+    Card background color
+    Icon color
+    Border radius
+    Section spacing controls
+    Design Style
+    Modern B2B SaaS pricing layout
+    Minimal and trustworthy
+    Strong typography hierarchy
+    Enterprise software aesthetic
+    No gradients
+    No excessive shadows
+    Premium white space usage
+    Clean borders and subtle separation
+    Optimized for readability and conversion
+    Suitable for software, analytics, retail technology, or subscription-based businesses
+    Technical Requirements
+    Fully responsive
+    Equal-height cards
+    Shopify Online Store 2.0 compatible
+    Merchant can add, remove, and reorder pricing components from Theme Editor
+    Accessible typography and color contrast
+    Smooth hover effect that slightly elevates the card without changing layout
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-pricing-cards-{{ ai_gen_id }} {
+    display: block;
+    width: {{ block.settings.desktop_width_percent }}%;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .ai-pricing-cards__grid-{{ ai_gen_id }} {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: {{ block.settings.card_gap }}px;
+    align-items: stretch;
+  }
+
+  .ai-pricing-card-{{ ai_gen_id }} {
+    display: flex;
+    flex-direction: column;
+    background-color: {{ block.settings.card_background }};
+    border-radius: {{ block.settings.border_radius }}px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    height: 100%;
+  }
+
+  .ai-pricing-card-{{ ai_gen_id }}:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+  }
+
+  .ai-pricing-card__header-{{ ai_gen_id }} {
+    background-color: {{ block.settings.header_background }};
+    color: {{ block.settings.header_text_color }};
+    padding: {{ block.settings.header_padding }}px;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .ai-pricing-card__label-{{ ai_gen_id }} {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    opacity: 0.8;
+  }
+
+  .ai-pricing-card__title-{{ ai_gen_id }} {
+    font-size: {{ block.settings.title_size }}px;
+    font-weight: 700;
+    margin: 0 0 8px 0;
+    line-height: 1.2;
+  }
+
+  .ai-pricing-card__subtitle-{{ ai_gen_id }} {
+    font-size: {{ block.settings.subtitle_size }}px;
+    margin: 0;
+    opacity: 0.85;
+    font-weight: 400;
+  }
+
+  .ai-pricing-card__content-{{ ai_gen_id }} {
+    padding: {{ block.settings.content_padding }}px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ai-pricing-card__description-{{ ai_gen_id }} {
+    font-size: {{ block.settings.description_size }}px;
+    line-height: 1.6;
+    color: {{ block.settings.text_color }};
+    margin: 0 0 32px 0;
+  }
+
+  .ai-pricing-card__features-{{ ai_gen_id }} {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .ai-pricing-card__feature-{{ ai_gen_id }} {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: {{ block.settings.feature_spacing }}px;
+    font-size: {{ block.settings.feature_size }}px;
+    line-height: 1.5;
+    color: {{ block.settings.text_color }};
+  }
+
+  .ai-pricing-card__feature-{{ ai_gen_id }}:last-child {
+    margin-bottom: 0;
+  }
+
+  .ai-pricing-card__icon-{{ ai_gen_id }} {
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: {{ block.settings.icon_color }};
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2px;
+  }
+
+  .ai-pricing-card__icon-{{ ai_gen_id }} svg {
+    width: 12px;
+    height: 12px;
+    stroke: white;
+    stroke-width: 2.5;
+    fill: none;
+  }
+
+  @media screen and (max-width: 989px) {
+    .ai-pricing-cards__grid-{{ ai_gen_id }} {
+      grid-template-columns: 1fr;
+      gap: {{ block.settings.card_gap | times: 0.75 }}px;
+    }
+
+    .ai-pricing-card__header-{{ ai_gen_id }} {
+      min-height: 160px;
+      padding: {{ block.settings.header_padding | times: 0.75 }}px;
+    }
+
+    .ai-pricing-card__content-{{ ai_gen_id }} {
+      padding: {{ block.settings.content_padding | times: 0.75 }}px;
+    }
+
+    .ai-pricing-card__title-{{ ai_gen_id }} {
+      font-size: {{ block.settings.title_size | times: 0.85 }}px;
+    }
+
+    .ai-pricing-card__subtitle-{{ ai_gen_id }} {
+      font-size: {{ block.settings.subtitle_size | times: 0.9 }}px;
+    }
+  }
+{% endstyle %}
+
+<div class="ai-pricing-cards-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-pricing-cards__grid-{{ ai_gen_id }}">
+    <div class="ai-pricing-card-{{ ai_gen_id }}">
+      <div class="ai-pricing-card__header-{{ ai_gen_id }}">
+        {% if block.settings.card1_label != blank %}
+          <div class="ai-pricing-card__label-{{ ai_gen_id }}">
+            {{ block.settings.card1_label }}
+          </div>
+        {% endif %}
+        
+        {% if block.settings.card1_title != blank %}
+          <h3 class="ai-pricing-card__title-{{ ai_gen_id }}">
+            {{ block.settings.card1_title }}
+          </h3>
+        {% endif %}
+        
+        {% if block.settings.card1_subtitle != blank %}
+          <p class="ai-pricing-card__subtitle-{{ ai_gen_id }}">
+            {{ block.settings.card1_subtitle }}
+          </p>
+        {% endif %}
+      </div>
+
+      <div class="ai-pricing-card__content-{{ ai_gen_id }}">
+        {% if block.settings.card1_description != blank %}
+          <div class="ai-pricing-card__description-{{ ai_gen_id }}">
+            {{ block.settings.card1_description }}
+          </div>
+        {% endif %}
+
+        {% if block.settings.card1_features != blank %}
+          <ul class="ai-pricing-card__features-{{ ai_gen_id }}">
+            {% assign features_array = block.settings.card1_features | newline_to_br | split: '<br />' %}
+            {% for feature in features_array %}
+              {% assign trimmed_feature = feature | strip %}
+              {% if trimmed_feature != blank %}
+                <li class="ai-pricing-card__feature-{{ ai_gen_id }}">
+                  <span class="ai-pricing-card__icon-{{ ai_gen_id }}">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                  </span>
+                  <span>{{ trimmed_feature }}</span>
+                </li>
+              {% endif %}
+            {% endfor %}
+          </ul>
+        {% endif %}
+      </div>
+    </div>
+
+    <div class="ai-pricing-card-{{ ai_gen_id }}">
+      <div class="ai-pricing-card__header-{{ ai_gen_id }}">
+        {% if block.settings.card2_label != blank %}
+          <div class="ai-pricing-card__label-{{ ai_gen_id }}">
+            {{ block.settings.card2_label }}
+          </div>
+        {% endif %}
+        
+        {% if block.settings.card2_title != blank %}
+          <h3 class="ai-pricing-card__title-{{ ai_gen_id }}">
+            {{ block.settings.card2_title }}
+          </h3>
+        {% endif %}
+        
+        {% if block.settings.card2_subtitle != blank %}
+          <p class="ai-pricing-card__subtitle-{{ ai_gen_id }}">
+            {{ block.settings.card2_subtitle }}
+          </p>
+        {% endif %}
+      </div>
+
+      <div class="ai-pricing-card__content-{{ ai_gen_id }}">
+        {% if block.settings.card2_description != blank %}
+          <div class="ai-pricing-card__description-{{ ai_gen_id }}">
+            {{ block.settings.card2_description }}
+          </div>
+        {% endif %}
+
+        {% if block.settings.card2_features != blank %}
+          <ul class="ai-pricing-card__features-{{ ai_gen_id }}">
+            {% assign features_array = block.settings.card2_features | newline_to_br | split: '<br />' %}
+            {% for feature in features_array %}
+              {% assign trimmed_feature = feature | strip %}
+              {% if trimmed_feature != blank %}
+                <li class="ai-pricing-card__feature-{{ ai_gen_id }}">
+                  <span class="ai-pricing-card__icon-{{ ai_gen_id }}">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                  </span>
+                  <span>{{ trimmed_feature }}</span>
+                </li>
+              {% endif %}
+            {% endfor %}
+          </ul>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "Pricing cards",
+  "tag": null,
+  "class": "ai-pricing-section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "range",
+      "id": "desktop_width_percent",
+      "label": "Desktop width",
+      "min": 50,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "default": 100
+    },
+    {
+      "type": "range",
+      "id": "card_gap",
+      "label": "Space between cards",
+      "min": 20,
+      "max": 80,
+      "step": 4,
+      "unit": "px",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "border_radius",
+      "label": "Card corner radius",
+      "min": 0,
+      "max": 40,
+      "step": 4,
+      "unit": "px",
+      "default": 24
+    },
+    {
+      "type": "header",
+      "content": "Card header"
+    },
+    {
+      "type": "color",
+      "id": "header_background",
+      "label": "Background",
+      "default": "#1e3a5f"
+    },
+    {
+      "type": "color",
+      "id": "header_text_color",
+      "label": "Text",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "header_padding",
+      "label": "Padding",
+      "min": 30,
+      "max": 80,
+      "step": 5,
+      "unit": "px",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "title_size",
+      "label": "Title size",
+      "min": 20,
+      "max": 48,
+      "step": 2,
+      "unit": "px",
+      "default": 32
+    },
+    {
+      "type": "range",
+      "id": "subtitle_size",
+      "label": "Subtitle size",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "header",
+      "content": "Card content"
+    },
+    {
+      "type": "color",
+      "id": "card_background",
+      "label": "Background",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text",
+      "default": "#1a1a1a"
+    },
+    {
+      "type": "range",
+      "id": "content_padding",
+      "label": "Padding",
+      "min": 30,
+      "max": 80,
+      "step": 5,
+      "unit": "px",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "description_size",
+      "label": "Description size",
+      "min": 14,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "header",
+      "content": "Features"
+    },
+    {
+      "type": "color",
+      "id": "icon_color",
+      "label": "Icon color",
+      "default": "#6b7c3a"
+    },
+    {
+      "type": "range",
+      "id": "feature_size",
+      "label": "Feature text size",
+      "min": 13,
+      "max": 18,
+      "step": 1,
+      "unit": "px",
+      "default": 15
+    },
+    {
+      "type": "range",
+      "id": "feature_spacing",
+      "label": "Space between features",
+      "min": 8,
+      "max": 24,
+      "step": 2,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "header",
+      "content": "Card 1"
+    },
+    {
+      "type": "text",
+      "id": "card1_label",
+      "label": "Component label",
+      "default": "COMPONENT 01"
+    },
+    {
+      "type": "text",
+      "id": "card1_title",
+      "label": "Title",
+      "default": "Monthly Subscription"
+    },
+    {
+      "type": "text",
+      "id": "card1_subtitle",
+      "label": "Subtitle",
+      "default": "Per store • Billed annually"
+    },
+    {
+      "type": "textarea",
+      "id": "card1_description",
+      "label": "Description",
+      "default": "A flat monthly fee per active store location. Covers the full platform, users, analytics, and integrations."
+    },
+    {
+      "type": "textarea",
+      "id": "card1_features",
+      "label": "Features",
+      "info": "Enter one feature per line",
+      "default": "Full analytics dashboard\nReal-time reporting\nStaff scheduling recommendations\nMulti-location management\nAPI access and integrations\nTraining resources\nEnterprise-grade reliability"
+    },
+    {
+      "type": "header",
+      "content": "Card 2"
+    },
+    {
+      "type": "text",
+      "id": "card2_label",
+      "label": "Component label",
+      "default": "COMPONENT 02"
+    },
+    {
+      "type": "text",
+      "id": "card2_title",
+      "label": "Title",
+      "default": "Implementation Fee"
+    },
+    {
+      "type": "text",
+      "id": "card2_subtitle",
+      "label": "Subtitle",
+      "default": "One-time • Per location"
+    },
+    {
+      "type": "textarea",
+      "id": "card2_description",
+      "label": "Description",
+      "default": "A one-time onboarding and setup fee covering installation, configuration, integrations, and training."
+    },
+    {
+      "type": "textarea",
+      "id": "card2_features",
+      "label": "Features",
+      "info": "Enter one feature per line",
+      "default": "Hardware setup\nProfessional installation\nSystem configuration\nPOS integration\nDashboard customization\nStaff training\nPost-launch support"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Pricing cards"
+    }
+  ]
+}
 {% endschema %}
