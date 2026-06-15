@@ -345,13 +345,13 @@
           "type": "ai_gen_block_4e2462b",
           "settings": {
             "background_color": "#123462",
-            "heading_color": "#FFFFFF",
-            "body_text_color": "#FFFFFF",
+            "heading_color": "#ffffff",
+            "body_text_color": "#ffffff",
             "accent_color": "#9cb73b",
             "badge_text": "",
             "badge_background": "#f0f4f8",
             "badge_border": "#e1e8ed",
-            "badge_text_color": "#11243E",
+            "badge_text_color": "#11243e",
             "heading": "",
             "description": "",
             "feature_1_title": "",
@@ -521,8 +521,8 @@
         "ai_gen_block_4397a62_6LkUX4": {
           "type": "ai_gen_block_4397a62",
           "settings": {
-            "section_padding_mobile": 40,
-            "section_padding_desktop": 80,
+            "section_padding_mobile": 0,
+            "section_padding_desktop": 0,
             "background_color": "#ffffff",
             "badge_text": "DEPLOYED AT SCALE",
             "badge_background": "#f3f4f6",
