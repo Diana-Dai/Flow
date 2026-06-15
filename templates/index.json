@@ -106,10 +106,10 @@
         "ai_gen_block_3c85fdc_DqQckp": {
           "type": "ai_gen_block_3c85fdc",
           "settings": {
-            "heading": "<strong>100以上のブランドで、店舗運営を支援</strong>",
+            "heading": "100以上のブランドで、店舗運営を支援",
             "content": "",
             "text_alignment": "center",
-            "content_size": 16,
+            "content_size": 12,
             "heading_color": "#11243e",
             "content_color": "#677279",
             "logo_1": "shopify://shop_images/Baycrews_Group_Logo.png",
@@ -123,7 +123,7 @@
             "logo_9": "shopify://shop_images/TaylorMade_Logo.png",
             "logo_10": "shopify://shop_images/Right_On_Logo.png",
             "logo_width": 250,
-            "logo_height": 150,
+            "logo_height": 120,
             "logo_spacing": 30,
             "logo_opacity": 1,
             "logo_background": "#F9FAFB",
