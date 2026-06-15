@@ -80,7 +80,7 @@
           "name": "Rich text",
           "settings": {
             "text": "<h2>Two cost components. That's it.</h2><p>Flow pricing is structured to be predictable for enterprise procurement and scale linearly with your store network.</p><p></p><p></p>",
-            "content_width": "small",
+            "content_width": "medium",
             "text_alignment": "left"
           },
           "blocks": {}
@@ -344,7 +344,7 @@
       ],
       "custom_css": [
         ".multi-column__item * {text-align: left;}",
-        ".multi-column__item ul {display: flex; list-style: none; padding-left: 0; font-size: 11px; font-weight: 400; gap: 1rem; flex-wrap: wrap;}"
+        ".multi-column__item ul {list-style: none; padding-left: 0; font-size: 11px; font-weight: 400; gap: 1rem;}"
       ],
       "name": "Multi-column",
       "settings": {
