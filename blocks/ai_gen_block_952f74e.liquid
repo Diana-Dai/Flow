@@ -300,11 +300,52 @@
     color: {{ block.settings.meta_text_color }};
     text-align: right;
   }
+
+  .ai-case-study-brand-image-{{ ai_gen_id }} {
+    flex-shrink: 0;
+    width: 150px;
+    height: 100px;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+    overflow: hidden;
+    background-color: #ffffff;
+  }
+
+  .ai-case-study-brand-image-{{ ai_gen_id }} img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+    @media screen and (max-width: 749px) {
+      .ai-case-study-brand-image-{{ ai_gen_id }} {
+        width: 64px;
+        height: 64px;
+      }
+    }
 {% endstyle %}
 
 <div class="ai-case-study-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
   <div class="ai-case-study-container-{{ ai_gen_id }}">
+  
     <div class="ai-case-study-left-{{ ai_gen_id }}">
+      <div class="ai-case-study-brand-image-{{ ai_gen_id }}">
+          {% if block.settings.brand_image %}
+            <img
+              src="{{ block.settings.brand_image | image_url: width: 160 }}"
+              alt="{{ block.settings.brand_image.alt | escape }}"
+              loading="lazy"
+              width="80"
+              height="80"
+            >
+          {% else %}
+            <div class="ai-case-study-brand-placeholder-{{ ai_gen_id }}">
+                {% if block.settings.brand_text %}
+                 {{ block.settings.brand_text }}
+                {% endif %}
+
+            </div>
+          {% endif %}
+        </div>
       {% if block.settings.show_tag %}
         <div class="ai-case-study-tag-{{ ai_gen_id }}">
           {{ block.settings.tag_text }}
