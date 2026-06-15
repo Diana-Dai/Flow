@@ -328,6 +328,12 @@
   <div class="ai-case-study-container-{{ ai_gen_id }}">
   
     <div class="ai-case-study-left-{{ ai_gen_id }}">
+
+      {% if block.settings.show_tag %}
+        <div class="ai-case-study-tag-{{ ai_gen_id }}">
+          {{ block.settings.tag_text }}
+        </div>
+      {% endif %}
       <div class="ai-case-study-brand-image-{{ ai_gen_id }}">
           {% if block.settings.brand_image %}
             <img
@@ -346,12 +352,6 @@
             </div>
           {% endif %}
         </div>
-      {% if block.settings.show_tag %}
-        <div class="ai-case-study-tag-{{ ai_gen_id }}">
-          {{ block.settings.tag_text }}
-        </div>
-      {% endif %}
-
       <div class="ai-case-study-company-header-{{ ai_gen_id }}">
         <div class="ai-case-study-company-title-wrapper-{{ ai_gen_id }}">
           {% if block.settings.show_icon %}
