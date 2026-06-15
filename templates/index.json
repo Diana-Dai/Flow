@@ -109,25 +109,24 @@
             "heading": "<strong>100以上のブランドで、店舗運営を支援</strong>",
             "content": "",
             "text_alignment": "center",
-            "heading_size": 32,
             "content_size": 16,
             "heading_color": "#11243e",
             "content_color": "#677279",
-            "logo_1": "shopify://shop_images/Baycrews_White_1.png",
-            "logo_2": "shopify://shop_images/Flow_Client_Case_Study_Banners_1.png",
-            "logo_3": "shopify://shop_images/Daytona_White_e03a3f9c-40ca-45b1-8866-4528e821f7f5.png",
-            "logo_4": "shopify://shop_images/Cole_Haan_White_836317d3-12dd-4e9a-b647-80aab91df0b2.png",
-            "logo_5": "shopify://shop_images/Triumph_logo.png",
-            "logo_6": "shopify://shop_images/Plaza_White_d4060480-52ad-4a29-b53d-1f7b116f8343.png",
-            "logo_7": "shopify://shop_images/Stripe_White_f1ba215a-c741-4fa7-8b23-cd0b45a74f31.png",
-            "logo_8": "shopify://shop_images/Brooks_B.png",
-            "logo_9": "shopify://shop_images/26.webp",
-            "logo_10": "shopify://shop_images/Right_One_White_dbf02fb7-d61d-44d5-bde4-b757aaca5b61.png",
-            "logo_width": 190,
-            "logo_height": 100,
-            "logo_spacing": 40,
+            "logo_1": "shopify://shop_images/Baycrews_Group_Logo.png",
+            "logo_2": "shopify://shop_images/Tumi_Logo_2c0b2a8c-bbd0-4438-95bc-22950dafcb70.png",
+            "logo_3": "shopify://shop_images/Daytona_Logo_ff3ac14a-5b76-4d13-823d-2d797c6a52e2.png",
+            "logo_4": "shopify://shop_images/Cole_Haan_Logo_65602431-ca9d-44bb-bda9-08c2a3de13f5.png",
+            "logo_5": "shopify://shop_images/Triumph_Logo_66559074-ee90-432d-b22a-efb3895890c5.png",
+            "logo_6": "shopify://shop_images/Plaza_Logo.png",
+            "logo_7": "shopify://shop_images/Stripe_Logo.png",
+            "logo_8": "shopify://shop_images/Brooks_brothers_logo.png",
+            "logo_9": "shopify://shop_images/TaylorMade_Logo.png",
+            "logo_10": "shopify://shop_images/Right_On_Logo.png",
+            "logo_width": 250,
+            "logo_height": 150,
+            "logo_spacing": 30,
             "logo_opacity": 1,
-            "logo_background": "#ffffff",
+            "logo_background": "#F9FAFB",
             "logo_border_radius": 8,
             "scroll_speed": 35,
             "footer_content": "<p><strong>全国約1,000店舗での導入・運用経験。アパレル、ライフスタイル、専門店、商業施設テナントの店舗改善を支援しています。</strong></p><p></p>",
@@ -248,8 +247,6 @@
             "label_text_color": "#ffffff",
             "label_font_size": 13,
             "heading_color": "#0e366a",
-            "heading_font_size_desktop": 32,
-            "heading_font_size_mobile": 24,
             "text_color": "#4b5563",
             "text_font_size": 16,
             "condition_text_color": "#9ca3af",
@@ -590,7 +587,9 @@
         "content": "<p><strong>来店・売上・店舗運営データをつなぎ、売上改善に必要な判断を支援します。</strong></p>",
         "background": "",
         "background_gradient": "",
-        "text_color": ""
+        "text_color": "",
+        "subheading_background_color": "",
+        "subheading_text_color": ""
       }
     },
     "impact_text_gi97zd": {
@@ -1069,7 +1068,9 @@
         "content": "<p><strong>来店、売上、店舗運営、外部環境、店舗ナレッジを一つにつなぎ、次に取るべき行動を見える化します。</strong></p>",
         "background": "",
         "background_gradient": "",
-        "text_color": ""
+        "text_color": "",
+        "subheading_background_color": "",
+        "subheading_text_color": ""
       }
     },
     "multi_column_QcVkek": {
@@ -1165,7 +1166,9 @@
         "content": "<p>来店数・購買・店内行動をつなぎ、より速く、より一貫した店舗判断へ。<br/>Flowは、その流れを全店舗で支援します。</p>",
         "background": "#ffffff",
         "background_gradient": "",
-        "text_color": ""
+        "text_color": "",
+        "subheading_background_color": "",
+        "subheading_text_color": ""
       }
     },
     "section-15": {
@@ -1376,7 +1379,9 @@
         "content": "<p>実行が変われば、店舗成果も変わる。<br/>Flowは、実際の店舗運営データでその変化を確認します。<br/><strong>Flowは、来店・購買・実行の変化を数字で確認しながら改善を進めます。</strong></p>",
         "background": "#ffffff",
         "background_gradient": "",
-        "text_color": ""
+        "text_color": "",
+        "subheading_background_color": "",
+        "subheading_text_color": ""
       }
     },
     "rich_text_Tictfp": {
@@ -1497,7 +1502,9 @@
         "content": "",
         "background": "",
         "background_gradient": "",
-        "text_color": ""
+        "text_color": "",
+        "subheading_background_color": "",
+        "subheading_text_color": ""
       }
     },
     "rich_text_iYFe9Q": {
@@ -1663,7 +1670,9 @@
         "content": "<h4><strong>何が変わったのか</strong></h4>",
         "background": "#0e366a",
         "background_gradient": "",
-        "text_color": "#f9fafb"
+        "text_color": "#f9fafb",
+        "subheading_background_color": "",
+        "subheading_text_color": ""
       }
     },
     "testimonials_98zPBi": {
