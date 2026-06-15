@@ -480,7 +480,7 @@
         "full_width": true,
         "remove_vertical_spacing": false,
         "remove_horizontal_spacing": false,
-        "background": "",
+        "background": "#FFFFFF",
         "background_gradient": "",
         "text_color": "#11243E"
       }
