@@ -61,6 +61,76 @@
         "text_color": "#ffffff"
       }
     },
+    "1781505750d4c92acf": {
+      "type": "_blocks",
+      "blocks": {
+        "badge_mkhGzD": {
+          "type": "badge",
+          "name": "Badge",
+          "settings": {
+            "text": "HOW PRICING WORKS",
+            "alignment": "center",
+            "text_color": "#ffffff",
+            "background": "#000000"
+          },
+          "blocks": {}
+        },
+        "rich_text_8DdMpy": {
+          "type": "rich-text",
+          "name": "Rich text",
+          "settings": {
+            "text": "<h2>Two cost components. That's it.</h2>",
+            "content_width": "small",
+            "text_alignment": "left"
+          },
+          "blocks": {}
+        },
+        "ai_gen_block_287a05a_gBi6f9": {
+          "type": "ai_gen_block_287a05a",
+          "settings": {
+            "desktop_width_percent": 100,
+            "card_gap": 40,
+            "border_radius": 24,
+            "header_background": "#1e3a5f",
+            "header_text_color": "#ffffff",
+            "header_padding": 50,
+            "title_size": 32,
+            "subtitle_size": 16,
+            "card_background": "#ffffff",
+            "text_color": "#1a1a1a",
+            "content_padding": 50,
+            "description_size": 16,
+            "icon_color": "#6b7c3a",
+            "feature_size": 15,
+            "feature_spacing": 16,
+            "card1_label": "COMPONENT 01",
+            "card1_title": "Monthly Subscription",
+            "card1_subtitle": "Per store • Billed annually",
+            "card1_description": "A flat monthly fee per active store location. Covers the full platform, users, analytics, and integrations.",
+            "card1_features": "Full analytics dashboard\nReal-time reporting\nStaff scheduling recommendations\nMulti-location management\nAPI access and integrations\nTraining resources\nEnterprise-grade reliability",
+            "card2_label": "COMPONENT 02",
+            "card2_title": "Implementation Fee",
+            "card2_subtitle": "One-time • Per location",
+            "card2_description": "A one-time onboarding and setup fee covering installation, configuration, integrations, and training.",
+            "card2_features": "Hardware setup\nProfessional installation\nSystem configuration\nPOS integration\nDashboard customization\nStaff training\nPost-launch support"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "badge_mkhGzD",
+        "rich_text_8DdMpy",
+        "ai_gen_block_287a05a_gBi6f9"
+      ],
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
     "multi_column_L3Rbir": {
       "type": "multi-column",
       "blocks": {
@@ -1167,6 +1237,7 @@
   },
   "order": [
     "rich_text_cqadYy",
+    "1781505750d4c92acf",
     "multi_column_L3Rbir",
     "blocks_kKwWcf",
     "178097413274cdfbe8",
