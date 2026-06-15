@@ -15,14 +15,14 @@
         "subheading_nJjQnz": {
           "type": "subheading",
           "settings": {
-            "text": "Flow Solutionsについて",
+            "text": "OUTCOME",
             "icon": "none"
           }
         },
         "liquid_R3c38x": {
           "type": "liquid",
           "settings": {
-            "liquid": "<h1 class=\"h1\">小売店舗運営を支える<br>データ基盤をつくる。\n</h1>"
+            "liquid": "<h1 class=\"h1\">TURN TRAFFIC INTO TRANSACTIONS.\n</h1>"
           }
         },
         "heading_hjfyL9": {
@@ -38,7 +38,24 @@
         "richtext_wjTJeB": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Flow Solutionsは、来店計測、店舗分析、売上・スタッフ・天候などの運営データをつなぎ、小売現場で起きていることを正確に把握し、日々の判断と実行につなげる小売インテリジェンスプラットフォームです。</p>"
+            "content": "<h4>Measure, Diagnose, and Improve Store Conversion Rates.</h4><p>Flow identifies exactly where conversion opportunities are lost and provides actionable operational guidance to improve sales outcomes across your store network.</p>"
+          }
+        },
+        "buttons_YNNgU6": {
+          "type": "buttons",
+          "settings": {
+            "style_1": "fill",
+            "size_1": "xl",
+            "text_1": "Request Demo →",
+            "url_1": "#",
+            "background_1": "",
+            "text_color_1": "",
+            "style_2": "fill",
+            "size_2": "xl",
+            "text_2": "View Platform →",
+            "url_2": "#",
+            "background_2": "#F6F9FD",
+            "text_color_2": "#11243E"
           }
         }
       },
@@ -46,7 +63,8 @@
         "subheading_nJjQnz",
         "liquid_R3c38x",
         "heading_hjfyL9",
-        "richtext_wjTJeB"
+        "richtext_wjTJeB",
+        "buttons_YNNgU6"
       ],
       "custom_css": [
         "* {padding-bottom: 1rem;}"
@@ -56,9 +74,9 @@
         "full_width": true,
         "content_width": "medium",
         "text_position": "start",
-        "background": "#11243e",
+        "background": "",
         "background_gradient": "",
-        "text_color": "#ffffff"
+        "text_color": "#11243E"
       }
     },
     "multi_column_L3Rbir": {
