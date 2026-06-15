@@ -70,8 +70,8 @@
           "settings": {
             "text": "HOW PRICING WORKS",
             "alignment": "center",
-            "text_color": "#ffffff",
-            "background": "#000000"
+            "text_color": "#11243E",
+            "background": "#F0F3E9"
           },
           "blocks": {}
         },
@@ -79,7 +79,7 @@
           "type": "rich-text",
           "name": "Rich text",
           "settings": {
-            "text": "<h2>Two cost components. That's it.</h2>",
+            "text": "<h2>Two cost components. That's it.</h2><p>Flow pricing is structured to be predictable for enterprise procurement and scale linearly with your store network.</p><p></p><p></p>",
             "content_width": "small",
             "text_alignment": "left"
           },
@@ -128,7 +128,7 @@
         "remove_horizontal_spacing": false,
         "background": "",
         "background_gradient": "",
-        "text_color": ""
+        "text_color": "#11243E"
       }
     },
     "multi_column_L3Rbir": {
