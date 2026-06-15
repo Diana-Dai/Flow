@@ -379,7 +379,7 @@
             "desktop_text_position": "sm:place-self-start-end sm:text-end",
             "background": "rgba(0,0,0,0)",
             "background_gradient": "",
-            "text_color": "#11243e",
+            "text_color": "#FFFFFF",
             "text_gradient": "",
             "button_background": "#000000",
             "button_text_color": "#ffffff",
