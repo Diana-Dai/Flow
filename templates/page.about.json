@@ -70,8 +70,8 @@
           "settings": {
             "text": "HOW PRICING WORKS",
             "alignment": "center",
-            "text_color": "#11243E",
-            "background": "#F0F3E9"
+            "text_color": "#11243e",
+            "background": "#f0f3e9"
           },
           "blocks": {}
         },
@@ -94,12 +94,9 @@
             "header_background": "#1e3a5f",
             "header_text_color": "#ffffff",
             "header_padding": 30,
-            "title_size": 32,
-            "subtitle_size": 16,
             "card_background": "#ffffff",
             "text_color": "#1a1a1a",
             "content_padding": 30,
-            "description_size": 16,
             "icon_color": "#6b7c3a",
             "feature_size": 15,
             "feature_spacing": 16,
@@ -128,7 +125,7 @@
         "remove_horizontal_spacing": false,
         "background": "",
         "background_gradient": "",
-        "text_color": "#11243E"
+        "text_color": "#11243e"
       }
     },
     "multi_column_L3Rbir": {
@@ -247,142 +244,6 @@
         "subheading_text_color": ""
       }
     },
-    "blocks_kKwWcf": {
-      "type": "_blocks",
-      "blocks": {
-        "ai_gen_block_2daa5f2_bAmgGL": {
-          "type": "ai_gen_block_2daa5f2",
-          "settings": {
-            "label": "私たちのミッション",
-            "heading": "小売現場の状況を可視化し、<br>\n次の行動につなげる",
-            "description": "小売店舗では、売上だけでは見えないことが日々起きています。来店数、通行量、コンバージョン、スタッフ体制、天候、販促、VMDの変化が重なり、現場の判断は常に複雑です。\n<br><br>\nFlowは、これらのデータをつなぎ、店舗で何が起きているかを正確に把握できる状態をつくります。現場と本部が同じ情報をもとに、より早く、一貫した判断ができるよう支援します。\n<strong>\n<br><br>\n私たちのミッションは、小売現場を正しく測定し、理解し、実行につなげるための運営基盤をつくることです。\n\n</strong>",
-            "button_text": "",
-            "button_link": "",
-            "condition_note": "",
-            "benefit_1_title": "正確な測定",
-            "benefit_1_text": "来店・通行量・店内行動を、現場判断の土台として可視化します。",
-            "benefit_2_title": "リアルタイムの把握",
-            "benefit_2_text": "売上、コンバージョン、スタッフ、天候などをつなぎ、変化をすばやく捉えます。",
-            "benefit_3_title": "実行への接続",
-            "benefit_3_text": "データを見て終わらせず、店舗と本部の次の行動につなげます。",
-            "section_background": "rgba(0,0,0,0)",
-            "card_background": "rgba(0,0,0,0)",
-            "card_border_color": "#e5e7eb",
-            "card_border_radius": 16,
-            "card_shadow_opacity": 10,
-            "label_background": "#f0f3e9",
-            "label_text_color": "#11243e",
-            "label_font_size": 11,
-            "heading_color": "#11243e",
-            "text_color": "#4b5563",
-            "text_font_size": 16,
-            "condition_text_color": "#9ca3af",
-            "condition_font_size": 16,
-            "button_background": "#11243e",
-            "button_hover_background": "#0a2850",
-            "button_text_color": "#ffffff",
-            "button_font_size": 18,
-            "button_border_radius": 8,
-            "benefit_icon_background": "#a0b842",
-            "benefit_icon_color": "#ffffff",
-            "benefit_title_color": "#11243e",
-            "benefit_title_font_size": 18,
-            "benefit_text_color": "#6b7280",
-            "benefit_text_font_size": 18
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "ai_gen_block_2daa5f2_bAmgGL"
-      ],
-      "name": "Campaign banner",
-      "settings": {
-        "full_width": true,
-        "remove_vertical_spacing": false,
-        "remove_horizontal_spacing": false,
-        "background": "",
-        "background_gradient": "",
-        "text_color": ""
-      }
-    },
-    "178097413274cdfbe8": {
-      "type": "_blocks",
-      "blocks": {
-        "ai_gen_block_fb05f27_6KXTRQ": {
-          "type": "ai_gen_block_fb05f27",
-          "settings": {
-            "founder_image": "shopify://shop_images/Chad2022.jpg",
-            "founder_name": "チャド・スチュワート",
-            "founder_title": "代表取締役",
-            "heading": "なぜFlowをつくったのか",
-            "story_content": "<p><strong>私が小売の現場を深く考えるようになったきっかけは、大学でビジネスを学びながら、カナディアンロッキーのスキーショップで働いていた頃でした。店舗の成果は、売上だけで決まるものではありません。来店数、時間帯、コンバージョン、スタッフ配置、そしてその日の現場判断によって大きく変わることを、実際の店舗で学びました。</strong></p><p><strong>その経験は、今のFlowの考え方につながっています。店舗スタッフは、売上を伸ばし、お客様を支え、日々の変化にすばやく対応することを求められています。しかし、その判断に必要な情報が十分に届いていないことも少なくありません。</strong></p><p><strong>Flowは、その状況を変えるためにつくりました。小売企業が店舗で本当に起きていることを理解し、現場のチームがより自信を持って判断し、行動できるようにする。それがFlowの役割です。</strong></p>",
-            "highlight_statement": "<p><strong>データは、現場を評価するためだけのものではありません。現場が次の判断をしやすくするためにあるべきだと考えています。</strong></p>",
-            "left_panel_bg": "#0e366a",
-            "right_panel_bg": "#11243e",
-            "border_radius": 20,
-            "section_spacing_top": 0,
-            "section_spacing_bottom": 60
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "ai_gen_block_fb05f27_6KXTRQ"
-      ],
-      "settings": {
-        "full_width": true,
-        "remove_vertical_spacing": false,
-        "remove_horizontal_spacing": false,
-        "background": "#ffffff",
-        "background_gradient": "",
-        "text_color": ""
-      }
-    },
-    "1780975575f5f43498": {
-      "type": "_blocks",
-      "blocks": {
-        "ai_gen_block_edd2e97_AgMMzz": {
-          "type": "ai_gen_block_edd2e97",
-          "settings": {
-            "heading": "会社概要",
-            "detail_1_icon": "globe",
-            "detail_1_label": "会社名",
-            "detail_1_value": "株式会社 Flow Solutions",
-            "detail_2_icon": "building",
-            "detail_2_label": "本社所在地",
-            "detail_2_value": "神奈川県横浜市中区桜木町2-2 港陽ビル 4F",
-            "detail_3_icon": "target",
-            "detail_3_label": "会社設立",
-            "detail_3_value": "2006年3月16日",
-            "detail_4_icon": "users",
-            "detail_4_label": "事業内容",
-            "detail_4_value": "小売店舗向けデータ分析・運営改善支援",
-            "stat_1_metric": "990+",
-            "stat_1_label": "導入拠点",
-            "stat_2_metric": "100+",
-            "stat_2_label": "導入ブランド",
-            "stat_3_metric": "9,900万円",
-            "stat_3_label": "資本金",
-            "stat_4_metric": "2016",
-            "stat_4_label": "Flow提供開始",
-            "desktop_width_percent": 100
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "ai_gen_block_edd2e97_AgMMzz"
-      ],
-      "settings": {
-        "full_width": true,
-        "remove_vertical_spacing": false,
-        "remove_horizontal_spacing": false,
-        "background": "#ffffff",
-        "background_gradient": "",
-        "text_color": ""
-      }
-    },
     "multi_column_3tnATm": {
       "type": "multi-column",
       "blocks": {
@@ -398,11 +259,11 @@
             "text_color": "",
             "border_color": "#f2f2f2",
             "show_controls": false,
-            "column_size": "2",
-            "title": "AI Camera Measurement",
+            "column_size": "4",
+            "title": "AI Camera Layer",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<p>Ceiling-mounted cameras with edge AI processing. Accurate people counting (98.5%), zone tracking, dwell time, heatmaps, and passerby measurement. Privacy-first—no facial recognition, no video storage.</p><ul><li><strong>People Counting</strong></li><li><strong>Zone Analytics</strong></li><li><strong>Dwell Time</strong></li><li><strong>Heatmaps</strong></li></ul>",
+            "content": "<ul><li>✅ People counting (98.5% accuracy)</li><li>✅ Zone tracking & heatmaps</li><li>✅ Dwell time measurement</li><li>✅ Passerby capture rateStaff exclusion active</li></ul>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -420,11 +281,11 @@
             "text_color": "",
             "border_color": "#f2f2f2",
             "show_controls": false,
-            "column_size": "2",
-            "title": "Retail Analytics Platform",
+            "column_size": "4",
+            "title": "Analytics Platform",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<p>Web-based dashboard and mobile app for store managers, analysts, and executives. Real-time KPIs, conversion tracking, traffic trends, staff-to-customer ratios, and role-based views across single or multi-store deployments.</p><ul><li>Conversion Tracking</li><li>Traffic Trends</li><li>Multi-Store</li></ul>",
+            "content": "<ul><li>✅ Real-time KPI dashboard</li><li>✅ Conversion rate tracking</li><li>✅ Traffic trend analysis</li><li>✅ Multi-store benchmarking</li><li>✅ Custom date range reporting</li></ul>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -442,11 +303,11 @@
             "text_color": "",
             "border_color": "#f2f2f2",
             "show_controls": false,
-            "column_size": "2",
-            "title": "FIDA / Integrations",
+            "column_size": "4",
+            "title": "Integrations (FIDA)",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<p>Flow Integration & Data Aggregation (FIDA) connects POS systems, staff scheduling, and external data sources. API-first architecture supports custom integrations and data export for enterprise BI tools.</p><ul><li>POS Integration</li><li>Scheduling Sync</li><li>API Access</li></ul>",
+            "content": "<ul><li>✅ POS data correlation</li><li>✅ Staff scheduling sync</li><li>✅ External data import</li><li>✅ API access</li><li>✅ CSV/FTP export support</li></ul>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -464,11 +325,11 @@
             "text_color": "",
             "border_color": "#f2f2f2",
             "show_controls": false,
-            "column_size": "2",
-            "title": "Flow AI / Decision Support",
+            "column_size": "4",
+            "title": "Decision Layer",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<p>Staffing recommendations, anomaly detection, performance alerts, and trend forecasting. AI layer helps store teams understand what's happening and what to do about it—built on accurate measurement, not speculation.</p><ul><li>Staffing Alerts</li><li>Anomaly Detection</li><li>Forecasting</li></ul>",
+            "content": "<ul><li>✅ Staffing recommendations</li><li>✅ Anomaly detection alerts</li><li>✅ Peak traffic forecasting</li><li>✅ Mobile push notifications</li><li>✅ Performance gap identification</li></ul>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -481,11 +342,9 @@
         "item_wA6Lwn",
         "item_ifUhXk"
       ],
-      "disabled": true,
       "custom_css": [
         ".multi-column__item * {text-align: left;}",
-        ".multi-column__item ul {display: flex; list-style: none; padding-left: 0; font-size: 11px; font-weight: 400; gap: 1rem; flex-wrap: wrap;}",
-        ".multi-column__item ul li {display: inline-flex; align-items: center; padding: 6px 14px; background-color: #e5e7eb; color: #6b7280; border-radius: 20px; font-size: 11px; font-weight: 600; letter-spacing: 0.5px; text-transform: uppercase; width: fit-content;}"
+        ".multi-column__item ul {display: flex; list-style: none; padding-left: 0; font-size: 11px; font-weight: 400; gap: 1rem; flex-wrap: wrap;}"
       ],
       "name": "Multi-column",
       "settings": {
@@ -493,10 +352,10 @@
         "stack_on_mobile": false,
         "gap": "medium",
         "text_alignment": "center",
-        "subheading": "OUR BUSINESS",
-        "title": "What Flow Provides",
-        "content": "<p>End-to-end platform for measuring, analyzing, and optimizing physical retail operations.</p>",
-        "background": "",
+        "subheading": "WHAT'S INCLUDED",
+        "title": "Every store gets the full platform.",
+        "content": "<p>No feature tiers. No add-on modules. Every Flow subscription includes the complete measurement, analytics, and decision layer.</p>",
+        "background": "#FFFFFF",
         "background_gradient": "",
         "text_color": "",
         "subheading_background_color": "",
@@ -1239,9 +1098,6 @@
     "rich_text_cqadYy",
     "1781505750d4c92acf",
     "multi_column_L3Rbir",
-    "blocks_kKwWcf",
-    "178097413274cdfbe8",
-    "1780975575f5f43498",
     "multi_column_3tnATm",
     "section-15",
     "multi_column_nMex9i",
