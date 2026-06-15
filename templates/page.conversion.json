@@ -41,7 +41,7 @@
       "custom_css": [
         ".media-with-text__media > * {object-fit: contain;}",
         ".h1 {font-size: var(--text-h1);}",
-        ".media-with-text__content{padding: 0;}"
+        ".media-with-text__content {padding: 0;}"
       ],
       "name": "Media with text",
       "settings": {
@@ -140,7 +140,9 @@
         "content": "<p>Without accurate traffic measurement, conversion rate remains unknown. Store managers see sales results but have no visibility into how many customers entered, where they went, or why they left without purchasing.</p>",
         "background": "#ffffff",
         "background_gradient": "",
-        "text_color": ""
+        "text_color": "",
+        "subheading_background_color": "",
+        "subheading_text_color": ""
       }
     },
     "1780279655010b3d7a": {
@@ -187,7 +189,7 @@
             "card2_item3": "Historical trend comparison",
             "light_card_bg": "#ffffff",
             "light_card_text": "#0a1a2f",
-            "light_icon_bg": "#f0f9f4",
+            "light_icon_bg": "#A7BC59",
             "light_checkmark_color": "#a0b842",
             "banner_title": "The Flow Advantage",
             "banner_text": "Unlike basic people counters, Flow provides complete operational context. You don't just see conversion rate—you understand why it's changing, which stores are underperforming, and what operational adjustments will improve results.",
@@ -195,7 +197,7 @@
             "banner_border_radius": 12,
             "banner_title_size": 20,
             "banner_text_size": 15,
-            "banner_bg_color": "#f0f9f4",
+            "banner_bg_color": "#FFFFFF",
             "banner_icon_bg": "#a0b842",
             "banner_icon_color": "#ffffff",
             "banner_title_color": "#0a1a2f",
@@ -256,7 +258,7 @@
             "show_controls": false,
             "column_size": "4",
             "title": "Store Entries",
-            "heading_tag": "h4",
+            "heading_tag": "h5",
             "subheading": "",
             "content": "<p>Accurate customer entry counting with directional flow and staff exclusion</p><h4>98.5%</h4><p>Measurement accuracy</p>",
             "link_url": "",
@@ -278,7 +280,7 @@
             "show_controls": false,
             "column_size": "4",
             "title": "Dwell Time",
-            "heading_tag": "h4",
+            "heading_tag": "h5",
             "subheading": "",
             "content": "<p>Average time customers spend in store and zone-level engagement duration</p><h4>Second</h4><p>Precision level</p>",
             "link_url": "",
@@ -300,7 +302,7 @@
             "show_controls": false,
             "column_size": "4",
             "title": "Transactions",
-            "heading_tag": "h4",
+            "heading_tag": "h5",
             "subheading": "",
             "content": "<p>Automated POS correlation to calculate conversion rate and basket metrics</p><h4>Auto</h4><p>Daily sync</p>",
             "link_url": "",
@@ -331,7 +333,9 @@
         "content": "<p>Flow tracks every stage of the conversion funnel, from street traffic to completed transactions, giving you actionable insights at each step.</p>",
         "background": "#ffffff",
         "background_gradient": "",
-        "text_color": ""
+        "text_color": "",
+        "subheading_background_color": "",
+        "subheading_text_color": ""
       }
     },
     "blocks_BGj9cg": {
@@ -506,7 +510,9 @@
         "content": "<p>Retailers using Flow for conversion optimization report measurable improvements across key performance indicators.</p>",
         "background": "#f9fafb",
         "background_gradient": "",
-        "text_color": ""
+        "text_color": "",
+        "subheading_background_color": "",
+        "subheading_text_color": ""
       }
     },
     "178028358684e902bd": {
@@ -799,7 +805,9 @@
         "content": "<p>Flow deployment is designed for minimal operational disruption. Installation happens after hours, integration adapts to existing systems, and training is included.</p>",
         "background": "#f2f2f2",
         "background_gradient": "",
-        "text_color": ""
+        "text_color": "",
+        "subheading_background_color": "",
+        "subheading_text_color": ""
       }
     },
     "rich_text_6VmVgb": {
@@ -967,7 +975,9 @@
         "content": "",
         "background": "",
         "background_gradient": "",
-        "text_color": ""
+        "text_color": "",
+        "subheading_background_color": "",
+        "subheading_text_color": ""
       }
     }
   },
