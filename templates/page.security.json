@@ -78,7 +78,7 @@
             "title": "",
             "heading_tag": "h1",
             "subheading": "",
-            "content": "<h3>No Facial Recognition</h3><p>Flow detects and tracks human shapes using skeletal tracking and motion analysis. We do not capture, process, or store facial features.</p><p><strong>Technical approach: Shape detection, height estimation, trajectory tracking—zero biometric data.</strong></p>",
+            "content": "<h4>No Facial Recognition</h4><p>Flow detects and tracks human shapes using skeletal tracking and motion analysis. We do not capture, process, or store facial features.</p><p><strong>Technical approach: Shape detection, height estimation, trajectory tracking—zero biometric data.</strong></p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -100,7 +100,7 @@
             "title": "",
             "heading_tag": "h1",
             "subheading": "",
-            "content": "<h3>No Video Storage</h3><p>Raw camera feeds are processed in real-time at the edge, then discarded. Only aggregate metrics (counts, dwell times, zones) are stored.</p><p><strong>Edge processing: Metrics extracted locally, video never leaves the device, no cloud storage of footage.</strong></p>",
+            "content": "<h4>No Video Storage</h4><p>Raw camera feeds are processed in real-time at the edge, then discarded. Only aggregate metrics (counts, dwell times, zones) are stored.</p><p><strong>Edge processing: Metrics extracted locally, video never leaves the device, no cloud storage of footage.</strong></p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -122,7 +122,7 @@
             "title": "",
             "heading_tag": "h1",
             "subheading": "",
-            "content": "<h3>No Personal Identifiers</h3><p>Flow does not collect names, contact information, payment details, or any PII. Anonymous session IDs are generated per visit and cannot be linked to individuals.</p><p>Data minimization: Only metrics required for operational analytics. No tracking across visits or stores.</p>",
+            "content": "<h4>No Personal Identifiers</h4><p>Flow does not collect names, contact information, payment details, or any PII. Anonymous session IDs are generated per visit and cannot be linked to individuals.</p><p>Data minimization: Only metrics required for operational analytics. No tracking across visits or stores.</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
