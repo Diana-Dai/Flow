@@ -53,6 +53,174 @@
         "text_color": "#ffffff"
       }
     },
+    "blocks_9ttnRV": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_380fb98_9mNhWY": {
+          "type": "ai_gen_block_380fb98",
+          "settings": {
+            "subheading": "",
+            "main_heading": "Why partners choose Flow",
+            "main_description": "Discover how Flow Solutions empowers retailers with innovative technology and seamless integration to drive growth and efficiency.",
+            "cta_text": "Talk to our team",
+            "cta_url": "shopify://pages/contact",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#A0B842",
+            "icon_color": "#FFFFFF",
+            "feature_1_icon": "picto-target",
+            "feature_1_title": "Retail-specific platform",
+            "feature_1_description": "Flow is built for physical store operations, not generic analytics.",
+            "feature_2_icon": "picto-like",
+            "feature_2_title": "Clear customer value",
+            "feature_2_description": "Traffic, conversion, staffing, weather, sales, and operational context can be connected into one environment.",
+            "feature_3_icon": "picto-file",
+            "feature_3_title": "Flexible integration model",
+            "feature_3_description": "API and CSV/FTP integration options can support different technical environments.",
+            "feature_4_icon": "picto-earth",
+            "feature_4_title": "Japan retail credibility",
+            "feature_4_description": "Flow understands store operations, adoption barriers, and the need for practical implementation.",
+            "feature_5_icon": "none",
+            "feature_5_title": "",
+            "feature_5_description": "",
+            "feature_6_icon": "none",
+            "feature_6_title": "",
+            "feature_6_description": ""
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_380fb98_9mNhWY"
+      ],
+      "name": "Why retailers choose Flow",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "multi_column_aJHBDE": {
+      "type": "multi-column",
+      "blocks": {
+        "item_RYiwAL": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-pin",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#a0b842",
+            "icon_color": "#ffffff",
+            "background_color": "#ffffff",
+            "text_color": "",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h5><strong>本社</strong></h5><p>株式会社Flow Solutions<br/><a href=\"https://maps.app.goo.gl/qL146EBhCBzoHjQN7\" target=\"_blank\" title=\"https://maps.app.goo.gl/qL146EBhCBzoHjQN7\">横浜市桜木町</a><br/></p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_QiJVd9": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-envelope",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#a0b842",
+            "icon_color": "#ffffff",
+            "background_color": "#ffffff",
+            "text_color": "",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h5><strong>メール</strong></h5><p>フォーム以外のお問い合わせ</p><p><a href=\"mailto:clientrelations@flow-solutions.com\" target=\"_blank\" title=\"mailto:clientrelations@flow-solutions.com\">メールで問い合わせる</a></p><p></p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_qUFtTT": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-phone",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#a0b842",
+            "icon_color": "#ffffff",
+            "background_color": "#ffffff",
+            "text_color": "",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h5><strong>電話</strong></h5><p><a href=\"tel:045-306-8276\" target=\"_blank\">045-306-8276</a></p><p></p><h6>日本国内のお問い合わせに対応</h6>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_c38VVk": {
+          "type": "item",
+          "disabled": true,
+          "settings": {
+            "icon": "picto-timer",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#a0b842",
+            "icon_color": "#ffffff",
+            "background_color": "#ffffff",
+            "text_color": "",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "4",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h5><strong>営業時間</strong></h5><p>月曜日〜金曜日<br/>10:00〜19:00</p><h6>法人のお客様は、内容に応じて個別に対応いたします。</h6>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_RYiwAL",
+        "item_QiJVd9",
+        "item_qUFtTT",
+        "item_c38VVk"
+      ],
+      "custom_css": [
+        "h6 {font-size: 0.9rem; margin-top: 0.5rem;}"
+      ],
+      "name": "Multi-column",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "start",
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "subheading_background_color": "",
+        "subheading_text_color": ""
+      }
+    },
     "17803895307b8bdaca": {
       "type": "_blocks",
       "blocks": {
@@ -231,121 +399,6 @@
         "chart_true_false_color": ""
       }
     },
-    "multi_column_aJHBDE": {
-      "type": "multi-column",
-      "blocks": {
-        "item_RYiwAL": {
-          "type": "item",
-          "settings": {
-            "icon": "picto-pin",
-            "icon_width": 32,
-            "icon_background_type": "square",
-            "icon_background": "#a0b842",
-            "icon_color": "#ffffff",
-            "background_color": "#ffffff",
-            "text_color": "",
-            "border_color": "#f2f2f2",
-            "show_controls": false,
-            "column_size": "4",
-            "title": "",
-            "heading_tag": "h4",
-            "subheading": "",
-            "content": "<h5><strong>本社</strong></h5><p>株式会社Flow Solutions<br/><a href=\"https://maps.app.goo.gl/qL146EBhCBzoHjQN7\" target=\"_blank\" title=\"https://maps.app.goo.gl/qL146EBhCBzoHjQN7\">横浜市桜木町</a><br/></p>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        },
-        "item_QiJVd9": {
-          "type": "item",
-          "settings": {
-            "icon": "picto-envelope",
-            "icon_width": 32,
-            "icon_background_type": "square",
-            "icon_background": "#a0b842",
-            "icon_color": "#ffffff",
-            "background_color": "#ffffff",
-            "text_color": "",
-            "border_color": "#f2f2f2",
-            "show_controls": false,
-            "column_size": "4",
-            "title": "",
-            "heading_tag": "h4",
-            "subheading": "",
-            "content": "<h5><strong>メール</strong></h5><p>フォーム以外のお問い合わせ</p><p><a href=\"mailto:clientrelations@flow-solutions.com\" target=\"_blank\" title=\"mailto:clientrelations@flow-solutions.com\">メールで問い合わせる</a></p><p></p>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        },
-        "item_qUFtTT": {
-          "type": "item",
-          "settings": {
-            "icon": "picto-phone",
-            "icon_width": 32,
-            "icon_background_type": "square",
-            "icon_background": "#a0b842",
-            "icon_color": "#ffffff",
-            "background_color": "#ffffff",
-            "text_color": "",
-            "border_color": "#f2f2f2",
-            "show_controls": false,
-            "column_size": "4",
-            "title": "",
-            "heading_tag": "h4",
-            "subheading": "",
-            "content": "<h5><strong>電話</strong></h5><p><a href=\"tel:045-306-8276\" target=\"_blank\">045-306-8276</a></p><p></p><h6>日本国内のお問い合わせに対応</h6>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        },
-        "item_c38VVk": {
-          "type": "item",
-          "settings": {
-            "icon": "picto-timer",
-            "icon_width": 32,
-            "icon_background_type": "square",
-            "icon_background": "#a0b842",
-            "icon_color": "#ffffff",
-            "background_color": "#ffffff",
-            "text_color": "",
-            "border_color": "#f2f2f2",
-            "show_controls": false,
-            "column_size": "4",
-            "title": "",
-            "heading_tag": "h4",
-            "subheading": "",
-            "content": "<h5><strong>営業時間</strong></h5><p>月曜日〜金曜日<br/>10:00〜19:00</p><h6>法人のお客様は、内容に応じて個別に対応いたします。</h6>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        }
-      },
-      "block_order": [
-        "item_RYiwAL",
-        "item_QiJVd9",
-        "item_qUFtTT",
-        "item_c38VVk"
-      ],
-      "custom_css": [
-        "h6 {font-size: 0.9rem; margin-top: 0.5rem;}"
-      ],
-      "name": "Multi-column",
-      "settings": {
-        "full_width": true,
-        "stack_on_mobile": false,
-        "gap": "medium",
-        "text_alignment": "start",
-        "subheading": "",
-        "title": "",
-        "content": "",
-        "background": "",
-        "background_gradient": "",
-        "text_color": ""
-      }
-    },
     "rich_text_6VmVgb": {
       "type": "rich-text",
       "blocks": {
@@ -414,9 +467,10 @@
   },
   "order": [
     "rich_text_cqadYy",
+    "blocks_9ttnRV",
+    "multi_column_aJHBDE",
     "17803895307b8bdaca",
     "section-15",
-    "multi_column_aJHBDE",
     "rich_text_6VmVgb"
   ]
 }
