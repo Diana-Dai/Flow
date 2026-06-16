@@ -1,0 +1,422 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "rich_text_cqadYy": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_nJjQnz": {
+          "type": "subheading",
+          "settings": {
+            "text": "ご相談・お問い合わせ",
+            "icon": "none"
+          }
+        },
+        "heading_hjfyL9": {
+          "type": "heading",
+          "settings": {
+            "text": "店舗分析・来店計測について相談する",
+            "heading_tag": "h1",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_wjTJeB": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>導入店舗数、計測したいKPI、既存システムとの連携、導入時期を確認し、貴社に合った導入方法をご案内します。</p>"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_nJjQnz",
+        "heading_hjfyL9",
+        "richtext_wjTJeB"
+      ],
+      "custom_css": [
+        "* {padding-bottom: 1rem;}"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "large",
+        "text_position": "center",
+        "background": "#11243e",
+        "background_gradient": "",
+        "text_color": "#ffffff"
+      }
+    },
+    "17803895307b8bdaca": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_34c6ce6_6CTeAj": {
+          "type": "ai_gen_block_34c6ce6",
+          "settings": {
+            "form_title": "お問い合わせ内容",
+            "form_subtitle": "以下の内容をご入力ください。内容を確認のうえ、担当者よりご連絡いたします。",
+            "inquiry_type_label": "お問い合わせ種別",
+            "show_inquiry_1": true,
+            "inquiry_1_title": "無料デモを希望",
+            "inquiry_1_desc": "Flowの画面や活用方法を確認したい方",
+            "inquiry_1_value": "schedule_demo",
+            "show_inquiry_2": true,
+            "inquiry_2_title": "導入について相談",
+            "inquiry_2_desc": "店舗数・計測内容・連携方法を相談したい方",
+            "inquiry_2_value": "technical_consultation",
+            "show_inquiry_3": true,
+            "inquiry_3_title": "その他のお問い合わせ",
+            "inquiry_3_desc": "資料請求・確認事項・その他のご相談",
+            "inquiry_3_value": "general_inquiry",
+            "company_info_title": "会社情報",
+            "company_name_label": "会社名",
+            "company_name_placeholder": "株式会社〇〇",
+            "industry_placeholder": "Select industry",
+            "stores_label": "店舗数",
+            "stores_placeholder": "選択してください",
+            "timeline_placeholder": "Select timeline",
+            "contact_person_title": "ご担当者情報",
+            "full_name_label": "お名前",
+            "full_name_placeholder": "山田 太郎",
+            "job_title_label": "部署・役職",
+            "job_title_placeholder": "店舗運営部 マネージャー",
+            "email_label": "会社メールアドレス",
+            "email_placeholder": "会社で使用しているメールアドレスをご入力ください。",
+            "phone_label": "電話番号",
+            "phone_placeholder": "03-XXXX-XXXX",
+            "additional_info_label": "ご相談内容",
+            "additional_info_placeholder": "検討中の店舗数、計測したい内容、連携したいシステム、導入希望時期などをご記入ください。",
+            "additional_info_note": "POS連携、スタッフシフト、既存カメラ、VMD・売場分析、来店計測などについてもご記入いただけます。",
+            "consent_text": "送信いただいた情報は、お問い合わせへの対応のみに使用します。個人情報の取り扱いについては、プライバシーポリシーをご確認ください",
+            "privacy_policy_text": "プライバシーポリシー",
+            "privacy_policy_url": "",
+            "submit_button_text": "送信する →",
+            "success_message": "送信が完了しました。お問い合わせありがとうございます。内容を確認のうえ、担当者よりご連絡いたします。通常、1〜2営業日以内にご返信いたします。"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_34c6ce6_6CTeAj"
+      ],
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "section-15": {
+      "type": "feature-chart",
+      "blocks": {
+        "block-1": {
+          "type": "headings",
+          "settings": {
+            "heading_1": "主な提供価値",
+            "heading_2": "コアの設計思想",
+            "heading_3": "来店データの位置づけ",
+            "heading_4": "データの即時性",
+            "heading_5": "店舗での使いやすさ",
+            "heading_6": "判断へのつながり",
+            "heading_7": "店舗ごとの判断差",
+            "heading_8": "本部と店舗の連携",
+            "heading_9": "運用負荷",
+            "heading_10": "拡張性",
+            "heading_11": "",
+            "heading_12": "",
+            "heading_13": "",
+            "heading_14": "",
+            "heading_15": "",
+            "heading_16": "",
+            "heading_17": "",
+            "heading_18": "",
+            "heading_19": "",
+            "heading_20": ""
+          }
+        },
+        "block-2": {
+          "type": "values",
+          "settings": {
+            "product": "",
+            "value_1": "<p>40mm Beryllium</p>",
+            "value_2": "<p>245g</p>",
+            "value_3": "<p>165mm x 190mm x 66mm</p>",
+            "value_4": "<p>24 hours</p>",
+            "value_5": "",
+            "value_6": "",
+            "value_7": "",
+            "value_8": "",
+            "value_9": "",
+            "value_10": "",
+            "value_11": "",
+            "value_12": "",
+            "value_13": "",
+            "value_14": "",
+            "value_15": "",
+            "value_16": "",
+            "value_17": "",
+            "value_18": "",
+            "value_19": "",
+            "value_20": "",
+            "view_button_background": "",
+            "view_button_text_color": ""
+          }
+        },
+        "block-3": {
+          "type": "values",
+          "settings": {
+            "product": "",
+            "value_1": "<p>40mm Beryllium</p>",
+            "value_2": "<p>205g (On-Ear), 239g (Over-Ear)</p>",
+            "value_3": "<p>190mm x 155mm x 34mm (On-Ear), 200mm x 165mm x 40mm (Over-Ear)</p>",
+            "value_4": "<p>16 hours</p>",
+            "value_5": "",
+            "value_6": "",
+            "value_7": "",
+            "value_8": "",
+            "value_9": "",
+            "value_10": "",
+            "value_11": "",
+            "value_12": "",
+            "value_13": "",
+            "value_14": "",
+            "value_15": "",
+            "value_16": "",
+            "value_17": "",
+            "value_18": "",
+            "value_19": "",
+            "value_20": "",
+            "view_button_background": "",
+            "view_button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "Why Dashboards Fail",
+        "content": "<p>Traditional analytics show you the problem. Flow solves it.</p>",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "center",
+        "max_rows": 5,
+        "view_all_text": "View all",
+        "view_less_text": "View less",
+        "view_product": "View",
+        "viewing_product": "",
+        "show_product_swatch": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "chart_background": "",
+        "chart_text_color": "",
+        "chart_true_false_color": ""
+      }
+    },
+    "multi_column_aJHBDE": {
+      "type": "multi-column",
+      "blocks": {
+        "item_RYiwAL": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-pin",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#a0b842",
+            "icon_color": "#ffffff",
+            "background_color": "#ffffff",
+            "text_color": "",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "4",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h5><strong>本社</strong></h5><p>株式会社Flow Solutions<br/><a href=\"https://maps.app.goo.gl/qL146EBhCBzoHjQN7\" target=\"_blank\" title=\"https://maps.app.goo.gl/qL146EBhCBzoHjQN7\">横浜市桜木町</a><br/></p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_QiJVd9": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-envelope",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#a0b842",
+            "icon_color": "#ffffff",
+            "background_color": "#ffffff",
+            "text_color": "",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "4",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h5><strong>メール</strong></h5><p>フォーム以外のお問い合わせ</p><p><a href=\"mailto:clientrelations@flow-solutions.com\" target=\"_blank\" title=\"mailto:clientrelations@flow-solutions.com\">メールで問い合わせる</a></p><p></p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_qUFtTT": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-phone",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#a0b842",
+            "icon_color": "#ffffff",
+            "background_color": "#ffffff",
+            "text_color": "",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "4",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h5><strong>電話</strong></h5><p><a href=\"tel:045-306-8276\" target=\"_blank\">045-306-8276</a></p><p></p><h6>日本国内のお問い合わせに対応</h6>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_c38VVk": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-timer",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#a0b842",
+            "icon_color": "#ffffff",
+            "background_color": "#ffffff",
+            "text_color": "",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "4",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h5><strong>営業時間</strong></h5><p>月曜日〜金曜日<br/>10:00〜19:00</p><h6>法人のお客様は、内容に応じて個別に対応いたします。</h6>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_RYiwAL",
+        "item_QiJVd9",
+        "item_qUFtTT",
+        "item_c38VVk"
+      ],
+      "custom_css": [
+        "h6 {font-size: 0.9rem; margin-top: 0.5rem;}"
+      ],
+      "name": "Multi-column",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "start",
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "rich_text_6VmVgb": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_YXhiR8": {
+          "type": "heading",
+          "settings": {
+            "text": "お急ぎの場合はこちら",
+            "heading_tag": "h1",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_qzAkak": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>営業時間内であれば、お電話またはメールでのお問い合わせにも対応しています。</p>"
+          }
+        },
+        "button_AVKAbi": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "style": "outline",
+            "size": "base",
+            "text": "Contact Solutions Architect",
+            "url": "#",
+            "background": "",
+            "text_color": "#11243e"
+          }
+        },
+        "buttons_jaKCGH": {
+          "type": "buttons",
+          "settings": {
+            "style_1": "fill",
+            "size_1": "xl",
+            "text_1": "Call Now: +81-3-xxxx-xxxx →",
+            "url_1": "#",
+            "background_1": "#a0b842",
+            "text_color_1": "#ffffff",
+            "style_2": "fill",
+            "size_2": "xl",
+            "text_2": "Email: contact@flow-solutions.com",
+            "url_2": "#",
+            "background_2": "#ffffff",
+            "text_color_2": "#11243e"
+          }
+        }
+      },
+      "block_order": [
+        "heading_YXhiR8",
+        "richtext_qzAkak",
+        "button_AVKAbi",
+        "buttons_jaKCGH"
+      ],
+      "disabled": true,
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "#0e366a",
+        "background_gradient": "",
+        "text_color": "#ffffff"
+      }
+    }
+  },
+  "order": [
+    "rich_text_cqadYy",
+    "17803895307b8bdaca",
+    "section-15",
+    "multi_column_aJHBDE",
+    "rich_text_6VmVgb"
+  ]
+}
