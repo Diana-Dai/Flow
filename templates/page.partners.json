@@ -53,6 +53,124 @@
         "text_color": "#ffffff"
       }
     },
+    "multi_column_aJHBDE": {
+      "type": "multi-column",
+      "blocks": {
+        "item_qUFtTT": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#a0b842",
+            "icon_color": "#ffffff",
+            "background_color": "#ffffff",
+            "text_color": "",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "Resale / Solution Partner",
+            "heading_tag": "h4",
+            "subheading": "<p>Offer Flow to your retail customers</p>",
+            "content": "<p>Resell or introduce Flow as a retail analytics and execution platform for customers who need traffic measurement, conversion insight, and better store performance visibility.</p><p><strong>Best for:</strong></p><ul><li>Security companies</li><li>camera installers</li><li>retail consultants</li><li>system integrators</li><li>local solution providers</li></ul>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_RYiwAL": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#a0b842",
+            "icon_color": "#ffffff",
+            "background_color": "#ffffff",
+            "text_color": "",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "AI Integration Partner",
+            "heading_tag": "h4",
+            "subheading": "<p>Integrate Flow AI into your product</p>",
+            "content": "<p>Add retail-specific decision support to your platform, using Flow’s store performance logic, operational recommendations, and retail execution knowledge.</p><p><strong>Best for:</strong></p><ul><li>Software platforms</li><li>retail tech vendors</li><li>BI providers</li><li>POS-adjacent platforms</li></ul>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_QiJVd9": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#a0b842",
+            "icon_color": "#ffffff",
+            "background_color": "#ffffff",
+            "text_color": "",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "Data Integration Partner",
+            "heading_tag": "h4",
+            "subheading": "<p>Connect your data to Flow</p>",
+            "content": "<p>Integrate POS, staffing, CRM, product, promotion, or operational data into Flow so shared customers can understand store performance in one decision-ready environment.</p><p><strong>Best for:</strong></p><ul><li>POS vendors</li><li>staffing platforms</li><li>CRM systems</li><li>BI tools</li><li>ERP-adjacent providers</li><li>mall or facility data providers</li></ul><p></p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_c38VVk": {
+          "type": "item",
+          "disabled": true,
+          "settings": {
+            "icon": "picto-timer",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#a0b842",
+            "icon_color": "#ffffff",
+            "background_color": "#ffffff",
+            "text_color": "",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "4",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h5><strong>営業時間</strong></h5><p>月曜日〜金曜日<br/>10:00〜19:00</p><h6>法人のお客様は、内容に応じて個別に対応いたします。</h6>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_qUFtTT",
+        "item_RYiwAL",
+        "item_QiJVd9",
+        "item_c38VVk"
+      ],
+      "custom_css": [
+        "h6 {font-size: 0.9rem; margin-top: 0.5rem;}"
+      ],
+      "name": "Multi-column",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "start",
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "subheading_background_color": "",
+        "subheading_text_color": ""
+      }
+    },
     "blocks_9ttnRV": {
       "type": "_blocks",
       "blocks": {
@@ -101,124 +219,6 @@
         "background": "",
         "background_gradient": "",
         "text_color": ""
-      }
-    },
-    "multi_column_aJHBDE": {
-      "type": "multi-column",
-      "blocks": {
-        "item_RYiwAL": {
-          "type": "item",
-          "settings": {
-            "icon": "picto-pin",
-            "icon_width": 32,
-            "icon_background_type": "square",
-            "icon_background": "#a0b842",
-            "icon_color": "#ffffff",
-            "background_color": "#ffffff",
-            "text_color": "",
-            "border_color": "#f2f2f2",
-            "show_controls": false,
-            "column_size": "3",
-            "title": "",
-            "heading_tag": "h4",
-            "subheading": "",
-            "content": "<h5><strong>本社</strong></h5><p>株式会社Flow Solutions<br/><a href=\"https://maps.app.goo.gl/qL146EBhCBzoHjQN7\" target=\"_blank\" title=\"https://maps.app.goo.gl/qL146EBhCBzoHjQN7\">横浜市桜木町</a><br/></p>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        },
-        "item_QiJVd9": {
-          "type": "item",
-          "settings": {
-            "icon": "picto-envelope",
-            "icon_width": 32,
-            "icon_background_type": "square",
-            "icon_background": "#a0b842",
-            "icon_color": "#ffffff",
-            "background_color": "#ffffff",
-            "text_color": "",
-            "border_color": "#f2f2f2",
-            "show_controls": false,
-            "column_size": "3",
-            "title": "",
-            "heading_tag": "h4",
-            "subheading": "",
-            "content": "<h5><strong>メール</strong></h5><p>フォーム以外のお問い合わせ</p><p><a href=\"mailto:clientrelations@flow-solutions.com\" target=\"_blank\" title=\"mailto:clientrelations@flow-solutions.com\">メールで問い合わせる</a></p><p></p>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        },
-        "item_qUFtTT": {
-          "type": "item",
-          "settings": {
-            "icon": "picto-phone",
-            "icon_width": 32,
-            "icon_background_type": "square",
-            "icon_background": "#a0b842",
-            "icon_color": "#ffffff",
-            "background_color": "#ffffff",
-            "text_color": "",
-            "border_color": "#f2f2f2",
-            "show_controls": false,
-            "column_size": "3",
-            "title": "",
-            "heading_tag": "h4",
-            "subheading": "",
-            "content": "<h5><strong>電話</strong></h5><p><a href=\"tel:045-306-8276\" target=\"_blank\">045-306-8276</a></p><p></p><h6>日本国内のお問い合わせに対応</h6>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        },
-        "item_c38VVk": {
-          "type": "item",
-          "disabled": true,
-          "settings": {
-            "icon": "picto-timer",
-            "icon_width": 32,
-            "icon_background_type": "square",
-            "icon_background": "#a0b842",
-            "icon_color": "#ffffff",
-            "background_color": "#ffffff",
-            "text_color": "",
-            "border_color": "#f2f2f2",
-            "show_controls": false,
-            "column_size": "4",
-            "title": "",
-            "heading_tag": "h4",
-            "subheading": "",
-            "content": "<h5><strong>営業時間</strong></h5><p>月曜日〜金曜日<br/>10:00〜19:00</p><h6>法人のお客様は、内容に応じて個別に対応いたします。</h6>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        }
-      },
-      "block_order": [
-        "item_RYiwAL",
-        "item_QiJVd9",
-        "item_qUFtTT",
-        "item_c38VVk"
-      ],
-      "custom_css": [
-        "h6 {font-size: 0.9rem; margin-top: 0.5rem;}"
-      ],
-      "name": "Multi-column",
-      "settings": {
-        "full_width": true,
-        "stack_on_mobile": false,
-        "gap": "medium",
-        "text_alignment": "start",
-        "subheading": "",
-        "title": "",
-        "content": "",
-        "background": "",
-        "background_gradient": "",
-        "text_color": "",
-        "subheading_background_color": "",
-        "subheading_text_color": ""
       }
     },
     "17803895307b8bdaca": {
@@ -467,8 +467,8 @@
   },
   "order": [
     "rich_text_cqadYy",
-    "blocks_9ttnRV",
     "multi_column_aJHBDE",
+    "blocks_9ttnRV",
     "17803895307b8bdaca",
     "section-15",
     "rich_text_6VmVgb"
