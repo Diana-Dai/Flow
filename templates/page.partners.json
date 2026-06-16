@@ -22,7 +22,7 @@
         "heading_hjfyL9": {
           "type": "heading",
           "settings": {
-            "text": "店舗分析・来店計測について相談する",
+            "text": "Partner with Flow to help retailers turn store data into better execution",
             "heading_tag": "h1",
             "text_color": "",
             "gradient": ""
@@ -31,14 +31,32 @@
         "richtext_wjTJeB": {
           "type": "richtext",
           "settings": {
-            "content": "<p>導入店舗数、計測したいKPI、既存システムとの連携、導入時期を確認し、貴社に合った導入方法をご案内します。</p>"
+            "content": "<p>Flow works with technology providers, service companies, and retail solution partners who want to give physical retailers stronger visibility, better operational insight, and clearer action from store data.</p>"
+          }
+        },
+        "buttons_H4Nmhn": {
+          "type": "buttons",
+          "settings": {
+            "style_1": "fill",
+            "size_1": "lg",
+            "text_1": "Discuss a Partnership",
+            "url_1": "",
+            "background_1": "#A0B842",
+            "text_color_1": "#FFFFFF",
+            "style_2": "fill",
+            "size_2": "lg",
+            "text_2": "Explore Integration Options",
+            "url_2": "",
+            "background_2": "",
+            "text_color_2": ""
           }
         }
       },
       "block_order": [
         "subheading_nJjQnz",
         "heading_hjfyL9",
-        "richtext_wjTJeB"
+        "richtext_wjTJeB",
+        "buttons_H4Nmhn"
       ],
       "custom_css": [
         "* {padding-bottom: 1rem;}"
@@ -86,8 +104,8 @@
             "icon_background_type": "square",
             "icon_background": "#a0b842",
             "icon_color": "#ffffff",
-            "background_color": "#ffffff",
-            "text_color": "",
+            "background_color": "#A0B842",
+            "text_color": "#FFFFFF",
             "border_color": "#f2f2f2",
             "show_controls": false,
             "column_size": "3",
@@ -108,8 +126,8 @@
             "icon_background_type": "square",
             "icon_background": "#a0b842",
             "icon_color": "#ffffff",
-            "background_color": "#ffffff",
-            "text_color": "",
+            "background_color": "#0E366A",
+            "text_color": "#FFFFFF",
             "border_color": "#f2f2f2",
             "show_controls": false,
             "column_size": "3",
@@ -212,6 +230,229 @@
         "ai_gen_block_380fb98_9mNhWY"
       ],
       "name": "Why retailers choose Flow",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "multi_column_qtAc89": {
+      "type": "multi-column",
+      "blocks": {
+        "item_EJTEcD": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "4",
+            "title": "Technology platforms",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<ul><li>POS</li><li>CRM</li><li>staffing</li><li>BI tools</li><li>mall analytics</li><li>ERP-adjacent systems</li><li>retail operations platforms</li></ul>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_PbEUxX": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "4",
+            "title": "Retail service providers",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<ul><li>Retail consultants</li><li>VMD advisors</li><li>store operations specialists</li><li>implementation partners</li></ul>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_QyUhWe": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "4",
+            "title": "Security and camera providers",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<p>Companies already serving physical store environments that want to offer analytics and performance insight beyond security.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_YeEncG": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "4",
+            "title": "System integrators",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<p>Partners helping retailers connect operational systems, reporting environments, and store-level workflows.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_EJTEcD",
+        "item_PbEUxX",
+        "item_QyUhWe",
+        "item_YeEncG"
+      ],
+      "name": "Multi-column",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "start",
+        "subheading": "About",
+        "title": "Who we work best with",
+        "content": "<p>Organize content into multiple columns to share useful information to your customers about your products, values...</p>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "subheading_background_color": "",
+        "subheading_text_color": ""
+      }
+    },
+    "blocks_c6DTbK": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_3504708_V8rxP3": {
+          "type": "ai_gen_block_3504708",
+          "settings": {
+            "badge_text": "How partnership usually starts",
+            "headline": "How partnership usually starts",
+            "description": "Flowは、担当店舗のKPI、Pulse、メモ、店舗報告をまとめて確認できるようにし、優先して見るべき店舗や変化を把握しやすくします。",
+            "step1_icon": "document",
+            "step1_title": "Initial fit discussion",
+            "step1_desc": "We confirm customer overlap, partner type, and commercial objective.",
+            "step2_icon": "chart",
+            "step2_title": "Technical or commercial review",
+            "step2_desc": "We assess whether the partnership is primarily integration, resale, referral, or product collaboration.",
+            "step3_icon": "alert",
+            "step3_title": "Pilot or first customer opportunity",
+            "step3_desc": "We define a practical starting point with one shared customer, use case, or rollout path.",
+            "step4_icon": "store",
+            "step4_title": "訪問準備を整える",
+            "step4_desc": "店舗のKPI履歴やメモ、直近の変化を確認し、訪問に備えます。",
+            "step5_icon": "checklist",
+            "step5_title": "本部へ報告・共有",
+            "step5_desc": "担当エリアの状況とアクションを整理し、効率的に報告します。",
+            "banner_text": "データの収集から報告までを一気通貫でつなぎ、エリアの成果最大化をサポートします。",
+            "max_width": 1400,
+            "background_color": "#fafbfc",
+            "badge_bg_color": "#e8ede5",
+            "badge_text_color": "#5a6c4d",
+            "description_color": "#5a6c7d",
+            "line_color": "#7a9b6f",
+            "icon_circle_bg": "#ffffff",
+            "icon_color": "#7a9b6f",
+            "card_bg_color": "#ffffff",
+            "card_border_color": "#e5e8eb",
+            "card_hover_border": "#7a9b6f",
+            "number_color": "#7a9b6f",
+            "step_title_color": "#1a2b4a",
+            "step_desc_color": "#6b7c8d",
+            "banner_bg_color": "#eef3f8",
+            "banner_icon_color": "#5a7a9b",
+            "banner_text_color": "#2a3b5a",
+            "description_size": 18,
+            "step_title_size": 18,
+            "step_desc_size": 15,
+            "banner_text_size": 16,
+            "icon_border_radius": 50,
+            "icon_circle_size": 80,
+            "icon_size": 36,
+            "card_border_radius": 18
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_3504708_V8rxP3"
+      ],
+      "name": "Area manager workflow",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "blocks_47cLxp": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_3c85fdc_kpyCCn": {
+          "type": "ai_gen_block_3c85fdc",
+          "settings": {
+            "heading": "<strong>Trusted by retail teams across fashion, lifestyle, and specialty retail</strong>",
+            "content": "",
+            "text_alignment": "center",
+            "content_size": 16,
+            "heading_color": "#11243e",
+            "content_color": "#677279",
+            "logo_width": 160,
+            "logo_height": 80,
+            "logo_spacing": 40,
+            "logo_opacity": 0.7,
+            "logo_background": "#ffffff",
+            "logo_border_radius": 8,
+            "scroll_speed": 30,
+            "footer_content": "<p>Flow works with retailers, technology providers, and retail service companies to connect store data, improve operational visibility, and support better execution.</p>",
+            "footer_content_size": 16,
+            "footer_content_color": "#677279",
+            "desktop_width_percent": 100,
+            "background_color": "#f9fafb",
+            "section_padding": 60
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_3c85fdc_kpyCCn"
+      ],
+      "name": "Scrolling logos",
       "settings": {
         "full_width": true,
         "remove_vertical_spacing": false,
@@ -467,8 +708,11 @@
   },
   "order": [
     "rich_text_cqadYy",
+    "blocks_47cLxp",
     "multi_column_aJHBDE",
     "blocks_9ttnRV",
+    "multi_column_qtAc89",
+    "blocks_c6DTbK",
     "17803895307b8bdaca",
     "section-15",
     "rich_text_6VmVgb"
