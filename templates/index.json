@@ -44,7 +44,7 @@
         "image_Dtind8": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Flow_Banner_0526_1.png",
+            "image": "shopify://shop_images/Flow_Banner_0626.png",
             "width_mode": "full_width",
             "max_width": 600,
             "mobile_max_width": 400
@@ -126,7 +126,7 @@
             "logo_height": 120,
             "logo_spacing": 30,
             "logo_opacity": 1,
-            "logo_background": "#F9FAFB",
+            "logo_background": "#f9fafb",
             "logo_border_radius": 8,
             "scroll_speed": 35,
             "footer_content": "<p><strong>全国約1,000店舗での導入・運用経験。アパレル、ライフスタイル、専門店、商業施設テナントの店舗改善を支援しています。</strong></p><p></p>",
@@ -379,7 +379,7 @@
             "desktop_text_position": "sm:place-self-start-end sm:text-end",
             "background": "rgba(0,0,0,0)",
             "background_gradient": "",
-            "text_color": "#FFFFFF",
+            "text_color": "#ffffff",
             "text_gradient": "",
             "button_background": "#000000",
             "button_text_color": "#ffffff",
