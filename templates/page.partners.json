@@ -124,9 +124,9 @@
             "icon_background_type": "square",
             "icon_background": "#a0b842",
             "icon_color": "#ffffff",
-            "background_color": "#0E366A",
-            "text_color": "#FFFFFF",
-            "border_color": "#A0B842",
+            "background_color": "#0e366a",
+            "text_color": "#ffffff",
+            "border_color": "#a0b842",
             "show_controls": false,
             "column_size": "3",
             "title": "Resale / Solution Partner",
@@ -146,9 +146,9 @@
             "icon_background_type": "square",
             "icon_background": "#a0b842",
             "icon_color": "#ffffff",
-            "background_color": "#FFFFFF",
+            "background_color": "#ffffff",
             "text_color": "",
-            "border_color": "#A0B842",
+            "border_color": "#a0b842",
             "show_controls": false,
             "column_size": "3",
             "title": "AI Integration Partner",
@@ -168,9 +168,9 @@
             "icon_background_type": "square",
             "icon_background": "#a0b842",
             "icon_color": "#ffffff",
-            "background_color": "#FFFFFF",
+            "background_color": "#ffffff",
             "text_color": "",
-            "border_color": "#A0B842",
+            "border_color": "#a0b842",
             "show_controls": false,
             "column_size": "3",
             "title": "Data Integration Partner",
@@ -231,6 +231,88 @@
         "subheading_text_color": ""
       }
     },
+    "rich_text_9q7tUf": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_gzkFWj": {
+          "type": "subheading",
+          "settings": {
+            "text": "Subheading",
+            "icon": "none"
+          }
+        },
+        "heading_V7xGbA": {
+          "type": "heading",
+          "settings": {
+            "text": "Heading",
+            "heading_tag": "h1",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_tMEiFa": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_gzkFWj",
+        "heading_V7xGbA",
+        "richtext_tMEiFa"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "image_with_text_overlay_zXx3Nn": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "subheading_DRH9dL": {
+          "type": "subheading",
+          "settings": {
+            "text": "Subheading"
+          }
+        },
+        "heading_WKEbxQ": {
+          "type": "heading",
+          "settings": {
+            "text": "Image with text overlay",
+            "heading_tag": "h1"
+          }
+        },
+        "richtext_3Tzwx6": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_DRH9dL",
+        "heading_WKEbxQ",
+        "richtext_3Tzwx6"
+      ],
+      "name": "Image with text overlay",
+      "settings": {
+        "full_width": false,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "auto",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30
+      }
+    },
     "blocks_aPXYCy": {
       "type": "_blocks",
       "blocks": {
@@ -243,8 +325,8 @@
             "header_alignment": "left",
             "header_spacing_below": 50,
             "eyebrow_bg_color": "#f0f4f8",
-            "eyebrow_text_color": "#0A1A2F",
-            "heading_color": "#0A1A2F",
+            "eyebrow_text_color": "#0a1a2f",
+            "heading_color": "#0a1a2f",
             "description_color": "#677279",
             "description_size_mobile": 16,
             "description_size_desktop": 18,
@@ -262,7 +344,7 @@
             "image_shadow": true,
             "default_box_bg": "#ffffff",
             "default_box_border": "#e5e7eb",
-            "default_box_heading_color": "#0A1A2F",
+            "default_box_heading_color": "#0a1a2f",
             "default_box_text_color": "#677279",
             "box_gap": 20,
             "box_padding": 25,
@@ -273,8 +355,8 @@
             "equal_height": true,
             "box_heading_size": 18,
             "box_text_size": 15,
-            "bullet_icon_color": "#A0B842",
-            "link_color": "#0E366A",
+            "bullet_icon_color": "#a0b842",
+            "link_color": "#0e366a",
             "icon_1": "none",
             "icon_width_1": 32,
             "icon_background_type_1": "square",
@@ -520,29 +602,29 @@
             "step3_title": "Pilot or first customer opportunity",
             "step3_desc": "We define a practical starting point with one shared customer, use case, or rollout path.",
             "step4_icon": "store",
-            "step4_title": "訪問準備を整える",
-            "step4_desc": "店舗のKPI履歴やメモ、直近の変化を確認し、訪問に備えます。",
+            "step4_title": "Agreement and rollout plan",
+            "step4_desc": "We confirm commercial terms, responsibilities, implementation scope, and launch timing.",
             "step5_icon": "checklist",
-            "step5_title": "本部へ報告・共有",
-            "step5_desc": "担当エリアの状況とアクションを整理し、効率的に報告します。",
-            "banner_text": "データの収集から報告までを一気通貫でつなぎ、エリアの成果最大化をサポートします。",
+            "step5_title": "First deployment support",
+            "step5_desc": "Flow supports the first deployment so the partner and customer can start with a clear, practical operating model.",
+            "banner_text": "Most partnerships start with one practical customer opportunity",
             "max_width": 1400,
             "background_color": "#fafbfc",
-            "badge_bg_color": "#e8ede5",
-            "badge_text_color": "#5a6c4d",
-            "description_color": "#5a6c7d",
-            "line_color": "#7a9b6f",
+            "badge_bg_color": "#EEF2E3",
+            "badge_text_color": "#A0B842",
+            "description_color": "#11243E",
+            "line_color": "#11243E",
             "icon_circle_bg": "#ffffff",
-            "icon_color": "#7a9b6f",
+            "icon_color": "#A0B842",
             "card_bg_color": "#ffffff",
             "card_border_color": "#e5e8eb",
-            "card_hover_border": "#7a9b6f",
-            "number_color": "#7a9b6f",
+            "card_hover_border": "#A0B842",
+            "number_color": "#11243E",
             "step_title_color": "#1a2b4a",
             "step_desc_color": "#6b7c8d",
-            "banner_bg_color": "#eef3f8",
-            "banner_icon_color": "#5a7a9b",
-            "banner_text_color": "#2a3b5a",
+            "banner_bg_color": "#EEF2E3",
+            "banner_icon_color": "#A0B842",
+            "banner_text_color": "#11243E",
             "description_size": 18,
             "step_title_size": 18,
             "step_desc_size": 15,
@@ -598,18 +680,18 @@
             "right_item_2": "<p>Your customers need better store visibility or execution support</p>",
             "right_item_3": "<p>You need a fully self-serve partner marketplace</p>",
             "right_item_4": "<p>You are looking for a generic AI chatbot integration</p>",
-            "right_background": "#0A2540",
+            "right_background": "#0a2540",
             "right_text_color": "#ffffff",
             "right_tag_background": "#1e3a5f",
             "right_tag_text": "#ffffff",
-            "highlight_color": "#00D66F",
+            "highlight_color": "#00d66f",
             "right_progress_label": "Response Latency",
             "right_progress_time": "< 2min",
             "progress_bar_height": 8,
             "progress_gradient_start": "#803cee",
-            "progress_gradient_end": "#00D66F",
+            "progress_gradient_end": "#00d66f",
             "negative_icon_color": "#ef4444",
-            "positive_icon_color": "#00D66F",
+            "positive_icon_color": "#00d66f",
             "title_size": 24,
             "metric_size": 32,
             "list_item_size": 16
@@ -878,6 +960,8 @@
     "rich_text_cqadYy",
     "blocks_47cLxp",
     "multi_column_aJHBDE",
+    "rich_text_9q7tUf",
+    "image_with_text_overlay_zXx3Nn",
     "blocks_aPXYCy",
     "blocks_9ttnRV",
     "multi_column_qtAc89",
