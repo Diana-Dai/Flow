@@ -76,13 +76,14 @@
         "image_hT4eY9",
         "buttons_H4Nmhn"
       ],
+      "disabled": true,
       "custom_css": [
         "* {padding-bottom: 1rem;}"
       ],
       "name": "Rich text",
       "settings": {
         "full_width": true,
-        "content_width": "large",
+        "content_width": "medium",
         "text_position": "center",
         "background": "",
         "background_gradient": "",
@@ -95,39 +96,52 @@
         "subheading_KwkjBm": {
           "type": "subheading",
           "settings": {
-            "text": ""
+            "text": "Partner with Flow"
           }
         },
         "heading_8Q4Ecy": {
           "type": "heading",
           "settings": {
-            "text": "",
-            "heading_tag": "h1"
+            "text": "Help your retail clients turn store data into better execution",
+            "heading_tag": "h2"
           }
         },
         "richtext_CTR9Nx": {
           "type": "richtext",
           "settings": {
-            "content": ""
+            "content": "<p>Flow works with technology providers, service companies, and retail solution partners who want to give physical retailers stronger visibility, better operational insight, and clearer action from store data.</p>"
+          }
+        },
+        "button_AWeJ3D": {
+          "type": "button",
+          "settings": {
+            "style": "fill",
+            "size": "lg",
+            "text": "Explore Integration Options",
+            "url": "",
+            "background": "",
+            "text_color": ""
           }
         }
       },
       "block_order": [
         "subheading_KwkjBm",
         "heading_8Q4Ecy",
-        "richtext_CTR9Nx"
+        "richtext_CTR9Nx",
+        "button_AWeJ3D"
       ],
       "name": "Image with text overlay",
       "settings": {
         "full_width": false,
-        "allow_transparent_header": false,
+        "allow_transparent_header": true,
         "enable_parallax": false,
-        "image_size": "auto",
-        "mobile_text_position": "place-self-center text-center",
+        "image_size": "fill",
+        "image": "shopify://shop_images/ChatGPT_Image_Jun_17_2026_06_41_16_PM.png",
+        "mobile_text_position": "place-self-center-end text-end",
         "desktop_text_position": "sm:place-self-center sm:text-center",
         "text_color": "#ffffff",
         "overlay_color": "#000000",
-        "overlay_opacity": 30
+        "overlay_opacity": 37
       }
     },
     "blocks_47cLxp": {
@@ -437,8 +451,8 @@
             "icon_background_type_1": "square",
             "icon_background_1": "",
             "icon_color_1": "",
-            "box_1_heading": "Links and web pages",
-            "box_1_text": "<p>Connect approved company resources, product guides, and operational documentation.</p>",
+            "box_1_heading": "Retail-specific platform",
+            "box_1_text": "<p>Flow is built for physical retail store operations, not generic analytics.</p>",
             "box_1_bullets": "",
             "box_1_link_label": "",
             "box_1_link_url": "",
@@ -447,8 +461,8 @@
             "icon_background_type_2": "square",
             "icon_background_2": "",
             "icon_color_2": "",
-            "box_2_heading": "PDFs and documents",
-            "box_2_text": "<p>Upload training materials, SOPs, and internal knowledge bases.</p>",
+            "box_2_heading": "Clear Customer Value",
+            "box_2_text": "<p>Traffic, POS, staffing, weather, and manuals can be connected into one environment.</p>",
             "box_2_bullets": "",
             "box_2_link_label": "",
             "box_2_link_url": "",
@@ -457,8 +471,8 @@
             "icon_background_type_3": "square",
             "icon_background_3": "",
             "icon_color_3": "",
-            "box_3_heading": "Internal memos",
-            "box_3_text": "<p>Bring store-level context and operational updates into the system.</p>",
+            "box_3_heading": "Flexible Integration Model",
+            "box_3_text": "<p>API and CSV/FTP integration options can support different technical environments.</p>",
             "box_3_bullets": "",
             "box_3_link_label": "",
             "box_3_link_url": "",
@@ -467,8 +481,8 @@
             "icon_background_type_4": "square",
             "icon_background_4": "",
             "icon_color_4": "",
-            "box_4_heading": "Snippets and manuals",
-            "box_4_text": "<p>Add quick-reference guides, checklists, and operational best practices.</p>",
+            "box_4_heading": "Retail Analytics Specialist",
+            "box_4_text": "<p>Flow excels at delivering tools to improve store operations with  practical implementation.</p>",
             "box_4_bullets": "",
             "box_4_link_label": "",
             "box_4_link_url": "",
@@ -534,6 +548,7 @@
       "block_order": [
         "ai_gen_block_380fb98_9mNhWY"
       ],
+      "disabled": true,
       "name": "Why retailers choose Flow",
       "settings": {
         "full_width": true,
@@ -646,7 +661,7 @@
       "settings": {
         "full_width": true,
         "stack_on_mobile": false,
-        "gap": "medium",
+        "gap": "small",
         "text_alignment": "start",
         "subheading": "About",
         "title": "Who we work best with",
@@ -747,7 +762,7 @@
             "left_progress_label": "Response Latency",
             "left_progress_time": "12-18hr",
             "left_progress_percent": 20,
-            "left_progress_color": "#ef4444",
+            "left_progress_color": "#0E366A",
             "right_title": "Good fit",
             "right_tag": "⚡ LIVE ACTIVE",
             "right_metric": "Good fit",
@@ -759,7 +774,7 @@
             "right_text_color": "#ffffff",
             "right_tag_background": "#1e3a5f",
             "right_tag_text": "#ffffff",
-            "highlight_color": "#00d66f",
+            "highlight_color": "#A0B842",
             "right_progress_label": "Response Latency",
             "right_progress_time": "",
             "progress_bar_height": 12,
