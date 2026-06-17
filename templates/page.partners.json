@@ -124,14 +124,15 @@
             "icon_background_type": "square",
             "icon_background": "#a0b842",
             "icon_color": "#ffffff",
+            "image": "shopify://shop_images/Screenshot_2026-06-10_12.50.09_PM.png",
             "background_color": "#0e366a",
             "text_color": "#ffffff",
-            "border_color": "#a0b842",
+            "border_color": "",
             "show_controls": false,
             "column_size": "3",
-            "title": "Resale / Solution Partner",
+            "title": "Sell with Flow",
             "heading_tag": "h4",
-            "subheading": "<p>Offer Flow to your retail customers</p>",
+            "subheading": "<p>Resale / Solution Partner</p>",
             "content": "<p>Resell or introduce Flow as a retail analytics and execution platform for customers who need traffic measurement, conversion insight, and better store performance visibility.</p><p><strong>Best for:</strong></p><ul><li>Security companies</li><li>camera installers</li><li>retail consultants</li><li>system integrators</li><li>local solution providers</li></ul>",
             "link_url": "",
             "link_text": "",
@@ -146,14 +147,15 @@
             "icon_background_type": "square",
             "icon_background": "#a0b842",
             "icon_color": "#ffffff",
+            "image": "shopify://shop_images/Screenshot_2026-06-10_12.49.01_PM.png",
             "background_color": "#ffffff",
             "text_color": "",
             "border_color": "#a0b842",
             "show_controls": false,
             "column_size": "3",
-            "title": "AI Integration Partner",
+            "title": "Build with Flow",
             "heading_tag": "h4",
-            "subheading": "<p>Integrate Flow AI into your product</p>",
+            "subheading": "<p>AI Integration Partner</p>",
             "content": "<p>Add retail-specific decision support to your platform, using Flow’s store performance logic, operational recommendations, and retail execution knowledge.</p><p><strong>Best for:</strong></p><ul><li>Software platforms</li><li>retail tech vendors</li><li>BI providers</li><li>POS-adjacent platforms</li></ul>",
             "link_url": "",
             "link_text": "",
@@ -168,14 +170,15 @@
             "icon_background_type": "square",
             "icon_background": "#a0b842",
             "icon_color": "#ffffff",
+            "image": "shopify://shop_images/Screenshot_2026-06-11_10.05.19_AM.png",
             "background_color": "#ffffff",
             "text_color": "",
             "border_color": "#a0b842",
             "show_controls": false,
             "column_size": "3",
-            "title": "Data Integration Partner",
+            "title": "Connect to Flow",
             "heading_tag": "h4",
-            "subheading": "<p>Connect your data to Flow</p>",
+            "subheading": "<p>Data Integration Partner</p>",
             "content": "<p>Integrate POS, staffing, CRM, product, promotion, or operational data into Flow so shared customers can understand store performance in one decision-ready environment.</p><p><strong>Best for:</strong></p><ul><li>POS vendors</li><li>staffing platforms</li><li>CRM systems</li><li>BI tools</li><li>ERP-adjacent providers</li><li>mall or facility data providers</li></ul><p></p>",
             "link_url": "",
             "link_text": "",
@@ -244,8 +247,8 @@
         "heading_V7xGbA": {
           "type": "heading",
           "settings": {
-            "text": "Heading",
-            "heading_tag": "h1",
+            "text": "One Flow platform. Three partnership paths.",
+            "heading_tag": "h2",
             "text_color": "",
             "gradient": ""
           }
@@ -253,7 +256,7 @@
         "richtext_tMEiFa": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+            "content": "<p>Partners work with Flow in different ways depending on their product, data, services, and customer relationships. Each path is separate, but the outcome is the same: helping physical retailers make better store decisions.</p>"
           }
         }
       },
@@ -265,7 +268,7 @@
       "name": "Rich text",
       "settings": {
         "full_width": true,
-        "content_width": "small",
+        "content_width": "medium",
         "text_position": "center",
         "background": "",
         "background_gradient": "",
@@ -278,20 +281,20 @@
         "subheading_DRH9dL": {
           "type": "subheading",
           "settings": {
-            "text": "Subheading"
+            "text": ""
           }
         },
         "heading_WKEbxQ": {
           "type": "heading",
           "settings": {
-            "text": "Image with text overlay",
+            "text": "",
             "heading_tag": "h1"
           }
         },
         "richtext_3Tzwx6": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+            "content": ""
           }
         }
       },
