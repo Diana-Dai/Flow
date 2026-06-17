@@ -34,8 +34,22 @@
             "content": "<p>Flow works with technology providers, service companies, and retail solution partners who want to give physical retailers stronger visibility, better operational insight, and clearer action from store data.</p>"
           }
         },
+        "divider_tcF9yp": {
+          "type": "divider",
+          "settings": {}
+        },
+        "image_hT4eY9": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/connections_3.png",
+            "width_mode": "custom",
+            "max_width": 600,
+            "mobile_max_width": 400
+          }
+        },
         "buttons_H4Nmhn": {
           "type": "buttons",
+          "disabled": true,
           "settings": {
             "style_1": "fill",
             "size_1": "lg",
@@ -56,6 +70,8 @@
         "subheading_nJjQnz",
         "heading_hjfyL9",
         "richtext_wjTJeB",
+        "divider_tcF9yp",
+        "image_hT4eY9",
         "buttons_H4Nmhn"
       ],
       "custom_css": [
@@ -66,9 +82,50 @@
         "full_width": true,
         "content_width": "large",
         "text_position": "center",
-        "background": "#11243e",
+        "background": "",
         "background_gradient": "",
-        "text_color": "#ffffff"
+        "text_color": "#11243E"
+      }
+    },
+    "image_with_text_overlay_wdMnGA": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "subheading_KwkjBm": {
+          "type": "subheading",
+          "settings": {
+            "text": ""
+          }
+        },
+        "heading_8Q4Ecy": {
+          "type": "heading",
+          "settings": {
+            "text": "",
+            "heading_tag": "h1"
+          }
+        },
+        "richtext_CTR9Nx": {
+          "type": "richtext",
+          "settings": {
+            "content": ""
+          }
+        }
+      },
+      "block_order": [
+        "subheading_KwkjBm",
+        "heading_8Q4Ecy",
+        "richtext_CTR9Nx"
+      ],
+      "name": "Image with text overlay",
+      "settings": {
+        "full_width": false,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "auto",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30
       }
     },
     "blocks_47cLxp": {
@@ -83,10 +140,20 @@
             "content_size": 16,
             "heading_color": "#11243e",
             "content_color": "#677279",
-            "logo_width": 160,
-            "logo_height": 80,
-            "logo_spacing": 40,
-            "logo_opacity": 0.7,
+            "logo_1": "shopify://shop_images/Baycrews_Group_Logo.png",
+            "logo_2": "shopify://shop_images/Daytona_Logo_ff3ac14a-5b76-4d13-823d-2d797c6a52e2.png",
+            "logo_3": "shopify://shop_images/Stripe_Logo.png",
+            "logo_4": "shopify://shop_images/Plaza_Logo.png",
+            "logo_5": "shopify://shop_images/Tumi_Logo_2c0b2a8c-bbd0-4438-95bc-22950dafcb70.png",
+            "logo_6": "shopify://shop_images/Little_League_Logo.png",
+            "logo_7": "shopify://shop_images/Cole_Haan_Logo_65602431-ca9d-44bb-bda9-08c2a3de13f5.png",
+            "logo_8": "shopify://shop_images/Triumph_Logo_66559074-ee90-432d-b22a-efb3895890c5.png",
+            "logo_9": "shopify://shop_images/TaylorMade_Logo.png",
+            "logo_10": "shopify://shop_images/Brooks_brothers_logo.png",
+            "logo_width": 200,
+            "logo_height": 110,
+            "logo_spacing": 15,
+            "logo_opacity": 1,
             "logo_background": "#ffffff",
             "logo_border_radius": 8,
             "scroll_speed": 30,
@@ -961,6 +1028,7 @@
   },
   "order": [
     "rich_text_cqadYy",
+    "image_with_text_overlay_wdMnGA",
     "blocks_47cLxp",
     "multi_column_aJHBDE",
     "rich_text_9q7tUf",
