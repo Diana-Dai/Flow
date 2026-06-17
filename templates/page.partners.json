@@ -96,20 +96,20 @@
         "subheading_KwkjBm": {
           "type": "subheading",
           "settings": {
-            "text": "Partner with Flow"
+            "text": "パートナーシップについて"
           }
         },
         "heading_8Q4Ecy": {
           "type": "heading",
           "settings": {
-            "text": "Help your retail clients turn store data into better execution",
+            "text": "店舗データを、より良い実行につなげるために",
             "heading_tag": "h2"
           }
         },
         "richtext_CTR9Nx": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Flow works with technology providers, service companies, and retail solution partners who want to give physical retailers stronger visibility, better operational insight, and clearer action from store data.</p>"
+            "content": "<p>Flowは、テクノロジー企業、サービス企業、リテールソリューション企業と連携し、実店舗のデータ活用、運営改善、意思決定支援をサポートします。</p>"
           }
         },
         "button_AWeJ3D": {
@@ -117,8 +117,8 @@
           "settings": {
             "style": "fill",
             "size": "lg",
-            "text": "Explore Integration Options",
-            "url": "",
+            "text": "パートナーシップを相談する",
+            "url": "shopify://pages/contact",
             "background": "",
             "text_color": ""
           }
@@ -132,16 +132,16 @@
       ],
       "name": "Image with text overlay",
       "settings": {
-        "full_width": false,
-        "allow_transparent_header": true,
+        "full_width": true,
+        "allow_transparent_header": false,
         "enable_parallax": false,
         "image_size": "fill",
         "image": "shopify://shop_images/ChatGPT_Image_Jun_17_2026_06_41_16_PM.png",
-        "mobile_text_position": "place-self-center-end text-end",
-        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-end-center sm:text-center",
         "text_color": "#ffffff",
         "overlay_color": "#000000",
-        "overlay_opacity": 37
+        "overlay_opacity": 50
       }
     },
     "blocks_47cLxp": {
