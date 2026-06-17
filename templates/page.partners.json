@@ -202,7 +202,7 @@
             "title": "Sell with Flow",
             "heading_tag": "h4",
             "subheading": "<p>Resale / Solution Partner</p>",
-            "content": "<p>Resell or introduce Flow as a retail analytics and execution platform for customers who need traffic measurement, conversion insight, and better store performance visibility.</p><p><strong>Best for:</strong></p><ul><li>Security companies</li><li>camera installers</li><li>retail consultants</li><li>system integrators</li><li>local solution providers</li></ul>",
+            "content": "<p>Introduce or resell Flow to retail customers that need traffic measurement, conversion insight, and stronger store performance visibility.</p><p><strong>Best for:</strong></p><ul><li>Security companies</li><li>camera installers</li><li>retail consultants</li><li>system integrators</li></ul>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -216,7 +216,7 @@
             "icon_background_type": "square",
             "icon_background": "#a0b842",
             "icon_color": "#ffffff",
-            "image": "shopify://shop_images/Screenshot_2026-06-10_12.49.01_PM.png",
+            "image": "shopify://shop_images/family-using-computer.jpg",
             "background_color": "#ffffff",
             "text_color": "",
             "border_color": "#a0b842",
@@ -225,7 +225,7 @@
             "title": "Build with Flow",
             "heading_tag": "h4",
             "subheading": "<p>AI Integration Partner</p>",
-            "content": "<p>Add retail-specific decision support to your platform, using Flow’s store performance logic, operational recommendations, and retail execution knowledge.</p><p><strong>Best for:</strong></p><ul><li>Software platforms</li><li>retail tech vendors</li><li>BI providers</li><li>POS-adjacent platforms</li></ul>",
+            "content": "<p>Embed Flow’s retail intelligence into your product to support retail-specific guidance, recommendations, and operational decision-making.</p><p><strong>Best for:</strong></p><ul><li>Software platforms</li><li>retail operations systems</li><li>BI providers</li><li>POS-adjacent platforms</li></ul>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -248,7 +248,7 @@
             "title": "Connect to Flow",
             "heading_tag": "h4",
             "subheading": "<p>Data Integration Partner</p>",
-            "content": "<p>Integrate POS, staffing, CRM, product, promotion, or operational data into Flow so shared customers can understand store performance in one decision-ready environment.</p><p><strong>Best for:</strong></p><ul><li>POS vendors</li><li>staffing platforms</li><li>CRM systems</li><li>BI tools</li><li>ERP-adjacent providers</li><li>mall or facility data providers</li></ul><p></p>",
+            "content": "<p>Send POS, staffing, CRM, promotion, or operational data into Flow so shared customers can understand store performance in one decision-ready environment.</p><p><strong>Best for:</strong></p><ul><li>POS vendors</li><li>staffing platforms</li><li>CRM systems</li><li>ERP-adjacent providers</li></ul><p></p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
