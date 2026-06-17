@@ -14,6 +14,7 @@
       "blocks": {
         "subheading_nJjQnz": {
           "type": "subheading",
+          "disabled": true,
           "settings": {
             "text": "ご相談・お問い合わせ",
             "icon": "none"
@@ -36,10 +37,12 @@
         },
         "divider_tcF9yp": {
           "type": "divider",
+          "disabled": true,
           "settings": {}
         },
         "image_hT4eY9": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/connections_3.png",
             "width_mode": "custom",
@@ -49,7 +52,6 @@
         },
         "buttons_H4Nmhn": {
           "type": "buttons",
-          "disabled": true,
           "settings": {
             "style_1": "fill",
             "size_1": "lg",
@@ -84,7 +86,7 @@
         "text_position": "center",
         "background": "",
         "background_gradient": "",
-        "text_color": "#11243E"
+        "text_color": "#11243e"
       }
     },
     "image_with_text_overlay_wdMnGA": {
@@ -291,9 +293,9 @@
         "stack_on_mobile": false,
         "gap": "medium",
         "text_alignment": "start",
-        "subheading": "",
-        "title": "",
-        "content": "",
+        "subheading": "Partnership",
+        "title": "One Flow platform. Three partnership paths.",
+        "content": "<p>Partners work with Flow in different ways depending on their product, data, services, and customer relationships. Each path is separate, but the outcome is the same: helping physical retailers make better store decisions.</p>",
         "background": "",
         "background_gradient": "",
         "text_color": "",
@@ -332,6 +334,7 @@
         "heading_V7xGbA",
         "richtext_tMEiFa"
       ],
+      "disabled": true,
       "name": "Rich text",
       "settings": {
         "full_width": true,
@@ -370,6 +373,7 @@
         "heading_WKEbxQ",
         "richtext_3Tzwx6"
       ],
+      "disabled": true,
       "name": "Image with text overlay",
       "settings": {
         "full_width": false,
@@ -680,21 +684,21 @@
             "banner_text": "Most partnerships start with one practical customer opportunity",
             "max_width": 1400,
             "background_color": "#fafbfc",
-            "badge_bg_color": "#EEF2E3",
-            "badge_text_color": "#11243E",
-            "description_color": "#11243E",
-            "line_color": "#11243E",
+            "badge_bg_color": "#eef2e3",
+            "badge_text_color": "#11243e",
+            "description_color": "#11243e",
+            "line_color": "#11243e",
             "icon_circle_bg": "#ffffff",
-            "icon_color": "#A0B842",
+            "icon_color": "#a0b842",
             "card_bg_color": "#ffffff",
             "card_border_color": "#e5e8eb",
-            "card_hover_border": "#A0B842",
-            "number_color": "#11243E",
+            "card_hover_border": "#a0b842",
+            "number_color": "#11243e",
             "step_title_color": "#1a2b4a",
             "step_desc_color": "#6b7c8d",
-            "banner_bg_color": "#EEF2E3",
-            "banner_icon_color": "#A0B842",
-            "banner_text_color": "#11243E",
+            "banner_bg_color": "#eef2e3",
+            "banner_icon_color": "#a0b842",
+            "banner_text_color": "#11243e",
             "description_size": 18,
             "step_title_size": 18,
             "step_desc_size": 15,
