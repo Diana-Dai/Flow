@@ -390,8 +390,8 @@
         ".subheading {font-size: 11px !important; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; padding: 8px 16px; border-radius: 20px; display: inline-block; box-sizing: border-box;}",
         ".icon_container {text-align: center;}",
         ".multi-column__item:last-child p {text-align: left;}",
-        ".multi-column__item:last-child ul {list-style: none; display: flex; padding-left: 0; margin-left: 0; flex-wrap: wrap; text-align: left; }",
-        "@media only screen and (min-width: 768px) {.multi-column__item:last-child ul li {width: 50%;}}"
+        ".multi-column__item:last-child ul {list-style: none; display: flex; padding-left: 0; margin-left: 0; flex-wrap: wrap; text-align: left;}",
+        "@media only screen and (min-width: 768px) {.multi-column__item:last-child ul li {width: 50%; }}"
       ],
       "name": "Multi-column",
       "settings": {
@@ -416,7 +416,7 @@
           "type": "rich-text",
           "name": "Rich text",
           "settings": {
-            "text": "<h2>More Customer Stories</h2><h2></h2>",
+            "text": "<h2>導入事例</h2><h2></h2>",
             "content_width": "small",
             "text_alignment": "center"
           },
@@ -425,6 +425,7 @@
         "ai_gen_block_9ce6669_Adxx7t": {
           "type": "ai_gen_block_9ce6669",
           "settings": {
+            "results": "Key results",
             "brand_logo_1": "shopify://shop_images/Cole_Haan_White_836317d3-12dd-4e9a-b647-80aab91df0b2.png",
             "title_1": "Cole Haan Japan",
             "subtitle_1": "プレミアムフットウェア・アクセサリー",
