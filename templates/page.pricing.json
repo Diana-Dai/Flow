@@ -1107,43 +1107,71 @@
         "item_DK6qHy": {
           "type": "item",
           "settings": {
-            "title": "Is hardware included in the implementation fee?",
-            "content": "<p>Yes. The implementation fee covers hardware procurement, shipping, and installation. There is no separate hardware purchase — it is included in the one-time per-store fee.</p>"
+            "title": "料金はどのように決まりますか？",
+            "content": "<p>Flowの料金は、月額サブスクリプション費用と、初回のみの初期設定・導入費用で構成されています。月額費用は、店舗数、接続する計測機器数、導入範囲、ハードウェア構成に応じてお見積りします。</p>"
           }
         },
         "item_VtrfC4": {
           "type": "item",
           "settings": {
-            "title": "What happens after the implementation fee is paid?",
-            "content": "<p>Nothing else hardware-related. The monthly subscription covers all ongoing costs — platform access, software updates, maintenance, and support. If a camera requires replacement due to hardware fault, Flow covers it under the SLA.</p>"
+            "title": "EPL、MIL、ハードウェアレンタルの違いは何ですか？",
+            "content": "<p>EPLは、Flowの実行支援プラットフォームです。店舗ごとに適用されます。MILは、計測機器から安定してデータを取得し、Flowに連携するための計測インフラです。MILとハードウェアレンタルは、接続する計測機器ごとに適用されます。</p>"
           }
         },
         "item_tfHEdg": {
           "type": "item",
           "settings": {
-            "title": "Can we start with a pilot store before committing to a full rollout?",
-            "content": "<p>Yes. Flow supports phased deployment. Many customers begin with a single store or small pilot group, validate results over 60–90 days, and then expand. Pilot pricing is consistent with standard per-store rates.</p>"
+            "title": "ハードウェアは必ずFlowからレンタルする必要がありますか？",
+            "content": "<p>必ずしも必要ではありません。対応可能な既存機器をお持ちの場合は、計測インフラを通じてFlowに接続できる場合があります。新たに計測機器が必要な場合は、Flowがハードウェアレンタルとして提供できます。</p>"
           }
         },
         "item_L73kEp": {
           "type": "item",
           "settings": {
-            "title": "How does pricing scale for large networks?",
-            "content": "<p>Volume discounts apply from 10 stores onward, with significant reductions at 50+ and 100+ store thresholds. Multi-year agreements provide additional savings. Contact us for a custom quote based on your network size.</p>"
+            "title": "初期設定・導入費用には何が含まれますか？",
+            "content": "<p>初期オンボーディング、ユーザー登録、権限設定、POS・外部システム連携設定、初期ダッシュボード設定、店舗ごとの機器設置、配線作業、ネットワーク接続確認、導入後の初期サポートが含まれます。導入範囲に応じてお見積りします。</p>"
           }
         },
         "item_gLpXYE": {
           "type": "item",
           "settings": {
-            "title": "Is there a setup or onboarding fee separate from implementation?",
-            "content": "<p>No. The implementation fee is the single one-time cost. There are no additional onboarding, training, or project management fees.</p>"
+            "title": "ダッシュボードのカスタマイズは含まれますか？",
+            "content": "<p>Flowでは、個別開発型のダッシュボードカスタマイズは標準提供していません。初期設定では、導入範囲に応じて店舗情報、ユーザー権限、表示内容、連携データを設定し、運用開始できる状態に整えます。</p>"
           }
         },
         "item_UTgqRx": {
           "type": "item",
           "settings": {
-            "title": "What contract lengths are available?",
-            "content": "<p>Flow is typically contracted on an annual basis. Multi-year agreements (2 or 3 years) are available and include pricing benefits. Month-to-month is not currently offered.</p>"
+            "title": "高度計測オプションは月額費用に含まれますか？",
+            "content": "<p>高度計測オプションは、必要な店舗・機器にのみ追加されます。たとえば、属性分析、滞在時間分析、スタッフ除外、ゾーン分析などは、導入目的とハードウェア構成に応じて個別に設定します。</p>"
+          }
+        },
+        "item_GGBbVQ": {
+          "type": "item",
+          "settings": {
+            "title": "複数店舗で導入すると料金は変わりますか？",
+            "content": "<p>はい。複数店舗への展開では、導入店舗数、契約期間、展開計画、ハードウェア構成に応じて、より展開しやすい料金条件を適用できます。段階的なロールアウトにも対応しています。</p>"
+          }
+        },
+        "item_pbayrq": {
+          "type": "item",
+          "settings": {
+            "title": "まず一部の店舗から始めることはできますか？",
+            "content": "<p>はい。まず一部の店舗でFlowプラットフォームを導入し、運用データの活用を開始できます。その後、必要な店舗から順に計測ハードウェアを追加し、来店・通行量・行動データの精度と活用範囲を高めることができます。</p>"
+          }
+        },
+        "item_wkeAzG": {
+          "type": "item",
+          "settings": {
+            "title": "導入にはどのくらい時間がかかりますか？",
+            "content": "<p>契約後、通常2〜4週間を目安に初期データ活用を開始できます。店舗数、外部データ連携、設置条件、ハードウェア構成によってスケジュールは変動する場合があります。</p>"
+          }
+        },
+        "item_QzwDbE": {
+          "type": "item",
+          "settings": {
+            "title": "サポートやSLAはどうなっていますか？",
+            "content": "<p>Flowでは、システム監視、計測データの安定運用、障害対応、通常サポートを提供しています。サポート内容やSLAの詳細は、別途サポート・セキュリティ関連ページでご案内します。</p>"
           }
         }
       },
@@ -1153,13 +1181,17 @@
         "item_tfHEdg",
         "item_L73kEp",
         "item_gLpXYE",
-        "item_UTgqRx"
+        "item_UTgqRx",
+        "item_GGBbVQ",
+        "item_pbayrq",
+        "item_wkeAzG",
+        "item_QzwDbE"
       ],
       "name": "FAQ",
       "settings": {
         "full_width": true,
-        "subheading": "",
-        "title": "Common pricing questions",
+        "subheading": "FAQ",
+        "title": "よくある料金のご質問",
         "content": "",
         "team_avatar_width": 160,
         "support_hours": "Our customer support is available Monday to Friday: 8am-8:30pm.",
