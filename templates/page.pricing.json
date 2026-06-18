@@ -596,6 +596,62 @@
         "text_color": ""
       }
     },
+    "rich_text_EYUmcq": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_RptHGA": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "text": "Subheading",
+            "icon": "none"
+          }
+        },
+        "button_d8Uk94": {
+          "type": "button",
+          "settings": {
+            "style": "fill",
+            "size": "xl",
+            "text": "導入スケジュールを確認する",
+            "url": "shopify://pages/contact",
+            "background": "",
+            "text_color": ""
+          }
+        },
+        "heading_8f6dec": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "text": "Heading",
+            "heading_tag": "h1",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_NYYjjP": {
+          "type": "richtext",
+          "disabled": true,
+          "settings": {
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_RptHGA",
+        "button_d8Uk94",
+        "heading_8f6dec",
+        "richtext_NYYjjP"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
     "17815090283832c03e": {
       "type": "_blocks",
       "blocks": {
@@ -603,7 +659,7 @@
           "type": "badge",
           "name": "Badge",
           "settings": {
-            "text": "ONGOING SUPPORT",
+            "text": "展開規模に応じた料金設計",
             "alignment": "center",
             "text_color": "#11243e",
             "background": "#f0f3e9"
@@ -614,8 +670,8 @@
           "type": "rich-text",
           "name": "Rich text",
           "settings": {
-            "text": "<h4>Support included at every level.</h4><p>Every Flow subscription includes baseline support. Larger networks receive dedicated resources and enhanced SLAs.</p>",
-            "content_width": "small",
+            "text": "<h3>導入店舗数が増えるほど、展開しやすい料金になります。</h3><p>Flowは、店舗数、契約期間、導入範囲、ハードウェア構成に応じてお見積りします。複数店舗への展開では、導入規模に応じた料金条件を適用できます。</p>",
+            "content_width": "large",
             "text_alignment": "left"
           },
           "blocks": {}
@@ -623,16 +679,16 @@
         "ai_gen_block_114bb1b_i6fAeh": {
           "type": "ai_gen_block_114bb1b",
           "settings": {
-            "card_1_title": "Standard",
-            "card_1_subtitle": "1–9 stores",
-            "card_1_features": "99.9% uptime SLA\nEmail and chat support\nFlow Academy (online)\nMonthly performance report\nSoftware updates included",
-            "featured_badge_text": "MOST COMMON",
-            "card_2_title": "Professional",
-            "card_2_subtitle": "10–49 stores",
-            "card_2_features": "Everything in Standard\nDedicated customer success manager\nQuarterly business reviews\nPriority support response\nOn-site training (initial + annual)\nCustom reporting configuration",
-            "card_3_title": "Enterprise",
-            "card_3_subtitle": "50+ stores",
-            "card_3_features": "Everything in Professional\n24/7 phone support\nCustom SLA options\nExecutive steering sessions\nMulti-region deployment support\nAPI priority lane\nCustom integration development",
+            "card_1_title": "店舗数",
+            "card_1_subtitle": "導入店舗数に応じて調整",
+            "card_1_features": "複数店舗への展開\n段階的なロールアウト\n店舗数に応じた料金条件",
+            "featured_badge_text": "条件最適化",
+            "card_2_title": "契約期間",
+            "card_2_subtitle": "長期契約で条件を最適化",
+            "card_2_features": "年額契約が基本\n複数年契約に対応\n展開計画に応じた条件設定",
+            "card_3_title": "構成・導入範囲",
+            "card_3_subtitle": "店舗ごとに必要な構成を確認",
+            "card_3_features": "EPLは店舗ごと\nMIL・ハードウェアは機器ごと\n高度計測オプションは必要時のみ",
             "card_1_background": "#ffffff",
             "card_border_color": "#e5e7eb",
             "featured_border_color": "#1e3a8a",
@@ -930,6 +986,62 @@
         "subheading_text_color": ""
       }
     },
+    "rich_text_k87tAm": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_m6TNtm": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "text": "Subheading",
+            "icon": "none"
+          }
+        },
+        "button_X8y4bg": {
+          "type": "button",
+          "settings": {
+            "style": "fill",
+            "size": "xl",
+            "text": "概算見積りを相談する",
+            "url": "shopify://pages/contact",
+            "background": "",
+            "text_color": ""
+          }
+        },
+        "heading_KfKx8t": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "text": "Heading",
+            "heading_tag": "h1",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_9eHepw": {
+          "type": "richtext",
+          "disabled": true,
+          "settings": {
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_m6TNtm",
+        "button_X8y4bg",
+        "heading_KfKx8t",
+        "richtext_9eHepw"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
     "faq_wCCUww": {
       "type": "faq",
       "blocks": {
@@ -1016,10 +1128,12 @@
     "multi_column_3tnATm",
     "multi_column_a7qnB7",
     "17815078000b3a5249",
+    "rich_text_EYUmcq",
     "17815090283832c03e",
     "section-15",
     "blocks_rKWXJX",
     "multi_column_UExWWX",
+    "rich_text_k87tAm",
     "faq_wCCUww"
   ]
 }
