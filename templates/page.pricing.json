@@ -79,7 +79,7 @@
           "type": "rich-text",
           "name": "Rich text",
           "settings": {
-            "text": "<h2>Two cost components. That's it.</h2><p>Flow pricing is structured to be predictable for enterprise procurement and scale linearly with your store network.</p><p></p><p></p>",
+            "text": "<h2>Two cost components. That's it.</h2><p>Flow pricing is built around a monthly subscription and a one-time implementation fee. The monthly subscription covers the full platform and required measurement infrastructure for each active store.</p><p></p><p></p>",
             "content_width": "medium",
             "text_alignment": "left"
           },
@@ -97,7 +97,7 @@
             "card_background": "#ffffff",
             "text_color": "#1a1a1a",
             "content_padding": 30,
-            "icon_color": "#A7BC59",
+            "icon_color": "#a7bc59",
             "feature_size": 15,
             "feature_spacing": 16,
             "card1_label": "COMPONENT 01",
@@ -256,7 +256,7 @@
             "icon_background": "#a0b842",
             "icon_color": "#f9fafb",
             "background_color": "#f2f2f2",
-            "text_color": "",
+            "text_color": "#11243E",
             "border_color": "#f2f2f2",
             "show_controls": false,
             "column_size": "4",
@@ -356,6 +356,97 @@
         "title": "Every store gets the full platform.",
         "content": "<p>No feature tiers. No add-on modules. Every Flow subscription includes the complete measurement, analytics, and decision layer.</p>",
         "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "",
+        "subheading_background_color": "",
+        "subheading_text_color": ""
+      }
+    },
+    "multi_column_a7qnB7": {
+      "type": "multi-column",
+      "blocks": {
+        "item_bWhg8F": {
+          "type": "item",
+          "settings": {
+            "icon": "up",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#FFFFFF",
+            "icon_color": "#A0B842",
+            "background_color": "#A0B842",
+            "text_color": "#FFFFFF",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "1.5",
+            "title": "Execution Platform",
+            "heading_tag": "h4",
+            "subheading": "<p>EPL</p>",
+            "content": "<p>The Execution Platform is the core of the Flow subscription. It gives stores, area managers, and headquarters one shared view of performance and connects that data to daily store action.</p><p>Flow brings traffic, sales, staffing, weather, and store context into one operational system so teams can identify what changed, understand why it changed, and respond faster.</p><p><strong>Includes:</strong></p><ul><li>Performance dashboards</li><li>Manager reporting tools</li><li>Store memos and operational context</li><li>POS / staffing / weather integrations</li><li>API / SFTP connectivity</li><li>Network performance monitoring</li><li>Flow Integrated Decision Architecture / FIDA</li><li>Flow AI-supported recommendations</li></ul>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_rx3Pdz": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-validation",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#FFFFFF",
+            "icon_color": "#11243E",
+            "background_color": "#11243E",
+            "text_color": "#FFFFFF",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "Measurement Infrastructure",
+            "heading_tag": "h4",
+            "subheading": "<p>MIL</p>",
+            "content": "<p>Required when measurement hardware is connected to Flow. MIL keeps traffic, passerby, and behavioral data monitored, accurate, and reliably connected to the platform. It applies whether the hardware is provided by Flow or already owned by the retailer.</p><p><strong>Includes:</strong></p><ul><li>Continuous data capture</li><li>Uptime monitoring</li><li>System diagnostics</li><li>Accuracy monitoring</li><li>Firmware and lifecycle management</li><li>Vendor measurement licenses when applicable</li></ul>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_4LTB8t": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-camera",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#11243E",
+            "icon_color": "#FFFFFF",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "1",
+            "title": "Hardware Rental",
+            "heading_tag": "h4",
+            "subheading": "<p>AIカメラ</p>",
+            "content": "<p>For retailers that need measurement devices, Flow can provide the required hardware as part of the deployment.</p><p><strong>Includes:</strong></p><ul><li>AI cameras / sensors</li><li>NUC processing units when required</li><li>Device rental</li><li>Hardware warranty</li><li>Configuration matched to store layout</li></ul><p>This layer only applies when Flow provides the measurement hardware. Retailers with compatible existing hardware can connect it through the measurement infrastructure layer.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_bWhg8F",
+        "item_rx3Pdz",
+        "item_4LTB8t"
+      ],
+      "name": "Multi-column",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "start",
+        "subheading": "Subscription Pricing",
+        "title": "What your monthly subscription covers",
+        "content": "<p>Your team sees one monthly subscription. Behind the scenes, Flow manages the platform, measurement infrastructure, and, when needed, the hardware required to keep store data reliable.</p>",
+        "background": "",
         "background_gradient": "",
         "text_color": "",
         "subheading_background_color": "",
@@ -837,6 +928,7 @@
     "1781505750d4c92acf",
     "multi_column_L3Rbir",
     "multi_column_3tnATm",
+    "multi_column_a7qnB7",
     "17815078000b3a5249",
     "17815090283832c03e",
     "section-15",

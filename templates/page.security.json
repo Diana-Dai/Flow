@@ -180,6 +180,73 @@
         "subheading_text_color": ""
       }
     },
+    "blocks_jgwppx": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_3504708_rzfxKi": {
+          "type": "ai_gen_block_3504708",
+          "settings": {
+            "badge_text": "エリア管理",
+            "headline": "エリアマネージャーは、担当店舗の変化を短時間で把握。",
+            "description": "Flowは、担当店舗のKPI、Pulse、メモ、店舗報告をまとめて確認できるようにし、優先して見るべき店舗や変化を把握しやすくします。",
+            "step1_icon": "document",
+            "step1_title": "Capture",
+            "step1_desc": "Sensors observe in-store activity.\nNo video is stored under normal operation.",
+            "step2_icon": "chart",
+            "step2_title": "Process",
+            "step2_desc": "売上・来店数・購買率の変化を比較し、傾向を把握します。",
+            "step3_icon": "alert",
+            "step3_title": "Store",
+            "step3_desc": "変化やアラートをもとに、優先して見るべき店舗を抽出します。",
+            "step4_icon": "store",
+            "step4_title": "Retain",
+            "step4_desc": "店舗のKPI履歴やメモ、直近の変化を確認し、訪問に備えます。",
+            "step5_icon": "checklist",
+            "step5_title": "Delete",
+            "step5_desc": "担当エリアの状況とアクションを整理し、効率的に報告します。",
+            "banner_text": "データの収集から報告までを一気通貫でつなぎ、エリアの成果最大化をサポートします。",
+            "max_width": 1400,
+            "background_color": "#fafbfc",
+            "badge_bg_color": "#e8ede5",
+            "badge_text_color": "#5a6c4d",
+            "description_color": "#5a6c7d",
+            "line_color": "#7a9b6f",
+            "icon_circle_bg": "#ffffff",
+            "icon_color": "#7a9b6f",
+            "card_bg_color": "#ffffff",
+            "card_border_color": "#e5e8eb",
+            "card_hover_border": "#7a9b6f",
+            "number_color": "#7a9b6f",
+            "step_title_color": "#1a2b4a",
+            "step_desc_color": "#6b7c8d",
+            "banner_bg_color": "#eef3f8",
+            "banner_icon_color": "#5a7a9b",
+            "banner_text_color": "#2a3b5a",
+            "description_size": 18,
+            "step_title_size": 18,
+            "step_desc_size": 15,
+            "banner_text_size": 16,
+            "icon_border_radius": 50,
+            "icon_circle_size": 80,
+            "icon_size": 36,
+            "card_border_radius": 18
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_3504708_rzfxKi"
+      ],
+      "name": "Area manager workflow",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
     "multi_column_LbWzJW": {
       "type": "multi-column",
       "blocks": {
@@ -738,6 +805,7 @@
   "order": [
     "blocks_E8LBYQ",
     "multi_column_HCGJea",
+    "blocks_jgwppx",
     "multi_column_LbWzJW",
     "multi_column_UHGh3a",
     "multi_column_RkceNG",
