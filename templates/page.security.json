@@ -128,8 +128,31 @@
             "link_style": "link"
           }
         },
+        "item_n6tzFG": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "1",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h4>方針に基づくデータ管理</h4><p>Flowは、セキュリティ、保存、削除、外部委託に関する方針に基づき、サービスに関連するデータを取り扱います。</p><p>・Flowは、原則としてクライアントの委託を受けてデータを処理します。<br/>・データ取得の適法性および必要な掲示・通知は、クライアントの責任となります。<br/>・外部委託先には、適切なデータ保護義務およびセキュリティ義務を求めています。</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
         "item_RnmbJT": {
           "type": "item",
+          "disabled": true,
           "settings": {
             "icon": "none",
             "icon_width": 32,
@@ -144,7 +167,7 @@
             "title": "",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<h4>GDPR & CCPA Compliance by Architecture</h4><p>Flow qualifies as \"non-personal data\" under GDPR Article 4 because the data cannot identify individuals. No DPIA (Data Protection Impact Assessment) is required for typical retail deployments.</p><p>GDPR Principles Applied:</p><ul><li>Data minimization: Only essential operational metrics</li><li>Purpose limitation: Retail operations only, no secondary use</li><li>Storage limitation: 13-month retention, configurable</li><li>Integrity & confidentiality: AES-256 encryption, access controls</li></ul><p>CCPA Compliance:</p><ul><li>No \"sale\" of data—customer data stays isolated per retailer</li><li>Customer data ownership maintained</li><li>Full data export available on request</li><li>Deletion within 30 days upon request</li></ul>",
+            "content": "<h4>データ保護方針に基づく運用</h4><p>Flowは、個人情報保護法（APPI）および関連ガイドラインに基づき、サービスに関連して取り扱うデータの管理、安全性確保、保存、削除、外部委託に関する方針を定めています。</p><ul><li>Flowは、原則としてクライアントの委託を受けてデータ処理を行う受託者として行動します。</li><li>個人情報の取得および利用目的の特定については、クライアントが責任を負います。</li><li>外部委託先とは、適切なデータ保護義務およびセキュリティ義務を定めた契約を締結しています。</li></ul>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -155,6 +178,7 @@
         "item_9cWFC9",
         "item_aqpNXK",
         "item_tTyycj",
+        "item_n6tzFG",
         "item_RnmbJT"
       ],
       "custom_css": [
