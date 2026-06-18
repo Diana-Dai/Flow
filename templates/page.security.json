@@ -65,7 +65,7 @@
         "item_9cWFC9": {
           "type": "item",
           "settings": {
-            "icon": "picto-happy",
+            "icon": "picto-stop",
             "icon_width": 32,
             "icon_background_type": "square",
             "icon_background": "#a0b842",
@@ -78,7 +78,7 @@
             "title": "",
             "heading_tag": "h1",
             "subheading": "",
-            "content": "<h4>No Facial Recognition</h4><p>Flow detects and tracks human shapes using skeletal tracking and motion analysis. We do not capture, process, or store facial features.</p><p><strong>Technical approach: Shape detection, height estimation, trajectory tracking—zero biometric data.</strong></p>",
+            "content": "<h4>顔認識なし</h4><p>特定の個人を識別するための顔認識または生体認証機能は提供しません。</p><p><strong>人物の動き、滞留、導線などを統計データとして計測します。</strong></p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -100,7 +100,7 @@
             "title": "",
             "heading_tag": "h1",
             "subheading": "",
-            "content": "<h4>No Video Storage</h4><p>Raw camera feeds are processed in real-time at the edge, then discarded. Only aggregate metrics (counts, dwell times, zones) are stored.</p><p><strong>Edge processing: Metrics extracted locally, video never leaves the device, no cloud storage of footage.</strong></p>",
+            "content": "<h4>映像保存を最小化</h4><p>通常運用では映像を保存せず、リアルタイム処理により数値データのみを生成します。</p><p><strong>精度検証時のみ、クライアント要請に基づき検証用映像を一時保存します。閲覧可能期間は7日間です。</strong></p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -122,7 +122,7 @@
             "title": "",
             "heading_tag": "h1",
             "subheading": "",
-            "content": "<h4>No Personal Identifiers</h4><p>Flow does not collect names, contact information, payment details, or any PII. Anonymous session IDs are generated per visit and cannot be linked to individuals.</p><p>Data minimization: Only metrics required for operational analytics. No tracking across visits or stores.</p>",
+            "content": "<h4>個人特定なし</h4><p>Flowは、個人を特定するためではなく、店舗運営に必要な行動指標を計測します。</p><p><strong>匿名加工情報も、特定の個人を識別できない形式で取り扱います。</strong></p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -170,9 +170,9 @@
         "stack_on_mobile": false,
         "gap": "medium",
         "text_alignment": "start",
-        "subheading": "PRIVACY BY DESIGN",
-        "title": "Privacy-First Measurement Architecture",
-        "content": "<p>Flow measures behavior, not identity. Our system is architected from the ground up to provide operational insights while protecting customer privacy.<br/><br/></p>",
+        "subheading": "プライバシー設計",
+        "title": "プライバシーを前提とした店舗計測",
+        "content": "<p>Flowは、個人を特定するためではなく、店舗運営に必要な行動データを計測するために設計されています。通常運用では映像を保存せず、リアルタイム処理により数値データへ変換します。</p>",
         "background": "",
         "background_gradient": "",
         "text_color": "#11243e",
