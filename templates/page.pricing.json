@@ -221,8 +221,8 @@
           "settings": {
             "label": "期間限定キャンペーン",
             "heading": "まず3店舗導入で、1店舗分6ヶ月無料。",
-            "description": "3店舗以上の導入で、1店舗分の月額費用を6ヶ月無料に。来店・売上・購買率を店舗ごとに比較し、Flowの効果を確認できます。",
-            "button_text": "キャンペーンについて相談する",
+            "description": "複数店舗での初期導入を始めやすくするため、対象条件を満たすお客様に初期展開キャンペーンを適用できます。詳細な適用条件は、お見積り時にご案内します。",
+            "button_text": "導入条件を相談する",
             "button_link": "shopify://pages/contact",
             "condition_note": "対象条件、店舗数、連携内容により適用条件が異なる場合があります。",
             "benefit_1_title": "3店舗から比較検証",
@@ -245,7 +245,7 @@
             "condition_text_color": "#9ca3af",
             "condition_font_size": 12,
             "button_background": "#0e366a",
-            "button_hover_background": "#0a2850",
+            "button_hover_background": "#11243E",
             "button_text_color": "#ffffff",
             "button_font_size": 16,
             "button_border_radius": 8,
@@ -422,7 +422,7 @@
             "icon_background": "#a0b842",
             "icon_color": "#f9fafb",
             "background_color": "#F9FAFB",
-            "text_color": "",
+            "text_color": "#11243E",
             "border_color": "#f2f2f2",
             "show_controls": false,
             "column_size": "4",
@@ -444,7 +444,7 @@
             "icon_background": "#a0b842",
             "icon_color": "#f9fafb",
             "background_color": "#F9FAFB",
-            "text_color": "",
+            "text_color": "#11243E",
             "border_color": "#f2f2f2",
             "show_controls": false,
             "column_size": "4",
@@ -466,7 +466,7 @@
             "icon_background": "#a0b842",
             "icon_color": "#f9fafb",
             "background_color": "#F9FAFB",
-            "text_color": "",
+            "text_color": "#11243E",
             "border_color": "#f2f2f2",
             "show_controls": false,
             "column_size": "4",
@@ -627,7 +627,7 @@
             "heading_color": "#11243e",
             "text_color": "#677279",
             "accent_color": "#a7be3a",
-            "eyebrow_background": "#f3f5f6",
+            "eyebrow_background": "#EDF1E1",
             "eyebrow_color": "#677279",
             "card_background": "#ffffff",
             "card_border_color": "#e5e7eb",
@@ -706,7 +706,7 @@
         "full_width": true,
         "content_width": "small",
         "text_position": "center",
-        "background": "",
+        "background": "#FFFFFF",
         "background_gradient": "",
         "text_color": ""
       }
@@ -721,7 +721,7 @@
             "text": "展開規模に応じた料金設計",
             "alignment": "center",
             "text_color": "#11243e",
-            "background": "#f0f3e9"
+            "background": "#EDF1E1"
           },
           "blocks": {}
         },
