@@ -259,9 +259,9 @@
             "benefit_icon_background": "#a0b842",
             "benefit_icon_color": "#ffffff",
             "benefit_title_color": "#0e366a",
-            "benefit_title_font_size": 15,
+            "benefit_title_font_size": 18,
             "benefit_text_color": "#6b7280",
-            "benefit_text_font_size": 13
+            "benefit_text_font_size": 16
           },
           "blocks": {}
         }
