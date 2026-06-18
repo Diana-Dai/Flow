@@ -157,6 +157,62 @@
         "text_color": "#11243e"
       }
     },
+    "rich_text_mw3m49": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_EgPgh9": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "text": "Subheading",
+            "icon": "none"
+          }
+        },
+        "button_KWJjRd": {
+          "type": "button",
+          "settings": {
+            "style": "fill",
+            "size": "xl",
+            "text": "自社の導入範囲で相談する",
+            "url": "shopify://pages/contact",
+            "background": "",
+            "text_color": ""
+          }
+        },
+        "heading_bzVx8Q": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "text": "Heading",
+            "heading_tag": "h1",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_d3MwtH": {
+          "type": "richtext",
+          "disabled": true,
+          "settings": {
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_EgPgh9",
+        "button_KWJjRd",
+        "heading_bzVx8Q",
+        "richtext_d3MwtH"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
     "multi_column_L3Rbir": {
       "type": "multi-column",
       "blocks": {
@@ -284,7 +340,7 @@
             "icon_background_type": "square",
             "icon_background": "#a0b842",
             "icon_color": "#f9fafb",
-            "background_color": "#f2f2f2",
+            "background_color": "#F9FAFB",
             "text_color": "#11243E",
             "border_color": "#f2f2f2",
             "show_controls": false,
@@ -328,7 +384,7 @@
             "icon_background_type": "square",
             "icon_background": "#a0b842",
             "icon_color": "#f9fafb",
-            "background_color": "#f2f2f2",
+            "background_color": "#F9FAFB",
             "text_color": "",
             "border_color": "#f2f2f2",
             "show_controls": false,
@@ -350,7 +406,7 @@
             "icon_background_type": "square",
             "icon_background": "#a0b842",
             "icon_color": "#f9fafb",
-            "background_color": "#f2f2f2",
+            "background_color": "#F9FAFB",
             "text_color": "",
             "border_color": "#f2f2f2",
             "show_controls": false,
@@ -955,6 +1011,7 @@
   "order": [
     "rich_text_cqadYy",
     "1781505750d4c92acf",
+    "rich_text_mw3m49",
     "multi_column_L3Rbir",
     "multi_column_3tnATm",
     "multi_column_a7qnB7",
