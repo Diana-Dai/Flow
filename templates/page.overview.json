@@ -268,7 +268,7 @@
         "item_4Jg6dW": {
           "type": "item",
           "settings": {
-            "image": "shopify://shop_images/ipad.png",
+            "image": "shopify://shop_images/FIDA_Layer_1.png",
             "icon": "none",
             "icon_width": 48,
             "title": "成果ギャップ分析",
@@ -281,7 +281,7 @@
         "item_a8jn8N": {
           "type": "item",
           "settings": {
-            "image": "shopify://shop_images/FIDA_Layer.png",
+            "image": "shopify://shop_images/FIDA_Layer_1.png",
             "icon": "none",
             "icon_width": 48,
             "title": "対応を標準化する",
