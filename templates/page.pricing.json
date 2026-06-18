@@ -97,10 +97,10 @@
           "type": "badge",
           "name": "Badge",
           "settings": {
-            "text": "料金は2つだけです。",
+            "text": "2つの料金項目",
             "alignment": "center",
-            "text_color": "#11243e",
-            "background": "#f0f3e9"
+            "text_color": "#FFFFFF",
+            "background": "#0E366A"
           },
           "blocks": {}
         },
@@ -108,8 +108,8 @@
           "type": "rich-text",
           "name": "Rich text",
           "settings": {
-            "text": "<h2>料金は2つの項目で構成されています。</h2><p>Flowの料金は、毎月のサブスクリプション費用と、初回のみの導入費用で構成されています。店舗数や導入範囲に応じて、わかりやすくお見積りします。</p><p></p><p></p>",
-            "content_width": "medium",
+            "text": "<h2>料金は大きく2つの項目で構成されています。</h2><p>Flowの料金は、毎月のサブスクリプション費用と、初回のみの初期設定・導入費用で構成されています。初期費用は、全体のオンボーディング内容と、店舗ごとの設置・配線作業に応じてお見積りします。</p><p></p><p></p><p></p>",
+            "content_width": "large",
             "text_alignment": "left"
           },
           "blocks": {}
@@ -126,19 +126,19 @@
             "card_background": "#ffffff",
             "text_color": "#1a1a1a",
             "content_padding": 30,
-            "icon_color": "#a7bc59",
+            "icon_color": "#A0B842",
             "feature_size": 15,
             "feature_spacing": 16,
             "card1_label": "COMPONENT 01",
             "card1_title": "月額サブスクリプション",
-            "card1_subtitle": "Per store • Billed annually",
-            "card1_description": "稼働中の店舗ごとに発生する月額費用です。Flowプラットフォーム、レポート、連携、計測インフラ、サポートを含みます。",
-            "card1_features": "Full analytics dashboard\nReal-time reporting\nStaff scheduling recommendations\nMulti-location management\nAPI access and integrations\nTraining resources\nEnterprise-grade reliability",
+            "card1_subtitle": "店舗ごと・年額契約",
+            "card1_description": "稼働中の店舗ごとに発生する月額費用です。Flowプラットフォーム、計測インフラ、必要に応じたハードウェアレンタル、システム監視、外部データ連携を含みます。",
+            "card1_features": "実行支援プラットフォーム（EPL）\nパフォーマンスダッシュボード・レポート\nPOS・シフト・天候データ連携\nAPI・SFTP接続\n計測インフラ（MIL）\nシステム監視・精度管理\n必要に応じた計測ハードウェアレンタル",
             "card2_label": "COMPONENT 02",
-            "card2_title": "Implementation Fee",
-            "card2_subtitle": "One-time • Per location",
-            "card2_description": "A one-time onboarding and setup fee covering installation, configuration, integrations, and training.",
-            "card2_features": "Hardware setup\nProfessional installation\nSystem configuration\nPOS integration\nDashboard customization\nStaff training\nPost-launch support"
+            "card2_title": "初期設定・導入費用",
+            "card2_subtitle": "初回のみ・導入範囲に応じてお見積り",
+            "card2_description": "新規導入時に必要となる初回費用です。クライアント全体の初期オンボーディングと、店舗ごとの設置・配線作業を導入範囲に応じてお見積りします。",
+            "card2_features": "初期オンボーディング\nユーザー登録・権限設定\nPOS・外部システム連携設定\n初期ダッシュボード設定\n店舗ごとの機器設置\n配線作業・ネットワーク接続確認\n導入後の初期サポート"
           },
           "blocks": {}
         }
