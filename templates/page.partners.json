@@ -622,7 +622,7 @@
             "title": "セキュリティ・カメラ事業者",
             "heading_tag": "h4",
             "subheading": "<p>再販売・設置支援</p>",
-            "content": "<p>店舗向けのカメラ、設備、セキュリティサービスを提供しており、分析や店舗パフォーマンス領域に提供価値を広げたい企業。</p>",
+            "content": "<ul><li>店舗向けカメラ</li><li>セキュリティ機器</li><li>設備導入</li><li>保守・設置支援</li><li>店舗分析サービス</li></ul>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -644,7 +644,7 @@
             "title": "システムインテグレーター",
             "heading_tag": "h4",
             "subheading": "<p>連携・展開支援</p>",
-            "content": "<p>小売企業の業務システム、データ連携、レポート環境、店舗オペレーションの整備を支援している企業。</p>",
+            "content": "<ul><li>システム連携</li><li>データ基盤</li><li>レポート環境</li><li>店舗業務設計</li><li>大規模展開支援</li></ul>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
