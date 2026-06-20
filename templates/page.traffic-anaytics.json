@@ -234,7 +234,9 @@
         "content": "<h6>Flowは、店舗入口の来店数だけでなく、店前通行量、入店率、属性傾向、滞在傾向、スタッフ除外、複数入口の来店傾向まで一元的に可視化します。売上や購買率と組み合わせることで、集客・接客・人員配置の改善判断に使える来店データをつくります。</h6>",
         "background": "#ffffff",
         "background_gradient": "",
-        "text_color": "#11243e"
+        "text_color": "#11243e",
+        "subheading_background_color": "",
+        "subheading_text_color": ""
       }
     },
     "1779100565ad3a0995": {
@@ -249,7 +251,7 @@
             "accent_color": "#9cb73b",
             "badge_text": "入店率・購買率の把握",
             "badge_background": "#a0b842",
-            "badge_border": "#0e366a",
+            "badge_border": "#A0B842",
             "badge_text_color": "#ffffff",
             "heading": "通行量から売上まで、機会損失を見える化。",
             "description": "店前を通る人が多くても、入店につながらなければ売上機会は失われます。来店数が多くても、購買につながらなければ接客・売場・人員配置に課題がある可能性があります。Flowは、通行量・来店数・購買率をつなげて、どこで機会損失が起きているかを把握しやすくします。",
@@ -259,6 +261,7 @@
             "feature_2_description": "来店数と売上をつなげ、接客・売場・商品展開の改善ポイントを見つけやすくします。",
             "feature_3_title": "店舗間で比較",
             "feature_3_description": "通行量・入店率・購買率を店舗間で比較。",
+            "only_show_lift_card": false,
             "lift_label": "導入効果例",
             "lift_percentage": "18.4億円",
             "lift_subtext": "126店舗規模で検証。年間売上インパクト試算",
@@ -407,7 +410,9 @@
         "content": "<p>Real-time traffic metrics, conversion analytics, and AI-powered recommendations in one command center.</p>",
         "background": "#ffffff",
         "background_gradient": "",
-        "text_color": "#11243e"
+        "text_color": "#11243e",
+        "subheading_background_color": "",
+        "subheading_text_color": ""
       }
     },
     "media_with_text_hMPTmL": {
@@ -537,7 +542,9 @@
         "content": "<p>Enterprise-grade AI camera with advanced people counting, behavior analytics, and real-time traffic measurement capabilities.</p>",
         "background": "",
         "background_gradient": "",
-        "text_color": ""
+        "text_color": "",
+        "subheading_background_color": "",
+        "subheading_text_color": ""
       }
     },
     "multi_column_QjMJiW": {
@@ -633,7 +640,9 @@
         "content": "<p><strong>来店数・入店率・購買率・時間帯別の変化をもとに、人員配置、店頭改善、マーケティング効果の判断を支援します。</strong></p>",
         "background": "#ffffff",
         "background_gradient": "",
-        "text_color": ""
+        "text_color": "",
+        "subheading_background_color": "",
+        "subheading_text_color": ""
       }
     },
     "multi_column_QjMJiW11": {
@@ -703,7 +712,9 @@
         "content": "",
         "background": "#ffffff",
         "background_gradient": "",
-        "text_color": "#ffffff"
+        "text_color": "#ffffff",
+        "subheading_background_color": "",
+        "subheading_text_color": ""
       }
     },
     "multi_column_LeVzeG": {
@@ -800,7 +811,9 @@
         "content": "",
         "background": "#f9fafb",
         "background_gradient": "",
-        "text_color": "#11243e"
+        "text_color": "#11243e",
+        "subheading_background_color": "",
+        "subheading_text_color": ""
       }
     },
     "section-15": {
@@ -1075,7 +1088,9 @@
         "content": "",
         "background": "#ffffff",
         "background_gradient": "",
-        "text_color": "#11243e"
+        "text_color": "#11243e",
+        "subheading_background_color": "",
+        "subheading_text_color": ""
       }
     },
     "rich_text_6VmVgb": {
