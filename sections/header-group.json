@@ -125,7 +125,7 @@
         "logo": "shopify://shop_images/Flow_Logo_300_x_60px.png",
         "logo_max_width": 120,
         "logo_mobile_max_width": 100,
-        "menu": "test-2",
+        "menu": "main-menu-v2",
         "sidebar_menu": "",
         "secondary_menu": "login-and-book-demo",
         "customer_account_menu": "customer-account-main-menu",
