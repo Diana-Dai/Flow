@@ -92,7 +92,7 @@
         "mega_menu_KCFxeJ": {
           "type": "mega_menu",
           "settings": {
-            "menu_item": "リソース",
+            "menu_item": "Flowについて",
             "layout": "horizontal",
             "submenu_style": "bold_heading",
             "image_1": "shopify://shop_images/blog_staff_166.png",
