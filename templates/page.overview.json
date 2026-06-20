@@ -268,7 +268,7 @@
         "item_4Jg6dW": {
           "type": "item",
           "settings": {
-            "image": "shopify://shop_images/ipad.png",
+            "image": "shopify://shop_images/ipad_1.png",
             "icon": "none",
             "icon_width": 48,
             "title": "成果ギャップ分析",
@@ -302,7 +302,7 @@
         "full_width": true,
         "stack_on_mobile": true,
         "show_counter": true,
-        "desktop_image_effect": "reveal",
+        "desktop_image_effect": "fade",
         "image_position": "end",
         "background": "",
         "background_gradient": "",
