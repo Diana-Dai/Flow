@@ -1,0 +1,699 @@
+{% doc %}
+  @prompt
+    Here is the text-only AI developer prompt optimized for Copilot or ChatGPT to 100% replicate the split layout, background image hero section, and floating analytics overlay blocks from **image_0bec7b.jpg**.
+    
+    ---
+    
+    ## The Copilot Developer Prompt
+    
+    ```text
+    Act as an expert Shopify Frontend, Liquid, and CSS developer. Build a fully responsive custom hero section that 100% replicates the structural layout, glassmorphic design layer, spacing, and typography of the provided reference image "image_0bec7b.jpg".
+    
+    ### 1. Global Integration, Max Width & Basic Styles
+    - **Theme Identity:** Automatically inherit the active storefront typography variables (e.g., `var(--font-heading-family)` and `var(--font-body-family)`), standard section maximum layout container width (e.g., matching `.page-width` or `.container` wrappers), and native responsive side padding.
+    - **Section Layout:** A full-bleed background hero section. On desktop viewports, content is divided into a 2-column horizontal structure (approx. 55% left column for the value proposition text, 45% right column for the stacked overlay dashboard cards). On mobile, the columns collapse into a single vertical layout with the text block moving to the top and cards stacked cleanly beneath it.
+    - **Section Background:** Full-width container featuring a large lifestyle retail background image (as seen in image_0bec7b.jpg, depicting a retail interior with mannequins). The background container should use an absolute-positioned dark tinted overlay layer (rgba color overlay) to ensure high text contrast and legibility.
+    
+    ### 2. Left Column Layout (Value Proposition Text Block)
+    All content elements must be left-aligned and vertically stacked with clean spacing:
+    - **Eyebrow Status Badge:** "FLOW LIVE"
+      - Styling: Small, bold, all-caps light-gray or white text inside an oval pill capsule layout. Includes a small, vibrant lime-green circular live status dot preceding the text. The capsule features a translucent, semi-transparent dark glass background wash.
+    - **Main Heading Text:** "Every customer is a data point.\nEvery data point is an action."
+      - Styling: Large, exceptionally bold, high-contrast crisp white text with a explicit line break as shown in the reference image.
+    - **Paragraph Description:** "Flow runs quietly in the background — counting, correlating, and surfacing exactly what needs to happen next."
+      - Styling: Fine, medium-weight light-gray/blue text with generous line-height to maintain comfortable readability against the dark image backdrop.
+    
+    ### 3. Right Column Layout (Glassmorphic Data Cards Stack)
+    A vertical sequence of 3 floating data blocks stacked on top of each other. Each card block must be designed as a repeatable Liquid block element so users can add, delete, or rearrange them easily.
+    - **Card Container Styling:** Features a highly modern frosted-glass glassmorphism effect:
+      - Background: Semi-transparent frosted wash (`background: rgba(...)` with a strong CSS `backdrop-filter: blur(...)`).
+      - Border: A very thin, faint white/light-gray transparent outer border outline.
+      - Shape & Spacing: Clean rounded corners (border-radius: 12px) with comfortable, deep internal padding.
+    - **Internal Card Grid Layout:** Elements inside each card are horizontally flexed across three columns/zones:
+      - **Left Icon Asset:** A small circular outline or box containing an ultra-clean line-art SVG icon matching the context (e.g., trend up line graph, bar chart, lightning bolt action icon).
+      - **Center Data Stack:** Vertically stacked text containing a small, uppercase light-gray title indicator string (e.g., "Entrants today") positioned tightly over a large, bold, crisp white metrics/action string label.
+      - **Right Status Tag:** A small metadata or status flag floating on the far right edge of the card flex grid (e.g., lime-green trend metric "+ 8% vs. forecast", muted text "Live", or empty padding depending on block data).
+    - **Special Highlight (Card 3):** The third card container uses a distinct transparent dark olive-green glass tint theme to stand out as an actionable insight block.
+    
+    ### 4. Exact Content Mapping for 100% Replication
+    Ensure the default theme blocks or schema presets transcribe this English copy verbatim from image_0bec7b.jpg:
+    
+    - **Left Eyebrow Tag:** FLOW LIVE
+    - **Left Main Heading:** Every customer is a data point. Every data point is an action.
+    - **Left Description:** Flow runs quietly in the background — counting, correlating, and surfacing exactly what needs to happen next.
+    
+    #### FLOATING OVERLAY DATA CARDS:
+    - **Card 1 (Top):**
+      - Icon: Line graph trend up SVG
+      - Label: Entrants today
+      - Value: 1,247
+      - Right Tag: + 8% vs. forecast (Styled in bright lime-green text)
+    - **Card 2 (Middle):**
+      - Icon: Bar chart analytics SVG
+      - Label: Conversion rate
+      - Value: 18.4%
+      - Right Tag: Live (Styled in small muted gray text)
+    - **Card 3 (Bottom - Green Glass Theme):**
+      - Icon: Lightning bolt action triggered SVG
+      - Label: Action triggered (Styled in 
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-hero-analytics-{{ ai_gen_id }} {
+    position: relative;
+    width: 100%;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .ai-hero-analytics-bg-{{ ai_gen_id }} {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+
+  .ai-hero-analytics-bg-{{ ai_gen_id }} img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .ai-hero-analytics-bg-placeholder-{{ ai_gen_id }} {
+    width: 100%;
+    height: 100%;
+    background-color: #1a1a1a;
+  }
+
+  .ai-hero-analytics-bg-placeholder-{{ ai_gen_id }} svg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.3;
+  }
+
+  .ai-hero-analytics-overlay-{{ ai_gen_id }} {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: {{ block.settings.overlay_color }};
+    opacity: {{ block.settings.overlay_opacity }};
+    z-index: 2;
+  }
+
+  .ai-hero-analytics-container-{{ ai_gen_id }} {
+    position: relative;
+    z-index: 3;
+    width: 100%;
+    max-width: {{ settings.page_width }}px;
+    margin: 0 auto;
+    padding: 60px 40px;
+    display: grid;
+    grid-template-columns: 55% 45%;
+    gap: 60px;
+    align-items: center;
+  }
+
+  .ai-hero-analytics-content-{{ ai_gen_id }} {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .ai-hero-analytics-badge-{{ ai_gen_id }} {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 50px;
+    width: fit-content;
+  }
+
+  .ai-hero-analytics-badge-dot-{{ ai_gen_id }} {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: {{ block.settings.badge_dot_color }};
+    box-shadow: 0 0 8px {{ block.settings.badge_dot_color }};
+  }
+
+  .ai-hero-analytics-badge-text-{{ ai_gen_id }} {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: {{ block.settings.badge_text_color }};
+  }
+
+  .ai-hero-analytics-heading-{{ ai_gen_id }} {
+    font-family: var(--font-heading-family);
+    font-size: {{ block.settings.heading_size_mobile }}px;
+    font-weight: 800;
+    line-height: 1.1;
+    color: {{ block.settings.heading_color }};
+    margin: 0;
+  }
+
+  .ai-hero-analytics-description-{{ ai_gen_id }} {
+    font-size: {{ block.settings.description_size_mobile }}px;
+    line-height: 1.6;
+    color: {{ block.settings.description_color }};
+    margin: 0;
+  }
+
+  .ai-hero-analytics-cards-{{ ai_gen_id }} {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .ai-hero-analytics-card-{{ ai_gen_id }} {
+    background: {{ block.settings.card_background }};
+    backdrop-filter: blur({{ block.settings.card_blur }}px);
+    border: 1px solid {{ block.settings.card_border_color }};
+    border-radius: {{ block.settings.card_border_radius }}px;
+    padding: {{ block.settings.card_padding }}px;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 16px;
+    align-items: center;
+  }
+
+  .ai-hero-analytics-card-green-{{ ai_gen_id }} {
+    background: {{ block.settings.card_green_background }};
+  }
+
+  .ai-hero-analytics-card-icon-{{ ai_gen_id }} {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid {{ block.settings.icon_border_color }};
+    border-radius: 8px;
+    flex-shrink: 0;
+  }
+
+  .ai-hero-analytics-card-icon-{{ ai_gen_id }} svg {
+    width: 24px;
+    height: 24px;
+    stroke: {{ block.settings.icon_color }};
+    fill: none;
+    stroke-width: 2;
+  }
+
+  .ai-hero-analytics-card-data-{{ ai_gen_id }} {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .ai-hero-analytics-card-label-{{ ai_gen_id }} {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: {{ block.settings.card_label_color }};
+    font-weight: 500;
+  }
+
+  .ai-hero-analytics-card-value-{{ ai_gen_id }} {
+    font-size: 24px;
+    font-weight: 700;
+    color: {{ block.settings.card_value_color }};
+    line-height: 1;
+  }
+
+  .ai-hero-analytics-card-tag-{{ ai_gen_id }} {
+    font-size: 12px;
+    font-weight: 600;
+    white-space: nowrap;
+  }
+
+  .ai-hero-analytics-card-tag-green-{{ ai_gen_id }} {
+    color: {{ block.settings.tag_green_color }};
+  }
+
+  .ai-hero-analytics-card-tag-muted-{{ ai_gen_id }} {
+    color: {{ block.settings.tag_muted_color }};
+  }
+
+  @media screen and (min-width: 750px) {
+    .ai-hero-analytics-heading-{{ ai_gen_id }} {
+      font-size: {{ block.settings.heading_size_desktop }}px;
+    }
+
+    .ai-hero-analytics-description-{{ ai_gen_id }} {
+      font-size: {{ block.settings.description_size_desktop }}px;
+    }
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-hero-analytics-{{ ai_gen_id }} {
+      min-height: auto;
+    }
+
+    .ai-hero-analytics-container-{{ ai_gen_id }} {
+      grid-template-columns: 1fr;
+      gap: 40px;
+      padding: 40px 20px;
+    }
+
+    .ai-hero-analytics-card-{{ ai_gen_id }} {
+      padding: 16px;
+    }
+
+    .ai-hero-analytics-card-icon-{{ ai_gen_id }} {
+      width: 36px;
+      height: 36px;
+    }
+
+    .ai-hero-analytics-card-icon-{{ ai_gen_id }} svg {
+      width: 20px;
+      height: 20px;
+    }
+
+    .ai-hero-analytics-card-value-{{ ai_gen_id }} {
+      font-size: 20px;
+    }
+  }
+{% endstyle %}
+
+<div class="ai-hero-analytics-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-hero-analytics-bg-{{ ai_gen_id }}">
+    {% if block.settings.background_image %}
+      <img
+        src="{{ block.settings.background_image | image_url: width: 2400 }}"
+        alt="{{ block.settings.background_image.alt | escape }}"
+        loading="lazy"
+        width="{{ block.settings.background_image.width }}"
+        height="{{ block.settings.background_image.height }}"
+      >
+    {% else %}
+      <div class="ai-hero-analytics-bg-placeholder-{{ ai_gen_id }}">
+        {{ 'lifestyle-1' | placeholder_svg_tag }}
+      </div>
+    {% endif %}
+  </div>
+
+  <div class="ai-hero-analytics-overlay-{{ ai_gen_id }}"></div>
+
+  <div class="ai-hero-analytics-container-{{ ai_gen_id }}">
+    <div class="ai-hero-analytics-content-{{ ai_gen_id }}">
+      {% if block.settings.badge_text != blank %}
+        <div class="ai-hero-analytics-badge-{{ ai_gen_id }}">
+          <span class="ai-hero-analytics-badge-dot-{{ ai_gen_id }}"></span>
+          <span class="ai-hero-analytics-badge-text-{{ ai_gen_id }}">{{ block.settings.badge_text }}</span>
+        </div>
+      {% endif %}
+
+      {% if block.settings.heading != blank %}
+        <h1 class="ai-hero-analytics-heading-{{ ai_gen_id }}">{{ block.settings.heading }}</h1>
+      {% endif %}
+
+      {% if block.settings.description != blank %}
+        <p class="ai-hero-analytics-description-{{ ai_gen_id }}">{{ block.settings.description }}</p>
+      {% endif %}
+    </div>
+
+    <div class="ai-hero-analytics-cards-{{ ai_gen_id }}">
+      {% if block.settings.card_1_enabled %}
+        <div class="ai-hero-analytics-card-{{ ai_gen_id }}">
+          <div class="ai-hero-analytics-card-icon-{{ ai_gen_id }}">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+              <polyline points="17 6 23 6 23 12"></polyline>
+            </svg>
+          </div>
+          <div class="ai-hero-analytics-card-data-{{ ai_gen_id }}">
+            {% if block.settings.card_1_label != blank %}
+              <div class="ai-hero-analytics-card-label-{{ ai_gen_id }}">{{ block.settings.card_1_label }}</div>
+            {% endif %}
+            {% if block.settings.card_1_value != blank %}
+              <div class="ai-hero-analytics-card-value-{{ ai_gen_id }}">{{ block.settings.card_1_value }}</div>
+            {% endif %}
+          </div>
+          {% if block.settings.card_1_tag != blank %}
+            <div class="ai-hero-analytics-card-tag-{{ ai_gen_id }} ai-hero-analytics-card-tag-green-{{ ai_gen_id }}">
+              {{ block.settings.card_1_tag }}
+            </div>
+          {% endif %}
+        </div>
+      {% endif %}
+
+      {% if block.settings.card_2_enabled %}
+        <div class="ai-hero-analytics-card-{{ ai_gen_id }}">
+          <div class="ai-hero-analytics-card-icon-{{ ai_gen_id }}">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <line x1="18" y1="20" x2="18" y2="10"></line>
+              <line x1="12" y1="20" x2="12" y2="4"></line>
+              <line x1="6" y1="20" x2="6" y2="14"></line>
+            </svg>
+          </div>
+          <div class="ai-hero-analytics-card-data-{{ ai_gen_id }}">
+            {% if block.settings.card_2_label != blank %}
+              <div class="ai-hero-analytics-card-label-{{ ai_gen_id }}">{{ block.settings.card_2_label }}</div>
+            {% endif %}
+            {% if block.settings.card_2_value != blank %}
+              <div class="ai-hero-analytics-card-value-{{ ai_gen_id }}">{{ block.settings.card_2_value }}</div>
+            {% endif %}
+          </div>
+          {% if block.settings.card_2_tag != blank %}
+            <div class="ai-hero-analytics-card-tag-{{ ai_gen_id }} ai-hero-analytics-card-tag-muted-{{ ai_gen_id }}">
+              {{ block.settings.card_2_tag }}
+            </div>
+          {% endif %}
+        </div>
+      {% endif %}
+
+      {% if block.settings.card_3_enabled %}
+        <div class="ai-hero-analytics-card-{{ ai_gen_id }} ai-hero-analytics-card-green-{{ ai_gen_id }}">
+          <div class="ai-hero-analytics-card-icon-{{ ai_gen_id }}">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+            </svg>
+          </div>
+          <div class="ai-hero-analytics-card-data-{{ ai_gen_id }}">
+            {% if block.settings.card_3_label != blank %}
+              <div class="ai-hero-analytics-card-label-{{ ai_gen_id }}">{{ block.settings.card_3_label }}</div>
+            {% endif %}
+            {% if block.settings.card_3_value != blank %}
+              <div class="ai-hero-analytics-card-value-{{ ai_gen_id }}">{{ block.settings.card_3_value }}</div>
+            {% endif %}
+          </div>
+          {% if block.settings.card_3_tag != blank %}
+            <div class="ai-hero-analytics-card-tag-{{ ai_gen_id }} ai-hero-analytics-card-tag-muted-{{ ai_gen_id }}">
+              {{ block.settings.card_3_tag }}
+            </div>
+          {% endif %}
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Analytics hero",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Background"
+    },
+    {
+      "type": "image_picker",
+      "id": "background_image",
+      "label": "Background image"
+    },
+    {
+      "type": "color",
+      "id": "overlay_color",
+      "label": "Overlay color",
+      "default": "rgba(0, 0, 0, 0.6)"
+    },
+    {
+      "type": "range",
+      "id": "overlay_opacity",
+      "label": "Overlay opacity",
+      "min": 0,
+      "max": 1,
+      "step": 0.1,
+      "default": 0.6
+    },
+    {
+      "type": "header",
+      "content": "Badge"
+    },
+    {
+      "type": "text",
+      "id": "badge_text",
+      "label": "Badge text",
+      "default": "FLOW LIVE"
+    },
+    {
+      "type": "color",
+      "id": "badge_text_color",
+      "label": "Badge text color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "badge_dot_color",
+      "label": "Live dot color",
+      "default": "#a0ff00"
+    },
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "type": "richtext",
+      "id": "heading",
+      "label": "Heading",
+      "default": "<p>Every customer is a data point.<br>Every data point is an action.</p>"
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Heading color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "heading_size_mobile",
+      "label": "Heading size (mobile)",
+      "min": 24,
+      "max": 60,
+      "step": 2,
+      "unit": "px",
+      "default": 32
+    },
+    {
+      "type": "range",
+      "id": "heading_size_desktop",
+      "label": "Heading size (desktop)",
+      "min": 32,
+      "max": 80,
+      "step": 2,
+      "unit": "px",
+      "default": 48
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Description",
+      "default": "<p>Flow runs quietly in the background — counting, correlating, and surfacing exactly what needs to happen next.</p>"
+    },
+    {
+      "type": "color",
+      "id": "description_color",
+      "label": "Description color",
+      "default": "#c7d2e0"
+    },
+    {
+      "type": "range",
+      "id": "description_size_mobile",
+      "label": "Description size (mobile)",
+      "min": 14,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "description_size_desktop",
+      "label": "Description size (desktop)",
+      "min": 16,
+      "max": 28,
+      "step": 1,
+      "unit": "px",
+      "default": 18
+    },
+    {
+      "type": "header",
+      "content": "Card 1 - Trend up"
+    },
+    {
+      "type": "checkbox",
+      "id": "card_1_enabled",
+      "label": "Enable card 1",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "card_1_label",
+      "label": "Label",
+      "default": "Entrants today"
+    },
+    {
+      "type": "text",
+      "id": "card_1_value",
+      "label": "Value",
+      "default": "1,247"
+    },
+    {
+      "type": "text",
+      "id": "card_1_tag",
+      "label": "Tag",
+      "default": "+ 8% vs. forecast"
+    },
+    {
+      "type": "header",
+      "content": "Card 2 - Bar chart"
+    },
+    {
+      "type": "checkbox",
+      "id": "card_2_enabled",
+      "label": "Enable card 2",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "card_2_label",
+      "label": "Label",
+      "default": "Conversion rate"
+    },
+    {
+      "type": "text",
+      "id": "card_2_value",
+      "label": "Value",
+      "default": "18.4%"
+    },
+    {
+      "type": "text",
+      "id": "card_2_tag",
+      "label": "Tag",
+      "default": "Live"
+    },
+    {
+      "type": "header",
+      "content": "Card 3 - Lightning (green)"
+    },
+    {
+      "type": "checkbox",
+      "id": "card_3_enabled",
+      "label": "Enable card 3",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "card_3_label",
+      "label": "Label",
+      "default": "Action triggered"
+    },
+    {
+      "type": "text",
+      "id": "card_3_value",
+      "label": "Value",
+      "default": "Send email"
+    },
+    {
+      "type": "text",
+      "id": "card_3_tag",
+      "label": "Tag"
+    },
+    {
+      "type": "header",
+      "content": "Card style"
+    },
+    {
+      "type": "color",
+      "id": "card_background",
+      "label": "Card background",
+      "default": "rgba(255, 255, 255, 0.1)"
+    },
+    {
+      "type": "color",
+      "id": "card_green_background",
+      "label": "Green card background",
+      "default": "rgba(80, 100, 60, 0.25)"
+    },
+    {
+      "type": "color",
+      "id": "card_border_color",
+      "label": "Card border color",
+      "default": "rgba(255, 255, 255, 0.15)"
+    },
+    {
+      "type": "range",
+      "id": "card_blur",
+      "label": "Card blur",
+      "min": 0,
+      "max": 30,
+      "step": 2,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "card_border_radius",
+      "label": "Card border radius",
+      "min": 0,
+      "max": 24,
+      "step": 2,
+      "unit": "px",
+      "default": 12
+    },
+    {
+      "type": "range",
+      "id": "card_padding",
+      "label": "Card padding",
+      "min": 12,
+      "max": 32,
+      "step": 2,
+      "unit": "px",
+      "default": 20
+    },
+    {
+      "type": "color",
+      "id": "icon_color",
+      "label": "Icon color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "icon_border_color",
+      "label": "Icon border color",
+      "default": "rgba(255, 255, 255, 0.2)"
+    },
+    {
+      "type": "color",
+      "id": "card_label_color",
+      "label": "Label color",
+      "default": "#a0b0c0"
+    },
+    {
+      "type": "color",
+      "id": "card_value_color",
+      "label": "Value color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "tag_green_color",
+      "label": "Green tag color",
+      "default": "#a0ff00"
+    },
+    {
+      "type": "color",
+      "id": "tag_muted_color",
+      "label": "Muted tag color",
+      "default": "#8090a0"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Analytics hero"
+    }
+  ]
+}
+{% endschema %}
