@@ -115,7 +115,7 @@
         "ai_gen_block_a91389a_icyTwr"
       ],
       "settings": {
-        "full_width": false,
+        "full_width": true,
         "remove_vertical_spacing": false,
         "remove_horizontal_spacing": false,
         "background": "#ffffff",
@@ -174,11 +174,12 @@
       "block_order": [
         "ai_gen_block_bac608e_pzPxdk"
       ],
+      "custom_css": [],
       "settings": {
         "full_width": true,
-        "remove_vertical_spacing": true,
-        "remove_horizontal_spacing": true,
-        "background": "",
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "#FFFFFF",
         "background_gradient": "",
         "text_color": ""
       }
