@@ -130,7 +130,7 @@
           "type": "ai_gen_block_bac608e",
           "settings": {
             "background_image": "shopify://shop_images/ChatGPT_Image_Jun_23_2026_05_40_10_PM.png",
-            "overlay_color": "rgba(0, 0, 0, 0.6)",
+            "overlay_color": "#00000099",
             "overlay_opacity": 0.6,
             "badge_text": "FLOW LIVE",
             "badge_text_color": "#ffffff",
@@ -140,7 +140,7 @@
             "heading_size_mobile": 32,
             "heading_size_desktop": 48,
             "description": "<p>Flow runs quietly in the background — counting, correlating, and surfacing exactly what needs to happen next.</p>",
-            "description_color": "#FFFFFF",
+            "description_color": "#ffffff",
             "description_size_mobile": 16,
             "description_size_desktop": 18,
             "card_1_enabled": true,
@@ -155,18 +155,18 @@
             "card_3_label": "Action triggered",
             "card_3_value": "Send email",
             "card_3_tag": "",
-            "card_background": "rgba(255, 255, 255, 0.1)",
-            "card_green_background": "rgba(80, 100, 60, 0.25)",
-            "card_border_color": "rgba(255, 255, 255, 0.15)",
+            "card_background": "#ffffff1a",
+            "card_green_background": "#50643c40",
+            "card_border_color": "#ffffff26",
             "card_blur": 16,
             "card_border_radius": 12,
             "card_padding": 20,
             "icon_color": "#ffffff",
-            "icon_border_color": "rgba(255, 255, 255, 0.2)",
-            "card_label_color": "#FFFFFF",
+            "icon_border_color": "#ffffff33",
+            "card_label_color": "#ffffff",
             "card_value_color": "#ffffff",
             "tag_green_color": "#a0ff00",
-            "tag_muted_color": "#FFFFFF"
+            "tag_muted_color": "#ffffff"
           },
           "blocks": {}
         }
@@ -249,7 +249,7 @@
       ],
       "custom_css": [],
       "settings": {
-        "full_width": true,
+        "full_width": false,
         "remove_vertical_spacing": false,
         "remove_horizontal_spacing": false,
         "background": "",
