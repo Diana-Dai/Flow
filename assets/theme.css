@@ -7347,6 +7347,10 @@ shopify-account::part(signed-out-avatar) {
     padding: var(--spacing-12);
   }
 }
+.section-full{
+  padding-inline-end:0;
+  padding-block-start:0;
+}
 
 @media screen and (min-width: 1000px) {
   .newsletter {
