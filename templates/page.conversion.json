@@ -50,99 +50,77 @@
         "spacing": "small"
       }
     },
-    "multi_column_PBB8dw": {
-      "type": "multi-column",
+    "1782205766608098ab": {
+      "type": "_blocks",
       "blocks": {
-        "item_xB9zVU": {
-          "type": "item",
+        "badge_B6WYC7": {
+          "type": "badge",
+          "name": "Badge",
           "settings": {
-            "icon": "picto-stop",
-            "icon_width": 32,
-            "icon_background_type": "square",
-            "icon_background": "#e5e7e1",
-            "icon_color": "#11243e",
-            "background_color": "#f9fafb",
-            "text_color": "",
-            "border_color": "#f2f2f2",
-            "show_controls": false,
-            "column_size": "3",
-            "title": "",
-            "heading_tag": "h4",
-            "subheading": "",
-            "content": "<h5>Unknown Conversion Rate</h5><p>POS shows transactions but not traffic. Managers don't know if low sales are due to poor conversion or simply low traffic.</p>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
+            "text": "THE PROBLEM",
+            "alignment": "center",
+            "text_color": "#11243E",
+            "background": "#F3F4F6"
+          },
+          "blocks": {}
         },
-        "item_T6XWXH": {
-          "type": "item",
+        "rich_text_pJYcwK": {
+          "type": "rich-text",
+          "name": "Rich text",
           "settings": {
-            "icon": "people",
-            "icon_width": 32,
-            "icon_background_type": "square",
-            "icon_background": "#e5e7e1",
-            "icon_color": "#11243e",
-            "background_color": "#f9fafb",
-            "text_color": "",
-            "border_color": "#f2f2f2",
-            "show_controls": false,
-            "column_size": "3",
-            "title": "",
-            "heading_tag": "h4",
-            "subheading": "",
-            "content": "<h5>Invisible Leak Points</h5><p>No visibility into where customers disengage. Is it understaffing during peaks? Product placement? Service quality? Data doesn't exist.</p>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
+            "text": "<h1>YOU CAN'T IMPROVE WHAT YOU CAN'T MEASURE.</h1><p>Without accurate traffic measurement, conversion rate remains unknown. Store managers see sales results but have no visibility into how many customers entered, where they went, or why they left without purchasing.</p>",
+            "content_width": "large",
+            "text_alignment": "left"
+          },
+          "blocks": {}
         },
-        "item_UKaPVf": {
-          "type": "item",
+        "ai_gen_block_a91389a_icyTwr": {
+          "type": "ai_gen_block_a91389a",
           "settings": {
-            "icon": "picto-timer",
-            "icon_width": 32,
-            "icon_background_type": "square",
-            "icon_background": "#e5e7e1",
-            "icon_color": "#11243e",
-            "background_color": "#f9fafb",
-            "text_color": "",
-            "border_color": "#f2f2f2",
-            "show_controls": false,
-            "column_size": "3",
-            "title": "",
-            "heading_tag": "h4",
-            "subheading": "",
-            "content": "<h5>Delayed Recognition</h5><p>Conversion issues only become apparent at end-of-day or end-of-week. By then, the opportunity to respond is gone.</p>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
+            "card_1_icon": "exclamation",
+            "card_1_eyebrow": "BLIND SPOT 01",
+            "card_1_title": "Unknown Conversion Rate",
+            "card_1_body": "POS records transactions. It does not record how many customers walked in. Without that number, conversion rate is unknown — and an unknown rate cannot be managed.",
+            "card_1_footer_label": "What you can't answer:",
+            "card_1_footer_quote": "Were sales low because traffic was low, or because we failed to convert?",
+            "card_2_icon": "users",
+            "card_2_eyebrow": "BLIND SPOT 02",
+            "card_2_title": "Incomplete Traffic Context",
+            "card_2_body": "Sales figures tell you what happened at the register. They reveal nothing about peak traffic hours, how long customers stayed, which zones they visited, or when staff were misaligned with demand.",
+            "card_2_footer_label": "What you can't answer:",
+            "card_2_footer_quote": "Were we understaffed at 2pm, or did the floor layout stop customers from engaging?",
+            "card_3_icon": "clock",
+            "card_3_eyebrow": "BLIND SPOT 03",
+            "card_3_title": "Delayed Recognition",
+            "card_3_body": "Conversion problems surface in weekly reports, days after the window to act has closed. By the time a district manager sees the number, the customers — and the revenue — are already gone.",
+            "card_3_footer_label": "What you can't answer:",
+            "card_3_footer_quote": "Why did conversion drop last Thursday afternoon? Nobody knows.",
+            "card_background": "#F8F9FB",
+            "card_border_color": "#e8eaed",
+            "icon_box_background": "#e8eaed",
+            "icon_color": "#677279",
+            "eyebrow_color": "#8a94a0",
+            "title_color": "#0A2240",
+            "body_color": "#677279",
+            "divider_color": "#e8eaed",
+            "footer_label_color": "#8a94a0",
+            "footer_quote_color": "#677279"
+          },
+          "blocks": {}
         }
       },
       "block_order": [
-        "item_xB9zVU",
-        "item_T6XWXH",
-        "item_UKaPVf"
+        "badge_B6WYC7",
+        "rich_text_pJYcwK",
+        "ai_gen_block_a91389a_icyTwr"
       ],
-      "custom_css": [
-        ".prose p {font-size: 0.9rem;}",
-        ".multi-column__item .h1 {color: #a0b842 !important;}"
-      ],
-      "name": "Multi-column",
       "settings": {
         "full_width": true,
-        "stack_on_mobile": false,
-        "gap": "medium",
-        "text_alignment": "start",
-        "subheading": "THE PROBLEM",
-        "title": "YOU CAN'T IMPROVE WHAT YOU CAN'T MEASURE.",
-        "content": "<p>Without accurate traffic measurement, conversion rate remains unknown. Store managers see sales results but have no visibility into how many customers entered, where they went, or why they left without purchasing.</p>",
-        "background": "#ffffff",
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "#FFFFFF",
         "background_gradient": "",
-        "text_color": "",
-        "subheading_background_color": "",
-        "subheading_text_color": ""
+        "text_color": ""
       }
     },
     "1780279655010b3d7a": {
@@ -983,7 +961,7 @@
   },
   "order": [
     "media_with_text_gMMfwV",
-    "multi_column_PBB8dw",
+    "1782205766608098ab",
     "1780279655010b3d7a",
     "multi_column_bJtgmc",
     "blocks_BGj9cg",
