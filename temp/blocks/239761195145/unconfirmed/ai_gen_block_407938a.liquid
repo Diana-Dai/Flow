@@ -1,6 +1,1353 @@
+{% doc %}
+  @prompt
+    Act as an expert Shopify Frontend, Liquid, and CSS developer. Build a fully responsive custom section that 100% replicates the layout, design language, spacing, and typography of the provided reference image "image_0a22de.jpg".
+    
+    ### 1. Global Integration, Max Width & Basic Styles
+    - **Theme Identity:** The section must automatically inherit the active storefront typography variables (e.g., `var(--font-heading-family)` and `var(--font-body-family)`), page maximum layout width wrappers, and responsive side padding.
+    - **Section Layout:** On desktop viewports, split the layout into a clean 2-column horizontal layout (approximately 50% left column for text copy, 50% right column for the timeline tier tracking). On mobile layouts, columns must collapse into a vertical stack with the timeline sliding beneath the copy.
+    - **Section Background:** Solid dark-navy background color wash (#061B33 to #0B2240).
+    
+    ### 2. Left Column Layout (Value Proposition)
+    All content elements must be left-aligned and cleanly spaced down the vertical line:
+    - **Eyebrow Capsule Tag:** "PRICING & IMPLEMENTATION"
+      - Styling: Small, bold, all-caps light-green text inside a rounded pill/capsule background with a very soft, dark transparent green fill.
+    - **Main Heading Text:** "Transparent Pricing.\nPredictable Costs."
+      - Styling: Large, exceptionally bold, high-contrast white text with clean line breaks.
+    - **Paragraph Description:** "Flow is priced as a per-store monthly subscription with a one-time implementation fee. No hidden costs, no usage caps. Every store gets the full platform."
+      - Styling: Muted light-gray/blue text with generous line-height to ensure superb readability against the dark background.
+    - **Horizontal Value Pillars:** A horizontal row at the bottom containing 3 columns or blocks. Each features:
+      - A small, vibrant lime-green circular bullet point dot.
+      - **Bold Pillar Title:** Crisp white text (e.g., "Per-store subscription").
+      - **Pillar Subtext:** Smaller, muted gray text directly below it (e.g., "Monthly · billed annually").
+    
+    ### 3. Right Column Layout (Vertical Timeline Tracking Stack)
+    A vertical sequence of structured data cards anchored together on the left by a thin vertical accent timeline connector line:
+    - **Timeline Connector Details:** A thin, low-contrast vertical rule runs down the left margin of the cards. Along this line, circles or nodes sit exactly perpendicular to each corresponding card.
+      - Node 1 (Top): Active status, highlighted with a vibrant lime-green outline circle and a filled solid center dot.
+      - Nodes 2 & 3: Inactive status, styled as muted, low-contrast dark gray outline rings.
+    - **Layer Tier Cards Styling:** 3 vertically stacked containers with clean rounded corners (border-radius: 12px), an ultra-faint dark border stroke, and an extremely subtle transparent dark-blue card fill wash. Each container contains:
+      - **Layer Indicator:** Small, uppercase, low-contrast muted label (e.g., "LAYER 01").
+      - **Layer Title:** Crisp, prominent white text.
+      - **Features Substring:** A horizontal sequence of sub-features separated by dot dividers (·) in light muted-blue text.
+      - **Footer Layout Flex:** A bottom row dividing text cleanly across opposite sides:
+        - Left side: Tiny, low-contrast italicized or small metadata text (e.g., "Per store · monthly").
+        - Right side: A short, bold uppercase green code badge identifier (e.g., "EPL", "MIL", "HW").
+    - **Bottom Timeline Ending Capsule:** Positioned directly below the final layer card, anchored perfectly to the timeline path. A dark, pill-shaped capsule container containing a small green indicator dot and green action text tracking rightwards.
+    
+    ### 4. Exact Content Mapping for 100% Replication
+    Ensure all text blocks map exactly to this English copy verbatim from image_0a22de.jpg:
+    
+    #### LEFT SIDE VALUE PILLARS:
+    - Pillar 1: Title: "Per-store subscription" | Subtext: "Monthly · billed annually"
+    - Pillar 2: Title: "One-time setup fee" | Subtext: "Hardware Included"
+    - Pillar 3: Title: "Volume discounts" | Subtext: "From 10 stores"
+    
+    #### RIGHT SIDE TIMELINE TIERS:
+    - **Card 1 (LAYER 01):**
+      - Title: Platform Subscription
+      - Features: Full analytics · Decision layer · Mobile ops · API
+      - Footer Details: "Per store · monthly" | Right Badge: EPL
+    - **Card 2 (LAYER 02):**
+      - Title: Implementation Fee
+      - Features: Hardware · Install · Config · Training
+      - Footer Details: "One-time · per store" | Right Badge: MIL
+    - **Card 3 (LAYER 03):**
+      - Title: Hardware (when needed)
+      - Features: Ceiling-mount AI cameras · Edge devices
+      - Footer Details: "Included in impl. fee" | Right Badge: HW
+    - **Bottom Capsule Label:** Live store data → structured action
+    
+    ### 5. Shopify Architecture & Schema Requirements
+    - Map all titles, paragraphs, tier items, metadata descriptors, badges, and background color choices to block settings within the Liquid schema settings to make the entire layout 100% customizable in the Shopify Theme Customizer.
+    - All custom component styles m
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-pricing-section-{{ ai_gen_id }} {
+    display: block;
+    width: 100%;
+    background: linear-gradient(180deg, {{ block.settings.background_color_start }} 0%, {{ block.settings.background_color_end }} 100%);
+    padding: {{ block.settings.section_padding_mobile }}px 0;
+  }
+
+  @media screen and (min-width: 750px) {
+    .ai-pricing-section-{{ ai_gen_id }} {
+      padding: {{ block.settings.section_padding_desktop }}px 0;
+    }
+  }
+
+  .ai-pricing-container-{{ ai_gen_id }} {
+    max-width: {{ settings.page_width }}px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-6);
+  }
+
+  @media screen and (min-width: 1000px) {
+    .ai-pricing-container-{{ ai_gen_id }} {
+      padding: 0 var(--spacing-8);
+    }
+  }
+
+  .ai-pricing-grid-{{ ai_gen_id }} {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: {{ block.settings.column_gap_mobile }}px;
+  }
+
+  @media screen and (min-width: 1000px) {
+    .ai-pricing-grid-{{ ai_gen_id }} {
+      grid-template-columns: 1fr 1fr;
+      gap: {{ block.settings.column_gap_desktop }}px;
+      align-items: start;
+    }
+  }
+
+  .ai-pricing-left-{{ ai_gen_id }} {
+    display: flex;
+    flex-direction: column;
+    gap: {{ block.settings.left_content_gap }}px;
+  }
+
+  .ai-pricing-eyebrow-{{ ai_gen_id }} {
+    display: inline-flex;
+    align-items: center;
+    padding: {{ block.settings.eyebrow_padding_vertical }}px {{ block.settings.eyebrow_padding_horizontal }}px;
+    background-color: {{ block.settings.eyebrow_background }};
+    border-radius: {{ block.settings.eyebrow_border_radius }}px;
+    width: fit-content;
+  }
+
+  .ai-pricing-eyebrow-text-{{ ai_gen_id }} {
+    font-family: var(--font-heading-family);
+    font-size: {{ block.settings.eyebrow_font_size }}px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: {{ block.settings.eyebrow_text_color }};
+    margin: 0;
+  }
+
+  .ai-pricing-heading-{{ ai_gen_id }} {
+    font-family: var(--font-heading-family);
+    font-size: {{ block.settings.heading_font_size_mobile }}px;
+    font-weight: 800;
+    line-height: 1.1;
+    color: {{ block.settings.heading_color }};
+    margin: 0;
+    white-space: pre-line;
+  }
+
+  @media screen and (min-width: 750px) {
+    .ai-pricing-heading-{{ ai_gen_id }} {
+      font-size: {{ block.settings.heading_font_size_desktop }}px;
+    }
+  }
+
+  .ai-pricing-description-{{ ai_gen_id }} {
+    font-family: var(--font-body-family);
+    font-size: {{ block.settings.description_font_size_mobile }}px;
+    line-height: 1.6;
+    color: {{ block.settings.description_color }};
+    margin: 0;
+  }
+
+  @media screen and (min-width: 750px) {
+    .ai-pricing-description-{{ ai_gen_id }} {
+      font-size: {{ block.settings.description_font_size_desktop }}px;
+    }
+  }
+
+  .ai-pricing-pillars-{{ ai_gen_id }} {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: {{ block.settings.pillars_gap }}px;
+    margin-top: {{ block.settings.pillars_margin_top }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .ai-pricing-pillars-{{ ai_gen_id }} {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  .ai-pricing-pillar-{{ ai_gen_id }} {
+    display: flex;
+    align-items: flex-start;
+    gap: {{ block.settings.pillar_dot_gap }}px;
+  }
+
+  .ai-pricing-pillar-dot-{{ ai_gen_id }} {
+    width: {{ block.settings.pillar_dot_size }}px;
+    height: {{ block.settings.pillar_dot_size }}px;
+    border-radius: 50%;
+    background-color: {{ block.settings.pillar_dot_color }};
+    flex-shrink: 0;
+    margin-top: 6px;
+  }
+
+  .ai-pricing-pillar-content-{{ ai_gen_id }} {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .ai-pricing-pillar-title-{{ ai_gen_id }} {
+    font-family: var(--font-heading-family);
+    font-size: {{ block.settings.pillar_title_font_size }}px;
+    font-weight: 600;
+    color: {{ block.settings.pillar_title_color }};
+    margin: 0;
+  }
+
+  .ai-pricing-pillar-subtitle-{{ ai_gen_id }} {
+    font-family: var(--font-body-family);
+    font-size: {{ block.settings.pillar_subtitle_font_size }}px;
+    color: {{ block.settings.pillar_subtitle_color }};
+    margin: 0;
+  }
+
+  .ai-pricing-right-{{ ai_gen_id }} {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ai-pricing-timeline-{{ ai_gen_id }} {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: {{ block.settings.timeline_card_gap }}px;
+  }
+
+  .ai-pricing-timeline-line-{{ ai_gen_id }} {
+    position: absolute;
+    left: {{ block.settings.timeline_line_offset }}px;
+    top: {{ block.settings.timeline_node_size | divided_by: 2 }}px;
+    width: {{ block.settings.timeline_line_width }}px;
+    height: calc(100% - {{ block.settings.timeline_node_size }}px);
+    background-color: {{ block.settings.timeline_line_color }};
+  }
+
+  .ai-pricing-tier-wrapper-{{ ai_gen_id }} {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    gap: {{ block.settings.timeline_card_offset }}px;
+  }
+
+  .ai-pricing-timeline-node-{{ ai_gen_id }} {
+    position: relative;
+    width: {{ block.settings.timeline_node_size }}px;
+    height: {{ block.settings.timeline_node_size }}px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    z-index: 2;
+    background-color: {{ block.settings.background_color_start }};
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ai-pricing-timeline-node-{{ ai_gen_id }}::before {
+    content: '';
+    width: {{ block.settings.timeline_node_inner_size }}px;
+    height: {{ block.settings.timeline_node_inner_size }}px;
+    border-radius: 50%;
+    background-color: transparent;
+  }
+
+  .ai-pricing-timeline-node-{{ ai_gen_id }}.active {
+    border: {{ block.settings.timeline_node_border_width }}px solid {{ block.settings.timeline_node_active_color }};
+  }
+
+  .ai-pricing-timeline-node-{{ ai_gen_id }}.active::before {
+    background-color: {{ block.settings.timeline_node_active_color }};
+  }
+
+  .ai-pricing-timeline-node-{{ ai_gen_id }}.inactive {
+    border: {{ block.settings.timeline_node_border_width }}px solid {{ block.settings.timeline_node_inactive_color }};
+  }
+
+  .ai-pricing-tier-card-{{ ai_gen_id }} {
+    flex: 1;
+    background-color: {{ block.settings.card_background }};
+    border: {{ block.settings.card_border_width }}px solid {{ block.settings.card_border_color }};
+    border-radius: {{ block.settings.card_border_radius }}px;
+    padding: {{ block.settings.card_padding }}px;
+    display: flex;
+    flex-direction: column;
+    gap: {{ block.settings.card_content_gap }}px;
+  }
+
+  .ai-pricing-tier-label-{{ ai_gen_id }} {
+    font-family: var(--font-body-family);
+    font-size: {{ block.settings.tier_label_font_size }}px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: {{ block.settings.tier_label_color }};
+    margin: 0;
+  }
+
+  .ai-pricing-tier-title-{{ ai_gen_id }} {
+    font-family: var(--font-heading-family);
+    font-size: {{ block.settings.tier_title_font_size }}px;
+    font-weight: 600;
+    color: {{ block.settings.tier_title_color }};
+    margin: 0;
+  }
+
+  .ai-pricing-tier-features-{{ ai_gen_id }} {
+    font-family: var(--font-body-family);
+    font-size: {{ block.settings.tier_features_font_size }}px;
+    color: {{ block.settings.tier_features_color }};
+    margin: 0;
+  }
+
+  .ai-pricing-tier-footer-{{ ai_gen_id }} {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+    padding-top: {{ block.settings.card_footer_padding_top }}px;
+  }
+
+  .ai-pricing-tier-meta-{{ ai_gen_id }} {
+    font-family: var(--font-body-family);
+    font-size: {{ block.settings.tier_meta_font_size }}px;
+    font-style: italic;
+    color: {{ block.settings.tier_meta_color }};
+    margin: 0;
+  }
+
+  .ai-pricing-tier-badge-{{ ai_gen_id }} {
+    font-family: var(--font-heading-family);
+    font-size: {{ block.settings.tier_badge_font_size }}px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: {{ block.settings.tier_badge_color }};
+    margin: 0;
+  }
+
+  .ai-pricing-timeline-end-{{ ai_gen_id }} {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: {{ block.settings.timeline_card_offset }}px;
+    margin-top: {{ block.settings.timeline_end_margin_top }}px;
+  }
+
+  .ai-pricing-timeline-end-spacer-{{ ai_gen_id }} {
+    width: {{ block.settings.timeline_node_size }}px;
+    flex-shrink: 0;
+  }
+
+  .ai-pricing-end-capsule-{{ ai_gen_id }} {
+    display: inline-flex;
+    align-items: center;
+    gap: {{ block.settings.end_capsule_gap }}px;
+    padding: {{ block.settings.end_capsule_padding_vertical }}px {{ block.settings.end_capsule_padding_horizontal }}px;
+    background-color: {{ block.settings.end_capsule_background }};
+    border-radius: {{ block.settings.end_capsule_border_radius }}px;
+    width: fit-content;
+  }
+
+  .ai-pricing-end-dot-{{ ai_gen_id }} {
+    width: {{ block.settings.end_capsule_dot_size }}px;
+    height: {{ block.settings.end_capsule_dot_size }}px;
+    border-radius: 50%;
+    background-color: {{ block.settings.end_capsule_dot_color }};
+    flex-shrink: 0;
+  }
+
+  .ai-pricing-end-text-{{ ai_gen_id }} {
+    font-family: var(--font-body-family);
+    font-size: {{ block.settings.end_capsule_font_size }}px;
+    font-weight: 500;
+    color: {{ block.settings.end_capsule_text_color }};
+    margin: 0;
+  }
+{% endstyle %}
+
+<pricing-section-{{ ai_gen_id }} class="ai-pricing-section-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-pricing-container-{{ ai_gen_id }}">
+    <div class="ai-pricing-grid-{{ ai_gen_id }}">
+      <div class="ai-pricing-left-{{ ai_gen_id }}">
+        {% if block.settings.eyebrow_text != blank %}
+          <div class="ai-pricing-eyebrow-{{ ai_gen_id }}">
+            <p class="ai-pricing-eyebrow-text-{{ ai_gen_id }}">{{ block.settings.eyebrow_text }}</p>
+          </div>
+        {% endif %}
+
+        {% if block.settings.heading != blank %}
+          <h2 class="ai-pricing-heading-{{ ai_gen_id }}">{{ block.settings.heading }}</h2>
+        {% endif %}
+
+        {% if block.settings.description != blank %}
+          <p class="ai-pricing-description-{{ ai_gen_id }}">{{ block.settings.description }}</p>
+        {% endif %}
+
+        <div class="ai-pricing-pillars-{{ ai_gen_id }}">
+          {% if block.settings.pillar_1_title != blank %}
+            <div class="ai-pricing-pillar-{{ ai_gen_id }}">
+              <div class="ai-pricing-pillar-dot-{{ ai_gen_id }}"></div>
+              <div class="ai-pricing-pillar-content-{{ ai_gen_id }}">
+                <p class="ai-pricing-pillar-title-{{ ai_gen_id }}">{{ block.settings.pillar_1_title }}</p>
+                {% if block.settings.pillar_1_subtitle != blank %}
+                  <p class="ai-pricing-pillar-subtitle-{{ ai_gen_id }}">{{ block.settings.pillar_1_subtitle }}</p>
+                {% endif %}
+              </div>
+            </div>
+          {% endif %}
+
+          {% if block.settings.pillar_2_title != blank %}
+            <div class="ai-pricing-pillar-{{ ai_gen_id }}">
+              <div class="ai-pricing-pillar-dot-{{ ai_gen_id }}"></div>
+              <div class="ai-pricing-pillar-content-{{ ai_gen_id }}">
+                <p class="ai-pricing-pillar-title-{{ ai_gen_id }}">{{ block.settings.pillar_2_title }}</p>
+                {% if block.settings.pillar_2_subtitle != blank %}
+                  <p class="ai-pricing-pillar-subtitle-{{ ai_gen_id }}">{{ block.settings.pillar_2_subtitle }}</p>
+                {% endif %}
+              </div>
+            </div>
+          {% endif %}
+
+          {% if block.settings.pillar_3_title != blank %}
+            <div class="ai-pricing-pillar-{{ ai_gen_id }}">
+              <div class="ai-pricing-pillar-dot-{{ ai_gen_id }}"></div>
+              <div class="ai-pricing-pillar-content-{{ ai_gen_id }}">
+                <p class="ai-pricing-pillar-title-{{ ai_gen_id }}">{{ block.settings.pillar_3_title }}</p>
+                {% if block.settings.pillar_3_subtitle != blank %}
+                  <p class="ai-pricing-pillar-subtitle-{{ ai_gen_id }}">{{ block.settings.pillar_3_subtitle }}</p>
+                {% endif %}
+              </div>
+            </div>
+          {% endif %}
+        </div>
+      </div>
+
+      <div class="ai-pricing-right-{{ ai_gen_id }}">
+        <div class="ai-pricing-timeline-{{ ai_gen_id }}">
+          <div class="ai-pricing-timeline-line-{{ ai_gen_id }}"></div>
+
+          <div class="ai-pricing-tier-wrapper-{{ ai_gen_id }}">
+            <div class="ai-pricing-timeline-node-{{ ai_gen_id }} active"></div>
+            <div class="ai-pricing-tier-card-{{ ai_gen_id }}">
+              {% if block.settings.tier_1_label != blank %}
+                <p class="ai-pricing-tier-label-{{ ai_gen_id }}">{{ block.settings.tier_1_label }}</p>
+              {% endif %}
+              {% if block.settings.tier_1_title != blank %}
+                <h3 class="ai-pricing-tier-title-{{ ai_gen_id }}">{{ block.settings.tier_1_title }}</h3>
+              {% endif %}
+              {% if block.settings.tier_1_features != blank %}
+                <p class="ai-pricing-tier-features-{{ ai_gen_id }}">{{ block.settings.tier_1_features }}</p>
+              {% endif %}
+              <div class="ai-pricing-tier-footer-{{ ai_gen_id }}">
+                {% if block.settings.tier_1_meta != blank %}
+                  <p class="ai-pricing-tier-meta-{{ ai_gen_id }}">{{ block.settings.tier_1_meta }}</p>
+                {% endif %}
+                {% if block.settings.tier_1_badge != blank %}
+                  <p class="ai-pricing-tier-badge-{{ ai_gen_id }}">{{ block.settings.tier_1_badge }}</p>
+                {% endif %}
+              </div>
+            </div>
+          </div>
+
+          <div class="ai-pricing-tier-wrapper-{{ ai_gen_id }}">
+            <div class="ai-pricing-timeline-node-{{ ai_gen_id }} inactive"></div>
+            <div class="ai-pricing-tier-card-{{ ai_gen_id }}">
+              {% if block.settings.tier_2_label != blank %}
+                <p class="ai-pricing-tier-label-{{ ai_gen_id }}">{{ block.settings.tier_2_label }}</p>
+              {% endif %}
+              {% if block.settings.tier_2_title != blank %}
+                <h3 class="ai-pricing-tier-title-{{ ai_gen_id }}">{{ block.settings.tier_2_title }}</h3>
+              {% endif %}
+              {% if block.settings.tier_2_features != blank %}
+                <p class="ai-pricing-tier-features-{{ ai_gen_id }}">{{ block.settings.tier_2_features }}</p>
+              {% endif %}
+              <div class="ai-pricing-tier-footer-{{ ai_gen_id }}">
+                {% if block.settings.tier_2_meta != blank %}
+                  <p class="ai-pricing-tier-meta-{{ ai_gen_id }}">{{ block.settings.tier_2_meta }}</p>
+                {% endif %}
+                {% if block.settings.tier_2_badge != blank %}
+                  <p class="ai-pricing-tier-badge-{{ ai_gen_id }}">{{ block.settings.tier_2_badge }}</p>
+                {% endif %}
+              </div>
+            </div>
+          </div>
+
+          <div class="ai-pricing-tier-wrapper-{{ ai_gen_id }}">
+            <div class="ai-pricing-timeline-node-{{ ai_gen_id }} inactive"></div>
+            <div class="ai-pricing-tier-card-{{ ai_gen_id }}">
+              {% if block.settings.tier_3_label != blank %}
+                <p class="ai-pricing-tier-label-{{ ai_gen_id }}">{{ block.settings.tier_3_label }}</p>
+              {% endif %}
+              {% if block.settings.tier_3_title != blank %}
+                <h3 class="ai-pricing-tier-title-{{ ai_gen_id }}">{{ block.settings.tier_3_title }}</h3>
+              {% endif %}
+              {% if block.settings.tier_3_features != blank %}
+                <p class="ai-pricing-tier-features-{{ ai_gen_id }}">{{ block.settings.tier_3_features }}</p>
+              {% endif %}
+              <div class="ai-pricing-tier-footer-{{ ai_gen_id }}">
+                {% if block.settings.tier_3_meta != blank %}
+                  <p class="ai-pricing-tier-meta-{{ ai_gen_id }}">{{ block.settings.tier_3_meta }}</p>
+                {% endif %}
+                {% if block.settings.tier_3_badge != blank %}
+                  <p class="ai-pricing-tier-badge-{{ ai_gen_id }}">{{ block.settings.tier_3_badge }}</p>
+                {% endif %}
+              </div>
+            </div>
+          </div>
+
+          {% if block.settings.end_capsule_text != blank %}
+            <div class="ai-pricing-timeline-end-{{ ai_gen_id }}">
+              <div class="ai-pricing-timeline-end-spacer-{{ ai_gen_id }}"></div>
+              <div class="ai-pricing-end-capsule-{{ ai_gen_id }}">
+                <div class="ai-pricing-end-dot-{{ ai_gen_id }}"></div>
+                <p class="ai-pricing-end-text-{{ ai_gen_id }}">{{ block.settings.end_capsule_text }}</p>
+              </div>
+            </div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</pricing-section-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class PricingSection{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+      }
+
+      connectedCallback() {
+        this.init();
+      }
+
+      init() {
+        const timelineLine = this.querySelector('.ai-pricing-timeline-line-{{ ai_gen_id }}');
+        if (!timelineLine) return;
+
+        const cards = this.querySelectorAll('.ai-pricing-tier-card-{{ ai_gen_id }}');
+        if (cards.length === 0) return;
+
+        const lastCard = cards[cards.length - 1];
+        const lastCardRect = lastCard.getBoundingClientRect();
+        const timelineRect = timelineLine.getBoundingClientRect();
+        
+        const newHeight = lastCardRect.bottom - timelineRect.top;
+        if (newHeight > 0) {
+          timelineLine.style.height = newHeight + 'px';
+        }
+      }
+    }
+
+    customElements.define('pricing-section-{{ ai_gen_id }}', PricingSection{{ ai_gen_id }});
+  })();
+</script>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "Transparent pricing",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Section layout"
+    },
+    {
+      "type": "range",
+      "id": "section_padding_mobile",
+      "label": "Padding (mobile)",
+      "min": 20,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "section_padding_desktop",
+      "label": "Padding (desktop)",
+      "min": 40,
+      "max": 200,
+      "step": 10,
+      "unit": "px",
+      "default": 80
+    },
+    {
+      "type": "range",
+      "id": "column_gap_mobile",
+      "label": "Column gap (mobile)",
+      "min": 20,
+      "max": 80,
+      "step": 5,
+      "unit": "px",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "column_gap_desktop",
+      "label": "Column gap (desktop)",
+      "min": 40,
+      "max": 120,
+      "step": 10,
+      "unit": "px",
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "desktop_width_percent",
+      "label": "Desktop width",
+      "min": 50,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "default": 100
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "background_color_start",
+      "label": "Background gradient start",
+      "default": "#061B33"
+    },
+    {
+      "type": "color",
+      "id": "background_color_end",
+      "label": "Background gradient end",
+      "default": "#0B2240"
+    },
+    {
+      "type": "header",
+      "content": "Eyebrow tag"
+    },
+    {
+      "type": "text",
+      "id": "eyebrow_text",
+      "label": "Text",
+      "default": "PRICING & IMPLEMENTATION"
+    },
+    {
+      "type": "color",
+      "id": "eyebrow_background",
+      "label": "Background",
+      "default": "#1a3d2e"
+    },
+    {
+      "type": "color",
+      "id": "eyebrow_text_color",
+      "label": "Text color",
+      "default": "#a0b842"
+    },
+    {
+      "type": "range",
+      "id": "eyebrow_font_size",
+      "label": "Font size",
+      "min": 10,
+      "max": 16,
+      "step": 1,
+      "unit": "px",
+      "default": 11
+    },
+    {
+      "type": "range",
+      "id": "eyebrow_padding_vertical",
+      "label": "Padding vertical",
+      "min": 4,
+      "max": 16,
+      "step": 2,
+      "unit": "px",
+      "default": 6
+    },
+    {
+      "type": "range",
+      "id": "eyebrow_padding_horizontal",
+      "label": "Padding horizontal",
+      "min": 8,
+      "max": 24,
+      "step": 2,
+      "unit": "px",
+      "default": 12
+    },
+    {
+      "type": "range",
+      "id": "eyebrow_border_radius",
+      "label": "Border radius",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "default": 20
+    },
+    {
+      "type": "header",
+      "content": "Heading"
+    },
+    {
+      "type": "textarea",
+      "id": "heading",
+      "label": "Heading text",
+      "default": "Transparent Pricing.\nPredictable Costs."
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "heading_font_size_mobile",
+      "label": "Font size (mobile)",
+      "min": 24,
+      "max": 60,
+      "step": 2,
+      "unit": "px",
+      "default": 32
+    },
+    {
+      "type": "range",
+      "id": "heading_font_size_desktop",
+      "label": "Font size (desktop)",
+      "min": 32,
+      "max": 80,
+      "step": 2,
+      "unit": "px",
+      "default": 48
+    },
+    {
+      "type": "header",
+      "content": "Description"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description text",
+      "default": "Flow is priced as a per-store monthly subscription with a one-time implementation fee. No hidden costs, no usage caps. Every store gets the full platform."
+    },
+    {
+      "type": "color",
+      "id": "description_color",
+      "label": "Color",
+      "default": "#8fa3b8"
+    },
+    {
+      "type": "range",
+      "id": "description_font_size_mobile",
+      "label": "Font size (mobile)",
+      "min": 14,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "description_font_size_desktop",
+      "label": "Font size (desktop)",
+      "min": 16,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "default": 18
+    },
+    {
+      "type": "header",
+      "content": "Left column spacing"
+    },
+    {
+      "type": "range",
+      "id": "left_content_gap",
+      "label": "Content gap",
+      "min": 16,
+      "max": 48,
+      "step": 4,
+      "unit": "px",
+      "default": 24
+    },
+    {
+      "type": "range",
+      "id": "pillars_margin_top",
+      "label": "Pillars top margin",
+      "min": 0,
+      "max": 60,
+      "step": 5,
+      "unit": "px",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "pillars_gap",
+      "label": "Pillars gap",
+      "min": 16,
+      "max": 40,
+      "step": 4,
+      "unit": "px",
+      "default": 24
+    },
+    {
+      "type": "header",
+      "content": "Pillar 1"
+    },
+    {
+      "type": "text",
+      "id": "pillar_1_title",
+      "label": "Title",
+      "default": "Per-store subscription"
+    },
+    {
+      "type": "text",
+      "id": "pillar_1_subtitle",
+      "label": "Subtitle",
+      "default": "Monthly · billed annually"
+    },
+    {
+      "type": "header",
+      "content": "Pillar 2"
+    },
+    {
+      "type": "text",
+      "id": "pillar_2_title",
+      "label": "Title",
+      "default": "One-time setup fee"
+    },
+    {
+      "type": "text",
+      "id": "pillar_2_subtitle",
+      "label": "Subtitle",
+      "default": "Hardware Included"
+    },
+    {
+      "type": "header",
+      "content": "Pillar 3"
+    },
+    {
+      "type": "text",
+      "id": "pillar_3_title",
+      "label": "Title",
+      "default": "Volume discounts"
+    },
+    {
+      "type": "text",
+      "id": "pillar_3_subtitle",
+      "label": "Subtitle",
+      "default": "From 10 stores"
+    },
+    {
+      "type": "header",
+      "content": "Pillar style"
+    },
+    {
+      "type": "color",
+      "id": "pillar_dot_color",
+      "label": "Dot color",
+      "default": "#a0b842"
+    },
+    {
+      "type": "range",
+      "id": "pillar_dot_size",
+      "label": "Dot size",
+      "min": 6,
+      "max": 16,
+      "step": 2,
+      "unit": "px",
+      "default": 8
+    },
+    {
+      "type": "range",
+      "id": "pillar_dot_gap",
+      "label": "Dot gap",
+      "min": 8,
+      "max": 20,
+      "step": 2,
+      "unit": "px",
+      "default": 12
+    },
+    {
+      "type": "color",
+      "id": "pillar_title_color",
+      "label": "Title color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "pillar_title_font_size",
+      "label": "Title font size",
+      "min": 14,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "color",
+      "id": "pillar_subtitle_color",
+      "label": "Subtitle color",
+      "default": "#6b7f94"
+    },
+    {
+      "type": "range",
+      "id": "pillar_subtitle_font_size",
+      "label": "Subtitle font size",
+      "min": 12,
+      "max": 16,
+      "step": 1,
+      "unit": "px",
+      "default": 14
+    },
+    {
+      "type": "header",
+      "content": "Timeline style"
+    },
+    {
+      "type": "color",
+      "id": "timeline_line_color",
+      "label": "Line color",
+      "default": "#1e3a52"
+    },
+    {
+      "type": "range",
+      "id": "timeline_line_width",
+      "label": "Line width",
+      "min": 1,
+      "max": 4,
+      "step": 1,
+      "unit": "px",
+      "default": 2
+    },
+    {
+      "type": "range",
+      "id": "timeline_line_offset",
+      "label": "Line offset",
+      "min": 8,
+      "max": 24,
+      "step": 2,
+      "unit": "px",
+      "default": 14
+    },
+    {
+      "type": "range",
+      "id": "timeline_node_size",
+      "label": "Node size",
+      "min": 20,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "default": 28
+    },
+    {
+      "type": "range",
+      "id": "timeline_node_inner_size",
+      "label": "Node inner size",
+      "min": 6,
+      "max": 16,
+      "step": 2,
+      "unit": "px",
+      "default": 10
+    },
+    {
+      "type": "range",
+      "id": "timeline_node_border_width",
+      "label": "Node border width",
+      "min": 1,
+      "max": 4,
+      "step": 1,
+      "unit": "px",
+      "default": 2
+    },
+    {
+      "type": "color",
+      "id": "timeline_node_active_color",
+      "label": "Active node color",
+      "default": "#a0b842"
+    },
+    {
+      "type": "color",
+      "id": "timeline_node_inactive_color",
+      "label": "Inactive node color",
+      "default": "#2a4560"
+    },
+    {
+      "type": "range",
+      "id": "timeline_card_gap",
+      "label": "Card gap",
+      "min": 12,
+      "max": 32,
+      "step": 4,
+      "unit": "px",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "timeline_card_offset",
+      "label": "Card offset from timeline",
+      "min": 12,
+      "max": 32,
+      "step": 4,
+      "unit": "px",
+      "default": 20
+    },
+    {
+      "type": "header",
+      "content": "Tier card style"
+    },
+    {
+      "type": "color",
+      "id": "card_background",
+      "label": "Background",
+      "default": "#0d2438"
+    },
+    {
+      "type": "color",
+      "id": "card_border_color",
+      "label": "Border color",
+      "default": "#1e3a52"
+    },
+    {
+      "type": "range",
+      "id": "card_border_width",
+      "label": "Border width",
+      "min": 1,
+      "max": 3,
+      "step": 1,
+      "unit": "px",
+      "default": 1
+    },
+    {
+      "type": "range",
+      "id": "card_border_radius",
+      "label": "Border radius",
+      "min": 0,
+      "max": 24,
+      "step": 2,
+      "unit": "px",
+      "default": 12
+    },
+    {
+      "type": "range",
+      "id": "card_padding",
+      "label": "Padding",
+      "min": 16,
+      "max": 40,
+      "step": 4,
+      "unit": "px",
+      "default": 24
+    },
+    {
+      "type": "range",
+      "id": "card_content_gap",
+      "label": "Content gap",
+      "min": 8,
+      "max": 24,
+      "step": 2,
+      "unit": "px",
+      "default": 12
+    },
+    {
+      "type": "range",
+      "id": "card_footer_padding_top",
+      "label": "Footer padding top",
+      "min": 8,
+      "max": 24,
+      "step": 2,
+      "unit": "px",
+      "default": 12
+    },
+    {
+      "type": "header",
+      "content": "Tier 1 (Layer 01)"
+    },
+    {
+      "type": "text",
+      "id": "tier_1_label",
+      "label": "Label",
+      "default": "LAYER 01"
+    },
+    {
+      "type": "text",
+      "id": "tier_1_title",
+      "label": "Title",
+      "default": "Platform Subscription"
+    },
+    {
+      "type": "text",
+      "id": "tier_1_features",
+      "label": "Features",
+      "default": "Full analytics · Decision layer · Mobile ops · API"
+    },
+    {
+      "type": "text",
+      "id": "tier_1_meta",
+      "label": "Meta text",
+      "default": "Per store · monthly"
+    },
+    {
+      "type": "text",
+      "id": "tier_1_badge",
+      "label": "Badge",
+      "default": "EPL"
+    },
+    {
+      "type": "header",
+      "content": "Tier 2 (Layer 02)"
+    },
+    {
+      "type": "text",
+      "id": "tier_2_label",
+      "label": "Label",
+      "default": "LAYER 02"
+    },
+    {
+      "type": "text",
+      "id": "tier_2_title",
+      "label": "Title",
+      "default": "Implementation Fee"
+    },
+    {
+      "type": "text",
+      "id": "tier_2_features",
+      "label": "Features",
+      "default": "Hardware · Install · Config · Training"
+    },
+    {
+      "type": "text",
+      "id": "tier_2_meta",
+      "label": "Meta text",
+      "default": "One-time · per store"
+    },
+    {
+      "type": "text",
+      "id": "tier_2_badge",
+      "label": "Badge",
+      "default": "MIL"
+    },
+    {
+      "type": "header",
+      "content": "Tier 3 (Layer 03)"
+    },
+    {
+      "type": "text",
+      "id": "tier_3_label",
+      "label": "Label",
+      "default": "LAYER 03"
+    },
+    {
+      "type": "text",
+      "id": "tier_3_title",
+      "label": "Title",
+      "default": "Hardware (when needed)"
+    },
+    {
+      "type": "text",
+      "id": "tier_3_features",
+      "label": "Features",
+      "default": "Ceiling-mount AI cameras · Edge devices"
+    },
+    {
+      "type": "text",
+      "id": "tier_3_meta",
+      "label": "Meta text",
+      "default": "Included in impl. fee"
+    },
+    {
+      "type": "text",
+      "id": "tier_3_badge",
+      "label": "Badge",
+      "default": "HW"
+    },
+    {
+      "type": "header",
+      "content": "Tier text style"
+    },
+    {
+      "type": "color",
+      "id": "tier_label_color",
+      "label": "Label color",
+      "default": "#4a5f75"
+    },
+    {
+      "type": "range",
+      "id": "tier_label_font_size",
+      "label": "Label font size",
+      "min": 10,
+      "max": 14,
+      "step": 1,
+      "unit": "px",
+      "default": 11
+    },
+    {
+      "type": "color",
+      "id": "tier_title_color",
+      "label": "Title color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "tier_title_font_size",
+      "label": "Title font size",
+      "min": 16,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "default": 18
+    },
+    {
+      "type": "color",
+      "id": "tier_features_color",
+      "label": "Features color",
+      "default": "#6b8199"
+    },
+    {
+      "type": "range",
+      "id": "tier_features_font_size",
+      "label": "Features font size",
+      "min": 12,
+      "max": 16,
+      "step": 1,
+      "unit": "px",
+      "default": 14
+    },
+    {
+      "type": "color",
+      "id": "tier_meta_color",
+      "label": "Meta color",
+      "default": "#4a5f75"
+    },
+    {
+      "type": "range",
+      "id": "tier_meta_font_size",
+      "label": "Meta font size",
+      "min": 11,
+      "max": 14,
+      "step": 1,
+      "unit": "px",
+      "default": 12
+    },
+    {
+      "type": "color",
+      "id": "tier_badge_color",
+      "label": "Badge color",
+      "default": "#a0b842"
+    },
+    {
+      "type": "range",
+      "id": "tier_badge_font_size",
+      "label": "Badge font size",
+      "min": 11,
+      "max": 16,
+      "step": 1,
+      "unit": "px",
+      "default": 12
+    },
+    {
+      "type": "header",
+      "content": "Timeline end capsule"
+    },
+    {
+      "type": "text",
+      "id": "end_capsule_text",
+      "label": "Text",
+      "default": "Live store data → structured action"
+    },
+    {
+      "type": "color",
+      "id": "end_capsule_background",
+      "label": "Background",
+      "default": "#0d2438"
+    },
+    {
+      "type": "color",
+      "id": "end_capsule_text_color",
+      "label": "Text color",
+      "default": "#a0b842"
+    },
+    {
+      "type": "color",
+      "id": "end_capsule_dot_color",
+      "label": "Dot color",
+      "default": "#a0b842"
+    },
+    {
+      "type": "range",
+      "id": "end_capsule_font_size",
+      "label": "Font size",
+      "min": 12,
+      "max": 16,
+      "step": 1,
+      "unit": "px",
+      "default": 14
+    },
+    {
+      "type": "range",
+      "id": "end_capsule_dot_size",
+      "label": "Dot size",
+      "min": 6,
+      "max": 12,
+      "step": 2,
+      "unit": "px",
+      "default": 8
+    },
+    {
+      "type": "range",
+      "id": "end_capsule_gap",
+      "label": "Gap",
+      "min": 6,
+      "max": 16,
+      "step": 2,
+      "unit": "px",
+      "default": 10
+    },
+    {
+      "type": "range",
+      "id": "end_capsule_padding_vertical",
+      "label": "Padding vertical",
+      "min": 6,
+      "max": 16,
+      "step": 2,
+      "unit": "px",
+      "default": 10
+    },
+    {
+      "type": "range",
+      "id": "end_capsule_padding_horizontal",
+      "label": "Padding horizontal",
+      "min": 12,
+      "max": 28,
+      "step": 2,
+      "unit": "px",
+      "default": 18
+    },
+    {
+      "type": "range",
+      "id": "end_capsule_border_radius",
+      "label": "Border radius",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "timeline_end_margin_top",
+      "label": "Margin top",
+      "min": 12,
+      "max": 32,
+      "step": 4,
+      "unit": "px",
+      "default": 20
+    }
+  ],
+  "presets": [
+    {
+      "name": "Transparent pricing"
+    }
+  ]
+}
 {% endschema %}
