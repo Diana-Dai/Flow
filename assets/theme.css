@@ -7349,7 +7349,7 @@ shopify-account::part(signed-out-avatar) {
 }
 .section-full{
   padding-inline-end:0;
-  padding-block-start:0;
+  padding-inline-start:0;
 }
 
 @media screen and (min-width: 1000px) {
