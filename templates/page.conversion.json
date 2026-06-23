@@ -38,11 +38,6 @@
       "block_order": [
         "image_UFxtUk"
       ],
-      "custom_css": [
-        ".media-with-text__media > * {object-fit: contain;}",
-        ".h1 {font-size: var(--text-h1);}",
-        ".media-with-text__content {padding: 0;}"
-      ],
       "name": "Media with text",
       "settings": {
         "full_width": false,
@@ -179,7 +174,7 @@
         "full_width": true,
         "remove_vertical_spacing": false,
         "remove_horizontal_spacing": false,
-        "background": "#FFFFFF",
+        "background": "",
         "background_gradient": "",
         "text_color": ""
       }
