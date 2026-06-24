@@ -1,4 +1,10 @@
-{%- if link.links.size > 0 -%}
+{%- assign use_platform_split_layout = false -%}
+
+{%- if mega_menu_block.settings.layout == 'platform_split' -%}
+  {%- assign use_platform_split_layout = true -%}
+{%- endif -%}
+
+{%- if link.links.size > 0 and use_platform_split_layout == false -%}
   <style>
     @media screen and (min-width: 1150px) {
       #mega-menu-{{ mega_menu_block.id }} {
@@ -39,8 +45,52 @@
   </style>
 {%- endif -%}
 
-<div id="mega-menu-{{ mega_menu_block.id }}" class="mega-menu {% if link.links.size == 0 %}justify-center{% endif %}">
-  {%- if link.links.size > 0 -%}
+<div id="mega-menu-{{ mega_menu_block.id }}" class="mega-menu {% if link.links.size == 0 %}justify-center{% endif %} {% if use_platform_split_layout %}mega-menu--platform{% endif %}">
+  {%- if use_platform_split_layout -%}
+    <div class="mega-menu-platform__content v-stack gap-8">
+      <p class="mega-menu-platform__label text-xs uppercase text-subdued">{{ link.title }}</p>
+
+      <ul class="mega-menu-platform__list v-stack gap-2" role="list">
+        {%- for sub_link in link.links -%}
+          {%- assign sub_link_description = '' -%}
+
+          {%- if sub_link.links.size > 0 -%}
+            {%- assign sub_link_description = sub_link.links.first.title -%}
+          {%- endif -%}
+
+          <li>
+            <a href="{{ sub_link.url }}" class="mega-menu-platform__item" {% if sub_link.current %}aria-current="page"{% endif %}>
+
+
+              <span class="mega-menu-platform__item-text v-stack">
+                <span class="h5">{{ sub_link.title }}</span>
+
+                {%- if sub_link_description != '' -%}
+                  <span class="text-subdued">{{ sub_link_description }}</span>
+                {%- endif -%}
+              </span>
+            </a>
+          </li>
+        {%- endfor -%}
+      </ul>
+    </div>
+
+    <aside class="mega-menu-platform__panel" style="--platform-panel-background: {{ mega_menu_block.settings.platform_panel_background | default: '#0B2A4D' }}; --platform-panel-text: {{ mega_menu_block.settings.platform_panel_text_color | default: '#D6DEE7' }}; --platform-panel-accent: {{ mega_menu_block.settings.platform_panel_accent_color | default: '#9EC438' }};">
+      {%- if mega_menu_block.settings.platform_badge != blank -%}
+        <p class="mega-menu-platform__badge">{{ mega_menu_block.settings.platform_badge }}</p>
+      {%- endif -%}
+
+      {%- if mega_menu_block.settings.platform_heading != blank -%}
+        <p class="h4 mega-menu-platform__heading">{{ mega_menu_block.settings.platform_heading }}</p>
+      {%- endif -%}
+
+      {%- if mega_menu_block.settings.platform_link_label != blank -%}
+        <a href="{{ mega_menu_block.settings.platform_link | default: link.url }}" class="mega-menu-platform__cta text-with-icon gap-2.5 h5">
+          {{ mega_menu_block.settings.platform_link_label }} {%- render 'icon' with 'chevron-right', width: 9, height: 9 -%}
+        </a>
+      {%- endif -%}
+    </aside>
+  {%- elsif link.links.size > 0 -%}
     <ul class="mega-menu__nav" role="list">
       {%- for sub_link in link.links -%}
         <li class="v-stack gap-4 justify-items-start">
@@ -66,6 +116,7 @@
     </ul>
   {%- endif -%}
 
+  {%- unless use_platform_split_layout -%}
   {% liquid
     # To maximize space, we force a carousel mode depending on the actual content
 
@@ -110,4 +161,5 @@
 
     {%- render 'navigation-promo-block', navigation_layout: navigation_layout, mega_menu_block: mega_menu_block, link_col: link.links.size, is_navigation_drawer: false, hide_promo_until: use_carousel_fallback_until -%}
   {%- endif -%}
+  {%- endunless -%}
 </div>
