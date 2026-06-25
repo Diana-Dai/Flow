@@ -1855,6 +1855,7 @@
         "item_AK6yhH",
         "item_xWP8GR"
       ],
+      "disabled": true,
       "custom_css": [
         "{padding-top: 90px;}"
       ],
