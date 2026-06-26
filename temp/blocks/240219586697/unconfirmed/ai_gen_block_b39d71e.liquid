@@ -1,6 +1,428 @@
+{% doc %}
+  @prompt
+    Act as an expert Shopify Liquid and CSS developer. Write the complete, production-ready code for a custom Shopify theme section that replicates the layout of image_b95d21.png 100% with exact visual precision, while modifying the initials badge to be a dedicated image picker for the CEO's profile photo.
+    
+    ### Section Configuration & Schema Requirements:
+    1. Wrap the entire code in a fully customizable Shopify section.
+    2. Include a settings schema so the merchant can customize:
+       - CEO Profile Image picker (this replaces the "CP" initials block seen in image_b95d21.png).
+       - Kicker/Top small text (default: "FROM THE CEO").
+       - Name heading text (default: "Chad Peshke").
+       - Biography/Description paragraph text (default: "Founder & CEO of Flow. Writing about retail operations, execution infrastructure, and building software for the physical world.").
+       - Social Media Links: Text inputs for LinkedIn URL and Twitter/X URL. If a URL setting is empty, its respective icon button should hide dynamically.
+    3. Include standard `{% schema %}` with presets so it can be added directly via the Shopify Theme Editor.
+    
+    ### Visual & Style Specifications (1:1 Replication):
+    1. **Layout Structure:**
+       - A clean, full-width section with a solid white background (`#ffffff`).
+       - Inner content container centered with appropriate horizontal padding, using a flex row layout on desktop to align the profile block and text info side-by-side. 
+       - Ensure a comfortable gap between the avatar container and the text column exactly matching the spatial proportion in image_b95d21.png. On mobile, elements should stack vertically with clean alignment.
+    
+    2. **Left Column (CEO Image Block - Modified Structure):**
+       - The avatar container must preserve the identical structural framing of the dark blue badge in image_b95d21.png: a distinct squircle / heavily rounded square shape (`border-radius: 24px` or `20%`), with a sharp aspect ratio of 1:1 (fixed width and height, approx. 110px to 120px on desktop).
+       - Instead of the placeholder initials, this container must display a high-resolution image uploaded via the Shopify image picker. The image must use `object-fit: cover` and `width: 100%; height: 100%;` to flawlessly fill the squircle frame without distortion.
+    
+    3. **Right Column (Author Information Stack):**
+       - **Kicker Text:** Small, uppercase, semi-bold font in a muted slate/blue-gray color (`#64748b`), reading "FROM THE CEO".
+       - **Name Heading:** Large, prominent, heavy bold typography using a deep dark navy blue (`#0a3263`), positioned with minimal top margin directly under the kicker text.
+       - **Biography Text:** A clean, left-aligned paragraph using a neutral, highly readable slate-gray font color (`#475569`). Maintain comfortable line-height and letter-spacing to match the clean, professional editorial feel of the reference image.
+       - **Social Icon Buttons:** Positioned horizontally in a row beneath the biography text with a slight top margin. Each icon (LinkedIn and Twitter) is enclosed inside a small, subtly rounded square button border (`border: 1px solid #e2e8f0`, `border-radius: 8px`). The background of the buttons is transparent or white, and the icons inside are a clean, thin, muted gray outline.
+    
+    Output only the clean, copy-pasteable code containing the HTML structure, embedded CSS (or Tailwind utility classes), and the Shopify Liquid schema., add the social media icons
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-ceo-profile-{{ ai_gen_id }} {
+    display: block;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 60px 20px;
+  }
+
+  .ai-ceo-profile-container-{{ ai_gen_id }} {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-start;
+    gap: 32px;
+  }
+
+  .ai-ceo-profile-avatar-wrapper-{{ ai_gen_id }} {
+    flex-shrink: 0;
+    width: 112px;
+    height: 112px;
+    border-radius: 24px;
+    overflow: hidden;
+    background-color: #0a3263;
+    position: relative;
+  }
+
+  .ai-ceo-profile-avatar-{{ ai_gen_id }} {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .ai-ceo-profile-avatar-placeholder-{{ ai_gen_id }} {
+    width: 100%;
+    height: 100%;
+    background-color: #0a3263;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+
+  .ai-ceo-profile-content-{{ ai_gen_id }} {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .ai-ceo-profile-kicker-{{ ai_gen_id }} {
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #64748b;
+    letter-spacing: 0.8px;
+    margin: 0 0 8px 0;
+  }
+
+  .ai-ceo-profile-name-{{ ai_gen_id }} {
+    font-size: 32px;
+    font-weight: 700;
+    color: #0a3263;
+    margin: 0 0 16px 0;
+    line-height: 1.2;
+  }
+
+  .ai-ceo-profile-bio-{{ ai_gen_id }} {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #475569;
+    margin: 0 0 24px 0;
+  }
+
+  .ai-ceo-profile-social-{{ ai_gen_id }} {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .ai-ceo-profile-social-link-{{ ai_gen_id }} {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    background-color: transparent;
+    transition: all 0.2s ease;
+    text-decoration: none;
+  }
+
+  .ai-ceo-profile-social-link-{{ ai_gen_id }}:hover {
+    background-color: #f8fafc;
+    border-color: #cbd5e1;
+  }
+
+  .ai-ceo-profile-social-link-{{ ai_gen_id }} svg {
+    width: 20px;
+    height: 20px;
+    stroke: #64748b;
+    fill: none;
+    stroke-width: 1.5;
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-ceo-profile-{{ ai_gen_id }} {
+      padding: 40px 16px;
+    }
+
+    .ai-ceo-profile-container-{{ ai_gen_id }} {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 24px;
+    }
+
+    .ai-ceo-profile-avatar-wrapper-{{ ai_gen_id }} {
+      width: 96px;
+      height: 96px;
+      border-radius: 20px;
+    }
+
+    .ai-ceo-profile-name-{{ ai_gen_id }} {
+      font-size: 28px;
+    }
+
+    .ai-ceo-profile-bio-{{ ai_gen_id }} {
+      font-size: 15px;
+    }
+
+    .ai-ceo-profile-social-{{ ai_gen_id }} {
+      justify-content: center;
+    }
+  }
+{% endstyle %}
+
+<ceo-profile-{{ ai_gen_id }} class="ai-ceo-profile-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-ceo-profile-container-{{ ai_gen_id }}">
+    <div class="ai-ceo-profile-avatar-wrapper-{{ ai_gen_id }}">
+      {% if block.settings.ceo_image %}
+        <img
+          src="{{ block.settings.ceo_image | image_url: width: 224 }}"
+          alt="{{ block.settings.ceo_name | escape }}"
+          class="ai-ceo-profile-avatar-{{ ai_gen_id }}"
+          width="112"
+          height="112"
+          loading="lazy"
+        >
+      {% else %}
+        <div class="ai-ceo-profile-avatar-placeholder-{{ ai_gen_id }}">
+          CP
+        </div>
+      {% endif %}
+    </div>
+
+    <div class="ai-ceo-profile-content-{{ ai_gen_id }}">
+      {% if block.settings.kicker_text != blank %}
+        <p class="ai-ceo-profile-kicker-{{ ai_gen_id }}">{{ block.settings.kicker_text }}</p>
+      {% endif %}
+
+      {% if block.settings.ceo_name != blank %}
+        <h2 class="ai-ceo-profile-name-{{ ai_gen_id }}">{{ block.settings.ceo_name }}</h2>
+      {% endif %}
+
+      {% if block.settings.bio_text != blank %}
+        <p class="ai-ceo-profile-bio-{{ ai_gen_id }}">{{ block.settings.bio_text }}</p>
+      {% endif %}
+
+      <div class="ai-ceo-profile-social-{{ ai_gen_id }}">
+        {% if block.settings.linkedin_url != blank %}
+          <a
+            href="{{ block.settings.linkedin_url }}"
+            class="ai-ceo-profile-social-link-{{ ai_gen_id }}"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+              <rect x="2" y="9" width="4" height="12"></rect>
+              <circle cx="4" cy="4" r="2"></circle>
+            </svg>
+          </a>
+        {% endif %}
+
+        {% if block.settings.twitter_url != blank %}
+          <a
+            href="{{ block.settings.twitter_url }}"
+            class="ai-ceo-profile-social-link-{{ ai_gen_id }}"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Twitter"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 4l11.733 16h4.267l-11.733 -16z"></path>
+              <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"></path>
+            </svg>
+          </a>
+        {% endif %}
+
+        {% if block.settings.instagram_url != blank %}
+          <a
+            href="{{ block.settings.instagram_url }}"
+            class="ai-ceo-profile-social-link-{{ ai_gen_id }}"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
+          </a>
+        {% endif %}
+
+        {% if block.settings.facebook_url != blank %}
+          <a
+            href="{{ block.settings.facebook_url }}"
+            class="ai-ceo-profile-social-link-{{ ai_gen_id }}"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Facebook"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+            </svg>
+          </a>
+        {% endif %}
+
+        {% if block.settings.youtube_url != blank %}
+          <a
+            href="{{ block.settings.youtube_url }}"
+            class="ai-ceo-profile-social-link-{{ ai_gen_id }}"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="YouTube"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path>
+              <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
+            </svg>
+          </a>
+        {% endif %}
+
+        {% if block.settings.github_url != blank %}
+          <a
+            href="{{ block.settings.github_url }}"
+            class="ai-ceo-profile-social-link-{{ ai_gen_id }}"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+            </svg>
+          </a>
+        {% endif %}
+
+        {% if block.settings.tiktok_url != blank %}
+          <a
+            href="{{ block.settings.tiktok_url }}"
+            class="ai-ceo-profile-social-link-{{ ai_gen_id }}"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="TikTok"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"></path>
+            </svg>
+          </a>
+        {% endif %}
+
+        {% if block.settings.email != blank %}
+          <a
+            href="mailto:{{ block.settings.email }}"
+            class="ai-ceo-profile-social-link-{{ ai_gen_id }}"
+            aria-label="Email"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+          </a>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</ceo-profile-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class CeoProfile{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+      }
+    }
+
+    customElements.define('ceo-profile-{{ ai_gen_id }}', CeoProfile{{ ai_gen_id }});
+  })();
+</script>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "CEO profile",
+  "tag": null,
+  "settings": [
+    {
+      "type": "header",
+      "content": "CEO image"
+    },
+    {
+      "type": "image_picker",
+      "id": "ceo_image",
+      "label": "Profile photo"
+    },
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "type": "text",
+      "id": "kicker_text",
+      "label": "Kicker text",
+      "default": "FROM THE CEO"
+    },
+    {
+      "type": "text",
+      "id": "ceo_name",
+      "label": "Name",
+      "default": "Chad Peshke"
+    },
+    {
+      "type": "textarea",
+      "id": "bio_text",
+      "label": "Biography",
+      "default": "Founder & CEO of Flow. Writing about retail operations, execution infrastructure, and building software for the physical world."
+    },
+    {
+      "type": "header",
+      "content": "Social media"
+    },
+    {
+      "type": "url",
+      "id": "linkedin_url",
+      "label": "LinkedIn URL"
+    },
+    {
+      "type": "url",
+      "id": "twitter_url",
+      "label": "Twitter/X URL"
+    },
+    {
+      "type": "url",
+      "id": "instagram_url",
+      "label": "Instagram URL"
+    },
+    {
+      "type": "url",
+      "id": "facebook_url",
+      "label": "Facebook URL"
+    },
+    {
+      "type": "url",
+      "id": "youtube_url",
+      "label": "YouTube URL"
+    },
+    {
+      "type": "url",
+      "id": "github_url",
+      "label": "GitHub URL"
+    },
+    {
+      "type": "url",
+      "id": "tiktok_url",
+      "label": "TikTok URL"
+    },
+    {
+      "type": "text",
+      "id": "email",
+      "label": "Email address"
+    }
+  ],
+  "presets": [
+    {
+      "name": "CEO profile"
+    }
+  ]
+}
 {% endschema %}
