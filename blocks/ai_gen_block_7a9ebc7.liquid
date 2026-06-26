@@ -239,6 +239,8 @@
     </div>
 
     <article class="ai-blog-editorial-featured-card-{{ ai_gen_id }}">
+      <a href="{{ featured_article.url }}" class="ai-blog-editorial-cta-link-{{ ai_gen_id }}">
+
       <div class="ai-blog-editorial-meta-row-{{ ai_gen_id }}">
         {% if featured_article.tags.size > 0 %}
           <span class="ai-blog-editorial-tag-badge-{{ ai_gen_id }}">
@@ -277,7 +279,6 @@
         </div>
       {% endif %}
 
-      <a href="{{ featured_article.url }}" class="ai-blog-editorial-cta-link-{{ ai_gen_id }}">
         {{ block.settings.read_article_text }}
         <span>→</span>
       </a>
