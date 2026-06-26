@@ -15,6 +15,7 @@
         "ai_gen_block_b39d71e_MC3YHr": {
           "type": "ai_gen_block_b39d71e",
           "settings": {
+            "ceo_image": "shopify://shop_images/Chad2022.jpg",
             "kicker_text": "FROM THE CEO",
             "ceo_name": "Chad Peshke",
             "bio_text": "Founder & CEO of Flow. Writing about retail operations, execution infrastructure, and building software for the physical world.",
