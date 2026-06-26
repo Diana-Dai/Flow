@@ -1,6 +1,421 @@
+{% doc %}
+  @prompt
+    Act as an expert Shopify Liquid and CSS developer. Write the complete, production-ready code for a custom Shopify blog section that replicates this editorial layout 100% with exact visual precision, structural style, and layout logic.
+    
+    ### Section Configuration & Schema Requirements:
+    1. Wrap the entire code in a fully customizable Shopify section.
+    2. Include a settings schema so the merchant can select a specific blog category (`blog`).
+    3. The section logic must query the selected blog's articles automatically:
+       - The first, most recent article must render in the featured "LATEST" card layout.
+       - Subsequent articles must render sequentially in the "ALL ARTICLES" list layout below it.
+    4. Include customizable text fields for section titles:
+       - Featured block kicker text (default: "LATEST").
+       - Article list kicker text (default: "ALL ARTICLES").
+    5. Include standard `{% schema %}` with presets so it can be added directly via the Shopify Theme Editor.
+    
+    ### Visual & Layout Specifications (1:1 Replication):
+    1. **Global Settings:**
+       - Overall container has a crisp white background (`#ffffff`), centered layout with a clean max-width of 1200px and comfortable horizontal padding.
+       - Clean, modern sans-serif typography throughout with high contrast.
+    
+    2. **Top Block ("LATEST" Featured Card):**
+       - **Kicker Label:** "LATEST" text sits above the card in an uppercase, small, bold, widely spaced slate-gray font (`#64748b`).
+       - **Card Box:** A large, prominent full-width card with a white background, soft rounded corners (16px), and a very thin, distinct light-gray border (`1px solid #e2e8f0`). Inside padding is highly generous on all sides.
+       - **Meta Row:** A horizontal layout sitting at the top left of the card content:
+         - A rounded tag badge with a very soft blue/gray background (`#f1f5f9`), dark navy text, reading the article's tag/category (e.g., "Retail Operations").
+         - A small calendar icon followed by the publishing date (e.g., "May 28, 2026") in muted gray text.
+         - A small clock icon followed by the estimated reading time (e.g., "8 min read") in muted gray text.
+       - **Article Title:** A massive, extra-bold headline using a deep dark navy blue color (`#0a3263`) with minimal top margin.
+       - **Excerpt Text:** A clean, left-aligned summary paragraph below the title in a neutral, highly readable slate-gray font color (`#475569`) with comfortable line-height.
+       - **CTA Link:** A text link at the bottom left reading "Read article" in a dark navy blue, accompanied by a clean right-pointing arrow icon (`→`).
+    
+    3. **Bottom Block ("ALL ARTICLES" List):**
+       - **Kicker Label:** "ALL ARTICLES" text sits above the list in an uppercase, small, bold, widely spaced slate-gray font (`#64748b`), following generous vertical spacing after the featured card.
+       - **List Items:** Each subsequent article is rendered as a clean row. Each row is separated by an ultra-thin, full-width horizontal divider line (`1px solid #f1f5f9`).
+       - **Item Meta Header:** 
+         - Left side: A small rounded tag badge with a clean background matching the category, a short spacing gap, and then the publishing date text.
+         - Right side: A small clock icon, reading time text, and an inline right-pointing arrow icon (`→`) indicating clickability.
+       - **Item Title:** A prominent, crisp bold title in dark navy blue/black (`#0f172a`), sitting below the meta header row.
+       - **Item Excerpt Text:** A highly legible summary paragraph below the title using standard editorial line-height and a neutral slate-gray text color (`#475569`).
+    
+    Output only the clean, copy-pasteable code containing the HTML structure, embedded CSS (or Tailwind utility classes), and the Shopify Liquid schema.
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% if block.settings.blog != blank %}
+  {% assign blog_articles = block.settings.blog.articles %}
+  {% assign featured_article = blog_articles.first %}
+  {% assign remaining_articles = blog_articles | offset: 1 %}
+{% endif %}
+
+{% style %}
+  .ai-blog-editorial-{{ ai_gen_id }} {
+    width: {{ block.settings.desktop_width_percent }}%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+    background-color: #ffffff;
+  }
+
+  .ai-blog-editorial-kicker-{{ ai_gen_id }} {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #64748b;
+    margin-bottom: 16px;
+  }
+
+  .ai-blog-editorial-featured-card-{{ ai_gen_id }} {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 40px;
+    margin-bottom: 64px;
+  }
+
+  .ai-blog-editorial-meta-row-{{ ai_gen_id }} {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+
+  .ai-blog-editorial-tag-badge-{{ ai_gen_id }} {
+    display: inline-block;
+    padding: 6px 12px;
+    background-color: #f1f5f9;
+    color: #0a3263;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 6px;
+  }
+
+  .ai-blog-editorial-meta-item-{{ ai_gen_id }} {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+    color: #64748b;
+  }
+
+  .ai-blog-editorial-meta-icon-{{ ai_gen_id }} {
+    width: 16px;
+    height: 16px;
+    color: #94a3b8;
+  }
+
+  .ai-blog-editorial-featured-title-{{ ai_gen_id }} {
+    font-size: 42px;
+    font-weight: 800;
+    line-height: 1.2;
+    color: #0a3263;
+    margin: 0 0 20px 0;
+  }
+
+  .ai-blog-editorial-featured-excerpt-{{ ai_gen_id }} {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #475569;
+    margin-bottom: 24px;
+  }
+
+  .ai-blog-editorial-cta-link-{{ ai_gen_id }} {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #0a3263;
+    text-decoration: none;
+  }
+
+  .ai-blog-editorial-cta-link-{{ ai_gen_id }}:hover {
+    text-decoration: underline;
+  }
+
+  .ai-blog-editorial-list-{{ ai_gen_id }} {
+    margin-top: 48px;
+  }
+
+  .ai-blog-editorial-list-item-{{ ai_gen_id }} {
+    padding: 32px 0;
+    border-bottom: 1px solid #f1f5f9;
+  }
+
+  .ai-blog-editorial-list-item-{{ ai_gen_id }}:first-child {
+    padding-top: 0;
+  }
+
+  .ai-blog-editorial-list-meta-header-{{ ai_gen_id }} {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .ai-blog-editorial-list-meta-left-{{ ai_gen_id }} {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .ai-blog-editorial-list-meta-right-{{ ai_gen_id }} {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: #64748b;
+  }
+
+  .ai-blog-editorial-list-title-{{ ai_gen_id }} {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.3;
+    color: #0f172a;
+    margin: 0 0 12px 0;
+  }
+
+  .ai-blog-editorial-list-title-link-{{ ai_gen_id }} {
+    color: #0f172a;
+    text-decoration: none;
+  }
+
+  .ai-blog-editorial-list-title-link-{{ ai_gen_id }}:hover {
+    color: #0a3263;
+  }
+
+  .ai-blog-editorial-list-excerpt-{{ ai_gen_id }} {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #475569;
+    margin: 0;
+  }
+
+  .ai-blog-editorial-empty-state-{{ ai_gen_id }} {
+    text-align: center;
+    padding: 80px 20px;
+    color: #64748b;
+  }
+
+  .ai-blog-editorial-empty-state-{{ ai_gen_id }} svg {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 16px;
+    opacity: 0.3;
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-blog-editorial-{{ ai_gen_id }} {
+      padding: 0 16px;
+    }
+
+    .ai-blog-editorial-featured-card-{{ ai_gen_id }} {
+      padding: 24px;
+      margin-bottom: 48px;
+    }
+
+    .ai-blog-editorial-featured-title-{{ ai_gen_id }} {
+      font-size: 28px;
+    }
+
+    .ai-blog-editorial-list-meta-header-{{ ai_gen_id }} {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .ai-blog-editorial-list-title-{{ ai_gen_id }} {
+      font-size: 20px;
+    }
+  }
+{% endstyle %}
+
+<div class="ai-blog-editorial-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  {% if block.settings.blog != blank and featured_article != blank %}
+    <div class="ai-blog-editorial-kicker-{{ ai_gen_id }}">
+      {{ block.settings.featured_kicker }}
+    </div>
+
+    <article class="ai-blog-editorial-featured-card-{{ ai_gen_id }}">
+      <div class="ai-blog-editorial-meta-row-{{ ai_gen_id }}">
+        {% if featured_article.tags.size > 0 %}
+          <span class="ai-blog-editorial-tag-badge-{{ ai_gen_id }}">
+            {{ featured_article.tags.first }}
+          </span>
+        {% endif %}
+
+        <div class="ai-blog-editorial-meta-item-{{ ai_gen_id }}">
+          <svg class="ai-blog-editorial-meta-icon-{{ ai_gen_id }}" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+            <line x1="16" y1="2" x2="16" y2="6"></line>
+            <line x1="8" y1="2" x2="8" y2="6"></line>
+            <line x1="3" y1="10" x2="21" y2="10"></line>
+          </svg>
+          <span>{{ featured_article.published_at | date: '%B %d, %Y' }}</span>
+        </div>
+
+        {% if block.settings.show_reading_time %}
+          <div class="ai-blog-editorial-meta-item-{{ ai_gen_id }}">
+            <svg class="ai-blog-editorial-meta-icon-{{ ai_gen_id }}" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <circle cx="12" cy="12" r="10"></circle>
+              <polyline points="12 6 12 12 16 14"></polyline>
+            </svg>
+            <span>{{ block.settings.reading_time_minutes }} min read</span>
+          </div>
+        {% endif %}
+      </div>
+
+      <h2 class="ai-blog-editorial-featured-title-{{ ai_gen_id }}">
+        {{ featured_article.title }}
+      </h2>
+
+      {% if featured_article.excerpt != blank %}
+        <div class="ai-blog-editorial-featured-excerpt-{{ ai_gen_id }}">
+          {{ featured_article.excerpt | strip_html | truncatewords: 40 }}
+        </div>
+      {% endif %}
+
+      <a href="{{ featured_article.url }}" class="ai-blog-editorial-cta-link-{{ ai_gen_id }}">
+        {{ block.settings.read_article_text }}
+        <span>→</span>
+      </a>
+    </article>
+
+    {% if remaining_articles.size > 0 %}
+      <div class="ai-blog-editorial-kicker-{{ ai_gen_id }}">
+        {{ block.settings.all_articles_kicker }}
+      </div>
+
+      <div class="ai-blog-editorial-list-{{ ai_gen_id }}">
+        {% for article in remaining_articles %}
+          <article class="ai-blog-editorial-list-item-{{ ai_gen_id }}">
+            <div class="ai-blog-editorial-list-meta-header-{{ ai_gen_id }}">
+              <div class="ai-blog-editorial-list-meta-left-{{ ai_gen_id }}">
+                {% if article.tags.size > 0 %}
+                  <span class="ai-blog-editorial-tag-badge-{{ ai_gen_id }}">
+                    {{ article.tags.first }}
+                  </span>
+                {% endif %}
+                <span class="ai-blog-editorial-meta-item-{{ ai_gen_id }}">
+                  {{ article.published_at | date: '%B %d, %Y' }}
+                </span>
+              </div>
+
+              <div class="ai-blog-editorial-list-meta-right-{{ ai_gen_id }}">
+                {% if block.settings.show_reading_time %}
+                  <svg class="ai-blog-editorial-meta-icon-{{ ai_gen_id }}" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 16 14"></polyline>
+                  </svg>
+                  <span>{{ block.settings.reading_time_minutes }} min read</span>
+                {% endif %}
+                <span>→</span>
+              </div>
+            </div>
+
+            <h3 class="ai-blog-editorial-list-title-{{ ai_gen_id }}">
+              <a href="{{ article.url }}" class="ai-blog-editorial-list-title-link-{{ ai_gen_id }}">
+                {{ article.title }}
+              </a>
+            </h3>
+
+            {% if article.excerpt != blank %}
+              <p class="ai-blog-editorial-list-excerpt-{{ ai_gen_id }}">
+                {{ article.excerpt | strip_html | truncatewords: 30 }}
+              </p>
+            {% endif %}
+          </article>
+        {% endfor %}
+      </div>
+    {% endif %}
+  {% else %}
+    <div class="ai-blog-editorial-empty-state-{{ ai_gen_id }}">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z" />
+      </svg>
+      <p>Select a blog to display articles</p>
+    </div>
+  {% endif %}
+</div>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "Blog editorial layout",
+  "tag": null,
+  "settings": [
+    {
+      "type": "header",
+      "content": "Blog selection"
+    },
+    {
+      "type": "blog",
+      "id": "blog",
+      "label": "Blog"
+    },
+    {
+      "type": "header",
+      "content": "Section labels"
+    },
+    {
+      "type": "text",
+      "id": "featured_kicker",
+      "label": "Featured section label",
+      "default": "LATEST"
+    },
+    {
+      "type": "text",
+      "id": "all_articles_kicker",
+      "label": "Articles list label",
+      "default": "ALL ARTICLES"
+    },
+    {
+      "type": "text",
+      "id": "read_article_text",
+      "label": "Read article link text",
+      "default": "Read article"
+    },
+    {
+      "type": "header",
+      "content": "Reading time"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_reading_time",
+      "label": "Show reading time",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "reading_time_minutes",
+      "label": "Estimated reading time",
+      "min": 1,
+      "max": 30,
+      "step": 1,
+      "unit": "min",
+      "default": 8
+    },
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "range",
+      "id": "desktop_width_percent",
+      "label": "Desktop width",
+      "min": 50,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "default": 100
+    }
+  ],
+  "presets": [
+    {
+      "name": "Blog editorial layout"
+    }
+  ]
+}
 {% endschema %}
