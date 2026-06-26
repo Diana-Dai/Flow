@@ -9,8 +9,42 @@
  */
 {
   "sections": {
+    "1782450702ea92f706": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_b39d71e_MC3YHr": {
+          "type": "ai_gen_block_b39d71e",
+          "settings": {
+            "kicker_text": "FROM THE CEO",
+            "ceo_name": "Chad Peshke",
+            "bio_text": "Founder & CEO of Flow. Writing about retail operations, execution infrastructure, and building software for the physical world.",
+            "linkedin_url": "",
+            "twitter_url": "",
+            "instagram_url": "",
+            "facebook_url": "",
+            "youtube_url": "",
+            "github_url": "",
+            "tiktok_url": "",
+            "email": ""
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_b39d71e_MC3YHr"
+      ],
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
     "main": {
       "type": "main-blog",
+      "disabled": true,
       "settings": {
         "allow_transparent_header": false,
         "content": "<p>小売の意思決定、店舗運営、店舗DX、AI活用について、経営視点で考える最新記事をお届けします。</p>",
@@ -33,6 +67,7 @@
     }
   },
   "order": [
+    "1782450702ea92f706",
     "main"
   ]
 }
