@@ -35,7 +35,7 @@
       ],
       "settings": {
         "full_width": true,
-        "remove_vertical_spacing": false,
+        "remove_vertical_spacing": true,
         "remove_horizontal_spacing": false,
         "background": "",
         "background_gradient": "",
@@ -64,10 +64,40 @@
         "show_comments_count": false,
         "show_category": true
       }
+    },
+    "17824550263ee7c21f": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_7a9ebc7_jPnaAh": {
+          "type": "ai_gen_block_7a9ebc7",
+          "settings": {
+            "blog": "retail-decisions",
+            "featured_kicker": "LATEST",
+            "all_articles_kicker": "ALL ARTICLES",
+            "read_article_text": "Read article",
+            "show_reading_time": true,
+            "reading_time_minutes": 8,
+            "desktop_width_percent": 100
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_7a9ebc7_jPnaAh"
+      ],
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
     }
   },
   "order": [
     "1782450702ea92f706",
-    "main"
+    "main",
+    "17824550263ee7c21f"
   ]
 }
