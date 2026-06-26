@@ -37,7 +37,7 @@
         "subheading_LqYNpU": {
           "type": "subheading",
           "settings": {
-            "text": "来店計測 × POS連携 × 店舗KPI × Flow AI",
+            "text": "来店計測 × POS連携 × 現場情報 × Flow AI",
             "icon": "none"
           }
         },
@@ -76,7 +76,7 @@
         "richtext_gyC73r": {
           "type": "richtext",
           "settings": {
-            "content": "<p><strong>期間限定｜3店舗導入で、1店舗分3ヶ月無料。</strong></p>"
+            "content": "<p><strong>期間限定｜3店舗導入で、1店舗分6ヶ月無料。</strong></p>"
           }
         }
       },
@@ -227,14 +227,14 @@
           "type": "ai_gen_block_2daa5f2",
           "settings": {
             "label": "期間限定キャンペーン",
-            "heading": "まず3店舗導入で、1店舗分3ヶ月無料。",
-            "description": "3店舗以上の導入で、1店舗分の月額費用を3ヶ月無料に。来店・売上・購買率を店舗ごとに比較し、Flowの効果を確認できます。",
+            "heading": "まず3店舗導入で、1店舗分6ヶ月無料。",
+            "description": "3店舗以上の導入で、1店舗分の月額費用を6ヶ月無料に。来店・売上・購買率を店舗ごとに比較し、Flowの効果を確認できます。",
             "button_text": "キャンペーンを相談する",
             "button_link": "",
             "condition_note": "対象条件、店舗数、連携内容により適用条件が異なる場合があります。",
             "benefit_1_title": "3店舗から比較検証",
             "benefit_1_text": "店舗ごとの来店数、購買率、売上KPIを確認",
-            "benefit_2_title": "1店舗分を3ヶ月無料",
+            "benefit_2_title": "1店舗分を6ヶ月無料",
             "benefit_2_text": "初期導入しやすい条件でスタート",
             "benefit_3_title": "本格展開を見据えた設計",
             "benefit_3_text": "本部・エリア・店舗で活用できる運用を支援",
@@ -715,71 +715,6 @@
         "full_width": true,
         "content_width": "large",
         "text_position": "center",
-        "background": "#f9fafb",
-        "background_gradient": "",
-        "text_color": ""
-      }
-    },
-    "1777013757bd1f6777": {
-      "type": "_blocks",
-      "blocks": {
-        "ai_gen_block_a3e57c5_EaJMxV": {
-          "type": "ai_gen_block_a3e57c5",
-          "settings": {
-            "container_background": "#f9fafb",
-            "text_color": "#000000",
-            "left_title": "現場の実態",
-            "left_tag": "課題：判断が遅れ、実行がばらつく",
-            "left_metric": "18時間の空白",
-            "left_item_1": "<p>データの確認が後手になる</p>",
-            "left_item_2": "<p>判断が機会の後になる</p>",
-            "left_item_3": "<p>実行がシフトに依存する</p>",
-            "left_item_4": "<p>店舗ごとに成果がばらつく</p>",
-            "left_background": "#ffffff",
-            "left_border_color": "#e5e7eb",
-            "left_tag_background": "#f3f4f6",
-            "left_tag_text": "#6b7280",
-            "left_progress_label": "対応までの時間",
-            "left_progress_time": "12〜18時間",
-            "left_progress_percent": 20,
-            "left_progress_color": "#ef4444",
-            "right_title": "Flowプラットフォーム",
-            "right_tag": "⚡ Flowリアルタイム支援",
-            "right_metric": "判断までの時間を数分単位へ",
-            "right_item_1": "<p>データをリアルタイムで確認</p>",
-            "right_item_2": "<p>重要な変化をすぐに把握</p>",
-            "right_item_3": "<p>チーム全体で同じ指標を共有</p>",
-            "right_item_4": "<p>店舗ごとの判断品質を揃える</p>",
-            "right_background": "#0a2540",
-            "right_text_color": "#ffffff",
-            "right_tag_background": "#1e3a5f",
-            "right_tag_text": "#ffffff",
-            "highlight_color": "#a0b842",
-            "right_progress_label": "対応までの時間",
-            "right_progress_time": "10分以内",
-            "progress_bar_height": 8,
-            "progress_gradient_start": "#a0b842",
-            "progress_gradient_end": "#803cee",
-            "negative_icon_color": "#ef4444",
-            "positive_icon_color": "#a0b842",
-            "title_size": 24,
-            "metric_size": 32,
-            "list_item_size": 16
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "ai_gen_block_a3e57c5_EaJMxV"
-      ],
-      "disabled": true,
-      "custom_css": [
-        "h2 {text-align: center;}"
-      ],
-      "settings": {
-        "full_width": true,
-        "remove_vertical_spacing": false,
-        "remove_horizontal_spacing": false,
         "background": "#f9fafb",
         "background_gradient": "",
         "text_color": ""
@@ -1772,6 +1707,73 @@
         "testimonial_card_text_color": ""
       }
     },
+    "blocks_pRDeeC": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_3504708_xDGP9g": {
+          "type": "ai_gen_block_3504708",
+          "settings": {
+            "badge_text": "導入までの流れ",
+            "headline": "店舗データ活用を、無理なく始める",
+            "description": "Flowは、店舗環境の確認、必要なデータ連携、初期設定、運用開始後の活用支援まで、段階的に導入を進めます。",
+            "step1_icon": "document",
+            "step1_title": "ヒアリング",
+            "step1_desc": "店舗数、既存POS、確認したいKPIを整理",
+            "step2_icon": "checklist",
+            "step2_title": "計測・連携設計",
+            "step2_desc": "カメラ設置、POS連携、店舗情報を確認",
+            "step3_icon": "store",
+            "step3_title": "初期設定",
+            "step3_desc": "ダッシュボード、権限、データ連携を設定",
+            "step4_icon": "chart",
+            "step4_title": "運用開始",
+            "step4_desc": "本部・店舗・エリア別の活用方法を確認",
+            "step5_icon": "checklist",
+            "step5_title": "定着支援",
+            "step5_desc": "KPI確認、改善アクションの習慣化を支援",
+            "banner_text": "まずは対象店舗を絞って開始し、データ・運用フロー・社内での活用方法を確認したうえで、段階的に展開できます。",
+            "max_width": 1400,
+            "background_color": "#fafbfc",
+            "badge_bg_color": "#EDF1E1",
+            "badge_text_color": "#11243E",
+            "description_color": "#6B7C8D",
+            "line_color": "#11243E",
+            "icon_circle_bg": "#ffffff",
+            "icon_color": "#A0B842",
+            "card_bg_color": "#ffffff",
+            "card_border_color": "#e5e8eb",
+            "card_hover_border": "#A0B842",
+            "number_color": "#11243E",
+            "step_title_color": "#1a2b4a",
+            "step_desc_color": "#6b7c8d",
+            "banner_bg_color": "#EDF1E1",
+            "banner_icon_color": "#A0B842",
+            "banner_text_color": "#11243E",
+            "description_size": 18,
+            "step_title_size": 18,
+            "step_desc_size": 15,
+            "banner_text_size": 16,
+            "icon_border_radius": 50,
+            "icon_circle_size": 80,
+            "icon_size": 36,
+            "card_border_radius": 18
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_3504708_xDGP9g"
+      ],
+      "name": "Area manager workflow",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
     "text_with_icons_TcDQfn": {
       "type": "text-with-icons",
       "blocks": {
@@ -1853,6 +1855,7 @@
         "item_AK6yhH",
         "item_xWP8GR"
       ],
+      "disabled": true,
       "custom_css": [
         "{padding-top: 90px;}"
       ],
@@ -2048,7 +2051,6 @@
     "impact_text_gi97zd",
     "rich_text_E4i7Ea",
     "rich_text_pkymTT",
-    "1777013757bd1f6777",
     "blocks_PbNh4e",
     "testimonials_MY9ERf",
     "multi_column_m98pty",
@@ -2060,6 +2062,7 @@
     "rich_text_iYFe9Q",
     "multi_column_dQq9tA",
     "testimonials_98zPBi",
+    "blocks_pRDeeC",
     "text_with_icons_TcDQfn",
     "faq_WEg6pU",
     "image_with_text_overlay_MVHcWF"
