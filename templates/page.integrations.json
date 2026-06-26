@@ -814,8 +814,6 @@
             "badge_background_color": "#f4f4f4",
             "badge_text_color": "#677279",
             "headline": "連携設計から運用開始まで、\nFlowが伴走します。",
-            "headline_size_mobile": 36,
-            "headline_size_desktop": 56,
             "headline_color": "#0d2745",
             "description": "連携は、接続して終わりではありません。Flowは、対象データの確認から接続設計、テスト、表示確認、運用後のデータ監視まで、一連のプロセスを支援します。",
             "description_size_mobile": 16,

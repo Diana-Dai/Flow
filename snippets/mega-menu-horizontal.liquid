@@ -45,6 +45,127 @@
   </style>
 {%- endif -%}
 
+{%- if use_platform_split_layout -%}
+  <style>
+    #mega-menu-{{ mega_menu_block.id }}.mega-menu--platform {
+      --platform-surface: #eef0f3;
+      --platform-icon-surface: #dfe3e8;
+      --platform-icon-color: #7d8796;
+      --platform-list-title-color: #142742;
+      --platform-list-text-color: #63697d;
+      --platform-panel-background: {{ mega_menu_block.settings.platform_panel_background | default: '#0B2A4D' }};
+      --platform-panel-text: {{ mega_menu_block.settings.platform_panel_text_color | default: '#D6DEE7' }};
+      --platform-panel-accent: {{ mega_menu_block.settings.platform_panel_accent_color | default: '#9EC438' }};
+      grid-template-columns: minmax(0, 1fr) minmax(280px, 420px);
+      gap: clamp(20px, 3vw, 44px);
+      padding-block: clamp(20px, 2vw, 36px);
+      padding-inline: clamp(20px, 4vw, 56px);
+      background: var(--platform-surface);
+      display: grid;
+    }
+
+
+    #mega-menu-{{ mega_menu_block.id }} .mega-menu-platform__label {
+      letter-spacing: 0.18em;
+      font-size: 12px;
+      font-weight: 700;
+      color: #9a9ead;
+      margin-bottom: 4px;
+    }
+
+    #mega-menu-{{ mega_menu_block.id }} .mega-menu-platform__list {
+      gap: 10px;
+    }
+
+    #mega-menu-{{ mega_menu_block.id }} .mega-menu-platform__item {
+      grid-template-columns: 52px minmax(0, 1fr);
+      align-items: center;
+      gap: 14px;
+      padding: 8px 0;
+      display: grid;
+    }
+
+    #mega-menu-{{ mega_menu_block.id }} .mega-menu-platform__item-text {
+      gap: 3px;
+    }
+
+
+
+    #mega-menu-{{ mega_menu_block.id }} .mega-menu-platform__item-description {
+      color: var(--platform-list-text-color);
+      font-size: 0.8rem;
+      line-height: 1.22;
+      font-weight: 450;
+    }
+
+    #mega-menu-{{ mega_menu_block.id }} .mega-menu-platform__icon {
+      width: 52px;
+      height: 52px;
+      border-radius: 16px;
+      background: var(--platform-icon-surface);
+      color: var(--platform-icon-color);
+      place-items: center;
+      display: grid;
+    }
+
+    #mega-menu-{{ mega_menu_block.id }} .mega-menu-platform__icon .icon {
+      --icon-height: 20px;
+      width: 20px;
+      height: 20px;
+    }
+
+    #mega-menu-{{ mega_menu_block.id }} .mega-menu-platform__panel {
+      border-radius: 28px;
+      background: var(--platform-panel-background);
+      color: var(--platform-panel-text);
+      padding: clamp(26px, 3vw, 40px);
+      justify-content: flex-start;
+      gap: clamp(18px, 2vw, 28px);
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+
+    #mega-menu-{{ mega_menu_block.id }} .mega-menu-platform__badge {
+      letter-spacing: 0.18em;
+      color: var(--platform-panel-accent);
+      font-size: 12px;
+      font-weight: 700;
+      margin: 0;
+      text-transform: uppercase;
+    }
+
+    #mega-menu-{{ mega_menu_block.id }} .mega-menu-platform__heading {
+      color: var(--platform-panel-text);
+      margin: 0;
+    }
+
+    #mega-menu-{{ mega_menu_block.id }} .mega-menu-platform__cta {
+      color: var(--platform-panel-accent);
+      font-weight: 600;
+      text-decoration: none;
+      width: fit-content;
+    }
+
+    #mega-menu-{{ mega_menu_block.id }} .mega-menu-platform__cta .icon {
+      --icon-height: 12px;
+      width: 12px;
+      height: 12px;
+    }
+
+    @media screen and (max-width: 1149px) {
+      #mega-menu-{{ mega_menu_block.id }}.mega-menu--platform {
+        grid-template-columns: minmax(0, 1fr);
+      }
+
+      #mega-menu-{{ mega_menu_block.id }} .mega-menu-platform__panel {
+        min-height: 0;
+      }
+
+    }
+  </style>
+{%- endif -%}
+
 <div id="mega-menu-{{ mega_menu_block.id }}" class="mega-menu {% if link.links.size == 0 %}justify-center{% endif %} {% if use_platform_split_layout %}mega-menu--platform{% endif %}">
   {%- if use_platform_split_layout -%}
     <div class="mega-menu-platform__content v-stack gap-8">
@@ -53,20 +174,43 @@
       <ul class="mega-menu-platform__list v-stack gap-2" role="list">
         {%- for sub_link in link.links -%}
           {%- assign sub_link_description = '' -%}
+          {%- assign platform_icon = 'picto-box' -%}
 
-          {%- if sub_link.links.size > 0 -%}
+          {%- case forloop.index -%}
+            {%- when 1 -%}
+              {%- assign platform_icon = 'picto-box' -%}
+              {%- assign sub_link_description = mega_menu_block.settings.mega_menu_subtext_1 -%}
+            {%- when 2 -%}
+              {%- assign platform_icon = 'picto-camera' -%}
+              {%- assign sub_link_description = mega_menu_block.settings.mega_menu_subtext_2 -%}
+            {%- when 3 -%}
+              {%- assign platform_icon = 'picto-target' -%}
+              {%- assign sub_link_description = mega_menu_block.settings.mega_menu_subtext_3 -%}
+            {%- when 4 -%}
+              {%- assign platform_icon = 'picto-secure-profile' -%}
+              {%- assign sub_link_description = mega_menu_block.settings.mega_menu_subtext_4 -%}
+            {%- when 5 -%}
+              {%- assign platform_icon = 'picto-operator' -%}
+              {%- assign sub_link_description = mega_menu_block.settings.mega_menu_subtext_5 -%}
+          {%- endcase -%}
+
+          {%- if sub_link_description == '' and sub_link.links.size > 0 -%}
             {%- assign sub_link_description = sub_link.links.first.title -%}
           {%- endif -%}
 
           <li>
             <a href="{{ sub_link.url }}" class="mega-menu-platform__item" {% if sub_link.current %}aria-current="page"{% endif %}>
 
+              <span class="mega-menu-platform__icon">
+                {%- render 'icon' with platform_icon, width: 20, height: 20 -%}
+              </span>
+
 
               <span class="mega-menu-platform__item-text v-stack">
-                <span class="h5">{{ sub_link.title }}</span>
+                <span class="mega-menu-platform__item-title">{{ sub_link.title }}</span>
 
                 {%- if sub_link_description != '' -%}
-                  <span class="text-subdued">{{ sub_link_description }}</span>
+                  <span class="mega-menu-platform__item-description">{{ sub_link_description | escape }}</span>
                 {%- endif -%}
               </span>
             </a>
@@ -81,11 +225,11 @@
       {%- endif -%}
 
       {%- if mega_menu_block.settings.platform_heading != blank -%}
-        <p class="h4 mega-menu-platform__heading">{{ mega_menu_block.settings.platform_heading }}</p>
+        <p class=" mega-menu-platform__heading">{{ mega_menu_block.settings.platform_heading }}</p>
       {%- endif -%}
 
       {%- if mega_menu_block.settings.platform_link_label != blank -%}
-        <a href="{{ mega_menu_block.settings.platform_link | default: link.url }}" class="mega-menu-platform__cta text-with-icon gap-2.5 h5">
+        <a href="{{ mega_menu_block.settings.platform_link | default: link.url }}" class="mega-menu-platform__cta text-with-icon gap-2.5 h6">
           {{ mega_menu_block.settings.platform_link_label }} {%- render 'icon' with 'chevron-right', width: 9, height: 9 -%}
         </a>
       {%- endif -%}
@@ -93,11 +237,27 @@
   {%- elsif link.links.size > 0 -%}
     <ul class="mega-menu__nav" role="list">
       {%- for sub_link in link.links -%}
+        {%- assign mega_menu_subtext = '' -%}
+        {%- case forloop.index -%}
+          {%- when 1 -%}
+            {%- assign mega_menu_subtext = mega_menu_block.settings.mega_menu_subtext_1 -%}
+          {%- when 2 -%}
+            {%- assign mega_menu_subtext = mega_menu_block.settings.mega_menu_subtext_2 -%}
+          {%- when 3 -%}
+            {%- assign mega_menu_subtext = mega_menu_block.settings.mega_menu_subtext_3 -%}
+          {%- when 4 -%}
+            {%- assign mega_menu_subtext = mega_menu_block.settings.mega_menu_subtext_4 -%}
+          {%- when 5 -%}
+            {%- assign mega_menu_subtext = mega_menu_block.settings.mega_menu_subtext_5 -%}
+        {%- endcase -%}
+
         <li class="v-stack gap-4 justify-items-start">
-          <a {% if sub_link.url != '#' %}href="{{ sub_link.url }}"{% endif %} class="{% if mega_menu_block.settings.submenu_style == 'bold_heading' %}h5{% endif %}" {% if sub_link.current %}aria-current="page"{% endif %}>
-            <span {% if sub_link.url != '#' %}class="{% if mega_menu_block.settings.submenu_style == 'bold_text' %}link-faded{% else %}reversed-link hover:show{% endif %}"{% endif %}>
-              {{- sub_link.title -}}
-            </span>
+          <a {% if sub_link.url != '#' %}href="{{ sub_link.url }}"{% endif %} class="v-stack gap-1 {% if mega_menu_block.settings.submenu_style == 'bold_heading' %}h5{% endif %}" {% if sub_link.current %}aria-current="page"{% endif %}>
+            <span {% if sub_link.url != '#' %}class="{% if mega_menu_block.settings.submenu_style == 'bold_text' %}link-faded{% else %}reversed-link hover:show{% endif %}"{% endif %}>{{- sub_link.title -}}</span>
+
+            {%- if mega_menu_subtext != blank -%}
+              <span class="text-xs text-subdued">{{ mega_menu_subtext | escape }}</span>
+            {%- endif -%}
           </a>
 
           {%- if sub_link.levels > 0 -%}

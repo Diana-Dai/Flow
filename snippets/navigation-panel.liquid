@@ -75,6 +75,11 @@ Supported variables
               {%- capture link_level_2 -%}
                 {{- link_level_2 -}}
 
+                {%- assign use_platform_split_layout = false -%}
+                {%- if mega_menu_block != '' and mega_menu_block.settings.layout == 'platform_split' -%}
+                  {%- assign use_platform_split_layout = true -%}
+                {%- endif -%}
+
                 <div class="panel__wrapper" {% if mega_menu_block.settings.promo_content_layout == 'grid' or mega_menu_block.settings.promo_content_layout == 'collage' %}style="--panel-wrapper-justify-content: flex-start"{% endif %} hidden>
                   <ul class="v-stack {% if is_mega_menu and is_image_shown == 'show' %}gap-3{% else %}gap-4{% endif %}">
                     <li class="{% if layout != 'drawer' %}lg:hidden{% endif %}">
@@ -85,8 +90,43 @@ Supported variables
 
                     {%- if link.links.size > 0 -%}
                       {%- for sub_link in link.links -%}
+                        {%- assign platform_subtext = '' -%}
+                        {%- assign platform_icon = 'picto-box' -%}
+
+                        {%- case forloop.index -%}
+                          {%- when 1 -%}
+                            {%- assign platform_icon = 'picto-box' -%}
+                            {%- assign platform_subtext = mega_menu_block.settings.mega_menu_subtext_1 -%}
+                          {%- when 2 -%}
+                            {%- assign platform_icon = 'picto-camera' -%}
+                            {%- assign platform_subtext = mega_menu_block.settings.mega_menu_subtext_2 -%}
+                          {%- when 3 -%}
+                            {%- assign platform_icon = 'picto-target' -%}
+                            {%- assign platform_subtext = mega_menu_block.settings.mega_menu_subtext_3 -%}
+                          {%- when 4 -%}
+                            {%- assign platform_icon = 'picto-secure-profile' -%}
+                            {%- assign platform_subtext = mega_menu_block.settings.mega_menu_subtext_4 -%}
+                          {%- when 5 -%}
+                            {%- assign platform_icon = 'picto-operator' -%}
+                            {%- assign platform_subtext = mega_menu_block.settings.mega_menu_subtext_5 -%}
+                        {%- endcase -%}
+
+                        {%- if use_platform_split_layout and platform_subtext == '' and sub_link.links.size > 0 -%}
+                          {%- assign platform_subtext = sub_link.links.first.title -%}
+                        {%- endif -%}
+
                         <li class="h3 {% if is_mega_menu %}sm:h5{% else %}sm:h4{% endif %}">
-                          {%- if sub_link.links.size > 0 -%}
+                          {%- if use_platform_split_layout -%}
+                            <a class="panel-platform-split__item" href="{{ sub_link.url }}">
+                              <span class="panel-platform-split__icon">{%- render 'icon' with platform_icon, width: 18, height: 18 -%}</span>
+                              <span class="panel-platform-split__text">
+                                <span class="panel-platform-split__title">{{ sub_link.title }}</span>
+                                {%- if platform_subtext != '' -%}
+                                  <span class="panel-platform-split__subtext">{{ platform_subtext | escape }}</span>
+                                {%- endif -%}
+                              </span>
+                            </a>
+                          {%- elsif sub_link.links.size > 0 -%}
                             <button class="text-with-icon w-full justify-between" aria-expanded="false" data-panel="2-{% increment level_2 %}">
                               <span>{{ sub_link.title }}</span>
                               <span class="circle-chevron group-hover:colors group-expanded:colors">{%- render 'icon' with 'chevron-right-small', direction_aware: true -%}</span>
@@ -120,7 +160,7 @@ Supported variables
                           {%- endif -%}
                         </li>
 
-                        {%- if sub_link.links.size > 0 -%}
+                        {%- if use_platform_split_layout == false and sub_link.links.size > 0 -%}
                           {%- capture link_level_3 -%}
                             {{- link_level_3 -}}
 
@@ -170,8 +210,26 @@ Supported variables
                     {%- endif -%}
                   </ul>
 
+                  {%- if use_platform_split_layout -%}
+                    <div class="panel-platform-split__card" style="--platform-panel-background: {{ mega_menu_block.settings.platform_panel_background | default: '#0B2A4D' }}; --platform-panel-text: {{ mega_menu_block.settings.platform_panel_text_color | default: '#D6DEE7' }}; --platform-panel-accent: {{ mega_menu_block.settings.platform_panel_accent_color | default: '#9EC438' }};">
+                      {%- if mega_menu_block.settings.platform_badge != blank -%}
+                        <p class="panel-platform-split__badge">{{ mega_menu_block.settings.platform_badge }}</p>
+                      {%- endif -%}
+
+                      {%- if mega_menu_block.settings.platform_heading != blank -%}
+                        <p class="panel-platform-split__heading">{{ mega_menu_block.settings.platform_heading }}</p>
+                      {%- endif -%}
+
+                      {%- if mega_menu_block.settings.platform_link_label != blank -%}
+                        <a href="{{ mega_menu_block.settings.platform_link | default: link.url }}" class="panel-platform-split__cta text-with-icon gap-2.5">
+                          {{ mega_menu_block.settings.platform_link_label }} {%- render 'icon' with 'chevron-right', width: 9, height: 9 -%}
+                        </a>
+                      {%- endif -%}
+                    </div>
+                  {%- endif -%}
+
                   {%- unless is_mega_menu -%}
-                    {%- if mega_menu_block != '' -%}
+                    {%- if mega_menu_block != '' and use_platform_split_layout == false -%}
                       {%- render 'navigation-promo-block', navigation_layout: layout, mega_menu_block: mega_menu_block, is_navigation_drawer: true, link_col: link.links.size -%}
                     {%- endif -%}
                   {%- endunless -%}
