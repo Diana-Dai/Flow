@@ -730,7 +730,7 @@
         "item_fRf33R": {
           "type": "item",
           "settings": {
-            "icon": "picto-target",
+            "icon": "picto-timer",
             "icon_width": 32,
             "icon_background_type": "square",
             "icon_background": "#a0b842",
@@ -743,7 +743,7 @@
             "title": "",
             "heading_tag": "h2",
             "subheading": "",
-            "content": "<h3>After-Hours Installation</h3><p>Camera installation scheduled outside business hours to avoid disrupting store operations. Most stores complete hardware setup in a single evening.</p><h4>2-4hrs</h4><p>Typical install time per store</p>",
+            "content": "<h3>営業時間外の設置</h3><p>カメラ設置は、店舗運営への影響を抑えるため、原則として営業時間外に実施します。店舗環境に応じて、設置内容と作業時間を事前に確認します。</p><h4>2〜4時間</h4><p>標準的な設置時間の目安</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -765,7 +765,7 @@
             "title": "",
             "heading_tag": "h2",
             "subheading": "",
-            "content": "<h3>Existing System Integration</h3><p>Flow connects to your existing POS system without requiring replacement or major configuration changes. API, FTP, and CSV methods supported.</p><h4>Flexible</h4><p>Integration methods available</p>",
+            "content": "<h3>既存システムとの連携</h3><p>Flowは、POSや既存データ環境との連携に対応します。API、FTP、CSVなど、運用状況に合わせた連携方法を検討できます。</p><h4>柔軟に対応</h4><p>複数の連携方法に対応</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -774,7 +774,7 @@
         "item_Vx6gWn": {
           "type": "item",
           "settings": {
-            "icon": "people",
+            "icon": "picto-customer-support",
             "icon_width": 32,
             "icon_background_type": "square",
             "icon_background": "#a0b842",
@@ -787,7 +787,7 @@
             "title": "",
             "heading_tag": "h2",
             "subheading": "",
-            "content": "<h3>Training & Support Included</h3><p>On-site training for store managers, online resources for staff, and ongoing customer success support throughout deployment and beyond.</p><h4>Hands-On</h4><p>Implementation support</p>",
+            "content": "<h3>活用支援・サポート</h3><p>導入後は、店舗マネージャーや本部チームがFlowを日常業務で活用できるよう、トレーニングとカスタマーサクセス支援を行います。</p><h4>実践支援</h4><p>導入後の活用を支援</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -796,7 +796,7 @@
         "item_rqKyhB": {
           "type": "item",
           "settings": {
-            "icon": "check",
+            "icon": "up",
             "icon_width": 32,
             "icon_background_type": "square",
             "icon_background": "#a0b842",
@@ -809,7 +809,7 @@
             "title": "",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<h5>Phased Rollout Supported</h5><p>Start with a pilot store or region to validate results before expanding. Flow supports phased deployment timelines that align with your operational calendar and budget planning.</p>",
+            "content": "<h5><strong>段階的な展開に対応</strong></h5><p>まずは一部店舗やエリアから開始し、効果や運用方法を確認したうえで展開を広げることができます。Flowは、運用スケジュールや予算計画に合わせた段階導入に対応します。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -834,9 +834,9 @@
         "stack_on_mobile": false,
         "gap": "medium",
         "text_alignment": "start",
-        "subheading": "IMPLEMENTATION",
-        "title": "LOW-DISRUPTION DEPLOYMENT.",
-        "content": "<p>Flow deployment is designed for minimal operational disruption. Installation happens after hours, integration adapts to existing systems, and training is included.</p>",
+        "subheading": "導入について",
+        "title": "店舗運営への影響を抑えて導入。",
+        "content": "<h6>Flowは、既存の店舗運営に配慮しながら導入を進めます。営業時間外の設置、既存システムとの連携、店舗チーム向けの活用支援まで、段階的な展開に対応します。</h6>",
         "background": "#f2f2f2",
         "background_gradient": "",
         "text_color": "",
@@ -850,14 +850,14 @@
         "subheading_AK7Cjn": {
           "type": "subheading",
           "settings": {
-            "text": "NEXT STEPS",
+            "text": "次のステップ",
             "icon": "none"
           }
         },
         "heading_YXhiR8": {
           "type": "heading",
           "settings": {
-            "text": "READY TO IMPROVE CONVERSION?",
+            "text": "購買率を、管理できる指標に。",
             "heading_tag": "h1",
             "text_color": "",
             "gradient": ""
@@ -866,7 +866,7 @@
         "richtext_qzAkak": {
           "type": "richtext",
           "settings": {
-            "content": "<p>See how Flow can measure, diagnose, and improve conversion rates across your store network.</p>"
+            "content": "<p>Flowが来店数・購買率・店舗行動をどのように可視化し、売上目標に向けた改善判断を支援するかをご紹介します。</p>"
           }
         },
         "button_AVKAbi": {
@@ -886,14 +886,14 @@
           "settings": {
             "style_1": "fill",
             "size_1": "xl",
-            "text_1": "Schedule Demo →",
-            "url_1": "#",
+            "text_1": "デモを依頼する →",
+            "url_1": "shopify://pages/contact",
             "background_1": "#a0b842",
             "text_color_1": "#ffffff",
             "style_2": "fill",
             "size_2": "xl",
-            "text_2": "View Case Study →",
-            "url_2": "#",
+            "text_2": "導入事例を見る →",
+            "url_2": "shopify://pages/case-studies-1",
             "background_2": "#ffffff",
             "text_color_2": "#11243e"
           }
