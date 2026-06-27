@@ -433,28 +433,6 @@
     "multi_column_hNQjmA": {
       "type": "multi-column",
       "blocks": {
-        "item_HE4R79": {
-          "type": "item",
-          "settings": {
-            "icon": "none",
-            "icon_width": 32,
-            "icon_background_type": "circle",
-            "icon_background": "",
-            "icon_color": "",
-            "background_color": "#ffffff",
-            "text_color": "",
-            "border_color": "#f2f2f2",
-            "show_controls": false,
-            "column_size": "3",
-            "title": "+12-18%",
-            "heading_tag": "h1",
-            "subheading": "<p>CONVERSION RATE</p>",
-            "content": "<p><strong>Average Conversion Improvement</strong></p><p>Store managers used traffic data to adjust staffing during peak hours, leading to measurable conversion rate improvements across the network.</p>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        },
         "item_zKkNdD": {
           "type": "item",
           "settings": {
@@ -468,10 +446,32 @@
             "border_color": "#f2f2f2",
             "show_controls": false,
             "column_size": "3",
-            "title": "+15%",
+            "title": "当日",
             "heading_tag": "h1",
-            "subheading": "<p>REVENUE PER VISITOR</p>",
-            "content": "<p><strong>Sales Efficiency Gain</strong></p><p>Improved revenue per store visitor through better conversion and operational alignment with traffic patterns</p>",
+            "subheading": "<p>対応スピード</p>",
+            "content": "<h6><strong>その日のうちに課題を把握</strong></h6><p>購買率の変化をリアルタイムに確認できるため、週次レポートを待たずに、営業時間中に改善判断を行えます。</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_HE4R79": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#ffffff",
+            "text_color": "",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "+5.3pt",
+            "heading_tag": "h1",
+            "subheading": "<p>購買率</p>",
+            "content": "<h6><strong>購買率改善</strong></h6><p>Flowを活用した事例では、購買率が19.9%から25.2%に改善しました。来店数と売上をあわせて見ることで、店舗は購買につながらなかった機会を把握しやすくなりました。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -490,10 +490,10 @@
             "border_color": "#f2f2f2",
             "show_controls": false,
             "column_size": "3",
-            "title": "Same-Day",
+            "title": "実行へ",
             "heading_tag": "h1",
-            "subheading": "<p>RESPONSE TIME</p>",
-            "content": "<p><strong>Issue Identification</strong></p><p>Real-time conversion visibility enables managers to identify and address issues during the business day</p>",
+            "subheading": "<p>店舗活用</p>",
+            "content": "<h6><strong>データを店舗行動に接続</strong></h6><p>来店数、購買率、時間帯別の動きをもとに、ピーク時間の接客配置や売場対応を見直しやすくなります。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -515,7 +515,7 @@
             "title": "",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<p><strong>Note:</strong> Results reflect this customer's specific deployment and operational practices. Flow performance varies based on store format, market conditions, existing operations, and how actively teams use the platform.</p>",
+            "content": "<p><strong>注記：</strong>記載の数値は、特定の導入事例に基づく実績例です。成果は店舗業態、立地、運用状況、Flowの活用度によって異なります。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -523,8 +523,8 @@
         }
       },
       "block_order": [
-        "item_HE4R79",
         "item_zKkNdD",
+        "item_HE4R79",
         "item_gkLzy8",
         "item_er7th9"
       ],
@@ -539,9 +539,9 @@
         "stack_on_mobile": false,
         "gap": "small",
         "text_alignment": "center",
-        "subheading": "MEASURABLE RESULTS",
-        "title": "WHAT IMPROVES.",
-        "content": "<p>Retailers using Flow for conversion optimization report measurable improvements across key performance indicators.</p>",
+        "subheading": "測定可能な改善",
+        "title": "購買率改善は、測定から始まる。",
+        "content": "<p>Flowを活用した店舗では、来店数と購買率をもとに売場・接客・運営判断を見直し、改善につなげた事例があります。</p>",
         "background": "#f9fafb",
         "background_gradient": "",
         "text_color": "",
