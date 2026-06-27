@@ -576,7 +576,7 @@
             "stat_value_color": "#0e2a3a",
             "stat_label_color": "#6b7280",
             "case_study_title": "導入事例：ファッション・ライフスタイル小売",
-            "case_study_background": "#0e2a3a",
+            "case_study_background": "#11243E",
             "case_study_title_color": "#ffffff",
             "case_study_border_radius": 16,
             "metric_1_value": "19.9% → 25.2%",
@@ -866,7 +866,7 @@
         "richtext_qzAkak": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Flowが来店数・購買率・店舗行動をどのように可視化し、売上目標に向けた改善判断を支援するかをご紹介します。</p>"
+            "content": "<p>Flowが来店数・購買率・POSデータをつなげ、売上目標に向けた改善判断をどのように支援するかをご紹介します。</p>"
           }
         },
         "button_AVKAbi": {
