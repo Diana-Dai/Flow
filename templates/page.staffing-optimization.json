@@ -298,6 +298,7 @@
         "enable_parallax": false,
         "image_size": "auto",
         "image": "shopify://shop_images/Traffic_Insights.png",
+        "mobile_image": "shopify://shop_images/Traffic_Insights_-Mobile.png",
         "mobile_text_position": "place-self-center text-center",
         "desktop_text_position": "sm:place-self-center sm:text-center",
         "text_color": "#ffffff",
@@ -356,6 +357,7 @@
         "buttons_jRCk4T",
         "richtext_3Ax89K"
       ],
+      "disabled": true,
       "name": "Rich text",
       "settings": {
         "full_width": true,
@@ -382,38 +384,16 @@
             "border_color": "#e5e7e1",
             "show_controls": false,
             "column_size": "4",
-            "title": "店前通行量",
+            "title": "来店数",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<p>店舗前を通行する人数を計測し、入店率や立地ごとの集客力を把握します。</p><h4>リアルタイム</h4><p>継続的に計測</p>",
+            "content": "<p>時間帯別の来店数を計測し、<br/>店舗が忙しくなる時間を<br/>事前に把握できます。</p><h4>リアルタイム</h4><p>来店計測</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
           }
         },
         "item_r96Tt7": {
-          "type": "item",
-          "settings": {
-            "icon": "picto-return",
-            "icon_width": 32,
-            "icon_background_type": "square",
-            "icon_background": "#a0b842",
-            "icon_color": "#ffffff",
-            "background_color": "#f2f2f2",
-            "text_color": "",
-            "border_color": "#e5e7e1",
-            "show_controls": false,
-            "column_size": "4",
-            "title": "来店数",
-            "heading_tag": "h4",
-            "subheading": "",
-            "content": "<p>入店した顧客数を計測し、スタッフを除外した正確な来店傾向を確認できます。</p><h4>高精度</h4><p>来店計測</p>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        },
-        "item_KQtcVQ": {
           "type": "item",
           "settings": {
             "icon": "picto-timer",
@@ -429,13 +409,13 @@
             "title": "滞在時間",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<p>顧客が店内や売場にどれだけ滞在したかを把握し、売場反応や接客機会を確認します。</p><h4>単位</h4><p>滞在傾向を把握</p>",
+            "content": "<p>顧客がどれだけ滞在したかを確認し、<br/>接客機会の量とタイミングを<br/>把握できます。</p><h4>平均滞在時間</h4><p>滞在傾向を把握</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
           }
         },
-        "item_jHGFzb": {
+        "item_KQtcVQ": {
           "type": "item",
           "settings": {
             "icon": "up",
@@ -448,10 +428,32 @@
             "border_color": "#e5e7e1",
             "show_controls": false,
             "column_size": "4",
-            "title": "購買・取引",
+            "title": "購買・売上",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<p>POSデータと連携し、来店数に対する購買率や客単価を確認できます。</p><h4>自動連携</h4><p>日次更新</p>",
+            "content": "<p>POSデータと連携し、<br/>来店が購買や売上につながったかを<br/>確認できます。</p><h4>POS連携</h4><p>日次更新</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_jHGFzb": {
+          "type": "item",
+          "settings": {
+            "icon": "people",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#a0b842",
+            "icon_color": "#ffffff",
+            "background_color": "#f2f2f2",
+            "text_color": "",
+            "border_color": "#e5e7e1",
+            "show_controls": false,
+            "column_size": "4",
+            "title": "スタッフ稼働",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<p>スタッフ/時間・レベルを確認し、<br/>来店に対する配置状況を<br/>把握できます。</p><h4>時間帯別</h4><p>配置状況を確認</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -476,8 +478,8 @@
         "gap": "medium",
         "text_alignment": "start",
         "subheading": "Flowが計測するもの",
-        "title": "購買につながる流れを、すべて見える化する。",
-        "content": "<h6>Flowは、店前通行量から来店、滞在、購買までを一つの流れで把握し、どこで機会を逃しているのかを明確にします。</h6>",
+        "title": "配置につながる流れを、すべて見える化する。",
+        "content": "<p>Flowは、来店数・滞在時間・購買結果・スタッフ稼働を一つの流れで把握し、どの時間帯に人員配置を見直すべきかを明確にします。</p>",
         "background": "#ffffff",
         "background_gradient": "",
         "text_color": "",
