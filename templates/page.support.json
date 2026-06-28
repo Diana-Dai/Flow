@@ -1,0 +1,698 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "rich_text_cqadYy": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_nJjQnz": {
+          "type": "subheading",
+          "settings": {
+            "text": "よくあるご質問",
+            "icon": "none"
+          }
+        },
+        "heading_hjfyL9": {
+          "type": "heading",
+          "settings": {
+            "text": "導入・連携・店舗運用について",
+            "heading_tag": "h2",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_wjTJeB": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Flowの導入期間、システム連携、計測精度、プライバシー、サポート、店舗での運用について、よく確認される内容をまとめました。</p>"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_nJjQnz",
+        "heading_hjfyL9",
+        "richtext_wjTJeB"
+      ],
+      "custom_css": [
+        "* {padding-bottom: 1rem;}"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "medium",
+        "text_position": "start",
+        "background": "#11243e",
+        "background_gradient": "",
+        "text_color": "#ffffff"
+      }
+    },
+    "multi_column_L3Rbir": {
+      "type": "multi-column",
+      "blocks": {
+        "item_TYrPjG": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#1a3a4a",
+            "text_color": "",
+            "border_color": "rgba(0,0,0,0)",
+            "show_controls": false,
+            "column_size": "4",
+            "title": "4〜6週間",
+            "heading_tag": "h2",
+            "subheading": "",
+            "content": "<p>標準的な導入期間</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_8N9HmD": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#1a3a4a",
+            "text_color": "",
+            "border_color": "#0e366a",
+            "show_controls": false,
+            "column_size": "4",
+            "title": "95%以上",
+            "heading_tag": "h2",
+            "subheading": "",
+            "content": "<p>入口計測の精度目安</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_GLb7bG": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#1a3a4a",
+            "text_color": "",
+            "border_color": "#0e366a",
+            "show_controls": false,
+            "column_size": "4",
+            "title": "API  / FTP",
+            "heading_tag": "h2",
+            "subheading": "",
+            "content": "<p>柔軟なデータ連携</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_L9UbpA": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#1a3a4a",
+            "text_color": "",
+            "border_color": "#0e366a",
+            "show_controls": false,
+            "column_size": "4",
+            "title": "導入支援あり",
+            "heading_tag": "h2",
+            "subheading": "",
+            "content": "<p>設定・研修・運用サポート</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_TYrPjG",
+        "item_8N9HmD",
+        "item_GLb7bG",
+        "item_L9UbpA"
+      ],
+      "name": "Multi-column",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "start",
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "background": "#11243e",
+        "background_gradient": "",
+        "text_color": "#ffffff",
+        "subheading_background_color": "",
+        "subheading_text_color": ""
+      }
+    },
+    "section-15": {
+      "type": "feature-chart",
+      "blocks": {
+        "block-1": {
+          "type": "headings",
+          "settings": {
+            "heading_1": "主な提供価値",
+            "heading_2": "コアの設計思想",
+            "heading_3": "来店データの位置づけ",
+            "heading_4": "データの即時性",
+            "heading_5": "店舗での使いやすさ",
+            "heading_6": "判断へのつながり",
+            "heading_7": "店舗ごとの判断差",
+            "heading_8": "本部と店舗の連携",
+            "heading_9": "運用負荷",
+            "heading_10": "拡張性",
+            "heading_11": "",
+            "heading_12": "",
+            "heading_13": "",
+            "heading_14": "",
+            "heading_15": "",
+            "heading_16": "",
+            "heading_17": "",
+            "heading_18": "",
+            "heading_19": "",
+            "heading_20": ""
+          }
+        },
+        "block-2": {
+          "type": "values",
+          "settings": {
+            "product": "",
+            "value_1": "<p>40mm Beryllium</p>",
+            "value_2": "<p>245g</p>",
+            "value_3": "<p>165mm x 190mm x 66mm</p>",
+            "value_4": "<p>24 hours</p>",
+            "value_5": "",
+            "value_6": "",
+            "value_7": "",
+            "value_8": "",
+            "value_9": "",
+            "value_10": "",
+            "value_11": "",
+            "value_12": "",
+            "value_13": "",
+            "value_14": "",
+            "value_15": "",
+            "value_16": "",
+            "value_17": "",
+            "value_18": "",
+            "value_19": "",
+            "value_20": "",
+            "view_button_background": "",
+            "view_button_text_color": ""
+          }
+        },
+        "block-3": {
+          "type": "values",
+          "settings": {
+            "product": "",
+            "value_1": "<p>40mm Beryllium</p>",
+            "value_2": "<p>205g (On-Ear), 239g (Over-Ear)</p>",
+            "value_3": "<p>190mm x 155mm x 34mm (On-Ear), 200mm x 165mm x 40mm (Over-Ear)</p>",
+            "value_4": "<p>16 hours</p>",
+            "value_5": "",
+            "value_6": "",
+            "value_7": "",
+            "value_8": "",
+            "value_9": "",
+            "value_10": "",
+            "value_11": "",
+            "value_12": "",
+            "value_13": "",
+            "value_14": "",
+            "value_15": "",
+            "value_16": "",
+            "value_17": "",
+            "value_18": "",
+            "value_19": "",
+            "value_20": "",
+            "view_button_background": "",
+            "view_button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "Why Dashboards Fail",
+        "content": "<p>Traditional analytics show you the problem. Flow solves it.</p>",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "center",
+        "max_rows": 5,
+        "view_all_text": "View all",
+        "view_less_text": "View less",
+        "view_product": "View",
+        "viewing_product": "",
+        "show_product_swatch": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "chart_background": "",
+        "chart_text_color": "",
+        "chart_true_false_color": ""
+      }
+    },
+    "1780470974bb22e153": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_659cb24_ckmcrH": {
+          "type": "ai_gen_block_659cb24",
+          "settings": {
+            "card_title": "導入・展開について",
+            "card_subtitle": "導入期間、設置条件、段階展開について",
+            "icon_type": "check",
+            "question_1": "Flowの導入にはどのくらいの期間がかかりますか？",
+            "answer_1": "一般的には、要件確認から導入開始まで4〜6週間程度が目安です。店舗数、カメラ設置環境、POS連携の有無、社内確認フローによって期間は変動します。まずは対象店舗、必要な計測項目、連携データを確認したうえで、現実的な導入スケジュールをご提案します。",
+            "question_1_open": false,
+            "question_2": "店舗側で事前に準備するものはありますか？",
+            "answer_2": "主に、店舗図面、入口や計測エリアの情報、ネットワーク環境、POSやシフトなど連携したいデータの確認が必要です。カメラ設置が必要な場合は、天井高、入口幅、照明、設置位置なども確認します。店舗運営への影響を抑えられるよう、事前確認の段階で必要事項を整理します。",
+            "question_2_open": false,
+            "question_3": "一部店舗から開始し、段階的に展開できますか？",
+            "answer_3": "はい、可能です。まずは一部店舗で計測精度、データ連携、店舗での活用方法を確認し、その結果をもとに展開範囲を広げることができます。複数店舗へ展開する場合も、店舗タイプや優先度に応じて段階的に導入計画を設計できます。",
+            "question_3_open": false,
+            "question_4": "",
+            "answer_4": "",
+            "question_4_open": false,
+            "question_5": "",
+            "answer_5": "",
+            "question_5_open": false,
+            "header_background_color": "#11243e",
+            "title_color": "#ffffff",
+            "subtitle_color": "#ffffffb3",
+            "icon_badge_background": "#a0b84226",
+            "icon_color": "#a0b842",
+            "question_color": "#0e2a3a",
+            "answer_color": "#677279"
+          },
+          "blocks": {}
+        },
+        "ai_gen_block_659cb24_RjWCfb": {
+          "type": "ai_gen_block_659cb24",
+          "name": "FAQ card",
+          "settings": {
+            "card_title": "計測精度・データ品質について",
+            "card_subtitle": "来店計測の精度、除外処理、データ確認について",
+            "icon_type": "chart",
+            "question_1": "来店客数はどのくらいの精度で計測できますか？",
+            "answer_1": "入口計測では、店舗環境が適切な場合、95%以上の精度を目安としています。ただし、精度は入口の幅、天井高、照明、混雑状況、スタッフの動き、カメラの設置位置によって変動します。Flowでは、店舗環境を確認したうえで適切な設置方法を設計し、安定した計測ができるよう調整します。",
+            "question_1_open": false,
+            "question_2": "スタッフ、再来店、グループ来店などはどのように扱われますか？",
+            "answer_2": "Flowでは、スタッフ除外や同日内の再来店除外など、店舗運用に合わせたフィルタリング設定が可能です。グループ来店についても、来店者を個別に計測することを基本としています。ただし、混雑状況や入口環境によって計測条件は変わるため、導入前に店舗ごとの環境を確認します。",
+            "question_2_open": false,
+            "question_3": "AIカメラではどのようなデータを計測できますか？",
+            "answer_3": "FlowのAIカメラでは、来店客数、店前通行量、滞在時間、性別・年代などの属性、店内導線、ゾーン別の回遊や滞在などを計測できます。計測できる内容は、店舗環境、カメラの設置位置、導入する計測メニューによって異なります。導入前に、目的に合わせて必要な計測項目を確認します。",
+            "question_3_open": false,
+            "question_4": "",
+            "answer_4": "",
+            "question_4_open": false,
+            "question_5": "",
+            "answer_5": "",
+            "question_5_open": false,
+            "header_background_color": "#11243e",
+            "title_color": "#ffffff",
+            "subtitle_color": "#ffffffb3",
+            "icon_badge_background": "#a0b84226",
+            "icon_color": "#a0b842",
+            "question_color": "#0e2a3a",
+            "answer_color": "#677279"
+          },
+          "blocks": {}
+        },
+        "ai_gen_block_659cb24_A8Jq6p": {
+          "type": "ai_gen_block_659cb24",
+          "name": "FAQ card",
+          "settings": {
+            "card_title": "システム連携について",
+            "card_subtitle": "POS、シフト、天候、既存システムとの連携について",
+            "icon_type": "chart",
+            "question_1": "POSデータはどのように連携できますか？",
+            "answer_1": "Flowでは、POSデータを取り込み、来店客数、売上、購入率、客単価などを組み合わせて分析できます。連携方法は、お客様のPOSシステムや社内運用に合わせて設計します。API連携が適している場合もあれば、CSVデータをFTPで連携する方法が現実的な場合もあります。まずは現在のデータ形式、更新頻度、運用フローを確認し、最適な連携方法をご提案します。",
+            "question_1_open": false,
+            "question_2": "シフトデータや天候データも連携できますか？",
+            "answer_2": "はい。シフトデータは、POSデータと同様にAPI、CSV、FTPなどの方法で取り込み、来店客数や売上と組み合わせて分析できます。天候データについては、Flow側で標準的に連携しており、登録された店舗住所に基づいて各店舗の天候情報を紐づけます。これにより、スタッフ配置、天候、店舗属性などの運用条件と店舗実績をあわせて確認できます。",
+            "question_2_open": false,
+            "question_3": "API、CSV、FTPなど、どのような連携方法に対応していますか？",
+            "answer_3": "Flowは、API、CSV、FTPなど複数の連携方法に対応しています。お客様の既存システムや社内運用に合わせて、現実的な連携方法を確認します。連携内容や更新頻度は、利用するデータの種類やシステム環境によって設計します。",
+            "question_3_open": false,
+            "question_4": "",
+            "answer_4": "",
+            "question_4_open": false,
+            "question_5": "",
+            "answer_5": "",
+            "question_5_open": false,
+            "header_background_color": "#11243e",
+            "title_color": "#ffffff",
+            "subtitle_color": "#ffffffb3",
+            "icon_badge_background": "#a0b84226",
+            "icon_color": "#a0b842",
+            "question_color": "#0e2a3a",
+            "answer_color": "#677279"
+          },
+          "blocks": {}
+        },
+        "ai_gen_block_659cb24_EBQNTg": {
+          "type": "ai_gen_block_659cb24",
+          "name": "FAQ card",
+          "settings": {
+            "card_title": "プライバシー・セキュリティについて",
+            "card_subtitle": "映像、個人情報、データ管理について",
+            "icon_type": "shield",
+            "question_1": "カメラ映像は保存されますか？",
+            "answer_1": "カメラ映像は、標準では保存されません。FlowのAIカメラは、来店客数や行動傾向を計測するためのものであり、監視カメラや防犯カメラとして映像を閲覧・保存することを目的としていません。一部のケースでは、計測精度の確認や調整のために映像を確認する場合がありますが、その場合も目的と範囲を明確にしたうえで対応します。",
+            "question_1_open": false,
+            "question_2": "個人を特定できる情報は取得されますか？",
+            "answer_2": "Flowは、来店客数、属性傾向、滞在時間、導線など、店舗運営に必要な集計データの取得を目的としています。個人を特定するための氏名、連絡先、顔認証IDなどを取得するものではありません。必要な計測項目とデータの扱いは、導入前に確認します。",
+            "question_2_open": false,
+            "question_3": "データの閲覧権限や管理方法はどのように設定できますか？",
+            "answer_3": "Flowでは、利用者の役割に応じて閲覧範囲を設定できます。本部、エリアマネージャー、店舗責任者など、担当業務に応じた情報だけを確認できるようにすることで、必要な人が必要なデータを安全に活用できる環境を整えます。",
+            "question_3_open": false,
+            "question_4": "",
+            "answer_4": "",
+            "question_4_open": false,
+            "question_5": "",
+            "answer_5": "",
+            "question_5_open": false,
+            "header_background_color": "#11243e",
+            "title_color": "#ffffff",
+            "subtitle_color": "#ffffffb3",
+            "icon_badge_background": "#a0b84226",
+            "icon_color": "#a0b842",
+            "question_color": "#0e2a3a",
+            "answer_color": "#677279"
+          },
+          "blocks": {}
+        },
+        "ai_gen_block_659cb24_GP3jjk": {
+          "type": "ai_gen_block_659cb24",
+          "name": "FAQ card",
+          "settings": {
+            "card_title": "サポート・運用定着について",
+            "card_subtitle": "導入後の支援、研修、店舗での活用について",
+            "icon_type": "users",
+            "question_1": "導入後のサポートには何が含まれますか？",
+            "answer_1": "Flowでは、導入時の設定支援、データ確認、基本操作の案内、運用開始後のサポートを行います。店舗や本部がデータを確認できるだけでなく、日々の店舗運用に活用できるよう、導入目的や利用部門に合わせて支援内容を整理します。",
+            "question_1_open": false,
+            "question_2": "店舗スタッフや店長向けの研修はありますか？",
+            "answer_2": "はい、必要に応じて店舗責任者、本部担当者、エリアマネージャー向けの研修を実施できます。Flowの画面操作だけでなく、来店客数、購入率、客単価、時間帯別の動きなどをどのように読み取り、店舗改善につなげるかを実務に近い形で説明します。",
+            "question_2_open": false,
+            "question_3": "Flowのデータを日々の店舗運用に定着させるにはどうすればよいですか？",
+            "answer_3": "重要なのは、データを見ること自体を目的にしないことです。朝礼、日中の進捗確認、週次ミーティング、VMD確認、シフト調整など、既存の店舗業務の中にFlowの確認タイミングを組み込むことで、データを日々の判断に活用しやすくなります。Flowでは、店舗や本部の運用に合わせた活用方法もご相談いただけます。",
+            "question_3_open": false,
+            "question_4": "",
+            "answer_4": "",
+            "question_4_open": false,
+            "question_5": "",
+            "answer_5": "",
+            "question_5_open": false,
+            "header_background_color": "#11243e",
+            "title_color": "#ffffff",
+            "subtitle_color": "#ffffffb3",
+            "icon_badge_background": "#a0b84226",
+            "icon_color": "#a0b842",
+            "question_color": "#0e2a3a",
+            "answer_color": "#677279"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_659cb24_ckmcrH",
+        "ai_gen_block_659cb24_RjWCfb",
+        "ai_gen_block_659cb24_A8Jq6p",
+        "ai_gen_block_659cb24_EBQNTg",
+        "ai_gen_block_659cb24_GP3jjk"
+      ],
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "rich_text_EtLVJr": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_bNQkAX": {
+          "type": "heading",
+          "settings": {
+            "text": "まだご不明な点がありますか？",
+            "heading_tag": "h1",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_cRTfWf": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>導入条件、システム連携、計測精度、プライバシー対応など、お客様の環境に合わせてご相談いただけます。</p>"
+          }
+        },
+        "buttons_CT466j": {
+          "type": "buttons",
+          "settings": {
+            "style_1": "fill",
+            "size_1": "xl",
+            "text_1": "導入条件を確認する",
+            "url_1": "",
+            "background_1": "#a0b842",
+            "text_color_1": "",
+            "style_2": "fill",
+            "size_2": "xl",
+            "text_2": "無料デモを予約する",
+            "url_2": "",
+            "background_2": "",
+            "text_color_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_bNQkAX",
+        "richtext_cRTfWf",
+        "buttons_CT466j"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "rich_text_6VmVgb": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_AK7Cjn": {
+          "type": "subheading",
+          "settings": {
+            "text": "NEXT STEPS",
+            "icon": "none"
+          }
+        },
+        "heading_YXhiR8": {
+          "type": "heading",
+          "settings": {
+            "text": "SEE WHAT FLOW COULD ACHIEVE INYOUR STORES",
+            "heading_tag": "h1",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_qzAkak": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Every retail operation is unique. Let's discuss what Flow could measure, analyze, and improve in your specific environment.</p>"
+          }
+        },
+        "button_AVKAbi": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "style": "outline",
+            "size": "base",
+            "text": "Contact Solutions Architect",
+            "url": "#",
+            "background": "",
+            "text_color": "#11243e"
+          }
+        },
+        "buttons_jaKCGH": {
+          "type": "buttons",
+          "settings": {
+            "style_1": "fill",
+            "size_1": "xl",
+            "text_1": "Schedule Demo →",
+            "url_1": "#",
+            "background_1": "#a0b842",
+            "text_color_1": "#ffffff",
+            "style_2": "fill",
+            "size_2": "xl",
+            "text_2": "Talk to Flow →",
+            "url_2": "#",
+            "background_2": "#ffffff",
+            "text_color_2": "#11243e"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_AK7Cjn",
+        "heading_YXhiR8",
+        "richtext_qzAkak",
+        "button_AVKAbi",
+        "buttons_jaKCGH"
+      ],
+      "disabled": true,
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "#0e366a",
+        "background_gradient": "",
+        "text_color": "#ffffff"
+      }
+    },
+    "multi_column_UExWWX": {
+      "type": "multi-column",
+      "blocks": {
+        "item_kHMBXM": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "image": "shopify://shop_images/unnamed.png",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "#f9fafb",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "高精度店内計測",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<p>高精度な来店計測と顧客行動分析。</p>",
+            "link_url": "",
+            "link_text": "詳しく見る →",
+            "link_style": "link"
+          }
+        },
+        "item_jzqLHt": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "image": "shopify://shop_images/1_1b5442dc-a679-4a23-a10f-8f39d2cc4234.png",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "#f9fafb",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "FIDA分析基盤",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<p>来店・売上・人員配置を統合分析。</p>",
+            "link_url": "#",
+            "link_text": "詳しく見る →",
+            "link_style": "link"
+          }
+        },
+        "item_rn7myV": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "image": "shopify://shop_images/3_05197ad8-294f-4cc5-9d73-b73021906f0a.png",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "#f9fafb",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "現場意思決定実行支援",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<p>現場実行につながる推奨アクション。</p><h3></h3>",
+            "link_url": "#",
+            "link_text": "詳しく見る →",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_kHMBXM",
+        "item_jzqLHt",
+        "item_rn7myV"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".multi-column__item {padding: 0;}"
+      ],
+      "name": "Multi-column",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "start",
+        "subheading": "プラットフォームを見る",
+        "title": "店舗運営のすべてのレイヤーを統合。",
+        "content": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "subheading_background_color": "",
+        "subheading_text_color": ""
+      }
+    }
+  },
+  "order": [
+    "rich_text_cqadYy",
+    "multi_column_L3Rbir",
+    "section-15",
+    "1780470974bb22e153",
+    "rich_text_EtLVJr",
+    "rich_text_6VmVgb",
+    "multi_column_UExWWX"
+  ]
+}
