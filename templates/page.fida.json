@@ -386,7 +386,7 @@
             "icon_background_type": "circle",
             "icon_background": "",
             "icon_color": "",
-            "image": "shopify://shop_images/Layer_1.png",
+            "image": "shopify://shop_images/traffic_demographics_1.png",
             "background_color": "#f9fafb",
             "text_color": "",
             "border_color": "#f9fafb",
@@ -409,7 +409,7 @@
             "icon_background_type": "circle",
             "icon_background": "",
             "icon_color": "",
-            "image": "shopify://shop_images/Layer_2_2.png",
+            "image": "shopify://shop_images/Connections_1_78676825-a109-4f09-a42e-5966770a579e.png",
             "background_color": "#f9fafb",
             "text_color": "",
             "border_color": "#f9fafb",
@@ -441,7 +441,7 @@
             "title": "",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<h4>03. 実行提案につなげる</h4><p>Flow AIがFIDAを参照し、店長・エリアマネージャー・本部が次に確認すべきこと、取るべき行動を提案します。</p>",
+            "content": "<h4>03. 実行提案につなげる</h4><p>Flow AIがFIDAを参照し、店長・エリアマネージャー・本部が次に確認すべきこと、取るべき行動を整理します。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -461,12 +461,12 @@
         "text_alignment": "start",
         "subheading": "FIDAの役割",
         "title": "データを、判断できる状態に整える",
-        "content": "<p>FIDAは、売上・来店・スタッフ・店舗報告・マニュアルを店舗ごとの文脈で整理するFlowの判断基盤です。Flow AIはこの基盤を参照し、状況に合った実行提案を行います。</p>",
+        "content": "<p>FIDAは、売上・来店・スタッフ・店舗報告・マニュアルを店舗ごとの文脈で整理するFlowの判断基盤です。<br/>Flow AIはこの基盤を参照し、状況に合った実行提案を提示します。</p>",
         "background": "rgba(0,0,0,0)",
         "background_gradient": "",
         "text_color": "",
-        "subheading_background_color": "#f0f3e9",
-        "subheading_text_color": "#11243e"
+        "subheading_background_color": "#11243E",
+        "subheading_text_color": "#FFFFFF"
       }
     },
     "multi_column_rPwdDt": {
