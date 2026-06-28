@@ -509,16 +509,16 @@
             "card_border_radius": 16,
             "card_shadow_opacity": 0.1,
             "status_1_name": "来店数は高いが、購買率が低下",
-            "status_1_update": "入口付近の声かけとフィッティング誘導を強化",
+            "status_1_update": "入口付近の声かけを増やし、フィッティング誘導を強化",
             "status_1_cadence": "参照：来店・購買率・スタッフ配置",
             "status_2_name": "通行量は多いが、入店率が低い",
-            "status_2_update": "店頭VMDとキャンペーン訴求を確認",
+            "status_2_update": "店頭VMDとキャンペーン訴求を見直す",
             "status_2_cadence": "参照：通行量・入店率・店舗メモ",
             "status_3_name": "売上進捗が遅れている",
-            "status_3_update": "客単価・購買点数・購買率の差を確認",
+            "status_3_update": "購買率・客単価・購買点数から優先KPIを絞る",
             "status_3_cadence": "参照：売上・予算・購買データ",
             "status_4_name": "SOPと現場対応にずれがある可能性",
-            "status_4_update": "該当する接客ルールと実行状況を確認",
+            "status_4_update": "該当する接客ルールを確認し、実行状況を見直す",
             "status_4_cadence": "参照：SOP・店舗報告・Pulse",
             "status_item_background": "#EDF1E1",
             "status_item_radius": 8,
@@ -532,7 +532,7 @@
             "banner_label": "人の判断を支援",
             "banner_message": "Flow AIは判断を自動化するものではありません。",
             "banner_meta": "店舗データと社内ルールをもとに、店長・エリアマネージャー・本部の判断を支援します。",
-            "banner_background": "#1a2b4a",
+            "banner_background": "#0E366A",
             "banner_border_radius": 12,
             "banner_icon_color": "#A0B842",
             "banner_label_size": 11,
@@ -540,7 +540,7 @@
             "banner_message_size": 18,
             "banner_message_color": "#ffffff",
             "banner_meta_size": 14,
-            "banner_meta_color": "#d1d5db"
+            "banner_meta_color": "#FFFFFF"
           },
           "blocks": {}
         }
