@@ -17,12 +17,12 @@
           "settings": {
             "container_background": "#ffffff",
             "text_color": "#000000",
-            "left_title": "感覚に頼るシフト判断",
+            "left_title": "感覚に頼る配置判断",
             "left_tag": "従来型",
-            "left_metric": "人員不足が見えない",
+            "left_metric": "必要な時間に人が足りない",
             "left_item_1": "<p>来店数とスタッフ数を別々に確認</p>",
             "left_item_2": "<p>ピーク時間の接客負荷が見えない</p>",
-            "left_item_3": "<p>売上低下の原因が曖昧になる</p>",
+            "left_item_3": "<p>配置と売上の関係が曖昧になる</p>",
             "left_item_4": "<p>次週の配置改善につながりにくい</p>",
             "left_background": "#ffffff",
             "left_border_color": "#e5e7eb",
@@ -36,7 +36,7 @@
             "right_tag": "⚡データ連携",
             "right_metric": "必要な時間に配置する",
             "right_item_1": "<p>来店数とスタッフ稼働を同時に確認</p>",
-            "right_item_2": "<p>来客予測でピーク時間を把握</p>",
+            "right_item_2": "<p>来客予測でピークに備える</p>",
             "right_item_3": "<p>購入転換力とスタッフ効率を見る</p>",
             "right_item_4": "<p>店舗ごとの配置改善につなげる</p>",
             "right_background": "#0A2540",
@@ -597,6 +597,7 @@
       "block_order": [
         "ai_gen_block_4e2462b_WThXwj"
       ],
+      "disabled": true,
       "name": "Conversion intelligence",
       "settings": {
         "full_width": true,
@@ -626,7 +627,7 @@
             "title": "当日",
             "heading_tag": "h1",
             "subheading": "<p>対応スピード</p>",
-            "content": "<h6><strong>その日のうちに課題を把握</strong></h6><p>購買率の変化をリアルタイムに確認できるため、週次レポートを待たずに、営業時間中に改善判断を行えます。</p>",
+            "content": "<h6><strong>ピーク時間に対応</strong></h6><p>来店状況をリアルタイムに確認できるため、営業中に接客配置・休憩・作業時間を見直しやすくなります。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -648,7 +649,7 @@
             "title": "+5.3pt",
             "heading_tag": "h1",
             "subheading": "<p>購買率</p>",
-            "content": "<h6><strong>購買率改善</strong></h6><p>Flowを活用した事例では、購買率が19.9%から25.2%に改善しました。来店数と売上をあわせて見ることで、店舗は購買につながらなかった機会を把握しやすくなりました。</p>",
+            "content": "<h6><strong>接客機会を成果へ</strong></h6><p>Flowの活用事例では、購買率が19.9%から25.2%に改善しました。来店と購買の流れを把握することで、接客機会を見直しやすくなります。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -670,7 +671,7 @@
             "title": "実行へ",
             "heading_tag": "h1",
             "subheading": "<p>店舗活用</p>",
-            "content": "<h6><strong>データを店舗行動に接続</strong></h6><p>来店数、購買率、時間帯別の動きをもとに、ピーク時間の接客配置や売場対応を見直しやすくなります。</p>",
+            "content": "<h6><strong>配置判断を店舗行動に接続</strong></h6><p>来店数・購買率・スタッフ稼働をもとに、ピーク時間の接客配置や現場対応を見直しやすくなります。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -716,9 +717,9 @@
         "stack_on_mobile": false,
         "gap": "small",
         "text_alignment": "center",
-        "subheading": "測定可能な改善",
-        "title": "購買率改善は、測定から始まる。",
-        "content": "<p>Flowを活用した店舗では、来店数と購買率をもとに売場・接客・運営判断を見直し、改善につなげた事例があります。</p>",
+        "subheading": "配置改善の起点",
+        "title": "スタッフ配置改善は、来店データから始まる。",
+        "content": "<p>Flowを活用することで、来店数・購買率・スタッフ稼働をもとに、接客配置・休憩・作業時間の見直しにつなげやすくなります。</p>",
         "background": "#f9fafb",
         "background_gradient": "",
         "text_color": "",
