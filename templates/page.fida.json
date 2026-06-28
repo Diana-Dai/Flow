@@ -15,20 +15,20 @@
         "subheading_GmUMNm": {
           "type": "subheading",
           "settings": {
-            "text": "FLOW PLATFORM"
+            "text": "FLOW AI"
           }
         },
         "heading_frXnfn": {
           "type": "heading",
           "settings": {
-            "text": "店舗データを、現場の判断と実行へ。",
+            "text": "店舗データを、次の一手へ。",
             "heading_tag": "h1"
           }
         },
         "richtext_HwhtPj": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Flowは、来店・売上・スタッフ・天候・店舗メモ・社内マニュアルをひとつの文脈で統合し、店舗運営の判断を支えるリテールプラットフォームです。</p>"
+            "content": "<p>Flow AIは、来店・売上・スタッフ・天候・店舗メモ・社内マニュアルをもとに、店舗ごとの状況を読み取り、現場で実行できる次の一手を提案します。</p>"
           }
         },
         "button_7Prq3W": {
@@ -47,8 +47,8 @@
           "settings": {
             "style": "fill",
             "size": "lg",
-            "text": "連携できるデータを見る →",
-            "url": "#",
+            "text": "活用できるデータを見る →",
+            "url": "#flow-ai-data-inputs",
             "background": "#ffffff",
             "text_color": "#11243e"
           }
@@ -82,10 +82,10 @@
         "ai_gen_block_3c85fdc_mHbENN": {
           "type": "ai_gen_block_3c85fdc",
           "settings": {
-            "heading": "100以上のブランドで活用されています",
-            "content": "<p>ファッション、ライフスタイル、専門店など、店舗運営の改善に取り組む小売企業がFlowを活用しています。</p>",
+            "heading": "100以上のブランドの店舗運営を支えています",
+            "content": "<p>ファッション、ライフスタイル、専門店など、店舗運営の改善に取り組む小売企業がFlowを導入しています。</p>",
             "text_alignment": "center",
-            "content_size": 16,
+            "content_size": 18,
             "heading_color": "#11243e",
             "content_color": "#677279",
             "logo_1": "shopify://shop_images/Baycrews_Group_Logo.png",
@@ -134,7 +134,7 @@
         "richtext_FCxqzE": {
           "type": "richtext",
           "settings": {
-            "content": "<h1>店舗データと社内知識を、現場で使える判断材料に。</h1><h5>Flowは、来店・売上・店舗報告・マニュアルをひとつの文脈で整理し、<br/>店長・エリアマネージャー・本部が同じ情報をもとに動ける環境をつくります。</h5>"
+            "content": "<h2><strong>データも、マニュアルもある。<br/>でも、判断は現場に残っている。</strong></h2><h5>Flow AIは、来店・売上・スタッフ・店舗報告・社内マニュアルをひとつの文脈で整理し、<br/>店長・エリアマネージャー・本部が次に取るべき行動を判断しやすくします。</h5>"
           }
         }
       },
@@ -150,6 +150,19 @@
         "background": "#11243e",
         "background_gradient": "",
         "text_color": "#f9fafb"
+      }
+    },
+    "custom_liquid_tiJnkh": {
+      "type": "custom-liquid",
+      "name": "Custom Liquid",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "liquid": "<p style=\"text-align: center\">Write or copy/paste Liquid code</p>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
       }
     },
     "multi_column_QjMJiW": {
@@ -171,7 +184,7 @@
             "title": "POS・売上データ",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<p>売上、客単価、購買点数、予算進捗などを店舗別・時間帯別に確認できます。</p>",
+            "content": "<p>売上、客単価、購買点数、予算進捗をもとに、店舗ごとの販売状況を把握します。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -193,7 +206,7 @@
             "title": "来店データ",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<p>来店数、通行量、入店率、滞在時間、店内行動を売上と合わせて把握できます。</p>",
+            "content": "<p>来店数、通行量、入店率、滞在時間、店内行動を売上と合わせて確認します。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -215,7 +228,7 @@
             "title": "シフトデータ",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<p>スタッフ配置や稼働状況を、来店・売上・購買率の変化と合わせて確認できます。</p>",
+            "content": "<p>スタッフ配置や稼働状況を、来店・売上・購買率の変化と合わせて確認します。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -237,7 +250,7 @@
             "title": "店舗条件",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<p>天候、曜日、商業施設、店舗規模などを加えて、店舗ごとの差を見やすくします。</p>",
+            "content": "<p>天候、曜日、商業施設、店舗規模などを加えて、店舗ごとの差を読み取りやすくします。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -255,11 +268,11 @@
             "text_color": "",
             "border_color": "#f2f2f2",
             "show_controls": false,
-            "column_size": "4",
+            "column_size": "3",
             "title": "メモ・Pulse",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<p>売場変更、イベント、在庫状況、スタッフ状況など、現場の情報を記録できます。</p><h3></h3>",
+            "content": "<p>売場変更、イベント、在庫状況、スタッフ状況など、現場で起きたことを記録します。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -277,11 +290,11 @@
             "text_color": "",
             "border_color": "#f2f2f2",
             "show_controls": false,
-            "column_size": "4",
+            "column_size": "3",
             "title": "マニュアル・SOP",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<p>接客ルールや店舗運営マニュアルを、Flow AIが参照できる情報として整理できます。</p>",
+            "content": "<p>接客ルールや店舗運営マニュアルを、Flow AIが参照できる判断材料として整理します。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -299,11 +312,11 @@
             "text_color": "",
             "border_color": "#f2f2f2",
             "show_controls": false,
-            "column_size": "4",
-            "title": "社内ナレッジ",
+            "column_size": "3",
+            "title": "社内資料",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<p>PDF、Word、PowerPoint、社内リンクを登録し、判断に使える情報として活用できます。</p>",
+            "content": "<p>PDF、Word、PowerPoint、社内リンクを登録し、判断に使える情報として活用します。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -315,20 +328,20 @@
             "icon": "check",
             "icon_width": 32,
             "icon_background_type": "square",
-            "icon_background": "#a0b842",
-            "icon_color": "#ffffff",
-            "background_color": "#f9fafb",
-            "text_color": "",
+            "icon_background": "#FFFFFF",
+            "icon_color": "#A0B842",
+            "background_color": "#A0B842",
+            "text_color": "#FFFFFF",
             "border_color": "#f2f2f2",
             "show_controls": false,
-            "column_size": "4",
+            "column_size": "1",
             "title": "データ連携",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<p>API、CSV、FTPを使い、既存システムや外部データを段階的に取り込めます。</p>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
+            "content": "<p>API、CSV、FTPを使い、既存システムや外部データを段階的に取り込みます。</p>",
+            "link_url": "shopify://pages/integrations-2",
+            "link_text": "外部連携の詳細を見る →",
+            "link_style": "button"
           }
         }
       },
@@ -353,13 +366,69 @@
         "gap": "small",
         "text_alignment": "start",
         "subheading": "",
-        "title": "Flowがつなぐ店舗データと社内情報",
-        "content": "<p>売上、来店、スタッフ、天候、店舗報告、マニュアルをひとつの基盤に集約し、店舗運営の判断に使える状態にします。</p>",
+        "title": "Flow AIが理解する現場文脈",
+        "content": "<p>Flow AIは、売上・来店・スタッフ・店舗報告・マニュアルをひとつの判断材料として整理し、店舗ごとの状況に合わせた実行提案につなげます。</p>",
         "background": "#ffffff",
         "background_gradient": "",
         "text_color": "",
         "subheading_background_color": "",
         "subheading_text_color": ""
+      }
+    },
+    "rich_text_GeB9DG": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_KNcVdN": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "text": "Subheading",
+            "icon": "none"
+          }
+        },
+        "heading_UX48ag": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "text": "Heading",
+            "heading_tag": "h1",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "button_VDQGrD": {
+          "type": "button",
+          "settings": {
+            "style": "fill",
+            "size": "xl",
+            "text": "外部連携の詳細を見る →",
+            "url": "shopify://pages/integrations-2",
+            "background": "",
+            "text_color": ""
+          }
+        },
+        "richtext_Q3TjGC": {
+          "type": "richtext",
+          "disabled": true,
+          "settings": {
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_KNcVdN",
+        "heading_UX48ag",
+        "button_VDQGrD",
+        "richtext_Q3TjGC"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "#FFFFFF",
+        "background_gradient": "",
+        "text_color": ""
       }
     },
     "multi_column_Rqk3xG": {
@@ -1282,8 +1351,8 @@
             "show_badge": true,
             "badge_text": "FLOW AI",
             "badge_icon": "none",
-            "badge_background": "#803CEE",
-            "badge_text_color": "#FFFFFF",
+            "badge_background": "#803cee",
+            "badge_text_color": "#ffffff",
             "heading": "店舗データと社内ルールを、Flow AIに聞く。",
             "description": "Flow AIは、売上・来店・購買率などの店舗データと、マニュアル・SOP・店舗報告を参照しながら、状況確認、要因整理、次の打ち手の検討を支援します。",
             "card_background": "#fafafa",
@@ -1294,15 +1363,15 @@
             "card_title": "Flow AI",
             "card_subtitle": "店舗運営について質問できます",
             "card_header_icon": "sparkles",
-            "card_icon_color": "#803CEE",
+            "card_icon_color": "#803cee",
             "card_title_color": "#11243e",
             "card_subtitle_color": "#78909c",
             "row_background": "#ffffff",
             "row_border_color": "#eeeeee",
             "row_border_radius": 12,
-            "row_icon_background": "#803CEE",
-            "row_icon_border_color": "#803CEE",
-            "row_icon_color": "#FFFFFF",
+            "row_icon_background": "#803cee",
+            "row_icon_border_color": "#803cee",
+            "row_icon_color": "#ffffff",
             "row_label_color": "#0e366a",
             "row_quote_color": "#11243e",
             "row_1_icon": "chart",
@@ -2406,7 +2475,9 @@
     "image_with_text_overlay_AcppEX",
     "blocks_6PjPxD",
     "rich_text_B8Y9rV",
+    "custom_liquid_tiJnkh",
     "multi_column_QjMJiW",
+    "rich_text_GeB9DG",
     "multi_column_Rqk3xG",
     "multi_column_rPwdDt",
     "rich_text_peMmaV",
