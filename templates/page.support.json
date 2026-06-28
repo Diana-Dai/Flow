@@ -15,14 +15,14 @@
         "subheading_nJjQnz": {
           "type": "subheading",
           "settings": {
-            "text": "よくあるご質問",
+            "text": "サポート・サービス",
             "icon": "none"
           }
         },
         "heading_hjfyL9": {
           "type": "heading",
           "settings": {
-            "text": "導入・連携・店舗運用について",
+            "text": "Flowサポートセンター",
             "heading_tag": "h2",
             "text_color": "",
             "gradient": ""
@@ -31,7 +31,7 @@
         "richtext_wjTJeB": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Flowの導入期間、システム連携、計測精度、プライバシー、サポート、店舗での運用について、よく確認される内容をまとめました。</p>"
+            "content": "<p>操作方法、データ確認、アカウント設定、連携、研修相談など、Flowをご利用中のお客様向けの情報をまとめています。</p>"
           }
         }
       },
@@ -69,10 +69,10 @@
             "border_color": "rgba(0,0,0,0)",
             "show_controls": false,
             "column_size": "4",
-            "title": "4〜6週間",
-            "heading_tag": "h2",
+            "title": "FAQ",
+            "heading_tag": "h4",
             "subheading": "",
-            "content": "<p>標準的な導入期間</p>",
+            "content": "<p>よくある質問を確認できます。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -91,10 +91,10 @@
             "border_color": "#0e366a",
             "show_controls": false,
             "column_size": "4",
-            "title": "95%以上",
-            "heading_tag": "h2",
+            "title": "操作・データ",
+            "heading_tag": "h4",
             "subheading": "",
-            "content": "<p>入口計測の精度目安</p>",
+            "content": "<p>画面操作や数値の見方を確認できます。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -113,10 +113,10 @@
             "border_color": "#0e366a",
             "show_controls": false,
             "column_size": "4",
-            "title": "API  / FTP",
-            "heading_tag": "h2",
+            "title": "連携・アカウント",
+            "heading_tag": "h4",
             "subheading": "",
-            "content": "<p>柔軟なデータ連携</p>",
+            "content": "<p>POS連携や権限設定を確認できます。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -135,10 +135,10 @@
             "border_color": "#0e366a",
             "show_controls": false,
             "column_size": "4",
-            "title": "導入支援あり",
-            "heading_tag": "h2",
+            "title": "サポート相談",
+            "heading_tag": "h4",
             "subheading": "",
-            "content": "<p>設定・研修・運用サポート</p>",
+            "content": "<p>研修や運用相談はこちらから。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -284,23 +284,115 @@
         "chart_true_false_color": ""
       }
     },
+    "multi_column_wUVM7r": {
+      "type": "multi-column",
+      "blocks": {
+        "item_hQ7Tgf": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "FAQ",
+            "heading_tag": "h4",
+            "subheading": "<p>よくある質問</p>",
+            "content": "<p>導入、連携、データ、アカウント設定など、よくある質問を確認できます。</p>",
+            "link_url": "shopify://pages/faq",
+            "link_text": "FAQを見る",
+            "link_style": "button"
+          }
+        },
+        "item_XgbEtV": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "ナレッジベース",
+            "heading_tag": "h4",
+            "subheading": "<p>操作方法・設定</p>",
+            "content": "<p>Flowの基本操作、画面の見方、設定方法を確認できます。</p>",
+            "link_url": "https://help.flow-insight.com/",
+            "link_text": "使い方を見る",
+            "link_style": "button"
+          }
+        },
+        "item_RkyNVm": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "Flowアカデミー",
+            "heading_tag": "h4",
+            "subheading": "<p>学習・研修</p><p></p>",
+            "content": "<p>店舗スタッフや管理者向けの学習コンテンツを確認できます。</p>",
+            "link_url": "https://www.youtube.com/watch?v=KX95Pai7nYw&list=PLppJ6eHiN-PSlpLPsx2-JM4XdoDhBhKrU",
+            "link_text": "アカデミーを見る",
+            "link_style": "button"
+          }
+        }
+      },
+      "block_order": [
+        "item_hQ7Tgf",
+        "item_XgbEtV",
+        "item_RkyNVm"
+      ],
+      "name": "Multi-column",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "start",
+        "subheading": "サポートメニュー",
+        "title": "目的に合わせてサポートを選ぶ",
+        "content": "<p>よくある質問、操作方法、研修コンテンツなど、必要な情報にすぐアクセスできます。</p>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "subheading_background_color": "",
+        "subheading_text_color": ""
+      }
+    },
     "1780470974bb22e153": {
       "type": "_blocks",
       "blocks": {
-        "ai_gen_block_659cb24_ckmcrH": {
+        "ai_gen_block_659cb24_RjWCfb": {
           "type": "ai_gen_block_659cb24",
+          "name": "FAQ card",
           "settings": {
-            "card_title": "導入・展開について",
-            "card_subtitle": "導入期間、設置条件、段階展開について",
-            "icon_type": "check",
-            "question_1": "Flowの導入にはどのくらいの期間がかかりますか？",
-            "answer_1": "一般的には、要件確認から導入開始まで4〜6週間程度が目安です。店舗数、カメラ設置環境、POS連携の有無、社内確認フローによって期間は変動します。まずは対象店舗、必要な計測項目、連携データを確認したうえで、現実的な導入スケジュールをご提案します。",
+            "card_title": "ログイン・アカウント",
+            "card_subtitle": "ログイン、ユーザー管理、権限設定について",
+            "icon_type": "users",
+            "question_1": "ログインできない場合はどうすればよいですか？",
+            "answer_1": "まず、メールアドレスとパスワードに誤りがないかご確認ください。パスワードをお忘れの場合は、ログイン画面から再設定をお試しください。解決しない場合は、会社名・お名前・ご利用中のメールアドレスを添えてサポートチームまでご連絡ください。",
             "question_1_open": false,
-            "question_2": "店舗側で事前に準備するものはありますか？",
-            "answer_2": "主に、店舗図面、入口や計測エリアの情報、ネットワーク環境、POSやシフトなど連携したいデータの確認が必要です。カメラ設置が必要な場合は、天井高、入口幅、照明、設置位置なども確認します。店舗運営への影響を抑えられるよう、事前確認の段階で必要事項を整理します。",
+            "question_2": "ユーザー追加や権限変更はどこから設定できますか？",
+            "answer_2": "ユーザー追加、削除、権限変更、閲覧できるデータ範囲の設定は、Flow内の設定画面から管理者様にて行えます。設定方法が不明な場合や確認が必要な場合は、サポートチームまでお問い合わせください。",
             "question_2_open": false,
-            "question_3": "一部店舗から開始し、段階的に展開できますか？",
-            "answer_3": "はい、可能です。まずは一部店舗で計測精度、データ連携、店舗での活用方法を確認し、その結果をもとに展開範囲を広げることができます。複数店舗へ展開する場合も、店舗タイプや優先度に応じて段階的に導入計画を設計できます。",
+            "question_3": "",
+            "answer_3": "",
             "question_3_open": false,
             "question_4": "",
             "answer_4": "",
@@ -308,7 +400,7 @@
             "question_5": "",
             "answer_5": "",
             "question_5_open": false,
-            "header_background_color": "#11243e",
+            "header_background_color": "#11243E",
             "title_color": "#ffffff",
             "subtitle_color": "#ffffffb3",
             "icon_badge_background": "#a0b84226",
@@ -318,21 +410,20 @@
           },
           "blocks": {}
         },
-        "ai_gen_block_659cb24_RjWCfb": {
+        "ai_gen_block_659cb24_ckmcrH": {
           "type": "ai_gen_block_659cb24",
-          "name": "FAQ card",
           "settings": {
-            "card_title": "計測精度・データ品質について",
-            "card_subtitle": "来店計測の精度、除外処理、データ確認について",
+            "card_title": "操作・データ確認",
+            "card_subtitle": "画面操作、数値、レポートの確認について",
             "icon_type": "chart",
-            "question_1": "来店客数はどのくらいの精度で計測できますか？",
-            "answer_1": "入口計測では、店舗環境が適切な場合、95%以上の精度を目安としています。ただし、精度は入口の幅、天井高、照明、混雑状況、スタッフの動き、カメラの設置位置によって変動します。Flowでは、店舗環境を確認したうえで適切な設置方法を設計し、安定した計測ができるよう調整します。",
+            "question_1": "ダッシュボードの数値が想定と違う場合はどう確認すればよいですか？",
+            "answer_1": "まず、対象期間、店舗、表示条件、連携データの更新状況をご確認ください。POS連携や外部データを利用している場合、反映タイミングにより一時的に差異が出ることがあります。確認が必要な場合は、該当画面のスクリーンショットと対象期間を添えてお問い合わせください。",
             "question_1_open": false,
-            "question_2": "スタッフ、再来店、グループ来店などはどのように扱われますか？",
-            "answer_2": "Flowでは、スタッフ除外や同日内の再来店除外など、店舗運用に合わせたフィルタリング設定が可能です。グループ来店についても、来店者を個別に計測することを基本としています。ただし、混雑状況や入口環境によって計測条件は変わるため、導入前に店舗ごとの環境を確認します。",
+            "question_2": "レポートや画面の見方が分からない場合は相談できますか？",
+            "answer_2": "はい。レポートの見方、KPIの確認方法、店舗での活用方法についてサポート可能です。確認したい画面名や利用目的をお知らせいただくと、より具体的にご案内できます。",
             "question_2_open": false,
-            "question_3": "AIカメラではどのようなデータを計測できますか？",
-            "answer_3": "FlowのAIカメラでは、来店客数、店前通行量、滞在時間、性別・年代などの属性、店内導線、ゾーン別の回遊や滞在などを計測できます。計測できる内容は、店舗環境、カメラの設置位置、導入する計測メニューによって異なります。導入前に、目的に合わせて必要な計測項目を確認します。",
+            "question_3": "",
+            "answer_3": "",
             "question_3_open": false,
             "question_4": "",
             "answer_4": "",
@@ -354,17 +445,17 @@
           "type": "ai_gen_block_659cb24",
           "name": "FAQ card",
           "settings": {
-            "card_title": "システム連携について",
-            "card_subtitle": "POS、シフト、天候、既存システムとの連携について",
+            "card_title": "POS・外部連携",
+            "card_subtitle": "POS、シフト、天候、外部データ連携について",
             "icon_type": "chart",
-            "question_1": "POSデータはどのように連携できますか？",
-            "answer_1": "Flowでは、POSデータを取り込み、来店客数、売上、購入率、客単価などを組み合わせて分析できます。連携方法は、お客様のPOSシステムや社内運用に合わせて設計します。API連携が適している場合もあれば、CSVデータをFTPで連携する方法が現実的な場合もあります。まずは現在のデータ形式、更新頻度、運用フローを確認し、最適な連携方法をご提案します。",
+            "question_1": "POSデータが反映されない場合はどうすればよいですか？",
+            "answer_1": "まず、対象日のデータ更新タイミングと連携状況をご確認ください。データ連携の方式や更新頻度によって、反映までに時間がかかる場合があります。継続して反映されない場合は、店舗名、対象日、確認したい数値を添えてサポートチームまでご連絡ください。",
             "question_1_open": false,
-            "question_2": "シフトデータや天候データも連携できますか？",
-            "answer_2": "はい。シフトデータは、POSデータと同様にAPI、CSV、FTPなどの方法で取り込み、来店客数や売上と組み合わせて分析できます。天候データについては、Flow側で標準的に連携しており、登録された店舗住所に基づいて各店舗の天候情報を紐づけます。これにより、スタッフ配置、天候、店舗属性などの運用条件と店舗実績をあわせて確認できます。",
+            "question_2": "連携できるデータの種類について確認できますか？",
+            "answer_2": "はい。POS、シフト、天候、店舗属性、その他外部データなど、連携内容はお客様の環境により異なります。連携したいデータの種類、形式、更新頻度をお知らせいただければ、対応可否を確認いたします。",
             "question_2_open": false,
-            "question_3": "API、CSV、FTPなど、どのような連携方法に対応していますか？",
-            "answer_3": "Flowは、API、CSV、FTPなど複数の連携方法に対応しています。お客様の既存システムや社内運用に合わせて、現実的な連携方法を確認します。連携内容や更新頻度は、利用するデータの種類やシステム環境によって設計します。",
+            "question_3": "",
+            "answer_3": "",
             "question_3_open": false,
             "question_4": "",
             "answer_4": "",
@@ -386,17 +477,17 @@
           "type": "ai_gen_block_659cb24",
           "name": "FAQ card",
           "settings": {
-            "card_title": "プライバシー・セキュリティについて",
-            "card_subtitle": "映像、個人情報、データ管理について",
+            "card_title": "カメラ・計測",
+            "card_subtitle": "来店計測、カメラ、データ品質について",
             "icon_type": "shield",
-            "question_1": "カメラ映像は保存されますか？",
-            "answer_1": "カメラ映像は、標準では保存されません。FlowのAIカメラは、来店客数や行動傾向を計測するためのものであり、監視カメラや防犯カメラとして映像を閲覧・保存することを目的としていません。一部のケースでは、計測精度の確認や調整のために映像を確認する場合がありますが、その場合も目的と範囲を明確にしたうえで対応します。",
+            "question_1": "来店客数や計測データに違和感がある場合はどうすればよいですか？",
+            "answer_1": "対象期間、店舗、入口条件、スタッフの動き、イベントや天候など、数値に影響する要因をご確認ください。継続的な差異や明らかな異常がある場合は、店舗名、対象日時、確認したい指標を添えてお問い合わせください。",
             "question_1_open": false,
-            "question_2": "個人を特定できる情報は取得されますか？",
-            "answer_2": "Flowは、来店客数、属性傾向、滞在時間、導線など、店舗運営に必要な集計データの取得を目的としています。個人を特定するための氏名、連絡先、顔認証IDなどを取得するものではありません。必要な計測項目とデータの扱いは、導入前に確認します。",
+            "question_2": "カメラや計測機器に問題がある場合はどうすればよいですか？",
+            "answer_2": "Flowでは、各センサーからデータが正常に受信されているかを自動で監視しています。データ受信に異常がある場合は、弊社側でアラートを受け取り、確認可能なタイミングで対応を開始します。数値が通常と異なる、または店舗側で気になる点がある場合は、Flow内のサポートウィジェット、または support @ flow-solutions.com までお問い合わせください。",
             "question_2_open": false,
-            "question_3": "データの閲覧権限や管理方法はどのように設定できますか？",
-            "answer_3": "Flowでは、利用者の役割に応じて閲覧範囲を設定できます。本部、エリアマネージャー、店舗責任者など、担当業務に応じた情報だけを確認できるようにすることで、必要な人が必要なデータを安全に活用できる環境を整えます。",
+            "question_3": "",
+            "answer_3": "",
             "question_3_open": false,
             "question_4": "",
             "answer_4": "",
@@ -418,17 +509,17 @@
           "type": "ai_gen_block_659cb24",
           "name": "FAQ card",
           "settings": {
-            "card_title": "サポート・運用定着について",
-            "card_subtitle": "導入後の支援、研修、店舗での活用について",
-            "icon_type": "users",
-            "question_1": "導入後のサポートには何が含まれますか？",
-            "answer_1": "Flowでは、導入時の設定支援、データ確認、基本操作の案内、運用開始後のサポートを行います。店舗や本部がデータを確認できるだけでなく、日々の店舗運用に活用できるよう、導入目的や利用部門に合わせて支援内容を整理します。",
+            "card_title": "研修・運用サポート",
+            "card_subtitle": "店舗での活用、研修、運用定着について",
+            "icon_type": "info",
+            "question_1": "店舗スタッフ向けの研修は依頼できますか？",
+            "answer_1": "はい。Flowの基本操作、KPIの見方、店舗での活用方法について、研修や説明会のご相談が可能です。対象者、店舗数、希望内容、実施希望時期を添えてお問い合わせください。",
             "question_1_open": false,
-            "question_2": "店舗スタッフや店長向けの研修はありますか？",
-            "answer_2": "はい、必要に応じて店舗責任者、本部担当者、エリアマネージャー向けの研修を実施できます。Flowの画面操作だけでなく、来店客数、購入率、客単価、時間帯別の動きなどをどのように読み取り、店舗改善につなげるかを実務に近い形で説明します。",
+            "question_2": "Flowのデータを店舗運用に定着させるにはどうすればよいですか？",
+            "answer_2": "まずは、店長が朝礼で前日のAIサマリーと当日の改善機会を確認することから始めるのがおすすめです。日報・週報・月報はPulseで共有し、売上に影響するイベントや店舗状況はメモとして記録することで、データと現場の状況を結びつけやすくなります。SOPや過去の傾向についてFlow上で確認しながら運用することで、店舗でも無理なく活用を始められます。",
             "question_2_open": false,
-            "question_3": "Flowのデータを日々の店舗運用に定着させるにはどうすればよいですか？",
-            "answer_3": "重要なのは、データを見ること自体を目的にしないことです。朝礼、日中の進捗確認、週次ミーティング、VMD確認、シフト調整など、既存の店舗業務の中にFlowの確認タイミングを組み込むことで、データを日々の判断に活用しやすくなります。Flowでは、店舗や本部の運用に合わせた活用方法もご相談いただけます。",
+            "question_3": "",
+            "answer_3": "",
             "question_3_open": false,
             "question_4": "",
             "answer_4": "",
@@ -448,12 +539,74 @@
         }
       },
       "block_order": [
-        "ai_gen_block_659cb24_ckmcrH",
         "ai_gen_block_659cb24_RjWCfb",
+        "ai_gen_block_659cb24_ckmcrH",
         "ai_gen_block_659cb24_A8Jq6p",
         "ai_gen_block_659cb24_EBQNTg",
         "ai_gen_block_659cb24_GP3jjk"
       ],
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "blocks_egaVHa": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_34c6ce6_pkjxrP": {
+          "type": "ai_gen_block_34c6ce6",
+          "settings": {
+            "form_title": "お問い合わせフォーム",
+            "form_subtitle": "FAQで解決しない内容や、店舗ごとの確認が必要な場合は、以下のフォームよりFlowサポートチームへご連絡ください。",
+            "inquiry_type_label": "お問い合わせ内容",
+            "show_inquiry_1": true,
+            "inquiry_1_title": "操作・データ確認",
+            "inquiry_1_desc": "画面操作、数値、レポートについて",
+            "inquiry_1_value": "report_inquiry",
+            "show_inquiry_2": true,
+            "inquiry_2_title": "アカウント・連携",
+            "inquiry_2_desc": "ユーザー管理、権限設定、POS連携について",
+            "inquiry_2_value": "account_inquiry",
+            "show_inquiry_3": true,
+            "inquiry_3_title": "研修・運用相談",
+            "inquiry_3_desc": "店舗研修、活用方法、運用定着について",
+            "inquiry_3_value": "training_inquiry",
+            "company_info_title": "会社情報",
+            "company_name_label": "会社名",
+            "company_name_placeholder": "株式会社〇〇",
+            "industry_placeholder": "Select industry",
+            "stores_label": "店舗名",
+            "stores_placeholder": "対象店舗名をご入力ください",
+            "timeline_placeholder": "Select timeline",
+            "contact_person_title": "ご担当者情報",
+            "full_name_label": "お名前",
+            "full_name_placeholder": "山田 太郎",
+            "job_title_label": "役職",
+            "job_title_placeholder": "店舗責任者 / 本部ご担当者",
+            "email_label": "メールアドレス",
+            "email_placeholder": "taro.yamada@company.co.jp",
+            "phone_label": "電話番号",
+            "phone_placeholder": "03-xxxx-xxxx",
+            "additional_info_label": "お問い合わせ内容",
+            "additional_info_placeholder": "確認したい内容、対象期間、画面名、エラー内容、店舗状況などをご記入ください。",
+            "additional_info_note": "数値や画面に関するお問い合わせの場合は、対象店舗・対象期間・確認したい指標をご記入いただくと確認がスムーズです。",
+            "consent_text": "送信いただいた内容を確認のうえ、Flowサポートチームよりご連絡いたします。個人情報の取り扱いについては、プライバシーポリシーをご確認ください。",
+            "privacy_policy_text": "Privacy Policy",
+            "privacy_policy_url": "shopify://policies/privacy-policy",
+            "submit_button_text": "送信する",
+            "success_message": "お問い合わせありがとうございます。内容を確認のうえ、Flowサポートチームよりご連絡いたします。"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_34c6ce6_pkjxrP"
+      ],
+      "name": "Enterprise inquiry form",
       "settings": {
         "full_width": true,
         "remove_vertical_spacing": false,
@@ -504,6 +657,7 @@
         "richtext_cRTfWf",
         "buttons_CT466j"
       ],
+      "disabled": true,
       "name": "Rich text",
       "settings": {
         "full_width": true,
@@ -690,7 +844,9 @@
     "rich_text_cqadYy",
     "multi_column_L3Rbir",
     "section-15",
+    "multi_column_wUVM7r",
     "1780470974bb22e153",
+    "blocks_egaVHa",
     "rich_text_EtLVJr",
     "rich_text_6VmVgb",
     "multi_column_UExWWX"
