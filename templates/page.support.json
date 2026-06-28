@@ -657,6 +657,7 @@
         "richtext_cRTfWf",
         "buttons_CT466j"
       ],
+      "disabled": true,
       "name": "Rich text",
       "settings": {
         "full_width": true,
