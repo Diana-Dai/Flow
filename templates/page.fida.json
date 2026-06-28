@@ -670,11 +670,11 @@
         "item_9cWFC9": {
           "type": "item",
           "settings": {
-            "icon": "none",
+            "icon": "picto-building",
             "icon_width": 32,
             "icon_background_type": "square",
-            "icon_background": "#a0b842",
-            "icon_color": "#ffffff",
+            "icon_background": "#A0B842",
+            "icon_color": "#FFFFFF",
             "background_color": "#f2f2f2",
             "text_color": "#11243e",
             "border_color": "#f2f2f2",
@@ -682,7 +682,7 @@
             "column_size": "3",
             "title": "店長",
             "heading_tag": "h2",
-            "subheading": "<p><strong>見えること</strong></p>",
+            "subheading": "",
             "content": "<p>今日確認すべきKPI、売場状況、優先アクションを整理します。</p><ul><li>来店数の変化</li><li>購買率の低下</li><li>売上進捗の遅れ</li></ul>",
             "link_url": "",
             "link_text": "",
@@ -692,11 +692,11 @@
         "item_aqpNXK": {
           "type": "item",
           "settings": {
-            "icon": "none",
+            "icon": "picto-document",
             "icon_width": 32,
             "icon_background_type": "square",
-            "icon_background": "#36465c",
-            "icon_color": "#a0b842",
+            "icon_background": "#FFFFFF",
+            "icon_color": "#A0B842",
             "background_color": "#11243e",
             "text_color": "#f9fafb",
             "border_color": "#f2f2f2",
@@ -704,7 +704,7 @@
             "column_size": "3",
             "title": "エリアマネジャー",
             "heading_tag": "h2",
-            "subheading": "<p><strong>判断できること</strong></p><h3></h3>",
+            "subheading": "",
             "content": "<p>担当店舗の変化を短時間で確認し、フォローすべき店舗を見つけやすくします。</p><ul><li>店舗ごとの異常値</li><li>対応状況の確認</li><li>訪問優先順位</li></ul>",
             "link_url": "",
             "link_text": "",
@@ -714,12 +714,12 @@
         "item_tTyycj": {
           "type": "item",
           "settings": {
-            "icon": "picto-shield",
+            "icon": "check",
             "icon_width": 32,
             "icon_background_type": "square",
-            "icon_background": "#a0b842",
+            "icon_background": "#11243E",
             "icon_color": "#f9fafb",
-            "background_color": "#36465c",
+            "background_color": "#A0B842",
             "text_color": "#f9fafb",
             "border_color": "",
             "show_controls": false,
@@ -780,8 +780,8 @@
         "background": "rgba(0,0,0,0)",
         "background_gradient": "",
         "text_color": "",
-        "subheading_background_color": "#f0f3e9",
-        "subheading_text_color": "#11243e"
+        "subheading_background_color": "#11243E",
+        "subheading_text_color": "#FFFFFF"
       }
     },
     "blocks_4YeEQJ": {
