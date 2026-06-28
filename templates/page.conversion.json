@@ -253,6 +253,67 @@
         "text_color": ""
       }
     },
+    "rich_text_QVU37W": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_EfqEAA": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "text": "Subheading",
+            "icon": "none"
+          }
+        },
+        "heading_LMpfia": {
+          "type": "heading",
+          "settings": {
+            "text": "関連する機能を見る",
+            "heading_tag": "h1",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "buttons_jRCk4T": {
+          "type": "buttons",
+          "settings": {
+            "style_1": "fill",
+            "size_1": "xl",
+            "text_1": "来店計測について見る",
+            "url_1": "shopify://pages/traffic-analytics-2",
+            "background_1": "",
+            "text_color_1": "",
+            "style_2": "fill",
+            "size_2": "xl",
+            "text_2": "プラットフォームを見る",
+            "url_2": "shopify://pages/platform-1",
+            "background_2": "#A0B842",
+            "text_color_2": ""
+          }
+        },
+        "richtext_3Ax89K": {
+          "type": "richtext",
+          "disabled": true,
+          "settings": {
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_EfqEAA",
+        "heading_LMpfia",
+        "buttons_jRCk4T",
+        "richtext_3Ax89K"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
     "multi_column_bJtgmc": {
       "type": "multi-column",
       "blocks": {
@@ -1020,6 +1081,7 @@
     "1782205766608098ab",
     "178220728917312eff",
     "1780279655010b3d7a",
+    "rich_text_QVU37W",
     "multi_column_bJtgmc",
     "blocks_BGj9cg",
     "multi_column_hNQjmA",
