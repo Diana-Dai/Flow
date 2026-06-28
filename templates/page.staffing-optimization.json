@@ -9,6 +9,68 @@
  */
 {
   "sections": {
+    "blocks_wmywCj": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_a3e57c5_kBPkNM": {
+          "type": "ai_gen_block_a3e57c5",
+          "settings": {
+            "container_background": "#ffffff",
+            "text_color": "#000000",
+            "left_title": "感覚に頼るシフト判断",
+            "left_tag": "従来型",
+            "left_metric": "人員不足が見えない",
+            "left_item_1": "<p>来店数とスタッフ数を別々に確認</p>",
+            "left_item_2": "<p>ピーク時間の接客負荷が見えない</p>",
+            "left_item_3": "<p>売上低下の原因が曖昧になる</p>",
+            "left_item_4": "<p>次週の配置改善につながりにくい</p>",
+            "left_background": "#ffffff",
+            "left_border_color": "#e5e7eb",
+            "left_tag_background": "#f3f4f6",
+            "left_tag_text": "#6b7280",
+            "left_progress_label": "判断材料",
+            "left_progress_time": "売上結果のみ",
+            "left_progress_percent": 20,
+            "left_progress_color": "#ef4444",
+            "right_title": "Flowによる配置判断",
+            "right_tag": "⚡データ連携",
+            "right_metric": "必要な時間に配置する",
+            "right_item_1": "<p>来店数とスタッフ稼働を同時に確認</p>",
+            "right_item_2": "<p>来客予測でピーク時間を把握</p>",
+            "right_item_3": "<p>購入転換力とスタッフ効率を見る</p>",
+            "right_item_4": "<p>店舗ごとの配置改善につなげる</p>",
+            "right_background": "#0A2540",
+            "right_text_color": "#ffffff",
+            "right_tag_background": "#1e3a5f",
+            "right_tag_text": "#ffffff",
+            "highlight_color": "#A0B842",
+            "right_progress_label": "判断材料",
+            "right_progress_time": "来店 × 売上 × スタッフ",
+            "progress_bar_height": 8,
+            "progress_gradient_start": "#AB44EF",
+            "progress_gradient_end": "#A0B842",
+            "negative_icon_color": "#ef4444",
+            "positive_icon_color": "#A0B842",
+            "title_size": 24,
+            "metric_size": 32,
+            "list_item_size": 16
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_a3e57c5_kBPkNM"
+      ],
+      "name": "Comparison grid",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
     "media_with_text_gMMfwV": {
       "type": "media-with-text",
       "blocks": {
@@ -1131,6 +1193,7 @@
     }
   },
   "order": [
+    "blocks_wmywCj",
     "media_with_text_gMMfwV",
     "1782205766608098ab",
     "178220728917312eff",
