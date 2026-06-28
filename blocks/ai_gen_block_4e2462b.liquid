@@ -290,19 +290,19 @@
   }
 
   .ai-conversion-step-bar-fill-{{ ai_gen_id }}--gray {
-    background-color: #8b95a1;
+    background-color: {{ block.settings.step_1_bar_color }};
   }
 
   .ai-conversion-step-bar-fill-{{ ai_gen_id }}--slate {
-    background-color: #475569;
+    background-color: {{ block.settings.step_2_bar_color }};
   }
 
   .ai-conversion-step-bar-fill-{{ ai_gen_id }}--light-green {
-    background-color: #b8d45e;
+    background-color: {{ block.settings.step_3_bar_color }};
   }
 
   .ai-conversion-step-bar-fill-{{ ai_gen_id }}--green {
-    background-color: {{ block.settings.accent_color }};
+    background-color: {{ block.settings.step_4_bar_color }};
   }
 
   .ai-conversion-drop-indicator-{{ ai_gen_id }} {
@@ -738,6 +738,12 @@
       "default": "Conversion Funnel Breakdown"
     },
     {
+      "type": "color",
+      "id": "step_1_bar_color",
+      "label": "Step 1 bar color",
+      "default": "#8B95A1"
+    },
+    {
       "type": "text",
       "id": "step_1_label",
       "label": "Step 1 label",
@@ -754,6 +760,12 @@
       "id": "drop_1_text",
       "label": "Drop 1 text",
       "default": "↓ 68% Capture Rate"
+    },
+    {
+      "type": "color",
+      "id": "step_2_bar_color",
+      "label": "Step 2 bar color",
+      "default": "#475569"
     },
     {
       "type": "text",
@@ -774,6 +786,12 @@
       "default": "↓ Zone Engagement"
     },
     {
+      "type": "color",
+      "id": "step_3_bar_color",
+      "label": "Step 3 bar color",
+      "default": "#B8D45E"
+    },
+    {
       "type": "text",
       "id": "step_3_label",
       "label": "Step 3 label",
@@ -790,6 +808,12 @@
       "id": "drop_3_text",
       "label": "Drop 3 text",
       "default": "↓ 34% Conversion"
+    },
+    {
+      "type": "color",
+      "id": "step_4_bar_color",
+      "label": "Step 4 bar color",
+      "default": "#9CB73B"
     },
     {
       "type": "text",
