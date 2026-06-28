@@ -47,7 +47,7 @@
           "settings": {
             "style": "fill",
             "size": "lg",
-            "text": "活用できるデータを見る →",
+            "text": "参照できるデータを見る →",
             "url": "#flow-ai-data-inputs",
             "background": "#ffffff",
             "text_color": "#11243e"
@@ -479,7 +479,7 @@
             "section_padding_mobile": 40,
             "section_padding_desktop": 80,
             "background_color": "#f5f5f5",
-            "headline": "状況を読み取り、次の一手を整理する",
+            "headline": "状況を読み取り、次の一手を提示する",
             "headline_size_mobile": 36,
             "headline_size_desktop": 56,
             "headline_color": "#1a2b4a",
@@ -673,16 +673,16 @@
             "icon": "picto-building",
             "icon_width": 32,
             "icon_background_type": "square",
-            "icon_background": "#A0B842",
-            "icon_color": "#FFFFFF",
-            "background_color": "#f2f2f2",
-            "text_color": "#11243e",
+            "icon_background": "#FFFFFF",
+            "icon_color": "#A0B842",
+            "background_color": "#A0B842",
+            "text_color": "#FFFFFF",
             "border_color": "#f2f2f2",
             "show_controls": false,
             "column_size": "3",
             "title": "店長",
             "heading_tag": "h2",
-            "subheading": "",
+            "subheading": "<p>今日見るべきこと</p>",
             "content": "<p>今日確認すべきKPI、売場状況、優先アクションを整理します。</p><ul><li>来店数の変化</li><li>購買率の低下</li><li>売上進捗の遅れ</li></ul>",
             "link_url": "",
             "link_text": "",
@@ -704,7 +704,7 @@
             "column_size": "3",
             "title": "エリアマネジャー",
             "heading_tag": "h2",
-            "subheading": "",
+            "subheading": "<p>優先して確認すべき店舗</p>",
             "content": "<p>担当店舗の変化を短時間で確認し、フォローすべき店舗を見つけやすくします。</p><ul><li>店舗ごとの異常値</li><li>対応状況の確認</li><li>訪問優先順位</li></ul>",
             "link_url": "",
             "link_text": "",
@@ -717,16 +717,16 @@
             "icon": "check",
             "icon_width": 32,
             "icon_background_type": "square",
-            "icon_background": "#11243E",
+            "icon_background": "#A0B842",
             "icon_color": "#f9fafb",
-            "background_color": "#A0B842",
-            "text_color": "#f9fafb",
+            "background_color": "#F2F2F2",
+            "text_color": "#11243E",
             "border_color": "",
             "show_controls": false,
             "column_size": "3",
             "title": "本社",
             "heading_tag": "h2",
-            "subheading": "",
+            "subheading": "<p>全体傾向と運用改善テーマ</p>",
             "content": "<p>店舗全体の傾向、SOPとのずれ、改善余地を把握し、運営方針に反映しやすくします。</p><ul><li>全店傾向の把握</li><li>実行状況の確認</li><li>改善テーマの抽出</li></ul>",
             "link_url": "",
             "link_text": "",
@@ -826,10 +826,10 @@
             "banner_bg_color": "#11243E",
             "banner_icon_color": "#ffffff",
             "banner_text_color": "#ffffff",
-            "description_size": 18,
-            "step_title_size": 18,
-            "step_desc_size": 15,
-            "banner_text_size": 16,
+            "description_size": 21,
+            "step_title_size": 20,
+            "step_desc_size": 17,
+            "banner_text_size": 17,
             "icon_border_radius": 15,
             "icon_circle_size": 80,
             "icon_size": 36,
@@ -1009,8 +1009,8 @@
           "settings": {
             "text": "FAQ",
             "alignment": "left",
-            "text_color": "#11243e",
-            "background": "#f0f3e9"
+            "text_color": "#FFFFFF",
+            "background": "#11243E"
           },
           "blocks": {}
         },
@@ -1170,7 +1170,7 @@
         "heading_YXhiR8": {
           "type": "heading",
           "settings": {
-            "text": "店舗データを、判断と実行につなげませんか？",
+            "text": "店舗データを、判断と実行につなげる。",
             "heading_tag": "h2",
             "text_color": "",
             "gradient": ""
@@ -1179,7 +1179,7 @@
         "richtext_qzAkak": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Flow Platformが、貴社の来店・売上・店舗報告・社内ナレッジをどのように統合できるかをご相談ください。</p>"
+            "content": "<p>Flow AIとFIDAの活用には、店舗データ・社内ルール・運用体制の整理が必要です。まずは現在のデータ環境と店舗運営の課題をご相談ください。</p>"
           }
         },
         "button_AVKAbi": {
@@ -1200,13 +1200,13 @@
             "style_1": "fill",
             "size_1": "xl",
             "text_1": "デモを予約する →",
-            "url_1": "#",
+            "url_1": "shopify://pages/contact",
             "background_1": "#a0b842",
             "text_color_1": "#ffffff",
             "style_2": "fill",
             "size_2": "xl",
-            "text_2": "連携できるデータを見る →",
-            "url_2": "#",
+            "text_2": "Flow Platformを見る →",
+            "url_2": "shopify://pages/platform-1",
             "background_2": "#ffffff",
             "text_color_2": "#11243e"
           }
