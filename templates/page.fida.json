@@ -1,0 +1,2430 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "image_with_text_overlay_AcppEX": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "subheading_GmUMNm": {
+          "type": "subheading",
+          "settings": {
+            "text": "FLOW PLATFORM"
+          }
+        },
+        "heading_frXnfn": {
+          "type": "heading",
+          "settings": {
+            "text": "店舗データを、現場の判断と実行へ。",
+            "heading_tag": "h1"
+          }
+        },
+        "richtext_HwhtPj": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Flowは、来店・売上・スタッフ・天候・店舗メモ・社内マニュアルをひとつの文脈で統合し、店舗運営の判断を支えるリテールプラットフォームです。</p>"
+          }
+        },
+        "button_7Prq3W": {
+          "type": "button",
+          "settings": {
+            "style": "fill",
+            "size": "lg",
+            "text": "デモを予約する →",
+            "url": "#",
+            "background": "#a0b842",
+            "text_color": ""
+          }
+        },
+        "button_cpqnfi": {
+          "type": "button",
+          "settings": {
+            "style": "fill",
+            "size": "lg",
+            "text": "連携できるデータを見る →",
+            "url": "#",
+            "background": "#ffffff",
+            "text_color": "#11243e"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_GmUMNm",
+        "heading_frXnfn",
+        "richtext_HwhtPj",
+        "button_7Prq3W",
+        "button_cpqnfi"
+      ],
+      "name": "Image with text overlay",
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "fill",
+        "image": "shopify://shop_images/Platform_hero_e927cd9c-8828-497d-8af7-712b7e51fea2.png",
+        "mobile_image": "shopify://shop_images/Mobile_Hero.png",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "text_color": "#ffffff",
+        "overlay_color": "#0e366a",
+        "overlay_opacity": 58
+      }
+    },
+    "blocks_6PjPxD": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_3c85fdc_mHbENN": {
+          "type": "ai_gen_block_3c85fdc",
+          "settings": {
+            "heading": "100以上のブランドで活用されています",
+            "content": "<p>ファッション、ライフスタイル、専門店など、店舗運営の改善に取り組む小売企業がFlowを活用しています。</p>",
+            "text_alignment": "center",
+            "content_size": 16,
+            "heading_color": "#11243e",
+            "content_color": "#677279",
+            "logo_1": "shopify://shop_images/Baycrews_Group_Logo.png",
+            "logo_2": "shopify://shop_images/Daytona_Logo_ff3ac14a-5b76-4d13-823d-2d797c6a52e2.png",
+            "logo_3": "shopify://shop_images/Little_League_Logo.png",
+            "logo_4": "shopify://shop_images/Stripe_Logo.png",
+            "logo_5": "shopify://shop_images/Tumi_Logo_2c0b2a8c-bbd0-4438-95bc-22950dafcb70.png",
+            "logo_6": "shopify://shop_images/Triumph_Logo_66559074-ee90-432d-b22a-efb3895890c5.png",
+            "logo_7": "shopify://shop_images/Cole_Haan_Logo_65602431-ca9d-44bb-bda9-08c2a3de13f5.png",
+            "logo_8": "shopify://shop_images/Brooks_brothers_logo.png",
+            "logo_9": "shopify://shop_images/TaylorMade_Logo.png",
+            "logo_10": "shopify://shop_images/Plaza_Logo.png",
+            "logo_width": 250,
+            "logo_height": 120,
+            "logo_spacing": 40,
+            "logo_opacity": 1,
+            "logo_background": "#ffffff",
+            "logo_border_radius": 8,
+            "scroll_speed": 30,
+            "footer_content": "",
+            "footer_content_size": 16,
+            "footer_content_color": "#677279",
+            "desktop_width_percent": 100,
+            "background_color": "#f9fafb",
+            "section_padding": 60
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_3c85fdc_mHbENN"
+      ],
+      "name": "Scrolling logos",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": true,
+        "remove_horizontal_spacing": true,
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "rich_text_B8Y9rV": {
+      "type": "rich-text",
+      "blocks": {
+        "richtext_FCxqzE": {
+          "type": "richtext",
+          "settings": {
+            "content": "<h1>店舗データと社内知識を、現場で使える判断材料に。</h1><h5>Flowは、来店・売上・店舗報告・マニュアルをひとつの文脈で整理し、<br/>店長・エリアマネージャー・本部が同じ情報をもとに動ける環境をつくります。</h5>"
+          }
+        }
+      },
+      "block_order": [
+        "richtext_FCxqzE"
+      ],
+      "custom_css": [],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "large",
+        "text_position": "center",
+        "background": "#11243e",
+        "background_gradient": "",
+        "text_color": "#f9fafb"
+      }
+    },
+    "multi_column_QjMJiW": {
+      "type": "multi-column",
+      "blocks": {
+        "item_mpQVCf": {
+          "type": "item",
+          "settings": {
+            "icon": "up",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#a0b842",
+            "icon_color": "#ffffff",
+            "background_color": "#f9fafb",
+            "text_color": "",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "4",
+            "title": "POS・売上データ",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<p>売上、客単価、購買点数、予算進捗などを店舗別・時間帯別に確認できます。</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_MVfQ7a": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-camera",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#a0b842",
+            "icon_color": "#ffffff",
+            "background_color": "#f9fafb",
+            "text_color": "",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "4",
+            "title": "来店データ",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<p>来店数、通行量、入店率、滞在時間、店内行動を売上と合わせて把握できます。</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_aGN9Xz": {
+          "type": "item",
+          "settings": {
+            "icon": "people",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#a0b842",
+            "icon_color": "#ffffff",
+            "background_color": "#f9fafb",
+            "text_color": "",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "4",
+            "title": "シフトデータ",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<p>スタッフ配置や稼働状況を、来店・売上・購買率の変化と合わせて確認できます。</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_AeTC4p": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-building",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#a0b842",
+            "icon_color": "#ffffff",
+            "background_color": "#f9fafb",
+            "text_color": "",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "4",
+            "title": "店舗条件",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<p>天候、曜日、商業施設、店舗規模などを加えて、店舗ごとの差を見やすくします。</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_rn7d7D": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-document",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#a0b842",
+            "icon_color": "#ffffff",
+            "background_color": "#f9fafb",
+            "text_color": "",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "4",
+            "title": "メモ・Pulse",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<p>売場変更、イベント、在庫状況、スタッフ状況など、現場の情報を記録できます。</p><h3></h3>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_nXKkDm": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-file",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#a0b842",
+            "icon_color": "#ffffff",
+            "background_color": "#f9fafb",
+            "text_color": "",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "4",
+            "title": "マニュアル・SOP",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<p>接客ルールや店舗運営マニュアルを、Flow AIが参照できる情報として整理できます。</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_Y47ifx": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-file",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#a0b842",
+            "icon_color": "#ffffff",
+            "background_color": "#f9fafb",
+            "text_color": "",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "4",
+            "title": "社内ナレッジ",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<p>PDF、Word、PowerPoint、社内リンクを登録し、判断に使える情報として活用できます。</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_EwTVgd": {
+          "type": "item",
+          "settings": {
+            "icon": "check",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#a0b842",
+            "icon_color": "#ffffff",
+            "background_color": "#f9fafb",
+            "text_color": "",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "4",
+            "title": "データ連携",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<p>API、CSV、FTPを使い、既存システムや外部データを段階的に取り込めます。</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_mpQVCf",
+        "item_MVfQ7a",
+        "item_aGN9Xz",
+        "item_AeTC4p",
+        "item_rn7d7D",
+        "item_nXKkDm",
+        "item_Y47ifx",
+        "item_EwTVgd"
+      ],
+      "custom_css": [
+        ".multi-column__item:nth-child(2) .h1,.multi-column__item:first-child .h1 {color: #c33142;}",
+        ".subheading {color: #c33142; display: inline-block;}"
+      ],
+      "name": "Multi-column",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "small",
+        "text_alignment": "start",
+        "subheading": "",
+        "title": "Flowがつなぐ店舗データと社内情報",
+        "content": "<p>売上、来店、スタッフ、天候、店舗報告、マニュアルをひとつの基盤に集約し、店舗運営の判断に使える状態にします。</p>",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "",
+        "subheading_background_color": "",
+        "subheading_text_color": ""
+      }
+    },
+    "multi_column_Rqk3xG": {
+      "type": "multi-column",
+      "blocks": {
+        "item_NjRKb9": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "image": "shopify://shop_images/Layer_1.png",
+            "background_color": "#f9fafb",
+            "text_color": "",
+            "border_color": "#f9fafb",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h4>01. 既存データを接続</h4><p>POS、来店計測、スタッフ、天候、店舗属性など、店舗運営に必要なデータをFlowに取り込みます。</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_nR9kcV": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "image": "shopify://shop_images/Layer_2_2.png",
+            "background_color": "#f9fafb",
+            "text_color": "",
+            "border_color": "#f9fafb",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h4>02. 店舗の状況として整理</h4><p>売上、来店、店舗報告、メモ、マニュアルを店舗ごとの状況として整理し、比較しやすくします。</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_nhi8GJ": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "image": "shopify://shop_images/Layer_3_2.png",
+            "background_color": "#f9fafb",
+            "text_color": "",
+            "border_color": "#f9fafb",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h4>03. 日々の実行につなげる</h4><p>店長、エリアマネージャー、本部が同じ情報をもとに、次の確認・報告・打ち手を進められます。</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_NjRKb9",
+        "item_nR9kcV",
+        "item_nhi8GJ"
+      ],
+      "name": "Multi-column",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": true,
+        "gap": "medium",
+        "text_alignment": "start",
+        "subheading": "データ活用の流れ",
+        "title": "データを、実行につなげる",
+        "content": "<p>既存システムや店舗現場の情報をFlowに集約し、店長・エリアマネージャー・本部が同じ情報をもとに状況を確認できる状態にします。</p>",
+        "background": "rgba(0,0,0,0)",
+        "background_gradient": "",
+        "text_color": "",
+        "subheading_background_color": "#f0f3e9",
+        "subheading_text_color": "#11243e"
+      }
+    },
+    "multi_column_rPwdDt": {
+      "type": "multi-column",
+      "blocks": {
+        "item_zzzqHi": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#a0b842",
+            "text_color": "#f9fafb",
+            "border_color": "rgba(0,0,0,0)",
+            "show_controls": false,
+            "column_size": "4",
+            "title": "店前通行量",
+            "heading_tag": "h2",
+            "subheading": "<p>Passersby</p>",
+            "content": "",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_FDf9KW": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#799219",
+            "text_color": "#f9fafb",
+            "border_color": "rgba(0,0,0,0)",
+            "show_controls": false,
+            "column_size": "4",
+            "title": "来店数",
+            "heading_tag": "h2",
+            "subheading": "<p>Traffic</p>",
+            "content": "",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_VJxAzN": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#536e00",
+            "text_color": "#f9fafb",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "4",
+            "title": "購買率",
+            "heading_tag": "h2",
+            "subheading": "<p>Conversion</p>",
+            "content": "",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_8UCkWb": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#304b00",
+            "text_color": "#f9fafb",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "4",
+            "title": "客単価",
+            "heading_tag": "h2",
+            "subheading": "<p>ATV</p>",
+            "content": "",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_9eKgez": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#1d2a00",
+            "text_color": "#ffffff",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "1",
+            "title": "売上・予算進捗",
+            "heading_tag": "h2",
+            "subheading": "<p>SALES / TARGET</p>",
+            "content": "",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_wWAwCe": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#f1f5ef",
+            "text_color": "#11243e",
+            "border_color": "#a0b842",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "スタッフ配置",
+            "heading_tag": "h2",
+            "subheading": "<p>Staffing</p>",
+            "content": "",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_JNXpBU": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#f1f5ef",
+            "text_color": "#11243e",
+            "border_color": "#a0b842",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "滞在時間",
+            "heading_tag": "h2",
+            "subheading": "<p>Dwell Time</p>",
+            "content": "",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_i7MVpi": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#f1f5ef",
+            "text_color": "#11243e",
+            "border_color": "#a0b842",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "店舗・エリア比較",
+            "heading_tag": "h2",
+            "subheading": "<p>Comparisons・Benchmarks</p>",
+            "content": "",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_zzzqHi",
+        "item_FDf9KW",
+        "item_VJxAzN",
+        "item_8UCkWb",
+        "item_9eKgez",
+        "item_wWAwCe",
+        "item_JNXpBU",
+        "item_i7MVpi"
+      ],
+      "name": "Multi-column",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "start",
+        "subheading": "可視化できるKPI",
+        "title": "売上の流れを、ひとつに。",
+        "content": "<p>通行量、来店数、購買率、客単価、売上進捗をつなげて確認し、スタッフ配置や滞在時間と合わせて改善余地を見つけやすくします。</p>",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "",
+        "subheading_background_color": "#f0f3e9",
+        "subheading_text_color": "#11243e"
+      }
+    },
+    "rich_text_peMmaV": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_DDAQPW": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "text": "AI CAMERA",
+            "icon": "none"
+          }
+        },
+        "heading_GM8FNx": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "text": "THE SENSING ARRAY",
+            "heading_tag": "h0",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_DF74kd": {
+          "type": "richtext",
+          "disabled": true,
+          "settings": {
+            "content": "<p>Edge-intelligent nodes transforming physical movement into data truth.</p>"
+          }
+        },
+        "image_GR6JYr": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/iPad_Dashboard.png",
+            "width_mode": "full_width",
+            "max_width": 600,
+            "mobile_max_width": 350
+          }
+        }
+      },
+      "block_order": [
+        "subheading_DDAQPW",
+        "heading_GM8FNx",
+        "richtext_DF74kd",
+        "image_GR6JYr"
+      ],
+      "custom_css": [
+        "* {padding-top: 0;}"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "large",
+        "text_position": "center",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "multi_column_q8BX4d": {
+      "type": "multi-column",
+      "blocks": {
+        "item_9xFTmY": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "4",
+            "title": "Column title",
+            "heading_tag": "h4",
+            "subheading": "<p>Organize content into multiple columns to share useful information to your customers about your products, values...</p>",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_VX3H6T": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "4",
+            "title": "Column title",
+            "heading_tag": "h4",
+            "subheading": "<p>Organize content into multiple columns to share useful information to your customers about your products, values...</p>",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_jWjiTh": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "4",
+            "title": "Column title",
+            "heading_tag": "h4",
+            "subheading": "<p>Organize content into multiple columns to share useful information to your customers about your products, values...</p>",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_UtY6h7": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "Column title",
+            "heading_tag": "h4",
+            "subheading": "<p>Organize content into multiple columns to share useful information to your customers about your products, values...</p>",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_U8cHVC": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "Column title",
+            "heading_tag": "h4",
+            "subheading": "<p>Organize content into multiple columns to share useful information to your customers about your products, values...</p>",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_KLKfNq": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "Column title",
+            "heading_tag": "h4",
+            "subheading": "<p>Organize content into multiple columns to share useful information to your customers about your products, values...</p>",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_N3YA6M": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "Column title",
+            "heading_tag": "h4",
+            "subheading": "<p>Organize content into multiple columns to share useful information to your customers about your products, values...</p>",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_XpcKHC": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "Column title",
+            "heading_tag": "h4",
+            "subheading": "<p>Organize content into multiple columns to share useful information to your customers about your products, values...</p>",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_9xFTmY",
+        "item_VX3H6T",
+        "item_jWjiTh",
+        "item_UtY6h7",
+        "item_U8cHVC",
+        "item_KLKfNq",
+        "item_N3YA6M",
+        "item_XpcKHC"
+      ],
+      "disabled": true,
+      "name": "Multi-column",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "start",
+        "subheading": "可視化",
+        "title": "Dashboard / KPI visibility section",
+        "content": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "subheading_background_color": "",
+        "subheading_text_color": ""
+      }
+    },
+    "multi_column_HCGJea": {
+      "type": "multi-column",
+      "blocks": {
+        "item_9cWFC9": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#a0b842",
+            "icon_color": "#ffffff",
+            "background_color": "#f2f2f2",
+            "text_color": "#11243e",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "2",
+            "title": "",
+            "heading_tag": "h1",
+            "subheading": "<p><strong>見えること</strong></p>",
+            "content": "<h4>何が起きたかを見る</h4><ul><li>来店数の変化</li><li>購買率の低下</li><li>売上進捗の遅れ</li></ul>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_aqpNXK": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#36465c",
+            "icon_color": "#a0b842",
+            "background_color": "#11243e",
+            "text_color": "#f9fafb",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "2",
+            "title": "",
+            "heading_tag": "h3",
+            "subheading": "<p><strong>判断できること</strong></p><h3></h3>",
+            "content": "<h4>なぜ起きたか、どう動くかを考える</h4><ul><li>KPIをつなげて要因を整理</li><li>店舗報告やスタッフ状況と照合</li><li>次に確認すべき打ち手を明確化</li></ul>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_tTyycj": {
+          "type": "item",
+          "disabled": true,
+          "settings": {
+            "icon": "picto-shield",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#a0b842",
+            "icon_color": "#f9fafb",
+            "background_color": "#36465c",
+            "text_color": "#f9fafb",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "2",
+            "title": "GDPR/CCPA",
+            "heading_tag": "h3",
+            "subheading": "",
+            "content": "<h5>Anonymous by Design</h5><p>100% GDPR/CCPA compliant. All image processing occurs locally on the edge; no identifiable biometric data ever leaves the store.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_ztJTym": {
+          "type": "item",
+          "disabled": true,
+          "settings": {
+            "icon": "picto-target",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#f9fafb",
+            "icon_color": "#a0b842",
+            "background_color": "#a0b842",
+            "text_color": "#f9fafb",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "2",
+            "title": "PLUG & PLAY",
+            "heading_tag": "h3",
+            "subheading": "",
+            "content": "<h5>Seamless Integration</h5><p>A plug-and-play measurement layer designed to scale across global retail networks with minimal technical friction.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_9cWFC9",
+        "item_aqpNXK",
+        "item_tTyycj",
+        "item_ztJTym"
+      ],
+      "custom_css": [
+        ".prose p {font-size: 0.9rem;}",
+        ".multi-column__item:first-child .text-xs p {border-radius: 20px; background: white; padding: 5px 10px; color: #a0b842 !important; display: inline-block;}",
+        ".multi-column__item:last-child .text-xs p {border-radius: 20px; background: #a0b842; padding: 5px 10px; color: #fff !important; display: inline-block;}"
+      ],
+      "name": "Multi-column",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": true,
+        "gap": "medium",
+        "text_alignment": "start",
+        "subheading": "可視化の先へ",
+        "title": "レポートで終わらせず、次の判断につなげる。",
+        "content": "",
+        "background": "rgba(0,0,0,0)",
+        "background_gradient": "",
+        "text_color": "",
+        "subheading_background_color": "#f0f3e9",
+        "subheading_text_color": "#11243e"
+      }
+    },
+    "media_with_text_hMPTmL": {
+      "type": "media-with-text",
+      "blocks": {
+        "image_8hBn9C": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Snipaste_2026-05-13_13-41-48.png",
+            "media_width": 50,
+            "media_position": "end",
+            "text_position": "place-self-center-start text-start",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "SECURITY",
+            "title": "PRIVACY-FIRSTARCHITECTURE.",
+            "content": "<p>By utilizing Edge Computing, the Flow V4 processes visual data locally on the device. We count people, not faces. The system transmits only anonymous metadata to the cloud, reassuring enterprise legal and security teams that customer privacy is protected by design.</p><p></p><ul><li>GDPR Compliant</li><li>CCPA Compliant</li><li>SOC 2 Type II</li><li>Edge Processing</li></ul><p></p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "",
+            "background_gradient": "",
+            "text_color": "#11243e",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_8hBn9C"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "h3 {font-size: var(--text-h0); color: #a0b842;}",
+        "ul {display: flex; flex-wrap: wrap; gap: 20px; font-size: 1rem;}",
+        "ul li {width: calc(50% - 20px);}"
+      ],
+      "name": "Media with text",
+      "settings": {
+        "full_width": false,
+        "alternate_media_position": false,
+        "spacing": "small"
+      }
+    },
+    "blocks_YJHkDA": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_8944212_bYhAAm": {
+          "type": "ai_gen_block_8944212",
+          "settings": {
+            "desktop_width_percent": 100,
+            "padding_top": 0,
+            "padding_bottom": 0,
+            "padding_horizontal": 0,
+            "background_color": "rgba(0,0,0,0)",
+            "eyebrow_text": "定性 × 定量",
+            "eyebrow_font_size": 12,
+            "eyebrow_bg_color": "#f0f3e9",
+            "eyebrow_text_color": "#11243e",
+            "heading": "数字に、現場の理由を残す。",
+            "heading_color": "#0a1a2f",
+            "description": "売上や来店数の変化には、売場変更、在庫状況、イベント、スタッフ体制など、現場にしか分からない理由があります。Flowでは、店舗の定性情報をKPIと一緒に記録できます。",
+            "description_font_size": 16,
+            "description_color": "#6b7280",
+            "header_spacing": 50,
+            "card_gap": 24,
+            "card_padding": 32,
+            "card_border_radius": 12,
+            "cards_spacing": 32,
+            "card_heading_size": 24,
+            "card_text_size": 17,
+            "card_list_size": 14,
+            "card1_heading": "Pulse",
+            "card1_text": "Pulseは、店舗からの定性報告を、売上・来店・購買率などの定量データと一緒に確認するための機能です。日々の状況報告を、振り返りやすい形で蓄積できます。",
+            "card1_item1": "店舗ごとの状況報告を記録",
+            "card1_item2": "KPI変化と合わせて確認",
+            "card1_item3": "エリアマネージャーが複数店舗を把握",
+            "dark_card_bg": "#11243e",
+            "dark_card_text": "#ffffff",
+            "dark_icon_bg": "#a0b842",
+            "dark_checkmark_color": "#a0b842",
+            "card2_heading": "メモ",
+            "card2_text": "メモでは、売場変更、イベント、在庫状況、スタッフ体制、天候影響など、数字だけでは残りにくい現場の理由を記録できます。",
+            "card2_item1": "売場変更や施策を記録",
+            "card2_item2": "在庫・スタッフ状況を補足",
+            "card2_item3": "後日の振り返りに活用",
+            "light_card_bg": "#f2f2f2",
+            "light_card_text": "#0a1a2f",
+            "light_icon_bg": "#a0b842",
+            "light_checkmark_color": "#ffffff",
+            "banner_title": "Flowの強み",
+            "banner_text": "Flowは、数値データと現場の定性情報を同じ文脈で管理します。何が起きたのか、なぜ変化したのかを確認しやすくなり、報告・分析・改善判断がつながります。",
+            "banner_padding": 32,
+            "banner_border_radius": 12,
+            "banner_title_size": 24,
+            "banner_text_size": 17,
+            "banner_bg_color": "#ffffff",
+            "banner_icon_bg": "#a0b842",
+            "banner_icon_color": "#ffffff",
+            "banner_title_color": "#0a1a2f",
+            "banner_text_color": "#4b5563"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_8944212_bYhAAm"
+      ],
+      "name": "Conversion intelligence",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "178047465242fd23a6": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_0e72761_WD39qG": {
+          "type": "ai_gen_block_0e72761",
+          "settings": {
+            "eyebrow_text": "社内ナレッジ連携",
+            "heading_text": "社内知識を、店舗データとつなげる。",
+            "description_text": "<p>Flowは、マニュアル、SOP、PDF、リンク、メモ、店舗報告を店舗データと同じ環境で整理します。社内ルールや現場情報を参照しながら、店舗運営の判断を支援できるようにします。</p>",
+            "header_alignment": "left",
+            "header_spacing_below": 50,
+            "eyebrow_bg_color": "#f0f3e9",
+            "eyebrow_text_color": "#11243e",
+            "heading_color": "#0a1a2f",
+            "description_color": "#677279",
+            "description_size_mobile": 16,
+            "description_size_desktop": 18,
+            "image_side": "left",
+            "image_width_percent": 40,
+            "split_gap": 50,
+            "vertical_alignment": "center",
+            "box_layout": "grid_2x2",
+            "image": "shopify://shop_images/connections_3.png",
+            "image_alt": "Flow connection platform interface",
+            "image_height_mobile": 300,
+            "image_height_desktop": 500,
+            "image_object_fit": "cover",
+            "image_object_position": "center",
+            "image_border_radius": 16,
+            "image_shadow": true,
+            "default_box_bg": "#f2f2f2",
+            "default_box_border": "#e5e7eb",
+            "default_box_heading_color": "#0a1a2f",
+            "default_box_text_color": "#677279",
+            "box_gap": 20,
+            "box_padding": 25,
+            "box_border_radius": 12,
+            "box_border_width": 1,
+            "box_shadow": true,
+            "box_hover_lift": true,
+            "equal_height": true,
+            "box_heading_size": 18,
+            "box_text_size": 15,
+            "bullet_icon_color": "#a0b842",
+            "link_color": "#0e366a",
+            "icon_1": "picto-shield",
+            "icon_width_1": 32,
+            "icon_background_type_1": "square",
+            "icon_background_1": "#a0b842",
+            "icon_color_1": "#ffffff",
+            "box_1_heading": "リンク・Webページ",
+            "box_1_text": "<p>社内ポータル、商品情報、運用ガイドなど、店舗で参照するリンクを登録できます。</p>",
+            "box_1_bullets": "",
+            "box_1_link_label": "",
+            "box_1_link_url": "",
+            "icon_2": "picto-file",
+            "icon_width_2": 32,
+            "icon_background_type_2": "square",
+            "icon_background_2": "#a0b842",
+            "icon_color_2": "#ffffff",
+            "box_2_heading": "PDF・社内資料",
+            "box_2_text": "<p>マニュアル、SOP、研修資料、商品資料などを登録し、店舗判断に使える情報として整理できます。</p>",
+            "box_2_bullets": "",
+            "box_2_link_label": "",
+            "box_2_link_url": "",
+            "icon_3": "picto-comment",
+            "icon_width_3": 32,
+            "icon_background_type_3": "square",
+            "icon_background_3": "#a0b842",
+            "icon_color_3": "#ffffff",
+            "box_3_heading": "メモ・店舗報告",
+            "box_3_text": "<p>店舗ごとの状況、施策、気づき、現場からの報告をナレッジとして蓄積できます。</p><h3></h3>",
+            "box_3_bullets": "",
+            "box_3_link_label": "",
+            "box_3_link_url": "",
+            "icon_4": "picto-document",
+            "icon_width_4": 32,
+            "icon_background_type_4": "square",
+            "icon_background_4": "#a0b842",
+            "icon_color_4": "#ffffff",
+            "box_4_heading": "定型文・マニュアル",
+            "box_4_text": "<p>よく使う説明、チェックリスト、接客ルールを短く整理し、すぐ参照できる形で登録できます。</p><h2></h2>",
+            "box_4_bullets": "",
+            "box_4_link_label": "",
+            "box_4_link_url": "",
+            "section_padding_top": 0,
+            "section_padding_bottom": 0,
+            "section_padding_top_desktop": 0,
+            "section_padding_bottom_desktop": 0,
+            "section_padding_horizontal": 20
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_0e72761_WD39qG"
+      ],
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "rgba(0,0,0,0)",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "1780630742eb183a6c": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_daa1b70_FAfYkd": {
+          "type": "ai_gen_block_daa1b70",
+          "settings": {
+            "section_background": "#ffffff",
+            "section_padding_top": 0,
+            "section_padding_bottom": 0,
+            "column_gap": 60,
+            "show_badge": true,
+            "badge_text": "FLOW AI",
+            "badge_icon": "none",
+            "badge_background": "#803CEE",
+            "badge_text_color": "#FFFFFF",
+            "heading": "店舗データと社内ルールを、Flow AIに聞く。",
+            "description": "Flow AIは、売上・来店・購買率などの店舗データと、マニュアル・SOP・店舗報告を参照しながら、状況確認、要因整理、次の打ち手の検討を支援します。",
+            "card_background": "#fafafa",
+            "card_border_color": "#e0e0e0",
+            "card_border_radius": 16,
+            "card_padding": 28,
+            "card_width": 100,
+            "card_title": "Flow AI",
+            "card_subtitle": "店舗運営について質問できます",
+            "card_header_icon": "sparkles",
+            "card_icon_color": "#803CEE",
+            "card_title_color": "#11243e",
+            "card_subtitle_color": "#78909c",
+            "row_background": "#ffffff",
+            "row_border_color": "#eeeeee",
+            "row_border_radius": 12,
+            "row_icon_background": "#803CEE",
+            "row_icon_border_color": "#803CEE",
+            "row_icon_color": "#FFFFFF",
+            "row_label_color": "#0e366a",
+            "row_quote_color": "#11243e",
+            "row_1_icon": "chart",
+            "row_1_label": "状況を聞く",
+            "row_1_quote": "「今日、売上目標に届くために何を優先すべきですか？」",
+            "row_2_icon": "search",
+            "row_2_label": "理由を聞く",
+            "row_2_quote": "「来店数はあるのに、購買率が低い理由は何ですか？」",
+            "row_3_icon": "target",
+            "row_3_label": "次の打ち手を聞く",
+            "row_3_quote": "「接客・VMD・スタッフ配置のどこを見直すべきですか？」",
+            "show_footer": true,
+            "footer_label": "参照データ",
+            "footer_icon": "database",
+            "footer_label_color": "#0e366a",
+            "divider_color": "#e0e0e0",
+            "footer_tags": "売上, 来店, 購買率, Pulse, SOP, メモ, 店舗報告",
+            "tag_background": "#0e366a",
+            "tag_text_color": "#ffffff",
+            "show_more_button": true
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_daa1b70_FAfYkd"
+      ],
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "multi_column_QjMJiW11": {
+      "type": "multi-column",
+      "blocks": {
+        "item_mpQVCf": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#f2f2f2",
+            "text_color": "",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h1",
+            "subheading": "",
+            "content": "<h2>状況を聞く</h2><h5>「今日、何を優先すべきですか？」</h5>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_MVfQ7a": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#f2f2f2",
+            "text_color": "",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h1",
+            "subheading": "",
+            "content": "<h2>理由を聞く</h2><h5>「なぜ購買率が下がっていますか？」</h5>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_Y47ifx": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#f2f2f2",
+            "text_color": "",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h1",
+            "subheading": "",
+            "content": "<h2>次の打ち手を聞く</h2><h5>「次に何を確認すべきですか？」</h5><p></p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_mpQVCf",
+        "item_MVfQ7a",
+        "item_Y47ifx"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".multi-column__item h2 {margin-bottom: 0; padding-bottom: 0; color: #a0b842 !important;}",
+        ".multi-column__item h2 ~ p {margin-top: 0;}",
+        ".prose p {font-size: 1rem;}"
+      ],
+      "name": "Multi-column",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "start",
+        "subheading": "Flow AI",
+        "title": "店舗データと社内ルールを、Flow AIに聞く。",
+        "content": "<p>Flow AIは、売上・来店・購買率などの店舗データと、マニュアル・SOP・店舗報告を参照しながら、状況確認、要因整理、次の打ち手の検討を支援します。</p>",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "",
+        "subheading_background_color": "#f0f3e9",
+        "subheading_text_color": "#11243e"
+      }
+    },
+    "blocks_4YeEQJ": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_3504708_wmYtzW": {
+          "type": "ai_gen_block_3504708",
+          "settings": {
+            "badge_text": "エリア管理",
+            "headline": "エリアマネージャーは、担当店舗の変化を短時間で把握。",
+            "description": "Flowは、担当店舗のKPI、Pulse、メモ、店舗報告をまとめて確認できるようにし、優先して見るべき店舗や変化を把握しやすくします。",
+            "step1_icon": "document",
+            "step1_title": "レポートをサマリー",
+            "step1_desc": "担当店舗から上がった報告をまとめて確認できます。",
+            "step2_icon": "chart",
+            "step2_title": "KPIを比較・分析",
+            "step2_desc": "売上・来店数・購買率の変化を店舗ごとに把握できます。",
+            "step3_icon": "alert",
+            "step3_title": "注意店舗を特定",
+            "step3_desc": "変化やアラートをもとに、優先して見るべき店舗を見つけやすくします。",
+            "step4_icon": "store",
+            "step4_title": "訪問準備を整える",
+            "step4_desc": "直近のKPI、メモ、過去の変化を確認し、訪問前の準備に活用できます。",
+            "step5_icon": "checklist",
+            "step5_title": "本部報告を効率化",
+            "step5_desc": "担当エリアの状況と確認事項を整理し、報告しやすくします。",
+            "banner_text": "データ収集から報告までを一気通貫でつなぎ、エリアの状況把握と改善活動を支援します。",
+            "max_width": 1400,
+            "background_color": "#fafbfc",
+            "badge_bg_color": "#11243e",
+            "badge_text_color": "#ffffff",
+            "description_color": "#5a6c7d",
+            "line_color": "#0e366a",
+            "icon_circle_bg": "#ffffff",
+            "icon_color": "#a0b842",
+            "card_bg_color": "#ffffff",
+            "card_border_color": "#11243e",
+            "card_hover_border": "#a0b842",
+            "number_color": "#a0b842",
+            "step_title_color": "#1a2b4a",
+            "step_desc_color": "#6b7c8d",
+            "banner_bg_color": "#0e366a",
+            "banner_icon_color": "#ffffff",
+            "banner_text_color": "#ffffff",
+            "description_size": 18,
+            "step_title_size": 18,
+            "step_desc_size": 15,
+            "banner_text_size": 16,
+            "icon_border_radius": 15,
+            "icon_circle_size": 80,
+            "icon_size": 36,
+            "card_border_radius": 18
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_3504708_wmYtzW"
+      ],
+      "name": "Implementation process",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "multi_column_qz9jhR": {
+      "type": "multi-column",
+      "blocks": {
+        "item_hwwByC": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#0e366a",
+            "text_color": "",
+            "border_color": "#a0b842",
+            "show_controls": false,
+            "column_size": "1",
+            "title": "担当店舗のPulseを要約",
+            "heading_tag": "h3",
+            "subheading": "",
+            "content": "<h5>複数店舗から上がるPulse報告をまとめて確認し、各店舗の状況を短時間で把握できます。</h5><h3></h3>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_DXcdME": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#0e366a",
+            "text_color": "",
+            "border_color": "#a0b842",
+            "show_controls": false,
+            "column_size": "1",
+            "title": "店舗メモとKPI変化を照合",
+            "heading_tag": "h3",
+            "subheading": "",
+            "content": "<h5>売上、来店数、購買率の変化と、売場変更・在庫状況・スタッフ体制などの現場情報を合わせて確認できます。</h5><h3></h3>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_zcnNjx": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#0e366a",
+            "text_color": "",
+            "border_color": "#a0b842",
+            "show_controls": false,
+            "column_size": "1",
+            "title": "注意すべき店舗を抽出",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h5>売上、来店数、購買率の変化と、売場変更・在庫状況・スタッフ体制などの現場情報を合わせて確認できます。</h5>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_3YPNLW": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#0e366a",
+            "text_color": "",
+            "border_color": "#a0b842",
+            "show_controls": false,
+            "column_size": "1",
+            "title": "訪問前の状況確認",
+            "heading_tag": "h3",
+            "subheading": "",
+            "content": "<h5>店舗訪問前に、直近のKPI、Pulse、メモ、過去の変化を確認し、訪問の質を高められます。</h5>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_GGdeUg": {
+          "type": "item",
+          "disabled": true,
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#0e366a",
+            "text_color": "",
+            "border_color": "#a0b842",
+            "show_controls": false,
+            "column_size": "1",
+            "title": "本部報告の準備を効率化",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h5>担当エリアの変化、現場からの報告、確認すべき課題を整理し、本部への報告準備を効率化できます。</h5>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_hwwByC",
+        "item_DXcdME",
+        "item_zcnNjx",
+        "item_3YPNLW",
+        "item_GGdeUg"
+      ],
+      "disabled": true,
+      "name": "Multi-column",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "start",
+        "subheading": "エリア管理",
+        "title": "エリアマネージャーは、担当店舗の変化を短時間で把握。",
+        "content": "<p>Flowは、担当店舗のKPI、Pulse、メモ、店舗報告をまとめて確認できるようにし、優先して見るべき店舗や変化を把握しやすくします。</p>",
+        "background": "#11243e",
+        "background_gradient": "",
+        "text_color": "#f9fafb",
+        "subheading_background_color": "",
+        "subheading_text_color": ""
+      }
+    },
+    "multi_column_HCGJea11": {
+      "type": "multi-column",
+      "blocks": {
+        "item_9cWFC9": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#e5e9d1",
+            "icon_color": "#a0b842",
+            "background_color": "#40536c",
+            "text_color": "#ffffff",
+            "border_color": "#40536c",
+            "show_controls": false,
+            "column_size": "4",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h3>Sensing</h3><p>Capture high-precision traffic, sales, and operational data</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_aqpNXK": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#e5e9d1",
+            "icon_color": "#a0b842",
+            "background_color": "#40536c",
+            "text_color": "",
+            "border_color": "#40536c",
+            "show_controls": false,
+            "column_size": "4",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h3>Analysis</h3><p>Identify performance leaks, surges, and execution gaps</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_tTyycj": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#e5e9d1",
+            "icon_color": "#a0b842",
+            "background_color": "#40536c",
+            "text_color": "#ffffff",
+            "border_color": "#40536c",
+            "show_controls": false,
+            "column_size": "4",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h3>Recommendation</h3><p>AI-driven operational tasks and staffing adjustments</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_ztJTym": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#a0b842",
+            "icon_color": "#ffffff",
+            "background_color": "#40536c",
+            "text_color": "#ffffff",
+            "border_color": "#36465c",
+            "show_controls": false,
+            "column_size": "4",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h3>Execution</h3><p>Store teams take action via Flow Assistant notifications</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_9cWFC9",
+        "item_aqpNXK",
+        "item_tTyycj",
+        "item_ztJTym"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".multi-column__item .prose p {font-size: 1rem;}",
+        ".multi-column__item .h4 {padding-bottom: 0;}"
+      ],
+      "name": "Multi-column",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "start",
+        "subheading": "END-TO-END",
+        "title": "DATA TO EXECUTION IN REAL-TIME.",
+        "content": "<p>Average Response Time: &lt;2 minutes from detection to action</p>",
+        "background": "#0e366a",
+        "background_gradient": "",
+        "text_color": "#ffffff",
+        "subheading_background_color": "",
+        "subheading_text_color": ""
+      }
+    },
+    "section-15": {
+      "type": "feature-chart",
+      "blocks": {
+        "block-1": {
+          "type": "headings",
+          "settings": {
+            "heading_1": "主な提供価値",
+            "heading_2": "コアの設計思想",
+            "heading_3": "来店データの位置づけ",
+            "heading_4": "データの即時性",
+            "heading_5": "店舗での使いやすさ",
+            "heading_6": "判断へのつながり",
+            "heading_7": "店舗ごとの判断差",
+            "heading_8": "本部と店舗の連携",
+            "heading_9": "運用負荷",
+            "heading_10": "拡張性",
+            "heading_11": "",
+            "heading_12": "",
+            "heading_13": "",
+            "heading_14": "",
+            "heading_15": "",
+            "heading_16": "",
+            "heading_17": "",
+            "heading_18": "",
+            "heading_19": "",
+            "heading_20": ""
+          }
+        },
+        "block-2": {
+          "type": "values",
+          "settings": {
+            "product": "",
+            "value_1": "<p>40mm Beryllium</p>",
+            "value_2": "<p>245g</p>",
+            "value_3": "<p>165mm x 190mm x 66mm</p>",
+            "value_4": "<p>24 hours</p>",
+            "value_5": "",
+            "value_6": "",
+            "value_7": "",
+            "value_8": "",
+            "value_9": "",
+            "value_10": "",
+            "value_11": "",
+            "value_12": "",
+            "value_13": "",
+            "value_14": "",
+            "value_15": "",
+            "value_16": "",
+            "value_17": "",
+            "value_18": "",
+            "value_19": "",
+            "value_20": "",
+            "view_button_background": "",
+            "view_button_text_color": ""
+          }
+        },
+        "block-3": {
+          "type": "values",
+          "settings": {
+            "product": "",
+            "value_1": "<p>40mm Beryllium</p>",
+            "value_2": "<p>205g (On-Ear), 239g (Over-Ear)</p>",
+            "value_3": "<p>190mm x 155mm x 34mm (On-Ear), 200mm x 165mm x 40mm (Over-Ear)</p>",
+            "value_4": "<p>16 hours</p>",
+            "value_5": "",
+            "value_6": "",
+            "value_7": "",
+            "value_8": "",
+            "value_9": "",
+            "value_10": "",
+            "value_11": "",
+            "value_12": "",
+            "value_13": "",
+            "value_14": "",
+            "value_15": "",
+            "value_16": "",
+            "value_17": "",
+            "value_18": "",
+            "value_19": "",
+            "value_20": "",
+            "view_button_background": "",
+            "view_button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "Why Dashboards Fail",
+        "content": "<p>Traditional analytics show you the problem. Flow solves it.</p>",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "center",
+        "max_rows": 5,
+        "view_all_text": "View all",
+        "view_less_text": "View less",
+        "view_product": "View",
+        "viewing_product": "",
+        "show_product_swatch": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "chart_background": "",
+        "chart_text_color": "",
+        "chart_true_false_color": ""
+      }
+    },
+    "media_with_text_mRGejd": {
+      "type": "media-with-text",
+      "blocks": {
+        "image_enedX8": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/44.png",
+            "media_width": 50,
+            "media_position": "start",
+            "text_position": "place-self-center-start text-start",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "RAPID DEPLOYMENT WINDOW",
+            "title": "30 MINS.",
+            "content": "<p></p><p>PoE Interface: Single standard Ethernet cable for simultaneous power and data transmission.</p><p>Zero-Config: Automatic node discovery and network handshake. Reduces onsite engineering time by 90%.</p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "#f9fafb",
+            "background_gradient": "",
+            "text_color": "#11243e",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_enedX8"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "* {background: white;}"
+      ],
+      "name": "Media with text",
+      "settings": {
+        "full_width": false,
+        "alternate_media_position": false,
+        "spacing": "small"
+      }
+    },
+    "multi_column_ELgLhR": {
+      "type": "multi-column",
+      "blocks": {
+        "item_JgDPrh": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "店舗報告の質を標準化",
+            "heading_tag": "h3",
+            "subheading": "",
+            "content": "<p>店舗ごとの報告内容を揃え、確認しやすい形で蓄積できます。</p><p></p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_r88DC8": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "判断までの時間を短縮",
+            "heading_tag": "h3",
+            "subheading": "",
+            "content": "<p>KPI、メモ、Pulseを同じ画面で確認し、状況把握を早めます。</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_kncgUf": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "エリア確認工数を削減",
+            "heading_tag": "h3",
+            "subheading": "",
+            "content": "<p>複数店舗の変化をまとめて確認し、優先順位を付けやすくします。</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_YPXWMM": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "認識ズレを減らす",
+            "heading_tag": "h3",
+            "subheading": "",
+            "content": "<p>同じデータと店舗文脈をもとに、本部・店舗間の会話を進めやすくします。</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_QhMfj6": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "KPI変化への対応を高速化",
+            "heading_tag": "h3",
+            "subheading": "",
+            "content": "<p>売上、来店、購買率の変化に対して、確認すべき要因を整理できます。</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_dJ3Txk": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "優秀店舗の実行知を横展開",
+            "heading_tag": "h3",
+            "subheading": "",
+            "content": "<p>成果につながった施策や店舗行動を、他店舗にも共有しやすくします。</p><p></p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_JgDPrh",
+        "item_r88DC8",
+        "item_kncgUf",
+        "item_YPXWMM",
+        "item_QhMfj6",
+        "item_dJ3Txk"
+      ],
+      "custom_css": [
+        ".multi-column__item .h1 {color: #a0b842 !important;}"
+      ],
+      "name": "Multi-column",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "start",
+        "subheading": "実行改善",
+        "title": "店舗運営の変化を、行動まで確認する。",
+        "content": "<p>Flowは、KPIの変化だけでなく、店舗報告、メモ、Pulse、対応内容を同じ文脈で確認できるようにし、改善活動を振り返りやすくします。</p>",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "",
+        "subheading_background_color": "#f0f3e9",
+        "subheading_text_color": "#11243e"
+      }
+    },
+    "blocks_rwYEMm": {
+      "type": "_blocks",
+      "blocks": {
+        "badge_6bECTU": {
+          "type": "badge",
+          "name": "Badge",
+          "settings": {
+            "text": "導入・連携",
+            "alignment": "left",
+            "text_color": "#11243e",
+            "background": "#f0f3e9"
+          },
+          "blocks": {}
+        },
+        "rich_text_BxigGJ": {
+          "type": "rich-text",
+          "name": "Rich text",
+          "settings": {
+            "text": "<h1>既存システムと店舗運用に合わせて、<br/>段階的に導入できます。</h1><p>Flowは、現在のPOS、来店計測、スタッフデータ、店舗運用に合わせて連携方法を確認します。すべてを一度に変える必要はありません。必要なデータから接続し、店舗・エリア・本部で使える形に整えていきます。</p>",
+            "content_width": "large",
+            "text_alignment": "left"
+          },
+          "blocks": {}
+        },
+        "ai_gen_block_c38635f_L8NpUd": {
+          "type": "ai_gen_block_c38635f",
+          "settings": {
+            "desktop_width_percent": 100,
+            "section_padding": 60,
+            "card_gap": 30,
+            "card_padding": 50,
+            "card_border_radius": 24,
+            "background_color": "rgba(0,0,0,0)",
+            "left_card_bg": "#f9fafb",
+            "left_card_border": "#e5e7eb",
+            "right_card_bg": "#1e3a5f",
+            "left_heading": "確認できること",
+            "left_heading_color": "#1e293b",
+            "heading_size": 32,
+            "heading_margin": 30,
+            "feature_1_title": "POS連携方法",
+            "feature_1_text": "現在のPOSや売上データの形式に合わせて、連携方法を確認します。",
+            "feature_2_title": "API / CSV / FTPでのデータ取込",
+            "feature_2_text": "既存システムや外部データから、必要なデータを取り込める方法を整理します。",
+            "feature_3_title": "既存カメラ・既存計測データの活用可否",
+            "feature_3_text": "すでに取得している来店計測データや店舗データを、Flowで活用できるか確認します。",
+            "feature_4_title": "店舗・エリア・本部ごとの権限設定",
+            "feature_4_text": "店舗、エリアマネージャー、本部が、それぞれ必要な情報を見られるように設計します。",
+            "feature_gap": 30,
+            "icon_size": 32,
+            "check_icon_bg": "#a0b842",
+            "check_icon_color": "#ffffff",
+            "feature_title_size": 18,
+            "feature_title_color": "#1e293b",
+            "feature_text_size": 15,
+            "feature_text_color": "#64748b",
+            "right_heading": "導入後にできること",
+            "right_heading_color": "#ffffff",
+            "module_1_text": "店舗データを同じ基準で確認",
+            "module_2_text": "店舗・エリアごとの比較",
+            "module_3_text": "小さく始めて段階展開",
+            "module_4_text": "Flow AIの判断支援に活用",
+            "module_5_text": "Pulse・メモとKPIを照合",
+            "module_gap": 15,
+            "module_bg": "#2d4a6f",
+            "module_padding": 20,
+            "module_border_radius": 30,
+            "module_text_size": 19,
+            "module_text_color": "#ffffff",
+            "module_icon_size": 26,
+            "module_icon_color": "#a0b842"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "badge_6bECTU",
+        "rich_text_BxigGJ",
+        "ai_gen_block_c38635f_L8NpUd"
+      ],
+      "custom_css": [],
+      "name": "SaaS infographic split",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "blocks_nwzRNT": {
+      "type": "_blocks",
+      "blocks": {
+        "badge_hfWyUc": {
+          "type": "badge",
+          "name": "Badge",
+          "settings": {
+            "text": "FAQ",
+            "alignment": "left",
+            "text_color": "#11243e",
+            "background": "#f0f3e9"
+          },
+          "blocks": {}
+        },
+        "heading_tUHxq4": {
+          "type": "heading",
+          "name": "Heading",
+          "settings": {
+            "text": "よくある質問",
+            "size": "h1",
+            "html_tag": "h3",
+            "text_color": "#11243e",
+            "gradient": ""
+          },
+          "blocks": {}
+        },
+        "ai_gen_block_0c78d27_Gxk68e": {
+          "type": "ai_gen_block_0c78d27",
+          "name": "FAQ accordion item",
+          "settings": {
+            "category": "データ連携",
+            "question": "POS連携は必要ですか？",
+            "answer": "POS連携は推奨されます。売上、購買率、客単価、購買点数を来店データと組み合わせることで、店舗成果の要因を確認しやすくなります。ただし、導入初期は利用できるデータから段階的に始めることも可能です。",
+            "default_open": false,
+            "icon_type": "badge",
+            "icon_background_color": "#f0f4e8",
+            "icon_color": "#a0b842",
+            "category_color": "#a0b842",
+            "question_color": "#0f172a",
+            "answer_color": "#475569",
+            "chevron_color": "#64748b"
+          },
+          "blocks": {}
+        },
+        "ai_gen_block_0c78d27_AV7tPk": {
+          "type": "ai_gen_block_0c78d27",
+          "settings": {
+            "category": "既存データ",
+            "question": "既存の来店計測データも使えますか？",
+            "answer": "既存の来店計測データやカメラデータを活用できるかは、データ形式、取得精度、連携方法によって異なります。Flowでは、既存データの活用可否を確認した上で、必要に応じてAPI、CSV、FTPなどの連携方法を検討します。",
+            "default_open": false,
+            "icon_type": "badge",
+            "icon_background_color": "#f0f4e8",
+            "icon_color": "#a0b842",
+            "category_color": "#a0b842",
+            "question_color": "#0f172a",
+            "answer_color": "#475569",
+            "chevron_color": "#64748b"
+          },
+          "blocks": {}
+        },
+        "ai_gen_block_0c78d27_zrf8V4": {
+          "type": "ai_gen_block_0c78d27",
+          "name": "FAQ accordion item",
+          "settings": {
+            "category": "Pulse・メモ",
+            "question": "Pulseやメモでは何を記録できますか？",
+            "answer": "売場変更、イベント、在庫状況、スタッフ体制、天候影響、店舗での気づきなど、数字だけでは残りにくい現場情報を記録できます。これにより、売上や来店数の変化を、現場の状況と合わせて振り返りやすくなります。",
+            "default_open": false,
+            "icon_type": "badge",
+            "icon_background_color": "#f0f4e8",
+            "icon_color": "#a0b842",
+            "category_color": "#a0b842",
+            "question_color": "#0f172a",
+            "answer_color": "#475569",
+            "chevron_color": "#64748b"
+          },
+          "blocks": {}
+        },
+        "ai_gen_block_0c78d27_eMXbWy": {
+          "type": "ai_gen_block_0c78d27",
+          "name": "FAQ accordion item",
+          "settings": {
+            "category": "Flow AI",
+            "question": "Flow AIはどの情報を参照しますか？",
+            "answer": "Flow AIは、接続された店舗データ、POSデータ、Pulse、メモ、店舗報告、マニュアル、SOP、社内資料などを参照できるように設計されています。回答は店舗運営の判断を支援するためのものであり、店長やエリアマネージャーの判断を置き換えるものではありません。",
+            "default_open": false,
+            "icon_type": "badge",
+            "icon_background_color": "#f0f4e8",
+            "icon_color": "#a0b842",
+            "category_color": "#a0b842",
+            "question_color": "#0f172a",
+            "answer_color": "#475569",
+            "chevron_color": "#64748b"
+          },
+          "blocks": {}
+        },
+        "ai_gen_block_0c78d27_77WPEM": {
+          "type": "ai_gen_block_0c78d27",
+          "name": "FAQ accordion item",
+          "settings": {
+            "category": "利用部門",
+            "question": "誰がFlow Platformを利用できますか？",
+            "answer": "主な利用者は、店舗スタッフ、店長、エリアマネージャー、本部チームです。店舗では日々のKPI確認や報告に、本部やエリアでは複数店舗の比較、状況把握、改善活動の確認に活用できます。権限設定により、役割ごとに必要な情報を表示できます。",
+            "default_open": false,
+            "icon_type": "badge",
+            "icon_background_color": "#f0f4e8",
+            "icon_color": "#a0b842",
+            "category_color": "#a0b842",
+            "question_color": "#0f172a",
+            "answer_color": "#475569",
+            "chevron_color": "#64748b"
+          },
+          "blocks": {}
+        },
+        "ai_gen_block_0c78d27_jqMeJG": {
+          "type": "ai_gen_block_0c78d27",
+          "name": "FAQ accordion item",
+          "settings": {
+            "category": "導入・展開",
+            "question": "何店舗から導入できますか？",
+            "answer": "導入範囲は目的や連携内容によって変わります。小規模な検証から開始し、利用状況や運用設計を確認しながら、店舗、エリア、本部へ段階的に展開することが可能です。複数店舗での比較やエリア管理を行う場合は、一定数の店舗での導入がより効果的です。",
+            "default_open": false,
+            "icon_type": "badge",
+            "icon_background_color": "#f0f4e8",
+            "icon_color": "#a0b842",
+            "category_color": "#a0b842",
+            "question_color": "#0f172a",
+            "answer_color": "#475569",
+            "chevron_color": "#64748b"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "badge_hfWyUc",
+        "heading_tUHxq4",
+        "ai_gen_block_0c78d27_Gxk68e",
+        "ai_gen_block_0c78d27_AV7tPk",
+        "ai_gen_block_0c78d27_zrf8V4",
+        "ai_gen_block_0c78d27_eMXbWy",
+        "ai_gen_block_0c78d27_77WPEM",
+        "ai_gen_block_0c78d27_jqMeJG"
+      ],
+      "custom_css": [
+        ".h1 {margin-block-end: var(--spacing-6);}"
+      ],
+      "name": "FAQ accordion item",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "rich_text_6VmVgb": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_AK7Cjn": {
+          "type": "subheading",
+          "settings": {
+            "text": "次のステップ",
+            "icon": "none"
+          }
+        },
+        "heading_YXhiR8": {
+          "type": "heading",
+          "settings": {
+            "text": "店舗データを、判断と実行につなげませんか？",
+            "heading_tag": "h2",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_qzAkak": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Flow Platformが、貴社の来店・売上・店舗報告・社内ナレッジをどのように統合できるかをご相談ください。</p>"
+          }
+        },
+        "button_AVKAbi": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "style": "outline",
+            "size": "base",
+            "text": "Contact Solutions Architect",
+            "url": "#",
+            "background": "",
+            "text_color": "#11243e"
+          }
+        },
+        "buttons_jaKCGH": {
+          "type": "buttons",
+          "settings": {
+            "style_1": "fill",
+            "size_1": "xl",
+            "text_1": "デモを予約する →",
+            "url_1": "#",
+            "background_1": "#a0b842",
+            "text_color_1": "#ffffff",
+            "style_2": "fill",
+            "size_2": "xl",
+            "text_2": "連携できるデータを見る →",
+            "url_2": "#",
+            "background_2": "#ffffff",
+            "text_color_2": "#11243e"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_AK7Cjn",
+        "heading_YXhiR8",
+        "richtext_qzAkak",
+        "button_AVKAbi",
+        "buttons_jaKCGH"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "#0e366a",
+        "background_gradient": "",
+        "text_color": "#ffffff"
+      }
+    }
+  },
+  "order": [
+    "image_with_text_overlay_AcppEX",
+    "blocks_6PjPxD",
+    "rich_text_B8Y9rV",
+    "multi_column_QjMJiW",
+    "multi_column_Rqk3xG",
+    "multi_column_rPwdDt",
+    "rich_text_peMmaV",
+    "multi_column_q8BX4d",
+    "multi_column_HCGJea",
+    "media_with_text_hMPTmL",
+    "blocks_YJHkDA",
+    "178047465242fd23a6",
+    "1780630742eb183a6c",
+    "multi_column_QjMJiW11",
+    "blocks_4YeEQJ",
+    "multi_column_qz9jhR",
+    "multi_column_HCGJea11",
+    "section-15",
+    "media_with_text_mRGejd",
+    "multi_column_ELgLhR",
+    "blocks_rwYEMm",
+    "blocks_nwzRNT",
+    "rich_text_6VmVgb"
+  ]
+}
