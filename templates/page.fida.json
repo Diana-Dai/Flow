@@ -375,62 +375,6 @@
         "subheading_text_color": ""
       }
     },
-    "rich_text_GeB9DG": {
-      "type": "rich-text",
-      "blocks": {
-        "subheading_KNcVdN": {
-          "type": "subheading",
-          "disabled": true,
-          "settings": {
-            "text": "Subheading",
-            "icon": "none"
-          }
-        },
-        "heading_UX48ag": {
-          "type": "heading",
-          "disabled": true,
-          "settings": {
-            "text": "Heading",
-            "heading_tag": "h1",
-            "text_color": "",
-            "gradient": ""
-          }
-        },
-        "button_VDQGrD": {
-          "type": "button",
-          "settings": {
-            "style": "fill",
-            "size": "xl",
-            "text": "外部連携の詳細を見る →",
-            "url": "shopify://pages/integrations-2",
-            "background": "",
-            "text_color": ""
-          }
-        },
-        "richtext_Q3TjGC": {
-          "type": "richtext",
-          "disabled": true,
-          "settings": {
-            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "subheading_KNcVdN",
-        "heading_UX48ag",
-        "button_VDQGrD",
-        "richtext_Q3TjGC"
-      ],
-      "name": "Rich text",
-      "settings": {
-        "full_width": true,
-        "content_width": "small",
-        "text_position": "center",
-        "background": "#FFFFFF",
-        "background_gradient": "",
-        "text_color": ""
-      }
-    },
     "multi_column_Rqk3xG": {
       "type": "multi-column",
       "blocks": {
@@ -451,7 +395,7 @@
             "title": "",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<h4>01. 既存データを接続</h4><p>POS、来店計測、スタッフ、天候、店舗属性など、店舗運営に必要なデータをFlowに取り込みます。</p>",
+            "content": "<h4>01. データを接続</h4><p>POS、来店計測、シフト、天候、店舗属性、店舗報告、社内資料など、店舗運営に必要な情報をFlowに取り込みます。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -474,7 +418,7 @@
             "title": "",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<h4>02. 店舗の状況として整理</h4><p>売上、来店、店舗報告、メモ、マニュアルを店舗ごとの状況として整理し、比較しやすくします。</p>",
+            "content": "<h4>02. 店舗文脈として整理</h4><p>売上や来店数だけでなく、スタッフ状況、現場メモ、SOP、店舗条件を合わせて、店舗ごとの状況として整理します。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -497,7 +441,7 @@
             "title": "",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<h4>03. 日々の実行につなげる</h4><p>店長、エリアマネージャー、本部が同じ情報をもとに、次の確認・報告・打ち手を進められます。</p>",
+            "content": "<h4>03. 実行提案につなげる</h4><p>Flow AIがFIDAを参照し、店長・エリアマネージャー・本部が次に確認すべきこと、取るべき行動を提案します。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -515,9 +459,9 @@
         "stack_on_mobile": true,
         "gap": "medium",
         "text_alignment": "start",
-        "subheading": "データ活用の流れ",
-        "title": "データを、実行につなげる",
-        "content": "<p>既存システムや店舗現場の情報をFlowに集約し、店長・エリアマネージャー・本部が同じ情報をもとに状況を確認できる状態にします。</p>",
+        "subheading": "FIDAの役割",
+        "title": "データを、判断できる状態に整える",
+        "content": "<p>FIDAは、売上・来店・スタッフ・店舗報告・マニュアルを店舗ごとの文脈で整理するFlowの判断基盤です。Flow AIはこの基盤を参照し、状況に合った実行提案を行います。</p>",
         "background": "rgba(0,0,0,0)",
         "background_gradient": "",
         "text_color": "",
@@ -2477,7 +2421,6 @@
     "rich_text_B8Y9rV",
     "custom_liquid_tiJnkh",
     "multi_column_QjMJiW",
-    "rich_text_GeB9DG",
     "multi_column_Rqk3xG",
     "multi_column_rPwdDt",
     "rich_text_peMmaV",
