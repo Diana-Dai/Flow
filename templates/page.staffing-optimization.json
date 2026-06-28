@@ -943,7 +943,7 @@
             "title": "",
             "heading_tag": "h2",
             "subheading": "",
-            "content": "<h3>既存システムとの連携</h3><p>Flowは、POSや既存データ環境との連携に対応します。API、FTP、CSVなど、運用状況に合わせた連携方法を検討できます。</p><h4>柔軟に対応</h4><p>複数の連携方法に対応</p>",
+            "content": "<h3>既存システムとの連携</h3><p>Flowは、POSやスタッフデータとの連携に対応します。API、FTP、CSVなど、運用状況に合わせた連携方法を検討できます。</p><h4>柔軟に対応</h4><p>複数の連携方法に対応</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -987,7 +987,7 @@
             "title": "",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<h5><strong>段階的な展開に対応</strong></h5><p>まずは一部店舗やエリアから開始し、効果や運用方法を確認したうえで展開を広げることができます。Flowは、運用スケジュールや予算計画に合わせた段階導入に対応します。</p>",
+            "content": "<h5><strong>一部店舗から段階的に展開</strong></h5><p>まずは一部店舗やエリアから開始し、来店データ・スタッフ稼働・運用方法を確認したうえで展開を広げることができます。Flowは、運用スケジュールや予算計画に合わせた段階導入に対応します。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -1014,7 +1014,7 @@
         "text_alignment": "start",
         "subheading": "導入について",
         "title": "店舗運営への影響を抑えて導入。",
-        "content": "<h6>Flowは、既存の店舗運営に配慮しながら導入を進めます。営業時間外の設置、既存システムとの連携、店舗チーム向けの活用支援まで、段階的な展開に対応します。</h6>",
+        "content": "<p>Flowは、既存の店舗運営に配慮しながら導入を進めます。営業時間外の設置、既存システムやスタッフデータとの連携、店舗チーム向けの活用支援まで、段階的な展開に対応します。</p>",
         "background": "#f2f2f2",
         "background_gradient": "",
         "text_color": "",
@@ -1035,7 +1035,7 @@
         "heading_YXhiR8": {
           "type": "heading",
           "settings": {
-            "text": "購買率を、管理できる指標に。",
+            "text": "来店に合わせた、スタッフ配置へ。",
             "heading_tag": "h1",
             "text_color": "",
             "gradient": ""
@@ -1044,7 +1044,7 @@
         "richtext_qzAkak": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Flowが来店数・購買率・POSデータをつなげ、売上目標に向けた改善判断をどのように支援するかをご紹介します。</p>"
+            "content": "<p>Flowが来店数・購買率・スタッフ稼働をつなげ、ピーク時間の接客配置や休憩・作業時間の見直しをどのように支援するかをご紹介します。</p>"
           }
         },
         "button_AVKAbi": {
