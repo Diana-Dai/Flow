@@ -194,9 +194,9 @@
             "eyebrow_font_size": 12,
             "eyebrow_bg_color": "#edf1e1",
             "eyebrow_text_color": "#11243e",
-            "heading": "リアルタイムに、購買率を理解する。",
+            "heading": "リアルタイムに、人員配置を判断する。",
             "heading_color": "#11243e",
-            "description": "Flowは、来店計測・POS連携・店内行動データを統合し、購買率の変化とその背景をリアルタイムに把握できる状態をつくります。",
+            "description": "Flowは、来店数・売上・購買率・スタッフ稼働を統合し、時間帯ごとの人員配置が売上機会に合っているかを把握できる状態をつくります。",
             "description_font_size": 16,
             "description_color": "#6b7280",
             "header_spacing": 50,
@@ -207,26 +207,26 @@
             "card_heading_size": 20,
             "card_text_size": 15,
             "card_list_size": 14,
-            "card1_heading": "高精度な来店計測",
-            "card1_text": "Flowは、AIカメラで来店数をリアルタイムに計測し、スタッフの動きも除外します。売上結果だけでは見えなかった「何人が来店したのか」を正確に把握できます。",
-            "card1_item1": "リアルタイム来店計測",
-            "card1_item2": "スタッフ除外",
-            "card1_item3": "時間帯別の推移確認",
+            "card1_heading": "来店とスタッフ稼働を可視化",
+            "card1_text": "Flowは、時間帯別の来店数とスタッフ/時間を可視化し、忙しい時間に十分な人員を配置できているかを確認できます。感覚ではなく、実際の来店状況をもとに配置を見直せます。",
+            "card1_item1": "時間帯別の来店数",
+            "card1_item2": "スタッフ/時間",
+            "card1_item3": "スタッフレベル",
             "dark_card_bg": "#0e2a3a",
             "dark_card_text": "#ffffff",
             "dark_icon_bg": "#a0b842",
             "dark_checkmark_color": "#a0b842",
-            "card2_heading": "POS連携による購買率把握",
-            "card2_text": "Flowは、来店数とPOSデータを連携し、購買率を自動で算出します。店舗は、売上だけでなく、来店をどれだけ購買につなげられたかを確認できます。",
-            "card2_item1": "POSデータ連携",
-            "card2_item2": "購買率の自動算出",
-            "card2_item3": "過去実績との比較",
+            "card2_heading": "配置が成果につながったかを確認",
+            "card2_text": "Flowは、売上・購買客数・スタッフ稼働をつなげて、配置した人員が購買や売上につながっているかを確認できます。スタッフ効率や購入転換力を見ることで、配置の質を判断しやすくなります。",
+            "card2_item1": "購入転換力",
+            "card2_item2": "スタッフ効率",
+            "card2_item3": "購買率との比較",
             "light_card_bg": "#ffffff",
             "light_card_text": "#0a1a2f",
             "light_icon_bg": "#a7bc59",
             "light_checkmark_color": "#a0b842",
             "banner_title": "Flowの強み",
-            "banner_text": "Flowは、単なる人数カウントではありません。来店数、購買率、POS、店内行動をつなげることで、どの店舗で、どの時間帯に、どの改善行動が必要かを判断しやすくします。",
+            "banner_text": "Flowは、単なる人数カウントやシフト表ではありません。来店数・売上・購買率・スタッフ稼働をつなげることで、どの店舗で、どの時間帯に、どの配置改善が必要かを判断しやすくします。",
             "banner_padding": 32,
             "banner_border_radius": 12,
             "banner_title_size": 20,
@@ -251,6 +251,58 @@
         "background": "",
         "background_gradient": "",
         "text_color": ""
+      }
+    },
+    "image_with_text_overlay_aB8yYm": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "heading_H9etN4": {
+          "type": "heading",
+          "settings": {
+            "text": "関連する機能を見る",
+            "heading_tag": "h1"
+          }
+        },
+        "button_c9xR8X": {
+          "type": "button",
+          "settings": {
+            "style": "fill",
+            "size": "lg",
+            "text": "来店計測について見る",
+            "url": "",
+            "background": "",
+            "text_color": ""
+          }
+        },
+        "button_wm9Dmd": {
+          "type": "button",
+          "settings": {
+            "style": "fill",
+            "size": "lg",
+            "text": "プラットフォームを見る",
+            "url": "",
+            "background": "#A0B842",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_H9etN4",
+        "button_c9xR8X",
+        "button_wm9Dmd"
+      ],
+      "name": "Image with text overlay",
+      "settings": {
+        "full_width": false,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "auto",
+        "image": "shopify://shop_images/Traffic_Insights.png",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 52
       }
     },
     "rich_text_QVU37W": {
@@ -1081,6 +1133,7 @@
     "1782205766608098ab",
     "178220728917312eff",
     "1780279655010b3d7a",
+    "image_with_text_overlay_aB8yYm",
     "rich_text_QVU37W",
     "multi_column_bJtgmc",
     "blocks_BGj9cg",
