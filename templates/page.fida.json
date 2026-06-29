@@ -477,7 +477,7 @@
           "name": "Heading",
           "settings": {
             "text": "状況を読み取り、次の一手を提示する",
-            "size": "h2",
+            "size": "h1",
             "html_tag": "p",
             "text_color": "",
             "gradient": ""
