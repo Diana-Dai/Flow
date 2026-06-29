@@ -60,17 +60,28 @@
     overflow: hidden;
     display: block;
     width: 100%;
+    box-sizing: border-box;
     height: 100%;
     max-width: 100%;
   }
 
+  #shopify-section-{{ section.id }} .section:has(.ai-faq-card) {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 24px;
+  }
+
+  #shopify-section-{{ section.id }} .section:has(.ai-faq-card) > .shopify-block:has(> .ai-faq-card) {
+    min-width: 0;
+  }
+
   @media screen and (min-width: 750px) {
-    .ai-faq-card-{{ ai_gen_id }}[data-width="50"] {
-      max-width: calc(50% - 12px);
+    #shopify-section-{{ section.id }} .section:has(.ai-faq-card) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
     }
-    
-    .ai-faq-card-{{ ai_gen_id }}[data-width="100"] {
-      max-width: 100%;
+
+    #shopify-section-{{ section.id }} .section:has(.ai-faq-card) > .shopify-block:has(> .ai-faq-card[data-width="100"]) {
+      grid-column: 1 / -1;
     }
   }
 
@@ -196,7 +207,11 @@
   }
 {% endstyle %}
 
-<faq-card-{{ ai_gen_id }} class="ai-faq-card-{{ ai_gen_id }}"  {{ block.shopify_attributes }}>
+<faq-card-{{ ai_gen_id }}
+  class="ai-faq-card ai-faq-card-{{ ai_gen_id }}"
+  data-width="{{ block.settings.card_width | default: '50' }}"
+  {{ block.shopify_attributes }}
+>
   <div class="ai-faq-card-header-{{ ai_gen_id }}">
     <div class="ai-faq-card-icon-badge-{{ ai_gen_id }}">
       {% if block.settings.icon_type == 'clock' %}
@@ -388,6 +403,22 @@
     {
       "type": "header",
       "content": "Layout"
+    },
+    {
+      "type": "select",
+      "id": "card_width",
+      "label": "Card width on desktop",
+      "options": [
+        {
+          "value": "50",
+          "label": "50% (2 cards per row)"
+        },
+        {
+          "value": "100",
+          "label": "100% (1 card per row)"
+        }
+      ],
+      "default": "50"
     },
     {
       "type": "header",

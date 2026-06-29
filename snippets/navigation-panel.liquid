@@ -31,26 +31,135 @@ Supported variables
             {%- unless is_mega_menu -%}
               {% liquid
                 assign link_title_downcase = link.title | downcase
+                assign is_platform_menu = false
+                assign is_about_menu = false
                 assign mega_menu_block = ''
                 assign is_image_shown = false
+                assign top_menu_meta_icon = ''
+                assign top_menu_meta_logo = blank
+                assign top_menu_meta_description = ''
+
+                if link_title_downcase contains 'platform'
+                  assign is_platform_menu = true
+                endif
+
+                if link_title_downcase contains 'about flow' or link_title_downcase contains 'flowについて'
+                  assign is_about_menu = true
+                endif
 
                 for block in section.blocks
-                  assign menu_item_downcase = block.settings.menu_item | strip | downcase
+                  if block.type == 'menu_item_meta'
+                    assign menu_item_downcase = block.settings.menu_item | strip | downcase
 
-                  if menu_item_downcase == link_title_downcase
-                    assign mega_menu_block = block
-
-                  if block.settings.drawer_link_image == 'show'
-                    assign is_image_shown = true
-                    break
+                    if menu_item_downcase == link_title_downcase
+                      assign top_menu_meta_icon = block.settings.icon
+                      assign top_menu_meta_logo = block.settings.custom_logo
+                      assign top_menu_meta_description = block.settings.description
+                    endif
                   endif
 
-                    break
+                  if block.type == 'mega_menu'
+                    assign menu_item_downcase = block.settings.menu_item | strip | downcase
+
+                    if menu_item_downcase == link_title_downcase
+                      assign mega_menu_block = block
+
+                      if block.settings.drawer_link_image == 'show'
+                        assign is_image_shown = true
+                      endif
+
+                      break
+                    endif
                   endif
-                endfor %}
+                endfor
+
+                if section.settings.menu_item_meta_bulk != blank
+                  assign bulk_rows = section.settings.menu_item_meta_bulk | newline_to_br | split: '<br />'
+
+                  for bulk_row in bulk_rows
+                    assign bulk_row = bulk_row | strip
+
+                    if bulk_row != blank
+                      assign bulk_cols = bulk_row | split: '|'
+                      assign bulk_title = bulk_cols[0] | default: '' | strip | downcase
+
+                      if bulk_title == link_title_downcase
+                        if top_menu_meta_description == blank and bulk_cols.size > 1
+                          assign top_menu_meta_description = bulk_cols[1] | strip
+                        endif
+
+                        if top_menu_meta_icon == blank and bulk_cols.size > 2
+                          assign bulk_icon = bulk_cols[2] | strip
+
+                          if bulk_icon != blank
+                            assign top_menu_meta_icon = bulk_icon
+                          endif
+                        endif
+
+                        break
+                      endif
+                    endif
+                  endfor
+                endif %}
 
             {%- else -%}
+              {%- assign link_title_downcase = link.title | downcase -%}
+              {%- assign is_platform_menu = false -%}
+              {%- assign is_about_menu = false -%}
               {%- assign is_image_shown = false -%}
+              {%- assign top_menu_meta_icon = '' -%}
+              {%- assign top_menu_meta_logo = blank -%}
+              {%- assign top_menu_meta_description = '' -%}
+
+              {%- if link_title_downcase contains 'platform' -%}
+                {%- assign is_platform_menu = true -%}
+              {%- endif -%}
+
+              {%- if link_title_downcase contains 'about flow' or link_title_downcase contains 'flowについて' -%}
+                {%- assign is_about_menu = true -%}
+              {%- endif -%}
+
+              {%- for meta_block in section.blocks -%}
+                {%- if meta_block.type == 'menu_item_meta' -%}
+                  {%- assign menu_item_downcase = meta_block.settings.menu_item | strip | downcase -%}
+
+                  {%- if menu_item_downcase == link_title_downcase -%}
+                    {%- assign top_menu_meta_icon = meta_block.settings.icon -%}
+                    {%- assign top_menu_meta_logo = meta_block.settings.custom_logo -%}
+                    {%- assign top_menu_meta_description = meta_block.settings.description -%}
+                    {%- break -%}
+                  {%- endif -%}
+                {%- endif -%}
+              {%- endfor -%}
+
+              {%- if top_menu_meta_description == blank and section.settings.menu_item_meta_bulk != blank -%}
+                {%- assign bulk_rows = section.settings.menu_item_meta_bulk | newline_to_br | split: '<br />' -%}
+
+                {%- for bulk_row in bulk_rows -%}
+                  {%- assign bulk_row = bulk_row | strip -%}
+
+                  {%- if bulk_row != blank -%}
+                    {%- assign bulk_cols = bulk_row | split: '|' -%}
+                    {%- assign bulk_title = bulk_cols[0] | default: '' | strip | downcase -%}
+
+                    {%- if bulk_title == link_title_downcase -%}
+                      {%- if top_menu_meta_description == blank and bulk_cols.size > 1 -%}
+                        {%- assign top_menu_meta_description = bulk_cols[1] | strip -%}
+                      {%- endif -%}
+
+                      {%- if top_menu_meta_icon == blank and bulk_cols.size > 2 -%}
+                        {%- assign bulk_icon = bulk_cols[2] | strip -%}
+
+                        {%- if bulk_icon != blank -%}
+                          {%- assign top_menu_meta_icon = bulk_icon -%}
+                        {%- endif -%}
+                      {%- endif -%}
+
+                      {%- break -%}
+                    {%- endif -%}
+                  {%- endif -%}
+                {%- endfor -%}
+              {%- endif -%}
 
               {%- if mega_menu_block.settings.drawer_link_image == 'show' -%}
                 {%- assign is_image_shown = true -%}
@@ -61,12 +170,44 @@ Supported variables
             <li class="h3 sm:h4">
               {%- if link.links.size > 0 or mega_menu_block != '' and is_mega_menu == false -%}
                 <button class="text-with-icon w-full group justify-between" aria-expanded="false" data-panel="1-{% increment level_1 %}">
-                  <span>{{ link.title }}</span>
+                  <span class="header__menu-meta-link">
+                    {%- if top_menu_meta_logo != blank or top_menu_meta_icon != blank -%}
+                      <span class="header__menu-meta-icon">
+                        {%- if top_menu_meta_logo != blank -%}
+                          {{- top_menu_meta_logo | image_url: width: 36 | image_tag: loading: 'lazy', widths: '36', class: 'menu-meta-logo' -}}
+                        {%- else -%}
+                          {%- render 'icon' with top_menu_meta_icon, width: 14, height: 14 -%}
+                        {%- endif -%}
+                      </span>
+                    {%- endif -%}
+                    <span class="header__menu-meta-content">
+                      <span>{{ link.title }}</span>
+                      {%- if top_menu_meta_description != blank -%}
+                        <span class="header__menu-meta-description">{{ top_menu_meta_description | escape }}</span>
+                      {%- endif -%}
+                    </span>
+                  </span>
                   <span class="circle-chevron group-hover:colors group-expanded:colors">{%- render 'icon' with 'chevron-right-small', direction_aware: true -%}</span>
                 </button>
               {%- else -%}
                 <a href="{{ link.url }}" class="group block w-full">
-                  <span><span class="reversed-link">{{ link.title }}</span></span>
+                  <span class="header__menu-meta-link">
+                    {%- if top_menu_meta_logo != blank or top_menu_meta_icon != blank -%}
+                      <span class="header__menu-meta-icon">
+                        {%- if top_menu_meta_logo != blank -%}
+                          {{- top_menu_meta_logo | image_url: width: 36 | image_tag: loading: 'lazy', widths: '36', class: 'menu-meta-logo' -}}
+                        {%- else -%}
+                          {%- render 'icon' with top_menu_meta_icon, width: 14, height: 14 -%}
+                        {%- endif -%}
+                      </span>
+                    {%- endif -%}
+                    <span class="header__menu-meta-content">
+                      <span><span class="reversed-link">{{ link.title }}</span></span>
+                      {%- if top_menu_meta_description != blank -%}
+                        <span class="header__menu-meta-description">{{ top_menu_meta_description | escape }}</span>
+                      {%- endif -%}
+                    </span>
+                  </span>
                 </a>
               {%- endif -%}
             </li>
@@ -76,7 +217,47 @@ Supported variables
                 {{- link_level_2 -}}
 
                 {%- assign use_platform_split_layout = false -%}
+                {%- assign has_platform_panel_content = false -%}
+                {%- assign custom_panel_badge = '' -%}
+                {%- assign custom_panel_heading = '' -%}
+                {%- assign custom_panel_link_label = '' -%}
+                {%- assign custom_panel_link = link.url -%}
+                {%- assign custom_panel_background = '' -%}
+                {%- assign custom_panel_text_color = '' -%}
+                {%- assign custom_panel_accent_color = '' -%}
+                {%- assign custom_panel_image = blank -%}
+
+                {%- if is_platform_menu -%}
+                  {%- assign custom_panel_badge = mega_menu_block.settings.platform_badge | default: section.settings.platform_auto_panel_badge | default: '5-minute assessment' -%}
+                  {%- assign custom_panel_heading = mega_menu_block.settings.platform_heading | default: section.settings.platform_auto_panel_title | default: 'Find the biggest gaps in your store data and execution process.' -%}
+                  {%- assign custom_panel_link_label = mega_menu_block.settings.platform_link_label | default: section.settings.platform_auto_panel_link_label | default: 'Start assessment' -%}
+                  {%- assign custom_panel_link = mega_menu_block.settings.platform_link | default: section.settings.platform_auto_panel_link | default: link.url -%}
+                  {%- assign custom_panel_background = mega_menu_block.settings.platform_panel_background | default: section.settings.platform_auto_panel_background | default: '#EEF4FF' -%}
+                  {%- assign custom_panel_text_color = mega_menu_block.settings.platform_panel_text_color | default: '#1C2E4A' -%}
+                  {%- assign custom_panel_accent_color = mega_menu_block.settings.platform_panel_accent_color | default: section.settings.platform_auto_panel_button_background | default: '#1B5CFF' -%}
+                  {%- assign custom_panel_image = mega_menu_block.settings.platform_panel_image | default: mega_menu_block.settings.image_1 | default: section.settings.platform_auto_panel_image -%}
+                {%- elsif is_about_menu -%}
+                  {%- assign custom_panel_badge = mega_menu_block.settings.platform_badge | default: section.settings.about_auto_panel_badge | default: 'DX checklist' -%}
+                  {%- assign custom_panel_heading = mega_menu_block.settings.platform_heading | default: section.settings.about_auto_panel_title | default: 'Check whether your stores are ready for better operational visibility.' -%}
+                  {%- assign custom_panel_link_label = mega_menu_block.settings.platform_link_label | default: section.settings.about_auto_panel_link_label | default: 'View checklist' -%}
+                  {%- assign custom_panel_link = mega_menu_block.settings.platform_link | default: section.settings.about_auto_panel_link | default: link.url -%}
+                  {%- assign custom_panel_background = mega_menu_block.settings.platform_panel_background | default: section.settings.about_auto_panel_background | default: '#EAF8F0' -%}
+                  {%- assign custom_panel_text_color = mega_menu_block.settings.platform_panel_text_color | default: '#1F3A2E' -%}
+                  {%- assign custom_panel_accent_color = mega_menu_block.settings.platform_panel_accent_color | default: section.settings.about_auto_panel_button_background | default: '#27AE60' -%}
+                  {%- assign custom_panel_image = mega_menu_block.settings.platform_panel_image | default: mega_menu_block.settings.image_1 | default: section.settings.about_auto_panel_image -%}
+                {%- endif -%}
+
+                {%- if mega_menu_block != '' -%}
+                  {%- if mega_menu_block.settings.platform_badge != blank or mega_menu_block.settings.platform_heading != blank or mega_menu_block.settings.platform_panel_image != blank or mega_menu_block.settings.platform_link_label != blank or mega_menu_block.settings.image_1 != blank -%}
+                    {%- assign has_platform_panel_content = true -%}
+                  {%- endif -%}
+                {%- endif -%}
+                {%- if is_platform_menu or is_about_menu -%}
+                  {%- assign has_platform_panel_content = true -%}
+                {%- endif -%}
                 {%- if mega_menu_block != '' and mega_menu_block.settings.layout == 'platform_split' -%}
+                  {%- assign use_platform_split_layout = true -%}
+                {%- elsif has_platform_panel_content -%}
                   {%- assign use_platform_split_layout = true -%}
                 {%- endif -%}
 
@@ -92,6 +273,55 @@ Supported variables
                       {%- for sub_link in link.links -%}
                         {%- assign platform_subtext = '' -%}
                         {%- assign platform_icon = 'picto-box' -%}
+                        {%- assign menu_meta_icon = '' -%}
+                        {%- assign menu_meta_logo = blank -%}
+                        {%- assign menu_meta_description = '' -%}
+
+                        {% liquid
+                          assign sub_link_title_downcase = sub_link.title | strip | downcase
+
+                          for meta_block in section.blocks
+                            if meta_block.type == 'menu_item_meta'
+                              assign menu_item_downcase = meta_block.settings.menu_item | strip | downcase
+
+                              if menu_item_downcase == sub_link_title_downcase
+                                assign menu_meta_icon = meta_block.settings.icon
+                                assign menu_meta_logo = meta_block.settings.custom_logo
+                                assign menu_meta_description = meta_block.settings.description
+                                break
+                              endif
+                            endif
+                          endfor
+
+                          if section.settings.menu_item_meta_bulk != blank
+                            assign bulk_rows = section.settings.menu_item_meta_bulk | newline_to_br | split: '<br />'
+
+                            for bulk_row in bulk_rows
+                              assign bulk_row = bulk_row | strip
+
+                              if bulk_row != blank
+                                assign bulk_cols = bulk_row | split: '|'
+                                assign bulk_title = bulk_cols[0] | default: '' | strip | downcase
+
+                                if bulk_title == sub_link_title_downcase
+                                  if menu_meta_description == blank and bulk_cols.size > 1
+                                    assign menu_meta_description = bulk_cols[1] | strip
+                                  endif
+
+                                  if menu_meta_icon == blank and bulk_cols.size > 2
+                                    assign bulk_icon = bulk_cols[2] | strip
+
+                                    if bulk_icon != blank
+                                      assign menu_meta_icon = bulk_icon
+                                    endif
+                                  endif
+
+                                  break
+                                endif
+                              endif
+                            endfor
+                          endif
+                        %}
 
                         {%- case forloop.index -%}
                           {%- when 1 -%}
@@ -115,24 +345,126 @@ Supported variables
                           {%- assign platform_subtext = sub_link.links.first.title -%}
                         {%- endif -%}
 
+                        {%- if menu_meta_description != blank -%}
+                          {%- assign platform_subtext = menu_meta_description -%}
+                        {%- endif -%}
+
+                        {%- if menu_meta_icon != blank -%}
+                          {%- assign platform_icon = menu_meta_icon -%}
+                        {%- endif -%}
+
                         <li class="h3 {% if is_mega_menu %}sm:h5{% else %}sm:h4{% endif %}">
                           {%- if use_platform_split_layout -%}
-                            <a class="panel-platform-split__item" href="{{ sub_link.url }}">
-                              <span class="panel-platform-split__icon">{%- render 'icon' with platform_icon, width: 18, height: 18 -%}</span>
-                              <span class="panel-platform-split__text">
-                                <span class="panel-platform-split__title">{{ sub_link.title }}</span>
-                                {%- if platform_subtext != '' -%}
-                                  <span class="panel-platform-split__subtext">{{ platform_subtext | escape }}</span>
-                                {%- endif -%}
-                              </span>
-                            </a>
+                            <div class="v-stack gap-3">
+                              <a class="panel-platform-split__item" href="{{ sub_link.url }}">
+                                <span class="panel-platform-split__icon">
+                                  {%- if menu_meta_logo != blank -%}
+                                    {{- menu_meta_logo | image_url: width: 36 | image_tag: loading: 'lazy', widths: '36', class: 'menu-meta-logo' -}}
+                                  {%- else -%}
+                                    {%- render 'icon' with platform_icon, width: 18, height: 18 -%}
+                                  {%- endif -%}
+                                </span>
+                                <span class="panel-platform-split__text">
+                                  <span class="panel-platform-split__title">{{ sub_link.title }}</span>
+                                  {%- if platform_subtext != '' -%}
+                                    <span class="panel-platform-split__subtext">{{ platform_subtext | escape }}</span>
+                                  {%- endif -%}
+                                </span>
+                              </a>
+
+                              {%- if sub_link.links.size > 0 -%}
+                                <ul class="v-stack gap-3">
+                                  {%- for sub_sub_link in sub_link.links -%}
+                                    {%- assign sub_sub_menu_meta_icon = '' -%}
+                                    {%- assign sub_sub_menu_meta_logo = blank -%}
+                                    {%- assign sub_sub_menu_meta_description = '' -%}
+                                    {%- assign resolved_sub_sub_menu_icon = '' -%}
+
+                                    {% liquid
+                                      assign sub_sub_link_title_downcase = sub_sub_link.title | strip | downcase
+
+                                      for meta_block in section.blocks
+                                        if meta_block.type == 'menu_item_meta'
+                                          assign menu_item_downcase = meta_block.settings.menu_item | strip | downcase
+
+                                          if menu_item_downcase == sub_sub_link_title_downcase
+                                            assign sub_sub_menu_meta_icon = meta_block.settings.icon
+                                            assign sub_sub_menu_meta_logo = meta_block.settings.custom_logo
+                                            assign sub_sub_menu_meta_description = meta_block.settings.description
+                                            break
+                                          endif
+                                        endif
+                                      endfor
+
+                                      if section.settings.menu_item_meta_bulk != blank
+                                        assign bulk_rows = section.settings.menu_item_meta_bulk | newline_to_br | split: '<br />'
+
+                                        for bulk_row in bulk_rows
+                                          assign bulk_row = bulk_row | strip
+
+                                          if bulk_row != blank
+                                            assign bulk_cols = bulk_row | split: '|'
+                                            assign bulk_title = bulk_cols[0] | default: '' | strip | downcase
+
+                                            if bulk_title == sub_sub_link_title_downcase
+                                              if sub_sub_menu_meta_description == blank and bulk_cols.size > 1
+                                                assign sub_sub_menu_meta_description = bulk_cols[1] | strip
+                                              endif
+
+                                              if sub_sub_menu_meta_icon == blank and bulk_cols.size > 2
+                                                assign bulk_icon = bulk_cols[2] | strip
+
+                                                if bulk_icon != blank
+                                                  assign sub_sub_menu_meta_icon = bulk_icon
+                                                endif
+                                              endif
+
+                                              break
+                                            endif
+                                          endif
+                                        endfor
+                                      endif
+                                    %}
+                                    {%- assign resolved_sub_sub_menu_icon = sub_sub_menu_meta_icon -%}
+                                    {%- if resolved_sub_sub_menu_icon == blank -%}
+                                      {%- assign resolved_sub_sub_menu_icon = platform_icon -%}
+                                    {%- endif -%}
+                                    <li>
+                                      <a class="group block w-full {% if resolved_sub_sub_menu_icon != blank or sub_sub_menu_meta_logo != blank or sub_sub_menu_meta_description != blank %}panel-link--meta{% endif %}" href="{{ sub_sub_link.url }}">
+                                        {%- if sub_sub_menu_meta_logo != blank or resolved_sub_sub_menu_icon != blank -%}
+                                          <span class="panel-link__icon">
+                                            {%- if sub_sub_menu_meta_logo != blank -%}
+                                              {{- sub_sub_menu_meta_logo | image_url: width: 36 | image_tag: loading: 'lazy', widths: '36', class: 'menu-meta-logo' -}}
+                                            {%- else -%}
+                                              {%- render 'icon' with resolved_sub_sub_menu_icon, width: 14, height: 14 -%}
+                                            {%- endif -%}
+                                          </span>
+                                        {%- endif -%}
+
+                                        <span class="panel-link__text-stack">
+                                          <span><span class="reversed-link">{{ sub_sub_link.title }}</span></span>
+
+                                          {%- if sub_sub_menu_meta_description != blank -%}
+                                            <span class="panel-link__description">{{ sub_sub_menu_meta_description | escape }}</span>
+                                          {%- endif -%}
+                                        </span>
+                                      </a>
+                                    </li>
+                                  {%- endfor -%}
+                                </ul>
+                              {%- endif -%}
+                            </div>
                           {%- elsif sub_link.links.size > 0 -%}
                             <button class="text-with-icon w-full justify-between" aria-expanded="false" data-panel="2-{% increment level_2 %}">
                               <span>{{ sub_link.title }}</span>
                               <span class="circle-chevron group-hover:colors group-expanded:colors">{%- render 'icon' with 'chevron-right-small', direction_aware: true -%}</span>
                             </button>
                           {%- else -%}
-                            <a class="group {% if is_image_shown and is_mega_menu %}h-stack gap-4{% else %}block w-full{% endif %}" href="{{ sub_link.url }}">
+                            {%- assign resolved_menu_meta_icon = menu_meta_icon -%}
+                            {%- if resolved_menu_meta_icon == blank -%}
+                              {%- assign resolved_menu_meta_icon = platform_icon -%}
+                            {%- endif -%}
+                            <a class="group {% if is_image_shown and is_mega_menu %}h-stack gap-4{% else %}block w-full{% endif %} {% if resolved_menu_meta_icon != blank or menu_meta_logo != blank or menu_meta_description != blank %}panel-link--meta{% endif %}" href="{{ sub_link.url }}">
                               {%- if is_image_shown and sub_link.object != blank and is_mega_menu -%}
                                 {%- assign sub_link_image = '' -%}
 
@@ -155,7 +487,23 @@ Supported variables
                                 {%- endif -%}
                               {%- endif -%}
 
-                              <span><span class="reversed-link">{{ sub_link.title }}</span></span>
+                              {%- if is_image_shown == false and menu_meta_logo != blank or is_image_shown == false and resolved_menu_meta_icon != blank -%}
+                                <span class="panel-link__icon">
+                                  {%- if menu_meta_logo != blank -%}
+                                    {{- menu_meta_logo | image_url: width: 36 | image_tag: loading: 'lazy', widths: '36', class: 'menu-meta-logo' -}}
+                                  {%- else -%}
+                                    {%- render 'icon' with resolved_menu_meta_icon, width: 14, height: 14 -%}
+                                  {%- endif -%}
+                                </span>
+                              {%- endif -%}
+
+                              <span class="panel-link__text-stack">
+                                <span><span class="reversed-link">{{ sub_link.title }}</span></span>
+
+                                {%- if menu_meta_description != blank -%}
+                                  <span class="panel-link__description">{{ menu_meta_description | escape }}</span>
+                                {%- endif -%}
+                              </span>
                             </a>
                           {%- endif -%}
                         </li>
@@ -173,8 +521,63 @@ Supported variables
                                 </li>
 
                                 {%- for sub_sub_link in sub_link.links -%}
+                                  {%- assign sub_sub_menu_meta_icon = '' -%}
+                                  {%- assign sub_sub_menu_meta_logo = blank -%}
+                                  {%- assign sub_sub_menu_meta_description = '' -%}
+                                  {%- assign resolved_sub_sub_menu_icon = '' -%}
+
+                                  {% liquid
+                                    assign sub_sub_link_title_downcase = sub_sub_link.title | strip | downcase
+
+                                    for meta_block in section.blocks
+                                      if meta_block.type == 'menu_item_meta'
+                                        assign menu_item_downcase = meta_block.settings.menu_item | strip | downcase
+
+                                        if menu_item_downcase == sub_sub_link_title_downcase
+                                          assign sub_sub_menu_meta_icon = meta_block.settings.icon
+                                          assign sub_sub_menu_meta_logo = meta_block.settings.custom_logo
+                                          assign sub_sub_menu_meta_description = meta_block.settings.description
+                                          break
+                                        endif
+                                      endif
+                                    endfor
+
+                                    if section.settings.menu_item_meta_bulk != blank
+                                      assign bulk_rows = section.settings.menu_item_meta_bulk | newline_to_br | split: '<br />'
+
+                                      for bulk_row in bulk_rows
+                                        assign bulk_row = bulk_row | strip
+
+                                        if bulk_row != blank
+                                          assign bulk_cols = bulk_row | split: '|'
+                                          assign bulk_title = bulk_cols[0] | default: '' | strip | downcase
+
+                                          if bulk_title == sub_sub_link_title_downcase
+                                            if sub_sub_menu_meta_description == blank and bulk_cols.size > 1
+                                              assign sub_sub_menu_meta_description = bulk_cols[1] | strip
+                                            endif
+
+                                            if sub_sub_menu_meta_icon == blank and bulk_cols.size > 2
+                                              assign bulk_icon = bulk_cols[2] | strip
+
+                                              if bulk_icon != blank
+                                                assign sub_sub_menu_meta_icon = bulk_icon
+                                              endif
+                                            endif
+
+                                            break
+                                          endif
+                                        endif
+                                      endfor
+                                    endif
+                                  %}
+                                  {%- assign resolved_sub_sub_menu_icon = sub_sub_menu_meta_icon -%}
+                                  {%- if resolved_sub_sub_menu_icon == blank -%}
+                                    {%- assign resolved_sub_sub_menu_icon = platform_icon -%}
+                                  {%- endif -%}
+
                                   <li class="{% if mobile_opening == 'left' %}h3{% else %}h5{% endif %} sm:h5">
-                                    <a class="group {% if is_image_shown %}h-stack gap-4{% else %}block w-full{% endif %}"
+                                    <a class="group {% if is_image_shown %}h-stack gap-4{% else %}block w-full{% endif %} {% if resolved_sub_sub_menu_icon != blank or sub_sub_menu_meta_logo != blank or sub_sub_menu_meta_description != blank %}panel-link--meta{% endif %}"
                                        href="{{ sub_sub_link.url }}">
                                       {%- if is_image_shown and sub_sub_link.object != blank -%}
                                         {%- assign sub_sub_link_image = '' -%}
@@ -198,7 +601,23 @@ Supported variables
                                         {%- endif -%}
                                       {%- endif -%}
 
-                                      <span><span class="reversed-link">{{ sub_sub_link.title }}</span></span>
+                                      {%- if is_image_shown == false and sub_sub_menu_meta_logo != blank or is_image_shown == false and resolved_sub_sub_menu_icon != blank -%}
+                                        <span class="panel-link__icon">
+                                          {%- if sub_sub_menu_meta_logo != blank -%}
+                                            {{- sub_sub_menu_meta_logo | image_url: width: 36 | image_tag: loading: 'lazy', widths: '36', class: 'menu-meta-logo' -}}
+                                          {%- else -%}
+                                            {%- render 'icon' with resolved_sub_sub_menu_icon, width: 14, height: 14 -%}
+                                          {%- endif -%}
+                                        </span>
+                                      {%- endif -%}
+
+                                      <span class="panel-link__text-stack">
+                                        <span><span class="reversed-link">{{ sub_sub_link.title }}</span></span>
+
+                                        {%- if sub_sub_menu_meta_description != blank -%}
+                                          <span class="panel-link__description">{{ sub_sub_menu_meta_description | escape }}</span>
+                                        {%- endif -%}
+                                      </span>
                                     </a>
                                   </li>
                                 {%- endfor -%}
@@ -211,18 +630,24 @@ Supported variables
                   </ul>
 
                   {%- if use_platform_split_layout -%}
-                    <div class="panel-platform-split__card" style="--platform-panel-background: {{ mega_menu_block.settings.platform_panel_background | default: '#0B2A4D' }}; --platform-panel-text: {{ mega_menu_block.settings.platform_panel_text_color | default: '#D6DEE7' }}; --platform-panel-accent: {{ mega_menu_block.settings.platform_panel_accent_color | default: '#9EC438' }};">
-                      {%- if mega_menu_block.settings.platform_badge != blank -%}
-                        <p class="panel-platform-split__badge">{{ mega_menu_block.settings.platform_badge }}</p>
+                    <div class="panel-platform-split__card" style="--platform-panel-background: {{ custom_panel_background | default: mega_menu_block.settings.platform_panel_background | default: '#0B2A4D' }}; --platform-panel-text: {{ custom_panel_text_color | default: mega_menu_block.settings.platform_panel_text_color | default: '#D6DEE7' }}; --platform-panel-accent: {{ custom_panel_accent_color | default: mega_menu_block.settings.platform_panel_accent_color | default: '#9EC438' }};">
+                      {%- assign split_panel_image = custom_panel_image | default: mega_menu_block.settings.platform_panel_image | default: mega_menu_block.settings.image_1 -%}
+
+                      {%- if split_panel_image != blank -%}
+                        {{- split_panel_image | image_url: width: 640 | image_tag: loading: 'eager', widths: '320,480,640', class: 'panel-platform-split__image' -}}
                       {%- endif -%}
 
-                      {%- if mega_menu_block.settings.platform_heading != blank -%}
-                        <p class="panel-platform-split__heading">{{ mega_menu_block.settings.platform_heading }}</p>
+                      {%- if custom_panel_badge != blank -%}
+                        <p class="panel-platform-split__badge">{{ custom_panel_badge }}</p>
                       {%- endif -%}
 
-                      {%- if mega_menu_block.settings.platform_link_label != blank -%}
-                        <a href="{{ mega_menu_block.settings.platform_link | default: link.url }}" class="panel-platform-split__cta text-with-icon gap-2.5">
-                          {{ mega_menu_block.settings.platform_link_label }} {%- render 'icon' with 'chevron-right', width: 9, height: 9 -%}
+                      {%- if custom_panel_heading != blank -%}
+                        <p class="panel-platform-split__heading">{{ custom_panel_heading }}</p>
+                      {%- endif -%}
+
+                      {%- if custom_panel_link_label != blank -%}
+                        <a href="{{ custom_panel_link | default: link.url }}" class="panel-platform-split__cta text-with-icon gap-2.5">
+                          {{ custom_panel_link_label }} {%- render 'icon' with 'chevron-right', width: 9, height: 9 -%}
                         </a>
                       {%- endif -%}
                     </div>
@@ -271,11 +696,11 @@ Supported variables
           {%- assign locale_selector = true -%}
         {%- endif -%}
 
-        {%- if social_media != blank or country_selector or locale_selector or shop.customer_accounts_enabled -%}
+        {%- if social_media != blank or country_selector or locale_selector -%}
           <div class="panel-footer v-stack gap-5">
             {{- social_media -}}
 
-            {%- if country_selector or locale_selector or shop.customer_accounts_enabled -%}
+            {%- if country_selector or locale_selector -%}
               <div class="panel-footer__localization-wrapper h-stack gap-6 border-t md:hidden">
                 {%- if country_selector -%}
                   {%- render 'localization-selector', type: 'country', show_country_name: show_country_name, show_country_flag: show_country_flag -%}
@@ -283,14 +708,6 @@ Supported variables
 
                 {%- if locale_selector -%}
                   {%- render 'localization-selector', type: 'locale' -%}
-                {%- endif -%}
-
-                {%- if shop.customer_accounts_enabled -%}
-                  <shopify-account menu="{{ section.settings.customer_account_menu }}">
-                    <div slot="signed-out-avatar" class="tap-area">
-                      <span class="panel-footer__account-link bold text-sm">{{- 'header.general.account' | t -}}</span>
-                    </div>
-                  </shopify-account>
                 {%- endif -%}
               </div>
             {%- endif -%}

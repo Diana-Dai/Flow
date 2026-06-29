@@ -73,6 +73,362 @@ the underlying logic of the menu.
       }
     }
   {%- endif -%}
+
+  .header__menu-meta-link {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
+    align-items: center;
+    gap: 12px;
+  }
+
+  .header__menu-meta-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    background: rgb(var(--text-primary) / 0.06);
+    color: rgb(var(--text-primary));
+    display: grid;
+    place-items: center;
+    flex-shrink: 0;
+  }
+
+  .header__menu-meta-icon .icon {
+    --icon-height: 14px;
+    width: 14px;
+    height: 14px;
+  }
+
+  .header__menu-meta-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .header__menu-meta-description {
+    font-size: 12px;
+    line-height: 1.25;
+    color: rgb(var(--text-primary) / 0.62);
+  }
+
+  .panel-link--meta {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
+    align-items: center;
+    gap: 10px;
+  }
+
+  .panel-link__icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    background: rgb(var(--text-primary) / 0.06);
+    color: rgb(var(--text-primary));
+    display: grid;
+    place-items: center;
+  }
+
+  .panel-link__icon .icon {
+    --icon-height: 14px;
+    width: 14px;
+    height: 14px;
+  }
+
+  .panel-link__text-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    font-size:0.9rem;
+  }
+
+  .panel-link__description {
+    font-size: 12px;
+    line-height: 1.25;
+    color: rgb(var(--text-primary) / 0.62);
+  }
+
+  .header__secondary-nav-list {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+  }
+
+  .header__secondary-nav-item {
+    display: flex;
+    align-items: center;
+  }
+
+  .header__secondary-nav-item--divider {
+    position: relative;
+    padding-left: 30px;
+    margin-left:30px;
+  }
+
+  .header__secondary-nav-item--divider::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 1px;
+    height: 18px;
+    background: {{ section.settings.secondary_menu_divider_color | default: 'rgb(var(--text-primary) / 0.12)' }};
+    transform: translateY(-50%);
+  }
+
+  .header__secondary-nav-cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 40px;
+    padding: 15px 20px;
+    border-radius: 8px;
+    background: {{ section.settings.book_demo_button_background | default: '#0E366A' }};
+    color: {{ section.settings.book_demo_button_text_color | default: '#FFFFFF' }};
+    text-decoration: none;
+    font-weight: 700;
+    line-height: 1;
+  }
+
+  .header__secondary-nav-cta:hover {
+    color: {{ section.settings.book_demo_button_text_color | default: '#FFFFFF' }};
+  }
+ .header__link-list .contents{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+  .header__auto-mega {
+    border: 1px solid rgb(var(--text-primary) / 0.08);
+    border-radius: 12px;
+    background: rgb(var(--background-primary));
+    padding: 24px;
+    display: grid;
+    gap: 24px;
+    min-width: min(92vw, 980px);
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .header__auto-mega--with-panel {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .header__auto-mega-grid {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  .header__auto-mega-column {
+    min-width: 0;
+  }
+
+  .header__auto-mega-column--panel {
+    min-width: 0;
+  }
+
+  .header__auto-mega-column-head {
+    display: grid;
+    grid-template-columns: 40px minmax(0, 1fr);
+    align-items: center;
+    gap: 10px;
+    padding: 4px 6px 10px 6px;
+    margin-bottom: 4px;
+  }
+
+  .header__auto-mega-column-title {
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #a0b842;
+    text-transform: uppercase;
+  }
+
+  .header__auto-mega-column-description {
+    font-size: 12px;
+    color: rgb(var(--text-primary) / 0.62);
+    line-height: 1.25;
+  }
+
+  .header__auto-mega-submenu {
+    display: grid;
+    gap: 2px;
+  }
+
+  .header__auto-mega-submenu-item {
+    display: grid;
+    grid-template-columns: 40px minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 6px;
+    border-radius: 10px;
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .header__auto-mega-submenu-item:hover {
+    background: rgb(var(--text-primary) / 0.04);
+  }
+
+  .header__auto-mega-item-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 48px;
+    background: rgb(var(--text-primary) / 0.06);
+    color: rgb(var(--text-primary));
+    display: grid;
+    place-items: center;
+  }
+  .header__auto-mega-column-head .header__auto-mega-item-icon {
+background:#a0b842;
+color:white;
+
+  }
+
+  .header__auto-mega-item-icon .icon {
+    --icon-height: 14px;
+    width: 24px;
+    height: 24px;
+  }
+
+  .header__auto-mega-item-icon .menu-meta-logo,
+  .panel-link__icon .menu-meta-logo,
+  .panel-platform-split__icon .menu-meta-logo {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+  }
+
+  .header__auto-mega-item-title {
+    font-weight: 600;
+    color: rgb(var(--text-primary));
+    line-height: 1.25;
+    font-size: 0.9rem;
+  }
+
+  .header__auto-mega-item-description {
+    font-size: 12px;
+    color: rgb(var(--text-primary) / 0.62);
+    line-height: 1.25;
+  }
+
+  .header__auto-mega-submenu-item-chevron .icon {
+    --icon-height: 8px;
+    width: 8px;
+    height: 8px;
+    opacity: 0.55;
+  }
+
+  .header__auto-mega-panel {
+    border: 1px solid rgb(var(--text-primary) / 0.08);
+    border-radius: 12px;
+    padding: 18px;
+    background: {{ section.settings.auto_mega_panel_background | default: '#eef3ff' }};
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-height: 100%;
+  }
+
+  .header__auto-mega-column--panel .header__auto-mega-panel {
+    height: 100%;
+  }
+
+  .header__auto-mega-panel-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+
+  .header__auto-mega-panel-illustration {
+    width: 100%;
+    min-height: 132px;
+    border-radius: 10px;
+    background: rgb(255 255 255 / 0.58);
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+  }
+
+  .header__auto-mega-panel-illustration svg {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .header__auto-mega-panel-badge {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgb(var(--text-primary) / 0.6);
+  }
+
+  .header__auto-mega-panel-title {
+    font-weight: 700;
+    color: rgb(var(--text-primary));
+    line-height: 1.25;
+  }
+
+  .header__auto-mega-panel-text {
+    font-size: 13px;
+    color: rgb(var(--text-primary) / 0.7);
+    line-height: 1.35;
+  }
+
+  .header__auto-mega-panel-cta {
+    margin-top: auto;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    width: fit-content;
+    padding: 8px 12px;
+    border-radius: 8px;
+    background: rgb(var(--text-primary));
+    color: rgb(var(--background-primary));
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 12px;
+  }
+
+  .header__auto-mega-panel-cta .icon {
+    --icon-height: 8px;
+    width: 8px;
+    height: 8px;
+  }
+
+  @media screen and (min-width: 1150px) {
+    .header__auto-mega {
+      grid-template-columns: minmax(0, 1fr);
+      gap: 24px;
+    }
+
+    .header__auto-mega--with-panel {
+      grid-template-columns: minmax(0, 1fr) minmax(220px, 260px);
+      align-items: stretch;
+    }
+
+    .header__auto-mega-grid {
+      grid-template-columns: repeat(var(--auto-mega-columns, 3), minmax(0, 1fr));
+    }
+
+    .header__auto-mega-column {
+      padding-left: 16px;
+      border-left: 1px solid rgb(var(--text-primary) / 0.08);
+    }
+
+    .header__auto-mega-column:nth-child(1) {
+      padding-left: 0;
+      border-left: none;
+    }
+  }
+  .header__auto-mega-item-copy,
+  .header__auto-mega-column-copy{
+  flex-direction: column;
+display: flex;
+  gap: 6px;
+  margin-left:6px;
+  }
 </style>
 
 <height-observer variable="header">
@@ -91,42 +447,76 @@ the underlying logic of the menu.
             {%- render 'icon' with 'hamburger' -%}
           </button>
 
-          <a href="{{ routes.search_url }}" class="tap-area sm:hidden" aria-controls="search-drawer">
-            <span class="sr-only">{{ 'header.general.search' | t }}</span>
-            {%- render 'icon' with 'search' -%}
-          </a>
-
           {%- if section.settings.layout != 'drawer' and section.settings.menu.links.size > 0 -%}
             <nav class="header__link-list {% if section.settings.layout == 'logo_left_navigation_center' %}justify-center{% endif %} wrap" role="navigation">
               <ul class="contents" role="list">
                 {%- for link in section.settings.menu.links -%}
                   {% liquid
                     assign link_title_downcase = link.title | strip | downcase
+                    assign is_platform_menu = false
+                    assign is_about_menu = false
+                    assign is_login_menu = false
+                    assign is_book_demo_menu = false
                     assign mega_menu_block = ''
+                    assign force_panel_desktop_mega = false
+                    assign use_custom_auto_mega = false
+
+                    if link_title_downcase contains 'platform'
+                      assign is_platform_menu = true
+                    endif
+
+                    if link_title_downcase contains 'about flow' or link_title_downcase contains 'flowについて'
+                      assign is_about_menu = true
+                    endif
+
+                    if link_title_downcase == 'login'
+                      assign is_login_menu = true
+                    endif
+
+                    if link_title_downcase contains 'book demo'
+                      assign is_book_demo_menu = true
+                    endif
 
                     for block in section.blocks
-                      assign menu_item_downcase = block.settings.menu_item | strip | downcase
+                      if block.type == 'mega_menu'
+                        assign menu_item_downcase = block.settings.menu_item | strip | downcase
 
-                      if menu_item_downcase == link_title_downcase
-                        assign mega_menu_block = block
-                        break
+                        if menu_item_downcase == link_title_downcase
+                          assign mega_menu_block = block
+                          break
+                        endif
                       endif
 
                     endfor
-                  %}
 
-                  <li>
-                    {%- if link.levels == 0 and mega_menu_block == '' -%}
-                      <a href="{{ link.url }}" class="bold link-faded-reverse" {% if link.current %}aria-current="page"{% endif %}>{{- link.title -}}</a>
+                    if mega_menu_block != '' and is_platform_menu
+                      if mega_menu_block.settings.platform_badge != blank or mega_menu_block.settings.platform_heading != blank or mega_menu_block.settings.platform_link_label != blank or mega_menu_block.settings.platform_panel_image != blank or mega_menu_block.settings.image_1 != blank or section.settings.platform_auto_panel_badge != blank or section.settings.platform_auto_panel_title != blank or section.settings.platform_auto_panel_link_label != blank or section.settings.platform_auto_panel_image != blank
+                        assign force_panel_desktop_mega = true
+                      endif
+                    endif
+
+                    if mega_menu_block != '' and is_about_menu
+                      if mega_menu_block.settings.platform_badge != blank or mega_menu_block.settings.platform_heading != blank or mega_menu_block.settings.platform_link_label != blank or mega_menu_block.settings.platform_panel_image != blank or mega_menu_block.settings.image_1 != blank or section.settings.about_auto_panel_badge != blank or section.settings.about_auto_panel_title != blank or section.settings.about_auto_panel_link_label != blank or section.settings.about_auto_panel_image != blank
+                        assign force_panel_desktop_mega = true
+                      endif
+                    endif
+
+                    if is_platform_menu or is_about_menu
+                      assign use_custom_auto_mega = true
+                    endif
+                  %}
+                  <li class="{% if is_login_menu %}header__secondary-nav-item header__secondary-nav-item--divider{% endif %}">
+                    {%- if link.levels == 0 and mega_menu_block == '' and use_custom_auto_mega == false -%}
+                      <a href="{{ link.url }}" class="{% if is_book_demo_menu %}header__secondary-nav-cta{% else %}bold link-faded-reverse{% endif %}" {% if link.current %}aria-current="page"{% endif %}>{{- link.title -}}</a>
                     {%- else -%}
-                      {%- if mega_menu_block != '' -%}
+                      {%- if mega_menu_block != '' and use_custom_auto_mega == false -%}
                         {%- comment -%}
                         Implementation note: the designers had the desire to show a lot of different kind of menus in Impact: one standard
                         mega menu but also a kind of "sidebar" mode when the mega-menu appears in a drawer. Unfortunately, this comes with
                         a lot of extra complexity as we have to go through two different code path: a "details" element for the standard
                         menu, and a full drawer for the other one.
                         {%- endcomment -%}
-                        {%- unless mega_menu_block.settings.layout == 'drawer' -%}
+                        {%- unless mega_menu_block.settings.layout == 'drawer' and force_panel_desktop_mega == false -%}
                           <details is="mega-menu-disclosure" trigger="{{ section.settings.menu_open_trigger | escape }}" {{ mega_menu_block.shopify_attributes }}>
                             <summary class="text-with-icon gap-2.5 bold link-faded-reverse" {% if link.url != '#' %}data-url="{{ link.url | escape }}"{% endif %}>
                               {{- link.title -}} {%- render 'icon' with 'chevron-bottom' -%}
@@ -144,42 +534,357 @@ the underlying logic of the menu.
                           </navigation-drawer>
                         {%- endunless -%}
                       {%- else -%}
-                        <details class="relative" is="dropdown-disclosure" trigger="{{ section.settings.menu_open_trigger | escape }}">
+                        <details class="relative" is="mega-menu-disclosure" trigger="{{ section.settings.menu_open_trigger | escape }}">
                           <summary class="text-with-icon gap-2.5 bold link-faded-reverse" {% if link.url != '#' %}data-url="{{ link.url | escape }}"{% endif %}>
                             {{- link.title -}} {%- render 'icon' with 'chevron-bottom' -%}
                           </summary>
 
-                          <div class="dropdown-menu {% if link.levels <= 1 %}dropdown-menu--restrictable{% endif %}">
-                            <ul class="contents" role="list">
-                              {%- for sub_link in link.links -%}
-                                <li>
-                                  {%- if sub_link.levels == 0 -%}
-                                    <a href="{{ sub_link.url }}" class="dropdown-menu__item group" {% if sub_link.current %}aria-current="page"{% endif %}>
-                                      <span><span class="reversed-link">{{ sub_link.title }}</span></span>
-                                    </a>
-                                  {%- else -%}
-                                    <details class="relative" is="dropdown-disclosure" trigger="{{ section.settings.menu_open_trigger | escape }}">
-                                      <summary class="dropdown-menu__item group" {% if sub_link.url != '#' %}data-url="{{ sub_link.url | escape }}"{% endif %}>
-                                        <span><span class="reversed-link">{{- sub_link.title -}}</span></span>
-                                        {%- render 'icon' with 'chevron-right', direction_aware: true -%}
-                                      </summary>
+                          {% liquid
+                            assign auto_panel_badge = ''
+                            assign auto_panel_title = ''
+                            assign auto_panel_text = ''
+                            assign auto_panel_link_label = ''
+                            assign auto_panel_link = link.url
+                            assign auto_panel_background = ''
+                            assign auto_panel_button_background = ''
+                            assign auto_panel_image = blank
+                            assign is_panel_menu = false
 
-                                      <div class="dropdown-menu">
-                                        <ul class="contents" role="list">
-                                          {%- for sub_sub_link in sub_link.links -%}
-                                            <li>
-                                              <a href="{{ sub_sub_link.url }}" class="dropdown-menu__item group" {% if sub_sub_link.current %}aria-current="page"{% endif %}>
-                                                <span><span class="reversed-link">{{ sub_sub_link.title }}</span></span>
-                                              </a>
-                                            </li>
-                                          {%- endfor -%}
-                                        </ul>
-                                      </div>
-                                    </details>
-                                  {%- endif -%}
+                            if is_platform_menu or is_about_menu
+                              assign is_panel_menu = true
+                            endif
+
+                            if is_platform_menu
+                                assign auto_panel_badge = section.settings.platform_auto_panel_badge | default: '5-minute assessment'
+                                assign auto_panel_title = section.settings.platform_auto_panel_title | default: 'Find the biggest gaps in your store data and execution process.'
+                                assign auto_panel_text = section.settings.platform_auto_panel_text | default: 'Use this quick assessment to identify improvement opportunities across store operations.'
+                                assign auto_panel_link_label = section.settings.platform_auto_panel_link_label | default: 'Start assessment'
+                                assign auto_panel_link = section.settings.platform_auto_panel_link | default: link.url
+                                assign auto_panel_background = section.settings.platform_auto_panel_background | default: '#EEF4FF'
+                                assign auto_panel_button_background = section.settings.platform_auto_panel_button_background | default: '#1B5CFF'
+                                assign auto_panel_image = section.settings.platform_auto_panel_image
+                              elsif is_about_menu
+                                assign auto_panel_badge = section.settings.about_auto_panel_badge | default: 'DX checklist'
+                                assign auto_panel_title = section.settings.about_auto_panel_title | default: 'Check whether your stores are ready for better operational visibility.'
+                                assign auto_panel_text = section.settings.about_auto_panel_text | default: 'Review the core requirements for stronger store execution and reporting.'
+                                assign auto_panel_link_label = section.settings.about_auto_panel_link_label | default: 'View checklist'
+                                assign auto_panel_link = section.settings.about_auto_panel_link | default: link.url
+                                assign auto_panel_background = section.settings.about_auto_panel_background | default: '#EAF8F0'
+                                assign auto_panel_button_background = section.settings.about_auto_panel_button_background | default: '#27AE60'
+                                assign auto_panel_image = section.settings.about_auto_panel_image
+                            endif
+
+                            assign has_auto_panel = false
+
+                            if is_panel_menu
+                              assign has_auto_panel = true
+                            elsif auto_panel_title != blank or auto_panel_text != blank or auto_panel_link_label != blank or auto_panel_image != blank
+                              assign has_auto_panel = true
+                            endif
+
+                            assign should_render_auto_panel = false
+
+                            if is_panel_menu or has_auto_panel
+                              assign should_render_auto_panel = true
+                            endif
+                          %}
+                          <div class="mega-menu">
+                            <div class="header__auto-mega">
+                              <ul class="header__auto-mega-grid" style="--auto-mega-columns: {{ link.links.size | at_most: 3 | plus: 1 }};" role="list">
+                              {%- for sub_link in link.links -%}
+                                {% liquid
+                                  assign column_meta_icon = ''
+                                  assign column_meta_logo = blank
+                                  assign column_meta_description = ''
+                                  assign column_fallback_icon = 'picto-box'
+                                  assign sub_link_title_downcase = sub_link.title | strip | downcase
+
+                                  case forloop.index
+                                    when 1
+                                      assign column_fallback_icon = 'picto-box'
+                                    when 2
+                                      assign column_fallback_icon = 'picto-camera'
+                                    when 3
+                                      assign column_fallback_icon = 'picto-target'
+                                    when 4
+                                      assign column_fallback_icon = 'picto-secure-profile'
+                                    when 5
+                                      assign column_fallback_icon = 'picto-operator'
+                                  endcase
+
+                                  for meta_block in section.blocks
+                                    if meta_block.type == 'menu_item_meta'
+                                      assign menu_item_downcase = meta_block.settings.menu_item | strip | downcase
+
+                                      if menu_item_downcase == sub_link_title_downcase
+                                        assign column_meta_icon = meta_block.settings.icon
+                                        assign column_meta_logo = meta_block.settings.custom_logo
+                                        assign column_meta_description = meta_block.settings.description
+                                        break
+                                      endif
+                                    endif
+                                  endfor
+
+                                  if section.settings.menu_item_meta_bulk != blank
+                                    assign bulk_rows = section.settings.menu_item_meta_bulk | newline_to_br | split: '<br />'
+
+                                    for bulk_row in bulk_rows
+                                      assign bulk_row = bulk_row | strip
+
+                                      if bulk_row != blank
+                                        assign bulk_cols = bulk_row | split: '|'
+                                        assign bulk_title = bulk_cols[0] | default: '' | strip | downcase
+
+                                        if bulk_title == sub_link_title_downcase
+                                          if column_meta_description == blank and bulk_cols.size > 1
+                                            assign column_meta_description = bulk_cols[1] | strip
+                                          endif
+
+                                          if column_meta_icon == blank and bulk_cols.size > 2
+                                            assign bulk_icon = bulk_cols[2] | strip
+
+                                            if bulk_icon != blank
+                                              assign column_meta_icon = bulk_icon
+                                            endif
+                                          endif
+
+                                          break
+                                        endif
+                                      endif
+                                    endfor
+                                  endif
+
+                                  assign resolved_column_icon = column_meta_icon
+
+                                  if resolved_column_icon == blank
+                                    assign resolved_column_icon = column_fallback_icon
+                                  endif
+
+                                  if column_meta_description == blank and sub_link.links.size > 0
+                                    assign column_meta_description = sub_link.links.first.title
+                                  endif
+
+                                  assign menu_meta_icon = ''
+                                  assign menu_meta_logo = blank
+                                  assign menu_meta_description = ''
+                                  assign fallback_icon = 'picto-box'
+
+                                  if sub_link.links.size == 0
+                                    assign menu_meta_icon = column_meta_icon
+                                    assign menu_meta_logo = column_meta_logo
+                                    assign menu_meta_description = column_meta_description
+                                    assign fallback_icon = column_fallback_icon
+                                  endif
+                                %}
+                                <li class="header__auto-mega-column">
+                                  <div class="header__auto-mega-column-head">
+                                    <span class="header__auto-mega-item-icon">
+                                      {%- if column_meta_logo != blank -%}
+                                        {{- column_meta_logo | image_url: width: 36 | image_tag: loading: 'lazy', widths: '36', class: 'menu-meta-logo' -}}
+                                      {%- else -%}
+                                        {%- render 'icon' with resolved_column_icon, width: 14, height: 14 -%}
+                                      {%- endif -%}
+                                    </span>
+
+                                    <span class="header__auto-mega-column-copy">
+                                      <span class="header__auto-mega-column-title">{{ sub_link.title }}</span>
+                                      {%- if column_meta_description != blank -%}
+                                        <span class="header__auto-mega-column-description">{{ column_meta_description | escape }}</span>
+                                      {%- endif -%}
+                                    </span>
+                                  </div>
+
+                                  <ul class="header__auto-mega-submenu" role="list">
+                                    {%- if sub_link.links.size > 0 -%}
+                                      {%- for sub_sub_link in sub_link.links -%}
+                                        {% liquid
+                                          assign sub_item_icon = ''
+                                          assign sub_item_logo = blank
+                                          assign sub_item_description = ''
+                                          assign sub_item_fallback_icon = column_fallback_icon
+                                          assign sub_sub_link_title_downcase = sub_sub_link.title | strip | downcase
+
+                                          for meta_block in section.blocks
+                                            if meta_block.type == 'menu_item_meta'
+                                              assign menu_item_downcase = meta_block.settings.menu_item | strip | downcase
+
+                                              if menu_item_downcase == sub_sub_link_title_downcase
+                                                assign sub_item_icon = meta_block.settings.icon
+                                                assign sub_item_logo = meta_block.settings.custom_logo
+                                                assign sub_item_description = meta_block.settings.description
+                                                break
+                                              endif
+                                            endif
+                                          endfor
+
+                                          if section.settings.menu_item_meta_bulk != blank
+                                            assign bulk_rows = section.settings.menu_item_meta_bulk | newline_to_br | split: '<br />'
+
+                                            for bulk_row in bulk_rows
+                                              assign bulk_row = bulk_row | strip
+
+                                              if bulk_row != blank
+                                                assign bulk_cols = bulk_row | split: '|'
+                                                assign bulk_title = bulk_cols[0] | default: '' | strip | downcase
+
+                                                if bulk_title == sub_sub_link_title_downcase
+                                                  if sub_item_description == blank and bulk_cols.size > 1
+                                                    assign sub_item_description = bulk_cols[1] | strip
+                                                  endif
+
+                                                  if sub_item_icon == blank and bulk_cols.size > 2
+                                                    assign bulk_icon = bulk_cols[2] | strip
+
+                                                    if bulk_icon != blank
+                                                      assign sub_item_icon = bulk_icon
+                                                    endif
+                                                  endif
+
+                                                  break
+                                                endif
+                                              endif
+                                            endfor
+                                          endif
+
+                                          assign resolved_sub_item_icon = sub_item_icon
+
+                                          if resolved_sub_item_icon == blank
+                                            assign resolved_sub_item_icon = sub_item_fallback_icon
+                                          endif
+                                        %}
+                                        <li>
+                                          <a href="{{ sub_sub_link.url }}" class="header__auto-mega-submenu-item" {% if sub_sub_link.current %}aria-current="page"{% endif %}>
+                                            <span class="header__auto-mega-item-icon">
+                                              {%- if sub_item_logo != blank -%}
+                                                {{- sub_item_logo | image_url: width: 36 | image_tag: loading: 'lazy', widths: '36', class: 'menu-meta-logo' -}}
+                                              {%- else -%}
+                                                {%- render 'icon' with resolved_sub_item_icon, width: 14, height: 14 -%}
+                                              {%- endif -%}
+                                            </span>
+
+                                            <span class="header__auto-mega-item-copy">
+                                              <span class="header__auto-mega-item-title">{{ sub_sub_link.title }}</span>
+                                              {%- if sub_item_description != blank -%}
+                                                <span class="header__auto-mega-item-description">{{ sub_item_description | escape }}</span>
+                                              {%- endif -%}
+                                            </span>
+
+                                            <span class="header__auto-mega-submenu-item-chevron">{%- render 'icon' with 'chevron-right-small', direction_aware: true -%}</span>
+                                          </a>
+                                        </li>
+                                      {%- endfor -%}
+                                    {%- else -%}
+                                      {% liquid
+                                        assign resolved_menu_icon = menu_meta_icon
+
+                                        if resolved_menu_icon == blank
+                                          assign resolved_menu_icon = fallback_icon
+                                        endif
+                                      %}
+                                      <li>
+                                        <a href="{{ sub_link.url }}" class="header__auto-mega-submenu-item" {% if sub_link.current %}aria-current="page"{% endif %}>
+                                          <span class="header__auto-mega-item-icon">
+                                            {%- if menu_meta_logo != blank -%}
+                                              {{- menu_meta_logo | image_url: width: 36 | image_tag: loading: 'lazy', widths: '36', class: 'menu-meta-logo' -}}
+                                            {%- else -%}
+                                              {%- render 'icon' with resolved_menu_icon, width: 14, height: 14 -%}
+                                            {%- endif -%}
+                                          </span>
+
+                                          <span class="header__auto-mega-item-copy">
+                                            <span class="header__auto-mega-item-title">{{ sub_link.title }}</span>
+                                            {%- if menu_meta_description != blank -%}
+                                              <span class="header__auto-mega-item-description">{{ menu_meta_description | escape }}</span>
+                                            {%- endif -%}
+                                          </span>
+
+                                          <span class="header__auto-mega-submenu-item-chevron">{%- render 'icon' with 'chevron-right-small', direction_aware: true -%}</span>
+                                        </a>
+                                      </li>
+                                    {%- endif -%}
+                                  </ul>
                                 </li>
                               {%- endfor -%}
-                            </ul>
+                              {%- if should_render_auto_panel -%}
+                                <li class="header__auto-mega-column header__auto-mega-column--panel">
+                                  <aside class="header__auto-mega-panel" style="background: {{ auto_panel_background | default: section.settings.auto_mega_panel_background | default: '#eef3ff' }};">
+                                  {%- if auto_panel_image != blank -%}
+                                    {{- auto_panel_image | image_url: width: 520 | image_tag: loading: 'lazy', widths: '260,390,520', class: 'header__auto-mega-panel-image' -}}
+                                  {%- elsif is_platform_menu -%}
+                                    <div class="header__auto-mega-panel-illustration" aria-hidden="true">
+                                      <svg viewBox="0 0 320 180" xmlns="http://www.w3.org/2000/svg" role="presentation">
+                                        <defs>
+                                          <linearGradient id="platform-card-bg-{{ section.id }}-{{ forloop.index }}" x1="0%" y1="0%" x2="100%" y2="100%">
+                                            <stop offset="0%" stop-color="#f7fbff" />
+                                            <stop offset="100%" stop-color="#e5efff" />
+                                          </linearGradient>
+                                        </defs>
+                                        <rect x="0" y="0" width="320" height="180" rx="18" fill="url(#platform-card-bg-{{ section.id }}-{{ forloop.index }})"/>
+                                        <rect x="68" y="34" width="184" height="112" rx="12" fill="#ffffff" stroke="#9dbafc" stroke-width="3"/>
+                                        <rect x="86" y="52" width="78" height="12" rx="6" fill="#dce8ff"/>
+                                        <rect x="86" y="73" width="58" height="44" rx="10" fill="#eef4ff"/>
+                                        <circle cx="115" cy="95" r="18" fill="#ffffff" stroke="#1b5cff" stroke-width="4"/>
+                                        <path d="M115 95 L115 81 A14 14 0 0 1 127 101 Z" fill="#1b5cff"/>
+                                        <rect x="154" y="76" width="24" height="41" rx="6" fill="#c8d9ff"/>
+                                        <rect x="184" y="66" width="24" height="51" rx="6" fill="#9dbafc"/>
+                                        <rect x="214" y="58" width="24" height="59" rx="6" fill="#1b5cff"/>
+                                        <circle cx="221" cy="50" r="16" fill="#f4fbeb" stroke="#9cb73b" stroke-width="3"/>
+                                        <path d="M214 50h14" stroke="#9cb73b" stroke-width="3" stroke-linecap="round"/>
+                                        <path d="M221 43v14" stroke="#9cb73b" stroke-width="3" stroke-linecap="round"/>
+                                        <path d="M44 112 C64 112, 66 92, 88 92" stroke="#7ea5ff" stroke-width="3" fill="none" stroke-linecap="round"/>
+                                        <path d="M232 118 C252 118, 256 102, 278 102" stroke="#7ea5ff" stroke-width="3" fill="none" stroke-linecap="round"/>
+                                      </svg>
+                                    </div>
+                                  {%- elsif is_about_menu -%}
+                                    <div class="header__auto-mega-panel-illustration" aria-hidden="true">
+                                      <svg viewBox="0 0 320 180" xmlns="http://www.w3.org/2000/svg" role="presentation">
+                                        <defs>
+                                          <linearGradient id="about-card-bg-{{ section.id }}-{{ forloop.index }}" x1="0%" y1="0%" x2="100%" y2="100%">
+                                            <stop offset="0%" stop-color="#f3fff7" />
+                                            <stop offset="100%" stop-color="#e5f7ec" />
+                                          </linearGradient>
+                                        </defs>
+                                        <rect x="0" y="0" width="320" height="180" rx="18" fill="url(#about-card-bg-{{ section.id }}-{{ forloop.index }})"/>
+                                        <rect x="118" y="30" width="84" height="18" rx="6" fill="#5f6c7b"/>
+                                        <rect x="146" y="20" width="28" height="18" rx="6" fill="#8a96a6"/>
+                                        <rect x="104" y="44" width="112" height="104" rx="12" fill="#ffffff" stroke="#6fd094" stroke-width="3"/>
+                                        <path d="M126 72l10 10 18-22" stroke="#33b567" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <rect x="156" y="60" width="34" height="8" rx="4" fill="#d6efe0"/>
+                                        <rect x="156" y="75" width="24" height="8" rx="4" fill="#e6f6ec"/>
+                                        <path d="M126 104l10 10 18-22" stroke="#33b567" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <rect x="156" y="92" width="34" height="8" rx="4" fill="#d6efe0"/>
+                                        <rect x="156" y="107" width="24" height="8" rx="4" fill="#e6f6ec"/>
+                                        <path d="M126 136l10 10 18-22" stroke="#33b567" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <rect x="156" y="124" width="34" height="8" rx="4" fill="#d6efe0"/>
+                                        <rect x="156" y="139" width="24" height="8" rx="4" fill="#e6f6ec"/>
+                                        <circle cx="224" cy="126" r="20" fill="#33b567"/>
+                                        <path d="M215 126l6 6 13-16" stroke="#ffffff" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                                      </svg>
+                                    </div>
+                                  {%- endif -%}
+
+                                  {%- if auto_panel_badge != blank -%}
+                                    <p class="header__auto-mega-panel-badge">{{ auto_panel_badge }}</p>
+                                  {%- endif -%}
+
+                                  {%- if auto_panel_title != blank -%}
+                                    <p class="header__auto-mega-panel-title">{{ auto_panel_title }}</p>
+                                  {%- endif -%}
+
+                                  {%- if auto_panel_text != blank -%}
+                                    <p class="header__auto-mega-panel-text">{{ auto_panel_text }}</p>
+                                  {%- endif -%}
+
+                                  {%- if auto_panel_link_label != blank -%}
+                                    <a href="{{ auto_panel_link }}" class="header__auto-mega-panel-cta" style="background: {{ auto_panel_button_background | default: 'rgb(var(--text-primary))' }};">
+                                      {{ auto_panel_link_label }} {%- render 'icon' with 'chevron-right', width: 9, height: 9 -%}
+                                    </a>
+                                  {%- endif -%}
+                                  </aside>
+                                </li>
+                              {%- endif -%}
+                              </ul>
+                            </div>
                           </div>
                         </details>
                       {%- endif -%}
@@ -231,10 +936,10 @@ the underlying logic of the menu.
       <div class="header__secondary-nav">
         {%- if section.settings.layout != 'drawer' and section.settings.secondary_menu.links.size > 0 -%}
           <nav class="header__link-list" role="navigation">
-            <ul class="contents">
+            <ul class="contents header__secondary-nav-list">
               {%- for link in section.settings.secondary_menu.links -%}
-                <li>
-                  <a href="{{ link.url }}" class="bold link-faded-reverse">{{ link.title }}</a>
+                <li class="header__secondary-nav-item {% if forloop.first %}header__secondary-nav-item--divider{% endif %}">
+                  <a href="{{ link.url }}" class="{% if forloop.last %}header__secondary-nav-cta{% else %}bold link-faded-reverse{% endif %}">{{ link.title }}</a>
                 </li>
               {%- endfor -%}
             </ul>
@@ -254,37 +959,6 @@ the underlying logic of the menu.
             </li>
           {%- endif -%}
 
-          <li>
-            <a href="{{ routes.search_url }}" class="hidden tap-area sm:block" aria-controls="search-drawer">
-              <span class="sr-only">{{ 'header.general.search' | t }}</span>
-              {%- render 'icon' with 'search' -%}
-            </a>
-          </li>
-          
-          {%- if shop.customer_accounts_enabled -%}
-            <li>
-              <shopify-account class="hidden sm:block" menu="{{ section.settings.customer_account_menu }}">
-                <div slot="signed-out-avatar" class="tap-area">
-                  <span class="sr-only">{{ 'header.general.login' | t }}</span>
-                  {%- render 'icon' with 'account' -%}
-                </div>
-              </shopify-account>
-            </li>
-          {%- endif -%}
-
-          <li>
-            <a href="{{ routes.cart_url }}" data-no-instant class="relative block tap-area" {% if settings.cart_type != 'page' and request.page_type != 'cart' %}aria-controls="cart-drawer"{% endif %}>
-              <span class="sr-only">{{ 'header.general.cart' | t }}</span>
-              {%- render 'icon' with 'cart' -%}
-
-              <div class="header__cart-count">
-                <cart-count class="count-bubble {% if cart.item_count == 0 %}opacity-0{% endif %}">
-                  <span class="sr-only">{{ 'cart.general.item_count' | t: count: cart.item_count }}</span>
-                  <span aria-hidden="true">{{ cart.item_count }}</span>
-                </cart-count>
-              </div>
-            </a>
-          </li>
         </ul>
       </div>
     </div>
@@ -394,6 +1068,24 @@ the underlying logic of the menu.
       "info": "This menu won't show dropdown items. For best results, limit the number of links to 1 or 2."
     },
     {
+      "type": "color",
+      "id": "secondary_menu_divider_color",
+      "label": "Secondary menu divider color",
+      "default": "#D7DEE8"
+    },
+    {
+      "type": "color",
+      "id": "book_demo_button_background",
+      "label": "Book Demo button background",
+      "default": "#0E366A"
+    },
+    {
+      "type": "color",
+      "id": "book_demo_button_text_color",
+      "label": "Book Demo button text",
+      "default": "#FFFFFF"
+    },
+    {
       "type": "link_list",
       "id": "customer_account_menu",
       "label": "Customer account menu",
@@ -415,6 +1107,113 @@ the underlying logic of the menu.
         }
       ],
       "default": "click"
+    },
+    {
+      "type": "textarea",
+      "id": "menu_item_meta_bulk",
+      "label": "Menu metadata (bulk)",
+      "info": "One item per line using: Menu title|Description|Icon. Example: Camera Analytics|In-store measurement|picto-camera",
+      "default": "PLATFORM OVERVIEW|The core of the Flow system|picto-box\nPerformance Platform|Store performance platform|picto-target\nIntegrations|Connect your tools|picto-bluetooth\nSecurity & Data Protection|Enterprise-grade security|picto-secure-profile\nFlow AI / FIDA|AI decision support|picto-operator\n店内計測|Measure in-store behavior|picto-camera\nCamera Analytics|In-store measurement|picto-camera\nAI Camera|AI-powered insights|picto-target\nTraffic Analytics|Visitor & passersby analytics|picto-operator\nWHAT CAN YOU DO|Turn data into store improvement|picto-target\nIncrease Capture & Conversion|Drive more visits to sales|picto-like\nOptimize Staff Scheduling|Right staff, right time|picto-operator\nImprove VMD / Layouts|Better layouts, better results|picto-building\nStandardize Store Decisions|Consistent decisions across stores|picto-document\nImprove Marketing Performance|Measure what drives results|picto-star\n会社情報|About Flow|picto-building\nFlowについて|Our mission and story|picto-earth\nPartners|Our partner program|picto-operator\nContact|Get in touch|picto-at-sign\nCUSTOMER EXPERIENCES (導入事例)|Real results from retailers|picto-customer-support\nCustomer Stories|All customer stories|picto-document\n124 Stores|Customer story|picto-building\nDaytona|Customer story|picto-building\n学ぶ・サポート|Learn & Support|picto-document\nSupport|Product support|picto-customer-support\nCEO Blog|CEO insights and updates|picto-chat\nHelp Center|Knowledge base|picto-question\nFlow Academy|Video learning on YouTube|picto-music\nBlog|Articles and updates|picto-document\nよくある質問 (FAQ)|Frequently asked questions|picto-question\nDX checklist|Check whether your stores are ready for better operational visibility.|picto-validation"
+    },
+    {
+      "type": "header",
+      "content": "Platform menu panel"
+    },
+    {
+      "type": "image_picker",
+      "id": "platform_auto_panel_image",
+      "label": "Platform panel image"
+    },
+    {
+      "type": "text",
+      "id": "platform_auto_panel_badge",
+      "label": "Platform panel badge",
+      "default": "5-minute assessment"
+    },
+    {
+      "type": "text",
+      "id": "platform_auto_panel_title",
+      "label": "Platform panel title",
+      "default": "Find the biggest gaps in your store data and execution process."
+    },
+    {
+      "type": "text",
+      "id": "platform_auto_panel_text",
+      "label": "Platform panel text",
+      "default": "Use this quick assessment to identify improvement opportunities across store operations."
+    },
+    {
+      "type": "text",
+      "id": "platform_auto_panel_link_label",
+      "label": "Platform panel button label",
+      "default": "Start assessment"
+    },
+    {
+      "type": "url",
+      "id": "platform_auto_panel_link",
+      "label": "Platform panel link"
+    },
+    {
+      "type": "color",
+      "id": "platform_auto_panel_background",
+      "label": "Platform panel background",
+      "default": "#EEF4FF"
+    },
+    {
+      "type": "color",
+      "id": "platform_auto_panel_button_background",
+      "label": "Platform button background",
+      "default": "#1B5CFF"
+    },
+    {
+      "type": "header",
+      "content": "About Flow menu panel"
+    },
+    {
+      "type": "image_picker",
+      "id": "about_auto_panel_image",
+      "label": "About Flow panel image"
+    },
+    {
+      "type": "text",
+      "id": "about_auto_panel_badge",
+      "label": "About Flow panel badge",
+      "default": "DX checklist"
+    },
+    {
+      "type": "text",
+      "id": "about_auto_panel_title",
+      "label": "About Flow panel title",
+      "default": "Check whether your stores are ready for better operational visibility."
+    },
+    {
+      "type": "text",
+      "id": "about_auto_panel_text",
+      "label": "About Flow panel text",
+      "default": "Review the core requirements for stronger store execution and reporting."
+    },
+    {
+      "type": "text",
+      "id": "about_auto_panel_link_label",
+      "label": "About Flow panel button label",
+      "default": "View checklist"
+    },
+    {
+      "type": "url",
+      "id": "about_auto_panel_link",
+      "label": "About Flow panel link"
+    },
+    {
+      "type": "color",
+      "id": "about_auto_panel_background",
+      "label": "About Flow panel background",
+      "default": "#EAF8F0"
+    },
+    {
+      "type": "color",
+      "id": "about_auto_panel_button_background",
+      "label": "About Flow button background",
+      "default": "#27AE60"
     },
     {
       "type": "header",
@@ -652,6 +1451,12 @@ the underlying logic of the menu.
           "label": "Heading"
         },
         {
+          "type": "image_picker",
+          "id": "platform_panel_image",
+          "label": "Panel image",
+          "info": "Optional image shown in the split panel card."
+        },
+        {
           "type": "text",
           "id": "platform_link_label",
           "label": "Link label"
@@ -822,6 +1627,77 @@ the underlying logic of the menu.
             }
           ],
           "default": "hide"
+        }
+      ]
+    },
+    {
+      "type": "menu_item_meta",
+      "name": "Icon + Description",
+      "settings": [
+        {
+          "type": "text",
+          "id": "menu_item",
+          "label": "Menu item title (exact match)",
+          "info": "Use the exact Shopify Navigation title for this menu/submenu item."
+        },
+        {
+          "type": "select",
+          "id": "icon",
+          "label": "Icon for this menu item",
+          "options": [
+            {
+              "value": "picto-box",
+              "label": "Box"
+            },
+            {
+              "value": "picto-camera",
+              "label": "Camera"
+            },
+            {
+              "value": "picto-target",
+              "label": "Target"
+            },
+            {
+              "value": "picto-secure-profile",
+              "label": "Secure profile"
+            },
+            {
+              "value": "picto-operator",
+              "label": "Operator"
+            },
+            {
+              "value": "picto-building",
+              "label": "Building"
+            },
+            {
+              "value": "picto-document",
+              "label": "Document"
+            },
+            {
+              "value": "picto-chat",
+              "label": "Chat"
+            },
+            {
+              "value": "picto-earth",
+              "label": "Earth"
+            },
+            {
+              "value": "picto-question",
+              "label": "Question"
+            }
+          ],
+          "default": "picto-box"
+        },
+        {
+          "type": "image_picker",
+          "id": "custom_logo",
+          "label": "Custom logo (optional)",
+          "info": "If uploaded, this image will be used instead of the icon picker."
+        },
+        {
+          "type": "text",
+          "id": "description",
+          "label": "Description under title"
         }
       ]
     }
