@@ -480,9 +480,9 @@
             "icon_background_type": "circle",
             "icon_background": "",
             "icon_color": "",
-            "background_color": "#FFFFFF",
-            "text_color": "#11243E",
-            "border_color": "#A0B45B",
+            "background_color": "#ffffff",
+            "text_color": "#11243e",
+            "border_color": "#a0b45b",
             "show_controls": false,
             "column_size": "2",
             "title": "",
@@ -502,9 +502,9 @@
             "icon_background_type": "circle",
             "icon_background": "",
             "icon_color": "",
-            "background_color": "#FFFFFF",
-            "text_color": "#11243E",
-            "border_color": "#A0B45B",
+            "background_color": "#ffffff",
+            "text_color": "#11243e",
+            "border_color": "#a0b45b",
             "show_controls": false,
             "column_size": "2",
             "title": "",
@@ -524,9 +524,9 @@
             "icon_background_type": "circle",
             "icon_background": "",
             "icon_color": "",
-            "background_color": "#FFFFFF",
-            "text_color": "#11243E",
-            "border_color": "#A0B45B",
+            "background_color": "#ffffff",
+            "text_color": "#11243e",
+            "border_color": "#a0b45b",
             "show_controls": false,
             "column_size": "2",
             "title": "",
@@ -546,9 +546,9 @@
             "icon_background_type": "square",
             "icon_background": "",
             "icon_color": "",
-            "background_color": "#FFFFFF",
-            "text_color": "#11243E",
-            "border_color": "#A0B45B",
+            "background_color": "#ffffff",
+            "text_color": "#11243e",
+            "border_color": "#a0b45b",
             "show_controls": false,
             "column_size": "2",
             "title": "",
@@ -677,6 +677,63 @@
         "text_color": "",
         "subheading_background_color": "#11243e",
         "subheading_text_color": "#ffffff"
+      }
+    },
+    "rich_text_peMmaV": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_DDAQPW": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "text": "AI CAMERA",
+            "icon": "none"
+          }
+        },
+        "heading_GM8FNx": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "text": "THE SENSING ARRAY",
+            "heading_tag": "h0",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_DF74kd": {
+          "type": "richtext",
+          "disabled": true,
+          "settings": {
+            "content": "<p>Edge-intelligent nodes transforming physical movement into data truth.</p>"
+          }
+        },
+        "image_GR6JYr": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/FIDA_AI_Overview_1.png",
+            "width_mode": "full_width",
+            "max_width": 600,
+            "mobile_max_width": 350
+          }
+        }
+      },
+      "block_order": [
+        "subheading_DDAQPW",
+        "heading_GM8FNx",
+        "richtext_DF74kd",
+        "image_GR6JYr"
+      ],
+      "custom_css": [
+        "* {padding-top: 0;}"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "large",
+        "text_position": "center",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": ""
       }
     },
     "blocks_kxFPYb": {
@@ -1161,64 +1218,6 @@
         "remove_vertical_spacing": false,
         "remove_horizontal_spacing": false,
         "background": "",
-        "background_gradient": "",
-        "text_color": ""
-      }
-    },
-    "rich_text_peMmaV": {
-      "type": "rich-text",
-      "blocks": {
-        "subheading_DDAQPW": {
-          "type": "subheading",
-          "disabled": true,
-          "settings": {
-            "text": "AI CAMERA",
-            "icon": "none"
-          }
-        },
-        "heading_GM8FNx": {
-          "type": "heading",
-          "disabled": true,
-          "settings": {
-            "text": "THE SENSING ARRAY",
-            "heading_tag": "h0",
-            "text_color": "",
-            "gradient": ""
-          }
-        },
-        "richtext_DF74kd": {
-          "type": "richtext",
-          "disabled": true,
-          "settings": {
-            "content": "<p>Edge-intelligent nodes transforming physical movement into data truth.</p>"
-          }
-        },
-        "image_GR6JYr": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/iPad_Dashboard.png",
-            "width_mode": "full_width",
-            "max_width": 600,
-            "mobile_max_width": 350
-          }
-        }
-      },
-      "block_order": [
-        "subheading_DDAQPW",
-        "heading_GM8FNx",
-        "richtext_DF74kd",
-        "image_GR6JYr"
-      ],
-      "disabled": true,
-      "custom_css": [
-        "* {padding-top: 0;}"
-      ],
-      "name": "Rich text",
-      "settings": {
-        "full_width": true,
-        "content_width": "large",
-        "text_position": "center",
-        "background": "#ffffff",
         "background_gradient": "",
         "text_color": ""
       }
@@ -1888,12 +1887,12 @@
     "multi_column_QjMJiW",
     "multi_column_Rqk3xG",
     "multi_column_rPwdDt",
+    "rich_text_peMmaV",
     "blocks_kxFPYb",
     "178047465242fd23a6",
     "multi_column_HCGJea",
     "blocks_4YeEQJ",
     "blocks_rwYEMm",
-    "rich_text_peMmaV",
     "blocks_nwzRNT",
     "rich_text_6VmVgb",
     "blocks_YJHkDA",
