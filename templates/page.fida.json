@@ -25,10 +25,16 @@
             "heading_tag": "h1"
           }
         },
+        "richtext_aR9jcT": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p><strong>判断の遅れを減らし、店舗ごとの実行を揃えます。</strong></p><p></p>"
+          }
+        },
         "richtext_HwhtPj": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Flow AIは、来店・売上・スタッフ・天候・店舗メモ・社内マニュアルをもとに、店舗ごとの状況を読み取り、現場で実行できる次の一手を提案します。</p>"
+            "content": "<p>Flow AIは、FIDA判断エンジンを通じて、来店・売上・スタッフ・店舗メモ・社内マニュアルを整理し、現場で実行できる次の一手を提示します。</p>"
           }
         },
         "button_7Prq3W": {
@@ -57,6 +63,7 @@
       "block_order": [
         "subheading_GmUMNm",
         "heading_frXnfn",
+        "richtext_aR9jcT",
         "richtext_HwhtPj",
         "button_7Prq3W",
         "button_cpqnfi"
@@ -131,6 +138,13 @@
     "rich_text_B8Y9rV": {
       "type": "rich-text",
       "blocks": {
+        "richtext_kHmRP6": {
+          "type": "richtext",
+          "disabled": true,
+          "settings": {
+            "content": "<p><strong>Flow AIは、店舗データ・社内ルール・現場の声を読み取り、店長が次に取るべき行動を提示します。</strong></p>"
+          }
+        },
         "richtext_FCxqzE": {
           "type": "richtext",
           "settings": {
@@ -139,6 +153,7 @@
         }
       },
       "block_order": [
+        "richtext_kHmRP6",
         "richtext_FCxqzE"
       ],
       "custom_css": [],
