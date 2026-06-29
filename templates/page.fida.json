@@ -472,6 +472,18 @@
     "blocks_kxFPYb": {
       "type": "_blocks",
       "blocks": {
+        "heading_ymBWwR": {
+          "type": "heading",
+          "name": "Heading",
+          "settings": {
+            "text": "状況を読み取り、次の一手を提示する",
+            "size": "h2",
+            "html_tag": "p",
+            "text_color": "",
+            "gradient": ""
+          },
+          "blocks": {}
+        },
         "ai_gen_block_b5b0090_GB9RK8": {
           "type": "ai_gen_block_b5b0090",
           "settings": {
@@ -479,9 +491,9 @@
             "section_padding_mobile": 40,
             "section_padding_desktop": 80,
             "background_color": "#f5f5f5",
-            "headline": "状況を読み取り、次の一手を提示する",
-            "headline_size_mobile": 36,
-            "headline_size_desktop": 56,
+            "headline": "数字を読む時間を減らし、行動を決める時間を増やします。",
+            "headline_size_mobile": 34,
+            "headline_size_desktop": 48,
             "headline_color": "#1a2b4a",
             "description": "Flow AIは、売上や来店数の変化だけでなく、スタッフ状況・店舗メモ・SOPを合わせて確認し、現場で実行しやすい行動に整理します。",
             "description_size": 16,
@@ -546,6 +558,7 @@
         }
       },
       "block_order": [
+        "heading_ymBWwR",
         "ai_gen_block_b5b0090_GB9RK8"
       ],
       "name": "SaaS data monitoring",
@@ -553,7 +566,7 @@
         "full_width": true,
         "remove_vertical_spacing": false,
         "remove_horizontal_spacing": false,
-        "background": "",
+        "background": "#F5F5F5",
         "background_gradient": "",
         "text_color": ""
       }
@@ -775,7 +788,7 @@
         "gap": "medium",
         "text_alignment": "start",
         "subheading": "利用部門",
-        "title": "役割ごとに、必要な判断を支援する。",
+        "title": "それぞれの役割に、次の判断を届ける",
         "content": "<p>Flow AIは、店長・エリアマネージャー・本部がそれぞれの役割に応じて、確認すべき変化と次の行動を整理できるようにします。</p>",
         "background": "rgba(0,0,0,0)",
         "background_gradient": "",
@@ -808,7 +821,7 @@
             "step5_icon": "checklist",
             "step5_title": "学習に反映",
             "step5_desc": "担当エリアの状況と確認事項を整理し、報告しやすくします。",
-            "banner_text": "Flow AIは判断を自動化するものではありません。人の確認と現場判断を前提に、実行と改善の流れを支援します。",
+            "banner_text": "Flow AIは判断を自動化せず、人の判断と改善を支援します。",
             "max_width": 1400,
             "background_color": "#fafbfc",
             "badge_bg_color": "#11243e",
@@ -1170,7 +1183,7 @@
         "heading_YXhiR8": {
           "type": "heading",
           "settings": {
-            "text": "店舗データを、判断と実行につなげる。",
+            "text": "店舗データを、次の判断に変える。",
             "heading_tag": "h2",
             "text_color": "",
             "gradient": ""
@@ -1179,7 +1192,7 @@
         "richtext_qzAkak": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Flow AIとFIDAの活用には、店舗データ・社内ルール・運用体制の整理が必要です。まずは現在のデータ環境と店舗運営の課題をご相談ください。</p>"
+            "content": "<p>Flow AIとFIDAは、店舗データ・社内ルール・現場の声をもとに、実行しやすい判断を支援します。まずは現在のデータ環境と店舗運営の課題をご相談ください。</p>"
           }
         },
         "button_AVKAbi": {
@@ -1222,7 +1235,7 @@
       "name": "Rich text",
       "settings": {
         "full_width": true,
-        "content_width": "small",
+        "content_width": "medium",
         "text_position": "center",
         "background": "#0e366a",
         "background_gradient": "",
