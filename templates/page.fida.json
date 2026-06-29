@@ -74,13 +74,13 @@
         "allow_transparent_header": false,
         "enable_parallax": false,
         "image_size": "fill",
-        "image": "shopify://shop_images/Platform_hero_e927cd9c-8828-497d-8af7-712b7e51fea2.png",
-        "mobile_image": "shopify://shop_images/Mobile_Hero.png",
+        "image": "shopify://shop_images/AI_Title.png",
+        "mobile_image": "shopify://shop_images/ai_title_mobile.png",
         "mobile_text_position": "place-self-center text-center",
         "desktop_text_position": "sm:place-self-center sm:text-center",
         "text_color": "#ffffff",
-        "overlay_color": "#0e366a",
-        "overlay_opacity": 58
+        "overlay_color": "#11243E",
+        "overlay_opacity": 66
       }
     },
     "blocks_6PjPxD": {
