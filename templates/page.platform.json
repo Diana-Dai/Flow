@@ -693,7 +693,7 @@
         "image_GR6JYr": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/iPad_Dashboard.png",
+            "image": "shopify://shop_images/iPad_Dashboard_1.png",
             "width_mode": "full_width",
             "max_width": 600,
             "mobile_max_width": 350
