@@ -6124,6 +6124,7 @@ product-rerender {
   width: var(--header-logo-width);
   height: auto;
   opacity: var(--header-logo-opacity, 1);
+  border-radius: 0;
 }
 
 .header__logo-image--transparent {
