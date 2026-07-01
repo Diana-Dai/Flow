@@ -169,6 +169,23 @@
       justify-content: center;
     }
   }
+  .ai-ceo-profile-about{
+      font-size: 1rem;
+    opacity: 0.8;
+  }
+  .ai-ceo-profile-about_list ul{
+    display:flex;
+        gap: 12px;
+flex-wrap:wrap;
+  }
+  .ai-ceo-profile-about_list ul li{
+      border: 1px solid #F9FAFB;
+    padding: 5px 8px;
+    font-size: 0.8rem;
+    background: white;
+    border-ra: 10px;
+    border-radius: 32px;
+  }
 {% endstyle %}
 
 <ceo-profile-{{ ai_gen_id }} class="ai-ceo-profile-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
