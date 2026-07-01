@@ -1,6 +1,564 @@
+{% doc %}
+  @prompt
+    Act as an expert Shopify Liquid and CSS developer. Write complete, production-ready code for a unified blog page template matching the 3-tier structure of image_fcf0d3.jpg and image_fcf0f2.png.
+    
+    ### Schema Requirements:
+    1. 'settings': Blog picker ('blog'), text fields for Tiers 1-3 kickers ("FEATURED", "RECENT THINKING", "ARCHIVE").
+    2. Automatically sort articles by date using standard Liquid loops (`blog.articles`).
+    
+    ### Visual & Layout Rules (1:1 Replication):
+    - Max-width: 1200px container, centered, white background (#ffffff). Navy headlines (#0a3263), slate metadata (#64748b), gray body (#475569).
+    
+    - Tier 1 (Featured - Top): Horizontal split-screen layout (50/50 desktop, stacked mobile). 16px rounded corners on the outer container. Left side: featured image with 'object-fit: cover' and an overlaid category badge. Right side: padded text box containing date/reading time meta line, massive bold headline, excerpt, and "Read article →" text link.
+    
+    - Tier 2 (Recent Thinking - Middle): 3-column desktop grid (stacks mobile) beneath uppercase kicker. Each card includes: 16:9 aspect-ratio image with 12px rounded top corners, category badge in the bottom-left image corner, bold navy title, tight 3-line truncated excerpt, and a bottom row splitting the date (left) and "Read →" (right).
+    
+    - Tier 3 (Archive - Bottom): Vertical stack of full-width horizontal article rows beneath uppercase kicker. Each row features a 1px solid #f1f5f9 border or alternating #f8fafc zebra backgrounds. Row elements aligned on a single line (flex-row desktop): Category tag and article title on the left; reading time, publishing date, and a tracking arrow (→) aligned to the far right.
+    
+    Output only copy-pasteable HTML/Liquid, embedded CSS (or Tailwind), and the {% schema %}.
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-blog-template-{{ ai_gen_id }} {
+    display: block;
+    width: 100%;
+    background-color: #ffffff;
+  }
+
+  .ai-blog-container-{{ ai_gen_id }} {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 24px;
+  }
+
+  .ai-blog-tier-{{ ai_gen_id }} {
+    margin-bottom: 80px;
+  }
+
+  .ai-blog-tier-{{ ai_gen_id }}:last-child {
+    margin-bottom: 0;
+  }
+
+  .ai-blog-kicker-{{ ai_gen_id }} {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #64748b;
+    margin-bottom: 32px;
+  }
+
+  .ai-blog-featured-{{ ai_gen_id }} {
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+    border-radius: 16px;
+    overflow: hidden;
+    background-color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+
+  .ai-blog-featured-image-{{ ai_gen_id }} {
+    position: relative;
+    flex: 1;
+    min-height: 500px;
+  }
+
+  .ai-blog-featured-image-{{ ai_gen_id }} img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .ai-blog-category-badge-{{ ai_gen_id }} {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: #ffffff;
+    color: #0a3263;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .ai-blog-featured-content-{{ ai_gen_id }} {
+    flex: 1;
+    padding: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .ai-blog-meta-{{ ai_gen_id }} {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 14px;
+    color: #64748b;
+    margin-bottom: 20px;
+  }
+
+  .ai-blog-meta-{{ ai_gen_id }} span {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .ai-blog-featured-title-{{ ai_gen_id }} {
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #0a3263;
+    margin: 0 0 20px 0;
+  }
+
+  .ai-blog-featured-excerpt-{{ ai_gen_id }} {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #475569;
+    margin-bottom: 24px;
+  }
+
+  .ai-blog-read-link-{{ ai_gen_id }} {
+    color: #0a3263;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: gap 0.3s ease;
+  }
+
+  .ai-blog-read-link-{{ ai_gen_id }}:hover {
+    gap: 12px;
+  }
+
+  .ai-blog-grid-{{ ai_gen_id }} {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+  }
+
+  .ai-blog-card-{{ ai_gen_id }} {
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .ai-blog-card-{{ ai_gen_id }}:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  .ai-blog-card-image-{{ ai_gen_id }} {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    overflow: hidden;
+  }
+
+  .ai-blog-card-image-{{ ai_gen_id }} img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .ai-blog-card-badge-{{ ai_gen_id }} {
+    position: absolute;
+    bottom: 12px;
+    left: 12px;
+    background-color: #ffffff;
+    color: #0a3263;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .ai-blog-card-content-{{ ai_gen_id }} {
+    padding: 24px;
+  }
+
+  .ai-blog-card-title-{{ ai_gen_id }} {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.3;
+    color: #0a3263;
+    margin: 0 0 12px 0;
+  }
+
+  .ai-blog-card-excerpt-{{ ai_gen_id }} {
+    font-size: 15px;
+    line-height: 1.5;
+    color: #475569;
+    margin-bottom: 16px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .ai-blog-card-footer-{{ ai_gen_id }} {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+  }
+
+  .ai-blog-card-date-{{ ai_gen_id }} {
+    color: #64748b;
+  }
+
+  .ai-blog-card-link-{{ ai_gen_id }} {
+    color: #0a3263;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+  }
+
+  .ai-blog-list-{{ ai_gen_id }} {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ai-blog-list-item-{{ ai_gen_id }} {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    border-bottom: 1px solid #f1f5f9;
+  }
+
+  .ai-blog-list-item-{{ ai_gen_id }}:nth-child(even) {
+    background-color: #f8fafc;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+
+  .ai-blog-list-item-{{ ai_gen_id }}:last-child {
+    border-bottom: none;
+  }
+
+  .ai-blog-list-left-{{ ai_gen_id }} {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex: 1;
+  }
+
+  .ai-blog-list-tag-{{ ai_gen_id }} {
+    background-color: #f1f5f9;
+    color: #0a3263;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+  }
+
+  .ai-blog-list-title-{{ ai_gen_id }} {
+    font-size: 16px;
+    font-weight: 600;
+    color: #0a3263;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  .ai-blog-list-title-{{ ai_gen_id }}:hover {
+    color: #475569;
+  }
+
+  .ai-blog-list-right-{{ ai_gen_id }} {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    font-size: 14px;
+    color: #64748b;
+  }
+
+  .ai-blog-list-reading-{{ ai_gen_id }},
+  .ai-blog-list-date-{{ ai_gen_id }} {
+    white-space: nowrap;
+  }
+
+  .ai-blog-list-arrow-{{ ai_gen_id }} {
+    color: #0a3263;
+    font-size: 18px;
+  }
+
+  .ai-blog-empty-{{ ai_gen_id }} {
+    text-align: center;
+    padding: 60px 20px;
+    color: #64748b;
+    font-size: 16px;
+  }
+
+  @media screen and (max-width: 999px) {
+    .ai-blog-featured-{{ ai_gen_id }} {
+      flex-direction: column;
+    }
+
+    .ai-blog-featured-image-{{ ai_gen_id }} {
+      min-height: 400px;
+    }
+
+    .ai-blog-featured-content-{{ ai_gen_id }} {
+      padding: 32px 24px;
+    }
+
+    .ai-blog-featured-title-{{ ai_gen_id }} {
+      font-size: 32px;
+    }
+
+    .ai-blog-grid-{{ ai_gen_id }} {
+      grid-template-columns: 1fr;
+      gap: 24px;
+    }
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-blog-container-{{ ai_gen_id }} {
+      padding: 40px 16px;
+    }
+
+    .ai-blog-tier-{{ ai_gen_id }} {
+      margin-bottom: 60px;
+    }
+
+    .ai-blog-featured-image-{{ ai_gen_id }} {
+      min-height: 300px;
+    }
+
+    .ai-blog-featured-title-{{ ai_gen_id }} {
+      font-size: 28px;
+    }
+
+    .ai-blog-featured-excerpt-{{ ai_gen_id }} {
+      font-size: 16px;
+    }
+
+    .ai-blog-list-item-{{ ai_gen_id }} {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 12px;
+    }
+
+    .ai-blog-list-left-{{ ai_gen_id }} {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 8px;
+    }
+
+    .ai-blog-list-right-{{ ai_gen_id }} {
+      width: 100%;
+      justify-content: space-between;
+    }
+  }
+{% endstyle %}
+
+<div class="ai-blog-template-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-blog-container-{{ ai_gen_id }}">
+    {% if block.settings.blog != blank %}
+      {% assign blog = block.settings.blog %}
+      {% assign sorted_articles = blog.articles | sort: 'published_at' | reverse %}
+
+      {% if sorted_articles.size > 0 %}
+        <div class="ai-blog-tier-{{ ai_gen_id }}">
+          {% if block.settings.tier1_kicker != blank %}
+            <div class="ai-blog-kicker-{{ ai_gen_id }}">{{ block.settings.tier1_kicker }}</div>
+          {% endif %}
+
+          {% assign featured_article = sorted_articles.first %}
+          <div class="ai-blog-featured-{{ ai_gen_id }}">
+            <div class="ai-blog-featured-image-{{ ai_gen_id }}">
+              {% if featured_article.image %}
+                <img
+                  src="{{ featured_article.image | image_url: width: 1200 }}"
+                  alt="{{ featured_article.image.alt | escape }}"
+                  loading="lazy"
+                  width="{{ featured_article.image.width }}"
+                  height="{{ featured_article.image.height }}"
+                >
+              {% else %}
+                <div style="width: 100%; height: 100%; background-color: #f1f5f9;"></div>
+              {% endif %}
+              {% if featured_article.tags.size > 0 %}
+                <div class="ai-blog-category-badge-{{ ai_gen_id }}">{{ featured_article.tags.first }}</div>
+              {% endif %}
+            </div>
+            <div class="ai-blog-featured-content-{{ ai_gen_id }}">
+              <div class="ai-blog-meta-{{ ai_gen_id }}">
+                <span>{{ featured_article.published_at | date: '%B %d, %Y' }}</span>
+                <span>•</span>
+                <span>{{ featured_article.content | strip_html | split: ' ' | size | divided_by: 200 | at_least: 1 }} min read</span>
+              </div>
+              <h2 class="ai-blog-featured-title-{{ ai_gen_id }}">
+                <a href="{{ featured_article.url }}" style="color: inherit; text-decoration: none;">
+                  {{ featured_article.title }}
+                </a>
+              </h2>
+              {% if featured_article.excerpt != blank %}
+                <div class="ai-blog-featured-excerpt-{{ ai_gen_id }}">
+                  {{ featured_article.excerpt | strip_html | truncate: 200 }}
+                </div>
+              {% endif %}
+              <a href="{{ featured_article.url }}" class="ai-blog-read-link-{{ ai_gen_id }}">
+                Read article <span>→</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        {% if sorted_articles.size > 1 %}
+          <div class="ai-blog-tier-{{ ai_gen_id }}">
+            {% if block.settings.tier2_kicker != blank %}
+              <div class="ai-blog-kicker-{{ ai_gen_id }}">{{ block.settings.tier2_kicker }}</div>
+            {% endif %}
+
+            <div class="ai-blog-grid-{{ ai_gen_id }}">
+              {% for article in sorted_articles offset: 1 limit: 3 %}
+                <div class="ai-blog-card-{{ ai_gen_id }}">
+                  <div class="ai-blog-card-image-{{ ai_gen_id }}">
+                    {% if article.image %}
+                      <img
+                        src="{{ article.image | image_url: width: 600 }}"
+                        alt="{{ article.image.alt | escape }}"
+                        loading="lazy"
+                        width="{{ article.image.width }}"
+                        height="{{ article.image.height }}"
+                      >
+                    {% else %}
+                      <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: #f1f5f9;"></div>
+                    {% endif %}
+                    {% if article.tags.size > 0 %}
+                      <div class="ai-blog-card-badge-{{ ai_gen_id }}">{{ article.tags.first }}</div>
+                    {% endif %}
+                  </div>
+                  <div class="ai-blog-card-content-{{ ai_gen_id }}">
+                    <h3 class="ai-blog-card-title-{{ ai_gen_id }}">
+                      <a href="{{ article.url }}" style="color: inherit; text-decoration: none;">
+                        {{ article.title }}
+                      </a>
+                    </h3>
+                    {% if article.excerpt != blank %}
+                      <div class="ai-blog-card-excerpt-{{ ai_gen_id }}">
+                        {{ article.excerpt | strip_html | truncate: 120 }}
+                      </div>
+                    {% endif %}
+                    <div class="ai-blog-card-footer-{{ ai_gen_id }}">
+                      <span class="ai-blog-card-date-{{ ai_gen_id }}">{{ article.published_at | date: '%b %d, %Y' }}</span>
+                      <a href="{{ article.url }}" class="ai-blog-card-link-{{ ai_gen_id }}">
+                        Read <span>→</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              {% endfor %}
+            </div>
+          </div>
+        {% endif %}
+
+        {% if sorted_articles.size > 4 %}
+          <div class="ai-blog-tier-{{ ai_gen_id }}">
+            {% if block.settings.tier3_kicker != blank %}
+              <div class="ai-blog-kicker-{{ ai_gen_id }}">{{ block.settings.tier3_kicker }}</div>
+            {% endif %}
+
+            <div class="ai-blog-list-{{ ai_gen_id }}">
+              {% for article in sorted_articles offset: 4 %}
+                <div class="ai-blog-list-item-{{ ai_gen_id }}">
+                  <div class="ai-blog-list-left-{{ ai_gen_id }}">
+                    {% if article.tags.size > 0 %}
+                      <div class="ai-blog-list-tag-{{ ai_gen_id }}">{{ article.tags.first }}</div>
+                    {% endif %}
+                    <a href="{{ article.url }}" class="ai-blog-list-title-{{ ai_gen_id }}">
+                      {{ article.title }}
+                    </a>
+                  </div>
+                  <div class="ai-blog-list-right-{{ ai_gen_id }}">
+                    <span class="ai-blog-list-reading-{{ ai_gen_id }}">{{ article.content | strip_html | split: ' ' | size | divided_by: 200 | at_least: 1 }} min</span>
+                    <span class="ai-blog-list-date-{{ ai_gen_id }}">{{ article.published_at | date: '%b %d, %Y' }}</span>
+                    <span class="ai-blog-list-arrow-{{ ai_gen_id }}">→</span>
+                  </div>
+                </div>
+              {% endfor %}
+            </div>
+          </div>
+        {% endif %}
+      {% else %}
+        <div class="ai-blog-empty-{{ ai_gen_id }}">
+          No articles found in this blog.
+        </div>
+      {% endif %}
+    {% else %}
+      <div class="ai-blog-empty-{{ ai_gen_id }}">
+        Please select a blog to display articles.
+      </div>
+    {% endif %}
+  </div>
+</div>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "Blog template",
+  "settings": [
+    {
+      "type": "blog",
+      "id": "blog",
+      "label": "Blog"
+    },
+    {
+      "type": "header",
+      "content": "Tier 1 - Featured"
+    },
+    {
+      "type": "text",
+      "id": "tier1_kicker",
+      "label": "Kicker text",
+      "default": "FEATURED"
+    },
+    {
+      "type": "header",
+      "content": "Tier 2 - Recent thinking"
+    },
+    {
+      "type": "text",
+      "id": "tier2_kicker",
+      "label": "Kicker text",
+      "default": "RECENT THINKING"
+    },
+    {
+      "type": "header",
+      "content": "Tier 3 - Archive"
+    },
+    {
+      "type": "text",
+      "id": "tier3_kicker",
+      "label": "Kicker text",
+      "default": "ARCHIVE"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Blog template"
+    }
+  ]
+}
 {% endschema %}
