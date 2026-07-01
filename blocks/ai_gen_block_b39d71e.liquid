@@ -203,6 +203,14 @@
         <p class="ai-ceo-profile-bio-{{ ai_gen_id }}">{{ block.settings.bio_text }}</p>
       {% endif %}
 
+      {% if block.settings.about_text != blank %}
+        <p class="ai-ceo-profile-about">{{ block.settings.about_text }}</p>
+      {% endif %}
+      {% if block.settings.about_list != blank %}
+        <div class="ai-ceo-profile-about_list">{{ block.settings.about_list }}</div>
+      {% endif %}
+  
+
       <div class="ai-ceo-profile-social-{{ ai_gen_id }}">
         {% if block.settings.linkedin_url != blank %}
           <a
