@@ -1,6 +1,692 @@
+{% doc %}
+  @prompt
+    Act as an expert Shopify Liquid and CSS developer. Write the complete, production-ready code for a custom Shopify blog header/author profile section that replicates the layout of image_fce530.png 100% with exact visual precision, spatial structure, and styling logic.
+    
+    ### Section Configuration & Schema Requirements:
+    1. Wrap the entire layout in a fully customizable Shopify section.
+    2. Include a settings schema so the merchant can customize:
+       - Author Avatar Initials text (default: "CP") or an optional image picker to replace the initials.
+       - Author Name text (default: "Chad Peshke").
+       - Author Role Badge text (default: "Founder & CEO").
+       - Biography/Description paragraph text (default: "Writing on retail execution, conversion intelligence, decision-making at store level, and why dashboards alone don't move the needle.").
+       - Social Media Links: Text inputs for LinkedIn URL and Twitter/X URL (dynamically hiding icons if empty).
+       - Tag Cloud Kicker text (default: "WHAT THIS BLOG IS ABOUT").
+    3. Use a blocks schema (`blocks`) for the tag cloud pills on the right, allowing the merchant to dynamically add, edit, or link specific blog tags (e.g., "Retail execution", "Conversion", "Store ops").
+    4. Include standard `{% schema %}` with presets so it can be added directly via the Shopify Theme Editor.
+    
+    ### Visual & Style Specifications (1:1 Replication):
+    1. **Global Layout & Structure:**
+       - A wide, low-profile banner section with an ultra-light gray/off-white background color (`#f8fafc` or `#f9f9f9`).
+       - Inner content wrapper centered with a max-width of 1200px and broad horizontal padding.
+       - On desktop, the section splits into an expansive, asymmetric flex row: the Author Profile block occupies the left side (approx. 60-65% width) and the Tag Cloud block anchors precisely to the right side (approx. 35-40% width). On mobile, the blocks stack vertically and center cleanly.
+    
+    2. **Left Block (Author Profile Group):**
+       - **Avatar Badge:** A distinct squircle / heavily rounded square container (`border-radius: 20px`), measuring roughly 80px x 80px on desktop. It features a deep dark navy blue background (`#0a255c`) with the initials "CP" perfectly centered in a bold, crisp white font.
+       - **Text Info Column:** Sits adjacent to the avatar badge with a comfortable, proportional gap.
+         - **Name Line:** A horizontal flex row featuring the Author Name in a heavy, bold dark navy blue (`#0a255c`), immediately followed by an inline, pill-shaped badge. The badge has a soft grayish-blue tint background (`#e2e8f0`), a small tracking-wide font, and reads "Founder & CEO".
+         - **Biography Text:** Positioned directly below the name line with tight padding. It uses a neutral, highly readable slate-gray font color (`#475569`) with elegant, compact line-height.
+         - **Social Links:** A horizontal row of tiny, perfectly circular outline buttons (`border: 1px solid #cbd5e1`) positioned beneath the biography text, housing clean social media brand glyphs (LinkedIn and Twitter/X) in a muted gray color.
+    
+    3. **Right Block (Tag Cloud Group):**
+       - **Kicker Label:** Aligned to the top right of its block, reading "WHAT THIS BLOG IS ABOUT" in a tiny, wide-tracked, uppercase semi-bold font using a light slate-gray color (`#94a3b8`).
+       - **Tag Pills Grid:** Positioned below the kicker label, featuring a right-aligned wrap layout (`flex-wrap: wrap; justify-content: flex-end;`). 
+       - **Pill Styling:** Each tag pill is a capsule shape (`border-radius: 9999px`) with a solid white background (`#ffffff`), a very fine light-gray border (`1px solid #e2e8f0`), deep horizontal padding, and a compact font. The text inside is a clean charcoal color (`#334155`). Ensure the pills wrap beautifully into a two-row staggered formation exactly as showcased in image_fce530.png.
+    
+    Output only the clean, copy-pasteable code containing the HTML structure, embedded CSS (or Tailwind utility classes), and the Shopify Liquid schema.
+    
+    
+    The image of the ceo should be customisable
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-blog-header-{{ ai_gen_id }} {
+    display: block;
+    width: 100%;
+    background-color: {{ block.settings.background_color }};
+    padding: {{ block.settings.section_padding_top }}px 0 {{ block.settings.section_padding_bottom }}px;
+  }
+
+  .ai-blog-header-container-{{ ai_gen_id }} {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+
+  .ai-blog-header-layout-{{ ai_gen_id }} {
+    display: flex;
+    gap: 60px;
+    align-items: flex-start;
+  }
+
+  .ai-blog-header-author-block-{{ ai_gen_id }} {
+    flex: 1 1 60%;
+    display: flex;
+    gap: 24px;
+    align-items: flex-start;
+  }
+
+  .ai-blog-header-avatar-{{ ai_gen_id }} {
+    flex-shrink: 0;
+    width: 80px;
+    height: 80px;
+    border-radius: 20px;
+    background-color: {{ block.settings.avatar_background_color }};
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  .ai-blog-header-avatar-initials-{{ ai_gen_id }} {
+    font-size: 28px;
+    font-weight: 700;
+    color: {{ block.settings.avatar_text_color }};
+    line-height: 1;
+  }
+
+  .ai-blog-header-avatar-image-{{ ai_gen_id }} {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .ai-blog-header-author-info-{{ ai_gen_id }} {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .ai-blog-header-name-row-{{ ai_gen_id }} {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .ai-blog-header-author-name-{{ ai_gen_id }} {
+    font-size: 24px;
+    font-weight: 700;
+    color: {{ block.settings.name_color }};
+    line-height: 1.2;
+    margin: 0;
+  }
+
+  .ai-blog-header-role-badge-{{ ai_gen_id }} {
+    display: inline-flex;
+    align-items: center;
+    padding: 4px 12px;
+    background-color: {{ block.settings.role_badge_background }};
+    color: {{ block.settings.role_badge_text_color }};
+    border-radius: 9999px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    line-height: 1.4;
+  }
+
+  .ai-blog-header-bio-{{ ai_gen_id }} {
+    font-size: 15px;
+    line-height: 1.6;
+    color: {{ block.settings.bio_text_color }};
+    margin: 0;
+  }
+
+  .ai-blog-header-social-links-{{ ai_gen_id }} {
+    display: flex;
+    gap: 8px;
+    margin-top: 4px;
+  }
+
+  .ai-blog-header-social-link-{{ ai_gen_id }} {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 1px solid {{ block.settings.social_border_color }};
+    color: {{ block.settings.social_icon_color }};
+    text-decoration: none;
+    transition: all 0.2s ease;
+  }
+
+  .ai-blog-header-social-link-{{ ai_gen_id }}:hover {
+    border-color: {{ block.settings.social_hover_border_color }};
+    background-color: {{ block.settings.social_hover_background }};
+  }
+
+  .ai-blog-header-social-link-{{ ai_gen_id }} svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .ai-blog-header-tags-block-{{ ai_gen_id }} {
+    flex: 1 1 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-end;
+  }
+
+  .ai-blog-header-tags-kicker-{{ ai_gen_id }} {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: {{ block.settings.kicker_text_color }};
+    line-height: 1;
+  }
+
+  .ai-blog-header-tags-grid-{{ ai_gen_id }} {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: flex-end;
+  }
+
+  .ai-blog-header-tag-pill-{{ ai_gen_id }} {
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 18px;
+    background-color: {{ block.settings.tag_background }};
+    border: 1px solid {{ block.settings.tag_border_color }};
+    border-radius: 9999px;
+    font-size: 14px;
+    font-weight: 500;
+    color: {{ block.settings.tag_text_color }};
+    text-decoration: none;
+    line-height: 1.4;
+    transition: all 0.2s ease;
+  }
+
+  .ai-blog-header-tag-pill-{{ ai_gen_id }}:hover {
+    background-color: {{ block.settings.tag_hover_background }};
+    border-color: {{ block.settings.tag_hover_border_color }};
+  }
+
+  @media screen and (max-width: 989px) {
+    .ai-blog-header-container-{{ ai_gen_id }} {
+      padding: 0 24px;
+    }
+
+    .ai-blog-header-layout-{{ ai_gen_id }} {
+      flex-direction: column;
+      gap: 40px;
+    }
+
+    .ai-blog-header-author-block-{{ ai_gen_id }} {
+      flex: 1 1 100%;
+    }
+
+    .ai-blog-header-tags-block-{{ ai_gen_id }} {
+      flex: 1 1 100%;
+      align-items: flex-start;
+    }
+
+    .ai-blog-header-tags-grid-{{ ai_gen_id }} {
+      justify-content: flex-start;
+    }
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-blog-header-container-{{ ai_gen_id }} {
+      padding: 0 20px;
+    }
+
+    .ai-blog-header-author-block-{{ ai_gen_id }} {
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .ai-blog-header-avatar-{{ ai_gen_id }} {
+      width: 72px;
+      height: 72px;
+      border-radius: 18px;
+    }
+
+    .ai-blog-header-avatar-initials-{{ ai_gen_id }} {
+      font-size: 24px;
+    }
+
+    .ai-blog-header-author-name-{{ ai_gen_id }} {
+      font-size: 20px;
+    }
+
+    .ai-blog-header-bio-{{ ai_gen_id }} {
+      font-size: 14px;
+    }
+  }
+{% endstyle %}
+
+<div class="ai-blog-header-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-blog-header-container-{{ ai_gen_id }}">
+    <div class="ai-blog-header-layout-{{ ai_gen_id }}">
+      <div class="ai-blog-header-author-block-{{ ai_gen_id }}">
+        <div class="ai-blog-header-avatar-{{ ai_gen_id }}">
+          {% if block.settings.avatar_image != blank %}
+            <img
+              src="{{ block.settings.avatar_image | image_url: width: 160 }}"
+              alt="{{ block.settings.author_name | escape }}"
+              class="ai-blog-header-avatar-image-{{ ai_gen_id }}"
+              width="80"
+              height="80"
+              loading="lazy"
+            >
+          {% else %}
+            <span class="ai-blog-header-avatar-initials-{{ ai_gen_id }}">
+              {{ block.settings.avatar_initials }}
+            </span>
+          {% endif %}
+        </div>
+
+        <div class="ai-blog-header-author-info-{{ ai_gen_id }}">
+          <div class="ai-blog-header-name-row-{{ ai_gen_id }}">
+            <h1 class="ai-blog-header-author-name-{{ ai_gen_id }}">
+              {{ block.settings.author_name }}
+            </h1>
+            {% if block.settings.role_badge != blank %}
+              <span class="ai-blog-header-role-badge-{{ ai_gen_id }}">
+                {{ block.settings.role_badge }}
+              </span>
+            {% endif %}
+          </div>
+
+          {% if block.settings.bio_text != blank %}
+            <p class="ai-blog-header-bio-{{ ai_gen_id }}">
+              {{ block.settings.bio_text }}
+            </p>
+          {% endif %}
+
+          <div class="ai-blog-header-social-links-{{ ai_gen_id }}">
+            {% if block.settings.linkedin_url != blank %}
+              <a
+                href="{{ block.settings.linkedin_url }}"
+                class="ai-blog-header-social-link-{{ ai_gen_id }}"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                  <rect x="2" y="9" width="4" height="12"></rect>
+                  <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+              </a>
+            {% endif %}
+
+            {% if block.settings.twitter_url != blank %}
+              <a
+                href="{{ block.settings.twitter_url }}"
+                class="ai-blog-header-social-link-{{ ai_gen_id }}"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="X (Twitter)"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4l11.733 16h4.267l-11.733 -16z"></path>
+                  <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"></path>
+                </svg>
+              </a>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+
+      <div class="ai-blog-header-tags-block-{{ ai_gen_id }}">
+        {% if block.settings.tags_kicker != blank %}
+          <div class="ai-blog-header-tags-kicker-{{ ai_gen_id }}">
+            {{ block.settings.tags_kicker }}
+          </div>
+        {% endif %}
+
+        <div class="ai-blog-header-tags-grid-{{ ai_gen_id }}">
+          {% for i in (1..8) %}
+            {% liquid
+              assign tag_label_key = 'tag_' | append: i | append: '_label'
+              assign tag_url_key = 'tag_' | append: i | append: '_url'
+              assign tag_label = block.settings[tag_label_key]
+              assign tag_url = block.settings[tag_url_key]
+            %}
+
+            {% if tag_label != blank %}
+              {% if tag_url != blank %}
+                <a
+                  href="{{ tag_url }}"
+                  class="ai-blog-header-tag-pill-{{ ai_gen_id }}"
+                >
+                  {{ tag_label }}
+                </a>
+              {% else %}
+                <span class="ai-blog-header-tag-pill-{{ ai_gen_id }}">
+                  {{ tag_label }}
+                </span>
+              {% endif %}
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "Blog author header",
+  "tag": null,
+  "class": "blog-author-header-section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Section style"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background",
+      "default": "#f8fafc"
+    },
+    {
+      "type": "range",
+      "id": "section_padding_top",
+      "label": "Top padding",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "default": 48
+    },
+    {
+      "type": "range",
+      "id": "section_padding_bottom",
+      "label": "Bottom padding",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "default": 48
+    },
+    {
+      "type": "header",
+      "content": "Author avatar"
+    },
+    {
+      "type": "image_picker",
+      "id": "avatar_image",
+      "label": "Avatar image"
+    },
+    {
+      "type": "text",
+      "id": "avatar_initials",
+      "label": "Avatar initials",
+      "default": "CP"
+    },
+    {
+      "type": "color",
+      "id": "avatar_background_color",
+      "label": "Background",
+      "default": "#0a255c"
+    },
+    {
+      "type": "color",
+      "id": "avatar_text_color",
+      "label": "Text",
+      "default": "#ffffff"
+    },
+    {
+      "type": "header",
+      "content": "Author information"
+    },
+    {
+      "type": "text",
+      "id": "author_name",
+      "label": "Name",
+      "default": "Chad Peshke"
+    },
+    {
+      "type": "color",
+      "id": "name_color",
+      "label": "Name color",
+      "default": "#0a255c"
+    },
+    {
+      "type": "text",
+      "id": "role_badge",
+      "label": "Role badge",
+      "default": "Founder & CEO"
+    },
+    {
+      "type": "color",
+      "id": "role_badge_background",
+      "label": "Badge background",
+      "default": "#e2e8f0"
+    },
+    {
+      "type": "color",
+      "id": "role_badge_text_color",
+      "label": "Badge text",
+      "default": "#475569"
+    },
+    {
+      "type": "textarea",
+      "id": "bio_text",
+      "label": "Biography",
+      "default": "Writing on retail execution, conversion intelligence, decision-making at store level, and why dashboards alone don't move the needle."
+    },
+    {
+      "type": "color",
+      "id": "bio_text_color",
+      "label": "Biography text color",
+      "default": "#475569"
+    },
+    {
+      "type": "header",
+      "content": "Social links"
+    },
+    {
+      "type": "url",
+      "id": "linkedin_url",
+      "label": "LinkedIn URL"
+    },
+    {
+      "type": "url",
+      "id": "twitter_url",
+      "label": "X (Twitter) URL"
+    },
+    {
+      "type": "color",
+      "id": "social_icon_color",
+      "label": "Icon color",
+      "default": "#64748b"
+    },
+    {
+      "type": "color",
+      "id": "social_border_color",
+      "label": "Border color",
+      "default": "#cbd5e1"
+    },
+    {
+      "type": "color",
+      "id": "social_hover_border_color",
+      "label": "Hover border color",
+      "default": "#94a3b8"
+    },
+    {
+      "type": "color",
+      "id": "social_hover_background",
+      "label": "Hover background",
+      "default": "#f1f5f9"
+    },
+    {
+      "type": "header",
+      "content": "Tag cloud"
+    },
+    {
+      "type": "text",
+      "id": "tags_kicker",
+      "label": "Kicker text",
+      "default": "WHAT THIS BLOG IS ABOUT"
+    },
+    {
+      "type": "color",
+      "id": "kicker_text_color",
+      "label": "Kicker color",
+      "default": "#94a3b8"
+    },
+    {
+      "type": "color",
+      "id": "tag_background",
+      "label": "Tag background",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "tag_border_color",
+      "label": "Tag border",
+      "default": "#e2e8f0"
+    },
+    {
+      "type": "color",
+      "id": "tag_text_color",
+      "label": "Tag text",
+      "default": "#334155"
+    },
+    {
+      "type": "color",
+      "id": "tag_hover_background",
+      "label": "Tag hover background",
+      "default": "#f8fafc"
+    },
+    {
+      "type": "color",
+      "id": "tag_hover_border_color",
+      "label": "Tag hover border",
+      "default": "#cbd5e1"
+    },
+    {
+      "type": "header",
+      "content": "Tag 1"
+    },
+    {
+      "type": "text",
+      "id": "tag_1_label",
+      "label": "Label",
+      "default": "Retail execution"
+    },
+    {
+      "type": "url",
+      "id": "tag_1_url",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Tag 2"
+    },
+    {
+      "type": "text",
+      "id": "tag_2_label",
+      "label": "Label",
+      "default": "Conversion"
+    },
+    {
+      "type": "url",
+      "id": "tag_2_url",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Tag 3"
+    },
+    {
+      "type": "text",
+      "id": "tag_3_label",
+      "label": "Label",
+      "default": "Store ops"
+    },
+    {
+      "type": "url",
+      "id": "tag_3_url",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Tag 4"
+    },
+    {
+      "type": "text",
+      "id": "tag_4_label",
+      "label": "Label",
+      "default": "Decision-making"
+    },
+    {
+      "type": "url",
+      "id": "tag_4_url",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Tag 5"
+    },
+    {
+      "type": "text",
+      "id": "tag_5_label",
+      "label": "Label",
+      "default": "Analytics"
+    },
+    {
+      "type": "url",
+      "id": "tag_5_url",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Tag 6"
+    },
+    {
+      "type": "text",
+      "id": "tag_6_label",
+      "label": "Label",
+      "default": "Leadership"
+    },
+    {
+      "type": "url",
+      "id": "tag_6_url",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Tag 7"
+    },
+    {
+      "type": "text",
+      "id": "tag_7_label",
+      "label": "Label"
+    },
+    {
+      "type": "url",
+      "id": "tag_7_url",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Tag 8"
+    },
+    {
+      "type": "text",
+      "id": "tag_8_label",
+      "label": "Label"
+    },
+    {
+      "type": "url",
+      "id": "tag_8_url",
+      "label": "Link"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Blog author header"
+    }
+  ]
+}
 {% endschema %}
