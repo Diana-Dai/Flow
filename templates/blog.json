@@ -17,9 +17,9 @@
           "settings": {
             "ceo_image": "shopify://shop_images/Chad2022.jpg",
             "kicker_text": "FROM THE CEO",
-            "ceo_name": "Chad Peshke",
+            "ceo_name": "Chad Stewart",
             "about_text": "What this blog is about",
-            "about_list": "<ul><li>Retail execution</li><li>Conversion</li><li>Store ops</li><li>Decision quality</li><li>Traffic intelligencet</li></ul>",
+            "about_list": "<ul><li>Retail execution</li><li>Conversion</li><li>Store ops</li><li>Decision quality</li><li>Traffic intelligence</li></ul>",
             "bio_text": "Founder & CEO of Flow. Writing about retail operations, execution infrastructure, and building software for the physical world.",
             "linkedin_url": "",
             "twitter_url": "",
@@ -66,7 +66,7 @@
         "full_width": true,
         "remove_vertical_spacing": false,
         "remove_horizontal_spacing": false,
-        "background": "#FFFFFF",
+        "background": "#ffffff",
         "background_gradient": "",
         "text_color": ""
       }
