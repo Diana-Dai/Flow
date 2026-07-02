@@ -218,7 +218,7 @@
         "about_auto_panel_text": "より良い店舗改善・レポート運用に必要なポイントを確認できます。",
         "about_auto_panel_link_label": "無料チェックリストを見る",
         "about_auto_panel_link": "shopify://pages/sales-cause-checklist",
-        "about_auto_panel_background": "#F7F7F6",
+        "about_auto_panel_background": "#EEF0F1",
         "about_auto_panel_button_background": "#A0B842",
         "opening_from": "bottom",
         "layout": "logo_left_navigation_center",
