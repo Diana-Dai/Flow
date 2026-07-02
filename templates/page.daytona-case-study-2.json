@@ -1,0 +1,1590 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "1780026169d49df455": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_952f74e_qYrbiY": {
+          "type": "ai_gen_block_952f74e",
+          "settings": {
+            "max_width": 1600,
+            "section_padding_mobile": 40,
+            "section_padding_desktop": 40,
+            "brand_image": "shopify://shop_images/Daytona_Logo_ff3ac14a-5b76-4d13-823d-2d797c6a52e2.png",
+            "brand_text": "Brand name",
+            "show_tag": true,
+            "tag_text": "導入事例",
+            "show_icon": false,
+            "company_name": "株式会社デイトナ・インターナショナル様",
+            "company_metadata": "FREAK’S STORE / Firsthand / Aresense / 2G ほか",
+            "headline": "店舗データを、売上改善と人材育成の力に変える",
+            "description": "株式会社デイトナ・インターナショナル様は、Flowを活用して来店数・店前通行量・買い上げ率などの店舗データを可視化。店舗スタッフが根拠を持って考え、行動し、改善できる体制を築かれました。",
+            "show_metric_1": true,
+            "metric_1_value": "25%",
+            "metric_1_label": "売上高 前年同期比",
+            "show_metric_2": true,
+            "metric_2_value": "6.3%",
+            "metric_2_label": "来店者数 増加",
+            "show_metric_3": true,
+            "metric_3_value": "約50店舗",
+            "metric_3_label": "導入拡大方針",
+            "overview_title": "導入概要",
+            "show_info_1": true,
+            "info_1_label": "業種",
+            "info_1_value": "ファッション・ライフスタイル小売",
+            "show_info_2": true,
+            "info_2_label": "導入店舗数",
+            "info_2_value": "全国約50店舗へ拡大方針",
+            "show_info_3": true,
+            "info_3_label": "導入開始時期",
+            "info_3_value": "2020年より導入開始",
+            "show_info_4": true,
+            "info_4_label": "主な活用用途",
+            "info_4_value": "来店計測・購買率・人材育成",
+            "background_color": "#ffffff",
+            "heading_color": "#1a2b4a",
+            "body_text_color": "#5a6c7d",
+            "meta_text_color": "#8b95a1",
+            "metric_color": "#a0b842",
+            "tag_background": "#e5e7eb",
+            "tag_text_color": "#6b7280",
+            "icon_background": "#1a2b4a",
+            "icon_color": "#ffffff",
+            "card_background": "#ffffff",
+            "card_border": "#e5e7eb",
+            "metric_card_background": "#ffffff",
+            "metric_card_border": "#e5e7eb",
+            "row_background": "#f9fafb",
+            "card_border_radius": 12,
+            "card_shadow_x": 0,
+            "card_shadow_y": 4,
+            "card_shadow_blur": 15,
+            "card_shadow_opacity": 0.1
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_952f74e_qYrbiY"
+      ],
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "multi_column_hNQjmA": {
+      "type": "multi-column",
+      "blocks": {
+        "item_HE4R79": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#ffffff",
+            "text_color": "",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "+25%",
+            "heading_tag": "h1",
+            "subheading": "<p>売上高</p>",
+            "content": "<p><strong>前年同期比 増加</strong></p><p>来店数や購買率をデータで把握し、店舗ごとの改善点を確認しながら対策を進めることで、導入店舗の売上向上につながりました。</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_zKkNdD": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#ffffff",
+            "text_color": "",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "+6.3%",
+            "heading_tag": "h1",
+            "subheading": "<p>来店者数</p>",
+            "content": "<p><strong>来店人数増加</strong></p><p>Flowにより、これまで手動計測や推定に頼っていた来店数を正確に把握。店頭施策や売場改善の効果を確認しやすくなりました。</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_gkLzy8": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#ffffff",
+            "text_color": "",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "+5.3pt",
+            "heading_tag": "h1",
+            "subheading": "<p>買い上げ率</p>",
+            "content": "<p><strong>19.9%から25.2%へ改善</strong></p><p>来店数と売上データを組み合わせることで、売上課題が来店数にあるのか、購買率にあるのかを判断しやすくなりました。</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_er7th9": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#f1f5ef",
+            "text_color": "#1a1a1a",
+            "border_color": "#a0b842",
+            "show_controls": false,
+            "column_size": "1",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<p><strong>注記：</strong>上記はデイトナ様における導入・運用結果です。成果は店舗環境、運用方法、市場条件、データ活用の定着度により異なります。</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_HE4R79",
+        "item_zKkNdD",
+        "item_gkLzy8",
+        "item_er7th9"
+      ],
+      "custom_css": [
+        ".prose p {font-size: 0.9rem;}",
+        ".multi-column__item .h1 {color: #a0b842 !important;}",
+        ".multi-column__item:last-child {gap: 0;}"
+      ],
+      "name": "Multi-column",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": true,
+        "gap": "small",
+        "text_alignment": "center",
+        "subheading": "検証結果",
+        "title": "成果の概要",
+        "content": "<p>Flow導入後、デイトナ様では来店数と売上の関係をより正確に把握できるようになり、店舗施策の検証と改善にデータを活用する体制が進みました。<br/>6か月間の検証では、導入店舗において売上高、来店者数、買い上げ率の改善が確認されています。</p>",
+        "background": "#f9fafb",
+        "background_gradient": "",
+        "text_color": "",
+        "subheading_background_color": "",
+        "subheading_text_color": ""
+      }
+    },
+    "multi_column_TV4htr": {
+      "type": "multi-column",
+      "blocks": {
+        "item_q9tYa7": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#f2f2f2",
+            "text_color": "#11243e",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "2",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h3>事業モデル</h3><ul><li>FREAK’S STOREを中心とした複数ブランド展開</li><li>ファッション・ライフスタイル領域での事業展開</li><li>実店舗を中心とした顧客接点</li><li>店舗スタッフによる接客・売場づくりを重視</li></ul>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_MxxBAU": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#a0b842",
+            "text_color": "#ffffff",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "2",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h3>なぜ可視化が重要だったのか</h3><p>売上結果だけでは、改善すべきポイントが来店数にあるのか、購買率にあるのか、店頭施策にあるのかを判断しきれません。<br/>デイトナ様では、営業計数を重視する文化がすでにあったからこそ、来店数・店前通行量・購買率をつなげて把握することが、より具体的な売上対策と人材育成につながりました。</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_q9tYa7",
+        "item_MxxBAU"
+      ],
+      "name": "Multi-column",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "start",
+        "subheading": "顧客背景",
+        "title": "デイトナ様について",
+        "content": "<p>株式会社デイトナ・インターナショナル様は、「FREAK’S STORE」をはじめ、「Firsthand」「Aresense」「2G」などを展開するファッション・ライフスタイル企業です。</p><p>同社では以前から、買上者数、購買率、セット率、客単価などの営業計数を重視し、店舗売上の改善に取り組まれていました。一方で、その母数となる来店数や店前通行量については、手動計測や売上からの逆算に頼る部分があり、店頭施策や売場改善をデータで検証しにくい状況がありました。</p><p>コロナ禍以降、より効率的で戦略的な店舗運営が求められる中、Flowは来店数の自動計測だけでなく、店舗スタッフが根拠を持って考え、行動するための仕組みとして導入されました。</p>",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "",
+        "subheading_background_color": "",
+        "subheading_text_color": ""
+      }
+    },
+    "multi_column_qin4Pg": {
+      "type": "multi-column",
+      "blocks": {
+        "item_naEBJq": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#ffffff",
+            "text_color": "",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "2",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h4>正確な来店数を把握しにくい</h4><p>来店数は店舗スタッフによる手動計測や、売上からの逆算に頼る部分がありました。特に大型店では手動計測の負担が大きく、日々の店舗運営に活用できる精度で把握することが難しい状況でした。</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_ity9Ac": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#ffffff",
+            "text_color": "",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "2",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h4>店前通行量を把握しにくい</h4><p>店舗前を通る人数が見えないため、来店数の増減が商業施設全体の人流によるものなのか、自店の店頭施策によるものなのかを判断しにくい状態でした。</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_DM9ThQ": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#ffffff",
+            "text_color": "",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "2",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h4>店頭施策を検証しにくい</h4><p>声出し、ファサード、店頭展示などの来店促進施策は行われていましたが、効果をデータで確認する仕組みがなく、売上結果やスタッフの肌感覚に頼る部分がありました。</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_9PEAUU": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#ffffff",
+            "text_color": "",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "2",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h4>購買率の要因を把握しにくい</h4><p>売上や買上者数は確認できても、その母数となる来店数が正確でなければ、課題が来店数にあるのか、購買率にあるのかを判断しにくくなります。改善すべきポイントを明確にするには、来店前後のデータをつなげる必要がありました。</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_PADbQH": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#ffffff",
+            "text_color": "",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "2",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h4>スタッフが根拠を持って動きにくい</h4><p>店舗スタッフは日々の売上予算に対する責任感を持っていましたが、手元にあるデータが限られていたため、次に何を改善すべきかを判断しにくい場面がありました。</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_jQjKrF": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#ffffff",
+            "text_color": "",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "2",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h4>改善サイクルに時間がかかる</h4><p>売上結果を見てから振り返るだけでは、週の途中で施策を変える判断が遅れます。店舗状況を早く把握し、必要に応じて対策を見直すためのデータが必要でした。</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_naEBJq",
+        "item_ity9Ac",
+        "item_DM9ThQ",
+        "item_9PEAUU",
+        "item_PADbQH",
+        "item_jQjKrF"
+      ],
+      "name": "Multi-column",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "start",
+        "subheading": "導入前の課題",
+        "title": "Flow導入前の課題",
+        "content": "<p>デイトナ様では以前から、買上者数、購買率、セット率、客単価などの営業計数を重視し、店舗売上の改善に取り組まれていました。一方で、来店数や店前通行量を正確に把握しにくく、店頭施策や売場改善をデータで検証しづらい状況がありました。</p>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "subheading_background_color": "",
+        "subheading_text_color": ""
+      }
+    },
+    "multi_column_PBB8dw": {
+      "type": "multi-column",
+      "blocks": {
+        "item_xB9zVU": {
+          "type": "item",
+          "settings": {
+            "icon": "check",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#a0b842",
+            "icon_color": "",
+            "background_color": "#f9fafb",
+            "text_color": "",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "2",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h5>コストと運用価値のバランス</h5><p>来店数計測の自動化は以前から検討されていましたが、導入コストが課題でした。Flowは、必要な店舗データを取得しながら、実運用に合うコストバランスが評価されました。</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_T6XWXH": {
+          "type": "item",
+          "settings": {
+            "icon": "check",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#a0b842",
+            "icon_color": "",
+            "background_color": "#f9fafb",
+            "text_color": "",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "2",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h5>レポート画面の見やすさ</h5><p>店舗データは、取得するだけでは活用につながりません。Flowは、来店数や売上に関わるデータを確認しやすく、店舗側でも理解しやすい画面設計が導入判断のポイントになりました。</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_UKaPVf": {
+          "type": "item",
+          "settings": {
+            "icon": "check",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#a0b842",
+            "icon_color": "",
+            "background_color": "#f9fafb",
+            "text_color": "",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "2",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h5>来店数の自動計測</h5><p>店舗スタッフによる手動計測や売上からの逆算では、正確な来店数を把握しにくい課題がありました。Flowにより、来店数を自動で把握できることが導入目的のひとつでした。</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_4werVM": {
+          "type": "item",
+          "disabled": true,
+          "settings": {
+            "icon": "check",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#a0b842",
+            "icon_color": "",
+            "background_color": "#f9fafb",
+            "text_color": "",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h5>店舗施策の検証に使える</h5><p>Flowは、来店数だけでなく店前通行量や購買率と組み合わせて確認できるため、店頭施策や売場改善の効果を検証しやすくなります。</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_phFqrT": {
+          "type": "item",
+          "settings": {
+            "icon": "check",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#a0b842",
+            "icon_color": "",
+            "background_color": "#f9fafb",
+            "text_color": "",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "2",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h5>売上対策につながるデータ</h5><p>来店数と売上データを組み合わせることで、売上課題が来店数にあるのか、購買率にあるのかを判断しやすくなります。店舗ごとの改善点を具体化できる点も評価されました。</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_8Fhh3H": {
+          "type": "item",
+          "disabled": true,
+          "settings": {
+            "icon": "check",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#a0b842",
+            "icon_color": "",
+            "background_color": "#f9fafb",
+            "text_color": "",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h5>人材育成への活用可能性</h5><p>導入後、Flowは単なる人流計測ツールではなく、店舗スタッフがデータを見て考え、対策を立てるための教育材料としても活用されるようになりました。</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_xB9zVU",
+        "item_T6XWXH",
+        "item_UKaPVf",
+        "item_4werVM",
+        "item_phFqrT",
+        "item_8Fhh3H"
+      ],
+      "custom_css": [
+        ".icon_container {text-align: center;}",
+        ".prose p {font-size: 0.9rem;}",
+        ".multi-column__item .h1 {color: #a0b842 !important;}"
+      ],
+      "name": "Multi-column",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "center",
+        "subheading": "選定理由",
+        "title": "Flowが選ばれた理由",
+        "content": "<p>デイトナ様では、効率的で戦略的な店舗運営を進めるため、複数の計測ツールを比較検討。<br/>コスト面とレポート画面の見やすさを評価し、Flowの導入を決定されました。</p>",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "",
+        "subheading_background_color": "",
+        "subheading_text_color": ""
+      }
+    },
+    "multi_column_bJtgmc": {
+      "type": "multi-column",
+      "blocks": {
+        "item_mRFw4X": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-camera",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#a0b842",
+            "icon_color": "#ffffff",
+            "background_color": "#ffffff",
+            "text_color": "",
+            "border_color": "#a0b842",
+            "show_controls": false,
+            "column_size": "2",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h5>高精度3D来店計測</h5><p>店舗入口に設置した高精度3Dセンサーにより、来店数を自動計測。手動カウントや売上からの逆算に頼らず、店舗ごとの来店状況を正確に把握できるようにしました。</p><p>✅ 来店状況を正確に把握</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_r96Tt7": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-percent",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#a0b842",
+            "icon_color": "#ffffff",
+            "background_color": "#ffffff",
+            "text_color": "",
+            "border_color": "#a0b842",
+            "show_controls": false,
+            "column_size": "2",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h5>店前通行量・来店率分析</h5><p>店頭に設置したカメラで店舗前の通行量を計測し、来店数との関係から来店率を算出。商業施設全体の人流と、自店への入店状況を比較できるようにしました。</p><p>✅ 店頭施策の効果を検証</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_KQtcVQ": {
+          "type": "item",
+          "settings": {
+            "icon": "people",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#a0b842",
+            "icon_color": "#ffffff",
+            "background_color": "#ffffff",
+            "text_color": "",
+            "border_color": "#a0b842",
+            "show_controls": false,
+            "column_size": "2",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h5>来店属性の把握</h5><p>入口で取得した来店データから、性別や年代などの来店属性を把握。店舗ごとの顧客傾向を理解し、売場施策の検討に活用できるようにしました。</p><p>✅ 顧客傾向を売場改善に活用</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_jHGFzb": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-file",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#a0b842",
+            "icon_color": "#f9fafb",
+            "background_color": "#ffffff",
+            "text_color": "",
+            "border_color": "#a0b842",
+            "show_controls": false,
+            "column_size": "2",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h5>POSデータ連携</h5><p>売上データと来店データを連携し、購買率や売上変化の背景を分析。売上課題が来店数にあるのか、購買率にあるのかを判断しやすくしました。</p><p>✅ 売上課題の要因を分析</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_KeN4HJ": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-target",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#a0b842",
+            "icon_color": "#f9fafb",
+            "background_color": "#ffffff",
+            "text_color": "",
+            "border_color": "#a0b842",
+            "show_controls": false,
+            "column_size": "2",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h5>ダッシュボード・レポート</h5><p>Flowのダッシュボードやレポートにより、店舗データを確認しやすい形で可視化。店舗スタッフ、エリアマネージャー、本部が同じデータをもとに状況を確認できるようにしました。</p><p>✅ 同じデータで店舗状況を共有</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_kGDkaE": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-customer-support",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#a0b842",
+            "icon_color": "#ffffff",
+            "background_color": "#ffffff",
+            "text_color": "",
+            "border_color": "#a0b842",
+            "show_controls": false,
+            "column_size": "2",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h5>活用トレーニング・運用支援</h5><p>導入後すぐに店舗改善へ活用できるよう、データの見方や改善ポイントの考え方を支援。店舗スタッフがデータをもとに対策を立て、実行できる運用づくりをサポートしました。</p><p>✅ データを改善行動に定着</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_mRFw4X",
+        "item_r96Tt7",
+        "item_KQtcVQ",
+        "item_jHGFzb",
+        "item_KeN4HJ",
+        "item_kGDkaE"
+      ],
+      "custom_css": [],
+      "name": "Multi-column",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "start",
+        "subheading": "導入内容",
+        "title": "店舗改善を支えるFlowの導入機能",
+        "content": "<p>デイトナ様では、来店数・店前通行量・来店属性・売上情報を組み合わせ、店舗ごとの状況を正確に把握し、改善アクションにつなげる環境を整備されました。</p>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "subheading_background_color": "",
+        "subheading_text_color": ""
+      }
+    },
+    "multi_column_TbzGnm": {
+      "type": "multi-column",
+      "blocks": {
+        "item_qkyprL": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#3e4650",
+            "text_color": "",
+            "border_color": "#696969",
+            "show_controls": false,
+            "column_size": "1",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h5>週次会議で店舗データを確認</h5><p>Flow運用担当者、導入店舗スタッフ、エリアマネージャーが毎週会議を実施。売上改善のポイントが来店数にあるのか、買い上げ率にあるのかをデータから確認し、店舗ごとの対策を検討しました。</p><p>✅ データをもとに改善点を明確化</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_YXkcqb": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#3e4650",
+            "text_color": "",
+            "border_color": "#696969",
+            "show_controls": false,
+            "column_size": "1",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h5>週の途中で対策を見直し</h5><p>従来は週単位で振り返ることが多かった店舗施策も、Flowのデータにより、週の途中で状況を確認し、必要に応じて対策を柔軟に変更できるようになりました。</p><p>✅ 改善サイクルを高速化</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_CtDYAK": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#3e4650",
+            "text_color": "",
+            "border_color": "#696969",
+            "show_controls": false,
+            "column_size": "1",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h5>店頭施策の効果を検証</h5><p>店前通行量と来店数を確認することで、声出し、ファサード、店頭展示などの施策が来店につながっているかを検証しやすくなりました。</p><p>✅ 感覚ではなくデータで判断</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_Wgc6iW": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#3e4650",
+            "text_color": "",
+            "border_color": "#696969",
+            "show_controls": false,
+            "column_size": "1",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h5>売上課題の要因を把握</h5><p>売上が伸び悩んだときに、課題が来店数にあるのか、買い上げ率にあるのかを切り分けやすくなりました。店舗ごとに次の改善アクションを考えやすくなりました。</p><p>✅ 次に取るべき行動を判断</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_RKiW9c": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#3e4650",
+            "text_color": "",
+            "border_color": "#696969",
+            "show_controls": false,
+            "column_size": "1",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h5>スタッフの考える力を育成</h5><p>データを分析し、対策を立て、実行し、結果を検証する流れが、スタッフの考える力と実行力を高める機会になりました。Flowは、店舗スタッフの成長を支えるツールとしても活用されました。</p><p>✅ データを使える人材を育成</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_qkyprL",
+        "item_YXkcqb",
+        "item_CtDYAK",
+        "item_Wgc6iW",
+        "item_RKiW9c"
+      ],
+      "custom_css": [
+        ".icon_container {text-align: center;}",
+        ".prose p {font-size: 0.9rem;}",
+        ".multi-column__item {gap: 0;}",
+        ".multi-column {gap: 2rem;}"
+      ],
+      "name": "Multi-column",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "small",
+        "text_alignment": "start",
+        "subheading": "行動変化",
+        "title": "Flowをどのように活用したか",
+        "content": "<p>Flowの導入効果は、データを取得したことだけではありません。デイトナ様では、Flowのデータを店舗会議や改善活動に組み込み、店舗スタッフが根拠を持って考え、行動できる運用へとつなげました。</p>",
+        "background": "#11243e",
+        "background_gradient": "",
+        "text_color": "#ffffff",
+        "subheading_background_color": "",
+        "subheading_text_color": ""
+      }
+    },
+    "178003042955718f5f": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_11d4177_K3FTVb": {
+          "type": "ai_gen_block_11d4177",
+          "settings": {
+            "section_label": "測定結果",
+            "section_headline": "確認された成果",
+            "section_description": "Flow導入後の6か月間の検証では、導入店舗において売上高、来店数、買い上げ率の改善が確認されました。さらに、店舗スタッフがデータをもとに対策を考え、成長する運用にもつながっています。",
+            "card_1_enabled": true,
+            "icon_1": "up",
+            "icon_width_1": 32,
+            "icon_background_type_1": "square",
+            "icon_background_1": "",
+            "icon_color_1": "#a0b842",
+            "card_1_title": "売上高",
+            "card_1_subtitle": "前年同期比",
+            "card_1_metric": "+25%",
+            "card_1_description": "Flowのデータを活用し、来店数や買い上げ率を確認しながら店舗ごとの改善点を明確化。導入店舗では、6か月間の検証で売上高が前年同期比25%増加しました。",
+            "card_1_methodology_label": "確認方法：",
+            "card_1_methodology": "導入店舗における6か月間の検証結果。",
+            "card_2_enabled": true,
+            "icon_2": "people",
+            "icon_width_2": 32,
+            "icon_background_type_2": "square",
+            "icon_background_2": "",
+            "icon_color_2": "#a0b842",
+            "card_2_title": "来店数",
+            "card_2_subtitle": "来店者数増加",
+            "card_2_metric": "+6.3%",
+            "card_2_description": "手動計測や推定に頼っていた来店数をFlowで正確に把握。店頭施策や売場改善の効果を確認しやすくなり、導入店舗では来店数が6.3%増加しました。",
+            "card_2_methodology_label": "確認方法：",
+            "card_2_methodology": "Flowによる来店計測データをもとに検証。",
+            "card_3_enabled": true,
+            "icon_3": "picto-earth",
+            "icon_width_3": 32,
+            "icon_background_type_3": "square",
+            "icon_background_3": "",
+            "icon_color_3": "#a0b842",
+            "card_3_title": "買い上げ率",
+            "card_3_subtitle": "19.9%から25.2%へ改善",
+            "card_3_metric": "+5.3pt",
+            "card_3_description": "来店数と売上データを組み合わせることで、売上課題が来店数にあるのか、買い上げ率にあるのかを判断しやすくなりました。",
+            "card_3_methodology_label": "確認方法：",
+            "card_3_methodology": "買い上げ率の推移を導入前後で比較。",
+            "card_4_enabled": true,
+            "icon_4": "picto-pin",
+            "icon_width_4": 32,
+            "icon_background_type_4": "square",
+            "icon_background_4": "",
+            "icon_color_4": "#a0b842",
+            "card_4_title": "段階的に展開を継続",
+            "card_4_subtitle": "段階的な導入拡大方針",
+            "card_4_metric": "約50店舗へ",
+            "card_4_description": "初期導入店舗でFlowの価値を確認した後、デイトナ様は約50店舗への展開方針を公表されました。導入は一括展開ではなく、新店オープンや店舗改装のタイミングに合わせて段階的に進められています。",
+            "card_4_methodology_label": "確認方法：",
+            "card_4_methodology": "公表された展開方針に基づき確認。",
+            "show_note": true,
+            "note_title": "成果に関する注記",
+            "note_text": "上記はデイトナ様における導入・運用結果です。成果は店舗環境、運用方法、市場条件、既存の店舗運営体制、データ活用の定着度により異なります。",
+            "container_max_width": 1100,
+            "desktop_width_percent": 100,
+            "section_background": "rgba(0,0,0,0)",
+            "card_background": "#ffffff",
+            "card_border_color": "#e5e5e5",
+            "headline_color": "#1a2b4a",
+            "label_color": "#6b7280",
+            "text_color": "#4b5563",
+            "subtitle_color": "#6b7280",
+            "metric_color": "#a0b842",
+            "icon_background": "#f3f4f6",
+            "icon_color": "#a0b842",
+            "methodology_background": "#f9fafb",
+            "note_background": "#f1f5ef",
+            "note_border_color": "#f1f5ef",
+            "note_icon_color": "#a0b842",
+            "headline_size": 42,
+            "description_size": 18,
+            "card_subtitle_size": 14,
+            "metric_size": 48,
+            "body_text_size": 16,
+            "methodology_text_size": 14,
+            "note_title_size": 18,
+            "card_border_radius": 12,
+            "icon_border_radius": 8,
+            "methodology_border_radius": 8,
+            "card_shadow_opacity": 5
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_11d4177_K3FTVb"
+      ],
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "section-15": {
+      "type": "feature-chart",
+      "blocks": {
+        "block-1": {
+          "type": "headings",
+          "settings": {
+            "heading_1": "主な提供価値",
+            "heading_2": "コアの設計思想",
+            "heading_3": "来店データの位置づけ",
+            "heading_4": "データの即時性",
+            "heading_5": "店舗での使いやすさ",
+            "heading_6": "判断へのつながり",
+            "heading_7": "店舗ごとの判断差",
+            "heading_8": "本部と店舗の連携",
+            "heading_9": "運用負荷",
+            "heading_10": "拡張性",
+            "heading_11": "",
+            "heading_12": "",
+            "heading_13": "",
+            "heading_14": "",
+            "heading_15": "",
+            "heading_16": "",
+            "heading_17": "",
+            "heading_18": "",
+            "heading_19": "",
+            "heading_20": ""
+          }
+        },
+        "block-2": {
+          "type": "values",
+          "settings": {
+            "product": "",
+            "value_1": "<p>40mm Beryllium</p>",
+            "value_2": "<p>245g</p>",
+            "value_3": "<p>165mm x 190mm x 66mm</p>",
+            "value_4": "<p>24 hours</p>",
+            "value_5": "",
+            "value_6": "",
+            "value_7": "",
+            "value_8": "",
+            "value_9": "",
+            "value_10": "",
+            "value_11": "",
+            "value_12": "",
+            "value_13": "",
+            "value_14": "",
+            "value_15": "",
+            "value_16": "",
+            "value_17": "",
+            "value_18": "",
+            "value_19": "",
+            "value_20": "",
+            "view_button_background": "",
+            "view_button_text_color": ""
+          }
+        },
+        "block-3": {
+          "type": "values",
+          "settings": {
+            "product": "",
+            "value_1": "<p>40mm Beryllium</p>",
+            "value_2": "<p>205g (On-Ear), 239g (Over-Ear)</p>",
+            "value_3": "<p>190mm x 155mm x 34mm (On-Ear), 200mm x 165mm x 40mm (Over-Ear)</p>",
+            "value_4": "<p>16 hours</p>",
+            "value_5": "",
+            "value_6": "",
+            "value_7": "",
+            "value_8": "",
+            "value_9": "",
+            "value_10": "",
+            "value_11": "",
+            "value_12": "",
+            "value_13": "",
+            "value_14": "",
+            "value_15": "",
+            "value_16": "",
+            "value_17": "",
+            "value_18": "",
+            "value_19": "",
+            "value_20": "",
+            "view_button_background": "",
+            "view_button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "Why Dashboards Fail",
+        "content": "<p>Traditional analytics show you the problem. Flow solves it.</p>",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "center",
+        "max_rows": 5,
+        "view_all_text": "View all",
+        "view_less_text": "View less",
+        "view_product": "View",
+        "viewing_product": "",
+        "show_product_swatch": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "chart_background": "",
+        "chart_text_color": "",
+        "chart_true_false_color": ""
+      }
+    },
+    "multi_column_AirP37": {
+      "type": "multi-column",
+      "blocks": {
+        "item_tqXUb9": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#f9fafb",
+            "text_color": "",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h5><strong>根拠ある行動が増えた</strong></h5><p>これまで感覚で行っていた施策も、来店数や売上データを確認しながら判断できるようになりました。店舗スタッフが納得感を持って行動しやすくなりました。</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_LLqU6x": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#f9fafb",
+            "text_color": "",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h5><strong>店舗の前向きな意識変化</strong></h5><p>売上未達の日でも、来店数を見ることで「あと何人に接客すればよいか」という具体的な行動目標に変換できるようになりました。データが店舗の不安を減らし、前向きな行動につながりました。</p><h2></h2>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_UaKx78": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#f9fafb",
+            "text_color": "",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h5><strong>改善サイクルが速くなった</strong></h5><p>Flowのデータをもとに、週次会議で状況を確認し、必要に応じて週の途中でも対策を見直せるようになりました。振り返りだけでなく、次の行動につなげやすくなりました。</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_Vmc6kG": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#f9fafb",
+            "text_color": "",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h5><strong>店舗内の連携が進んだ</strong></h5><p>メンズ・レディスなど売場ごとに分かれていた視点も、店舗全体のデータを見ることで相互理解が進みました。売場を越えて協力しやすい体制づくりにもつながりました。</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_trQR3h": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#f9fafb",
+            "text_color": "",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h5><strong>データ活用が人材育成に貢献</strong></h5><p>データを分析し、対策を立て、実行し、結果を確認する流れが、スタッフの考える力と実行力を高める機会になりました。データを活用できる人材の育成にもつながっています。</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_LkGEYj": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#f9fafb",
+            "text_color": "",
+            "border_color": "#f9fafb",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h5><strong>部門間の会話が具体化</strong></h5><p>Flowのデータを共通の判断材料として使うことで、店舗スタッフ、エリアマネージャー、運用担当者が同じ前提で改善点を話し合いやすくなりました。</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_tqXUb9",
+        "item_LLqU6x",
+        "item_UaKx78",
+        "item_Vmc6kG",
+        "item_trQR3h",
+        "item_LkGEYj"
+      ],
+      "name": "Multi-column",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "start",
+        "subheading": "組織変化",
+        "title": "店舗運営にもたらした変化",
+        "content": "<p>数値面の改善だけでなく、Flowは店舗スタッフの考え方や行動にも変化を生みました。データをもとに店舗状況を確認し、対策を考え、実行する流れが、現場の納得感と成長につながっています。</p>",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "",
+        "subheading_background_color": "",
+        "subheading_text_color": ""
+      }
+    },
+    "multi_column_ykywta": {
+      "type": "multi-column",
+      "blocks": {
+        "item_fRf33R": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-pin",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#a0b842",
+            "icon_color": "#ffffff",
+            "background_color": "#f9fafb",
+            "text_color": "#11243e",
+            "border_color": "#a0b842",
+            "show_controls": false,
+            "column_size": "2",
+            "title": "",
+            "heading_tag": "h2",
+            "subheading": "",
+            "content": "<h5>店舗展開の継続</h5><p>初期導入店舗での成果を踏まえ、デイトナ様はFlowの展開拡大方針を公表されています。導入は、新店オープンや店舗改装のタイミングに合わせて段階的に進められています。</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_zGNUAp": {
+          "type": "item",
+          "settings": {
+            "icon": "up",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#a0b842",
+            "icon_color": "#f9fafb",
+            "background_color": "#ffffff",
+            "text_color": "#11243e",
+            "border_color": "#a0b842",
+            "show_controls": false,
+            "column_size": "2",
+            "title": "",
+            "heading_tag": "h2",
+            "subheading": "",
+            "content": "<h5>売上対策への活用</h5><p>来店数、店前通行量、買い上げ率を組み合わせることで、店舗ごとの改善ポイントをより具体的に把握。売上改善に向けた対策検討に活用されています。</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_Vx6gWn": {
+          "type": "item",
+          "settings": {
+            "icon": "people",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#a0b842",
+            "icon_color": "#ffffff",
+            "background_color": "#f9fafb",
+            "text_color": "#11243e",
+            "border_color": "#a0b842",
+            "show_controls": false,
+            "column_size": "2",
+            "title": "",
+            "heading_tag": "h2",
+            "subheading": "",
+            "content": "<h5>人材育成への活用</h5><p>データを見て、考え、対策を立て、結果を検証する流れが、店舗スタッフの成長機会になっています。Flowは、データを使える人材を育てるための材料としても活用されています。</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_XQiyjf": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-target",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#a0b842",
+            "icon_color": "#ffffff",
+            "background_color": "#ffffff",
+            "text_color": "#11243e",
+            "border_color": "#a0b842",
+            "show_controls": false,
+            "column_size": "2",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h5>店舗間の学びの共有</h5><p>店舗ごとの状況を共通のデータで確認することで、うまくいった施策や改善ポイントを他店舗にも展開しやすくなります。店舗単位の学びを、組織全体の運用改善につなげる土台になります。</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_fRf33R",
+        "item_zGNUAp",
+        "item_Vx6gWn",
+        "item_XQiyjf"
+      ],
+      "custom_css": [
+        ".prose p {font-size: 0.9rem;}",
+        ".multi-column__item:first-child .h1 {color: #a0b842 !important;}",
+        ".multi-column__item:last-child .h1 {color: #a0b842 !important;}"
+      ],
+      "name": "Multi-column",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "start",
+        "subheading": "今後の活用",
+        "title": "Flow活用の広がり",
+        "content": "<p>デイトナ様では、Flowを来店数計測だけのツールとしてではなく、店舗運営と人材育成を支えるデータ基盤として活用されています。今後も、店舗ごとの状況把握、売上対策、スタッフ育成、店舗間の学びの共有に向けて、段階的に活用の幅を広げていくことが期待されます。</p>",
+        "background": "#f2f2f2",
+        "background_gradient": "",
+        "text_color": "",
+        "subheading_background_color": "",
+        "subheading_text_color": ""
+      }
+    },
+    "rich_text_6VmVgb": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_AK7Cjn": {
+          "type": "subheading",
+          "settings": {
+            "text": "次のステップ",
+            "icon": "none"
+          }
+        },
+        "heading_YXhiR8": {
+          "type": "heading",
+          "settings": {
+            "text": "店舗データで、改善の打ち手を見つけませんか？",
+            "heading_tag": "h1",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_qzAkak": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Flowは、来店数・店前通行量・購買率・売上情報をつなげ、店舗ごとの改善ポイントを見える化します。まずは、自社の店舗でどのようなデータを取得し、どのように活用できるかをご相談ください。</p>"
+          }
+        },
+        "button_AVKAbi": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "style": "outline",
+            "size": "base",
+            "text": "Contact Solutions Architect",
+            "url": "#",
+            "background": "",
+            "text_color": "#11243e"
+          }
+        },
+        "buttons_jaKCGH": {
+          "type": "buttons",
+          "settings": {
+            "style_1": "fill",
+            "size_1": "xl",
+            "text_1": "無料デモを予約する →",
+            "url_1": "#",
+            "background_1": "#a0b842",
+            "text_color_1": "#ffffff",
+            "style_2": "fill",
+            "size_2": "xl",
+            "text_2": "プラットフォームを見る →",
+            "url_2": "#",
+            "background_2": "#ffffff",
+            "text_color_2": "#11243e"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_AK7Cjn",
+        "heading_YXhiR8",
+        "richtext_qzAkak",
+        "button_AVKAbi",
+        "buttons_jaKCGH"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "#0e366a",
+        "background_gradient": "",
+        "text_color": "#ffffff"
+      }
+    },
+    "multi_column_UExWWX": {
+      "type": "multi-column",
+      "blocks": {
+        "item_kHMBXM": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "image": "shopify://shop_images/unnamed.png",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "#f9fafb",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "高精度店内計測",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<p>高精度な来店計測と顧客行動分析。</p>",
+            "link_url": "",
+            "link_text": "詳しく見る →",
+            "link_style": "link"
+          }
+        },
+        "item_jzqLHt": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "image": "shopify://shop_images/1_1b5442dc-a679-4a23-a10f-8f39d2cc4234.png",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "#f9fafb",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "FIDA分析基盤",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<p>来店・売上・人員配置を統合分析。</p>",
+            "link_url": "#",
+            "link_text": "詳しく見る →",
+            "link_style": "link"
+          }
+        },
+        "item_rn7myV": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "image": "shopify://shop_images/3_05197ad8-294f-4cc5-9d73-b73021906f0a.png",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "#f9fafb",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "現場意思決定実行支援",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<p>現場実行につながる推奨アクション。</p><h3></h3>",
+            "link_url": "#",
+            "link_text": "詳しく見る →",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_kHMBXM",
+        "item_jzqLHt",
+        "item_rn7myV"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".multi-column__item {padding: 0;}"
+      ],
+      "name": "Multi-column",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "start",
+        "subheading": "プラットフォームを見る",
+        "title": "店舗運営のすべてのレイヤーを統合。",
+        "content": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "subheading_background_color": "",
+        "subheading_text_color": ""
+      }
+    }
+  },
+  "order": [
+    "1780026169d49df455",
+    "multi_column_hNQjmA",
+    "multi_column_TV4htr",
+    "multi_column_qin4Pg",
+    "multi_column_PBB8dw",
+    "multi_column_bJtgmc",
+    "multi_column_TbzGnm",
+    "178003042955718f5f",
+    "section-15",
+    "multi_column_AirP37",
+    "multi_column_ykywta",
+    "rich_text_6VmVgb",
+    "multi_column_UExWWX"
+  ]
+}
