@@ -22,7 +22,7 @@
           "type": "heading",
           "settings": {
             "text": "来店数から、売上機会を見える化。",
-            "heading_tag": "h0"
+            "heading_tag": "h1"
           }
         },
         "richtext_HwhtPj": {
@@ -251,7 +251,7 @@
             "accent_color": "#9cb73b",
             "badge_text": "入店率・購買率の把握",
             "badge_background": "#a0b842",
-            "badge_border": "#A0B842",
+            "badge_border": "#a0b842",
             "badge_text_color": "#ffffff",
             "heading": "通行量から売上まで、機会損失を見える化。",
             "description": "店前を通る人が多くても、入店につながらなければ売上機会は失われます。来店数が多くても、購買につながらなければ接客・売場・人員配置に課題がある可能性があります。Flowは、通行量・来店数・購買率をつなげて、どこで機会損失が起きているかを把握しやすくします。",
@@ -266,15 +266,19 @@
             "lift_percentage": "18.4億円",
             "lift_subtext": "126店舗規模で検証。年間売上インパクト試算",
             "funnel_title": "店舗ファネルの見える化",
+            "step_1_bar_color": "#8b95a1",
             "step_1_label": "店前通行量",
             "step_1_value": "22,847",
             "drop_1_text": "↓ 入店率：8.47%",
+            "step_2_bar_color": "#475569",
             "step_2_label": "来店数",
             "step_2_value": "1,936",
             "drop_2_text": "↓ 売場滞在",
+            "step_3_bar_color": "#b8d45e",
             "step_3_label": "売場前滞在",
             "step_3_value": "1,247",
             "drop_3_text": "↓ 購買率：34%",
+            "step_4_bar_color": "#9cb73b",
             "step_4_label": "購買件数",
             "step_4_value": "424",
             "insight_badge": "FIDA 確認ポイント",
