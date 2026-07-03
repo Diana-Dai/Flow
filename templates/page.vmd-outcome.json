@@ -1,0 +1,1098 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "media_with_text_gMMfwV": {
+      "type": "media-with-text",
+      "blocks": {
+        "image_UFxtUk": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Product_Images_2000px_x_2000px.png",
+            "media_width": 40,
+            "media_position": "end",
+            "text_position": "place-self-center-start text-start",
+            "icon": "picto-percent",
+            "icon_width": 48,
+            "subheading": "コンバージョン最適化",
+            "title": "来店を、売上につなげる",
+            "content": "<p><strong>コンバージョン率は、売上目標を達成するための管理指標です。</strong></p><p>Flowは、来店数・購買率・客単価をリアルタイムに可視化し、店舗が「今、何を改善すべきか」を判断できる状態をつくります。</p>",
+            "link_text": "デモを依頼する →",
+            "link_url": "shopify://pages/contact",
+            "background": "rgba(0,0,0,0)",
+            "background_gradient": "",
+            "text_color": "#11243e",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_UFxtUk"
+      ],
+      "name": "Media with text",
+      "settings": {
+        "full_width": false,
+        "alternate_media_position": false,
+        "spacing": "small"
+      }
+    },
+    "1782205766608098ab": {
+      "type": "_blocks",
+      "blocks": {
+        "badge_B6WYC7": {
+          "type": "badge",
+          "name": "Badge",
+          "settings": {
+            "text": "課題",
+            "alignment": "center",
+            "text_color": "#11243e",
+            "background": "#e2c1c1"
+          },
+          "blocks": {}
+        },
+        "rich_text_pJYcwK": {
+          "type": "rich-text",
+          "name": "Rich text",
+          "settings": {
+            "text": "<h2>測れないものは、改善できない。</h2><p>売上だけでは、店舗で何が起きたのかは分かりません。来店数、購買率、滞在、離脱の流れを把握して初めて、店舗は目標達成に向けた具体的な改善行動を判断できます。</p>",
+            "content_width": "large",
+            "text_alignment": "left"
+          },
+          "blocks": {}
+        },
+        "ai_gen_block_a91389a_icyTwr": {
+          "type": "ai_gen_block_a91389a",
+          "settings": {
+            "card_1_icon": "exclamation",
+            "card_1_eyebrow": "見えない課題 01",
+            "card_1_title": "購買率が分からない",
+            "card_1_body": "POSで分かるのは、購入された件数だけです。何人が来店し、何人が購入しなかったのかが分からなければ、購買率は管理できません。",
+            "card_1_footer_label": "答えられない問い：",
+            "card_1_footer_quote": "売上が低いのは、来店が少なかったからか。購買につなげられなかったからか。",
+            "card_2_icon": "users",
+            "card_2_eyebrow": "見えない課題 02",
+            "card_2_title": "来店状況の背景が見えない",
+            "card_2_body": "売上データだけでは、ピーク時間、滞在時間、売場での反応、スタッフ配置とのズレは見えません。売上の結果だけを見ても、現場で何を直すべきかは判断できません。",
+            "card_2_footer_label": "答えられない問い：",
+            "card_2_footer_quote": "14時に人員が足りなかったのか。売場のレイアウトが接客機会を逃していたのか。",
+            "card_3_icon": "clock",
+            "card_3_eyebrow": "見えない課題 03",
+            "card_3_title": "問題に気づくのが遅れる",
+            "card_3_body": "週次レポートで購買率の低下に気づいた時には、すでに対応すべき時間帯は過ぎています。店舗改善には、後日の確認ではなく、その日の判断が必要です。",
+            "card_3_footer_label": "答えられない問い：",
+            "card_3_footer_quote": "先週木曜の午後、なぜ購買率が下がったのか。",
+            "card_background": "#f8f9fb",
+            "card_border_color": "#e8eaed",
+            "icon_box_background": "#e2c1c1",
+            "icon_color": "#11243e",
+            "eyebrow_color": "#8a94a0",
+            "title_color": "#0a2240",
+            "body_color": "#677279",
+            "divider_color": "#e8eaed",
+            "footer_label_color": "#8a94a0",
+            "footer_quote_color": "#677279"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "badge_B6WYC7",
+        "rich_text_pJYcwK",
+        "ai_gen_block_a91389a_icyTwr"
+      ],
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "178220728917312eff": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_bac608e_pzPxdk": {
+          "type": "ai_gen_block_bac608e",
+          "settings": {
+            "background_image": "shopify://shop_images/ChatGPT_Image_Jun_23_2026_05_40_10_PM.png",
+            "overlay_color": "#00000099",
+            "overlay_opacity": 0.7,
+            "badge_text": "FLOW LIVE",
+            "badge_text_color": "#ffffff",
+            "badge_dot_color": "#a0b842",
+            "heading": "<p>来店データを、</p><p>次の行動に変える。</p>",
+            "heading_color": "#ffffff",
+            "heading_size_mobile": 32,
+            "heading_size_desktop": 48,
+            "description": "<p>Flowは、来店数・購買率・売場反応をリアルタイムに捉え、</p><p>店舗がその日のうちに改善判断できる状態をつくります。</p>",
+            "description_color": "#ffffff",
+            "description_size_mobile": 16,
+            "description_size_desktop": 22,
+            "card_1_enabled": true,
+            "card_1_label": "本日の来店数",
+            "card_1_value": "1,247",
+            "card_1_tag": "+8% 対予測",
+            "card_2_enabled": true,
+            "card_2_label": "購買率",
+            "card_2_value": "18.4%",
+            "card_2_tag": "リアルタイム",
+            "card_3_enabled": true,
+            "card_3_label": "推奨アクション",
+            "card_3_value": "ピーク時間の接客配置を確認",
+            "card_3_tag": "",
+            "card_background": "#ffffff1a",
+            "card_green_background": "#a0b842",
+            "card_border_color": "#ffffff26",
+            "card_blur": 16,
+            "card_border_radius": 12,
+            "card_padding": 20,
+            "icon_color": "#ffffff",
+            "icon_border_color": "#ffffff33",
+            "card_label_color": "#ffffff",
+            "card_value_color": "#ffffff",
+            "tag_green_color": "#a0b842",
+            "tag_muted_color": "#ffffff"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_bac608e_pzPxdk"
+      ],
+      "custom_css": [],
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "1780279655010b3d7a": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_8944212_j3AgXN": {
+          "type": "ai_gen_block_8944212",
+          "settings": {
+            "desktop_width_percent": 100,
+            "padding_top": 60,
+            "padding_bottom": 60,
+            "padding_horizontal": 0,
+            "background_color": "rgba(0,0,0,0)",
+            "eyebrow_text": "Flowの違い",
+            "eyebrow_font_size": 12,
+            "eyebrow_bg_color": "#edf1e1",
+            "eyebrow_text_color": "#11243e",
+            "heading": "リアルタイムに、購買率を理解する。",
+            "heading_color": "#11243e",
+            "description": "Flowは、来店計測・POS連携・店内行動データを統合し、購買率の変化とその背景をリアルタイムに把握できる状態をつくります。",
+            "description_font_size": 16,
+            "description_color": "#6b7280",
+            "header_spacing": 50,
+            "card_gap": 24,
+            "card_padding": 32,
+            "card_border_radius": 12,
+            "cards_spacing": 32,
+            "card_heading_size": 20,
+            "card_text_size": 15,
+            "card_list_size": 14,
+            "card1_heading": "高精度な来店計測",
+            "card1_text": "Flowは、AIカメラで来店数をリアルタイムに計測し、スタッフの動きも除外します。売上結果だけでは見えなかった「何人が来店したのか」を正確に把握できます。",
+            "card1_item1": "リアルタイム来店計測",
+            "card1_item2": "スタッフ除外",
+            "card1_item3": "時間帯別の推移確認",
+            "dark_card_bg": "#0e2a3a",
+            "dark_card_text": "#ffffff",
+            "dark_icon_bg": "#a0b842",
+            "dark_checkmark_color": "#a0b842",
+            "card2_heading": "POS連携による購買率把握",
+            "card2_text": "Flowは、来店数とPOSデータを連携し、購買率を自動で算出します。店舗は、売上だけでなく、来店をどれだけ購買につなげられたかを確認できます。",
+            "card2_item1": "POSデータ連携",
+            "card2_item2": "購買率の自動算出",
+            "card2_item3": "過去実績との比較",
+            "light_card_bg": "#ffffff",
+            "light_card_text": "#0a1a2f",
+            "light_icon_bg": "#a7bc59",
+            "light_checkmark_color": "#a0b842",
+            "banner_title": "Flowの強み",
+            "banner_text": "Flowは、単なる人数カウントではありません。来店数、購買率、POS、店内行動をつなげることで、どの店舗で、どの時間帯に、どの改善行動が必要かを判断しやすくします。",
+            "banner_padding": 32,
+            "banner_border_radius": 12,
+            "banner_title_size": 20,
+            "banner_text_size": 15,
+            "banner_bg_color": "#edf1e1",
+            "banner_icon_bg": "#a0b842",
+            "banner_icon_color": "#ffffff",
+            "banner_title_color": "#0a1a2f",
+            "banner_text_color": "#4b5563"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_8944212_j3AgXN"
+      ],
+      "custom_css": [],
+      "settings": {
+        "full_width": false,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "rich_text_QVU37W": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_EfqEAA": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "text": "Subheading",
+            "icon": "none"
+          }
+        },
+        "heading_LMpfia": {
+          "type": "heading",
+          "settings": {
+            "text": "関連する機能を見る",
+            "heading_tag": "h1",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "buttons_jRCk4T": {
+          "type": "buttons",
+          "settings": {
+            "style_1": "fill",
+            "size_1": "xl",
+            "text_1": "来店計測について見る",
+            "url_1": "shopify://pages/traffic-analytics-2",
+            "background_1": "",
+            "text_color_1": "",
+            "style_2": "fill",
+            "size_2": "xl",
+            "text_2": "プラットフォームを見る",
+            "url_2": "shopify://pages/platform-1",
+            "background_2": "#a0b842",
+            "text_color_2": ""
+          }
+        },
+        "richtext_3Ax89K": {
+          "type": "richtext",
+          "disabled": true,
+          "settings": {
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_EfqEAA",
+        "heading_LMpfia",
+        "buttons_jRCk4T",
+        "richtext_3Ax89K"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "multi_column_bJtgmc": {
+      "type": "multi-column",
+      "blocks": {
+        "item_mRFw4X": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-building",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#a0b842",
+            "icon_color": "#ffffff",
+            "background_color": "#f2f2f2",
+            "text_color": "",
+            "border_color": "#e5e7e1",
+            "show_controls": false,
+            "column_size": "4",
+            "title": "店前通行量",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<p>店舗前を通行する人数を計測し、入店率や立地ごとの集客力を把握します。</p><h4>リアルタイム</h4><p>継続的に計測</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_r96Tt7": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-return",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#a0b842",
+            "icon_color": "#ffffff",
+            "background_color": "#f2f2f2",
+            "text_color": "",
+            "border_color": "#e5e7e1",
+            "show_controls": false,
+            "column_size": "4",
+            "title": "来店数",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<p>入店した顧客数を計測し、スタッフを除外した正確な来店傾向を確認できます。</p><h4>高精度</h4><p>来店計測</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_KQtcVQ": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-timer",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#a0b842",
+            "icon_color": "#ffffff",
+            "background_color": "#f2f2f2",
+            "text_color": "",
+            "border_color": "#e5e7e1",
+            "show_controls": false,
+            "column_size": "4",
+            "title": "滞在時間",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<p>顧客が店内や売場にどれだけ滞在したかを把握し、売場反応や接客機会を確認します。</p><h4>単位</h4><p>滞在傾向を把握</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_jHGFzb": {
+          "type": "item",
+          "settings": {
+            "icon": "up",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#a0b842",
+            "icon_color": "#ffffff",
+            "background_color": "#f2f2f2",
+            "text_color": "",
+            "border_color": "#e5e7e1",
+            "show_controls": false,
+            "column_size": "4",
+            "title": "購買・取引",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<p>POSデータと連携し、来店数に対する購買率や客単価を確認できます。</p><h4>自動連携</h4><p>日次更新</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_mRFw4X",
+        "item_r96Tt7",
+        "item_KQtcVQ",
+        "item_jHGFzb"
+      ],
+      "custom_css": [
+        ".prose p {font-size: 0.9rem;}",
+        ".multi-column__item .h3 {color: #a0b842 !important;}",
+        ".multi-column__item h4 ~ p {margin-top: 0; padding-top: 0;}"
+      ],
+      "name": "Multi-column",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "start",
+        "subheading": "Flowが計測するもの",
+        "title": "購買につながる流れを、すべて見える化する。",
+        "content": "<h6>Flowは、店前通行量から来店、滞在、購買までを一つの流れで把握し、どこで機会を逃しているのかを明確にします。</h6>",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "",
+        "subheading_background_color": "",
+        "subheading_text_color": ""
+      }
+    },
+    "blocks_BGj9cg": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_4e2462b_WThXwj": {
+          "type": "ai_gen_block_4e2462b",
+          "settings": {
+            "background_color": "#11243e",
+            "heading_color": "#ffffff",
+            "body_text_color": "#ffffff",
+            "accent_color": "#a0b842",
+            "badge_text": "",
+            "badge_background": "#f0f4f8",
+            "badge_border": "#e1e8ed",
+            "badge_text_color": "#11243e",
+            "heading": "",
+            "description": "",
+            "feature_1_title": "",
+            "feature_1_description": "",
+            "feature_2_title": "",
+            "feature_2_description": "",
+            "feature_3_title": "",
+            "feature_3_description": "",
+            "only_show_lift_card": true,
+            "lift_label": "",
+            "lift_percentage": "",
+            "lift_subtext": "",
+            "funnel_title": "購買ファネルの分解",
+            "step_1_bar_color": "#8b95a1",
+            "step_1_label": "店前通行量",
+            "step_1_value": "20,847",
+            "drop_1_text": "↓ 入店率 9.28%",
+            "step_2_bar_color": "#A1B847",
+            "step_2_label": "来店数",
+            "step_2_value": "1,936",
+            "drop_2_text": "↓ 店内エンゲージメント",
+            "step_3_bar_color": "#0E366A",
+            "step_3_label": "店内反応",
+            "step_3_value": "1,247",
+            "drop_3_text": "↓ 購買率 34%",
+            "step_4_bar_color": "#9cb73b",
+            "step_4_label": "購買件数",
+            "step_4_value": "424",
+            "insight_badge": "INSIGHT",
+            "insight_main": "最大の改善機会：店内反応から購買への転換",
+            "insight_recommendation": "推奨アクション：ピーク時間帯の接客配置を確認"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_4e2462b_WThXwj"
+      ],
+      "name": "Conversion intelligence",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "multi_column_hNQjmA": {
+      "type": "multi-column",
+      "blocks": {
+        "item_zKkNdD": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#ffffff",
+            "text_color": "",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "当日",
+            "heading_tag": "h1",
+            "subheading": "<p>対応スピード</p>",
+            "content": "<h6><strong>その日のうちに課題を把握</strong></h6><p>購買率の変化をリアルタイムに確認できるため、週次レポートを待たずに、営業時間中に改善判断を行えます。</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_HE4R79": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#ffffff",
+            "text_color": "",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "+5.3pt",
+            "heading_tag": "h1",
+            "subheading": "<p>購買率</p>",
+            "content": "<h6><strong>購買率改善</strong></h6><p>Flowを活用した事例では、購買率が19.9%から25.2%に改善しました。来店数と売上をあわせて見ることで、店舗は購買につながらなかった機会を把握しやすくなりました。</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_gkLzy8": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#ffffff",
+            "text_color": "",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "実行へ",
+            "heading_tag": "h1",
+            "subheading": "<p>店舗活用</p>",
+            "content": "<h6><strong>データを店舗行動に接続</strong></h6><p>来店数、購買率、時間帯別の動きをもとに、ピーク時間の接客配置や売場対応を見直しやすくなります。</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_er7th9": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#f1f5ef",
+            "text_color": "#1a1a1a",
+            "border_color": "#a0b842",
+            "show_controls": false,
+            "column_size": "1",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<p><strong>注記：</strong>記載の数値は、特定の導入事例に基づく実績例です。成果は店舗業態、立地、運用状況、Flowの活用度によって異なります。</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_zKkNdD",
+        "item_HE4R79",
+        "item_gkLzy8",
+        "item_er7th9"
+      ],
+      "custom_css": [
+        ".prose p {font-size: 0.9rem;}",
+        ".multi-column__item .h1 {color: #a0b842 !important;}",
+        ".multi-column__item:last-child {gap: 0;}"
+      ],
+      "name": "Multi-column",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "small",
+        "text_alignment": "center",
+        "subheading": "測定可能な改善",
+        "title": "購買率改善は、測定から始まる。",
+        "content": "<p>Flowを活用した店舗では、来店数と購買率をもとに売場・接客・運営判断を見直し、改善につなげた事例があります。</p>",
+        "background": "#f9fafb",
+        "background_gradient": "",
+        "text_color": "",
+        "subheading_background_color": "",
+        "subheading_text_color": ""
+      }
+    },
+    "178028358684e902bd": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_4397a62_6LkUX4": {
+          "type": "ai_gen_block_4397a62",
+          "settings": {
+            "section_padding_mobile": 0,
+            "section_padding_desktop": 0,
+            "background_color": "#ffffff",
+            "badge_text": "導入実績",
+            "badge_background": "#edf1e1",
+            "badge_text_color": "#11243e",
+            "heading": "多店舗展開の小売企業に選ばれています。",
+            "heading_color": "#0e2a3a",
+            "subheading": "Flowは、ファッション、ライフスタイル、専門店、複数ブランドを展開する小売企業で活用されています。",
+            "subheading_color": "#6b7280",
+            "stat_1_value": "990+",
+            "stat_1_label": "累計導入・運用店舗実績",
+            "stat_2_value": "100+",
+            "stat_2_label": "導入ブランド数",
+            "stat_3_value": "リアルタイム",
+            "stat_3_label": "データ可視化",
+            "stat_4_value": "POS連携",
+            "stat_4_label": "購買率分析",
+            "stat_value_color": "#0e2a3a",
+            "stat_label_color": "#6b7280",
+            "case_study_title": "導入事例：ファッション・ライフスタイル小売",
+            "case_study_background": "#11243e",
+            "case_study_title_color": "#ffffff",
+            "case_study_border_radius": 16,
+            "metric_1_value": "19.9% → 25.2%",
+            "metric_1_description": "購買率が改善",
+            "metric_2_value": "+23.9%",
+            "metric_2_description": "入店率が改善",
+            "metric_3_value": "+25%",
+            "metric_3_description": "積極活用店舗の平均売上増加",
+            "metric_value_color": "#a0b842",
+            "metric_description_color": "#d1d5db",
+            "cta_button_text": "事例を見る",
+            "cta_button_link": "shopify://pages/case-studies-1",
+            "cta_button_background": "#a0b842",
+            "cta_button_text_color": "#ffffff"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_4397a62_6LkUX4"
+      ],
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "section-15": {
+      "type": "feature-chart",
+      "blocks": {
+        "block-1": {
+          "type": "headings",
+          "settings": {
+            "heading_1": "主な提供価値",
+            "heading_2": "コアの設計思想",
+            "heading_3": "来店データの位置づけ",
+            "heading_4": "データの即時性",
+            "heading_5": "店舗での使いやすさ",
+            "heading_6": "判断へのつながり",
+            "heading_7": "店舗ごとの判断差",
+            "heading_8": "本部と店舗の連携",
+            "heading_9": "運用負荷",
+            "heading_10": "拡張性",
+            "heading_11": "",
+            "heading_12": "",
+            "heading_13": "",
+            "heading_14": "",
+            "heading_15": "",
+            "heading_16": "",
+            "heading_17": "",
+            "heading_18": "",
+            "heading_19": "",
+            "heading_20": ""
+          }
+        },
+        "block-2": {
+          "type": "values",
+          "settings": {
+            "product": "",
+            "value_1": "<p>40mm Beryllium</p>",
+            "value_2": "<p>245g</p>",
+            "value_3": "<p>165mm x 190mm x 66mm</p>",
+            "value_4": "<p>24 hours</p>",
+            "value_5": "",
+            "value_6": "",
+            "value_7": "",
+            "value_8": "",
+            "value_9": "",
+            "value_10": "",
+            "value_11": "",
+            "value_12": "",
+            "value_13": "",
+            "value_14": "",
+            "value_15": "",
+            "value_16": "",
+            "value_17": "",
+            "value_18": "",
+            "value_19": "",
+            "value_20": "",
+            "view_button_background": "",
+            "view_button_text_color": ""
+          }
+        },
+        "block-3": {
+          "type": "values",
+          "settings": {
+            "product": "",
+            "value_1": "<p>40mm Beryllium</p>",
+            "value_2": "<p>205g (On-Ear), 239g (Over-Ear)</p>",
+            "value_3": "<p>190mm x 155mm x 34mm (On-Ear), 200mm x 165mm x 40mm (Over-Ear)</p>",
+            "value_4": "<p>16 hours</p>",
+            "value_5": "",
+            "value_6": "",
+            "value_7": "",
+            "value_8": "",
+            "value_9": "",
+            "value_10": "",
+            "value_11": "",
+            "value_12": "",
+            "value_13": "",
+            "value_14": "",
+            "value_15": "",
+            "value_16": "",
+            "value_17": "",
+            "value_18": "",
+            "value_19": "",
+            "value_20": "",
+            "view_button_background": "",
+            "view_button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "Why Dashboards Fail",
+        "content": "<p>Traditional analytics show you the problem. Flow solves it.</p>",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "center",
+        "max_rows": 5,
+        "view_all_text": "View all",
+        "view_less_text": "View less",
+        "view_product": "View",
+        "viewing_product": "",
+        "show_product_swatch": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "chart_background": "",
+        "chart_text_color": "",
+        "chart_true_false_color": ""
+      }
+    },
+    "multi_column_ykywta": {
+      "type": "multi-column",
+      "blocks": {
+        "item_fRf33R": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-timer",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#a0b842",
+            "icon_color": "#ffffff",
+            "background_color": "#ffffff",
+            "text_color": "#11243e",
+            "border_color": "#f0f3e9",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h2",
+            "subheading": "",
+            "content": "<h3>営業時間外の設置</h3><p>カメラ設置は、店舗運営への影響を抑えるため、原則として営業時間外に実施します。店舗環境に応じて、設置内容と作業時間を事前に確認します。</p><h4>2〜4時間</h4><p>標準的な設置時間の目安</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_zGNUAp": {
+          "type": "item",
+          "settings": {
+            "icon": "check",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#a0b842",
+            "icon_color": "#ffffff",
+            "background_color": "#ffffff",
+            "text_color": "#11243e",
+            "border_color": "#f0f3e9",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h2",
+            "subheading": "",
+            "content": "<h3>既存システムとの連携</h3><p>Flowは、POSや既存データ環境との連携に対応します。API、FTP、CSVなど、運用状況に合わせた連携方法を検討できます。</p><h4>柔軟に対応</h4><p>複数の連携方法に対応</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_Vx6gWn": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-customer-support",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#a0b842",
+            "icon_color": "#ffffff",
+            "background_color": "#ffffff",
+            "text_color": "#11243e",
+            "border_color": "#f0f3e9",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h2",
+            "subheading": "",
+            "content": "<h3>活用支援・サポート</h3><p>導入後は、店舗マネージャーや本部チームがFlowを日常業務で活用できるよう、トレーニングとカスタマーサクセス支援を行います。</p><h4>実践支援</h4><p>導入後の活用を支援</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_rqKyhB": {
+          "type": "item",
+          "settings": {
+            "icon": "up",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#a0b842",
+            "icon_color": "#ffffff",
+            "background_color": "#f1f5ef",
+            "text_color": "",
+            "border_color": "#edf1e1",
+            "show_controls": false,
+            "column_size": "1",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h5><strong>段階的な展開に対応</strong></h5><p>まずは一部店舗やエリアから開始し、効果や運用方法を確認したうえで展開を広げることができます。Flowは、運用スケジュールや予算計画に合わせた段階導入に対応します。</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_fRf33R",
+        "item_zGNUAp",
+        "item_Vx6gWn",
+        "item_rqKyhB"
+      ],
+      "custom_css": [
+        ".prose p {font-size: 0.9rem;}",
+        ".multi-column__item .h3 {color: #a0b842 !important;}",
+        ".multi-column__item h4 ~ p {margin-top: 0; padding-top: 0;}",
+        "@media (min-width: 769px) {.multi-column__item:last-child {display: flex; justify-content: left; }}"
+      ],
+      "name": "Multi-column",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "start",
+        "subheading": "導入について",
+        "title": "店舗運営への影響を抑えて導入。",
+        "content": "<h6>Flowは、既存の店舗運営に配慮しながら導入を進めます。営業時間外の設置、既存システムとの連携、店舗チーム向けの活用支援まで、段階的な展開に対応します。</h6>",
+        "background": "#f2f2f2",
+        "background_gradient": "",
+        "text_color": "",
+        "subheading_background_color": "",
+        "subheading_text_color": ""
+      }
+    },
+    "rich_text_6VmVgb": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_AK7Cjn": {
+          "type": "subheading",
+          "settings": {
+            "text": "次のステップ",
+            "icon": "none"
+          }
+        },
+        "heading_YXhiR8": {
+          "type": "heading",
+          "settings": {
+            "text": "購買率を、管理できる指標に。",
+            "heading_tag": "h1",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_qzAkak": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Flowが来店数・購買率・POSデータをつなげ、売上目標に向けた改善判断をどのように支援するかをご紹介します。</p>"
+          }
+        },
+        "button_AVKAbi": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "style": "outline",
+            "size": "base",
+            "text": "Contact Solutions Architect",
+            "url": "#",
+            "background": "",
+            "text_color": "#11243e"
+          }
+        },
+        "buttons_jaKCGH": {
+          "type": "buttons",
+          "settings": {
+            "style_1": "fill",
+            "size_1": "xl",
+            "text_1": "デモを依頼する →",
+            "url_1": "shopify://pages/contact",
+            "background_1": "#a0b842",
+            "text_color_1": "#ffffff",
+            "style_2": "fill",
+            "size_2": "xl",
+            "text_2": "導入事例を見る →",
+            "url_2": "shopify://pages/case-studies-1",
+            "background_2": "#ffffff",
+            "text_color_2": "#11243e"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_AK7Cjn",
+        "heading_YXhiR8",
+        "richtext_qzAkak",
+        "button_AVKAbi",
+        "buttons_jaKCGH"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "#0e366a",
+        "background_gradient": "",
+        "text_color": "#ffffff"
+      }
+    },
+    "multi_column_UExWWX": {
+      "type": "multi-column",
+      "blocks": {
+        "item_kHMBXM": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "image": "shopify://shop_images/unnamed.png",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "#f9fafb",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "高精度店内計測",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<p>高精度な来店計測と顧客行動分析。</p>",
+            "link_url": "",
+            "link_text": "詳しく見る →",
+            "link_style": "link"
+          }
+        },
+        "item_jzqLHt": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "image": "shopify://shop_images/1_1b5442dc-a679-4a23-a10f-8f39d2cc4234.png",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "#f9fafb",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "FIDA分析基盤",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<p>来店・売上・人員配置を統合分析。</p>",
+            "link_url": "#",
+            "link_text": "詳しく見る →",
+            "link_style": "link"
+          }
+        },
+        "item_rn7myV": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "image": "shopify://shop_images/3_05197ad8-294f-4cc5-9d73-b73021906f0a.png",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "#f9fafb",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "現場意思決定実行支援",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<p>現場実行につながる推奨アクション。</p><h3></h3>",
+            "link_url": "#",
+            "link_text": "詳しく見る →",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_kHMBXM",
+        "item_jzqLHt",
+        "item_rn7myV"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".multi-column__item {padding: 0;}"
+      ],
+      "name": "Multi-column",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "start",
+        "subheading": "プラットフォームを見る",
+        "title": "店舗運営のすべてのレイヤーを統合。",
+        "content": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "subheading_background_color": "",
+        "subheading_text_color": ""
+      }
+    }
+  },
+  "order": [
+    "media_with_text_gMMfwV",
+    "1782205766608098ab",
+    "178220728917312eff",
+    "1780279655010b3d7a",
+    "rich_text_QVU37W",
+    "multi_column_bJtgmc",
+    "blocks_BGj9cg",
+    "multi_column_hNQjmA",
+    "178028358684e902bd",
+    "section-15",
+    "multi_column_ykywta",
+    "rich_text_6VmVgb",
+    "multi_column_UExWWX"
+  ]
+}
