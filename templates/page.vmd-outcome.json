@@ -459,7 +459,7 @@
             "lift_label": "",
             "lift_percentage": "",
             "lift_subtext": "",
-            "funnel_title": "購買ファネルの分解",
+            "funnel_title": "売場反応ファネルの分解",
             "step_1_bar_color": "#8b95a1",
             "step_1_label": "店前通行量",
             "step_1_value": "20,847",
@@ -467,17 +467,17 @@
             "step_2_bar_color": "#a1b847",
             "step_2_label": "来店数",
             "step_2_value": "1,936",
-            "drop_2_text": "↓ 店内エンゲージメント",
-            "step_3_bar_color": "#0e366a",
-            "step_3_label": "店内反応",
+            "drop_2_text": "↓ 売場接触率 64.4%",
+            "step_3_bar_color": "#6E95C8",
+            "step_3_label": "売場反応",
             "step_3_value": "1,247",
-            "drop_3_text": "↓ 購買率 34%",
+            "drop_3_text": "↓ 購買転換率 34%",
             "step_4_bar_color": "#9cb73b",
             "step_4_label": "購買件数",
             "step_4_value": "424",
             "insight_badge": "INSIGHT",
-            "insight_main": "最大の改善機会：店内反応から購買への転換",
-            "insight_recommendation": "推奨アクション：ピーク時間帯の接客配置を確認"
+            "insight_main": "最大の改善機会：売場反応から購買への転換",
+            "insight_recommendation": "推奨アクション：注目ゾーンの商品展開を確認"
           },
           "blocks": {}
         }
