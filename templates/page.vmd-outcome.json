@@ -922,7 +922,7 @@
         "heading_YXhiR8": {
           "type": "heading",
           "settings": {
-            "text": "購買率を、管理できる指標に。",
+            "text": "売場の反応を、改善できる指標に。",
             "heading_tag": "h1",
             "text_color": "",
             "gradient": ""
@@ -931,7 +931,7 @@
         "richtext_qzAkak": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Flowが来店数・購買率・POSデータをつなげ、売上目標に向けた改善判断をどのように支援するかをご紹介します。</p>"
+            "content": "<p>Flowが来店数・回遊・滞在・購買データをつなげ、売場レイアウトや商品展開の改善判断をどのように支援するかをご紹介します。</p>"
           }
         },
         "button_AVKAbi": {
