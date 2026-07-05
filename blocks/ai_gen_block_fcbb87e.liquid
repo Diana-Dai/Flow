@@ -503,7 +503,7 @@
                         </a>
                       </div>
                       <div class="ai-blog-list-right-{{ ai_gen_id }}">
-                        <span class="ai-blog-list-reading-{{ ai_gen_id }}">{{ article.content | strip_html | split: ' ' | size | divided_by: 200 | at_least: 1 }} min</span>
+                        <span class="ai-blog-list-reading-{{ ai_gen_id }}">{{ article.content | strip_html | split: ' ' | size | divided_by: 100 | at_least: 1 }} min</span>
                         <span class="ai-blog-list-date-{{ ai_gen_id }}">{{ article.published_at | date: '%b %d, %Y' }}</span>
                         <span class="ai-blog-list-arrow-{{ ai_gen_id }}">→</span>
                       </div>
