@@ -309,6 +309,10 @@
     font-size: 16px;
   }
 
+  .ai-blog-pagination-{{ ai_gen_id }} {
+    margin-top: 40px;
+  }
+
   @media screen and (max-width: 999px) {
     .ai-blog-featured-{{ ai_gen_id }} {
       flex-direction: column;
@@ -376,131 +380,164 @@
   <div class="ai-blog-container-{{ ai_gen_id }}">
     {% if block.settings.blog != blank %}
       {% assign blog = block.settings.blog %}
-      {% assign sorted_articles = blog.articles | sort: 'published_at' | reverse %}
+      {% if blog.articles_count > 0 %}
+        {% paginate blog.articles by 20 %}
+          {% if paginate.current_page == 1 %}
+            <div class="ai-blog-tier-{{ ai_gen_id }}">
+              {% if block.settings.tier1_kicker != blank %}
+                <div class="ai-blog-kicker-{{ ai_gen_id }}">{{ block.settings.tier1_kicker }}</div>
+              {% endif %}
 
-      {% if sorted_articles.size > 0 %}
-        <div class="ai-blog-tier-{{ ai_gen_id }}">
-          {% if block.settings.tier1_kicker != blank %}
-            <div class="ai-blog-kicker-{{ ai_gen_id }}">{{ block.settings.tier1_kicker }}</div>
+              {% assign featured_article = blog.articles.first %}
+              <div class="ai-blog-featured-{{ ai_gen_id }}">
+                <div class="ai-blog-featured-image-{{ ai_gen_id }}">
+                  {% if featured_article.image %}
+                    <img
+                      src="{{ featured_article.image | image_url: width: 1200 }}"
+                      alt="{{ featured_article.image.alt | escape }}"
+                      loading="lazy"
+                      width="{{ featured_article.image.width }}"
+                      height="{{ featured_article.image.height }}"
+                    >
+                  {% else %}
+                    <div style="width: 100%; height: 100%; background-color: #f1f5f9;"></div>
+                  {% endif %}
+                  {% if featured_article.tags.size > 0 %}
+                    <div class="ai-blog-category-badge-{{ ai_gen_id }}">{{ featured_article.tags.first }}</div>
+                  {% endif %}
+                </div>
+                <div class="ai-blog-featured-content-{{ ai_gen_id }}">
+                  <div class="ai-blog-meta-{{ ai_gen_id }}">
+                    <span>{{ featured_article.published_at | date: '%B %d, %Y' }}</span>
+                    <span>•</span>
+                    <span>{{ featured_article.content | strip_html | split: ' ' | size | divided_by: 200 | at_least: 1 }} min read</span>
+                  </div>
+                  <h2 class="ai-blog-featured-title-{{ ai_gen_id }}">
+                    <a href="{{ featured_article.url }}" style="color: inherit; text-decoration: none;">
+                      {{ featured_article.title }}
+                    </a>
+                  </h2>
+                  {% if featured_article.excerpt != blank %}
+                    <div class="ai-blog-featured-excerpt-{{ ai_gen_id }}">
+                      {{ featured_article.excerpt | strip_html | truncate: 200 }}
+                    </div>
+                  {% endif %}
+                  <a href="{{ featured_article.url }}" class="ai-blog-read-link-{{ ai_gen_id }}">
+                    Read article <span>→</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {% if blog.articles_count > 1 %}
+              <div class="ai-blog-tier-{{ ai_gen_id }}">
+                {% if block.settings.tier2_kicker != blank %}
+                  <div class="ai-blog-kicker-{{ ai_gen_id }}">{{ block.settings.tier2_kicker }}</div>
+                {% endif %}
+
+                <div class="ai-blog-grid-{{ ai_gen_id }}">
+                  {% for article in blog.articles offset: 1 limit: 3 %}
+                    <div class="ai-blog-card-{{ ai_gen_id }}">
+                      <div class="ai-blog-card-image-{{ ai_gen_id }}">
+                        {% if article.image %}
+                          <img
+                            src="{{ article.image | image_url: width: 600 }}"
+                            alt="{{ article.image.alt | escape }}"
+                            loading="lazy"
+                            width="{{ article.image.width }}"
+                            height="{{ article.image.height }}"
+                          >
+                        {% else %}
+                          <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: #f1f5f9;"></div>
+                        {% endif %}
+                        {% if article.tags.size > 0 %}
+                          <div class="ai-blog-card-badge-{{ ai_gen_id }}">{{ article.tags.first }}</div>
+                        {% endif %}
+                      </div>
+                      <div class="ai-blog-card-content-{{ ai_gen_id }}">
+                        <h3 class="ai-blog-card-title-{{ ai_gen_id }}">
+                          <a href="{{ article.url }}" style="color: inherit; text-decoration: none;">
+                            {{ article.title }}
+                          </a>
+                        </h3>
+                        {% if article.excerpt != blank %}
+                          <div class="ai-blog-card-excerpt-{{ ai_gen_id }}">
+                            {{ article.excerpt | strip_html | truncate: 120 }}
+                          </div>
+                        {% endif %}
+                        <div class="ai-blog-card-footer-{{ ai_gen_id }}">
+                          <span class="ai-blog-card-date-{{ ai_gen_id }}">{{ article.published_at | date: '%b %d, %Y' }}</span>
+                          <a href="{{ article.url }}" class="ai-blog-card-link-{{ ai_gen_id }}">
+                            Read <span>→</span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  {% endfor %}
+                </div>
+              </div>
+            {% endif %}
           {% endif %}
 
-          {% assign featured_article = sorted_articles.first %}
-          <div class="ai-blog-featured-{{ ai_gen_id }}">
-            <div class="ai-blog-featured-image-{{ ai_gen_id }}">
-              {% if featured_article.image %}
-                <img
-                  src="{{ featured_article.image | image_url: width: 1200 }}"
-                  alt="{{ featured_article.image.alt | escape }}"
-                  loading="lazy"
-                  width="{{ featured_article.image.width }}"
-                  height="{{ featured_article.image.height }}"
-                >
-              {% else %}
-                <div style="width: 100%; height: 100%; background-color: #f1f5f9;"></div>
-              {% endif %}
-              {% if featured_article.tags.size > 0 %}
-                <div class="ai-blog-category-badge-{{ ai_gen_id }}">{{ featured_article.tags.first }}</div>
-              {% endif %}
-            </div>
-            <div class="ai-blog-featured-content-{{ ai_gen_id }}">
-              <div class="ai-blog-meta-{{ ai_gen_id }}">
-                <span>{{ featured_article.published_at | date: '%B %d, %Y' }}</span>
-                <span>•</span>
-                <span>{{ featured_article.content | strip_html | split: ' ' | size | divided_by: 200 | at_least: 1 }} min read</span>
-              </div>
-              <h2 class="ai-blog-featured-title-{{ ai_gen_id }}">
-                <a href="{{ featured_article.url }}" style="color: inherit; text-decoration: none;">
-                  {{ featured_article.title }}
-                </a>
-              </h2>
-              {% if featured_article.excerpt != blank %}
-                <div class="ai-blog-featured-excerpt-{{ ai_gen_id }}">
-                  {{ featured_article.excerpt | strip_html | truncate: 200 }}
-                </div>
-              {% endif %}
-              <a href="{{ featured_article.url }}" class="ai-blog-read-link-{{ ai_gen_id }}">
-                Read article <span>→</span>
-              </a>
-            </div>
-          </div>
-        </div>
+          {% assign archive_articles_count = paginate.items %}
+          {% if paginate.current_page == 1 %}
+            {% assign archive_articles_count = archive_articles_count | minus: 4 %}
+          {% endif %}
 
-        {% if sorted_articles.size > 1 %}
-          <div class="ai-blog-tier-{{ ai_gen_id }}">
-            {% if block.settings.tier2_kicker != blank %}
-              <div class="ai-blog-kicker-{{ ai_gen_id }}">{{ block.settings.tier2_kicker }}</div>
-            {% endif %}
+          {% if archive_articles_count > 0 %}
+            <div class="ai-blog-tier-{{ ai_gen_id }}">
+              {% if block.settings.tier3_kicker != blank %}
+                <div class="ai-blog-kicker-{{ ai_gen_id }}">{{ block.settings.tier3_kicker }}</div>
+              {% endif %}
 
-            <div class="ai-blog-grid-{{ ai_gen_id }}">
-              {% for article in sorted_articles offset: 1 limit: 3 %}
-                <div class="ai-blog-card-{{ ai_gen_id }}">
-                  <div class="ai-blog-card-image-{{ ai_gen_id }}">
-                    {% if article.image %}
-                      <img
-                        src="{{ article.image | image_url: width: 600 }}"
-                        alt="{{ article.image.alt | escape }}"
-                        loading="lazy"
-                        width="{{ article.image.width }}"
-                        height="{{ article.image.height }}"
-                      >
-                    {% else %}
-                      <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: #f1f5f9;"></div>
-                    {% endif %}
-                    {% if article.tags.size > 0 %}
-                      <div class="ai-blog-card-badge-{{ ai_gen_id }}">{{ article.tags.first }}</div>
-                    {% endif %}
-                  </div>
-                  <div class="ai-blog-card-content-{{ ai_gen_id }}">
-                    <h3 class="ai-blog-card-title-{{ ai_gen_id }}">
-                      <a href="{{ article.url }}" style="color: inherit; text-decoration: none;">
-                        {{ article.title }}
-                      </a>
-                    </h3>
-                    {% if article.excerpt != blank %}
-                      <div class="ai-blog-card-excerpt-{{ ai_gen_id }}">
-                        {{ article.excerpt | strip_html | truncate: 120 }}
+              <div class="ai-blog-list-{{ ai_gen_id }}">
+                {% if paginate.current_page == 1 %}
+                  {% for article in blog.articles offset: 4 limit: 16 %}
+                    <div class="ai-blog-list-item-{{ ai_gen_id }}">
+                      <div class="ai-blog-list-left-{{ ai_gen_id }}">
+                        {% if article.tags.size > 0 %}
+                          <div class="ai-blog-list-tag-{{ ai_gen_id }}">{{ article.tags.first }}</div>
+                        {% endif %}
+                        <a href="{{ article.url }}" class="ai-blog-list-title-{{ ai_gen_id }}">
+                          {{ article.title }}
+                        </a>
                       </div>
-                    {% endif %}
-                    <div class="ai-blog-card-footer-{{ ai_gen_id }}">
-                      <span class="ai-blog-card-date-{{ ai_gen_id }}">{{ article.published_at | date: '%b %d, %Y' }}</span>
-                      <a href="{{ article.url }}" class="ai-blog-card-link-{{ ai_gen_id }}">
-                        Read <span>→</span>
-                      </a>
+                      <div class="ai-blog-list-right-{{ ai_gen_id }}">
+                        <span class="ai-blog-list-reading-{{ ai_gen_id }}">{{ article.content | strip_html | split: ' ' | size | divided_by: 200 | at_least: 1 }} min</span>
+                        <span class="ai-blog-list-date-{{ ai_gen_id }}">{{ article.published_at | date: '%b %d, %Y' }}</span>
+                        <span class="ai-blog-list-arrow-{{ ai_gen_id }}">→</span>
+                      </div>
                     </div>
-                  </div>
-                </div>
-              {% endfor %}
-            </div>
-          </div>
-        {% endif %}
+                  {% endfor %}
+                {% else %}
+                  {% for article in blog.articles %}
+                    <div class="ai-blog-list-item-{{ ai_gen_id }}">
+                      <div class="ai-blog-list-left-{{ ai_gen_id }}">
+                        {% if article.tags.size > 0 %}
+                          <div class="ai-blog-list-tag-{{ ai_gen_id }}">{{ article.tags.first }}</div>
+                        {% endif %}
+                        <a href="{{ article.url }}" class="ai-blog-list-title-{{ ai_gen_id }}">
+                          {{ article.title }}
+                        </a>
+                      </div>
+                      <div class="ai-blog-list-right-{{ ai_gen_id }}">
+                        <span class="ai-blog-list-reading-{{ ai_gen_id }}">{{ article.content | strip_html | split: ' ' | size | divided_by: 200 | at_least: 1 }} min</span>
+                        <span class="ai-blog-list-date-{{ ai_gen_id }}">{{ article.published_at | date: '%b %d, %Y' }}</span>
+                        <span class="ai-blog-list-arrow-{{ ai_gen_id }}">→</span>
+                      </div>
+                    </div>
+                  {% endfor %}
+                {% endif %}
+              </div>
 
-        {% if sorted_articles.size > 4 %}
-          <div class="ai-blog-tier-{{ ai_gen_id }}">
-            {% if block.settings.tier3_kicker != blank %}
-              <div class="ai-blog-kicker-{{ ai_gen_id }}">{{ block.settings.tier3_kicker }}</div>
-            {% endif %}
-
-            <div class="ai-blog-list-{{ ai_gen_id }}">
-              {% for article in sorted_articles offset: 4 %}
-                <div class="ai-blog-list-item-{{ ai_gen_id }}">
-                  <div class="ai-blog-list-left-{{ ai_gen_id }}">
-                    {% if article.tags.size > 0 %}
-                      <div class="ai-blog-list-tag-{{ ai_gen_id }}">{{ article.tags.first }}</div>
-                    {% endif %}
-                    <a href="{{ article.url }}" class="ai-blog-list-title-{{ ai_gen_id }}">
-                      {{ article.title }}
-                    </a>
-                  </div>
-                  <div class="ai-blog-list-right-{{ ai_gen_id }}">
-                    <span class="ai-blog-list-reading-{{ ai_gen_id }}">{{ article.content | strip_html | split: ' ' | size | divided_by: 200 | at_least: 1 }} min</span>
-                    <span class="ai-blog-list-date-{{ ai_gen_id }}">{{ article.published_at | date: '%b %d, %Y' }}</span>
-                    <span class="ai-blog-list-arrow-{{ ai_gen_id }}">→</span>
-                  </div>
+              {% if paginate.pages > 1 %}
+                <div class="ai-blog-pagination-{{ ai_gen_id }}">
+                  {%- render 'pagination', paginate: paginate -%}
                 </div>
-              {% endfor %}
+              {% endif %}
             </div>
-          </div>
-        {% endif %}
+          {% endif %}
+        {% endpaginate %}
       {% else %}
         <div class="ai-blog-empty-{{ ai_gen_id }}">
           No articles found in this blog.
