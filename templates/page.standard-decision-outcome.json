@@ -144,11 +144,11 @@
             "card_1_tag": "前週比 +18%",
             "card_2_enabled": true,
             "card_2_label": "重点指標",
-            "card_2_value": "転換率 42.6%",
+            "card_2_value": "購買率 42.6%",
             "card_2_tag": "目標未達",
             "card_3_enabled": true,
             "card_3_label": "推奨アクション",
-            "card_3_value": "接客配置を入口側へ調整",
+            "card_3_value": "ピーク時間帯の接客配置を確認",
             "card_3_tag": "",
             "card_background": "#ffffff1a",
             "card_green_background": "#a0b842",
@@ -267,7 +267,7 @@
         "heading_LMpfia": {
           "type": "heading",
           "settings": {
-            "text": "関連する機能を見る",
+            "text": "判断を支える機能を見る",
             "heading_tag": "h1",
             "text_color": "",
             "gradient": ""
@@ -307,7 +307,7 @@
       "name": "Rich text",
       "settings": {
         "full_width": true,
-        "content_width": "small",
+        "content_width": "medium",
         "text_position": "center",
         "background": "",
         "background_gradient": "",
