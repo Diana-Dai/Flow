@@ -1948,7 +1948,7 @@
         "support_hours": "",
         "answer_time": "",
         "button_text": "導入について相談する",
-        "button_url": "",
+        "button_url": "shopify://pages/contact",
         "text_position": "start",
         "background": "",
         "background_gradient": "",
@@ -1983,7 +1983,7 @@
             "style": "fill",
             "size": "base",
             "text": "デモを相談する",
-            "url": "",
+            "url": "shopify://pages/contact",
             "background": "#a0b842",
             "text_color": "#ffffff"
           }
@@ -1994,7 +1994,7 @@
             "style": "fill",
             "size": "base",
             "text": "店舗データ活用診断を受ける",
-            "url": "",
+            "url": "shopify://pages/contact",
             "background": "#ffffff",
             "text_color": "#11243e"
           }
