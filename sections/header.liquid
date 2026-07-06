@@ -451,7 +451,6 @@ display: flex;
             <nav class="header__link-list {% if section.settings.layout == 'logo_left_navigation_center' %}justify-center{% endif %} wrap" role="navigation">
               <ul class="contents" role="list">
                 {%- for link in section.settings.menu.links -%}
-                {{link_title_downcase }}
                   {% liquid
                     assign link_title_downcase = link.title | strip | downcase
                     assign is_platform_menu = false
@@ -470,11 +469,11 @@ display: flex;
                       assign is_about_menu = true
                     endif
 
-                    if link_title_downcase == 'login'
+                    if link_title_downcase == 'ログイン'
                       assign is_login_menu = true
                     endif
 
-                    if link_title_downcase contains 'book demo'
+                    if link_title_downcase contains '無料デモ'
                       assign is_book_demo_menu = true
                     endif
 
