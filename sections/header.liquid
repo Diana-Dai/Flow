@@ -453,8 +453,6 @@ display: flex;
                 {%- for link in section.settings.menu.links -%}
                   {% liquid
                     assign link_title_downcase = link.title | strip | downcase
-                    assign menu_position = forloop.index
-                    assign is_japanese_locale = false
                     assign is_platform_menu = false
                     assign is_about_menu = false
                     assign is_login_menu = false
@@ -462,10 +460,6 @@ display: flex;
                     assign mega_menu_block = ''
                     assign force_panel_desktop_mega = false
                     assign use_custom_auto_mega = false
-
-                    if request.locale.iso_code contains 'ja'
-                      assign is_japanese_locale = true
-                    endif
 
                     if link_title_downcase contains 'platform'
                       assign is_platform_menu = true
@@ -483,34 +477,17 @@ display: flex;
                       assign is_book_demo_menu = true
                     endif
 
-                    if is_japanese_locale
-                      assign mega_menu_index = 0
+                    for block in section.blocks
+                      if block.type == 'mega_menu'
+                        assign menu_item_downcase = block.settings.menu_item | strip | downcase
 
-                      for block in section.blocks
-                        if block.type == 'mega_menu'
-                          assign mega_menu_index = mega_menu_index | plus: 1
-
-                          if mega_menu_index == menu_position
-                            assign mega_menu_block = block
-                            break
-                          endif
+                        if menu_item_downcase == link_title_downcase
+                          assign mega_menu_block = block
+                          break
                         endif
-                      endfor
-                    endif
+                      endif
 
-                    if mega_menu_block == ''
-                      for block in section.blocks
-                        if block.type == 'mega_menu'
-                          assign menu_item_downcase = block.settings.menu_item | strip | downcase
-
-                          if menu_item_downcase == link_title_downcase
-                            assign mega_menu_block = block
-                            break
-                          endif
-                        endif
-
-                      endfor
-                    endif
+                    endfor
 
                     if mega_menu_block != '' and is_platform_menu
                       if mega_menu_block.settings.platform_badge != blank or mega_menu_block.settings.platform_heading != blank or mega_menu_block.settings.platform_link_label != blank or mega_menu_block.settings.platform_panel_image != blank or mega_menu_block.settings.image_1 != blank or section.settings.platform_auto_panel_badge != blank or section.settings.platform_auto_panel_title != blank or section.settings.platform_auto_panel_link_label != blank or section.settings.platform_auto_panel_image != blank
