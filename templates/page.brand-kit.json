@@ -16,6 +16,172 @@
         "content_width": "80ch"
       }
     },
+    "multi_column_gp4can": {
+      "type": "multi-column",
+      "blocks": {
+        "item_r98Y43": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "image": "shopify://shop_images/flow_logo_large_f3c9ad04-6cf6-4f17-99c4-a364885bbb67.png",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "Standard",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_cCptbX": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "image": "shopify://shop_images/logo-flow-device-normal.png",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "Standard Device",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_7Y4feB": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "image": "shopify://shop_images/embedded_device_logo_standard_1200x400_7420f8fe-9df3-4033-80c2-a1dfe68674b8.png",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "Embedded Standard",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_kDjDrV": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 36,
+            "icon_background_type": "none",
+            "icon_background": "",
+            "icon_color": "",
+            "image": "shopify://shop_images/Flow_logo_white.webp",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "Standard White",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_6R6r6z": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "image": "shopify://shop_images/Device_White.png",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "White Device",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_fGJiyg": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "image": "shopify://shop_images/embedded_white_logo.png",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "Embedded White",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_r98Y43",
+        "item_cCptbX",
+        "item_7Y4feB",
+        "item_kDjDrV",
+        "item_6R6r6z",
+        "item_fGJiyg"
+      ],
+      "name": "Multi-column",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": true,
+        "gap": "medium",
+        "text_alignment": "start",
+        "subheading": "Logos",
+        "title": "ロゴ",
+        "content": "",
+        "background": "#000000",
+        "background_gradient": "",
+        "text_color": "#F9FAFB",
+        "subheading_background_color": "",
+        "subheading_text_color": ""
+      }
+    },
     "multi_column_9fqKpX": {
       "type": "multi-column",
       "blocks": {
@@ -222,6 +388,7 @@
   },
   "order": [
     "main",
+    "multi_column_gp4can",
     "multi_column_9fqKpX",
     "rich_text_K6pMrC",
     "rich_text_UbUzQR"
