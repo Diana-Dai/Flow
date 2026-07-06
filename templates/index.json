@@ -230,7 +230,7 @@
             "heading": "まず3店舗導入で、1店舗分6ヶ月無料。",
             "description": "3店舗以上の導入で、1店舗分の月額費用を6ヶ月無料に。来店・売上・購買率を店舗ごとに比較し、Flowの効果を確認できます。",
             "button_text": "キャンペーンを相談する",
-            "button_link": "",
+            "button_link": "shopify://pages/contact",
             "condition_note": "対象条件、店舗数、連携内容により適用条件が異なる場合があります。",
             "benefit_1_title": "3店舗から比較検証",
             "benefit_1_text": "店舗ごとの来店数、購買率、売上KPIを確認",
@@ -667,7 +667,7 @@
             "style": "fill",
             "size": "xl",
             "text": "導入事例を見る",
-            "url": "",
+            "url": "shopify://pages/case-studies-1",
             "background": "#11243e",
             "text_color": "#f9fafb"
           }
