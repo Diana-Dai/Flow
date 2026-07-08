@@ -1,0 +1,103 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "1782450702ea92f706": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_b39d71e_MC3YHr": {
+          "type": "ai_gen_block_b39d71e",
+          "settings": {
+            "ceo_image": "shopify://shop_images/Chad2022.jpg",
+            "kicker_text": "FROM THE CEO",
+            "ceo_name": "Chad Stewart",
+            "about_text": "What this blog is about",
+            "about_list": "<ul><li>Retail execution</li><li>Conversion</li><li>Store ops</li><li>Decision quality</li><li>Traffic intelligence</li></ul>",
+            "bio_text": "Founder & CEO of Flow. Writing about retail operations, execution infrastructure, and building software for the physical world.\nEssays on the gap between retail data, operational decisions, and store-level execution.",
+            "linkedin_url": "",
+            "twitter_url": "",
+            "instagram_url": "",
+            "facebook_url": "",
+            "youtube_url": "",
+            "github_url": "",
+            "tiktok_url": "",
+            "email": ""
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_b39d71e_MC3YHr"
+      ],
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": true,
+        "remove_horizontal_spacing": true,
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "1782904678cd1f3e7d": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_fcbb87e_miYJbQ": {
+          "type": "ai_gen_block_fcbb87e",
+          "settings": {
+            "blog": "blog",
+            "tier1_kicker": "FEATURED POST",
+            "tier2_kicker": "RECENT ESSAYS",
+            "tier3_kicker": "ALL ESSAYS"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_fcbb87e_miYJbQ"
+      ],
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "main": {
+      "type": "main-blog",
+      "disabled": true,
+      "settings": {
+        "allow_transparent_header": false,
+        "content": "<p>小売の意思決定、店舗運営、店舗DX、AI活用について、経営視点で考える最新記事をお届けします。</p>",
+        "show_newsletter_form": true,
+        "show_tags": true,
+        "banner_background": "",
+        "banner_text_color": "",
+        "button_background": "",
+        "button_text_color": "",
+        "articles_per_page": 10,
+        "feature_first_article": true,
+        "feature_article_background": "rgba(0,0,0,0)",
+        "feature_article_text_color": "",
+        "show_excerpt": true,
+        "show_date": true,
+        "show_author": false,
+        "show_comments_count": false,
+        "show_category": true
+      }
+    }
+  },
+  "order": [
+    "1782450702ea92f706",
+    "1782904678cd1f3e7d",
+    "main"
+  ]
+}
