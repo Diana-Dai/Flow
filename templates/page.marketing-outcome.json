@@ -580,7 +580,7 @@
             "title": "",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<p><strong>注記：</strong>販促施策の効果は、店舗業態、立地、商品構成、運用状況、Flowの活用度によって異なります。</p><p></p>",
+            "content": "<p><strong>注記：</strong>販促施策の効果は、店舗業態、立地、商品構成、運用状況、Flowの活用度によって異なります。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -628,7 +628,7 @@
             "badge_text_color": "#11243e",
             "heading": "多店舗展開の小売企業に選ばれています。",
             "heading_color": "#0e2a3a",
-            "subheading": "Flowは、ファッション、ライフスタイル、専門店、複数ブランドを展開する小売企業で活用されています。",
+            "subheading": "Flowは、ファッション、ライフスタイル、専門店、複数ブランドを展開する小売企業で、来店分析・販促効果検証・店舗改善に活用されています。",
             "subheading_color": "#6b7280",
             "stat_1_value": "990+",
             "stat_1_label": "累計導入・運用店舗実績",
@@ -637,19 +637,19 @@
             "stat_3_value": "リアルタイム",
             "stat_3_label": "データ可視化",
             "stat_4_value": "POS連携",
-            "stat_4_label": "購買率分析",
+            "stat_4_label": "購買結果を分析",
             "stat_value_color": "#0e2a3a",
             "stat_label_color": "#6b7280",
-            "case_study_title": "導入事例：SPA小売・売場改善",
+            "case_study_title": "導入事例：ファッション小売・販促効果検証",
             "case_study_background": "#11243e",
             "case_study_title_color": "#ffffff",
             "case_study_border_radius": 16,
-            "metric_1_value": "+36%",
-            "metric_1_description": "対象商品の売上向上",
-            "metric_2_value": "滞在時間",
-            "metric_2_description": "売場ごとに把握",
-            "metric_3_value": "商品配置",
-            "metric_3_description": "改善判断に活用",
+            "metric_1_value": "+23.9%",
+            "metric_1_description": "入店率の改善",
+            "metric_2_value": "来店数",
+            "metric_2_description": "施策前後で比較",
+            "metric_3_value": "購買率",
+            "metric_3_description": "POS連携で確認",
             "metric_value_color": "#a0b842",
             "metric_description_color": "#d1d5db",
             "cta_button_text": "事例を見る",
@@ -900,7 +900,7 @@
         "gap": "medium",
         "text_alignment": "start",
         "subheading": "導入について",
-        "title": "店舗運営への影響を抑えて導入。",
+        "title": "店舗運営への負担を抑えて導入。",
         "content": "<h6>Flowは、既存の店舗運営に配慮しながら導入を進めます。営業時間外の設置、既存システムとの連携、店舗チーム向けの活用支援まで、段階的な展開に対応します。</h6>",
         "background": "#f2f2f2",
         "background_gradient": "",
@@ -922,7 +922,7 @@
         "heading_YXhiR8": {
           "type": "heading",
           "settings": {
-            "text": "売場の反応を、改善できる指標に。",
+            "text": "販促の反応を、改善につながる指標に。",
             "heading_tag": "h1",
             "text_color": "",
             "gradient": ""
@@ -931,7 +931,7 @@
         "richtext_qzAkak": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Flowが来店数・回遊・滞在・購買データをつなげ、売場レイアウトや商品展開の改善判断をどのように支援するかをご紹介します。</p>"
+            "content": "<p>Flowが来店数・通行量・滞在・購買データをつなげ、販促施策の効果検証と次の改善判断をどのように支援するかをご紹介します。</p>"
           }
         },
         "button_AVKAbi": {
