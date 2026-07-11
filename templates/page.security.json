@@ -767,7 +767,7 @@
         "heading_YXhiR8": {
           "type": "heading",
           "settings": {
-            "text": "Security and Compliance Questions?",
+            "text": "セキュリティ・データ保護に関するご相談",
             "heading_tag": "h2",
             "text_color": "",
             "gradient": ""
@@ -776,7 +776,7 @@
         "richtext_qzAkak": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Our team is available to discuss specific security requirements, compliance certifications, or infrastructure concerns for your deployment.</p>"
+            "content": "<p>導入前の確認事項、データ管理、アクセス制御、インフラ構成について、貴社の要件に応じて個別に確認できます。</p>"
           }
         },
         "button_AVKAbi": {
@@ -796,14 +796,14 @@
           "settings": {
             "style_1": "fill",
             "size_1": "xl",
-            "text_1": "Contact Security Team",
-            "url_1": "#",
+            "text_1": "サポートに問い合わせる",
+            "url_1": "shopify://pages/contact",
             "background_1": "#0e366a",
             "text_color_1": "#ffffff",
             "style_2": "fill",
             "size_2": "xl",
-            "text_2": "View FAQ",
-            "url_2": "#",
+            "text_2": "FAQを見る",
+            "url_2": "shopify://pages/faq",
             "background_2": "#ffffff",
             "text_color_2": "#11243e"
           }
@@ -818,7 +818,7 @@
       "name": "Rich text",
       "settings": {
         "full_width": true,
-        "content_width": "small",
+        "content_width": "large",
         "text_position": "center",
         "background": "#a0b842",
         "background_gradient": "",
