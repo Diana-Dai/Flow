@@ -491,14 +491,14 @@
           "settings": {
             "style_1": "fill",
             "size_1": "xl",
-            "text_1": "導入条件を確認する",
-            "url_1": "",
+            "text_1": "店舗課題を診断する->",
+            "url_1": "shopify://pages/contact",
             "background_1": "#a0b842",
             "text_color_1": "",
             "style_2": "fill",
             "size_2": "xl",
             "text_2": "無料デモを予約する",
-            "url_2": "",
+            "url_2": "shopify://pages/contact",
             "background_2": "",
             "text_color_2": ""
           }
