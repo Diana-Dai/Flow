@@ -15,13 +15,13 @@
         "ai_gen_block_b39d71e_MC3YHr": {
           "type": "ai_gen_block_b39d71e",
           "settings": {
-            "ceo_image": "shopify://shop_images/Device_White.png",
-            "kicker_text": "FLOW BLOG",
-            "ceo_name": "Flowブログ",
+            "ceo_image": "shopify://shop_images/Chad2022.jpg",
+            "kicker_text": "CEOより",
+            "ceo_name": "チャド・スチュワート",
             "about_text": "このブログのテーマ",
-            "about_list": "<ul><li>来店計測</li><li>購買率</li><li>店舗運営</li><li>データ活用</li><li>店舗DX</li></ul>",
-            "bio_text": "小売店舗の来店計測、購買率、店舗運営、データ活用に関する実践的な情報を発信しています。",
-            "linkedin_url": "",
+            "about_list": "<ul><li>店舗実行</li><li>判断の質</li><li>購買率</li><li>店舗運営</li><li>来店分析</li></ul>",
+            "bio_text": "Flow創業者兼CEO。小売オペレーション、実行を支える仕組み、そして実店舗のためのソフトウェアについて発信しています。小売データ、現場判断、店舗での実行の間にあるギャップを考察するブログです。",
+            "linkedin_url": "https://www.linkedin.com/in/chadstew/",
             "twitter_url": "",
             "instagram_url": "",
             "facebook_url": "",
@@ -51,7 +51,7 @@
         "ai_gen_block_fcbb87e_miYJbQ": {
           "type": "ai_gen_block_fcbb87e",
           "settings": {
-            "blog": "blog",
+            "blog": "retail-decisions",
             "tier1_kicker": "注目記事",
             "tier2_kicker": "最新記事",
             "tier3_kicker": "すべての記事"

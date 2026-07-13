@@ -16,8 +16,8 @@
           "type": "ai_gen_block_380fb98",
           "settings": {
             "subheading": "セキュリティ・データ保護",
-            "main_heading": "店舗計測のためのプライバシー設計と安全管理体制",
-            "main_description": "Flowは、店舗運営データを安全に取り扱うため、データの管理、保護、保存、削除、外部委託に関する基本方針を定めています。通常運用においてセンサー映像は保存せず、リアルタイムで数値データへ変換して処理します。",
+            "main_heading": "店舗計測のためのプライバシー設計と安全管理",
+            "main_description": "Flowは、店舗運営データを安全に取り扱うため、データの管理、保護、保存、削除、外部委託に関する基本方針を定めています。通常運用ではセンサー映像を保存せず、リアルタイムで数値データへ変換して処理します。",
             "cta_text": "",
             "cta_url": "",
             "icon_width": 32,
@@ -34,8 +34,8 @@
             "feature_3_title": "99.5%以上の月次アップタイム率",
             "feature_3_description": "クラウドサービスの稼働状況を継続的に管理",
             "feature_4_icon": "picto-secure-profile",
-            "feature_4_title": "暗号化・アクセス制御・監視を実施",
-            "feature_4_description": "通信時・保存時の暗号化、役割ベースのアクセス管理",
+            "feature_4_title": "アクセス制御・監視を実施",
+            "feature_4_description": "権限管理、ログ、アラートにより安全運用を支援",
             "feature_5_icon": "none",
             "feature_5_title": "",
             "feature_5_description": "",
@@ -54,7 +54,7 @@
         "full_width": true,
         "remove_vertical_spacing": false,
         "remove_horizontal_spacing": false,
-        "background": "#162f49",
+        "background": "#0E366A",
         "background_gradient": "",
         "text_color": "#ffffff"
       }
@@ -100,7 +100,7 @@
             "title": "",
             "heading_tag": "h1",
             "subheading": "",
-            "content": "<h4>映像保存を最小化</h4><p>通常運用では映像を保存せず、リアルタイム処理により数値データのみを生成します。</p><p><strong>精度検証時のみ、クライアント要請に基づき検証用映像を一時保存します。閲覧可能期間は7日間です。</strong></p>",
+            "content": "<h4>映像保存は限定的</h4><p>通常運用では映像を保存せず、リアルタイム処理により数値データのみを生成します。</p><p><strong>精度検証時のみ、クライアント要請に基づき検証用映像を一時保存します。検証用映像を一時保存する場合があります。</strong></p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -144,7 +144,7 @@
             "title": "",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<h4>方針に基づくデータ管理</h4><p>Flowは、セキュリティ、保存、削除、外部委託に関する方針に基づき、サービスに関連するデータを取り扱います。</p><p>・Flowは、原則としてクライアントの委託を受けてデータを処理します。<br/>・データ取得の適法性および必要な掲示・通知は、クライアントの責任となります。<br/>・外部委託先には、適切なデータ保護義務およびセキュリティ義務を求めています。</p>",
+            "content": "<h4>方針に基づくデータ管理</h4><h6><strong>F</strong>lowは、セキュリティ、保存、削除、外部委託に関する方針に基づき、サービスに関連するデータを取り扱います。</h6><p>・Flowは、原則としてクライアントの委託を受けてデータを処理します。<br/>・データ取得の適法性および必要な掲示・通知は、クライアントの責任となります。<br/>・外部委託先には、適切なデータ保護義務およびセキュリティ義務を求めています。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -196,7 +196,7 @@
         "text_alignment": "start",
         "subheading": "プライバシー設計",
         "title": "プライバシーを前提とした店舗計測",
-        "content": "<p>Flowは、個人を特定するためではなく、店舗運営に必要な行動データを計測するために設計されています。通常運用では映像を保存せず、リアルタイム処理により数値データへ変換します。</p>",
+        "content": "<h6>Flowは、個人を特定するためではなく、店舗運営に必要な行動データを計測するために設計されています。通常運用では映像を保存せず、リアルタイム処理により数値データへ変換します。</h6>",
         "background": "",
         "background_gradient": "",
         "text_color": "#11243e",
@@ -211,8 +211,8 @@
           "type": "ai_gen_block_3504708",
           "settings": {
             "badge_text": "データライフサイクル",
-            "headline": "取得から削除まで、データの取り扱いを明確に管理。",
-            "description": "Flowは、店舗計測に関連するデータについて、取得、処理、保存、保持、削除の各段階で取り扱い方針を定めています。",
+            "headline": "取得から削除まで、データの取り扱いを明確に管理",
+            "description": "Flowは、店舗計測に関連するデータについて、取得、処理、保存、一時保存、削除の各段階で取り扱い方針を定めています。",
             "step1_icon": "store",
             "step1_title": "取得",
             "step1_desc": "センサーは店舗内の行動を計測します。通常運用では映像を保存せず、リアルタイム処理のために利用します。",
@@ -221,14 +221,14 @@
             "step2_desc": "映像はリアルタイムで処理され、来店数、滞留時間、導線などの数値データへ変換されます。",
             "step3_icon": "checklist",
             "step3_title": "保存",
-            "step3_desc": "集計KPIデータ、システムログ、処理後の運用データを、契約期間中に必要な範囲で保存します。",
+            "step3_desc": "集計KPIデータ、ログ、連携ファイルなどを、サービス提供と運用に必要な範囲で保存します。",
             "step4_icon": "chart",
             "step4_title": "一時保存",
-            "step4_desc": "検証用映像は、クライアント要請に基づく精度検証時のみ一時保存され、7日間のみ閲覧可能です。",
+            "step4_desc": "検証用映像は、クライアント要請に基づく精度検証時のみ、一時保存される場合があります。",
             "step5_icon": "alert",
             "step5_title": "削除",
-            "step5_desc": "契約終了後、保持データは90日以内に削除されます。画像データのバックアップは保持しません。",
-            "banner_text": "データの取り扱いは、サービス提供に必要な範囲で行われ、保存期間・削除方針に基づいて管理されます。",
+            "step5_desc": "データは種類、契約、方針に基づき管理され、保存期間後または必要に応じて削除されます。",
+            "banner_text": "データの保持期間は、データ種別、契約内容、運用上の必要性により異なります。",
             "max_width": 1400,
             "background_color": "#fafbfc",
             "badge_bg_color": "#edf1e1",
@@ -287,10 +287,10 @@
             "border_color": "#f2f2f2",
             "show_controls": false,
             "column_size": "2",
-            "title": "End-to-End Encryption",
+            "title": "AWS基盤",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<p>Data protected at every stage of processing and transmission</p><ul><li>✅ At Rest: AES-256All stored data encrypted with industry-standard AES-256. Keys rotated quarterly.</li><li>✅ In Transit: TLS 1.3 - All network communication uses TLS 1.3 with forward secrecy. No deprecated protocols.</li><li>✅ Edge Devices: Hardware Security - Tamper-resistant edge units with encrypted storage and secure boot.</li></ul>",
+            "content": "<p>Flowは、AWS上でサービスを運用しています。コンピュート、ストレージ、配信、監視、バックアップ、ログ、セキュリティ管理にAWSのインフラを利用しています。</p><ul><li>✅ AWS上でサービスを運用</li><li>✅ CloudFrontによるフロントエンド配信</li><li>✅ AWS WAFによる公開Webトラフィックの保護</li></ul>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -309,10 +309,10 @@
             "border_color": "#f2f2f2",
             "show_controls": false,
             "column_size": "2",
-            "title": "Access Control & Authentication",
+            "title": "アクセス制御",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<p>Role-based permissions with audit logging</p><ul><li>✅ Admin, analyst, and viewer roles with granular permissions per store/zone.</li><li>✅ SAML 2.0 integration with enterprise identity providers. MFA enforcement available.</li><li>✅ All access, data exports, and configuration changes logged with timestamp and user attribution.<br/><br/></li></ul>",
+            "content": "<p>本番環境へのアクセスは、承認された管理者に限定されています。AWS管理アクセスはIAMロールとMFAにより管理されます。</p><ul><li>✅ 承認された管理者に限定</li><li>✅ IAMロールとMFAによる管理</li><li>✅ SSH許可リストによる本番アクセス制御<br/><br/></li></ul>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -331,10 +331,10 @@
             "border_color": "#f2f2f2",
             "show_controls": false,
             "column_size": "2",
-            "title": "Network Isolation & Segmentation",
+            "title": "安全なファイル連携",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<p>Defense in depth through network architecture</p><ul><li>✅ Flow cameras operate on isolated VLAN, separate from POS and guest WiFi networks.</li><li>✅ Cloud infrastructure protected by WAF, DDoS mitigation, and IDS/IPS systems.</li><li>✅ All internal services authenticate and authorize per request—no implicit trust.<br/></li></ul>",
+            "content": "<p>クライアントとのファイル連携は、SFTP over SSHで行います。各クライアントには個別のアカウントとディレクトリ範囲が割り当てられます。</p><ul><li>✅ SFTP over SSHによるファイル連携</li><li>✅ クライアント別のアカウント管理</li><li>✅ ディレクトリ範囲によるファイル分離<br/></li></ul>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -353,10 +353,10 @@
             "border_color": "#f2f2f2",
             "show_controls": false,
             "column_size": "2",
-            "title": "Vulnerability Management",
+            "title": "監視とアラート",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<p>Continuous monitoring and patch management</p><ul><li>✅ Daily vulnerability scans of infrastructure and application code. Critical patches within 24 hours.</li><li>✅ Annual third-party penetration testing of infrastructure and application layer.</li><li>✅ Security researchers can report vulnerabilities via security@flow-solutions.com. Coordinated disclosure process.</li></ul>",
+            "content": "<p>運用上またはセキュリティ上重要なアラートは、CloudWatch、Lambda、Webhook、社内 チャットを通じて担当チームへ通知されます。</p><ul><li>✅ CloudWatchによる監視</li><li>✅ LambdaとWebhookによる通知連携</li><li>✅ 担当チームによる確認と対応調整</li></ul>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -379,14 +379,14 @@
         "stack_on_mobile": false,
         "gap": "medium",
         "text_alignment": "start",
-        "subheading": "",
-        "title": "Infrastructure Security",
-        "content": "<p>Multi-layered security controls protecting data in transit, at rest, and during processing.</p>",
+        "subheading": "インフラ基盤",
+        "title": "インフラセキュリティ",
+        "content": "<h6>AWS基盤、アクセス制御、監視、ファイル連携により、Flowのサービス運用を多層的に保護します。</h6>",
         "background": "#ffffff",
         "background_gradient": "",
         "text_color": "#11243e",
-        "subheading_background_color": "",
-        "subheading_text_color": ""
+        "subheading_background_color": "#0E366A",
+        "subheading_text_color": "#F5F5F5"
       }
     },
     "multi_column_UHGh3a": {
@@ -405,10 +405,10 @@
             "border_color": "#f2f2f2",
             "show_controls": false,
             "column_size": "3",
-            "title": "99.9%",
+            "title": "99.5%以上",
             "heading_tag": "h1",
             "subheading": "",
-            "content": "<p><strong>Platform Uptime SLA</strong></p><p>Measured monthly. Service credits for breaches.</p>",
+            "content": "<h6><strong>月次アップタイム</strong></h6><p>定期メンテナンスを除くクラウドホスティングの月次稼働率コミットメント</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -427,10 +427,10 @@
             "border_color": "#f2f2f2",
             "show_controls": false,
             "column_size": "3",
-            "title": "24hr",
+            "title": "180日",
             "heading_tag": "h1",
             "subheading": "",
-            "content": "<p><strong>Edge Data Buffer</strong></p><p>Local storage during internet outages.</p>",
+            "content": "<h6><strong>バックアップ保持</strong></h6><p>暗号化された日次バックアップをAWS S3に保存</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -449,10 +449,10 @@
             "border_color": "#f2f2f2",
             "show_controls": false,
             "column_size": "3",
-            "title": "<1hr",
+            "title": "2h以内",
             "heading_tag": "h1",
             "subheading": "",
-            "content": "<p><strong>Critical Response Time</strong></p><p>Enterprise 24/7 support SLA.</p>",
+            "content": "<h6><strong>緊急応答目安</strong></h6><p>営業時間内での緊急時初回応答目標</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -471,10 +471,10 @@
             "border_color": "#f2f2f2",
             "show_controls": false,
             "column_size": "2",
-            "title": "Redundant Infrastructure",
+            "title": "バックアップと復旧準備",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<p>Multi-region deployment with automatic failover</p><ul><li>Multi-AZ deployment in AWS Tokyo (ap-northeast-1) and US East (us-east-1)</li><li>Database replication with automated failover (&lt;30 second RTO)</li><li>Load balancing across multiple application servers</li><li>Edge computing ensures local resilience—cameras store data during cloud outages</li></ul>",
+            "content": "<p>Flowは、暗号化された日次バックアップを作成し、AWS S3に保存します。バックアップは復旧準備とサービス継続性を支えるために管理されます。</p><ul><li>日次バックアップを作成</li><li>AWS S3に保存</li><li>バックアップへのアクセスは承認された管理者に限定</li></ul>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -483,7 +483,7 @@
         "item_w6AXVk": {
           "type": "item",
           "settings": {
-            "icon": "picto-pin",
+            "icon": "check",
             "icon_width": 32,
             "icon_background_type": "square",
             "icon_background": "#f5f8ed",
@@ -493,10 +493,10 @@
             "border_color": "#f2f2f2",
             "show_controls": false,
             "column_size": "2",
-            "title": "Monitoring & Alerting",
+            "title": "監視と対応調整",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<p>Real-time visibility into system health</p><ul><li>24/7 automated monitoring of all infrastructure and application components</li><li>Proactive alerting via PagerDuty for on-call engineering team</li><li>Customer-facing status page with real-time incident updates</li><li>Automatic email/SMS alerts to customers for critical issues affecting their deployment</li></ul>",
+            "content": "<p>Flowは、サービス稼働状況、アプリケーション処理、ファイル連携、セキュリティ関連イベントなど、運用上重要な事象を確認し、必要に応じて担当チームが対応を調整します。</p><ul><li>サービス稼働状況の確認</li><li>アプリケーション処理状況の確認</li><li>ファイル連携状況の確認</li><li>セキュリティ関連イベントの確認</li></ul>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -522,9 +522,9 @@
         "stack_on_mobile": false,
         "gap": "medium",
         "text_alignment": "center",
-        "subheading": "OPERATIONAL RELIABILITY",
-        "title": "Built for 24/7 Retail Operations",
-        "content": "<p>Flow is production infrastructure. Our architecture prioritizes uptime, resilience, and graceful degradation.</p>",
+        "subheading": "運用信頼性",
+        "title": "店舗運用を支える安定したクラウド基盤",
+        "content": "<h6>Flowは、AWS基盤、監視、バックアップ、アラート通知、サポート対応体制により、店舗計測サービスの安定運用を支えます。</h6>",
         "background": "#12243e",
         "background_gradient": "",
         "text_color": "#ffffff",
@@ -767,7 +767,7 @@
         "heading_YXhiR8": {
           "type": "heading",
           "settings": {
-            "text": "Security and Compliance Questions?",
+            "text": "セキュリティ・データ保護に関するご相談",
             "heading_tag": "h2",
             "text_color": "",
             "gradient": ""
@@ -776,7 +776,7 @@
         "richtext_qzAkak": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Our team is available to discuss specific security requirements, compliance certifications, or infrastructure concerns for your deployment.</p>"
+            "content": "<p>導入前の確認事項、データ管理、アクセス制御、インフラ構成について、貴社の要件に応じて個別に確認できます。</p>"
           }
         },
         "button_AVKAbi": {
@@ -796,14 +796,14 @@
           "settings": {
             "style_1": "fill",
             "size_1": "xl",
-            "text_1": "Contact Security Team",
-            "url_1": "#",
+            "text_1": "サポートに問い合わせる",
+            "url_1": "shopify://pages/contact",
             "background_1": "#0e366a",
             "text_color_1": "#ffffff",
             "style_2": "fill",
             "size_2": "xl",
-            "text_2": "View FAQ",
-            "url_2": "#",
+            "text_2": "FAQを見る",
+            "url_2": "shopify://pages/faq",
             "background_2": "#ffffff",
             "text_color_2": "#11243e"
           }
@@ -818,7 +818,7 @@
       "name": "Rich text",
       "settings": {
         "full_width": true,
-        "content_width": "small",
+        "content_width": "large",
         "text_position": "center",
         "background": "#a0b842",
         "background_gradient": "",

@@ -1,0 +1,396 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "content_width": "80ch"
+      }
+    },
+    "multi_column_9fqKpX": {
+      "type": "multi-column",
+      "blocks": {
+        "item_RXzy66": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "image": "shopify://shop_images/Primary_0e366a.png",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "プライマリー",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<p>#0e366a</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_RGJXDc": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "image": "shopify://shop_images/Accent_a0b842.png",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "アクセント",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<p>#a0b842</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_7MaYxw": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "image": "shopify://shop_images/AI.png",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "AIグラディエーション",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<p>#4a00e0 + #6c17e1 + #CA8CFF</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_RXzy66",
+        "item_RGJXDc",
+        "item_7MaYxw"
+      ],
+      "name": "Multi-column",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "start",
+        "subheading": "Brand Colours",
+        "title": "ブランドカラー",
+        "content": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "subheading_background_color": "",
+        "subheading_text_color": ""
+      }
+    },
+    "multi_column_gp4can": {
+      "type": "multi-column",
+      "blocks": {
+        "item_r98Y43": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "none",
+            "icon_background": "",
+            "icon_color": "",
+            "image": "shopify://shop_images/flow_logo_large_f3c9ad04-6cf6-4f17-99c4-a364885bbb67.png",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "Standard",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_cCptbX": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "image": "shopify://shop_images/logo-flow-device-normal.png",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "Standard Device",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_7Y4feB": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "image": "shopify://shop_images/embedded_device_logo_standard_1200x400_7420f8fe-9df3-4033-80c2-a1dfe68674b8.png",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "Embedded Standard",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_kDjDrV": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 36,
+            "icon_background_type": "none",
+            "icon_background": "",
+            "icon_color": "",
+            "image": "shopify://shop_images/Flow_logo_white.webp",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "Standard White",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_6R6r6z": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "image": "shopify://shop_images/Device_White.png",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "White Device",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_fGJiyg": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "image": "shopify://shop_images/embedded_white_logo.png",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "Embedded White",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_r98Y43",
+        "item_cCptbX",
+        "item_7Y4feB",
+        "item_kDjDrV",
+        "item_6R6r6z",
+        "item_fGJiyg"
+      ],
+      "name": "Multi-column",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": true,
+        "gap": "medium",
+        "text_alignment": "start",
+        "subheading": "Logos",
+        "title": "ロゴ",
+        "content": "",
+        "background": "#000000",
+        "background_gradient": "",
+        "text_color": "#f9fafb",
+        "subheading_background_color": "",
+        "subheading_text_color": ""
+      }
+    },
+    "rich_text_K6pMrC": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_Dgn3wF": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "text": "Subheading",
+            "icon": "none"
+          }
+        },
+        "heading_E9mUd9": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "text": "Heading",
+            "heading_tag": "h1",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "button_9bfC9B": {
+          "type": "button",
+          "settings": {
+            "style": "fill",
+            "size": "xl",
+            "text": "Canvaブランドキット",
+            "url": "https://www.canva.com/brand/kAGtSowyUg8",
+            "background": "",
+            "text_color": ""
+          }
+        },
+        "richtext_7NJXjM": {
+          "type": "richtext",
+          "disabled": true,
+          "settings": {
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_Dgn3wF",
+        "heading_E9mUd9",
+        "button_9bfC9B",
+        "richtext_7NJXjM"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "rich_text_UbUzQR": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_xLErYQ": {
+          "type": "subheading",
+          "settings": {
+            "text": "Flow GPT",
+            "icon": "none"
+          }
+        },
+        "heading_TAAcj3": {
+          "type": "heading",
+          "settings": {
+            "text": "Flow ContentGPT",
+            "heading_tag": "h1",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_drfVkd": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Flow ContentGPT は、日本の小売に特化したコンテンツ生成アシスタントです。Flow Solutions の専門知識と現場理解をベースに、来店計測、通行量、POS、スタッフ、天候などのデータを一つのストーリーにまとめ、実務的で読みやすい文章に変換します。小売現場の「分析する時間がない」という前提を理解し、明確で行動につながるメッセージだけを届けるために設計されています。</p>"
+          }
+        },
+        "button_pmYGky": {
+          "type": "button",
+          "settings": {
+            "style": "fill",
+            "size": "xl",
+            "text": "今すぐ活用",
+            "url": "https://chatgpt.com/g/g-691aaffdafb88191ab59f0a8ae1bcef2-flow-contentgpt",
+            "background": "",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "subheading_xLErYQ",
+        "heading_TAAcj3",
+        "richtext_drfVkd",
+        "button_pmYGky"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "medium",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "multi_column_9fqKpX",
+    "multi_column_gp4can",
+    "rich_text_K6pMrC",
+    "rich_text_UbUzQR"
+  ]
+}
