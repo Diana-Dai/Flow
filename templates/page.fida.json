@@ -79,7 +79,7 @@
         "mobile_text_position": "place-self-center text-center",
         "desktop_text_position": "sm:place-self-center sm:text-center",
         "text_color": "#ffffff",
-        "overlay_color": "#11243E",
+        "overlay_color": "#11243e",
         "overlay_opacity": 66
       }
     },
@@ -382,7 +382,7 @@
         "text_alignment": "start",
         "subheading": "",
         "title": "Flow AIが参照する判断材料",
-        "content": "<p>売上・来店・スタッフ・店舗報告・マニュアルをひとつの判断材料として整理し、店舗ごとの状況に合わせた実行提案につなげます。</p>",
+        "content": "<p>売上・来店・スタッフ・店舗報告・マニュアルをひとつの判断材料として整理し、<br/>店舗ごとの状況に合わせた実行提案につなげます。</p>",
         "background": "#ffffff",
         "background_gradient": "",
         "text_color": "",
