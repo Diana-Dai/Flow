@@ -574,7 +574,7 @@
             "title": "",
             "content": "<h2>Flowの知見をもとに、<br/>店舗課題を整理します</h2><p>この診断は、Flowが100以上のブランド支援で培った店舗分析の考え方をもとに設計されています。</p><ul><li>来店数、購買率、客単価を分けて確認</li><li>売上結果ではなく、原因構造を整理</li><li>改善優先度の考え方を明確化</li><li>次の分析や打ち手につながる診断</li></ul>",
             "link_text": "診断内容を見る",
-            "link_url": "#checklist",
+            "link_url": "#assessment",
             "background": "",
             "background_gradient": "",
             "text_color": "#11243e",
@@ -601,7 +601,7 @@
           "type": "heading",
           "settings": {
             "text": "5分で、店舗課題を整理する",
-            "heading_tag": "h3",
+            "heading_tag": "h2",
             "text_color": "",
             "gradient": ""
           }
@@ -623,19 +623,27 @@
             "text_color": ""
           }
         },
-        "divider_EH7A6H": {
-          "type": "divider",
-          "settings": {}
-        },
         "richtext_UMk9xq": {
           "type": "richtext",
-          "disabled": true,
           "settings": {
             "content": "<ul><li><strong>所要時間 約5分</strong></li><li><strong>回答後すぐに結果を確認</strong></li><li><strong>営業電話なし</strong></li><li><strong>回答内容は診断目的でのみ使用</strong></li></ul>"
           }
         },
+        "divider_EH7A6H": {
+          "type": "divider",
+          "settings": {}
+        },
+        "image_ynXAaA": {
+          "type": "image",
+          "settings": {
+            "width_mode": "custom",
+            "max_width": 600,
+            "mobile_max_width": 400
+          }
+        },
         "richtext_JGEWTP": {
           "type": "richtext",
+          "disabled": true,
           "settings": {
             "content": "<h4>診断結果では、次の内容を確認できます。</h4><p>✓ 売上課題がどこにある可能性が高いか</p><p>✓ 優先して確認すべきKPI</p><p>✓ 次に取るべき改善アクション</p>"
           }
@@ -645,8 +653,9 @@
         "heading_qttWFi",
         "richtext_fkn6LG",
         "button_VHxmPG",
-        "divider_EH7A6H",
         "richtext_UMk9xq",
+        "divider_EH7A6H",
+        "image_ynXAaA",
         "richtext_JGEWTP"
       ],
       "name": "Rich text",
@@ -688,7 +697,6 @@
         },
         "richtext_DWGmyy": {
           "type": "richtext",
-          "disabled": true,
           "settings": {
             "content": "<h4>診断結果では、次の内容を確認できます。</h4><p>✓ 売上課題がどこにある可能性が高いか</p><p>✓ 優先して確認すべきKPI</p><p>✓ 次に取るべき改善アクション</p>"
           }
@@ -700,6 +708,7 @@
         "richtext_Er9qVU",
         "richtext_DWGmyy"
       ],
+      "disabled": true,
       "name": "Rich text",
       "settings": {
         "full_width": true,
@@ -883,6 +892,62 @@
         "subheading_text_color": ""
       }
     },
+    "rich_text_6XVaBC": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_WmpMCW": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "text": "Subheading",
+            "icon": "none"
+          }
+        },
+        "button_F9JWG7": {
+          "type": "button",
+          "settings": {
+            "style": "fill",
+            "size": "xl",
+            "text": "無料診断を始まる",
+            "url": "#assessment",
+            "background": "",
+            "text_color": ""
+          }
+        },
+        "heading_GmAbAx": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "text": "Heading",
+            "heading_tag": "h1",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_UEBecR": {
+          "type": "richtext",
+          "disabled": true,
+          "settings": {
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_WmpMCW",
+        "button_F9JWG7",
+        "heading_GmAbAx",
+        "richtext_UEBecR"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
     "blocks_Q9hcqC": {
       "type": "_blocks",
       "blocks": {
@@ -957,6 +1022,7 @@
     "custom_liquid_QLfjeR",
     "rich_text_jJDg4X",
     "multi_column_x6bKQU",
+    "rich_text_6XVaBC",
     "blocks_Q9hcqC"
   ]
 }
