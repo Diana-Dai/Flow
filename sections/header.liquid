@@ -507,7 +507,7 @@ display: flex;
                   %}
                   <li class="{% if is_login_menu %}header__secondary-nav-item header__secondary-nav-item--divider{% endif %}">
                     {%- if link.levels == 0 and mega_menu_block == '' and use_custom_auto_mega == false -%}
-                      <a href="{{ link.url }}" class="{% if is_book_demo_menu %}header__secondary-nav-cta{% else %}bold link-faded-reverse{% endif %}" {% if link.current %}aria-current="page"{% endif %}>{{- link.title -}}</a>
+                      <a href="{{ link.url }}" {% if is_book_demo_menu %} target="_blank" {% endif %} class="{% if is_book_demo_menu %}header__secondary-nav-cta{% else %}bold link-faded-reverse{% endif %}" {% if link.current %}aria-current="page"{% endif %}>{{- link.title -}}</a>
                     {%- else -%}
                       {%- if mega_menu_block != '' and use_custom_auto_mega == false -%}
                         {%- comment -%}
@@ -939,7 +939,7 @@ display: flex;
             <ul class="contents header__secondary-nav-list">
               {%- for link in section.settings.secondary_menu.links -%}
                 <li class="header__secondary-nav-item {% if forloop.first %}header__secondary-nav-item--divider{% endif %}">
-                  <a href="{{ link.url }}" class="{% if forloop.last %}header__secondary-nav-cta{% else %}bold link-faded-reverse{% endif %}">{{ link.title }}</a>
+                  <a href="{{ link.url }}" {% if is_book_demo_menu %} target="_blank" {% endif %} class="{% if forloop.last %}header__secondary-nav-cta{% else %}bold link-faded-reverse{% endif %}">{{ link.title }}</a>
                 </li>
               {%- endfor -%}
             </ul>
