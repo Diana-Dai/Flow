@@ -1,0 +1,898 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "1780993864e604db88": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_f46e12e_dgHdVy": {
+          "type": "ai_gen_block_f46e12e",
+          "settings": {
+            "eyebrow": "チェックリスト",
+            "heading": "売上未達の原因を、店舗データで見極める",
+            "description": "<p>売上が目標に届かないとき、見るべきなのは「売上が低い」という結果だけではありません。来店数・購買率・店舗運営のどこに原因があるのかを整理する必要があります。</p><p>このチェックリストでは、店舗データをもとに改善ポイントを確認できます。</p>",
+            "bullet_1": "来店数と購買率の確認ポイントを整理",
+            "bullet_2": "見落としやすい店舗運営の課題を確認",
+            "bullet_3": "本部と店舗で共有しやすい改善アクションを明確化",
+            "bullet_4": "",
+            "primary_button_label": "チェックリストをダウンロード",
+            "primary_button_link": "#checklist",
+            "secondary_button_label": "",
+            "secondary_button_link": "",
+            "caption": "小売本部・店舗運営・DX担当者向けの無料PDFです。",
+            "trust_1": "無料PDF",
+            "trust_2": "店舗運営向け",
+            "trust_3": "実務で使えるチェックリスト",
+            "trust_4": "",
+            "image": "shopify://shop_images/Checklist_LP_Top_2.png",
+            "image_alt": "",
+            "image_position": "right",
+            "image_aspect_ratio": "natural",
+            "image_fit": "cover",
+            "image_border_radius": 12,
+            "image_shadow": true,
+            "image_border": false,
+            "image_panel": false,
+            "eyebrow_font_size": 15,
+            "eyebrow_font_weight": "700",
+            "eyebrow_letter_spacing": 0.1,
+            "eyebrow_bottom_spacing": 22,
+            "eyebrow_color": "#0e366a",
+            "heading_font_size": 52,
+            "heading_font_size_mobile": 36,
+            "heading_line_height": 1.1,
+            "heading_font_weight": "800",
+            "heading_max_width": 600,
+            "heading_color": "#11243e",
+            "description_font_size": 18,
+            "description_line_height": 1.6,
+            "description_max_width": 600,
+            "description_top_spacing": 26,
+            "description_bottom_spacing": 0,
+            "description_color": "#4a5568",
+            "bullet_font_size": 15,
+            "bullet_line_height": 1.5,
+            "bullet_item_spacing": 14,
+            "bullet_list_top_spacing": 32,
+            "bullet_list_bottom_spacing": 0,
+            "checkmark_size": 20,
+            "checkmark_color": "#a0b842",
+            "bullet_text_color": "#11243e",
+            "button_font_size": 16,
+            "button_font_weight": "700",
+            "button_border_radius": 8,
+            "button_vertical_padding": 16,
+            "button_horizontal_padding": 28,
+            "button_top_spacing": 36,
+            "button_alignment": "left",
+            "primary_button_background": "#0e366a",
+            "primary_button_text": "#ffffff",
+            "primary_button_hover_background": "#0a2850",
+            "primary_button_hover_text": "#ffffff",
+            "secondary_button_background": "rgba(0,0,0,0)",
+            "secondary_button_text": "#0e366a",
+            "secondary_button_border": "#0e366a",
+            "secondary_button_hover_background": "#0e366a",
+            "secondary_button_hover_text": "#ffffff",
+            "secondary_button_hover_border": "#0e366a",
+            "caption_font_size": 15,
+            "caption_line_height": 1.5,
+            "caption_max_width": 560,
+            "caption_top_spacing": 16,
+            "caption_bottom_spacing": 0,
+            "caption_color": "#11243e",
+            "trust_font_size": 15,
+            "trust_item_gap": 26,
+            "trust_row_gap": 16,
+            "trust_top_spacing": 16,
+            "trust_alignment": "left",
+            "trust_text_color": "#11243e",
+            "trust_checkmark_color": "#a0b842",
+            "column_ratio": "50-50",
+            "vertical_alignment": "center",
+            "mobile_order": "text-first",
+            "mobile_text_alignment": "left",
+            "mobile_button_width": "auto",
+            "max_width": 1300,
+            "column_gap": 70,
+            "mobile_column_gap": 45,
+            "padding_top": 90,
+            "padding_bottom": 90,
+            "padding_top_mobile": 60,
+            "padding_bottom_mobile": 60,
+            "section_background": "#ffffff",
+            "text_color": "#4a5568",
+            "image_panel_background": "#f7fafc"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_f46e12e_dgHdVy"
+      ],
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": true,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "blocks_HNb3p7": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_3c85fdc_RnBmWX": {
+          "type": "ai_gen_block_3c85fdc",
+          "settings": {
+            "heading": "",
+            "content": "<h3><strong>100以上のブランドで、店舗パフォーマンス改善を支援</strong></h3>",
+            "text_alignment": "center",
+            "content_size": 24,
+            "heading_color": "#11243e",
+            "content_color": "#677279",
+            "logo_1": "shopify://shop_images/Baycrews_White_1.png",
+            "logo_2": "shopify://shop_images/Stripe_White_f1ba215a-c741-4fa7-8b23-cd0b45a74f31.png",
+            "logo_3": "shopify://shop_images/Daytona_White_e03a3f9c-40ca-45b1-8866-4528e821f7f5.png",
+            "logo_4": "shopify://shop_images/Flow_Client_Case_Study_Banners_1.png",
+            "logo_5": "shopify://shop_images/Plaza_White_d4060480-52ad-4a29-b53d-1f7b116f8343.png",
+            "logo_6": "shopify://shop_images/Brooks_B.png",
+            "logo_7": "shopify://shop_images/Cole_Haan_White_836317d3-12dd-4e9a-b647-80aab91df0b2.png",
+            "logo_8": "shopify://shop_images/site_id-blue-01.svg",
+            "logo_9": "shopify://shop_images/26.webp",
+            "logo_10": "shopify://shop_images/Triumph_logo.png",
+            "logo_width": 200,
+            "logo_height": 120,
+            "logo_spacing": 40,
+            "logo_opacity": 1,
+            "logo_background": "#ffffff",
+            "logo_border_radius": 4,
+            "scroll_speed": 40,
+            "footer_content": "<p>Flowは、来店数・売上・店舗運営データを統合し、店舗ごとの改善判断を支援しています。</p>",
+            "footer_content_size": 16,
+            "footer_content_color": "#677279",
+            "desktop_width_percent": 100,
+            "background_color": "#f9fafb",
+            "section_padding": 60
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_3c85fdc_RnBmWX"
+      ],
+      "name": "Scrolling logos",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "rich_text_hy6aiD": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_8M8ad9": {
+          "type": "heading",
+          "settings": {
+            "text": "売上が伸びない原因は、ひとつではありません",
+            "heading_tag": "h1",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_th3yUp": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>売上未達が起きたとき、多くの現場では「販促を強める」「接客を改善する」「スタッフにもっと意識してもらう」といった対応に進みがちです。</p><p>しかし、売上はひとつの数字に見えても、実際には複数の要素で構成されています。</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_8M8ad9",
+        "richtext_th3yUp"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "large",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "media_with_text_hMPTmL": {
+      "type": "media-with-text",
+      "blocks": {
+        "image_8hBn9C": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Retail_Math_1.png",
+            "media_width": 50,
+            "media_position": "end",
+            "text_position": "place-self-center-start text-start",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "",
+            "content": "<h4><strong>来店数 × 購買率 × 客単価 = 売上</strong></h4><h5>来店数が足りないのか。<br/>来店はあるが、購入につながっていないのか。<br/>店舗ごとの売場・接客・人員配置・実行にばらつきがあるのか。</h5><h5>この切り分けができていないまま施策を打つと、本当に改善すべき原因が見えにくくなります。</h5>",
+            "link_text": "",
+            "link_url": "",
+            "background": "rgba(0,0,0,0)",
+            "background_gradient": "",
+            "text_color": "#11243e",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_8hBn9C"
+      ],
+      "custom_css": [
+        "h3 {font-size: var(--text-h0); color: #a0b842;}"
+      ],
+      "name": "Media with text",
+      "settings": {
+        "full_width": false,
+        "alternate_media_position": false,
+        "spacing": "small"
+      }
+    },
+    "multi_column_LeVzeG": {
+      "type": "multi-column",
+      "blocks": {
+        "item_M8EzQA": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#ffffff",
+            "text_color": "#11243e",
+            "border_color": "#ffffff",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "来店数の問題",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<p>そもそも十分な来店があるのか</p><p></p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_Eiqt4F": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#ffffff",
+            "text_color": "#11243e",
+            "border_color": "#ffffff",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "購買率の問題",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<p>来店はあるが、購入につながっているのか</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_QBtwgX": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#ffffff",
+            "text_color": "#11243e",
+            "border_color": "#ffffff",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "店舗運営の問題",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<p>店舗ごとの実行にばらつきがないか</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_M8EzQA",
+        "item_Eiqt4F",
+        "item_QBtwgX"
+      ],
+      "custom_css": [
+        ".multi-column {gap: 1rem;}",
+        ".multi-column__item:last-child {align-items: center; justify-content: center; display: flex;}",
+        "ul {list-style: none;}",
+        "img {width: 100%;}"
+      ],
+      "name": "Multi-column",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": true,
+        "gap": "medium",
+        "text_alignment": "center",
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "background": "rgba(0,0,0,0)",
+        "background_gradient": "",
+        "text_color": "#11243e",
+        "subheading_background_color": "",
+        "subheading_text_color": ""
+      }
+    },
+    "multi_column_HUnQMj": {
+      "type": "multi-column",
+      "blocks": {
+        "item_8XWXG7": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "image": "shopify://shop_images/Layer_1.png",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h5><strong>1. 来店計測・店舗行動の可視化</strong></h5><p>来店数、通行量、入店率、滞在、回遊、売場反応を正しく把握する。</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_ExJH4d": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "image": "shopify://shop_images/DAshboard_f026e004-3059-4a63-b6f2-00781c9c9741.png",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h5><strong>2. POS・運営データの統合</strong></h5><p>来店数・売上・運営データを組み合わせ、原因を分解する。</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_HFtJBy": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "image": "shopify://shop_images/Layer_3.png",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h5><strong>3. 改善判断・店舗実行への接続</strong></h5><p>どの店舗で、何を確認し、どこから改善すべきかを判断しやすくする。</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_8XWXG7",
+        "item_ExJH4d",
+        "item_HFtJBy"
+      ],
+      "name": "Multi-column",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "start",
+        "subheading": "",
+        "title": "",
+        "content": "<h2>売上未達の原因を分けて見る、3つの視点</h2><p>売上だけを見ても、原因はわかりません。来店数・購買率・店舗運営を分けて確認することで、改善すべきポイントが見えやすくなります。</p>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "subheading_background_color": "",
+        "subheading_text_color": ""
+      }
+    },
+    "section-15": {
+      "type": "feature-chart",
+      "blocks": {
+        "block-1": {
+          "type": "headings",
+          "settings": {
+            "heading_1": "主な提供価値",
+            "heading_2": "コアの設計思想",
+            "heading_3": "来店データの位置づけ",
+            "heading_4": "データの即時性",
+            "heading_5": "店舗での使いやすさ",
+            "heading_6": "判断へのつながり",
+            "heading_7": "店舗ごとの判断差",
+            "heading_8": "本部と店舗の連携",
+            "heading_9": "運用負荷",
+            "heading_10": "拡張性",
+            "heading_11": "",
+            "heading_12": "",
+            "heading_13": "",
+            "heading_14": "",
+            "heading_15": "",
+            "heading_16": "",
+            "heading_17": "",
+            "heading_18": "",
+            "heading_19": "",
+            "heading_20": ""
+          }
+        },
+        "block-2": {
+          "type": "values",
+          "settings": {
+            "product": "",
+            "value_1": "<p>40mm Beryllium</p>",
+            "value_2": "<p>245g</p>",
+            "value_3": "<p>165mm x 190mm x 66mm</p>",
+            "value_4": "<p>24 hours</p>",
+            "value_5": "",
+            "value_6": "",
+            "value_7": "",
+            "value_8": "",
+            "value_9": "",
+            "value_10": "",
+            "value_11": "",
+            "value_12": "",
+            "value_13": "",
+            "value_14": "",
+            "value_15": "",
+            "value_16": "",
+            "value_17": "",
+            "value_18": "",
+            "value_19": "",
+            "value_20": "",
+            "view_button_background": "",
+            "view_button_text_color": ""
+          }
+        },
+        "block-3": {
+          "type": "values",
+          "settings": {
+            "product": "",
+            "value_1": "<p>40mm Beryllium</p>",
+            "value_2": "<p>205g (On-Ear), 239g (Over-Ear)</p>",
+            "value_3": "<p>190mm x 155mm x 34mm (On-Ear), 200mm x 165mm x 40mm (Over-Ear)</p>",
+            "value_4": "<p>16 hours</p>",
+            "value_5": "",
+            "value_6": "",
+            "value_7": "",
+            "value_8": "",
+            "value_9": "",
+            "value_10": "",
+            "value_11": "",
+            "value_12": "",
+            "value_13": "",
+            "value_14": "",
+            "value_15": "",
+            "value_16": "",
+            "value_17": "",
+            "value_18": "",
+            "value_19": "",
+            "value_20": "",
+            "view_button_background": "",
+            "view_button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "Why Dashboards Fail",
+        "content": "<p>Traditional analytics show you the problem. Flow solves it.</p>",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "center",
+        "max_rows": 5,
+        "view_all_text": "View all",
+        "view_less_text": "View less",
+        "view_product": "View",
+        "viewing_product": "",
+        "show_product_swatch": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "chart_background": "",
+        "chart_text_color": "",
+        "chart_true_false_color": ""
+      }
+    },
+    "media_with_text_mRGejd": {
+      "type": "media-with-text",
+      "blocks": {
+        "image_enedX8": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Mobile_concept_image_1.png",
+            "media_width": 40,
+            "media_position": "start",
+            "text_position": "place-self-center-start text-start",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "小売店舗向け 店舗データ分析プラットフォーム",
+            "title": "",
+            "content": "<h2>Flowは、小売店舗のパフォーマンス改善に特化しています</h2><p>Flowは、来店数・売上・店舗運営データを統合し、店舗ごとの改善判断を支援する小売向けの店舗分析プラットフォームです。</p><p>分析レポートを増やすことではなく、店舗ごとに「次に何を確認すべきか」が分かる状態をつくることを重視しています。</p><ul><li><strong>来店数・購買率・売上を店舗別に可視化</strong></li><li><strong>店舗ごとの課題を比較</strong></li><li><strong>改善判断を現場の行動につなげる</strong></li><li><strong>店舗運営のばらつきを確認</strong></li></ul>",
+            "link_text": "確認ポイントを見る",
+            "link_url": "#checklist",
+            "background": "",
+            "background_gradient": "",
+            "text_color": "#11243e",
+            "text_gradient": "",
+            "button_background": "#f2f2f2",
+            "button_text_color": "#11243e"
+          }
+        }
+      },
+      "block_order": [
+        "image_enedX8"
+      ],
+      "name": "Media with text",
+      "settings": {
+        "full_width": false,
+        "alternate_media_position": false,
+        "spacing": "medium"
+      }
+    },
+    "rich_text_jJDg4X": {
+      "type": "rich-text",
+      "blocks": {
+        "richtext_nFmVeg": {
+          "type": "richtext",
+          "settings": {
+            "content": "<h4><strong>Flowは、来店数・売上・人員配置・店舗運営データを統合し、店舗ごとの改善判断を支援します。</strong></h4>"
+          }
+        }
+      },
+      "block_order": [
+        "richtext_nFmVeg"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "medium",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "multi_column_x6bKQU": {
+      "type": "multi-column",
+      "blocks": {
+        "item_3rhR4q": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "原因を分ける",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<p>来店数・購買率・店舗運営に分解</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_KmVTXJ": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "指標を整理する",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<p>最初に見るべき数字を確認</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_E9Cyby": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "確認状況を把握",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<p>見えている点・不足点を整理</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_Xy9R9Q": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "2",
+            "title": "優先順位を決める",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<p>どこから改善すべきかを判断</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_wi36dg": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "2",
+            "title": "次の行動を決める",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<p>7日以内・14日以内の確認項目を明確化</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_3rhR4q",
+        "item_KmVTXJ",
+        "item_E9Cyby",
+        "item_Xy9R9Q",
+        "item_wi36dg"
+      ],
+      "name": "Multi-column",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "small",
+        "text_alignment": "center",
+        "subheading": "",
+        "title": "チェックリストで確認できること",
+        "content": "",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "#11243e",
+        "subheading_background_color": "",
+        "subheading_text_color": ""
+      }
+    },
+    "rich_text_U4XBGi": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_qttWFi": {
+          "type": "heading",
+          "settings": {
+            "text": "無料チェックリストをメールで受け取る",
+            "heading_tag": "h3",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_fkn6LG": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p><strong>会社メールアドレスをご入力いただくと、売上未達の原因を整理するためのPDFチェックリストをお送りします。</strong></p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_qttWFi",
+        "richtext_fkn6LG"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "1780993871f4d25655": {
+      "type": "apps",
+      "blocks": {
+        "forms_inline_zbcDTK": {
+          "type": "shopify://apps/forms/blocks/inline/8744a304-fcb1-4347-b211-bb6b4759a76a",
+          "settings": {
+            "form_id": "1008656",
+            "text_color": "#202020",
+            "button_background_color": "#202020",
+            "button_label_color": "#ffffff",
+            "links_color": "#1878b9",
+            "errors_color": "#e02229",
+            "text_alignment": "center",
+            "form_alignment": "center",
+            "padding_top": 0,
+            "padding_bottom": 0,
+            "padding_right": 0,
+            "padding_left": 0
+          }
+        }
+      },
+      "block_order": [
+        "forms_inline_zbcDTK"
+      ],
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "blocks_Q9hcqC": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_2daa5f2_7mb7gq": {
+          "type": "ai_gen_block_2daa5f2",
+          "settings": {
+            "label": "別の確認方法",
+            "heading": "5分で原因を整理しませんか",
+            "description": "来店数・購買率・店舗運営のどこに課題がありそうかを、簡単な質問で確認できます。資料を読む前に、まずは自社の状況を整理できます。",
+            "button_text": "5分診断を始める",
+            "button_link": "shopify://pages/assessment-lp",
+            "condition_note": "無料で利用できます。入力内容に応じて、確認ポイントを整理できます。",
+            "benefit_1_title": "資料の前に簡単確認",
+            "benefit_1_text": "まずは自社の店舗課題を整理できます。",
+            "benefit_2_title": "原因を3つに分解",
+            "benefit_2_text": "来店数・購買率・店舗運営から確認できます。",
+            "benefit_3_title": "次に見る指標がわかる",
+            "benefit_3_text": "売上だけでは見えない確認ポイントを整理できます。",
+            "section_background": "#f6f8f3",
+            "card_background": "#ffffff",
+            "card_border_color": "#e5e7eb",
+            "card_border_radius": 16,
+            "card_shadow_opacity": 10,
+            "label_background": "#a0b842",
+            "label_text_color": "#ffffff",
+            "label_font_size": 13,
+            "heading_color": "#0e366a",
+            "text_color": "#4b5563",
+            "text_font_size": 16,
+            "condition_text_color": "#9ca3af",
+            "condition_font_size": 12,
+            "button_background": "#0e366a",
+            "button_hover_background": "#0a2850",
+            "button_text_color": "#ffffff",
+            "button_font_size": 16,
+            "button_border_radius": 8,
+            "benefit_icon_background": "#a0b842",
+            "benefit_icon_color": "#ffffff",
+            "benefit_title_color": "#0e366a",
+            "benefit_title_font_size": 15,
+            "benefit_text_color": "#6b7280",
+            "benefit_text_font_size": 13
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_2daa5f2_7mb7gq"
+      ],
+      "name": "Campaign banner",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    }
+  },
+  "order": [
+    "1780993864e604db88",
+    "blocks_HNb3p7",
+    "rich_text_hy6aiD",
+    "media_with_text_hMPTmL",
+    "multi_column_LeVzeG",
+    "multi_column_HUnQMj",
+    "section-15",
+    "media_with_text_mRGejd",
+    "rich_text_jJDg4X",
+    "multi_column_x6bKQU",
+    "rich_text_U4XBGi",
+    "1780993871f4d25655",
+    "blocks_Q9hcqC"
+  ]
+}
