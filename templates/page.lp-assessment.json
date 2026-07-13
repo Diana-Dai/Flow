@@ -31,7 +31,7 @@
             "trust_2": "登録最小入力",
             "trust_3": "結果をすぐ確認",
             "trust_4": "",
-            "image": "shopify://shop_images/After_2.jpg",
+            "image": "shopify://shop_images/Assessment_Hero_1.png",
             "image_alt": "",
             "image_position": "right",
             "image_aspect_ratio": "natural",
@@ -683,7 +683,7 @@
         "richtext_Er9qVU": {
           "type": "richtext",
           "settings": {
-            "content": "<ul><li><strong>所要時間 約5分・回答後すぐに結果を確認</strong></li><li><strong>営業電話なし・回答内容は診断目的でのみ使用</strong></li></ul>"
+            "content": "<h5>所要時間 約5分・回答後すぐに結果を確認</h5><h5>営業電話なし・回答内容は診断目的でのみ使用</h5>"
           }
         },
         "richtext_DWGmyy": {
