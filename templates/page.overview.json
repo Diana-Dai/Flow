@@ -1157,7 +1157,7 @@
         "support_hours": "",
         "answer_time": "",
         "button_text": "導入について相談する →",
-        "button_url": "",
+        "button_url": "shopify://pages/contact",
         "text_position": "start",
         "background": "",
         "background_gradient": "",
