@@ -706,7 +706,7 @@
         "content": "<p>Flowは、来店計測と店舗データをもとに、現場と本部が売上目標に向けてより早く、より一貫した判断ができる状態をつくります。</p>",
         "background": "",
         "background_gradient": "",
-        "text_color": "",
+        "text_color": "#11243E",
         "subheading_background_color": "",
         "subheading_text_color": ""
       }
@@ -800,7 +800,7 @@
         "content": "<p>Flowの小売分析・店舗運営支援の取り組みは、外部機関、業界メディア、専門書籍などで紹介されています。</p>",
         "background": "",
         "background_gradient": "",
-        "text_color": "",
+        "text_color": "#11243E",
         "subheading_background_color": "",
         "subheading_text_color": ""
       }
@@ -928,7 +928,7 @@
         "content": "<p>Flowは、正確な測定、運営データの構造化、実行につながる判断支援を一つの流れとして設計しています。</p>",
         "background": "",
         "background_gradient": "",
-        "text_color": "",
+        "text_color": "#11243E",
         "subheading_background_color": "",
         "subheading_text_color": ""
       }
@@ -964,13 +964,13 @@
             "style_1": "fill",
             "size_1": "xl",
             "text_1": "導入事例を見る →",
-            "url_1": "",
+            "url_1": "shopify://pages/case-studies",
             "background_1": "#a0b842",
             "text_color_1": "",
             "style_2": "fill",
             "size_2": "xl",
             "text_2": "相談する →",
-            "url_2": "",
+            "url_2": "shopify://pages/contact",
             "background_2": "",
             "text_color_2": ""
           }
