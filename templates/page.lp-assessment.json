@@ -579,8 +579,8 @@
             "background_gradient": "",
             "text_color": "#11243e",
             "text_gradient": "",
-            "button_background": "#11243E",
-            "button_text_color": "#FFFFFF"
+            "button_background": "#11243e",
+            "button_text_color": "#ffffff"
           }
         }
       },
@@ -771,50 +771,54 @@
           "settings": {
             "content": "<p>全9問に回答すると、売上未達の原因がどの領域にある可能性が高いかを整理できます。</p>"
           }
+        },
+        "button_VHxmPG": {
+          "type": "button",
+          "settings": {
+            "style": "fill",
+            "size": "xl",
+            "text": "無料診断を始める",
+            "url": "#assessment",
+            "background": "",
+            "text_color": ""
+          }
+        },
+        "divider_EH7A6H": {
+          "type": "divider",
+          "settings": {}
+        },
+        "richtext_UMk9xq": {
+          "type": "richtext",
+          "settings": {
+            "content": "<ul><li><strong>所要時間 約5分</strong></li><li><strong>回答後すぐに結果を確認</strong></li><li><strong>営業電話なし</strong></li><li><strong>回答内容は診断目的でのみ使用</strong></li></ul>"
+          }
         }
       },
       "block_order": [
         "heading_qttWFi",
-        "richtext_fkn6LG"
+        "richtext_fkn6LG",
+        "button_VHxmPG",
+        "divider_EH7A6H",
+        "richtext_UMk9xq"
       ],
       "name": "Rich text",
       "settings": {
         "full_width": true,
         "content_width": "small",
-        "text_position": "center",
+        "text_position": "start",
         "background": "",
         "background_gradient": "",
         "text_color": ""
       }
     },
-    "1780993871f4d25655": {
-      "type": "apps",
-      "blocks": {
-        "forms_inline_zbcDTK": {
-          "type": "shopify://apps/forms/blocks/inline/8744a304-fcb1-4347-b211-bb6b4759a76a",
-          "settings": {
-            "form_id": "1008656",
-            "text_color": "#202020",
-            "button_background_color": "#202020",
-            "button_label_color": "#ffffff",
-            "links_color": "#1878b9",
-            "errors_color": "#e02229",
-            "text_alignment": "center",
-            "form_alignment": "center",
-            "padding_top": 0,
-            "padding_bottom": 0,
-            "padding_right": 0,
-            "padding_left": 0
-          }
-        }
-      },
-      "block_order": [
-        "forms_inline_zbcDTK"
-      ],
+    "custom_liquid_QLfjeR": {
+      "type": "custom-liquid",
+      "name": "Custom Liquid",
       "settings": {
         "full_width": true,
         "remove_vertical_spacing": false,
         "remove_horizontal_spacing": false,
+        "liquid": "<div id=\"assessment\" style=\"max-width: 760px; margin: 0 auto;\">\n  <iframe \n    data-tally-src=\"https://tally.so/embed/rj0D4N?hideTitle=1&transparentBackground=1&dynamicHeight=1\"\n    loading=\"lazy\"\n    width=\"100%\"\n    height=\"407\"\n    frameborder=\"0\"\n    marginheight=\"0\"\n    marginwidth=\"0\"\n    title=\"Store Performance Gap Assessment - Japanese\">\n  </iframe>\n</div>\n\n<script>\nvar d=document,w=\"https://tally.so/widgets/embed.js\",v=function(){\n  \"undefined\"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll(\"iframe[data-tally-src]:not([src])\").forEach((function(e){e.src=e.dataset.tallySrc}))\n};\nif(\"undefined\"!=typeof Tally)v();\nelse if(d.querySelector('script[src=\"'+w+'\"]')==null){\n  var s=d.createElement(\"script\");\n  s.src=w;\n  s.onload=v;\n  s.onerror=v;\n  d.body.appendChild(s);\n}\n</script>",
         "background": "",
         "background_gradient": "",
         "text_color": ""
@@ -826,18 +830,18 @@
         "ai_gen_block_2daa5f2_7mb7gq": {
           "type": "ai_gen_block_2daa5f2",
           "settings": {
-            "label": "別の確認方法",
-            "heading": "5分で原因を整理しませんか",
-            "description": "来店数・購買率・店舗運営のどこに課題がありそうかを、簡単な質問で確認できます。資料を読む前に、まずは自社の状況を整理できます。",
-            "button_text": "5分診断を始める",
-            "button_link": "shopify://pages/assessment-lp",
-            "condition_note": "無料で利用できます。入力内容に応じて、確認ポイントを整理できます。",
+            "label": "無料リソース",
+            "heading": "店舗改善の進め方を、\nさらに詳しく。",
+            "description": "診断結果をもとに改善を進めたい方も、まず店舗課題を整理したい方も。店舗改善に役立つ無料チェックリストをご用意しています。",
+            "button_text": "無料チェックリストを見る",
+            "button_link": "shopify://pages/sales-cause-checklist",
+            "condition_note": "無料でご利用いただけます。店舗改善の確認項目を整理できるチェックリストです。",
             "benefit_1_title": "資料の前に簡単確認",
             "benefit_1_text": "まずは自社の店舗課題を整理できます。",
             "benefit_2_title": "原因を3つに分解",
-            "benefit_2_text": "来店数・購買率・店舗運営から確認できます。",
-            "benefit_3_title": "次に見る指標がわかる",
-            "benefit_3_text": "売上だけでは見えない確認ポイントを整理できます。",
+            "benefit_2_text": "来店数・購買率・客単価の視点で確認できます。",
+            "benefit_3_title": "次に見るべきKPIがわかる",
+            "benefit_3_text": "改善の優先順位と確認ポイントを整理できます。",
             "section_background": "#f6f8f3",
             "card_background": "#ffffff",
             "card_border_color": "#e5e7eb",
@@ -892,7 +896,7 @@
     "rich_text_jJDg4X",
     "multi_column_x6bKQU",
     "rich_text_U4XBGi",
-    "1780993871f4d25655",
+    "custom_liquid_QLfjeR",
     "blocks_Q9hcqC"
   ]
 }
