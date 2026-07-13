@@ -445,7 +445,7 @@
             "title": "店舗行動を計測する",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<p>来店数、通行量、入店率、滞在時間を正確に把握。</p>",
+            "content": "<p>来店数、店前通行量、入店率、滞在時間を正確に把握。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
