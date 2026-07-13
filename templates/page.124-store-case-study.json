@@ -198,7 +198,7 @@
         "content": "<p>124店舗・1年間の検証では、来店数が前年比5.61%減少する中、購買率が8.93%改善。購買率を最重要KPIとして店舗運営に組み込むことで、売上は前年比8.25%増加し、18億円の売上増につながりました。</p>",
         "background": "#f9fafb",
         "background_gradient": "",
-        "text_color": "",
+        "text_color": "#11243E",
         "subheading_background_color": "",
         "subheading_text_color": ""
       }
@@ -236,7 +236,7 @@
             "icon_background_type": "circle",
             "icon_background": "",
             "icon_color": "",
-            "background_color": "#0E366A",
+            "background_color": "#0e366a",
             "text_color": "#ffffff",
             "border_color": "",
             "show_controls": false,
@@ -443,7 +443,7 @@
             "icon_width": 32,
             "icon_background_type": "square",
             "icon_background": "#a0b842",
-            "icon_color": "#FFFFFF",
+            "icon_color": "#ffffff",
             "background_color": "#f9fafb",
             "text_color": "",
             "border_color": "#f2f2f2",
@@ -465,7 +465,7 @@
             "icon_width": 32,
             "icon_background_type": "square",
             "icon_background": "#a0b842",
-            "icon_color": "#F9FAFB",
+            "icon_color": "#f9fafb",
             "background_color": "#f9fafb",
             "text_color": "",
             "border_color": "#f2f2f2",
@@ -487,7 +487,7 @@
             "icon_width": 32,
             "icon_background_type": "square",
             "icon_background": "#a0b842",
-            "icon_color": "#F9FAFB",
+            "icon_color": "#f9fafb",
             "background_color": "#f9fafb",
             "text_color": "",
             "border_color": "#f2f2f2",
@@ -532,7 +532,7 @@
             "icon_width": 32,
             "icon_background_type": "square",
             "icon_background": "#a0b842",
-            "icon_color": "#FFFFFF",
+            "icon_color": "#ffffff",
             "background_color": "#f9fafb",
             "text_color": "",
             "border_color": "#f2f2f2",
@@ -595,7 +595,7 @@
         "content": "<p>大手セレクトショップ様では、124店舗規模で来店数・購買率・売上POSをつなげて活用できる計測・分析基盤を検討されていました。<br/>Flowは、計測領域の広さ、見やすいレポート画面、操作性、導入後の定着支援が評価され、導入に至りました。</p>",
         "background": "#ffffff",
         "background_gradient": "",
-        "text_color": "",
+        "text_color": "#11243E",
         "subheading_background_color": "",
         "subheading_text_color": ""
       }
@@ -758,7 +758,7 @@
         "content": "<p>大手セレクトショップ様では、全入口での高精度来店計測、売上POS連携、店舗ダッシュボード、活用研修を組み合わせ、店長が購買率を軸に店舗状況を確認できる環境を整備されました。</p>",
         "background": "",
         "background_gradient": "",
-        "text_color": "",
+        "text_color": "#11243E",
         "subheading_background_color": "",
         "subheading_text_color": ""
       }
@@ -1448,13 +1448,13 @@
             "style_1": "fill",
             "size_1": "xl",
             "text_1": "無料デモを予約する →",
-            "url_1": "#",
+            "url_1": "shopify://pages/contact",
             "background_1": "#a0b842",
             "text_color_1": "#ffffff",
             "style_2": "fill",
             "size_2": "xl",
             "text_2": "プラットフォームを見る →",
-            "url_2": "#",
+            "url_2": "shopify://pages/store-performance-platform",
             "background_2": "#ffffff",
             "text_color_2": "#11243e"
           }
