@@ -53,7 +53,7 @@
         "richtext_LcTpMq": {
           "type": "richtext",
           "settings": {
-            "content": "<p>来店数・通行量・POS・店舗運営データを統合し、売上改善に必要な次の一手を明確にします。</p>"
+            "content": "<p>来店数・店前通行量・POS・店舗運営データを統合し、売上改善に必要な次の一手を明確にします。</p>"
           }
         },
         "buttons_pt4Ted": {
@@ -68,7 +68,7 @@
             "style_2": "outline",
             "size_2": "base",
             "text_2": "導入事例を見る",
-            "url_2": "shopify://pages/case-studies-1",
+            "url_2": "shopify://pages/case-studies",
             "background_2": "",
             "text_color_2": ""
           }
