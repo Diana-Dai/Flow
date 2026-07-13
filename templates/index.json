@@ -53,7 +53,7 @@
         "richtext_LcTpMq": {
           "type": "richtext",
           "settings": {
-            "content": "<p>来店数・通行量・POS・店舗運営データを統合し、売上改善に必要な次の一手を明確にします。</p>"
+            "content": "<p>来店数・店前通行量・POS・店舗運営データを統合し、売上改善に必要な次の一手を明確にします。</p>"
           }
         },
         "buttons_pt4Ted": {
