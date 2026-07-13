@@ -500,7 +500,7 @@
         "remove_horizontal_spacing": false,
         "background": "",
         "background_gradient": "",
-        "text_color": ""
+        "text_color": "#11243E"
       }
     },
     "multi_column_bJtgmc": {
@@ -828,13 +828,13 @@
             "style_1": "fill",
             "size_1": "xl",
             "text_1": "相談する →",
-            "url_1": "#",
+            "url_1": "shopify://pages/contact",
             "background_1": "#a0b842",
             "text_color_1": "#ffffff",
             "style_2": "fill",
             "size_2": "xl",
             "text_2": "プラットフォームを見る →",
-            "url_2": "#",
+            "url_2": "shopify://pages/store-performance-platform",
             "background_2": "#ffffff",
             "text_color_2": "#11243e"
           }
