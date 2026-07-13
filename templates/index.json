@@ -445,7 +445,7 @@
             "title": "店舗行動を計測する",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<p>来店数、店前通行量、入店率、滞在時間を正確に把握。</p>",
+            "content": "<p>来店数、通行量、入店率、滞在時間を正確に把握。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -999,7 +999,7 @@
         "gap": "medium",
         "text_alignment": "start",
         "subheading": "",
-        "title": "データを判断につなげる",
+        "title": "データを判断につなぐ",
         "content": "<p><strong>来店、売上、店舗運営、外部環境、店舗ナレッジを一つにつなぎ、次に取るべき行動を見える化します。</strong></p>",
         "background": "",
         "background_gradient": "",
@@ -1619,7 +1619,7 @@
             "round_avatar": true,
             "show_rating": false,
             "rating": 5,
-            "author": "斉藤 篤史様｜事業推進部 部長",
+            "author": "斉藤様｜事業推進部 部長",
             "title": "デイトナ・インターナショナル",
             "content": "<p>「Flowの導入により、データを軸にした判断が現場に定着しました。各店舗が主体的に動き、スピードと自信を持って改善に取り組めています。」</p>"
           }
@@ -1630,7 +1630,7 @@
             "round_avatar": true,
             "show_rating": false,
             "rating": 5,
-            "author": "金沢 里美様｜営業開発Div",
+            "author": "金沢様｜営業開発Div",
             "title": "ベイクルーズグループ",
             "content": "<p>「購買率などの重要指標を日常的に確認し、データに基づいて行動することが当たり前になりました。現場と本部が、同じデータを見て判断できるようになっています。」</p>"
           }
@@ -1652,7 +1652,7 @@
             "round_avatar": false,
             "show_rating": false,
             "rating": 4,
-            "author": "加瀬 剛様 ｜ Retail Operations Mgr",
+            "author": "加瀬様 ｜ Retail Operations Mgr",
             "title": "コールハーン",
             "content": "<p>「Flowによって、各店舗の来店状況やコンバージョンを日々確認できるようになりました。店舗ごとの課題が見えやすくなり、改善の優先順位を判断しやすくなっています。」</p>"
           }
@@ -1663,7 +1663,7 @@
             "round_avatar": false,
             "show_rating": false,
             "rating": 4,
-            "author": "飯田 健人様  |  経営企画部",
+            "author": "飯田様  |  経営企画部",
             "title": "ライトオン",
             "content": "<p>「データは取れるだけでは意味がありません。<br/>重要なのは、現場で使えて判断につながること。Flowはそれを実現してくれました。」</p>"
           }
