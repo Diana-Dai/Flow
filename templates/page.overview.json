@@ -1001,9 +1001,9 @@
             "heading_tag": "h4",
             "subheading": "",
             "content": "<p>高精度な来店計測と顧客行動分析。</p>",
-            "link_url": "",
+            "link_url": "shopify://pages/store-analytics",
             "link_text": "詳しく見る →",
-            "link_style": "link"
+            "link_style": "button"
           }
         },
         "item_jzqLHt": {
@@ -1024,9 +1024,9 @@
             "heading_tag": "h4",
             "subheading": "",
             "content": "<p>来店・売上・人員配置を統合分析。</p>",
-            "link_url": "#",
+            "link_url": "shopify://pages/flow-platform-overview",
             "link_text": "詳しく見る →",
-            "link_style": "link"
+            "link_style": "button"
           }
         },
         "item_rn7myV": {
@@ -1047,9 +1047,9 @@
             "heading_tag": "h4",
             "subheading": "",
             "content": "<p>現場実行につながる推奨アクション。</p><h3></h3>",
-            "link_url": "#",
+            "link_url": "shopify://pages/flow-ai",
             "link_text": "詳しく見る →",
-            "link_style": "link"
+            "link_style": "button"
           }
         }
       },
