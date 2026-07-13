@@ -182,7 +182,7 @@
             "heading_tag": "h1",
             "subheading": "<h5><strong>Flow 分析プラットフォーム</strong></h5><h6>判断を標準化する<strong><br/><br/></strong></h6>",
             "content": "<p>→ 来店・売上・購買率を即時可視化<br/>→ 改善ポイントを早期に把握<br/>→ ブランド方針に沿った対応を支援<br/>→ 成果ギャップを縮小</p>",
-            "link_url": "",
+            "link_url": "shopify://pages/store-performance-platform",
             "link_text": "店舗運営プラットフォームを見る →",
             "link_style": "button"
           }
