@@ -43,7 +43,7 @@
             "style": "fill",
             "size": "lg",
             "text": "デモを予約する →",
-            "url": "#",
+            "url": "shopify://pages/contact",
             "background": "#a0b842",
             "text_color": ""
           }
@@ -354,7 +354,7 @@
             "heading_tag": "h4",
             "subheading": "",
             "content": "<p>API、CSV、FTPを使い、POS・シフト・外部データなどを運用状況に合わせて取り込みます。</p>",
-            "link_url": "shopify://pages/integrations-2",
+            "link_url": "shopify://pages/integrations",
             "link_text": "外部連携の詳細を見る →",
             "link_style": "button"
           }
@@ -1443,7 +1443,7 @@
             "style_2": "fill",
             "size_2": "xl",
             "text_2": "Flow Platformを見る →",
-            "url_2": "shopify://pages/platform-1",
+            "url_2": "shopify://pages/store-performance-platform",
             "background_2": "#ffffff",
             "text_color_2": "#11243e"
           }
