@@ -961,6 +961,7 @@
         "heading_GmAbAx",
         "richtext_UEBecR"
       ],
+      "disabled": true,
       "name": "Rich text",
       "settings": {
         "full_width": true,
