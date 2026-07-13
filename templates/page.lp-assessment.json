@@ -636,8 +636,8 @@
         "image_ynXAaA": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/assessment_sample_out_put_2.png",
-            "width_mode": "custom",
+            "image": "shopify://shop_images/assessment_sample_2.png",
+            "width_mode": "full_width",
             "max_width": 600,
             "mobile_max_width": 400
           }
