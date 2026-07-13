@@ -760,7 +760,7 @@
         "heading_qttWFi": {
           "type": "heading",
           "settings": {
-            "text": "無料チェックリストをメールで受け取る",
+            "text": "5分で、店舗課題を確認する",
             "heading_tag": "h3",
             "text_color": "",
             "gradient": ""
@@ -769,7 +769,7 @@
         "richtext_fkn6LG": {
           "type": "richtext",
           "settings": {
-            "content": "<p><strong>会社メールアドレスをご入力いただくと、売上未達の原因を整理するためのPDFチェックリストをお送りします。</strong></p>"
+            "content": "<p>全9問に回答すると、売上未達の原因がどの領域にある可能性が高いかを整理できます。</p>"
           }
         }
       },
