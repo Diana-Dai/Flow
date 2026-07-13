@@ -54,7 +54,7 @@
         "full_width": true,
         "remove_vertical_spacing": false,
         "remove_horizontal_spacing": false,
-        "background": "#0E366A",
+        "background": "#0e366a",
         "background_gradient": "",
         "text_color": "#ffffff"
       }
@@ -385,8 +385,8 @@
         "background": "#ffffff",
         "background_gradient": "",
         "text_color": "#11243e",
-        "subheading_background_color": "#0E366A",
-        "subheading_text_color": "#F5F5F5"
+        "subheading_background_color": "#0e366a",
+        "subheading_text_color": "#f5f5f5"
       }
     },
     "multi_column_UHGh3a": {
@@ -797,7 +797,7 @@
             "style_1": "fill",
             "size_1": "xl",
             "text_1": "サポートに問い合わせる",
-            "url_1": "shopify://pages/contact",
+            "url_1": "shopify://pages/support",
             "background_1": "#0e366a",
             "text_color_1": "#ffffff",
             "style_2": "fill",
