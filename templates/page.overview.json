@@ -37,8 +37,8 @@
           "settings": {
             "style": "fill",
             "size": "lg",
-            "text": "導入診断を始める",
-            "url": "",
+            "text": "店舗課題を診断する",
+            "url": "shopify://pages/assessment-lp",
             "background": "#a0b842",
             "text_color": "#ffffff"
           }
