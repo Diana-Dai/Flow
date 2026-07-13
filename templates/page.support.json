@@ -33,12 +33,27 @@
           "settings": {
             "content": "<p>操作方法、データ確認、アカウント設定、連携、研修相談など、Flowをご利用中のお客様向けの情報をまとめています。</p>"
           }
+        },
+        "divider_qLyEMT": {
+          "type": "divider",
+          "settings": {}
+        },
+        "image_kVBReW": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Support.webp",
+            "width_mode": "custom",
+            "max_width": 300,
+            "mobile_max_width": 400
+          }
         }
       },
       "block_order": [
         "subheading_nJjQnz",
         "heading_hjfyL9",
-        "richtext_wjTJeB"
+        "richtext_wjTJeB",
+        "divider_qLyEMT",
+        "image_kVBReW"
       ],
       "custom_css": [
         "* {padding-bottom: 1rem;}"
@@ -64,7 +79,7 @@
             "icon_background_type": "square",
             "icon_background": "",
             "icon_color": "",
-            "background_color": "#0E366A",
+            "background_color": "#0e366a",
             "text_color": "",
             "border_color": "rgba(0,0,0,0)",
             "show_controls": false,
@@ -86,7 +101,7 @@
             "icon_background_type": "square",
             "icon_background": "",
             "icon_color": "",
-            "background_color": "#0E366A",
+            "background_color": "#0e366a",
             "text_color": "",
             "border_color": "#0e366a",
             "show_controls": false,
@@ -108,7 +123,7 @@
             "icon_background_type": "square",
             "icon_background": "",
             "icon_color": "",
-            "background_color": "#0E366A",
+            "background_color": "#0e366a",
             "text_color": "",
             "border_color": "#0e366a",
             "show_controls": false,
@@ -130,7 +145,7 @@
             "icon_background_type": "square",
             "icon_background": "",
             "icon_color": "",
-            "background_color": "#0E366A",
+            "background_color": "#0e366a",
             "text_color": "",
             "border_color": "#0e366a",
             "show_controls": false,
@@ -382,6 +397,7 @@
           "type": "ai_gen_block_659cb24",
           "name": "FAQ card",
           "settings": {
+            "card_width": "50",
             "card_title": "ログイン・アカウント",
             "card_subtitle": "ログイン、ユーザー管理、権限設定について",
             "icon_type": "users",
@@ -400,7 +416,7 @@
             "question_5": "",
             "answer_5": "",
             "question_5_open": false,
-            "header_background_color": "#11243E",
+            "header_background_color": "#11243e",
             "title_color": "#ffffff",
             "subtitle_color": "#ffffffb3",
             "icon_badge_background": "#a0b84226",
@@ -413,6 +429,7 @@
         "ai_gen_block_659cb24_ckmcrH": {
           "type": "ai_gen_block_659cb24",
           "settings": {
+            "card_width": "50",
             "card_title": "操作・データ確認",
             "card_subtitle": "画面操作、数値、レポートの確認について",
             "icon_type": "chart",
@@ -445,6 +462,7 @@
           "type": "ai_gen_block_659cb24",
           "name": "FAQ card",
           "settings": {
+            "card_width": "50",
             "card_title": "POS・外部連携",
             "card_subtitle": "POS、シフト、天候、外部データ連携について",
             "icon_type": "chart",
@@ -477,6 +495,7 @@
           "type": "ai_gen_block_659cb24",
           "name": "FAQ card",
           "settings": {
+            "card_width": "50",
             "card_title": "カメラ・計測",
             "card_subtitle": "来店計測、カメラ、データ品質について",
             "icon_type": "shield",
@@ -509,6 +528,7 @@
           "type": "ai_gen_block_659cb24",
           "name": "FAQ card",
           "settings": {
+            "card_width": "50",
             "card_title": "研修・運用サポート",
             "card_subtitle": "店舗での活用、研修、運用定着について",
             "icon_type": "info",
