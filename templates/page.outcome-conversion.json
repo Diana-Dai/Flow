@@ -653,7 +653,7 @@
             "metric_value_color": "#a0b842",
             "metric_description_color": "#d1d5db",
             "cta_button_text": "事例を見る",
-            "cta_button_link": "shopify://pages/case-studies-1",
+            "cta_button_link": "shopify://pages/case-studies",
             "cta_button_background": "#a0b842",
             "cta_button_text_color": "#ffffff"
           },
