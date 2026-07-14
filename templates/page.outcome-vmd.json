@@ -285,7 +285,7 @@
             "style_2": "fill",
             "size_2": "xl",
             "text_2": "プラットフォームを見る",
-            "url_2": "shopify://pages/platform-1",
+            "url_2": "shopify://pages/store-performance-platform",
             "background_2": "#a0b842",
             "text_color_2": ""
           }
@@ -468,7 +468,7 @@
             "step_2_label": "来店数",
             "step_2_value": "1,936",
             "drop_2_text": "↓ 売場接触率 64.4%",
-            "step_3_bar_color": "#6E95C8",
+            "step_3_bar_color": "#6e95c8",
             "step_3_label": "売場反応",
             "step_3_value": "1,247",
             "drop_3_text": "↓ 購買転換率 34%",
@@ -653,7 +653,7 @@
             "metric_value_color": "#a0b842",
             "metric_description_color": "#d1d5db",
             "cta_button_text": "事例を見る",
-            "cta_button_link": "shopify://pages/case-studies-1",
+            "cta_button_link": "shopify://pages/case-studies",
             "cta_button_background": "#a0b842",
             "cta_button_text_color": "#ffffff"
           },
@@ -958,7 +958,7 @@
             "style_2": "fill",
             "size_2": "xl",
             "text_2": "導入事例を見る →",
-            "url_2": "shopify://pages/case-studies-1",
+            "url_2": "shopify://pages/case-studies",
             "background_2": "#ffffff",
             "text_color_2": "#11243e"
           }
