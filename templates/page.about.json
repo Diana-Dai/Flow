@@ -163,7 +163,7 @@
       "name": "Multi-column",
       "settings": {
         "full_width": true,
-        "stack_on_mobile": false,
+        "stack_on_mobile": true,
         "gap": "medium",
         "text_alignment": "start",
         "subheading": "",
@@ -698,7 +698,7 @@
       "name": "Multi-column",
       "settings": {
         "full_width": true,
-        "stack_on_mobile": false,
+        "stack_on_mobile": true,
         "gap": "medium",
         "text_alignment": "start",
         "subheading": "",
@@ -706,7 +706,7 @@
         "content": "<p>Flowは、来店計測と店舗データをもとに、現場と本部が売上目標に向けてより早く、より一貫した判断ができる状態をつくります。</p>",
         "background": "",
         "background_gradient": "",
-        "text_color": "#11243E",
+        "text_color": "#11243e",
         "subheading_background_color": "",
         "subheading_text_color": ""
       }
@@ -792,7 +792,7 @@
       "name": "Multi-column",
       "settings": {
         "full_width": true,
-        "stack_on_mobile": false,
+        "stack_on_mobile": true,
         "gap": "medium",
         "text_alignment": "center",
         "subheading": "外部実績",
@@ -800,7 +800,7 @@
         "content": "<p>Flowの小売分析・店舗運営支援の取り組みは、外部機関、業界メディア、専門書籍などで紹介されています。</p>",
         "background": "",
         "background_gradient": "",
-        "text_color": "#11243E",
+        "text_color": "#11243e",
         "subheading_background_color": "",
         "subheading_text_color": ""
       }
@@ -920,7 +920,7 @@
       "name": "Multi-column",
       "settings": {
         "full_width": true,
-        "stack_on_mobile": false,
+        "stack_on_mobile": true,
         "gap": "medium",
         "text_alignment": "center",
         "subheading": "",
@@ -928,7 +928,7 @@
         "content": "<p>Flowは、正確な測定、運営データの構造化、実行につながる判断支援を一つの流れとして設計しています。</p>",
         "background": "",
         "background_gradient": "",
-        "text_color": "#11243E",
+        "text_color": "#11243e",
         "subheading_background_color": "",
         "subheading_text_color": ""
       }
