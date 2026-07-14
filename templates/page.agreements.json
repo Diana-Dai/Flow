@@ -54,7 +54,7 @@
         "text_position": "center",
         "background": "",
         "background_gradient": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(14, 54, 106, 1) 56%, rgba(247, 249, 253, 1) 99%)",
-        "text_color": "#FFFFFF"
+        "text_color": "#ffffff"
       }
     },
     "image_with_text_overlay_9jXQ6b": {
@@ -95,7 +95,7 @@
         "image": "shopify://shop_images/Agreements.png",
         "mobile_text_position": "place-self-center text-center",
         "desktop_text_position": "sm:place-self-center-start sm:text-start",
-        "text_color": "#0E366A",
+        "text_color": "#0e366a",
         "overlay_color": "#000000",
         "overlay_opacity": 14
       }
@@ -178,7 +178,7 @@
       "name": "Multi-column",
       "settings": {
         "full_width": true,
-        "stack_on_mobile": false,
+        "stack_on_mobile": true,
         "gap": "small",
         "text_alignment": "start",
         "subheading": "",
@@ -270,7 +270,7 @@
       "name": "Multi-column",
       "settings": {
         "full_width": true,
-        "stack_on_mobile": false,
+        "stack_on_mobile": true,
         "gap": "medium",
         "text_alignment": "start",
         "subheading": "",
@@ -362,7 +362,7 @@
       "name": "Multi-column",
       "settings": {
         "full_width": true,
-        "stack_on_mobile": false,
+        "stack_on_mobile": true,
         "gap": "medium",
         "text_alignment": "start",
         "subheading": "",
@@ -454,7 +454,7 @@
       "name": "Multi-column",
       "settings": {
         "full_width": true,
-        "stack_on_mobile": false,
+        "stack_on_mobile": true,
         "gap": "medium",
         "text_alignment": "start",
         "subheading": "",
@@ -547,7 +547,7 @@
       "name": "Multi-column",
       "settings": {
         "full_width": true,
-        "stack_on_mobile": false,
+        "stack_on_mobile": true,
         "gap": "medium",
         "text_alignment": "start",
         "subheading": "",
@@ -591,10 +591,10 @@
           "settings": {
             "style": "fill",
             "size": "xl",
-            "text": "お問い合わせする →",
+            "text": "お問い合わせはこちら→",
             "url": "shopify://pages/contact",
-            "background": "#FFFFFF",
-            "text_color": "#0E366A"
+            "background": "#ffffff",
+            "text_color": "#0e366a"
           }
         }
       },
@@ -609,9 +609,9 @@
         "full_width": true,
         "content_width": "medium",
         "text_position": "center",
-        "background": "#0E366A",
+        "background": "#0e366a",
         "background_gradient": "",
-        "text_color": "#FFFFFF"
+        "text_color": "#ffffff"
       }
     }
   },
