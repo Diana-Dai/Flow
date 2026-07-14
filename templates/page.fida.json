@@ -775,7 +775,7 @@
             "background_color": "#f5f5f5",
             "headline": "数字を読む時間を減らし、行動を決める時間を増やします。",
             "headline_size_mobile": 34,
-            "headline_size_desktop": 48,
+            "headline_size_desktop": 36,
             "headline_color": "#1a2b4a",
             "description": "Flow AIは、売上や来店数の変化だけでなく、スタッフ状況・店舗メモ・SOPを合わせて確認し、現場で実行しやすい次の一手を提示します。",
             "description_size": 19,
