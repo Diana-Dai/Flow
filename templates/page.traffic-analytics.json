@@ -1,0 +1,1188 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "image_with_text_overlay_AcppEX": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "subheading_GmUMNm": {
+          "type": "subheading",
+          "settings": {
+            "text": "来店データ活用"
+          }
+        },
+        "heading_frXnfn": {
+          "type": "heading",
+          "settings": {
+            "text": "来店数から、売上機会を見える化。",
+            "heading_tag": "h1"
+          }
+        },
+        "richtext_HwhtPj": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Flowは、来店数・店前通行量・入店率を可視化し、売上や購買率とつなげて店舗状況を把握しやすくします。<br/>感覚に頼らず、実際の来店データをもとに、集客・接客・人員配置の改善判断を支援します。</p>"
+          }
+        },
+        "button_7Prq3W": {
+          "type": "button",
+          "settings": {
+            "style": "fill",
+            "size": "lg",
+            "text": "無料デモを依頼する",
+            "url": "shopify://pages/contact",
+            "background": "#a0b842",
+            "text_color": ""
+          }
+        },
+        "button_cpqnfi": {
+          "type": "button",
+          "settings": {
+            "style": "fill",
+            "size": "lg",
+            "text": "プラットフォームを見る",
+            "url": "shopify://pages/store-performance-platform",
+            "background": "#ffffff",
+            "text_color": "#11243e"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_GmUMNm",
+        "heading_frXnfn",
+        "richtext_HwhtPj",
+        "button_7Prq3W",
+        "button_cpqnfi"
+      ],
+      "name": "Image with text overlay",
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "fill",
+        "image": "shopify://shop_images/screen_2af1693c-1aed-4b4c-a761-f9b745ce1b81.png",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "text_color": "#ffffff",
+        "overlay_color": "#11243e",
+        "overlay_opacity": 43
+      }
+    },
+    "multi_column_HCGJea": {
+      "type": "multi-column",
+      "blocks": {
+        "item_GMdCj7": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-validation",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#ffffff",
+            "icon_color": "#a0b842",
+            "background_color": "#f2f2f2",
+            "text_color": "",
+            "border_color": "#ffffff",
+            "show_controls": false,
+            "column_size": "4",
+            "title": "来店数",
+            "heading_tag": "h3",
+            "subheading": "",
+            "content": "<p><em>TRAFFIC</em></p><h6>店舗入口の来店数を取得</h6><p>店舗ごとの来店数を把握し、売上・購買率・人員配置の判断に使える基準データをつくります。</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_9cWFC9": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-building",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#ffffff",
+            "icon_color": "#a0b842",
+            "background_color": "#f2f2f2",
+            "text_color": "#11243e",
+            "border_color": "#ffffff",
+            "show_controls": false,
+            "column_size": "4",
+            "title": "店前通行量",
+            "heading_tag": "h3",
+            "subheading": "",
+            "content": "<p><em>PASSERSBY</em></p><h6>店前の通行人数を可視化</h6><p>店前を通る人数と来店数を比較し、入店率や店頭訴求の効果を確認できます。</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_aqpNXK": {
+          "type": "item",
+          "settings": {
+            "icon": "people",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#ffffff",
+            "icon_color": "#a0b842",
+            "background_color": "#f2f2f2",
+            "text_color": "#11243e",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "4",
+            "title": "属性傾向",
+            "heading_tag": "h3",
+            "subheading": "",
+            "content": "<p><em>DEMOGRAPHICS</em></p><h6>年齢・性別の傾向を確認</h6><p>来店客の年齢・性別などの傾向を把握し、客層理解やVMD・販促施策の改善に活用できます。</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_tTyycj": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-timer",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#ffffff",
+            "icon_color": "#a0b842",
+            "background_color": "#f2f2f2",
+            "text_color": "#11243e",
+            "border_color": "#ffffff",
+            "show_controls": false,
+            "column_size": "4",
+            "title": "滞在傾向",
+            "heading_tag": "h3",
+            "subheading": "",
+            "content": "<p><em>DWELL TIME</em></p><h6>売場ごとの滞在を確認</h6><p>来店後の滞在傾向を確認し、売場改善やVMD検証につなげます。</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_TzaiMV": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#11243e",
+            "text_color": "#ffffff",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "2",
+            "title": "複数入口対応",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h6>複数入口がある店舗でも、入口ごとの来店データを統合して把握できます。大型店、商業施設内店舗、百貨店インショップなどでも、店舗全体の来店傾向を見やすくします。</h6><p>✅ <strong>複数入口の来店傾向を一元化</strong></p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_fyWETE": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#a0b842",
+            "text_color": "#ffffff",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "2",
+            "title": "スタッフ除外",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h6>スタッフの動きを除外することで、実際の顧客来店に近いデータを取得します。来店数にスタッフ移動が含まれると購買率がずれやすくなるため、店舗評価や接客改善に重要です。</h6><p><strong>✅ 購買率をより正確に把握</strong></p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_GMdCj7",
+        "item_9cWFC9",
+        "item_aqpNXK",
+        "item_tTyycj",
+        "item_TzaiMV",
+        "item_fyWETE"
+      ],
+      "custom_css": [
+        ".prose p {font-size: 0.9rem;}",
+        ".multi-column__item .h3 {color: #a0b842 !important;}"
+      ],
+      "name": "Multi-column",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "start",
+        "subheading": "来店データ基盤",
+        "title": "来店の流れを、ひとつに把握。",
+        "content": "<h6>Flowは、店舗入口の来店数だけでなく、店前通行量、入店率、属性傾向、滞在傾向、スタッフ除外、複数入口の来店傾向まで一元的に可視化します。売上や購買率と組み合わせることで、集客・接客・人員配置の改善判断に使える来店データをつくります。</h6>",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "#11243e",
+        "subheading_background_color": "",
+        "subheading_text_color": ""
+      }
+    },
+    "1779100565ad3a0995": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_4e2462b_ACdRX4": {
+          "type": "ai_gen_block_4e2462b",
+          "settings": {
+            "background_color": "#f8f9fa",
+            "heading_color": "#0a2240",
+            "body_text_color": "#5a6a85",
+            "accent_color": "#9cb73b",
+            "badge_text": "入店率・購買率の把握",
+            "badge_background": "#a0b842",
+            "badge_border": "#a0b842",
+            "badge_text_color": "#ffffff",
+            "heading": "通行量から売上まで、機会損失を見える化。",
+            "description": "店前を通る人が多くても、入店につながらなければ売上機会は失われます。来店数が多くても、購買につながらなければ接客・売場・人員配置に課題がある可能性があります。Flowは、通行量・来店数・購買率をつなげて、どこで機会損失が起きているかを把握しやすくします。",
+            "feature_1_title": "入店率を把握",
+            "feature_1_description": "店前通行量と来店数を比較し、店頭訴求や入口導線の課題を確認できます。",
+            "feature_2_title": "購買率を把握",
+            "feature_2_description": "来店数と売上をつなげ、接客・売場・商品展開の改善ポイントを見つけやすくします。",
+            "feature_3_title": "店舗間で比較",
+            "feature_3_description": "通行量・入店率・購買率を店舗間で比較。",
+            "only_show_lift_card": false,
+            "lift_label": "導入効果例",
+            "lift_percentage": "18.4億円",
+            "lift_subtext": "126店舗規模で検証。年間売上インパクト試算",
+            "funnel_title": "店舗ファネルの見える化",
+            "step_1_bar_color": "#8b95a1",
+            "step_1_label": "店前通行量",
+            "step_1_value": "22,847",
+            "drop_1_text": "↓ 入店率：8.47%",
+            "step_2_bar_color": "#475569",
+            "step_2_label": "来店数",
+            "step_2_value": "1,936",
+            "drop_2_text": "↓ 売場滞在",
+            "step_3_bar_color": "#b8d45e",
+            "step_3_label": "売場前滞在",
+            "step_3_value": "1,247",
+            "drop_3_text": "↓ 購買率：34%",
+            "step_4_bar_color": "#9cb73b",
+            "step_4_label": "購買件数",
+            "step_4_value": "424",
+            "insight_badge": "FIDA 確認ポイント",
+            "insight_main": "最も大きな離脱：売場前滞在 → 購買",
+            "insight_recommendation": "次の確認：ピーク時間帯の接客体制と売場導線"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_4e2462b_ACdRX4"
+      ],
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "multi_column_HCGJea11": {
+      "type": "multi-column",
+      "blocks": {
+        "item_aqpNXK": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-camera",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#e5e9d1",
+            "icon_color": "#a0b842",
+            "background_color": "#ffffff",
+            "text_color": "",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "2",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h5>Window Display Testing</h5><p><em>CAPTURE RATE ANALYSIS</em></p><p>Measure how many passersby actually enter after viewing your window displays. Test different layouts and track conversion lift with statistical precision.</p><ul><li>+18% Capture Rate Lift</li><li>A/B Test Ready</li></ul>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_9cWFC9": {
+          "type": "item",
+          "settings": {
+            "icon": "up",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#e5e9d1",
+            "icon_color": "#a0b842",
+            "background_color": "#ffffff",
+            "text_color": "#11243e",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "2",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h5>Fixture Performance</h5><p><em>ENGAGEMENT TRACKING</em></p><p>Identify which fixtures drive the most engagement. See exactly where customers stop, browse, and convert at the product level.</p><ul><li>3.2m Avg Fixture Dwell</li><li>Top 5 Ranked Daily</li></ul>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_tTyycj": {
+          "type": "item",
+          "settings": {
+            "icon": "people",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#e5e9d1",
+            "icon_color": "#a0b842",
+            "background_color": "#ffffff",
+            "text_color": "#11243e",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "2",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h5>Layout Optimization</h5><p><em>TRAFFIC FLOW MAPPING</em></p><p>Visualize how customers move through your space. Identify dead zones, optimize pathways, and ensure high-margin products get maximum visibility.</p><ul><li>68% Coverage Rate</li><li>Live Heatmaps</li></ul>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_ztJTym": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-target",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#a0b842",
+            "icon_color": "#ffffff",
+            "background_color": "#36465c",
+            "text_color": "#f9fafb",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "2",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h5>Promotional Impact</h5><p>CAMPAIGN VALIDATION</p><p>Measure the true lift from in-store promotions and signage. Compare dwell time, engagement, and conversion before and after campaign deployment.</p><ul><li>+42% Promo Zone Lift</li><li>Beforevs After Data</li></ul>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_aqpNXK",
+        "item_9cWFC9",
+        "item_tTyycj",
+        "item_ztJTym"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".prose p {font-size: 0.9rem;}",
+        ".multi-column__item:first-child .h2 {color: #a0b842 !important;}"
+      ],
+      "name": "Multi-column",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "start",
+        "subheading": "VISUAL MERCHANDISING",
+        "title": "Unified Traffic Dashboard",
+        "content": "<p>Real-time traffic metrics, conversion analytics, and AI-powered recommendations in one command center.</p>",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "#11243e",
+        "subheading_background_color": "",
+        "subheading_text_color": ""
+      }
+    },
+    "media_with_text_hMPTmL": {
+      "type": "media-with-text",
+      "blocks": {
+        "image_8hBn9C": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/ipad_3.png",
+            "media_width": 50,
+            "media_position": "end",
+            "text_position": "place-self-center-start text-start",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "来店データの可視化",
+            "title": "来店状況を、店舗判断に使える画面へ。",
+            "content": "<p>Flowは、来店数・入店率・購買率・時間帯別の変化を、店舗運営で確認しやすい形に整理します。店長、エリアマネージャー、本部が同じ来店データを確認できるため、店舗ごとの状況把握や改善判断をスムーズに行えます。</p><p><strong>確認できること</strong></p><ul><li><strong>来店数・入店率・購買率の変化</strong></li><li><strong>時間帯別の来店ピーク</strong></li><li><strong>店舗別の改善余地</strong></li><li><strong>売上機会の変化</strong></li></ul>",
+            "link_text": "プラットフォームを見る →",
+            "link_url": "shopify://pages/store-performance-platform",
+            "background": "",
+            "background_gradient": "",
+            "text_color": "#11243e",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_8hBn9C"
+      ],
+      "custom_css": [
+        "h3 {font-size: var(--text-h0); color: #a0b842;}",
+        "ul {font-size: 1rem;}"
+      ],
+      "name": "Media with text",
+      "settings": {
+        "full_width": false,
+        "alternate_media_position": false,
+        "spacing": "small"
+      }
+    },
+    "multi_column_RkceNG": {
+      "type": "multi-column",
+      "blocks": {
+        "item_9FWtj3": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-like",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h3>AI-Powered People Counting</h3><p>99.8% accurate customer counting across all lighting conditions</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_FxWUAK": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "Column title",
+            "heading_tag": "h4",
+            "subheading": "<p>Organize content into multiple columns to share useful information to your customers about your products, values...</p>",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_6zrj9E": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "Column title",
+            "heading_tag": "h4",
+            "subheading": "<p>Organize content into multiple columns to share useful information to your customers about your products, values...</p>",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_9FWtj3",
+        "item_FxWUAK",
+        "item_6zrj9E"
+      ],
+      "disabled": true,
+      "name": "Multi-column",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "start",
+        "subheading": "TECHNICAL CAPABILITIES",
+        "title": "COMPLETE RETAIL SENSING PLATFORM.",
+        "content": "<p>Enterprise-grade AI camera with advanced people counting, behavior analytics, and real-time traffic measurement capabilities.</p>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "subheading_background_color": "",
+        "subheading_text_color": ""
+      }
+    },
+    "multi_column_QjMJiW": {
+      "type": "multi-column",
+      "blocks": {
+        "item_mpQVCf": {
+          "type": "item",
+          "settings": {
+            "icon": "people",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#a0b842",
+            "icon_color": "#ffffff",
+            "background_color": "#f9fafb",
+            "text_color": "",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h0",
+            "subheading": "<p></p><p></p>",
+            "content": "<h3>人員配置の最適化</h3><p>来店ピークとスタッフ配置のズレを確認し、接客体制を見直せます。</p><h4>ピーク時間帯</h4><p>接客体制の見直し</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_MVfQ7a": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-file",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#a0b842",
+            "icon_color": "#ffffff",
+            "background_color": "#f9fafb",
+            "text_color": "",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h1",
+            "subheading": "",
+            "content": "<h3>入店率の改善</h3><p>店前通行量と来店数を比較し、店頭訴求の効果を確認できます。</p><h4>入店率</h4><p>店頭訴求の確認</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_Y47ifx": {
+          "type": "item",
+          "settings": {
+            "icon": "up",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#a0b842",
+            "icon_color": "#ffffff",
+            "background_color": "#f9fafb",
+            "text_color": "",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h1",
+            "subheading": "",
+            "content": "<h3>販促効果の把握</h3><p>販促で増えた来店を、購買につなげられているか確認できます。</p><h4>販促効果</h4><p>来店変化を確認</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_mpQVCf",
+        "item_MVfQ7a",
+        "item_Y47ifx"
+      ],
+      "custom_css": [
+        ".multi-column__item h4 {color: #a0b842;}",
+        ".multi-column__item h4 ~ p {margin-top: 0; padding-top: 0;}",
+        "p {font-size: 1rem;}",
+        "em {font-size: 0.8rem;}",
+        ".multi-column__item .text-center {text-align: left;}"
+      ],
+      "name": "Multi-column",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "center",
+        "subheading": "活用シーン",
+        "title": "来店データを、改善判断へ。",
+        "content": "<p><strong>来店数・入店率・購買率・時間帯別の変化をもとに、人員配置、店頭改善、マーケティング効果の判断を支援します。</strong></p>",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "",
+        "subheading_background_color": "",
+        "subheading_text_color": ""
+      }
+    },
+    "multi_column_QjMJiW11": {
+      "type": "multi-column",
+      "blocks": {
+        "item_mpQVCf": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#a0b842",
+            "icon_color": "#ffffff",
+            "background_color": "#11243e",
+            "text_color": "",
+            "border_color": "#11243e",
+            "show_controls": false,
+            "column_size": "2",
+            "title": "",
+            "heading_tag": "h1",
+            "subheading": "<p><strong>リアルタイム把握</strong></p>",
+            "content": "<h3><strong>営業時間中の変化を確認。</strong></h3><p>来店数や購買率の変化をリアルタイムに近い形で確認し、当日の接客体制や売場対応の見直しに活用できます。</p><ul><li><strong>来店ピークを確認</strong></li><li><strong>接客体制を見直し</strong></li></ul>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_MVfQ7a": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#6e6e6e",
+            "icon_color": "",
+            "background_color": "#ffffff",
+            "text_color": "#11243e",
+            "border_color": "#11243e",
+            "show_controls": false,
+            "column_size": "2",
+            "title": "",
+            "heading_tag": "h1",
+            "subheading": "<p><strong>傾向把握</strong></p>",
+            "content": "<h3><strong>店舗ごとの傾向を比較。</strong></h3><p>日次・週次・月次の来店傾向を確認し、店舗別の強みや課題、販促後の変化を把握しやすくします。</p><ul><li><strong>店舗別比較</strong></li><li><strong>期間別比較</strong></li></ul>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_mpQVCf",
+        "item_MVfQ7a"
+      ],
+      "custom_css": [
+        ".icon_container {text-align: center;}",
+        ".multi-column__item ul {font-size: 1rem;}"
+      ],
+      "name": "Multi-column",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "start",
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "#ffffff",
+        "subheading_background_color": "",
+        "subheading_text_color": ""
+      }
+    },
+    "multi_column_LeVzeG": {
+      "type": "multi-column",
+      "blocks": {
+        "item_M8EzQA": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "#f9fafb",
+            "show_controls": false,
+            "column_size": "4",
+            "title": "ANONYMOUS SOURCE",
+            "heading_tag": "h4",
+            "subheading": "<p>Protocol</p>",
+            "content": "<ul><li>NO FACIAL RECOGNITION</li><li>NO VIDEO STORAGE</li><li>GDPR COMPLIANT</li></ul>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_Eiqt4F": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "image": "shopify://shop_images/unnamed_2.png",
+            "background_color": "",
+            "text_color": "#ffffff",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "2",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_QBtwgX": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "",
+            "text_color": "#11243e",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "4",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<p>Video streams are destroyed instantly at the edge. No facial recognition at the physical level; only encrypted coordinates are transmitted. Fully compliant with global retail privacy standards.</p><p></p><ul><li>Encryption: <strong>AES-256</strong></li><li>Retention:  <strong>0 SECONDS</strong></li></ul>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_M8EzQA",
+        "item_Eiqt4F",
+        "item_QBtwgX"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".multi-column {gap: 1rem;}",
+        ".multi-column__item:last-child {align-items: center; justify-content: center; display: flex;}",
+        "ul {list-style: none;}",
+        "img {width: 100%;}"
+      ],
+      "name": "Multi-column",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": true,
+        "gap": "medium",
+        "text_alignment": "start",
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "background": "#f9fafb",
+        "background_gradient": "",
+        "text_color": "#11243e",
+        "subheading_background_color": "",
+        "subheading_text_color": ""
+      }
+    },
+    "section-15": {
+      "type": "feature-chart",
+      "blocks": {
+        "block-1": {
+          "type": "headings",
+          "settings": {
+            "heading_1": "主な提供価値",
+            "heading_2": "コアの設計思想",
+            "heading_3": "来店データの位置づけ",
+            "heading_4": "データの即時性",
+            "heading_5": "店舗での使いやすさ",
+            "heading_6": "判断へのつながり",
+            "heading_7": "店舗ごとの判断差",
+            "heading_8": "本部と店舗の連携",
+            "heading_9": "運用負荷",
+            "heading_10": "拡張性",
+            "heading_11": "",
+            "heading_12": "",
+            "heading_13": "",
+            "heading_14": "",
+            "heading_15": "",
+            "heading_16": "",
+            "heading_17": "",
+            "heading_18": "",
+            "heading_19": "",
+            "heading_20": ""
+          }
+        },
+        "block-2": {
+          "type": "values",
+          "settings": {
+            "product": "",
+            "value_1": "<p>40mm Beryllium</p>",
+            "value_2": "<p>245g</p>",
+            "value_3": "<p>165mm x 190mm x 66mm</p>",
+            "value_4": "<p>24 hours</p>",
+            "value_5": "",
+            "value_6": "",
+            "value_7": "",
+            "value_8": "",
+            "value_9": "",
+            "value_10": "",
+            "value_11": "",
+            "value_12": "",
+            "value_13": "",
+            "value_14": "",
+            "value_15": "",
+            "value_16": "",
+            "value_17": "",
+            "value_18": "",
+            "value_19": "",
+            "value_20": "",
+            "view_button_background": "",
+            "view_button_text_color": ""
+          }
+        },
+        "block-3": {
+          "type": "values",
+          "settings": {
+            "product": "",
+            "value_1": "<p>40mm Beryllium</p>",
+            "value_2": "<p>205g (On-Ear), 239g (Over-Ear)</p>",
+            "value_3": "<p>190mm x 155mm x 34mm (On-Ear), 200mm x 165mm x 40mm (Over-Ear)</p>",
+            "value_4": "<p>16 hours</p>",
+            "value_5": "",
+            "value_6": "",
+            "value_7": "",
+            "value_8": "",
+            "value_9": "",
+            "value_10": "",
+            "value_11": "",
+            "value_12": "",
+            "value_13": "",
+            "value_14": "",
+            "value_15": "",
+            "value_16": "",
+            "value_17": "",
+            "value_18": "",
+            "value_19": "",
+            "value_20": "",
+            "view_button_background": "",
+            "view_button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "Why Dashboards Fail",
+        "content": "<p>Traditional analytics show you the problem. Flow solves it.</p>",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "center",
+        "max_rows": 5,
+        "view_all_text": "View all",
+        "view_less_text": "View less",
+        "view_product": "View",
+        "viewing_product": "",
+        "show_product_swatch": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "chart_background": "",
+        "chart_text_color": "",
+        "chart_true_false_color": ""
+      }
+    },
+    "media_with_text_mRGejd": {
+      "type": "media-with-text",
+      "blocks": {
+        "image_enedX8": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/44.png",
+            "media_width": 50,
+            "media_position": "start",
+            "text_position": "place-self-center-start text-start",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "RAPID DEPLOYMENT WINDOW",
+            "title": "30 MINS.",
+            "content": "<p></p><p>PoE Interface: Single standard Ethernet cable for simultaneous power and data transmission.</p><p>Zero-Config: Automatic node discovery and network handshake. Reduces onsite engineering time by 90%.</p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "#f9fafb",
+            "background_gradient": "",
+            "text_color": "#11243e",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_enedX8"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "* {background: white;}"
+      ],
+      "name": "Media with text",
+      "settings": {
+        "full_width": false,
+        "alternate_media_position": false,
+        "spacing": "small"
+      }
+    },
+    "multi_column_x6bKQU": {
+      "type": "multi-column",
+      "blocks": {
+        "item_GrAewn": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "4",
+            "title": "QUANTIFY DWELL TIME.",
+            "heading_tag": "h4",
+            "subheading": "<p>VMD</p>",
+            "content": "<p>Shift from gut feeling to evidence-backed merchandising.</p><h4></h4>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_3rhR4q": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "4",
+            "title": "LINK POS + TRAFFIC.",
+            "heading_tag": "h4",
+            "subheading": "<p>CVR</p>",
+            "content": "<p>Identify conversion leaks and pinpoint transaction growth.</p><h4></h4>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_KmVTXJ": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "4",
+            "title": "PRECISION SCHEDULING.",
+            "heading_tag": "h4",
+            "subheading": "<p>LABOR</p>",
+            "content": "<p>Align staff hours to peak traffic. 0% labor waste.</p><h4></h4>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_E9Cyby": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "4",
+            "title": "REAL-TIME ACTION.",
+            "heading_tag": "h4",
+            "subheading": "<p>ASSISTANT</p>",
+            "content": "<p>AI-driven instruction cards for immediate sales improvement.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_GrAewn",
+        "item_3rhR4q",
+        "item_KmVTXJ",
+        "item_E9Cyby"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".prose p {font-size: 1rem;}",
+        ".text-xs p {font-size: 1rem;}",
+        ".h4 {font-size: 1.6rem;}"
+      ],
+      "name": "Multi-column",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "start",
+        "subheading": "",
+        "title": "The Actionable Use Cases",
+        "content": "",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "#11243e",
+        "subheading_background_color": "",
+        "subheading_text_color": ""
+      }
+    },
+    "rich_text_6VmVgb": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_AK7Cjn": {
+          "type": "subheading",
+          "settings": {
+            "text": "次のステップ",
+            "icon": "none"
+          }
+        },
+        "heading_YXhiR8": {
+          "type": "heading",
+          "settings": {
+            "text": "来店データを、売上改善へ。",
+            "heading_tag": "h1",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_qzAkak": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p><strong>Flowが、来店数・入店率・購買率をどのように店舗改善へつなげるか、実際の画面でご確認ください。</strong></p>"
+          }
+        },
+        "button_AVKAbi": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "style": "outline",
+            "size": "base",
+            "text": "Contact Solutions Architect",
+            "url": "#",
+            "background": "",
+            "text_color": "#11243e"
+          }
+        },
+        "buttons_jaKCGH": {
+          "type": "buttons",
+          "settings": {
+            "style_1": "fill",
+            "size_1": "xl",
+            "text_1": "無料デモを依頼する",
+            "url_1": "shopify://pages/contact",
+            "background_1": "#a0b842",
+            "text_color_1": "#ffffff",
+            "style_2": "fill",
+            "size_2": "xl",
+            "text_2": "プラットフォームを見る",
+            "url_2": "shopify://pages/store-performance-platform",
+            "background_2": "#ffffff",
+            "text_color_2": "#11243e"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_AK7Cjn",
+        "heading_YXhiR8",
+        "richtext_qzAkak",
+        "button_AVKAbi",
+        "buttons_jaKCGH"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "#0e366a",
+        "background_gradient": "",
+        "text_color": "#ffffff"
+      }
+    }
+  },
+  "order": [
+    "image_with_text_overlay_AcppEX",
+    "multi_column_HCGJea",
+    "1779100565ad3a0995",
+    "multi_column_HCGJea11",
+    "media_with_text_hMPTmL",
+    "multi_column_RkceNG",
+    "multi_column_QjMJiW",
+    "multi_column_QjMJiW11",
+    "multi_column_LeVzeG",
+    "section-15",
+    "media_with_text_mRGejd",
+    "multi_column_x6bKQU",
+    "rich_text_6VmVgb"
+  ]
+}
