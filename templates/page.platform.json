@@ -37,7 +37,7 @@
             "style": "fill",
             "size": "lg",
             "text": "デモを予約する →",
-            "url": "#",
+            "url": "shopify://pages/contact",
             "background": "#a0b842",
             "text_color": ""
           }
