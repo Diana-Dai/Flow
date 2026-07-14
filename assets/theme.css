@@ -6526,6 +6526,13 @@ shopify-account::part(signed-out-avatar) {
   overflow-y: auto;
 }
 
+  @media screen and (max-width: 767px) {
+.panel__wrapper {
+  gap: var(--spacing-3);
+  padding: var(--spacing-3);
+
+}
+  }
 .panel-footer {
   background-color: rgb(var(--background));
 }
