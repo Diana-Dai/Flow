@@ -279,13 +279,13 @@
             "style_1": "fill",
             "size_1": "xl",
             "text_1": "Flow AIを見る",
-            "url_1": "shopify://pages/fida",
+            "url_1": "shopify://pages/flow-ai",
             "background_1": "",
             "text_color_1": "",
             "style_2": "fill",
             "size_2": "xl",
             "text_2": "プラットフォームを見る",
-            "url_2": "shopify://pages/platform-1",
+            "url_2": "shopify://pages/store-performance-platform",
             "background_2": "#a0b842",
             "text_color_2": ""
           }
@@ -653,7 +653,7 @@
             "metric_value_color": "#a0b842",
             "metric_description_color": "#d1d5db",
             "cta_button_text": "事例を見る",
-            "cta_button_link": "shopify://pages/case-studies-1",
+            "cta_button_link": "shopify://pages/case-studies",
             "cta_button_background": "#a0b842",
             "cta_button_text_color": "#ffffff"
           },
@@ -958,7 +958,7 @@
             "style_2": "fill",
             "size_2": "xl",
             "text_2": "導入事例を見る →",
-            "url_2": "shopify://pages/case-studies-1",
+            "url_2": "shopify://pages/case-studies",
             "background_2": "#ffffff",
             "text_color_2": "#11243e"
           }
