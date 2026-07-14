@@ -1692,7 +1692,7 @@
       "name": "Testimonials",
       "settings": {
         "full_width": true,
-        "stack_testimonials": false,
+        "stack_testimonials": true,
         "subheading": "導入企業の声",
         "title": "",
         "content": "<h2>現場で活用されているFlow</h2>",
