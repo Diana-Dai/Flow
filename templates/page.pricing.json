@@ -64,7 +64,7 @@
             "timeline_node_inactive_color": "#0e366a",
             "timeline_card_gap": 20,
             "timeline_card_offset": 20,
-            "card_background": "#F9FAFB",
+            "card_background": "#f9fafb",
             "card_border_color": "#1e3a52",
             "card_border_width": 1,
             "card_border_radius": 12,
@@ -86,13 +86,13 @@
             "tier_3_features": "AIカメラ・センサー・処理端末",
             "tier_3_meta": "Flow提供機器ごと",
             "tier_3_badge": "HW",
-            "tier_label_color": "#A1B847",
+            "tier_label_color": "#a1b847",
             "tier_label_font_size": 12,
-            "tier_title_color": "#0E366A",
+            "tier_title_color": "#0e366a",
             "tier_title_font_size": 19,
             "tier_features_color": "#6b8199",
             "tier_features_font_size": 15,
-            "tier_meta_color": "#0E366A",
+            "tier_meta_color": "#0e366a",
             "tier_meta_font_size": 13,
             "tier_badge_color": "#a0b842",
             "tier_badge_font_size": 14,
@@ -753,8 +753,8 @@
           "settings": {
             "text": "展開規模に応じた料金設計",
             "alignment": "center",
-            "text_color": "#11243e",
-            "background": "#edf1e1"
+            "text_color": "#F9FAFB",
+            "background": "#0E366A"
           },
           "blocks": {}
         },
