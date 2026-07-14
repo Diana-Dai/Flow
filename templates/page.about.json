@@ -22,7 +22,7 @@
         "liquid_R3c38x": {
           "type": "liquid",
           "settings": {
-            "liquid": "<h1 class=\"h1\">小売店舗運営を支える<br>データ基盤をつくる。\n</h1>"
+            "liquid": "<h1 class=\"h1\">小売店舗運営を支え<br>データ基盤をつくる。\n</h1>"
           }
         },
         "heading_hjfyL9": {
@@ -590,7 +590,7 @@
             "title": "小売現場に特化した設計",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<p>Flowは汎用的な分析ツールではありません。来店数、通行量、コンバージョン、VMD、スタッフ配置など、小売店舗の運営判断に必要な指標を前提に設計されています</p>",
+            "content": "<p>Flowは汎用的な分析ツールではありません。来店数、通行量、コンバージョン、VMD、スタッフ配置など、小売店舗の運営判断に必要な指標を前提に設計されています。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
