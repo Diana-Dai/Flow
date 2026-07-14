@@ -396,7 +396,7 @@
       "name": "Multi-column",
       "settings": {
         "full_width": true,
-        "stack_on_mobile": false,
+        "stack_on_mobile": true,
         "gap": "small",
         "text_alignment": "center",
         "subheading": "導入効果の集計",
@@ -500,7 +500,7 @@
         "remove_horizontal_spacing": false,
         "background": "",
         "background_gradient": "",
-        "text_color": "#11243E"
+        "text_color": "#11243e"
       }
     },
     "multi_column_bJtgmc": {
