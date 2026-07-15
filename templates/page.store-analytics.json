@@ -199,7 +199,7 @@
             "heading_tag": "h3",
             "subheading": "",
             "content": "<h5>AIカメラ計測ページで、来店計測、スタッフ除外、計測設計、導入方法を確認できます。</h5>",
-            "link_url": "shopify://pages/camera-ai",
+            "link_url": "shopify://pages/ai-camera",
             "link_text": "AIカメラ計測を見る →",
             "link_style": "button"
           }
