@@ -16,7 +16,7 @@
           "type": "ai_gen_block_380fb98",
           "settings": {
             "subheading": "セキュリティ・データ保護",
-            "main_heading": "店舗計測のためのプライバシー設計と安全管理",
+            "main_heading": "安全な店舗計測基盤",
             "main_description": "Flowは、店舗運営データを安全に取り扱うため、データの管理、保護、保存、削除、外部委託に関する基本方針を定めています。通常運用ではセンサー映像を保存せず、リアルタイムで数値データへ変換して処理します。",
             "cta_text": "",
             "cta_url": "",
@@ -54,7 +54,7 @@
         "full_width": true,
         "remove_vertical_spacing": false,
         "remove_horizontal_spacing": false,
-        "background": "#10223B",
+        "background": "#10223b",
         "background_gradient": "",
         "text_color": "#ffffff"
       }
@@ -230,9 +230,9 @@
             "step5_desc": "データは種類、契約、方針に基づき管理され、保存期間後または必要に応じて削除されます。",
             "banner_text": "データの保持期間は、データ種別、契約内容、運用上の必要性により異なります。",
             "max_width": 1400,
-            "background_color": "#F9FAFB",
-            "badge_bg_color": "#10223B",
-            "badge_text_color": "#F9FAFB",
+            "background_color": "#f9fafb",
+            "badge_bg_color": "#10223b",
+            "badge_text_color": "#f9fafb",
             "description_color": "#5a6c7d",
             "line_color": "#0e366a",
             "icon_circle_bg": "#ffffff",
