@@ -227,7 +227,7 @@
           "type": "ai_gen_block_2daa5f2",
           "settings": {
             "label": "期間限定キャンペーン",
-            "heading": "まず3店舗導入で、1店舗分6ヶ月無料。",
+            "heading": "3店舗導入で、1店舗分が6ヶ月無料",
             "description": "3店舗以上の導入で、1店舗分の月額費用を6ヶ月無料に。来店・売上・購買率を店舗ごとに比較し、Flowの効果を確認できます。",
             "button_text": "キャンペーンを相談する",
             "button_link": "shopify://pages/contact",
@@ -1734,7 +1734,7 @@
             "banner_text": "まずは対象店舗を絞って開始し、データ・運用フロー・社内での活用方法を確認したうえで、段階的に展開できます。",
             "max_width": 1400,
             "background_color": "#fafbfc",
-            "badge_bg_color": "#A1B847",
+            "badge_bg_color": "#a1b847",
             "badge_text_color": "#11243e",
             "description_color": "#6b7c8d",
             "line_color": "#11243e",
