@@ -253,7 +253,7 @@
           "type": "ai_gen_block_2daa5f2",
           "settings": {
             "label": "期間限定キャンペーン",
-            "heading": "まず3店舗導入で、1店舗分6ヶ月無料。",
+            "heading": "3店舗導入で、1店舗分が6ヶ月無料",
             "description": "複数店舗での初期導入を始めやすくするため、対象条件を満たすお客様に初期展開キャンペーンを適用できます。詳細な適用条件は、お見積り時にご案内します。",
             "button_text": "導入条件を相談する",
             "button_link": "shopify://pages/contact",
@@ -753,8 +753,8 @@
           "settings": {
             "text": "展開規模に応じた料金設計",
             "alignment": "center",
-            "text_color": "#F9FAFB",
-            "background": "#0E366A"
+            "text_color": "#f9fafb",
+            "background": "#0e366a"
           },
           "blocks": {}
         },
