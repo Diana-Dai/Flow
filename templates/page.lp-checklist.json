@@ -830,7 +830,7 @@
             "heading": "5分で原因を整理しませんか",
             "description": "来店数・購買率・店舗運営のどこに課題がありそうかを、簡単な質問で確認できます。資料を読む前に、まずは自社の状況を整理できます。",
             "button_text": "5分診断を始める",
-            "button_link": "shopify://pages/assessment-lp",
+            "button_link": "shopify://pages/assessment",
             "condition_note": "無料で利用できます。入力内容に応じて、確認ポイントを整理できます。",
             "benefit_1_title": "資料の前に簡単確認",
             "benefit_1_text": "まずは自社の店舗課題を整理できます。",

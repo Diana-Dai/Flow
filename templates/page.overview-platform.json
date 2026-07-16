@@ -38,7 +38,7 @@
             "style": "fill",
             "size": "lg",
             "text": "店舗課題を診断する",
-            "url": "shopify://pages/assessment-lp",
+            "url": "shopify://pages/assessment",
             "background": "#a0b842",
             "text_color": "#ffffff"
           }

@@ -59,7 +59,7 @@
         "platform_auto_panel_title": "店舗データと実行の課題を見つける",
         "platform_auto_panel_text": "簡単な診断で、店舗運営の改善ポイントを確認できます。",
         "platform_auto_panel_link_label": "5分診断をはじめる",
-        "platform_auto_panel_link": "shopify://pages/assessment-lp",
+        "platform_auto_panel_link": "shopify://pages/assessment",
         "platform_auto_panel_background": "#eef4ff",
         "platform_auto_panel_button_background": "#1b5cff",
         "about_auto_panel_badge": "店舗DXチェックリスト",

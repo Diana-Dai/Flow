@@ -1994,7 +1994,7 @@
             "style": "fill",
             "size": "base",
             "text": "店舗データ活用診断を受ける",
-            "url": "shopify://pages/assessment-lp",
+            "url": "shopify://pages/assessment",
             "background": "#ffffff",
             "text_color": "#11243e"
           }
