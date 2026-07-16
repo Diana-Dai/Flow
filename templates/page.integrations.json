@@ -44,7 +44,7 @@
             "style": "fill",
             "size": "lg",
             "text": "連携について相談する →",
-            "url": "#",
+            "url": "shopify://pages/contact",
             "background": "#a0b842",
             "text_color": ""
           }
@@ -55,7 +55,7 @@
             "style": "fill",
             "size": "lg",
             "text": "プラットフォームを見る →",
-            "url": "#",
+            "url": "shopify://pages/store-performance-platform",
             "background": "#ffffff",
             "text_color": "#11243e"
           }
@@ -223,7 +223,9 @@
         "content": "<p>売上はPOS、来店数はカメラやカウンター、勤務情報はシフト表、天候は外部データ。必要な情報が別々に管理されていると、経験豊富な店長は判断できても、すべての店舗で同じ判断品質を再現することは難しくなります。</p>",
         "background": "#ffffff",
         "background_gradient": "",
-        "text_color": "#11243e"
+        "text_color": "#11243e",
+        "subheading_background_color": "",
+        "subheading_text_color": ""
       }
     },
     "multi_column_YtjcfP": {
@@ -454,7 +456,9 @@
         "content": "<p>Flowは、POS・来店計測・シフト・天候・店舗情報など、既存システムに分かれているデータを統合します。</p><p>✅ FlowのAIカメラで来店計測を行うことも、既存のカウンターや他社計測データを取り込むことも可能です。</p>",
         "background": "",
         "background_gradient": "",
-        "text_color": ""
+        "text_color": "",
+        "subheading_background_color": "",
+        "subheading_text_color": ""
       }
     },
     "rich_text_b9Cw9g": {
@@ -658,7 +662,9 @@
         "content": "<p>Enterprise-grade AI camera with advanced people counting, behavior analytics, and real-time traffic measurement capabilities.</p>",
         "background": "",
         "background_gradient": "",
-        "text_color": ""
+        "text_color": "",
+        "subheading_background_color": "",
+        "subheading_text_color": ""
       }
     },
     "multi_column_QjMJiW": {
@@ -798,7 +804,9 @@
         "content": "<p>Flowは、既存システムや社内運用に合わせて、API連携、FTPによる定期ファイル連携、手動アップロード、Flowデータ出力など、現実的な方法でデータ連携を設計します。</p>",
         "background": "#f9fafb",
         "background_gradient": "",
-        "text_color": ""
+        "text_color": "",
+        "subheading_background_color": "",
+        "subheading_text_color": ""
       }
     },
     "178002033189ab5a8f": {
@@ -1045,7 +1053,9 @@
         "content": "<p>データ連携では、既存システムの仕様やCSV形式がそのまま使いにくい場合があります。Flowは、現在のデータ形式を確認し、無理な改修を前提にせず、導入時に実運用に合う連携方法を設計します。</p>",
         "background": "#ffffff",
         "background_gradient": "",
-        "text_color": ""
+        "text_color": "",
+        "subheading_background_color": "",
+        "subheading_text_color": ""
       }
     },
     "section-15": {
@@ -1434,7 +1444,9 @@
         "content": "<p>連携はIT機能ではありません。売上、来店、シフト、天候、店舗条件をつなぐことで、店舗運営の判断と実行をより正確にできます。</p>",
         "background": "#ffffff",
         "background_gradient": "",
-        "text_color": ""
+        "text_color": "",
+        "subheading_background_color": "",
+        "subheading_text_color": ""
       }
     },
     "media_with_text_mRGejd": {
@@ -1604,13 +1616,13 @@
             "style_1": "fill",
             "size_1": "xl",
             "text_1": "連携について相談する →",
-            "url_1": "#",
+            "url_1": "shopify://pages/contact",
             "background_1": "#a0b842",
             "text_color_1": "#ffffff",
             "style_2": "fill",
             "size_2": "xl",
             "text_2": "プラットフォームを見る →",
-            "url_2": "#",
+            "url_2": "shopify://pages/store-performance-platform",
             "background_2": "#ffffff",
             "text_color_2": "#11243e"
           }

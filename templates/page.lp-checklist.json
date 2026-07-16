@@ -579,8 +579,8 @@
             "background_gradient": "",
             "text_color": "#11243e",
             "text_gradient": "",
-            "button_background": "#f2f2f2",
-            "button_text_color": "#11243e"
+            "button_background": "#A1B847",
+            "button_text_color": "#F9FAFB"
           }
         }
       },
@@ -592,166 +592,6 @@
         "full_width": false,
         "alternate_media_position": false,
         "spacing": "medium"
-      }
-    },
-    "rich_text_jJDg4X": {
-      "type": "rich-text",
-      "blocks": {
-        "richtext_nFmVeg": {
-          "type": "richtext",
-          "settings": {
-            "content": "<h4><strong>Flowは、来店数・売上・人員配置・店舗運営データを統合し、店舗ごとの改善判断を支援します。</strong></h4>"
-          }
-        }
-      },
-      "block_order": [
-        "richtext_nFmVeg"
-      ],
-      "name": "Rich text",
-      "settings": {
-        "full_width": true,
-        "content_width": "medium",
-        "text_position": "center",
-        "background": "",
-        "background_gradient": "",
-        "text_color": ""
-      }
-    },
-    "multi_column_x6bKQU": {
-      "type": "multi-column",
-      "blocks": {
-        "item_3rhR4q": {
-          "type": "item",
-          "settings": {
-            "icon": "none",
-            "icon_width": 32,
-            "icon_background_type": "square",
-            "icon_background": "",
-            "icon_color": "",
-            "background_color": "",
-            "text_color": "",
-            "border_color": "",
-            "show_controls": false,
-            "column_size": "3",
-            "title": "原因を分ける",
-            "heading_tag": "h4",
-            "subheading": "",
-            "content": "<p>来店数・購買率・店舗運営に分解</p>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        },
-        "item_KmVTXJ": {
-          "type": "item",
-          "settings": {
-            "icon": "none",
-            "icon_width": 32,
-            "icon_background_type": "square",
-            "icon_background": "",
-            "icon_color": "",
-            "background_color": "",
-            "text_color": "",
-            "border_color": "",
-            "show_controls": false,
-            "column_size": "3",
-            "title": "指標を整理する",
-            "heading_tag": "h4",
-            "subheading": "",
-            "content": "<p>最初に見るべき数字を確認</p>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        },
-        "item_E9Cyby": {
-          "type": "item",
-          "settings": {
-            "icon": "none",
-            "icon_width": 32,
-            "icon_background_type": "square",
-            "icon_background": "",
-            "icon_color": "",
-            "background_color": "",
-            "text_color": "",
-            "border_color": "",
-            "show_controls": false,
-            "column_size": "3",
-            "title": "確認状況を把握",
-            "heading_tag": "h4",
-            "subheading": "",
-            "content": "<p>見えている点・不足点を整理</p>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        },
-        "item_Xy9R9Q": {
-          "type": "item",
-          "settings": {
-            "icon": "none",
-            "icon_width": 32,
-            "icon_background_type": "square",
-            "icon_background": "",
-            "icon_color": "",
-            "background_color": "",
-            "text_color": "",
-            "border_color": "",
-            "show_controls": false,
-            "column_size": "2",
-            "title": "優先順位を決める",
-            "heading_tag": "h4",
-            "subheading": "",
-            "content": "<p>どこから改善すべきかを判断</p>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        },
-        "item_wi36dg": {
-          "type": "item",
-          "settings": {
-            "icon": "none",
-            "icon_width": 32,
-            "icon_background_type": "square",
-            "icon_background": "",
-            "icon_color": "",
-            "background_color": "",
-            "text_color": "",
-            "border_color": "",
-            "show_controls": false,
-            "column_size": "2",
-            "title": "次の行動を決める",
-            "heading_tag": "h4",
-            "subheading": "",
-            "content": "<p>7日以内・14日以内の確認項目を明確化</p>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        }
-      },
-      "block_order": [
-        "item_3rhR4q",
-        "item_KmVTXJ",
-        "item_E9Cyby",
-        "item_Xy9R9Q",
-        "item_wi36dg"
-      ],
-      "name": "Multi-column",
-      "settings": {
-        "full_width": true,
-        "stack_on_mobile": false,
-        "gap": "small",
-        "text_alignment": "center",
-        "subheading": "",
-        "title": "チェックリストで確認できること",
-        "content": "",
-        "background": "#ffffff",
-        "background_gradient": "",
-        "text_color": "#11243e",
-        "subheading_background_color": "",
-        "subheading_text_color": ""
       }
     },
     "rich_text_U4XBGi": {
@@ -818,6 +658,166 @@
         "background": "",
         "background_gradient": "",
         "text_color": ""
+      }
+    },
+    "rich_text_jJDg4X": {
+      "type": "rich-text",
+      "blocks": {
+        "richtext_nFmVeg": {
+          "type": "richtext",
+          "settings": {
+            "content": "<h4><strong>Flowは、来店数・売上・人員配置・店舗運営データを統合し、店舗ごとの改善判断を支援します。</strong></h4>"
+          }
+        }
+      },
+      "block_order": [
+        "richtext_nFmVeg"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "medium",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "multi_column_x6bKQU": {
+      "type": "multi-column",
+      "blocks": {
+        "item_3rhR4q": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#0E366A",
+            "text_color": "#F9FAFB",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "原因を分ける",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<p>来店数・購買率・店舗運営に分解</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_KmVTXJ": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#0E366A",
+            "text_color": "#F9FAFB",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "指標を整理する",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<p>最初に見るべき数字を確認</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_E9Cyby": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#0E366A",
+            "text_color": "#F9FAFB",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "確認状況を把握",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<p>見えている点・不足点を整理</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_Xy9R9Q": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#0E366A",
+            "text_color": "#F9FAFB",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "2",
+            "title": "優先順位を決める",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<p>どこから改善すべきかを判断</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_wi36dg": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#0E366A",
+            "text_color": "#F9FAFB",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "2",
+            "title": "次の行動を決める",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<p>7日以内・14日以内の確認項目を明確化</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_3rhR4q",
+        "item_KmVTXJ",
+        "item_E9Cyby",
+        "item_Xy9R9Q",
+        "item_wi36dg"
+      ],
+      "name": "Multi-column",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "small",
+        "text_alignment": "center",
+        "subheading": "",
+        "title": "チェックリストで確認できること",
+        "content": "",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "#11243e",
+        "subheading_background_color": "",
+        "subheading_text_color": ""
       }
     },
     "blocks_Q9hcqC": {
@@ -889,10 +889,10 @@
     "multi_column_HUnQMj",
     "section-15",
     "media_with_text_mRGejd",
-    "rich_text_jJDg4X",
-    "multi_column_x6bKQU",
     "rich_text_U4XBGi",
     "1780993871f4d25655",
+    "rich_text_jJDg4X",
+    "multi_column_x6bKQU",
     "blocks_Q9hcqC"
   ]
 }

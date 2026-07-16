@@ -933,6 +933,41 @@
         "subheading_text_color": ""
       }
     },
+    "blog_posts_3pLJhd": {
+      "type": "blog-posts",
+      "blocks": {
+        "blog_c6fUWL": {
+          "type": "blog",
+          "settings": {
+            "blog": "retail-decisions",
+            "posts_count": 3,
+            "stack_items": false
+          }
+        }
+      },
+      "block_order": [
+        "blog_c6fUWL"
+      ],
+      "name": "Blog posts",
+      "settings": {
+        "full_width": true,
+        "show_excerpt": true,
+        "show_date": false,
+        "show_author": false,
+        "show_comments_count": false,
+        "show_category": true,
+        "subheading": "",
+        "title": "CEOブログ",
+        "content": "",
+        "link_url": "shopify://blogs/retail-decisions",
+        "link_text": "すべて見る",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": ""
+      }
+    },
     "rich_text_EtLVJr": {
       "type": "rich-text",
       "blocks": {
@@ -1176,6 +1211,7 @@
     "multi_column_wT8tcm",
     "1780976305e3abab06",
     "multi_column_JqUxrC",
+    "blog_posts_3pLJhd",
     "rich_text_EtLVJr",
     "rich_text_6VmVgb",
     "multi_column_UExWWX"

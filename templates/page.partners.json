@@ -119,7 +119,7 @@
             "size": "lg",
             "text": "パートナーシップを相談する",
             "url": "shopify://pages/contact",
-            "background": "",
+            "background": "#A1B847",
             "text_color": ""
           }
         }
@@ -700,8 +700,8 @@
             "banner_text": "多くのパートナーシップは、1つの具体的な顧客機会から始まります。",
             "max_width": 1400,
             "background_color": "#fafbfc",
-            "badge_bg_color": "#eef2e3",
-            "badge_text_color": "#11243e",
+            "badge_bg_color": "#A1B847",
+            "badge_text_color": "#F9FAFB",
             "description_color": "#11243e",
             "line_color": "#11243e",
             "icon_circle_bg": "#ffffff",
@@ -828,7 +828,7 @@
             "company_name_placeholder": "株式会社〇〇",
             "industry_placeholder": "Select industry",
             "stores_label": "対象店舗数",
-            "stores_placeholder": "選択してください",
+            "stores_placeholder": "XX店舗",
             "timeline_placeholder": "Select timeline",
             "contact_person_title": "ご担当者情報",
             "full_name_label": "お名前",

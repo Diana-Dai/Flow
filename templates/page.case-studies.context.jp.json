@@ -8,7 +8,7 @@
  * ------------------------------------------------------------
  */
 {
-  "parent": "page.case-studies.json",
+  "parent": "page.case-study-template-2.json",
   "context": {
     "market": "jp"
   },

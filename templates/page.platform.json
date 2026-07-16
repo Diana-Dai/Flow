@@ -37,7 +37,7 @@
             "style": "fill",
             "size": "lg",
             "text": "デモを予約する →",
-            "url": "#",
+            "url": "shopify://pages/contact",
             "background": "#a0b842",
             "text_color": ""
           }
@@ -48,7 +48,7 @@
             "style": "fill",
             "size": "lg",
             "text": "連携できるデータを見る →",
-            "url": "#",
+            "url": "shopify://pages/integrations",
             "background": "#ffffff",
             "text_color": "#11243e"
           }
@@ -452,8 +452,8 @@
         "background": "rgba(0,0,0,0)",
         "background_gradient": "",
         "text_color": "",
-        "subheading_background_color": "#f0f3e9",
-        "subheading_text_color": "#11243e"
+        "subheading_background_color": "#A1B847",
+        "subheading_text_color": "#F9FAFB"
       }
     },
     "multi_column_rPwdDt": {
@@ -658,8 +658,8 @@
         "background": "#ffffff",
         "background_gradient": "",
         "text_color": "",
-        "subheading_background_color": "#f0f3e9",
-        "subheading_text_color": "#11243e"
+        "subheading_background_color": "#0E366A",
+        "subheading_text_color": "#F9FAFB"
       }
     },
     "rich_text_peMmaV": {
@@ -1043,8 +1043,8 @@
         "background": "rgba(0,0,0,0)",
         "background_gradient": "",
         "text_color": "",
-        "subheading_background_color": "#f0f3e9",
-        "subheading_text_color": "#11243e"
+        "subheading_background_color": "#A1B847",
+        "subheading_text_color": "#F9FAFB"
       }
     },
     "media_with_text_hMPTmL": {
@@ -1102,8 +1102,8 @@
             "background_color": "rgba(0,0,0,0)",
             "eyebrow_text": "定性 × 定量",
             "eyebrow_font_size": 12,
-            "eyebrow_bg_color": "#f0f3e9",
-            "eyebrow_text_color": "#11243e",
+            "eyebrow_bg_color": "#0E366A",
+            "eyebrow_text_color": "#F9FAFB",
             "heading": "数字に、現場の理由を残す。",
             "heading_color": "#0a1a2f",
             "description": "売上や来店数の変化には、売場変更、在庫状況、イベント、スタッフ体制など、現場にしか分からない理由があります。Flowでは、店舗の定性情報をKPIと一緒に記録できます。",
@@ -1174,8 +1174,8 @@
             "description_text": "<p>Flowは、マニュアル、SOP、PDF、リンク、メモ、店舗報告を店舗データと同じ環境で整理します。社内ルールや現場情報を参照しながら、店舗運営の判断を支援できるようにします。</p>",
             "header_alignment": "left",
             "header_spacing_below": 50,
-            "eyebrow_bg_color": "#f0f3e9",
-            "eyebrow_text_color": "#11243e",
+            "eyebrow_bg_color": "#A1B847",
+            "eyebrow_text_color": "#F9FAFB",
             "heading_color": "#0a1a2f",
             "description_color": "#677279",
             "description_size_mobile": 16,
@@ -2077,8 +2077,8 @@
         "background": "#ffffff",
         "background_gradient": "",
         "text_color": "",
-        "subheading_background_color": "#f0f3e9",
-        "subheading_text_color": "#11243e"
+        "subheading_background_color": "#A1B847",
+        "subheading_text_color": "#F9FAFB"
       }
     },
     "blocks_rwYEMm": {
@@ -2090,8 +2090,8 @@
           "settings": {
             "text": "導入・連携",
             "alignment": "left",
-            "text_color": "#11243e",
-            "background": "#f0f3e9"
+            "text_color": "#F9FAFB",
+            "background": "#0E366A"
           },
           "blocks": {}
         },
@@ -2181,8 +2181,8 @@
           "settings": {
             "text": "FAQ",
             "alignment": "left",
-            "text_color": "#11243e",
-            "background": "#f0f3e9"
+            "text_color": "#F9FAFB",
+            "background": "#A1B847"
           },
           "blocks": {}
         },
@@ -2372,13 +2372,13 @@
             "style_1": "fill",
             "size_1": "xl",
             "text_1": "デモを予約する →",
-            "url_1": "#",
+            "url_1": "shopify://pages/contact",
             "background_1": "#a0b842",
             "text_color_1": "#ffffff",
             "style_2": "fill",
             "size_2": "xl",
             "text_2": "連携できるデータを見る →",
-            "url_2": "#",
+            "url_2": "shopify://pages/integrations",
             "background_2": "#ffffff",
             "text_color_2": "#11243e"
           }
