@@ -525,7 +525,10 @@ display: flex;
                         {%- unless mega_menu_block.settings.layout == 'drawer' and force_panel_desktop_mega == false -%}
                           <details is="mega-menu-disclosure" trigger="{{ section.settings.menu_open_trigger | escape }}" {{ mega_menu_block.shopify_attributes }}>
                             <summary class="text-with-icon gap-2.5 bold link-faded-reverse" {% if link.url != '#' %}data-url="{{ link.url | escape }}"{% endif %}>
-                              {{- link.title -}} {%- render 'icon' with 'chevron-bottom' -%}
+                              <a href="{{ link.url }}" {% if is_book_demo_menu %} target="_blank" {% endif %}>
+                                {{- link.title -}}
+                              </a>
+                                {%- render 'icon' with 'chevron-bottom' -%}
                             </summary>
 
                            {%- render 'mega-menu-horizontal', link: link, mega_menu_block: mega_menu_block -%}
@@ -542,7 +545,9 @@ display: flex;
                       {%- else -%}
                         <details class="relative" is="mega-menu-disclosure" trigger="{{ section.settings.menu_open_trigger | escape }}">
                           <summary class="text-with-icon gap-2.5 bold link-faded-reverse" {% if link.url != '#' %}data-url="{{ link.url | escape }}"{% endif %}>
-                            {{- link.title -}} {%- render 'icon' with 'chevron-bottom' -%}
+                                                          <a href="{{ link.url }}" {% if is_book_demo_menu %} target="_blank" {% endif %}>
+                                {{- link.title -}}
+                              </a> {%- render 'icon' with 'chevron-bottom' -%}
                           </summary>
 
                           {% liquid
