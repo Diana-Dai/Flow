@@ -100,58 +100,6 @@
         "text_color": ""
       }
     },
-    "1779523683cd5e4ed9": {
-      "type": "_blocks",
-      "blocks": {
-        "ai_gen_block_3c85fdc_DqQckp": {
-          "type": "ai_gen_block_3c85fdc",
-          "settings": {
-            "heading": "100以上のブランドで、店舗運営を支援",
-            "content": "",
-            "text_alignment": "center",
-            "content_size": 12,
-            "heading_color": "#11243e",
-            "content_color": "#677279",
-            "logo_1": "shopify://shop_images/Baycrews_Group_Logo.png",
-            "logo_2": "shopify://shop_images/Tumi_Logo_2c0b2a8c-bbd0-4438-95bc-22950dafcb70.png",
-            "logo_3": "shopify://shop_images/Daytona_Logo_ff3ac14a-5b76-4d13-823d-2d797c6a52e2.png",
-            "logo_4": "shopify://shop_images/Cole_Haan_Logo_65602431-ca9d-44bb-bda9-08c2a3de13f5.png",
-            "logo_5": "shopify://shop_images/Triumph_Logo_66559074-ee90-432d-b22a-efb3895890c5.png",
-            "logo_6": "shopify://shop_images/Plaza_Logo.png",
-            "logo_7": "shopify://shop_images/Stripe_Logo.png",
-            "logo_8": "shopify://shop_images/Brooks_brothers_logo.png",
-            "logo_9": "shopify://shop_images/TaylorMade_Logo.png",
-            "logo_10": "shopify://shop_images/Right_On_Logo.png",
-            "logo_width": 250,
-            "logo_height": 120,
-            "logo_spacing": 30,
-            "logo_opacity": 1,
-            "logo_background": "#f9fafb",
-            "logo_border_radius": 8,
-            "scroll_speed": 35,
-            "footer_content": "<p><strong>全国約1,000店舗での導入・運用経験。アパレル、ライフスタイル、専門店、商業施設テナントの店舗改善を支援しています。</strong></p><p></p>",
-            "footer_content_size": 16,
-            "footer_content_color": "#677279",
-            "desktop_width_percent": 100,
-            "background_color": "#f9fafb",
-            "section_padding": 60
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "ai_gen_block_3c85fdc_DqQckp"
-      ],
-      "disabled": true,
-      "settings": {
-        "full_width": true,
-        "remove_vertical_spacing": true,
-        "remove_horizontal_spacing": false,
-        "background": "",
-        "background_gradient": "",
-        "text_color": ""
-      }
-    },
     "blocks_h6rJNw": {
       "type": "_blocks",
       "blocks": {
@@ -166,11 +114,11 @@
             "content_color": "#677279",
             "logo_1": "shopify://shop_images/baycrews-logo-230-130.png",
             "logo_2": "shopify://shop_images/daytona-logo-230-130.png",
-            "logo_3": "shopify://shop_images/colehaan-logo-230-130.png",
+            "logo_3": "shopify://shop_images/tumi-logo-230-130.png",
             "logo_4": "shopify://shop_images/brooksbrothers-logo-230-130.png",
             "logo_5": "shopify://shop_images/plaza-logo-230-130.png",
             "logo_6": "shopify://shop_images/taylormade-logo-230-130.png",
-            "logo_7": "shopify://shop_images/tumi-logo-230-130.png",
+            "logo_7": "shopify://shop_images/colehaan-logo-230-130.png",
             "logo_8": "shopify://shop_images/triumph-logo-230-130.png",
             "logo_9": "shopify://shop_images/stripe-logo-230-130.png",
             "logo_10": "shopify://shop_images/Little_League_Logo.png",
@@ -1970,7 +1918,6 @@
   },
   "order": [
     "rich_text_AGR3yT",
-    "1779523683cd5e4ed9",
     "blocks_h6rJNw",
     "logo_list_bzafjC",
     "1779530497bf2195e7",
