@@ -634,7 +634,7 @@
         "full_width": true,
         "remove_vertical_spacing": false,
         "remove_horizontal_spacing": false,
-        "liquid": "<p style=\"text-align: center\">Write or copy/paste Liquid code</p>",
+        "liquid": "<div id=\"checklist\" style=\"max-width: 760px; margin: 0 auto;\">",
         "background": "",
         "background_gradient": "",
         "text_color": ""
