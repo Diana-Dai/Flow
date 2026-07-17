@@ -729,7 +729,7 @@
         "remove_vertical_spacing": false,
         "remove_horizontal_spacing": false,
         "liquid": "<div id=\"assessment\" style=\"max-width: 760px; margin: 0 auto;\">\n  <iframe \n    data-tally-src=\"https://tally.so/embed/rj0D4N?hideTitle=1&transparentBackground=1&dynamicHeight=1\"\n    loading=\"lazy\"\n    width=\"100%\"\n    height=\"407\"\n    frameborder=\"0\"\n    marginheight=\"0\"\n    marginwidth=\"0\"\n    title=\"Store Performance Gap Assessment - Japanese\">\n  </iframe>\n</div>\n\n<script>\nvar d=document,w=\"https://tally.so/widgets/embed.js\",v=function(){\n  \"undefined\"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll(\"iframe[data-tally-src]:not([src])\").forEach((function(e){e.src=e.dataset.tallySrc}))\n};\nif(\"undefined\"!=typeof Tally)v();\nelse if(d.querySelector('script[src=\"'+w+'\"]')==null){\n  var s=d.createElement(\"script\");\n  s.src=w;\n  s.onload=v;\n  s.onerror=v;\n  d.body.appendChild(s);\n}\n</script>",
-        "background": "",
+        "background": "rgba(0,0,0,0)",
         "background_gradient": "",
         "text_color": ""
       }
