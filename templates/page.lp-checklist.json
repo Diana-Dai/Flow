@@ -574,7 +574,7 @@
             "title": "",
             "content": "<h2>Flowは、小売店舗のパフォーマンス改善に特化しています</h2><p>Flowは、来店数・売上・店舗運営データを統合し、店舗ごとの改善判断を支援する小売向けの店舗分析プラットフォームです。</p><p>分析レポートを増やすことではなく、店舗ごとに「次に何を確認すべきか」が分かる状態をつくることを重視しています。</p><ul><li><strong>来店数・購買率・売上を店舗別に可視化</strong></li><li><strong>店舗ごとの課題を比較</strong></li><li><strong>改善判断を現場の行動につなげる</strong></li><li><strong>店舗運営のばらつきを確認</strong></li></ul>",
             "link_text": "確認ポイントを見る",
-            "link_url": "#checklist",
+            "link_url": "#checklist-anchor",
             "background": "",
             "background_gradient": "",
             "text_color": "#11243e",
