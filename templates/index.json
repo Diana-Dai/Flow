@@ -318,6 +318,124 @@
         "text_color": "#1a1a1a"
       }
     },
+    "multi_column_UyyJC7": {
+      "type": "multi-column",
+      "blocks": {
+        "item_zmyWjn": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "image": "shopify://shop_images/1_Measure_4.png",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "4",
+            "title": "1",
+            "heading_tag": "h5",
+            "subheading": "",
+            "content": "<p><strong>AIカメラが来店・回遊・滞在を高精度で計測します。</strong></p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_7i4xFD": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "image": "shopify://shop_images/2_integrate_2.png",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "4",
+            "title": "2",
+            "heading_tag": "h5",
+            "subheading": "",
+            "content": "<p><strong>売上・人員・天候・店舗情報・マニュアルなどあらゆるデータを統合します。</strong></p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_JaAE7t": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "image": "shopify://shop_images/Dashboard_mockup_6.png",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "4",
+            "title": "3",
+            "heading_tag": "h5",
+            "subheading": "",
+            "content": "<p><strong>重要指標をリアルタイムに可視化し、課題とチャンスを明確にします。</strong></p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_yDWffp": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "image": "shopify://shop_images/FIDA_on_Smart_Phone_1.png",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "4",
+            "title": "4",
+            "heading_tag": "h5",
+            "subheading": "",
+            "content": "<p><strong>AIが最適な次の一手を提案。現場での実行をサポートします。</strong></p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_zmyWjn",
+        "item_7i4xFD",
+        "item_JaAE7t",
+        "item_yDWffp"
+      ],
+      "name": "Multi-column",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "start",
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "subheading_background_color": "",
+        "subheading_text_color": ""
+      }
+    },
     "media_grid_KdAVbq": {
       "type": "media-grid",
       "blocks": {
@@ -416,6 +534,7 @@
         "image_AzpNFN",
         "image_LpmTAp"
       ],
+      "disabled": true,
       "name": "Media grid",
       "settings": {
         "full_width": true,
@@ -1774,104 +1893,6 @@
         "text_color": ""
       }
     },
-    "text_with_icons_TcDQfn": {
-      "type": "text-with-icons",
-      "blocks": {
-        "item_eh64Pb": {
-          "type": "item",
-          "settings": {
-            "icon": "picto-coupon",
-            "custom_icon": "shopify://shop_images/01.png",
-            "mobile_icon_width": 52,
-            "icon_width": 52,
-            "icon_background_type": "none",
-            "icon_background": "",
-            "icon_color": "",
-            "title": "ヒアリング",
-            "content": "<p>店舗数、既存POS、確認したいKPIを整理</p>"
-          }
-        },
-        "item_g3gEEY": {
-          "type": "item",
-          "settings": {
-            "icon": "picto-coupon",
-            "custom_icon": "shopify://shop_images/02.png",
-            "mobile_icon_width": 52,
-            "icon_width": 52,
-            "icon_background_type": "none",
-            "icon_background": "",
-            "icon_color": "",
-            "title": "計測・連携設計",
-            "content": "<p>カメラ設置、POS連携、店舗情報を確認</p>"
-          }
-        },
-        "item_gXedC3": {
-          "type": "item",
-          "settings": {
-            "icon": "picto-coupon",
-            "custom_icon": "shopify://shop_images/03_0fee4f2b-7304-4c86-85d3-c290faa418e5.png",
-            "mobile_icon_width": 52,
-            "icon_width": 52,
-            "icon_background_type": "none",
-            "icon_background": "",
-            "icon_color": "",
-            "title": "初期設定",
-            "content": "<p>ダッシュボード、権限、データ連携を設定</p>"
-          }
-        },
-        "item_AK6yhH": {
-          "type": "item",
-          "settings": {
-            "icon": "picto-coupon",
-            "custom_icon": "shopify://shop_images/04.png",
-            "mobile_icon_width": 52,
-            "icon_width": 52,
-            "icon_background_type": "none",
-            "icon_background": "",
-            "icon_color": "",
-            "title": "運用開始",
-            "content": "<p>本部・店舗・エリア別の活用方法を確認</p>"
-          }
-        },
-        "item_xWP8GR": {
-          "type": "item",
-          "settings": {
-            "icon": "picto-coupon",
-            "custom_icon": "shopify://shop_images/05.png",
-            "mobile_icon_width": 52,
-            "icon_width": 52,
-            "icon_background_type": "none",
-            "icon_background": "",
-            "icon_color": "",
-            "title": "定着支援",
-            "content": "<p>KPI確認、改善アクションの習慣化を支援</p>"
-          }
-        }
-      },
-      "block_order": [
-        "item_eh64Pb",
-        "item_g3gEEY",
-        "item_gXedC3",
-        "item_AK6yhH",
-        "item_xWP8GR"
-      ],
-      "disabled": true,
-      "custom_css": [
-        "{padding-top: 90px;}"
-      ],
-      "name": "Text with icons",
-      "settings": {
-        "full_width": true,
-        "stack_on_mobile": false,
-        "title": "導入までの流れ",
-        "heading_tag": "h4",
-        "text_alignment": "start",
-        "icon_spacing": "medium",
-        "background": "rgba(0,0,0,0)",
-        "background_gradient": "linear-gradient(270deg, rgba(160, 184, 66, 1), rgba(249, 250, 251, 1) 74%)",
-        "text_color": "#1a1a1a"
-      }
-    },
     "faq_WEg6pU": {
       "type": "faq",
       "blocks": {
@@ -2046,6 +2067,7 @@
     "logo_list_bzafjC",
     "1779530497bf2195e7",
     "rich_text_YiW9P3",
+    "multi_column_UyyJC7",
     "media_grid_KdAVbq",
     "multi_column_LJEQgi",
     "impact_text_gi97zd",
@@ -2063,7 +2085,6 @@
     "multi_column_dQq9tA",
     "testimonials_98zPBi",
     "blocks_pRDeeC",
-    "text_with_icons_TcDQfn",
     "faq_WEg6pU",
     "image_with_text_overlay_MVHcWF"
   ]
