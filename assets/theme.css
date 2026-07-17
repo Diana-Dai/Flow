@@ -3464,21 +3464,12 @@ model-media model-viewer, model-media .shopify-model-viewer-ui {
 
 .link, .prose a:not(.button) {
   text-underline: none;
-  background: linear-gradient(to right, currentColor, currentColor) 0 min(100%, 1.35em) / 100% 1px no-repeat;
+  /* background: linear-gradient(to right, currentColor, currentColor) 0 min(100%, 1.35em) / 100% 1px no-repeat; */
   transition: background-size .3s ease-in-out, color .3s ease-in-out;
 }
 
-@supports (height: 1lh) {
-  .link, .prose a:not(.button) {
-    background: linear-gradient(to right, currentColor, currentColor) 0 min(100%, 1.2lh) / 100% 1px no-repeat;
-  }
-}
 
 @media screen and (pointer: fine) {
-  :is(.link, .prose a:not(.button)):hover {
-    background-size: 0 1px;
-  }
-
   .text-subdued :is(.link, .prose a:not(.button)):hover {
     color: rgb(var(--text-color));
   }
