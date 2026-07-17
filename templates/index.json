@@ -142,9 +142,62 @@
       "block_order": [
         "ai_gen_block_3c85fdc_DqQckp"
       ],
+      "disabled": true,
       "settings": {
         "full_width": true,
         "remove_vertical_spacing": true,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "blocks_h6rJNw": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_3c85fdc_GKNUUD": {
+          "type": "ai_gen_block_3c85fdc",
+          "settings": {
+            "heading": "",
+            "content": "<h3><strong>100以上のブランドで、店舗パフォーマンス改善を支援</strong></h3>",
+            "text_alignment": "center",
+            "content_size": 24,
+            "heading_color": "#11243e",
+            "content_color": "#677279",
+            "logo_1": "shopify://shop_images/baycrews-logo-230-130.png",
+            "logo_2": "shopify://shop_images/daytona-logo-230-130.png",
+            "logo_3": "shopify://shop_images/colehaan-logo-230-130.png",
+            "logo_4": "shopify://shop_images/brooksbrothers-logo-230-130.png",
+            "logo_5": "shopify://shop_images/plaza-logo-230-130.png",
+            "logo_6": "shopify://shop_images/taylormade-logo-230-130.png",
+            "logo_7": "shopify://shop_images/tumi-logo-230-130.png",
+            "logo_8": "shopify://shop_images/triumph-logo-230-130.png",
+            "logo_9": "shopify://shop_images/stripe-logo-230-130.png",
+            "logo_10": "shopify://shop_images/Little_League_Logo.png",
+            "logo_width": 210,
+            "logo_height": 120,
+            "logo_spacing": 40,
+            "logo_opacity": 1,
+            "logo_background": "#ffffff",
+            "logo_border_radius": 8,
+            "scroll_speed": 30,
+            "footer_content": "<p>Flowは、来店数・売上・店舗運営データを統合し、店舗ごとの改善判断を支援しています。</p>",
+            "footer_content_size": 16,
+            "footer_content_color": "#677279",
+            "desktop_width_percent": 100,
+            "background_color": "#f9fafb",
+            "section_padding": 60
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_3c85fdc_GKNUUD"
+      ],
+      "name": "Scrolling logos",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
         "remove_horizontal_spacing": false,
         "background": "",
         "background_gradient": "",
@@ -281,44 +334,6 @@
         "text_color": ""
       }
     },
-    "rich_text_YiW9P3": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_DFkYUD": {
-          "type": "heading",
-          "settings": {
-            "text": "多くのシステムはレポートで止まる。Flowは店舗判断を揃える。",
-            "heading_tag": "h3",
-            "text_color": "#11243e",
-            "gradient": ""
-          }
-        },
-        "subheading_6N4pe4": {
-          "type": "subheading",
-          "settings": {
-            "text": "Flowは、来店客数・回遊・滞在時間・コンバージョン・人員配置を統合し、店舗運営の判断を標準化します。",
-            "icon": "none"
-          }
-        }
-      },
-      "block_order": [
-        "heading_DFkYUD",
-        "subheading_6N4pe4"
-      ],
-      "disabled": true,
-      "custom_css": [
-        "{padding-top: 90px;}"
-      ],
-      "name": "Rich text",
-      "settings": {
-        "full_width": true,
-        "content_width": "large",
-        "text_position": "center",
-        "background": "rgba(0,0,0,0)",
-        "background_gradient": "",
-        "text_color": "#1a1a1a"
-      }
-    },
     "multi_column_UyyJC7": {
       "type": "multi-column",
       "blocks": {
@@ -333,7 +348,7 @@
             "image": "shopify://shop_images/1_Measure_4.png",
             "background_color": "",
             "text_color": "",
-            "border_color": "#F9FAFB",
+            "border_color": "#f9fafb",
             "show_controls": false,
             "column_size": "4",
             "title": "1",
@@ -356,7 +371,7 @@
             "image": "shopify://shop_images/2_integrate_2.png",
             "background_color": "",
             "text_color": "",
-            "border_color": "#F9FAFB",
+            "border_color": "#f9fafb",
             "show_controls": false,
             "column_size": "4",
             "title": "2",
@@ -379,7 +394,7 @@
             "image": "shopify://shop_images/Dashboard_mockup_6.png",
             "background_color": "",
             "text_color": "",
-            "border_color": "#F9FAFB",
+            "border_color": "#f9fafb",
             "show_controls": false,
             "column_size": "4",
             "title": "3",
@@ -402,7 +417,7 @@
             "image": "shopify://shop_images/FIDA_on_Smart_Phone_1.png",
             "background_color": "",
             "text_color": "",
-            "border_color": "#F9FAFB",
+            "border_color": "#f9fafb",
             "show_controls": false,
             "column_size": "4",
             "title": "4",
@@ -435,115 +450,6 @@
         "text_color": "",
         "subheading_background_color": "",
         "subheading_text_color": ""
-      }
-    },
-    "media_grid_KdAVbq": {
-      "type": "media-grid",
-      "blocks": {
-        "image_gRHEpe": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/1_Measure_3.png",
-            "title": "1",
-            "heading_tag": "h5",
-            "link_url": "",
-            "link_text": "",
-            "mobile_text_position": "place-self-start-end text-end",
-            "desktop_column_span": 1,
-            "desktop_row_span": 2,
-            "desktop_text_position": "sm:place-self-start-end sm:text-end",
-            "background": "rgba(0,0,0,0)",
-            "background_gradient": "",
-            "text_color": "#ffffff",
-            "text_gradient": "",
-            "button_background": "#a0b842",
-            "button_text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        },
-        "image_9gCz74": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/2_integrate_1.png",
-            "title": "2",
-            "heading_tag": "h5",
-            "link_url": "",
-            "link_text": "",
-            "mobile_text_position": "place-self-start-center text-center",
-            "desktop_column_span": 1,
-            "desktop_row_span": 2,
-            "desktop_text_position": "sm:place-self-start-center sm:text-center",
-            "background": "rgba(0,0,0,0)",
-            "background_gradient": "",
-            "text_color": "#ffffff",
-            "text_gradient": "",
-            "button_background": "#000000",
-            "button_text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        },
-        "image_AzpNFN": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Dashboard_mockup_4.png",
-            "title": "3",
-            "heading_tag": "h5",
-            "link_url": "",
-            "link_text": "",
-            "mobile_text_position": "place-self-start-end text-end",
-            "desktop_column_span": 1,
-            "desktop_row_span": 2,
-            "desktop_text_position": "sm:place-self-start-end sm:text-end",
-            "background": "rgba(0,0,0,0)",
-            "background_gradient": "",
-            "text_color": "#ffffff",
-            "text_gradient": "",
-            "button_background": "#000000",
-            "button_text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        },
-        "image_LpmTAp": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/FIDA_on_Smart_Phone_7b53b0c2-d85e-446f-b1bc-dbca0ab47512.png",
-            "title": "4",
-            "heading_tag": "h5",
-            "link_url": "",
-            "link_text": "",
-            "mobile_text_position": "place-self-start-end text-end",
-            "desktop_column_span": 1,
-            "desktop_row_span": 2,
-            "desktop_text_position": "sm:place-self-start-end sm:text-end",
-            "background": "rgba(0,0,0,0)",
-            "background_gradient": "",
-            "text_color": "#ffffff",
-            "text_gradient": "",
-            "button_background": "#000000",
-            "button_text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        }
-      },
-      "block_order": [
-        "image_gRHEpe",
-        "image_9gCz74",
-        "image_AzpNFN",
-        "image_LpmTAp"
-      ],
-      "disabled": true,
-      "name": "Media grid",
-      "settings": {
-        "full_width": true,
-        "reduce_width": false,
-        "desktop_row_height": 290,
-        "mobile_row_height": 120,
-        "background": "",
-        "background_gradient": ""
       }
     },
     "multi_column_LJEQgi": {
@@ -2065,11 +1971,10 @@
   "order": [
     "rich_text_AGR3yT",
     "1779523683cd5e4ed9",
+    "blocks_h6rJNw",
     "logo_list_bzafjC",
     "1779530497bf2195e7",
-    "rich_text_YiW9P3",
     "multi_column_UyyJC7",
-    "media_grid_KdAVbq",
     "multi_column_LJEQgi",
     "impact_text_gi97zd",
     "rich_text_E4i7Ea",
