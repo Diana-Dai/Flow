@@ -11,50 +11,6 @@
   "type": "footer",
   "name": "Footer group",
   "sections": {
-    "rich_text_GgfWaT": {
-      "type": "rich-text",
-      "blocks": {
-        "subheading_LRQJfH": {
-          "type": "subheading",
-          "settings": {
-            "text": "店舗運営の意思決定を支える、専門特化型リテール分析プラットフォーム。",
-            "icon": "none"
-          }
-        },
-        "heading_qWNmLn": {
-          "type": "heading",
-          "disabled": true,
-          "settings": {
-            "text": "",
-            "heading_tag": "h3",
-            "text_color": "",
-            "gradient": ""
-          }
-        },
-        "richtext_h6waFF": {
-          "type": "richtext",
-          "disabled": true,
-          "settings": {
-            "content": "<p>店舗運営の意思決定を支える、専門特化型リテール分析プラットフォーム。</p><p></p>"
-          }
-        }
-      },
-      "block_order": [
-        "subheading_LRQJfH",
-        "heading_qWNmLn",
-        "richtext_h6waFF"
-      ],
-      "disabled": true,
-      "name": "Rich text",
-      "settings": {
-        "full_width": true,
-        "content_width": "small",
-        "text_position": "center",
-        "background": "#1a1a1a",
-        "background_gradient": "",
-        "text_color": "#ffffff"
-      }
-    },
     "footer": {
       "type": "footer",
       "blocks": {
@@ -110,7 +66,6 @@
     }
   },
   "order": [
-    "rich_text_GgfWaT",
     "footer"
   ]
 }
