@@ -305,6 +305,7 @@
         "heading_DFkYUD",
         "subheading_6N4pe4"
       ],
+      "disabled": true,
       "custom_css": [
         "{padding-top: 90px;}"
       ],
@@ -425,10 +426,10 @@
         "full_width": true,
         "stack_on_mobile": false,
         "gap": "medium",
-        "text_alignment": "start",
+        "text_alignment": "center",
         "subheading": "",
         "title": "",
-        "content": "",
+        "content": "<h3>多くのシステムはレポートで止まる。<br/>Flowは店舗判断を揃える。</h3><p>Flowは、来店客数・回遊・滞在時間・コンバージョン・人員配置を統合し、店舗運営の判断を標準化します。</p>",
         "background": "",
         "background_gradient": "",
         "text_color": "",
