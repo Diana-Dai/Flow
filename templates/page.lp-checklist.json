@@ -636,7 +636,7 @@
         "full_width": true,
         "remove_vertical_spacing": false,
         "remove_horizontal_spacing": false,
-        "liquid": "<div id=\"checklist-anchor\" aria-hidden=\"true\"></div>\n\n<script>\n  document.addEventListener('DOMContentLoaded', function () {\n    const anchor = document.getElementById('checklist-anchor');\n    if (!anchor) return;\n\n    const section = anchor.closest('.shopify-section');\n\n    if (section) {\n      section.style.height = '0';\n      section.style.minHeight = '0';\n      section.style.margin = '0';\n      section.style.padding = '0';\n      section.style.overflow = 'visible';\n    }\n\n    anchor.style.position = 'relative';\n    anchor.style.top = '-80px';\n    anchor.style.height = '0';\n    anchor.style.margin = '0';\n    anchor.style.padding = '0';\n  });\n</script>",
+        "liquid": "<div id=\"checklist\" aria-hidden=\"true\"></div>\n\n<script>\n  document.addEventListener('DOMContentLoaded', function () {\n    const anchor = document.getElementById('checklist-anchor');\n    if (!anchor) return;\n\n    const section = anchor.closest('.shopify-section');\n\n    if (section) {\n      section.style.height = '0';\n      section.style.minHeight = '0';\n      section.style.margin = '0';\n      section.style.padding = '0';\n      section.style.overflow = 'visible';\n    }\n\n    anchor.style.position = 'relative';\n    anchor.style.top = '-80px';\n    anchor.style.height = '0';\n    anchor.style.margin = '0';\n    anchor.style.padding = '0';\n  });\n</script>",
         "background": "",
         "background_gradient": "",
         "text_color": ""
