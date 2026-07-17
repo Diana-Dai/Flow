@@ -38,7 +38,7 @@ Supported variables
                 assign top_menu_meta_logo = blank
                 assign top_menu_meta_description = ''
 
-                if link_title_downcase contains 'platform' or link_title_downcase contains 'flowとは' or link_title_downcase contains 'Flowサービス'
+                if link_title_downcase contains 'platform' or link_title_downcase contains 'flowとは' or link_title_downcase contains 'flowサービス'
                   assign is_platform_menu = true
                 endif
 
@@ -109,7 +109,7 @@ Supported variables
                 {%- assign is_platform_menu = true -%}
               {%- endif -%}
 
-              {%- if link_title_downcase contains 'about flow' or link_title_downcase contains 'flowについて' or link_title_downcase contains 'flowとは' or link_title_downcase contains 'Flowサービス' or link_title_downcase contains '会社情報' or link_title_downcase contains 'about' -%}
+              {%- if link_title_downcase contains 'about flow' or link_title_downcase contains 'flowについて' or link_title_downcase contains 'flowとは' or link_title_downcase contains 'flowサービス' or link_title_downcase contains '会社情報' or link_title_downcase contains 'about' -%}
                 {%- assign is_about_menu = true -%}
               {%- endif -%}
 
