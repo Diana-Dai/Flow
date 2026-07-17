@@ -79,7 +79,7 @@
             "company_name_placeholder": "株式会社〇〇",
             "industry_placeholder": "Select industry",
             "stores_label": "店舗数",
-            "stores_placeholder": "選択してください",
+            "stores_placeholder": "XX店舗",
             "timeline_placeholder": "Select timeline",
             "contact_person_title": "ご担当者情報",
             "full_name_label": "お名前",
@@ -95,7 +95,7 @@
             "additional_info_note": "POS連携、スタッフシフト、既存カメラ、VMD・売場分析、来店計測などについてもご記入いただけます。",
             "consent_text": "送信いただいた情報は、お問い合わせへの対応のみに使用します。個人情報の取り扱いについては、プライバシーポリシーをご確認ください",
             "privacy_policy_text": "プライバシーポリシー",
-            "privacy_policy_url": "",
+            "privacy_policy_url": "shopify://pages/agreements",
             "submit_button_text": "送信する →",
             "success_message": "送信が完了しました。お問い合わせありがとうございます。内容を確認のうえ、担当者よりご連絡いたします。通常、1〜2営業日以内にご返信いたします。"
           },
@@ -343,7 +343,9 @@
         "content": "",
         "background": "",
         "background_gradient": "",
-        "text_color": ""
+        "text_color": "",
+        "subheading_background_color": "",
+        "subheading_text_color": ""
       }
     },
     "rich_text_6VmVgb": {

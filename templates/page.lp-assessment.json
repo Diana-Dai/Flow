@@ -138,23 +138,23 @@
             "content_size": 24,
             "heading_color": "#11243e",
             "content_color": "#677279",
-            "logo_1": "shopify://shop_images/Baycrews_White_1.png",
-            "logo_2": "shopify://shop_images/Stripe_White_f1ba215a-c741-4fa7-8b23-cd0b45a74f31.png",
-            "logo_3": "shopify://shop_images/Daytona_White_e03a3f9c-40ca-45b1-8866-4528e821f7f5.png",
-            "logo_4": "shopify://shop_images/Flow_Client_Case_Study_Banners_1.png",
-            "logo_5": "shopify://shop_images/Plaza_White_d4060480-52ad-4a29-b53d-1f7b116f8343.png",
-            "logo_6": "shopify://shop_images/Brooks_B.png",
-            "logo_7": "shopify://shop_images/Cole_Haan_White_836317d3-12dd-4e9a-b647-80aab91df0b2.png",
-            "logo_8": "shopify://shop_images/site_id-blue-01.svg",
-            "logo_9": "shopify://shop_images/26.webp",
-            "logo_10": "shopify://shop_images/Triumph_logo.png",
-            "logo_width": 200,
+            "logo_1": "shopify://shop_images/baycrews-logo-230-130.png",
+            "logo_2": "shopify://shop_images/daytona-logo-230-130.png",
+            "logo_3": "shopify://shop_images/colehaan-logo-230-130.png",
+            "logo_4": "shopify://shop_images/tumi-logo-230-130.png",
+            "logo_5": "shopify://shop_images/plaza-logo-230-130.png",
+            "logo_6": "shopify://shop_images/brooksbrothers-logo-230-130.png",
+            "logo_7": "shopify://shop_images/taylormade-logo-230-130.png",
+            "logo_8": "shopify://shop_images/triumph-logo-230-130.png",
+            "logo_9": "shopify://shop_images/Little_League_Logo.png",
+            "logo_10": "shopify://shop_images/stripe-logo-230-130.png",
+            "logo_width": 210,
             "logo_height": 120,
             "logo_spacing": 40,
             "logo_opacity": 1,
             "logo_background": "#ffffff",
             "logo_border_radius": 4,
-            "scroll_speed": 40,
+            "scroll_speed": 30,
             "footer_content": "<p>Flowは、来店数・売上・店舗運営データを統合し、店舗ごとの改善判断を支援しています。</p>",
             "footer_content_size": 16,
             "footer_content_color": "#677279",
@@ -599,6 +599,7 @@
       "blocks": {
         "heading_qttWFi": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "text": "5分で、店舗課題を整理する",
             "heading_tag": "h2",
@@ -609,7 +610,7 @@
         "richtext_fkn6LG": {
           "type": "richtext",
           "settings": {
-            "content": "<p>全9問に回答すると、売上未達の原因がどの領域にある可能性が高いかを整理できます。</p>"
+            "content": "<h2>5分で、店舗課題を整理する</h2><p>全9問に回答すると、売上未達の原因がどの領域にある可能性が高いかを整理できます。</p>"
           }
         },
         "button_VHxmPG": {
@@ -728,7 +729,7 @@
         "remove_vertical_spacing": false,
         "remove_horizontal_spacing": false,
         "liquid": "<div id=\"assessment\" style=\"max-width: 760px; margin: 0 auto;\">\n  <iframe \n    data-tally-src=\"https://tally.so/embed/rj0D4N?hideTitle=1&transparentBackground=1&dynamicHeight=1\"\n    loading=\"lazy\"\n    width=\"100%\"\n    height=\"407\"\n    frameborder=\"0\"\n    marginheight=\"0\"\n    marginwidth=\"0\"\n    title=\"Store Performance Gap Assessment - Japanese\">\n  </iframe>\n</div>\n\n<script>\nvar d=document,w=\"https://tally.so/widgets/embed.js\",v=function(){\n  \"undefined\"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll(\"iframe[data-tally-src]:not([src])\").forEach((function(e){e.src=e.dataset.tallySrc}))\n};\nif(\"undefined\"!=typeof Tally)v();\nelse if(d.querySelector('script[src=\"'+w+'\"]')==null){\n  var s=d.createElement(\"script\");\n  s.src=w;\n  s.onload=v;\n  s.onerror=v;\n  d.body.appendChild(s);\n}\n</script>",
-        "background": "",
+        "background": "rgba(0,0,0,0)",
         "background_gradient": "",
         "text_color": ""
       }
