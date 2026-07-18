@@ -420,7 +420,7 @@ Supported variables
                                 %}
 
                                 <li>
-                                  <a href="{{ sub_sub_link.url }}" {% if sub_sub_link.title contains 'ヘルプセンター' or sub_sub_link.title contains 'Flowアカデミー' %} target="_blank"{% endif %}  class="header__auto-mega-submenu-item" {% if sub_sub_link.current %}aria-current="page"{% endif %}>
+                                  <a href="{{ sub_sub_link.url }}" {% if sub_sub_link.url contains 'www.youtube.com' or sub_sub_link.url contains 'help.flow-insight' %} target="_blank"{% endif %}  class="header__auto-mega-submenu-item" {% if sub_sub_link.current %}aria-current="page"{% endif %}>
                                     <span class="header__auto-mega-item-icon">
                                       {%- if sub_item_logo != blank -%}
                                         {{- sub_item_logo | image_url: width: 36 | image_tag: loading: 'lazy', widths: '36', class: 'menu-meta-logo' -}}
@@ -442,7 +442,7 @@ Supported variables
                               {%- endfor -%}
                             {%- else -%}
                               <li>
-                                <a href="{{ sub_link.url }}" {% if sub_link.title contains 'ヘルプセンター' or sub_link.title contains 'Flowアカデミー' %} target="_blank"{% endif %} class="header__auto-mega-submenu-item" {% if sub_link.current %}aria-current="page"{% endif %}>
+                                <a href="{{ sub_link.url }}" {% if sub_link.url contains 'www.youtube.com' or sub_link.url contains 'help.flow-insight' %} target="_blank"{% endif %}  class="header__auto-mega-submenu-item" {% if sub_link.current %}aria-current="page"{% endif %}>
                                   <span class="header__auto-mega-item-icon">
                                     {%- if column_meta_logo != blank -%}
                                       {{- column_meta_logo | image_url: width: 36 | image_tag: loading: 'lazy', widths: '36', class: 'menu-meta-logo' -}}
