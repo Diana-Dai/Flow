@@ -284,8 +284,8 @@
             "image": "shopify://shop_images/FIDA_Layer_1.png",
             "icon": "none",
             "icon_width": 48,
-            "title": "対応を標準化する",
-            "content": "<p>店舗状況に応じた推奨アクションを提示し、店舗ごとの判断のばらつきを抑えます。SOPや運営ルールに沿った実行を支援し、全店舗でより一貫した対応を実現します。</p><p><strong>支援できる主な領域：</strong></p><ul><li>店舗別の推奨アクション</li><li>SOP・運営ルールとの連携</li><li>実行状況の確認</li><li>店舗間の判断ばらつき抑制</li><li>エリア・本部による状況把握</li></ul>",
+            "title": "判断を標準化する",
+            "content": "<p>Flow AIが店舗データを要約し、質問に答え、店舗状況に応じた優先行動を提示します。SOPや運営ルールに沿った判断を支援し、店舗ごとの対応のばらつきを抑えます。</p><p><strong>支援できる主な領域：</strong></p><ul><li>業績の自動要約</li><li>データ・社内資料への質問</li><li>店舗別の優先行動</li><li>SOP・運営ルールの参照</li><li>実行状況の確認</li></ul>",
             "link_url": "shopify://pages/flow-ai-fida",
             "link_text": "Flow AIを見る →",
             "link_style": "button"
