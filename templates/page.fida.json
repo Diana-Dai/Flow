@@ -505,100 +505,6 @@
         "subheading_text_color": ""
       }
     },
-    "multi_column_Rqk3xG": {
-      "type": "multi-column",
-      "blocks": {
-        "item_NjRKb9": {
-          "type": "item",
-          "settings": {
-            "icon": "none",
-            "icon_width": 32,
-            "icon_background_type": "circle",
-            "icon_background": "",
-            "icon_color": "",
-            "image": "shopify://shop_images/traffic_demographics_1.png",
-            "background_color": "#f9fafb",
-            "text_color": "",
-            "border_color": "#f9fafb",
-            "show_controls": false,
-            "column_size": "3",
-            "title": "",
-            "heading_tag": "h4",
-            "subheading": "",
-            "content": "<h4>01. データを接続</h4><p>POS、来店計測、シフト、天候、店舗属性、店舗報告、社内資料など、店舗運営に必要な情報をFlowに取り込みます。</p>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        },
-        "item_nR9kcV": {
-          "type": "item",
-          "settings": {
-            "icon": "none",
-            "icon_width": 32,
-            "icon_background_type": "circle",
-            "icon_background": "",
-            "icon_color": "",
-            "image": "shopify://shop_images/Connections_1_78676825-a109-4f09-a42e-5966770a579e.png",
-            "background_color": "#f9fafb",
-            "text_color": "",
-            "border_color": "#f9fafb",
-            "show_controls": false,
-            "column_size": "3",
-            "title": "",
-            "heading_tag": "h4",
-            "subheading": "",
-            "content": "<h4>02. 店舗文脈として整理</h4><p>売上や来店数だけでなく、スタッフ状況、現場メモ、SOP、店舗条件を合わせて、店舗ごとの状況として整理します。</p>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        },
-        "item_nhi8GJ": {
-          "type": "item",
-          "settings": {
-            "icon": "none",
-            "icon_width": 32,
-            "icon_background_type": "circle",
-            "icon_background": "",
-            "icon_color": "",
-            "image": "shopify://shop_images/Layer_3_2.png",
-            "background_color": "#f9fafb",
-            "text_color": "",
-            "border_color": "#f9fafb",
-            "show_controls": false,
-            "column_size": "3",
-            "title": "",
-            "heading_tag": "h4",
-            "subheading": "",
-            "content": "<h4>03. 実行提案につなげる</h4><p>Flow AIがFIDAを参照し、店長・エリアマネージャー・本部が次に確認すべきこと、取るべき行動を整理します。</p>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        }
-      },
-      "block_order": [
-        "item_NjRKb9",
-        "item_nR9kcV",
-        "item_nhi8GJ"
-      ],
-      "name": "Multi-column",
-      "settings": {
-        "full_width": true,
-        "stack_on_mobile": true,
-        "gap": "medium",
-        "text_alignment": "start",
-        "subheading": "FIDAの役割",
-        "title": "",
-        "content": "<h2>データを、<br/>判断できる状態に整える</h2><p>FIDAは、売上・来店・スタッフ・店舗報告・マニュアルを店舗ごとの文脈で整理するFlowの判断基盤です。<br/>Flow AIはこの基盤を参照し、状況に合った実行提案を提示します。</p>",
-        "background": "rgba(0,0,0,0)",
-        "background_gradient": "",
-        "text_color": "",
-        "subheading_background_color": "#11243e",
-        "subheading_text_color": "#ffffff"
-      }
-    },
     "blocks_kxFPYb": {
       "type": "_blocks",
       "blocks": {
@@ -1072,6 +978,100 @@
         "background": "rgba(0,0,0,0)",
         "background_gradient": "",
         "text_color": ""
+      }
+    },
+    "multi_column_Rqk3xG": {
+      "type": "multi-column",
+      "blocks": {
+        "item_NjRKb9": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "image": "shopify://shop_images/traffic_demographics_1.png",
+            "background_color": "#f9fafb",
+            "text_color": "",
+            "border_color": "#f9fafb",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h4>01. データを接続</h4><p>POS、来店計測、シフト、天候、店舗属性、店舗報告、社内資料など、店舗運営に必要な情報をFlowに取り込みます。</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_nR9kcV": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "image": "shopify://shop_images/Connections_1_78676825-a109-4f09-a42e-5966770a579e.png",
+            "background_color": "#f9fafb",
+            "text_color": "",
+            "border_color": "#f9fafb",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h4>02. 店舗文脈として整理</h4><p>売上や来店数だけでなく、スタッフ状況、現場メモ、SOP、店舗条件を合わせて、店舗ごとの状況として整理します。</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_nhi8GJ": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "image": "shopify://shop_images/Layer_3_2.png",
+            "background_color": "#f9fafb",
+            "text_color": "",
+            "border_color": "#f9fafb",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<h4>03. 実行提案につなげる</h4><p>Flow AIがFIDAを参照し、店長・エリアマネージャー・本部が次に確認すべきこと、取るべき行動を整理します。</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_NjRKb9",
+        "item_nR9kcV",
+        "item_nhi8GJ"
+      ],
+      "name": "Multi-column",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": true,
+        "gap": "medium",
+        "text_alignment": "start",
+        "subheading": "FIDAの役割",
+        "title": "",
+        "content": "<h2>データを、<br/>判断できる状態に整える</h2><p>FIDAは、売上・来店・スタッフ・店舗報告・マニュアルを店舗ごとの文脈で整理するFlowの判断基盤です。<br/>Flow AIはこの基盤を参照し、状況に合った実行提案を提示します。</p>",
+        "background": "rgba(0,0,0,0)",
+        "background_gradient": "",
+        "text_color": "",
+        "subheading_background_color": "#11243e",
+        "subheading_text_color": "#ffffff"
       }
     },
     "multi_column_HCGJea": {
@@ -2016,11 +2016,11 @@
     "multi_column_De34aj",
     "custom_liquid_tiJnkh",
     "multi_column_QjMJiW",
-    "multi_column_Rqk3xG",
     "blocks_kxFPYb",
+    "178047465242fd23a6",
+    "multi_column_Rqk3xG",
     "multi_column_rPwdDt",
     "rich_text_peMmaV",
-    "178047465242fd23a6",
     "multi_column_HCGJea",
     "blocks_4YeEQJ",
     "blocks_rwYEMm",
