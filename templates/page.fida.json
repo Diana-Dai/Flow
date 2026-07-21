@@ -174,7 +174,7 @@
         "item_F9gCM3": {
           "type": "item",
           "settings": {
-            "icon": "none",
+            "icon": "picto-document",
             "icon_width": 32,
             "icon_background_type": "square",
             "icon_background": "",
@@ -873,8 +873,8 @@
           "type": "heading",
           "name": "Heading",
           "settings": {
-            "text": "状況を読み取り、次の一手を提示する",
-            "size": "h1",
+            "text": "状況を要約し、次の一手を提示する",
+            "size": "h2",
             "html_tag": "p",
             "text_color": "",
             "gradient": ""
@@ -975,8 +975,8 @@
           "type": "ai_gen_block_0e72761",
           "settings": {
             "eyebrow_text": "社内ルール連携",
-            "heading_text": "社内知識を、Flow AIの判断材料に。",
-            "description_text": "<p>Flowは、マニュアル、SOP、PDF、リンク、メモ、店舗報告を店舗データと同じ環境で整理します。Flow AIは社内ルールや現場情報を参照しながら、店舗運営の判断を支援します。</p>",
+            "heading_text": "店舗データと社内知識に、その場で質問できる",
+            "description_text": "<p>店舗データや業績について自由に質問できるほか、接続したSOP、マニュアル、社内資料についても確認できます。<br/>数値の変化と社内ルールを同じ対話の中で照らし合わせ、現場の判断を支援します。</p>",
             "header_alignment": "left",
             "header_spacing_below": 50,
             "eyebrow_bg_color": "#11243e",
@@ -1093,7 +1093,7 @@
             "title": "店長",
             "heading_tag": "h2",
             "subheading": "<p>今日見るべきこと</p>",
-            "content": "<p>今日確認すべきKPI、売場状況、優先アクションを整理します。</p><ul><li>来店数の変化</li><li>購買率の低下</li><li>売上進捗の遅れ</li></ul>",
+            "content": "<p>朝礼用サマリー、本日の進捗、優先行動を確認。今どこに集中すべきかをすぐに把握できます。</p><ul><li>来店数の変化</li><li>購買率の低下</li><li>売上進捗の遅れ</li></ul>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -1115,7 +1115,7 @@
             "title": "エリアマネジャー",
             "heading_tag": "h2",
             "subheading": "<p>優先して確認すべき店舗</p>",
-            "content": "<p>担当店舗の変化を短時間で確認し、フォローすべき店舗を見つけやすくします。</p><ul><li>店舗ごとの異常値</li><li>対応状況の確認</li><li>訪問優先順位</li></ul>",
+            "content": "<p>店舗ごとの進捗を比較し、支援が必要な店舗と確認すべきポイントを把握します。</p><ul><li>店舗ごとの異常値</li><li>対応状況の確認</li><li>訪問優先順位</li></ul>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -1137,7 +1137,7 @@
             "title": "本社",
             "heading_tag": "h2",
             "subheading": "<p>全体傾向と運用改善テーマ</p>",
-            "content": "<p>店舗全体の傾向、SOPとのずれ、改善余地を把握し、運営方針に反映しやすくします。</p><ul><li>全店傾向の把握</li><li>実行状況の確認</li><li>改善テーマの抽出</li></ul>",
+            "content": "<p>全店の傾向や重要な変化を要約し、経営判断や社内報告に活用できます。</p><ul><li>全店傾向の把握</li><li>実行状況の確認</li><li>改善テーマの抽出</li></ul>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -1202,7 +1202,7 @@
           "settings": {
             "badge_text": "人の判断を支援",
             "headline": "提案を確認し、実行結果を学習に戻す。",
-            "description": "Flow AIは、店舗データと社内ルールをもとに実行提案を整理します。店長・エリアマネージャー・本部が内容を確認し、実行結果や現場の声を次の改善に活かします。",
+            "description": "Flow AIは、店舗データと社内ルールをもとに実行提案を整理します。店長・エリアマネージャー・本部が内容を確認し、実行結果や現場の声を次の改善に活かします。ユーザーからの質問に答えるだけでなく、目標達成に影響する状況を検知した際には、Flow AIが優先すべき行動を自動で提示します。",
             "step1_icon": "checklist",
             "step1_title": "提案を確認",
             "step1_desc": "Flow AIが整理した状況、参照データ、推奨アクションを確認します。",
