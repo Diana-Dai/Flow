@@ -174,7 +174,7 @@
         "item_F9gCM3": {
           "type": "item",
           "settings": {
-            "icon": "picto-document",
+            "icon": "none",
             "icon_width": 32,
             "icon_background_type": "square",
             "icon_background": "",
@@ -270,7 +270,7 @@
       "settings": {
         "full_width": true,
         "stack_on_mobile": true,
-        "gap": "medium",
+        "gap": "small",
         "text_alignment": "center",
         "subheading": "",
         "title": "",
@@ -1093,7 +1093,7 @@
             "title": "店長",
             "heading_tag": "h2",
             "subheading": "<p>今日見るべきこと</p>",
-            "content": "<p>朝礼用サマリー、本日の進捗、優先行動を確認。今どこに集中すべきかをすぐに把握できます。</p><ul><li>来店数の変化</li><li>購買率の低下</li><li>売上進捗の遅れ</li></ul>",
+            "content": "<p>朝礼用サマリーと本日の進捗を確認。優先行動と注力点を把握します。</p><ul><li>来店数の変化</li><li>購買率の低下</li><li>売上進捗の遅れ</li></ul>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -1115,7 +1115,7 @@
             "title": "エリアマネジャー",
             "heading_tag": "h2",
             "subheading": "<p>優先して確認すべき店舗</p>",
-            "content": "<p>店舗ごとの進捗を比較し、支援が必要な店舗と確認すべきポイントを把握します。</p><ul><li>店舗ごとの異常値</li><li>対応状況の確認</li><li>訪問優先順位</li></ul>",
+            "content": "<p>店舗ごとの進捗を比較。支援が必要な店舗と確認事項を把握します。</p><ul><li>店舗ごとの異常値</li><li>対応状況の確認</li><li>訪問優先順位</li></ul>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -1137,7 +1137,7 @@
             "title": "本社",
             "heading_tag": "h2",
             "subheading": "<p>全体傾向と運用改善テーマ</p>",
-            "content": "<p>全店の傾向や重要な変化を要約し、経営判断や社内報告に活用できます。</p><ul><li>全店傾向の把握</li><li>実行状況の確認</li><li>改善テーマの抽出</li></ul>",
+            "content": "<p>全店の傾向を比較。重要な変化と共通の改善テーマを把握します。</p><ul><li>全店傾向の把握</li><li>実行状況の確認</li><li>改善テーマの抽出</li></ul>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
