@@ -34,7 +34,7 @@
         "richtext_HwhtPj": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Flow AIは、FIDA判断エンジンを通じて、来店・売上・スタッフ・店舗メモ・社内マニュアルを整理し、現場で実行できる次の一手を提示します。</p>"
+            "content": "<p>Flow AIが売上・来店・購買率・スタッフ・天候などの店舗データを横断して分析。<br/>要点をテキストで整理し、質問に答え、目標達成に向けた行動を提案します。</p>"
           }
         },
         "button_7Prq3W": {
@@ -89,10 +89,10 @@
         "ai_gen_block_3c85fdc_mHbENN": {
           "type": "ai_gen_block_3c85fdc",
           "settings": {
-            "heading": "100以上のブランドの店舗運営を支えています",
-            "content": "<p>ファッション、ライフスタイル、専門店など、店舗運営の改善に取り組む小売企業がFlowを導入しています。</p>",
+            "heading": "",
+            "content": "<h2><strong>100以上のブランドの店舗運営を支えています</strong></h2>",
             "text_alignment": "center",
-            "content_size": 18,
+            "content_size": 24,
             "heading_color": "#11243e",
             "content_color": "#677279",
             "logo_1": "shopify://shop_images/Baycrews_Group_Logo.png",
@@ -112,7 +112,7 @@
             "logo_background": "#ffffff",
             "logo_border_radius": 8,
             "scroll_speed": 30,
-            "footer_content": "",
+            "footer_content": "<p>ファッション、ライフスタイル、専門店など、店舗運営の改善に取り組む小売企業がFlowを導入しています。</p>",
             "footer_content_size": 16,
             "footer_content_color": "#677279",
             "desktop_width_percent": 100,
@@ -156,6 +156,7 @@
         "richtext_kHmRP6",
         "richtext_FCxqzE"
       ],
+      "disabled": true,
       "custom_css": [],
       "name": "Rich text",
       "settings": {
@@ -165,6 +166,120 @@
         "background": "#11243e",
         "background_gradient": "",
         "text_color": "#f9fafb"
+      }
+    },
+    "multi_column_De34aj": {
+      "type": "multi-column",
+      "blocks": {
+        "item_F9gCM3": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "4",
+            "title": "AIによる自動要約",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_F9ptFA": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "4",
+            "title": "進捗・比較分析",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_3hAm7j": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "4",
+            "title": "データ・社内資料への質問",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_JURLqH": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "4",
+            "title": "優先アクションの提案",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_F9gCM3",
+        "item_F9ptFA",
+        "item_3hAm7j",
+        "item_JURLqH"
+      ],
+      "name": "Multi-column",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "center",
+        "subheading": "",
+        "title": "",
+        "content": "<h2><strong>データも、マニュアルもある。<br/>でも、判断は現場に残っている。</strong></h2><h5>Flow AIは、来店・売上・スタッフ・店舗報告・社内マニュアルをひとつの文脈で整理し、<br/>店長・エリアマネージャー・本部が次に取るべき行動を判断しやすくします。</h5>",
+        "background": "#10223B",
+        "background_gradient": "",
+        "text_color": "#F9FAFB",
+        "subheading_background_color": "",
+        "subheading_text_color": ""
       }
     },
     "custom_liquid_tiJnkh": {
@@ -381,8 +496,8 @@
         "gap": "small",
         "text_alignment": "start",
         "subheading": "",
-        "title": "Flow AIが参照する判断材料",
-        "content": "<p>売上・来店・スタッフ・店舗報告・マニュアルをひとつの判断材料として整理し、<br/>店舗ごとの状況に合わせた実行提案につなげます。</p>",
+        "title": "",
+        "content": "<h2>Flow AIが参照する判断材料</h2><p>売上・来店・スタッフ・店舗報告・マニュアルをひとつの判断材料として整理し、<br/>店舗ごとの状況に合わせた実行提案につなげます。</p>",
         "background": "#ffffff",
         "background_gradient": "",
         "text_color": "",
@@ -475,8 +590,8 @@
         "gap": "medium",
         "text_alignment": "start",
         "subheading": "FIDAの役割",
-        "title": "データを、判断できる状態に整える",
-        "content": "<p>FIDAは、売上・来店・スタッフ・店舗報告・マニュアルを店舗ごとの文脈で整理するFlowの判断基盤です。<br/>Flow AIはこの基盤を参照し、状況に合った実行提案を提示します。</p>",
+        "title": "",
+        "content": "<h2>データを、<br/>判断できる状態に整える</h2><p>FIDAは、売上・来店・スタッフ・店舗報告・マニュアルを店舗ごとの文脈で整理するFlowの判断基盤です。<br/>Flow AIはこの基盤を参照し、状況に合った実行提案を提示します。</p>",
         "background": "rgba(0,0,0,0)",
         "background_gradient": "",
         "text_color": "",
@@ -685,8 +800,8 @@
         "gap": "medium",
         "text_alignment": "start",
         "subheading": "判断エンジン",
-        "title": "Flow AIを支える、特許出願中の判断エンジン。",
-        "content": "<p>FIDAは、売上・来店・スタッフ・店舗報告・SOPなど、異なる形式のデータを店舗ごとの文脈で整理し、Flow AIが実行提案を行うための判断基盤です。リアルタイムに近い店舗変化を捉えながら、各社の運用ルールや連携環境に合わせて柔軟に構成できます。</p>",
+        "title": "",
+        "content": "<h2>Flow AIを支える、<br/>特許出願中の判断エンジン。</h2><p><br/>FIDAは、売上・来店・スタッフ・店舗報告・SOPなど、異なる形式のデータを店舗ごとの文脈で整理し、Flow AIが実行提案を行うための判断基盤です。リアルタイムに近い店舗変化を捉えながら、各社の運用ルールや連携環境に合わせて柔軟に構成できます。</p>",
         "background": "#ffffff",
         "background_gradient": "",
         "text_color": "",
@@ -1898,6 +2013,7 @@
     "image_with_text_overlay_AcppEX",
     "blocks_6PjPxD",
     "rich_text_B8Y9rV",
+    "multi_column_De34aj",
     "custom_liquid_tiJnkh",
     "multi_column_QjMJiW",
     "multi_column_Rqk3xG",
