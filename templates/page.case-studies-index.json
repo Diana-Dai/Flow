@@ -57,12 +57,12 @@
             "dark_card_bg_color": "#1c4072",
             "dark_badge_bg_color": "#275c7d",
             "dark_badge_text_color": "#f9fafb",
-            "dark_subtext_color": "#9ca3af",
+            "dark_subtext_color": "#F9FAFB",
             "metric_card_bg_color": "#355481",
-            "metric_label_color": "#9ca3af",
-            "metric_detail_color": "#9ca3af",
-            "icon_badge_bg_color": "#4c6977",
-            "icon_color": "#a0b842",
+            "metric_label_color": "#A1B847",
+            "metric_detail_color": "#F9FAFB",
+            "icon_badge_bg_color": "#A1B847",
+            "icon_color": "#F9FAFB",
             "footer_text_color": "#f9fafb"
           },
           "blocks": {}
