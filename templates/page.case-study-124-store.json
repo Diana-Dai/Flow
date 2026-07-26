@@ -61,7 +61,7 @@
             "card_background": "#ffffff",
             "card_border": "#e5e7eb",
             "metric_card_background": "#ffffff",
-            "metric_card_border": "#A0B45B",
+            "metric_card_border": "#a0b45b",
             "row_background": "#f9fafb",
             "card_border_radius": 12,
             "card_shadow_x": 0,
@@ -198,7 +198,7 @@
         "content": "<p>124店舗・1年間の検証では、来店数が前年比5.61%減少する中、購買率が8.93%改善。購買率を最重要KPIとして店舗運営に組み込むことで、売上は前年比8.25%増加し、18億円の売上増につながりました。</p>",
         "background": "#f9fafb",
         "background_gradient": "",
-        "text_color": "#11243E",
+        "text_color": "#11243e",
         "subheading_background_color": "",
         "subheading_text_color": ""
       }
@@ -216,7 +216,7 @@
             "icon_color": "",
             "background_color": "#f2f2f2",
             "text_color": "#11243e",
-            "border_color": "#11243E",
+            "border_color": "#11243e",
             "show_controls": false,
             "column_size": "2",
             "title": "",
@@ -595,7 +595,7 @@
         "content": "<p>大手セレクトショップ様では、124店舗規模で来店数・購買率・売上POSをつなげて活用できる計測・分析基盤を検討されていました。<br/>Flowは、計測領域の広さ、見やすいレポート画面、操作性、導入後の定着支援が評価され、導入に至りました。</p>",
         "background": "#ffffff",
         "background_gradient": "",
-        "text_color": "#11243E",
+        "text_color": "#11243e",
         "subheading_background_color": "",
         "subheading_text_color": ""
       }
@@ -758,7 +758,7 @@
         "content": "<p>大手セレクトショップ様では、全入口での高精度来店計測、売上POS連携、店舗ダッシュボード、活用研修を組み合わせ、店長が購買率を軸に店舗状況を確認できる環境を整備されました。</p>",
         "background": "",
         "background_gradient": "",
-        "text_color": "#11243E",
+        "text_color": "#11243e",
         "subheading_background_color": "",
         "subheading_text_color": ""
       }
@@ -938,7 +938,7 @@
             "card_2_metric": "+8.25%",
             "card_2_description": "来店数が前年比で減少する中、購買率を軸にした店舗運営へ移行。結果として、売上高は前年比8.25%増加しました。",
             "card_2_methodology_label": "確認方法：",
-            "card_2_methodology": "確認方法： 導入店舗における前年比較。",
+            "card_2_methodology": "導入店舗における前年比較。",
             "card_3_enabled": true,
             "icon_3": "picto-percent",
             "icon_width_3": 32,
@@ -950,7 +950,7 @@
             "card_3_metric": "+8.93%",
             "card_3_description": "購買率を最重要KPIとして位置づけ、販売活動や販促策を検証するプロセスを構築。来店したお客様を購買につなげる力が高まりました。",
             "card_3_methodology_label": "確認方法：",
-            "card_3_methodology": "確認方法： 購買率の前年比較。",
+            "card_3_methodology": "購買率の前年比較。",
             "card_4_enabled": true,
             "icon_4": "people",
             "icon_width_4": 32,
@@ -962,7 +962,7 @@
             "card_4_metric": "-5.61%",
             "card_4_description": "外部環境の影響により来店数は減少しましたが、購買率改善により売上成長を実現。来店数だけではなく、来店後の転換率を見る重要性が明確になりました。",
             "card_4_methodology_label": "確認方法：",
-            "card_4_methodology": "確認方法： 来店計測データによる前年比較。",
+            "card_4_methodology": "来店計測データによる前年比較。",
             "show_note": true,
             "note_title": "成果に関する注記",
             "note_text": "上記は大手セレクトショップ様における124店舗・1年間の導入・運用結果です。成果は店舗環境、運用方法、市場条件、既存の店舗運営体制、データ活用の定着度により異なります。",
