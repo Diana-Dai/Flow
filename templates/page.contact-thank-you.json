@@ -22,30 +22,18 @@
         "item_jY3TYR": {
           "type": "item",
           "settings": {
-            "image": "shopify://shop_images/Checklist_LP_Top_2.png",
+            "image": "shopify://shop_images/STANADRD_DECISIONS.png",
             "image_rotation_degrees": -2,
             "subheading": "",
             "title": "",
-            "content": "<h2>ありがとうございます！</h2><h6>チェックリストをメールアドレス宛にお送りしました。</h6>",
+            "content": "<h2>お問い合わせありがとうございます</h2>",
             "button_url": "https://flow-solutions.com",
             "button_text": "ホームページへ"
-          }
-        },
-        "item_7WePAN": {
-          "type": "item",
-          "settings": {
-            "image_rotation_degrees": 1.5,
-            "subheading": "",
-            "title": "Heading 2",
-            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
-            "button_url": "",
-            "button_text": ""
           }
         }
       },
       "block_order": [
-        "item_jY3TYR",
-        "item_7WePAN"
+        "item_jY3TYR"
       ],
       "name": "Multiple images with text",
       "settings": {
