@@ -365,10 +365,17 @@
   <div class="ai-enterprise-form__card-{{ ai_gen_id }}">
     {%- form 'contact' -%}
       {%- if form.posted_successfully? -%}
-        <div class="ai-enterprise-form__success-{{ ai_gen_id }}">
-          {{ block.settings.success_message }}
-        </div>
-      {%- endif -%}
+  <script>
+    window.location.replace('/pages/demo-thank-you');
+  </script>
+
+  <noscript>
+    <div class="ai-enterprise-form__success-{{ ai_gen_id }}">
+      {{ block.settings.success_message }}
+      <a href="/pages/contact-thank-you">Continue</a>
+    </div>
+  </noscript>
+{%- endif -%}
 
       {%- if form.errors -%}
         <div class="ai-enterprise-form__error-{{ ai_gen_id }}">
