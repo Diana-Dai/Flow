@@ -16,6 +16,49 @@
         "content_width": "80ch"
       }
     },
+    "image_with_text_overlay_NprfVj": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "subheading_YwVjCq": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "text": "Subheading"
+          }
+        },
+        "heading_q9M97K": {
+          "type": "heading",
+          "settings": {
+            "text": "お問い合わせありがとうございます",
+            "heading_tag": "h1"
+          }
+        },
+        "richtext_xbpfVA": {
+          "type": "richtext",
+          "settings": {
+            "content": "<h5>担当者より、できるだけ早くご連絡いたします。</h5>"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_YwVjCq",
+        "heading_q9M97K",
+        "richtext_xbpfVA"
+      ],
+      "name": "Image with text overlay",
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "auto",
+        "image": "shopify://shop_images/integrations_hero.png",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 60
+      }
+    },
     "multiple_images_with_text_zMg8Jm": {
       "type": "multiple-images-with-text",
       "blocks": {
@@ -35,6 +78,7 @@
       "block_order": [
         "item_jY3TYR"
       ],
+      "disabled": true,
       "name": "Multiple images with text",
       "settings": {
         "full_width": true,
@@ -50,6 +94,7 @@
   },
   "order": [
     "main",
+    "image_with_text_overlay_NprfVj",
     "multiple_images_with_text_zMg8Jm"
   ]
 }
