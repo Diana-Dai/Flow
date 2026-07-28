@@ -43,7 +43,7 @@
           "settings": {
             "style": "fill",
             "size": "lg",
-            "text": "無料デモを依頼する",
+            "text": "AIカメラ計測を相談する",
             "url": "shopify://pages/contact",
             "background": "#a0b842",
             "text_color": ""
@@ -1713,7 +1713,7 @@
           "settings": {
             "style_1": "fill",
             "size_1": "xl",
-            "text_1": "無料デモを依頼する →",
+            "text_1": "AIカメラ計測を相談する →",
             "url_1": "shopify://pages/contact",
             "background_1": "#a0b842",
             "text_color_1": "#ffffff",
