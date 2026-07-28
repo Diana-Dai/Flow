@@ -43,7 +43,7 @@
           "settings": {
             "style": "fill",
             "size": "lg",
-            "text": "店内行動分析について相談する →",
+            "text": "店内行動分析を相談する →",
             "url": "shopify://pages/contact",
             "background": "#a0b842",
             "text_color": ""
@@ -268,8 +268,8 @@
             "card2_item3": "マーケティング・経営：販促効果や投資判断の精度向上",
             "light_card_bg": "#f2f2f2",
             "light_card_text": "#0a1a2f",
-            "light_icon_bg": "#A0B45B",
-            "light_checkmark_color": "#A0B45B",
+            "light_icon_bg": "#a0b45b",
+            "light_checkmark_color": "#a0b45b",
             "banner_title": "Flowの強み",
             "banner_text": "Flowは、店内行動データを単独で見るだけではなく、POS、スタッフ配置、天候、店舗属性などのデータと組み合わせて分析できます。現場と本部が同じ事実をもとに、より早く、より一貫した判断を行えるようにします。",
             "banner_padding": 32,
@@ -1039,7 +1039,7 @@
           "settings": {
             "style_1": "fill",
             "size_1": "xl",
-            "text_1": "店内行動分析について相談する →",
+            "text_1": "店内行動分析を相談する →",
             "url_1": "shopify://pages/contact",
             "background_1": "#a0b842",
             "text_color_1": "#ffffff",
