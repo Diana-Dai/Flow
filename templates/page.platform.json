@@ -18,8 +18,15 @@
             "text": "FLOW PLATFORM"
           }
         },
+        "liquid_arWN7U": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<h1 class=\"h1\">店舗データを、<br>現場の判断と実行へ。\n</h1>"
+          }
+        },
         "heading_frXnfn": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "text": "店舗データを、現場の判断と実行へ。",
             "heading_tag": "h1"
@@ -56,6 +63,7 @@
       },
       "block_order": [
         "subheading_GmUMNm",
+        "liquid_arWN7U",
         "heading_frXnfn",
         "richtext_HwhtPj",
         "button_7Prq3W",
