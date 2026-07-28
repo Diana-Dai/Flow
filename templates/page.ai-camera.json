@@ -54,8 +54,8 @@
           "settings": {
             "style": "fill",
             "size": "lg",
-            "text": "分析プラットフォームを見る",
-            "url": "shopify://pages/store-performance-platform",
+            "text": "計測できるデータを見る",
+            "url": "#ai-camera-measurement",
             "background": "#ffffff",
             "text_color": "#11243e"
           }
@@ -81,6 +81,20 @@
         "text_color": "#ffffff",
         "overlay_color": "#0e366a",
         "overlay_opacity": 64
+      }
+    },
+    "custom_liquid_K7cM6z": {
+      "type": "custom-liquid",
+      "custom_css": [],
+      "name": "Custom Liquid",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": true,
+        "remove_horizontal_spacing": true,
+        "liquid": "<style>\n#ai-camera-measurement{\n  display:block!important;\n  height:0!important;\n  min-height:0!important;\n  margin:0!important;\n  padding:0!important;\n  overflow:hidden!important;\n  scroll-margin-top:110px;\n}\n</style>\n\n<div id=\"ai-camera-measurement\"></div>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
       }
     },
     "multi_column_QpdWAi": {
@@ -297,8 +311,7 @@
         "item_aBwy9K"
       ],
       "custom_css": [
-        ".multi-column {gap: 15px;}",
-        ".multi-column__item {gap: 12px;}"
+        ".banner {margin-bottom: 48px !important;}"
       ],
       "name": "Multi-column",
       "settings": {
@@ -1747,6 +1760,7 @@
   },
   "order": [
     "image_with_text_overlay_AcppEX",
+    "custom_liquid_K7cM6z",
     "multi_column_QpdWAi",
     "section-15",
     "rich_text_8PAipA",
