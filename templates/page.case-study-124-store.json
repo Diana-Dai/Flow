@@ -1418,11 +1418,12 @@
         "liquid_LB6AdB": {
           "type": "liquid",
           "settings": {
-            "liquid": "<p>Write custom Liquid code to include widget or dynamic code.</p>"
+            "liquid": "<h2 class=\"h2\">店舗データで、<br>改善の打ち手を見つけませんか？\n\n</h2>"
           }
         },
         "heading_YXhiR8": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "text": "店舗データで、改善の打ち手を見つけませんか？",
             "heading_tag": "h1",
