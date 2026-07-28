@@ -37,8 +37,8 @@
           "settings": {
             "style": "fill",
             "size": "lg",
-            "text": "店舗課題を診断する",
-            "url": "shopify://pages/assessment",
+            "text": "店舗データ統合を相談する",
+            "url": "shopify://pages/contact",
             "background": "#a0b842",
             "text_color": "#ffffff"
           }
@@ -48,8 +48,8 @@
           "settings": {
             "style": "fill",
             "size": "lg",
-            "text": "プラットフォームを見る",
-            "url": "shopify://pages/store-performance-platform",
+            "text": "3つの基盤を見る",
+            "url": "#3-uses",
             "background": "#f9fafb",
             "text_color": "#11243e"
           }
@@ -244,6 +244,19 @@
         "full_width": true,
         "content_width": "medium",
         "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "custom_liquid_GieT7D": {
+      "type": "custom-liquid",
+      "name": "Custom Liquid",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": true,
+        "remove_horizontal_spacing": true,
+        "liquid": "<div id=\"3-uses\" style=\"height:60px;overflow:hidden;scroll-margin-top:110px\"></div>",
         "background": "",
         "background_gradient": "",
         "text_color": ""
@@ -964,7 +977,7 @@
         "team_avatar_width": 160,
         "support_hours": "",
         "answer_time": "",
-        "button_text": "導入について相談する →",
+        "button_text": "店舗データ統合を相談する →",
         "button_url": "shopify://pages/contact",
         "text_position": "start",
         "background": "",
@@ -972,7 +985,7 @@
         "text_color": "",
         "heading_color": "",
         "heading_gradient": "",
-        "button_background": "",
+        "button_background": "#A1B847",
         "button_text_color": "",
         "accordion_background": "",
         "accordion_text_color": ""
@@ -984,6 +997,7 @@
     "blocks_E4newU",
     "multi_column_GPkFTV",
     "rich_text_CjaQaa",
+    "custom_liquid_GieT7D",
     "images_with_text_scrolling_A4yLa8",
     "section-15",
     "multi_column_LeVzeG",
