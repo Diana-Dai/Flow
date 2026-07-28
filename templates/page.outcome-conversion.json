@@ -22,8 +22,8 @@
             "icon": "picto-target",
             "icon_width": 48,
             "subheading": "コンバージョン最適化",
-            "title": "来店を、売上につなげる。",
-            "content": "<p><strong>コンバージョン率は、売上目標を達成するための管理指標です。</strong></p><p>Flowは、来店数・回遊・滞在・売上データを統合し、什器・棚・売場レイアウトの改善判断を支援します。</p>",
+            "title": "",
+            "content": "<h1>来店を、<br/>売上につなげる。</h1><p><strong>コンバージョン率は、売上目標を達成するための管理指標です。</strong></p><p>Flowは、来店数・回遊・滞在・売上データを統合し、什器・棚・売場レイアウトの改善判断を支援します。</p>",
             "link_text": "デモを依頼する →",
             "link_url": "shopify://pages/contact",
             "background": "rgba(0,0,0,0)",
@@ -624,8 +624,8 @@
             "section_padding_desktop": 0,
             "background_color": "#ffffff",
             "badge_text": "導入実績",
-            "badge_background": "#A1B847",
-            "badge_text_color": "#F9FAFB",
+            "badge_background": "#a1b847",
+            "badge_text_color": "#f9fafb",
             "heading": "多店舗展開の小売企業に選ばれています。",
             "heading_color": "#0e2a3a",
             "subheading": "Flowは、ファッション、ライフスタイル、専門店、複数ブランドを展開する小売企業で活用されています。",
@@ -919,8 +919,15 @@
             "icon": "none"
           }
         },
+        "liquid_9WmimG": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<h2 class=\"h2\">購買率を、<br>管理できる指標に。\n</h2>"
+          }
+        },
         "heading_YXhiR8": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "text": "購買率を、管理できる指標に。",
             "heading_tag": "h1",
@@ -966,6 +973,7 @@
       },
       "block_order": [
         "subheading_AK7Cjn",
+        "liquid_9WmimG",
         "heading_YXhiR8",
         "richtext_qzAkak",
         "button_AVKAbi",
