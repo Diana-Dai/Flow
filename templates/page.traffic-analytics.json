@@ -1132,7 +1132,7 @@
         "richtext_qzAkak": {
           "type": "richtext",
           "settings": {
-            "content": "<p><strong>Flowが、来店数・入店率・購買率をどのように店舗改善へつなげるか、実際の画面でご確認ください。</strong></p>"
+            "content": "<p>来店数と売上をつなげて、店舗ごとの改善ポイントを確認しませんか。</p>"
           }
         },
         "button_AVKAbi": {
@@ -1152,7 +1152,7 @@
           "settings": {
             "style_1": "fill",
             "size_1": "xl",
-            "text_1": "無料デモを依頼する",
+            "text_1": "来店計測を相談する",
             "url_1": "shopify://pages/contact",
             "background_1": "#a0b842",
             "text_color_1": "#ffffff",
