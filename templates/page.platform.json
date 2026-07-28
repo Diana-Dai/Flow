@@ -47,8 +47,8 @@
           "settings": {
             "style": "fill",
             "size": "lg",
-            "text": "連携できるデータを見る →",
-            "url": "shopify://pages/integrations",
+            "text": "活用例を見る →",
+            "url": "#use-cases",
             "background": "#ffffff",
             "text_color": "#11243e"
           }
