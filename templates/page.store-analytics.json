@@ -1007,8 +1007,15 @@
             "icon": "none"
           }
         },
+        "liquid_QxBtBq": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<h2 class=\"h2\">購買前の行動を、<br>店舗改善の判断材料に。\n</h1>"
+          }
+        },
         "heading_YXhiR8": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "text": "購買前の行動を、店舗改善の判断材料に。",
             "heading_tag": "h2",
@@ -1054,6 +1061,7 @@
       },
       "block_order": [
         "subheading_AK7Cjn",
+        "liquid_QxBtBq",
         "heading_YXhiR8",
         "richtext_qzAkak",
         "button_AVKAbi",
