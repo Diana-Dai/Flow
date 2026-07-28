@@ -91,7 +91,7 @@
         "full_width": true,
         "remove_vertical_spacing": true,
         "remove_horizontal_spacing": true,
-        "liquid": "<div id=\"ai-camera-measurement\" style=\"height:48px;scroll-margin-top:110px\"></div>",
+        "liquid": "<div id=\"ai-camera-measurement\" style=\"height:60px;scroll-margin-top:110px\"></div>",
         "background": "",
         "background_gradient": "",
         "text_color": ""
