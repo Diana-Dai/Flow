@@ -36,7 +36,7 @@
           "settings": {
             "style": "fill",
             "size": "lg",
-            "text": "無料デモを依頼する",
+            "text": "来店計測を相談する",
             "url": "shopify://pages/contact",
             "background": "#a0b842",
             "text_color": ""
@@ -47,8 +47,8 @@
           "settings": {
             "style": "fill",
             "size": "lg",
-            "text": "プラットフォームを見る",
-            "url": "shopify://pages/store-performance-platform",
+            "text": "計測項目を見る",
+            "url": "#measurement-items",
             "background": "#ffffff",
             "text_color": "#11243e"
           }
@@ -73,6 +73,19 @@
         "text_color": "#ffffff",
         "overlay_color": "#11243e",
         "overlay_opacity": 43
+      }
+    },
+    "custom_liquid_PGPCFt": {
+      "type": "custom-liquid",
+      "name": "Custom Liquid",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "liquid": "<style>\n.shopify-section:has(#measurement-items),\n.shopify-section:has(#measurement-items)>*{\nheight:0!important;\nmin-height:0!important;\nmargin:0!important;\npadding:0!important;\noverflow:visible!important;\n}\n#measurement-items{\ndisplay:block;\nheight:0;\noverflow:hidden;\nscroll-margin-top:90px;\n}\n</style>\n\n<div id=\"measurement-items\"></div>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
       }
     },
     "multi_column_HCGJea": {
@@ -1172,6 +1185,7 @@
   },
   "order": [
     "image_with_text_overlay_AcppEX",
+    "custom_liquid_PGPCFt",
     "multi_column_HCGJea",
     "1779100565ad3a0995",
     "multi_column_HCGJea11",
