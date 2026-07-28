@@ -18,8 +18,15 @@
             "text": "来店データ活用"
           }
         },
+        "liquid_7qyMhf": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<h1 class=\"h1\">来店数から、<br>売上機会を見える化。\n</h1>"
+          }
+        },
         "heading_frXnfn": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "text": "来店数から、売上機会を見える化。",
             "heading_tag": "h1"
@@ -56,6 +63,7 @@
       },
       "block_order": [
         "subheading_GmUMNm",
+        "liquid_7qyMhf",
         "heading_frXnfn",
         "richtext_HwhtPj",
         "button_7Prq3W",
@@ -1120,8 +1128,15 @@
             "icon": "none"
           }
         },
+        "liquid_ccB9Kb": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<h2 class=\"h2\">来店データを、。<br>売上改善へ。\n</h2>"
+          }
+        },
         "heading_YXhiR8": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "text": "来店データを、売上改善へ。",
             "heading_tag": "h1",
@@ -1167,6 +1182,7 @@
       },
       "block_order": [
         "subheading_AK7Cjn",
+        "liquid_ccB9Kb",
         "heading_YXhiR8",
         "richtext_qzAkak",
         "button_AVKAbi",
