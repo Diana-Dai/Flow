@@ -2355,7 +2355,7 @@
         "heading_YXhiR8": {
           "type": "heading",
           "settings": {
-            "text": "店舗データを、判断と実行につなげませんか？",
+            "text": "店舗データを一元化し、現場の判断に使える形で確認しませんか。",
             "heading_tag": "h2",
             "text_color": "",
             "gradient": ""
@@ -2384,7 +2384,7 @@
           "settings": {
             "style_1": "fill",
             "size_1": "xl",
-            "text_1": "デモを予約する →",
+            "text_1": "店舗データ分析を相談する →",
             "url_1": "shopify://pages/contact",
             "background_1": "#a0b842",
             "text_color_1": "#ffffff",
