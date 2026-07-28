@@ -82,7 +82,7 @@
         "full_width": true,
         "remove_vertical_spacing": false,
         "remove_horizontal_spacing": false,
-        "liquid": "<style>\n.shopify-section:has(#measurement-items),\n.shopify-section:has(#measurement-items)>*{\nheight:0!important;\nmin-height:0!important;\nmargin:0!important;\npadding:0!important;\noverflow:visible!important;\n}\n#measurement-items{\ndisplay:block;\nheight:0;\noverflow:hidden;\nscroll-margin-top:30px;\n}\n</style>\n\n<div id=\"measurement-items\"></div>",
+        "liquid": "<style>\n.shopify-section:has(#measurement-items),\n.shopify-section:has(#measurement-items)>*{\nheight:0!important;\nmin-height:0!important;\nmargin:0!important;\npadding:0!important;\noverflow:visible!important;\n}\n#measurement-items{\ndisplay:block;\nheight:0;\noverflow:hidden;\nscroll-margin-top:0px;\n}\n</style>\n\n<div id=\"measurement-items\"></div>",
         "background": "",
         "background_gradient": "",
         "text_color": ""
