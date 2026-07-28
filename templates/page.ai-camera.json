@@ -91,7 +91,7 @@
         "full_width": true,
         "remove_vertical_spacing": true,
         "remove_horizontal_spacing": true,
-        "liquid": "<style>\n#ai-camera-measurement{\n  display:block!important;\n  height:0!important;\n  min-height:0!important;\n  margin:0!important;\n  padding:0!important;\n  overflow:hidden!important;\n  scroll-margin-top:110px;\n}\n</style>\n\n<div id=\"ai-camera-measurement\"></div>",
+        "liquid": "<style>\n#ai-camera-measurement{\n  display:block!important;\n  height:0!important;\n  min-height:0!important;\n  margin:0!important;\n  padding:0!important;\n  overflow:hidden!important;\n  scroll-margin-top:30px;\n}\n</style>\n\n<div id=\"ai-camera-measurement\"></div>",
         "background": "",
         "background_gradient": "",
         "text_color": ""
@@ -311,7 +311,8 @@
         "item_aBwy9K"
       ],
       "custom_css": [
-        ".banner {margin-bottom: 48px !important;}"
+        ".multi-column {gap: 15px;}",
+        ".multi-column__item {gap: 12px;}"
       ],
       "name": "Multi-column",
       "settings": {
