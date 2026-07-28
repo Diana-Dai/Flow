@@ -1415,6 +1415,12 @@
             "icon": "none"
           }
         },
+        "liquid_LB6AdB": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<p>Write custom Liquid code to include widget or dynamic code.</p>"
+          }
+        },
         "heading_YXhiR8": {
           "type": "heading",
           "settings": {
@@ -1462,6 +1468,7 @@
       },
       "block_order": [
         "subheading_AK7Cjn",
+        "liquid_LB6AdB",
         "heading_YXhiR8",
         "richtext_qzAkak",
         "button_AVKAbi",
