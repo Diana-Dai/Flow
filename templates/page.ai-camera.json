@@ -1514,61 +1514,118 @@
         "subheading_text_color": ""
       }
     },
-    "blocks_9fqq4Y": {
-      "type": "_blocks",
+    "accordion_content_QKbgdB": {
+      "type": "accordion-content",
       "blocks": {
-        "accordion_F6KMaY": {
-          "type": "accordion",
-          "name": "Accordion",
+        "item_WaR4PC": {
+          "type": "item",
           "settings": {
-            "title": "Title",
-            "content": "<p>Write content about your brand or products.</p>",
+            "icon": "picto-question",
+            "icon_width": 20,
+            "title": "AIカメラでは何を計測できますか？",
+            "content": "<p>来店数、店前通行量、入店率、滞在時間、導線、ゾーン、年齢・性別の傾向などを計測できます。計測項目は設置構成により異なります。</p>",
             "page": ""
-          },
-          "blocks": {}
+          }
         },
-        "accordion_TMqyBA": {
-          "type": "accordion",
-          "name": "Accordion",
+        "item_PLpwAJ": {
+          "type": "item",
           "settings": {
-            "title": "Title",
-            "content": "<p>Write content about your brand or products.</p>",
+            "icon": "picto-question",
+            "icon_width": 20,
+            "title": "スタッフや同日の再入店を除外できますか",
+            "content": "<p>はい。スタッフの動きや同日の再入店を除外する設定に対応しています。重複を除いた来店客のみを計測することで、購買率をより正確に把握できます。精度は店舗環境や設定条件により異なります。</p>",
             "page": ""
-          },
-          "blocks": {}
+          }
         },
-        "ai_gen_block_0c78d27_9DWrJV": {
-          "type": "ai_gen_block_0c78d27",
+        "item_ebdGFF": {
+          "type": "item",
           "settings": {
-            "category": "Implementation & Deployment",
-            "question": "How long does implementation take from contract to go-live?",
-            "answer": "Typical timeline is 4-6 weeks for a single store, 8-12 weeks for multi-store rollouts. Week 1-2: Infrastructure assessment and camera placement planning. Week 3-4: Hardware installation and network integration. Week 5-6: Calibration, validation, and staff training. For enterprise deployments (10+ stores), we follow a phased rollout: pilot store first (6 weeks), then standardized deployment at 2-3 stores per week. Timeline assumes existing network infrastructure meets requirements (PoE-capable switches, 100Mbps per camera). If network upgrades are needed, add 2-4 weeks for infrastructure work.",
-            "default_open": false,
-            "icon_type": "clock",
-            "icon_background_color": "#f0f4e8",
-            "icon_color": "#6b7c3a",
-            "category_color": "#6b7c3a",
-            "question_color": "#0f172a",
-            "answer_color": "#475569",
-            "chevron_color": "#64748b"
-          },
-          "blocks": {}
+            "icon": "picto-question",
+            "icon_width": 20,
+            "title": "広い入口や複数入口にも対応できますか？",
+            "content": "<p>はい。入口幅、天井高、照明、混雑状況を確認し、必要な台数と設置位置を店舗ごとに設計します。</p>",
+            "page": ""
+          }
+        },
+        "item_tn6Fj4": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-question",
+            "icon_width": 20,
+            "title": "店内映像は保存されますか？",
+            "content": "<p>通常運用では店内映像を継続保存しません。精度確認や設定調整で確認映像を使用する場合は、目的を限定して一時的に取り扱います。</p>",
+            "page": ""
+          }
+        },
+        "item_x6xAFm": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-question",
+            "icon_width": 20,
+            "title": "来店客個人を識別しますか？",
+            "content": "<p>個人を特定する目的では使用しません。滞在時間や再入店除外などの計測に必要な範囲で、来店客ごとに一時的なシステムIDを付与します。このIDは個人を特定するものではなく、店舗の営業終了後に削除されます。年齢・性別などは傾向データとして集計します。</p>",
+            "page": ""
+          }
+        },
+        "item_mRWRm9": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-question",
+            "icon_width": 20,
+            "title": "どのようなネットワーク環境が必要ですか？",
+            "content": "<p>通常はPoEスイッチと既存の店舗ネットワークを利用します。接続方法は、お客様のネットワーク環境と使用するセンサーを確認したうえで設計します。ネットワーク側では外向き通信のみを使用します。</p>",
+            "page": ""
+          }
+        },
+        "item_HB3nba": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-question",
+            "icon_width": 20,
+            "title": "導入にはどのくらいかかりますか？",
+            "content": "<p>店舗数、入口構成、ネットワーク環境により異なります。標準的な小売店舗でセンサー2〜4台を設置する場合、現地作業は通常2〜4時間程度です。多くの場合、店舗閉店後に作業を行い、段階導入にも対応します。</p>",
+            "page": ""
+          }
+        },
+        "item_Q6XUgg": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-question",
+            "icon_width": 20,
+            "title": "導入後のサポートはありますか？",
+            "content": "<p>はい。Flowのアドバンストサポートでは、すべての機器がオンラインで正常にデータを送信しているかを監視します。機器がオフラインになった場合は、データの欠損を最小限に抑えるため復旧対応を行います。設置後は、すべてのセンサーが正しく計測・送信していることを確認し、導入初日から継続してデータを信頼して活用できる状態を支えます。</p>",
+            "page": ""
+          }
         }
       },
       "block_order": [
-        "accordion_F6KMaY",
-        "accordion_TMqyBA",
-        "ai_gen_block_0c78d27_9DWrJV"
+        "item_WaR4PC",
+        "item_PLpwAJ",
+        "item_ebdGFF",
+        "item_tn6Fj4",
+        "item_x6xAFm",
+        "item_mRWRm9",
+        "item_HB3nba",
+        "item_Q6XUgg"
       ],
-      "disabled": true,
-      "name": "FAQ accordion item",
+      "name": "Accordion content",
       "settings": {
         "full_width": true,
-        "remove_vertical_spacing": false,
-        "remove_horizontal_spacing": false,
+        "subheading": "よくあるご質問",
+        "title": "導入前に確認したいこと",
+        "content": "<p>計測機能、設置環境、ネットワーク、プライバシー、導入後のサポートについて、よくいただく質問をまとめました。</p>",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "start",
         "background": "",
         "background_gradient": "",
-        "text_color": ""
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "",
+        "accordion_text_color": ""
       }
     },
     "rich_text_peMmaV": {
@@ -1982,7 +2039,7 @@
     "media_with_text_hMPTmL",
     "multi_column_QjMJiW11",
     "multi_column_HCGJea11",
-    "blocks_9fqq4Y",
+    "accordion_content_QKbgdB",
     "rich_text_peMmaV",
     "multi_column_LeVzeG",
     "media_with_text_mRGejd",
