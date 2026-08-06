@@ -15,7 +15,7 @@
         "subheading_GmUMNm": {
           "type": "subheading",
           "settings": {
-            "text": "AIカメラ"
+            "text": "店舗向けAIピープルカウンター"
           }
         },
         "liquid_chBgy3": {
@@ -35,7 +35,7 @@
         "richtext_HwhtPj": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Flow AIカメラは、来店数・通行量・滞在時間・店内行動を取得し、購買率分析、人員配置、VMD改善、<br/>FIDA実行支援に活用できる店舗データをつくります。</p>"
+            "content": "<p>FlowのAIカメラは、来店数・店前通行量・滞在時間・店内行動を計測。<br/>購買率分析、人員配置、VMD改善に活用できる店舗データを提供します。</p>"
           }
         },
         "button_7Prq3W": {
@@ -54,7 +54,7 @@
           "settings": {
             "style": "fill",
             "size": "lg",
-            "text": "計測できるデータを見る",
+            "text": "計測項目を見る",
             "url": "#ai-camera-measurement",
             "background": "#ffffff",
             "text_color": "#11243e"
@@ -110,7 +110,7 @@
             "icon_color": "",
             "background_color": "rgba(0,0,0,0)",
             "text_color": "#11243e",
-            "border_color": "#0e366a",
+            "border_color": "#10223B",
             "show_controls": false,
             "column_size": "3",
             "title": "来店数計測",
@@ -132,13 +132,35 @@
             "icon_color": "",
             "background_color": "rgba(0,0,0,0)",
             "text_color": "#11243e",
-            "border_color": "#0e366a",
+            "border_color": "#10223B",
             "show_controls": false,
             "column_size": "3",
             "title": "スタッフ除外",
             "heading_tag": "h4",
             "subheading": "",
             "content": "<p>スタッフの動きを除外し、実際の顧客来店と購買率をより正確に把握。店舗評価や接客改善に使いやすいデータを取得します。</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_e7zcCc": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "",
+            "text_color": "#11243e",
+            "border_color": "#10223B",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "同日リピート除外",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<p>同日の再入店や短時間の重複を抑え、来店数をより使いやすく補正。日次比較や購買率分析の精度向上に役立ちます。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -188,67 +210,23 @@
             "link_style": "link"
           }
         },
-        "item_9p7UkX": {
+        "item_FQiHLN": {
           "type": "item",
           "settings": {
             "icon": "none",
             "icon_width": 32,
-            "icon_background_type": "circle",
-            "icon_background": "",
-            "icon_color": "",
-            "background_color": "rgba(0,0,0,0)",
-            "text_color": "#11243e",
-            "border_color": "#0e366a",
-            "show_controls": false,
-            "column_size": "3",
-            "title": "複数入口対応",
-            "heading_tag": "h4",
-            "subheading": "",
-            "content": "<p>複数入口の店舗でも、入口ごとの来店データを統合して把握。大型店や百貨店インショップでも店舗全体の来店傾向を確認できます。</p>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        },
-        "item_DV6hAt": {
-          "type": "item",
-          "settings": {
-            "icon": "none",
-            "icon_width": 32,
-            "icon_background_type": "circle",
-            "icon_background": "#a0b842",
-            "icon_color": "#f9fafb",
-            "background_color": "rgba(0,0,0,0)",
-            "text_color": "#11243e",
-            "border_color": "#0e366a",
-            "show_controls": false,
-            "column_size": "3",
-            "title": "API・ダッシュボード連携",
-            "heading_tag": "h4",
-            "subheading": "",
-            "content": "<p>取得データをFlowダッシュボードや外部分析環境へ連携。POS、売上、人員データと組み合わせて店舗運営に活用できます。</p>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        },
-        "item_e7zcCc": {
-          "type": "item",
-          "settings": {
-            "icon": "none",
-            "icon_width": 32,
-            "icon_background_type": "circle",
+            "icon_background_type": "square",
             "icon_background": "",
             "icon_color": "",
             "background_color": "",
-            "text_color": "#11243e",
-            "border_color": "#0e366a",
+            "text_color": "",
+            "border_color": "",
             "show_controls": false,
             "column_size": "3",
-            "title": "同日リピート除外",
+            "title": "導線・回遊分析",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<p>同日の再入店や短時間の重複を抑え、来店数をより使いやすく補正。日次比較や購買率分析の精度向上に役立ちます。</p>",
+            "content": "<p>店内の移動経路や回遊傾向を可視化。来店客のルートや立ち寄りエリアを把握し、レイアウトやVMDに活用できます。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -267,7 +245,7 @@
             "border_color": "#0e366a",
             "show_controls": false,
             "column_size": "3",
-            "title": "属性傾向",
+            "title": "年齢・性別の傾向",
             "heading_tag": "h4",
             "subheading": "",
             "content": "<p>年齢・性別などの傾向を確認し、客層理解やVMD改善に活用。店舗ごとの来店客層の違いを把握しやすくします。</p>",
@@ -289,10 +267,55 @@
             "border_color": "#0e366a",
             "show_controls": false,
             "column_size": "3",
-            "title": "売場接触計測",
+            "title": "売場・什器接触計測",
             "heading_tag": "h4",
             "subheading": "",
             "content": "<p>売場・什器ごとの滞在を確認し、VMDや商品配置の改善に活用。売場の見られ方と売上の関係を把握しやすくします。</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_9p7UkX": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "rgba(0,0,0,0)",
+            "text_color": "#11243e",
+            "border_color": "#0e366a",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "複数入口の一元計測",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<p>複数入口の店舗でも、入口ごとの来店データを統合して把握。大型店や百貨店インショップでも店舗全体の来店傾向を確認できます。</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_DV6hAt": {
+          "type": "item",
+          "disabled": true,
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "#a0b842",
+            "icon_color": "#f9fafb",
+            "background_color": "rgba(0,0,0,0)",
+            "text_color": "#11243e",
+            "border_color": "#0e366a",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "API・ダッシュボード連携",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<p>取得データをFlowダッシュボードや外部分析環境へ連携。POS、売上、人員データと組み合わせて店舗運営に活用できます。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -302,13 +325,14 @@
       "block_order": [
         "item_dVhEmH",
         "item_AC6yjk",
+        "item_e7zcCc",
         "item_qWKwbd",
         "item_yxawQp",
-        "item_9p7UkX",
-        "item_DV6hAt",
-        "item_e7zcCc",
+        "item_FQiHLN",
         "item_EtFefY",
-        "item_aBwy9K"
+        "item_aBwy9K",
+        "item_9p7UkX",
+        "item_DV6hAt"
       ],
       "custom_css": [
         ".multi-column {gap: 15px;}",
@@ -321,11 +345,102 @@
         "gap": "small",
         "text_alignment": "start",
         "subheading": "計測機能",
-        "title": "店舗分析に必要なデータを取得。",
-        "content": "<p>Flow AIカメラは、単なる人数カウントではありません。来店数、通行量、入店率、滞在時間、スタッフ除外、ゾーン別行動、VMD接触など、店舗運営に必要な行動データを取得します。</p>",
+        "title": "",
+        "content": "<h2>来店数から店内行動まで、<br/>店舗分析に必要なデータを取得。</h2><p>FlowのAIカメラは、来店数だけでなく、店前通行量、入店率、滞在時間、導線、属性傾向などを計測します。スタッフや同日リピートを除外し、店舗運営に活用しやすいデータへ整えます。</p>",
         "background": "",
         "background_gradient": "",
         "text_color": "#11243e",
+        "subheading_background_color": "",
+        "subheading_text_color": ""
+      }
+    },
+    "multi_column_PmtU6r": {
+      "type": "multi-column",
+      "blocks": {
+        "item_M8FFTM": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "rgba(0,0,0,0)",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "入口計測",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<p>来店数、入店方向、スタッフ除外、同日リピート除外を計測。正確な来店数と購買率分析の基準をつくります。</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_LFpYyz": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#A1B847",
+            "text_color": "#F9FAFB",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "店前通行量計測",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<p>店舗前の通行量と方向を計測し、来店数と比較。入店率や店頭施策の効果を確認します。</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_zy4R7f": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#0E366A",
+            "text_color": "#F9FAFB",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "店内行動計測",
+            "heading_tag": "h4",
+            "subheading": "",
+            "content": "<p>売場ごとの滞在、導線、回遊、什器接触を計測。レイアウトやVMD改善に活用します。</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_M8FFTM",
+        "item_LFpYyz",
+        "item_zy4R7f"
+      ],
+      "name": "Multi-column",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "start",
+        "subheading": "",
+        "title": "",
+        "content": "<h2>計測目的に合わせて、構成を選定。</h2><p>入口、店前、店内では、計測目的やカメラの設置方法が異なります。Flowは必要なデータと店舗環境を確認し、最適な構成を提案します。</p><h5><strong>広い入口や複数入口にも、店舗ごとに設計して対応。</strong></h5>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
         "subheading_background_color": "",
         "subheading_text_color": ""
       }
@@ -492,13 +607,13 @@
         "ai_gen_block_79fb6e4_hNJrtP": {
           "type": "ai_gen_block_79fb6e4",
           "settings": {
-            "subheader": "<strong>AIカメラ</strong>",
+            "subheader": "設計・精度管理",
             "subheader_size": 14,
             "subheader_color": "#666666",
-            "heading": "<strong>店舗計測に合わせて、AIカメラを設計・配置します。</strong>",
-            "heading_size": 36,
+            "heading": "店舗環境に合わせて、安定した計測を設計。",
+            "heading_size": 46,
             "heading_color": "#11243e",
-            "header_text": "<p>Flowは、店舗レイアウト、入口幅、天井高、照明、計測したいKPIに合わせてAIカメラの設置位置を設計します。来店数、滞在時間、導線、ゾーン反応、スタッフ除外など、店舗分析に必要な行動データを正確に取得できるように調整します。</p><p></p>",
+            "header_text": "<p>Flowは、入口幅、天井高、照明、混雑状況、スタッフ動線を確認し、カメラの台数・設置位置・初期設定を設計します。<br/>導入後も精度確認を継続し、安定した店舗データの取得を支援します。</p>",
             "text_size": 16,
             "text_color": "#666666",
             "header_alignment": "left",
@@ -520,17 +635,17 @@
             "box_text_size": 14,
             "box_text_color": "#666666",
             "box_1_icon": "check",
-            "box_1_header": "主な計測項目",
-            "box_1_text": "<p>来店数、店前通行量、入店タイミング、滞在時間、導線、ゾーン反応などを計測します。必要に応じて、スタッフ除外、同日再来店除外、属性推定にも対応します。</p>",
+            "box_1_header": "計測環境の確認",
+            "box_1_text": "<p>入口幅、天井高、照明、混雑状況、スタッフ動線を確認。計測精度に影響する条件を事前に整理します。</p>",
             "box_2_icon": "check",
-            "box_2_header": "映像確認とレポート",
-            "box_2_text": "<p>カメラ映像は標準では保存されません。計測精度の確認や設定調整で映像を使用する場合は、お客様と運用方法を確認し、精度確認レポートと確認用映像を共有できる体制を整えています。</p>",
+            "box_2_header": "<strong>初期設定と精度確認</strong>",
+            "box_2_text": "<p>設置後に検知範囲や除外条件を調整し、計測結果を確認。必要に応じて精度確認レポートを共有します。</p>",
             "box_3_icon": "check",
-            "box_3_header": "設置場所の設計",
-            "box_3_text": "<p>入口、売場ゾーン、什器周辺など、店舗ごとのレイアウトと計測目的に合わせて設置位置を設計します。主なAIカメラは天井から約20mm程度の突出に抑えられ、店舗空間に目立ちにくく設置できます。</p>",
+            "box_3_header": "設置位置・台数の設計",
+            "box_3_text": "<p>入口、売場ゾーン、什器周辺など、店舗レイアウトと計測目的に合わせて、設置位置と必要台数を設計します。</p>",
             "box_4_icon": "check",
-            "box_4_header": "計測精度の維持",
-            "box_4_text": "<p>入口幅、天井高、照明、混雑状況、スタッフ動線などを確認して初期設定を行います。導入後も精度確認の運用を継続し、長期的に安定した計測ができるようにサポートします。</p><h3></h3>"
+            "box_4_header": "<strong>導入後の精度管理</strong>",
+            "box_4_text": "<p>レイアウト変更や店舗環境の変化を確認し、必要に応じて設定を調整。安定した計測を継続できるよう支援します。</p>"
           },
           "blocks": {}
         }
@@ -560,7 +675,7 @@
             "vertical_position_mobile": 6,
             "icon_width": 32,
             "title": "AIカメラ計測",
-            "content": "<p>天井設置型AIカメラで、入口や売場の人の動きを計測します。来店数、滞在時間、属性傾向、ゾーン行動など、店舗改善に使える行動データを取得します。</p>"
+            "content": "<p>天井設置のAIカメラで、来店数や店内行動を計測。店舗環境に合わせて検知範囲を設定します。</p>"
           }
         },
         "item_rRrr9q": {
@@ -572,7 +687,7 @@
             "vertical_position_mobile": 64,
             "icon_width": 32,
             "title": "属性傾向",
-            "content": "<p>年代・性別などの傾向を集計し、来店客層の理解やVMD改善に活用できます。個人識別ではなく、店舗分析に必要な傾向データとして扱います。</p>"
+            "content": "<p>年代・性別などの傾向を集計し、客層理解やVMD改善に活用。個人を識別するものではありません。</p>"
           }
         },
         "item_hctbUk": {
@@ -584,7 +699,7 @@
             "vertical_position_mobile": 49,
             "icon_width": 32,
             "title": "同日リピート除外",
-            "content": "<p>同じ日に再入店した人物や短時間の重複を抑え、来店数をより使いやすく補正します。日次比較や購買率分析の精度向上に役立ちます。</p>"
+            "content": "<p>同日の再入店や短時間の重複を除外し、来店数を店舗運営に使いやすい形へ補正します。</p>"
           }
         },
         "item_awAjtg": {
@@ -596,19 +711,19 @@
             "vertical_position_mobile": 20,
             "icon_width": 32,
             "title": "スタッフ除外",
-            "content": "<p>スタッフの動きを来店数から除外し、購買率をより正確に把握しやすくします。正しい店舗評価や接客改善に重要です。</p>"
+            "content": "<p>スタッフの動きを来店数から除外し、実際の顧客来店と購買率をより正確に把握します。</p>"
           }
         },
         "item_t4pNGV": {
           "type": "item",
           "settings": {
-            "horizontal_position": 77,
+            "horizontal_position": 20,
             "vertical_position": 47,
-            "horizontal_position_mobile": 84,
+            "horizontal_position_mobile": 63,
             "vertical_position_mobile": 46,
             "icon_width": 32,
-            "title": "店舗データの現場活用",
-            "content": "<p>店長やスタッフは、Flowダッシュボードで来店数・購買率・滞在傾向を確認できます。営業時間中の変化を把握し、接客体制、売場対応、VMD改善の判断に活用できます</p>"
+            "title": "導線・滞在分析",
+            "content": "<p>売場間の移動や滞在傾向を可視化し、レイアウト、VMD、スタッフ配置の改善に活用します。</p>"
           }
         }
       },
@@ -653,14 +768,14 @@
         "subheading_r4dL8U": {
           "type": "subheading",
           "settings": {
-            "text": "一般的な人数カウンターとの違い",
+            "text": "人数カウントだけの場合との違い",
             "icon": "none"
           }
         },
         "liquid_APqXFc": {
           "type": "liquid",
           "settings": {
-            "liquid": "<h2 class=\"h2\"><b>人数を数えるだけでは、<br>店舗改善には足りない。</b>\n</h1>"
+            "liquid": "<h2 class=\"h2\"><b>来店数だけでなく、<br>店舗改善に必要な行動データまで。</b>\n</h2>"
           }
         },
         "heading_tEJbnj": {
@@ -676,7 +791,7 @@
         "richtext_wcpU8E": {
           "type": "richtext",
           "settings": {
-            "content": "<p>一般的な人数カウンターは、入口の通過人数を記録するだけで終わりがちです。Flowは、来店数を購買率、人員配置、VMD、売場行動、FIDA実行支援に結びつけ、店舗改善に使えるデータへ変えます。</p>"
+            "content": "<p>来店数だけでは、売上が変化した理由や店内での行動までは分かりません。<br/>Flowは、来店計測に店前通行量や滞在、導線などのデータを加え、店舗分析に活用できる形で提供します。</p>"
           }
         }
       },
@@ -692,7 +807,7 @@
       "name": "Rich text",
       "settings": {
         "full_width": true,
-        "content_width": "small",
+        "content_width": "medium",
         "text_position": "center",
         "background": "#ffffff",
         "background_gradient": "",
@@ -708,33 +823,33 @@
             "container_background": "#ffffff",
             "text_color": "#000000",
             "left_title": "",
-            "left_tag": "一般的な人数カウンター",
-            "left_metric": "入口通過数の記録",
-            "left_item_1": "<p>入口の通過人数が中心</p>",
-            "left_item_2": "<p>スタッフと顧客の区別が難しい</p>",
-            "left_item_3": "<p>通行量・入店率が見えにくい</p>",
-            "left_item_4": "<p>POSや人員データと分断されやすい</p>",
+            "left_tag": "来店数だけの計測",
+            "left_metric": "把握できるのは、入口の通過数。",
+            "left_item_1": "<p>売上変化の理由が分かりにくい</p>",
+            "left_item_2": "<p>スタッフと顧客を区別しにくい</p>",
+            "left_item_3": "<p>店前通行量や入店率が見えない</p>",
+            "left_item_4": "<p>店内の滞在や導線を把握できない</p>",
             "left_background": "#ffffff",
             "left_border_color": "#f83a3a",
             "left_tag_background": "#fdc9c9",
             "left_tag_text": "#6b7280",
-            "left_progress_label": "用途：\n\n基本的な来店数の把握",
+            "left_progress_label": "用途：基本的な来店数の確認",
             "left_progress_time": "12-18hr",
             "left_progress_percent": 20,
             "left_progress_color": "#ef4444",
             "right_title": "",
             "right_tag": "Flow AIカメラ",
-            "right_metric": "Flow AIカメラ + 分析基盤",
-            "right_item_1": "<p>スタッフ除外を含む来店計測</p><p></p>",
-            "right_item_2": "<p>通行量・入店率・滞在時間を可視化</p><p></p>",
-            "right_item_3": "<p>POS・人員・天候データと連携</p>",
-            "right_item_4": "<p><strong>FIDA実行支援の基盤に</strong></p>",
+            "right_metric": "店舗行動まで、分析できるデータへ。",
+            "right_item_1": "<p>スタッフ・同日リピートを除外</p><p></p>",
+            "right_item_2": "<p>店前通行量・入店率を可視化</p><p></p>",
+            "right_item_3": "<p>滞在時間・導線・ゾーンを計測</p>",
+            "right_item_4": "<p>POSや売上データと組み合わせて分析</p>",
             "right_background": "#0a2540",
             "right_text_color": "#ffffff",
             "right_tag_background": "#a0b842",
             "right_tag_text": "#ffffff",
             "highlight_color": "#a0b842",
-            "right_progress_label": "用途：\n\n店舗改善につながる分析・実行支援",
+            "right_progress_label": "用途：店舗分析と改善判断",
             "right_progress_time": "< 2min",
             "progress_bar_height": 4,
             "progress_gradient_start": "#803cee",
@@ -872,10 +987,10 @@
             "border_color": "#ffffff",
             "show_controls": false,
             "column_size": "1",
-            "title": "計測したデータをどう活用するか？",
+            "title": "計測データを、店舗改善にどう活かすか。",
             "heading_tag": "h3",
             "subheading": "",
-            "content": "<p>AIカメラで取得した来店数、滞在、導線、ゾーン反応を、売場改善や店舗運営にどう活かせるかをご確認ください。</p>",
+            "content": "<p>AIカメラで取得した滞在、導線、ゾーンデータを、売場改善やVMDにどう活用できるかをご確認ください。</p>",
             "link_url": "shopify://pages/store-analytics",
             "link_text": "店内行動分析を見る →",
             "link_style": "button"
@@ -917,10 +1032,10 @@
             "border_color": "#f2f2f2",
             "show_controls": false,
             "column_size": "2",
-            "title": "計測性能",
+            "title": "計測環境",
             "heading_tag": "h1",
             "subheading": "",
-            "content": "<h5>最大99%水準</h5><p>理想条件下では最大99%水準の人数計測が可能です。ただし、実店舗では入口形状、照明、混雑状況、カメラの設置位置などにより精度が変動します。Flowは、現場条件をふまえて計測設計を行います。</p>",
+            "content": "<h5>精度に影響する条件を確認</h5><h6>入口幅、天井高、照明、混雑状況、カメラ位置などを事前に確認。店舗ごとの条件に合わせて、計測方法と設置構成を設計します。</h6>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -942,7 +1057,7 @@
             "title": "設置設計",
             "heading_tag": "h1",
             "subheading": "",
-            "content": "<h5>店舗環境に最適化</h5><p>入口幅、天井高、照明、人の流れ、スタッフ動線を確認し、店舗ごとに計測条件を設計します。画一的な設置ではなく、実際の店舗構造に合わせて調整することで、使いやすい来店データを取得します。</p>",
+            "content": "<h5>店舗環境に最適化</h5><h6>入口や売場の形状、計測目的に合わせて、カメラの位置・台数・検知範囲を調整。広い入口や複数入口にも対応します。</h6>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -961,10 +1076,10 @@
             "border_color": "",
             "show_controls": false,
             "column_size": "2",
-            "title": "スタッフ除外",
+            "title": "来店データ補正",
             "heading_tag": "h1",
             "subheading": "",
-            "content": "<h5>購買率をより正確に</h5><p>スタッフの動きを除外することで、実際の顧客来店に近いデータを取得します。来店数にスタッフ移動が含まれると購買率がずれやすくなるため、正しい店舗評価にはスタッフ除外が重要です。</p>",
+            "content": "<h5>スタッフ・再入店を除外</h5><h6>スタッフの移動や同日の再入店を除外し、実際の顧客来店に近いデータへ補正。購買率や日次比較に使いやすい来店数を取得します。</h6>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -986,7 +1101,7 @@
             "title": "計測一貫性",
             "heading_tag": "h1",
             "subheading": "",
-            "content": "<h5>比較できるデータへ</h5><p>店舗改善では、1回の計測精度だけでなく、同じ基準で継続的に測れることが重要です。日次・週次・店舗間の変化を比較しやすくすることで、売上改善、人員配置、VMD評価に使えるデータになります。</p>",
+            "content": "<h5>継続して比較できるデータへ</h5><h6>レイアウト変更や店舗環境の変化を確認し、必要に応じて設定を調整。日次・週次・店舗間で比較しやすい計測を支えます。</h6>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -1011,12 +1126,42 @@
         "text_alignment": "start",
         "subheading": "精度と計測品質",
         "title": "安定した計測が、判断を支える。",
-        "content": "<p>Flow AIカメラは、店舗環境に合わせた設計により、高精度な来店計測を実現します。<br/>センサー自体は理想条件下で最大99%水準の計測が可能ですが、実店舗では入口形状、照明、混雑状況、スタッフ動線などにより精度が変動します。重要なのは、単発の精度だけではありません。同じ店舗を同じ基準で継続的に測り、日次・週次・店舗間で比較できる一貫したデータをつくることです。</p>",
+        "content": "<h6>Flow AIカメラは、入口幅、天井高、照明、混雑状況、スタッフ動線などを確認し、店舗環境に合わせて計測条件を設計します。導入後も必要に応じて設定を調整し、店舗間・期間間で比較しやすい一貫したデータ取得を支援します。</h6>",
         "background": "",
         "background_gradient": "",
         "text_color": "#11243e",
         "subheading_background_color": "",
         "subheading_text_color": ""
+      }
+    },
+    "multiple_images_with_text_UJG6NQ": {
+      "type": "multiple-images-with-text",
+      "blocks": {
+        "item_qqCihT": {
+          "type": "item",
+          "settings": {
+            "image_rotation_degrees": -2,
+            "subheading": "システム構成",
+            "title": "",
+            "content": "<h3>既存ネットワークを活用し、<br/>Flowへ安全に接続。</h3><p>AIカメラはPoEスイッチを通じて店舗ネットワークに接続し、計測データを安全にFlowへ送信します。店舗ごとのネットワーク環境を確認したうえで、適切な接続方法を設計します。</p>",
+            "button_url": "",
+            "button_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_qqCihT"
+      ],
+      "name": "Multiple images with text",
+      "settings": {
+        "full_width": true,
+        "images_layout": "stacked",
+        "collage_images_alignment": "middle",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "button_background": "",
+        "button_text_color": ""
       }
     },
     "multi_column_QjMJiW": {
@@ -1094,6 +1239,7 @@
         "item_MVfQ7a",
         "item_Y47ifx"
       ],
+      "disabled": true,
       "custom_css": [
         ".multi-column__item:nth-child(2) .h1,.multi-column__item:first-child .h1 {color: #c33142;}",
         ".subheading {color: #c33142; display: inline-block;}"
@@ -1763,6 +1909,7 @@
     "image_with_text_overlay_AcppEX",
     "custom_liquid_K7cM6z",
     "multi_column_QpdWAi",
+    "multi_column_PmtU6r",
     "section-15",
     "rich_text_8PAipA",
     "blocks_GwtFjK",
@@ -1772,6 +1919,7 @@
     "multi_column_RkceNG",
     "multi_column_X7V3Yc",
     "multi_column_HCGJea",
+    "multiple_images_with_text_UJG6NQ",
     "multi_column_QjMJiW",
     "media_with_text_hMPTmL",
     "multi_column_QjMJiW11",
