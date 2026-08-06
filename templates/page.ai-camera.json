@@ -1267,7 +1267,7 @@
         "image_8hBn9C": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Traffic_Flow_2.png",
+            "image": "shopify://shop_images/Flow_Platform_Diagram_1000x1200px_1.png",
             "media_width": 50,
             "media_position": "end",
             "text_position": "place-self-center-start text-start",
@@ -1275,7 +1275,7 @@
             "icon_width": 48,
             "subheading": "プライバシーとデータ保護",
             "title": "",
-            "content": "<h2>映像を常時保存せず、<br/>分析データへ。</h2><p></p><p>Flow AIカメラは、店内映像を継続的に保存する監視カメラではありません。来店数、滞在時間、導線、属性傾向などを分析用データへ変換し、Flowダッシュボードで確認できる形で提供します。</p><p>精度確認や設定調整のために確認用映像を使用する場合は、目的を限定して一時的に取り扱い、確認期間終了後に削除します。</p><p></p><ul><li><strong>映像は常時保存しない</strong></li><li><strong>個人を識別しない</strong></li><li><strong>属性は傾向で集計</strong></li><li><strong>属性は傾向で集計</strong></li></ul><p></p>",
+            "content": "<h2>映像を常時保存せず、<br/>分析データへ。</h2><p></p><p>Flow AIカメラは、店内映像を継続的に保存する監視カメラではありません。来店数、滞在時間、導線、属性傾向などを分析用データへ変換し、Flowダッシュボードで確認できる形で提供します。</p><p>精度確認や設定調整のために確認用映像を使用する場合は、目的を限定して一時的に取り扱い、確認期間終了後に削除します。</p><p></p><ul><li><strong>映像は常時保存しない</strong></li><li><strong>個人を識別しない</strong></li><li><strong>属性は傾向で集計</strong></li><li><strong>確認映像は一時利用</strong></li></ul><p></p>",
             "link_text": "セキュリティ対策を見る →",
             "link_url": "shopify://pages/platform-security-reliability",
             "background": "",
