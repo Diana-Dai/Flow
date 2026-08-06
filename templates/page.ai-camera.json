@@ -1560,6 +1560,7 @@
         "accordion_TMqyBA",
         "ai_gen_block_0c78d27_9DWrJV"
       ],
+      "disabled": true,
       "name": "FAQ accordion item",
       "settings": {
         "full_width": true,
