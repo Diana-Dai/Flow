@@ -1274,9 +1274,9 @@
             "icon": "none",
             "icon_width": 48,
             "subheading": "プライバシーとデータ保護",
-            "title": "映像を保存せず、分析データへ。",
-            "content": "<p>Flowの来店計測では、カメラ映像は保存されません。AIカメラは、来店数・通行量・滞在時間・属性傾向など、店舗改善に必要な分析データを取得するために使用します。個人を識別することを目的とした運用ではなく、店舗分析・購買率分析・VMD改善に活用できる行動データとして扱います。詳しい取り扱いについては、Flowのプライバシーポリシーおよびデータ保護方針をご確認ください。</p><p></p><ul><li><strong>カメラ映像は保存しません</strong></li><li><strong>来店・通行量データを取得</strong></li><li><strong>個人識別目的ではありません</strong></li><li><strong>方針に基づきデータ管理</strong></li></ul><p></p>",
-            "link_text": "データ保護とセキュリティを見る →",
+            "title": "",
+            "content": "<h2>映像を常時保存せず、<br/>分析データへ。</h2><p></p><p>Flow AIカメラは、店内映像を継続的に保存する監視カメラではありません。来店数、滞在時間、導線、属性傾向などを分析用データへ変換し、Flowダッシュボードで確認できる形で提供します。</p><p>精度確認や設定調整のために確認用映像を使用する場合は、目的を限定して一時的に取り扱い、確認期間終了後に削除します。</p><p></p><ul><li><strong>映像は常時保存しない</strong></li><li><strong>個人を識別しない</strong></li><li><strong>属性は傾向で集計</strong></li><li><strong>属性は傾向で集計</strong></li></ul><p></p>",
+            "link_text": "セキュリティ対策を見る →",
             "link_url": "shopify://pages/platform-security-reliability",
             "background": "",
             "background_gradient": "",
@@ -1512,6 +1512,62 @@
         "text_color": "#11243e",
         "subheading_background_color": "",
         "subheading_text_color": ""
+      }
+    },
+    "blocks_9fqq4Y": {
+      "type": "_blocks",
+      "blocks": {
+        "accordion_F6KMaY": {
+          "type": "accordion",
+          "name": "Accordion",
+          "settings": {
+            "title": "Title",
+            "content": "<p>Write content about your brand or products.</p>",
+            "page": ""
+          },
+          "blocks": {}
+        },
+        "accordion_TMqyBA": {
+          "type": "accordion",
+          "name": "Accordion",
+          "settings": {
+            "title": "Title",
+            "content": "<p>Write content about your brand or products.</p>",
+            "page": ""
+          },
+          "blocks": {}
+        },
+        "ai_gen_block_0c78d27_9DWrJV": {
+          "type": "ai_gen_block_0c78d27",
+          "settings": {
+            "category": "Implementation & Deployment",
+            "question": "How long does implementation take from contract to go-live?",
+            "answer": "Typical timeline is 4-6 weeks for a single store, 8-12 weeks for multi-store rollouts. Week 1-2: Infrastructure assessment and camera placement planning. Week 3-4: Hardware installation and network integration. Week 5-6: Calibration, validation, and staff training. For enterprise deployments (10+ stores), we follow a phased rollout: pilot store first (6 weeks), then standardized deployment at 2-3 stores per week. Timeline assumes existing network infrastructure meets requirements (PoE-capable switches, 100Mbps per camera). If network upgrades are needed, add 2-4 weeks for infrastructure work.",
+            "default_open": false,
+            "icon_type": "clock",
+            "icon_background_color": "#f0f4e8",
+            "icon_color": "#6b7c3a",
+            "category_color": "#6b7c3a",
+            "question_color": "#0f172a",
+            "answer_color": "#475569",
+            "chevron_color": "#64748b"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "accordion_F6KMaY",
+        "accordion_TMqyBA",
+        "ai_gen_block_0c78d27_9DWrJV"
+      ],
+      "name": "FAQ accordion item",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
       }
     },
     "rich_text_peMmaV": {
@@ -1925,6 +1981,7 @@
     "media_with_text_hMPTmL",
     "multi_column_QjMJiW11",
     "multi_column_HCGJea11",
+    "blocks_9fqq4Y",
     "rich_text_peMmaV",
     "multi_column_LeVzeG",
     "media_with_text_mRGejd",
