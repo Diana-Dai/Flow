@@ -1968,7 +1968,7 @@
         "richtext_qzAkak": {
           "type": "richtext",
           "settings": {
-            "content": "<p>来店数・通行量・滞在時間・店内行動を正しく把握することで、購買率分析、人員配置、VMD改善の判断がしやすくなります。Flow AIカメラと分析プラットフォームを、実際の店舗環境に合わせてご提案します。</p>"
+            "content": "<p>店舗環境や計測目的を確認し、必要なデータ、カメラ構成、設置方法をご提案します。既存ネットワークの活用や複数店舗への展開についてもご相談ください。</p>"
           }
         },
         "button_AVKAbi": {
@@ -1994,8 +1994,8 @@
             "text_color_1": "#ffffff",
             "style_2": "fill",
             "size_2": "xl",
-            "text_2": "分析基盤を見る →",
-            "url_2": "shopify://pages/store-performance-platform",
+            "text_2": "来店客数分析を見る →",
+            "url_2": "shopify://pages/traffic-analytics",
             "background_2": "#ffffff",
             "text_color_2": "#11243e"
           }
@@ -2012,7 +2012,7 @@
       "name": "Rich text",
       "settings": {
         "full_width": true,
-        "content_width": "small",
+        "content_width": "medium",
         "text_position": "center",
         "background": "#0e366a",
         "background_gradient": "",
