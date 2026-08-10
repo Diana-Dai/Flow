@@ -417,7 +417,7 @@
             "title": "店内行動計測",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<p>売場ごとの滞在、導線、回遊、什器接触を計測。レイアウトやVMD改善に活用します。</p>",
+            "content": "<p>売場ごとの滞在、導線、回遊、什器を計測。レイアウトやVMD改善に活用します。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -1437,7 +1437,7 @@
             "title": "滞在・VMD改善",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<h5>売場ごとの滞在や接触を確認し、VMD改善に活用します。</h5>",
+            "content": "<h5>売場ごとの通行量や滞在を確認し、VMD改善に活用します。</h5>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
