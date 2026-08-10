@@ -267,7 +267,7 @@
             "border_color": "#0e366a",
             "show_controls": false,
             "column_size": "3",
-            "title": "売場・什器接触計測",
+            "title": "売場・什器計測",
             "heading_tag": "h4",
             "subheading": "",
             "content": "<p>売場・什器ごとの滞在を確認し、VMDや商品配置の改善に活用。売場の見られ方と売上の関係を把握しやすくします。</p>",
