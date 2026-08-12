@@ -481,9 +481,9 @@
           "name": "Badge",
           "settings": {
             "text": "データ活用",
-            "alignment": "center",
+            "alignment": "left",
             "text_color": "#ffffff",
-            "background": "#000000"
+            "background": "#11161C"
           },
           "blocks": {}
         },
@@ -499,13 +499,29 @@
           },
           "blocks": {}
         },
+        "liquid_qCfyAL": {
+          "type": "liquid",
+          "name": "Liquid",
+          "settings": {
+            "liquid": "<div style=\"height: 20px;\"></div>"
+          },
+          "blocks": {}
+        },
         "rich_text_NV8MJr": {
           "type": "rich-text",
           "name": "Rich text",
           "settings": {
-            "text": "<p>Write some text about your products or your brand.</p>",
-            "content_width": "small",
-            "text_alignment": "center"
+            "text": "<p>店舗分析ツールを比較する際は、データを表示できるかだけでなく、原因を理解し、次に取るべき行動を判断しやすいかまで確認することが重要です。</p>",
+            "content_width": "medium",
+            "text_alignment": "left"
+          },
+          "blocks": {}
+        },
+        "liquid_e7H38T": {
+          "type": "liquid",
+          "name": "Liquid",
+          "settings": {
+            "liquid": "<div style=\"height: 20px;\"></div>"
           },
           "blocks": {}
         },
@@ -559,7 +575,9 @@
         "liquid_LjmRL4",
         "badge_AyqeGV",
         "heading_AXEbFH",
+        "liquid_qCfyAL",
         "rich_text_NV8MJr",
+        "liquid_e7H38T",
         "ai_gen_block_a3e57c5_UydqGj"
       ],
       "name": "Comparison grid",
