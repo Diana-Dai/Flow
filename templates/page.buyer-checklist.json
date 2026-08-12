@@ -453,6 +453,7 @@
         "subheading_n4DR3C",
         "richtext_PJarhP"
       ],
+      "disabled": true,
       "custom_css": [],
       "name": "Rich text",
       "settings": {
@@ -467,6 +468,47 @@
     "blocks_ArHkpd": {
       "type": "_blocks",
       "blocks": {
+        "liquid_LjmRL4": {
+          "type": "liquid",
+          "name": "Liquid",
+          "settings": {
+            "liquid": "<div id=\"traffic\" style=\"height:60px;scroll-margin-top:110px\"></div>"
+          },
+          "blocks": {}
+        },
+        "badge_AyqeGV": {
+          "type": "badge",
+          "name": "Badge",
+          "settings": {
+            "text": "データ活用",
+            "alignment": "center",
+            "text_color": "#ffffff",
+            "background": "#000000"
+          },
+          "blocks": {}
+        },
+        "heading_AXEbFH": {
+          "type": "heading",
+          "name": "Heading",
+          "settings": {
+            "text": "見えるだけでは、改善は進まない。",
+            "size": "h2",
+            "html_tag": "h2",
+            "text_color": "#11161C",
+            "gradient": ""
+          },
+          "blocks": {}
+        },
+        "rich_text_NV8MJr": {
+          "type": "rich-text",
+          "name": "Rich text",
+          "settings": {
+            "text": "<p>Write some text about your products or your brand.</p>",
+            "content_width": "small",
+            "text_alignment": "center"
+          },
+          "blocks": {}
+        },
         "ai_gen_block_a3e57c5_UydqGj": {
           "type": "ai_gen_block_a3e57c5",
           "settings": {
@@ -514,6 +556,10 @@
         }
       },
       "block_order": [
+        "liquid_LjmRL4",
+        "badge_AyqeGV",
+        "heading_AXEbFH",
+        "rich_text_NV8MJr",
         "ai_gen_block_a3e57c5_UydqGj"
       ],
       "name": "Comparison grid",
