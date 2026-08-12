@@ -11,10 +11,1333 @@
   "sections": {
     "main": {
       "type": "main-page",
-      "settings": {}
+      "disabled": true,
+      "settings": {
+        "content_width": "80ch"
+      }
+    },
+    "blocks_DzPXED": {
+      "type": "_blocks",
+      "blocks": {
+        "heading_EU6VYx": {
+          "type": "heading",
+          "name": "Heading",
+          "settings": {
+            "text": "比較ガイドを見る",
+            "size": "h2",
+            "html_tag": "p",
+            "text_color": "",
+            "gradient": ""
+          },
+          "blocks": {}
+        },
+        "rich_text_cX3BmA": {
+          "type": "rich-text",
+          "name": "Rich text",
+          "settings": {
+            "text": "<p>---</p>",
+            "content_width": "small",
+            "text_alignment": "left"
+          },
+          "blocks": {}
+        },
+        "button_group_EjArXr": {
+          "type": "button-group",
+          "name": "Button group",
+          "settings": {},
+          "blocks": {
+            "button_FixBnY": {
+              "type": "button",
+              "name": "Button",
+              "settings": {
+                "text": "Button",
+                "url": "",
+                "open_in_new_tab": false,
+                "style": "fill",
+                "size": "xl",
+                "background": "",
+                "text_color": ""
+              },
+              "blocks": {}
+            },
+            "button_aM3rch": {
+              "type": "button",
+              "name": "Button",
+              "settings": {
+                "text": "Button",
+                "url": "",
+                "open_in_new_tab": false,
+                "style": "fill",
+                "size": "xl",
+                "background": "",
+                "text_color": ""
+              },
+              "blocks": {}
+            },
+            "button_y4BzVL": {
+              "type": "button",
+              "name": "Button",
+              "settings": {
+                "text": "Button",
+                "url": "",
+                "open_in_new_tab": false,
+                "style": "fill",
+                "size": "xl",
+                "background": "",
+                "text_color": ""
+              },
+              "blocks": {}
+            },
+            "button_9CNLDy": {
+              "type": "button",
+              "name": "Button",
+              "settings": {
+                "text": "Button",
+                "url": "",
+                "open_in_new_tab": false,
+                "style": "fill",
+                "size": "xl",
+                "background": "",
+                "text_color": ""
+              },
+              "blocks": {}
+            },
+            "button_3KNeyB": {
+              "type": "button",
+              "name": "Button",
+              "settings": {
+                "text": "Button",
+                "url": "",
+                "open_in_new_tab": false,
+                "style": "fill",
+                "size": "xl",
+                "background": "",
+                "text_color": ""
+              },
+              "blocks": {}
+            },
+            "button_PG6MLb": {
+              "type": "button",
+              "settings": {
+                "text": "Button",
+                "url": "",
+                "open_in_new_tab": false,
+                "style": "fill",
+                "size": "xl",
+                "background": "",
+                "text_color": ""
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "button_FixBnY",
+            "button_aM3rch",
+            "button_y4BzVL",
+            "button_9CNLDy",
+            "button_3KNeyB",
+            "button_PG6MLb"
+          ]
+        },
+        "ai_gen_block_4d03234_YezpTF": {
+          "type": "ai_gen_block_4d03234",
+          "settings": {
+            "header": "Ready to get started?",
+            "button_text": "Learn more",
+            "button_link": "",
+            "text_alignment": "center",
+            "spacing": 16,
+            "desktop_width_percent": 100,
+            "padding_vertical": 40,
+            "padding_horizontal": 40,
+            "border_radius": 12,
+            "background_color": "#f9fafb",
+            "header_color": "#11243e",
+            "header_size": 16,
+            "button_font_size": 16,
+            "button_padding_vertical": 14,
+            "button_padding_horizontal": 32,
+            "button_border_radius": 14,
+            "button_background": "#0e366a",
+            "button_text_color": "#ffffff",
+            "button_hover_background": "#a0b842",
+            "button_hover_text_color": "#ffffff"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "heading_EU6VYx",
+        "rich_text_cX3BmA",
+        "button_group_EjArXr",
+        "ai_gen_block_4d03234_YezpTF"
+      ],
+      "name": "Simple CTA",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "blocks_mzKcJd": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_f46e12e_cY3REF": {
+          "type": "ai_gen_block_f46e12e",
+          "settings": {
+            "eyebrow": "店舗分析ツール比較ガイド",
+            "heading": "店舗分析ツールを比較する際の7つのチェックポイント",
+            "description": "<p>来店計測、購買率、店舗比較、拡張性、導入後の運用まで。機能表だけでは分かりにくい、店舗分析ツール選びの重要なポイントを整理します。</p>",
+            "bullet_1": "来店数を安定して計測し、購買率まで管理できるか",
+            "bullet_2": "複数店舗を同じ基準で比較し、改善につなげられるか",
+            "bullet_3": "店舗運営の変化に合わせて、機能と活用範囲を広げられるか",
+            "bullet_4": "",
+            "primary_button_label": "7つの比較ポイントを見る",
+            "primary_button_link": "#tpoint-checklist",
+            "secondary_button_label": "Flowの店舗分析を見る",
+            "secondary_button_link": "shopify://pages/flow-platform-overview",
+            "caption": "店舗分析ツールの比較・選定を進める小売企業向けのガイドです。",
+            "trust_1": "来店計測・購買率",
+            "trust_2": "運用・サポート",
+            "trust_3": "拡張性・将来性",
+            "trust_4": "",
+            "image": "shopify://shop_images/Traffic_Flow_4.png",
+            "image_alt": "",
+            "image_position": "right",
+            "image_aspect_ratio": "natural",
+            "image_fit": "cover",
+            "image_border_radius": 12,
+            "image_shadow": true,
+            "image_border": false,
+            "image_panel": false,
+            "eyebrow_font_size": 14,
+            "eyebrow_font_weight": "700",
+            "eyebrow_letter_spacing": 0.1,
+            "eyebrow_bottom_spacing": 22,
+            "eyebrow_color": "#0e366a",
+            "heading_font_size": 54,
+            "heading_font_size_mobile": 38,
+            "heading_line_height": 1.1,
+            "heading_font_weight": "800",
+            "heading_max_width": 600,
+            "heading_color": "#1a202c",
+            "description_font_size": 20,
+            "description_line_height": 1.6,
+            "description_max_width": 600,
+            "description_top_spacing": 26,
+            "description_bottom_spacing": 0,
+            "description_color": "#4a5568",
+            "bullet_font_size": 18,
+            "bullet_line_height": 1.5,
+            "bullet_item_spacing": 14,
+            "bullet_list_top_spacing": 32,
+            "bullet_list_bottom_spacing": 0,
+            "checkmark_size": 20,
+            "checkmark_color": "#0e366a",
+            "bullet_text_color": "#4a5568",
+            "button_font_size": 16,
+            "button_font_weight": "700",
+            "button_border_radius": 8,
+            "button_vertical_padding": 16,
+            "button_horizontal_padding": 28,
+            "button_top_spacing": 36,
+            "button_alignment": "left",
+            "primary_button_background": "#0e366a",
+            "primary_button_text": "#ffffff",
+            "primary_button_hover_background": "#0a2850",
+            "primary_button_hover_text": "#ffffff",
+            "secondary_button_background": "rgba(0,0,0,0)",
+            "secondary_button_text": "#0e366a",
+            "secondary_button_border": "#0e366a",
+            "secondary_button_hover_background": "#0e366a",
+            "secondary_button_hover_text": "#ffffff",
+            "secondary_button_hover_border": "#0e366a",
+            "caption_font_size": 15,
+            "caption_line_height": 1.5,
+            "caption_max_width": 560,
+            "caption_top_spacing": 16,
+            "caption_bottom_spacing": 0,
+            "caption_color": "#718096",
+            "trust_font_size": 15,
+            "trust_item_gap": 26,
+            "trust_row_gap": 16,
+            "trust_top_spacing": 26,
+            "trust_alignment": "left",
+            "trust_text_color": "#718096",
+            "trust_checkmark_color": "#0e366a",
+            "column_ratio": "50-50",
+            "vertical_alignment": "center",
+            "mobile_order": "text-first",
+            "mobile_text_alignment": "left",
+            "mobile_button_width": "auto",
+            "max_width": 1300,
+            "column_gap": 70,
+            "mobile_column_gap": 45,
+            "padding_top": 90,
+            "padding_bottom": 90,
+            "padding_top_mobile": 60,
+            "padding_bottom_mobile": 60,
+            "section_background": "#ffffff",
+            "text_color": "#4a5568",
+            "image_panel_background": "#f7fafc"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_f46e12e_cY3REF"
+      ],
+      "name": "Split conversion hero",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": true,
+        "remove_horizontal_spacing": true,
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "custom_liquid_y8Ttik": {
+      "type": "custom-liquid",
+      "name": "Custom Liquid",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": true,
+        "remove_horizontal_spacing": false,
+        "liquid": "<nav class=\"flow-anchor-nav\" aria-label=\"ページ内ナビゲーション\">\n  <div class=\"flow-anchor-nav__inner\">\n\n    <a href=\"#guide\" class=\"flow-anchor-nav__button\">\n      比較の基本\n    </a>\n\n    <a href=\"#measurement\" class=\"flow-anchor-nav__button\">\n      来店計測\n    </a>\n\n    <a href=\"#conversion\" class=\"flow-anchor-nav__button\">\n      購買率\n    </a>\n\n    <a href=\"#store-comparison\" class=\"flow-anchor-nav__button\">\n      店舗比較\n    </a>\n\n    <a href=\"#expandability\" class=\"flow-anchor-nav__button\">\n      拡張性\n    </a>\n\n    <a href=\"#deployment\" class=\"flow-anchor-nav__button\">\n      導入・運用\n    </a>\n\n  </div>\n</nav>\n\n<style>\n.flow-anchor-nav {\n  width: 100%;\n  padding: 60px 20px 60px;\n  background: transparent;\n}\n\n  .flow-anchor-nav__inner {\n    max-width: 1200px;\n    margin: 0 auto;\n    display: flex;\n    justify-content: center;\n    gap: 10px;\n    flex-wrap: wrap;\n  }\n\n  .flow-anchor-nav__button {\n    display: inline-flex;\n    align-items: center;\n    justify-content: center;\n    min-height: 44px;\n    padding: 10px 20px;\n    border: 1px solid #0e366a;\n    border-radius: 6px;\n    background: #ffffff;\n    color: #0e366a;\n    font-size: 14px;\n    font-weight: 600;\n    line-height: 1.3;\n    text-decoration: none;\n    white-space: nowrap;\n    transition:\n      background-color 0.2s ease,\n      color 0.2s ease,\n      border-color 0.2s ease,\n      transform 0.2s ease;\n  }\n\n  .flow-anchor-nav__button:hover {\n    background: #0e366a;\n    color: #ffffff;\n    transform: translateY(-1px);\n  }\n\n  .flow-anchor-nav__button:focus-visible {\n    outline: 2px solid #a0b842;\n    outline-offset: 3px;\n  }\n\n  @media screen and (max-width: 749px) {\n    .flow-anchor-nav {\n      padding: 14px 0;\n      overflow: hidden;\n    }\n\n    .flow-anchor-nav__inner {\n      justify-content: flex-start;\n      flex-wrap: nowrap;\n      overflow-x: auto;\n      gap: 8px;\n      padding: 0 16px 6px;\n      scrollbar-width: none;\n      -webkit-overflow-scrolling: touch;\n    }\n\n    .flow-anchor-nav__inner::-webkit-scrollbar {\n      display: none;\n    }\n\n    .flow-anchor-nav__button {\n      flex: 0 0 auto;\n      min-height: 42px;\n      padding: 9px 16px;\n      font-size: 13px;\n    }\n  }\n</style>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "custom_liquid_eFgf6h": {
+      "type": "custom-liquid",
+      "name": "Custom Liquid",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "liquid": "<p style=\"text-align: center\">Write or copy/paste Liquid code</p>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "blocks_j3LQGB": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_f23c343_iMMHTh": {
+          "type": "ai_gen_block_f23c343",
+          "settings": {
+            "heading": "比較のポイント",
+            "subheading": "機能表だけでは、違いは見えません。\n計測できることだけでなく、売上改善の余地を見つけ、次に何をすべきか判断できる仕組みかまで確認することが重要です。",
+            "left_card_title": "比較で重視したいこと",
+            "left_card_bg": "#f4f7e8",
+            "left_badge_bg": "#a0b842",
+            "left_icon_color": "#ffffff",
+            "left_bullet_color": "#a0b842",
+            "left_item_1_header": "安定した来店計測",
+            "left_item_1_description": "店舗や時間帯が変わっても、同じ基準で継続して計測できるか。",
+            "left_item_2_header": "購買率まで見える",
+            "left_item_2_description": "来店数と購買件数をつなぎ、売上未達の原因を分けられるか。",
+            "left_item_3_header": "改善余地が分かる",
+            "left_item_3_description": "店舗・曜日・時間帯の違いから、どこに改善機会があるか見つけられるか。",
+            "left_item_4_header": "次の一手につながる",
+            "left_item_4_description": "データを見るだけでなく、何を優先して改善すべきか判断しやすいか。",
+            "right_card_title": "比較で見落としやすいこと",
+            "right_card_bg": "#f4f6f8",
+            "right_badge_bg": "#d1d5db",
+            "right_icon_color": "#6b7280",
+            "right_bullet_color": "#6b7280",
+            "right_item_1_header": "精度の数字だけを見ない",
+            "right_item_1_description": "わずかな精度差より、継続して同じ条件で計測できることが重要です。",
+            "right_item_2_header": "画面の見やすさだけで選ばない",
+            "right_item_2_description": "見やすいだけでなく、データから改善判断につなげられるかを確認します。",
+            "right_item_3_header": "初期価格だけで判断しない",
+            "right_item_3_description": "導入後の運用、連携、サポートまで含めて投資価値を考える必要があります。",
+            "right_item_4_header": "今の用途だけで選ばない",
+            "right_item_4_description": "店舗分析の目的が変わっても、同じ基盤を活かせるか確認します。"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_f23c343_iMMHTh"
+      ],
+      "name": "Positioning & Focus",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "custom_liquid_znhBee": {
+      "type": "custom-liquid",
+      "name": "Custom Liquid",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "liquid": "<p style=\"text-align: center\">Write or copy/paste Liquid code</p>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "blocks_7NjVMJ": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_3504708_FpeBWi": {
+          "type": "ai_gen_block_3504708",
+          "settings": {
+            "badge_text": "店舗分析の価値",
+            "headline": "計測から、改善判断まで。",
+            "description": "店舗分析の価値は、来店数を数えることだけではありません。売上データとつなぎ、改善余地を見つけ、行動と効果検証までつなげられることが重要です。",
+            "step1_icon": "store",
+            "step1_title": "来店機会を捉える",
+            "step1_desc": "安定した来店計測で、店舗にどれだけの販売機会があったかを把握します。",
+            "step2_icon": "chart",
+            "step2_title": "購買率で原因を分ける",
+            "step2_desc": "来店数と購買率から、売上未達が集客か店内での購買にあるかを見分けます。",
+            "step3_icon": "alert",
+            "step3_title": "改善余地を見つける",
+            "step3_desc": "店舗・曜日・時間帯を比べ、改善余地が大きいポイントを絞ります。",
+            "step4_icon": "checklist",
+            "step4_title": "次の一手を決める",
+            "step4_desc": "データをもとに、スタッフ配置・接客・VMDなどの改善策を選びます。",
+            "step5_icon": "document",
+            "step5_title": "効果を検証する",
+            "step5_desc": "施策前後の変化を確認し、効果のあった運用を継続・展開します。",
+            "banner_text": "データ収集から改善判断、効果検証までつながることで、店舗分析への投資価値を確認しやすくなります。",
+            "max_width": 1400,
+            "background_color": "#fafbfc",
+            "badge_bg_color": "#11161C",
+            "badge_text_color": "#F9FAFB",
+            "description_color": "#5a6c7d",
+            "line_color": "#11161C",
+            "icon_circle_bg": "#ffffff",
+            "icon_color": "#11161C",
+            "card_bg_color": "#11161C",
+            "card_border_color": "#e5e8eb",
+            "card_hover_border": "#7a9b6f",
+            "number_color": "#F9FAFB",
+            "step_title_color": "#A1B847",
+            "step_desc_color": "#F9FAFB",
+            "banner_bg_color": "#11161C",
+            "banner_icon_color": "#A1B847",
+            "banner_text_color": "#F9FAFB",
+            "description_size": 18,
+            "step_title_size": 18,
+            "step_desc_size": 15,
+            "banner_text_size": 16,
+            "icon_border_radius": 50,
+            "icon_circle_size": 80,
+            "icon_size": 36,
+            "card_border_radius": 18
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_3504708_FpeBWi"
+      ],
+      "name": "Area manager workflow",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "custom_liquid_kWy8Na": {
+      "type": "custom-liquid",
+      "name": "Custom Liquid",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "liquid": "<p style=\"text-align: center\">Write or copy/paste Liquid code</p>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "blocks_3gg7cT": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_79fb6e4_FKqQA7": {
+          "type": "ai_gen_block_79fb6e4",
+          "settings": {
+            "subheader": "来店計測",
+            "subheader_size": 16,
+            "subheader_color": "#666666",
+            "heading": "まず、安定して数えられること。",
+            "heading_size": 50,
+            "heading_color": "#000000",
+            "header_text": "<p>店舗分析の基準になるのは来店数です。重要なのは、わずかな精度差ではなく、店舗や時間帯が変わっても同じ基準で継続して計測できることです。</p>",
+            "text_size": 16,
+            "text_color": "#666666",
+            "header_alignment": "center",
+            "image": "shopify://shop_images/Layers_Images_1.png",
+            "image_position": "left",
+            "image_border_radius": 8,
+            "box_width": "50",
+            "box_spacing": 16,
+            "box_padding": 20,
+            "box_background": "#ffffff",
+            "box_border_width": 1,
+            "box_border_color": "#e0e0e0",
+            "box_border_radius": 8,
+            "mobile_layout": "stack",
+            "icon_size": 32,
+            "icon_color": "#0e366a",
+            "box_header_size": 18,
+            "box_header_color": "#000000",
+            "box_text_size": 14,
+            "box_text_color": "#666666",
+            "box_1_icon": "check",
+            "box_1_header": "<strong>安定した計測</strong>",
+            "box_1_text": "<p>毎日・毎時間、同じ基準で来店数を継続して計測できるか。</p>",
+            "box_2_icon": "shield",
+            "box_2_header": "<strong>店舗環境への対応</strong>",
+            "box_2_text": "<p>入口幅や天井高、混雑状況に合わせて設置・設定できるか。</p>",
+            "box_3_icon": "info",
+            "box_3_header": "<strong>信頼できる購買率</strong>",
+            "box_3_text": "<p>スタッフや再入店を適切に扱い、購買率を正しく算出できるか。</p>",
+            "box_4_icon": "zap",
+            "box_4_header": "<strong>将来の拡張性</strong>",
+            "box_4_text": "<p>滞在時間・属性・ゾーン・導線などへ後から分析を広げられるか。</p>"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_79fb6e4_FKqQA7"
+      ],
+      "name": "Image with content boxes",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "blocks_PdP96P": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_4e2462b_y6Drya": {
+          "type": "ai_gen_block_4e2462b",
+          "settings": {
+            "background_color": "#f8f9fa",
+            "heading_color": "#0a2240",
+            "body_text_color": "#5a6a85",
+            "accent_color": "#9cb73b",
+            "badge_text": "購買率分析",
+            "badge_background": "#11161C",
+            "badge_border": "#e1e8ed",
+            "badge_text_color": "#F9FAFB",
+            "heading": "来店数だけでは、原因は分からない。",
+            "description": "売上が未達でも、来店客が少なかったのか、来店したお客様を購買につなげられなかったのかでは、取るべき対策が異なります。来店数と購買件数をつなぐことで、その違いが見えるようになります。",
+            "feature_1_title": "売上未達を分解する",
+            "feature_1_description": "集客の問題か、購買率の問題かを切り分けます。",
+            "feature_2_title": "改善余地を見つける",
+            "feature_2_description": "店舗・曜日・時間帯ごとの購買率から、改善機会を捉えます。",
+            "feature_3_title": "施策の効果を確かめる",
+            "feature_3_description": "施策前後の購買率を比較し、変化を確認します。",
+            "only_show_lift_card": false,
+            "lift_label": "Average Conversion Lift After Optimization",
+            "lift_percentage": "+18%",
+            "lift_subtext": "Based on 156 stores using Flow conversion analytics",
+            "funnel_title": "売上までの流れ",
+            "step_1_bar_color": "#8b95a1",
+            "step_1_label": "店前通行量",
+            "step_1_value": "2,847",
+            "drop_1_text": "↓ 入店率 35%",
+            "step_2_bar_color": "#475569",
+            "step_2_label": "来店数",
+            "step_2_value": "1,936",
+            "drop_2_text": "↓ 購買率 20%",
+            "step_3_bar_color": "#b8d45e",
+            "step_3_label": "購買件数",
+            "step_3_value": "196",
+            "drop_3_text": "↓ 客単価 ¥10,000",
+            "step_4_bar_color": "#9cb73b",
+            "step_4_label": "売上",
+            "step_4_value": "¥1,960,000",
+            "insight_badge": "改善判断",
+            "insight_main": "来店数は十分だが購買率が低い",
+            "insight_recommendation": "接客・スタッフ配置・VMDなど、店内での改善を検討"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_4e2462b_y6Drya"
+      ],
+      "name": "Conversion intelligence",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "blocks_ArHkpd": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_a3e57c5_UydqGj": {
+          "type": "ai_gen_block_a3e57c5",
+          "settings": {
+            "container_background": "#ffffff",
+            "text_color": "#000000",
+            "left_title": "Passive Dashboards",
+            "left_tag": "TRADITIONAL",
+            "left_metric": "12-18 Hour Lag",
+            "left_item_1": "",
+            "left_item_2": "",
+            "left_item_3": "",
+            "left_item_4": "",
+            "left_background": "#ffffff",
+            "left_border_color": "#e5e7eb",
+            "left_tag_background": "#f3f4f6",
+            "left_tag_text": "#6b7280",
+            "left_progress_label": "Response Latency",
+            "left_progress_time": "12-18hr",
+            "left_progress_percent": 20,
+            "left_progress_color": "#ef4444",
+            "right_title": "Flow Decisioning",
+            "right_tag": "⚡ LIVE ACTIVE",
+            "right_metric": "< 2 Minute Action",
+            "right_item_1": "",
+            "right_item_2": "",
+            "right_item_3": "",
+            "right_item_4": "",
+            "right_background": "#0a2540",
+            "right_text_color": "#ffffff",
+            "right_tag_background": "#1e3a5f",
+            "right_tag_text": "#ffffff",
+            "highlight_color": "#00d66f",
+            "right_progress_label": "Response Latency",
+            "right_progress_time": "< 2min",
+            "progress_bar_height": 8,
+            "progress_gradient_start": "#803cee",
+            "progress_gradient_end": "#00d66f",
+            "negative_icon_color": "#ef4444",
+            "positive_icon_color": "#00d66f",
+            "title_size": 24,
+            "metric_size": 32,
+            "list_item_size": 16
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_a3e57c5_UydqGj"
+      ],
+      "name": "Comparison grid",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "multi_column_8KcQg9": {
+      "type": "multi-column",
+      "blocks": {
+        "item_kAWXVr": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "Column title",
+            "heading_tag": "h4",
+            "subheading": "<p>Organize content into multiple columns to share useful information to your customers about your products, values...</p>",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_WXnHAr": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "Column title",
+            "heading_tag": "h4",
+            "subheading": "<p>Organize content into multiple columns to share useful information to your customers about your products, values...</p>",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_AKBkVr": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "Column title",
+            "heading_tag": "h4",
+            "subheading": "<p>Organize content into multiple columns to share useful information to your customers about your products, values...</p>",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_kAWXVr",
+        "item_WXnHAr",
+        "item_AKBkVr"
+      ],
+      "name": "Multi-column",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "start",
+        "subheading": "About",
+        "title": "Featured content",
+        "content": "<p>Organize content into multiple columns to share useful information to your customers about your products, values...</p>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "subheading_background_color": "",
+        "subheading_text_color": ""
+      }
+    },
+    "blocks_zQi9VQ": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_380fb98_3gjQBX": {
+          "type": "ai_gen_block_380fb98",
+          "settings": {
+            "subheading": "",
+            "main_heading": "Why Retailers Choose Flow",
+            "main_description": "Discover how Flow Solutions empowers retailers with innovative technology and seamless integration to drive growth and efficiency.",
+            "cta_text": "Talk to our team",
+            "cta_url": "",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "feature_1_icon": "none",
+            "feature_1_title": "Seamless Integration",
+            "feature_1_description": "Connect effortlessly with your existing systems and start seeing results immediately.",
+            "feature_2_icon": "none",
+            "feature_2_title": "Real-Time Analytics",
+            "feature_2_description": "Make data-driven decisions with comprehensive insights delivered in real-time.",
+            "feature_3_icon": "none",
+            "feature_3_title": "Dedicated Support",
+            "feature_3_description": "Our expert team is available 24/7 to ensure your success every step of the way.",
+            "feature_4_icon": "none",
+            "feature_4_title": "",
+            "feature_4_description": "",
+            "feature_5_icon": "none",
+            "feature_5_title": "",
+            "feature_5_description": "",
+            "feature_6_icon": "none",
+            "feature_6_title": "",
+            "feature_6_description": ""
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_380fb98_3gjQBX"
+      ],
+      "name": "Why retailers choose Flow",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "blocks_miQL7C": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_a3e57c5_CTTKGQ": {
+          "type": "ai_gen_block_a3e57c5",
+          "settings": {
+            "container_background": "#ffffff",
+            "text_color": "#000000",
+            "left_title": "Passive Dashboards",
+            "left_tag": "TRADITIONAL",
+            "left_metric": "12-18 Hour Lag",
+            "left_item_1": "",
+            "left_item_2": "",
+            "left_item_3": "",
+            "left_item_4": "",
+            "left_background": "#ffffff",
+            "left_border_color": "#e5e7eb",
+            "left_tag_background": "#f3f4f6",
+            "left_tag_text": "#6b7280",
+            "left_progress_label": "Response Latency",
+            "left_progress_time": "12-18hr",
+            "left_progress_percent": 20,
+            "left_progress_color": "#ef4444",
+            "right_title": "Flow Decisioning",
+            "right_tag": "⚡ LIVE ACTIVE",
+            "right_metric": "< 2 Minute Action",
+            "right_item_1": "",
+            "right_item_2": "",
+            "right_item_3": "",
+            "right_item_4": "",
+            "right_background": "#0a2540",
+            "right_text_color": "#ffffff",
+            "right_tag_background": "#1e3a5f",
+            "right_tag_text": "#ffffff",
+            "highlight_color": "#00d66f",
+            "right_progress_label": "Response Latency",
+            "right_progress_time": "< 2min",
+            "progress_bar_height": 8,
+            "progress_gradient_start": "#803cee",
+            "progress_gradient_end": "#00d66f",
+            "negative_icon_color": "#ef4444",
+            "positive_icon_color": "#00d66f",
+            "title_size": 24,
+            "metric_size": 32,
+            "list_item_size": 16
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_a3e57c5_CTTKGQ"
+      ],
+      "name": "Comparison grid",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "blocks_UeQ6EB": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_3504708_YfkHxf": {
+          "type": "ai_gen_block_3504708",
+          "settings": {
+            "badge_text": "エリア管理",
+            "headline": "エリアマネージャーは、担当店舗の変化を短時間で把握。",
+            "description": "Flowは、担当店舗のKPI、Pulse、メモ、店舗報告をまとめて確認できるようにし、優先して見るべき店舗や変化を把握しやすくします。",
+            "step1_icon": "document",
+            "step1_title": "レポートをサマリー",
+            "step1_desc": "すべての担当店舗から上がった報告をまとめて確認します。",
+            "step2_icon": "chart",
+            "step2_title": "KPIを比較・分析",
+            "step2_desc": "売上・来店数・購買率の変化を比較し、傾向を把握します。",
+            "step3_icon": "alert",
+            "step3_title": "優先対応店舗を特定",
+            "step3_desc": "変化やアラートをもとに、優先して見るべき店舗を抽出します。",
+            "step4_icon": "store",
+            "step4_title": "訪問準備を整える",
+            "step4_desc": "店舗のKPI履歴やメモ、直近の変化を確認し、訪問に備えます。",
+            "step5_icon": "checklist",
+            "step5_title": "本部へ報告・共有",
+            "step5_desc": "担当エリアの状況とアクションを整理し、効率的に報告します。",
+            "banner_text": "データの収集から報告までを一気通貫でつなぎ、エリアの成果最大化をサポートします。",
+            "max_width": 1400,
+            "background_color": "#fafbfc",
+            "badge_bg_color": "#e8ede5",
+            "badge_text_color": "#5a6c4d",
+            "description_color": "#5a6c7d",
+            "line_color": "#7a9b6f",
+            "icon_circle_bg": "#ffffff",
+            "icon_color": "#7a9b6f",
+            "card_bg_color": "#ffffff",
+            "card_border_color": "#e5e8eb",
+            "card_hover_border": "#7a9b6f",
+            "number_color": "#7a9b6f",
+            "step_title_color": "#1a2b4a",
+            "step_desc_color": "#6b7c8d",
+            "banner_bg_color": "#eef3f8",
+            "banner_icon_color": "#5a7a9b",
+            "banner_text_color": "#2a3b5a",
+            "description_size": 18,
+            "step_title_size": 18,
+            "step_desc_size": 15,
+            "banner_text_size": 16,
+            "icon_border_radius": 50,
+            "icon_circle_size": 80,
+            "icon_size": 36,
+            "card_border_radius": 18
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_3504708_YfkHxf"
+      ],
+      "name": "Area manager workflow",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "blocks_P8XpdQ": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_bcb8a38_HYX9DL": {
+          "type": "ai_gen_block_bcb8a38",
+          "settings": {
+            "section_padding_mobile": 60,
+            "section_padding_desktop": 100,
+            "background_color": "#ffffff",
+            "badge_text": "IMPLEMENTATION PROCESS",
+            "badge_background_color": "#f4f4f4",
+            "badge_text_color": "#677279",
+            "headline": "SUPPORTED FROM START TO LAUNCH.",
+            "headline_color": "#0d2745",
+            "description": "Our team guides you through every phase of implementation, from initial planning to post-launch monitoring, ensuring a smooth and successful integration.",
+            "description_size_mobile": 16,
+            "description_size_desktop": 18,
+            "description_color": "#677279",
+            "timeline_line_color": "#e5e7eb",
+            "badge_green_color": "#a5be3b",
+            "badge_navy_color": "#0d2745",
+            "badge_number_text_color": "#ffffff",
+            "badge_border_radius": 8,
+            "step_title_size_mobile": 18,
+            "step_title_size_desktop": 20,
+            "step_title_color": "#0d2745",
+            "step_description_size_mobile": 15,
+            "step_description_size_desktop": 16,
+            "step_description_color": "#677279",
+            "step_1_title": "Confirm Target Data",
+            "step_1_description": "Define which data sources to connect and the business purpose for each integration. Align on priority and scope.",
+            "step_2_title": "Review Systems & Formats",
+            "step_2_description": "Examine your existing systems and data formats. Understand current export capabilities and access methods.",
+            "step_3_title": "Design Connection",
+            "step_3_description": "Choose the appropriate connection method (API, FTP, CSV). Design the integration architecture and schedule.",
+            "step_4_title": "Configure & Test",
+            "step_4_description": "Set up the connection and run test data transfers. Validate format accuracy, completeness, and timing.",
+            "step_5_title": "Confirm in Flow",
+            "step_5_description": "Review how the data appears in dashboards and reports. Verify usability and accuracy for decision-making.",
+            "step_6_title": "Monitor After Launch",
+            "step_6_description": "Continuously monitor data availability and freshness. Alerts when data is delayed or missing."
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_bcb8a38_HYX9DL"
+      ],
+      "name": "Implementation process",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "blocks_pVhewM": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_cdfd9e7_MYYFFN": {
+          "type": "ai_gen_block_cdfd9e7",
+          "settings": {
+            "eyebrow_text": "IMPLEMENTATION",
+            "heading": "From contract to live data in under 4 weeks.",
+            "description": "Our streamlined implementation process ensures you're up and running quickly with minimal disruption to your operations. Every step is designed for efficiency and clarity.",
+            "highlight_title": "Typical go-live: 2–4 weeks",
+            "highlight_text": "Per store, from contract to live data",
+            "week_1_label": "Week 1",
+            "week_1_title": "Kickoff & Survey",
+            "week_1_description": "Store survey, planning, requirements gathering, and integration scoping.",
+            "week_2_label": "Week 1–2",
+            "week_2_title": "Hardware Installation",
+            "week_2_description": "Equipment setup and configuration with minimal operational disruption.",
+            "week_3_label": "Week 2–3",
+            "week_3_title": "System Configuration",
+            "week_3_description": "Dashboard setup, integrations, testing, validation, and calibration.",
+            "week_4_label": "Week 3–4",
+            "week_4_title": "Training & Launch",
+            "week_4_description": "Team onboarding, final verification, launch preparation, and handover.",
+            "week_5_label": "Ongoing",
+            "week_5_title": "Customer Success Support",
+            "week_5_description": "Monitoring, optimization, reporting, and dedicated support.",
+            "background_color": "#ffffff",
+            "heading_color": "#123a73",
+            "text_color": "#677279",
+            "accent_color": "#a7be3a",
+            "eyebrow_background": "#f3f5f6",
+            "eyebrow_color": "#677279",
+            "card_background": "#ffffff",
+            "card_border_color": "#e5e7eb",
+            "divider_color": "#e5e7eb",
+            "heading_size": 42,
+            "text_size": 16,
+            "section_padding": 80,
+            "desktop_width_percent": 100,
+            "eyebrow_radius": 20,
+            "card_radius": 12,
+            "card_shadow_opacity": 0.1
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_cdfd9e7_MYYFFN"
+      ],
+      "name": "Implementation timeline",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "blocks_jWY9mD": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_0e72761_Haz9QF": {
+          "type": "ai_gen_block_0e72761",
+          "settings": {
+            "eyebrow_text": "Knowledge Integration",
+            "heading_text": "Connect your retail knowledge",
+            "description_text": "<p>Flow organizes operational knowledge, company documents, and store-level context into a structured system that supports better recommendations and decision-making.</p>",
+            "header_alignment": "left",
+            "header_spacing_below": 50,
+            "eyebrow_bg_color": "#f0f4f8",
+            "eyebrow_text_color": "#0a1a2f",
+            "heading_color": "#0a1a2f",
+            "description_color": "#677279",
+            "description_size_mobile": 16,
+            "description_size_desktop": 18,
+            "image_side": "left",
+            "image_width_percent": 45,
+            "split_gap": 50,
+            "vertical_alignment": "center",
+            "box_layout": "grid_2x2",
+            "image_alt": "Flow connection platform interface",
+            "image_height_mobile": 300,
+            "image_height_desktop": 500,
+            "image_object_fit": "cover",
+            "image_object_position": "center",
+            "image_border_radius": 16,
+            "image_shadow": true,
+            "default_box_bg": "#ffffff",
+            "default_box_border": "#e5e7eb",
+            "default_box_heading_color": "#0a1a2f",
+            "default_box_text_color": "#677279",
+            "box_gap": 20,
+            "box_padding": 25,
+            "box_border_radius": 12,
+            "box_border_width": 1,
+            "box_shadow": true,
+            "box_hover_lift": true,
+            "equal_height": true,
+            "box_heading_size": 18,
+            "box_text_size": 15,
+            "bullet_icon_color": "#a0b842",
+            "link_color": "#0e366a",
+            "icon_1": "none",
+            "icon_width_1": 32,
+            "icon_background_type_1": "square",
+            "icon_background_1": "",
+            "icon_color_1": "",
+            "box_1_heading": "Links and web pages",
+            "box_1_text": "<p>Connect approved company resources, product guides, and operational documentation.</p>",
+            "box_1_bullets": "",
+            "box_1_link_label": "",
+            "box_1_link_url": "",
+            "icon_2": "none",
+            "icon_width_2": 32,
+            "icon_background_type_2": "square",
+            "icon_background_2": "",
+            "icon_color_2": "",
+            "box_2_heading": "PDFs and documents",
+            "box_2_text": "<p>Upload training materials, SOPs, and internal knowledge bases.</p>",
+            "box_2_bullets": "",
+            "box_2_link_label": "",
+            "box_2_link_url": "",
+            "icon_3": "none",
+            "icon_width_3": 32,
+            "icon_background_type_3": "square",
+            "icon_background_3": "",
+            "icon_color_3": "",
+            "box_3_heading": "Internal memos",
+            "box_3_text": "<p>Bring store-level context and operational updates into the system.</p>",
+            "box_3_bullets": "",
+            "box_3_link_label": "",
+            "box_3_link_url": "",
+            "icon_4": "none",
+            "icon_width_4": 32,
+            "icon_background_type_4": "square",
+            "icon_background_4": "",
+            "icon_color_4": "",
+            "box_4_heading": "Snippets and manuals",
+            "box_4_text": "<p>Add quick-reference guides, checklists, and operational best practices.</p>",
+            "box_4_bullets": "",
+            "box_4_link_label": "",
+            "box_4_link_url": "",
+            "section_padding_top": 50,
+            "section_padding_bottom": 50,
+            "section_padding_top_desktop": 80,
+            "section_padding_bottom_desktop": 80,
+            "section_padding_horizontal": 20
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_0e72761_Haz9QF"
+      ],
+      "name": "Flow connection platform",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "blocks_NQdmFr": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_799e467_MdPkRP": {
+          "type": "ai_gen_block_799e467",
+          "settings": {
+            "eyebrow_text": "PROOF // CUSTOMER RESULTS",
+            "main_heading": "PROVEN RETAIL OUTCOMES.",
+            "subheading": "Real Results from Flow Deployments Across Japan.",
+            "body_text": "Flow customers achieve measurable improvements in conversion, staffing efficiency, VMD performance, and operational execution. Each case study documents deployment scope, implementation approach, and verified business outcomes.",
+            "stat_1_number": "500+",
+            "stat_1_label": "Active Stores",
+            "stat_2_number": "50+",
+            "stat_2_label": "Retail Brands",
+            "stat_3_number": "98.5%",
+            "stat_3_label": "Measurement Accuracy",
+            "stat_4_number": "99.9%",
+            "stat_4_label": "Platform Uptime",
+            "dark_badge_text": "AGGREGATE IMPACT",
+            "dark_heading": "Measured Results Across Deployments",
+            "dark_subtext": "Representative outcomes from Flow customers in fashion, lifestyle, and specialty retail.",
+            "hero_metric_label": "SALES GROWTH (YoY)",
+            "hero_metric_value": "108.9%",
+            "hero_metric_detail": "2024 aggregate across Flow customers",
+            "metric_1_title": "CONVERSION LIFT",
+            "metric_1_value": "+8.93%",
+            "metric_1_detail": "Major retailer (220 stores)",
+            "metric_2_title": "ROI MULTIPLE",
+            "metric_2_value": "50x",
+            "metric_2_detail": "National fashion chain",
+            "metric_3_title": "CAPTURE RATE",
+            "metric_3_value": "+23.9%",
+            "metric_3_detail": "Multi-brand operator",
+            "metric_4_title": "SALES INCREASE",
+            "metric_4_value": "+25%",
+            "metric_4_detail": "Stores using dashboard",
+            "footer_disclaimer": "Results from documented case studies. Individual outcomes vary based on deployment scope, store operations, and market conditions.",
+            "eyebrow_bg_color": "#e8eaed",
+            "eyebrow_text_color": "#5f6368",
+            "heading_color": "#0e2a3a",
+            "subheading_color": "#0e2a3a",
+            "body_text_color": "#5f6368",
+            "stat_card_border_color": "#e8eaed",
+            "stat_number_color": "#0e2a3a",
+            "stat_label_color": "#5f6368",
+            "dark_card_bg_color": "#0e2a3a",
+            "dark_badge_bg_color": "#3d5a4a",
+            "dark_badge_text_color": "#ffffff",
+            "dark_subtext_color": "#9ca3af",
+            "metric_card_bg_color": "#1a3a4a",
+            "metric_label_color": "#9ca3af",
+            "metric_detail_color": "#9ca3af",
+            "icon_badge_bg_color": "#3d5a4a",
+            "icon_color": "#6ee7b7",
+            "footer_text_color": "#6b7280"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_799e467_MdPkRP"
+      ],
+      "name": "Case studies proof",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "faq_XCcmRC": {
+      "type": "faq",
+      "blocks": {
+        "item_fxageH": {
+          "type": "item",
+          "settings": {
+            "title": "Do you ship overseas?",
+            "content": "<p>Yes, we ship all over the world. Shipping costs will apply, and will be added at checkout. We run discounts and promotions all year, so stay tuned for exclusive deals.</p>"
+          }
+        },
+        "item_e7ekx8": {
+          "type": "item",
+          "settings": {
+            "title": "How long will it take to get my orders?",
+            "content": "<p>It depends on where you are. Orders processed here will take 5-7 business days to arrive. Overseas deliveries can take anywhere from 7-16 days. Delivery details will be provided in your confirmation email.</p>"
+          }
+        },
+        "item_mHPPaL": {
+          "type": "item",
+          "settings": {
+            "title": "Any question?",
+            "content": "<p>You can contact us through our contact page! We will be happy to assist you.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_fxageH",
+        "item_e7ekx8",
+        "item_mHPPaL"
+      ],
+      "name": "FAQ",
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "FAQ",
+        "content": "<p>Use this text to share information about your product or shipping policies.</p>",
+        "team_avatar_width": 160,
+        "support_hours": "Our customer support is available Monday to Friday: 8am-8:30pm.",
+        "answer_time": "Average answer time: 24h",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "",
+        "accordion_text_color": ""
+      }
+    },
+    "image_with_text_overlay_A3H7Vy": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "subheading_GkjYhR": {
+          "type": "subheading",
+          "settings": {
+            "text": "Subheading"
+          }
+        },
+        "heading_KCyJiE": {
+          "type": "heading",
+          "settings": {
+            "text": "Image with text overlay",
+            "heading_tag": "h1"
+          }
+        },
+        "richtext_m6j9jL": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_GkjYhR",
+        "heading_KCyJiE",
+        "richtext_m6j9jL"
+      ],
+      "name": "Image with text overlay",
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "auto",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "blocks_DzPXED",
+    "blocks_mzKcJd",
+    "custom_liquid_y8Ttik",
+    "custom_liquid_eFgf6h",
+    "blocks_j3LQGB",
+    "custom_liquid_znhBee",
+    "blocks_7NjVMJ",
+    "custom_liquid_kWy8Na",
+    "blocks_3gg7cT",
+    "blocks_PdP96P",
+    "blocks_ArHkpd",
+    "multi_column_8KcQg9",
+    "blocks_zQi9VQ",
+    "blocks_miQL7C",
+    "blocks_UeQ6EB",
+    "blocks_P8XpdQ",
+    "blocks_pVhewM",
+    "blocks_jWY9mD",
+    "blocks_NQdmFr",
+    "faq_XCcmRC",
+    "image_with_text_overlay_A3H7Vy"
   ]
 }
