@@ -16,172 +16,6 @@
         "content_width": "80ch"
       }
     },
-    "blocks_DzPXED": {
-      "type": "_blocks",
-      "blocks": {
-        "heading_EU6VYx": {
-          "type": "heading",
-          "name": "Heading",
-          "settings": {
-            "text": "比較ガイドを見る",
-            "size": "h2",
-            "html_tag": "p",
-            "text_color": "",
-            "gradient": ""
-          },
-          "blocks": {}
-        },
-        "rich_text_cX3BmA": {
-          "type": "rich-text",
-          "name": "Rich text",
-          "settings": {
-            "text": "<p>---</p>",
-            "content_width": "small",
-            "text_alignment": "left"
-          },
-          "blocks": {}
-        },
-        "button_group_EjArXr": {
-          "type": "button-group",
-          "name": "Button group",
-          "settings": {},
-          "blocks": {
-            "button_FixBnY": {
-              "type": "button",
-              "name": "Button",
-              "settings": {
-                "text": "Button",
-                "url": "",
-                "open_in_new_tab": false,
-                "style": "fill",
-                "size": "xl",
-                "background": "",
-                "text_color": ""
-              },
-              "blocks": {}
-            },
-            "button_aM3rch": {
-              "type": "button",
-              "name": "Button",
-              "settings": {
-                "text": "Button",
-                "url": "",
-                "open_in_new_tab": false,
-                "style": "fill",
-                "size": "xl",
-                "background": "",
-                "text_color": ""
-              },
-              "blocks": {}
-            },
-            "button_y4BzVL": {
-              "type": "button",
-              "name": "Button",
-              "settings": {
-                "text": "Button",
-                "url": "",
-                "open_in_new_tab": false,
-                "style": "fill",
-                "size": "xl",
-                "background": "",
-                "text_color": ""
-              },
-              "blocks": {}
-            },
-            "button_9CNLDy": {
-              "type": "button",
-              "name": "Button",
-              "settings": {
-                "text": "Button",
-                "url": "",
-                "open_in_new_tab": false,
-                "style": "fill",
-                "size": "xl",
-                "background": "",
-                "text_color": ""
-              },
-              "blocks": {}
-            },
-            "button_3KNeyB": {
-              "type": "button",
-              "name": "Button",
-              "settings": {
-                "text": "Button",
-                "url": "",
-                "open_in_new_tab": false,
-                "style": "fill",
-                "size": "xl",
-                "background": "",
-                "text_color": ""
-              },
-              "blocks": {}
-            },
-            "button_PG6MLb": {
-              "type": "button",
-              "settings": {
-                "text": "Button",
-                "url": "",
-                "open_in_new_tab": false,
-                "style": "fill",
-                "size": "xl",
-                "background": "",
-                "text_color": ""
-              },
-              "blocks": {}
-            }
-          },
-          "block_order": [
-            "button_FixBnY",
-            "button_aM3rch",
-            "button_y4BzVL",
-            "button_9CNLDy",
-            "button_3KNeyB",
-            "button_PG6MLb"
-          ]
-        },
-        "ai_gen_block_4d03234_YezpTF": {
-          "type": "ai_gen_block_4d03234",
-          "settings": {
-            "header": "Ready to get started?",
-            "button_text": "Learn more",
-            "button_link": "",
-            "text_alignment": "center",
-            "spacing": 16,
-            "desktop_width_percent": 100,
-            "padding_vertical": 40,
-            "padding_horizontal": 40,
-            "border_radius": 12,
-            "background_color": "#f9fafb",
-            "header_color": "#11243e",
-            "header_size": 16,
-            "button_font_size": 16,
-            "button_padding_vertical": 14,
-            "button_padding_horizontal": 32,
-            "button_border_radius": 14,
-            "button_background": "#0e366a",
-            "button_text_color": "#ffffff",
-            "button_hover_background": "#a0b842",
-            "button_hover_text_color": "#ffffff"
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "heading_EU6VYx",
-        "rich_text_cX3BmA",
-        "button_group_EjArXr",
-        "ai_gen_block_4d03234_YezpTF"
-      ],
-      "name": "Simple CTA",
-      "settings": {
-        "full_width": true,
-        "remove_vertical_spacing": false,
-        "remove_horizontal_spacing": false,
-        "background": "",
-        "background_gradient": "",
-        "text_color": ""
-      }
-    },
     "blocks_mzKcJd": {
       "type": "_blocks",
       "blocks": {
@@ -532,6 +366,19 @@
         "text_color": ""
       }
     },
+    "custom_liquid_rGw8DF": {
+      "type": "custom-liquid",
+      "name": "Custom Liquid",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "liquid": "<p style=\"text-align: center\">Write or copy/paste Liquid code</p>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
     "blocks_PdP96P": {
       "type": "_blocks",
       "blocks": {
@@ -594,6 +441,53 @@
         "text_color": ""
       }
     },
+    "custom_liquid_L68Vi3": {
+      "type": "custom-liquid",
+      "name": "Custom Liquid",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "liquid": "<p style=\"text-align: center\">Write or copy/paste Liquid code</p>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "rich_text_pqVYWH": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_n4DR3C": {
+          "type": "subheading",
+          "settings": {
+            "text": "データ活用",
+            "icon": "none"
+          }
+        },
+        "richtext_PJarhP": {
+          "type": "richtext",
+          "settings": {
+            "content": "<h2>見えるだけでは、<br/>改善は進まない。</h2><p>店舗分析ツールを比較する際は、データを表示できるかだけでなく、原因を理解し、次に取るべき行動を判断しやすいかまで確認することが重要です。</p>"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_n4DR3C",
+        "richtext_PJarhP"
+      ],
+      "custom_css": [
+        "{padding-bottom: 10px !important;}"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "medium",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
     "blocks_ArHkpd": {
       "type": "_blocks",
       "blocks": {
@@ -602,40 +496,40 @@
           "settings": {
             "container_background": "#ffffff",
             "text_color": "#000000",
-            "left_title": "Passive Dashboards",
-            "left_tag": "TRADITIONAL",
-            "left_metric": "12-18 Hour Lag",
-            "left_item_1": "",
-            "left_item_2": "",
-            "left_item_3": "",
-            "left_item_4": "",
+            "left_title": "データを見る",
+            "left_tag": "可視化",
+            "left_metric": "「何が起きたか」",
+            "left_item_1": "<p><strong>来店数や売上を確認</strong></p>",
+            "left_item_2": "<p><strong>店舗ごとの差を確認</strong></p>",
+            "left_item_3": "<p><strong>KPIの変化を確認</strong></p>",
+            "left_item_4": "<p><strong>判断は担当者に依存</strong></p>",
             "left_background": "#ffffff",
             "left_border_color": "#e5e7eb",
-            "left_tag_background": "#f3f4f6",
-            "left_tag_text": "#6b7280",
-            "left_progress_label": "Response Latency",
-            "left_progress_time": "12-18hr",
+            "left_tag_background": "#11161C",
+            "left_tag_text": "#F9FAFB",
+            "left_progress_label": "分析のゴール",
+            "left_progress_time": "把握",
             "left_progress_percent": 20,
             "left_progress_color": "#ef4444",
-            "right_title": "Flow Decisioning",
-            "right_tag": "⚡ LIVE ACTIVE",
-            "right_metric": "< 2 Minute Action",
-            "right_item_1": "",
-            "right_item_2": "",
-            "right_item_3": "",
-            "right_item_4": "",
-            "right_background": "#0a2540",
+            "right_title": "改善判断につなげる",
+            "right_tag": "⚡ 活用",
+            "right_metric": "「次に何をするか」",
+            "right_item_1": "<p><strong>売上未達の原因を分解</strong></p>",
+            "right_item_2": "<p><strong>改善余地を優先順位化</strong></p>",
+            "right_item_3": "<p><strong>具体的な施策を検討</strong></p>",
+            "right_item_4": "<p><strong>効果を確認して次へ活かす</strong></p>",
+            "right_background": "#11161C",
             "right_text_color": "#ffffff",
-            "right_tag_background": "#1e3a5f",
-            "right_tag_text": "#ffffff",
-            "highlight_color": "#00d66f",
-            "right_progress_label": "Response Latency",
-            "right_progress_time": "< 2min",
+            "right_tag_background": "#F9FAFB",
+            "right_tag_text": "#11161C",
+            "highlight_color": "#A1B847",
+            "right_progress_label": "分析のゴール",
+            "right_progress_time": "改善",
             "progress_bar_height": 8,
             "progress_gradient_start": "#803cee",
-            "progress_gradient_end": "#00d66f",
+            "progress_gradient_end": "#A1B847",
             "negative_icon_color": "#ef4444",
-            "positive_icon_color": "#00d66f",
+            "positive_icon_color": "#A1B847",
             "title_size": 24,
             "metric_size": 32,
             "list_item_size": 16
@@ -1318,7 +1212,6 @@
   },
   "order": [
     "main",
-    "blocks_DzPXED",
     "blocks_mzKcJd",
     "custom_liquid_y8Ttik",
     "custom_liquid_eFgf6h",
@@ -1327,7 +1220,10 @@
     "blocks_7NjVMJ",
     "custom_liquid_kWy8Na",
     "blocks_3gg7cT",
+    "custom_liquid_rGw8DF",
     "blocks_PdP96P",
+    "custom_liquid_L68Vi3",
+    "rich_text_pqVYWH",
     "blocks_ArHkpd",
     "multi_column_8KcQg9",
     "blocks_zQi9VQ",
