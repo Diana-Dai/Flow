@@ -30,9 +30,9 @@ Supported parameters
           {%- render 'icon' with 'blog-date' -%}
           {%- if article_date_modified != blank -%}
             <span>
-              Updated <time datetime="{{ article_date_modified | date: '%Y-%m-%d' }}">{{- article_date_modified | date: format: 'abbreviated_date' -}}</time>
+              更新日: <time datetime="{{ article_date_modified | date: '%Y-%m-%d' }}">{{- article_date_modified | date: format: 'abbreviated_date' -}}</time>
               <span aria-hidden="true"> | </span>
-              Originally published <time datetime="{{ article.published_at | date: '%Y-%m-%d' }}">{{- article.published_at | date: format: 'abbreviated_date' -}}</time>
+              初回公開日： <time datetime="{{ article.published_at | date: '%Y-%m-%d' }}">{{- article.published_at | date: format: 'abbreviated_date' -}}</time>
             </span>
           {%- else -%}
             <time datetime="{{ article.published_at | date: '%Y-%m-%d' }}">{{- article.published_at | date: format: 'abbreviated_date' -}}</time>
