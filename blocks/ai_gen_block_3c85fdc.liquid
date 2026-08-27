@@ -154,8 +154,13 @@
 
           <div class="ai-logo-scroll-item-{{ ai_gen_id }}">
             {% if logo != blank %}
+              {% assign logo_mobile_width = block.settings.logo_width | times: 0.7 | round %}
+              {% assign logo_mobile_width_2x = logo_mobile_width | times: 2 | at_most: logo.width %}
+              {% assign logo_width_2x = block.settings.logo_width | times: 2 | at_most: logo.width %}
               <img
-                src="{{ logo | image_url: width: 400 }}"
+                src="{{ logo | image_url: width: block.settings.logo_width }}"
+                srcset="{{ logo | image_url: width: logo_mobile_width }} {{ logo_mobile_width }}w, {{ logo | image_url: width: block.settings.logo_width }} {{ block.settings.logo_width }}w{% if logo_mobile_width_2x > block.settings.logo_width %}, {{ logo | image_url: width: logo_mobile_width_2x }} {{ logo_mobile_width_2x }}w{% endif %}{% if logo_width_2x > block.settings.logo_width %}, {{ logo | image_url: width: logo_width_2x }} {{ logo_width_2x }}w{% endif %}"
+                sizes="(max-width: 749px) {{ logo_mobile_width }}px, {{ block.settings.logo_width }}px"
                 alt="{{ logo.alt | escape }}"
                 loading="lazy"
                 width="{{ block.settings.logo_width }}"

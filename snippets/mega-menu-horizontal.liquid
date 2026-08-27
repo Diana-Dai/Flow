@@ -335,7 +335,7 @@
       {%- assign split_panel_image = mega_menu_block.settings.platform_panel_image | default: mega_menu_block.settings.image_1 -%}
 
       {%- if split_panel_image != blank -%}
-        {{- split_panel_image | image_url: width: 720 | image_tag: loading: 'eager', widths: '360,540,720', class: 'mega-menu-platform__panel-image' -}}
+        {{- split_panel_image | image_url: width: 720 | image_tag: loading: 'lazy', widths: '360,540,720', class: 'mega-menu-platform__panel-image' -}}
       {%- endif -%}
 
       {%- if mega_menu_block.settings.platform_badge != blank -%}
