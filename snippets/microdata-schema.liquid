@@ -10,9 +10,22 @@ managed at the theme level.
     {{- product | structured_data -}}
   </script>
 {%- elsif request.page_type == 'article' -%}
+  {%- assign article_date_modified = article.metafields.custom.date_modified.value -%}
   <script type="application/ld+json">
     {{- article | structured_data -}}
   </script>
+  {%- if article_date_modified != blank -%}
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "@id": {{ canonical_url | append: '#article' | json }},
+        "headline": {{ article.title | json }},
+        "datePublished": {{ article.published_at | date: '%Y-%m-%dT%H:%M:%S%z' | json }},
+        "dateModified": {{ article_date_modified | date: '%Y-%m-%d' | json }}
+      }
+    </script>
+  {%- endif -%}
 {%- endif -%}
 
 <script type="application/ld+json">

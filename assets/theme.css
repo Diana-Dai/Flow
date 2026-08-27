@@ -509,6 +509,7 @@ height-observer, visibility-progress, scroll-area, video-media, model-media, med
 
 .blog-post-card--featured .blog-post-card__info {
   padding: var(--spacing-5);
+  padding-block-start: 0;
 }
 
 @media screen and (min-width: 700px) {
@@ -3463,7 +3464,7 @@ model-media model-viewer, model-media .shopify-model-viewer-ui {
 }
 
 .link, .prose a:not(.button) {
-  text-underline: none;
+  text-decoration: underline;
   background: none;
   transition: background-size .3s ease-in-out, color .3s ease-in-out;
 }
