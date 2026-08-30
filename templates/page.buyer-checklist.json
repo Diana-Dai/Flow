@@ -30,7 +30,7 @@
             "bullet_3": "店舗運営の変化に合わせて、機能と活用範囲を広げられるか",
             "bullet_4": "",
             "primary_button_label": "7つの比較ポイントを見る",
-            "primary_button_link": "#tpoint-checklist",
+            "primary_button_link": "#point-checklist",
             "secondary_button_label": "Flowの店舗分析を見る",
             "secondary_button_link": "shopify://pages/flow-platform-overview",
             "caption": "店舗分析ツールの比較・選定を進める小売企業向けのガイドです。",
@@ -361,7 +361,7 @@
           "type": "liquid",
           "name": "Liquid",
           "settings": {
-            "liquid": "<div id=\"traffic\" style=\"height:60px;scroll-margin-top:110px\"></div>"
+            "liquid": "<div id=\"#conversion\" style=\"height:60px;scroll-margin-top:110px\"></div>"
           },
           "blocks": {}
         },
