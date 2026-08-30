@@ -1308,9 +1308,9 @@
       "settings": {
         "full_width": true,
         "subheading": "7つのポイントで見るFlow",
-        "title": "比較ポイントを、Flowで確認",
-        "content": "",
-        "button_text": "",
+        "title": "Flowは、7つの比較ポイントにどう応えるか。",
+        "content": "<p>計測精度だけでなく、購買率管理、改善判断、拡張性、導入後の運用まで。Flowがどのように対応するかを整理しました。</p><p></p>",
+        "button_text": "Flowプラットフォームを見る",
         "button_url": "",
         "text_position": "start",
         "max_rows": 7,
