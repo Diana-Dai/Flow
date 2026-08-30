@@ -811,9 +811,9 @@
             "section_padding_mobile": 60,
             "section_padding_desktop": 100,
             "background_color": "#ffffff",
-            "badge_text": "IMPLEMENTATION PROCESS",
-            "badge_background_color": "#f4f4f4",
-            "badge_text_color": "#677279",
+            "badge_text": "導入・運用",
+            "badge_background_color": "#11161C",
+            "badge_text_color": "#F9FAFB",
             "headline": "設置して終わりではありません。",
             "headline_color": "#0d2745",
             "description": "店舗分析は、安定した計測と継続的な活用があって初めて価値につながります。導入時の設計からデータ連携、運用支援まで含めて比較することが重要です。",
@@ -1333,206 +1333,49 @@
         "chart_true_false_color": ""
       }
     },
-    "blocks_miQL7C": {
-      "type": "_blocks",
-      "blocks": {
-        "ai_gen_block_a3e57c5_CTTKGQ": {
-          "type": "ai_gen_block_a3e57c5",
-          "settings": {
-            "container_background": "#ffffff",
-            "text_color": "#000000",
-            "left_title": "Passive Dashboards",
-            "left_tag": "TRADITIONAL",
-            "left_metric": "12-18 Hour Lag",
-            "left_item_1": "",
-            "left_item_2": "",
-            "left_item_3": "",
-            "left_item_4": "",
-            "left_background": "#ffffff",
-            "left_border_color": "#e5e7eb",
-            "left_tag_background": "#f3f4f6",
-            "left_tag_text": "#6b7280",
-            "left_progress_label": "Response Latency",
-            "left_progress_time": "12-18hr",
-            "left_progress_percent": 20,
-            "left_progress_color": "#ef4444",
-            "right_title": "Flow Decisioning",
-            "right_tag": "⚡ LIVE ACTIVE",
-            "right_metric": "< 2 Minute Action",
-            "right_item_1": "",
-            "right_item_2": "",
-            "right_item_3": "",
-            "right_item_4": "",
-            "right_background": "#0a2540",
-            "right_text_color": "#ffffff",
-            "right_tag_background": "#1e3a5f",
-            "right_tag_text": "#ffffff",
-            "highlight_color": "#00d66f",
-            "right_progress_label": "Response Latency",
-            "right_progress_time": "< 2min",
-            "progress_bar_height": 8,
-            "progress_gradient_start": "#803cee",
-            "progress_gradient_end": "#00d66f",
-            "negative_icon_color": "#ef4444",
-            "positive_icon_color": "#00d66f",
-            "title_size": 24,
-            "metric_size": 32,
-            "list_item_size": 16
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "ai_gen_block_a3e57c5_CTTKGQ"
-      ],
-      "disabled": true,
-      "name": "Comparison grid",
-      "settings": {
-        "full_width": true,
-        "remove_vertical_spacing": false,
-        "remove_horizontal_spacing": false,
-        "background": "",
-        "background_gradient": "",
-        "text_color": ""
-      }
-    },
-    "blocks_P8XpdQ": {
-      "type": "_blocks",
-      "blocks": {
-        "ai_gen_block_bcb8a38_HYX9DL": {
-          "type": "ai_gen_block_bcb8a38",
-          "settings": {
-            "section_padding_mobile": 60,
-            "section_padding_desktop": 100,
-            "background_color": "#ffffff",
-            "badge_text": "IMPLEMENTATION PROCESS",
-            "badge_background_color": "#f4f4f4",
-            "badge_text_color": "#677279",
-            "headline": "SUPPORTED FROM START TO LAUNCH.",
-            "headline_color": "#0d2745",
-            "description": "Our team guides you through every phase of implementation, from initial planning to post-launch monitoring, ensuring a smooth and successful integration.",
-            "description_size_mobile": 16,
-            "description_size_desktop": 18,
-            "description_color": "#677279",
-            "timeline_line_color": "#e5e7eb",
-            "badge_green_color": "#a5be3b",
-            "badge_navy_color": "#0d2745",
-            "badge_number_text_color": "#ffffff",
-            "badge_border_radius": 8,
-            "step_title_size_mobile": 18,
-            "step_title_size_desktop": 20,
-            "step_title_color": "#0d2745",
-            "step_description_size_mobile": 15,
-            "step_description_size_desktop": 16,
-            "step_description_color": "#677279",
-            "step_1_title": "Confirm Target Data",
-            "step_1_description": "Define which data sources to connect and the business purpose for each integration. Align on priority and scope.",
-            "step_2_title": "Review Systems & Formats",
-            "step_2_description": "Examine your existing systems and data formats. Understand current export capabilities and access methods.",
-            "step_3_title": "Design Connection",
-            "step_3_description": "Choose the appropriate connection method (API, FTP, CSV). Design the integration architecture and schedule.",
-            "step_4_title": "Configure & Test",
-            "step_4_description": "Set up the connection and run test data transfers. Validate format accuracy, completeness, and timing.",
-            "step_5_title": "Confirm in Flow",
-            "step_5_description": "Review how the data appears in dashboards and reports. Verify usability and accuracy for decision-making.",
-            "step_6_title": "Monitor After Launch",
-            "step_6_description": "Continuously monitor data availability and freshness. Alerts when data is delayed or missing."
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "ai_gen_block_bcb8a38_HYX9DL"
-      ],
-      "disabled": true,
-      "name": "Implementation process",
-      "settings": {
-        "full_width": true,
-        "remove_vertical_spacing": false,
-        "remove_horizontal_spacing": false,
-        "background": "",
-        "background_gradient": "",
-        "text_color": ""
-      }
-    },
-    "blocks_pVhewM": {
-      "type": "_blocks",
-      "blocks": {
-        "ai_gen_block_cdfd9e7_MYYFFN": {
-          "type": "ai_gen_block_cdfd9e7",
-          "settings": {
-            "eyebrow_text": "IMPLEMENTATION",
-            "heading": "From contract to live data in under 4 weeks.",
-            "description": "Our streamlined implementation process ensures you're up and running quickly with minimal disruption to your operations. Every step is designed for efficiency and clarity.",
-            "highlight_title": "Typical go-live: 2–4 weeks",
-            "highlight_text": "Per store, from contract to live data",
-            "week_1_label": "Week 1",
-            "week_1_title": "Kickoff & Survey",
-            "week_1_description": "Store survey, planning, requirements gathering, and integration scoping.",
-            "week_2_label": "Week 1–2",
-            "week_2_title": "Hardware Installation",
-            "week_2_description": "Equipment setup and configuration with minimal operational disruption.",
-            "week_3_label": "Week 2–3",
-            "week_3_title": "System Configuration",
-            "week_3_description": "Dashboard setup, integrations, testing, validation, and calibration.",
-            "week_4_label": "Week 3–4",
-            "week_4_title": "Training & Launch",
-            "week_4_description": "Team onboarding, final verification, launch preparation, and handover.",
-            "week_5_label": "Ongoing",
-            "week_5_title": "Customer Success Support",
-            "week_5_description": "Monitoring, optimization, reporting, and dedicated support.",
-            "background_color": "#ffffff",
-            "heading_color": "#123a73",
-            "text_color": "#677279",
-            "accent_color": "#a7be3a",
-            "eyebrow_background": "#f3f5f6",
-            "eyebrow_color": "#677279",
-            "card_background": "#ffffff",
-            "card_border_color": "#e5e7eb",
-            "divider_color": "#e5e7eb",
-            "heading_size": 42,
-            "text_size": 16,
-            "section_padding": 80,
-            "desktop_width_percent": 100,
-            "eyebrow_radius": 20,
-            "card_radius": 12,
-            "card_shadow_opacity": 0.1
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "ai_gen_block_cdfd9e7_MYYFFN"
-      ],
-      "disabled": true,
-      "name": "Implementation timeline",
-      "settings": {
-        "full_width": true,
-        "remove_vertical_spacing": false,
-        "remove_horizontal_spacing": false,
-        "background": "",
-        "background_gradient": "",
-        "text_color": ""
-      }
-    },
     "blocks_w8k7pe": {
       "type": "_blocks",
       "blocks": {
-        "ai_gen_block_659cb24_brHfr6": {
-          "type": "ai_gen_block_659cb24",
+        "badge_bY8hDK": {
+          "type": "badge",
+          "name": "Badge",
+          "disabled": true,
           "settings": {
-            "card_width": "50",
-            "card_title": "Implementation & Deployment",
-            "card_subtitle": "Timelines, requirements, and deployment approach",
-            "icon_type": "clock",
-            "question_1": "How long does implementation take from contract to go-live?",
-            "answer_1": "Typical implementation takes 4-6 weeks from contract signing to full deployment. This includes site survey, hardware installation, system configuration, and staff training. We can expedite to 2-3 weeks for urgent deployments.",
+            "text": "FAQ",
+            "alignment": "right",
+            "text_color": "#ffffff",
+            "background": "#A1B847"
+          },
+          "blocks": {}
+        },
+        "heading_VYWzYL": {
+          "type": "heading",
+          "name": "Heading",
+          "settings": {
+            "text": "よくある質問",
+            "size": "h1",
+            "html_tag": "h2",
+            "text_color": "",
+            "gradient": ""
+          },
+          "blocks": {}
+        },
+        "ai_gen_block_659cb24_YkCJBm": {
+          "type": "ai_gen_block_659cb24",
+          "name": "FAQ card",
+          "settings": {
+            "card_width": "100",
+            "card_title": "まず確認したい、基本条件",
+            "card_subtitle": "店舗分析の土台は、安定した来店計測と購買率を正しく把握できることです。まずは、比較の出発点となる3つのポイントを確認します。",
+            "icon_type": "check",
+            "question_1": "店舗分析ツールは、何から始めるべきですか？",
+            "answer_1": "まずは、安定した来店計測と購買率の把握から始めることをおすすめします。来店数と購買件数をつなぐことで、売上の変化が集客によるものか、店内での購買率によるものかを分けて考えられるようになります。",
             "question_1_open": false,
-            "question_2": "What infrastructure changes are required in our stores?",
-            "answer_2": "Minimal infrastructure changes are needed. Our system requires standard power outlets and network connectivity. Cameras are ceiling-mounted using existing infrastructure. No major construction or downtime is required.",
+            "question_2": "購買率を管理するには、POS連携が必要ですか？",
+            "answer_2": "購買率を継続的に管理するには、来店数と購買件数をつなぐ必要があります。Flowでは、POSの仕様やお客様の環境に応じて、APIやCSVなど適切な連携方法を確認します。",
             "question_2_open": false,
-            "question_3": "How do you handle partial deployments and expansion?",
-            "answer_3": "We support phased rollouts starting with pilot stores. Our modular architecture allows you to expand coverage zone by zone or store by store. Each deployment is independent, allowing flexible scaling based on your budget and priorities.",
+            "question_3": "来店計測では、精度だけを比較すればよいですか？",
+            "answer_3": "精度は重要ですが、わずかな数値差だけでなく、店舗や時間帯が変わっても同じ基準で継続して計測できることが重要です。設置環境への対応、スタッフ除外などの設定、導入後の確認や調整まで含めて比較することをおすすめします。",
             "question_3_open": false,
             "question_4": "",
             "answer_4": "",
@@ -1540,11 +1383,43 @@
             "question_5": "",
             "answer_5": "",
             "question_5_open": false,
-            "header_background_color": "#0e2a3a",
+            "header_background_color": "#0E366A",
+            "title_color": "#ffffff",
+            "subtitle_color": "rgba(255, 255, 255, 0.7)",
+            "icon_badge_background": "#F9FAFB",
+            "icon_color": "#0E366A",
+            "question_color": "#0E2A3A",
+            "answer_color": "#677279"
+          },
+          "blocks": {}
+        },
+        "ai_gen_block_659cb24_brHfr6": {
+          "type": "ai_gen_block_659cb24",
+          "settings": {
+            "card_width": "100",
+            "card_title": "導入後まで見据えて比較する",
+            "card_subtitle": "必要な機能は、店舗運営とともに変わります。拡張性、多店舗展開、導入後の支援まで含めて、長く使える仕組みかを確認することが重要です。",
+            "icon_type": "info",
+            "question_1": "来店計測だけから始めて、後から機能を追加できますか？",
+            "answer_1": "はい。まず来店数と購買率の管理から始め、必要に応じて滞在時間、属性、ゾーン分析などの計測機能を追加できます。さらに、Pulse、メモ、SOP、判断支援などへ活用範囲を広げることもできます。",
+            "question_1_open": false,
+            "question_2": "複数店舗への導入では、何を確認すべきですか？",
+            "answer_2": "店舗数に対応できるかだけでなく、計測条件、KPI定義、データ連携、権限設定、店舗での活用方法を共通化できるかを確認することが重要です。店舗ごとの環境差に対応しながら、同じ基準で比較できる状態をつくる必要があります。",
+            "question_2_open": false,
+            "question_3": "導入後のサポートでは、何を確認すべきですか？",
+            "answer_3": "設置してデータが表示されれば完了ではありません。計測状態の確認、データ連携、ダッシュボード設定、ユーザー教育、活用方法の見直しなど、継続的に店舗で使える状態を支援できるかを確認することが重要です。",
+            "question_3_open": false,
+            "question_4": "",
+            "answer_4": "",
+            "question_4_open": false,
+            "question_5": "",
+            "answer_5": "",
+            "question_5_open": false,
+            "header_background_color": "#0E366A",
             "title_color": "#ffffff",
             "subtitle_color": "#ffffffb3",
-            "icon_badge_background": "#a0b84226",
-            "icon_color": "#a0b842",
+            "icon_badge_background": "#F9FAFB",
+            "icon_color": "#0E366A",
             "question_color": "#0e2a3a",
             "answer_color": "#677279"
           },
@@ -1552,6 +1427,9 @@
         }
       },
       "block_order": [
+        "badge_bY8hDK",
+        "heading_VYWzYL",
+        "ai_gen_block_659cb24_YkCJBm",
         "ai_gen_block_659cb24_brHfr6"
       ],
       "name": "FAQ card",
@@ -1639,12 +1517,36 @@
           "settings": {
             "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
           }
+        },
+        "button_fVrV3M": {
+          "type": "button",
+          "settings": {
+            "style": "fill",
+            "size": "lg",
+            "text": "Button text",
+            "url": "",
+            "background": "#A1B847",
+            "text_color": ""
+          }
+        },
+        "button_GUp3mt": {
+          "type": "button",
+          "settings": {
+            "style": "fill",
+            "size": "lg",
+            "text": "Button text",
+            "url": "",
+            "background": "#F9FAFB",
+            "text_color": "#0E366A"
+          }
         }
       },
       "block_order": [
         "subheading_GkjYhR",
         "heading_KCyJiE",
-        "richtext_m6j9jL"
+        "richtext_m6j9jL",
+        "button_fVrV3M",
+        "button_GUp3mt"
       ],
       "name": "Image with text overlay",
       "settings": {
@@ -1652,11 +1554,12 @@
         "allow_transparent_header": false,
         "enable_parallax": false,
         "image_size": "auto",
+        "image": "shopify://shop_images/ChatGPT_Image_Jun_23_2026_05_40_10_PM.png",
         "mobile_text_position": "place-self-center text-center",
         "desktop_text_position": "sm:place-self-center sm:text-center",
         "text_color": "#ffffff",
-        "overlay_color": "#000000",
-        "overlay_opacity": 30
+        "overlay_color": "#0E366A",
+        "overlay_opacity": 79
       }
     }
   },
@@ -1680,9 +1583,6 @@
     "blocks_mCRxxp",
     "blocks_NQdmFr",
     "comparison_table_3gmPdq",
-    "blocks_miQL7C",
-    "blocks_P8XpdQ",
-    "blocks_pVhewM",
     "blocks_w8k7pe",
     "faq_XCcmRC",
     "image_with_text_overlay_A3H7Vy"
