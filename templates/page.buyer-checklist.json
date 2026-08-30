@@ -154,7 +154,7 @@
           "type": "liquid",
           "name": "Liquid",
           "settings": {
-            "liquid": "<div id=\"#point-checklist\" style=\"height:60px;scroll-margin-top:110px\"></div>"
+            "liquid": "<div id=\"point-checklist\" style=\"height:60px;scroll-margin-top:110px\"></div>"
           },
           "blocks": {}
         },
@@ -290,7 +290,7 @@
           "type": "liquid",
           "name": "Liquid",
           "settings": {
-            "liquid": "<div id=\"#traffic\" style=\"height:60px;scroll-margin-top:110px\"></div>"
+            "liquid": "<div id=\"traffic\" style=\"height:60px;scroll-margin-top:110px\"></div>"
           },
           "blocks": {}
         },
