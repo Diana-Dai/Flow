@@ -473,7 +473,7 @@
           "type": "liquid",
           "name": "Liquid",
           "settings": {
-            "liquid": "<div id=\"data-activation\" style=\"height:60px;scroll-margin-top:110px\"></div>"
+            "liquid": "<div id=\"data-activation\" style=\"height:0px;scroll-margin-top:110px\"></div>"
           },
           "blocks": {}
         },
@@ -611,7 +611,7 @@
           "type": "liquid",
           "name": "Liquid",
           "settings": {
-            "liquid": "<div id=\"expansion\" style=\"height:60px;scroll-margin-top:110px\"></div>"
+            "liquid": "<div id=\"expansion\" style=\"height:0px;scroll-margin-top:110px\"></div>"
           },
           "blocks": {}
         },
@@ -797,6 +797,14 @@
     "blocks_YUqjJA": {
       "type": "_blocks",
       "blocks": {
+        "liquid_iyDp9G": {
+          "type": "liquid",
+          "name": "Liquid",
+          "settings": {
+            "liquid": "<div id=\"deployment\" style=\"height:0px;scroll-margin-top:110px\"></div>"
+          },
+          "blocks": {}
+        },
         "ai_gen_block_bcb8a38_DpkmVm": {
           "type": "ai_gen_block_bcb8a38",
           "settings": {
@@ -840,6 +848,7 @@
         }
       },
       "block_order": [
+        "liquid_iyDp9G",
         "ai_gen_block_bcb8a38_DpkmVm"
       ],
       "name": "Implementation process",
