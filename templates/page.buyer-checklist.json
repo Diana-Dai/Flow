@@ -213,6 +213,7 @@
         "liquid_LN7Err": {
           "type": "liquid",
           "name": "Liquid",
+          "disabled": true,
           "settings": {
             "liquid": "<div id=\"#traffic\" style=\"height:60px;scroll-margin-top:110px\"></div>"
           },
@@ -289,7 +290,6 @@
         "liquid_96bGEq": {
           "type": "liquid",
           "name": "Liquid",
-          "disabled": true,
           "settings": {
             "liquid": "<div id=\"traffic\" style=\"height:60px;scroll-margin-top:110px\"></div>"
           },
