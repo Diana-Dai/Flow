@@ -141,7 +141,7 @@
         "full_width": true,
         "remove_vertical_spacing": true,
         "remove_horizontal_spacing": false,
-        "liquid": "<nav class=\"flow-anchor-nav\" aria-label=\"ページ内ナビゲーション\">\n  <div class=\"flow-anchor-nav__inner\">\n\n    <a href=\"#point-checklist\" class=\"flow-anchor-nav__button\">\n      比較の基本\n    </a>\n\n    <a href=\"#traffic\" class=\"flow-anchor-nav__button\">\n      来店計測\n    </a>\n\n    <a href=\"#conversion\" class=\"flow-anchor-nav__button\">\n      購買率\n    </a>\n\n    <a href=\"#data-activation\" class=\"flow-anchor-nav__button\">\n      データ活用\n    </a>\n\n    <a href=\"#expandability\" class=\"flow-anchor-nav__button\">\n      拡張性\n    </a>\n\n    <a href=\"#deployment\" class=\"flow-anchor-nav__button\">\n      導入・運用\n    </a>\n\n  </div>\n</nav>\n\n<style>\n.flow-anchor-nav {\n  width: 100%;\n  padding: 60px 20px 60px;\n  background: transparent;\n}\n\n  .flow-anchor-nav__inner {\n    max-width: 1200px;\n    margin: 0 auto;\n    display: flex;\n    justify-content: center;\n    gap: 10px;\n    flex-wrap: wrap;\n  }\n\n  .flow-anchor-nav__button {\n    display: inline-flex;\n    align-items: center;\n    justify-content: center;\n    min-height: 44px;\n    padding: 10px 20px;\n    border: 1px solid #0e366a;\n    border-radius: 6px;\n    background: #ffffff;\n    color: #0e366a;\n    font-size: 14px;\n    font-weight: 600;\n    line-height: 1.3;\n    text-decoration: none;\n    white-space: nowrap;\n    transition:\n      background-color 0.2s ease,\n      color 0.2s ease,\n      border-color 0.2s ease,\n      transform 0.2s ease;\n  }\n\n  .flow-anchor-nav__button:hover {\n    background: #0e366a;\n    color: #ffffff;\n    transform: translateY(-1px);\n  }\n\n  .flow-anchor-nav__button:focus-visible {\n    outline: 2px solid #a0b842;\n    outline-offset: 3px;\n  }\n\n  @media screen and (max-width: 749px) {\n    .flow-anchor-nav {\n      padding: 14px 0;\n      overflow: hidden;\n    }\n\n    .flow-anchor-nav__inner {\n      justify-content: flex-start;\n      flex-wrap: nowrap;\n      overflow-x: auto;\n      gap: 8px;\n      padding: 0 16px 6px;\n      scrollbar-width: none;\n      -webkit-overflow-scrolling: touch;\n    }\n\n    .flow-anchor-nav__inner::-webkit-scrollbar {\n      display: none;\n    }\n\n    .flow-anchor-nav__button {\n      flex: 0 0 auto;\n      min-height: 42px;\n      padding: 9px 16px;\n      font-size: 13px;\n    }\n  }\n</style>",
+        "liquid": "<nav class=\"flow-anchor-nav\" aria-label=\"ページ内ナビゲーション\">\n  <div class=\"flow-anchor-nav__inner\">\n\n    <a href=\"#point-checklist\" class=\"flow-anchor-nav__button\">\n      比較の基本\n    </a>\n\n    <a href=\"#traffic\" class=\"flow-anchor-nav__button\">\n      来店計測\n    </a>\n\n    <a href=\"#conversion\" class=\"flow-anchor-nav__button\">\n      購買率\n    </a>\n\n    <a href=\"#data-activation\" class=\"flow-anchor-nav__button\">\n      データ活用\n    </a>\n\n    <a href=\"#expansion\" class=\"flow-anchor-nav__button\">\n      拡張性\n    </a>\n\n    <a href=\"#deployment\" class=\"flow-anchor-nav__button\">\n      導入・運用\n    </a>\n\n  </div>\n</nav>\n\n<style>\n.flow-anchor-nav {\n  width: 100%;\n  padding: 60px 20px 60px;\n  background: transparent;\n}\n\n  .flow-anchor-nav__inner {\n    max-width: 1200px;\n    margin: 0 auto;\n    display: flex;\n    justify-content: center;\n    gap: 10px;\n    flex-wrap: wrap;\n  }\n\n  .flow-anchor-nav__button {\n    display: inline-flex;\n    align-items: center;\n    justify-content: center;\n    min-height: 44px;\n    padding: 10px 20px;\n    border: 1px solid #0e366a;\n    border-radius: 6px;\n    background: #ffffff;\n    color: #0e366a;\n    font-size: 14px;\n    font-weight: 600;\n    line-height: 1.3;\n    text-decoration: none;\n    white-space: nowrap;\n    transition:\n      background-color 0.2s ease,\n      color 0.2s ease,\n      border-color 0.2s ease,\n      transform 0.2s ease;\n  }\n\n  .flow-anchor-nav__button:hover {\n    background: #0e366a;\n    color: #ffffff;\n    transform: translateY(-1px);\n  }\n\n  .flow-anchor-nav__button:focus-visible {\n    outline: 2px solid #a0b842;\n    outline-offset: 3px;\n  }\n\n  @media screen and (max-width: 749px) {\n    .flow-anchor-nav {\n      padding: 14px 0;\n      overflow: hidden;\n    }\n\n    .flow-anchor-nav__inner {\n      justify-content: flex-start;\n      flex-wrap: nowrap;\n      overflow-x: auto;\n      gap: 8px;\n      padding: 0 16px 6px;\n      scrollbar-width: none;\n      -webkit-overflow-scrolling: touch;\n    }\n\n    .flow-anchor-nav__inner::-webkit-scrollbar {\n      display: none;\n    }\n\n    .flow-anchor-nav__button {\n      flex: 0 0 auto;\n      min-height: 42px;\n      padding: 9px 16px;\n      font-size: 13px;\n    }\n  }\n</style>",
         "background": "",
         "background_gradient": "",
         "text_color": ""
@@ -607,6 +607,14 @@
     "blocks_UeQ6EB": {
       "type": "_blocks",
       "blocks": {
+        "liquid_qCfKmk": {
+          "type": "liquid",
+          "name": "Liquid",
+          "settings": {
+            "liquid": "<div id=\"expansion\" style=\"height:60px;scroll-margin-top:110px\"></div>"
+          },
+          "blocks": {}
+        },
         "ai_gen_block_3504708_YfkHxf": {
           "type": "ai_gen_block_3504708",
           "settings": {
@@ -659,12 +667,13 @@
         }
       },
       "block_order": [
+        "liquid_qCfKmk",
         "ai_gen_block_3504708_YfkHxf"
       ],
       "name": "Area manager workflow",
       "settings": {
         "full_width": true,
-        "remove_vertical_spacing": false,
+        "remove_vertical_spacing": true,
         "remove_horizontal_spacing": false,
         "background": "#11161c",
         "background_gradient": "",
