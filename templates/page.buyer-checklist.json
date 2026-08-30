@@ -635,6 +635,34 @@
         "text_color": ""
       }
     },
+    "rich_text_yMc497": {
+      "type": "rich-text",
+      "blocks": {
+        "button_TFqrqJ": {
+          "type": "button",
+          "settings": {
+            "style": "fill",
+            "size": "xl",
+            "text": "Flowプラットフォームを見る →",
+            "url": "shopify://pages/flow-platform-overview",
+            "background": "#A1B847",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "button_TFqrqJ"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
     "custom_liquid_na6k7E": {
       "type": "custom-liquid",
       "name": "Custom Liquid",
@@ -1645,6 +1673,7 @@
     "blocks_PdP96P",
     "rich_text_pqVYWH",
     "blocks_ArHkpd",
+    "rich_text_yMc497",
     "custom_liquid_na6k7E",
     "blocks_UeQ6EB",
     "multi_column_8KcQg9",
