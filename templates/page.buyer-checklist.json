@@ -1505,11 +1505,10 @@
             "text": "導入相談"
           }
         },
-        "heading_KCyJiE": {
-          "type": "heading",
+        "liquid_Bzw8LN": {
+          "type": "liquid",
           "settings": {
-            "text": "自社に合う店舗分析の始め方を、確認しませんか。",
-            "heading_tag": "h1"
+            "liquid": "<h2 class=\"h2\">自社に合う店舗分析の始め方を、<br>確認しませんか。\n</h2>"
           }
         },
         "richtext_m6j9jL": {
@@ -1543,7 +1542,7 @@
       },
       "block_order": [
         "subheading_GkjYhR",
-        "heading_KCyJiE",
+        "liquid_Bzw8LN",
         "richtext_m6j9jL",
         "button_fVrV3M",
         "button_GUp3mt"
@@ -1554,7 +1553,7 @@
         "allow_transparent_header": false,
         "enable_parallax": false,
         "image_size": "auto",
-        "image": "shopify://shop_images/ChatGPT_Image_Jun_23_2026_05_40_10_PM.png",
+        "image": "shopify://shop_images/integrations_hero.png",
         "mobile_text_position": "place-self-center text-center",
         "desktop_text_position": "sm:place-self-center sm:text-center",
         "text_color": "#ffffff",
