@@ -1311,7 +1311,7 @@
         "title": "Flowは、7つの比較ポイントにどう応えるか。",
         "content": "<p>計測精度だけでなく、購買率管理、改善判断、拡張性、導入後の運用まで。Flowがどのように対応するかを整理しました。</p><h4><strong>計測　｜　活用　｜　運用・拡張</strong></h4>",
         "button_text": "Flowプラットフォームを見る",
-        "button_url": "",
+        "button_url": "shopify://pages/store-analytics",
         "text_position": "start",
         "max_rows": 7,
         "view_all_text": "View all",
@@ -1515,6 +1515,55 @@
         "text_color": ""
       }
     },
+    "blocks_w8k7pe": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_659cb24_brHfr6": {
+          "type": "ai_gen_block_659cb24",
+          "settings": {
+            "card_width": "50",
+            "card_title": "Implementation & Deployment",
+            "card_subtitle": "Timelines, requirements, and deployment approach",
+            "icon_type": "clock",
+            "question_1": "How long does implementation take from contract to go-live?",
+            "answer_1": "Typical implementation takes 4-6 weeks from contract signing to full deployment. This includes site survey, hardware installation, system configuration, and staff training. We can expedite to 2-3 weeks for urgent deployments.",
+            "question_1_open": false,
+            "question_2": "What infrastructure changes are required in our stores?",
+            "answer_2": "Minimal infrastructure changes are needed. Our system requires standard power outlets and network connectivity. Cameras are ceiling-mounted using existing infrastructure. No major construction or downtime is required.",
+            "question_2_open": false,
+            "question_3": "How do you handle partial deployments and expansion?",
+            "answer_3": "We support phased rollouts starting with pilot stores. Our modular architecture allows you to expand coverage zone by zone or store by store. Each deployment is independent, allowing flexible scaling based on your budget and priorities.",
+            "question_3_open": false,
+            "question_4": "",
+            "answer_4": "",
+            "question_4_open": false,
+            "question_5": "",
+            "answer_5": "",
+            "question_5_open": false,
+            "header_background_color": "#0E2A3A",
+            "title_color": "#ffffff",
+            "subtitle_color": "rgba(255, 255, 255, 0.7)",
+            "icon_badge_background": "rgba(160, 184, 66, 0.15)",
+            "icon_color": "#a0b842",
+            "question_color": "#0E2A3A",
+            "answer_color": "#677279"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_659cb24_brHfr6"
+      ],
+      "name": "FAQ card",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
     "faq_XCcmRC": {
       "type": "faq",
       "blocks": {
@@ -1545,6 +1594,7 @@
         "item_e7ekx8",
         "item_mHPPaL"
       ],
+      "disabled": true,
       "name": "FAQ",
       "settings": {
         "full_width": true,
@@ -1633,6 +1683,7 @@
     "blocks_miQL7C",
     "blocks_P8XpdQ",
     "blocks_pVhewM",
+    "blocks_w8k7pe",
     "faq_XCcmRC",
     "image_with_text_overlay_A3H7Vy"
   ]
