@@ -1311,7 +1311,7 @@
         "title": "Flowは、7つの比較ポイントにどう応えるか。",
         "content": "<p>計測精度だけでなく、購買率管理、改善判断、拡張性、導入後の運用まで。Flowがどのように対応するかを整理しました。</p><h4><strong>計測　｜　活用　｜　運用・拡張</strong></h4>",
         "button_text": "Flowプラットフォームを見る",
-        "button_url": "shopify://pages/store-analytics",
+        "button_url": "https://flow-solutions.com/pages/flow-platform-overview",
         "text_position": "start",
         "max_rows": 7,
         "view_all_text": "View all",
