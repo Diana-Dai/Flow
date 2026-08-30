@@ -39,7 +39,7 @@
             "trust_3": "拡張性・将来性",
             "trust_4": "",
             "image": "shopify://shop_images/Traffic_Flow_4.png",
-            "image_alt": "",
+            "image_alt": "店舗分析導入プロセス",
             "image_position": "right",
             "image_aspect_ratio": "natural",
             "image_fit": "cover",
@@ -1502,20 +1502,20 @@
         "subheading_GkjYhR": {
           "type": "subheading",
           "settings": {
-            "text": "Subheading"
+            "text": "導入相談"
           }
         },
         "heading_KCyJiE": {
           "type": "heading",
           "settings": {
-            "text": "Image with text overlay",
+            "text": "自社に合う店舗分析の始め方を、確認しませんか。",
             "heading_tag": "h1"
           }
         },
         "richtext_m6j9jL": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+            "content": "<p>店舗数、既存POS、計測環境、現在の課題を確認し、必要な範囲から導入方法をご案内します。</p>"
           }
         },
         "button_fVrV3M": {
@@ -1523,8 +1523,8 @@
           "settings": {
             "style": "fill",
             "size": "lg",
-            "text": "Button text",
-            "url": "",
+            "text": "導入について相談する",
+            "url": "shopify://pages/contact",
             "background": "#A1B847",
             "text_color": ""
           }
@@ -1534,8 +1534,8 @@
           "settings": {
             "style": "fill",
             "size": "lg",
-            "text": "Button text",
-            "url": "",
+            "text": "Flowプラットフォームを見る",
+            "url": "shopify://pages/flow-platform-overview",
             "background": "#F9FAFB",
             "text_color": "#0E366A"
           }
