@@ -339,17 +339,61 @@
             "box_4_text": "<p>滞在時間・属性・ゾーン・導線などへ後から分析を広げられるか。</p>"
           },
           "blocks": {}
+        },
+        "button_6N7X7L": {
+          "type": "button",
+          "name": "Button",
+          "disabled": true,
+          "settings": {
+            "text": "Button",
+            "url": "",
+            "open_in_new_tab": false,
+            "style": "fill",
+            "size": "xl",
+            "background": "",
+            "text_color": ""
+          },
+          "blocks": {}
         }
       },
       "block_order": [
         "liquid_96bGEq",
-        "ai_gen_block_79fb6e4_FKqQA7"
+        "ai_gen_block_79fb6e4_FKqQA7",
+        "button_6N7X7L"
       ],
       "name": "Image with content boxes",
       "settings": {
         "full_width": true,
         "remove_vertical_spacing": false,
         "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "rich_text_qxH9nD": {
+      "type": "rich-text",
+      "blocks": {
+        "button_Chz9Ba": {
+          "type": "button",
+          "settings": {
+            "style": "fill",
+            "size": "xl",
+            "text": "来店計測の詳細を見る →",
+            "url": "shopify://pages/traffic-analytics",
+            "background": "#A1B847",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "button_Chz9Ba"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
         "background": "",
         "background_gradient": "",
         "text_color": ""
@@ -1243,6 +1287,34 @@
         "text_color": ""
       }
     },
+    "rich_text_CKhCYc": {
+      "type": "rich-text",
+      "blocks": {
+        "button_a6tVfL": {
+          "type": "button",
+          "settings": {
+            "style": "fill",
+            "size": "xl",
+            "text": "導入事例をもっと見る →",
+            "url": "shopify://pages/case-studies",
+            "background": "#A1B847",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "button_a6tVfL"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
     "comparison_table_3gmPdq": {
       "type": "comparison-table",
       "blocks": {
@@ -1569,6 +1641,7 @@
     "blocks_j3LQGB",
     "blocks_7NjVMJ",
     "blocks_3gg7cT",
+    "rich_text_qxH9nD",
     "blocks_PdP96P",
     "rich_text_pqVYWH",
     "blocks_ArHkpd",
@@ -1581,6 +1654,7 @@
     "blocks_jWY9mD",
     "blocks_mCRxxp",
     "blocks_NQdmFr",
+    "rich_text_CKhCYc",
     "comparison_table_3gmPdq",
     "blocks_w8k7pe",
     "faq_XCcmRC",
