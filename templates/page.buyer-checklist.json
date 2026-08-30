@@ -141,7 +141,7 @@
         "full_width": true,
         "remove_vertical_spacing": true,
         "remove_horizontal_spacing": false,
-        "liquid": "<nav class=\"flow-anchor-nav\" aria-label=\"ページ内ナビゲーション\">\n  <div class=\"flow-anchor-nav__inner\">\n\n    <a href=\"#basic-point\" class=\"flow-anchor-nav__button\">\n      比較の基本\n    </a>\n\n    <a href=\"#traffic\" class=\"flow-anchor-nav__button\">\n      来店計測\n    </a>\n\n    <a href=\"#conversion\" class=\"flow-anchor-nav__button\">\n      購買率\n    </a>\n\n    <a href=\"#store-comparison\" class=\"flow-anchor-nav__button\">\n      店舗比較\n    </a>\n\n    <a href=\"#expandability\" class=\"flow-anchor-nav__button\">\n      拡張性\n    </a>\n\n    <a href=\"#deployment\" class=\"flow-anchor-nav__button\">\n      導入・運用\n    </a>\n\n  </div>\n</nav>\n\n<style>\n.flow-anchor-nav {\n  width: 100%;\n  padding: 60px 20px 60px;\n  background: transparent;\n}\n\n  .flow-anchor-nav__inner {\n    max-width: 1200px;\n    margin: 0 auto;\n    display: flex;\n    justify-content: center;\n    gap: 10px;\n    flex-wrap: wrap;\n  }\n\n  .flow-anchor-nav__button {\n    display: inline-flex;\n    align-items: center;\n    justify-content: center;\n    min-height: 44px;\n    padding: 10px 20px;\n    border: 1px solid #0e366a;\n    border-radius: 6px;\n    background: #ffffff;\n    color: #0e366a;\n    font-size: 14px;\n    font-weight: 600;\n    line-height: 1.3;\n    text-decoration: none;\n    white-space: nowrap;\n    transition:\n      background-color 0.2s ease,\n      color 0.2s ease,\n      border-color 0.2s ease,\n      transform 0.2s ease;\n  }\n\n  .flow-anchor-nav__button:hover {\n    background: #0e366a;\n    color: #ffffff;\n    transform: translateY(-1px);\n  }\n\n  .flow-anchor-nav__button:focus-visible {\n    outline: 2px solid #a0b842;\n    outline-offset: 3px;\n  }\n\n  @media screen and (max-width: 749px) {\n    .flow-anchor-nav {\n      padding: 14px 0;\n      overflow: hidden;\n    }\n\n    .flow-anchor-nav__inner {\n      justify-content: flex-start;\n      flex-wrap: nowrap;\n      overflow-x: auto;\n      gap: 8px;\n      padding: 0 16px 6px;\n      scrollbar-width: none;\n      -webkit-overflow-scrolling: touch;\n    }\n\n    .flow-anchor-nav__inner::-webkit-scrollbar {\n      display: none;\n    }\n\n    .flow-anchor-nav__button {\n      flex: 0 0 auto;\n      min-height: 42px;\n      padding: 9px 16px;\n      font-size: 13px;\n    }\n  }\n</style>",
+        "liquid": "<nav class=\"flow-anchor-nav\" aria-label=\"ページ内ナビゲーション\">\n  <div class=\"flow-anchor-nav__inner\">\n\n    <a href=\"#point-checklist\" class=\"flow-anchor-nav__button\">\n      比較の基本\n    </a>\n\n    <a href=\"#traffic\" class=\"flow-anchor-nav__button\">\n      来店計測\n    </a>\n\n    <a href=\"#conversion\" class=\"flow-anchor-nav__button\">\n      購買率\n    </a>\n\n    <a href=\"#store-comparison\" class=\"flow-anchor-nav__button\">\n      データ活用\n    </a>\n\n    <a href=\"#expandability\" class=\"flow-anchor-nav__button\">\n      拡張性\n    </a>\n\n    <a href=\"#deployment\" class=\"flow-anchor-nav__button\">\n      導入・運用\n    </a>\n\n  </div>\n</nav>\n\n<style>\n.flow-anchor-nav {\n  width: 100%;\n  padding: 60px 20px 60px;\n  background: transparent;\n}\n\n  .flow-anchor-nav__inner {\n    max-width: 1200px;\n    margin: 0 auto;\n    display: flex;\n    justify-content: center;\n    gap: 10px;\n    flex-wrap: wrap;\n  }\n\n  .flow-anchor-nav__button {\n    display: inline-flex;\n    align-items: center;\n    justify-content: center;\n    min-height: 44px;\n    padding: 10px 20px;\n    border: 1px solid #0e366a;\n    border-radius: 6px;\n    background: #ffffff;\n    color: #0e366a;\n    font-size: 14px;\n    font-weight: 600;\n    line-height: 1.3;\n    text-decoration: none;\n    white-space: nowrap;\n    transition:\n      background-color 0.2s ease,\n      color 0.2s ease,\n      border-color 0.2s ease,\n      transform 0.2s ease;\n  }\n\n  .flow-anchor-nav__button:hover {\n    background: #0e366a;\n    color: #ffffff;\n    transform: translateY(-1px);\n  }\n\n  .flow-anchor-nav__button:focus-visible {\n    outline: 2px solid #a0b842;\n    outline-offset: 3px;\n  }\n\n  @media screen and (max-width: 749px) {\n    .flow-anchor-nav {\n      padding: 14px 0;\n      overflow: hidden;\n    }\n\n    .flow-anchor-nav__inner {\n      justify-content: flex-start;\n      flex-wrap: nowrap;\n      overflow-x: auto;\n      gap: 8px;\n      padding: 0 16px 6px;\n      scrollbar-width: none;\n      -webkit-overflow-scrolling: touch;\n    }\n\n    .flow-anchor-nav__inner::-webkit-scrollbar {\n      display: none;\n    }\n\n    .flow-anchor-nav__button {\n      flex: 0 0 auto;\n      min-height: 42px;\n      padding: 9px 16px;\n      font-size: 13px;\n    }\n  }\n</style>",
         "background": "",
         "background_gradient": "",
         "text_color": ""
@@ -154,16 +154,16 @@
           "type": "liquid",
           "name": "Liquid",
           "settings": {
-            "liquid": "<div id=\"traffic\" style=\"height:60px;scroll-margin-top:110px\"></div>"
+            "liquid": "<div id=\"#point-checklist\" style=\"height:60px;scroll-margin-top:110px\"></div>"
           },
           "blocks": {}
         },
         "ai_gen_block_f23c343_iMMHTh": {
           "type": "ai_gen_block_f23c343",
           "settings": {
-            "heading": "比較のポイント",
+            "heading": "比較前に、ここを確認。",
             "subheading": "機能表だけでは、違いは見えません。\n計測できることだけでなく、売上改善の余地を見つけ、次に何をすべきか判断できる仕組みかまで確認することが重要です。",
-            "left_card_title": "比較で重視したいこと",
+            "left_card_title": "成果につながる条件",
             "left_card_bg": "#f4f7e8",
             "left_badge_bg": "#a0b842",
             "left_icon_color": "#ffffff",
@@ -172,23 +172,23 @@
             "left_item_1_description": "店舗や時間帯が変わっても、同じ基準で継続して計測できるか。",
             "left_item_2_header": "購買率まで見える",
             "left_item_2_description": "来店数と購買件数をつなぎ、売上未達の原因を分けられるか。",
-            "left_item_3_header": "改善余地が分かる",
-            "left_item_3_description": "店舗・曜日・時間帯の違いから、どこに改善機会があるか見つけられるか。",
+            "left_item_3_header": "改善余地を比較",
+            "left_item_3_description": "店舗・曜日・時間帯の違いから、改善機会を見つけられるか。",
             "left_item_4_header": "次の一手につながる",
-            "left_item_4_description": "データを見るだけでなく、何を優先して改善すべきか判断しやすいか。",
-            "right_card_title": "比較で見落としやすいこと",
+            "left_item_4_description": "データを見るだけでなく、優先すべき改善を判断しやすいか。",
+            "right_card_title": "長く使える条件",
             "right_card_bg": "#f4f6f8",
-            "right_badge_bg": "#d1d5db",
-            "right_icon_color": "#6b7280",
-            "right_bullet_color": "#6b7280",
-            "right_item_1_header": "精度の数字だけを見ない",
-            "right_item_1_description": "わずかな精度差より、継続して同じ条件で計測できることが重要です。",
-            "right_item_2_header": "画面の見やすさだけで選ばない",
-            "right_item_2_description": "見やすいだけでなく、データから改善判断につなげられるかを確認します。",
-            "right_item_3_header": "初期価格だけで判断しない",
-            "right_item_3_description": "導入後の運用、連携、サポートまで含めて投資価値を考える必要があります。",
-            "right_item_4_header": "今の用途だけで選ばない",
-            "right_item_4_description": "店舗分析の目的が変わっても、同じ基盤を活かせるか確認します。"
+            "right_badge_bg": "#0E366A",
+            "right_icon_color": "#F9FAFB",
+            "right_bullet_color": "#0E366A",
+            "right_item_1_header": "必要に応じて拡張",
+            "right_item_1_description": "計測や店舗運営への活用範囲を、後から広げられるか。",
+            "right_item_2_header": "導入後も安定運用",
+            "right_item_2_description": "設置・設定・データ連携・運用支援まで含めて継続できるか。",
+            "right_item_3_header": "多店舗でも同じ基準",
+            "right_item_3_description": "KPI・計測条件・活用方法を標準化して展開できるか。",
+            "right_item_4_header": "",
+            "right_item_4_description": ""
           },
           "blocks": {}
         }
@@ -290,7 +290,7 @@
           "type": "liquid",
           "name": "Liquid",
           "settings": {
-            "liquid": "<div id=\"traffic\" style=\"height:60px;scroll-margin-top:110px\"></div>"
+            "liquid": "<div id=\"#traffic\" style=\"height:60px;scroll-margin-top:110px\"></div>"
           },
           "blocks": {}
         },
