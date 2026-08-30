@@ -381,7 +381,7 @@
             "size": "xl",
             "text": "来店計測の詳細を見る →",
             "url": "shopify://pages/traffic-analytics",
-            "background": "#A1B847",
+            "background": "#0E366A",
             "text_color": ""
           }
         }
