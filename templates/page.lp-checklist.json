@@ -23,7 +23,7 @@
             "bullet_3": "本部と店舗で共有しやすい改善アクションを明確化",
             "bullet_4": "",
             "primary_button_label": "チェックリストをダウンロード",
-            "primary_button_link": "#checklist",
+            "primary_button_link": "#checklist-anchor",
             "secondary_button_label": "",
             "secondary_button_link": "",
             "caption": "小売本部・店舗運営・DX担当者向けの無料PDFです。",
@@ -227,12 +227,12 @@
             "title": "",
             "content": "<h4><strong>来店数 × 購買率 × 客単価 = 売上</strong></h4><h5>来店数が足りないのか。<br/>来店はあるが、購入につながっていないのか。<br/>店舗ごとの売場・接客・人員配置・実行にばらつきがあるのか。</h5><h5>この切り分けができていないまま施策を打つと、本当に改善すべき原因が見えにくくなります。</h5>",
             "link_text": "チェックリストを見る",
-            "link_url": "",
+            "link_url": "#checklist-anchor",
             "background": "rgba(0,0,0,0)",
             "background_gradient": "",
             "text_color": "#11243e",
             "text_gradient": "",
-            "button_background": "#A1B847",
+            "button_background": "#a1b847",
             "button_text_color": ""
           }
         }
