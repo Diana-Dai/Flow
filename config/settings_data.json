@@ -54,7 +54,24 @@
     "favicon": "shopify://shop_images/logo-flow-device-normal.png",
     "checkout_accent_color": "#f0c417",
     "checkout_button_color": "#1a1a1a",
-    "content_for_index": []
+    "content_for_index": [],
+    "blocks": {
+      "5697566736155241013": {
+        "type": "shopify://apps/easy-infinite-scroll/blocks/infinite-scroll/019eb703-b0a8-7a44-9933-f1f840af9c08",
+        "disabled": false,
+        "settings": {
+          "load_mode": "button",
+          "preserve_pagination": false,
+          "show_status": false,
+          "load_more_text": "Load more",
+          "button_background_color": "#121212",
+          "button_text_color": "#ffffff",
+          "button_border_radius": 4,
+          "loading_text": "Loading more products...",
+          "end_text": "No more products"
+        }
+      }
+    }
   },
   "presets": {
     "Impact": {
