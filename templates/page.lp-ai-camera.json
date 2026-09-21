@@ -16,126 +16,314 @@
         "content_width": "80ch"
       }
     },
-    "blocks_wUYzCX": {
+    "media_with_text_9NrNXp": {
+      "type": "media-with-text",
+      "blocks": {
+        "image_qJGP49": {
+          "type": "image",
+          "settings": {
+            "media_width": 50,
+            "media_position": "end",
+            "text_position": "place-self-center-start text-start",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "Heading",
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "rgba(0,0,0,0)",
+            "background_gradient": "",
+            "text_color": "#11161C",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_qJGP49"
+      ],
+      "name": "Media with text",
+      "settings": {
+        "full_width": false,
+        "alternate_media_position": false,
+        "spacing": "small"
+      }
+    },
+    "blocks_ECpT8w": {
       "type": "_blocks",
       "blocks": {
-        "ai_gen_block_f46e12e_BH3cDc": {
-          "type": "ai_gen_block_f46e12e",
+        "ai_gen_block_c94f27c_7yGzXM": {
+          "type": "ai_gen_block_c94f27c",
           "settings": {
-            "eyebrow": "Free Retail Checklist",
-            "heading": "AIカメラで、来店人数カウントから購買分析まで、これ１台！",
-            "description": "<p>出入口に設置するだけで<strong>来店客数・入店率・店前通行量を自動計測</strong>。数えたデータを売上と掛け合わせ、<strong>店舗分析から改善アクションまでつなげます</strong>。<br/></p>",
-            "bullet_1": "",
-            "bullet_2": "",
-            "bullet_3": "",
-            "bullet_4": "",
-            "primary_button_label": "Download the checklist",
-            "primary_button_link": "shopify://pages/faq",
-            "secondary_button_label": "ddsds",
-            "secondary_button_link": "shopify://pages/pricing",
-            "caption": "Free resource for retail leaders, store operations teams, and DX managers.",
-            "trust_1": "",
-            "trust_2": "",
-            "trust_3": "",
-            "trust_4": "",
-            "image_alt": "",
-            "image_position": "right",
-            "image_aspect_ratio": "natural",
-            "image_fit": "cover",
-            "image_border_radius": 12,
-            "image_shadow": true,
-            "image_border": false,
-            "image_panel": false,
-            "eyebrow_font_size": 14,
-            "eyebrow_font_weight": "700",
-            "eyebrow_letter_spacing": 0.1,
-            "eyebrow_bottom_spacing": 22,
-            "eyebrow_color": "#0e366a",
-            "heading_font_size": 54,
-            "heading_font_size_mobile": 38,
-            "heading_line_height": 1.1,
-            "heading_font_weight": "800",
-            "heading_max_width": 600,
-            "heading_color": "#1a202c",
-            "description_font_size": 20,
-            "description_line_height": 1.6,
-            "description_max_width": 600,
-            "description_top_spacing": 26,
-            "description_bottom_spacing": 0,
-            "description_color": "#4a5568",
-            "bullet_font_size": 18,
-            "bullet_line_height": 1.5,
-            "bullet_item_spacing": 14,
-            "bullet_list_top_spacing": 32,
-            "bullet_list_bottom_spacing": 0,
-            "checkmark_size": 20,
-            "checkmark_color": "#0e366a",
-            "bullet_text_color": "#4a5568",
-            "button_font_size": 16,
-            "button_font_weight": "700",
-            "button_border_radius": 8,
-            "button_vertical_padding": 16,
-            "button_horizontal_padding": 28,
-            "button_top_spacing": 36,
-            "button_alignment": "left",
-            "primary_button_background": "#0e366a",
-            "primary_button_text": "#ffffff",
-            "primary_button_hover_background": "#0a2850",
-            "primary_button_hover_text": "#ffffff",
-            "secondary_button_background": "transparent",
-            "secondary_button_text": "#0e366a",
-            "secondary_button_border": "#0e366a",
-            "secondary_button_hover_background": "#0e366a",
-            "secondary_button_hover_text": "#ffffff",
-            "secondary_button_hover_border": "#0e366a",
-            "caption_font_size": 15,
-            "caption_line_height": 1.5,
-            "caption_max_width": 560,
-            "caption_top_spacing": 16,
-            "caption_bottom_spacing": 0,
-            "caption_color": "#718096",
-            "trust_font_size": 15,
-            "trust_item_gap": 26,
-            "trust_row_gap": 16,
-            "trust_top_spacing": 26,
-            "trust_alignment": "left",
-            "trust_text_color": "#718096",
-            "trust_checkmark_color": "#0e366a",
-            "column_ratio": "50-50",
-            "vertical_alignment": "center",
-            "mobile_order": "text-first",
-            "mobile_text_alignment": "left",
-            "mobile_button_width": "auto",
-            "max_width": 1300,
-            "column_gap": 70,
-            "mobile_column_gap": 45,
-            "padding_top": 90,
-            "padding_bottom": 90,
-            "padding_top_mobile": 60,
-            "padding_bottom_mobile": 60,
-            "section_background": "#ffffff",
-            "text_color": "#4a5568",
-            "image_panel_background": "#f7fafc"
+            "heading": "",
+            "heading_alignment": "center",
+            "heading_size": 32,
+            "heading_color": "#11243e",
+            "heading_spacing": 40,
+            "logo_width": 140,
+            "logo_height": 80,
+            "logo_spacing": 30,
+            "logo_inner_padding": 10,
+            "logo_border_radius": 8,
+            "logo_background": "#ffffff",
+            "logo_opacity": 0.7,
+            "scroll_speed": 30,
+            "pause_on_hover": "paused",
+            "desktop_width_percent": 100,
+            "background_color": "#f9fafb",
+            "section_padding": 60,
+            "logo_padding": 20
           },
           "blocks": {}
         }
       },
       "block_order": [
-        "ai_gen_block_f46e12e_BH3cDc"
+        "ai_gen_block_c94f27c_7yGzXM"
       ],
-      "name": "Split conversion hero",
+      "name": "Scrolling logo bar",
       "settings": {
         "full_width": true,
-        "remove_vertical_spacing": true,
+        "remove_vertical_spacing": false,
         "remove_horizontal_spacing": false,
         "background": "",
         "background_gradient": "",
         "text_color": ""
       }
+    },
+    "text_with_icons_3KVzNR": {
+      "type": "text-with-icons",
+      "blocks": {
+        "item_gFAUp6": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-secure-profile",
+            "mobile_icon_width": 24,
+            "icon_width": 32,
+            "icon_background_type": "none",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "100ブランド以上",
+            "content": "<p>導入事績</p>"
+          }
+        },
+        "item_DcdCeB": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-percent",
+            "mobile_icon_width": 24,
+            "icon_width": 32,
+            "icon_background_type": "none",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "+23.9%",
+            "content": "<p>購買率改善</p>"
+          }
+        },
+        "item_x9HrxD": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-coupon",
+            "mobile_icon_width": 24,
+            "icon_width": 32,
+            "icon_background_type": "none",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "126店舗",
+            "content": "<p>計測検証済</p>"
+          }
+        },
+        "item_DczdKA": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-coupon",
+            "mobile_icon_width": 24,
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "Customer service",
+            "content": "<p>We are available from monday to friday to answer your questions.</p>"
+          }
+        },
+        "item_aY9aP3": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-coupon",
+            "mobile_icon_width": 24,
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "Secure payment",
+            "content": "<p>Your payment information is processed securely.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_gFAUp6",
+        "item_DcdCeB",
+        "item_x9HrxD",
+        "item_DczdKA",
+        "item_aY9aP3"
+      ],
+      "name": "Text with icons",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "title": "",
+        "heading_tag": "h5",
+        "text_alignment": "center",
+        "icon_spacing": "medium",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "multi_column_bDEgUx": {
+      "type": "multi-column",
+      "blocks": {
+        "item_XqVtxr": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "Column title",
+            "heading_tag": "h4",
+            "subheading": "<p>Organize content into multiple columns to share useful information to your customers about your products, values...</p>",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_nAJgfJ": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "Column title",
+            "heading_tag": "h4",
+            "subheading": "<p>Organize content into multiple columns to share useful information to your customers about your products, values...</p>",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_xkUV4x": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "Column title",
+            "heading_tag": "h4",
+            "subheading": "<p>Organize content into multiple columns to share useful information to your customers about your products, values...</p>",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_DTpEKe": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "Column title",
+            "heading_tag": "h4",
+            "subheading": "<p>Organize content into multiple columns to share useful information to your customers about your products, values...</p>",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_6HeaP8": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "Column title",
+            "heading_tag": "h4",
+            "subheading": "<p>Organize content into multiple columns to share useful information to your customers about your products, values...</p>",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_XqVtxr",
+        "item_nAJgfJ",
+        "item_xkUV4x",
+        "item_DTpEKe",
+        "item_6HeaP8"
+      ],
+      "name": "Multi-column",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "start",
+        "subheading": "About",
+        "title": "Featured content",
+        "content": "<p>Organize content into multiple columns to share useful information to your customers about your products, values...</p>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "subheading_background_color": "",
+        "subheading_text_color": ""
+      }
     }
   },
   "order": [
     "main",
-    "blocks_wUYzCX"
+    "media_with_text_9NrNXp",
+    "blocks_ECpT8w",
+    "text_with_icons_3KVzNR",
+    "multi_column_bDEgUx"
   ]
 }
