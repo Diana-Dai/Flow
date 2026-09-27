@@ -319,6 +319,12 @@
       },
       {
         "type": "color",
+        "id": "accent_green",
+        "label": "Green accent",
+        "default": "#829a2d"
+      },
+      {
+        "type": "color",
         "id": "primary_button_text_color",
         "label": "Text",
         "default": "#677279"

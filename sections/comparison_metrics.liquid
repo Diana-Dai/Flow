@@ -1,0 +1,111 @@
+<style>
+  #shopify-section-{{ section.id }} {
+    --comparison-metrics-text: {{ section.settings.text_color }};
+    --comparison-metrics-divider: {{ section.settings.divider_color }};
+  }
+
+
+
+  .comparison-metrics__list {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    margin: 0;
+  }
+
+  .comparison-metrics__item {
+    margin:10px 0;
+    display: grid;
+    gap: var(--spacing-1-5);
+    align-content: center;
+    min-height: 76px;
+    padding: var(--spacing-3) var(--spacing-4);
+    text-align: center;
+  }
+
+  .comparison-metrics__item + .comparison-metrics__item {
+    border-inline-start: 1px solid var(--comparison-metrics-divider);
+  }
+
+  .comparison-metrics__value,
+  .comparison-metrics__label {
+    margin: 0;
+    color: var(--comparison-metrics-text);
+  }
+
+  .comparison-metrics__value {
+    font-size: var(--text-h5);
+    font-weight: 700;
+    line-height: 1.1;
+    white-space: nowrap;
+  }
+
+  .comparison-metrics__label {
+    font-size: var(--text-sm);
+    line-height: 1.2;
+    color: #5C6055;
+  }
+
+  @media screen and (min-width: 700px) {
+    .comparison-metrics__list {
+      grid-template-columns: repeat({{ section.blocks.size }}, minmax(0, 1fr));
+    }
+
+    .comparison-metrics__item {
+      min-height: 64px;
+      padding-inline: var(--spacing-4);
+    }
+  }
+</style>
+
+<div {% render 'section-properties', tight:"tight" %}>
+  <div class="comparison-metrics">
+    <dl class="comparison-metrics__list">
+      {%- for block in section.blocks -%}
+        <div class="comparison-metrics__item" {{ block.shopify_attributes }}>
+          <dt class="comparison-metrics__value">{{ block.settings.value | escape }}</dt>
+          <dd class="comparison-metrics__label">{{ block.settings.label | escape }}</dd>
+        </div>
+      {%- endfor -%}
+    </dl>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Comparison metrics",
+  "class": "shopify-section--comparison-metrics",
+  "tag": "section",
+  "disabled_on": {
+    "groups": ["header", "custom.overlay"]
+  },
+  "settings": [
+    { "type": "checkbox", "id": "full_width", "label": "Full width", "default": true },
+    { "type": "color", "id": "background", "label": "Background" },
+    { "type": "color_background", "id": "background_gradient", "label": "Background gradient" },
+    { "type": "color", "id": "text_color", "label": "Text", "default": "#292d25" },
+    { "type": "color", "id": "divider_color", "label": "Divider", "default": "#e5e5e0" }
+  ],
+  "blocks": [
+    {
+      "type": "metric",
+      "name": "Metric",
+      "settings": [
+        { "type": "text", "id": "value", "label": "Value", "default": "100ブランド以上" },
+        { "type": "text", "id": "label", "label": "Label", "default": "導入実績" }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Comparison metrics",
+      "blocks": [
+        { "type": "metric", "settings": { "value": "100ブランド以上", "label": "導入実績" } },
+        { "type": "metric", "settings": { "value": "+23.9%", "label": "購買率改善" } },
+        { "type": "metric", "settings": { "value": "126店舗", "label": "計測継続" } },
+        { "type": "metric", "settings": { "value": "18.4億円", "label": "売上改善効果" } },
+        { "type": "metric", "settings": { "value": "2006年設立", "label": "長年の業界経験" } }
+      ]
+    }
+  ]
+}
+{% endschema %}

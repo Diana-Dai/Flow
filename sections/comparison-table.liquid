@@ -14,6 +14,9 @@ CSS
     --feature-chart-values-columns-count: {{ values_column_count }};
   }
 
+  #shopify-section-{{ section.id }} .section-stack__intro .prose strong { color: #292d25; }
+  #shopify-section-{{ section.id }} .section-stack__intro .prose strong:nth-of-type(1),
+
   @media screen and (min-width: 700px) {
     {%- if text_position == 'center' -%}
       #shopify-section-{{ section.id }} .section-stack__main {
@@ -53,17 +56,7 @@ LIQUID
     {%- if section.settings.subheading != blank or section.settings.title != blank or section.settings.content != blank or section.settings.button_text != blank -%}
       <div class="section-stack__intro">
         <div class="prose {% if text_position == 'center' %}text-center{% endif %}">
-          {%- if section.settings.subheading != blank -%}
-            <p class="subheading">{{ section.settings.subheading | escape }}</p>
-          {%- endif -%}
-
-          {%- if section.settings.title != blank -%}
-            <h2 class="h2">
-              {%- render 'styled-text', content: section.settings.title, text_color: section.settings.heading_color, gradient: section.settings.heading_gradient -%}
-            </h2>
-          {%- endif -%}
-
-          {{- section.settings.content -}}
+          {%- render 'section-header', subheading: section.settings.subheading, heading: section.settings.title, content: section.settings.content, text_alignment: text_position -%}
 
           {%- if section.settings.button_text != blank -%}
             {%- render 'button', size: 'lg', href: section.settings.button_url, content: section.settings.button_text, background: section.settings.button_background, text_color: section.settings.button_text_color -%}

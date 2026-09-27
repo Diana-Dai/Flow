@@ -1,0 +1,297 @@
+<style>
+  html {
+    scroll-behavior: smooth;
+  }
+
+  #shopify-section-{{ section.id }} {
+    --comparison-intro-accent: {{ section.settings.accent_color }};
+    --comparison-intro-text: {{ section.settings.text_color }};
+  }
+
+  .comparison-intro {
+    overflow: hidden;
+  }
+
+  .comparison-intro__content {
+    display: grid;
+    gap: var(--spacing-8);
+    align-items: center;
+  }
+
+  .comparison-intro__copy {
+    display: grid;
+    align-content: center;
+    gap: var(--spacing-6);
+    min-width: 0;
+    overflow: hidden;
+  }
+
+  .comparison-intro__copy .section-header { min-width: 0; }
+  .comparison-intro__copy .section-header .prose { max-width: 100%; }
+
+  .comparison-intro__eyebrow {
+    margin: 0;
+    color: var(--comparison-intro-accent);
+    font-size: var(--text-sm);
+    font-weight: 700;
+  }
+
+  .comparison-intro__title {
+    margin: 0;
+    color: var(--comparison-intro-text);
+  }
+
+  .comparison-intro__description {
+    max-width: 58ch;
+    margin: 0;
+    color: var(--comparison-intro-text);
+  }
+
+  .comparison-intro__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-4);
+  }
+  .comparison-intro__actions .comparison-intro__primary{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }  
+  .comparison-intro__actions .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80px;
+    padding: var(--spacing-5) var(--spacing-8);
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.35;
+    white-space: pre-line;
+  }
+
+  .comparison-intro__primary .button {
+    color: #fff;
+  }
+
+  .comparison-intro__secondary .button {
+    display:block;
+    color: var(--comparison-intro-accent);
+  }
+
+  .comparison-intro__secondary .button small {
+    display: block;
+    margin-block-start: 4px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.2;
+  }
+
+  .comparison-intro__media {
+    width:100%;
+    overflow: hidden;
+    border-radius: var(--rounded-sm);
+  }
+  @media (max-width: 699px) {
+    .comparison-intro__media {
+      aspect-ratio: 2;
+    }
+  }
+  .comparison-intro__media img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1.55;
+    object-fit: cover;
+  }
+
+  .comparison-intro__logos {
+    overflow: hidden;
+    padding-block: var(--spacing-2);
+  }
+
+  .comparison-intro__logos-track {
+    margin: 15px 0 0;
+    display: flex;
+    width: max-content;
+    gap: var(--spacing-8);
+    align-items: center;
+    animation: comparison-intro-logo-marquee 28s linear infinite;
+  }
+
+  .comparison-intro__logo {
+    flex: 0 0 auto;
+    width: max(var(--comparison-intro-logo-width), 150px);
+  }
+
+  .comparison-intro__logo img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 70px;
+    object-fit: contain;
+  }
+  @media screen and (max-width: 699px) {
+  .comparison-intro__logo img {
+    max-height: 38px;
+
+  }
+
+  }
+  @keyframes comparison-intro-logo-marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+
+    .comparison-intro__logos-track {
+      animation-play-state: paused;
+    }
+  }
+
+  @media screen and (min-width: 700px) {
+  
+
+    .comparison-intro__content {
+      grid-template-columns: minmax(0, 1fr) minmax(360px, 0.92fr);
+      gap: var(--spacing-12);
+    }
+
+    .comparison-intro__logos-track {
+      gap: var(--spacing-6);
+      margin: 30px 0 0;
+    }
+
+    .comparison-intro__logo {
+      width: max(var(--comparison-intro-logo-width), 150px);
+    }
+  }
+
+  @media screen and (max-width: 699px) {
+    .comparison-intro__content { display: flex; flex-direction: column; }
+    .comparison-intro__copy { display: contents; }
+    .comparison-intro__copy .section-header { order: 1; }
+    .comparison-intro__media { order: 2; }
+    .comparison-intro__description { order: 3; }
+    .comparison-intro__actions { order: 4; }
+    .comparison-intro__logo { width: max(var(--comparison-intro-logo-width), 100px); }
+    .comparison-intro__actions {
+      width: 100%;
+      display: grid;
+    }
+
+    .comparison-intro__actions .button {
+      width: 100%;
+      min-height: 52px;
+      padding: var(--spacing-3) var(--spacing-5);
+      font-size: 16px;
+    }
+  }
+</style>
+
+<div {% render 'section-properties', tight:"tight" %}>
+  <div class="comparison-intro">
+    <div class="comparison-intro__content">
+      <div class="comparison-intro__copy">
+        {%- capture comparison_intro_header_content -%}
+          {{- section.settings.title -}}
+        {%- endcapture -%}
+        {%- render 'section-header', subheading: section.settings.eyebrow, content: comparison_intro_header_content, text_alignment: 'start' -%}
+
+        {%- if section.settings.description != blank -%}
+          <div class="comparison-intro__description prose">{{ section.settings.description }}</div>
+        {%- endif -%}
+
+        <div class="comparison-intro__actions">
+          {%- if section.settings.primary_button_label != blank -%}
+            <div class="comparison-intro__primary">
+            {%- render 'button', content: section.settings.primary_button_label, href: section.settings.primary_button_link, size: 'lg', background: section.settings.accent_color, text_color: '#ffffff' -%}
+            </div>
+          {%- endif -%}
+
+          {%- if section.settings.secondary_button_label != blank -%}
+            <div class="comparison-intro__secondary">
+              {%- capture secondary_button_content -%}{{ section.settings.secondary_button_label }}<small>{{ section.settings.secondary_button_note }}</small>{%- endcapture -%}
+              {%- render 'button', content: secondary_button_content, href: section.settings.secondary_button_link, size: 'lg', style: 'outline', background: '#ffffff', text_color: section.settings.accent_color -%}
+            </div>
+          {%- endif -%}
+        </div>
+      </div>
+
+      <div class="comparison-intro__media">
+        {%- if section.settings.image != blank -%}
+          {{- section.settings.image | image_url: width: 1600 | image_tag: loading: 'eager', fetchpriority: 'high', widths: '400,600,800,1000,1200,1600', sizes: '(max-width: 699px) calc(100vw - 40px), 46vw', alt: section.settings.image.alt -}}
+        {%- else -%}
+          {{- 'image' | placeholder_svg_tag: 'aspect-short placeholder' -}}
+        {%- endif -%}
+      </div>
+    </div>
+
+    {%- if section.blocks.size > 0 -%}
+      <div class="comparison-intro__logos" aria-label="{{ section.settings.logo_label | escape }}">
+        <div class="comparison-intro__logos-track">
+          {%- for repeat in (1..2) -%}
+            {%- for block in section.blocks -%}
+              {%- if block.settings.logo != blank -%}
+                <div class="comparison-intro__logo" style="--comparison-intro-logo-width: {{ block.settings.width }}px"{% if repeat == 1 %} {{ block.shopify_attributes }}{% else %} aria-hidden="true"{% endif %}>
+                  {%- if block.settings.link != blank -%}<a href="{{ block.settings.link }}">{%- endif -%}
+                    {{- block.settings.logo | image_url: width: 460 | image_tag: loading: 'lazy', widths: '120,230,460', sizes: '120px', alt: block.settings.logo.alt -}}
+                  {%- if block.settings.link != blank -%}</a>{%- endif -%}
+                </div>
+              {%- endif -%}
+            {%- endfor -%}
+          {%- endfor -%}
+        </div>
+      </div>
+    {%- endif -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Comparison introduction",
+  "class": "shopify-section--comparison-intro",
+  "tag": "section",
+  "disabled_on": {
+    "groups": ["header", "custom.overlay"]
+  },
+  "settings": [
+    { "type": "checkbox", "id": "full_width", "label": "Full width", "default": true },
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "ABEJA・リテールネクスト・OPTIMなどの店舗分析ツールをご検討中の方へ" },
+    { "type": "richtext", "id": "title", "label": "Heading", "default": "<h2>計測と分析を1つに。<br>Flowの 店舗分析プラットフォーム</h2>" },
+    { "type": "richtext", "id": "description", "label": "Description", "default": "<p>AIカメラによる来店計測とPOS連携のAIデータ店舗分析を<strong>ワンストップでご提供。</strong> 各サービスとの違いを<strong>1枚の表で解説します。</strong></p>" },
+    { "type": "image_picker", "id": "image", "label": "Hero image" },
+    { "type": "text", "id": "primary_button_label", "label": "Primary button", "default": "比較表を見る" },
+    { "type": "url", "id": "primary_button_link", "label": "Primary button link" },
+    { "type": "text", "id": "secondary_button_label", "label": "Secondary button", "default": "店舗課題の無料診断" },
+    { "type": "text", "id": "secondary_button_note", "label": "Secondary button note", "default": "（5分で完了）" },
+    { "type": "url", "id": "secondary_button_link", "label": "Secondary button link" },
+    { "type": "text", "id": "logo_label", "label": "Logo row label", "default": "導入企業" },
+    { "type": "color", "id": "accent_color", "label": "Accent", "default": "#829a2d" },
+    { "type": "color", "id": "text_color", "label": "Text", "default": "#292d25" },
+    { "type": "color", "id": "background", "label": "Background" },
+    { "type": "color_background", "id": "background_gradient", "label": "Background gradient" }
+  ],
+  "blocks": [
+    {
+      "type": "logo",
+      "name": "Client logo",
+      "settings": [
+        { "type": "image_picker", "id": "logo", "label": "Logo" },
+        { "type": "range", "id": "width", "label": "Width", "min": 60, "max": 220, "step": 10, "unit": "px", "default": 120 },
+        { "type": "url", "id": "link", "label": "Link" }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Comparison introduction",
+      "blocks": [
+        { "type": "logo" }, { "type": "logo" }, { "type": "logo" }, { "type": "logo" }, { "type": "logo" }, { "type": "logo" }
+      ]
+    }
+  ]
+}
+{% endschema %}

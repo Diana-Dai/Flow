@@ -1,0 +1,676 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "comparison_intro": {
+      "type": "comparison-intro",
+      "blocks": {
+        "baycrews": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/baycrews-logo-230-130.png",
+            "width": 120,
+            "link": ""
+          }
+        },
+        "daytona": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/daytona-logo-230-130.png",
+            "width": 120,
+            "link": ""
+          }
+        },
+        "cole_haan": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/colehaan-logo-230-130.png",
+            "width": 120,
+            "link": ""
+          }
+        },
+        "tumi": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/tumi-logo-230-130.png",
+            "width": 120,
+            "link": ""
+          }
+        },
+        "plaza": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/plaza-logo-230-130.png",
+            "width": 120,
+            "link": ""
+          }
+        },
+        "taylormade": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/taylormade-logo-230-130.png",
+            "width": 120,
+            "link": ""
+          }
+        },
+        "triumph": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/triumph-logo-230-130.png",
+            "width": 120,
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "baycrews",
+        "daytona",
+        "cole_haan",
+        "tumi",
+        "plaza",
+        "taylormade",
+        "triumph"
+      ],
+      "settings": {
+        "full_width": true,
+        "eyebrow": "ABEJA・リテールネクスト・OPTIMなどの店舗分析ツールをご検討中の方へ",
+        "title": "<h2>計測と分析を1つに。<br/>Flowの 店舗分析プラットフォーム</h2>",
+        "description": "<p>AIカメラによる来店計測とPOS連携のAIデータ店舗分析を<em><strong>ワンストップでご提供。</strong></em> 各サービスとの違いを<strong>1枚の表で解説します。</strong></p>",
+        "image": "shopify://shop_images/Manager_Decisions.png",
+        "primary_button_label": "比較表を見る",
+        "primary_button_link": "#c03",
+        "secondary_button_label": "店舗課題の無料診断",
+        "secondary_button_note": "（5分で完了）",
+        "secondary_button_link": "#assessment",
+        "logo_label": "導入企業",
+        "accent_color": "#829a2d",
+        "text_color": "#292d25",
+        "background": "#ffffff",
+        "background_gradient": ""
+      }
+    },
+    "comparison_metrics": {
+      "type": "comparison_metrics",
+      "blocks": {
+        "metric_1": {
+          "type": "metric",
+          "settings": {
+            "value": "100ブランド以上",
+            "label": "導入実績"
+          }
+        },
+        "metric_2": {
+          "type": "metric",
+          "settings": {
+            "value": "+23.9%",
+            "label": "購買率改善"
+          }
+        },
+        "metric_3": {
+          "type": "metric",
+          "settings": {
+            "value": "126店舗",
+            "label": "計測継続"
+          }
+        },
+        "metric_4": {
+          "type": "metric",
+          "settings": {
+            "value": "18.4億円",
+            "label": "売上改善効果"
+          }
+        },
+        "metric_5": {
+          "type": "metric",
+          "settings": {
+            "value": "2006年設立",
+            "label": "長年の業界経験"
+          }
+        }
+      },
+      "block_order": [
+        "metric_1",
+        "metric_2",
+        "metric_3",
+        "metric_4",
+        "metric_5"
+      ],
+      "settings": {
+        "full_width": true,
+        "background": "#fafaf8",
+        "background_gradient": "",
+        "text_color": "#292d25",
+        "divider_color": "#e5e5e0"
+      }
+    },
+    "comparison_table": {
+      "type": "comparison-table-custom",
+      "blocks": {
+        "row_1": {
+          "type": "checkpoint",
+          "settings": {
+            "checkpoint": "安定した来店計測",
+            "status_1": "strong",
+            "note_1": "複数入口・スタッフ除外",
+            "status_2": "yes",
+            "note_2": "計測のみ",
+            "status_3": "yes",
+            "note_3": "",
+            "status_4": "partial",
+            "note_4": "調査期間のみ",
+            "status_5": "no",
+            "note_5": ""
+          }
+        },
+        "row_2": {
+          "type": "checkpoint",
+          "settings": {
+            "checkpoint": "購買率まで管理",
+            "status_1": "yes",
+            "note_1": "POS連携で自動",
+            "status_2": "no",
+            "note_2": "",
+            "status_3": "partial",
+            "note_3": "",
+            "status_4": "partial",
+            "note_4": "",
+            "status_5": "partial",
+            "note_5": "データ持ち込み前提"
+          }
+        },
+        "row_3": {
+          "type": "checkpoint",
+          "settings": {
+            "checkpoint": "店舗間の比較",
+            "status_1": "strong",
+            "note_1": "同じ基準で全店舗",
+            "status_2": "no",
+            "note_2": "",
+            "status_3": "partial",
+            "note_3": "",
+            "status_4": "no",
+            "note_4": "",
+            "status_5": "yes",
+            "note_5": ""
+          }
+        },
+        "row_4": {
+          "type": "checkpoint",
+          "settings": {
+            "checkpoint": "次の一手の支援",
+            "status_1": "strong",
+            "note_1": "AI自動分析",
+            "status_2": "no",
+            "note_2": "",
+            "status_3": "partial",
+            "note_3": "",
+            "status_4": "yes",
+            "note_4": "レポート提供",
+            "status_5": "no",
+            "note_5": ""
+          }
+        },
+        "row_5": {
+          "type": "checkpoint",
+          "settings": {
+            "checkpoint": "必要に応じた拡張",
+            "status_1": "yes",
+            "note_1": "段階導入可",
+            "status_2": "no",
+            "note_2": "",
+            "status_3": "partial",
+            "note_3": "",
+            "status_4": "no",
+            "note_4": "",
+            "status_5": "partial",
+            "note_5": ""
+          }
+        },
+        "row_6": {
+          "type": "checkpoint",
+          "settings": {
+            "checkpoint": "導入後の安定運用",
+            "status_1": "yes",
+            "note_1": "活用支援つき",
+            "status_2": "yes",
+            "note_2": "単機能ゆえ安定",
+            "status_3": "partial",
+            "note_3": "",
+            "status_4": "partial",
+            "note_4": "",
+            "status_5": "no",
+            "note_5": "専任者が必要"
+          }
+        },
+        "row_7": {
+          "type": "checkpoint",
+          "settings": {
+            "checkpoint": "多店舗を一挙管理",
+            "status_1": "yes",
+            "note_1": "多店舗管理がスムーズ",
+            "status_2": "partial",
+            "note_2": "",
+            "status_3": "partial",
+            "note_3": "",
+            "status_4": "no",
+            "note_4": "",
+            "status_5": "partial",
+            "note_5": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_1",
+        "row_2",
+        "row_3",
+        "row_4",
+        "row_5",
+        "row_6",
+        "row_7"
+      ],
+      "settings": {
+        "full_width": true,
+        "title": "店舗分析ツールをタイプ別に比較する",
+        "description": "<p>「店舗分析」と呼ばれるサービスは、実は<strong>4つのタイプ</strong>に分かれます。各タイプの比較表で、<em><strong>7つのチェックポイント</strong></em>で違いを確認しましょう。 ABEJA Insight for Retail、RetailNext（リテールネクスト）、OPTiM AI Camera（オプティム AIカメラ）、バルテックのAIカメラ、Go Insightなどをご検討中の方は、各サービスが属するタイプの列を目安にご覧ください。</p>",
+        "checkpoint_heading": "チェックポイント",
+        "service_1": "Flow",
+        "service_1_note": "(AIカメラ×店舗データ分析)",
+        "service_2": "ピープルカウンター",
+        "service_2_note": "(計測機器)",
+        "service_3": "AIカメラ来店者分析",
+        "service_3_note": "",
+        "service_4": "売場調査サービス",
+        "service_4_note": "",
+        "service_5": "BIツール",
+        "service_5_note": "",
+        "accent_color": "#829a2d",
+        "text_color": "#292d25",
+        "border_color": "#dfe1d9",
+        "background": "#fafaf8",
+        "background_gradient": ""
+      }
+    },
+    "comparison_process": {
+      "type": "comparison-process",
+      "blocks": {
+        "step_1": {
+          "type": "step",
+          "settings": {
+            "title": "AIカメラで計測",
+            "image": "shopify://shop_images/A-04_P-04_C-04_product-overview_panel1_measure.png"
+          }
+        },
+        "step_2": {
+          "type": "step",
+          "settings": {
+            "title": "分析データへ変換",
+            "image": "shopify://shop_images/A-04_P-04_C-04_product-overview_panel2_convert.png"
+          }
+        },
+        "step_3": {
+          "type": "step",
+          "settings": {
+            "title": "Flowで可視化",
+            "image": "shopify://shop_images/A-04_P-04_C-04_product-overview_panel3_visualize.png"
+          }
+        }
+      },
+      "block_order": [
+        "step_1",
+        "step_2",
+        "step_3"
+      ],
+      "settings": {
+        "full_width": true,
+        "title": "Flowは、計測と分析を一挙に行えるプラットフォームです",
+        "description": "<p>AIカメラによる来店計測と、POS・人員データを統合する分析プラットフォームを<strong>1社で提供します。</strong> 機器とツールを別々に揃える必要はありません。<em><strong>計測だけ始めて、分析へ広げることもできます。</strong></em></p>",
+        "accent_color": "#829a2d",
+        "text_color": "#292d25",
+        "background": "#ffffff",
+        "background_gradient": ""
+      }
+    },
+    "comparison_capabilities": {
+      "type": "comparison-capabilities",
+      "blocks": {
+        "step_1": {
+          "type": "step",
+          "settings": {
+            "title": "計測する",
+            "summary": "店の前から店内まで、人の動きを数える",
+            "image": "shopify://shop_images/9335960c06d1e97a177a624843444132.jpg",
+            "feature_1_title": "来店数計測",
+            "feature_1_copy": "出入口の通過人数を自動カウント",
+            "feature_2_title": "店前通行量",
+            "feature_2_copy": "店の前を通った人数を把握",
+            "feature_3_title": "入店率",
+            "feature_3_copy": "通行量に対する入店の割合",
+            "feature_4_title": "スタッフ除外",
+            "feature_4_copy": "従業員を除いた来店数"
+          }
+        },
+        "step_2": {
+          "type": "step",
+          "settings": {
+            "title": "分析する",
+            "summary": "店内の行動から「売れる理由」を読み解く",
+            "image": "shopify://shop_images/5f134f3feaaa05b2d4be37122cffece7.jpg",
+            "feature_1_title": "滞在時間",
+            "feature_1_copy": "店内での滞在傾向を計測",
+            "feature_2_title": "属性分析",
+            "feature_2_copy": "来店客の傾向を把握",
+            "feature_3_title": "店内動線",
+            "feature_3_copy": "入店からレジまでの動きを可視化",
+            "feature_4_title": "",
+            "feature_4_copy": ""
+          }
+        },
+        "step_3": {
+          "type": "step",
+          "settings": {
+            "title": "つなげて、判断する",
+            "summary": "売上と掛け合わせ、次の一手を決める",
+            "image": "shopify://shop_images/KPI.jpg",
+            "feature_1_title": "売上・POS統合",
+            "feature_1_copy": "購買率・客単価を自動算出",
+            "feature_2_title": "判断支援（FIDA）",
+            "feature_2_copy": "数字の変化から次の一手を提示",
+            "feature_3_title": "",
+            "feature_3_copy": "",
+            "feature_4_title": "",
+            "feature_4_copy": ""
+          }
+        }
+      },
+      "block_order": [
+        "step_1",
+        "step_2",
+        "step_3"
+      ],
+      "name": "Comparison capabilities",
+      "settings": {
+        "full_width": true,
+        "title": "Flowでできること",
+        "accent_color": "#829a2d",
+        "background": "#f7f8f5",
+        "background_gradient": ""
+      }
+    },
+    "comparison_capabilities_native": {
+      "type": "comparison-capabilities",
+      "blocks": {
+        "step_1": {
+          "type": "step",
+          "settings": {
+            "title": "計測する",
+            "summary": "店の前から店内まで、人の動きを数える",
+            "image": "shopify://shop_images/44.png",
+            "feature_1_title": "来店数計測",
+            "feature_1_copy": "出入口の通過人数を自動カウント",
+            "feature_2_title": "店前通行量",
+            "feature_2_copy": "店の前を通った人数を把握",
+            "feature_3_title": "入店率",
+            "feature_3_copy": "通行量に対する入店の割合",
+            "feature_4_title": "スタッフ除外",
+            "feature_4_copy": "従業員を除いた来店数"
+          }
+        },
+        "step_2": {
+          "type": "step",
+          "settings": {
+            "title": "分析する",
+            "summary": "店内の行動から「売れる理由」を読み解く",
+            "image": "shopify://shop_images/Analytics_-_Entering_3.png",
+            "feature_1_title": "滞在時間",
+            "feature_1_copy": "店内での滞在傾向を計測",
+            "feature_2_title": "属性分析",
+            "feature_2_copy": "来店客の傾向を把握",
+            "feature_3_title": "店内動線",
+            "feature_3_copy": "入店からレジまでの動きを可視化",
+            "feature_4_title": "",
+            "feature_4_copy": ""
+          }
+        },
+        "step_3": {
+          "type": "step",
+          "settings": {
+            "title": "つなげて、判断する",
+            "summary": "売上と掛け合わせ、次の一手を決める",
+            "image": "shopify://shop_images/iPad_Dashboard_1.png",
+            "feature_1_title": "売上・POS統合",
+            "feature_1_copy": "購買率・客単価を自動算出",
+            "feature_2_title": "判断支援（FIDA）",
+            "feature_2_copy": "数字の変化から次の一手を提示",
+            "feature_3_title": "",
+            "feature_3_copy": "",
+            "feature_4_title": "",
+            "feature_4_copy": ""
+          }
+        }
+      },
+      "block_order": [
+        "step_1",
+        "step_2",
+        "step_3"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "title": "Flowでできること",
+        "accent_color": "#829a2d",
+        "background": "#f7f8f5",
+        "background_gradient": ""
+      }
+    },
+    "comparison_results": {
+      "type": "comparison-results",
+      "blocks": {
+        "result_1": {
+          "type": "result",
+          "settings": {
+            "image": "shopify://shop_images/68ed3fe9761b3254a6b775fdf05dd51e.jpg",
+            "title": "ROI 50倍超",
+            "content": "<p>投資対効果改善（大手ファッション小売様事例）</p>"
+          }
+        },
+        "result_2": {
+          "type": "result",
+          "settings": {
+            "image": "shopify://shop_images/11fa17bd4368a8923fcc1793ab26d5c1.jpg",
+            "title": "+8.93%",
+            "content": "<p>売上改善率（大手小売様事例）</p>"
+          }
+        },
+        "result_3": {
+          "type": "result",
+          "settings": {
+            "image": "shopify://shop_images/eec7ec0d9d0eada892e0f177a2a5b3f5.jpg",
+            "title": "+23.9%",
+            "content": "<p>購買率改善（Daytona様事例）</p>"
+          }
+        }
+      },
+      "block_order": [
+        "result_1",
+        "result_2",
+        "result_3"
+      ],
+      "settings": {
+        "title": "数字で見る導入効果",
+        "background": "#ffffff",
+        "text_color": "#292d25"
+      }
+    },
+    "comparison_positioning": {
+      "type": "comparison-positioning",
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "御社に必要なAIカメラ＆分析プラットフォームを一目で比較",
+        "content": "<p><strong>縦軸は「計測まで」「分析・可視化まで」「判断・改善まで」のどこまでカバーするか</strong>、横軸は<strong>日常の店舗運用にどれだけ組み込めるか</strong>。</p><p>ABEJA Insight for Retail、RetailNext（リテールネクスト）、OPTiM AI Camera、Go Insight、バルテックなどをご検討中の方は、各社が属するタイプの位置を目安にご覧ください。</p>",
+        "text_alignment": "start",
+        "flow_label": "店舗分析プラットフォーム",
+        "flow_copy": "例: Flow / ABEJA / RetailNext",
+        "summary": "<p>Flowは<em><strong>「計測から判断まで」を1社でカバーする店舗分析プラットフォーム</strong></em>です。来店・POS・人員のデータを同じ基準で統合し、AI分析により<strong>本部と店舗が同じ数字で次の一手をスピーディーに決められます</strong>。日本の小売業に特化して<em><strong>2006年から積み上げてきた設計と支援体制</strong></em>が、Flowの強みです。</p>",
+        "note": "※タイプ分けは各社の公開情報をもとにした当社の整理です。",
+        "download_label": "資料をダウンロード",
+        "download_note": "（店舗改善チェックリストつき）",
+        "download_url": "",
+        "consultation_label": "導入のご相談",
+        "consultation_url": "",
+        "background": "#f7f8f5",
+        "text_color": "#292d25"
+      }
+    },
+    "comparison_onboarding": {
+      "type": "comparison-onboarding",
+      "blocks": {
+        "step_1": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/288d6cda5bc2bd2f7d9082a59070ba88.jpg",
+            "title": "ヒアリング",
+            "content": "<p>比較中のサービスや検討状況もお聞かせください。</p>"
+          }
+        },
+        "step_2": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/67ce7fc009e82ca44d2502680e7dff4f.jpg",
+            "title": "画面のご案内",
+            "content": "<p>実際のダッシュボードで違いをご確認いただけます。</p>"
+          }
+        },
+        "step_3": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/AI_0d91db53-8846-4699-9942-d0c9cd800444.jpg",
+            "title": "設置プラン",
+            "content": "<p>店舗に合わせた計測範囲を設計します。</p>"
+          }
+        },
+        "step_4": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Flow_7240f9e7-b246-403e-91c2-56d9c6286cc5.jpg",
+            "title": "導入・活用支援",
+            "content": "<p>設置から活用定着まで伴走します。</p>"
+          }
+        }
+      },
+      "block_order": [
+        "step_1",
+        "step_2",
+        "step_3",
+        "step_4"
+      ],
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "導入の流れ",
+        "content": "",
+        "text_alignment": "start",
+        "background": "#ffffff",
+        "text_color": "#292d25"
+      }
+    },
+    "comparison_faq": {
+      "type": "comparison-faq",
+      "blocks": {
+        "faq_1": {
+          "type": "item",
+          "settings": {
+            "title": "Q. ABEJA Insight for Retailと比べて、Flowは何が違いますか？",
+            "content": "<p>A. 同じ「店舗分析プラットフォーム型」のサービスです。Flowの特徴は、来店・POS・人員データまでの統合範囲と、日本の小売業に特化した設計・支援体制です。タイプ別の違いは本ページの比較表をご確認ください。</p>"
+          }
+        },
+        "faq_2": {
+          "type": "item",
+          "settings": {
+            "title": "Q. RetailNext（リテールネクスト）からの乗り換えは可能ですか？",
+            "content": "<p>既存の計測・分析環境を確認したうえで、移行方法と必要なデータ連携をご案内します。</p>"
+          }
+        },
+        "faq_3": {
+          "type": "item",
+          "settings": {
+            "title": "Q. OPTiM AI Cameraなど「AIカメラ来店分析」タイプとの違いは？",
+            "content": "<p>Flowは来店計測だけでなく、POSや人員データとの統合、分析、改善判断までを一つの基盤で支援します。</p>"
+          }
+        },
+        "faq_4": {
+          "type": "item",
+          "settings": {
+            "title": "Q. Go Insightのような売場調査サービスと併用できますか？",
+            "content": "<p>併用可能です。定量的な来店・売上データと、売場調査による定性的な情報を組み合わせて活用できます。</p>"
+          }
+        },
+        "faq_5": {
+          "type": "item",
+          "settings": {
+            "title": "Q. バルテックのAIカメラを使っています。Flowと併用できますか？",
+            "content": "<p>現在の計測環境や連携方式を確認し、既存データを活かせる構成をご提案します。</p>"
+          }
+        },
+        "faq_6": {
+          "type": "item",
+          "settings": {
+            "title": "Q. 比較検討中です。資料だけもらえますか？",
+            "content": "<p>比較検討用の資料をご案内できます。お気軽にお問い合わせください。</p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_1",
+        "faq_2",
+        "faq_3",
+        "faq_4",
+        "faq_5",
+        "faq_6"
+      ],
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "よくあるご質問",
+        "content": "",
+        "text_alignment": "start",
+        "background": "#f7f8f5",
+        "text_color": "#292d25"
+      }
+    },
+    "comparison_assessment": {
+      "type": "comparison-assessment",
+      "name": "Comparison assessment CTA",
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "5分で、店舗課題を整理する",
+        "content": "<p>全9問に回答すると、売上未達の原因がどの領域にある可能性が高いかを整理できます。</p>",
+        "text_alignment": "center",
+        "image": "shopify://shop_images/assessment_sample_2.png",
+        "checks": "<p>所要時間 約5分</p><p>回答後すぐに結果を確認</p><p>営業電話なし</p><p>回答内容は診断目的でのみ使用</p>",
+        "background": "#ffffff"
+      }
+    }
+  },
+  "order": [
+    "comparison_intro",
+    "comparison_metrics",
+    "comparison_table",
+    "comparison_process",
+    "comparison_capabilities",
+    "comparison_capabilities_native",
+    "comparison_results",
+    "comparison_positioning",
+    "comparison_onboarding",
+    "comparison_faq",
+    "comparison_assessment"
+  ]
+}

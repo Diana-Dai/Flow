@@ -1,0 +1,137 @@
+<style>
+  #shopify-section-{{ section.id }} {
+    --comparison-process-accent: {{ section.settings.accent_color }};
+    --comparison-process-text: {{ section.settings.text_color }};
+  }
+
+  .comparison-process__intro {
+    
+    margin-block-end: var(--spacing-8);
+  }
+
+  .comparison-process__title,
+  .comparison-process__description {
+    color: var(--comparison-process-text);
+  }
+
+  .comparison-process__title {
+    margin: 0 0 var(--spacing-4);
+  }
+
+  .comparison-process__description {
+    margin: 0;
+  }
+.comparison-process__description em strong{
+    color: #2B2E26;
+    font-style: normal;
+  }
+
+  .comparison-process__steps {
+    align-items: center;
+    display: grid;
+    gap: var(--spacing-5);
+  }
+
+  .comparison-process__step {
+    display: grid;
+    justify-items: center;
+    gap: var(--spacing-3);
+    text-align: center;
+  }
+
+  .comparison-process__step-title {
+    margin: 0;
+    color: var(--comparison-process-text);
+    font-size: var(--text-sm);
+    font-weight: 700;
+  }
+
+  .comparison-process__image {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border: 1px solid #DDDFD6;
+  }
+
+  .comparison-process__arrow {
+    color: var(--comparison-process-accent);
+    font-size: 1.5rem;
+    line-height: 1;
+    text-align: center;
+    margin-top: 24px;
+  }
+
+  @media screen and (min-width: 700px) {
+    .comparison-process__steps {
+      grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr) auto minmax(0, 1fr);
+      align-items: center;
+      gap: var(--spacing-4);
+    }
+
+    .comparison-process__arrow {
+      transform: rotate(-90deg);
+    }
+  }
+</style>
+
+<div {% render 'section-properties' %}>
+  <div class="comparison-process">
+    <div class="comparison-process__intro">
+      {%- if section.settings.title != blank -%}
+        <h2 class="comparison-process__title h3">{{ section.settings.title | escape }}</h2>
+      {%- endif -%}
+      {%- if section.settings.description != blank -%}
+        <div class="comparison-process__description prose">{{ section.settings.description }}</div>
+      {%- endif -%}
+    </div>
+
+    <div class="comparison-process__steps">
+      {%- for block in section.blocks -%}
+        <div class="comparison-process__step" {{ block.shopify_attributes }}>
+          {%- if block.settings.title != blank -%}<h3 class="comparison-process__step-title">{{ block.settings.title | escape }}</h3>{%- endif -%}
+          {%- if block.settings.image != blank -%}
+            {{- block.settings.image | image_url: width: 1200 | image_tag: class: 'comparison-process__image', loading: 'lazy', widths: '400,600,800,1000,1200', sizes: '(max-width: 699px) calc(100vw - 40px), 30vw', alt: block.settings.image.alt -}}
+          {%- else -%}
+            {{- 'image' | placeholder_svg_tag: 'comparison-process__image' -}}
+          {%- endif -%}
+        </div>
+
+        {%- unless forloop.last -%}<span class="comparison-process__arrow" aria-hidden="true">▼</span>{%- endunless -%}
+      {%- endfor -%}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Comparison process",
+  "class": "shopify-section--comparison-process",
+  "tag": "section",
+  "settings": [
+    { "type": "checkbox", "id": "full_width", "label": "Full width", "default": true },
+    { "type": "text", "id": "title", "label": "Heading", "default": "Flowは、計測と分析を一挙に行えるプラットフォームです" },
+    { "type": "richtext", "id": "description", "label": "Description", "default": "<p>AIカメラによる来店計測と、POS・人員データを統合する分析プラットフォームを<strong>1社で提供します。</strong> 機器とツールを別々に揃える必要はありません。<strong>計測だけ始めて、分析へ広げることもできます。</strong></p>" },
+    { "type": "color", "id": "accent_color", "label": "Accent", "default": "#829a2d" },
+    { "type": "color", "id": "text_color", "label": "Text", "default": "#292d25" },
+    { "type": "color", "id": "background", "label": "Background" },
+    { "type": "color_background", "id": "background_gradient", "label": "Background gradient" }
+  ],
+  "blocks": [
+    {
+      "type": "step",
+      "name": "Process step",
+      "settings": [
+        { "type": "text", "id": "title", "label": "Title", "default": "AIカメラで計測" },
+        { "type": "image_picker", "id": "image", "label": "Image" }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Comparison process",
+      "blocks": [{ "type": "step" }, { "type": "step", "settings": { "title": "分析データへ変換" } }, { "type": "step", "settings": { "title": "Flowで可視化" } }]
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,63 @@
+<style>
+  #shopify-section-{{ section.id }} { background: {{ section.settings.background }}; color: {{ section.settings.text_color }}; }
+  .comparison-results { max-width: 100%; padding: var(--spacing-12) var(--container-gutter) var(--spacing-16); }
+  .comparison-results__heading { margin: 0 0 var(--spacing-8); font-size: clamp(1.5rem, 2.2vw, 2rem); }
+  .comparison-results__grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--spacing-5); }
+  .comparison-results__card { min-width: 0; padding: var(--spacing-5); border: 1px solid #dfe1d9; border-radius: 6px; background: #fff; }
+  .comparison-results__image { display: block; width: 100%; aspect-ratio: 2; object-fit: cover; border-radius: 4px; }
+  .comparison-results__copy { margin: 0; color: #5f625b; font-size: 0.8rem; line-height: 1.6; }
+  .comparison-results__value {
+    margin: var(--spacing-6) 0 var(--spacing-4);
+    color: rgb(var(--accent-green));
+    font-size: var(--text-h3);
+    line-height: 1.1;
+    font-weight: bold;
+}
+  @media screen and (max-width: 699px) {
+    .comparison-results { padding-block: var(--spacing-8) var(--spacing-10); }
+    .comparison-results__heading { margin-bottom: var(--spacing-6); font-size: 1.35rem; }
+    .comparison-results__grid { grid-template-columns: 1fr; gap: var(--spacing-4); }
+    .comparison-results__card { padding: var(--spacing-4); }
+    .comparison-results__value { margin-block: var(--spacing-5) var(--spacing-3); }
+  }
+</style>
+
+<section class="comparison-results">
+  <h2 class="comparison-results__heading">{{ section.settings.title | escape }}</h2>
+  <div class="comparison-results__grid">
+    {%- for block in section.blocks -%}
+      <article class="comparison-results__card" {{ block.shopify_attributes }}>
+        {%- if block.settings.image != blank -%}
+          {{ block.settings.image | image_url: width: 1200 | image_tag: class: 'comparison-results__image', loading: 'lazy' }}
+        {%- endif -%}
+        <h3 class="comparison-results__value">{{ block.settings.title | escape }}</h3>
+        <div class="comparison-results__copy">{{ block.settings.content }}</div>
+      </article>
+    {%- endfor -%}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Comparison results",
+  "tag": "section",
+  "class": "shopify-section--comparison-results",
+  "settings": [
+    { "type": "text", "id": "title", "label": "Heading", "default": "数字で見る導入効果" },
+    { "type": "color", "id": "background", "label": "Background", "default": "#ffffff" },
+    { "type": "color", "id": "text_color", "label": "Text", "default": "#292d25" }
+  ],
+  "blocks": [
+    {
+      "type": "result",
+      "name": "Result",
+      "settings": [
+        { "type": "image_picker", "id": "image", "label": "Image" },
+        { "type": "text", "id": "title", "label": "Result", "default": "ROI 50倍超" },
+        { "type": "richtext", "id": "content", "label": "Description", "default": "<p>投資対効果改善（大手ファッション小売様事例）</p>" }
+      ]
+    }
+  ],
+  "presets": [{ "name": "Comparison results" }]
+}
+{% endschema %}

@@ -1,0 +1,223 @@
+<style>
+  #shopify-section-{{ section.id }} {
+    --comparison-table-accent: {{ section.settings.accent_color }};
+    --comparison-table-text: {{ section.settings.text_color }};
+    --comparison-table-border: {{ section.settings.border_color }};
+  }
+
+
+
+  .comparison-table-section__intro {
+    margin-block-end: var(--spacing-8);
+  }
+
+  .comparison-table-section__title {
+    margin: 0 0 var(--spacing-4);
+    color: var(--comparison-table-text);
+  }
+
+  .comparison-table-section__description {
+    margin: 0;
+    color: var(--comparison-table-text);
+  }
+
+
+  .comparison-table-section__scroll {
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+  }
+
+  .comparison-table {
+    width: 100%;
+    min-width: 760px;
+    border-collapse: collapse;
+    table-layout: fixed;
+    color: var(--comparison-table-text);
+    font-size: var(--text-xs);
+  }
+
+  .comparison-table th,
+  .comparison-table td {
+    border: 1px solid var(--comparison-table-border);
+    padding: var(--spacing-3) var(--spacing-2);
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  .comparison-table thead th {
+    height: 72px;
+    font-weight: 700;
+    background: #EFF0EA;
+  }
+
+  .comparison-table thead th:first-child,
+  .comparison-table tbody th {
+    width: 16%;
+  }
+
+  .comparison-table thead th:not(:first-child),
+  .comparison-table tbody td {
+    width: 16.8%;
+  }
+
+  .comparison-table thead th:nth-child(2),
+  .comparison-table tbody td:nth-child(2) {
+    background: color-mix(in srgb, var(--comparison-table-accent) 10%, white);
+    border-inline: 2px solid var(--comparison-table-accent);
+  }
+
+  .comparison-table thead th:nth-child(2) {
+    border-top: 2px solid var(--comparison-table-accent);
+  }
+
+  .comparison-table tbody tr:last-child td:nth-child(2) {
+    border-bottom: 2px solid var(--comparison-table-accent);
+  }
+
+  .comparison-table tbody th {
+    font-weight: 700;
+    background: #fff;
+  }
+
+  .comparison-table__service {
+    display: block;
+    font-weight: 700;
+  }
+
+  .comparison-table__service-note {
+    display: block;
+    margin-block-start: var(--spacing-1);
+    font-size: 0.75em;
+    font-weight: 400;
+  }
+
+  .comparison-table__status {
+    display: block;
+    font-size: 1.4em;
+    font-weight: 700;
+    line-height: 1.5;
+  }
+
+  .comparison-table__status--yes,
+  .comparison-table__status--strong {
+    color: var(--comparison-table-accent);
+  }
+
+  .comparison-table__status--partial {
+    color: #b8892d;
+  }
+
+  .comparison-table__status--no {
+    color: #bd514c;
+  }
+
+  .comparison-table__note {
+    display: block;
+    margin-block-start: var(--spacing-1);
+    font-size: 0.78em;
+    line-height: 1.3;
+  }
+</style>
+
+<div {% render 'section-properties',tight:"tight" %}>
+  <div class="comparison-table-section">
+    <div class="comparison-table-section__intro">
+      {%- if section.settings.title != blank -%}
+        <h2 class="comparison-table-section__title h3">{{ section.settings.title | escape }}</h2>
+      {%- endif -%}
+      {%- if section.settings.description != blank -%}
+        <div class="comparison-table-section__description prose">{{ section.settings.description }}</div>
+      {%- endif -%}
+    </div>
+
+    <div class="comparison-table-section__scroll">
+      <table class="comparison-table">
+        <thead>
+          <tr>
+            <th scope="col">{{ section.settings.checkpoint_heading | escape }}</th>
+            {%- for i in (1..5) -%}
+              {%- assign service_key = 'service_' | append: i -%}
+              {%- assign service_note_key = 'service_' | append: i | append: '_note' -%}
+              <th scope="col">
+                <span class="comparison-table__service">{{ section.settings[service_key] | escape }}</span>
+                {%- if section.settings[service_note_key] != blank -%}<span class="comparison-table__service-note">{{ section.settings[service_note_key] | escape }}</span>{%- endif -%}
+              </th>
+            {%- endfor -%}
+          </tr>
+        </thead>
+        <tbody>
+          {%- for block in section.blocks -%}
+            <tr {{ block.shopify_attributes }}>
+              <th scope="row">{{ block.settings.checkpoint | escape }}</th>
+              {%- for i in (1..5) -%}
+                {%- assign status_key = 'status_' | append: i -%}
+                {%- assign note_key = 'note_' | append: i -%}
+                {%- assign status = block.settings[status_key] -%}
+                <td>
+                  <span class="comparison-table__status comparison-table__status--{{ status }}" aria-label="{{ status }}">
+                    {%- case status -%}
+                      {%- when 'strong' -%}◎
+                      {%- when 'yes' -%}○
+                      {%- when 'partial' -%}△
+                      {%- when 'no' -%}×
+                    {%- endcase -%}
+                  </span>
+                  {%- if block.settings[note_key] != blank -%}<span class="comparison-table__note">{{ block.settings[note_key] | escape }}</span>{%- endif -%}
+                </td>
+              {%- endfor -%}
+            </tr>
+          {%- endfor -%}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Comparison table custom",
+  "class": "shopify-section--comparison-table-custom",
+  "tag": "section",
+  "settings": [
+    { "type": "checkbox", "id": "full_width", "label": "Full width", "default": true },
+    { "type": "text", "id": "title", "label": "Heading", "default": "店舗分析ツールをタイプ別に比較する" },
+    { "type": "richtext", "id": "description", "label": "Description", "default": "<p>「店舗分析」と呼ばれるサービスは、実は<strong>4つのタイプ</strong>に分かれます。各タイプの比較表で、<strong>7つのチェックポイント</strong>で違いを確認しましょう。</p>" },
+    { "type": "text", "id": "checkpoint_heading", "label": "Checkpoint heading", "default": "チェックポイント" },
+    { "type": "text", "id": "service_1", "label": "Service 1", "default": "Flow" },
+    { "type": "text", "id": "service_1_note", "label": "Service 1 note", "default": "(AIカメラ×店舗データ分析)" },
+    { "type": "text", "id": "service_2", "label": "Service 2", "default": "ピープルカウンター" },
+    { "type": "text", "id": "service_2_note", "label": "Service 2 note", "default": "(計測機器)" },
+    { "type": "text", "id": "service_3", "label": "Service 3", "default": "AIカメラ来店者分析" },
+    { "type": "text", "id": "service_3_note", "label": "Service 3 note" },
+    { "type": "text", "id": "service_4", "label": "Service 4", "default": "売場調査サービス" },
+    { "type": "text", "id": "service_4_note", "label": "Service 4 note" },
+    { "type": "text", "id": "service_5", "label": "Service 5", "default": "BIツール" },
+    { "type": "text", "id": "service_5_note", "label": "Service 5 note" },
+    { "type": "color", "id": "accent_color", "label": "Accent", "default": "#829a2d" },
+    { "type": "color", "id": "text_color", "label": "Text", "default": "#292d25" },
+    { "type": "color", "id": "border_color", "label": "Border", "default": "#dfe1d9" },
+    { "type": "color", "id": "background", "label": "Background" },
+    { "type": "color_background", "id": "background_gradient", "label": "Background gradient" }
+  ],
+  "blocks": [
+    {
+      "type": "checkpoint",
+      "name": "Checkpoint row",
+      "settings": [
+        { "type": "text", "id": "checkpoint", "label": "Checkpoint", "default": "安定した来店計測" },
+        { "type": "select", "id": "status_1", "label": "Flow status", "options": [{ "value": "strong", "label": "Strong" }, { "value": "yes", "label": "Yes" }, { "value": "partial", "label": "Partial" }, { "value": "no", "label": "No" }], "default": "strong" },
+        { "type": "text", "id": "note_1", "label": "Flow note" },
+        { "type": "select", "id": "status_2", "label": "Service 2 status", "options": [{ "value": "strong", "label": "Strong" }, { "value": "yes", "label": "Yes" }, { "value": "partial", "label": "Partial" }, { "value": "no", "label": "No" }], "default": "yes" },
+        { "type": "text", "id": "note_2", "label": "Service 2 note" },
+        { "type": "select", "id": "status_3", "label": "Service 3 status", "options": [{ "value": "strong", "label": "Strong" }, { "value": "yes", "label": "Yes" }, { "value": "partial", "label": "Partial" }, { "value": "no", "label": "No" }], "default": "yes" },
+        { "type": "text", "id": "note_3", "label": "Service 3 note" },
+        { "type": "select", "id": "status_4", "label": "Service 4 status", "options": [{ "value": "strong", "label": "Strong" }, { "value": "yes", "label": "Yes" }, { "value": "partial", "label": "Partial" }, { "value": "no", "label": "No" }], "default": "partial" },
+        { "type": "text", "id": "note_4", "label": "Service 4 note" },
+        { "type": "select", "id": "status_5", "label": "Service 5 status", "options": [{ "value": "strong", "label": "Strong" }, { "value": "yes", "label": "Yes" }, { "value": "partial", "label": "Partial" }, { "value": "no", "label": "No" }], "default": "no" },
+        { "type": "text", "id": "note_5", "label": "Service 5 note" }
+      ]
+    }
+  ],
+  "presets": [{ "name": "Comparison table", "blocks": [{ "type": "checkpoint" }, { "type": "checkpoint" }, { "type": "checkpoint" }, { "type": "checkpoint" }, { "type": "checkpoint" }, { "type": "checkpoint" }, { "type": "checkpoint" }] }]
+}
+{% endschema %}

@@ -1,0 +1,135 @@
+<style>
+  #shopify-section-{{ section.id }} { background: {{ section.settings.background }}; color: {{ section.settings.text_color }}; }
+  #shopify-section-{{ section.id }} .section-header h2 { max-width: none; font-size: var(--text-h3); white-space: nowrap; }
+  .comparison-positioning { overflow: hidden; }
+  .comparison-positioning__summary {  line-height: 1.8; }
+  .comparison-positioning__note { margin: var(--spacing-3) 0 0; color: var(--text-color-subdued); font-size: 0.95rem; }
+  .comparison-positioning__chart { position: relative; min-height: 300px; margin: 0 0 var(--spacing-6) 0; padding: 48px 24px 32px; border: 1px solid #dfe1d9; border-radius: 6px; overflow: auto; background: #fff; }
+  .comparison-positioning__plot { position: relative; min-width: 680px; height: 220px; margin-left: 58px; border-left: 1px solid #87984c; border-bottom: 1px solid #87984c; }
+  .comparison-positioning__plot::before, .comparison-positioning__plot::after { content: ''; position: absolute; left: 0; right: 0; border-top: 1px dashed #c8ccc1; }
+  .comparison-positioning__plot::before { top: 33.333%; }
+  .comparison-positioning__plot::after { top: 66.666%; }
+  .comparison-positioning__axis, .comparison-positioning__x { position: absolute; font-size: 10px; white-space: nowrap; }
+  .comparison-positioning__axis--top { left: -48px; top: 16.666%; transform: translateY(-50%); }
+  .comparison-positioning__axis--mid { left: -48px; top: 50%; transform: translateY(-50%); }
+  .comparison-positioning__axis--low { left: -48px; top: 83.333%; transform: translateY(-50%); }
+  .comparison-positioning__x { bottom: -24px; }
+  .comparison-positioning__x--left { left: 0; }
+  .comparison-positioning__x--mid { left: 46%; }
+  .comparison-positioning__x--right { right: 0; }
+  .comparison-positioning__point { position: absolute; padding: 10px 14px; border: 2px solid #dfe1d9; border-radius: 5px; background: #FAFAF8; text-align: center; font-size: 11px; line-height: 1.35; }
+  .comparison-positioning__point > span { display: block; margin-top: 2px; font-size: 0.82em; font-weight: 400; }
+  .comparison-positioning__point--flow { right: 3%; top: 12px; border-color: rgb(var(--accent-green)); background: #f7f9ed; }
+  .comparison-positioning__point--bi { left: 14%; top: 10px; }
+  .comparison-positioning__point--research { left: 8%; top: 86px; }
+  .comparison-positioning__point--camera { left: 42%; top: 86px; }
+  .comparison-positioning__point--counter { left: 40%; bottom: 12px; }
+  .comparison-positioning__actions { display: flex; justify-content: center; gap: var(--spacing-3); margin-top: var(--spacing-6); }
+  .comparison-positioning__actions .button {padding: 18px 24px; border-radius: 8px; font-size: 1.125rem; font-weight: 700; line-height: 1.35; }
+  .comparison-positioning__actions .button:first-child { color: #fff; background-color: rgb(var(--accent-green)) !important; }
+  .comparison-positioning__actions .button--outline { color: rgb(var(--accent-green)); border-color: rgb(var(--accent-green)); }
+  .comparison-positioning__actions small { display: block; margin-top: 4px; font-size: 0.7em; font-weight: 400; }
+  @media screen and (max-width: 699px) {
+    #shopify-section-{{ section.id }} .section-header h2,
+    #shopify-section-{{ section.id }} .section-header h2 split-lines { max-width: 100%; white-space: normal; overflow-wrap: anywhere; }
+    #shopify-section-{{ section.id }} .section-header .prose { min-width: 0; }
+    .comparison-positioning__chart { min-height: 540px; max-width: 100%; margin-inline: 0; padding: 72px 0 48px; overflow: hidden; }
+    .comparison-positioning__plot { min-width: 700px; height: 400px; margin-left: 96px; }
+    .comparison-positioning__axis, .comparison-positioning__x {  font-weight: 600; }
+    .comparison-positioning__axis--top, .comparison-positioning__axis--mid { left: -72px; }
+    .comparison-positioning__axis--low { left: -72px; }
+    .comparison-positioning__x { bottom: -36px; }
+    .comparison-positioning__point--research{
+    left:4%;}
+    .comparison-positioning__point { padding: 4px 10px; font-size: 10px; line-height: 1.4; }
+    .comparison-positioning__point--flow { top: 22px; }
+    .comparison-positioning__point--bi { top: 24px; }
+    .comparison-positioning__point--research { top: 160px; }
+    .comparison-positioning__point--camera { top: 174px; left:25%;}
+    .comparison-positioning__point--counter{
+      left: 20%;
+    }
+    .comparison-positioning__point--counter { bottom: 24px; }
+    .comparison-positioning__actions { flex-direction: column; }
+  }
+  @media screen and (min-width: 700px) {
+    .comparison-positioning__chart { min-height: 766px; padding: 103px 60px 109px 60px; }
+    .comparison-positioning__plot { min-width: 0; width: calc(100% - 145px); height: 550px; margin-left: 145px; }
+    .comparison-positioning__axis, .comparison-positioning__x { font-size: 18px; font-weight: 600; }
+    .comparison-positioning__axis--top, .comparison-positioning__axis--mid { left: -115px; }
+    .comparison-positioning__axis--low { left: -80px; }
+    .comparison-positioning__x { bottom: -42px; }
+    .comparison-positioning__point { padding: 14px 22px; font-size: 16px; line-height: 1.45; }
+    .comparison-positioning__point--flow { top: 28px; }
+    .comparison-positioning__point--bi { top: 34px; }
+    .comparison-positioning__point--research { top: 208px; }
+    .comparison-positioning__point--camera { top: 220px; }
+    .comparison-positioning__point--counter { bottom: 29px; }
+  }
+</style>
+
+{%- render 'section-spacing-collapsing' -%}
+<div {% render 'section-properties' %}>
+  <div class="section-stack">
+    {%- capture positioning_header_content -%}
+      {{- section.settings.content -}}
+      {%- if section.settings.note != blank -%}<p class="comparison-positioning__note">{{ section.settings.note }}</p>{%- endif -%}
+    {%- endcapture -%}
+    {%- render 'section-header', subheading: section.settings.subheading, heading: section.settings.title, content: positioning_header_content, text_alignment: section.settings.text_alignment -%}
+    <section class="comparison-positioning">
+  <div class="comparison-positioning__chart">
+    <div class="comparison-positioning__plot">
+      <span class="comparison-positioning__axis comparison-positioning__axis--top">判断・改善<br>まで</span>
+      <span class="comparison-positioning__axis comparison-positioning__axis--mid">分析・可視化<br>まで</span>
+      <span class="comparison-positioning__axis comparison-positioning__axis--low">計測のみ</span>
+      <span class="comparison-positioning__x comparison-positioning__x--left">調査・分析プロジェクト型</span>
+      <span class="comparison-positioning__x comparison-positioning__x--mid">運用のしやすさ</span>
+      <span class="comparison-positioning__x comparison-positioning__x--right">日常運用型</span>
+      <span class="comparison-positioning__point comparison-positioning__point--flow"><strong>{{ section.settings.flow_label }}</strong><span>判断支援まで<br>{{ section.settings.flow_copy }}</span></span>
+      <span class="comparison-positioning__point comparison-positioning__point--bi"><strong>BIツール</strong><span>計測なし<br>データ持ち込み前提</span></span>
+      <span class="comparison-positioning__point comparison-positioning__point--research"><strong>売場調査サービス</strong><span>深い分析・期間限定<br>例: Go Insight</span></span>
+      <span class="comparison-positioning__point comparison-positioning__point--camera"><strong>AIカメラ来店分析</strong><span>計測・可視化型<br>例: OPTiM / Vieureka / バルテック</span></span>
+      <span class="comparison-positioning__point comparison-positioning__point--counter"><strong>ピープルカウンター</strong><span>数える・常時</span></span>
+    </div>
+  </div>
+  <div class="comparison-positioning__summary">{{ section.settings.summary }}</div>
+  <div class="comparison-positioning__actions">
+    {%- capture download_content -%}{{ section.settings.download_label }}{%- if section.settings.download_note != blank -%}<small>{{ section.settings.download_note }}</small>{%- endif -%}{%- endcapture -%}
+    {%- render 'button', href: section.settings.download_url, content: download_content, style: 'fill', size: 'xl' -%}
+    {%- render 'button', href: section.settings.consultation_url, content: section.settings.consultation_label, style: 'outline', size: 'xl' -%}
+  </div>
+</section>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Comparison positioning",
+  "tag": "section",
+  "class": "shopify-section--comparison-positioning",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "full_width",
+      "label": "Full width",
+      "default": true
+    },
+    { "type": "text", "id": "subheading", "label": "Subheading" },
+    { "type": "text", "id": "title", "label": "Heading", "default": "御社に必要なAIカメラ＆分析プラットフォームを一目で比較" },
+    { "type": "richtext", "id": "content", "label": "Content", "default": "<p><strong>縦軸は「計測まで」「分析・可視化まで」「判断・改善まで」のどこまでカバーするか</strong>、横軸は<strong>日常の店舗運用にどれだけ組み込めるか</strong>。</p><p>ABEJA Insight for Retail、RetailNext（リテールネクスト）、OPTiM AI Camera、Go Insight、バルテックなどをご検討中の方は、各社が属するタイプの位置を目安にご覧ください。</p>" },
+    { "type": "select", "id": "text_alignment", "label": "Text alignment", "options": [{ "value": "start", "label": "Left" }, { "value": "center", "label": "Center" }, { "value": "end", "label": "Right" }], "default": "start" },
+    { "type": "text", "id": "flow_label", "label": "Flow label", "default": "店舗分析プラットフォーム" },
+    { "type": "text", "id": "flow_copy", "label": "Flow description", "default": "例: Flow / ABEJA / RetailNext" },
+    { "type": "richtext", "id": "summary", "label": "Summary", "default": "<p>Flowは<strong>「計測から判断まで」を1社でカバーする店舗分析プラットフォーム</strong>です。来店・POS・人員のデータを同じ基準で統合し、AI分析により<strong>本部と店舗が同じ数字で次の一手をスピーディーに決められます</strong>。日本の小売業に特化して<strong>2006年から積み上げてきた設計と支援体制</strong>が、Flowの強みです。</p>" },
+    { "type": "text", "id": "note", "label": "Chart note", "default": "※タイプ分けは各社の公開情報をもとにした当社の整理です。" },
+    { "type": "text", "id": "download_label", "label": "Download button label", "default": "資料をダウンロード" },
+    { "type": "text", "id": "download_note", "label": "Download button note", "default": "（店舗改善チェックリストつき）" },
+    { "type": "url", "id": "download_url", "label": "Download button link" },
+    { "type": "text", "id": "consultation_label", "label": "Consultation button label", "default": "導入のご相談" },
+    { "type": "url", "id": "consultation_url", "label": "Consultation button link" },
+    { "type": "color", "id": "background", "label": "Background", "default": "#f7f8f5" },
+    { "type": "color", "id": "text_color", "label": "Text", "default": "#292d25" }
+  ],
+  "presets": [{ "name": "Comparison positioning" }]
+}
+{% endschema %}

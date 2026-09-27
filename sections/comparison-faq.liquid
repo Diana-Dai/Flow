@@ -1,0 +1,21 @@
+<style>
+  #shopify-section-{{ section.id }} { background: {{ section.settings.background }}; color: {{ section.settings.text_color }}; }
+  .comparison-faq__list { display: grid; gap: var(--spacing-4); }
+  .comparison-faq__item { border: 1px solid #dfe1d9; border-radius: 6px; background: #fff; }
+  .comparison-faq__question { display: flex; justify-content: space-between; gap: 24px; align-items: center; padding: 24px 32px; font-weight: 700; cursor: pointer; list-style: none; }
+  .comparison-faq__question::-webkit-details-marker { display: none; }
+  .comparison-faq__question::after { content: '+'; flex: 0 0 auto; color: rgb(var(--accent-green)); font-size: 1.25rem; }
+  .comparison-faq__item[open] .comparison-faq__question::after { content: '−'; }
+  .comparison-faq__answer { padding: 0 32px 24px; color: #5f625b; font-size: var(--text-xs); line-height: 1.8; }
+  @media (max-width: 699px) { .comparison-faq__question { padding: 20px; font-size: .9rem; } .comparison-faq__answer { padding: 0 20px 20px; } }
+</style>
+{%- render 'section-spacing-collapsing' -%}
+<div {% render 'section-properties' %}><div class="section-stack">
+  {%- render 'section-header', subheading: section.settings.subheading, heading: section.settings.title, content: section.settings.content, text_alignment: section.settings.text_alignment -%}
+  <div class="comparison-faq"><div class="comparison-faq__list">
+    {%- for block in section.blocks -%}<details class="comparison-faq__item" {% if forloop.first %}open{% endif %} {{ block.shopify_attributes }}><summary class="comparison-faq__question">{{ block.settings.title | escape }}</summary><div class="comparison-faq__answer">{{ block.settings.content }}</div></details>{%- endfor -%}
+  </div></div>
+</div></div>
+{% schema %}
+{"name":"Comparison FAQ","tag":"section","class":"shopify-section--comparison-faq","settings":[{"type":"checkbox","id":"full_width","label":"Full width","default":true},{"type":"text","id":"subheading","label":"Subheading"},{"type":"text","id":"title","label":"Heading","default":"よくあるご質問"},{"type":"richtext","id":"content","label":"Content"},{"type":"select","id":"text_alignment","label":"Text alignment","options":[{"value":"start","label":"Left"},{"value":"center","label":"Center"},{"value":"end","label":"Right"}],"default":"start"},{"type":"color","id":"background","label":"Background","default":"#f7f8f5"},{"type":"color","id":"text_color","label":"Text","default":"#292d25"}],"blocks":[{"type":"item","name":"Question","settings":[{"type":"text","id":"title","label":"Question","default":"Question"},{"type":"richtext","id":"content","label":"Answer","default":"<p>Answer</p>"}]}],"presets":[{"name":"Comparison FAQ"}]}
+{% endschema %}

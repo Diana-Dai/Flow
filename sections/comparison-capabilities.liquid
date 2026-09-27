@@ -1,0 +1,117 @@
+<style>
+  #shopify-section-{{ section.id }} { --comparison-capabilities-accent: {{ section.settings.accent_color }}; }
+  .comparison-capabilities__title { margin: 0 0 var(--spacing-8); }
+  .comparison-capabilities__steps 
+  {
+    display: grid; gap: var(--spacing-5); }
+  .comparison-capabilities__step { 
+    background:white; 
+    display: grid; gap: var(--spacing-5); 
+    padding: var(--spacing-10) var(--spacing-8); 
+    border: 1px solid #e1e3dc; border-radius: var(--rounded-xs); }
+  .comparison-capabilities__media { display: grid; gap: var(--spacing-3); }
+  .comparison-capabilities__image { display: block; width: 100%; aspect-ratio: 1.6; object-fit: cover; border-radius: var(--rounded-xs); }
+  @media screen and (min-width: 700px) {
+    .comparison-capabilities__image { aspect-ratio: 1.25; }
+  }
+  .comparison-capabilities__step-heading {
+    border-bottom: 2px solid var(--comparison-capabilities-accent);
+    padding-bottom: var(--spacing-4); 
+    display: flex; gap: var(--spacing-2); 
+    align-items: center; margin: 0; font-weight:bold; }
+  .comparison-capabilities__number {
+    
+    display: grid;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    border-radius: 50%;
+    color: #fff;
+    background: var(--comparison-capabilities-accent);
+    justify-content: center;  }
+  .comparison-capabilities__summary { margin: 0; font-size: var(--text-2xs); }
+  .comparison-capabilities__features { display: grid; gap: var(--spacing-5); align-content: start; }
+  .comparison-capabilities__feature { 
+    background:#F7F8F5;
+    display: grid; grid-template-columns: 28px minmax(0, 1fr); column-gap: var(--spacing-2); row-gap: var(--spacing-1); align-items: start; padding: var(--spacing-3); border: 1px solid #e1e3dc; border-radius: var(--rounded-xs); }
+  .comparison-capabilities__feature-title, .comparison-capabilities__feature-copy { margin: 0; }
+  .comparison-capabilities__feature-title { font-size: var(--text-sm); font-weight: 700; }
+  .comparison-capabilities__feature-copy { color: var(--text-color-subdued); font-size: var(--text-2xs); line-height: 1.35; }
+
+  .comparison-capabilities__feature::before {
+    content: '';
+    display: block;
+    width: 26px;
+    height: 26px;
+    grid-row: 1 / span 2;
+    margin-block-end: 0;
+    background-image: url('{{ 'comparison-capabilities-icons.svg' | asset_url }}');
+    background-repeat: no-repeat;
+    background-size: 516px 699px;
+  }
+
+  .comparison-capabilities__step--1 .comparison-capabilities__feature:nth-child(1)::before { background-position: 0 0; }
+  .comparison-capabilities__step--1 .comparison-capabilities__feature:nth-child(2)::before { background-position: -250px 0; }
+  .comparison-capabilities__step--1 .comparison-capabilities__feature:nth-child(3)::before { background-position: -490px 0; }
+  .comparison-capabilities__step--1 .comparison-capabilities__feature:nth-child(4)::before { background-position: 0 -96px; }
+  .comparison-capabilities__step--2 .comparison-capabilities__feature:nth-child(1)::before { background-position: 0 -330px; }
+  .comparison-capabilities__step--2 .comparison-capabilities__feature:nth-child(2)::before { background-position: -250px -330px; }
+  .comparison-capabilities__step--2 .comparison-capabilities__feature:nth-child(3)::before { background-position: 0 -670px; }
+  .comparison-capabilities__step--3 .comparison-capabilities__feature:nth-child(1)::before { background-position: -250px -670px; }
+  .comparison-capabilities__step--3 .comparison-capabilities__feature:nth-child(2)::before { background-position: 0 -670px; }
+  @media screen and (min-width: 700px) {
+    .comparison-capabilities__step { grid-template-columns: 22% 1fr; align-items: start; }
+    .comparison-capabilities__features { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  }
+</style>
+
+<div {% render 'section-properties' %}>
+  <div class="comparison-capabilities">
+    {%- if section.settings.title != blank -%}<h2 class="comparison-capabilities__title h3">{{ section.settings.title | escape }}</h2>{%- endif -%}
+    <div class="comparison-capabilities__steps">
+      {%- for block in section.blocks -%}
+        <article class="comparison-capabilities__step comparison-capabilities__step--{{ forloop.index }}" {{ block.shopify_attributes }}>
+          <div class="comparison-capabilities__media">
+            {%- if block.settings.image != blank -%}{{- block.settings.image | image_url: width: 1000 | image_tag: class: 'comparison-capabilities__image', loading: 'lazy', widths: '400,600,800,1000', sizes: '(max-width: 699px) 100vw, 24vw', alt: block.settings.image.alt -}}{%- else -%}{{- 'image' | placeholder_svg_tag: 'comparison-capabilities__image' -}}{%- endif -%}
+            <h3 class="comparison-capabilities__step-heading"><span class="comparison-capabilities__number">{{ forloop.index }}</span>{{ block.settings.title | escape }}</h3>
+            {%- if block.settings.summary != blank -%}<p class="comparison-capabilities__summary">{{ block.settings.summary | escape }}</p>{%- endif -%}
+          </div>
+          <div class="comparison-capabilities__features">
+            {%- for i in (1..4) -%}
+              {%- assign title_key = 'feature_' | append: i | append: '_title' -%}
+              {%- assign copy_key = 'feature_' | append: i | append: '_copy' -%}
+              {%- if block.settings[title_key] != blank -%}<div class="comparison-capabilities__feature"><p class="comparison-capabilities__feature-title">{{ block.settings[title_key] | escape }}</p><p class="comparison-capabilities__feature-copy">{{ block.settings[copy_key] | escape }}</p></div>{%- endif -%}
+            {%- endfor -%}
+          </div>
+        </article>
+      {%- endfor -%}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Comparison capabilities",
+  "class": "shopify-section--comparison-capabilities",
+  "tag": "section",
+  "settings": [
+    { "type": "checkbox", "id": "full_width", "label": "Full width", "default": true },
+    { "type": "text", "id": "title", "label": "Heading", "default": "Flowでできること" },
+    { "type": "color", "id": "accent_color", "label": "Accent", "default": "#829a2d" },
+    { "type": "color", "id": "background", "label": "Background" },
+    { "type": "color_background", "id": "background_gradient", "label": "Background gradient" }
+  ],
+  "blocks": [
+    { "type": "step", "name": "Capability step", "settings": [
+      { "type": "text", "id": "title", "label": "Title", "default": "計測する" },
+      { "type": "textarea", "id": "summary", "label": "Summary", "default": "店の前から店内まで、人の動きを数える" },
+      { "type": "image_picker", "id": "image", "label": "Image" },
+      { "type": "text", "id": "feature_1_title", "label": "Feature 1 title", "default": "来店数計測" }, { "type": "text", "id": "feature_1_copy", "label": "Feature 1 copy", "default": "出入口の通過人数を自動カウント" },
+      { "type": "text", "id": "feature_2_title", "label": "Feature 2 title", "default": "店前通行量" }, { "type": "text", "id": "feature_2_copy", "label": "Feature 2 copy", "default": "店の前を通った人数を把握" },
+      { "type": "text", "id": "feature_3_title", "label": "Feature 3 title", "default": "入店率" }, { "type": "text", "id": "feature_3_copy", "label": "Feature 3 copy", "default": "通行量に対する入店の割合" },
+      { "type": "text", "id": "feature_4_title", "label": "Feature 4 title", "default": "スタッフ除外" }, { "type": "text", "id": "feature_4_copy", "label": "Feature 4 copy", "default": "従業員を除いた来店数" }
+    ] }
+  ],
+  "presets": [{ "name": "Comparison capabilities", "blocks": [{ "type": "step" }, { "type": "step", "settings": { "title": "分析する", "summary": "店内の行動から「売れる理由」を読み解く", "feature_1_title": "滞在時間", "feature_2_title": "属性分析", "feature_3_title": "店内動線", "feature_4_title": "" } }, { "type": "step", "settings": { "title": "つなげて、判断する", "summary": "売上と掛け合わせ、次の一手を決める", "feature_1_title": "売上・POS統合", "feature_2_title": "判断支援（FIDA）", "feature_3_title": "", "feature_4_title": "" } }] }]
+}
+{% endschema %}

@@ -49,6 +49,23 @@ b, strong {
   font-weight: bolder;
 }
 
+/* Shared emphasis: use em+strong when an emphasized phrase should stay black. */
+
+
+body:has(.shopify-section--comparison-intro) em strong {
+  font-style:normal;
+  color: rgb(var(--accent-green));
+}
+
+body:has(.shopify-section--comparison-intro) .subheading {
+  color: rgb(var(--accent-green)) !important;
+  font-weight: 700;
+}
+
+body:has(.shopify-section--comparison-intro) .section-header {
+  grid-template-columns: 100%;
+}
+
 code, kbd, samp, pre {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
   font-size: 1em;
@@ -2060,9 +2077,9 @@ scroll-carousel {
 }
 
 .section--tight {
-  --calculated-section-spacing-block-start: min(48px, var(--section-spacing-block-start, var(--section-spacing-block, var(--context-section-spacing-block-start))));
-  --calculated-section-spacing-block-end: min(48px, var(--section-spacing-block-end, var(--section-spacing-block, var(--context-section-spacing-block-end))));
-  --calculated-section-spacing-inline: min(48px, var(--section-spacing-inline, var(--context-section-spacing-inline)));
+  --calculated-section-spacing-block-start: min(24px, var(--section-spacing-block-start, var(--section-spacing-block, var(--context-section-spacing-block-start))));
+  --calculated-section-spacing-block-end: min(24px, var(--section-spacing-block-end, var(--section-spacing-block, var(--context-section-spacing-block-end))));
+  --calculated-section-spacing-inline: min(24px, var(--section-spacing-inline, var(--context-section-spacing-inline)));
 }
 
 .section--narrow {
@@ -2104,8 +2121,8 @@ scroll-carousel {
 
 @media screen and (min-width: 1600px) {
   .section--tight {
-    --calculated-section-spacing-block-start: min(64px, var(--section-spacing-block-start, var(--section-spacing-block, var(--context-section-spacing-block-start, 0px))));
-    --calculated-section-spacing-block-end: min(64px, var(--section-spacing-block-end, var(--section-spacing-block, var(--context-section-spacing-block-end, 0px))));
+    --calculated-section-spacing-block-start: min(32px, var(--section-spacing-block-start, var(--section-spacing-block, var(--context-section-spacing-block-start, 0px))));
+    --calculated-section-spacing-block-end: min(32px, var(--section-spacing-block-end, var(--section-spacing-block, var(--context-section-spacing-block-end, 0px))));
   }
 }
 
@@ -3358,6 +3375,7 @@ model-media model-viewer, model-media .shopify-model-viewer-ui {
 
 .prose :is(.h0, .h1, .h2, .h3, .h4, h1, h2, h3, h4) + * {
   margin-block-start: var(--spacing-5);
+  opacity:0.9;
 }
 
 .prose :is(.h5, .h6, h5, h6) + * {
@@ -3531,10 +3549,6 @@ th {
 th, td {
   padding: var(--spacing-4);
   vertical-align: top;
-}
-
-table:not(.table--bordered) :is(th, td):first-child {
-  padding-inline-start: 0;
 }
 
 table:not(.table--bordered) :is(th, td):last-child {

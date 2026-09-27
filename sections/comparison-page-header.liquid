@@ -1,0 +1,22 @@
+<style>
+  .comparison-page-header { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 14px var(--container-gutter); background: #fff; }
+  .comparison-page-header__logo { display: block; width: 250px; height: auto; }
+  .comparison-page-header__fallback { color: #173d77; font-size: 2.5rem; font-weight: 800; }
+  .comparison-page-header__actions { display: flex; gap: 16px; }
+  .comparison-page-header__actions .button { min-height: 62px; padding-inline: 30px; border-radius: 8px; font-size: 1rem; font-weight: 700; }
+  .comparison-page-header__actions .button:first-child { color: rgb(var(--accent-green)); border: 2px solid rgb(var(--accent-green)); }
+  .comparison-page-header__actions .button:last-child { color: #fff; background: rgb(var(--accent-green)); }
+  @media (max-width: 699px) { .comparison-page-header { align-items: flex-start; flex-direction: column; } .comparison-page-header__logo { width: 180px; } .comparison-page-header__actions { width: 100%; } .comparison-page-header__actions .button { flex: 1; padding-inline: 12px; font-size: .8rem; } }
+</style>
+<header class="comparison-page-header">
+  <a href="{{ routes.root_url }}" aria-label="Flow">
+    {%- if section.settings.logo != blank -%}{{ section.settings.logo | image_url: width: 600 | image_tag: class: 'comparison-page-header__logo' }}{%- else -%}<span class="comparison-page-header__fallback">Flow</span>{%- endif -%}
+  </a>
+  <div class="comparison-page-header__actions">
+    {%- render 'button', href: section.settings.consultation_url, content: section.settings.consultation_label, style: 'outline' -%}
+    {%- render 'button', href: section.settings.assessment_url, content: section.settings.assessment_label, style: 'fill' -%}
+  </div>
+</header>
+{% schema %}
+{"name":"Comparison page header","tag":"section","settings":[{"type":"image_picker","id":"logo","label":"Logo"},{"type":"text","id":"consultation_label","label":"Consultation label","default":"導入のご相談"},{"type":"url","id":"consultation_url","label":"Consultation link"},{"type":"text","id":"assessment_label","label":"Assessment label","default":"店舗課題の無料診断（5分で完了）"},{"type":"url","id":"assessment_url","label":"Assessment link"}],"presets":[{"name":"Comparison page header"}]}
+{% endschema %}

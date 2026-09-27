@@ -1,0 +1,46 @@
+<style>
+  #shopify-section-{{ section.id }} { background: {{ section.settings.background }}; }
+  .comparison-assessment { margin-inline: var(--container-gutter); padding: 56px 48px; border-radius: 6px; background: #292d25; color: #fff; }
+  .comparison-assessment__header { color: #fff; }
+  .comparison-assessment__grid { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; align-items: start; max-width: 1100px; margin: 28px auto 0; }
+  .comparison-assessment__image, .comparison-assessment__question { width: 100%; border-radius: 6px; background: #fff; }
+  .comparison-assessment__image { display: block; height: auto; }
+  .comparison-assessment__checks { display: flex; flex-wrap: wrap; gap: 10px 22px; margin-top: 16px; color: #C9CCC0; font-size: .8rem; line-height: 1.6; }
+  .comparison-assessment__checks p { margin: 0; }
+  .comparison-assessment__checks p::before { content: '✓'; margin-right: 7px; }
+  .comparison-assessment__question { padding: 54px 34px 34px; color: #292d25; }
+  .comparison-assessment__question h3 { margin: 0 0 18px; font-size: 1.1rem; line-height: 1.35; white-space: pre-line; }
+  .comparison-assessment__option { display: block; margin-top: 10px; padding: 9px 12px; border: 1px solid #d6d8d1; border-radius: 8px; font-size: .9rem; }
+  .comparison-assessment__option b { display: inline-grid; width: 20px; height: 20px; margin-right: 8px; place-items: center; border-radius: 4px; color: #fff; background: #666; font-size: .75rem; }
+  @media (max-width: 699px) { .comparison-assessment { margin-inline: 10px; padding: 28px 16px; } .comparison-assessment__grid { grid-template-columns: 1fr; } .comparison-assessment__question { padding: 34px 24px 24px; } }
+</style>
+{%- render 'section-spacing-collapsing' -%}
+<div {% render 'section-properties' %}><section class="comparison-assessment">
+  <div class="comparison-assessment__header">
+    {%- render 'section-header', subheading: section.settings.subheading, heading: section.settings.title, content: section.settings.content, text_alignment: section.settings.text_alignment -%}
+  </div>
+  <div class="comparison-assessment__grid">
+    <div>
+      {%- if section.settings.image != blank -%}{{ section.settings.image | image_url: width: 1200 | image_tag: class: 'comparison-assessment__image', loading: 'lazy' }}{%- endif -%}
+      <div class="comparison-assessment__checks">{{ section.settings.checks }}</div>
+    </div>
+    <div id="assessment" class="comparison-assessment__question">
+      <iframe data-tally-src="https://tally.so/embed/rj0D4N?hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="407" frameborder="0" marginheight="0" marginwidth="0" title="Store Performance Gap Assessment - Japanese"></iframe>
+    </div>
+  </div>
+</section></div>
+<script>
+  (function () {
+    var d = document, w = 'https://tally.so/widgets/embed.js', v = function () {
+      if (typeof Tally !== 'undefined') Tally.loadEmbeds();
+      else d.querySelectorAll('iframe[data-tally-src]:not([src])').forEach(function (e) { e.src = e.dataset.tallySrc; });
+    };
+    if (typeof Tally !== 'undefined') v();
+    else if (d.querySelector('script[src="' + w + '"]') == null) {
+      var s = d.createElement('script'); s.src = w; s.onload = v; s.onerror = v; d.body.appendChild(s);
+    }
+  }());
+</script>
+{% schema %}
+{"name":"Comparison assessment","tag":"section","class":"shopify-section--comparison-assessment","settings":[{"type":"checkbox","id":"full_width","label":"Full width","default":true},{"type":"text","id":"subheading","label":"Subheading"},{"type":"text","id":"title","label":"Heading","default":"5分で、店舗課題を整理する"},{"type":"richtext","id":"content","label":"Content","default":"<p>全9問に回答すると、売上未達の原因がどの領域にある可能性が高いかを整理できます。</p>"},{"type":"select","id":"text_alignment","label":"Text alignment","options":[{"value":"start","label":"Left"},{"value":"center","label":"Center"},{"value":"end","label":"Right"}],"default":"center"},{"type":"image_picker","id":"image","label":"Result image"},{"type":"richtext","id":"checks","label":"Checks","default":"<p>所要時間 約5分</p><p>回答後すぐに結果を確認</p><p>営業電話なし</p><p>回答内容は診断目的でのみ使用</p>"},{"type":"color","id":"background","label":"Background","default":"#ffffff"}],"blocks":[],"presets":[{"name":"Comparison assessment"}]}
+{% endschema %}

@@ -13,6 +13,26 @@ the underlying logic of the menu.
 {%- endif -%}
 
 <style>
+  {% if template.suffix == 'comparison' %}
+    .header__main-nav { visibility: hidden; pointer-events: none; }
+    .comparison-header-actions { display: flex; gap: 16px; align-items: center; }
+    .comparison-header-actions .button {
+      display: flex; align-items: center; justify-content: center;
+      min-height: 62px; min-width: 164px; padding-inline: 28px; border-radius: 8px; font-weight: 700; white-space: nowrap; }
+    .comparison-header-actions .button:last-child { min-width: 334px; }
+    .comparison-header-actions .button--outline { color: rgb(var(--accent-green)); border-color: rgb(var(--accent-green)); }
+    .comparison-header-actions .button:last-child { color: #fff; background: rgb(var(--accent-green)); }
+    @media (max-width: 699px) {
+      .header__wrapper { grid-template: "logo secondary-nav" / auto minmax(0, 1fr); }
+      .header__main-nav { display: none; }
+      .header__logo-image { width: 130px; }
+      .header__secondary-nav { justify-content: flex-end; min-width: 0; }
+      .comparison-header-actions { gap: 8px; width: 100%; justify-content: flex-end; }
+      .comparison-header-actions .button { min-width: 0; min-height: 40px; padding: 8px 10px; font-size: 10px; line-height: 1.2; white-space: nowrap; }
+      .comparison-header-actions .button:last-child { min-width: 0; }
+      .comparison-header-actions .comparison-header-assessment-note { display: none; }
+    }
+  {% endif %}
   :root {
     --sticky-header-enabled: {%- if section.settings.enable_sticky -%}1{% else %}0{% endif %};
   }
@@ -944,7 +964,13 @@ display: flex;
       {%- endcomment -%}
 
       <div class="header__secondary-nav">
-        {%- if section.settings.layout != 'drawer' and section.settings.secondary_menu.links.size > 0 -%}
+        {%- if template.suffix == 'comparison' -%}
+          <div class="comparison-header-actions">
+            {%- render 'button', href: '#contact', content: '導入のご相談', style: 'outline' -%}
+            {%- capture comparison_assessment_label -%}店舗課題の無料診断<span class="comparison-header-assessment-note">（5分で完了）</span>{%- endcapture -%}
+            {%- render 'button', href: '#assessment', content: comparison_assessment_label, style: 'fill' -%}
+          </div>
+        {%- elsif section.settings.layout != 'drawer' and section.settings.secondary_menu.links.size > 0 -%}
           <nav class="header__link-list" role="navigation">
             <ul class="contents header__secondary-nav-list">
               {%- for link in section.settings.secondary_menu.links -%}
