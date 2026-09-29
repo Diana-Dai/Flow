@@ -392,7 +392,7 @@
         "text_alignment": "center",
         "subheading": "",
         "title": "",
-        "content": "<h3>多くのシステムはレポートで止まる。<br/>Flowは店舗判断を揃える。</h3><p>Flowは、来店客数・回遊・滞在時間・コンバージョン・人員配置を統合し、店舗運営の判断を標準化します。</p>",
+        "content": "<h2>店舗分析を、レポートで終わらせず日々の判断へ。</h2><p>Flowは、来店客数・回遊・滞在時間・コンバージョン・人員配置を統合し、店舗運営の判断を標準化します。</p>",
         "background": "",
         "background_gradient": "",
         "text_color": "",
@@ -557,7 +557,7 @@
         "gap": "medium",
         "text_alignment": "start",
         "subheading": "",
-        "title": "Flowでできること",
+        "title": "来店計測・店舗データ分析から",
         "content": "<h6>計測・統合から、AIによる要約・質問・行動提案までを、一つの流れで支援します。</h6>",
         "background": "",
         "background_gradient": "",
@@ -666,7 +666,7 @@
         "heading_X97dmW": {
           "type": "heading",
           "settings": {
-            "text": "売上改善のチャンスは、一部の瞬間に集中する。",
+            "text": "従来型レポートとFlowの店舗分析の違い",
             "heading_tag": "h1",
             "text_color": "",
             "gradient": ""
@@ -806,7 +806,7 @@
         "full_width": true,
         "stack_testimonials": true,
         "subheading": "",
-        "title": "Flowが選ばれる理由",
+        "title": "Flowが小売店舗分析に選ばれる理由",
         "content": "",
         "link_url": "",
         "link_text": "",
@@ -973,7 +973,7 @@
         "gap": "medium",
         "text_alignment": "start",
         "subheading": "",
-        "title": "データを判断につなぐ",
+        "title": "来店計測・POS・店舗運営データを、判断につなぐ",
         "content": "<p><strong>来店、売上、店舗運営、外部環境、店舗ナレッジを一つにつなぎ、次に取るべき行動を見える化します。</strong></p>",
         "background": "",
         "background_gradient": "",
@@ -1071,7 +1071,7 @@
         "gap": "medium",
         "text_alignment": "start",
         "subheading": "",
-        "title": "店舗判断を、3つのレイヤーで支える",
+        "title": "店舗分析から改善実行まで、3つのレイヤーで支援",
         "content": "<p>来店数・購買・店内行動をつなぎ、より速く、より一貫した店舗判断へ。<br/>Flowは、その流れを全店舗で支援します。</p>",
         "background": "#ffffff",
         "background_gradient": "",
@@ -1284,7 +1284,7 @@
         "gap": "medium",
         "text_alignment": "start",
         "subheading": "",
-        "title": "実行改善は、数字で確認できる",
+        "title": "店舗運営改善の成果を、数字で確認",
         "content": "<p>実行が変われば、店舗成果も変わる。<br/>Flowは、実際の店舗運営データでその変化を確認します。<br/><strong>Flowは、来店・購買・実行の変化を数字で確認しながら改善を進めます。</strong></p>",
         "background": "#ffffff",
         "background_gradient": "",
@@ -1407,7 +1407,7 @@
         "gap": "medium",
         "text_alignment": "start",
         "subheading": "",
-        "title": "レポートから、日々の店舗実行へ",
+        "title": "店舗・エリア・本部で使える店舗分析プラットフォーム",
         "content": "",
         "background": "",
         "background_gradient": "",
@@ -1419,13 +1419,6 @@
     "rich_text_iYFe9Q": {
       "type": "rich-text",
       "blocks": {
-        "subheading_iKjik8": {
-          "type": "subheading",
-          "settings": {
-            "text": "導入事例｜SPA・100店舗以上",
-            "icon": "picto-target"
-          }
-        },
         "liquid_KW76d3": {
           "type": "liquid",
           "disabled": true,
@@ -1436,7 +1429,7 @@
         "heading_9FwWXH": {
           "type": "heading",
           "settings": {
-            "text": "週次レポートから、日々の判断へ",
+            "text": "100店舗以上の小売企業における店舗DX",
             "heading_tag": "h1",
             "text_color": "#ffffff",
             "gradient": ""
@@ -1450,7 +1443,6 @@
         }
       },
       "block_order": [
-        "subheading_iKjik8",
         "liquid_KW76d3",
         "heading_9FwWXH",
         "richtext_QmW9HL"
@@ -1669,7 +1661,7 @@
         "stack_testimonials": false,
         "subheading": "導入企業の声",
         "title": "",
-        "content": "<h2>現場で活用されているFlow</h2>",
+        "content": "<h2>Flowを活用する小売企業・店舗担当者の声</h2>",
         "link_url": "",
         "link_text": "",
         "background": "",
@@ -1688,7 +1680,7 @@
           "type": "ai_gen_block_3504708",
           "settings": {
             "badge_text": "導入までの流れ",
-            "headline": "店舗データ活用を、無理なく始める",
+            "headline": "店舗分析・来店計測を、無理なく始める",
             "description": "Flowは、店舗環境の確認、必要なデータ連携、初期設定、運用開始後の活用支援まで、段階的に導入を進めます。",
             "step1_icon": "document",
             "step1_title": "ヒアリング",
@@ -1818,7 +1810,7 @@
       "settings": {
         "full_width": true,
         "subheading": "導入前の不安を解消",
-        "title": "よくある質問",
+        "title": "小売店舗分析・来店計測についてよくある質問",
         "content": "<p><strong>POS連携、カメラ、店舗スタッフの利用、Flow AIの活用方法など、導入前によく確認される内容をまとめました。</strong></p>",
         "team_avatar_width": 160,
         "support_hours": "",
@@ -1843,7 +1835,7 @@
         "heading_W76pLA": {
           "type": "heading",
           "settings": {
-            "text": "店舗データを、即時の判断へ",
+            "text": "店舗データを、日々の改善判断に変えませんか",
             "heading_tag": "h1"
           }
         },
