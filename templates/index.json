@@ -38,14 +38,7 @@
         "richtext_JWfj6P": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Flowは、店舗データを日々の判断と実行改善につなげるリテール分析プラットフォームです。</p>"
-          }
-        },
-        "subheading_LqYNpU": {
-          "type": "subheading",
-          "settings": {
-            "text": "来店計測 × POS連携 × 現場情報 × Flow AI",
-            "icon": "none"
+            "content": "<p>Flowは、来店計測・POS・人員・店舗情報を一元化し、本部・エリア・店舗が同じデータをもとに改善できる小売店舗分析プラットフォームです。Flow AIが課題と機会を整理し、店舗DXを日々の実行につなげます。</p>"
           }
         },
         "image_Dtind8": {
@@ -92,7 +85,6 @@
         "heading_FFmHYK",
         "subheading_BrM8M7",
         "richtext_JWfj6P",
-        "subheading_LqYNpU",
         "image_Dtind8",
         "richtext_LcTpMq",
         "buttons_pt4Ted",
