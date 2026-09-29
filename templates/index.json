@@ -41,15 +41,6 @@
             "content": "<p>Flowは、来店計測・POS・人員・店舗情報を一元化し、本部・エリア・店舗が同じデータをもとに改善できる小売店舗分析プラットフォームです。Flow AIが課題と機会を整理し、店舗DXを日々の実行につなげます。</p>"
           }
         },
-        "image_Dtind8": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Flow_Banner_0626.png",
-            "width_mode": "full_width",
-            "max_width": 600,
-            "mobile_max_width": 400
-          }
-        },
         "richtext_LcTpMq": {
           "type": "richtext",
           "settings": {
@@ -61,13 +52,13 @@
           "settings": {
             "style_1": "fill",
             "size_1": "base",
-            "text_1": "デモを相談する",
+            "text_1": "店舗分析・来店計測のデモを相談する",
             "url_1": "shopify://pages/contact",
-            "background_1": "",
-            "text_color_1": "",
+            "background_1": "#A0B842",
+            "text_color_1": "#102D4F",
             "style_2": "outline",
             "size_2": "base",
-            "text_2": "導入事例を見る",
+            "text_2": "小売企業の導入事例を見る",
             "url_2": "shopify://pages/case-studies",
             "background_2": "",
             "text_color_2": ""
@@ -78,6 +69,15 @@
           "settings": {
             "content": "<p><strong>期間限定｜3店舗導入で、1店舗分6ヶ月無料。</strong></p>"
           }
+        },
+        "image_Dtind8": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Flow_Banner_0626.png",
+            "width_mode": "full_width",
+            "max_width": 600,
+            "mobile_max_width": 400
+          }
         }
       },
       "block_order": [
@@ -85,10 +85,10 @@
         "heading_FFmHYK",
         "subheading_BrM8M7",
         "richtext_JWfj6P",
-        "image_Dtind8",
         "richtext_LcTpMq",
         "buttons_pt4Ted",
-        "richtext_gyC73r"
+        "richtext_gyC73r",
+        "image_Dtind8"
       ],
       "name": "Rich text",
       "settings": {
@@ -134,7 +134,7 @@
             "footer_content_color": "#677279",
             "desktop_width_percent": 100,
             "background_color": "#f9fafb",
-            "section_padding": 60
+            "section_padding": 40
           },
           "blocks": {}
         }
@@ -1730,6 +1730,7 @@
       "block_order": [
         "ai_gen_block_3504708_xDGP9g"
       ],
+      "custom_css": [],
       "name": "Area manager workflow",
       "settings": {
         "full_width": true,
