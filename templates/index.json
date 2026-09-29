@@ -15,7 +15,7 @@
         "subheading_79idNw": {
           "type": "subheading",
           "settings": {
-            "text": "日本のリテール分析特化。100以上のブランドで導入。",
+            "text": "日本の小売業に特化したリテール分析プラットフォーム",
             "icon": "picto-validation"
           }
         },
@@ -26,6 +26,13 @@
             "heading_tag": "h1",
             "text_color": "",
             "gradient": ""
+          }
+        },
+        "subheading_BrM8M7": {
+          "type": "subheading",
+          "settings": {
+            "text": "リテールには、より良い判断が必要だ。",
+            "icon": "none"
           }
         },
         "richtext_JWfj6P": {
@@ -83,6 +90,7 @@
       "block_order": [
         "subheading_79idNw",
         "heading_FFmHYK",
+        "subheading_BrM8M7",
         "richtext_JWfj6P",
         "subheading_LqYNpU",
         "image_Dtind8",
