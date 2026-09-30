@@ -302,7 +302,7 @@
             "title": "1",
             "heading_tag": "h5",
             "subheading": "",
-            "content": "<p><strong>AIカメラが来店・回遊・滞在を高精度で計測します。</strong></p>",
+            "content": "<h3>店舗の動きを正確に計測</h3><p>AIカメラと来店計測で、来店数、店前通行量、入店率、回遊、滞在時間を把握します。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -325,7 +325,7 @@
             "title": "2",
             "heading_tag": "h5",
             "subheading": "",
-            "content": "<p><strong>売上・人員・天候・店舗情報・マニュアルなどあらゆるデータを統合します。</strong></p>",
+            "content": "<h3>POS・人員・店舗情報を一元化</h3><p>POS、売上、人員配置、天候、店舗報告、SOPを店舗ごとの判断材料として整理します。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -348,7 +348,7 @@
             "title": "3",
             "heading_tag": "h5",
             "subheading": "",
-            "content": "<p><strong>重要指標をリアルタイムに可視化し、課題とチャンスを明確にします。</strong></p>",
+            "content": "<h3>課題と改善機会を店舗別に分析</h3><p>来店・購買率・売上・人員配置を同じ画面で比較し、成果差の要因と優先して対応すべき課題を見つけます。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -371,7 +371,7 @@
             "title": "4",
             "heading_tag": "h5",
             "subheading": "",
-            "content": "<p><strong>AIが最適な次の一手を提案。現場での実行をサポートします。</strong></p>",
+            "content": "<h3>Flow AIが次の行動を提案</h3><p>店舗データと社内ルールをもとに、店長・エリアマネージャー・本部が確認すべき変化と次のアクションを提示します。最終的な判断と実行は人が行います。<br/></p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -392,7 +392,7 @@
         "text_alignment": "center",
         "subheading": "",
         "title": "",
-        "content": "<h2>店舗分析を、レポートで終わらせず日々の判断へ。</h2><p>Flowは、来店客数・回遊・滞在時間・コンバージョン・人員配置を統合し、店舗運営の判断を標準化します。</p>",
+        "content": "<h2>店舗分析を、レポートで終わらせず日々の判断へ</h2><p>Flowは、来店客数・回遊・滞在時間・コンバージョン・人員配置を統合し、店舗運営の判断を標準化します。</p>",
         "background": "",
         "background_gradient": "",
         "text_color": "",
