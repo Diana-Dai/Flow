@@ -1001,11 +1001,11 @@
             "column_size": "3",
             "title": "リアルタイム店舗分析",
             "heading_tag": "h4",
-            "subheading": "<h3><strong>レイヤー01：現状を正しく把握する</strong></h3>",
+            "subheading": "<h3><strong>レイヤー01｜来店計測で現状を正しく把握</strong></h3>",
             "content": "<ul><li><strong>来店数（トラフィック）</strong></li><li><strong>売上・購買・コンバージョン</strong></li><li><strong>滞在時間・人員配置</strong></li><li><strong>店内行動</strong><br/></li></ul><p><strong>多くのシステムはここで止まる。</strong></p>",
-            "link_url": "shopify://pages/traffic-analytics",
-            "link_text": "高精度な店舗分析を見る->",
-            "link_style": "link"
+            "link_url": "https://flow-solutions.com/pages/ai-camera",
+            "link_text": "店舗向けAIカメラの計測方法を見る",
+            "link_style": "button"
           }
         },
         "item_7tAMz6": {
@@ -1024,11 +1024,11 @@
             "column_size": "3",
             "title": "成果ギャップを特定する",
             "heading_tag": "h4",
-            "subheading": "<h3><strong>レイヤー02：改善ポイントを見つける</strong></h3>",
+            "subheading": "<h3><strong>レイヤー02｜店舗データ分析で改善ポイントを特定</strong></h3>",
             "content": "<ul><li><strong>成果が出ていない箇所</strong></li><li><strong>機会がある箇所</strong></li><li><strong>対応が必要な時間帯</strong></li><li><strong>優先すべき課題</strong></li></ul><p><strong>ここで判断の質が変わる。</strong></p>",
-            "link_url": "shopify://pages/store-performance-platform",
-            "link_text": "分析プラットフォームを見る->",
-            "link_style": "link"
+            "link_url": "https://flow-solutions.com/pages/store-performance-platform",
+            "link_text": "多店舗KPI管理と店舗比較を見る",
+            "link_style": "button"
           }
         },
         "item_HjWCwX": {
@@ -1047,11 +1047,11 @@
             "column_size": "3",
             "title": "対応を標準化する",
             "heading_tag": "h4",
-            "subheading": "<h3>レイヤー03：実行を揃える</h3>",
+            "subheading": "<h3><strong>レイヤー03｜Flow AIで次の行動を揃える</strong></h3>",
             "content": "<ul><li><strong>店舗状況から推奨アクションを提示</strong></li><li><strong>SOP・運営ルールに沿って実行</strong></li><li><strong>店舗間の判断ばらつきを抑制</strong></li><li><strong>スピードと一貫性を高める</strong></li></ul><p><strong>ここで成果が変わる。</strong></p>",
-            "link_url": "shopify://pages/flow-ai-fida",
+            "link_url": "https://flow-solutions.com/pages/flow-ai-fida",
             "link_text": "Flow AI・FIDAを見る->",
-            "link_style": "link"
+            "link_style": "button"
           }
         }
       },
@@ -1337,13 +1337,13 @@
             "border_color": "",
             "show_controls": false,
             "column_size": "3",
-            "title": "店舗チーム",
-            "heading_tag": "h4",
+            "title": "店舗チーム｜来店・購買率をその日のうちに改善",
+            "heading_tag": "h3",
             "subheading": "",
-            "content": "<p><strong>当日の売上機会を逃さない</strong></p><ul><li><strong>来店数・入店率を確認</strong></li><li><strong>コンバージョン低下を早期把握</strong></li><li><strong>ピーク時間帯に合わせて接客を調整</strong></li><li><strong>当日中に次の行動を判断</strong></li></ul>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
+            "content": "<p>来店数、入店率、購買率の変化を確認し、ピーク時間の接客配置や売場対応を営業時間中に見直します。</p>",
+            "link_url": "https://flow-solutions.com/pages/increase-store-conversion",
+            "link_text": "来店・購買率を改善する方法を見る",
+            "link_style": "button"
           }
         },
         "item_aqpNXK": {
@@ -1359,13 +1359,13 @@
             "border_color": "",
             "show_controls": false,
             "column_size": "3",
-            "title": "エリア / VMD",
+            "title": "エリア・VMD｜店舗比較と売場改善の優先順位を判断",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<p><strong>店舗間の差と売場課題を見える化</strong></p><ul><li><strong>店舗別KPIを横比較</strong></li><li><strong>回遊・滞在時間・売場反応を確認</strong></li><li><strong>VMD変更後の効果を検証</strong></li><li><strong>改善が必要な店舗を優先把握</strong></li></ul>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
+            "content": "<p>店舗ごとのKPI、回遊、滞在時間、売場反応を比較し、確認や支援が必要な店舗と売場を特定します。</p>",
+            "link_url": "https://flow-solutions.com/pages/improve-vmd-layouts",
+            "link_text": "VMD・売場レイアウトを改善する方法を見る",
+            "link_style": "button"
           }
         },
         "item_tTyycj": {
@@ -1381,13 +1381,13 @@
             "border_color": "",
             "show_controls": false,
             "column_size": "3",
-            "title": "本部 / 経営層",
+            "title": "本部・経営層｜多店舗のKPIと判断基準を標準化",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<p><strong>全店舗の判断基準を統一する</strong></p><ul><li>店舗KPIを共通指標で管理</li><li>売上・人員配置・来店傾向を把握</li><li>店舗施策の実行状況を確認</li><li>成果のばらつきを改善</li></ul>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
+            "content": "<p>全店舗の来店、購買率、売上、人員配置を共通指標で管理し、成功店舗の取り組みを全店へ展開します。</p>",
+            "link_url": "https://flow-solutions.com/pages/standardize-store-decisions",
+            "link_text": "多店舗運営の判断を標準化する方法を見る",
+            "link_style": "button"
           }
         }
       },
