@@ -38,7 +38,7 @@
         "richtext_JWfj6P": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Flowは、来店計測・POS・人員・店舗情報を一元化し、本部・エリア・店舗が同じデータをもとに改善できる小売店舗分析プラットフォームです。Flow AIが課題と機会を整理し、店舗DXを日々の実行につなげます。</p>"
+            "content": "<p>Flowは、来店計測・POS・人員・店舗情報を一元化し、本部・エリア・店舗が同じデータをもとに改善できる小売店舗分析プラットフォームです。Flow AIが課題と機会を整理し、次のアクションを支援します。</p>"
           }
         },
         "richtext_LcTpMq": {
@@ -54,8 +54,8 @@
             "size_1": "base",
             "text_1": "店舗分析・来店計測のデモを相談する",
             "url_1": "shopify://pages/contact",
-            "background_1": "#A0B842",
-            "text_color_1": "#102D4F",
+            "background_1": "#a0b842",
+            "text_color_1": "#102d4f",
             "style_2": "outline",
             "size_2": "base",
             "text_2": "小売企業の導入事例を見る",
@@ -73,7 +73,7 @@
         "image_Dtind8": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Flow_Banner_0626.png",
+            "image": "shopify://shop_images/Flow_Banner_06262.jpg",
             "width_mode": "full_width",
             "max_width": 600,
             "mobile_max_width": 400
