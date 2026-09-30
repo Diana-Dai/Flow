@@ -19,13 +19,10 @@
             "icon": "picto-validation"
           }
         },
-        "heading_FFmHYK": {
-          "type": "heading",
+        "richtext_h8WqcX": {
+          "type": "richtext",
           "settings": {
-            "text": "小売店舗分析で、店舗データを日々の判断と売上改善へ",
-            "heading_tag": "h1",
-            "text_color": "",
-            "gradient": ""
+            "content": "<h1>小売店舗分析で、店舗データを日々の判断と売上改善へ</h1>"
           }
         },
         "subheading_BrM8M7": {
@@ -82,7 +79,7 @@
       },
       "block_order": [
         "subheading_79idNw",
-        "heading_FFmHYK",
+        "richtext_h8WqcX",
         "subheading_BrM8M7",
         "richtext_JWfj6P",
         "richtext_LcTpMq",
@@ -1081,7 +1078,7 @@
             "link_url": "https://flow-solutions.com/pages/ai-camera",
             "link_text": "店舗向けAIカメラの計測方法を見る",
             "link_style": "button",
-            "button_background": "#102D4F",
+            "button_background": "#102d4f",
             "button_text_color": "#ffffff"
           }
         },
@@ -1107,7 +1104,7 @@
             "link_url": "https://flow-solutions.com/pages/store-performance-platform",
             "link_text": "多店舗KPI管理と店舗比較を見る",
             "link_style": "button",
-            "button_background": "#102D4F",
+            "button_background": "#102d4f",
             "button_text_color": "#ffffff"
           }
         },
@@ -1133,7 +1130,7 @@
             "link_url": "https://flow-solutions.com/pages/flow-ai-fida",
             "link_text": "Flow AI・FIDAを見る->",
             "link_style": "button",
-            "button_background": "#102D4F",
+            "button_background": "#102d4f",
             "button_text_color": "#ffffff"
           }
         }
@@ -1438,8 +1435,8 @@
             "link_url": "https://flow-solutions.com/pages/increase-store-conversion",
             "link_text": "来店・購買率を改善する方法を見る",
             "link_style": "button",
-            "button_background": "#A0B842",
-            "button_text_color": "#102D4F"
+            "button_background": "#a0b842",
+            "button_text_color": "#102d4f"
           }
         },
         "item_aqpNXK": {
@@ -1463,8 +1460,8 @@
             "link_url": "https://flow-solutions.com/pages/improve-vmd-layouts",
             "link_text": "VMD・売場レイアウトを改善する方法を見る",
             "link_style": "button",
-            "button_background": "#A0B842",
-            "button_text_color": "#102D4F"
+            "button_background": "#a0b842",
+            "button_text_color": "#102d4f"
           }
         },
         "item_tTyycj": {
@@ -1488,8 +1485,8 @@
             "link_url": "https://flow-solutions.com/pages/standardize-store-decisions",
             "link_text": "多店舗運営の判断を標準化する方法を見る",
             "link_style": "button",
-            "button_background": "#A0B842",
-            "button_text_color": "#102D4F"
+            "button_background": "#a0b842",
+            "button_text_color": "#102d4f"
           }
         }
       },
