@@ -15,13 +15,13 @@
         "subheading_GmUMNm": {
           "type": "subheading",
           "settings": {
-            "text": "来店データ活用"
+            "text": "来店計測・来店分析"
           }
         },
         "liquid_7qyMhf": {
           "type": "liquid",
           "settings": {
-            "liquid": "<h1 class=\"h1\">来店数から、<br>売上機会を見える化。\n</h1>"
+            "liquid": "<h1 class=\"h1\">来店計測ツールで、来店客数・店前通行量・入店率を可視化\n</h1>"
           }
         },
         "heading_frXnfn": {
@@ -35,7 +35,7 @@
         "richtext_HwhtPj": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Flowは、来店数・店前通行量・入店率を可視化し、売上や購買率とつなげて店舗状況を把握しやすくします。<br/>感覚に頼らず、実際の来店データをもとに、集客・接客・人員配置の改善判断を支援します。</p>"
+            "content": "<p><br/>Flowの来店計測ツールは、AIカメラや既存のトラフィックカウンター、ピープルカウンターから取得した来店客数・店前通行量を、入店率や時間帯別の来店傾向として可視化します。販促、VMD、人員配置、購買率改善の判断に活用できます。<br/></p>"
           }
         },
         "button_7Prq3W": {
@@ -251,7 +251,7 @@
         "gap": "medium",
         "text_alignment": "start",
         "subheading": "来店データ基盤",
-        "title": "来店の流れを、ひとつに把握。",
+        "title": "来店客数・店前通行量・入店率を、ひとつに把握",
         "content": "<h6>Flowは、店舗入口の来店数だけでなく、店前通行量、入店率、属性傾向、滞在傾向、スタッフ除外、複数入口の来店傾向まで一元的に可視化します。売上や購買率と組み合わせることで、集客・接客・人員配置の改善判断に使える来店データをつくります。</h6>",
         "background": "#ffffff",
         "background_gradient": "",
@@ -661,7 +661,7 @@
         "gap": "medium",
         "text_alignment": "center",
         "subheading": "活用シーン",
-        "title": "来店データを、改善判断へ。",
+        "title": "来店分析を、店舗改善の判断へ",
         "content": "<p><strong>来店数・入店率・購買率・時間帯別の変化をもとに、人員配置、店頭改善、マーケティング効果の判断を支援します。</strong></p>",
         "background": "#ffffff",
         "background_gradient": "",
@@ -1131,7 +1131,7 @@
         "liquid_ccB9Kb": {
           "type": "liquid",
           "settings": {
-            "liquid": "<h2 class=\"h2\">来店データを、。<br>売上改善へ。\n</h2>"
+            "liquid": "<h2 class=\"h2\">来店データを、売上改善へ\n</h2>"
           }
         },
         "heading_YXhiR8": {
