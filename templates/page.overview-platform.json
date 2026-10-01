@@ -15,7 +15,7 @@
         "liquid_74Ndmm": {
           "type": "liquid",
           "settings": {
-            "liquid": "<h1 class=\"h1\">店舗データを統合し、<br>売上改善の判断へ。\n</h1>"
+            "liquid": "<h1 class=\"h1\">来店・POS・人員データを統合し、売上改善につなげる店舗分析システム。\n</h1>"
           }
         },
         "heading_W76pLA": {
@@ -199,7 +199,7 @@
         "gap": "medium",
         "text_alignment": "start",
         "subheading": "オペレーション格差",
-        "title": "店舗ごとの判断格差を、縮める。",
+        "title": "店舗分析システムで、店舗ごとの判断格差を縮める",
         "content": "<p>優秀な店長は、データを待たずに動けます。しかし、その判断力を全店舗に広げることは簡単ではありません。Flowは、来店・購買率・売上状況をリアルタイムに統合し、改善ポイントを早期に把握。店舗ごとの判断ばらつきを減らし、ブランド方針に沿った対応を支援します。</p>",
         "background": "#ffffff",
         "background_gradient": "",
@@ -234,7 +234,7 @@
         "heading_EyFYM9": {
           "type": "heading",
           "settings": {
-            "text": "店舗運営を支える3つの基盤",
+            "text": "店舗データを実行につなげる、店舗分析システムの3つの基盤",
             "heading_tag": "h1",
             "text_color": "",
             "gradient": ""
@@ -599,7 +599,7 @@
         "text_alignment": "start",
         "subheading": "診断ロジック",
         "title": "",
-        "content": "<h2>店舗成果を左右する。<br/>要因を特定する。</h2><p>Flowは、来店・人員配置・VMD・店舗実行など、<br/>売上に影響する運営課題を特定します。</p>",
+        "content": "<h2>店舗データから、売上を左右する要因を特定する。</h2><p>Flowは、来店・人員配置・VMD・店舗実行など、<br/>売上に影響する運営課題を特定します。</p>",
         "background": "#0e366a",
         "background_gradient": "",
         "text_color": "#ffffff",
@@ -695,7 +695,7 @@
         "text_alignment": "start",
         "subheading": "",
         "title": "",
-        "content": "<h2>実績が証明する、店舗改善効果。</h2>",
+        "content": "<p>導入実績が証明する、店舗分析による改善効果</p>",
         "background": "#ffffff",
         "background_gradient": "",
         "text_color": "",
@@ -890,7 +890,7 @@
         "text_alignment": "start",
         "subheading": "プラットフォームを見る",
         "title": "",
-        "content": "<h2>店舗運営のすべてのレイヤーを統合。</h2><h6>正確な計測、統合分析、Flow AIによる要約・質問・行動提案までを、一つの基盤でつなぎます。</h6>",
+        "content": "<h2>計測・分析・意思決定支援を一つの基盤に統合</h2><h6>正確な計測、統合分析、Flow AIによる要約・質問・行動提案までを、一つの基盤でつなぎます。</h6>",
         "background": "",
         "background_gradient": "",
         "text_color": "",
@@ -972,7 +972,7 @@
       "settings": {
         "full_width": true,
         "subheading": "FAQ",
-        "title": "よくあるご質問",
+        "title": "店舗分析システムについてよくあるご質問",
         "content": "<p>導入前に確認されることが多い内容をまとめました。POS連携、導入店舗数、店舗での活用、カメラ映像、リアルタイム性、FIDAについて確認できます。<br/><br/><strong>導入の目安<br/></strong>推奨：3店舗以上で検証<br/>1店舗から導入可能・段階展開に対応</p>",
         "team_avatar_width": 160,
         "support_hours": "",
@@ -985,7 +985,7 @@
         "text_color": "",
         "heading_color": "",
         "heading_gradient": "",
-        "button_background": "#A1B847",
+        "button_background": "#a1b847",
         "button_text_color": "",
         "accordion_background": "",
         "accordion_text_color": ""
