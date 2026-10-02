@@ -302,6 +302,63 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 }
 </script>
 {% endif %}
+{% if request.path == '/pages/flow-platform-overview' or page.handle == 'flow-platform-overview' %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://flow-solutions.com/pages/flow-platform-overview#webpage",
+      "url": "https://flow-solutions.com/pages/flow-platform-overview",
+      "name": "店舗分析システム・店舗分析ツール｜来店・POS・人員データを統合｜Flow",
+      "description": "来店客数、店内行動、POS、スタッフ、天気などの店舗データを一元化。店舗別・全店のKPI比較からFlow AIによる要約・改善提案まで、現場と本部の判断・実行を支えるFlowの店舗分析システム・店舗分析ツールです。",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@id": "https://flow-solutions.com/#website"
+      },
+      "about": {
+        "@id": "https://flow-solutions.com/pages/flow-platform-overview#software"
+      },
+      "mainEntity": {
+        "@id": "https://flow-solutions.com/pages/flow-platform-overview#software"
+      }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://flow-solutions.com/pages/flow-platform-overview#software",
+      "name": "Flow 店舗分析システム",
+      "alternateName": "Flow",
+      "url": "https://flow-solutions.com/pages/flow-platform-overview",
+      "applicationCategory": "BusinessApplication",
+      "applicationSubCategory": "小売店舗分析",
+      "operatingSystem": "Web",
+      "inLanguage": "ja",
+      "description": "来店客数、店内行動、POS、スタッフ、天気などの店舗データを一元化し、店舗別・全店のKPI比較とFlow AIによる要約・改善提案を提供する小売店舗分析プラットフォーム。",
+      "featureList": [
+        "来店客数・店前通行量の計測",
+        "店内行動の分析",
+        "POS・人員・天気データの統合",
+        "店舗別・全店のKPI比較",
+        "Flow AIによる要約・改善提案"
+      ],
+      "audience": {
+        "@type": "BusinessAudience",
+        "audienceType": "小売・多店舗運営企業"
+      },
+      "provider": {
+        "@id": "https://flow-solutions.com/#organization"
+      },
+      "publisher": {
+        "@id": "https://flow-solutions.com/#organization"
+      }
+    }
+  ]
+}
+</script>
+{% endif %}
+
+
 
 
 
