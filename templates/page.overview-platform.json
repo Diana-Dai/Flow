@@ -372,25 +372,12 @@
             "link_text": "Flow AIによる店舗意思決定支援を見る",
             "link_style": "button"
           }
-        },
-        "item_X9t48F": {
-          "type": "item",
-          "settings": {
-            "icon": "none",
-            "icon_width": 48,
-            "title": "Heading",
-            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
         }
       },
       "block_order": [
         "item_9HK6tM",
         "item_4Jg6dW",
-        "item_a8jn8N",
-        "item_X9t48F"
+        "item_a8jn8N"
       ],
       "name": "Images and text scrolling",
       "settings": {
@@ -777,7 +764,7 @@
         "text_alignment": "start",
         "subheading": "",
         "title": "",
-        "content": "<p>導入実績が証明する、店舗分析による改善効果</p>",
+        "content": "<h2>導入実績が証明する、店舗分析による改善効果</h2>",
         "background": "#ffffff",
         "background_gradient": "",
         "text_color": "",
