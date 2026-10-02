@@ -64,7 +64,7 @@
         "richtext_gyC73r": {
           "type": "richtext",
           "settings": {
-            "content": "<p><strong>期間限定｜3店舗導入で、1店舗分6ヶ月無料。</strong></p>"
+            "content": "<p>期間限定｜3店舗導入で、4店舗目が6ヶ月無料</p>"
           }
         },
         "image_Dtind8": {
@@ -1867,7 +1867,7 @@
         "richtext_b7cQCP": {
           "type": "richtext",
           "settings": {
-            "content": "<p><strong>来店計測、POS連携、店舗KPI、Flow AIの活用方法を、<br/>貴社の店舗運営に合わせてご提案します。</strong></p><p></p>"
+            "content": "<p>現在の来店計測、POS、人員、店舗報告の状況と、改善したいKPIをお聞かせください。計測・データ連携・店舗別KPI・Flow AIまで、既存環境を活かした導入方法をご提案します。</p>"
           }
         },
         "button_39CcgY": {
@@ -1875,8 +1875,8 @@
           "settings": {
             "style": "fill",
             "size": "base",
-            "text": "デモを相談する",
-            "url": "shopify://pages/contact",
+            "text": "店舗分析・来店計測のデモを相談する",
+            "url": "https://flow-solutions.com/pages/contact",
             "background": "#a0b842",
             "text_color": "#ffffff"
           }
@@ -1886,8 +1886,8 @@
           "settings": {
             "style": "fill",
             "size": "base",
-            "text": "店舗データ活用診断を受ける",
-            "url": "shopify://pages/assessment",
+            "text": "5分で店舗データ活用の課題を確認する",
+            "url": "https://flow-solutions.com/pages/assessment",
             "background": "#ffffff",
             "text_color": "#11243e"
           }
@@ -1901,7 +1901,7 @@
         "richtext_8bpctG": {
           "type": "richtext",
           "settings": {
-            "content": "<ul><li>✓ プラットフォーム紹介</li><li>✓ ROI試算</li><li>✓ 30日間トライアル</li></ul>"
+            "content": "<ul><li>✓ 店舗分析プラットフォームの画面紹介</li><li>✓ 導入店舗数とKPIに基づくROI試算</li><li>✓ 30日間トライアル（対象条件を明記）</li></ul>"
           }
         }
       },
