@@ -358,6 +358,76 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </script>
 {% endif %}
 
+{% if request.path == '/pages/traffic-analytics' or page.handle == 'traffic-analytics' %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://flow-solutions.com/#organization",
+      "name": "Flow Solutions",
+      "url": "https://flow-solutions.com/"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://flow-solutions.com/pages/traffic-analytics#webpage",
+      "url": "https://flow-solutions.com/pages/traffic-analytics",
+      "name": "来店計測ツール・来店分析｜入店率・店前通行量を可視化｜Flow",
+      "description": "Flowの来店計測ツールは、来店客数、店前通行量、入店率、属性・滞在傾向を可視化。時間帯別の来店分析により、販促・VMD・人員配置・購買率の改善判断を支援します。",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@id": "https://flow-solutions.com/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://flow-solutions.com/pages/traffic-analytics#breadcrumb"
+      },
+      "mainEntity": {
+        "@id": "https://flow-solutions.com/pages/traffic-analytics#service"
+      }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://flow-solutions.com/pages/traffic-analytics#service",
+      "name": "Flow 来店計測・来店分析",
+      "serviceType": "来店計測・来店分析",
+      "url": "https://flow-solutions.com/pages/traffic-analytics",
+      "description": "来店客数、店前通行量、入店率、属性・滞在傾向を可視化し、時間帯別の来店分析によって販促・VMD・人員配置・購買率の改善判断を支援する小売店舗向け来店計測サービス。",
+      "provider": {
+        "@id": "https://flow-solutions.com/#organization"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "JP"
+      },
+      "audience": {
+        "@type": "BusinessAudience",
+        "audienceType": "小売・店舗運営企業"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://flow-solutions.com/pages/traffic-analytics#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "ホーム",
+          "item": "https://flow-solutions.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "来店客数分析",
+          "item": "https://flow-solutions.com/pages/traffic-analytics"
+        }
+      ]
+    }
+  ]
+}
+</script>
+{% endif %}
+
 
 
 
