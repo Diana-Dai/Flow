@@ -1364,7 +1364,7 @@
           "settings": {
             "text": "よくある質問小売AI・店舗AIについてよくある質問",
             "size": "h1",
-            "html_tag": "h3",
+            "html_tag": "h2",
             "text_color": "#11243e",
             "gradient": ""
           },
