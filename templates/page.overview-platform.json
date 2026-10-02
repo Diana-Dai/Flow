@@ -186,11 +186,80 @@
             "link_text": "店舗運営プラットフォームを見る →",
             "link_style": "button"
           }
+        },
+        "item_mhQL4L": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#f2f2f2",
+            "text_color": "#11243e",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h1",
+            "subheading": "",
+            "content": "<h3>本部・経営企画</h3><p>全店舗の来店数・売上・購買率を共通KPIで確認し、施策や投資の優先順位を判断します。</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_6MzFTt": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#a0b842",
+            "text_color": "#f9fafb",
+            "border_color": "#a0b842",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h1",
+            "subheading": "",
+            "content": "<h3>エリアマネージャー</h3><p>店舗間・時間帯別の差を把握し、支援すべき店舗と優先的に改善するテーマを特定します。<br/></p>",
+            "link_url": "shopify://pages/store-performance-platform",
+            "link_text": "",
+            "link_style": "button"
+          }
+        },
+        "item_gC4Jwj": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#f2f2f2",
+            "text_color": "#11243e",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h1",
+            "subheading": "",
+            "content": "<h3>店長・店舗スタッフ</h3><p>当日の来店・購買率・人員配置の変化を確認し、接客、VMD、スタッフ配置の改善につなげます。<br/></p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
         }
       },
       "block_order": [
         "item_dU9BqG",
-        "item_RnwDw8"
+        "item_RnwDw8",
+        "item_mhQL4L",
+        "item_6MzFTt",
+        "item_gC4Jwj"
       ],
       "name": "Multi-column",
       "settings": {
@@ -969,6 +1038,13 @@
             "title": "導入後の定着支援はありますか？",
             "content": "<p>Flowは、導入して終わりではなく、店舗で使われる状態を重視しています。</p><p>本部だけがデータを見るのではなく、店長やエリアマネージャーが日々の店舗運営で確認できる状態をつくることが重要です。来店数、購買率、時間帯別の変化を確認しながら、接客体制、売場対応、販促施策の改善につなげていきます。</p><p>必要に応じて、店舗向けの説明や活用支援も行い、現場で継続的に使える状態を目指します。</p>"
           }
+        },
+        "item_XWDz6G": {
+          "type": "item",
+          "settings": {
+            "title": "店舗分析システムの導入は、どのように進みますか？",
+            "content": "<p>般的には、①対象店舗・確認したいKPI・利用中のデータの確認、②AIカメラとデータ連携方法の設計、③初期店舗への導入とダッシュボード設定、④店舗・本部向けの活用支援、⑤成果確認後の段階展開の順に進めます。<br/><br/>1店舗から導入でき、店舗間で比較検証する場合は3店舗以上での開始を推奨しています。POS、CSV、FTP、APIなどの連携方法は、既存システムの仕様に合わせて確認します。</p>"
+          }
         }
       },
       "block_order": [
@@ -979,7 +1055,8 @@
         "item_FXzfx6",
         "item_Lja638",
         "item_LLbw6z",
-        "item_yUM9mP"
+        "item_yUM9mP",
+        "item_XWDz6G"
       ],
       "name": "FAQ",
       "settings": {
