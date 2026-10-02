@@ -2171,6 +2171,41 @@
         "subheading_text_color": "#f9fafb"
       }
     },
+    "rich_text_xGPNdH": {
+      "type": "rich-text",
+      "blocks": {
+        "richtext_Da8wQP": {
+          "type": "richtext",
+          "settings": {
+            "content": "<h2>多店舗KPI管理で、購買率と売上を改善した導入事例</h2><h3>124店舗の共通KPI運用で、売上18億円増</h3><p>大手セレクトショップ様は、124店舗で来店数・購買率・POS売上データを統合し、店長とエリアマネージャーが同じデータをもとに週単位でPDCAを実施しました。1年間で購買率は前年比8.93%改善、売上は前年比8.25%増加し、売上増加額は18億円となりました。その後、Flowの活用は220店舗以上へ拡大しています。<br/></p>"
+          }
+        },
+        "button_yXNDFb": {
+          "type": "button",
+          "settings": {
+            "style": "fill",
+            "size": "xl",
+            "text": "124店舗の多店舗KPI管理事例を見る",
+            "url": "https://flow-solutions.com/pages/case-studies-roi",
+            "background": "",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "richtext_Da8wQP",
+        "button_yXNDFb"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "medium",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
     "blocks_rwYEMm": {
       "type": "_blocks",
       "blocks": {
@@ -2394,6 +2429,60 @@
             "chevron_color": "#64748b"
           },
           "blocks": {}
+        },
+        "ai_gen_block_0c78d27_JGKhME": {
+          "type": "ai_gen_block_0c78d27",
+          "name": "FAQ accordion item",
+          "settings": {
+            "category": "",
+            "question": "店舗・エリア比較では、どの単位でKPIを比較できますか？",
+            "answer": "店舗別、エリア別、期間別、曜日・時間帯別など、目的に応じた単位で来店数、購買率、売上、予算進捗などを比較できます。利用できる比較条件は、連携するデータと設定内容によって異なります。",
+            "default_open": false,
+            "icon_type": "badge",
+            "icon_background_color": "#f0f4e8",
+            "icon_color": "#a0b842",
+            "category_color": "#a0b842",
+            "question_color": "#0f172a",
+            "answer_color": "#475569",
+            "chevron_color": "#64748b"
+          },
+          "blocks": {}
+        },
+        "ai_gen_block_0c78d27_YAFxMJ": {
+          "type": "ai_gen_block_0c78d27",
+          "name": "FAQ accordion item",
+          "settings": {
+            "category": "",
+            "question": "多店舗管理では、どのKPIを確認できますか？",
+            "answer": "来店数、店前通行量、購買率、客単価、売上・予算進捗、スタッフ配置、滞在時間などを確認できます。POSや来店計測データを連携することで、店舗成果の違いを複数のKPIから分析できます。",
+            "default_open": false,
+            "icon_type": "badge",
+            "icon_background_color": "#f0f4e8",
+            "icon_color": "#a0b842",
+            "category_color": "#a0b842",
+            "question_color": "#0f172a",
+            "answer_color": "#475569",
+            "chevron_color": "#64748b"
+          },
+          "blocks": {}
+        },
+        "ai_gen_block_0c78d27_TVUq3p": {
+          "type": "ai_gen_block_0c78d27",
+          "name": "FAQ accordion item",
+          "settings": {
+            "category": "",
+            "question": "注意すべき店舗はどのように特定しますか？",
+            "answer": "店舗・エリアごとのKPI変化、売上進捗、Pulse、メモ、店舗報告をまとめて確認し、急な変化や継続的な差がある店舗を特定します。エリアマネージャーは、確認や支援を優先する店舗の判断に活用できます。",
+            "default_open": false,
+            "icon_type": "badge",
+            "icon_background_color": "#f0f4e8",
+            "icon_color": "#a0b842",
+            "category_color": "#a0b842",
+            "question_color": "#0f172a",
+            "answer_color": "#475569",
+            "chevron_color": "#64748b"
+          },
+          "blocks": {}
         }
       },
       "block_order": [
@@ -2404,7 +2493,10 @@
         "ai_gen_block_0c78d27_zrf8V4",
         "ai_gen_block_0c78d27_eMXbWy",
         "ai_gen_block_0c78d27_77WPEM",
-        "ai_gen_block_0c78d27_jqMeJG"
+        "ai_gen_block_0c78d27_jqMeJG",
+        "ai_gen_block_0c78d27_JGKhME",
+        "ai_gen_block_0c78d27_YAFxMJ",
+        "ai_gen_block_0c78d27_TVUq3p"
       ],
       "custom_css": [
         ".h1 {margin-block-end: var(--spacing-6);}"
@@ -2504,6 +2596,7 @@
     "section-15",
     "media_with_text_mRGejd",
     "multi_column_ELgLhR",
+    "rich_text_xGPNdH",
     "blocks_rwYEMm",
     "blocks_nwzRNT",
     "rich_text_6VmVgb"
