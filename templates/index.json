@@ -1236,13 +1236,13 @@
             "border_color": "#11243e",
             "show_controls": false,
             "column_size": "2",
-            "title": "+23.9%",
+            "title": "株式会社デイトナ・インターナショナル様",
             "heading_tag": "h1",
-            "subheading": "<h3>株式会社デイトナ・インターナショナル様</h3><p><br/>+23.9%<br/></p>",
-            "content": "<p><strong>入店率改善</strong></p><ul><li><strong>購買率: 19.9% → 25.2%</strong></li><li><strong>Flow活用店舗では売上 約25%増</strong></li><li><strong>投資回収は数週間レベル</strong></li></ul>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
+            "subheading": "",
+            "content": "<p><strong>6か月間の検証</strong></p><ul><li>売上高: 前年同期比 +25%<br/></li><li>来店者数: +6.3%<br/></li><li>買い上げ率: 19.9%から25.2%へ改善（+5.3pt）</li></ul>",
+            "link_url": "https://flow-solutions.com/pages/case-studies-daytona",
+            "link_text": "デイトナ・インターナショナル様の店舗分析事例を見る",
+            "link_style": "button"
           }
         },
         "item_tx7kCq": {
@@ -1258,13 +1258,13 @@
             "border_color": "#0e366a",
             "show_controls": false,
             "column_size": "2",
-            "title": "+8.25%",
+            "title": "大手国内リテール企業",
             "heading_tag": "h1",
-            "subheading": "<p><strong>大手国内リテール企業</strong></p>",
-            "content": "<p><strong>売上改善インパクト</strong></p><ul><li><strong>126店舗規模で検証</strong></li><li><strong>年間売上インパクト：約18億円</strong></li><li><strong>ROI：約50倍</strong></li></ul>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
+            "subheading": "",
+            "content": "<p><strong>124店舗・1年間の検証</strong></p><ul><li>&nbsp;購買率: 前年比 +8.93%<br/>&nbsp;</li><li>売上: 前年比 +8.25%<br/>&nbsp;</li><li>年間売上増加: 約18億円<br/>&nbsp;</li><li>ROI: 50倍以上</li></ul>",
+            "link_url": "https://flow-solutions.com/pages/case-studies-roi",
+            "link_text": "124店舗の購買率・売上改善事例を見る",
+            "link_style": "button"
           }
         },
         "item_zttdWV": {
@@ -1319,6 +1319,12 @@
     "rich_text_Tictfp": {
       "type": "rich-text",
       "blocks": {
+        "richtext_yKXX6U": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>上記は各企業における一定期間の導入・運用結果です。成果は店舗環境、市場条件、運用方法、既存の店舗運営体制、データ活用の定着度により異なります。</p>"
+          }
+        },
         "button_eaFNbN": {
           "type": "button",
           "settings": {
@@ -1332,6 +1338,7 @@
         }
       },
       "block_order": [
+        "richtext_yKXX6U",
         "button_eaFNbN"
       ],
       "custom_css": [],
@@ -1810,6 +1817,27 @@
             "content": "<p>Flow AIは、店舗データをもとに売上改善に向けた判断を支援します。<br/>来店数、売上、購買率、人員配置、天候などの情報を組み合わせ、店舗状況に応じた確認ポイントや改善アクションを提案します。店長や本部の判断を置き換えるものではなく、日々の店舗運営をより早く、より一貫性のあるものにするための支援機能です。</p>"
           }
         },
+        "item_3nzYMt": {
+          "type": "item",
+          "settings": {
+            "title": "Flowは一般的な来店カウンターやBIツールと何が違いますか？",
+            "content": "<p>Flowは来店数を計測するだけでなく、店前通行量、店内行動、POS、人員、店舗情報を一元化します。店舗ごとの課題や改善機会を分析し、Flow AIが次に確認すべき点と改善アクションを提案することで、データ取得から日々の店舗運営改善までを支援します。</p>"
+          }
+        },
+        "item_EdWFUN": {
+          "type": "item",
+          "settings": {
+            "title": "店舗DXはどこから始められますか？",
+            "content": "<p>1店舗での来店計測から始めることができます。POS連携なしで来店数や店前通行量の計測を開始し、効果を確認しながらPOS、人員データ、店舗比較、Flow AIへ段階的に活用範囲を広げられます。</p>"
+          }
+        },
+        "item_6FiK4c": {
+          "type": "item",
+          "settings": {
+            "title": "本部・エリア・店舗では、どのようにFlowを使い分けますか？",
+            "content": "<p>店舗では当日の来店数や購買率を確認し、接客や人員配置の改善に利用します。エリア担当者は店舗間のKPIを比較し、支援が必要な店舗を特定します。本部は全店の成果と施策実行状況を確認し、店舗運営の判断基準を標準化します。</p>"
+          }
+        },
         "item_PUBCj6": {
           "type": "item",
           "disabled": true,
@@ -1826,6 +1854,9 @@
         "item_wC7RQN",
         "item_dzzyrg",
         "item_iCLHQE",
+        "item_3nzYMt",
+        "item_EdWFUN",
+        "item_6FiK4c",
         "item_PUBCj6"
       ],
       "custom_css": [
