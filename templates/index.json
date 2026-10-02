@@ -41,7 +41,7 @@
         "richtext_LcTpMq": {
           "type": "richtext",
           "settings": {
-            "content": "<p>来店計測 × POS連携 × 現場情報 × Flow AI</p>"
+            "content": "<p>店舗数、確認したいKPI、現在のPOS・来店計測環境をもとに、Flowの活用方法をご案内します。<br/></p>"
           }
         },
         "buttons_pt4Ted": {
@@ -636,7 +636,7 @@
       ],
       "custom_css": [
         ".h6 {color: var(--text-secondary) !important; text-transform: uppercase; font-size: 0.9rem;}",
-        " {padding-top: 90px;}"
+        " {padding-top: 0px;}"
       ],
       "name": "Impact text",
       "settings": {
