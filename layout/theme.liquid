@@ -236,7 +236,72 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 }
 </script>
 {% endif %}
-
+{% if request.path == '/pages/store-performance-platform' or page.handle == 'store-performance-platform' %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://flow-solutions.com/pages/store-performance-platform#webpage",
+      "url": "https://flow-solutions.com/pages/store-performance-platform",
+      "name": "多店舗管理・店舗比較｜KPIと店舗パフォーマンスを改善｜Flow",
+      "description": "Flowは、多店舗の来店数、購買率、売上、人員配置を一元管理し、店舗比較・エリア比較ができる多店舗管理基盤です。成功店舗の共通点と注意すべき店舗を特定し、全店のパフォーマンス改善と運営標準化につなげます。",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@id": "https://flow-solutions.com/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://flow-solutions.com/pages/store-performance-platform#breadcrumb"
+      },
+      "mainEntity": {
+        "@id": "https://flow-solutions.com/pages/store-performance-platform#service"
+      }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://flow-solutions.com/pages/store-performance-platform#service",
+      "name": "Flow 多店舗管理・店舗パフォーマンス管理",
+      "serviceType": "多店舗KPI管理・店舗比較",
+      "url": "https://flow-solutions.com/pages/store-performance-platform",
+      "description": "多店舗の来店数、購買率、売上、人員配置を一元管理し、店舗比較・エリア比較を通じて成功店舗の共通点と注意すべき店舗を特定。全店のパフォーマンス改善と運営標準化を支援する多店舗管理サービス。",
+      "provider": {
+        "@id": "https://flow-solutions.com/#organization"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "JP"
+      },
+      "audience": {
+        "@type": "BusinessAudience",
+        "audienceType": "多店舗展開する小売・店舗運営企業"
+      },
+      "isRelatedTo": {
+        "@id": "https://flow-solutions.com/pages/flow-platform-overview#software"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://flow-solutions.com/pages/store-performance-platform#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "ホーム",
+          "item": "https://flow-solutions.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "店舗パフォーマンス管理",
+          "item": "https://flow-solutions.com/pages/store-performance-platform"
+        }
+      ]
+    }
+  ]
+}
+</script>
+{% endif %}
 
 
 
