@@ -43,8 +43,8 @@
           "settings": {
             "style": "fill",
             "size": "lg",
-            "text": "店舗データ分析を相談する →",
-            "url": "shopify://pages/contact",
+            "text": "多店舗KPI管理のデモを相談する",
+            "url": "https://flow-solutions.com/pages/contact",
             "background": "#a0b842",
             "text_color": ""
           }
@@ -54,8 +54,8 @@
           "settings": {
             "style": "fill",
             "size": "lg",
-            "text": "活用例を見る →",
-            "url": "#use-cases",
+            "text": "124店舗の導入事例を見る",
+            "url": "https://flow-solutions.com/pages/case-studies-roi",
             "background": "#ffffff",
             "text_color": "#11243e"
           }
@@ -496,7 +496,7 @@
             "title": "店前通行量",
             "heading_tag": "h2",
             "subheading": "<p>Passersby</p>",
-            "content": "",
+            "content": "<p>店舗前を通った人数を確認し、立地や時間帯ごとの集客機会を比較します。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -515,10 +515,10 @@
             "border_color": "rgba(0,0,0,0)",
             "show_controls": false,
             "column_size": "4",
-            "title": "来店数",
+            "title": "来店客数",
             "heading_tag": "h2",
             "subheading": "<p>Traffic</p>",
-            "content": "",
+            "content": "<p>実際に入店した人数を店舗・エリア・期間別に比較し、来店傾向を把握します。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -540,7 +540,7 @@
             "title": "購買率",
             "heading_tag": "h2",
             "subheading": "<p>Conversion</p>",
-            "content": "",
+            "content": "<p>来店客数に対して購入につながった割合を確認し、店舗ごとの販売機会を比較します。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -562,7 +562,7 @@
             "title": "客単価",
             "heading_tag": "h2",
             "subheading": "<p>ATV</p>",
-            "content": "",
+            "content": "<p>1回の購入当たりの平均金額を確認し、購買率や売上と合わせて分析します。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -581,10 +581,10 @@
             "border_color": "",
             "show_controls": false,
             "column_size": "1",
-            "title": "売上・予算進捗",
+            "title": "売上・予算達成率",
             "heading_tag": "h2",
             "subheading": "<p>SALES / TARGET</p>",
-            "content": "",
+            "content": "<p>売上実績と予算を比較し、目標との差と改善が必要な店舗を確認します。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -603,10 +603,10 @@
             "border_color": "#a0b842",
             "show_controls": false,
             "column_size": "3",
-            "title": "スタッフ配置",
+            "title": "スタッフ配置・労働生産性",
             "heading_tag": "h2",
             "subheading": "<p>Staffing</p>",
-            "content": "",
+            "content": "<p>来店数や売上に対して適切な人員を配置できているかを確認します。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -628,7 +628,7 @@
             "title": "滞在時間",
             "heading_tag": "h2",
             "subheading": "<p>Dwell Time</p>",
-            "content": "",
+            "content": "<p>店内や売場での滞在傾向を比較し、接客・VMD・売場構成の改善に活用します。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -650,7 +650,7 @@
             "title": "店舗・エリア比較",
             "heading_tag": "h2",
             "subheading": "<p>Comparisons・Benchmarks</p>",
-            "content": "",
+            "content": "<p>店舗別・エリア別のKPIを比較し、好調店舗の共通点と注意すべき店舗を特定します。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -2073,6 +2073,72 @@
             "link_text": "",
             "link_style": "link"
           }
+        },
+        "item_yNyAhh": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "店長｜自店舗の変化を確認して記録",
+            "heading_tag": "h3",
+            "subheading": "",
+            "content": "<p>自店舗の来店数、購買率、売上・予算進捗を確認し、売場変更、在庫、イベント、スタッフ状況をPulseやメモに記録します。数値の変化と現場の理由を一緒に残し、次の改善行動につなげます。</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_UY8BbC": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "エリアマネージャー｜優先して確認する店舗を特定",
+            "heading_tag": "h3",
+            "subheading": "",
+            "content": "<p>担当店舗のKPIを店舗・エリア別に比較し、急な変化やアラートから注意すべき店舗を特定します。訪問前に直近のKPI、店舗報告、過去の対応を確認し、支援の優先順位を決めます。<br/></p><p></p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_wDP74j": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "本部｜成功店舗の型を全店へ展開",
+            "heading_tag": "h3",
+            "subheading": "",
+            "content": "<p>店舗・エリア別の成果差を比較し、成果につながった施策や店舗行動を特定します。重点施策や投資の優先順位を判断し、成功店舗の実行方法を全店の標準運用へ展開します。<br/></p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
         }
       },
       "block_order": [
@@ -2081,7 +2147,10 @@
         "item_kncgUf",
         "item_YPXWMM",
         "item_QhMfj6",
-        "item_dJ3Txk"
+        "item_dJ3Txk",
+        "item_yNyAhh",
+        "item_UY8BbC",
+        "item_wDP74j"
       ],
       "custom_css": [
         ".multi-column__item .h1 {color: #a0b842 !important;}"
@@ -2363,7 +2432,7 @@
         "richtext_qzAkak": {
           "type": "richtext",
           "settings": {
-            "content": "<h2>多店舗のKPI管理と店舗比較を、Flowで始めませんか</h2><p>Flow Platformが、貴社の来店・売上・店舗報告・社内ナレッジをどのように統合できるかをご相談ください。</p>"
+            "content": "<h2>多店舗のKPI管理と店舗比較を、Flowで始めませんか</h2><p>現在利用しているPOS、来店計測、スタッフデータと、店舗・エリア・本部で確認したいKPIをお聞かせください。既存システムを活用しながら、多店舗の比較と改善を始める方法をご提案します。</p>"
           }
         },
         "button_AVKAbi": {
@@ -2383,14 +2452,14 @@
           "settings": {
             "style_1": "fill",
             "size_1": "xl",
-            "text_1": "店舗データ分析を相談する →",
-            "url_1": "shopify://pages/contact",
+            "text_1": "Flow AIによる店舗判断支援を見る",
+            "url_1": "https://flow-solutions.com/pages/flow-ai-fida",
             "background_1": "#a0b842",
             "text_color_1": "#ffffff",
             "style_2": "fill",
             "size_2": "xl",
-            "text_2": "連携できるデータを見る →",
-            "url_2": "shopify://pages/integrations",
+            "text_2": "多店舗運営の判断を標準化する方法を見る",
+            "url_2": "https://flow-solutions.com/pages/flow-ai-fida",
             "background_2": "#ffffff",
             "text_color_2": "#11243e"
           }
