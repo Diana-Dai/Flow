@@ -2190,11 +2190,18 @@
             "background": "",
             "text_color": ""
           }
+        },
+        "richtext_K6JHxX": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>上記は大手セレクトショップ様における124店舗・1年間の導入・運用結果です。成果は店舗環境、運用方法、市場条件、既存の店舗運営体制、データ活用の定着度により異なります。</p>"
+          }
         }
       },
       "block_order": [
         "richtext_Da8wQP",
-        "button_yXNDFb"
+        "button_yXNDFb",
+        "richtext_K6JHxX"
       ],
       "name": "Rich text",
       "settings": {
