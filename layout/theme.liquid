@@ -427,6 +427,138 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 }
 </script>
 {% endif %}
+{% if request.path == '/pages/ai-camera' or page.handle == 'ai-camera' %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://flow-solutions.com/pages/ai-camera#webpage",
+      "url": "https://flow-solutions.com/pages/ai-camera",
+      "name": "Flow 店舗向けAIカメラ",
+      "description": "FlowのAIカメラは、来店数・店前通行量・滞在時間・店内行動を計測し、購買率分析、人員配置、VMD改善に活用できる店舗データを提供します。",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@id": "https://flow-solutions.com/#website"
+      },
+      "mainEntity": {
+        "@id": "https://flow-solutions.com/pages/ai-camera#service"
+      }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://flow-solutions.com/pages/ai-camera#service",
+      "name": "Flow 店舗向けAIカメラ",
+      "serviceType": "店舗向けAIカメラによる来店計測・店内行動分析",
+      "url": "https://flow-solutions.com/pages/ai-camera",
+      "description": "FlowのAIカメラは、来店数・店前通行量・滞在時間・店内行動を計測し、購買率分析、人員配置、VMD改善に活用できる店舗データを提供します。",
+      "provider": {
+        "@type": "Organization",
+        "name": "株式会社Flow Solutions",
+        "url": "https://flow-solutions.com/"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "日本"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://flow-solutions.com/pages/ai-camera#faq",
+      "url": "https://flow-solutions.com/pages/ai-camera",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@id": "https://flow-solutions.com/pages/ai-camera#webpage"
+      },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "AIカメラでは何を計測できますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "来店数、店前通行量、入店率、滞在時間、導線、ゾーン、年齢・性別の傾向などを計測できます。計測項目は設置構成により異なります。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "スタッフや同日の再入店を除外できますか",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "はい。スタッフの動きや同日の再入店を除外する設定に対応しています。重複を除いた来店客のみを計測することで、購買率をより正確に把握できます。精度は店舗環境や設定条件により異なります。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "広い入口や複数入口にも対応できますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "はい。入口幅、天井高、照明、混雑状況を確認し、必要な台数と設置位置を店舗ごとに設計します。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "店内映像は保存されますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "通常運用では店内映像を継続保存しません。精度確認や設定調整で確認映像を使用する場合は、目的を限定して一時的に取り扱います。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "来店客個人を識別しますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "個人を特定する目的では使用しません。滞在時間や再入店除外などの計測に必要な範囲で、来店客ごとに一時的なシステムIDを付与します。このIDは個人を特定するものではなく、店舗の営業終了後に削除されます。年齢・性別などは傾向データとして集計します。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "どのようなネットワーク環境が必要ですか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "通常はPoEスイッチと既存の店舗ネットワークを利用します。接続方法は、お客様のネットワーク環境と使用するセンサーを確認したうえで設計します。ネットワーク側では外向き通信のみを使用します。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "導入にはどのくらいかかりますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "店舗数、入口構成、ネットワーク環境により異なります。標準的な小売店舗でセンサー2〜4台を設置する場合、現地作業は通常2〜4時間程度です。多くの場合、店舗閉店後に作業を行い、段階導入にも対応します。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "導入後のサポートはありますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "はい。Flowのアドバンストサポートでは、すべての機器がオンラインで正常にデータを送信しているかを監視します。機器がオフラインになった場合は、データの欠損を最小限に抑えるため復旧対応を行います。設置後は、すべてのセンサーが正しく計測・送信していることを確認し、導入初日から継続してデータを信頼して活用できる状態を支えます。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "一般的な人数カウントカメラとFlowの店舗向けAIカメラの違いは何ですか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "一般的な単機能型カウンターは、入口の通過人数を中心に計測します。Flowは、来店数に加えて店前通行量、入店率、滞在時間、導線、ゾーン、属性傾向を取得し、スタッフや同日リピートの除外にも対応します。さらにPOS・売上・人員データと組み合わせ、購買率や店舗運営の改善に活用できます。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "AIカメラの計測精度はどのように確認しますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "入口幅、天井高、照明、混雑状況、スタッフ動線を事前に確認し、設置後に検知範囲や除外条件を調整します。運用開始後も接続状況とデータ受信を確認し、必要に応じて設定を見直します。"
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+{% endif %}
+
 
 
 
