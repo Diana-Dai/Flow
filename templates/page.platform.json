@@ -403,7 +403,7 @@
             "title": "",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<h4>01. 既存データを接続</h4><p>POS、来店計測、スタッフ、天候、店舗属性など、店舗運営に必要なデータをFlowに取り込みます。</p>",
+            "content": "<h3>01. 既存データを接続</h3><p>POS、来店計測、スタッフ、天候、店舗属性など、店舗運営に必要なデータをFlowに取り込みます。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -426,7 +426,7 @@
             "title": "",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<h4>02. 店舗の状況として整理</h4><p>売上、来店、店舗報告、メモ、マニュアルを店舗ごとの状況として整理し、比較しやすくします。</p>",
+            "content": "<h3>02. 店舗の状況として整理</h3><p>売上、来店、店舗報告、メモ、マニュアルを店舗ごとの状況として整理し、比較しやすくします。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -449,7 +449,7 @@
             "title": "",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<h4>03. 日々の実行につなげる</h4><p>店長、エリアマネージャー、本部が同じ情報をもとに、次の確認・報告・打ち手を進められます。</p>",
+            "content": "<h3>03. 日々の実行につなげる</h3><p>店長、エリアマネージャー、本部が同じ情報をもとに、次の確認・報告・打ち手を進められます。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -966,7 +966,7 @@
             "title": "",
             "heading_tag": "h1",
             "subheading": "<p><strong>見えること</strong></p>",
-            "content": "<h4>何が起きたかを見る</h4><ul><li>来店数の変化</li><li>購買率の低下</li><li>売上進捗の遅れ</li></ul>",
+            "content": "<h3>何が起きたかを見る</h3><ul><li>来店数の変化</li><li>購買率の低下</li><li>売上進捗の遅れ</li></ul>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -987,8 +987,8 @@
             "column_size": "2",
             "title": "",
             "heading_tag": "h3",
-            "subheading": "<p><strong>判断できること</strong></p><h3></h3>",
-            "content": "<h4>なぜ起きたか、どう動くかを考える</h4><ul><li>KPIをつなげて要因を整理</li><li>店舗報告やスタッフ状況と照合</li><li>次に確認すべき打ち手を明確化</li></ul>",
+            "subheading": "<p><strong>判断できること</strong></p>",
+            "content": "<h3>なぜ起きたか、どう動くかを考える</h3><ul><li>KPIをつなげて要因を整理</li><li>店舗報告やスタッフ状況と照合</li><li>次に確認すべき打ち手を明確化</li></ul>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
