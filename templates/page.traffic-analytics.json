@@ -203,7 +203,7 @@
             "title": "複数入口対応",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<h6>複数入口がある店舗でも、入口ごとの来店データを統合して把握できます。大型店、商業施設内店舗、百貨店インショップなどでも、店舗全体の来店傾向を見やすくします。</h6><p>✅ <strong>複数入口の来店傾向を一元化</strong></p>",
+            "content": "<p>複数入口がある店舗でも、入口ごとの来店データを統合して把握できます。大型店、商業施設内店舗、百貨店インショップなどでも、店舗全体の来店傾向を見やすくします。</p><p>✅ <strong>複数入口の来店傾向を一元化</strong></p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -225,7 +225,7 @@
             "title": "スタッフ除外",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<h6>スタッフの動きを除外することで、実際の顧客来店に近いデータを取得します。来店数にスタッフ移動が含まれると購買率がずれやすくなるため、店舗評価や接客改善に重要です。</h6><p><strong>✅ 購買率をより正確に把握</strong></p>",
+            "content": "<p>スタッフの動きを除外することで、実際の顧客来店に近いデータを取得します。来店数にスタッフ移動が含まれると購買率がずれやすくなるため、店舗評価や接客改善に重要です。</p><p><strong>✅ 購買率をより正確に把握</strong></p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -587,14 +587,14 @@
             "text_color": "",
             "border_color": "#f2f2f2",
             "show_controls": false,
-            "column_size": "3",
+            "column_size": "4",
             "title": "",
             "heading_tag": "h0",
             "subheading": "<p></p><p></p>",
-            "content": "<h3>人員配置の最適化</h3><p>来店ピークとスタッフ配置のズレを確認し、接客体制を見直せます。</p><h4>ピーク時間帯</h4><p>接客体制の見直し</p>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
+            "content": "<h3>人員配置の最適化</h3><p>来店ピークとスタッフ数のズレを確認し、接客機会を逃しにくいシフトを検討します。</p>",
+            "link_url": "https://flow-solutions.com/pages/optimize-staff-scheduling",
+            "link_text": "人員配置の最適化を見る",
+            "link_style": "button"
           }
         },
         "item_MVfQ7a": {
@@ -609,14 +609,14 @@
             "text_color": "",
             "border_color": "#f2f2f2",
             "show_controls": false,
-            "column_size": "3",
+            "column_size": "4",
             "title": "",
             "heading_tag": "h1",
             "subheading": "",
-            "content": "<h3>入店率の改善</h3><p>店前通行量と来店数を比較し、店頭訴求の効果を確認できます。</p><h4>入店率</h4><p>店頭訴求の確認</p>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
+            "content": "<h3>販促・キャンペーン効果と入店率の測定</h3><p>施策実施前後の店前通行量、来店客数、入店率を比較し、キャンペーンが店舗前の集客と入店行動に与えた効果を確認します。<br/></p>",
+            "link_url": "https://flow-solutions.com/pages/improve-marketing-performance",
+            "link_text": "販促効果と入店率の測定方法を見る",
+            "link_style": "button"
           }
         },
         "item_Y47ifx": {
@@ -631,21 +631,44 @@
             "text_color": "",
             "border_color": "#f2f2f2",
             "show_controls": false,
-            "column_size": "3",
+            "column_size": "4",
             "title": "",
             "heading_tag": "h1",
             "subheading": "",
-            "content": "<h3>販促効果の把握</h3><p>販促で増えた来店を、購買につなげられているか確認できます。</p><h4>販促効果</h4><p>来店変化を確認</p>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
+            "content": "<h3>VMD・店頭訴求の改善</h3><p>店前通行量に対して入店率が低い場合、ファサード、入口、店頭ディスプレイを見直します。</p>",
+            "link_url": "https://flow-solutions.com/pages/improve-vmd-layouts",
+            "link_text": "VMD・売場改善を見る",
+            "link_style": "button"
+          }
+        },
+        "item_rXBLzf": {
+          "type": "item",
+          "settings": {
+            "icon": "up",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "#a0b842",
+            "icon_color": "#ffffff",
+            "background_color": "#f9fafb",
+            "text_color": "",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "4",
+            "title": "",
+            "heading_tag": "h1",
+            "subheading": "",
+            "content": "<h3>購買率の改善</h3><p>来店客数は多いのに購入が伸びない時間帯を見つけ、接客や売場運営を改善します。</p>",
+            "link_url": "https://flow-solutions.com/pages/increase-store-conversion",
+            "link_text": "店舗の購買率改善を見る",
+            "link_style": "button"
           }
         }
       },
       "block_order": [
         "item_mpQVCf",
         "item_MVfQ7a",
-        "item_Y47ifx"
+        "item_Y47ifx",
+        "item_rXBLzf"
       ],
       "custom_css": [
         ".multi-column__item h4 {color: #a0b842;}",
@@ -662,7 +685,7 @@
         "text_alignment": "center",
         "subheading": "活用シーン",
         "title": "来店分析を、店舗改善の判断へ",
-        "content": "<p><strong>来店数・入店率・購買率・時間帯別の変化をもとに、人員配置、店頭改善、マーケティング効果の判断を支援します。</strong></p>",
+        "content": "<p>来店客数、店前通行量、入店率を時間帯・曜日・期間別に比較すると、集客施策、VMD、人員配置、購買率のどこを優先して見直すべきか判断しやすくなります。目的に合わせて、具体的な活用方法をご確認ください。</p>",
         "background": "#ffffff",
         "background_gradient": "",
         "text_color": "",
@@ -1131,7 +1154,7 @@
         "liquid_ccB9Kb": {
           "type": "liquid",
           "settings": {
-            "liquid": "<h2 class=\"h2\">来店データを、売上改善へ\n</h2>"
+            "liquid": "<h2 class=\"h2\">来店データを、売上改善へ。\n</h2>"
           }
         },
         "heading_YXhiR8": {
@@ -1147,7 +1170,7 @@
         "richtext_qzAkak": {
           "type": "richtext",
           "settings": {
-            "content": "<p>来店数と売上をつなげて、店舗ごとの改善ポイントを確認しませんか。</p>"
+            "content": "<p>店舗数、現在のカメラ・カウンター、確認したいKPIをもとに、店前通行量・来店客数・入店率の可視化方法をご案内します。POS連携を行う場合は、購買率や売上との分析方法もご提案します。</p>"
           }
         },
         "button_AVKAbi": {
@@ -1167,7 +1190,7 @@
           "settings": {
             "style_1": "fill",
             "size_1": "xl",
-            "text_1": "来店計測を相談する",
+            "text_1": "来店客数分析のデモを相談する",
             "url_1": "shopify://pages/contact",
             "background_1": "#a0b842",
             "text_color_1": "#ffffff",
