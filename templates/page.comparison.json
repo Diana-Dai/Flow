@@ -522,9 +522,9 @@
         "note": "※タイプ分けは各社の公開情報をもとにした当社の整理です。",
         "download_label": "資料をダウンロード",
         "download_note": "（店舗改善チェックリストつき）",
-        "download_url": "",
+        "download_url": "shopify://pages/store-analytics-tool-comparison",
         "consultation_label": "導入のご相談",
-        "consultation_url": "",
+        "consultation_url": "shopify://pages/contact",
         "background": "#f7f8f5",
         "text_color": "#292d25"
       }
