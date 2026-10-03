@@ -659,6 +659,27 @@
         "background": "#ffffff"
       }
     },
+    "contact_FRY4J9": {
+      "type": "contact",
+      "name": "Contact form",
+      "settings": {
+        "full_width": true,
+        "subheading": "お問い合わせ",
+        "title": "導入について相談する",
+        "content": "<p>比較検討中の方もお気軽にご相談ください。<br/>店舗の状況やご検討内容に合わせてご案内します。</p>",
+        "text_position": "start",
+        "contact_form_size": "large",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "contact_background": "",
+        "contact_text_color": "",
+        "button_background": "",
+        "button_text_color": ""
+      }
+    },
     "rich_text_jq9WLM": {
       "type": "rich-text",
       "blocks": {
@@ -702,27 +723,6 @@
         "background_gradient": "",
         "text_color": ""
       }
-    },
-    "contact_FRY4J9": {
-      "type": "contact",
-      "name": "Contact form",
-      "settings": {
-        "full_width": true,
-        "subheading": "お問い合わせ",
-        "title": "導入について相談する",
-        "content": "<p>比較検討中の方もお気軽にご相談ください。<br/>店舗の状況やご検討内容に合わせてご案内します。</p>",
-        "text_position": "start",
-        "contact_form_size": "large",
-        "background": "",
-        "background_gradient": "",
-        "text_color": "",
-        "heading_color": "",
-        "heading_gradient": "",
-        "contact_background": "",
-        "contact_text_color": "",
-        "button_background": "",
-        "button_text_color": ""
-      }
     }
   },
   "order": [
@@ -737,7 +737,7 @@
     "comparison_onboarding",
     "comparison_faq",
     "comparison_assessment",
-    "rich_text_jq9WLM",
-    "contact_FRY4J9"
+    "contact_FRY4J9",
+    "rich_text_jq9WLM"
   ]
 }
