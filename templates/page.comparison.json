@@ -80,7 +80,7 @@
       ],
       "settings": {
         "full_width": true,
-        "eyebrow": "ABEJA・リテールネクスト・OPTIMなどの店舗分析ツールをご検討中の方へ",
+        "eyebrow": "店舗分析ツール・AIカメラ・来店計測サービスをご検討中の方へ",
         "title": "<h2>計測と分析を1つに。<br/>Flowの 店舗分析プラットフォーム</h2>",
         "description": "<p>AIカメラによる来店計測とPOS連携のAIデータ店舗分析を<em><strong>ワンストップでご提供。</strong></em> 各サービスとの違いを<strong>1枚の表で解説します。</strong></p>",
         "image": "shopify://shop_images/Manager_Decisions.png",
@@ -102,8 +102,8 @@
         "metric_1": {
           "type": "metric",
           "settings": {
-            "value": "100ブランド以上",
-            "label": "導入実績"
+            "value": "100+",
+            "label": "導入ブランド"
           }
         },
         "metric_2": {
@@ -116,22 +116,22 @@
         "metric_3": {
           "type": "metric",
           "settings": {
-            "value": "126店舗",
-            "label": "計測継続"
+            "value": "ROI 50倍超",
+            "label": "導入効果"
           }
         },
         "metric_4": {
           "type": "metric",
           "settings": {
-            "value": "18.4億円",
-            "label": "売上改善効果"
+            "value": "990+",
+            "label": "店舗導入実績"
           }
         },
         "metric_5": {
           "type": "metric",
           "settings": {
-            "value": "2006年設立",
-            "label": "長年の業界経験"
+            "value": "2006年",
+            "label": "設立"
           }
         }
       },
@@ -158,7 +158,7 @@
           "settings": {
             "checkpoint": "安定した来店計測",
             "status_1": "strong",
-            "note_1": "複数入口・スタッフ除外",
+            "note_1": "複数入口・店員除外",
             "status_2": "yes",
             "note_2": "計測のみ",
             "status_3": "yes",
@@ -172,7 +172,7 @@
         "row_2": {
           "type": "checkpoint",
           "settings": {
-            "checkpoint": "購買率まで管理",
+            "checkpoint": "購買率まで分析",
             "status_1": "yes",
             "note_1": "POS連携で自動",
             "status_2": "no",
@@ -206,7 +206,7 @@
           "settings": {
             "checkpoint": "次の一手の支援",
             "status_1": "strong",
-            "note_1": "AI自動分析",
+            "note_1": "AI分析・判断支援",
             "status_2": "no",
             "note_2": "",
             "status_3": "partial",
@@ -254,7 +254,7 @@
           "settings": {
             "checkpoint": "多店舗を一挙管理",
             "status_1": "yes",
-            "note_1": "多店舗管理がスムーズ",
+            "note_1": "複数店舗を一括比較",
             "status_2": "partial",
             "note_2": "",
             "status_3": "partial",
@@ -278,13 +278,13 @@
       "settings": {
         "full_width": true,
         "title": "店舗分析ツールをタイプ別に比較する",
-        "description": "<p>「店舗分析」と呼ばれるサービスは、実は<strong>4つのタイプ</strong>に分かれます。各タイプの比較表で、<em><strong>7つのチェックポイント</strong></em>で違いを確認しましょう。 ABEJA Insight for Retail、RetailNext（リテールネクスト）、OPTiM AI Camera（オプティム AIカメラ）、バルテックのAIカメラ、Go Insightなどをご検討中の方は、各サービスが属するタイプの列を目安にご覧ください。</p>",
+        "description": "<p>「店舗分析」と呼ばれるサービスでも、人数計測、AIカメラによる来店分析、売場調査、BIツールなど、目的や活用範囲によってタイプが異なります。<em><strong>7つのチェックポイント</strong></em>で、それぞれの特徴を比較してみましょう。</p>",
         "checkpoint_heading": "チェックポイント",
         "service_1": "Flow",
-        "service_1_note": "(AIカメラ×店舗データ分析)",
+        "service_1_note": "(AIカメラ×判断支援)",
         "service_2": "ピープルカウンター",
         "service_2_note": "(計測機器)",
-        "service_3": "AIカメラ来店者分析",
+        "service_3": "AIカメラ来店計測",
         "service_3_note": "",
         "service_4": "売場調査サービス",
         "service_4_note": "",
@@ -658,6 +658,50 @@
         "checks": "<p>所要時間 約5分</p><p>回答後すぐに結果を確認</p><p>営業電話なし</p><p>回答内容は診断目的でのみ使用</p>",
         "background": "#ffffff"
       }
+    },
+    "rich_text_jq9WLM": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_rJzkFJ": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "text": "Subheading",
+            "icon": "none"
+          }
+        },
+        "heading_qj8ctK": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "text": "Heading",
+            "heading_tag": "h1",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_tpxrUq": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>*出典：富士キメラ総研。2025年「動線分析ソリューション」市場におけるFlow Solutionsの売上シェア推定値。</p>"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_rJzkFJ",
+        "heading_qj8ctK",
+        "richtext_tpxrUq"
+      ],
+      "disabled": true,
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "large",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
     }
   },
   "order": [
@@ -671,6 +715,7 @@
     "comparison_positioning",
     "comparison_onboarding",
     "comparison_faq",
-    "comparison_assessment"
+    "comparison_assessment",
+    "rich_text_jq9WLM"
   ]
 }
