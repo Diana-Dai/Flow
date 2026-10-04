@@ -85,7 +85,7 @@
         "description": "<p>AIカメラによる来店計測とPOS連携のAIデータ店舗分析を<em><strong>ワンストップでご提供。</strong></em> 各サービスとの違いを<strong>1枚の表で解説します。</strong></p>",
         "image": "shopify://shop_images/Manager_Decisions.png",
         "primary_button_label": "比較表を見る",
-        "primary_button_link": "#c03",
+        "primary_button_link": "#comparison-table",
         "secondary_button_label": "店舗課題の無料診断",
         "secondary_button_note": "（5分で完了）",
         "secondary_button_link": "#assessment",
