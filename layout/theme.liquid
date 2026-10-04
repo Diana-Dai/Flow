@@ -70,6 +70,500 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     {{ content_for_header }}
 
     {{- 'theme.css' | asset_url | stylesheet_tag: preload: true -}}
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://flow-solutions.com/#organization",
+  "name": "Flow Solutions",
+  "url": "https://flow-solutions.com/",
+  "logo": {
+    "@type": "ImageObject",
+    "@id": "https://flow-solutions.com/#logo",
+    "url": "https://flow-solutions.com/cdn/shop/files/Flow_Logo_300_x_60px.png?v=1750837529&width=225",
+    "width": 300,
+    "height": 60
+  },
+  "description": "Flowは、来店計測・店内行動・POS・人員データを一元化する小売店舗分析プラットフォームです。店舗ごとの課題と改善機会を可視化し、Flow AIが本部・エリア・店長の次のアクションを提案。店舗DX、購買率改善、多店舗運営の標準化を支援します。",
+  "sameAs": [
+    "https://www.facebook.com/FlowSolutionsJP/",
+    "https://x.com/flowsolutionsjp",
+    "https://www.youtube.com/@FlowSolutions_Official",
+    "https://www.linkedin.com/company/flowsolutions/"
+  ],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+81-45-306-8276",
+    "contactType": "customer service",
+    "areaServed": "JP",
+    "availableLanguage": [
+      "ja",
+      "en"
+    ]
+  }
+}
+</script>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": "https://flow-solutions.com/#website",
+  "url": "https://flow-solutions.com/",
+  "name": "Flow Solutions"
+}
+</script>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "https://flow-solutions.com/#webpage",
+  "url": "https://flow-solutions.com/",
+  "name": "Retail store analytics, store DX, and customer visit measurement | Flow Solutions",
+  "description": "Flowは、来店計測・店内行動・POS・人員データを一元化する小売店舗分析プラットフォームです。店舗ごとの課題と改善機会を可視化し、Flow AIが本部・エリア・店長の次のアクションを提案。店舗DX、購買率改善、多店舗運営の標準化を支援します。",
+  "inLanguage": "ja"
+}
+</script>
+
+
+{% if request.path == '/pages/flow-ai-fida' or page.handle == 'flow-ai-fida' %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://flow-solutions.com/pages/flow-ai-fida#webpage",
+      "url": "https://flow-solutions.com/pages/flow-ai-fida",
+      "name": "小売AI・店舗AI｜店舗の次の一手を提案するFlow AI・FIDA",
+      "description": "Flow AI・FIDAは、来店数、購買率、売上、人員配置、店舗報告、SOPなどを横断的に整理する小売業向けの店舗AIです。店長・エリアマネージャー・本部に、根拠とともに次の改善アクションを提案し、確認・実行・振り返りまで支援します。",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@id": "https://flow-solutions.com/#website"
+      },
+      "mainEntity": {
+        "@id": "https://flow-solutions.com/pages/flow-ai-fida#service"
+      }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://flow-solutions.com/pages/flow-ai-fida#service",
+      "name": "Flow AI・FIDA 店舗意思決定支援",
+      "alternateName": [
+        "Flow AI",
+        "FIDA"
+      ],
+      "serviceType": "小売業向け店舗AI・意思決定支援",
+      "url": "https://flow-solutions.com/pages/flow-ai-fida",
+      "description": "来店数、購買率、売上、人員配置、店舗報告、SOPなどを横断的に整理し、店長・エリアマネージャー・本部に根拠とともに次の改善アクションを提案。確認・実行・振り返りまでを支援する小売業向けの店舗AIサービス。",
+      "provider": {
+        "@id": "https://flow-solutions.com/#organization"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "JP"
+      },
+      "audience": {
+        "@type": "BusinessAudience",
+        "audienceType": "店長・エリアマネージャー・本部(小売・多店舗運営企業)"
+      },
+      "isRelatedTo": {
+        "@id": "https://flow-solutions.com/pages/flow-platform-overview#software"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://flow-solutions.com/pages/flow-ai-fida#faq",
+      "isPartOf": {
+        "@id": "https://flow-solutions.com/pages/flow-ai-fida#webpage"
+      },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Flow AIは店長の判断を置き換えるものですか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "いいえ。Flow AIは店舗運営の判断を自動化するものではありません。売上、来店、スタッフ状況、店舗報告、社内ルールにもとづいて提案を提示し、店長・エリアマネージャー・本部がより判断しやすいように支援します。最終的な判断と実行は、現場と社内の運用方針に沿って行います。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Flow AIはどのような情報を参照しますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Flow AIは、売上、来店数、購買率、客単価、スタッフ配置、天候、店舗メモ、Pulse、SOP、マニュアル、社内資料など、さまざまな情報を参照できます。実際に利用できる情報は、導入範囲やFlowに連携しているデータによって異なります。その他のデータソースとの連携をご希望の場合は、お問い合わせください。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "SOPやマニュアルはどのように使われますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "接客ルール、店舗運営マニュアル、チェックリスト、研修資料などの社内資料をFlowにアップロードし、Flow AIが参照できる判断材料として整理できます。これにより、店舗ごとの判断を社内ルールやブランド方針に沿わせやすくします。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "すべてのデータを最初から連携する必要がありますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "いいえ。現在のPOS、手動で計測している来店データ、スタッフデータ、店舗報告などを確認し、最初に連携しやすいデータから始めることができます。すべてを一度に変更する必要はありません。運用しやすい範囲から導入し、段階的に活用範囲を広げていけます。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Flow AIの提案はどのように改善されますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "店舗で実行した施策、結果の変化、Pulseやメモによる現場フィードバックを蓄積し、次の判断材料として活用します。Flow AIは、数値だけでなく現場の文脈も参照することで、店舗で実行しやすい提案につなげます。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Flow AIがあれば、既存のダッシュボードは不要になりますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "いいえ。ダッシュボードは店舗状況を把握するための重要な基盤です。Flow AIは、ダッシュボードや連携データをもとに提案の理由を説明し、状況確認・要因整理・次の行動の検討を支援します。ダッシュボードを置き換えるのではなく、ダッシュボードを使いやすくし、得られた気づきを実行につなげる役割を持ちます。"
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+{% endif %}
+{% if request.path == '/pages/store-performance-platform' or page.handle == 'store-performance-platform' %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://flow-solutions.com/pages/store-performance-platform#webpage",
+      "url": "https://flow-solutions.com/pages/store-performance-platform",
+      "name": "多店舗管理・店舗比較｜KPIと店舗パフォーマンスを改善｜Flow",
+      "description": "Flowは、多店舗の来店数、購買率、売上、人員配置を一元管理し、店舗比較・エリア比較ができる多店舗管理基盤です。成功店舗の共通点と注意すべき店舗を特定し、全店のパフォーマンス改善と運営標準化につなげます。",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@id": "https://flow-solutions.com/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://flow-solutions.com/pages/store-performance-platform#breadcrumb"
+      },
+      "mainEntity": {
+        "@id": "https://flow-solutions.com/pages/store-performance-platform#service"
+      }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://flow-solutions.com/pages/store-performance-platform#service",
+      "name": "Flow 多店舗管理・店舗パフォーマンス管理",
+      "serviceType": "多店舗KPI管理・店舗比較",
+      "url": "https://flow-solutions.com/pages/store-performance-platform",
+      "description": "多店舗の来店数、購買率、売上、人員配置を一元管理し、店舗比較・エリア比較を通じて成功店舗の共通点と注意すべき店舗を特定。全店のパフォーマンス改善と運営標準化を支援する多店舗管理サービス。",
+      "provider": {
+        "@id": "https://flow-solutions.com/#organization"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "JP"
+      },
+      "audience": {
+        "@type": "BusinessAudience",
+        "audienceType": "多店舗展開する小売・店舗運営企業"
+      },
+      "isRelatedTo": {
+        "@id": "https://flow-solutions.com/pages/flow-platform-overview#software"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://flow-solutions.com/pages/store-performance-platform#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "ホーム",
+          "item": "https://flow-solutions.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "店舗パフォーマンス管理",
+          "item": "https://flow-solutions.com/pages/store-performance-platform"
+        }
+      ]
+    }
+  ]
+}
+</script>
+{% endif %}
+{% if request.path == '/pages/flow-platform-overview' or page.handle == 'flow-platform-overview' %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://flow-solutions.com/pages/flow-platform-overview#webpage",
+      "url": "https://flow-solutions.com/pages/flow-platform-overview",
+      "name": "店舗分析システム・店舗分析ツール｜来店・POS・人員データを統合｜Flow",
+      "description": "来店客数、店内行動、POS、スタッフ、天気などの店舗データを一元化。店舗別・全店のKPI比較からFlow AIによる要約・改善提案まで、現場と本部の判断・実行を支えるFlowの店舗分析システム・店舗分析ツールです。",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@id": "https://flow-solutions.com/#website"
+      },
+      "about": {
+        "@id": "https://flow-solutions.com/pages/flow-platform-overview#software"
+      },
+      "mainEntity": {
+        "@id": "https://flow-solutions.com/pages/flow-platform-overview#software"
+      }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://flow-solutions.com/pages/flow-platform-overview#software",
+      "name": "Flow 店舗分析システム",
+      "alternateName": "Flow",
+      "url": "https://flow-solutions.com/pages/flow-platform-overview",
+      "applicationCategory": "BusinessApplication",
+      "applicationSubCategory": "小売店舗分析",
+      "operatingSystem": "Web",
+      "inLanguage": "ja",
+      "description": "来店客数、店内行動、POS、スタッフ、天気などの店舗データを一元化し、店舗別・全店のKPI比較とFlow AIによる要約・改善提案を提供する小売店舗分析プラットフォーム。",
+      "featureList": [
+        "来店客数・店前通行量の計測",
+        "店内行動の分析",
+        "POS・人員・天気データの統合",
+        "店舗別・全店のKPI比較",
+        "Flow AIによる要約・改善提案"
+      ],
+      "audience": {
+        "@type": "BusinessAudience",
+        "audienceType": "小売・多店舗運営企業"
+      },
+      "provider": {
+        "@id": "https://flow-solutions.com/#organization"
+      },
+      "publisher": {
+        "@id": "https://flow-solutions.com/#organization"
+      }
+    }
+  ]
+}
+</script>
+{% endif %}
+
+{% if request.path == '/pages/traffic-analytics' or page.handle == 'traffic-analytics' %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://flow-solutions.com/#organization",
+      "name": "Flow Solutions",
+      "url": "https://flow-solutions.com/"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://flow-solutions.com/pages/traffic-analytics#webpage",
+      "url": "https://flow-solutions.com/pages/traffic-analytics",
+      "name": "来店計測ツール・来店分析｜入店率・店前通行量を可視化｜Flow",
+      "description": "Flowの来店計測ツールは、来店客数、店前通行量、入店率、属性・滞在傾向を可視化。時間帯別の来店分析により、販促・VMD・人員配置・購買率の改善判断を支援します。",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@id": "https://flow-solutions.com/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://flow-solutions.com/pages/traffic-analytics#breadcrumb"
+      },
+      "mainEntity": {
+        "@id": "https://flow-solutions.com/pages/traffic-analytics#service"
+      }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://flow-solutions.com/pages/traffic-analytics#service",
+      "name": "Flow 来店計測・来店分析",
+      "serviceType": "来店計測・来店分析",
+      "url": "https://flow-solutions.com/pages/traffic-analytics",
+      "description": "来店客数、店前通行量、入店率、属性・滞在傾向を可視化し、時間帯別の来店分析によって販促・VMD・人員配置・購買率の改善判断を支援する小売店舗向け来店計測サービス。",
+      "provider": {
+        "@id": "https://flow-solutions.com/#organization"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "JP"
+      },
+      "audience": {
+        "@type": "BusinessAudience",
+        "audienceType": "小売・店舗運営企業"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://flow-solutions.com/pages/traffic-analytics#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "ホーム",
+          "item": "https://flow-solutions.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "来店客数分析",
+          "item": "https://flow-solutions.com/pages/traffic-analytics"
+        }
+      ]
+    }
+  ]
+}
+</script>
+{% endif %}
+{% if request.path == '/pages/ai-camera' or page.handle == 'ai-camera' %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://flow-solutions.com/pages/ai-camera#webpage",
+      "url": "https://flow-solutions.com/pages/ai-camera",
+      "name": "Flow 店舗向けAIカメラ",
+      "description": "FlowのAIカメラは、来店数・店前通行量・滞在時間・店内行動を計測し、購買率分析、人員配置、VMD改善に活用できる店舗データを提供します。",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@id": "https://flow-solutions.com/#website"
+      },
+      "mainEntity": {
+        "@id": "https://flow-solutions.com/pages/ai-camera#service"
+      }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://flow-solutions.com/pages/ai-camera#service",
+      "name": "Flow 店舗向けAIカメラ",
+      "serviceType": "店舗向けAIカメラによる来店計測・店内行動分析",
+      "url": "https://flow-solutions.com/pages/ai-camera",
+      "description": "FlowのAIカメラは、来店数・店前通行量・滞在時間・店内行動を計測し、購買率分析、人員配置、VMD改善に活用できる店舗データを提供します。",
+      "provider": {
+        "@type": "Organization",
+        "name": "株式会社Flow Solutions",
+        "url": "https://flow-solutions.com/"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "日本"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://flow-solutions.com/pages/ai-camera#faq",
+      "url": "https://flow-solutions.com/pages/ai-camera",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@id": "https://flow-solutions.com/pages/ai-camera#webpage"
+      },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "AIカメラでは何を計測できますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "来店数、店前通行量、入店率、滞在時間、導線、ゾーン、年齢・性別の傾向などを計測できます。計測項目は設置構成により異なります。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "スタッフや同日の再入店を除外できますか",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "はい。スタッフの動きや同日の再入店を除外する設定に対応しています。重複を除いた来店客のみを計測することで、購買率をより正確に把握できます。精度は店舗環境や設定条件により異なります。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "広い入口や複数入口にも対応できますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "はい。入口幅、天井高、照明、混雑状況を確認し、必要な台数と設置位置を店舗ごとに設計します。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "店内映像は保存されますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "通常運用では店内映像を継続保存しません。精度確認や設定調整で確認映像を使用する場合は、目的を限定して一時的に取り扱います。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "来店客個人を識別しますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "個人を特定する目的では使用しません。滞在時間や再入店除外などの計測に必要な範囲で、来店客ごとに一時的なシステムIDを付与します。このIDは個人を特定するものではなく、店舗の営業終了後に削除されます。年齢・性別などは傾向データとして集計します。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "どのようなネットワーク環境が必要ですか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "通常はPoEスイッチと既存の店舗ネットワークを利用します。接続方法は、お客様のネットワーク環境と使用するセンサーを確認したうえで設計します。ネットワーク側では外向き通信のみを使用します。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "導入にはどのくらいかかりますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "店舗数、入口構成、ネットワーク環境により異なります。標準的な小売店舗でセンサー2〜4台を設置する場合、現地作業は通常2〜4時間程度です。多くの場合、店舗閉店後に作業を行い、段階導入にも対応します。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "導入後のサポートはありますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "はい。Flowのアドバンストサポートでは、すべての機器がオンラインで正常にデータを送信しているかを監視します。機器がオフラインになった場合は、データの欠損を最小限に抑えるため復旧対応を行います。設置後は、すべてのセンサーが正しく計測・送信していることを確認し、導入初日から継続してデータを信頼して活用できる状態を支えます。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "一般的な人数カウントカメラとFlowの店舗向けAIカメラの違いは何ですか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "一般的な単機能型カウンターは、入口の通過人数を中心に計測します。Flowは、来店数に加えて店前通行量、入店率、滞在時間、導線、ゾーン、属性傾向を取得し、スタッフや同日リピートの除外にも対応します。さらにPOS・売上・人員データと組み合わせ、購買率や店舗運営の改善に活用できます。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "AIカメラの計測精度はどのように確認しますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "入口幅、天井高、照明、混雑状況、スタッフ動線を事前に確認し、設置後に検知範囲や除外条件を調整します。運用開始後も接続状況とデータ受信を確認し、必要に応じて設定を見直します。"
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+{% endif %}
+
+
+
+
+
+
   </head>
 
   <body class="{% if settings.zoom_image_on_hover %}zoom-image--enabled{% endif %}">

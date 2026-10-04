@@ -80,12 +80,12 @@
       ],
       "settings": {
         "full_width": true,
-        "eyebrow": "ABEJA・リテールネクスト・OPTIMなどの店舗分析ツールをご検討中の方へ",
+        "eyebrow": "店舗分析ツール・AIカメラ・来店計測サービスをご検討中の方へ",
         "title": "<h2>計測と分析を1つに。<br/>Flowの 店舗分析プラットフォーム</h2>",
         "description": "<p>AIカメラによる来店計測とPOS連携のAIデータ店舗分析を<em><strong>ワンストップでご提供。</strong></em> 各サービスとの違いを<strong>1枚の表で解説します。</strong></p>",
         "image": "shopify://shop_images/Manager_Decisions.png",
         "primary_button_label": "比較表を見る",
-        "primary_button_link": "#c03",
+        "primary_button_link": "#comparison-table",
         "secondary_button_label": "店舗課題の無料診断",
         "secondary_button_note": "（5分で完了）",
         "secondary_button_link": "#assessment",
@@ -102,8 +102,8 @@
         "metric_1": {
           "type": "metric",
           "settings": {
-            "value": "100ブランド以上",
-            "label": "導入実績"
+            "value": "100+",
+            "label": "導入ブランド"
           }
         },
         "metric_2": {
@@ -116,22 +116,22 @@
         "metric_3": {
           "type": "metric",
           "settings": {
-            "value": "126店舗",
-            "label": "計測継続"
+            "value": "ROI 50倍超",
+            "label": "導入効果"
           }
         },
         "metric_4": {
           "type": "metric",
           "settings": {
-            "value": "18.4億円",
-            "label": "売上改善効果"
+            "value": "990+",
+            "label": "店舗導入実績"
           }
         },
         "metric_5": {
           "type": "metric",
           "settings": {
-            "value": "2006年設立",
-            "label": "長年の業界経験"
+            "value": "2006年",
+            "label": "設立"
           }
         }
       },
@@ -158,7 +158,7 @@
           "settings": {
             "checkpoint": "安定した来店計測",
             "status_1": "strong",
-            "note_1": "複数入口・スタッフ除外",
+            "note_1": "複数入口・店員除外",
             "status_2": "yes",
             "note_2": "計測のみ",
             "status_3": "yes",
@@ -172,7 +172,7 @@
         "row_2": {
           "type": "checkpoint",
           "settings": {
-            "checkpoint": "購買率まで管理",
+            "checkpoint": "購買率まで分析",
             "status_1": "yes",
             "note_1": "POS連携で自動",
             "status_2": "no",
@@ -206,7 +206,7 @@
           "settings": {
             "checkpoint": "次の一手の支援",
             "status_1": "strong",
-            "note_1": "AI自動分析",
+            "note_1": "AI分析・判断支援",
             "status_2": "no",
             "note_2": "",
             "status_3": "partial",
@@ -254,7 +254,7 @@
           "settings": {
             "checkpoint": "多店舗を一挙管理",
             "status_1": "yes",
-            "note_1": "多店舗管理がスムーズ",
+            "note_1": "複数店舗を一括比較",
             "status_2": "partial",
             "note_2": "",
             "status_3": "partial",
@@ -278,13 +278,13 @@
       "settings": {
         "full_width": true,
         "title": "店舗分析ツールをタイプ別に比較する",
-        "description": "<p>「店舗分析」と呼ばれるサービスは、実は<strong>4つのタイプ</strong>に分かれます。各タイプの比較表で、<em><strong>7つのチェックポイント</strong></em>で違いを確認しましょう。 ABEJA Insight for Retail、RetailNext（リテールネクスト）、OPTiM AI Camera（オプティム AIカメラ）、バルテックのAIカメラ、Go Insightなどをご検討中の方は、各サービスが属するタイプの列を目安にご覧ください。</p>",
+        "description": "<p>「店舗分析」と呼ばれるサービスでも、人数計測、AIカメラによる来店分析、売場調査、BIツールなど、目的や活用範囲によってタイプが異なります。<em><strong>7つのチェックポイント</strong></em>で、それぞれの特徴を比較してみましょう。</p>",
         "checkpoint_heading": "チェックポイント",
         "service_1": "Flow",
-        "service_1_note": "(AIカメラ×店舗データ分析)",
+        "service_1_note": "(AIカメラ×判断支援)",
         "service_2": "ピープルカウンター",
         "service_2_note": "(計測機器)",
-        "service_3": "AIカメラ来店者分析",
+        "service_3": "AIカメラ来店計測",
         "service_3_note": "",
         "service_4": "売場調査サービス",
         "service_4_note": "",
@@ -317,7 +317,7 @@
         "step_3": {
           "type": "step",
           "settings": {
-            "title": "Flowで可視化",
+            "title": "Flowで分析・判断",
             "image": "shopify://shop_images/A-04_P-04_C-04_product-overview_panel3_visualize.png"
           }
         }
@@ -344,7 +344,7 @@
           "type": "step",
           "settings": {
             "title": "計測する",
-            "summary": "店の前から店内まで、人の動きを数える",
+            "summary": "店の前から店内まで、人の動きを計測する",
             "image": "shopify://shop_images/9335960c06d1e97a177a624843444132.jpg",
             "feature_1_title": "来店数計測",
             "feature_1_copy": "出入口の通過人数を自動カウント",
@@ -360,7 +360,7 @@
           "type": "step",
           "settings": {
             "title": "分析する",
-            "summary": "店内の行動から「売れる理由」を読み解く",
+            "summary": "店内の行動から、売上の背景を読み解く",
             "image": "shopify://shop_images/5f134f3feaaa05b2d4be37122cffece7.jpg",
             "feature_1_title": "滞在時間",
             "feature_1_copy": "店内での滞在傾向を計測",
@@ -477,15 +477,15 @@
           "settings": {
             "image": "shopify://shop_images/68ed3fe9761b3254a6b775fdf05dd51e.jpg",
             "title": "ROI 50倍超",
-            "content": "<p>投資対効果改善（大手ファッション小売様事例）</p>"
+            "content": "<p>投資対効果（大手ファッション小売様事例）</p>"
           }
         },
         "result_2": {
           "type": "result",
           "settings": {
             "image": "shopify://shop_images/11fa17bd4368a8923fcc1793ab26d5c1.jpg",
-            "title": "+8.93%",
-            "content": "<p>売上改善率（大手小売様事例）</p>"
+            "title": "+8.25%",
+            "content": "<p>売上改善（大手小売様事例）</p>"
           }
         },
         "result_3": {
@@ -514,7 +514,7 @@
         "full_width": true,
         "subheading": "",
         "title": "御社に必要なAIカメラ＆分析プラットフォームを一目で比較",
-        "content": "<p><strong>縦軸は「計測まで」「分析・可視化まで」「判断・改善まで」のどこまでカバーするか</strong>、横軸は<strong>日常の店舗運用にどれだけ組み込めるか</strong>。</p><p>ABEJA Insight for Retail、RetailNext（リテールネクスト）、OPTiM AI Camera、Go Insight、バルテックなどをご検討中の方は、各社が属するタイプの位置を目安にご覧ください。</p>",
+        "content": "<p><strong>縦軸は「計測まで」「分析・可視化まで」「判断・改善まで」のどこまでカバーするか</strong>、横軸は<strong>日常の店舗運用にどれだけ組み込めるか</strong>。</p><p>比較する際は、機能の多さだけでなく、「どこまで支援できるか」と「日常の店舗運用にどれだけ組み込めるか」が重要です。下図では、代表的なサービスをこの2つの視点で整理しています。</p>",
         "text_alignment": "start",
         "flow_label": "店舗分析プラットフォーム",
         "flow_copy": "例: Flow / ABEJA / RetailNext",
@@ -522,9 +522,9 @@
         "note": "※タイプ分けは各社の公開情報をもとにした当社の整理です。",
         "download_label": "資料をダウンロード",
         "download_note": "（店舗改善チェックリストつき）",
-        "download_url": "",
+        "download_url": "shopify://pages/store-analytics-tool-comparison",
         "consultation_label": "導入のご相談",
-        "consultation_url": "",
+        "consultation_url": "shopify://pages/contact",
         "background": "#f7f8f5",
         "text_color": "#292d25"
       }
@@ -544,8 +544,8 @@
           "type": "item",
           "settings": {
             "image": "shopify://shop_images/67ce7fc009e82ca44d2502680e7dff4f.jpg",
-            "title": "画面のご案内",
-            "content": "<p>実際のダッシュボードで違いをご確認いただけます。</p>"
+            "title": "画面デモ",
+            "content": "<p>実際の画面で、計測から判断までをご確認いただけます。</p>"
           }
         },
         "step_3": {
@@ -587,43 +587,43 @@
         "faq_1": {
           "type": "item",
           "settings": {
-            "title": "Q. ABEJA Insight for Retailと比べて、Flowは何が違いますか？",
-            "content": "<p>A. 同じ「店舗分析プラットフォーム型」のサービスです。Flowの特徴は、来店・POS・人員データまでの統合範囲と、日本の小売業に特化した設計・支援体制です。タイプ別の違いは本ページの比較表をご確認ください。</p>"
+            "title": "ABEJA Insight for Retailと比較検討しています。Flowとの違いは相談できますか？",
+            "content": "<p>はい。計測範囲、POSなどのデータ連携、店舗間比較、判断支援、導入後の運用支援など、ご検討内容に合わせて比較ポイントを整理します。</p>"
           }
         },
         "faq_2": {
           "type": "item",
           "settings": {
-            "title": "Q. RetailNext（リテールネクスト）からの乗り換えは可能ですか？",
-            "content": "<p>既存の計測・分析環境を確認したうえで、移行方法と必要なデータ連携をご案内します。</p>"
+            "title": "RetailNextからの切り替えを検討しています。相談できますか？",
+            "content": "<p>はい。現在の計測環境やデータ連携、必要な分析範囲を確認したうえで、移行方法や導入プランをご案内します。</p>"
           }
         },
         "faq_3": {
           "type": "item",
           "settings": {
-            "title": "Q. OPTiM AI Cameraなど「AIカメラ来店分析」タイプとの違いは？",
-            "content": "<p>Flowは来店計測だけでなく、POSや人員データとの統合、分析、改善判断までを一つの基盤で支援します。</p>"
+            "title": "OPTiM AI CameraなどのAIカメラ製品とは、どう比較すればよいですか？",
+            "content": "<p>必要な計測内容だけでなく、POSとの連携、多店舗での比較、分析後の判断支援、導入後の運用まで含めて比較することをおすすめします。</p>"
           }
         },
         "faq_4": {
           "type": "item",
           "settings": {
-            "title": "Q. Go Insightのような売場調査サービスと併用できますか？",
-            "content": "<p>併用可能です。定量的な来店・売上データと、売場調査による定性的な情報を組み合わせて活用できます。</p>"
+            "title": "既存のAIカメラや来店計測機器を使っています。Flowを導入できますか？",
+            "content": "<p>既存環境によって異なります。現在の機器や取得データ、POS連携の状況を確認し、活用できる範囲をご案内します。</p>"
           }
         },
         "faq_5": {
           "type": "item",
           "settings": {
-            "title": "Q. バルテックのAIカメラを使っています。Flowと併用できますか？",
-            "content": "<p>現在の計測環境や連携方式を確認し、既存データを活かせる構成をご提案します。</p>"
+            "title": "計測だけから始めて、後から分析へ広げられますか？",
+            "content": "<p>はい。まずは来店数や店前通行量などの計測から始め、必要に応じてPOS連携や店舗間比較、分析・判断支援へ段階的に広げることができます。導入範囲は店舗の課題や運用体制に合わせて設計します。</p>"
           }
         },
         "faq_6": {
           "type": "item",
           "settings": {
-            "title": "Q. 比較検討中です。資料だけもらえますか？",
-            "content": "<p>比較検討用の資料をご案内できます。お気軽にお問い合わせください。</p>"
+            "title": "比較検討中です。資料だけもらえますか？",
+            "content": "<p>比較検討用の資料をご案内できます。お気軽に<a href=\"/pages/contact\" target=\"_blank\" title=\"お問い合わせ・導入相談\">お問い合わせください。</a></p>"
           }
         }
       },
@@ -637,7 +637,7 @@
       ],
       "settings": {
         "full_width": true,
-        "subheading": "",
+        "subheading": "FAQ",
         "title": "よくあるご質問",
         "content": "",
         "text_alignment": "start",
@@ -658,6 +658,71 @@
         "checks": "<p>所要時間 約5分</p><p>回答後すぐに結果を確認</p><p>営業電話なし</p><p>回答内容は診断目的でのみ使用</p>",
         "background": "#ffffff"
       }
+    },
+    "contact_FRY4J9": {
+      "type": "contact",
+      "name": "Contact form",
+      "settings": {
+        "full_width": true,
+        "subheading": "お問い合わせ",
+        "title": "導入について相談する",
+        "content": "<p>比較検討中の方もお気軽にご相談ください。<br/>店舗の状況やご検討内容に合わせてご案内します。</p>",
+        "text_position": "start",
+        "contact_form_size": "large",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "contact_background": "",
+        "contact_text_color": "",
+        "button_background": "",
+        "button_text_color": ""
+      }
+    },
+    "rich_text_jq9WLM": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_rJzkFJ": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "text": "Subheading",
+            "icon": "none"
+          }
+        },
+        "heading_qj8ctK": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "text": "Heading",
+            "heading_tag": "h1",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_tpxrUq": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>*出典：富士キメラ総研。2025年「動線分析ソリューション」市場におけるFlow Solutionsの売上シェア推定値。</p>"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_rJzkFJ",
+        "heading_qj8ctK",
+        "richtext_tpxrUq"
+      ],
+      "disabled": true,
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "large",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
     }
   },
   "order": [
@@ -671,6 +736,8 @@
     "comparison_positioning",
     "comparison_onboarding",
     "comparison_faq",
-    "comparison_assessment"
+    "comparison_assessment",
+    "contact_FRY4J9",
+    "rich_text_jq9WLM"
   ]
 }

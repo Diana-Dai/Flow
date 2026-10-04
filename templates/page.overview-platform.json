@@ -15,7 +15,7 @@
         "liquid_74Ndmm": {
           "type": "liquid",
           "settings": {
-            "liquid": "<h1 class=\"h1\">店舗データを統合し、<br>売上改善の判断へ。\n</h1>"
+            "liquid": "<h1 class=\"h1\">来店・POS・人員データを統合し、売上改善につなげる店舗分析システム。\n</h1>"
           }
         },
         "heading_W76pLA": {
@@ -158,7 +158,7 @@
             "column_size": "2",
             "title": "20%",
             "heading_tag": "h1",
-            "subheading": "<h5><strong>従来型レポーティング</strong></h5><h6>判断が属人化する<br/><br/></h6>",
+            "subheading": "<p><strong>従来型レポーティング</strong></p><p>判断が属人化する<br/><br/></p>",
             "content": "<p>→ 優秀な店長だけが素早く判断<br/>→ レポート確認は翌日以降<br/>→ 対応品質が店舗ごとにばらつく<br/>→ 成果ギャップが広がる</p>",
             "link_url": "",
             "link_text": "",
@@ -180,17 +180,86 @@
             "column_size": "2",
             "title": "全店舗",
             "heading_tag": "h1",
-            "subheading": "<h5><strong>Flow 分析プラットフォーム</strong></h5><h6>判断を標準化する<strong><br/><br/></strong></h6>",
+            "subheading": "<p><strong>Flow 分析プラットフォーム</strong></p><p>判断を標準化する<strong><br/><br/></strong></p>",
             "content": "<p>→ 来店・売上・購買率を即時可視化<br/>→ 改善ポイントを早期に把握<br/>→ ブランド方針に沿った対応を支援<br/>→ 成果ギャップを縮小</p>",
             "link_url": "shopify://pages/store-performance-platform",
             "link_text": "店舗運営プラットフォームを見る →",
             "link_style": "button"
           }
+        },
+        "item_mhQL4L": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#f2f2f2",
+            "text_color": "#11243e",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h1",
+            "subheading": "",
+            "content": "<h3>本部・経営企画</h3><p>全店舗の来店数・売上・購買率を共通KPIで確認し、施策や投資の優先順位を判断します。</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_6MzFTt": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#a0b842",
+            "text_color": "#f9fafb",
+            "border_color": "#a0b842",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h1",
+            "subheading": "",
+            "content": "<h3>エリアマネージャー</h3><p>店舗間・時間帯別の差を把握し、支援すべき店舗と優先的に改善するテーマを特定します。<br/></p>",
+            "link_url": "shopify://pages/store-performance-platform",
+            "link_text": "",
+            "link_style": "button"
+          }
+        },
+        "item_gC4Jwj": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#f2f2f2",
+            "text_color": "#11243e",
+            "border_color": "",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h1",
+            "subheading": "",
+            "content": "<h3>店長・店舗スタッフ</h3><p>当日の来店・購買率・人員配置の変化を確認し、接客、VMD、スタッフ配置の改善につなげます。<br/></p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
         }
       },
       "block_order": [
         "item_dU9BqG",
-        "item_RnwDw8"
+        "item_RnwDw8",
+        "item_mhQL4L",
+        "item_6MzFTt",
+        "item_gC4Jwj"
       ],
       "name": "Multi-column",
       "settings": {
@@ -199,7 +268,7 @@
         "gap": "medium",
         "text_alignment": "start",
         "subheading": "オペレーション格差",
-        "title": "店舗ごとの判断格差を、縮める。",
+        "title": "店舗分析システムで、店舗ごとの判断格差を縮める",
         "content": "<p>優秀な店長は、データを待たずに動けます。しかし、その判断力を全店舗に広げることは簡単ではありません。Flowは、来店・購買率・売上状況をリアルタイムに統合し、改善ポイントを早期に把握。店舗ごとの判断ばらつきを減らし、ブランド方針に沿った対応を支援します。</p>",
         "background": "#ffffff",
         "background_gradient": "",
@@ -227,14 +296,14 @@
         "subheading_RVUamX": {
           "type": "subheading",
           "settings": {
-            "text": "店舗データを、実行につなげる3つのレイヤー",
+            "text": "店舗運営を支える3つの基盤",
             "icon": "none"
           }
         },
         "heading_EyFYM9": {
           "type": "heading",
           "settings": {
-            "text": "店舗運営を支える3つの基盤",
+            "text": "店舗データを実行につなげる、店舗分析システムの3つの基盤",
             "heading_tag": "h1",
             "text_color": "",
             "gradient": ""
@@ -243,7 +312,7 @@
         "richtext_fA7CVd": {
           "type": "richtext",
           "settings": {
-            "content": "<p>多くのリテールシステムは、データの可視化で止まります。<br/>Flowは、来店計測・分析・改善判断をひとつにつなげ、全店舗でより一貫した店舗運営を支援します。</p>"
+            "content": "<p>Flowは、①店舗データの取得、②データの統合・分析、③改善判断の支援という3つの基盤で、来店・POS・人員データを店舗の改善行動につなげる店舗分析システムです。<br/></p>"
           }
         }
       },
@@ -271,10 +340,10 @@
             "image": "shopify://shop_images/Analytics_-_Entering_3.png",
             "icon": "none",
             "icon_width": 48,
-            "title": "高精度店内計測",
-            "content": "<p><strong>AIカメラによる来店計測とスタッフ除外機能を活用し、店舗分析に必要な顧客行動データをリアルタイムで取得します。</strong></p><p>取得できる主なデータ：</p><ul><li>店前通行人数計測</li><li>来店数</li><li>スタッフ除外</li><li>滞在時間</li><li>店内行動</li><li>年齢・性別属性</li></ul>",
-            "link_url": "shopify://pages/traffic-analytics",
-            "link_text": "来店分析を見る →",
+            "title": "",
+            "content": "<h3>AIカメラで店舗データを取得｜高精度店内計測</h3><p>AIカメラで来店数、店前通行量、滞在時間、店内行動、属性傾向を取得。スタッフを除外し、店舗分析の基礎となる正確な来店データを整えます。</p>",
+            "link_url": "https://flow-solutions.com/pages/ai-camera",
+            "link_text": "AIカメラによる店舗計測を見る",
             "link_style": "button"
           }
         },
@@ -284,10 +353,10 @@
             "image": "shopify://shop_images/ipad_3.png",
             "icon": "none",
             "icon_width": 48,
-            "title": "成果ギャップ分析",
-            "content": "<p>来店数・売上・購買率・人員配置を統合し、成果が出ている店舗と伸び悩む店舗の違いを可視化します。改善すべき時間帯・店舗・運営課題を見つけやすくします。</p><p><strong>分析できる主な領域：</strong></p><ul><li>売上・予算進捗</li><li>来店数・購買率</li><li>店舗別・エリア別比較</li><li>時間帯別パフォーマンス</li><li>人員配置との関係</li><li>改善優先度</li></ul>",
-            "link_url": "shopify://pages/store-performance-platform",
-            "link_text": "分析プラットフォームを見る →",
+            "title": "",
+            "content": "<h3>来店・POS・人員データを統合｜成果ギャップ分析</h3><p>来店数、売上、購買率、人員配置を統合し、店舗別・エリア別・時間帯別の差を可視化。成果が出ている店舗との違いから、改善すべき課題と優先度を把握します。</p>",
+            "link_url": "https://flow-solutions.com/pages/store-performance-platform",
+            "link_text": "多店舗KPIの分析基盤を見る",
             "link_style": "button"
           }
         },
@@ -297,10 +366,10 @@
             "image": "shopify://shop_images/FIDA_Layer_1.png",
             "icon": "none",
             "icon_width": 48,
-            "title": "判断を標準化する",
-            "content": "<p>Flow AIは、特許出願中の判断エンジンを活用し、店舗データを要約して質問に答え、店舗状況に応じた優先行動を提示します。SOPや運営ルールに沿った判断を支援し、店舗ごとの対応のばらつきを抑えます。</p><p><strong>支援できる主な領域：</strong></p><ul><li>業績の自動要約</li><li>データ・社内資料への質問</li><li>店舗別の優先行動</li><li>SOP・運営ルールの参照</li><li>実行状況の確認</li></ul>",
-            "link_url": "shopify://pages/flow-ai-fida",
-            "link_text": "Flow AIを見る →",
+            "title": "",
+            "content": "<h3>Flow AIで改善判断を支援｜判断の標準化</h3><p>Flow AI・FIDAが店舗データとSOPを整理し、質問への回答と店舗状況に応じた優先行動を提示。本部・エリアマネージャー・店長の判断を支援し、店舗ごとの対応のばらつきを抑えます。</p>",
+            "link_url": "https://flow-solutions.com/pages/flow-ai-fida",
+            "link_text": "Flow AIによる店舗意思決定支援を見る",
             "link_style": "button"
           }
         }
@@ -599,7 +668,7 @@
         "text_alignment": "start",
         "subheading": "診断ロジック",
         "title": "",
-        "content": "<h2>店舗成果を左右する。<br/>要因を特定する。</h2><p>Flowは、来店・人員配置・VMD・店舗実行など、<br/>売上に影響する運営課題を特定します。</p>",
+        "content": "<h2>店舗データから、売上を左右する要因を特定する。</h2><p>Flowは、来店・人員配置・VMD・店舗実行など、<br/>売上に影響する運営課題を特定します。</p>",
         "background": "#0e366a",
         "background_gradient": "",
         "text_color": "#ffffff",
@@ -625,7 +694,7 @@
             "column_size": "3",
             "title": "+23.9%",
             "heading_tag": "h1",
-            "subheading": "<h5><strong>購買率改善<br/><br/></strong></h5>",
+            "subheading": "<p><strong>購買率改善<br/><br/></strong></p>",
             "content": "<p><strong>Daytona International</strong></p><p></p><p>販売機会損失をリアルタイムで改善。</p>",
             "link_url": "",
             "link_text": "",
@@ -647,7 +716,7 @@
             "column_size": "3",
             "title": "+18億円",
             "heading_tag": "h1",
-            "subheading": "<h5><strong>年間売上インパクト<br/><br/></strong></h5>",
+            "subheading": "<p><strong>年間売上インパクト<br/><br/></strong></p>",
             "content": "<p><strong>大手国内ファッションリテーラー</strong></p><p>全店舗で実行基準を標準化。</p>",
             "link_url": "",
             "link_text": "",
@@ -669,7 +738,7 @@
             "column_size": "3",
             "title": "+2.3%",
             "heading_tag": "h1",
-            "subheading": "<h5><strong>店舗購買率向上<br/><br/></strong></h5>",
+            "subheading": "<p><strong>店舗購買率向上<br/><br/></strong></p>",
             "content": "<p><strong>グローバルSPAリテーラー</strong></p><p>来店を売上成果へ転換。</p>",
             "link_url": "",
             "link_text": "",
@@ -695,7 +764,7 @@
         "text_alignment": "start",
         "subheading": "",
         "title": "",
-        "content": "<h2>実績が証明する、店舗改善効果。</h2>",
+        "content": "<h2>導入実績が証明する、店舗分析による改善効果</h2>",
         "background": "#ffffff",
         "background_gradient": "",
         "text_color": "",
@@ -822,8 +891,8 @@
             "heading_tag": "h4",
             "subheading": "",
             "content": "<p>高精度な来店計測と顧客行動分析。</p>",
-            "link_url": "shopify://pages/store-analytics",
-            "link_text": "詳しく見る →",
+            "link_url": "https://flow-solutions.com/pages/store-analytics",
+            "link_text": "高精度店内計測 → 店内行動・店舗導線分析を見る",
             "link_style": "button"
           }
         },
@@ -845,8 +914,8 @@
             "heading_tag": "h4",
             "subheading": "",
             "content": "<p>来店・売上・人員配置を統合分析。</p>",
-            "link_url": "shopify://pages/store-performance-platform",
-            "link_text": "詳しく見る →",
+            "link_url": "https://flow-solutions.com/pages/store-performance-platform",
+            "link_text": "FIDA分析基盤 → 多店舗KPI管理・店舗パフォーマンス分析を見る",
             "link_style": "button"
           }
         },
@@ -867,9 +936,9 @@
             "title": "判断・実行支援",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<p>現場実行につながる推奨アクション。</p><h3></h3>",
-            "link_url": "shopify://pages/flow-ai-fida",
-            "link_text": "詳しく見る →",
+            "content": "<p>現場実行につながる推奨アクション。</p>",
+            "link_url": "https://flow-solutions.com/pages/flow-ai-fida",
+            "link_text": "判断・実行支援 → Flow AIによる店舗意思決定支援を見る",
             "link_style": "button"
           }
         }
@@ -890,7 +959,7 @@
         "text_alignment": "start",
         "subheading": "プラットフォームを見る",
         "title": "",
-        "content": "<h2>店舗運営のすべてのレイヤーを統合。</h2><h6>正確な計測、統合分析、Flow AIによる要約・質問・行動提案までを、一つの基盤でつなぎます。</h6>",
+        "content": "<h2>計測・分析・意思決定支援を一つの基盤に統合</h2><p>正確な計測、統合分析、Flow AIによる要約・質問・行動提案までを、一つの基盤でつなぎます。</p>",
         "background": "",
         "background_gradient": "",
         "text_color": "",
@@ -956,6 +1025,13 @@
             "title": "導入後の定着支援はありますか？",
             "content": "<p>Flowは、導入して終わりではなく、店舗で使われる状態を重視しています。</p><p>本部だけがデータを見るのではなく、店長やエリアマネージャーが日々の店舗運営で確認できる状態をつくることが重要です。来店数、購買率、時間帯別の変化を確認しながら、接客体制、売場対応、販促施策の改善につなげていきます。</p><p>必要に応じて、店舗向けの説明や活用支援も行い、現場で継続的に使える状態を目指します。</p>"
           }
+        },
+        "item_XWDz6G": {
+          "type": "item",
+          "settings": {
+            "title": "店舗分析システムの導入は、どのように進みますか？",
+            "content": "<p>般的には、①対象店舗・確認したいKPI・利用中のデータの確認、②AIカメラとデータ連携方法の設計、③初期店舗への導入とダッシュボード設定、④店舗・本部向けの活用支援、⑤成果確認後の段階展開の順に進めます。<br/><br/>1店舗から導入でき、店舗間で比較検証する場合は3店舗以上での開始を推奨しています。POS、CSV、FTP、APIなどの連携方法は、既存システムの仕様に合わせて確認します。</p>"
+          }
         }
       },
       "block_order": [
@@ -966,13 +1042,14 @@
         "item_FXzfx6",
         "item_Lja638",
         "item_LLbw6z",
-        "item_yUM9mP"
+        "item_yUM9mP",
+        "item_XWDz6G"
       ],
       "name": "FAQ",
       "settings": {
         "full_width": true,
         "subheading": "FAQ",
-        "title": "よくあるご質問",
+        "title": "店舗分析システムについてよくあるご質問",
         "content": "<p>導入前に確認されることが多い内容をまとめました。POS連携、導入店舗数、店舗での活用、カメラ映像、リアルタイム性、FIDAについて確認できます。<br/><br/><strong>導入の目安<br/></strong>推奨：3店舗以上で検証<br/>1店舗から導入可能・段階展開に対応</p>",
         "team_avatar_width": 160,
         "support_hours": "",
@@ -985,7 +1062,7 @@
         "text_color": "",
         "heading_color": "",
         "heading_gradient": "",
-        "button_background": "#A1B847",
+        "button_background": "#a1b847",
         "button_text_color": "",
         "accordion_background": "",
         "accordion_text_color": ""

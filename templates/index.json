@@ -15,45 +15,33 @@
         "subheading_79idNw": {
           "type": "subheading",
           "settings": {
-            "text": "日本のリテール分析特化。100以上のブランドで導入。",
+            "text": "日本の小売業に特化したリテール分析プラットフォーム",
             "icon": "picto-validation"
           }
         },
-        "heading_NHgw9k": {
-          "type": "heading",
+        "richtext_h8WqcX": {
+          "type": "richtext",
+          "settings": {
+            "content": "<h1>小売店舗分析で、店舗データを日々の判断と売上改善へ</h1>"
+          }
+        },
+        "subheading_BrM8M7": {
+          "type": "subheading",
           "settings": {
             "text": "リテールには、より良い判断が必要だ。",
-            "heading_tag": "h1",
-            "text_color": "",
-            "gradient": ""
+            "icon": "none"
           }
         },
         "richtext_JWfj6P": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Flowは、店舗データを日々の判断と実行改善につなげるリテール分析プラットフォームです。</p>"
-          }
-        },
-        "subheading_LqYNpU": {
-          "type": "subheading",
-          "settings": {
-            "text": "来店計測 × POS連携 × 現場情報 × Flow AI",
-            "icon": "none"
-          }
-        },
-        "image_Dtind8": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Flow_Banner_0626.png",
-            "width_mode": "full_width",
-            "max_width": 600,
-            "mobile_max_width": 400
+            "content": "<p>Flowは、来店計測・POS・人員・店舗情報を一元化し、本部・エリア・店舗が同じデータをもとに改善できる小売店舗分析プラットフォームです。Flow AIが課題と機会を整理し、次のアクションを支援します。</p>"
           }
         },
         "richtext_LcTpMq": {
           "type": "richtext",
           "settings": {
-            "content": "<p>来店数・店前通行量・POS・店舗運営データを統合し、売上改善に必要な次の一手を明確にします。</p>"
+            "content": "<p>来店計測 × POS連携 × 現場情報 × Flow AI</p>"
           }
         },
         "buttons_pt4Ted": {
@@ -61,13 +49,13 @@
           "settings": {
             "style_1": "fill",
             "size_1": "base",
-            "text_1": "デモを相談する",
+            "text_1": "店舗分析・来店計測のデモを相談する",
             "url_1": "shopify://pages/contact",
-            "background_1": "",
-            "text_color_1": "",
+            "background_1": "#1C4072",
+            "text_color_1": "#F9FAFB",
             "style_2": "outline",
             "size_2": "base",
-            "text_2": "導入事例を見る",
+            "text_2": "小売企業の導入事例を見る",
             "url_2": "shopify://pages/case-studies",
             "background_2": "",
             "text_color_2": ""
@@ -76,19 +64,28 @@
         "richtext_gyC73r": {
           "type": "richtext",
           "settings": {
-            "content": "<p><strong>期間限定｜3店舗導入で、1店舗分6ヶ月無料。</strong></p>"
+            "content": "<p>期間限定｜3店舗導入で、4店舗目が6ヶ月無料。</p>"
+          }
+        },
+        "image_Dtind8": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Flow_Banner_06263.jpg",
+            "width_mode": "full_width",
+            "max_width": 600,
+            "mobile_max_width": 400
           }
         }
       },
       "block_order": [
         "subheading_79idNw",
-        "heading_NHgw9k",
+        "richtext_h8WqcX",
+        "subheading_BrM8M7",
         "richtext_JWfj6P",
-        "subheading_LqYNpU",
-        "image_Dtind8",
         "richtext_LcTpMq",
         "buttons_pt4Ted",
-        "richtext_gyC73r"
+        "richtext_gyC73r",
+        "image_Dtind8"
       ],
       "name": "Rich text",
       "settings": {
@@ -134,7 +131,7 @@
             "footer_content_color": "#677279",
             "desktop_width_percent": 100,
             "background_color": "#f9fafb",
-            "section_padding": 60
+            "section_padding": 40
           },
           "blocks": {}
         }
@@ -270,9 +267,7 @@
       "block_order": [
         "ai_gen_block_2daa5f2_XFW7cb"
       ],
-      "custom_css": [
-        "{padding-top: 90px;}"
-      ],
+      "custom_css": [],
       "settings": {
         "full_width": true,
         "remove_vertical_spacing": false,
@@ -299,10 +294,10 @@
             "border_color": "#f9fafb",
             "show_controls": false,
             "column_size": "4",
-            "title": "1",
-            "heading_tag": "h5",
-            "subheading": "",
-            "content": "<p><strong>AIカメラが来店・回遊・滞在を高精度で計測します。</strong></p>",
+            "title": "店舗の動きを正確に計測",
+            "heading_tag": "h3",
+            "subheading": "<p>1</p>",
+            "content": "<p>AIカメラと来店計測で、来店数、店前通行量、入店率、回遊、滞在時間を把握します。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -322,10 +317,10 @@
             "border_color": "#f9fafb",
             "show_controls": false,
             "column_size": "4",
-            "title": "2",
-            "heading_tag": "h5",
-            "subheading": "",
-            "content": "<p><strong>売上・人員・天候・店舗情報・マニュアルなどあらゆるデータを統合します。</strong></p>",
+            "title": "POS・人員・店舗情報を一元化",
+            "heading_tag": "h3",
+            "subheading": "<p>2</p>",
+            "content": "<p>POS、売上、人員配置、天候、店舗報告、SOPを店舗ごとの判断材料として整理します。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -345,10 +340,10 @@
             "border_color": "#f9fafb",
             "show_controls": false,
             "column_size": "4",
-            "title": "3",
-            "heading_tag": "h5",
-            "subheading": "",
-            "content": "<p><strong>重要指標をリアルタイムに可視化し、課題とチャンスを明確にします。</strong></p>",
+            "title": "課題と改善機会を店舗別に分析",
+            "heading_tag": "h3",
+            "subheading": "<p>3</p>",
+            "content": "<p>来店・購買率・売上・人員配置を同じ画面で比較し、成果差の要因と優先して対応すべき課題を見つけます。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -368,10 +363,10 @@
             "border_color": "#f9fafb",
             "show_controls": false,
             "column_size": "4",
-            "title": "4",
-            "heading_tag": "h5",
-            "subheading": "",
-            "content": "<p><strong>AIが最適な次の一手を提案。現場での実行をサポートします。</strong></p>",
+            "title": "Flow AIが次の行動を提案",
+            "heading_tag": "h3",
+            "subheading": "<p>4</p>",
+            "content": "<p>店舗データと社内ルールをもとに、店長・エリアマネージャー・本部が確認すべき変化と次のアクションを提示します。最終的な判断と実行は人が行います。<br/></p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -392,12 +387,40 @@
         "text_alignment": "center",
         "subheading": "",
         "title": "",
-        "content": "<h3>多くのシステムはレポートで止まる。<br/>Flowは店舗判断を揃える。</h3><p>Flowは、来店客数・回遊・滞在時間・コンバージョン・人員配置を統合し、店舗運営の判断を標準化します。</p>",
+        "content": "<h2>店舗分析を、レポートで終わらせず日々の判断へ</h2><p>Flowは、来店客数・回遊・滞在時間・コンバージョン・人員配置を統合し、店舗運営の判断を標準化します。</p>",
         "background": "",
         "background_gradient": "",
         "text_color": "",
         "subheading_background_color": "",
         "subheading_text_color": ""
+      }
+    },
+    "rich_text_HU78y7": {
+      "type": "rich-text",
+      "blocks": {
+        "button_CHckw7": {
+          "type": "button",
+          "settings": {
+            "style": "fill",
+            "size": "xl",
+            "text": "Flowの店舗分析プラットフォーム全体を見る",
+            "url": "https://flow-solutions.com/pages/flow-platform-overview",
+            "background": "#11243e",
+            "text_color": "#f9fafb"
+          }
+        }
+      },
+      "block_order": [
+        "button_CHckw7"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "rgba(0,0,0,0)",
+        "background_gradient": "",
+        "text_color": ""
       }
     },
     "multi_column_LJEQgi": {
@@ -557,8 +580,8 @@
         "gap": "medium",
         "text_alignment": "start",
         "subheading": "",
-        "title": "Flowでできること",
-        "content": "<h6>計測・統合から、AIによる要約・質問・行動提案までを、一つの流れで支援します。</h6>",
+        "title": "来店計測・店舗データ分析から",
+        "content": "<p>計測・統合から、AIによる要約・質問・行動提案までを、一つの流れで支援します。</p>",
         "background": "",
         "background_gradient": "",
         "text_color": "",
@@ -613,7 +636,7 @@
       ],
       "custom_css": [
         ".h6 {color: var(--text-secondary) !important; text-transform: uppercase; font-size: 0.9rem;}",
-        " {padding-top: 90px;}"
+        " {padding-top: 0px;}"
       ],
       "name": "Impact text",
       "settings": {
@@ -666,8 +689,8 @@
         "heading_X97dmW": {
           "type": "heading",
           "settings": {
-            "text": "売上改善のチャンスは、一部の瞬間に集中する。",
-            "heading_tag": "h1",
+            "text": "従来型レポートとFlowの店舗分析の違い",
+            "heading_tag": "h2",
             "text_color": "",
             "gradient": ""
           }
@@ -705,10 +728,10 @@
             "left_title": "従来型レポート",
             "left_tag": "課題：差が出た後に気づく",
             "left_metric": "チャンスを後から知る",
-            "left_item_1": "<h2><strong>売上機会を事後に確認する</strong></h2><p></p>",
-            "left_item_2": "<h2><strong>来店ピークや購買率低下に間に合わない</strong></h2><p></p>",
-            "left_item_3": "<h2><strong>対応が店長やスタッフの経験に依存する</strong></h2><p></p>",
-            "left_item_4": "<h2><strong>店舗ごとに判断と実行がばらつく</strong></h2><p></p>",
+            "left_item_1": "<p><strong>売上機会を事後に確認する</strong></p><p></p>",
+            "left_item_2": "<p><strong>来店ピークや購買率低下に間に合わない</strong></p><p></p>",
+            "left_item_3": "<p><strong>対応が店長やスタッフの経験に依存する</strong></p><p></p>",
+            "left_item_4": "<p><strong>店舗ごとに判断と実行がばらつく</strong></p><p></p>",
             "left_background": "#ffffff",
             "left_border_color": "#e5e7eb",
             "left_tag_background": "#f3f4f6",
@@ -720,10 +743,10 @@
             "right_title": "Flowプラットフォーム",
             "right_tag": "⚡ 差が出る変化を早く捉える",
             "right_metric": "チャンスをその場で活かす",
-            "right_item_1": "<h2><strong>来店ピークやKPI変化を迅速に把握</strong></h2>",
-            "right_item_2": "<h2><strong>購買率低下や人員配置のズレを確認</strong></h2><p></p>",
-            "right_item_3": "<h2><strong>本部・エリア・店舗で同じKPIを共有</strong></h2><p></p>",
-            "right_item_4": "<h2><strong>店舗ごとの判断と実行を標準化</strong></h2><p></p>",
+            "right_item_1": "<p><strong>来店ピークやKPI変化を迅速に把握</strong></p>",
+            "right_item_2": "<p><strong>購買率低下や人員配置のズレを確認</strong></p><p></p>",
+            "right_item_3": "<p><strong>本部・エリア・店舗で同じKPIを共有</strong></p><p></p>",
+            "right_item_4": "<p><strong>店舗ごとの判断と実行を標準化</strong></p><p></p>",
             "right_background": "#0a2540",
             "right_text_color": "#ffffff",
             "right_tag_background": "#1e3a5f",
@@ -806,7 +829,7 @@
         "full_width": true,
         "stack_testimonials": true,
         "subheading": "",
-        "title": "Flowが選ばれる理由",
+        "title": "Flowが小売店舗分析に選ばれる理由",
         "content": "",
         "link_url": "",
         "link_text": "",
@@ -973,7 +996,7 @@
         "gap": "medium",
         "text_alignment": "start",
         "subheading": "",
-        "title": "データを判断につなぐ",
+        "title": "来店計測・POS・店舗運営データを、判断につなぐ",
         "content": "<p><strong>来店、売上、店舗運営、外部環境、店舗ナレッジを一つにつなぎ、次に取るべき行動を見える化します。</strong></p>",
         "background": "",
         "background_gradient": "",
@@ -999,13 +1022,13 @@
             "border_color": "#ffffff",
             "show_controls": false,
             "column_size": "3",
-            "title": "リアルタイム店舗分析",
+            "title": "レイヤー01｜来店計測で現状を正しく把握",
             "heading_tag": "h4",
-            "subheading": "<h5><strong>レイヤー01：現状を正しく把握する</strong></h5>",
-            "content": "<ul><li><strong>来店数（トラフィック）</strong></li><li><strong>売上・購買・コンバージョン</strong></li><li><strong>滞在時間・人員配置</strong></li><li><strong>店内行動</strong><br/></li></ul><p><strong>多くのシステムはここで止まる。</strong></p>",
-            "link_url": "shopify://pages/traffic-analytics",
-            "link_text": "高精度な店舗分析を見る->",
-            "link_style": "link"
+            "subheading": "",
+            "content": "<p>AIカメラと来店計測で、来店数、店前通行量、入店率、回遊、滞在時間を把握します。店舗ごとの変化をリアルタイムに確認し、売上結果だけでは見えない状況を可視化します。</p>",
+            "link_url": "https://flow-solutions.com/pages/ai-camera",
+            "link_text": "店舗向けAIカメラの計測方法を見る",
+            "link_style": "button"
           }
         },
         "item_7tAMz6": {
@@ -1022,13 +1045,13 @@
             "border_color": "#ffffff",
             "show_controls": false,
             "column_size": "3",
-            "title": "成果ギャップを特定する",
+            "title": "レイヤー02｜店舗データ分析で改善ポイントを特定",
             "heading_tag": "h4",
-            "subheading": "<h5><strong>レイヤー02：改善ポイントを見つける</strong></h5>",
-            "content": "<ul><li><strong>成果が出ていない箇所</strong></li><li><strong>機会がある箇所</strong></li><li><strong>対応が必要な時間帯</strong></li><li><strong>優先すべき課題</strong></li></ul><p><strong>ここで判断の質が変わる。</strong></p>",
-            "link_url": "shopify://pages/store-performance-platform",
-            "link_text": "分析プラットフォームを見る->",
-            "link_style": "link"
+            "subheading": "",
+            "content": "<p>来店数、購買率、売上、人員配置などのKPIを店舗間で比較し、成果が出ている店舗と改善が必要な店舗の違いを明らかにします。</p>",
+            "link_url": "https://flow-solutions.com/pages/store-performance-platform",
+            "link_text": "多店舗KPI管理と店舗比較を見る",
+            "link_style": "button"
           }
         },
         "item_HjWCwX": {
@@ -1045,13 +1068,13 @@
             "border_color": "#f9fafb",
             "show_controls": false,
             "column_size": "3",
-            "title": "対応を標準化する",
+            "title": "レイヤー03｜Flow AIで次の行動を揃える",
             "heading_tag": "h4",
-            "subheading": "<h5>レイヤー03：実行を揃える</h5>",
-            "content": "<ul><li><strong>店舗状況から推奨アクションを提示</strong></li><li><strong>SOP・運営ルールに沿って実行</strong></li><li><strong>店舗間の判断ばらつきを抑制</strong></li><li><strong>スピードと一貫性を高める</strong></li></ul><p><strong>ここで成果が変わる。</strong></p>",
-            "link_url": "shopify://pages/flow-ai-fida",
-            "link_text": "Flow AI・FIDAを見る->",
-            "link_style": "link"
+            "subheading": "",
+            "content": "<p>店舗データとSOP・運営ルールをもとに、Flow AIが確認すべき変化と次のアクションを提示します。本部・エリア・店舗の判断と実行のばらつきを抑えます。</p>",
+            "link_url": "https://flow-solutions.com/pages/flow-ai-fida",
+            "link_text": "Flow AI・FIDAの店舗判断支援を見る",
+            "link_style": "button"
           }
         }
       },
@@ -1071,7 +1094,7 @@
         "gap": "medium",
         "text_alignment": "start",
         "subheading": "",
-        "title": "店舗判断を、3つのレイヤーで支える",
+        "title": "店舗分析から改善実行まで、3つのレイヤーで支援",
         "content": "<p>来店数・購買・店内行動をつなぎ、より速く、より一貫した店舗判断へ。<br/>Flowは、その流れを全店舗で支援します。</p>",
         "background": "#ffffff",
         "background_gradient": "",
@@ -1213,13 +1236,13 @@
             "border_color": "#11243e",
             "show_controls": false,
             "column_size": "2",
-            "title": "+23.9%",
+            "title": "株式会社デイトナ・インターナショナル様",
             "heading_tag": "h1",
-            "subheading": "<h5>デイトナ・インターナショナル</h5>",
-            "content": "<p><strong>入店率改善</strong></p><ul><li><strong>購買率: 19.9% → 25.2%</strong></li><li><strong>Flow活用店舗では売上 約25%増</strong></li><li><strong>投資回収は数週間レベル</strong></li></ul>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
+            "subheading": "",
+            "content": "<p><strong>6か月間の検証</strong></p><ul><li>売上高: 前年同期比 +25%<br/></li><li>来店者数: +6.3%<br/></li><li>買い上げ率: 19.9%から25.2%へ改善（+5.3pt）</li></ul>",
+            "link_url": "https://flow-solutions.com/pages/case-studies-daytona",
+            "link_text": "デイトナ・インターナショナル様の店舗分析事例を見る",
+            "link_style": "button"
           }
         },
         "item_tx7kCq": {
@@ -1235,13 +1258,13 @@
             "border_color": "#0e366a",
             "show_controls": false,
             "column_size": "2",
-            "title": "+8.25%",
+            "title": "大手国内リテール企業",
             "heading_tag": "h1",
-            "subheading": "<h5>大手国内リテール企業</h5>",
-            "content": "<p><strong>売上改善インパクト</strong></p><ul><li><strong>126店舗規模で検証</strong></li><li><strong>年間売上インパクト：約18億円</strong></li><li><strong>ROI：約50倍</strong></li></ul>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
+            "subheading": "",
+            "content": "<p><strong>124店舗・1年間の検証</strong></p><ul><li>&nbsp;購買率: 前年比 +8.93%<br/>&nbsp;</li><li>売上: 前年比 +8.25%<br/>&nbsp;</li><li>年間売上増加: 約18億円<br/>&nbsp;</li><li>ROI: 50倍以上</li></ul>",
+            "link_url": "https://flow-solutions.com/pages/case-studies-roi",
+            "link_text": "124店舗の購買率・売上改善事例を見る",
+            "link_style": "button"
           }
         },
         "item_zttdWV": {
@@ -1284,7 +1307,7 @@
         "gap": "medium",
         "text_alignment": "start",
         "subheading": "",
-        "title": "実行改善は、数字で確認できる",
+        "title": "店舗運営改善の成果を、数字で確認",
         "content": "<p>実行が変われば、店舗成果も変わる。<br/>Flowは、実際の店舗運営データでその変化を確認します。<br/><strong>Flowは、来店・購買・実行の変化を数字で確認しながら改善を進めます。</strong></p>",
         "background": "#ffffff",
         "background_gradient": "",
@@ -1296,6 +1319,12 @@
     "rich_text_Tictfp": {
       "type": "rich-text",
       "blocks": {
+        "richtext_yKXX6U": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>上記は各企業における一定期間の導入・運用結果です。成果は店舗環境、市場条件、運用方法、既存の店舗運営体制、データ活用の定着度により異なります。</p>"
+          }
+        },
         "button_eaFNbN": {
           "type": "button",
           "settings": {
@@ -1309,8 +1338,10 @@
         }
       },
       "block_order": [
+        "richtext_yKXX6U",
         "button_eaFNbN"
       ],
+      "custom_css": [],
       "name": "Rich text",
       "settings": {
         "full_width": true,
@@ -1337,13 +1368,13 @@
             "border_color": "",
             "show_controls": false,
             "column_size": "3",
-            "title": "店舗チーム",
-            "heading_tag": "h4",
+            "title": "店舗チーム｜来店・購買率をその日のうちに改善",
+            "heading_tag": "h3",
             "subheading": "",
-            "content": "<p><strong>当日の売上機会を逃さない</strong></p><ul><li><strong>来店数・入店率を確認</strong></li><li><strong>コンバージョン低下を早期把握</strong></li><li><strong>ピーク時間帯に合わせて接客を調整</strong></li><li><strong>当日中に次の行動を判断</strong></li></ul>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
+            "content": "<p>来店数、入店率、購買率の変化を確認し、ピーク時間の接客配置や売場対応を営業時間中に見直します。</p>",
+            "link_url": "https://flow-solutions.com/pages/increase-store-conversion",
+            "link_text": "来店・購買率を改善する方法を見る",
+            "link_style": "button"
           }
         },
         "item_aqpNXK": {
@@ -1359,13 +1390,13 @@
             "border_color": "",
             "show_controls": false,
             "column_size": "3",
-            "title": "エリア / VMD",
+            "title": "エリア・VMD｜店舗比較と売場改善の優先順位を判断",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<p><strong>店舗間の差と売場課題を見える化</strong></p><ul><li><strong>店舗別KPIを横比較</strong></li><li><strong>回遊・滞在時間・売場反応を確認</strong></li><li><strong>VMD変更後の効果を検証</strong></li><li><strong>改善が必要な店舗を優先把握</strong></li></ul>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
+            "content": "<p>店舗ごとのKPI、回遊、滞在時間、売場反応を比較し、確認や支援が必要な店舗と売場を特定します。</p>",
+            "link_url": "https://flow-solutions.com/pages/improve-vmd-layouts",
+            "link_text": "VMD・売場レイアウトを改善する方法を見る",
+            "link_style": "button"
           }
         },
         "item_tTyycj": {
@@ -1381,13 +1412,13 @@
             "border_color": "",
             "show_controls": false,
             "column_size": "3",
-            "title": "本部 / 経営層",
+            "title": "本部・経営層｜多店舗のKPIと判断基準を標準化",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<p><strong>全店舗の判断基準を統一する</strong></p><ul><li>店舗KPIを共通指標で管理</li><li>売上・人員配置・来店傾向を把握</li><li>店舗施策の実行状況を確認</li><li>成果のばらつきを改善</li></ul>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
+            "content": "<p>全店舗の来店、購買率、売上、人員配置を共通指標で管理し、成功店舗の取り組みを全店へ展開します。</p>",
+            "link_url": "https://flow-solutions.com/pages/standardize-store-decisions",
+            "link_text": "多店舗運営の判断を標準化する方法を見る",
+            "link_style": "button"
           }
         }
       },
@@ -1407,7 +1438,7 @@
         "gap": "medium",
         "text_alignment": "start",
         "subheading": "",
-        "title": "レポートから、日々の店舗実行へ",
+        "title": "店舗・エリア・本部で使える店舗分析プラットフォーム",
         "content": "",
         "background": "",
         "background_gradient": "",
@@ -1419,13 +1450,6 @@
     "rich_text_iYFe9Q": {
       "type": "rich-text",
       "blocks": {
-        "subheading_iKjik8": {
-          "type": "subheading",
-          "settings": {
-            "text": "導入事例｜SPA・100店舗以上",
-            "icon": "picto-target"
-          }
-        },
         "liquid_KW76d3": {
           "type": "liquid",
           "disabled": true,
@@ -1436,7 +1460,7 @@
         "heading_9FwWXH": {
           "type": "heading",
           "settings": {
-            "text": "週次レポートから、日々の判断へ",
+            "text": "100店舗以上の小売企業における店舗DX",
             "heading_tag": "h1",
             "text_color": "#ffffff",
             "gradient": ""
@@ -1450,7 +1474,6 @@
         }
       },
       "block_order": [
-        "subheading_iKjik8",
         "liquid_KW76d3",
         "heading_9FwWXH",
         "richtext_QmW9HL"
@@ -1530,7 +1553,7 @@
             "column_size": "3",
             "title": "+2.3%",
             "heading_tag": "h1",
-            "subheading": "<h5><strong>コンバージョン改善</strong></h5>",
+            "subheading": "<p><strong>コンバージョン改善</strong></p>",
             "content": "<p>8ヶ月で約1.4億円の売上効果</p>",
             "link_url": "",
             "link_text": "",
@@ -1576,7 +1599,7 @@
         "text_alignment": "start",
         "subheading": "",
         "title": "",
-        "content": "<h4><strong>何が変わったのか</strong></h4>",
+        "content": "<h3><strong>何が変わったのか</strong></h3>",
         "background": "#0e366a",
         "background_gradient": "",
         "text_color": "#f9fafb",
@@ -1669,7 +1692,7 @@
         "stack_testimonials": false,
         "subheading": "導入企業の声",
         "title": "",
-        "content": "<h2>現場で活用されているFlow</h2>",
+        "content": "<h2>Flowを活用する小売企業・店舗担当者の声</h2>",
         "link_url": "",
         "link_text": "",
         "background": "",
@@ -1688,7 +1711,7 @@
           "type": "ai_gen_block_3504708",
           "settings": {
             "badge_text": "導入までの流れ",
-            "headline": "店舗データ活用を、無理なく始める",
+            "headline": "店舗分析・来店計測を、無理なく始める",
             "description": "Flowは、店舗環境の確認、必要なデータ連携、初期設定、運用開始後の活用支援まで、段階的に導入を進めます。",
             "step1_icon": "document",
             "step1_title": "ヒアリング",
@@ -1738,6 +1761,7 @@
       "block_order": [
         "ai_gen_block_3504708_xDGP9g"
       ],
+      "custom_css": [],
       "name": "Area manager workflow",
       "settings": {
         "full_width": true,
@@ -1793,6 +1817,27 @@
             "content": "<p>Flow AIは、店舗データをもとに売上改善に向けた判断を支援します。<br/>来店数、売上、購買率、人員配置、天候などの情報を組み合わせ、店舗状況に応じた確認ポイントや改善アクションを提案します。店長や本部の判断を置き換えるものではなく、日々の店舗運営をより早く、より一貫性のあるものにするための支援機能です。</p>"
           }
         },
+        "item_3nzYMt": {
+          "type": "item",
+          "settings": {
+            "title": "Flowは一般的な来店カウンターやBIツールと何が違いますか？",
+            "content": "<p>Flowは来店数を計測するだけでなく、店前通行量、店内行動、POS、人員、店舗情報を一元化します。店舗ごとの課題や改善機会を分析し、Flow AIが次に確認すべき点と改善アクションを提案することで、データ取得から日々の店舗運営改善までを支援します。</p>"
+          }
+        },
+        "item_EdWFUN": {
+          "type": "item",
+          "settings": {
+            "title": "店舗DXはどこから始められますか？",
+            "content": "<p>1店舗での来店計測から始めることができます。POS連携なしで来店数や店前通行量の計測を開始し、効果を確認しながらPOS、人員データ、店舗比較、Flow AIへ段階的に活用範囲を広げられます。</p>"
+          }
+        },
+        "item_6FiK4c": {
+          "type": "item",
+          "settings": {
+            "title": "本部・エリア・店舗では、どのようにFlowを使い分けますか？",
+            "content": "<p>店舗では当日の来店数や購買率を確認し、接客や人員配置の改善に利用します。エリア担当者は店舗間のKPIを比較し、支援が必要な店舗を特定します。本部は全店の成果と施策実行状況を確認し、店舗運営の判断基準を標準化します。</p>"
+          }
+        },
         "item_PUBCj6": {
           "type": "item",
           "disabled": true,
@@ -1809,6 +1854,9 @@
         "item_wC7RQN",
         "item_dzzyrg",
         "item_iCLHQE",
+        "item_3nzYMt",
+        "item_EdWFUN",
+        "item_6FiK4c",
         "item_PUBCj6"
       ],
       "custom_css": [
@@ -1818,7 +1866,7 @@
       "settings": {
         "full_width": true,
         "subheading": "導入前の不安を解消",
-        "title": "よくある質問",
+        "title": "小売店舗分析・来店計測についてよくある質問",
         "content": "<p><strong>POS連携、カメラ、店舗スタッフの利用、Flow AIの活用方法など、導入前によく確認される内容をまとめました。</strong></p>",
         "team_avatar_width": 160,
         "support_hours": "",
@@ -1843,14 +1891,14 @@
         "heading_W76pLA": {
           "type": "heading",
           "settings": {
-            "text": "店舗データを、即時の判断へ",
+            "text": "店舗データを、日々の改善判断に変えませんか",
             "heading_tag": "h1"
           }
         },
         "richtext_b7cQCP": {
           "type": "richtext",
           "settings": {
-            "content": "<p><strong>来店計測、POS連携、店舗KPI、Flow AIの活用方法を、<br/>貴社の店舗運営に合わせてご提案します。</strong></p><p></p>"
+            "content": "<p>現在の来店計測、POS、人員、店舗報告の状況と、改善したいKPIをお聞かせください。計測・データ連携・店舗別KPI・Flow AIまで、既存環境を活かした導入方法をご提案します。</p>"
           }
         },
         "button_39CcgY": {
@@ -1858,8 +1906,8 @@
           "settings": {
             "style": "fill",
             "size": "base",
-            "text": "デモを相談する",
-            "url": "shopify://pages/contact",
+            "text": "店舗分析・来店計測のデモを相談する",
+            "url": "https://flow-solutions.com/pages/contact",
             "background": "#a0b842",
             "text_color": "#ffffff"
           }
@@ -1869,8 +1917,8 @@
           "settings": {
             "style": "fill",
             "size": "base",
-            "text": "店舗データ活用診断を受ける",
-            "url": "shopify://pages/assessment",
+            "text": "5分で店舗データ活用の課題を確認する",
+            "url": "https://flow-solutions.com/pages/assessment",
             "background": "#ffffff",
             "text_color": "#11243e"
           }
@@ -1884,7 +1932,7 @@
         "richtext_8bpctG": {
           "type": "richtext",
           "settings": {
-            "content": "<ul><li>✓ プラットフォーム紹介</li><li>✓ ROI試算</li><li>✓ 30日間トライアル</li></ul>"
+            "content": "<ul><li>✓ 店舗分析プラットフォームの画面紹介</li><li>✓ 導入店舗数とKPIに基づくROI試算</li><li>✓ 30日間トライアル（対象条件を明記）</li></ul>"
           }
         }
       },
@@ -1922,6 +1970,7 @@
     "logo_list_bzafjC",
     "1779530497bf2195e7",
     "multi_column_UyyJC7",
+    "rich_text_HU78y7",
     "multi_column_LJEQgi",
     "impact_text_gi97zd",
     "rich_text_E4i7Ea",
