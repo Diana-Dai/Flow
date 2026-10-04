@@ -34,18 +34,19 @@
     #shopify-section-{{ section.id }} .section-header h2 split-lines { max-width: 100%; white-space: normal; overflow-wrap: anywhere; }
     #shopify-section-{{ section.id }} .section-header .prose { min-width: 0; }
     .comparison-positioning__chart { min-height: 540px; max-width: 100%; margin-inline: 0; padding: 72px 0 48px; overflow: hidden; }
-    .comparison-positioning__plot { min-width: 700px; height: 400px; margin-left: 96px; }
+    .comparison-positioning__plot { min-width: 0; width: calc(100% - 84px); height: 400px; margin-left: 84px; }
     .comparison-positioning__axis, .comparison-positioning__x {  font-weight: 600; }
-    .comparison-positioning__axis--top, .comparison-positioning__axis--mid { left: -72px; }
-    .comparison-positioning__axis--low { left: -72px; }
-    .comparison-positioning__x { bottom: -36px; }
-    .comparison-positioning__point--research{
-    left:4%;}
-    .comparison-positioning__point { padding: 4px 10px; font-size: 10px; line-height: 1.4; }
+    .comparison-positioning__axis--top, .comparison-positioning__axis--mid { left: -64px; }
+    .comparison-positioning__axis--low { left: -64px; }
+    .comparison-positioning__x { bottom: -36px; font-size: 7px; }
+    .comparison-positioning__x--mid { left: 42%; }
+    .comparison-positioning__x--right { right: 2%; }
+    .comparison-positioning__point--research { left: 2%; width: 32%; max-width: none; }
+    .comparison-positioning__point { max-width: 42%; padding: 4px 6px; font-size: 9px; line-height: 1.35; overflow-wrap: anywhere; }
     .comparison-positioning__point--flow { top: 22px; }
     .comparison-positioning__point--bi { top: 24px; }
     .comparison-positioning__point--research { top: 160px; }
-    .comparison-positioning__point--camera { top: 174px; left:25%;}
+    .comparison-positioning__point--camera { top: 174px; left: auto; right: 2%; width: 34%; max-width: none; }
     .comparison-positioning__point--counter{
       left: 20%;
     }

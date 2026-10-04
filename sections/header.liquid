@@ -23,12 +23,13 @@ the underlying logic of the menu.
     .comparison-header-actions .button--outline { color: rgb(var(--accent-green)); border-color: rgb(var(--accent-green)); }
     .comparison-header-actions .button:last-child { color: #fff; background: rgb(var(--accent-green)); }
     @media (max-width: 699px) {
-      .header__wrapper { grid-template: "logo secondary-nav" / auto minmax(0, 1fr); }
+      .header__wrapper { grid-template: "logo secondary-nav" / minmax(0, 30%) minmax(0, 70%); }
       .header__main-nav { display: none; }
-      .header__logo-image { width: 130px; }
-      .header__secondary-nav { justify-content: flex-end; min-width: 0; }
-      .comparison-header-actions { gap: 8px; width: 100%; justify-content: flex-end; }
-      .comparison-header-actions .button { min-width: 0; min-height: 40px; padding: 8px 10px; font-size: 10px; line-height: 1.2; white-space: nowrap; }
+      .header__logo { max-width: 100%; min-width: 0; }
+      .header__logo-image { width: min(130px, 100%); }
+      .header__secondary-nav { justify-content: flex-end; min-width: 0; overflow: hidden; }
+      .comparison-header-actions { gap: 8px; width: 100%; min-width: 0; justify-content: flex-end; }
+      .comparison-header-actions .button { flex: 1 1 0; min-width: 0; min-height: 40px; padding: 8px 10px; font-size: 10px; line-height: 1.2; white-space: nowrap; }
       .comparison-header-actions .button:last-child { min-width: 0; }
       .comparison-header-actions .comparison-header-assessment-note { display: none; }
     }
@@ -966,9 +967,8 @@ display: flex;
       <div class="header__secondary-nav">
         {%- if template.suffix == 'comparison' -%}
           <div class="comparison-header-actions">
-            {%- render 'button', href: '#contact', content: '導入のご相談', style: 'outline' -%}
-            {%- capture comparison_assessment_label -%}店舗課題の無料診断<span class="comparison-header-assessment-note">（5分で完了）</span>{%- endcapture -%}
-            {%- render 'button', href: '#assessment', content: comparison_assessment_label, style: 'fill' -%}
+            {%- render 'button', href: section.settings.comparison_button_1_url, content: section.settings.comparison_button_1_text, style: 'outline' -%}
+            {%- render 'button', href: section.settings.comparison_button_2_url, content: section.settings.comparison_button_2_text, style: 'fill' -%}
           </div>
         {%- elsif section.settings.layout != 'drawer' and section.settings.secondary_menu.links.size > 0 -%}
           <nav class="header__link-list" role="navigation">
@@ -1085,6 +1085,30 @@ display: flex;
     {
       "type": "header",
       "content": "Navigation"
+    },
+    {
+      "type": "text",
+      "id": "comparison_button_1_text",
+      "label": "Comparison header button 1 text",
+      "default": "導入のご相談"
+    },
+    {
+      "type": "url",
+      "id": "comparison_button_1_url",
+      "label": "Comparison header button 1 URL",
+      "default": "/pages/contact"
+    },
+    {
+      "type": "text",
+      "id": "comparison_button_2_text",
+      "label": "Comparison header button 2 text",
+      "default": "店舗課題の無料診断"
+    },
+    {
+      "type": "url",
+      "id": "comparison_button_2_url",
+      "label": "Comparison header button 2 URL",
+      "default": "/pages/assessment"
     },
     {
       "type": "link_list",

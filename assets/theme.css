@@ -4496,6 +4496,24 @@ product-rerender {
   grid-area: 1 / -1;
 }
 
+@media screen and (max-width: 699px) {
+  .announcement-bar__wrapper {
+    width: 100%;
+    max-width: none;
+  }
+
+  .announcement-bar__static-list {
+    min-width: 0;
+    flex: 1 1 auto;
+  }
+
+  .announcement-bar__static-list > * {
+    max-width: 100%;
+    white-space: normal;
+    line-height: 1.25;
+  }
+}
+
 .announcement-bar__item {
   grid: auto / auto-flow auto var(--spacing-20);
   place-items: center;
