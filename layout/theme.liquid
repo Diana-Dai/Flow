@@ -130,112 +130,115 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </script>
 
 
-{% if request.path == '/pages/flow-ai-fida' or page.handle == 'flow-ai-fida' %}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@graph": [
+  "@type": "Service",
+  "@id": "https://flow-solutions.com/pages/flow-ai-fida#service",
+  "name": "Flow AI・FIDA 店舗意思決定支援",
+  "alternateName": ["Flow AI", "FIDA"],
+  "serviceType": "小売業向け店舗AI・意思決定支援",
+  "url": "https://flow-solutions.com/pages/flow-ai-fida",
+  "description": "Flow AI・FIDAは、来店数、購買率、売上、人員配置、店舗報告、SOPなどを横断的に整理する小売業向けの店舗AIです。店長・エリアマネージャー・本部に、根拠とともに次の改善アクションを提案し、確認・実行・振り返りまで支援します。",
+  "provider": {
+    "@type": "Organization",
+    "name": "株式会社Flow Solutions",
+    "url": "https://flow-solutions.com/"
+  },
+  "areaServed": {
+    "@type": "Country",
+    "name": "日本"
+  }
+}
+</script>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "@id": "https://flow-solutions.com/pages/flow-ai-fida#faq",
+  "url": "https://flow-solutions.com/pages/flow-ai-fida",
+  "inLanguage": "ja",
+  "mainEntity": [
     {
-      "@type": "WebPage",
-      "@id": "https://flow-solutions.com/pages/flow-ai-fida#webpage",
-      "url": "https://flow-solutions.com/pages/flow-ai-fida",
-      "name": "小売AI・店舗AI｜店舗の次の一手を提案するFlow AI・FIDA",
-      "description": "Flow AI・FIDAは、来店数、購買率、売上、人員配置、店舗報告、SOPなどを横断的に整理する小売業向けの店舗AIです。店長・エリアマネージャー・本部に、根拠とともに次の改善アクションを提案し、確認・実行・振り返りまで支援します。",
-      "inLanguage": "ja",
-      "isPartOf": {
-        "@id": "https://flow-solutions.com/#website"
-      },
-      "mainEntity": {
-        "@id": "https://flow-solutions.com/pages/flow-ai-fida#service"
+      "@type": "Question",
+      "name": "Flow AIは店長の判断を置き換えるものですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "いいえ。Flow AIは店舗運営の判断を自動化するものではありません。売上、来店、スタッフ状況、店舗報告、社内ルールにもとづいて提案を提示し、店長・エリアマネージャー・本部がより判断しやすいように支援します。最終的な判断と実行は、現場と社内の運用方針に沿って行います。"
       }
     },
     {
-      "@type": "Service",
-      "@id": "https://flow-solutions.com/pages/flow-ai-fida#service",
-      "name": "Flow AI・FIDA 店舗意思決定支援",
-      "alternateName": [
-        "Flow AI",
-        "FIDA"
-      ],
-      "serviceType": "小売業向け店舗AI・意思決定支援",
-      "url": "https://flow-solutions.com/pages/flow-ai-fida",
-      "description": "来店数、購買率、売上、人員配置、店舗報告、SOPなどを横断的に整理し、店長・エリアマネージャー・本部に根拠とともに次の改善アクションを提案。確認・実行・振り返りまでを支援する小売業向けの店舗AIサービス。",
-      "provider": {
-        "@id": "https://flow-solutions.com/#organization"
-      },
-      "areaServed": {
-        "@type": "Country",
-        "name": "JP"
-      },
-      "audience": {
-        "@type": "BusinessAudience",
-        "audienceType": "店長・エリアマネージャー・本部(小売・多店舗運営企業)"
-      },
-      "isRelatedTo": {
-        "@id": "https://flow-solutions.com/pages/flow-platform-overview#software"
+      "@type": "Question",
+      "name": "Flow AIはどのような情報を参照しますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Flow AIは、売上、来店数、購買率、客単価、スタッフ配置、天候、店舗メモ、Pulse、SOP、マニュアル、社内資料など、さまざまな情報を参照できます。実際に利用できる情報は、導入範囲やFlowに連携しているデータによって異なります。その他のデータソースとの連携をご希望の場合は、お問い合わせください。"
       }
     },
     {
-      "@type": "FAQPage",
-      "@id": "https://flow-solutions.com/pages/flow-ai-fida#faq",
-      "isPartOf": {
-        "@id": "https://flow-solutions.com/pages/flow-ai-fida#webpage"
-      },
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Flow AIは店長の判断を置き換えるものですか？",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "いいえ。Flow AIは店舗運営の判断を自動化するものではありません。売上、来店、スタッフ状況、店舗報告、社内ルールにもとづいて提案を提示し、店長・エリアマネージャー・本部がより判断しやすいように支援します。最終的な判断と実行は、現場と社内の運用方針に沿って行います。"
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Flow AIはどのような情報を参照しますか？",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Flow AIは、売上、来店数、購買率、客単価、スタッフ配置、天候、店舗メモ、Pulse、SOP、マニュアル、社内資料など、さまざまな情報を参照できます。実際に利用できる情報は、導入範囲やFlowに連携しているデータによって異なります。その他のデータソースとの連携をご希望の場合は、お問い合わせください。"
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "SOPやマニュアルはどのように使われますか？",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "接客ルール、店舗運営マニュアル、チェックリスト、研修資料などの社内資料をFlowにアップロードし、Flow AIが参照できる判断材料として整理できます。これにより、店舗ごとの判断を社内ルールやブランド方針に沿わせやすくします。"
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "すべてのデータを最初から連携する必要がありますか？",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "いいえ。現在のPOS、手動で計測している来店データ、スタッフデータ、店舗報告などを確認し、最初に連携しやすいデータから始めることができます。すべてを一度に変更する必要はありません。運用しやすい範囲から導入し、段階的に活用範囲を広げていけます。"
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Flow AIの提案はどのように改善されますか？",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "店舗で実行した施策、結果の変化、Pulseやメモによる現場フィードバックを蓄積し、次の判断材料として活用します。Flow AIは、数値だけでなく現場の文脈も参照することで、店舗で実行しやすい提案につなげます。"
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Flow AIがあれば、既存のダッシュボードは不要になりますか？",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "いいえ。ダッシュボードは店舗状況を把握するための重要な基盤です。Flow AIは、ダッシュボードや連携データをもとに提案の理由を説明し、状況確認・要因整理・次の行動の検討を支援します。ダッシュボードを置き換えるのではなく、ダッシュボードを使いやすくし、得られた気づきを実行につなげる役割を持ちます。"
-          }
-        }
-      ]
+      "@type": "Question",
+      "name": "SOPやマニュアルはどのように使われますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "接客ルール、店舗運営マニュアル、チェックリスト、研修資料などの社内資料をFlowにアップロードし、Flow AIが参照できる判断材料として整理できます。これにより、店舗ごとの判断を社内ルールやブランド方針に沿わせやすくします。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "すべてのデータを最初から連携する必要がありますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "いいえ。現在のPOS、手動で計測している来店データ、スタッフデータ、店舗報告などを確認し、最初に連携しやすいデータから始めることができます。すべてを一度に変更する必要はありません。運用しやすい範囲から導入し、段階的に活用範囲を広げていけます。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Flow AIの提案はどのように改善されますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "店舗で実行した施策、結果の変化、Pulseやメモによる現場フィードバックを蓄積し、次の判断材料として活用します。Flow AIは、数値だけでなく現場の文脈も参照することで、店舗で実行しやすい提案につなげます。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Flow AIがあれば、既存のダッシュボードは不要になりますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "いいえ。ダッシュボードは店舗状況を把握するための重要な基盤です。Flow AIは、ダッシュボードや連携データをもとに提案の理由を説明し、状況確認・要因整理・次の行動の検討を支援します。ダッシュボードを置き換えるのではなく、ダッシュボードを使いやすくし、得られた気づきを実行につなげる役割を持ちます。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "一般的な生成AIとFlow AIの違いは何ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Flow AIは、Flowに連携した売上、来店、人員、店舗報告と、登録したSOPや社内資料を店舗ごとの文脈で参照する小売業向けAIです。一般的な質問への回答だけでなく、店長・エリアマネージャー・本部が確認すべき変化と次の行動を整理することを目的としています。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Flow AIの提案の根拠や参照データを確認できますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Flow AIが提案を作成する際に参照したKPI、比較期間、店舗メモ、SOPなどを確認し、人が実行可否を判断できる形で提示します。実際に表示できる項目は、導入設定や連携しているデータによって異なります。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "店舗・エリア・本部で表示内容や権限を分けられますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "はい。店長、エリアマネージャー、本部など、それぞれの役割に応じて必要な店舗や情報を確認できるように権限を設定できます。具体的な設定範囲は、組織構成と運用方法を確認したうえで設計します。"
+      }
     }
   ]
 }
 </script>
-{% endif %}
+
+
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
