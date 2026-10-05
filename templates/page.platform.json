@@ -2551,14 +2551,14 @@
           "settings": {
             "style_1": "fill",
             "size_1": "xl",
-            "text_1": "Flow AIによる店舗判断支援を見る",
+            "text_1": "多店舗KPI管理のデモを相談する",
             "url_1": "https://flow-solutions.com/pages/flow-ai-fida",
             "background_1": "#a0b842",
             "text_color_1": "#ffffff",
             "style_2": "fill",
             "size_2": "xl",
-            "text_2": "多店舗運営の判断を標準化する方法を見る",
-            "url_2": "https://flow-solutions.com/pages/flow-ai-fida",
+            "text_2": "124店舗の導入事例を見る",
+            "url_2": "https://flow-solutions.com/pages/case-studies-roi",
             "background_2": "#ffffff",
             "text_color_2": "#11243e"
           }
