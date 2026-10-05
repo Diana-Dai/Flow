@@ -1503,6 +1503,60 @@
             "chevron_color": "#64748b"
           },
           "blocks": {}
+        },
+        "ai_gen_block_0c78d27_6XXtcn": {
+          "type": "ai_gen_block_0c78d27",
+          "name": "FAQ accordion item",
+          "settings": {
+            "category": "",
+            "question": "般的な生成AIとFlow AIの違いは何ですか？",
+            "answer": "Flow AIは、Flowに連携した売上、来店、人員、店舗報告と、登録したSOPや社内資料を店舗ごとの文脈で参照する小売業向けAIです。一般的な質問への回答だけでなく、店長・エリアマネージャー・本部が確認すべき変化と次の行動を整理することを目的としています。",
+            "default_open": false,
+            "icon_type": "badge",
+            "icon_background_color": "#f0f4e8",
+            "icon_color": "#a0b842",
+            "category_color": "#a0b842",
+            "question_color": "#0f172a",
+            "answer_color": "#475569",
+            "chevron_color": "#64748b"
+          },
+          "blocks": {}
+        },
+        "ai_gen_block_0c78d27_Jk9aaH": {
+          "type": "ai_gen_block_0c78d27",
+          "name": "FAQ accordion item",
+          "settings": {
+            "category": "",
+            "question": "Flow AIの提案の根拠や参照データを確認できますか？",
+            "answer": "Flow AIが提案を作成する際に参照したKPI、比較期間、店舗メモ、SOPなどを確認し、人が実行可否を判断できる形で提示します。実際に表示できる項目は、導入設定や連携しているデータによって異なります。",
+            "default_open": false,
+            "icon_type": "badge",
+            "icon_background_color": "#f0f4e8",
+            "icon_color": "#a0b842",
+            "category_color": "#a0b842",
+            "question_color": "#0f172a",
+            "answer_color": "#475569",
+            "chevron_color": "#64748b"
+          },
+          "blocks": {}
+        },
+        "ai_gen_block_0c78d27_mMKPHm": {
+          "type": "ai_gen_block_0c78d27",
+          "name": "FAQ accordion item",
+          "settings": {
+            "category": "",
+            "question": "店舗・エリア・本部で表示内容や権限を分けられますか？",
+            "answer": "はい。店長、エリアマネージャー、本部など、それぞれの役割に応じて必要な店舗や情報を確認できるように権限を設定できます。具体的な設定範囲は、組織構成と運用方法を確認したうえで設計します。",
+            "default_open": false,
+            "icon_type": "badge",
+            "icon_background_color": "#f0f4e8",
+            "icon_color": "#a0b842",
+            "category_color": "#a0b842",
+            "question_color": "#0f172a",
+            "answer_color": "#475569",
+            "chevron_color": "#64748b"
+          },
+          "blocks": {}
         }
       },
       "block_order": [
@@ -1513,7 +1567,10 @@
         "ai_gen_block_0c78d27_zrf8V4",
         "ai_gen_block_0c78d27_eMXbWy",
         "ai_gen_block_0c78d27_77WPEM",
-        "ai_gen_block_0c78d27_jqMeJG"
+        "ai_gen_block_0c78d27_jqMeJG",
+        "ai_gen_block_0c78d27_6XXtcn",
+        "ai_gen_block_0c78d27_Jk9aaH",
+        "ai_gen_block_0c78d27_mMKPHm"
       ],
       "custom_css": [
         ".h1 {margin-block-end: var(--spacing-6);}"
