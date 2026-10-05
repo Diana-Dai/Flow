@@ -1629,6 +1629,26 @@
             "content": "<p>はい。Flowのアドバンストサポートでは、すべての機器がオンラインで正常にデータを送信しているかを監視します。機器がオフラインになった場合は、データの欠損を最小限に抑えるため復旧対応を行います。設置後は、すべてのセンサーが正しく計測・送信していることを確認し、導入初日から継続してデータを信頼して活用できる状態を支えます。</p>",
             "page": ""
           }
+        },
+        "item_nwQnQB": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-question",
+            "icon_width": 20,
+            "title": "般的な人数カウントカメラとFlowの店舗向けAIカメラの違いは何ですか？",
+            "content": "<p>般的な単機能型カウンターは、入口の通過人数を中心に計測します。Flowは、来店数に加えて店前通行量、入店率、滞在時間、導線、ゾーン、属性傾向を取得し、スタッフや同日リピートの除外にも対応します。さらにPOS・売上・人員データと組み合わせ、購買率や店舗運営の改善に活用できます。</p>",
+            "page": ""
+          }
+        },
+        "item_aXcpQD": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-question",
+            "icon_width": 20,
+            "title": "AIカメラの計測精度はどのように確認しますか？",
+            "content": "<p>入口幅、天井高、照明、混雑状況、スタッフ動線を事前に確認し、設置後に検知範囲や除外条件を調整します。運用開始後も接続状況とデータ受信を確認し、必要に応じて設定を見直します。</p>",
+            "page": ""
+          }
         }
       },
       "block_order": [
@@ -1639,7 +1659,9 @@
         "item_x6xAFm",
         "item_mRWRm9",
         "item_HB3nba",
-        "item_Q6XUgg"
+        "item_Q6XUgg",
+        "item_nwQnQB",
+        "item_aXcpQD"
       ],
       "name": "Accordion content",
       "settings": {
@@ -2022,13 +2044,13 @@
             "style_1": "fill",
             "size_1": "xl",
             "text_1": "店舗に合うAIカメラ構成を相談する",
-            "url_1": "https://flow-solutions.com/pages/contact",
+            "url_1": "shopify://pages/contact",
             "background_1": "#a0b842",
             "text_color_1": "#ffffff",
             "style_2": "fill",
             "size_2": "xl",
-            "text_2": "FlowのAIカメラで計測できるデータを見る",
-            "url_2": "https://flow-solutions.com/pages/ai-camera#measurement-data",
+            "text_2": "来店客数分析を見る →",
+            "url_2": "shopify://pages/traffic-analytics",
             "background_2": "#ffffff",
             "text_color_2": "#11243e"
           }
