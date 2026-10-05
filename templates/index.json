@@ -683,91 +683,43 @@
         "text_color": ""
       }
     },
-    "rich_text_pkymTT": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_X97dmW": {
-          "type": "heading",
-          "settings": {
-            "text": "従来型レポートとFlowの店舗分析の違い",
-            "heading_tag": "h2",
-            "text_color": "",
-            "gradient": ""
-          }
-        },
-        "richtext_CmeGHi": {
-          "type": "richtext",
-          "settings": {
-            "content": "<p>来店が増える時間帯、購買率が落ちるタイミング、人員配置が合わない売場。<br/>Flowは、成果に差が出る変化を早く捉え、店舗がその日のうちに動ける状態をつくります。</p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading_X97dmW",
-        "richtext_CmeGHi"
-      ],
-      "custom_css": [],
-      "name": "Rich text",
-      "settings": {
-        "full_width": true,
-        "content_width": "large",
-        "text_position": "center",
-        "background": "#f9fafb",
-        "background_gradient": "",
-        "text_color": ""
-      }
-    },
     "blocks_PbNh4e": {
       "type": "_blocks",
       "blocks": {
-        "ai_gen_block_a3e57c5_fRbQGj": {
-          "type": "ai_gen_block_a3e57c5",
+        "ai_gen_block_a1ef938_pgB7nP": {
+          "type": "ai_gen_block_a1ef938",
           "settings": {
-            "container_background": "#ffffff",
-            "text_color": "#000000",
-            "left_title": "従来型レポート",
-            "left_tag": "課題：差が出た後に気づく",
-            "left_metric": "チャンスを後から知る",
-            "left_item_1": "<p><strong>売上機会を事後に確認する</strong></p><p></p>",
-            "left_item_2": "<p><strong>来店ピークや購買率低下に間に合わない</strong></p><p></p>",
-            "left_item_3": "<p><strong>対応が店長やスタッフの経験に依存する</strong></p><p></p>",
-            "left_item_4": "<p><strong>店舗ごとに判断と実行がばらつく</strong></p><p></p>",
-            "left_background": "#ffffff",
-            "left_border_color": "#e5e7eb",
-            "left_tag_background": "#f3f4f6",
-            "left_tag_text": "#6b7280",
-            "left_progress_label": "改善タイミング",
-            "left_progress_time": "翌日・週次確認",
-            "left_progress_percent": 20,
-            "left_progress_color": "#ef4444",
-            "right_title": "Flowプラットフォーム",
-            "right_tag": "⚡ 差が出る変化を早く捉える",
-            "right_metric": "チャンスをその場で活かす",
-            "right_item_1": "<p><strong>来店ピークやKPI変化を迅速に把握</strong></p>",
-            "right_item_2": "<p><strong>購買率低下や人員配置のズレを確認</strong></p><p></p>",
-            "right_item_3": "<p><strong>本部・エリア・店舗で同じKPIを共有</strong></p><p></p>",
-            "right_item_4": "<p><strong>店舗ごとの判断と実行を標準化</strong></p><p></p>",
-            "right_background": "#0a2540",
-            "right_text_color": "#ffffff",
-            "right_tag_background": "#1e3a5f",
-            "right_tag_text": "#ffffff",
-            "highlight_color": "#a0b842",
-            "right_progress_label": "改善タイミング",
-            "right_progress_time": "リアルタイム確認",
-            "progress_bar_height": 8,
-            "progress_gradient_start": "#803cee",
-            "progress_gradient_end": "#a0b842",
-            "negative_icon_color": "#ef4444",
-            "positive_icon_color": "#a0b842",
-            "title_size": 24,
-            "metric_size": 42,
-            "list_item_size": 19
+            "heading": "人数カウントカメラを選ぶときの比較ポイント",
+            "intro": "人数カウントカメラは、取得できる項目だけでなく、スタッフや再入店の除外、店舗環境に合わせた設置設計、導入後の精度確認、POS・売上データとの連携まで比較することが重要です。",
+            "column_label": "比較項目",
+            "column_general": "一般的な単機能カウンターの例",
+            "column_flow": "Flow AIカメラ",
+            "row_1_item": "取得データ",
+            "row_1_general": "入口の通過人数が中心",
+            "row_1_flow": "来店数、店前通行量、入店率、滞在、導線、ゾーン、属性傾向",
+            "row_2_item": "来店データ補正",
+            "row_2_general": "製品・設定により異なる",
+            "row_2_flow": "スタッフ・同日リピートを除外",
+            "row_3_item": "設置設計",
+            "row_3_general": "標準的な入口計測が中心",
+            "row_3_flow": "入口幅、天井高、照明、混雑、スタッフ動線に合わせて設計",
+            "row_4_item": "データ連携",
+            "row_4_general": "単独集計が中心",
+            "row_4_flow": "POS・売上・人員データと統合",
+            "row_5_item": "導入後の品質管理",
+            "row_5_general": "製品・契約により異なる",
+            "row_5_flow": "接続・受信状況を継続確認し、必要に応じて設定を調整",
+            "row_6_item": "主な用途",
+            "row_6_general": "基本的な来店数の確認",
+            "row_6_flow": "購買率、人員配置、VMD、施策効果の改善判断",
+            "footnote": "一般的な単機能型の例です。機能・仕様は製品、設定、契約内容により異なります。",
+            "desktop_width_percent": 100
           },
           "blocks": {}
         }
       },
       "block_order": [
-        "ai_gen_block_a3e57c5_fRbQGj"
+        "ai_gen_block_a1ef938_pgB7nP"
       ],
       "name": "Comparison grid",
       "settings": {
@@ -1974,7 +1926,6 @@
     "multi_column_LJEQgi",
     "impact_text_gi97zd",
     "rich_text_E4i7Ea",
-    "rich_text_pkymTT",
     "blocks_PbNh4e",
     "testimonials_MY9ERf",
     "multi_column_m98pty",
