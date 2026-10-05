@@ -236,72 +236,127 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 }
 </script>
 {% endif %}
-{% if request.path == '/pages/store-performance-platform' or page.handle == 'store-performance-platform' %}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@graph": [
+  "@type": "Service",
+  "@id": "https://flow-solutions.com/pages/store-performance-platform#service",
+  "name": "Flow 多店舗管理・店舗パフォーマンス管理",
+  "serviceType": "多店舗KPI管理・店舗比較",
+  "url": "https://flow-solutions.com/pages/store-performance-platform",
+  "description": "Flowは、多店舗の来店数、購買率、売上、人員配置を一元管理し、店舗比較・エリア比較ができる多店舗管理基盤です。成功店舗の共通点と注意すべき店舗を特定し、全店のパフォーマンス改善と運営標準化につなげます。",
+  "provider": {
+    "@type": "Organization",
+    "name": "株式会社Flow Solutions",
+    "url": "https://flow-solutions.com/"
+  },
+  "areaServed": {
+    "@type": "Country",
+    "name": "日本"
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "@id": "https://flow-solutions.com/pages/store-performance-platform#breadcrumb",
+  "itemListElement": [
     {
-      "@type": "WebPage",
-      "@id": "https://flow-solutions.com/pages/store-performance-platform#webpage",
-      "url": "https://flow-solutions.com/pages/store-performance-platform",
-      "name": "多店舗管理・店舗比較｜KPIと店舗パフォーマンスを改善｜Flow",
-      "description": "Flowは、多店舗の来店数、購買率、売上、人員配置を一元管理し、店舗比較・エリア比較ができる多店舗管理基盤です。成功店舗の共通点と注意すべき店舗を特定し、全店のパフォーマンス改善と運営標準化につなげます。",
-      "inLanguage": "ja",
-      "isPartOf": {
-        "@id": "https://flow-solutions.com/#website"
-      },
-      "breadcrumb": {
-        "@id": "https://flow-solutions.com/pages/store-performance-platform#breadcrumb"
-      },
-      "mainEntity": {
-        "@id": "https://flow-solutions.com/pages/store-performance-platform#service"
-      }
+      "@type": "ListItem",
+      "position": 1,
+      "name": "ホーム",
+      "item": "https://flow-solutions.com/"
     },
     {
-      "@type": "Service",
-      "@id": "https://flow-solutions.com/pages/store-performance-platform#service",
-      "name": "Flow 多店舗管理・店舗パフォーマンス管理",
-      "serviceType": "多店舗KPI管理・店舗比較",
-      "url": "https://flow-solutions.com/pages/store-performance-platform",
-      "description": "多店舗の来店数、購買率、売上、人員配置を一元管理し、店舗比較・エリア比較を通じて成功店舗の共通点と注意すべき店舗を特定。全店のパフォーマンス改善と運営標準化を支援する多店舗管理サービス。",
-      "provider": {
-        "@id": "https://flow-solutions.com/#organization"
-      },
-      "areaServed": {
-        "@type": "Country",
-        "name": "JP"
-      },
-      "audience": {
-        "@type": "BusinessAudience",
-        "audienceType": "多店舗展開する小売・店舗運営企業"
-      },
-      "isRelatedTo": {
-        "@id": "https://flow-solutions.com/pages/flow-platform-overview#software"
-      }
-    },
-    {
-      "@type": "BreadcrumbList",
-      "@id": "https://flow-solutions.com/pages/store-performance-platform#breadcrumb",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "ホーム",
-          "item": "https://flow-solutions.com/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "店舗パフォーマンス管理",
-          "item": "https://flow-solutions.com/pages/store-performance-platform"
-        }
-      ]
+      "@type": "ListItem",
+      "position": 2,
+      "name": "店舗パフォーマンス管理",
+      "item": "https://flow-solutions.com/pages/store-performance-platform"
     }
   ]
 }
 </script>
-{% endif %}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "@id": "https://flow-solutions.com/pages/store-performance-platform#faq",
+  "url": "https://flow-solutions.com/pages/store-performance-platform",
+  "inLanguage": "ja",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "POS連携は必要ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "POS連携は推奨されます。売上、購買率、客単価、購買点数を来店データと組み合わせることで、店舗成果の要因を確認しやすくなります。ただし、導入初期は利用できるデータから段階的に始めることも可能です。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "既存の来店計測データも使えますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "既存の来店計測データやカメラデータを活用できるかは、データ形式、取得精度、連携方法によって異なります。Flowでは、既存データの活用可否を確認した上で、必要に応じてAPI、CSV、FTPなどの連携方法を検討します。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Pulseやメモでは何を記録できますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "売場変更、イベント、在庫状況、スタッフ体制、天候影響、店舗での気づきなど、数字だけでは残りにくい現場情報を記録できます。これにより、売上や来店数の変化を、現場の状況と合わせて振り返りやすくなります。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Flow AIはどの情報を参照しますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Flow AIは、接続された店舗データ、POSデータ、Pulse、メモ、店舗報告、マニュアル、SOP、社内資料などを参照できるように設計されています。回答は店舗運営の判断を支援するためのものであり、店長やエリアマネージャーの判断を置き換えるものではありません。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "誰がFlow Platformを利用できますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "主な利用者は、店舗スタッフ、店長、エリアマネージャー、本部チームです。店舗では日々のKPI確認や報告に、本部やエリアでは複数店舗の比較、状況把握、改善活動の確認に活用できます。権限設定により、役割ごとに必要な情報を表示できます。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "店舗・エリア比較では、どの単位でKPIを比較できますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "店舗別、エリア別、期間別、曜日・時間帯別など、目的に応じた単位で来店数、購買率、売上、予算進捗などを比較できます。利用できる比較条件は、連携するデータと設定内容によって異なります。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "多店舗管理では、どのKPIを確認できますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "来店数、店前通行量、購買率、客単価、売上・予算進捗、スタッフ配置、滞在時間などを確認できます。POSや来店計測データを連携することで、店舗成果の違いを複数のKPIから分析できます。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "注意すべき店舗はどのように特定しますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "店舗・エリアごとのKPI変化、売上進捗、Pulse、メモ、店舗報告をまとめて確認し、急な変化や継続的な差がある店舗を特定します。エリアマネージャーは、確認や支援を優先する店舗の判断に活用できます。"
+      }
+    }
+  ]
+}
+</script>
+
+
+
 {% if request.path == '/pages/flow-platform-overview' or page.handle == 'flow-platform-overview' %}
 <script type="application/ld+json">
 {
