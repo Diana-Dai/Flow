@@ -43,7 +43,7 @@
           "settings": {
             "style": "fill",
             "size": "lg",
-            "text": "AIカメラ計測を相談する",
+            "text": "まずは、正確な来店計測から。",
             "url": "shopify://pages/contact",
             "background": "#a0b842",
             "text_color": ""
@@ -791,7 +791,7 @@
         "richtext_wcpU8E": {
           "type": "richtext",
           "settings": {
-            "content": "<p>来店数だけでは、売上が変化した理由や店内での行動までは分かりません。<br/>Flowは、来店計測に店前通行量や滞在、導線などのデータを加え、店舗分析に活用できる形で提供します。</p>"
+            "content": "<p>人数カウントカメラは、取得できる項目だけでなく、スタッフや再入店の除外、店舗環境に合わせた設置設計、導入後の精度確認、POS・売上データとの連携まで比較することが重要です。</p>"
           }
         }
       },
@@ -2021,14 +2021,14 @@
           "settings": {
             "style_1": "fill",
             "size_1": "xl",
-            "text_1": "AIカメラ計測を相談する →",
-            "url_1": "shopify://pages/contact",
+            "text_1": "店舗に合うAIカメラ構成を相談する",
+            "url_1": "https://flow-solutions.com/pages/contact",
             "background_1": "#a0b842",
             "text_color_1": "#ffffff",
             "style_2": "fill",
             "size_2": "xl",
-            "text_2": "来店客数分析を見る →",
-            "url_2": "shopify://pages/traffic-analytics",
+            "text_2": "FlowのAIカメラで計測できるデータを見る",
+            "url_2": "https://flow-solutions.com/pages/ai-camera#measurement-data",
             "background_2": "#ffffff",
             "text_color_2": "#11243e"
           }
