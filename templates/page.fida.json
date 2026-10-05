@@ -811,7 +811,7 @@
       "settings": {
         "full_width": true,
         "stack_on_mobile": true,
-        "gap": "medium",
+        "gap": "small",
         "text_alignment": "start",
         "subheading": "FIDAの役割",
         "title": "",
@@ -1308,7 +1308,7 @@
           "type": "ai_gen_block_c38635f",
           "settings": {
             "desktop_width_percent": 100,
-            "section_padding": 60,
+            "section_padding": 30,
             "card_gap": 30,
             "card_padding": 50,
             "card_border_radius": 24,
