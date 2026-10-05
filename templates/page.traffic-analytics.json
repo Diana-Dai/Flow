@@ -693,6 +693,127 @@
         "subheading_text_color": ""
       }
     },
+    "multi_column_AzJXD7": {
+      "type": "multi-column",
+      "blocks": {
+        "item_VUbRcN": {
+          "type": "item",
+          "settings": {
+            "icon": "people",
+            "icon_width": 32,
+            "icon_background_type": "none",
+            "icon_background": "#a0b842",
+            "icon_color": "#ffffff",
+            "background_color": "#f9fafb",
+            "text_color": "",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "4",
+            "title": "",
+            "heading_tag": "h0",
+            "subheading": "",
+            "content": "<h4>店前通行量が少ない</h4><p>商圏、曜日、天候、イベント、集客施策など、店舗前まで人を呼び込む要因を確認します。<br/></p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "button"
+          }
+        },
+        "item_7hAiL7": {
+          "type": "item",
+          "settings": {
+            "icon": "people",
+            "icon_width": 32,
+            "icon_background_type": "none",
+            "icon_background": "#a0b842",
+            "icon_color": "#ffffff",
+            "background_color": "#f9fafb",
+            "text_color": "",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "4",
+            "title": "",
+            "heading_tag": "h0",
+            "subheading": "",
+            "content": "<h4>通行量はあるが、入店率が低い</h4><p>ファサード、入口の視認性、店頭VMD、キャンペーン訴求など、入店前の体験を確認します。<br/></p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "button"
+          }
+        },
+        "item_DW74iT": {
+          "type": "item",
+          "settings": {
+            "icon": "people",
+            "icon_width": 32,
+            "icon_background_type": "none",
+            "icon_background": "#a0b842",
+            "icon_color": "#ffffff",
+            "background_color": "#f9fafb",
+            "text_color": "",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "4",
+            "title": "",
+            "heading_tag": "h0",
+            "subheading": "",
+            "content": "<h4>来店数はあるが、購買率が低い</h4><p>接客体制、人員配置、在庫、売場導線、商品訴求など、入店後の販売機会を確認します。<br/><br/></p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "button"
+          }
+        },
+        "item_tTibPX": {
+          "type": "item",
+          "settings": {
+            "icon": "people",
+            "icon_width": 32,
+            "icon_background_type": "none",
+            "icon_background": "#a0b842",
+            "icon_color": "#ffffff",
+            "background_color": "#f9fafb",
+            "text_color": "",
+            "border_color": "#f2f2f2",
+            "show_controls": false,
+            "column_size": "4",
+            "title": "",
+            "heading_tag": "h0",
+            "subheading": "",
+            "content": "<h4>特定時間帯だけ数値が低い</h4><p>時間帯別の来店数とスタッフ配置を比較し、ピーク時の人員不足や接客機会損失を確認します。<br/></p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "button"
+          }
+        }
+      },
+      "block_order": [
+        "item_VUbRcN",
+        "item_7hAiL7",
+        "item_DW74iT",
+        "item_tTibPX"
+      ],
+      "custom_css": [
+        ".multi-column__item h4 {color: #a0b842;}",
+        ".multi-column__item h4 ~ p {margin-top: 0; padding-top: 0;}",
+        "p {font-size: 1rem;}",
+        "em {font-size: 0.8rem;}",
+        ".multi-column__item .text-center {text-align: left;}"
+      ],
+      "name": "Multi-column",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "center",
+        "subheading": "",
+        "title": "",
+        "content": "<h3>数字の変化から、優先課題を見つける</h3><p>来店データは、各指標を単独で見るのではなく、「店前通行量→来店客数→入店率→購買率」の順に確認することで、売上機会がどこで失われているかを切り分けやすくなります。</p>",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "",
+        "subheading_background_color": "",
+        "subheading_text_color": ""
+      }
+    },
     "multi_column_QjMJiW11": {
       "type": "multi-column",
       "blocks": {
@@ -1350,6 +1471,7 @@
     "media_with_text_hMPTmL",
     "multi_column_RkceNG",
     "multi_column_QjMJiW",
+    "multi_column_AzJXD7",
     "multi_column_QjMJiW11",
     "multi_column_LeVzeG",
     "section-15",
