@@ -571,7 +571,7 @@
         "item_zEftHB"
       ],
       "custom_css": [
-        "{padding-top: 90px;}"
+        "{padding-top: 0px;}"
       ],
       "name": "Multi-column",
       "settings": {
