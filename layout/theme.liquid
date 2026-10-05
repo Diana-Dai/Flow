@@ -640,29 +640,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "WebPage",
-      "@id": "https://flow-solutions.com/pages/flow-ai-fida#webpage",
-      "url": "https://flow-solutions.com/pages/flow-ai-fida",
-      "name": "Flow AI・FIDA｜店舗意思決定支援・AIソリューション",
-      "description": "Flow AI・FIDAは、来店数、購買率、売上、人員配置、店舗報告、SOPなどを横断的に整理する小売業向けの店舗AIです。店長・エリアマネージャー・本部に、根拠とともに次の改善アクションを提案し、確認・実行・振り返りまで支援します。",
-      "inLanguage": "ja",
-      "isPartOf": {
-        "@id": "https://flow-solutions.com/#website"
-      },
-      "mainEntity": {
-        "@id": "https://flow-solutions.com/pages/flow-ai-fida#service"
-      }
-    },
-    {
       "@type": "Service",
       "@id": "https://flow-solutions.com/pages/flow-ai-fida#service",
       "name": "Flow AI・FIDA 店舗意思決定支援",
-      "alternateName": [
-        "Flow AI",
-        "FIDA"
-      ],
+      "alternateName": ["Flow AI", "FIDA"],
       "serviceType": "小売業向け店舗AI・意思決定支援",
       "url": "https://flow-solutions.com/pages/flow-ai-fida",
+      "inLanguage": "ja",
       "description": "Flow AI・FIDAは、来店数、購買率、売上、人員配置、店舗報告、SOPなどを横断的に整理する小売業向けの店舗AIです。店長・エリアマネージャー・本部に、根拠とともに次の改善アクションを提案し、確認・実行・振り返りまで支援します。",
       "provider": {
         "@type": "Organization",
@@ -675,13 +659,28 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       }
     },
     {
+      "@type": "BreadcrumbList",
+      "@id": "https://flow-solutions.com/pages/flow-ai-fida#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "ホーム",
+          "item": "https://flow-solutions.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Flow AI・FIDA",
+          "item": "https://flow-solutions.com/pages/flow-ai-fida"
+        }
+      ]
+    },
+    {
       "@type": "FAQPage",
       "@id": "https://flow-solutions.com/pages/flow-ai-fida#faq",
       "url": "https://flow-solutions.com/pages/flow-ai-fida",
       "inLanguage": "ja",
-      "isPartOf": {
-        "@id": "https://flow-solutions.com/pages/flow-ai-fida#webpage"
-      },
       "mainEntity": [
         {
           "@type": "Question",
@@ -760,6 +759,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   ]
 }
 </script>
+
+
+
+
+
 {% endif %}
 
 
