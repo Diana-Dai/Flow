@@ -25,7 +25,7 @@
   .comparison-positioning__point--camera { left: 42%; top: 86px; }
   .comparison-positioning__point--counter { left: 40%; bottom: 12px; }
   .comparison-positioning__actions { display: flex; justify-content: center; gap: var(--spacing-3); margin-top: var(--spacing-6); }
-  .comparison-positioning__actions .button {padding: 18px 24px; border-radius: 8px; font-size: 1.125rem; font-weight: 700; line-height: 1.35; }
+  .comparison-positioning__actions .button { display: inline-flex; align-items: center; justify-content: center; padding: 18px 24px; border-radius: 8px; font-size: 1.125rem; font-weight: 700; line-height: 1.35; }
   .comparison-positioning__actions .button:first-child { color: #fff; background-color: rgb(var(--accent-green)) !important; }
   .comparison-positioning__actions .button--outline { color: rgb(var(--accent-green)); border-color: rgb(var(--accent-green)); }
   .comparison-positioning__actions small { display: block; margin-top: 4px; font-size: 0.7em; font-weight: 400; }
@@ -80,17 +80,17 @@
     <section class="comparison-positioning">
   <div class="comparison-positioning__chart">
     <div class="comparison-positioning__plot">
-      <span class="comparison-positioning__axis comparison-positioning__axis--top">判断・改善<br>まで</span>
-      <span class="comparison-positioning__axis comparison-positioning__axis--mid">分析・可視化<br>まで</span>
-      <span class="comparison-positioning__axis comparison-positioning__axis--low">計測のみ</span>
-      <span class="comparison-positioning__x comparison-positioning__x--left">調査・分析プロジェクト型</span>
-      <span class="comparison-positioning__x comparison-positioning__x--mid">運用のしやすさ</span>
-      <span class="comparison-positioning__x comparison-positioning__x--right">日常運用型</span>
-      <span class="comparison-positioning__point comparison-positioning__point--flow"><strong>{{ section.settings.flow_label }}</strong><span>判断支援まで<br>{{ section.settings.flow_copy }}</span></span>
-      <span class="comparison-positioning__point comparison-positioning__point--bi"><strong>BIツール</strong><span>計測なし<br>データ持ち込み前提</span></span>
-      <span class="comparison-positioning__point comparison-positioning__point--research"><strong>売場調査サービス</strong><span>深い分析・期間限定<br>例: Go Insight</span></span>
-      <span class="comparison-positioning__point comparison-positioning__point--camera"><strong>AIカメラ来店分析</strong><span>計測・可視化型<br>例: OPTiM / Vieureka / バルテック</span></span>
-      <span class="comparison-positioning__point comparison-positioning__point--counter"><strong>ピープルカウンター</strong><span>数える・常時</span></span>
+      <span class="comparison-positioning__axis comparison-positioning__axis--top">{{ section.settings.axis_top | newline_to_br }}</span>
+      <span class="comparison-positioning__axis comparison-positioning__axis--mid">{{ section.settings.axis_mid | newline_to_br }}</span>
+      <span class="comparison-positioning__axis comparison-positioning__axis--low">{{ section.settings.axis_low }}</span>
+      <span class="comparison-positioning__x comparison-positioning__x--left">{{ section.settings.x_left }}</span>
+      <span class="comparison-positioning__x comparison-positioning__x--mid">{{ section.settings.x_mid }}</span>
+      <span class="comparison-positioning__x comparison-positioning__x--right">{{ section.settings.x_right }}</span>
+      <span class="comparison-positioning__point comparison-positioning__point--flow"><strong>{{ section.settings.flow_label }}</strong><span>{{ section.settings.flow_detail | newline_to_br }}</span></span>
+      <span class="comparison-positioning__point comparison-positioning__point--bi"><strong>{{ section.settings.bi_label }}</strong><span>{{ section.settings.bi_detail | newline_to_br }}</span></span>
+      <span class="comparison-positioning__point comparison-positioning__point--research"><strong>{{ section.settings.research_label }}</strong><span>{{ section.settings.research_detail | newline_to_br }}</span></span>
+      <span class="comparison-positioning__point comparison-positioning__point--camera"><strong>{{ section.settings.camera_label }}</strong><span>{{ section.settings.camera_detail | newline_to_br }}</span></span>
+      <span class="comparison-positioning__point comparison-positioning__point--counter"><strong>{{ section.settings.counter_label }}</strong><span>{{ section.settings.counter_detail | newline_to_br }}</span></span>
     </div>
   </div>
   <div class="comparison-positioning__summary">{{ section.settings.summary }}</div>
@@ -120,7 +120,21 @@
     { "type": "richtext", "id": "content", "label": "Content", "default": "<p><strong>縦軸は「計測まで」「分析・可視化まで」「判断・改善まで」のどこまでカバーするか</strong>、横軸は<strong>日常の店舗運用にどれだけ組み込めるか</strong>。</p><p>ABEJA Insight for Retail、RetailNext（リテールネクスト）、OPTiM AI Camera、Go Insight、バルテックなどをご検討中の方は、各社が属するタイプの位置を目安にご覧ください。</p>" },
     { "type": "select", "id": "text_alignment", "label": "Text alignment", "options": [{ "value": "start", "label": "Left" }, { "value": "center", "label": "Center" }, { "value": "end", "label": "Right" }], "default": "start" },
     { "type": "text", "id": "flow_label", "label": "Flow label", "default": "店舗分析プラットフォーム" },
-    { "type": "text", "id": "flow_copy", "label": "Flow description", "default": "例: Flow / ABEJA / RetailNext" },
+    { "type": "textarea", "id": "flow_detail", "label": "Flow description", "default": "判断支援まで\n例: Flow / ABEJA / RetailNext" },
+    { "type": "text", "id": "axis_top", "label": "Top axis label", "default": "判断・改善\nまで" },
+    { "type": "text", "id": "axis_mid", "label": "Middle axis label", "default": "分析・可視化\nまで" },
+    { "type": "text", "id": "axis_low", "label": "Bottom axis label", "default": "計測のみ" },
+    { "type": "text", "id": "x_left", "label": "Left axis label", "default": "調査・分析プロジェクト型" },
+    { "type": "text", "id": "x_mid", "label": "Middle axis label", "default": "運用のしやすさ" },
+    { "type": "text", "id": "x_right", "label": "Right axis label", "default": "日常運用型" },
+    { "type": "text", "id": "bi_label", "label": "BI label", "default": "BIツール" },
+    { "type": "textarea", "id": "bi_detail", "label": "BI description", "default": "計測なし\nデータ持ち込み前提" },
+    { "type": "text", "id": "research_label", "label": "Research label", "default": "売場調査サービス" },
+    { "type": "textarea", "id": "research_detail", "label": "Research description", "default": "深い分析・期間限定\n例: Go Insight" },
+    { "type": "text", "id": "camera_label", "label": "Camera label", "default": "AIカメラ来店分析" },
+    { "type": "textarea", "id": "camera_detail", "label": "Camera description", "default": "計測・可視化型\n例: OPTiM / Vieureka / バルテック" },
+    { "type": "text", "id": "counter_label", "label": "Counter label", "default": "ピープルカウンター" },
+    { "type": "textarea", "id": "counter_detail", "label": "Counter description", "default": "数える・常時" },
     { "type": "richtext", "id": "summary", "label": "Summary", "default": "<p>Flowは<strong>「計測から判断まで」を1社でカバーする店舗分析プラットフォーム</strong>です。来店・POS・人員のデータを同じ基準で統合し、AI分析により<strong>本部と店舗が同じ数字で次の一手をスピーディーに決められます</strong>。日本の小売業に特化して<strong>2006年から積み上げてきた設計と支援体制</strong>が、Flowの強みです。</p>" },
     { "type": "text", "id": "note", "label": "Chart note", "default": "※タイプ分けは各社の公開情報をもとにした当社の整理です。" },
     { "type": "text", "id": "download_label", "label": "Download button label", "default": "資料をダウンロード" },
