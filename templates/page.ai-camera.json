@@ -987,10 +987,10 @@
             "border_color": "#ffffff",
             "show_controls": false,
             "column_size": "1",
-            "title": "計測データを、店舗改善にどう活かすか。",
+            "title": "",
             "heading_tag": "h3",
             "subheading": "",
-            "content": "<p>AIカメラで取得した滞在、導線、ゾーンデータを、売場改善やVMDにどう活用できるかをご確認ください。</p>",
+            "content": "<h2>計測データを、店舗改善にどう活かすか。</h2><p>AIカメラで取得した滞在、導線、ゾーンデータを、売場改善やVMDにどう活用できるかをご確認ください。</p>",
             "link_url": "shopify://pages/store-analytics",
             "link_text": "店内行動分析を見る →",
             "link_style": "button"
