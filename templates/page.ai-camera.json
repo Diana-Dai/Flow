@@ -113,10 +113,10 @@
             "border_color": "#10223b",
             "show_controls": false,
             "column_size": "3",
-            "title": "来店数計測",
+            "title": "来店客数（例：入口＋カウンター）",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<p>店舗入口の来店数をリアルタイムまたは約10分間隔で取得。売上や購買率と組み合わせることで、店舗成果の基準データになります。</p>",
+            "content": "<p>店舗入口の来店客数をリアルタイムまたは約10分間隔で取得し、売上・購買率分析の基準にします。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -135,10 +135,10 @@
             "border_color": "#10223b",
             "show_controls": false,
             "column_size": "3",
-            "title": "スタッフ除外",
+            "title": "スタッフ除外（名札＋マイナス）",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<p>スタッフの動きを除外し、実際の顧客来店と購買率をより正確に把握。店舗評価や接客改善に使いやすいデータを取得します。</p>",
+            "content": "<p>スタッフの動きを除外し、実際の顧客来店数と購買率をより正確に把握します。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -157,10 +157,10 @@
             "border_color": "#10223b",
             "show_controls": false,
             "column_size": "3",
-            "title": "同日リピート除外",
+            "title": "同日リピート除外（循環矢印＋マイナス）",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<p>同日の再入店や短時間の重複を抑え、来店数をより使いやすく補正。日次比較や購買率分析の精度向上に役立ちます。</p>",
+            "content": "<p>同日の再入店や短時間の重複を抑え、日次比較に使いやすい来店数へ補正します。<br/></p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -179,10 +179,10 @@
             "border_color": "#0e366a",
             "show_controls": false,
             "column_size": "3",
-            "title": "通行量・入店率分析",
+            "title": "店前通行量・入店率（店舗＋双方向矢印）",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<p>店前通行人数と来店数を比較し、入店率を可視化。店頭VMD、入口訴求、販促施策の効果検証に活用できます。</p>",
+            "content": "<p>店前通行人数と来店数を比較し、店頭VMDや販促施策の入店効果を可視化します。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -201,10 +201,10 @@
             "border_color": "#0e366a",
             "show_controls": false,
             "column_size": "3",
-            "title": "滞在・ゾーン分析",
+            "title": "滞在・ゾーン（時計＋マップピン）",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<p>売場別の滞在時間や回遊傾向を確認。どの売場に関心が集まり、どこで機会損失が起きているかを把握しやすくします。</p>",
+            "content": "<p>売場別の滞在時間や回遊傾向を確認し、関心が集まる場所と機会損失を把握します。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -223,10 +223,10 @@
             "border_color": "",
             "show_controls": false,
             "column_size": "3",
-            "title": "導線・回遊分析",
+            "title": "導線・回遊（ルート線）",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<p>店内の移動経路や回遊傾向を可視化。来店客のルートや立ち寄りエリアを把握し、レイアウトやVMDに活用できます。</p>",
+            "content": "<p>店内の移動経路や立ち寄りエリアを可視化し、レイアウトやVMD改善に活用します。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -245,10 +245,10 @@
             "border_color": "#0e366a",
             "show_controls": false,
             "column_size": "3",
-            "title": "年齢・性別の傾向",
+            "title": "年齢・性別の傾向（人物＋グラフ）",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<p>年齢・性別などの傾向を確認し、客層理解やVMD改善に活用。店舗ごとの来店客層の違いを把握しやすくします。</p>",
+            "content": "<p>個人を識別せず、年齢・性別の傾向を客層理解やVMD改善に活用します。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -267,10 +267,10 @@
             "border_color": "#0e366a",
             "show_controls": false,
             "column_size": "3",
-            "title": "売場・什器計測",
+            "title": "売場・什器計測（棚＋視線）",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<p>売場・什器ごとの滞在を確認し、VMDや商品配置の改善に活用。売場の見られ方と売上の関係を把握しやすくします。</p>",
+            "content": "<p>売場・什器ごとの通行・滞在を確認し、商品配置や什器効果を比較します。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -289,10 +289,10 @@
             "border_color": "#0e366a",
             "show_controls": false,
             "column_size": "3",
-            "title": "複数入口の一元計測",
+            "title": "複数入口の一元計測（複数の入口）",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<p>複数入口の店舗でも、入口ごとの来店データを統合して把握。大型店や百貨店インショップでも店舗全体の来店傾向を確認できます。</p>",
+            "content": "<p>入口ごとのデータを統合し、大型店や複数入口店舗の来店傾向を一元化します。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -1132,6 +1132,39 @@
         "text_color": "#11243e",
         "subheading_background_color": "",
         "subheading_text_color": ""
+      }
+    },
+    "rich_text_VX6WxA": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_DPYLE6": {
+          "type": "heading",
+          "settings": {
+            "text": "AIカメラで取得したデータを、店舗分析につなげる",
+            "heading_tag": "h1",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_PXzMzb": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>AIカメラは、店舗で起きていることを正確に取得する計測レイヤーです。来店数・店前通行量・入店率の比較は「来店客数分析」、滞在時間・導線・ゾーンの解釈は「店内行動分析」、POS・売上・人員データとの統合は「Flowプラットフォーム」で行います。</p><p>•<a href=\"https://flow-solutions.com/pages/traffic-analytics\" title=\"https://flow-solutions.com/pages/traffic-analytics\"> 来店数・店前通行量・入店率を分析</a><br/>•<a href=\"https://flow-solutions.com/pages/store-analytics\" title=\"https://flow-solutions.com/pages/store-analytics\"> 滞在・導線・ゾーンを分析</a><br/>• <a href=\"https://flow-solutions.com/pages/flow-platform-overview\" title=\"https://flow-solutions.com/pages/flow-platform-overview\">AIカメラとPOS・人員データを統合</a></p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_DPYLE6",
+        "richtext_PXzMzb"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "medium",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
       }
     },
     "multiple_images_with_text_UJG6NQ": {
@@ -2034,6 +2067,7 @@
     "multi_column_RkceNG",
     "multi_column_X7V3Yc",
     "multi_column_HCGJea",
+    "rich_text_VX6WxA",
     "multiple_images_with_text_UJG6NQ",
     "multi_column_QjMJiW",
     "media_with_text_hMPTmL",
