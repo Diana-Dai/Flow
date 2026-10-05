@@ -51,8 +51,8 @@
             "size_1": "base",
             "text_1": "店舗分析・来店計測のデモを相談する",
             "url_1": "shopify://pages/contact",
-            "background_1": "#1C4072",
-            "text_color_1": "#F9FAFB",
+            "background_1": "#1c4072",
+            "text_color_1": "#f9fafb",
             "style_2": "outline",
             "size_2": "base",
             "text_2": "小売企業の導入事例を見る",
@@ -131,7 +131,7 @@
             "footer_content_color": "#677279",
             "desktop_width_percent": 100,
             "background_color": "#f9fafb",
-            "section_padding": 40
+            "section_padding": 0
           },
           "blocks": {}
         }
@@ -822,7 +822,7 @@
         "testimonial_rdKH6M"
       ],
       "custom_css": [
-        "{padding-top: 90px;}"
+        "{padding-top: 0px;}"
       ],
       "name": "Testimonials",
       "settings": {
@@ -987,7 +987,7 @@
         "item_AKntD7"
       ],
       "custom_css": [
-        "{padding-top: 90px;}"
+        "{padding-top: 0px;}"
       ],
       "name": "Multi-column",
       "settings": {
@@ -1860,7 +1860,7 @@
         "item_PUBCj6"
       ],
       "custom_css": [
-        "{padding-top: 90px;}"
+        "{padding-top: 0px;}"
       ],
       "name": "FAQ",
       "settings": {
