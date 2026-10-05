@@ -2044,13 +2044,13 @@
             "style_1": "fill",
             "size_1": "xl",
             "text_1": "店舗に合うAIカメラ構成を相談する",
-            "url_1": "shopify://pages/contact",
+            "url_1": "https://flow-solutions.com/pages/contact",
             "background_1": "#a0b842",
             "text_color_1": "#ffffff",
             "style_2": "fill",
             "size_2": "xl",
-            "text_2": "来店客数分析を見る →",
-            "url_2": "shopify://pages/traffic-analytics",
+            "text_2": "FlowのAIカメラで計測できるデータを見る",
+            "url_2": "https://flow-solutions.com/pages/ai-camera#measurement-data",
             "background_2": "#ffffff",
             "text_color_2": "#11243e"
           }
