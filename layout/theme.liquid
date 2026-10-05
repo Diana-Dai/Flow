@@ -364,12 +364,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "Organization",
-      "@id": "https://flow-solutions.com/#organization",
-      "name": "Flow Solutions",
-      "url": "https://flow-solutions.com/"
-    },
-    {
       "@type": "WebPage",
       "@id": "https://flow-solutions.com/pages/traffic-analytics#webpage",
       "url": "https://flow-solutions.com/pages/traffic-analytics",
@@ -378,9 +372,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       "inLanguage": "ja",
       "isPartOf": {
         "@id": "https://flow-solutions.com/#website"
-      },
-      "breadcrumb": {
-        "@id": "https://flow-solutions.com/pages/traffic-analytics#breadcrumb"
       },
       "mainEntity": {
         "@id": "https://flow-solutions.com/pages/traffic-analytics#service"
@@ -392,34 +383,65 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       "name": "Flow 来店計測・来店分析",
       "serviceType": "来店計測・来店分析",
       "url": "https://flow-solutions.com/pages/traffic-analytics",
-      "description": "来店客数、店前通行量、入店率、属性・滞在傾向を可視化し、時間帯別の来店分析によって販促・VMD・人員配置・購買率の改善判断を支援する小売店舗向け来店計測サービス。",
+      "description": "Flowの来店計測ツールは、来店客数、店前通行量、入店率、属性・滞在傾向を可視化。時間帯別の来店分析により、販促・VMD・人員配置・購買率の改善判断を支援します。",
       "provider": {
-        "@id": "https://flow-solutions.com/#organization"
+        "@type": "Organization",
+        "name": "株式会社Flow Solutions",
+        "url": "https://flow-solutions.com/"
       },
       "areaServed": {
         "@type": "Country",
-        "name": "JP"
-      },
-      "audience": {
-        "@type": "BusinessAudience",
-        "audienceType": "小売・店舗運営企業"
+        "name": "日本"
       }
     },
     {
-      "@type": "BreadcrumbList",
-      "@id": "https://flow-solutions.com/pages/traffic-analytics#breadcrumb",
-      "itemListElement": [
+      "@type": "FAQPage",
+      "@id": "https://flow-solutions.com/pages/traffic-analytics#faq",
+      "url": "https://flow-solutions.com/pages/traffic-analytics",
+      "inLanguage": "ja",
+      "isPartOf": {
+        "@id": "https://flow-solutions.com/pages/traffic-analytics#webpage"
+      },
+      "mainEntity": [
         {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "ホーム",
-          "item": "https://flow-solutions.com/"
+          "@type": "Question",
+          "name": "店前通行量と来店客数の違いは何ですか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "店前通行量は店舗の前を通過した人数、来店客数は実際に店舗へ入店した人数を指します。この2つを比較することで、店前の通行量がどの程度入店につながっているかを把握できます。"
+          }
         },
         {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "来店客数分析",
-          "item": "https://flow-solutions.com/pages/traffic-analytics"
+          "@type": "Question",
+          "name": "入店率はどのように計算しますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "入店率は基本的に「来店客数 ÷ 店前通行量 × 100」で算出します。店舗間や期間を比較する際は、計測範囲や営業時間などの条件をそろえることが重要です。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "POSデータを連携していなくても始められますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "はい。店前通行量、来店客数、入店率の可視化から始められます。POSデータを連携すると、購買率や売上との関係も確認できます。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "既存のカメラや人数カウンターのデータは活用できますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "機器の仕様や接続方法によって異なります。現在の設置環境や取得データを確認したうえで、既存機器を活用できるか、必要な構成をご提案します。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "時間帯別・曜日別・店舗別に比較できますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "はい。来店客数、店前通行量、入店率などを時間帯、曜日、期間、店舗別に整理でき、店舗ごとのピーク時間帯や傾向を比較できます。"
+          }
         }
       ]
     }
