@@ -35,7 +35,7 @@
         "richtext_HwhtPj": {
           "type": "richtext",
           "settings": {
-            "content": "<p><br/>人数を数えるだけでは、店舗改善にはつながりません。Flowは、来店数・店前通行量・入店率・滞在時間・導線を計測し、購買率・人員配置・VMD改善に活用できる店舗データに整えます。<br/></p>"
+            "content": "<p>人数を数えるだけでは、店舗改善にはつながりません。Flowは、来店数・店前通行量・入店率・滞在時間・導線を計測し、購買率・人員配置・VMD改善に活用できる店舗データに整えます。</p>"
           }
         },
         "button_7Prq3W": {
@@ -742,7 +742,7 @@
         "full_width": true,
         "image": "shopify://shop_images/Lifestyle_Hotspots_3.png",
         "mobile_image": "shopify://shop_images/Mobile_Hotspot.png",
-        "title": "店舗向けAIカメラによる店内計測の例   人数カウントカメラを選ぶときの比較ポイント",
+        "title": "店舗向けAIカメラによる店内計測の例",
         "content": "",
         "button_text": "",
         "button_url": "",
@@ -775,7 +775,7 @@
         "liquid_APqXFc": {
           "type": "liquid",
           "settings": {
-            "liquid": "<h2 class=\"h2\"><b>来店数だけでなく、<br>店舗改善に必要な行動データまで。</b>\n</h2>"
+            "liquid": "<h2 class=\"h2\"><b>人数カウントカメラを選ぶときの比較ポイント\n</h2>"
           }
         },
         "heading_tEJbnj": {
@@ -987,7 +987,7 @@
             "border_color": "#ffffff",
             "show_controls": false,
             "column_size": "1",
-            "title": "計測データを、店舗改善にどう活かすか。",
+            "title": "店舗向けAIカメラの計測精度と品質管理",
             "heading_tag": "h3",
             "subheading": "",
             "content": "<p>AIカメラで取得した滞在、導線、ゾーンデータを、売場改善やVMDにどう活用できるかをご確認ください。</p>",
@@ -1125,7 +1125,7 @@
         "gap": "medium",
         "text_alignment": "start",
         "subheading": "精度と計測品質",
-        "title": "店舗向けAIカメラの計測精度と品質管理",
+        "title": "映像を常時保存しないプライバシー設計",
         "content": "<h6>Flow AIカメラは、入口幅、天井高、照明、混雑状況、スタッフ動線などを確認し、店舗環境に合わせて計測条件を設計します。導入後も必要に応じて設定を調整し、店舗間・期間間で比較しやすい一貫したデータ取得を支援します。</h6>",
         "background": "",
         "background_gradient": "",
@@ -1144,7 +1144,7 @@
             "image_rotation_degrees": -2,
             "subheading": "システム構成",
             "title": "",
-            "content": "<h3>既存ネットワークを活用し、<br/>Flowへ安全に接続。</h3><h5>AIカメラはPoEスイッチを通じて店舗ネットワークに接続し、計測データを暗号化通信でFlowのクラウド環境へ送信します。お客様のネットワーク環境を確認したうえで、適切な接続方法を設計します。</h5><p><br/><strong>接続状況とデータ取得を継続確認<br/></strong>Flowは、カメラの接続状況やデータの受信状態を継続的に確認し、計測システムが正常に稼働しているかをチェックします。異常を検知した場合は、サポートチームが対応します。</p>",
+            "content": "<h2>AIカメラの導入・設置の流れ。</h2><h5>AIカメラはPoEスイッチを通じて店舗ネットワークに接続し、計測データを暗号化通信でFlowのクラウド環境へ送信します。お客様のネットワーク環境を確認したうえで、適切な接続方法を設計します。</h5><p><br/><strong>接続状況とデータ取得を継続確認<br/></strong>Flowは、カメラの接続状況やデータの受信状態を継続的に確認し、計測システムが正常に稼働しているかをチェックします。異常を検知した場合は、サポートチームが対応します。</p>",
             "button_url": "",
             "button_text": ""
           }
@@ -1275,7 +1275,7 @@
             "icon_width": 48,
             "subheading": "プライバシーとデータ保護",
             "title": "",
-            "content": "<h2>映像を常時保存しないプライバシー設計</h2><p>Flow AIカメラは、店内映像を継続的に保存する監視カメラではありません。来店数、滞在時間、導線、属性傾向などを分析用データへ変換し、Flowダッシュボードで確認できる形で提供します。</p><p>精度確認や設定調整のために確認用映像を使用する場合は、目的を限定して一時的に取り扱い、確認期間終了後に削除します。</p><p></p><ul><li><strong>映像は常時保存しない</strong></li><li><strong>個人を識別しない</strong></li><li><strong>属性は傾向で集計</strong></li><li><strong>確認映像は一時利用</strong></li></ul><p></p>",
+            "content": "<h2>AIカメラの計測データを店舗分析につなげる</h2><p>Flow AIカメラは、店内映像を継続的に保存する監視カメラではありません。来店数、滞在時間、導線、属性傾向などを分析用データへ変換し、Flowダッシュボードで確認できる形で提供します。</p><p>精度確認や設定調整のために確認用映像を使用する場合は、目的を限定して一時的に取り扱い、確認期間終了後に削除します。</p><p></p><ul><li><strong>映像は常時保存しない</strong></li><li><strong>個人を識別しない</strong></li><li><strong>属性は傾向で集計</strong></li><li><strong>確認映像は一時利用</strong></li></ul><p></p>",
             "link_text": "セキュリティ対策を見る →",
             "link_url": "shopify://pages/platform-security-reliability",
             "background": "",
@@ -1387,7 +1387,7 @@
         "gap": "medium",
         "text_alignment": "center",
         "subheading": "導入・設置",
-        "title": "AIカメラの導入・設置の流れ",
+        "title": "店舗向けAIカメラのよくある質問",
         "content": "<p>Flowは、店舗環境を確認したうえで、設置方法と導入スケジュールを設計します。入口形状、天井高、ネットワーク環境、電源、POS連携の有無を確認し、営業時間外の設置や段階導入にも対応します。店舗運営への負担を抑えながら、来店計測と分析活用を始められるよう支援します。</p>",
         "background": "#ffffff",
         "background_gradient": "",
@@ -1505,7 +1505,7 @@
         "gap": "medium",
         "text_alignment": "start",
         "subheading": "店舗改善への活用",
-        "title": "AIカメラの計測データを店舗分析につなげる",
+        "title": "店舗に合うAIカメラ構成を相談",
         "content": "<h6>Flow AIカメラで取得した来店数、通行量、滞在時間、店内行動データを、売上や人員データと組み合わせ、購買率、VMD、人員配置、施策効果の改善に活用できます。</h6>",
         "background": "",
         "background_gradient": "",
