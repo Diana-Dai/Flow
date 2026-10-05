@@ -437,7 +437,7 @@
         "text_alignment": "start",
         "subheading": "",
         "title": "",
-        "content": "<h2>計測目的に合わせたAIカメラの設置構成</h2><p>入口、店前、店内では、計測目的やカメラの設置方法が異なります。Flowは必要なデータと店舗環境を確認し、最適な構成を提案します。</p><h5><strong>広い入口や複数入口にも、店舗ごとに設計して対応。</strong></h5>",
+        "content": "<h2>計測目的に合わせたAIカメラの設置構成</h2><p>入口、店前、店内では、計測目的やカメラの設置方法が異なります。Flowは必要なデータと店舗環境を確認し、最適な構成を提案します。</p><h3><strong>広い入口や複数入口にも、店舗ごとに設計して対応。</strong></h3>",
         "background": "",
         "background_gradient": "",
         "text_color": "",
@@ -1415,7 +1415,7 @@
             "title": "来店・購買率",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<h5>来店数と売上を組み合わせ、購買率の変化を把握します。</h5>",
+            "content": "<p>来店数と売上を組み合わせ、購買率の変化を把握します。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -1437,7 +1437,7 @@
             "title": "滞在・VMD改善",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<h5>売場ごとの通行量や滞在を確認し、VMD改善に活用します。</h5>",
+            "content": "<p>売場ごとの通行量や滞在を確認し、VMD改善に活用します。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -1459,7 +1459,7 @@
             "title": "人員配置",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<h5>来店ピークと人員配置のズレを把握し、シフト改善に活用します。</h5>",
+            "content": "<p>来店ピークと人員配置のズレを把握し、シフト改善に活用します。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -1481,7 +1481,7 @@
             "title": "施策効果",
             "heading_tag": "h4",
             "subheading": "",
-            "content": "<h5>店頭施策や販促前後の変化を比較し、効果を確認します。</h5>",
+            "content": "<p>店頭施策や販促前後の変化を比較し、効果を確認します。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
