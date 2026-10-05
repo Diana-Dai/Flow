@@ -1141,6 +1141,125 @@
         "subheading_text_color": ""
       }
     },
+    "blocks_8Hiddj": {
+      "type": "_blocks",
+      "blocks": {
+        "heading_YdYGMe": {
+          "type": "heading",
+          "name": "Heading",
+          "settings": {
+            "text": "FAQs",
+            "size": "h1",
+            "html_tag": "p",
+            "text_color": "",
+            "gradient": ""
+          },
+          "blocks": {}
+        },
+        "ai_gen_block_0c78d27_QTqypr": {
+          "type": "ai_gen_block_0c78d27",
+          "settings": {
+            "category": "",
+            "question": "店前通行量と来店客数の違いは何ですか？",
+            "answer": "店前通行量は店舗の前を通った人数、来店客数は実際に店舗へ入った人数です。2つを比較することで、店舗前の通行をどの程度入店につなげられているかを確認できます。",
+            "default_open": false,
+            "icon_type": "clock",
+            "icon_background_color": "#f0f4e8",
+            "icon_color": "#6b7c3a",
+            "category_color": "#6b7c3a",
+            "question_color": "#0f172a",
+            "answer_color": "#475569",
+            "chevron_color": "#64748b"
+          },
+          "blocks": {}
+        },
+        "ai_gen_block_0c78d27_8EFe8M": {
+          "type": "ai_gen_block_0c78d27",
+          "settings": {
+            "category": "",
+            "question": "入店率はどのように算出しますか？",
+            "answer": "入店率は、基本的に「来店客数÷店前通行量×100」で算出します。店舗や期間を比較するときは、計測範囲や営業時間などの条件をそろえることが重要です。",
+            "default_open": false,
+            "icon_type": "clock",
+            "icon_background_color": "#f0f4e8",
+            "icon_color": "#6b7c3a",
+            "category_color": "#6b7c3a",
+            "question_color": "#0f172a",
+            "answer_color": "#475569",
+            "chevron_color": "#64748b"
+          },
+          "blocks": {}
+        },
+        "ai_gen_block_0c78d27_heMtEJ": {
+          "type": "ai_gen_block_0c78d27",
+          "settings": {
+            "category": "",
+            "question": "POSデータを連携していなくても始められますか？",
+            "answer": "はい。まずは店前通行量、来店客数、入店率の可視化から開始できます。POSデータを連携すると、購買率や売上との関係まで確認できるようになります。",
+            "default_open": false,
+            "icon_type": "clock",
+            "icon_background_color": "#f0f4e8",
+            "icon_color": "#6b7c3a",
+            "category_color": "#6b7c3a",
+            "question_color": "#0f172a",
+            "answer_color": "#475569",
+            "chevron_color": "#64748b"
+          },
+          "blocks": {}
+        },
+        "ai_gen_block_0c78d27_RUqjUa": {
+          "type": "ai_gen_block_0c78d27",
+          "settings": {
+            "category": "",
+            "question": "既存のカメラや人数カウンターのデータを利用できますか？",
+            "answer": "機器の仕様や接続方法によって異なります。現在の設置環境と取得データを確認し、既存機器の活用可否や必要な構成をご提案します。",
+            "default_open": false,
+            "icon_type": "clock",
+            "icon_background_color": "#f0f4e8",
+            "icon_color": "#6b7c3a",
+            "category_color": "#6b7c3a",
+            "question_color": "#0f172a",
+            "answer_color": "#475569",
+            "chevron_color": "#64748b"
+          },
+          "blocks": {}
+        },
+        "ai_gen_block_0c78d27_tBzipg": {
+          "type": "ai_gen_block_0c78d27",
+          "settings": {
+            "category": "",
+            "question": "時間帯・曜日・店舗別に比較できますか？",
+            "answer": "はい。来店客数、店前通行量、入店率などを時間帯、曜日、期間、店舗別に整理し、来店ピークや店舗ごとの傾向を比較できます。",
+            "default_open": false,
+            "icon_type": "clock",
+            "icon_background_color": "#f0f4e8",
+            "icon_color": "#6b7c3a",
+            "category_color": "#6b7c3a",
+            "question_color": "#0f172a",
+            "answer_color": "#475569",
+            "chevron_color": "#64748b"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "heading_YdYGMe",
+        "ai_gen_block_0c78d27_QTqypr",
+        "ai_gen_block_0c78d27_8EFe8M",
+        "ai_gen_block_0c78d27_heMtEJ",
+        "ai_gen_block_0c78d27_RUqjUa",
+        "ai_gen_block_0c78d27_tBzipg"
+      ],
+      "name": "FAQ accordion item",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
     "rich_text_6VmVgb": {
       "type": "rich-text",
       "blocks": {
@@ -1236,6 +1355,7 @@
     "section-15",
     "media_with_text_mRGejd",
     "multi_column_x6bKQU",
+    "blocks_8Hiddj",
     "rich_text_6VmVgb"
   ]
 }
