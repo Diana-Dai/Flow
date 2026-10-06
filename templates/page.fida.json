@@ -1017,9 +1017,7 @@
         "item_JNXpBU",
         "item_i7MVpi"
       ],
-      "custom_css": [
-        "{padding-bottom: 0px;}"
-      ],
+      "custom_css": [],
       "name": "Multi-column",
       "settings": {
         "full_width": true,
@@ -1034,6 +1032,34 @@
         "text_color": "",
         "subheading_background_color": "#11243e",
         "subheading_text_color": "#ffffff"
+      }
+    },
+    "rich_text_q4qkpV": {
+      "type": "rich-text",
+      "blocks": {
+        "button_cK6Y8M": {
+          "type": "button",
+          "settings": {
+            "style": "fill",
+            "size": "xl",
+            "text": "Flowの店舗分析システム全体を見る",
+            "url": "https://flow-solutions.com/pages/flow-platform-overview",
+            "background": "",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "button_cK6Y8M"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
       }
     },
     "rich_text_peMmaV": {
@@ -1211,6 +1237,34 @@
         "text_color": "",
         "subheading_background_color": "#11243e",
         "subheading_text_color": "#ffffff"
+      }
+    },
+    "rich_text_HtgQLe": {
+      "type": "rich-text",
+      "blocks": {
+        "button_7iLmMr": {
+          "type": "button",
+          "settings": {
+            "style": "fill",
+            "size": "xl",
+            "text": "Flow AIで店舗判断を標準化する方法を見る",
+            "url": "https://flow-solutions.com/pages/standardize-store-decisions",
+            "background": "",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "button_7iLmMr"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
       }
     },
     "blocks_4YeEQJ": {
@@ -2104,8 +2158,10 @@
     "178047465242fd23a6",
     "multi_column_Rqk3xG",
     "multi_column_rPwdDt",
+    "rich_text_q4qkpV",
     "rich_text_peMmaV",
     "multi_column_HCGJea",
+    "rich_text_HtgQLe",
     "blocks_4YeEQJ",
     "blocks_rwYEMm",
     "blocks_nwzRNT",
