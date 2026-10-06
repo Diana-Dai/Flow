@@ -99,7 +99,7 @@
   }
 
   .ai-saas-presentation__headline-{{ ai_gen_id }} {
-    font-size: {{ block.settings.headline_size_mobile }}px;
+    font-size: max(16px, {{ block.settings.headline_size_mobile }}px);
     font-weight: 500;
     line-height: 1.1;
     letter-spacing: -0.02em;
@@ -110,12 +110,12 @@
 
   @media screen and (min-width: 750px) {
     .ai-saas-presentation__headline-{{ ai_gen_id }} {
-      font-size: {{ block.settings.headline_size_desktop }}px;
+      font-size: max(16px, {{ block.settings.headline_size_desktop }}px);
     }
   }
 
   .ai-saas-presentation__description-{{ ai_gen_id }} {
-    font-size: {{ block.settings.description_size }}px;
+    font-size: max(16px, {{ block.settings.description_size }}px);
     line-height: 1.6;
     color: {{ block.settings.description_color }};
     margin: 0;
@@ -159,7 +159,7 @@
   }
 
   .ai-saas-presentation__feature-title-{{ ai_gen_id }} {
-    font-size: {{ block.settings.feature_title_size }}px;
+    font-size: max(16px, {{ block.settings.feature_title_size }}px);
     font-weight: 600;
     color: {{ block.settings.feature_title_color }};
     margin: 0 0 6px 0;
@@ -167,7 +167,7 @@
   }
 
   .ai-saas-presentation__feature-text-{{ ai_gen_id }} {
-    font-size: {{ block.settings.feature_text_size }}px;
+    font-size: max(16px, {{ block.settings.feature_text_size }}px);
     line-height: 1.5;
     color: {{ block.settings.feature_text_color }};
     margin: 0;
@@ -193,7 +193,7 @@
   }
 
   .ai-saas-presentation__card-title-{{ ai_gen_id }} {
-    font-size: {{ block.settings.card_title_size }}px;
+    font-size: max(16px, {{ block.settings.card_title_size }}px);
     font-weight: 600;
     color: {{ block.settings.card_title_color }};
     margin: 0 0 24px 0;
@@ -217,7 +217,7 @@
   }
 
   .ai-saas-presentation__status-question-{{ ai_gen_id }} {
-    font-size: {{ block.settings.status_name_size }}px;
+    font-size: max(16px, {{ block.settings.status_name_size }}px);
     font-weight: 700;
     color: {{ block.settings.status_name_color }};
     margin: 0 0 14px;
@@ -235,7 +235,7 @@
   }
 
   .ai-saas-presentation__field-label-{{ ai_gen_id }} {
-    font-size: {{ block.settings.field_label_size }}px;
+    font-size: max(16px, {{ block.settings.field_label_size }}px);
     font-weight: 700;
     color: {{ block.settings.field_label_color }};
     margin: 0 0 4px;
@@ -244,7 +244,7 @@
   }
 
   .ai-saas-presentation__field-text-{{ ai_gen_id }} {
-    font-size: {{ block.settings.answer_text_size }}px;
+    font-size: max(16px, {{ block.settings.answer_text_size }}px);
     color: {{ block.settings.answer_text_color }};
     margin: 0;
     line-height: 1.75;
@@ -257,7 +257,7 @@
     border-left: 3px solid {{ block.settings.field_label_color }};
     background: #f4f6f8;
     border-radius: 8px;
-    font-size: {{ block.settings.answer_text_size }}px;
+    font-size: max(16px, {{ block.settings.answer_text_size }}px);
     line-height: 1.75;
     color: {{ block.settings.status_name_color }};
     overflow-wrap: break-word;
@@ -292,7 +292,7 @@
   }
 
   .ai-saas-presentation__banner-label-{{ ai_gen_id }} {
-    font-size: {{ block.settings.banner_label_size }}px;
+    font-size: max(16px, {{ block.settings.banner_label_size }}px);
     font-weight: 500;
     color: {{ block.settings.banner_label_color }};
     margin: 0;
@@ -301,14 +301,14 @@
   }
 
   .ai-saas-presentation__banner-message-{{ ai_gen_id }} {
-    font-size: {{ block.settings.banner_message_size }}px;
+    font-size: max(16px, {{ block.settings.banner_message_size }}px);
     font-weight: 600;
     color: {{ block.settings.banner_message_color }};
     margin: 0;
   }
 
   .ai-saas-presentation__banner-meta-{{ ai_gen_id }} {
-    font-size: {{ block.settings.banner_meta_size }}px;
+    font-size: max(16px, {{ block.settings.banner_meta_size }}px);
     color: {{ block.settings.banner_meta_color }};
     margin: 0;
   }
@@ -543,7 +543,7 @@
       "type": "range",
       "id": "description_size",
       "label": "Size",
-      "min": 14,
+      "min": 16,
       "max": 24,
       "step": 1,
       "unit": "px",
@@ -649,7 +649,7 @@
       "type": "range",
       "id": "feature_title_size",
       "label": "Title size",
-      "min": 14,
+      "min": 16,
       "max": 24,
       "step": 1,
       "unit": "px",
@@ -665,11 +665,11 @@
       "type": "range",
       "id": "feature_text_size",
       "label": "Text size",
-      "min": 12,
-      "max": 18,
+      "min": 16,
+      "max": 22,
       "step": 1,
       "unit": "px",
-      "default": 14
+      "default": 16
     },
     {
       "type": "color",
@@ -909,7 +909,7 @@
       "type": "range",
       "id": "status_name_size",
       "label": "Question size",
-      "min": 14,
+      "min": 16,
       "max": 24,
       "step": 1,
       "unit": "px",
@@ -925,11 +925,11 @@
       "type": "range",
       "id": "field_label_size",
       "label": "Label size",
-      "min": 11,
-      "max": 16,
+      "min": 16,
+      "max": 22,
       "step": 1,
       "unit": "px",
-      "default": 12
+      "default": 16
     },
     {
       "type": "color",
@@ -941,11 +941,11 @@
       "type": "range",
       "id": "answer_text_size",
       "label": "Body size",
-      "min": 13,
-      "max": 18,
+      "min": 16,
+      "max": 22,
       "step": 1,
       "unit": "px",
-      "default": 15
+      "default": 16
     },
     {
       "type": "color",
@@ -1001,11 +1001,11 @@
       "type": "range",
       "id": "banner_label_size",
       "label": "Label size",
-      "min": 10,
-      "max": 16,
+      "min": 16,
+      "max": 22,
       "step": 1,
       "unit": "px",
-      "default": 11
+      "default": 16
     },
     {
       "type": "color",
@@ -1017,11 +1017,11 @@
       "type": "range",
       "id": "banner_message_size",
       "label": "Message size",
-      "min": 13,
-      "max": 20,
+      "min": 16,
+      "max": 22,
       "step": 1,
       "unit": "px",
-      "default": 15
+      "default": 16
     },
     {
       "type": "color",
@@ -1033,11 +1033,11 @@
       "type": "range",
       "id": "banner_meta_size",
       "label": "Meta size",
-      "min": 11,
-      "max": 16,
+      "min": 16,
+      "max": 22,
       "step": 1,
       "unit": "px",
-      "default": 13
+      "default": 16
     },
     {
       "type": "color",
