@@ -190,7 +190,6 @@
     .ai-saas-presentation__card-{{ ai_gen_id }} {
       padding: 16px;
     }
-
   }
 
   .ai-saas-presentation__card-title-{{ ai_gen_id }} {
@@ -203,77 +202,65 @@
   .ai-saas-presentation__status-list-{{ ai_gen_id }} {
     display: flex;
     flex-direction: column;
+    align-items: stretch;
     gap: 12px;
   }
 
   .ai-saas-presentation__status-item-{{ ai_gen_id }} {
     background-color: {{ block.settings.status_item_background }};
     border-radius: {{ block.settings.status_item_radius }}px;
-    padding: 16px 20px;
-    display: grid;
-    grid-template-columns: 1fr auto;
-    gap: 12px;
-    align-items: center;
-  }
-  @media (max-width: 768px) {
-  .ai-saas-presentation__status-item-{{ ai_gen_id }} {
-      display: block;
-    }
-  }
-
-  .ai-saas-presentation__status-left-{{ ai_gen_id }} {
+    padding: 18px 18px 16px;
     display: flex;
     flex-direction: column;
-    gap: 4px;
+    align-items: stretch;
+    text-align: left;
   }
 
-  .ai-saas-presentation__status-name-{{ ai_gen_id }} {
+  .ai-saas-presentation__status-question-{{ ai_gen_id }} {
     font-size: {{ block.settings.status_name_size }}px;
-    font-weight: 600;
+    font-weight: 700;
     color: {{ block.settings.status_name_color }};
+    margin: 0 0 14px;
+    line-height: 1.55;
+    overflow-wrap: break-word;
+  }
+
+  .ai-saas-presentation__field-{{ ai_gen_id }} {
+    width: 100%;
+    margin: 0 0 12px;
+  }
+
+  .ai-saas-presentation__field-{{ ai_gen_id }}:last-child {
+    margin-bottom: 0;
+  }
+
+  .ai-saas-presentation__field-label-{{ ai_gen_id }} {
+    font-size: {{ block.settings.field_label_size }}px;
+    font-weight: 700;
+    color: {{ block.settings.field_label_color }};
+    margin: 0 0 4px;
+    line-height: 1.4;
+    letter-spacing: 0.02em;
+  }
+
+  .ai-saas-presentation__field-text-{{ ai_gen_id }} {
+    font-size: {{ block.settings.answer_text_size }}px;
+    color: {{ block.settings.answer_text_color }};
     margin: 0;
+    line-height: 1.75;
+    overflow-wrap: break-word;
   }
 
-  .ai-saas-presentation__status-update-{{ ai_gen_id }} {
-    font-size: {{ block.settings.status_meta_size }}px;
-    color: {{ block.settings.status_meta_color }};
-    margin: 0;
-  }
-
-  .ai-saas-presentation__status-right-{{ ai_gen_id }} {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    gap: 4px;
-  }
-
-  .ai-saas-presentation__status-badge-{{ ai_gen_id }} {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-  }
-
-  .ai-saas-presentation__status-indicator-{{ ai_gen_id }} {
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background-color: {{ block.settings.status_healthy_color }};
-  }
-
-  .ai-saas-presentation__status-label-{{ ai_gen_id }} {
-    font-size: {{ block.settings.status_label_size }}px;
-    font-weight: 600;
-    color: {{ block.settings.status_healthy_color }};
-    margin: 0;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-  }
-
-  .ai-saas-presentation__status-cadence-{{ ai_gen_id }} {
-    font-size: {{ block.settings.status_meta_size }}px;
-    color: {{ block.settings.status_meta_color }};
-    margin: 0;
-    text-align: right;
+  .ai-saas-presentation__example-note-{{ ai_gen_id }} {
+    margin: 16px 0 0;
+    padding: 14px 14px 14px 16px;
+    border-left: 3px solid {{ block.settings.field_label_color }};
+    background: #f4f6f8;
+    border-radius: 8px;
+    font-size: {{ block.settings.answer_text_size }}px;
+    line-height: 1.75;
+    color: {{ block.settings.status_name_color }};
+    overflow-wrap: break-word;
   }
 
   .ai-saas-presentation__system-banner-{{ ai_gen_id }} {
@@ -381,43 +368,57 @@
         {% endif %}
 
         <div class="ai-saas-presentation__status-list-{{ ai_gen_id }}">
-          {% for i in (1..4) %}
-            {% assign status_name_key = 'status_' | append: i | append: '_name' %}
-            {% assign status_update_key = 'status_' | append: i | append: '_update' %}
-            {% assign status_cadence_key = 'status_' | append: i | append: '_cadence' %}
-            {% assign status_name = block.settings[status_name_key] %}
-            {% assign status_update = block.settings[status_update_key] %}
-            {% assign status_cadence = block.settings[status_cadence_key] %}
+          {% assign card_count = block.settings.card_count | plus: 0 %}
+          {% for i in (1..6) %}
+            {% if i <= card_count %}
+              {% assign card_question_key = 'card_' | append: i | append: '_question' %}
+              {% assign card_data_key = 'card_' | append: i | append: '_data' %}
+              {% assign card_answer_key = 'card_' | append: i | append: '_answer' %}
+              {% assign card_question = block.settings[card_question_key] %}
+              {% assign card_data = block.settings[card_data_key] %}
+              {% assign card_answer = block.settings[card_answer_key] %}
 
-            {% if status_name != blank %}
-              <div class="ai-saas-presentation__status-item-{{ ai_gen_id }}">
-                <div class="ai-saas-presentation__status-left-{{ ai_gen_id }}">
-                  <p class="ai-saas-presentation__status-name-{{ ai_gen_id }}">
-                    {{ status_name }}
-                  </p>
-                  {% if status_update != blank %}
-                    <p class="ai-saas-presentation__status-update-{{ ai_gen_id }}">
-                      {{ status_update }}
-                    </p>
+              {% if card_question != blank or card_data != blank or card_answer != blank %}
+                <article class="ai-saas-presentation__status-item-{{ ai_gen_id }}">
+                  {% if card_question != blank %}
+                    <h4 class="ai-saas-presentation__status-question-{{ ai_gen_id }}">
+                      {{ card_question }}
+                    </h4>
                   {% endif %}
-                </div>
-                <div class="ai-saas-presentation__status-right-{{ ai_gen_id }}">
-                  <div class="ai-saas-presentation__status-badge-{{ ai_gen_id }}">
-                    <span class="ai-saas-presentation__status-indicator-{{ ai_gen_id }}"></span>
-                    <p class="ai-saas-presentation__status-label-{{ ai_gen_id }}">
-                      {{ block.settings.status_label }}
-                    </p>
-                  </div>
-                  {% if status_cadence != blank %}
-                    <p class="ai-saas-presentation__status-cadence-{{ ai_gen_id }}">
-                      {{ status_cadence }}
-                    </p>
+                  {% if card_data != blank %}
+                    <div class="ai-saas-presentation__field-{{ ai_gen_id }}">
+                      {% if block.settings.data_label != blank %}
+                        <p class="ai-saas-presentation__field-label-{{ ai_gen_id }}">
+                          {{ block.settings.data_label }}
+                        </p>
+                      {% endif %}
+                      <p class="ai-saas-presentation__field-text-{{ ai_gen_id }}">
+                        {{ card_data }}
+                      </p>
+                    </div>
                   {% endif %}
-                </div>
-              </div>
+                  {% if card_answer != blank %}
+                    <div class="ai-saas-presentation__field-{{ ai_gen_id }}">
+                      {% if block.settings.answer_label != blank %}
+                        <p class="ai-saas-presentation__field-label-{{ ai_gen_id }}">
+                          {{ block.settings.answer_label }}
+                        </p>
+                      {% endif %}
+                      <p class="ai-saas-presentation__field-text-{{ ai_gen_id }}">
+                        {{ card_answer }}
+                      </p>
+                    </div>
+                  {% endif %}
+                </article>
+              {% endif %}
             {% endif %}
           {% endfor %}
         </div>
+        {% if block.settings.example_note != blank %}
+          <p class="ai-saas-presentation__example-note-{{ ai_gen_id }}">
+            {{ block.settings.example_note }}
+          </p>
+        {% endif %}
       </div>
 
       <div class="ai-saas-presentation__system-banner-{{ ai_gen_id }}">
@@ -681,10 +682,38 @@
       "content": "Status card"
     },
     {
+      "type": "range",
+      "id": "card_count",
+      "label": "Visible cards",
+      "min": 1,
+      "max": 6,
+      "step": 1,
+      "default": 3,
+      "info": "Raise to add a card, lower to remove the last card. Card text stays saved."
+    },
+    {
       "type": "text",
       "id": "card_title",
       "label": "Card title",
-      "default": "Integration Health Status"
+      "default": "小売AI「Flow AI」の店舗別活用例"
+    },
+    {
+      "type": "text",
+      "id": "data_label",
+      "label": "Data label",
+      "default": "参照データ:"
+    },
+    {
+      "type": "text",
+      "id": "answer_label",
+      "label": "Answer label",
+      "default": "回答表示例:"
+    },
+    {
+      "type": "textarea",
+      "id": "example_note",
+      "label": "Note",
+      "default": "上記はFlow AIの回答イメージです。実際に参照できる情報と提案内容は、連携データ、設定、権限、登録されたSOPや社内資料によって異なります。"
     },
     {
       "type": "range",
@@ -735,101 +764,136 @@
     },
     {
       "type": "header",
-      "content": "Status 1"
+      "content": "Card 1"
     },
     {
-      "type": "text",
-      "id": "status_1_name",
-      "label": "Name",
-      "default": "POS Sales Data"
+      "type": "textarea",
+      "id": "card_1_question",
+      "label": "Question",
+      "default": "店長｜今日、優先して改善すべきKPIと時間帯は？"
     },
     {
-      "type": "text",
-      "id": "status_1_update",
-      "label": "Last update",
-      "default": "2 minutes ago"
+      "type": "textarea",
+      "id": "card_1_data",
+      "label": "参照データ",
+      "default": "売上・予算・来店数・購買率・スタッフ配置・店舗メモ"
     },
     {
-      "type": "text",
-      "id": "status_1_cadence",
-      "label": "Cadence",
-      "default": "Daily refresh"
-    },
-    {
-      "type": "header",
-      "content": "Status 2"
-    },
-    {
-      "type": "text",
-      "id": "status_2_name",
-      "label": "Name",
-      "default": "Traffic Counting"
-    },
-    {
-      "type": "text",
-      "id": "status_2_update",
-      "label": "Last update",
-      "default": "Real-time"
-    },
-    {
-      "type": "text",
-      "id": "status_2_cadence",
-      "label": "Cadence",
-      "default": "15-minute intervals"
+      "type": "textarea",
+      "id": "card_1_answer",
+      "label": "回答表示例",
+      "default": "設定した比較期間と比べて来店数は維持していますが、午後の購買率が低下しています。スタッフ配置と店舗メモを確認し、同時間帯の接客体制の見直しを検討してください。"
     },
     {
       "type": "header",
-      "content": "Status 3"
+      "content": "Card 2"
     },
     {
-      "type": "text",
-      "id": "status_3_name",
-      "label": "Name",
-      "default": "Staffing Schedules"
+      "type": "textarea",
+      "id": "card_2_question",
+      "label": "Question",
+      "default": "エリアマネージャー｜今週、優先して確認すべき店舗は？"
     },
     {
-      "type": "text",
-      "id": "status_3_update",
-      "label": "Last update",
-      "default": "1 hour ago"
+      "type": "textarea",
+      "id": "card_2_data",
+      "label": "参照データ",
+      "default": "店舗別KPI・予算進捗・Pulse・店舗報告・対応履歴"
     },
     {
-      "type": "text",
-      "id": "status_3_cadence",
-      "label": "Cadence",
-      "default": "Weekly refresh"
-    },
-    {
-      "type": "header",
-      "content": "Status 4"
-    },
-    {
-      "type": "text",
-      "id": "status_4_name",
-      "label": "Name",
-      "default": "Weather Data"
-    },
-    {
-      "type": "text",
-      "id": "status_4_update",
-      "label": "Last update",
-      "default": "15 minutes ago"
-    },
-    {
-      "type": "text",
-      "id": "status_4_cadence",
-      "label": "Cadence",
-      "default": "Hourly refresh"
+      "type": "textarea",
+      "id": "card_2_answer",
+      "label": "回答表示例",
+      "default": "担当店舗を比較すると、来店数を維持している一方、購買率と売上進捗が継続して低い店舗があります。直近の店舗報告とスタッフ配置を確認し、訪問・支援の優先候補にしてください。"
     },
     {
       "type": "header",
-      "content": "Status item style"
+      "content": "Card 3"
+    },
+    {
+      "type": "textarea",
+      "id": "card_3_question",
+      "label": "Question",
+      "default": "本部｜全店に共有すべき改善テーマは？"
+    },
+    {
+      "type": "textarea",
+      "id": "card_3_data",
+      "label": "参照データ",
+      "default": "全店KPI・店舗比較・成功店舗の施策・SOP・店舗報告"
+    },
+    {
+      "type": "textarea",
+      "id": "card_3_answer",
+      "label": "回答表示例",
+      "default": "複数店舗で午後の購買率低下が共通しています。成果が出ている店舗の接客手順と現在のSOPを比較し、改善手順の全店共有を検討してください。"
+    },
+    {
+      "type": "header",
+      "content": "Card 4"
+    },
+    {
+      "type": "textarea",
+      "id": "card_4_question",
+      "label": "Question"
+    },
+    {
+      "type": "textarea",
+      "id": "card_4_data",
+      "label": "参照データ"
+    },
+    {
+      "type": "textarea",
+      "id": "card_4_answer",
+      "label": "回答表示例"
+    },
+    {
+      "type": "header",
+      "content": "Card 5"
+    },
+    {
+      "type": "textarea",
+      "id": "card_5_question",
+      "label": "Question"
+    },
+    {
+      "type": "textarea",
+      "id": "card_5_data",
+      "label": "参照データ"
+    },
+    {
+      "type": "textarea",
+      "id": "card_5_answer",
+      "label": "回答表示例"
+    },
+    {
+      "type": "header",
+      "content": "Card 6"
+    },
+    {
+      "type": "textarea",
+      "id": "card_6_question",
+      "label": "Question"
+    },
+    {
+      "type": "textarea",
+      "id": "card_6_data",
+      "label": "参照データ"
+    },
+    {
+      "type": "textarea",
+      "id": "card_6_answer",
+      "label": "回答表示例"
+    },
+    {
+      "type": "header",
+      "content": "Card style"
     },
     {
       "type": "color",
       "id": "status_item_background",
       "label": "Background",
-      "default": "#faf9f7"
+      "default": "#edf1e1"
     },
     {
       "type": "range",
@@ -844,46 +908,24 @@
     {
       "type": "range",
       "id": "status_name_size",
-      "label": "Name size",
-      "min": 13,
-      "max": 20,
+      "label": "Question size",
+      "min": 14,
+      "max": 24,
       "step": 1,
       "unit": "px",
-      "default": 15
+      "default": 17
     },
     {
       "type": "color",
       "id": "status_name_color",
-      "label": "Name color",
+      "label": "Question color",
       "default": "#1a2b4a"
     },
     {
       "type": "range",
-      "id": "status_meta_size",
-      "label": "Meta text size",
-      "min": 11,
-      "max": 16,
-      "step": 1,
-      "unit": "px",
-      "default": 13
-    },
-    {
-      "type": "color",
-      "id": "status_meta_color",
-      "label": "Meta text color",
-      "default": "#9ca3af"
-    },
-    {
-      "type": "text",
-      "id": "status_label",
-      "label": "Status label",
-      "default": "Healthy"
-    },
-    {
-      "type": "range",
-      "id": "status_label_size",
+      "id": "field_label_size",
       "label": "Label size",
-      "min": 10,
+      "min": 11,
       "max": 16,
       "step": 1,
       "unit": "px",
@@ -891,9 +933,25 @@
     },
     {
       "type": "color",
-      "id": "status_healthy_color",
-      "label": "Healthy color",
-      "default": "#10b981"
+      "id": "field_label_color",
+      "label": "Label color",
+      "default": "#0e366a"
+    },
+    {
+      "type": "range",
+      "id": "answer_text_size",
+      "label": "Body size",
+      "min": 13,
+      "max": 18,
+      "step": 1,
+      "unit": "px",
+      "default": 15
+    },
+    {
+      "type": "color",
+      "id": "answer_text_color",
+      "label": "Body color",
+      "default": "#1a2b4a"
     },
     {
       "type": "header",
