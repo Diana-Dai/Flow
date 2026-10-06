@@ -190,6 +190,7 @@
     .ai-saas-presentation__card-{{ ai_gen_id }} {
       padding: 16px;
     }
+
   }
 
   .ai-saas-presentation__card-title-{{ ai_gen_id }} {
@@ -209,10 +210,21 @@
     background-color: {{ block.settings.status_item_background }};
     border-radius: {{ block.settings.status_item_radius }}px;
     padding: 16px 20px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 12px;
+    align-items: center;
+  }
+  @media (max-width: 768px) {
+  .ai-saas-presentation__status-item-{{ ai_gen_id }} {
+      display: block;
+    }
+  }
+
+  .ai-saas-presentation__status-left-{{ ai_gen_id }} {
     display: flex;
     flex-direction: column;
-    align-items: stretch;
-    gap: 8px;
+    gap: 4px;
   }
 
   .ai-saas-presentation__status-name-{{ ai_gen_id }} {
@@ -220,16 +232,19 @@
     font-weight: 600;
     color: {{ block.settings.status_name_color }};
     margin: 0;
-    line-height: 1.45;
-    overflow-wrap: break-word;
   }
 
   .ai-saas-presentation__status-update-{{ ai_gen_id }} {
     font-size: {{ block.settings.status_meta_size }}px;
     color: {{ block.settings.status_meta_color }};
     margin: 0;
-    line-height: 1.6;
-    overflow-wrap: break-word;
+  }
+
+  .ai-saas-presentation__status-right-{{ ai_gen_id }} {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 4px;
   }
 
   .ai-saas-presentation__status-badge-{{ ai_gen_id }} {
@@ -243,7 +258,6 @@
     height: 8px;
     border-radius: 50%;
     background-color: {{ block.settings.status_healthy_color }};
-    flex-shrink: 0;
   }
 
   .ai-saas-presentation__status-label-{{ ai_gen_id }} {
@@ -259,9 +273,7 @@
     font-size: {{ block.settings.status_meta_size }}px;
     color: {{ block.settings.status_meta_color }};
     margin: 0;
-    line-height: 1.6;
-    text-align: left;
-    overflow-wrap: break-word;
+    text-align: right;
   }
 
   .ai-saas-presentation__system-banner-{{ ai_gen_id }} {
@@ -379,25 +391,29 @@
 
             {% if status_name != blank %}
               <div class="ai-saas-presentation__status-item-{{ ai_gen_id }}">
-                <p class="ai-saas-presentation__status-name-{{ ai_gen_id }}">
-                  {{ status_name }}
-                </p>
-                {% if status_update != blank %}
-                  <p class="ai-saas-presentation__status-update-{{ ai_gen_id }}">
-                    {{ status_update }}
+                <div class="ai-saas-presentation__status-left-{{ ai_gen_id }}">
+                  <p class="ai-saas-presentation__status-name-{{ ai_gen_id }}">
+                    {{ status_name }}
                   </p>
-                {% endif %}
-                <div class="ai-saas-presentation__status-badge-{{ ai_gen_id }}">
-                  <span class="ai-saas-presentation__status-indicator-{{ ai_gen_id }}"></span>
-                  <p class="ai-saas-presentation__status-label-{{ ai_gen_id }}">
-                    {{ block.settings.status_label }}
-                  </p>
+                  {% if status_update != blank %}
+                    <p class="ai-saas-presentation__status-update-{{ ai_gen_id }}">
+                      {{ status_update }}
+                    </p>
+                  {% endif %}
                 </div>
-                {% if status_cadence != blank %}
-                  <p class="ai-saas-presentation__status-cadence-{{ ai_gen_id }}">
-                    {{ status_cadence }}
-                  </p>
-                {% endif %}
+                <div class="ai-saas-presentation__status-right-{{ ai_gen_id }}">
+                  <div class="ai-saas-presentation__status-badge-{{ ai_gen_id }}">
+                    <span class="ai-saas-presentation__status-indicator-{{ ai_gen_id }}"></span>
+                    <p class="ai-saas-presentation__status-label-{{ ai_gen_id }}">
+                      {{ block.settings.status_label }}
+                    </p>
+                  </div>
+                  {% if status_cadence != blank %}
+                    <p class="ai-saas-presentation__status-cadence-{{ ai_gen_id }}">
+                      {{ status_cadence }}
+                    </p>
+                  {% endif %}
+                </div>
               </div>
             {% endif %}
           {% endfor %}
@@ -728,13 +744,13 @@
       "default": "POS Sales Data"
     },
     {
-      "type": "textarea",
+      "type": "text",
       "id": "status_1_update",
       "label": "Last update",
       "default": "2 minutes ago"
     },
     {
-      "type": "textarea",
+      "type": "text",
       "id": "status_1_cadence",
       "label": "Cadence",
       "default": "Daily refresh"
@@ -750,13 +766,13 @@
       "default": "Traffic Counting"
     },
     {
-      "type": "textarea",
+      "type": "text",
       "id": "status_2_update",
       "label": "Last update",
       "default": "Real-time"
     },
     {
-      "type": "textarea",
+      "type": "text",
       "id": "status_2_cadence",
       "label": "Cadence",
       "default": "15-minute intervals"
@@ -772,13 +788,13 @@
       "default": "Staffing Schedules"
     },
     {
-      "type": "textarea",
+      "type": "text",
       "id": "status_3_update",
       "label": "Last update",
       "default": "1 hour ago"
     },
     {
-      "type": "textarea",
+      "type": "text",
       "id": "status_3_cadence",
       "label": "Cadence",
       "default": "Weekly refresh"
@@ -794,13 +810,13 @@
       "default": "Weather Data"
     },
     {
-      "type": "textarea",
+      "type": "text",
       "id": "status_4_update",
       "label": "Last update",
       "default": "15 minutes ago"
     },
     {
-      "type": "textarea",
+      "type": "text",
       "id": "status_4_cadence",
       "label": "Cadence",
       "default": "Hourly refresh"
