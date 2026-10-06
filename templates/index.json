@@ -61,6 +61,12 @@
             "text_color_2": ""
           }
         },
+        "richtext_EhWFc8": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>店舗数、確認したいKPI、現在のPOS・来店計測環境をもとに、Flowの活用方法をご案内します。</p>"
+          }
+        },
         "richtext_gyC73r": {
           "type": "richtext",
           "settings": {
@@ -84,6 +90,7 @@
         "richtext_JWfj6P",
         "richtext_LcTpMq",
         "buttons_pt4Ted",
+        "richtext_EhWFc8",
         "richtext_gyC73r",
         "image_Dtind8"
       ],
