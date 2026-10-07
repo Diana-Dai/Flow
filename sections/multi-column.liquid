@@ -37,10 +37,14 @@
       flex: 1 1 auto !important;
     }
 
-    /* Push CTA button to the bottom of the card */
-    #shopify-section-{{ section.id }} .cta-button-container {
+    /* Push the first CTA to the bottom of the card. The second sits under it. */
+    #shopify-section-{{ section.id }} .cta-button-container--primary {
       margin-top: auto !important;
       padding-top: 1rem;
+    }
+
+    #shopify-section-{{ section.id }} .cta-button-container--secondary {
+      margin-top: 0.75rem;
     }
 
     {% if section.settings.subheading_background_color != blank %}
@@ -61,24 +65,53 @@
     {% for block in section.blocks %}
       {% if block.type == 'item' %}
         {% if block.settings.button_background != blank and block.settings.button_background != 'rgba(0,0,0,0)' %}
-          #block-{{ block.id }} .button,
-          #block-{{ block.id }} .cta-button-container .button {
+          #block-{{ block.id }} .cta-button-container--primary .button {
             background-color: {{ block.settings.button_background }} !important;
             border-color: {{ block.settings.button_background }} !important;
           }
         {% endif %}
         {% if block.settings.button_text_color != blank and block.settings.button_text_color != 'rgba(0,0,0,0)' %}
-          #block-{{ block.id }} .button,
-          #block-{{ block.id }} .link,
-          #block-{{ block.id }} .cta-button-container .button,
-          #block-{{ block.id }} .cta-button-container .link {
+          #block-{{ block.id }} .cta-button-container--primary .button,
+          #block-{{ block.id }} .cta-button-container--primary .link {
             color: {{ block.settings.button_text_color }} !important;
           }
         {% endif %}
         {% if block.settings.button_font_size > 0 %}
-          #block-{{ block.id }} .cta-button-container .button,
-          #block-{{ block.id }} .cta-button-container .link {
+          #block-{{ block.id }} .cta-button-container--primary .button,
+          #block-{{ block.id }} .cta-button-container--primary .link {
             font-size: {{ block.settings.button_font_size }}px !important;
+          }
+        {% endif %}
+        {%- liquid
+          assign second_button_background = block.settings.button_background_2
+          if second_button_background == blank or second_button_background == 'rgba(0,0,0,0)'
+            assign second_button_background = block.settings.button_background
+          endif
+          assign second_button_text_color = block.settings.button_text_color_2
+          if second_button_text_color == blank or second_button_text_color == 'rgba(0,0,0,0)'
+            assign second_button_text_color = block.settings.button_text_color
+          endif
+          assign second_button_font_size = block.settings.button_font_size_2
+          if second_button_font_size == 0
+            assign second_button_font_size = block.settings.button_font_size
+          endif
+        -%}
+        {% if second_button_background != blank and second_button_background != 'rgba(0,0,0,0)' %}
+          #block-{{ block.id }} .cta-button-container--secondary .button {
+            background-color: {{ second_button_background }} !important;
+            border-color: {{ second_button_background }} !important;
+          }
+        {% endif %}
+        {% if second_button_text_color != blank and second_button_text_color != 'rgba(0,0,0,0)' %}
+          #block-{{ block.id }} .cta-button-container--secondary .button,
+          #block-{{ block.id }} .cta-button-container--secondary .link {
+            color: {{ second_button_text_color }} !important;
+          }
+        {% endif %}
+        {% if second_button_font_size > 0 %}
+          #block-{{ block.id }} .cta-button-container--secondary .button,
+          #block-{{ block.id }} .cta-button-container--secondary .link {
+            font-size: {{ second_button_font_size }}px !important;
           }
         {% endif %}
         {% if block.settings.heading_font_size > 0 %}
@@ -166,7 +199,7 @@
                   {{- block.settings.image | image_url: width: block.settings.image.width | image_tag: loading: loading_strategy, sizes: sizes, widths: '300,400,450,500,600,800,900,1000,1200,1400,1600,1800', class: 'rounded' -}}
                 {%- endif -%}
 
-                {%- if block.settings.title != blank or block.settings.content != blank or block.settings.link_text != blank -%}
+                {%- if block.settings.title != blank or block.settings.content != blank or block.settings.link_text != blank or block.settings.link_text_2 != blank -%}
                   <div class="v-stack gap-4 text-{{ section.settings.text_alignment }}">
                     {%- if block.settings.subheading != blank -%}
                       <div class="text-xs item-subheading" style="margin-bottom: -0.9rem;">{{ block.settings.subheading}}</div>
@@ -175,16 +208,26 @@
                       <h3 style="color: {{ block.settings.text_color }};" class="{{ block.settings.heading_tag }}">{{ block.settings.title | escape }}</h3>
                     {%- endif -%}
 
-                    {%- if block.settings.content != blank or block.settings.link_text != blank -%}
+                    {%- if block.settings.content != blank or block.settings.link_text != blank or block.settings.link_text_2 != blank -%}
                       <div class="prose" style="color: {{ block.settings.text_color }};">
                         {{- block.settings.content -}}
 
                         {%- if block.settings.link_text != blank -%}
-                          <div class="cta-button-container">
+                          <div class="cta-button-container cta-button-container--primary">
                             {%- if block.settings.link_style == 'link' -%}
                               <a href="{{ block.settings.link_url }}" class="link">{{ block.settings.link_text | escape }}</a>
                             {%- else -%}
                               {%- render 'button', href: block.settings.link_url, content: block.settings.link_text, size: 'lg' -%}
+                            {%- endif -%}
+                          </div>
+                        {%- endif -%}
+
+                        {%- if block.settings.link_text_2 != blank -%}
+                          <div class="cta-button-container cta-button-container--secondary">
+                            {%- if block.settings.link_style_2 == 'link' -%}
+                              <a href="{{ block.settings.link_url_2 }}" class="link">{{ block.settings.link_text_2 | escape }}</a>
+                            {%- else -%}
+                              {%- render 'button', href: block.settings.link_url_2, content: block.settings.link_text_2, size: 'lg' -%}
                             {%- endif -%}
                           </div>
                         {%- endif -%}
@@ -875,6 +918,56 @@
             }
           ],
           "default": "link"
+        },
+        {
+          "type": "header",
+          "content": "Second button"
+        },
+        {
+          "type": "color",
+          "id": "button_background_2",
+          "label": "Second button background"
+        },
+        {
+          "type": "color",
+          "id": "button_text_color_2",
+          "label": "Second button text color"
+        },
+        {
+          "type": "range",
+          "id": "button_font_size_2",
+          "min": 0,
+          "max": 40,
+          "step": 1,
+          "unit": "px",
+          "label": "Second button font size (0 = same as first)",
+          "default": 0
+        },
+        {
+          "type": "url",
+          "id": "link_url_2",
+          "label": "Second link URL"
+        },
+        {
+          "type": "text",
+          "id": "link_text_2",
+          "label": "Second link text"
+        },
+        {
+          "type": "select",
+          "id": "link_style_2",
+          "label": "Second link style",
+          "options": [
+            {
+              "value": "link",
+              "label": "Link"
+            },
+            {
+              "value": "button",
+              "label": "Button"
+            }
+          ],
+          "default": "button"
         }
       ]
     },
