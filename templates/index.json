@@ -1653,7 +1653,7 @@
         "subheading_background_color": "",
         "subheading_text_color": "",
         "padding_top": 0,
-        "padding_bottom": 36
+        "padding_bottom": 0
       }
     },
     "rich_text_Tictfp": {
@@ -1681,13 +1681,12 @@
         "richtext_yKXX6U",
         "button_eaFNbN"
       ],
-      "custom_css": [],
       "name": "Rich text",
       "settings": {
         "full_width": true,
         "content_width": "medium",
         "text_position": "center",
-        "background": "#ffffff",
+        "background": "#F9FAFB",
         "background_gradient": "",
         "text_color": ""
       }
