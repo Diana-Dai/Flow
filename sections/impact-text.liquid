@@ -19,6 +19,31 @@
         --impact-text-auto-columns: {% if section.settings.text_divider != 'none' %}minmax(0, 1fr) auto{% else %}minmax(0, 1fr){% endif %};
       }
     }
+
+    {% for block in section.blocks %}
+      {% if block.settings.heading_font_size > 0 %}
+        #block-{{ block.id }} .impact-text__text,
+        #block-{{ block.id }} .impact-text__text * {
+          font-size: {{ block.settings.heading_font_size }}px !important;
+        }
+      {% endif %}
+      {% if block.settings.subheading_font_size > 0 %}
+        #block-{{ block.id }} .impact-text__subheading,
+        #block-{{ block.id }} .impact-text__subheading * {
+          font-size: {{ block.settings.subheading_font_size }}px !important;
+        }
+      {% endif %}
+      {% if block.settings.content_font_size > 0 %}
+        #block-{{ block.id }} .prose p,
+        #block-{{ block.id }} .prose p *,
+        #block-{{ block.id }} .prose ul,
+        #block-{{ block.id }} .prose ol,
+        #block-{{ block.id }} .prose li,
+        #block-{{ block.id }} .prose li * {
+          font-size: {{ block.settings.content_font_size }}px !important;
+        }
+      {% endif %}
+    {% endfor %}
   </style>
 
   {%- comment -%}
@@ -31,20 +56,22 @@
     <div {% unless section.settings.stack_mobile %}class="scroll-area bleed {% if section.blocks.size < 3 %}sm:unbleed{% else %}md:unbleed{% endif %}"{% endunless %}>
       <div class="impact-text impact-text--{{ section.settings.text_alignment }} {% unless section.settings.stack_mobile %}impact-text--scroll{% endunless %}">
           {%- for block in section.blocks -%}
-            <div class="snap-center" {{ block.shopify_attributes }}>
+            <div id="block-{{ block.id }}" class="snap-center" {{ block.shopify_attributes }}>
               {%- if block.settings.title != blank -%}
-                <strong class="impact-text__text heading">
+                {%- assign heading_tag = block.settings.heading_tag | default: 'strong' -%}
+                <{{ heading_tag }} class="impact-text__text heading">
                   <impact-text {% if block.settings.animate_impact_text %}count-up="{{ block.settings.animate_impact_text_duration }}"{% endif %} reveal-js>
                     {%- render 'styled-text', content: block.settings.title, text_color: section.settings.heading_text_color, gradient: section.settings.heading_gradient, style: section.settings.impact_text_style -%}
                   </impact-text>
-                </strong>
+                </{{ heading_tag }}>
               {%- endif -%}
 
               {%- if block.settings.subheading != blank or block.settings.content != blank or block.settings.button_text != blank -%}
                 <div class="impact-text__content">
                   <div class="prose">
                     {%- if block.settings.subheading != blank -%}
-                      <h3 class="h6">{{ block.settings.subheading | escape }}</h3>
+                      {%- assign subheading_tag = block.settings.subheading_tag | default: 'h3' -%}
+                      <{{ subheading_tag }} class="impact-text__subheading {% if subheading_tag == 'h1' or subheading_tag == 'h2' or subheading_tag == 'h3' or subheading_tag == 'h4' or subheading_tag == 'h5' or subheading_tag == 'h6' %}h6{% endif %}">{{ block.settings.subheading | escape }}</{{ subheading_tag }}>
                     {%- endif -%}
 
                     {{- block.settings.content -}}
@@ -98,15 +125,84 @@
           "default": "100%"
         },
         {
+          "type": "select",
+          "id": "heading_tag",
+          "label": "Impact text HTML Tag",
+          "options": [
+            { "value": "h1", "label": "H1" },
+            { "value": "h2", "label": "H2" },
+            { "value": "h3", "label": "H3" },
+            { "value": "h4", "label": "H4" },
+            { "value": "h5", "label": "H5" },
+            { "value": "h6", "label": "H6" },
+            { "value": "p", "label": "P" },
+            { "value": "span", "label": "Span" },
+            { "value": "strong", "label": "Strong" },
+            { "value": "div", "label": "Div" }
+          ],
+          "default": "strong"
+        },
+        {
           "type": "text",
           "id": "subheading",
           "label": "Subheading",
           "default": "Showcase a benefit of your product"
         },
         {
+          "type": "select",
+          "id": "subheading_tag",
+          "label": "Subheading HTML Tag",
+          "options": [
+            { "value": "h1", "label": "H1" },
+            { "value": "h2", "label": "H2" },
+            { "value": "h3", "label": "H3" },
+            { "value": "h4", "label": "H4" },
+            { "value": "h5", "label": "H5" },
+            { "value": "h6", "label": "H6" },
+            { "value": "p", "label": "P" },
+            { "value": "span", "label": "Span" },
+            { "value": "div", "label": "Div" }
+          ],
+          "default": "h3"
+        },
+        {
           "type": "richtext",
           "id": "content",
           "label": "Content"
+        },
+        {
+          "type": "header",
+          "content": "Font Size Options"
+        },
+        {
+          "type": "range",
+          "id": "heading_font_size",
+          "min": 0,
+          "max": 120,
+          "step": 2,
+          "unit": "px",
+          "label": "Impact text font size (0 = Auto)",
+          "default": 0
+        },
+        {
+          "type": "range",
+          "id": "subheading_font_size",
+          "min": 0,
+          "max": 60,
+          "step": 1,
+          "unit": "px",
+          "label": "Subheading font size (0 = Default)",
+          "default": 0
+        },
+        {
+          "type": "range",
+          "id": "content_font_size",
+          "min": 0,
+          "max": 40,
+          "step": 1,
+          "unit": "px",
+          "label": "Content font size (0 = Default)",
+          "default": 0
         },
         {
           "type": "text",
