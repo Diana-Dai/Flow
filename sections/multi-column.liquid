@@ -7,36 +7,6 @@
       --multi-column-list-gap: {% if section.settings.gap == 'small' %}var(--grid-gutter){% elsif section.settings.gap == 'medium' %}var(--spacing-12){% elsif section.settings.gap == 'large' %}var(--spacing-20){% else %}var(--spacing-28){% endif %};
     }
 
-    /* Equal height for all cards within this specific section */
-    #shopify-section-{{ section.id }} .multi-column {
-      align-items: stretch;
-    }
-
-    #shopify-section-{{ section.id }} .multi-column__item {
-      display: flex !important;
-      flex-direction: column !important;
-      height: 100% !important;
-    }
-
-    #shopify-section-{{ section.id }} .multi-column__item .v-stack {
-      display: flex !important;
-      flex-direction: column !important;
-      flex: 1 1 auto !important;
-      height: 100%;
-    }
-
-    #shopify-section-{{ section.id }} .multi-column__item .prose {
-      display: flex !important;
-      flex-direction: column !important;
-      flex: 1 1 auto !important;
-    }
-
-    /* Push CTA button to the bottom of the card */
-    #shopify-section-{{ section.id }} .cta-button-container {
-      margin-top: auto !important;
-      padding-top: 1rem;
-    }
-
     {% if section.settings.subheading_background_color != blank %}
         #shopify-section-{{ section.id }} .subheading{
             font-size: 11px !important;
@@ -51,47 +21,6 @@
             color:{{ section.settings.subheading_text_color }};
         }
     {% endif %}
-
-    {% for block in section.blocks %}
-      {% if block.type == 'item' %}
-        {% if block.settings.button_background != blank and block.settings.button_background != 'rgba(0,0,0,0)' %}
-          #block-{{ block.id }} .button,
-          #block-{{ block.id }} .cta-button-container .button {
-            background-color: {{ block.settings.button_background }} !important;
-            border-color: {{ block.settings.button_background }} !important;
-          }
-        {% endif %}
-        {% if block.settings.button_text_color != blank and block.settings.button_text_color != 'rgba(0,0,0,0)' %}
-          #block-{{ block.id }} .button,
-          #block-{{ block.id }} .link,
-          #block-{{ block.id }} .cta-button-container .button,
-          #block-{{ block.id }} .cta-button-container .link {
-            color: {{ block.settings.button_text_color }} !important;
-          }
-        {% endif %}
-        {% if block.settings.button_font_size > 0 %}
-          #block-{{ block.id }} .cta-button-container .button,
-          #block-{{ block.id }} .cta-button-container .link {
-            font-size: {{ block.settings.button_font_size }}px !important;
-          }
-        {% endif %}
-        {% if block.settings.heading_font_size > 0 %}
-          #block-{{ block.id }} h3 {
-            font-size: {{ block.settings.heading_font_size }}px !important;
-          }
-        {% endif %}
-        {% if block.settings.subheading_font_size > 0 %}
-          #block-{{ block.id }} .item-subheading {
-            font-size: {{ block.settings.subheading_font_size }}px !important;
-          }
-        {% endif %}
-        {% if block.settings.content_font_size > 0 %}
-          #block-{{ block.id }} .prose {
-            font-size: {{ block.settings.content_font_size }}px !important;
-          }
-        {% endif %}
-      {% endif %}
-    {% endfor %}
   </style>
 
   <div {% render 'section-properties' %}>
@@ -110,7 +39,7 @@
 
           {%- case block.type -%}
             {%- when 'item' -%}
-              <div id="block-{{ block.id }}" class="multi-column__item justify-{{ section.settings.text_alignment }} snap-start" style="background:{{ block.settings.background_color }};--multi-column-item-column-count: span {{ 12.0 | divided_by: block.settings.column_size | round }};color: {{ block.settings.text_color }} !important; border: 1px solid {{ block.settings.border_color }};" {{ block.shopify_attributes }}>
+              <div class="multi-column__item justify-{{ section.settings.text_alignment }} snap-start" style="background:{{ block.settings.background_color }};--multi-column-item-column-count: span {{ 12.0 | divided_by: block.settings.column_size | round }};color: {{ block.settings.text_color }} !important; border: 1px solid {{ block.settings.border_color }};" {{ block.shopify_attributes }}>
                 <div class="icon_container">
                   {%- capture icon -%}
                     {%- if block.settings.custom_icon != blank -%}
@@ -149,19 +78,19 @@
 
                 {%- if block.settings.title != blank or block.settings.content != blank or block.settings.link_text != blank -%}
                   <div class="v-stack gap-4 text-{{ section.settings.text_alignment }}">
-                    {%- if block.settings.subheading != blank -%}
-                      <div class="text-xs item-subheading" style="margin-bottom: -0.9rem;">{{ block.settings.subheading}}</div>
+                                        {%- if block.settings.subheading != blank -%}
+                      <div class="text-xs" style=" margin-bottom: -0.9rem;">{{ block.settings.subheading}}</div>
                     {%- endif -%}
                     {%- if block.settings.title != blank -%}
-                      <h3 style="color: {{ block.settings.text_color }};" class="{{ block.settings.heading_tag }}">{{ block.settings.title | escape }}</h3>
-                    {%- endif -%}
+  <h3 style="color: {{ block.settings.text_color }};" class="{{ block.settings.heading_tag }}">{{ block.settings.title | escape }}</h3>
+{%- endif -%}
 
                     {%- if block.settings.content != blank or block.settings.link_text != blank -%}
                       <div class="prose" style="color: {{ block.settings.text_color }};">
                         {{- block.settings.content -}}
 
                         {%- if block.settings.link_text != blank -%}
-                          <div class="cta-button-container">
+                          <div>
                             {%- if block.settings.link_style == 'link' -%}
                               <a href="{{ block.settings.link_url }}" class="link">{{ block.settings.link_text | escape }}</a>
                             {%- else -%}
@@ -224,8 +153,8 @@
           "label": "Large"
         },
         {
-          "value": "x-large",
-          "label": "X-Large"
+        "value": "x-large",
+        "label": "X-Large"
         }
       ],
       "default": "medium"
@@ -304,7 +233,7 @@
       "type": "item",
       "name": "Item",
       "settings": [
-        {
+          {
           "type": "select",
           "id": "icon",
           "label": "Icon",
@@ -565,25 +494,25 @@
               "label": "Stop",
               "group": "Other"
             },
-            {
-              "value": "people",
-              "label": "People",
-              "group": "Other"
-            },
-            {
-              "value": "check",
-              "label": "Check",
-              "group": "Other"
-            },
-            {
-              "value": "up",
-              "label": "Up",
-              "group": "Other"
-            }
+               {
+          "value": "people",
+          "label": "People",
+          "group": "Other"
+        },
+                       {
+          "value": "check",
+          "label": "Check",
+          "group": "Other"
+        },
+           {
+          "value": "up",
+          "label": "Up",
+          "group": "Other"
+        }
           ],
           "default": "none"
         },
-        {
+                {
           "type": "range",
           "id": "icon_width",
           "min": 24,
@@ -613,7 +542,7 @@
           ],
           "default": "square"
         },
-        {
+                {
           "type": "color",
           "id": "icon_background",
           "label": "Icon background"
@@ -645,68 +574,11 @@
           "id": "text_color",
           "label": "Text color"
         },
+
         {
           "type": "color",
           "id": "border_color",
           "label": "Border color"
-        },
-        {
-          "type": "header",
-          "content": "Button Customization"
-        },
-        {
-          "type": "color",
-          "id": "button_background",
-          "label": "Button background color"
-        },
-        {
-          "type": "color",
-          "id": "button_text_color",
-          "label": "Button text color"
-        },
-        {
-          "type": "range",
-          "id": "button_font_size",
-          "min": 0,
-          "max": 40,
-          "step": 1,
-          "unit": "px",
-          "label": "Button font size (0 = Default)",
-          "default": 0
-        },
-        {
-          "type": "header",
-          "content": "Font Size Options"
-        },
-        {
-          "type": "range",
-          "id": "heading_font_size",
-          "min": 0,
-          "max": 60,
-          "step": 1,
-          "unit": "px",
-          "label": "Heading font size (0 = Default)",
-          "default": 0
-        },
-        {
-          "type": "range",
-          "id": "subheading_font_size",
-          "min": 0,
-          "max": 30,
-          "step": 1,
-          "unit": "px",
-          "label": "Subheading font size (0 = Default)",
-          "default": 0
-        },
-        {
-          "type": "range",
-          "id": "content_font_size",
-          "min": 0,
-          "max": 40,
-          "step": 1,
-          "unit": "px",
-          "label": "Content font size (0 = Default)",
-          "default": 0
         },
         {
           "type": "checkbox",
@@ -736,7 +608,7 @@
               "value": "1.5",
               "label": "66%"
             },
-            {
+                        {
               "value": "1",
               "label": "100%"
             }
