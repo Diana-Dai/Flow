@@ -82,13 +82,18 @@
         {% endif %}
         {% if block.settings.subheading_font_size > 0 %}
           #block-{{ block.id }} .item-subheading,
-          #block-{{ block.id }} .item-subheading p {
+          #block-{{ block.id }} .item-subheading p,
+          #block-{{ block.id }} .item-subheading p * {
             font-size: {{ block.settings.subheading_font_size }}px !important;
           }
         {% endif %}
         {% if block.settings.content_font_size > 0 %}
-          #block-{{ block.id }} .prose,
-          #block-{{ block.id }} .prose p {
+          #block-{{ block.id }} .prose p,
+          #block-{{ block.id }} .prose p *,
+          #block-{{ block.id }} .prose ul,
+          #block-{{ block.id }} .prose ol,
+          #block-{{ block.id }} .prose li,
+          #block-{{ block.id }} .prose li * {
             font-size: {{ block.settings.content_font_size }}px !important;
           }
         {% endif %}
