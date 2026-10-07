@@ -455,8 +455,8 @@
         "text_color": "",
         "subheading_background_color": "",
         "subheading_text_color": "",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
     "rich_text_HU78y7": {
