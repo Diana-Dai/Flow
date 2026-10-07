@@ -250,7 +250,7 @@
             "card_shadow_opacity": 10,
             "label_background": "#a0b842",
             "label_text_color": "#ffffff",
-            "label_font_size": 13,
+            "label_font_size": 16,
             "heading_color": "#0e366a",
             "text_color": "#4b5563",
             "text_font_size": 16,
