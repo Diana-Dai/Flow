@@ -236,7 +236,7 @@
             "description": "複数店舗での導入・追加展開を始めやすくするため、3店舗以上を同時に新規導入する場合、1店舗分の月額費用が6ヶ月無料になります。",
             "button_text": "キャンペーンを相談する",
             "button_link": "shopify://pages/contact",
-            "condition_note": "新規のお客様、既存のお客様の追加導入いずれも対象です。既存導入店舗への遡及適用はできません。対象条件、店舗数、連携内容により適用条件が異なる場合があります。詳細はお見積り時にご案内します。",
+            "condition_note": "<b>新規のお客様、既存のお客様の追加導入いずれも対象です。既存導入店舗への遡及適用はできません。対象条件、店舗数、連携内容により適用条件が異なる場合があります。詳細はお見積り時にご案内します。</b>",
             "benefit_1_title": "3店舗から比較検証",
             "benefit_1_text": "店舗ごとの来店数、購買率、売上KPIを確認",
             "benefit_2_title": "1店舗分を6ヶ月無料",
@@ -254,8 +254,8 @@
             "heading_color": "#0e366a",
             "text_color": "#4b5563",
             "text_font_size": 16,
-            "condition_text_color": "#9ca3af",
-            "condition_font_size": 12,
+            "condition_text_color": "#696969",
+            "condition_font_size": 14,
             "button_background": "#0e366a",
             "button_hover_background": "#0a2850",
             "button_text_color": "#ffffff",
@@ -1241,7 +1241,7 @@
         "subheading_background_color": "",
         "subheading_text_color": "",
         "padding_top": 36,
-        "padding_bottom": 36
+        "padding_bottom": 0
       }
     },
     "section-15": {
