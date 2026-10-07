@@ -189,7 +189,13 @@
             "content": "<p>売上、客単価、購買点数、予算進捗などを店舗別・時間帯別に確認できます。</p>",
             "link_url": "",
             "link_text": "",
-            "link_style": "link"
+            "link_style": "link",
+            "button_background_2": "",
+            "button_text_color_2": "",
+            "button_font_size_2": 0,
+            "link_url_2": "",
+            "link_text_2": "",
+            "link_style_2": "button"
           }
         },
         "item_MVfQ7a": {
@@ -218,7 +224,13 @@
             "content": "<p>来店数、通行量、入店率、滞在時間、店内行動を売上と合わせて把握できます。</p>",
             "link_url": "",
             "link_text": "",
-            "link_style": "link"
+            "link_style": "link",
+            "button_background_2": "",
+            "button_text_color_2": "",
+            "button_font_size_2": 0,
+            "link_url_2": "",
+            "link_text_2": "",
+            "link_style_2": "button"
           }
         },
         "item_aGN9Xz": {
@@ -247,7 +259,13 @@
             "content": "<p>スタッフ配置や稼働状況を、来店・売上・購買率の変化と合わせて確認できます。</p>",
             "link_url": "",
             "link_text": "",
-            "link_style": "link"
+            "link_style": "link",
+            "button_background_2": "",
+            "button_text_color_2": "",
+            "button_font_size_2": 0,
+            "link_url_2": "",
+            "link_text_2": "",
+            "link_style_2": "button"
           }
         },
         "item_AeTC4p": {
@@ -276,7 +294,13 @@
             "content": "<p>天候、曜日、商業施設、店舗規模などを加えて、店舗ごとの差を見やすくします。</p>",
             "link_url": "",
             "link_text": "",
-            "link_style": "link"
+            "link_style": "link",
+            "button_background_2": "",
+            "button_text_color_2": "",
+            "button_font_size_2": 0,
+            "link_url_2": "",
+            "link_text_2": "",
+            "link_style_2": "button"
           }
         },
         "item_rn7d7D": {
@@ -305,7 +329,13 @@
             "content": "<p>売場変更、イベント、在庫状況、スタッフ状況など、現場の情報を記録できます。</p>",
             "link_url": "",
             "link_text": "",
-            "link_style": "link"
+            "link_style": "link",
+            "button_background_2": "",
+            "button_text_color_2": "",
+            "button_font_size_2": 0,
+            "link_url_2": "",
+            "link_text_2": "",
+            "link_style_2": "button"
           }
         },
         "item_nXKkDm": {
@@ -334,7 +364,13 @@
             "content": "<p>接客ルールや店舗運営マニュアルを、Flow AIが参照できる情報として整理できます。</p>",
             "link_url": "",
             "link_text": "",
-            "link_style": "link"
+            "link_style": "link",
+            "button_background_2": "",
+            "button_text_color_2": "",
+            "button_font_size_2": 0,
+            "link_url_2": "",
+            "link_text_2": "",
+            "link_style_2": "button"
           }
         },
         "item_Y47ifx": {
@@ -363,7 +399,13 @@
             "content": "<p>PDF、Word、PowerPoint、社内リンクを登録し、判断に使える情報として活用できます。</p>",
             "link_url": "",
             "link_text": "",
-            "link_style": "link"
+            "link_style": "link",
+            "button_background_2": "",
+            "button_text_color_2": "",
+            "button_font_size_2": 0,
+            "link_url_2": "",
+            "link_text_2": "",
+            "link_style_2": "button"
           }
         },
         "item_EwTVgd": {
@@ -392,7 +434,13 @@
             "content": "<p>API、CSV、FTPを使い、既存システムや外部データを段階的に取り込めます。</p>",
             "link_url": "",
             "link_text": "",
-            "link_style": "link"
+            "link_style": "link",
+            "button_background_2": "",
+            "button_text_color_2": "",
+            "button_font_size_2": 0,
+            "link_url_2": "",
+            "link_text_2": "",
+            "link_style_2": "button"
           }
         }
       },
@@ -412,6 +460,10 @@
       ],
       "name": "Multi-column",
       "settings": {
+        "bottom_button_text": "",
+        "bottom_button_url": "",
+        "bottom_button_background": "#172033",
+        "bottom_button_text_color": "#ffffff",
         "full_width": true,
         "stack_on_mobile": true,
         "gap": "small",
@@ -471,7 +523,13 @@
             "content": "<h3>01. 既存データを接続</h3><p>POS、来店計測、スタッフ、天候、店舗属性など、店舗運営に必要なデータをFlowに取り込みます。</p>",
             "link_url": "",
             "link_text": "",
-            "link_style": "link"
+            "link_style": "link",
+            "button_background_2": "",
+            "button_text_color_2": "",
+            "button_font_size_2": 0,
+            "link_url_2": "",
+            "link_text_2": "",
+            "link_style_2": "button"
           }
         },
         "item_nR9kcV": {
@@ -501,7 +559,13 @@
             "content": "<h3>02. 店舗の状況として整理</h3><p>売上、来店、店舗報告、メモ、マニュアルを店舗ごとの状況として整理し、比較しやすくします。</p>",
             "link_url": "",
             "link_text": "",
-            "link_style": "link"
+            "link_style": "link",
+            "button_background_2": "",
+            "button_text_color_2": "",
+            "button_font_size_2": 0,
+            "link_url_2": "",
+            "link_text_2": "",
+            "link_style_2": "button"
           }
         },
         "item_nhi8GJ": {
@@ -531,7 +595,13 @@
             "content": "<h3>03. 日々の実行につなげる</h3><p>店長、エリアマネージャー、本部が同じ情報をもとに、次の確認・報告・打ち手を進められます。</p>",
             "link_url": "",
             "link_text": "",
-            "link_style": "link"
+            "link_style": "link",
+            "button_background_2": "",
+            "button_text_color_2": "",
+            "button_font_size_2": 0,
+            "link_url_2": "",
+            "link_text_2": "",
+            "link_style_2": "button"
           }
         }
       },
@@ -542,6 +612,10 @@
       ],
       "name": "Multi-column",
       "settings": {
+        "bottom_button_text": "",
+        "bottom_button_url": "",
+        "bottom_button_background": "#172033",
+        "bottom_button_text_color": "#ffffff",
         "full_width": true,
         "stack_on_mobile": true,
         "gap": "medium",
@@ -587,7 +661,13 @@
             "content": "<p>店舗前を通った人数を確認し、立地や時間帯ごとの集客機会を比較します。</p>",
             "link_url": "",
             "link_text": "",
-            "link_style": "link"
+            "link_style": "link",
+            "button_background_2": "",
+            "button_text_color_2": "",
+            "button_font_size_2": 0,
+            "link_url_2": "",
+            "link_text_2": "",
+            "link_style_2": "button"
           }
         },
         "item_FDf9KW": {
@@ -616,7 +696,13 @@
             "content": "<p>実際に入店した人数を店舗・エリア・期間別に比較し、来店傾向を把握します。</p>",
             "link_url": "",
             "link_text": "",
-            "link_style": "link"
+            "link_style": "link",
+            "button_background_2": "",
+            "button_text_color_2": "",
+            "button_font_size_2": 0,
+            "link_url_2": "",
+            "link_text_2": "",
+            "link_style_2": "button"
           }
         },
         "item_VJxAzN": {
@@ -645,7 +731,13 @@
             "content": "<p>来店客数に対して購入につながった割合を確認し、店舗ごとの販売機会を比較します。</p>",
             "link_url": "",
             "link_text": "",
-            "link_style": "link"
+            "link_style": "link",
+            "button_background_2": "",
+            "button_text_color_2": "",
+            "button_font_size_2": 0,
+            "link_url_2": "",
+            "link_text_2": "",
+            "link_style_2": "button"
           }
         },
         "item_8UCkWb": {
@@ -674,7 +766,13 @@
             "content": "<p>1回の購入当たりの平均金額を確認し、購買率や売上と合わせて分析します。</p>",
             "link_url": "",
             "link_text": "",
-            "link_style": "link"
+            "link_style": "link",
+            "button_background_2": "",
+            "button_text_color_2": "",
+            "button_font_size_2": 0,
+            "link_url_2": "",
+            "link_text_2": "",
+            "link_style_2": "button"
           }
         },
         "item_9eKgez": {
@@ -703,7 +801,13 @@
             "content": "<p>売上実績と予算を比較し、目標との差と改善が必要な店舗を確認します。</p>",
             "link_url": "",
             "link_text": "",
-            "link_style": "link"
+            "link_style": "link",
+            "button_background_2": "",
+            "button_text_color_2": "",
+            "button_font_size_2": 0,
+            "link_url_2": "",
+            "link_text_2": "",
+            "link_style_2": "button"
           }
         },
         "item_wWAwCe": {
@@ -732,7 +836,13 @@
             "content": "<p>来店数や売上に対して適切な人員を配置できているかを確認します。</p>",
             "link_url": "",
             "link_text": "",
-            "link_style": "link"
+            "link_style": "link",
+            "button_background_2": "",
+            "button_text_color_2": "",
+            "button_font_size_2": 0,
+            "link_url_2": "",
+            "link_text_2": "",
+            "link_style_2": "button"
           }
         },
         "item_JNXpBU": {
@@ -761,7 +871,13 @@
             "content": "<p>店内や売場での滞在傾向を比較し、接客・VMD・売場構成の改善に活用します。</p>",
             "link_url": "",
             "link_text": "",
-            "link_style": "link"
+            "link_style": "link",
+            "button_background_2": "",
+            "button_text_color_2": "",
+            "button_font_size_2": 0,
+            "link_url_2": "",
+            "link_text_2": "",
+            "link_style_2": "button"
           }
         },
         "item_i7MVpi": {
@@ -790,11 +906,18 @@
             "content": "<p>店舗別・エリア別のKPIを比較し、好調店舗の共通点と注意すべき店舗を特定します。</p>",
             "link_url": "",
             "link_text": "",
-            "link_style": "link"
+            "link_style": "link",
+            "button_background_2": "",
+            "button_text_color_2": "",
+            "button_font_size_2": 0,
+            "link_url_2": "",
+            "link_text_2": "",
+            "link_style_2": "button"
           }
         },
         "item_TfzJqX": {
           "type": "item",
+          "disabled": true,
           "settings": {
             "icon": "none",
             "icon_width": 32,
@@ -819,7 +942,13 @@
             "content": "<p>店舗ごとの数値を並べるだけでなく、エリア平均、全店平均、前年同期などの共通条件で比較し、改善の優先度が高い店舗と成果が出ている店舗の共通点を特定します。</p>",
             "link_url": "",
             "link_text": "",
-            "link_style": "link"
+            "link_style": "link",
+            "button_background_2": "",
+            "button_text_color_2": "",
+            "button_font_size_2": 0,
+            "link_url_2": "",
+            "link_text_2": "",
+            "link_style_2": "button"
           }
         }
       },
@@ -836,6 +965,10 @@
       ],
       "name": "Multi-column",
       "settings": {
+        "bottom_button_text": "",
+        "bottom_button_url": "",
+        "bottom_button_background": "#172033",
+        "bottom_button_text_color": "#ffffff",
         "full_width": true,
         "stack_on_mobile": true,
         "gap": "medium",
@@ -938,7 +1071,13 @@
             "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "link_url": "",
             "link_text": "",
-            "link_style": "link"
+            "link_style": "link",
+            "button_background_2": "",
+            "button_text_color_2": "",
+            "button_font_size_2": 0,
+            "link_url_2": "",
+            "link_text_2": "",
+            "link_style_2": "button"
           }
         },
         "item_VX3H6T": {
@@ -967,7 +1106,13 @@
             "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "link_url": "",
             "link_text": "",
-            "link_style": "link"
+            "link_style": "link",
+            "button_background_2": "",
+            "button_text_color_2": "",
+            "button_font_size_2": 0,
+            "link_url_2": "",
+            "link_text_2": "",
+            "link_style_2": "button"
           }
         },
         "item_jWjiTh": {
@@ -996,7 +1141,13 @@
             "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "link_url": "",
             "link_text": "",
-            "link_style": "link"
+            "link_style": "link",
+            "button_background_2": "",
+            "button_text_color_2": "",
+            "button_font_size_2": 0,
+            "link_url_2": "",
+            "link_text_2": "",
+            "link_style_2": "button"
           }
         },
         "item_UtY6h7": {
@@ -1025,7 +1176,13 @@
             "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "link_url": "",
             "link_text": "",
-            "link_style": "link"
+            "link_style": "link",
+            "button_background_2": "",
+            "button_text_color_2": "",
+            "button_font_size_2": 0,
+            "link_url_2": "",
+            "link_text_2": "",
+            "link_style_2": "button"
           }
         },
         "item_U8cHVC": {
@@ -1054,7 +1211,13 @@
             "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "link_url": "",
             "link_text": "",
-            "link_style": "link"
+            "link_style": "link",
+            "button_background_2": "",
+            "button_text_color_2": "",
+            "button_font_size_2": 0,
+            "link_url_2": "",
+            "link_text_2": "",
+            "link_style_2": "button"
           }
         },
         "item_KLKfNq": {
@@ -1083,7 +1246,13 @@
             "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "link_url": "",
             "link_text": "",
-            "link_style": "link"
+            "link_style": "link",
+            "button_background_2": "",
+            "button_text_color_2": "",
+            "button_font_size_2": 0,
+            "link_url_2": "",
+            "link_text_2": "",
+            "link_style_2": "button"
           }
         },
         "item_N3YA6M": {
@@ -1112,7 +1281,13 @@
             "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "link_url": "",
             "link_text": "",
-            "link_style": "link"
+            "link_style": "link",
+            "button_background_2": "",
+            "button_text_color_2": "",
+            "button_font_size_2": 0,
+            "link_url_2": "",
+            "link_text_2": "",
+            "link_style_2": "button"
           }
         },
         "item_XpcKHC": {
@@ -1141,7 +1316,13 @@
             "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "link_url": "",
             "link_text": "",
-            "link_style": "link"
+            "link_style": "link",
+            "button_background_2": "",
+            "button_text_color_2": "",
+            "button_font_size_2": 0,
+            "link_url_2": "",
+            "link_text_2": "",
+            "link_style_2": "button"
           }
         }
       },
@@ -1158,6 +1339,10 @@
       "disabled": true,
       "name": "Multi-column",
       "settings": {
+        "bottom_button_text": "",
+        "bottom_button_url": "",
+        "bottom_button_background": "#172033",
+        "bottom_button_text_color": "#ffffff",
         "full_width": true,
         "stack_on_mobile": false,
         "gap": "medium",
@@ -1203,7 +1388,13 @@
             "content": "<h3>何が起きたかを見る</h3><ul><li>来店数の変化</li><li>購買率の低下</li><li>売上進捗の遅れ</li></ul>",
             "link_url": "",
             "link_text": "",
-            "link_style": "link"
+            "link_style": "link",
+            "button_background_2": "",
+            "button_text_color_2": "",
+            "button_font_size_2": 0,
+            "link_url_2": "",
+            "link_text_2": "",
+            "link_style_2": "button"
           }
         },
         "item_aqpNXK": {
@@ -1232,7 +1423,13 @@
             "content": "<h3>なぜ起きたか、どう動くかを考える</h3><ul><li>KPIをつなげて要因を整理</li><li>店舗報告やスタッフ状況と照合</li><li>次に確認すべき打ち手を明確化</li></ul>",
             "link_url": "",
             "link_text": "",
-            "link_style": "link"
+            "link_style": "link",
+            "button_background_2": "",
+            "button_text_color_2": "",
+            "button_font_size_2": 0,
+            "link_url_2": "",
+            "link_text_2": "",
+            "link_style_2": "button"
           }
         },
         "item_tTyycj": {
@@ -1262,7 +1459,13 @@
             "content": "<h5>Anonymous by Design</h5><p>100% GDPR/CCPA compliant. All image processing occurs locally on the edge; no identifiable biometric data ever leaves the store.</p>",
             "link_url": "",
             "link_text": "",
-            "link_style": "link"
+            "link_style": "link",
+            "button_background_2": "",
+            "button_text_color_2": "",
+            "button_font_size_2": 0,
+            "link_url_2": "",
+            "link_text_2": "",
+            "link_style_2": "button"
           }
         },
         "item_ztJTym": {
@@ -1292,7 +1495,13 @@
             "content": "<h5>Seamless Integration</h5><p>A plug-and-play measurement layer designed to scale across global retail networks with minimal technical friction.</p>",
             "link_url": "",
             "link_text": "",
-            "link_style": "link"
+            "link_style": "link",
+            "button_background_2": "",
+            "button_text_color_2": "",
+            "button_font_size_2": 0,
+            "link_url_2": "",
+            "link_text_2": "",
+            "link_style_2": "button"
           }
         }
       },
@@ -1309,6 +1518,10 @@
       ],
       "name": "Multi-column",
       "settings": {
+        "bottom_button_text": "",
+        "bottom_button_url": "",
+        "bottom_button_background": "#172033",
+        "bottom_button_text_color": "#ffffff",
         "full_width": true,
         "stack_on_mobile": true,
         "gap": "medium",
@@ -1646,7 +1859,13 @@
             "content": "<h2>状況を聞く</h2><h5>「今日、何を優先すべきですか？」</h5>",
             "link_url": "",
             "link_text": "",
-            "link_style": "link"
+            "link_style": "link",
+            "button_background_2": "",
+            "button_text_color_2": "",
+            "button_font_size_2": 0,
+            "link_url_2": "",
+            "link_text_2": "",
+            "link_style_2": "button"
           }
         },
         "item_MVfQ7a": {
@@ -1675,7 +1894,13 @@
             "content": "<h2>理由を聞く</h2><h5>「なぜ購買率が下がっていますか？」</h5>",
             "link_url": "",
             "link_text": "",
-            "link_style": "link"
+            "link_style": "link",
+            "button_background_2": "",
+            "button_text_color_2": "",
+            "button_font_size_2": 0,
+            "link_url_2": "",
+            "link_text_2": "",
+            "link_style_2": "button"
           }
         },
         "item_Y47ifx": {
@@ -1704,7 +1929,13 @@
             "content": "<h2>次の打ち手を聞く</h2><h5>「次に何を確認すべきですか？」</h5><p></p>",
             "link_url": "",
             "link_text": "",
-            "link_style": "link"
+            "link_style": "link",
+            "button_background_2": "",
+            "button_text_color_2": "",
+            "button_font_size_2": 0,
+            "link_url_2": "",
+            "link_text_2": "",
+            "link_style_2": "button"
           }
         }
       },
@@ -1721,6 +1952,10 @@
       ],
       "name": "Multi-column",
       "settings": {
+        "bottom_button_text": "",
+        "bottom_button_url": "",
+        "bottom_button_background": "#172033",
+        "bottom_button_text_color": "#ffffff",
         "full_width": true,
         "stack_on_mobile": false,
         "gap": "medium",
@@ -1833,7 +2068,13 @@
             "content": "<h5>複数店舗から上がるPulse報告をまとめて確認し、各店舗の状況を短時間で把握できます。</h5><h3></h3>",
             "link_url": "",
             "link_text": "",
-            "link_style": "link"
+            "link_style": "link",
+            "button_background_2": "",
+            "button_text_color_2": "",
+            "button_font_size_2": 0,
+            "link_url_2": "",
+            "link_text_2": "",
+            "link_style_2": "button"
           }
         },
         "item_DXcdME": {
@@ -1862,7 +2103,13 @@
             "content": "<h5>売上、来店数、購買率の変化と、売場変更・在庫状況・スタッフ体制などの現場情報を合わせて確認できます。</h5><h3></h3>",
             "link_url": "",
             "link_text": "",
-            "link_style": "link"
+            "link_style": "link",
+            "button_background_2": "",
+            "button_text_color_2": "",
+            "button_font_size_2": 0,
+            "link_url_2": "",
+            "link_text_2": "",
+            "link_style_2": "button"
           }
         },
         "item_zcnNjx": {
@@ -1891,7 +2138,13 @@
             "content": "<h5>売上、来店数、購買率の変化と、売場変更・在庫状況・スタッフ体制などの現場情報を合わせて確認できます。</h5>",
             "link_url": "",
             "link_text": "",
-            "link_style": "link"
+            "link_style": "link",
+            "button_background_2": "",
+            "button_text_color_2": "",
+            "button_font_size_2": 0,
+            "link_url_2": "",
+            "link_text_2": "",
+            "link_style_2": "button"
           }
         },
         "item_3YPNLW": {
@@ -1920,7 +2173,13 @@
             "content": "<h5>店舗訪問前に、直近のKPI、Pulse、メモ、過去の変化を確認し、訪問の質を高められます。</h5>",
             "link_url": "",
             "link_text": "",
-            "link_style": "link"
+            "link_style": "link",
+            "button_background_2": "",
+            "button_text_color_2": "",
+            "button_font_size_2": 0,
+            "link_url_2": "",
+            "link_text_2": "",
+            "link_style_2": "button"
           }
         },
         "item_GGdeUg": {
@@ -1950,7 +2209,13 @@
             "content": "<h5>担当エリアの変化、現場からの報告、確認すべき課題を整理し、本部への報告準備を効率化できます。</h5>",
             "link_url": "",
             "link_text": "",
-            "link_style": "link"
+            "link_style": "link",
+            "button_background_2": "",
+            "button_text_color_2": "",
+            "button_font_size_2": 0,
+            "link_url_2": "",
+            "link_text_2": "",
+            "link_style_2": "button"
           }
         }
       },
@@ -1964,6 +2229,10 @@
       "disabled": true,
       "name": "Multi-column",
       "settings": {
+        "bottom_button_text": "",
+        "bottom_button_url": "",
+        "bottom_button_background": "#172033",
+        "bottom_button_text_color": "#ffffff",
         "full_width": true,
         "stack_on_mobile": false,
         "gap": "medium",
@@ -2009,7 +2278,13 @@
             "content": "<h3>Sensing</h3><p>Capture high-precision traffic, sales, and operational data</p>",
             "link_url": "",
             "link_text": "",
-            "link_style": "link"
+            "link_style": "link",
+            "button_background_2": "",
+            "button_text_color_2": "",
+            "button_font_size_2": 0,
+            "link_url_2": "",
+            "link_text_2": "",
+            "link_style_2": "button"
           }
         },
         "item_aqpNXK": {
@@ -2038,7 +2313,13 @@
             "content": "<h3>Analysis</h3><p>Identify performance leaks, surges, and execution gaps</p>",
             "link_url": "",
             "link_text": "",
-            "link_style": "link"
+            "link_style": "link",
+            "button_background_2": "",
+            "button_text_color_2": "",
+            "button_font_size_2": 0,
+            "link_url_2": "",
+            "link_text_2": "",
+            "link_style_2": "button"
           }
         },
         "item_tTyycj": {
@@ -2067,7 +2348,13 @@
             "content": "<h3>Recommendation</h3><p>AI-driven operational tasks and staffing adjustments</p>",
             "link_url": "",
             "link_text": "",
-            "link_style": "link"
+            "link_style": "link",
+            "button_background_2": "",
+            "button_text_color_2": "",
+            "button_font_size_2": 0,
+            "link_url_2": "",
+            "link_text_2": "",
+            "link_style_2": "button"
           }
         },
         "item_ztJTym": {
@@ -2096,7 +2383,13 @@
             "content": "<h3>Execution</h3><p>Store teams take action via Flow Assistant notifications</p>",
             "link_url": "",
             "link_text": "",
-            "link_style": "link"
+            "link_style": "link",
+            "button_background_2": "",
+            "button_text_color_2": "",
+            "button_font_size_2": 0,
+            "link_url_2": "",
+            "link_text_2": "",
+            "link_style_2": "button"
           }
         }
       },
@@ -2113,6 +2406,10 @@
       ],
       "name": "Multi-column",
       "settings": {
+        "bottom_button_text": "",
+        "bottom_button_url": "",
+        "bottom_button_background": "#172033",
+        "bottom_button_text_color": "#ffffff",
         "full_width": true,
         "stack_on_mobile": false,
         "gap": "medium",
@@ -2315,7 +2612,13 @@
             "content": "<p>店舗ごとの報告内容を揃え、確認しやすい形で蓄積できます。</p><p></p>",
             "link_url": "",
             "link_text": "",
-            "link_style": "link"
+            "link_style": "link",
+            "button_background_2": "",
+            "button_text_color_2": "",
+            "button_font_size_2": 0,
+            "link_url_2": "",
+            "link_text_2": "",
+            "link_style_2": "button"
           }
         },
         "item_r88DC8": {
@@ -2344,7 +2647,13 @@
             "content": "<p>KPI、メモ、Pulseを同じ画面で確認し、状況把握を早めます。</p>",
             "link_url": "",
             "link_text": "",
-            "link_style": "link"
+            "link_style": "link",
+            "button_background_2": "",
+            "button_text_color_2": "",
+            "button_font_size_2": 0,
+            "link_url_2": "",
+            "link_text_2": "",
+            "link_style_2": "button"
           }
         },
         "item_kncgUf": {
@@ -2373,7 +2682,13 @@
             "content": "<p>複数店舗の変化をまとめて確認し、優先順位を付けやすくします。</p>",
             "link_url": "",
             "link_text": "",
-            "link_style": "link"
+            "link_style": "link",
+            "button_background_2": "",
+            "button_text_color_2": "",
+            "button_font_size_2": 0,
+            "link_url_2": "",
+            "link_text_2": "",
+            "link_style_2": "button"
           }
         },
         "item_YPXWMM": {
@@ -2402,7 +2717,13 @@
             "content": "<p>同じデータと店舗文脈をもとに、本部・店舗間の会話を進めやすくします。</p>",
             "link_url": "",
             "link_text": "",
-            "link_style": "link"
+            "link_style": "link",
+            "button_background_2": "",
+            "button_text_color_2": "",
+            "button_font_size_2": 0,
+            "link_url_2": "",
+            "link_text_2": "",
+            "link_style_2": "button"
           }
         },
         "item_QhMfj6": {
@@ -2431,7 +2752,13 @@
             "content": "<p>売上、来店、購買率の変化に対して、確認すべき要因を整理できます。</p>",
             "link_url": "",
             "link_text": "",
-            "link_style": "link"
+            "link_style": "link",
+            "button_background_2": "",
+            "button_text_color_2": "",
+            "button_font_size_2": 0,
+            "link_url_2": "",
+            "link_text_2": "",
+            "link_style_2": "button"
           }
         },
         "item_dJ3Txk": {
@@ -2460,7 +2787,13 @@
             "content": "<p>成果につながった施策や店舗行動を、他店舗にも共有しやすくします。</p><p></p>",
             "link_url": "",
             "link_text": "",
-            "link_style": "link"
+            "link_style": "link",
+            "button_background_2": "",
+            "button_text_color_2": "",
+            "button_font_size_2": 0,
+            "link_url_2": "",
+            "link_text_2": "",
+            "link_style_2": "button"
           }
         },
         "item_yNyAhh": {
@@ -2489,7 +2822,13 @@
             "content": "<p>自店舗の来店数、購買率、売上・予算進捗を確認し、売場変更、在庫、イベント、スタッフ状況をPulseやメモに記録します。数値の変化と現場の理由を一緒に残し、次の改善行動につなげます。</p>",
             "link_url": "",
             "link_text": "",
-            "link_style": "link"
+            "link_style": "link",
+            "button_background_2": "",
+            "button_text_color_2": "",
+            "button_font_size_2": 0,
+            "link_url_2": "",
+            "link_text_2": "",
+            "link_style_2": "button"
           }
         },
         "item_UY8BbC": {
@@ -2518,7 +2857,13 @@
             "content": "<p>担当店舗のKPIを店舗・エリア別に比較し、急な変化やアラートから注意すべき店舗を特定します。訪問前に直近のKPI、店舗報告、過去の対応を確認し、支援の優先順位を決めます。<br/></p><p></p>",
             "link_url": "",
             "link_text": "",
-            "link_style": "link"
+            "link_style": "link",
+            "button_background_2": "",
+            "button_text_color_2": "",
+            "button_font_size_2": 0,
+            "link_url_2": "",
+            "link_text_2": "",
+            "link_style_2": "button"
           }
         },
         "item_wDP74j": {
@@ -2547,7 +2892,13 @@
             "content": "<p>店舗・エリア別の成果差を比較し、成果につながった施策や店舗行動を特定します。重点施策や投資の優先順位を判断し、成功店舗の実行方法を全店の標準運用へ展開します。<br/></p>",
             "link_url": "",
             "link_text": "",
-            "link_style": "link"
+            "link_style": "link",
+            "button_background_2": "",
+            "button_text_color_2": "",
+            "button_font_size_2": 0,
+            "link_url_2": "",
+            "link_text_2": "",
+            "link_style_2": "button"
           }
         }
       },
@@ -2567,6 +2918,10 @@
       ],
       "name": "Multi-column",
       "settings": {
+        "bottom_button_text": "",
+        "bottom_button_url": "",
+        "bottom_button_background": "#172033",
+        "bottom_button_text_color": "#ffffff",
         "full_width": true,
         "stack_on_mobile": true,
         "gap": "medium",
