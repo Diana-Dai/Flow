@@ -1639,7 +1639,7 @@
         "bottom_button_text": "",
         "bottom_button_url": "",
         "bottom_button_background": "#172033",
-        "bottom_button_text_color": "#ffffff",
+        "bottom_button_text_color": "#F9FAFB",
         "full_width": true,
         "stack_on_mobile": true,
         "gap": "medium",
@@ -1686,7 +1686,7 @@
         "full_width": true,
         "content_width": "medium",
         "text_position": "center",
-        "background": "#F9FAFB",
+        "background": "#ffffff",
         "background_gradient": "",
         "text_color": ""
       }
