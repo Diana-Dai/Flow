@@ -445,7 +445,7 @@
       "name": "Multi-column",
       "settings": {
         "bottom_button_text": "Flowの店舗分析プラットフォーム全体を見る",
-        "bottom_button_url": "",
+        "bottom_button_url": "https://flow-solutions.com/pages/flow-platform-overview",
         "bottom_button_background": "#102D4F",
         "bottom_button_text_color": "#ffffff",
         "full_width": true,
