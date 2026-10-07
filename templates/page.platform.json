@@ -1422,7 +1422,7 @@
             "box_hover_lift": true,
             "equal_height": true,
             "box_heading_size": 18,
-            "box_text_size": 15,
+            "box_text_size": 16,
             "bullet_icon_color": "#a0b842",
             "link_color": "#0e366a",
             "icon_1": "picto-shield",
