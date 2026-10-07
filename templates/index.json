@@ -444,6 +444,10 @@
       "custom_css": [],
       "name": "Multi-column",
       "settings": {
+        "bottom_button_text": "Flowの店舗分析プラットフォーム全体を見る",
+        "bottom_button_url": "",
+        "bottom_button_background": "#102D4F",
+        "bottom_button_text_color": "#ffffff",
         "full_width": true,
         "stack_on_mobile": false,
         "gap": "medium",
@@ -478,6 +482,7 @@
       "block_order": [
         "button_CHckw7"
       ],
+      "disabled": true,
       "name": "Rich text",
       "settings": {
         "full_width": true,
@@ -718,6 +723,10 @@
       ],
       "name": "Multi-column",
       "settings": {
+        "bottom_button_text": "",
+        "bottom_button_url": "",
+        "bottom_button_background": "#172033",
+        "bottom_button_text_color": "#ffffff",
         "full_width": true,
         "stack_on_mobile": true,
         "gap": "medium",
@@ -1226,6 +1235,10 @@
       "custom_css": [],
       "name": "Multi-column",
       "settings": {
+        "bottom_button_text": "",
+        "bottom_button_url": "",
+        "bottom_button_background": "#172033",
+        "bottom_button_text_color": "#ffffff",
         "full_width": true,
         "stack_on_mobile": true,
         "gap": "medium",
@@ -1365,6 +1378,10 @@
       ],
       "name": "Multi-column",
       "settings": {
+        "bottom_button_text": "",
+        "bottom_button_url": "",
+        "bottom_button_background": "#172033",
+        "bottom_button_text_color": "#ffffff",
         "full_width": true,
         "stack_on_mobile": true,
         "gap": "medium",
@@ -1619,6 +1636,10 @@
       ],
       "name": "Multi-column",
       "settings": {
+        "bottom_button_text": "",
+        "bottom_button_url": "",
+        "bottom_button_background": "#172033",
+        "bottom_button_text_color": "#ffffff",
         "full_width": true,
         "stack_on_mobile": true,
         "gap": "medium",
@@ -1791,6 +1812,10 @@
       ],
       "name": "Multi-column",
       "settings": {
+        "bottom_button_text": "",
+        "bottom_button_url": "",
+        "bottom_button_background": "#172033",
+        "bottom_button_text_color": "#ffffff",
         "full_width": true,
         "stack_on_mobile": true,
         "gap": "medium",
@@ -2005,6 +2030,10 @@
       "custom_css": [],
       "name": "Multi-column",
       "settings": {
+        "bottom_button_text": "",
+        "bottom_button_url": "",
+        "bottom_button_background": "#172033",
+        "bottom_button_text_color": "#ffffff",
         "full_width": true,
         "stack_on_mobile": true,
         "gap": "medium",
