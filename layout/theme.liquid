@@ -762,7 +762,65 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 {% endif %}
 
 
+<script>
+  (function () {
+    var MIN = 16;
 
+    function shouldSkip(el) {
+      if (!el || el.nodeType !== 1) return true;
+      var tag = el.tagName;
+      if (tag === 'SCRIPT' || tag === 'STYLE' || tag === 'SVG' || tag === 'PATH' || tag === 'IMG' || tag === 'NOSCRIPT') return true;
+      if (el.namespaceURI === 'http://www.w3.org/2000/svg') return true;
+      if (el.closest && el.closest('svg')) return true;
+      return false;
+    }
+
+    function enforce(root) {
+      var scope = root && root.querySelectorAll ? root : document.body;
+      if (!scope) return;
+      var nodes = [scope];
+      var found = scope.querySelectorAll('*');
+      for (var i = 0; i < found.length; i++) nodes.push(found[i]);
+
+      for (var n = 0; n < nodes.length; n++) {
+        var el = nodes[n];
+        if (shouldSkip(el)) continue;
+
+        if (el.dataset.minFontApplied === '1') {
+          el.style.removeProperty('font-size');
+        }
+
+        var size = parseFloat(window.getComputedStyle(el).fontSize);
+        if (!size || size >= MIN) {
+          if (el.dataset.minFontApplied === '1') delete el.dataset.minFontApplied;
+          continue;
+        }
+
+        el.style.setProperty('font-size', MIN + 'px', 'important');
+        el.dataset.minFontApplied = '1';
+      }
+    }
+
+    var timer;
+    function run() {
+      window.clearTimeout(timer);
+      timer = window.setTimeout(function () {
+        enforce(document.body);
+      }, 60);
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', run);
+    } else {
+      run();
+    }
+    window.addEventListener('load', run);
+    window.addEventListener('resize', run);
+    document.addEventListener('shopify:section:load', function (event) {
+      enforce(event.target);
+    });
+  })();
+</script>
 
 
 
