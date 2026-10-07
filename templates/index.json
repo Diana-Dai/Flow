@@ -48,13 +48,13 @@
           "type": "buttons",
           "settings": {
             "style_1": "fill",
-            "size_1": "base",
+            "size_1": "lg",
             "text_1": "店舗分析・来店計測のデモを相談する",
             "url_1": "shopify://pages/contact",
             "background_1": "#1c4072",
             "text_color_1": "#f9fafb",
             "style_2": "outline",
-            "size_2": "base",
+            "size_2": "lg",
             "text_2": "小売企業の導入事例を見る",
             "url_2": "shopify://pages/case-studies",
             "background_2": "",
@@ -2112,7 +2112,7 @@
           "type": "button",
           "settings": {
             "style": "fill",
-            "size": "base",
+            "size": "lg",
             "text": "店舗分析・来店計測のデモを相談する",
             "url": "https://flow-solutions.com/pages/contact",
             "background": "#a0b842",
@@ -2123,7 +2123,7 @@
           "type": "button",
           "settings": {
             "style": "fill",
-            "size": "base",
+            "size": "lg",
             "text": "5分で店舗データ活用の課題を確認する",
             "url": "https://flow-solutions.com/pages/assessment",
             "background": "#ffffff",
