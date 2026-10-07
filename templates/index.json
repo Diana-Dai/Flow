@@ -255,7 +255,7 @@
             "text_color": "#4b5563",
             "text_font_size": 16,
             "condition_text_color": "#696969",
-            "condition_font_size": 14,
+            "condition_font_size": 16,
             "button_background": "#0e366a",
             "button_hover_background": "#0a2850",
             "button_text_color": "#ffffff",
