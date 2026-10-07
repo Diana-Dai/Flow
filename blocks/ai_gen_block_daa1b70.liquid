@@ -51,19 +51,18 @@
 {% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
 
 {% style %}
-  #shopify-section-{{ section.id }} .ai-split-feature {
+  #shopify-section-{{ section.id }} .ai-split-feature-{{ ai_gen_id }} {
     display: block;
-    background-color: {{ section.settings.section_background }};
-    padding: {{ section.settings.section_padding_top }}px 0 {{ section.settings.section_padding_bottom }}px;
+    background-color: {{ block.settings.section_background }};
+    padding: {{ block.settings.section_padding_top }}px 0 {{ block.settings.section_padding_bottom }}px;
   }
 
-  #shopify-section-{{ section.id }} .ai-split-feature-container {
-    max-width: {{ settings.page_width | default: 1200 }}px;
+  #shopify-section-{{ section.id }} .ai-split-feature-container-{{ ai_gen_id }} {
+    max-width: {{ settings.page_width }}px;
     margin: 0 auto;
-    padding: 0 20px;
   }
 
-  #shopify-section-{{ section.id }} .ai-split-feature-grid {
+  #shopify-section-{{ section.id }} .ai-split-feature-grid-{{ ai_gen_id }} {
     display: grid;
     grid-template-columns: 1fr;
     gap: 48px;
@@ -71,25 +70,25 @@
   }
 
   @media screen and (min-width: 1000px) {
-    #shopify-section-{{ section.id }} .ai-split-feature-grid {
+    #shopify-section-{{ section.id }} .ai-split-feature-grid-{{ ai_gen_id }} {
       grid-template-columns: 1fr 1fr;
-      gap: {{ section.settings.column_gap }}px;
+      gap: {{ block.settings.column_gap }}px;
     }
   }
 
-  #shopify-section-{{ section.id }} .ai-split-feature-left {
+  #shopify-section-{{ section.id }} .ai-split-feature-left-{{ ai_gen_id }} {
     display: flex;
     flex-direction: column;
     gap: 20px;
   }
 
-  #shopify-section-{{ section.id }} .ai-split-feature-badge {
+  #shopify-section-{{ section.id }} .ai-split-feature-badge-{{ ai_gen_id }} {
     display: inline-flex;
     align-items: center;
     gap: 6px;
     padding: 6px 16px;
-    background-color: {{ section.settings.badge_background }};
-    color: {{ section.settings.badge_text_color }};
+    background-color: {{ block.settings.badge_background }};
+    color: {{ block.settings.badge_text_color }};
     border-radius: 20px;
     font-size: 12px;
     font-weight: 500;
@@ -97,50 +96,47 @@
     letter-spacing: 0.5px;
   }
 
-  #shopify-section-{{ section.id }} .ai-split-feature-badge-icon {
+  #shopify-section-{{ section.id }} .ai-split-feature-badge-icon-{{ ai_gen_id }} {
     width: 16px;
     height: 16px;
     flex-shrink: 0;
   }
 
-  #shopify-section-{{ section.id }} .ai-split-feature-badge-icon svg {
+  #shopify-section-{{ section.id }} .ai-split-feature-badge-icon-{{ ai_gen_id }} svg {
     width: 100%;
     height: 100%;
     stroke: currentColor;
     fill: none;
   }
 
-  #shopify-section-{{ section.id }} .ai-split-feature-right {
+  #shopify-section-{{ section.id }} .ai-split-feature-right-{{ ai_gen_id }} {
     width: 100%;
-    display: flex;
-    justify-content: center;
   }
 
-  #shopify-section-{{ section.id }} .ai-split-feature-card {
-    background-color: {{ section.settings.card_background }};
-    border: 1px solid {{ section.settings.card_border_color }};
-    border-radius: {{ section.settings.card_border_radius }}px;
-    padding: {{ section.settings.card_padding }}px;
-    width: {{ section.settings.card_width }}%;
+  #shopify-section-{{ section.id }} .ai-split-feature-card-{{ ai_gen_id }} {
+    background-color: {{ block.settings.card_background }};
+    border: 1px solid {{ block.settings.card_border_color }};
+    border-radius: {{ block.settings.card_border_radius }}px;
+    padding: {{ block.settings.card_padding }}px 14px;
+    width: {{ block.settings.card_width }}%;
     max-width: 100%;
-    box-sizing: border-box;
   }
 
-  #shopify-section-{{ section.id }} .ai-split-feature-card-header {
+  #shopify-section-{{ section.id }} .ai-split-feature-card-header-{{ ai_gen_id }} {
     display: flex;
     align-items: center;
     gap: 12px;
     margin-bottom: 24px;
   }
 
-  #shopify-section-{{ section.id }} .ai-split-feature-card-icon {
+  #shopify-section-{{ section.id }} .ai-split-feature-card-icon-{{ ai_gen_id }} {
     width: 24px;
     height: 24px;
     flex-shrink: 0;
-    color: {{ section.settings.card_icon_color }};
+    color: {{ block.settings.card_icon_color }};
   }
 
-  #shopify-section-{{ section.id }} .ai-split-feature-card-icon svg {
+  #shopify-section-{{ section.id }} .ai-split-feature-card-icon-{{ ai_gen_id }} svg {
     width: 100%;
     height: 100%;
     stroke: currentColor;
@@ -148,58 +144,58 @@
     stroke-width: 1.5;
   }
 
-  #shopify-section-{{ section.id }} .ai-split-feature-card-header-text {
+  #shopify-section-{{ section.id }} .ai-split-feature-card-header-text-{{ ai_gen_id }} {
     display: flex;
     flex-direction: column;
     gap: 2px;
   }
 
-  #shopify-section-{{ section.id }} .ai-split-feature-card-title {
-    font-family: var(--font-heading-family, sans-serif);
+  #shopify-section-{{ section.id }} .ai-split-feature-card-title-{{ ai_gen_id }} {
+    font-family: var(--font-heading-family, {{ settings.heading_font.family }}, {{ settings.heading_font.fallback_families }});
     font-size: 18px;
-    font-weight: 600;
-    color: {{ section.settings.card_title_color }};
+ font-weight: 500;
+    color: {{ block.settings.card_title_color }};
     margin: 0;
   }
 
-  #shopify-section-{{ section.id }} .ai-split-feature-card-subtitle {
-    font-family: var(--font-body-family, sans-serif);
+  #shopify-section-{{ section.id }} .ai-split-feature-card-subtitle-{{ ai_gen_id }} {
+    font-family: var(--font-body-family, {{ settings.text_font.family }}, {{ settings.text_font.fallback_families }});
     font-size: 13px;
-    color: {{ section.settings.card_subtitle_color }};
+    color: {{ block.settings.card_subtitle_color }};
     margin: 0;
   }
 
-  #shopify-section-{{ section.id }} .ai-split-feature-chat-rows {
+  #shopify-section-{{ section.id }} .ai-split-feature-chat-rows-{{ ai_gen_id }} {
     display: flex;
     flex-direction: column;
     gap: 12px;
     margin-bottom: 20px;
   }
 
-  #shopify-section-{{ section.id }} .ai-split-feature-chat-row {
-    background-color: {{ section.settings.row_background }};
-    border: 1px solid {{ section.settings.row_border_color }};
-    border-radius: {{ section.settings.row_border_radius }}px;
+  #shopify-section-{{ section.id }} .ai-split-feature-chat-row-{{ ai_gen_id }} {
+    background-color: {{ block.settings.row_background }};
+    border: 1px solid {{ block.settings.row_border_color }};
+    border-radius: {{ block.settings.row_border_radius }}px;
     padding: 16px;
     display: flex;
     align-items: flex-start;
     gap: 14px;
   }
 
-  #shopify-section-{{ section.id }} .ai-split-feature-chat-icon-wrapper {
+  #shopify-section-{{ section.id }} .ai-split-feature-chat-icon-wrapper-{{ ai_gen_id }} {
     width: 40px;
     height: 40px;
     flex-shrink: 0;
-    background-color: {{ section.settings.row_icon_background }};
-    border: 1px solid {{ section.settings.row_icon_border_color }};
+    background-color: {{ block.settings.row_icon_background }};
+    border: 1px solid {{ block.settings.row_icon_border_color }};
     border-radius: 8px;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: {{ section.settings.row_icon_color }};
+    color: {{ block.settings.row_icon_color }};
   }
 
-  #shopify-section-{{ section.id }} .ai-split-feature-chat-icon-wrapper svg {
+  #shopify-section-{{ section.id }} .ai-split-feature-chat-icon-wrapper-{{ ai_gen_id }} svg {
     width: 20px;
     height: 20px;
     stroke: currentColor;
@@ -207,75 +203,59 @@
     stroke-width: 1.5;
   }
 
-  #shopify-section-{{ section.id }} .ai-split-feature-chat-content {
+  #shopify-section-{{ section.id }} .ai-split-feature-chat-content-{{ ai_gen_id }} {
     flex: 1;
     display: flex;
     flex-direction: column;
     gap: 6px;
   }
 
-  #shopify-section-{{ section.id }} .ai-split-feature-chat-label {
-    font-family: var(--font-body-family, sans-serif);
+  #shopify-section-{{ section.id }} .ai-split-feature-chat-label-{{ ai_gen_id }} {
+    font-family: var(--font-body-family, {{ settings.text_font.family }}, {{ settings.text_font.fallback_families }});
     font-size: 0.9rem;
     font-weight: 600;
-    color: {{ section.settings.row_label_color }};
+    color: {{ block.settings.row_label_color }};
     margin: 0;
   }
 
-  #shopify-section-{{ section.id }} .ai-split-feature-chat-quote {
-    font-family: var(--font-body-family, sans-serif);
-    font-size: 0.95rem;
-    font-weight: 500;
-    color: {{ section.settings.row_quote_color }};
+  #shopify-section-{{ section.id }} .ai-split-feature-chat-quote-{{ ai_gen_id }} {
+    font-family: var(--font-body-family, {{ settings.text_font.family }}, {{ settings.text_font.fallback_families }});
+    font-size: 1rem;
+ font-weight: 500;
+    color: {{ block.settings.row_quote_color }};
     margin: 0;
     line-height: 1.5;
-    white-space: pre-line;
   }
 
-  #shopify-section-{{ section.id }} .ai-split-feature-heading {
-    font-family: var(--font-heading-family, sans-serif);
-    color: {{ section.settings.heading_color }};
-    white-space: pre-line;
-    margin: 0;
-  }
-
-  #shopify-section-{{ section.id }} .ai-split-feature-description {
-    font-family: var(--font-body-family, sans-serif);
-    color: {{ section.settings.description_color }};
-    white-space: pre-line;
-    margin: 0;
-    line-height: 1.6;
-  }
-
-  #shopify-section-{{ section.id }} .ai-split-feature-divider {
+  #shopify-section-{{ section.id }} .ai-split-feature-divider-{{ ai_gen_id }} {
     height: 1px;
-    background-color: {{ section.settings.divider_color }};
+    background-color: {{ block.settings.divider_color }};
     margin: 16px 0;
   }
 
-  #shopify-section-{{ section.id }} .ai-split-feature-footer {
+  #shopify-section-{{ section.id }} .ai-split-feature-footer-{{ ai_gen_id }} {
     display: flex;
     flex-direction: column;
     gap: 12px;
   }
 
-  #shopify-section-{{ section.id }} .ai-split-feature-footer-label {
+  #shopify-section-{{ section.id }} .ai-split-feature-footer-label-{{ ai_gen_id }} {
     display: flex;
     align-items: center;
     gap: 8px;
-    font-family: var(--font-body-family, sans-serif);
+    font-family: var(--font-body-family, {{ settings.text_font.family }}, {{ settings.text_font.fallback_families }});
     font-size: 0.95rem;
     font-weight: 600;
-    color: {{ section.settings.footer_label_color }};
+    color: {{ block.settings.footer_label_color }};
   }
 
-  #shopify-section-{{ section.id }} .ai-split-feature-footer-icon {
+  #shopify-section-{{ section.id }} .ai-split-feature-footer-icon-{{ ai_gen_id }} {
     width: 16px;
     height: 16px;
     flex-shrink: 0;
   }
 
-  #shopify-section-{{ section.id }} .ai-split-feature-footer-icon svg {
+  #shopify-section-{{ section.id }} .ai-split-feature-footer-icon-{{ ai_gen_id }} svg {
     width: 100%;
     height: 100%;
     stroke: currentColor;
@@ -283,60 +263,59 @@
     stroke-width: 1.5;
   }
 
-  #shopify-section-{{ section.id }} .ai-split-feature-tags {
+  #shopify-section-{{ section.id }} .ai-split-feature-tags-{{ ai_gen_id }} {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
     align-items: center;
   }
 
-  #shopify-section-{{ section.id }} .ai-split-feature-tag {
-    background-color: {{ section.settings.tag_background }};
-    color: {{ section.settings.tag_text_color }};
+  #shopify-section-{{ section.id }} .ai-split-feature-tag-{{ ai_gen_id }} {
+    background-color: {{ block.settings.tag_background }};
+    color: {{ block.settings.tag_text_color }};
     padding: 6px 12px;
     border-radius: 16px;
-    font-family: var(--font-body-family, sans-serif);
-    font-size: 0.85rem;
+    font-family: var(--font-body-family, {{ settings.text_font.family }}, {{ settings.text_font.fallback_families }});
+    font-size: 0.9rem;
     font-weight: 500;
   }
 
-  #shopify-section-{{ section.id }} .ai-split-feature-tag-more {
+  #shopify-section-{{ section.id }} .ai-split-feature-tag-more-{{ ai_gen_id }} {
     width: 28px;
     height: 28px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: {{ section.settings.tag_background }};
+    background-color: {{ block.settings.tag_background }};
     border-radius: 50%;
     cursor: pointer;
-    color: {{ section.settings.tag_text_color }};
+    color: {{ block.settings.tag_text_color }};
     border: none;
     padding: 0;
   }
 
-  #shopify-section-{{ section.id }} .ai-split-feature-tag-more svg {
+  #shopify-section-{{ section.id }} .ai-split-feature-tag-more-{{ ai_gen_id }} svg {
     width: 16px;
     height: 16px;
     fill: currentColor;
   }
 
   @media screen and (max-width: 999px) {
-    #shopify-section-{{ section.id }} .ai-split-feature-card {
+    #shopify-section-{{ section.id }} .ai-split-feature-card-{{ ai_gen_id }} {
       width: 100%;
     }
   }
 {% endstyle %}
 
-<div class="ai-split-feature">
-  <div class="ai-split-feature-container">
-    <div class="ai-split-feature-grid">
-      <!-- Left Column -->
-      <div class="ai-split-feature-left">
-        {% if section.settings.show_badge %}
-          <div class="ai-split-feature-badge">
-            {% if section.settings.badge_icon != 'none' %}
-              <span class="ai-split-feature-badge-icon">
-                {% case section.settings.badge_icon %}
+<ai-split-feature-{{ ai_gen_id }} class="ai-split-feature-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-split-feature-container-{{ ai_gen_id }}">
+    <div class="ai-split-feature-grid-{{ ai_gen_id }}">
+      <div class="ai-split-feature-left-{{ ai_gen_id }}">
+        {% if block.settings.show_badge %}
+          <div class="ai-split-feature-badge-{{ ai_gen_id }}">
+            {% if block.settings.badge_icon != 'none' %}
+              <span class="ai-split-feature-badge-icon-{{ ai_gen_id }}">
+                {% case block.settings.badge_icon %}
                   {% when 'sparkles' %}
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                       <path d="M12 3l1.912 5.813a2 2 0 001.275 1.275L21 12l-5.813 1.912a2 2 0 00-1.275 1.275L12 21l-1.912-5.813a2 2 0 00-1.275-1.275L3 12l5.813-1.912a2 2 0 001.275-1.275L12 3z"/>
@@ -356,25 +335,24 @@
                 {% endcase %}
               </span>
             {% endif %}
-            {{ section.settings.badge_text }}
+            {{ block.settings.badge_text }}
           </div>
         {% endif %}
 
-        {% if section.settings.heading != blank %}
-          <h2 class="ai-split-feature-heading h1">{{ section.settings.heading }}</h2>
+        {% if block.settings.heading != blank %}
+          <h2 class="ai-split-feature-heading-{{ ai_gen_id }} h1">{{ block.settings.heading }}</h2>
         {% endif %}
 
-        {% if section.settings.description != blank %}
-          <p class="ai-split-feature-description">{{ section.settings.description }}</p>
+        {% if block.settings.description != blank %}
+          <p class="ai-split-feature-description-{{ ai_gen_id }}">{{ block.settings.description }}</p>
         {% endif %}
       </div>
 
-      <!-- Right Column -->
-      <div class="ai-split-feature-right">
-        <div class="ai-split-feature-card">
-          <div class="ai-split-feature-card-header">
-            <div class="ai-split-feature-card-icon">
-              {% case section.settings.card_header_icon %}
+      <div class="ai-split-feature-right-{{ ai_gen_id }}">
+        <div class="ai-split-feature-card-{{ ai_gen_id }}">
+          <div class="ai-split-feature-card-header-{{ ai_gen_id }}">
+            <div class="ai-split-feature-card-icon-{{ ai_gen_id }}">
+              {% case block.settings.card_header_icon %}
                 {% when 'sparkles' %}
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M12 3l1.912 5.813a2 2 0 001.275 1.275L21 12l-5.813 1.912a2 2 0 00-1.275 1.275L12 21l-1.912-5.813a2 2 0 00-1.275-1.275L3 12l5.813-1.912a2 2 0 001.275-1.275L12 3z"/>
@@ -396,93 +374,138 @@
                   </svg>
               {% endcase %}
             </div>
-            <div class="ai-split-feature-card-header-text">
-              <h3 class="ai-split-feature-card-title">{{ section.settings.card_title }}</h3>
-              <p class="ai-split-feature-card-subtitle">{{ section.settings.card_subtitle }}</p>
+            <div class="ai-split-feature-card-header-text-{{ ai_gen_id }}">
+              <h3 class="ai-split-feature-card-title-{{ ai_gen_id }}">{{ block.settings.card_title }}</h3>
+              <p class="ai-split-feature-card-subtitle-{{ ai_gen_id }}">{{ block.settings.card_subtitle }}</p>
             </div>
           </div>
 
-          <div class="ai-split-feature-chat-rows">
-            <!-- Row 1 -->
-            <div class="ai-split-feature-chat-row">
-              <div class="ai-split-feature-chat-icon-wrapper">
-                {% case section.settings.row_1_icon %}
+          <div class="ai-split-feature-chat-rows-{{ ai_gen_id }}">
+            <div class="ai-split-feature-chat-row-{{ ai_gen_id }}">
+              <div class="ai-split-feature-chat-icon-wrapper-{{ ai_gen_id }}">
+                {% case block.settings.row_1_icon %}
                   {% when 'chart' %}
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
-                      <line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/>
+                      <line x1="18" y1="20" x2="18" y2="10"/>
+                      <line x1="12" y1="20" x2="12" y2="4"/>
+                      <line x1="6" y1="20" x2="6" y2="14"/>
                     </svg>
                   {% when 'search' %}
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
-                      <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+                      <circle cx="11" cy="11" r="8"/>
+                      <path d="m21 21-4.35-4.35"/>
                     </svg>
                   {% when 'target' %}
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
-                      <circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/>
+                      <circle cx="12" cy="12" r="10"/>
+                      <circle cx="12" cy="12" r="6"/>
+                      <circle cx="12" cy="12" r="2"/>
+                    </svg>
+                  {% when 'lightbulb' %}
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/>
+                      <path d="M9 18h6"/>
+                      <path d="M10 22h4"/>
+                    </svg>
+                  {% when 'settings' %}
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/>
+                      <circle cx="12" cy="12" r="3"/>
                     </svg>
                 {% endcase %}
               </div>
-              <div class="ai-split-feature-chat-content">
-                <p class="ai-split-feature-chat-label">{{ section.settings.row_1_label }}</p>
-                <p class="ai-split-feature-chat-quote">{{ section.settings.row_1_quote }}</p>
+              <div class="ai-split-feature-chat-content-{{ ai_gen_id }}">
+                <p class="ai-split-feature-chat-label-{{ ai_gen_id }}">{{ block.settings.row_1_label }}</p>
+                <p class="ai-split-feature-chat-quote-{{ ai_gen_id }}">{{ block.settings.row_1_quote }}</p>
               </div>
             </div>
 
-            <!-- Row 2 -->
-            <div class="ai-split-feature-chat-row">
-              <div class="ai-split-feature-chat-icon-wrapper">
-                {% case section.settings.row_2_icon %}
+            <div class="ai-split-feature-chat-row-{{ ai_gen_id }}">
+              <div class="ai-split-feature-chat-icon-wrapper-{{ ai_gen_id }}">
+                {% case block.settings.row_2_icon %}
                   {% when 'chart' %}
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
-                      <line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/>
+                      <line x1="18" y1="20" x2="18" y2="10"/>
+                      <line x1="12" y1="20" x2="12" y2="4"/>
+                      <line x1="6" y1="20" x2="6" y2="14"/>
                     </svg>
                   {% when 'search' %}
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
-                      <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+                      <circle cx="11" cy="11" r="8"/>
+                      <path d="m21 21-4.35-4.35"/>
                     </svg>
                   {% when 'target' %}
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
-                      <circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/>
+                      <circle cx="12" cy="12" r="10"/>
+                      <circle cx="12" cy="12" r="6"/>
+                      <circle cx="12" cy="12" r="2"/>
+                    </svg>
+                  {% when 'lightbulb' %}
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/>
+                      <path d="M9 18h6"/>
+                      <path d="M10 22h4"/>
+                    </svg>
+                  {% when 'settings' %}
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/>
+                      <circle cx="12" cy="12" r="3"/>
                     </svg>
                 {% endcase %}
               </div>
-              <div class="ai-split-feature-chat-content">
-                <p class="ai-split-feature-chat-label">{{ section.settings.row_2_label }}</p>
-                <p class="ai-split-feature-chat-quote">{{ section.settings.row_2_quote }}</p>
+              <div class="ai-split-feature-chat-content-{{ ai_gen_id }}">
+                <p class="ai-split-feature-chat-label-{{ ai_gen_id }}">{{ block.settings.row_2_label }}</p>
+                <p class="ai-split-feature-chat-quote-{{ ai_gen_id }}">{{ block.settings.row_2_quote }}</p>
               </div>
             </div>
 
-            <!-- Row 3 -->
-            <div class="ai-split-feature-chat-row">
-              <div class="ai-split-feature-chat-icon-wrapper">
-                {% case section.settings.row_3_icon %}
+            <div class="ai-split-feature-chat-row-{{ ai_gen_id }}">
+              <div class="ai-split-feature-chat-icon-wrapper-{{ ai_gen_id }}">
+                {% case block.settings.row_3_icon %}
                   {% when 'chart' %}
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
-                      <line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/>
+                      <line x1="18" y1="20" x2="18" y2="10"/>
+                      <line x1="12" y1="20" x2="12" y2="4"/>
+                      <line x1="6" y1="20" x2="6" y2="14"/>
                     </svg>
                   {% when 'search' %}
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
-                      <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+                      <circle cx="11" cy="11" r="8"/>
+                      <path d="m21 21-4.35-4.35"/>
                     </svg>
                   {% when 'target' %}
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
-                      <circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/>
+                      <circle cx="12" cy="12" r="10"/>
+                      <circle cx="12" cy="12" r="6"/>
+                      <circle cx="12" cy="12" r="2"/>
+                    </svg>
+                  {% when 'lightbulb' %}
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/>
+                      <path d="M9 18h6"/>
+                      <path d="M10 22h4"/>
+                    </svg>
+                  {% when 'settings' %}
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/>
+                      <circle cx="12" cy="12" r="3"/>
                     </svg>
                 {% endcase %}
               </div>
-              <div class="ai-split-feature-chat-content">
-                <p class="ai-split-feature-chat-label">{{ section.settings.row_3_label }}</p>
-                <p class="ai-split-feature-chat-quote">{{ section.settings.row_3_quote }}</p>
+              <div class="ai-split-feature-chat-content-{{ ai_gen_id }}">
+                <p class="ai-split-feature-chat-label-{{ ai_gen_id }}">{{ block.settings.row_3_label }}</p>
+                <p class="ai-split-feature-chat-quote-{{ ai_gen_id }}">{{ block.settings.row_3_quote }}</p>
               </div>
             </div>
           </div>
 
-          {% if section.settings.show_footer %}
-            <div class="ai-split-feature-divider"></div>
+          {% if block.settings.show_footer %}
+            <div class="ai-split-feature-divider-{{ ai_gen_id }}"></div>
 
-            <div class="ai-split-feature-footer">
-              <div class="ai-split-feature-footer-label">
-                <span class="ai-split-feature-footer-icon">
-                  {% case section.settings.footer_icon %}
+            <div class="ai-split-feature-footer-{{ ai_gen_id }}">
+              <div class="ai-split-feature-footer-label-{{ ai_gen_id }}">
+                <span class="ai-split-feature-footer-icon-{{ ai_gen_id }}">
+                  {% case block.settings.footer_icon %}
                     {% when 'database' %}
                       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
                         <ellipse cx="12" cy="5" rx="9" ry="3"/>
@@ -500,16 +523,16 @@
                       </svg>
                   {% endcase %}
                 </span>
-                {{ section.settings.footer_label }}
+                {{ block.settings.footer_label }}
               </div>
 
-              <div class="ai-split-feature-tags">
-                {% assign tag_list = section.settings.footer_tags | split: ',' %}
+              <div class="ai-split-feature-tags-{{ ai_gen_id }}">
+                {% assign tag_list = block.settings.footer_tags | split: ',' %}
                 {% for tag in tag_list %}
-                  <span class="ai-split-feature-tag">{{ tag | strip }}</span>
+                  <span class="ai-split-feature-tag-{{ ai_gen_id }}">{{ tag | strip }}</span>
                 {% endfor %}
-                {% if section.settings.show_more_button %}
-                  <button class="ai-split-feature-tag-more" aria-label="More options">
+                {% if block.settings.show_more_button %}
+                  <button class="ai-split-feature-tag-more-{{ ai_gen_id }}" aria-label="More options">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                       <circle cx="12" cy="12" r="1.5"/>
                       <circle cx="19" cy="12" r="1.5"/>
@@ -524,28 +547,52 @@
       </div>
     </div>
   </div>
-</div>
+</ai-split-feature-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class AiSplitFeature{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+      }
+
+      connectedCallback() {
+        this.setupInteractions();
+      }
+
+      setupInteractions() {
+        const moreButton = this.querySelector('.ai-split-feature-tag-more-{{ ai_gen_id }}');
+        if (moreButton) {
+          moreButton.addEventListener('click', function() {
+            console.log('More options clicked');
+          });
+        }
+      }
+    }
+
+    customElements.define('ai-split-feature-{{ ai_gen_id }}', AiSplitFeature{{ ai_gen_id }});
+  })();
+</script>
 
 {% schema %}
 {
-  "name": "Split Feature AI",
-  "tag": "section",
-  "class": "section",
+  "name": "Split feature AI",
+  "tag": null,
   "settings": [
     {
       "type": "header",
-      "content": "Section Layout"
+      "content": "Section"
     },
     {
       "type": "color",
       "id": "section_background",
-      "label": "Background Color",
+      "label": "Background",
       "default": "#ffffff"
     },
     {
       "type": "range",
       "id": "section_padding_top",
-      "label": "Top Padding",
+      "label": "Top padding",
       "min": 0,
       "max": 120,
       "step": 4,
@@ -555,7 +602,7 @@
     {
       "type": "range",
       "id": "section_padding_bottom",
-      "label": "Bottom Padding",
+      "label": "Bottom padding",
       "min": 0,
       "max": 120,
       "step": 4,
@@ -565,7 +612,7 @@
     {
       "type": "range",
       "id": "column_gap",
-      "label": "Column Gap",
+      "label": "Column gap",
       "min": 20,
       "max": 100,
       "step": 4,
@@ -579,88 +626,95 @@
     {
       "type": "checkbox",
       "id": "show_badge",
-      "label": "Show Badge",
+      "label": "Show badge",
       "default": true
     },
     {
       "type": "text",
       "id": "badge_text",
-      "label": "Badge Text",
+      "label": "Text",
       "default": "FLOW AI"
     },
     {
       "type": "select",
       "id": "badge_icon",
-      "label": "Badge Icon",
+      "label": "Icon",
       "options": [
-        { "value": "none", "label": "None" },
-        { "value": "sparkles", "label": "Sparkles" },
-        { "value": "star", "label": "Star" },
-        { "value": "lightning", "label": "Lightning" },
-        { "value": "check", "label": "Check" }
+        {
+          "value": "none",
+          "label": "None"
+        },
+        {
+          "value": "sparkles",
+          "label": "Sparkles"
+        },
+        {
+          "value": "star",
+          "label": "Star"
+        },
+        {
+          "value": "lightning",
+          "label": "Lightning"
+        },
+        {
+          "value": "check",
+          "label": "Check"
+        }
       ],
       "default": "none"
     },
     {
       "type": "color",
       "id": "badge_background",
-      "label": "Badge Background",
+      "label": "Background",
       "default": "#e8f5e9"
     },
     {
       "type": "color",
       "id": "badge_text_color",
-      "label": "Badge Text Color",
+      "label": "Text color",
       "default": "#558b2f"
     },
     {
       "type": "header",
-      "content": "Heading & Content"
+      "content": "Heading"
     },
     {
       "type": "textarea",
       "id": "heading",
-      "label": "Heading Text",
+      "label": "Text",
       "default": "店舗データと社内ルールを、\nFlow AIに聞く。"
     },
     {
-      "type": "color",
-      "id": "heading_color",
-      "label": "Heading Color",
-      "default": "#001e3c"
+      "type": "header",
+      "content": "Description"
     },
     {
       "type": "textarea",
       "id": "description",
-      "label": "Description Text",
+      "label": "Text",
       "default": "Flow AIは、売上・来店・購買率などの店舗データと、\nマニュアル・SOP・店舗報告を参照しながら、\n状況確認、要因整理、次の打ち手の検討を支援します。"
     },
     {
-      "type": "color",
-      "id": "description_color",
-      "label": "Description Color",
-      "default": "#4a5568"
-    },
-    {
       "type": "header",
-      "content": "Card Styling"
+      "content": "Card style"
     },
     {
       "type": "color",
       "id": "card_background",
-      "label": "Card Background",
+      "label": "Background",
       "default": "#fafafa"
     },
     {
       "type": "color",
       "id": "card_border_color",
-      "label": "Card Border Color",
+      "label": "Border color",
       "default": "#e0e0e0"
     },
     {
       "type": "range",
       "id": "card_border_radius",
-      "label": "Card Border Radius",
+      "label": "Border radius",
       "min": 0,
       "max": 32,
       "step": 2,
@@ -670,17 +724,17 @@
     {
       "type": "range",
       "id": "card_padding",
-      "label": "Card Inner Padding",
+      "label": "Padding",
       "min": 16,
       "max": 48,
       "step": 2,
       "unit": "px",
-      "default": 24
+      "default": 28
     },
     {
       "type": "range",
       "id": "card_width",
-      "label": "Card Width (Desktop)",
+      "label": "Desktop width",
       "min": 80,
       "max": 100,
       "step": 5,
@@ -689,70 +743,82 @@
     },
     {
       "type": "header",
-      "content": "Card Header"
+      "content": "Card header"
     },
     {
       "type": "text",
       "id": "card_title",
-      "label": "Card Title",
+      "label": "Title",
       "default": "Flow AI"
     },
     {
       "type": "text",
       "id": "card_subtitle",
-      "label": "Card Subtitle",
+      "label": "Subtitle",
       "default": "店舗運営について質問できます"
     },
     {
       "type": "select",
       "id": "card_header_icon",
-      "label": "Header Icon",
+      "label": "Icon",
       "options": [
-        { "value": "sparkles", "label": "Sparkles" },
-        { "value": "message", "label": "Message" },
-        { "value": "brain", "label": "Brain" },
-        { "value": "cpu", "label": "CPU" }
+        {
+          "value": "sparkles",
+          "label": "Sparkles"
+        },
+        {
+          "value": "message",
+          "label": "Message"
+        },
+        {
+          "value": "brain",
+          "label": "Brain"
+        },
+        {
+          "value": "cpu",
+          "label": "CPU"
+        }
       ],
       "default": "sparkles"
     },
     {
       "type": "color",
       "id": "card_icon_color",
-      "label": "Header Icon Color",
+      "label": "Icon color",
       "default": "#558b2f"
     },
     {
       "type": "color",
       "id": "card_title_color",
-      "label": "Card Title Color",
-      "default": "#001e3c"
+      "label": "Title color",
+      "default": "#1a237e"
     },
     {
       "type": "color",
       "id": "card_subtitle_color",
-      "label": "Card Subtitle Color",
+      "label": "Subtitle color",
       "default": "#78909c"
     },
     {
       "type": "header",
-      "content": "Chat Rows Style"
+      "content": "Chat row style"
     },
     {
       "type": "color",
       "id": "row_background",
-      "label": "Row Background",
+      "label": "Background",
       "default": "#ffffff"
     },
     {
       "type": "color",
       "id": "row_border_color",
-      "label": "Row Border Color",
+      "label": "Border color",
       "default": "#eeeeee"
     },
     {
       "type": "range",
       "id": "row_border_radius",
-      "label": "Row Border Radius",
+      "label": "Border radius",
       "min": 0,
       "max": 24,
       "step": 2,
@@ -762,45 +828,62 @@
     {
       "type": "color",
       "id": "row_icon_background",
-      "label": "Row Icon Background",
+      "label": "Icon background",
       "default": "#f1f8e9"
     },
     {
       "type": "color",
       "id": "row_icon_border_color",
-      "label": "Row Icon Border",
+      "label": "Icon border color",
       "default": "#c5e1a5"
     },
     {
       "type": "color",
       "id": "row_icon_color",
-      "label": "Row Icon Color",
+      "label": "Icon color",
       "default": "#558b2f"
     },
     {
       "type": "color",
       "id": "row_label_color",
-      "label": "Row Label Color",
+      "label": "Label color",
       "default": "#558b2f"
     },
     {
       "type": "color",
       "id": "row_quote_color",
-      "label": "Row Quote Color",
-      "default": "#001e3c"
+      "label": "Quote color",
+      "default": "#1a237e"
     },
     {
       "type": "header",
-      "content": "Chat Row 1"
+      "content": "Chat row 1"
     },
     {
       "type": "select",
       "id": "row_1_icon",
       "label": "Icon",
       "options": [
-        { "value": "chart", "label": "Chart" },
-        { "value": "search", "label": "Search" },
-        { "value": "target", "label": "Target" }
+        {
+          "value": "chart",
+          "label": "Chart"
+        },
+        {
+          "value": "search",
+          "label": "Search"
+        },
+        {
+          "value": "target",
+          "label": "Target"
+        },
+        {
+          "value": "lightbulb",
+          "label": "Lightbulb"
+        },
+        {
+          "value": "settings",
+          "label": "Settings"
+        }
       ],
       "default": "chart"
     },
@@ -818,16 +901,33 @@
     },
     {
       "type": "header",
-      "content": "Chat Row 2"
+      "content": "Chat row 2"
     },
     {
       "type": "select",
       "id": "row_2_icon",
       "label": "Icon",
       "options": [
-        { "value": "chart", "label": "Chart" },
-        { "value": "search", "label": "Search" },
-        { "value": "target", "label": "Target" }
+        {
+          "value": "chart",
+          "label": "Chart"
+        },
+        {
+          "value": "search",
+          "label": "Search"
+        },
+        {
+          "value": "target",
+          "label": "Target"
+        },
+        {
+          "value": "lightbulb",
+          "label": "Lightbulb"
+        },
+        {
+          "value": "settings",
+          "label": "Settings"
+        }
       ],
       "default": "search"
     },
@@ -845,16 +945,33 @@
     },
     {
       "type": "header",
-      "content": "Chat Row 3"
+      "content": "Chat row 3"
     },
     {
       "type": "select",
       "id": "row_3_icon",
       "label": "Icon",
       "options": [
-        { "value": "chart", "label": "Chart" },
-        { "value": "search", "label": "Search" },
-        { "value": "target", "label": "Target" }
+        {
+          "value": "chart",
+          "label": "Chart"
+        },
+        {
+          "value": "search",
+          "label": "Search"
+        },
+        {
+          "value": "target",
+          "label": "Target"
+        },
+        {
+          "value": "lightbulb",
+          "label": "Lightbulb"
+        },
+        {
+          "value": "settings",
+          "label": "Settings"
+        }
       ],
       "default": "target"
     },
@@ -872,71 +989,81 @@
     },
     {
       "type": "header",
-      "content": "Footer Settings"
+      "content": "Footer"
     },
     {
       "type": "checkbox",
       "id": "show_footer",
-      "label": "Show Footer",
+      "label": "Show footer",
       "default": true
     },
     {
       "type": "text",
       "id": "footer_label",
-      "label": "Footer Label",
+      "label": "Label",
       "default": "参照データ"
     },
     {
       "type": "select",
       "id": "footer_icon",
-      "label": "Footer Icon",
+      "label": "Icon",
       "options": [
-        { "value": "database", "label": "Database" },
-        { "value": "folder", "label": "Folder" },
-        { "value": "file", "label": "File" }
+        {
+          "value": "database",
+          "label": "Database"
+        },
+        {
+          "value": "folder",
+          "label": "Folder"
+        },
+        {
+          "value": "file",
+          "label": "File"
+        }
       ],
       "default": "database"
     },
     {
       "type": "color",
       "id": "footer_label_color",
-      "label": "Footer Label Color",
-      "default": "#001e3c"
+      "label": "Label color",
+      "default": "#1a237e"
     },
     {
       "type": "color",
       "id": "divider_color",
-      "label": "Divider Line Color",
+      "label": "Divider color",
       "default": "#e0e0e0"
     },
     {
       "type": "text",
       "id": "footer_tags",
-      "label": "Tags (Comma Separated)",
+      "label": "Tags",
+      "info": "Separate tags with commas",
       "default": "売上, 来店, 購買率, Pulse, SOP, メモ"
     },
     {
       "type": "color",
       "id": "tag_background",
-      "label": "Tag Background",
+      "label": "Tag background",
       "default": "#eeeeee"
     },
     {
       "type": "color",
       "id": "tag_text_color",
-      "label": "Tag Text Color",
+      "label": "Tag text color",
       "default": "#424242"
     },
     {
       "type": "checkbox",
       "id": "show_more_button",
-      "label": "Show More Button (...)",
+      "label": "Show more button",
       "default": true
     }
   ],
   "presets": [
     {
-      "name": "Split Feature AI"
+      "name": "Split feature AI"
     }
   ]
 }
