@@ -252,11 +252,11 @@
             "label_text_color": "#ffffff",
             "label_font_size": 16,
             "heading_color": "#0e366a",
-            "heading_font_size_desktop": 32,
+            "heading_font_size": 32,
             "heading_font_size_mobile": 24,
             "text_color": "#4b5563",
-            "text_font_size_desktop": 16,
-            "text_font_size_mobile": 14,
+            "text_font_size": 16,
+            "description_font_size_mobile": 14,
             "condition_text_color": "#696969",
             "condition_font_size": 16,
             "button_background": "#0e366a",
@@ -302,6 +302,7 @@
             "background_color": "",
             "text_color": "",
             "border_color": "#f9fafb",
+            "card_padding": 0,
             "button_background": "",
             "button_text_color": "",
             "button_font_size": 0,
@@ -316,7 +317,13 @@
             "content": "<p>AIカメラと来店計測で、来店数、店前通行量、入店率、回遊、滞在時間を把握します。</p>",
             "link_url": "",
             "link_text": "",
-            "link_style": "link"
+            "link_style": "link",
+            "button_background_2": "",
+            "button_text_color_2": "",
+            "button_font_size_2": 0,
+            "link_url_2": "",
+            "link_text_2": "",
+            "link_style_2": "button"
           }
         },
         "item_7i4xFD": {
@@ -331,6 +338,7 @@
             "background_color": "",
             "text_color": "",
             "border_color": "#f9fafb",
+            "card_padding": 0,
             "button_background": "",
             "button_text_color": "",
             "button_font_size": 0,
@@ -345,7 +353,13 @@
             "content": "<p>POS、売上、人員配置、天候、店舗報告、SOPを店舗ごとの判断材料として整理します。</p>",
             "link_url": "",
             "link_text": "",
-            "link_style": "link"
+            "link_style": "link",
+            "button_background_2": "",
+            "button_text_color_2": "",
+            "button_font_size_2": 0,
+            "link_url_2": "",
+            "link_text_2": "",
+            "link_style_2": "button"
           }
         },
         "item_JaAE7t": {
@@ -360,6 +374,7 @@
             "background_color": "",
             "text_color": "",
             "border_color": "#f9fafb",
+            "card_padding": 0,
             "button_background": "",
             "button_text_color": "",
             "button_font_size": 0,
@@ -374,7 +389,13 @@
             "content": "<p>来店・購買率・売上・人員配置を同じ画面で比較し、成果差の要因と優先して対応すべき課題を見つけます。</p>",
             "link_url": "",
             "link_text": "",
-            "link_style": "link"
+            "link_style": "link",
+            "button_background_2": "",
+            "button_text_color_2": "",
+            "button_font_size_2": 0,
+            "link_url_2": "",
+            "link_text_2": "",
+            "link_style_2": "button"
           }
         },
         "item_yDWffp": {
@@ -389,6 +410,7 @@
             "background_color": "",
             "text_color": "",
             "border_color": "#f9fafb",
+            "card_padding": 0,
             "button_background": "",
             "button_text_color": "",
             "button_font_size": 0,
@@ -403,7 +425,13 @@
             "content": "<p>店舗データと社内ルールをもとに、店長・エリアマネージャー・本部が確認すべき変化と次のアクションを提示します。最終的な判断と実行は人が行います。<br/></p>",
             "link_url": "",
             "link_text": "",
-            "link_style": "link"
+            "link_style": "link",
+            "button_background_2": "",
+            "button_text_color_2": "",
+            "button_font_size_2": 0,
+            "link_url_2": "",
+            "link_text_2": "",
+            "link_style_2": "button"
           }
         }
       },
@@ -473,6 +501,7 @@
             "background_color": "rgba(0,0,0,0)",
             "text_color": "#1a1a1a",
             "border_color": "#11243e",
+            "card_padding": 0,
             "button_background": "",
             "button_text_color": "",
             "button_font_size": 0,
@@ -487,7 +516,13 @@
             "content": "<p>来店数、通行量、入店率、滞在時間を正確に把握。</p>",
             "link_url": "",
             "link_text": "",
-            "link_style": "link"
+            "link_style": "link",
+            "button_background_2": "",
+            "button_text_color_2": "",
+            "button_font_size_2": 0,
+            "link_url_2": "",
+            "link_text_2": "",
+            "link_style_2": "button"
           }
         },
         "item_EQeKgc": {
@@ -501,6 +536,7 @@
             "background_color": "",
             "text_color": "#1a1a1a",
             "border_color": "#11243e",
+            "card_padding": 0,
             "button_background": "",
             "button_text_color": "",
             "button_font_size": 0,
@@ -515,7 +551,13 @@
             "content": "<p>POS・売上・購買率・客単価を店舗KPIとして可視化。</p>",
             "link_url": "",
             "link_text": "",
-            "link_style": "link"
+            "link_style": "link",
+            "button_background_2": "",
+            "button_text_color_2": "",
+            "button_font_size_2": 0,
+            "link_url_2": "",
+            "link_text_2": "",
+            "link_style_2": "button"
           }
         },
         "item_4w9BQw": {
@@ -529,6 +571,7 @@
             "background_color": "#ffffff",
             "text_color": "#1a1a1a",
             "border_color": "#11243e",
+            "card_padding": 0,
             "button_background": "",
             "button_text_color": "",
             "button_font_size": 0,
@@ -543,7 +586,13 @@
             "content": "<p>特許出願中の判断エンジンで、要約・質問回答・優先行動の提案まで。</p><p></p>",
             "link_url": "",
             "link_text": "",
-            "link_style": "link"
+            "link_style": "link",
+            "button_background_2": "",
+            "button_text_color_2": "",
+            "button_font_size_2": 0,
+            "link_url_2": "",
+            "link_text_2": "",
+            "link_style_2": "button"
           }
         },
         "item_ij8qGM": {
@@ -558,6 +607,7 @@
             "background_color": "",
             "text_color": "",
             "border_color": "",
+            "card_padding": 0,
             "button_background": "",
             "button_text_color": "",
             "button_font_size": 0,
@@ -572,7 +622,13 @@
             "content": "",
             "link_url": "",
             "link_text": "",
-            "link_style": "link"
+            "link_style": "link",
+            "button_background_2": "",
+            "button_text_color_2": "",
+            "button_font_size_2": 0,
+            "link_url_2": "",
+            "link_text_2": "",
+            "link_style_2": "button"
           }
         },
         "item_UQ7Gha": {
@@ -587,6 +643,7 @@
             "background_color": "",
             "text_color": "",
             "border_color": "",
+            "card_padding": 0,
             "button_background": "",
             "button_text_color": "",
             "button_font_size": 0,
@@ -601,7 +658,13 @@
             "content": "",
             "link_url": "",
             "link_text": "",
-            "link_style": "link"
+            "link_style": "link",
+            "button_background_2": "",
+            "button_text_color_2": "",
+            "button_font_size_2": 0,
+            "link_url_2": "",
+            "link_text_2": "",
+            "link_style_2": "button"
           }
         },
         "item_zEftHB": {
@@ -616,6 +679,7 @@
             "background_color": "",
             "text_color": "",
             "border_color": "",
+            "card_padding": 0,
             "button_background": "",
             "button_text_color": "",
             "button_font_size": 0,
@@ -630,7 +694,13 @@
             "content": "",
             "link_url": "",
             "link_text": "",
-            "link_style": "link"
+            "link_style": "link",
+            "button_background_2": "",
+            "button_text_color_2": "",
+            "button_font_size_2": 0,
+            "link_url_2": "",
+            "link_text_2": "",
+            "link_style_2": "button"
           }
         }
       },
@@ -944,6 +1014,7 @@
             "background_color": "",
             "text_color": "",
             "border_color": "",
+            "card_padding": 0,
             "button_background": "",
             "button_text_color": "",
             "button_font_size": 0,
@@ -958,7 +1029,13 @@
             "content": "<p>来店数、通行量、入店率、滞在時間、属性、回遊</p>",
             "link_url": "",
             "link_text": "",
-            "link_style": "link"
+            "link_style": "link",
+            "button_background_2": "",
+            "button_text_color_2": "",
+            "button_font_size_2": 0,
+            "link_url_2": "",
+            "link_text_2": "",
+            "link_style_2": "button"
           }
         },
         "item_giQcPz": {
@@ -972,6 +1049,7 @@
             "background_color": "",
             "text_color": "",
             "border_color": "",
+            "card_padding": 0,
             "button_background": "",
             "button_text_color": "",
             "button_font_size": 0,
@@ -986,7 +1064,13 @@
             "content": "<p>売上、客単価、購買点数、購買率、予算達成率<br/></p>",
             "link_url": "",
             "link_text": "",
-            "link_style": "link"
+            "link_style": "link",
+            "button_background_2": "",
+            "button_text_color_2": "",
+            "button_font_size_2": 0,
+            "link_url_2": "",
+            "link_text_2": "",
+            "link_style_2": "button"
           }
         },
         "item_idXPCH": {
@@ -1000,6 +1084,7 @@
             "background_color": "",
             "text_color": "",
             "border_color": "",
+            "card_padding": 0,
             "button_background": "",
             "button_text_color": "",
             "button_font_size": 0,
@@ -1014,7 +1099,13 @@
             "content": "<p>シフト、人員配置、営業時間、店舗属性</p>",
             "link_url": "",
             "link_text": "",
-            "link_style": "link"
+            "link_style": "link",
+            "button_background_2": "",
+            "button_text_color_2": "",
+            "button_font_size_2": 0,
+            "link_url_2": "",
+            "link_text_2": "",
+            "link_style_2": "button"
           }
         },
         "item_jfU6Ra": {
@@ -1028,6 +1119,7 @@
             "background_color": "",
             "text_color": "",
             "border_color": "",
+            "card_padding": 0,
             "button_background": "",
             "button_text_color": "",
             "button_font_size": 0,
@@ -1042,7 +1134,13 @@
             "content": "<p>天候、曜日、イベント、商業施設要因</p>",
             "link_url": "",
             "link_text": "",
-            "link_style": "link"
+            "link_style": "link",
+            "button_background_2": "",
+            "button_text_color_2": "",
+            "button_font_size_2": 0,
+            "link_url_2": "",
+            "link_text_2": "",
+            "link_style_2": "button"
           }
         },
         "item_6h7RnV": {
@@ -1056,6 +1154,7 @@
             "background_color": "",
             "text_color": "",
             "border_color": "",
+            "card_padding": 0,
             "button_background": "",
             "button_text_color": "",
             "button_font_size": 0,
@@ -1070,7 +1169,13 @@
             "content": "<p>SOP、マニュアル、施策メモ、店舗コメント</p><p></p><p></p>",
             "link_url": "",
             "link_text": "",
-            "link_style": "link"
+            "link_style": "link",
+            "button_background_2": "",
+            "button_text_color_2": "",
+            "button_font_size_2": 0,
+            "link_url_2": "",
+            "link_text_2": "",
+            "link_style_2": "button"
           }
         },
         "item_AKntD7": {
@@ -1084,6 +1189,7 @@
             "background_color": "",
             "text_color": "",
             "border_color": "",
+            "card_padding": 0,
             "button_background": "",
             "button_text_color": "",
             "button_font_size": 0,
@@ -1098,7 +1204,13 @@
             "content": "<p>売上要因を分解し、店舗・本部で次の行動を共有</p>",
             "link_url": "",
             "link_text": "",
-            "link_style": "link"
+            "link_style": "link",
+            "button_background_2": "",
+            "button_text_color_2": "",
+            "button_font_size_2": 0,
+            "link_url_2": "",
+            "link_text_2": "",
+            "link_style_2": "button"
           }
         }
       },
@@ -1144,6 +1256,7 @@
             "background_color": "",
             "text_color": "",
             "border_color": "#ffffff",
+            "card_padding": 0,
             "button_background": "",
             "button_text_color": "",
             "button_font_size": 0,
@@ -1158,7 +1271,13 @@
             "content": "<p>AIカメラと来店計測で、来店数、店前通行量、入店率、回遊、滞在時間を把握します。店舗ごとの変化をリアルタイムに確認し、売上結果だけでは見えない状況を可視化します。</p>",
             "link_url": "https://flow-solutions.com/pages/ai-camera",
             "link_text": "店舗向けAIカメラの計測方法を見る",
-            "link_style": "button"
+            "link_style": "button",
+            "button_background_2": "",
+            "button_text_color_2": "",
+            "button_font_size_2": 0,
+            "link_url_2": "",
+            "link_text_2": "来店客数・店前通行量の分析を見る",
+            "link_style_2": "button"
           }
         },
         "item_7tAMz6": {
@@ -1173,6 +1292,7 @@
             "background_color": "",
             "text_color": "",
             "border_color": "#ffffff",
+            "card_padding": 0,
             "button_background": "",
             "button_text_color": "",
             "button_font_size": 0,
@@ -1187,7 +1307,13 @@
             "content": "<p>来店数、購買率、売上、人員配置などのKPIを店舗間で比較し、成果が出ている店舗と改善が必要な店舗の違いを明らかにします。</p>",
             "link_url": "https://flow-solutions.com/pages/store-performance-platform",
             "link_text": "多店舗KPI管理と店舗比較を見る",
-            "link_style": "button"
+            "link_style": "button",
+            "button_background_2": "",
+            "button_text_color_2": "",
+            "button_font_size_2": 0,
+            "link_url_2": "",
+            "link_text_2": "",
+            "link_style_2": "button"
           }
         },
         "item_HjWCwX": {
@@ -1202,6 +1328,7 @@
             "background_color": "",
             "text_color": "",
             "border_color": "#f9fafb",
+            "card_padding": 0,
             "button_background": "",
             "button_text_color": "",
             "button_font_size": 0,
@@ -1216,7 +1343,13 @@
             "content": "<p>店舗データとSOP・運営ルールをもとに、Flow AIが確認すべき変化と次のアクションを提示します。本部・エリア・店舗の判断と実行のばらつきを抑えます。</p>",
             "link_url": "https://flow-solutions.com/pages/flow-ai-fida",
             "link_text": "Flow AI・FIDAの店舗判断支援を見る",
-            "link_style": "button"
+            "link_style": "button",
+            "button_background_2": "",
+            "button_text_color_2": "",
+            "button_font_size_2": 0,
+            "link_url_2": "",
+            "link_text_2": "",
+            "link_style_2": "button"
           }
         }
       },
@@ -1378,6 +1511,7 @@
             "background_color": "#11243e",
             "text_color": "#f9fafb",
             "border_color": "#11243e",
+            "card_padding": 0,
             "button_background": "",
             "button_text_color": "",
             "button_font_size": 0,
@@ -1392,7 +1526,13 @@
             "content": "<p><strong>6か月間の検証</strong></p><ul><li>売上高: 前年同期比 +25%<br/></li><li>来店者数: +6.3%<br/></li><li>買い上げ率: 19.9%から25.2%へ改善（+5.3pt）</li></ul>",
             "link_url": "https://flow-solutions.com/pages/case-studies-daytona",
             "link_text": "デイトナ・インターナショナル様の店舗分析事例を見る",
-            "link_style": "button"
+            "link_style": "button",
+            "button_background_2": "",
+            "button_text_color_2": "",
+            "button_font_size_2": 0,
+            "link_url_2": "",
+            "link_text_2": "",
+            "link_style_2": "button"
           }
         },
         "item_tx7kCq": {
@@ -1406,6 +1546,7 @@
             "background_color": "#f2f2f2",
             "text_color": "#0e366a",
             "border_color": "#0e366a",
+            "card_padding": 0,
             "button_background": "",
             "button_text_color": "",
             "button_font_size": 0,
@@ -1420,7 +1561,13 @@
             "content": "<p><strong>124店舗・1年間の検証</strong></p><ul><li>&nbsp;購買率: 前年比 +8.93%<br/>&nbsp;</li><li>売上: 前年比 +8.25%<br/>&nbsp;</li><li>年間売上増加: 約18億円<br/>&nbsp;</li><li>ROI: 50倍以上</li></ul>",
             "link_url": "https://flow-solutions.com/pages/case-studies-roi",
             "link_text": "124店舗の購買率・売上改善事例を見る",
-            "link_style": "button"
+            "link_style": "button",
+            "button_background_2": "",
+            "button_text_color_2": "",
+            "button_font_size_2": 0,
+            "link_url_2": "",
+            "link_text_2": "",
+            "link_style_2": "button"
           }
         },
         "item_zttdWV": {
@@ -1435,6 +1582,7 @@
             "background_color": "#ffffff",
             "text_color": "",
             "border_color": "#a0b842",
+            "card_padding": 0,
             "button_background": "",
             "button_text_color": "",
             "button_font_size": 0,
@@ -1449,7 +1597,13 @@
             "content": "<p>Execution Consistency</p><ul><li>28 store network</li><li>Variance reduced 75%</li><li>94% action compliance</li></ul>",
             "link_url": "",
             "link_text": "",
-            "link_style": "link"
+            "link_style": "link",
+            "button_background_2": "",
+            "button_text_color_2": "",
+            "button_font_size_2": 0,
+            "link_url_2": "",
+            "link_text_2": "",
+            "link_style_2": "button"
           }
         }
       },
@@ -1530,6 +1684,7 @@
             "background_color": "",
             "text_color": "",
             "border_color": "",
+            "card_padding": 0,
             "button_background": "#a0b842",
             "button_text_color": "#102d4f",
             "button_font_size": 0,
@@ -1544,7 +1699,13 @@
             "content": "<p>来店数、入店率、購買率の変化を確認し、ピーク時間の接客配置や売場対応を営業時間中に見直します。</p>",
             "link_url": "https://flow-solutions.com/pages/increase-store-conversion",
             "link_text": "来店・購買率を改善する方法を見る",
-            "link_style": "button"
+            "link_style": "button",
+            "button_background_2": "",
+            "button_text_color_2": "",
+            "button_font_size_2": 0,
+            "link_url_2": "",
+            "link_text_2": "",
+            "link_style_2": "button"
           }
         },
         "item_aqpNXK": {
@@ -1558,6 +1719,7 @@
             "background_color": "",
             "text_color": "",
             "border_color": "",
+            "card_padding": 0,
             "button_background": "#a0b842",
             "button_text_color": "#102d4f",
             "button_font_size": 0,
@@ -1572,7 +1734,13 @@
             "content": "<p>店舗ごとのKPI、回遊、滞在時間、売場反応を比較し、確認や支援が必要な店舗と売場を特定します。</p>",
             "link_url": "https://flow-solutions.com/pages/improve-vmd-layouts",
             "link_text": "VMD・売場レイアウトを改善する方法を見る",
-            "link_style": "button"
+            "link_style": "button",
+            "button_background_2": "",
+            "button_text_color_2": "",
+            "button_font_size_2": 0,
+            "link_url_2": "",
+            "link_text_2": "",
+            "link_style_2": "button"
           }
         },
         "item_tTyycj": {
@@ -1586,6 +1754,7 @@
             "background_color": "",
             "text_color": "",
             "border_color": "",
+            "card_padding": 0,
             "button_background": "#a0b842",
             "button_text_color": "#102d4f",
             "button_font_size": 0,
@@ -1600,7 +1769,13 @@
             "content": "<p>全店舗の来店、購買率、売上、人員配置を共通指標で管理し、成功店舗の取り組みを全店へ展開します。</p>",
             "link_url": "https://flow-solutions.com/pages/standardize-store-decisions",
             "link_text": "多店舗運営の判断を標準化する方法を見る",
-            "link_style": "button"
+            "link_style": "button",
+            "button_background_2": "",
+            "button_text_color_2": "",
+            "button_font_size_2": 0,
+            "link_url_2": "",
+            "link_text_2": "",
+            "link_style_2": "button"
           }
         }
       },
@@ -1689,6 +1864,7 @@
             "background_color": "#11243e",
             "text_color": "",
             "border_color": "#36465c",
+            "card_padding": 0,
             "button_background": "",
             "button_text_color": "",
             "button_font_size": 0,
@@ -1703,7 +1879,13 @@
             "content": "<ul><li><strong>KPIは本部で管理</strong></li><li><strong>週次レポートが中心</strong></li><li><strong>店舗での改善行動が限定的</strong></li></ul>",
             "link_url": "",
             "link_text": "",
-            "link_style": "link"
+            "link_style": "link",
+            "button_background_2": "",
+            "button_text_color_2": "",
+            "button_font_size_2": 0,
+            "link_url_2": "",
+            "link_text_2": "",
+            "link_style_2": "button"
           }
         },
         "item_FBeYb7": {
@@ -1717,6 +1899,7 @@
             "background_color": "#a0b842",
             "text_color": "",
             "border_color": "#36465c",
+            "card_padding": 0,
             "button_background": "",
             "button_text_color": "",
             "button_font_size": 0,
@@ -1731,7 +1914,13 @@
             "content": "<ul><li><strong>店舗で日次KPIを把握</strong></li><li><strong>現場がデータをもとに判断</strong></li><li><strong>改善行動と成果を結びつける</strong></li></ul>",
             "link_url": "",
             "link_text": "",
-            "link_style": "link"
+            "link_style": "link",
+            "button_background_2": "",
+            "button_text_color_2": "",
+            "button_font_size_2": 0,
+            "link_url_2": "",
+            "link_text_2": "",
+            "link_style_2": "button"
           }
         },
         "item_PzHBWe": {
@@ -1745,6 +1934,7 @@
             "background_color": "#ffffff",
             "text_color": "#11243e",
             "border_color": "#36465c",
+            "card_padding": 0,
             "button_background": "",
             "button_text_color": "",
             "button_font_size": 0,
@@ -1759,7 +1949,13 @@
             "content": "<p>8ヶ月で約1.4億円の売上効果</p>",
             "link_url": "",
             "link_text": "",
-            "link_style": "link"
+            "link_style": "link",
+            "button_background_2": "",
+            "button_text_color_2": "",
+            "button_font_size_2": 0,
+            "link_url_2": "",
+            "link_text_2": "",
+            "link_style_2": "button"
           }
         },
         "item_yGRne4": {
@@ -1774,6 +1970,7 @@
             "background_color": "#485c36",
             "text_color": "#daf474",
             "border_color": "#a0b842",
+            "card_padding": 0,
             "button_background": "",
             "button_text_color": "",
             "button_font_size": 0,
@@ -1788,7 +1985,13 @@
             "content": "<p>Time to ROI</p>",
             "link_url": "",
             "link_text": "",
-            "link_style": "link"
+            "link_style": "link",
+            "button_background_2": "",
+            "button_text_color_2": "",
+            "button_font_size_2": 0,
+            "link_url_2": "",
+            "link_text_2": "",
+            "link_style_2": "button"
           }
         }
       },
