@@ -423,7 +423,9 @@
         "background_gradient": "",
         "text_color": "",
         "subheading_background_color": "",
-        "subheading_text_color": ""
+        "subheading_text_color": "",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "rich_text_HU78y7": {
@@ -653,7 +655,9 @@
         "background_gradient": "",
         "text_color": "",
         "subheading_background_color": "",
-        "subheading_text_color": ""
+        "subheading_text_color": "",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "impact_text_gi97zd": {
@@ -1103,9 +1107,7 @@
         "item_6h7RnV",
         "item_AKntD7"
       ],
-      "custom_css": [
-        "{padding-top: 0px;}"
-      ],
+      "custom_css": [],
       "name": "Multi-column",
       "settings": {
         "full_width": true,
@@ -1119,7 +1121,9 @@
         "background_gradient": "",
         "text_color": "",
         "subheading_background_color": "",
-        "subheading_text_color": ""
+        "subheading_text_color": "",
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
     "multi_column_QcVkek": {
@@ -1235,7 +1239,9 @@
         "background_gradient": "",
         "text_color": "",
         "subheading_background_color": "",
-        "subheading_text_color": ""
+        "subheading_text_color": "",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "section-15": {
@@ -1466,7 +1472,9 @@
         "background_gradient": "",
         "text_color": "",
         "subheading_background_color": "",
-        "subheading_text_color": ""
+        "subheading_text_color": "",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "rich_text_Tictfp": {
@@ -1615,7 +1623,9 @@
         "background_gradient": "",
         "text_color": "",
         "subheading_background_color": "",
-        "subheading_text_color": ""
+        "subheading_text_color": "",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "rich_text_iYFe9Q": {
@@ -1799,7 +1809,9 @@
         "background_gradient": "",
         "text_color": "#f9fafb",
         "subheading_background_color": "",
-        "subheading_text_color": ""
+        "subheading_text_color": "",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "testimonials_98zPBi": {
