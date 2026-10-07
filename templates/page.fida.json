@@ -1436,6 +1436,7 @@
       "block_order": [
         "button_7iLmMr"
       ],
+      "custom_css": [],
       "name": "Rich text",
       "settings": {
         "full_width": true,
