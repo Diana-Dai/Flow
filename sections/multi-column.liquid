@@ -69,10 +69,25 @@
             color: {{ block.settings.button_text_color }} !important;
           }
         {% endif %}
-        {% if block.settings.button_font_size != blank %}
+        {% if block.settings.button_font_size > 0 %}
           #block-{{ block.id }} .cta-button-container .button,
           #block-{{ block.id }} .cta-button-container .link {
             font-size: {{ block.settings.button_font_size }}px !important;
+          }
+        {% endif %}
+        {% if block.settings.heading_font_size > 0 %}
+          #block-{{ block.id }} h3 {
+            font-size: {{ block.settings.heading_font_size }}px !important;
+          }
+        {% endif %}
+        {% if block.settings.subheading_font_size > 0 %}
+          #block-{{ block.id }} .item-subheading {
+            font-size: {{ block.settings.subheading_font_size }}px !important;
+          }
+        {% endif %}
+        {% if block.settings.content_font_size > 0 %}
+          #block-{{ block.id }} .prose {
+            font-size: {{ block.settings.content_font_size }}px !important;
           }
         {% endif %}
       {% endif %}
@@ -135,14 +150,14 @@
                 {%- if block.settings.title != blank or block.settings.content != blank or block.settings.link_text != blank -%}
                   <div class="v-stack gap-4 text-{{ section.settings.text_alignment }}">
                     {%- if block.settings.subheading != blank -%}
-                      <div class="text-xs" style="margin-bottom: -0.9rem;{% if block.settings.subheading_font_size != blank %} font-size: {{ block.settings.subheading_font_size }}px;{% endif %}">{{ block.settings.subheading}}</div>
+                      <div class="text-xs item-subheading" style="margin-bottom: -0.9rem;">{{ block.settings.subheading}}</div>
                     {%- endif -%}
                     {%- if block.settings.title != blank -%}
-                      <h3 style="color: {{ block.settings.text_color }};{% if block.settings.heading_font_size != blank %} font-size: {{ block.settings.heading_font_size }}px;{% endif %}" class="{{ block.settings.heading_tag }}">{{ block.settings.title | escape }}</h3>
+                      <h3 style="color: {{ block.settings.text_color }};" class="{{ block.settings.heading_tag }}">{{ block.settings.title | escape }}</h3>
                     {%- endif -%}
 
                     {%- if block.settings.content != blank or block.settings.link_text != blank -%}
-                      <div class="prose" style="color: {{ block.settings.text_color }};{% if block.settings.content_font_size != blank %} font-size: {{ block.settings.content_font_size }}px;{% endif %}">
+                      <div class="prose" style="color: {{ block.settings.text_color }};">
                         {{- block.settings.content -}}
 
                         {%- if block.settings.link_text != blank -%}
@@ -637,7 +652,7 @@
         },
         {
           "type": "header",
-          "content": "Button Styling"
+          "content": "Button Customization"
         },
         {
           "type": "color",
@@ -652,46 +667,46 @@
         {
           "type": "range",
           "id": "button_font_size",
-          "min": 10,
-          "max": 30,
+          "min": 0,
+          "max": 40,
           "step": 1,
           "unit": "px",
-          "label": "Button font size",
-          "default": 14
+          "label": "Button font size (0 = Default)",
+          "default": 0
         },
         {
           "type": "header",
-          "content": "Font sizes"
+          "content": "Font Size Options"
         },
         {
           "type": "range",
           "id": "heading_font_size",
-          "min": 12,
+          "min": 0,
           "max": 60,
           "step": 1,
           "unit": "px",
-          "label": "Heading font size",
-          "default": 24
+          "label": "Heading font size (0 = Default)",
+          "default": 0
         },
         {
           "type": "range",
           "id": "subheading_font_size",
-          "min": 10,
+          "min": 0,
           "max": 30,
           "step": 1,
           "unit": "px",
-          "label": "Subheading font size",
-          "default": 12
+          "label": "Subheading font size (0 = Default)",
+          "default": 0
         },
         {
           "type": "range",
           "id": "content_font_size",
-          "min": 10,
-          "max": 36,
+          "min": 0,
+          "max": 40,
           "step": 1,
           "unit": "px",
-          "label": "Content font size",
-          "default": 14
+          "label": "Content font size (0 = Default)",
+          "default": 0
         },
         {
           "type": "checkbox",
