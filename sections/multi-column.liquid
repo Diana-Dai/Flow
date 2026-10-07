@@ -5,8 +5,12 @@
     #shopify-section-{{ section.id }} {
       --multi-column-grid: {% if section.settings.stack_on_mobile %}none{% else %}auto / auto-flow 73vw{% endif %};
       --multi-column-list-gap: {% if section.settings.gap == 'small' %}var(--grid-gutter){% elsif section.settings.gap == 'medium' %}var(--spacing-12){% elsif section.settings.gap == 'large' %}var(--spacing-20){% else %}var(--spacing-28){% endif %};
-      padding-top: {{ section.settings.padding_top }}px;
-      padding-bottom: {{ section.settings.padding_bottom }}px;
+      {% if section.settings.padding_top > 0 %}
+        padding-top: {{ section.settings.padding_top }}px;
+      {% endif %}
+      {% if section.settings.padding_bottom > 0 %}
+        padding-bottom: {{ section.settings.padding_bottom }}px;
+      {% endif %}
     }
 
     /* Equal height for all cards within this specific section */
@@ -319,7 +323,7 @@
       "step": 4,
       "unit": "px",
       "label": "Top padding",
-      "default": 36
+      "default": 0
     },
     {
       "type": "range",
@@ -329,7 +333,7 @@
       "step": 4,
       "unit": "px",
       "label": "Bottom padding",
-      "default": 36
+      "default": 0
     }
   ],
   "blocks": [
