@@ -66,7 +66,6 @@
             background-color: {{ block.settings.button_background }} !important;
             border-color: {{ block.settings.button_background }} !important;
           }
-          
         {% endif %}
         {% if block.settings.button_text_color != blank and block.settings.button_text_color != 'rgba(0,0,0,0)' %}
           #block-{{ block.id }} .button,
@@ -104,6 +103,12 @@
             font-size: {{ block.settings.content_font_size }}px !important;
           }
         {% endif %}
+        {% if block.settings.card_padding > 0 %}
+          #block-{{ block.id }} {
+            padding: {{ block.settings.card_padding }}px !important;
+            box-sizing: border-box;
+          }
+        {% endif %}
       {% endif %}
     {% endfor %}
   </style>
@@ -116,7 +121,7 @@
         {%- for block in section.blocks -%}
           {%- liquid
             assign loading_strategy = nil
-  
+
             if section.index > 3 or forloop.index > 3
               assign loading_strategy = 'lazy'
             endif
@@ -150,7 +155,7 @@
                         </div>
                       {%- endif -%}
                     </div>
-                  {%- endif -%}                
+                  {%- endif -%}
                 </div>
                 {%- if block.settings.video != blank -%}
                   <video-media autoplay style="--aspect-ratio: {{ block.settings.video.aspect_ratio }}">
@@ -687,6 +692,16 @@
           "type": "color",
           "id": "border_color",
           "label": "Border color"
+        },
+        {
+          "type": "range",
+          "id": "card_padding",
+          "min": 0,
+          "max": 80,
+          "step": 2,
+          "unit": "px",
+          "label": "Card padding",
+          "default": 0
         },
         {
           "type": "header",
