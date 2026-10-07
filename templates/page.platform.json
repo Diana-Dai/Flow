@@ -773,6 +773,34 @@
             "link_text": "",
             "link_style": "link"
           }
+        },
+        "item_TfzJqX": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "#FFFFFF",
+            "text_color": "#11243e",
+            "border_color": "#FFFFFF",
+            "button_background": "",
+            "button_text_color": "",
+            "button_font_size": 0,
+            "heading_font_size": 0,
+            "subheading_font_size": 0,
+            "content_font_size": 0,
+            "show_controls": false,
+            "column_size": "1",
+            "title": "",
+            "heading_tag": "h2",
+            "subheading": "",
+            "content": "<p>店舗ごとの数値を並べるだけでなく、エリア平均、全店平均、前年同期などの共通条件で比較し、改善の優先度が高い店舗と成果が出ている店舗の共通点を特定します。</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
         }
       },
       "block_order": [
@@ -783,7 +811,8 @@
         "item_9eKgez",
         "item_wWAwCe",
         "item_JNXpBU",
-        "item_i7MVpi"
+        "item_i7MVpi",
+        "item_TfzJqX"
       ],
       "name": "Multi-column",
       "settings": {
