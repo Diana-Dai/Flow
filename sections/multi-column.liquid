@@ -66,16 +66,7 @@
             background-color: {{ block.settings.button_background }} !important;
             border-color: {{ block.settings.button_background }} !important;
           }
-          {
-  "type": "range",
-  "id": "card_padding",
-  "min": 0,
-  "max": 80,
-  "step": 2,
-  "unit": "px",
-  "label": "Card padding",
-  "default": 0
-}
+          
         {% endif %}
         {% if block.settings.button_text_color != blank and block.settings.button_text_color != 'rgba(0,0,0,0)' %}
           #block-{{ block.id }} .button,
