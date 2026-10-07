@@ -2316,7 +2316,7 @@
         "button_text": "導入について相談する",
         "button_url": "shopify://pages/contact",
         "text_position": "start",
-        "background": "",
+        "background": "#FFFFFF",
         "background_gradient": "",
         "text_color": "",
         "heading_color": "",
