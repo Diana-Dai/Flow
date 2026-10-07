@@ -1717,7 +1717,7 @@
             "banner_text_color": "#ffffff",
             "description_size": 18,
             "step_title_size": 18,
-            "step_desc_size": 15,
+            "step_desc_size": 16,
             "banner_text_size": 16,
             "icon_border_radius": 15,
             "icon_circle_size": 80,
