@@ -47,6 +47,24 @@
       margin-top: 0.75rem;
     }
 
+    #shopify-section-{{ section.id }} .section-bottom-button {
+      display: flex;
+      justify-content: center;
+      margin-top: 2.5rem;
+    }
+
+    {% if section.settings.bottom_button_background != blank and section.settings.bottom_button_background != 'rgba(0,0,0,0)' %}
+      #shopify-section-{{ section.id }} .section-bottom-button .button {
+        background-color: {{ section.settings.bottom_button_background }} !important;
+        border-color: {{ section.settings.bottom_button_background }} !important;
+      }
+    {% endif %}
+    {% if section.settings.bottom_button_text_color != blank and section.settings.bottom_button_text_color != 'rgba(0,0,0,0)' %}
+      #shopify-section-{{ section.id }} .section-bottom-button .button {
+        color: {{ section.settings.bottom_button_text_color }} !important;
+      }
+    {% endif %}
+
     {% if section.settings.subheading_background_color != blank %}
         #shopify-section-{{ section.id }} .subheading{
             font-size: 11px !important;
@@ -242,6 +260,12 @@
           {%- endcase -%}
         {%- endfor -%}
       </div>
+
+      {%- if section.settings.bottom_button_text != blank -%}
+        <div class="section-bottom-button">
+          {%- render 'button', href: section.settings.bottom_button_url, content: section.settings.bottom_button_text, size: 'lg' -%}
+        </div>
+      {%- endif -%}
     </div>
   </div>
 {%- endif -%}
@@ -256,6 +280,32 @@
     "groups": ["header", "custom.overlay"]
   },
   "settings": [
+    {
+      "type": "header",
+      "content": "Bottom button"
+    },
+    {
+      "type": "text",
+      "id": "bottom_button_text",
+      "label": "Button text"
+    },
+    {
+      "type": "url",
+      "id": "bottom_button_url",
+      "label": "Button link"
+    },
+    {
+      "type": "color",
+      "id": "bottom_button_background",
+      "label": "Button background",
+      "default": "#172033"
+    },
+    {
+      "type": "color",
+      "id": "bottom_button_text_color",
+      "label": "Button text color",
+      "default": "#ffffff"
+    },
     {
       "type": "checkbox",
       "id": "full_width",
