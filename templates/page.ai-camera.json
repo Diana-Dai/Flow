@@ -1984,10 +1984,21 @@
             "button_radius": 4
           },
           "blocks": {}
+        },
+        "rich_text_KU9AeU": {
+          "type": "rich-text",
+          "name": "Rich text",
+          "settings": {
+            "text": "<p>結果は、店舗の環境、運営状況、および市場環境によって異なります</p>",
+            "content_width": "small",
+            "text_alignment": "center"
+          },
+          "blocks": {}
         }
       },
       "block_order": [
-        "ai_gen_block_6237a39_9gcybj"
+        "ai_gen_block_6237a39_9gcybj",
+        "rich_text_KU9AeU"
       ],
       "settings": {
         "full_width": true,
