@@ -21,13 +21,13 @@
         },
         "liquid_jh6HwD": {
           "type": "liquid",
-          "disabled": true,
           "settings": {
-            "liquid": "<p>Write custom Liquid code to include widget or dynamic code.</p>\n<"
+            "liquid": "<h1 class=\"h1\">\n  小売店舗分析で、、<br>\n 店舗データを日々の判断と売上改善へ\n</h1>"
           }
         },
         "richtext_h8WqcX": {
           "type": "richtext",
+          "disabled": true,
           "settings": {
             "content": "<h1>小売店舗分析で、店舗データを日々の判断と売上改善へ</h1>"
           }
