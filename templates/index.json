@@ -2412,6 +2412,34 @@
         "overlay_color": "#0e366a",
         "overlay_opacity": 80
       }
+    },
+    "17918952517d4ca2dc": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_0607fd7_FMrTFV": {
+          "type": "ai_gen_block_0607fd7",
+          "settings": {
+            "company_name": "株式会社デイトナ・インターナショナル様",
+            "headline": "来店者数6.3%増、買い上げ率5.3ポイント改善",
+            "body": "Flowで来店数・店前通行量・売上データを可視化し、店舗施策の検証と改善に活用。6か月間の検証では、導入店舗の売上高が前年同期比25%増、来店者数が6.3%増加し、買い上げ率は19.9%から25.2%へ改善しました。",
+            "cta_label": "デイトナ・インターナショナル様の導入事例を見る",
+            "cta_link": "",
+            "desktop_width_percent": 100
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_0607fd7_FMrTFV"
+      ],
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
     }
   },
   "order": [
@@ -2438,6 +2466,7 @@
     "testimonials_98zPBi",
     "blocks_pRDeeC",
     "faq_WEg6pU",
-    "image_with_text_overlay_MVHcWF"
+    "image_with_text_overlay_MVHcWF",
+    "17918952517d4ca2dc"
   ]
 }

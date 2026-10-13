@@ -1957,23 +1957,23 @@
             "body": "Flowで来店数・店前通行量・売上データを可視化し、店舗施策の検証と改善に活用。6か月間の検証では、導入店舗の売上高が前年同期比25%増、来店者数が6.3%増加し、買い上げ率は19.9%から25.2%へ改善しました。",
             "cta_label": "デイトナ・インターナショナル様の導入事例を見る",
             "cta_link": "https://flow-solutions.com/pages/case-studies-daytona",
-            "period_label": "6か月間の検証結果",
-            "metric_one_label": "来店者数",
-            "metric_one_value": "+6.3%",
-            "metric_two_label": "買い上げ率",
-            "metric_two_value": "+5.3ポイント",
-            "metric_three_label": "売上高",
-            "metric_three_value": "+25%",
-            "comparison_note": "売上高は前年同期比",
-            "section_background": "#F9FAFB",
-            "card_background": "#FFFFFF",
-            "results_background": "#F8FAF6",
-            "text_color": "#24332B",
-            "accent_color": "#142F45",
-            "border_color": "#DCE4DA",
-            "button_background": "#A0B955",
-            "button_text_color": "#142F45",
-            "button_hover_text": "#FFFFFF",
+            "period_label": "",
+            "metric_one_label": "",
+            "metric_one_value": "",
+            "metric_two_label": "",
+            "metric_two_value": "",
+            "metric_three_label": "",
+            "metric_three_value": "",
+            "comparison_note": "",
+            "section_background": "#f9fafb",
+            "card_background": "#ffffff",
+            "results_background": "#f8faf6",
+            "text_color": "#24332b",
+            "accent_color": "#142f45",
+            "border_color": "#dce4da",
+            "button_background": "#a0b955",
+            "button_text_color": "#142f45",
+            "button_hover_text": "#ffffff",
             "desktop_width_percent": 100,
             "section_padding": 20,
             "mobile_padding": 25,
@@ -1984,21 +1984,10 @@
             "button_radius": 4
           },
           "blocks": {}
-        },
-        "rich_text_KU9AeU": {
-          "type": "rich-text",
-          "name": "Rich text",
-          "settings": {
-            "text": "<p>結果は、店舗の環境、運営状況、および市場環境によって異なります</p>",
-            "content_width": "small",
-            "text_alignment": "center"
-          },
-          "blocks": {}
         }
       },
       "block_order": [
-        "ai_gen_block_6237a39_9gcybj",
-        "rich_text_KU9AeU"
+        "ai_gen_block_6237a39_9gcybj"
       ],
       "settings": {
         "full_width": true,
@@ -2134,7 +2123,7 @@
         "button_text": "セキュリティとデータ管理について詳しく見る →",
         "button_url": "shopify://pages/platform-security-reliability",
         "text_position": "start",
-        "background": "#F9FAFB",
+        "background": "#f9fafb",
         "background_gradient": "",
         "text_color": "",
         "heading_color": "",
