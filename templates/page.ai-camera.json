@@ -1933,33 +1933,8 @@
         "padding_bottom": 0
       }
     },
-    "blocks_xXrM97": {
+    "blocks_tnghiP": {
       "type": "_blocks",
-      "blocks": {
-        "ai_gen_block_03fcee8_KMGayV": {
-          "type": "ai_gen_block_03fcee8",
-          "settings": {
-            "desktop_width_percent": 100,
-            "section_heading": "来店計測データを店舗改善につなげた事例",
-            "company_name": "株式会社デイトナ・インターナショナル様",
-            "headline": "客数前年比6.3%増、売上前年比25%増",
-            "body_text": "5店舗で半年間、来店計測とFlowによるデータ活用を実施。客数は前年比6.3%増、売上は前年比25%増となり、購買率も19.9%から25.2%へ改善しました。店前通行量、来店客数、売上を継続的に確認することで、店頭施策や店舗運営の改善につなげています。",
-            "cta_label": "デイトナ・インターナショナル様の事例を見る",
-            "cta_url": "",
-            "footnote": "成果は、店舗環境、運用方法、導入範囲、市場条件により異なります。",
-            "heading_size": 30,
-            "company_size": 16,
-            "headline_size": 20,
-            "body_size": 16,
-            "cta_size": 16,
-            "footnote_size": 12
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "ai_gen_block_03fcee8_KMGayV"
-      ],
       "name": "Case study result",
       "settings": {
         "full_width": true,
@@ -1970,12 +1945,53 @@
         "text_color": ""
       }
     },
-    "blocks_tnghiP": {
+    "179188300917c45c47": {
       "type": "_blocks",
-      "name": "Case study result",
+      "blocks": {
+        "ai_gen_block_6237a39_9gcybj": {
+          "type": "ai_gen_block_6237a39",
+          "settings": {
+            "section_heading": "来店計測データを店舗改善につなげた事例",
+            "company": "株式会社デイトナ・インターナショナル様",
+            "headline": "来店者数6.3%増、買い上げ率5.3ポイント改善",
+            "body": "Flowで来店数・店前通行量・売上データを可視化し、店舗施策の検証と改善に活用。6か月間の検証では、導入店舗の売上高が前年同期比25%増、来店者数が6.3%増加し、買い上げ率は19.9%から25.2%へ改善しました。",
+            "cta_label": "デイトナ・インターナショナル様の導入事例を見る",
+            "cta_link": "",
+            "period_label": "6か月間の検証結果",
+            "metric_one_label": "来店者数",
+            "metric_one_value": "+6.3%",
+            "metric_two_label": "買い上げ率",
+            "metric_two_value": "+5.3ポイント",
+            "metric_three_label": "売上高",
+            "metric_three_value": "+25%",
+            "comparison_note": "売上高は前年同期比",
+            "section_background": "#F9FAFB",
+            "card_background": "#FFFFFF",
+            "results_background": "#F8FAF6",
+            "text_color": "#24332B",
+            "accent_color": "#376B45",
+            "border_color": "#DCE4DA",
+            "button_background": "#FFFFFF",
+            "button_text_color": "#284F34",
+            "button_hover_text": "#FFFFFF",
+            "desktop_width_percent": 100,
+            "section_padding": 60,
+            "mobile_padding": 25,
+            "card_padding": 48,
+            "heading_size": 36,
+            "body_size": 16,
+            "card_radius": 12,
+            "button_radius": 4
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_6237a39_9gcybj"
+      ],
       "settings": {
         "full_width": true,
-        "remove_vertical_spacing": false,
+        "remove_vertical_spacing": true,
         "remove_horizontal_spacing": false,
         "background": "",
         "background_gradient": "",
@@ -2197,59 +2213,6 @@
         "background_gradient": "",
         "text_color": "#ffffff"
       }
-    },
-    "179188300917c45c47": {
-      "type": "_blocks",
-      "blocks": {
-        "ai_gen_block_6237a39_9gcybj": {
-          "type": "ai_gen_block_6237a39",
-          "settings": {
-            "section_heading": "来店計測データを店舗改善につなげた事例",
-            "company": "株式会社デイトナ・インターナショナル様",
-            "headline": "来店者数6.3%増、買い上げ率5.3ポイント改善",
-            "body": "Flowで来店数・店前通行量・売上データを可視化し、店舗施策の検証と改善に活用。6か月間の検証では、導入店舗の売上高が前年同期比25%増、来店者数が6.3%増加し、買い上げ率は19.9%から25.2%へ改善しました。",
-            "cta_label": "デイトナ・インターナショナル様の導入事例を見る",
-            "cta_link": "",
-            "period_label": "6か月間の検証結果",
-            "metric_one_label": "来店者数",
-            "metric_one_value": "+6.3%",
-            "metric_two_label": "買い上げ率",
-            "metric_two_value": "+5.3ポイント",
-            "metric_three_label": "売上高",
-            "metric_three_value": "+25%",
-            "comparison_note": "売上高は前年同期比",
-            "section_background": "#F4F6F2",
-            "card_background": "#FFFFFF",
-            "results_background": "#F8FAF6",
-            "text_color": "#24332B",
-            "accent_color": "#376B45",
-            "border_color": "#DCE4DA",
-            "button_background": "#FFFFFF",
-            "button_text_color": "#284F34",
-            "button_hover_text": "#FFFFFF",
-            "desktop_width_percent": 100,
-            "section_padding": 60,
-            "mobile_padding": 25,
-            "card_padding": 48,
-            "heading_size": 36,
-            "body_size": 16,
-            "card_radius": 12,
-            "button_radius": 4
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "ai_gen_block_6237a39_9gcybj"
-      ],
-      "settings": {
-        "full_width": true,
-        "remove_vertical_spacing": false,
-        "remove_horizontal_spacing": false,
-        "background": "",
-        "background_gradient": "",
-        "text_color": ""
-      }
     }
   },
   "order": [
@@ -2271,10 +2234,9 @@
     "media_with_text_hMPTmL",
     "multi_column_QjMJiW11",
     "multi_column_HCGJea11",
-    "blocks_xXrM97",
     "blocks_tnghiP",
+    "179188300917c45c47",
     "accordion_content_QKbgdB",
-    "rich_text_6VmVgb",
-    "179188300917c45c47"
+    "rich_text_6VmVgb"
   ]
 }
