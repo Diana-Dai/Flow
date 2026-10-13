@@ -19,6 +19,12 @@
             "icon": "picto-validation"
           }
         },
+        "liquid_jh6HwD": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<p>Write custom Liquid code to include widget or dynamic code.</p>"
+          }
+        },
         "richtext_h8WqcX": {
           "type": "richtext",
           "settings": {
@@ -85,6 +91,7 @@
       },
       "block_order": [
         "subheading_79idNw",
+        "liquid_jh6HwD",
         "richtext_h8WqcX",
         "subheading_BrM8M7",
         "richtext_JWfj6P",
@@ -446,7 +453,7 @@
       "settings": {
         "bottom_button_text": "Flowの店舗分析プラットフォーム全体を見る",
         "bottom_button_url": "https://flow-solutions.com/pages/flow-platform-overview",
-        "bottom_button_background": "#102D4F",
+        "bottom_button_background": "#102d4f",
         "bottom_button_text_color": "#ffffff",
         "full_width": true,
         "stack_on_mobile": false,
@@ -455,7 +462,7 @@
         "subheading": "",
         "title": "",
         "content": "<h2>店舗分析を、レポートで終わらせず日々の判断へ</h2><p>Flowは、来店客数・回遊・滞在時間・コンバージョン・人員配置を統合し、店舗運営の判断を標準化します。</p>",
-        "background": "#FFFFFF",
+        "background": "#ffffff",
         "background_gradient": "",
         "text_color": "",
         "subheading_background_color": "",
@@ -1001,7 +1008,7 @@
         "content": "",
         "link_url": "",
         "link_text": "",
-        "background": "#FFFFFF",
+        "background": "#ffffff",
         "background_gradient": "",
         "text_color": "",
         "heading_color": "",
@@ -1639,7 +1646,7 @@
         "bottom_button_text": "",
         "bottom_button_url": "",
         "bottom_button_background": "#172033",
-        "bottom_button_text_color": "#F9FAFB",
+        "bottom_button_text_color": "#f9fafb",
         "full_width": true,
         "stack_on_mobile": true,
         "gap": "medium",
@@ -2316,7 +2323,7 @@
         "button_text": "導入について相談する",
         "button_url": "shopify://pages/contact",
         "text_position": "start",
-        "background": "#FFFFFF",
+        "background": "#ffffff",
         "background_gradient": "",
         "text_color": "",
         "heading_color": "",
