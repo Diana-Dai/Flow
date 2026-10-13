@@ -1936,15 +1936,23 @@
     "blocks_jpEc96": {
       "type": "_blocks",
       "blocks": {
-        "heading_ai9gBy": {
+        "heading_We8k8g": {
           "type": "heading",
           "name": "Heading",
           "settings": {
             "text": "来店計測データを店舗改善につなげた事例",
             "size": "h1",
-            "html_tag": "p",
+            "html_tag": "h2",
             "text_color": "",
             "gradient": ""
+          },
+          "blocks": {}
+        },
+        "ai_gen_block_e3781ec_PP9G8t": {
+          "type": "ai_gen_block_e3781ec",
+          "settings": {
+            "spacer_height": 40,
+            "desktop_width_percent": 100
           },
           "blocks": {}
         },
@@ -1962,7 +1970,8 @@
         }
       },
       "block_order": [
-        "heading_ai9gBy",
+        "heading_We8k8g",
+        "ai_gen_block_e3781ec_PP9G8t",
         "ai_gen_block_0607fd7_bWirrM"
       ],
       "name": "Single case study",
