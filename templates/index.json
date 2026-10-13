@@ -1291,14 +1291,14 @@
             "heading_tag": "h4",
             "subheading": "",
             "content": "<p>AIカメラと来店計測で、来店数、店前通行量、入店率、回遊、滞在時間を把握します。店舗ごとの変化をリアルタイムに確認し、売上結果だけでは見えない状況を可視化します。</p>",
-            "link_url": "https://flow-solutions.com/pages/ai-camera",
-            "link_text": "店舗向けAIカメラの計測方法を見る",
+            "link_url": "https://flow-solutions.com/pages/traffic-analytics",
+            "link_text": "来店客数・店前通行量の分析を見る",
             "link_style": "button",
             "button_background_2": "",
             "button_text_color_2": "",
             "button_font_size_2": 0,
-            "link_url_2": "",
-            "link_text_2": "",
+            "link_url_2": "https://flow-solutions.com/pages/ai-camera",
+            "link_text_2": "店舗向けAIカメラの計測方法を見る",
             "link_style_2": "button"
           }
         },
