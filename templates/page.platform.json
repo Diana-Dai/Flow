@@ -35,7 +35,7 @@
         "richtext_HwhtPj": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Flowは、来店数・購買率・売上・人員配置を店舗・エリア・時間帯別に比較し、注意すべき店舗と成功店舗の共通点を可視化します。店長・エリアマネージャー・本部が同じKPIを確認し、全店の改善を進めるための多店舗管理基盤です。</p>"
+            "content": "<p>Flowは、来店数・購買率・売上・人員配置を店舗・エリア・時間帯別に比較し、注意すべき店舗と成功店舗の共通点を可視化します。店長・エリアマネージャー・本部が同じKPIを確認し、全店の改善を進めるための多店舗管理基盤です。<br/><br/>店舗数、確認したいKPI、現在のPOS・来店計測データをもとに、店舗比較、エリア管理、権限設計、段階導入の方法をご案内します。<br/></p>"
           }
         },
         "button_7Prq3W": {
@@ -2900,6 +2900,41 @@
             "link_text_2": "",
             "link_style_2": "button"
           }
+        },
+        "item_zpPAbq": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "#FFFFFF",
+            "card_padding": 2,
+            "button_background": "",
+            "button_text_color": "",
+            "button_font_size": 0,
+            "heading_font_size": 0,
+            "subheading_font_size": 0,
+            "content_font_size": 0,
+            "show_controls": false,
+            "column_size": "1",
+            "title": "",
+            "heading_tag": "h3",
+            "subheading": "",
+            "content": "",
+            "link_url": "https://flow-solutions.com/pages/standardize-store-decisions",
+            "link_text": "多店舗運営の判断を標準化する方法を見る",
+            "link_style": "link",
+            "button_background_2": "",
+            "button_text_color_2": "",
+            "button_font_size_2": 0,
+            "link_url_2": "",
+            "link_text_2": "来店データを活用したスタッフ配置最適化を見る",
+            "link_style_2": "link"
+          }
         }
       },
       "block_order": [
@@ -2911,7 +2946,8 @@
         "item_dJ3Txk",
         "item_yNyAhh",
         "item_UY8BbC",
-        "item_wDP74j"
+        "item_wDP74j",
+        "item_zpPAbq"
       ],
       "custom_css": [
         ".multi-column__item .h1 {color: #a0b842 !important;}"
@@ -3301,6 +3337,12 @@
             "content": "<h2>多店舗のKPI管理と店舗比較を、Flowで始めませんか</h2><p>現在利用しているPOS、来店計測、スタッフデータと、店舗・エリア・本部で確認したいKPIをお聞かせください。既存システムを活用しながら、多店舗の比較と改善を始める方法をご提案します。</p>"
           }
         },
+        "richtext_3C9AkL": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+          }
+        },
         "button_AVKAbi": {
           "type": "button",
           "disabled": true,
@@ -3334,6 +3376,7 @@
       "block_order": [
         "subheading_AK7Cjn",
         "richtext_qzAkak",
+        "richtext_3C9AkL",
         "button_AVKAbi",
         "buttons_jaKCGH"
       ],
