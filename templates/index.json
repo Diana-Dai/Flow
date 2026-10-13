@@ -21,8 +21,9 @@
         },
         "liquid_jh6HwD": {
           "type": "liquid",
+          "disabled": true,
           "settings": {
-            "liquid": "<p>Write custom Liquid code to include widget or dynamic code.</p>"
+            "liquid": "<p>Write custom Liquid code to include widget or dynamic code.</p>\n<"
           }
         },
         "richtext_h8WqcX": {
