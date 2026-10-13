@@ -1,6 +1,195 @@
+{% doc %}
+  @prompt
+    Create a new, polished Japanese case-study section for the AI camera page. Design a spacious editorial section with an H2 above one large case-study card. Use a refined light background, dark readable typography, subtle borders, and restrained green accents. On desktop use a two-column card: case-study copy on the left and prominent outcome figures on the right; stack cleanly on mobile. Highlight 来店者数 +6.3%, 買い上げ率 +5.3ポイント, and 売上高 +25%, clearly indicating the six-month verification period and year-over-year sales comparison. Preserve this exact provided copy in separately editable settings: H2: 来店計測データを店舗改善につなげた事例; Card company: 株式会社デイトナ・インターナショナル様; Headline: 来店者数6.3%増、買い上げ率5.3ポイント改善; Body: Flowで来店数・店前通行量・売上データを可視化し、店舗施策の検証と改善に活用。6か月間の検証では、導入店舗の売上高が前年同期比25%増、来店者数が6.3%増加し、買い上げ率は19.9%から25.2%へ改善しました。; CTA: デイトナ・インターナショナル様の導入事例を見る. Provide an editable CTA destination, left unset rather than inventing a URL. Make text, metric labels and values, colors, spacing, and CTA editable. Use accessible contrast and clear heading hierarchy. Do not replace existing page content.
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-case-study-{{ ai_gen_id }} {
+    display: block;
+    width: {{ block.settings.desktop_width_percent }}%;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: {{ block.settings.section_padding }}px 24px;
+    background: {{ block.settings.section_background }};
+    color: {{ block.settings.text_color }};
+  }
+  .ai-case-study-{{ ai_gen_id }} *,
+  .ai-case-study-{{ ai_gen_id }} *::before,
+  .ai-case-study-{{ ai_gen_id }} *::after { box-sizing: border-box; }
+  .ai-case-study-{{ ai_gen_id }}__inner { max-width: 1160px; margin: 0 auto; }
+  .ai-case-study-{{ ai_gen_id }}__heading {
+    margin: 0 0 32px;
+    color: {{ block.settings.text_color }};
+    font-size: clamp(26px, 3.2vw, {{ block.settings.heading_size }}px);
+    line-height: 1.3;
+    letter-spacing: -0.025em;
+    font-weight: 600;
+  }
+  .ai-case-study-{{ ai_gen_id }}__card {
+    display: grid;
+    grid-template-columns: minmax(0, 1.15fr) minmax(300px, 0.85fr);
+    background: {{ block.settings.card_background }};
+    border: 1px solid {{ block.settings.border_color }};
+    border-radius: {{ block.settings.card_radius }}px;
+    overflow: hidden;
+  }
+  .ai-case-study-{{ ai_gen_id }}__copy {
+    padding: clamp(28px, 5vw, {{ block.settings.card_padding }}px);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .ai-case-study-{{ ai_gen_id }}__company {
+    margin: 0 0 20px;
+    color: {{ block.settings.accent_color }};
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 700;
+    letter-spacing: .04em;
+  }
+  .ai-case-study-{{ ai_gen_id }}__headline {
+    margin: 0 0 16px;
+    color: {{ block.settings.text_color }};
+    font-size: clamp(21px, 2.2vw, 30px);
+    line-height: 1.45;
+    font-weight: 600;
+  }
+  .ai-case-study-{{ ai_gen_id }}__body {
+    margin: 0;
+    color: {{ block.settings.text_color }};
+    font-size: {{ block.settings.body_size }}px;
+    line-height: 1.9;
+  }
+  .ai-case-study-{{ ai_gen_id }}__cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 28px;
+    padding: 13px 18px;
+    border: 1px solid {{ block.settings.accent_color }};
+    border-radius: {{ block.settings.button_radius }}px;
+    background: {{ block.settings.button_background }};
+    color: {{ block.settings.button_text_color }};
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 600;
+    transition: background-color .2s ease, color .2s ease;
+  }
+  .ai-case-study-{{ ai_gen_id }}__cta:hover { background: {{ block.settings.accent_color }}; color: {{ block.settings.button_hover_text }}; }
+  .ai-case-study-{{ ai_gen_id }}__cta:focus-visible { outline: 3px solid {{ block.settings.text_color }}; outline-offset: 3px; }
+  .ai-case-study-{{ ai_gen_id }}__arrow { font-size: 18px; line-height: 1; }
+  .ai-case-study-{{ ai_gen_id }}__results {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: clamp(28px, 4vw, {{ block.settings.card_padding }}px);
+    border-left: 1px solid {{ block.settings.border_color }};
+    background: {{ block.settings.results_background }};
+  }
+  .ai-case-study-{{ ai_gen_id }}__period {
+    margin: 0 0 18px;
+    color: {{ block.settings.text_color }};
+    font-size: 13px;
+    line-height: 1.5;
+    font-weight: 700;
+  }
+  .ai-case-study-{{ ai_gen_id }}__metric {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 17px 0;
+    border-top: 1px solid {{ block.settings.border_color }};
+  }
+  .ai-case-study-{{ ai_gen_id }}__metric-label { color: {{ block.settings.text_color }}; font-size: 14px; line-height: 1.5; }
+  .ai-case-study-{{ ai_gen_id }}__metric-value { color: {{ block.settings.accent_color }}; font-size: clamp(24px, 2.5vw, 34px); line-height: 1.15; font-weight: 700; white-space: nowrap; letter-spacing: -.03em; }
+  .ai-case-study-{{ ai_gen_id }}__comparison { margin: 15px 0 0; padding-top: 14px; border-top: 1px solid {{ block.settings.border_color }}; color: {{ block.settings.text_color }}; font-size: 12px; line-height: 1.6; }
+  @media screen and (max-width: 749px) {
+    .ai-case-study-{{ ai_gen_id }} { padding: {{ block.settings.mobile_padding }}px 18px; }
+    .ai-case-study-{{ ai_gen_id }}__heading { margin-bottom: 22px; }
+    .ai-case-study-{{ ai_gen_id }}__card { grid-template-columns: 1fr; }
+    .ai-case-study-{{ ai_gen_id }}__copy { padding: 26px 22px; }
+    .ai-case-study-{{ ai_gen_id }}__results { padding: 24px 22px; border-left: 0; border-top: 1px solid {{ block.settings.border_color }}; }
+    .ai-case-study-{{ ai_gen_id }}__metric { padding: 14px 0; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .ai-case-study-{{ ai_gen_id }}__cta { transition: none; }
+  }
+{% endstyle %}
+
+<section class="ai-case-study-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-case-study-{{ ai_gen_id }}__inner">
+    <h2 class="ai-case-study-{{ ai_gen_id }}__heading">{{ block.settings.section_heading | escape }}</h2>
+    <article class="ai-case-study-{{ ai_gen_id }}__card">
+      <div class="ai-case-study-{{ ai_gen_id }}__copy">
+        <p class="ai-case-study-{{ ai_gen_id }}__company">{{ block.settings.company | escape }}</p>
+        <h3 class="ai-case-study-{{ ai_gen_id }}__headline">{{ block.settings.headline | escape }}</h3>
+        <p class="ai-case-study-{{ ai_gen_id }}__body">{{ block.settings.body | escape }}</p>
+        {% if block.settings.cta_link != blank %}
+          <a class="ai-case-study-{{ ai_gen_id }}__cta" href="{{ block.settings.cta_link }}">
+            <span>{{ block.settings.cta_label | escape }}</span><span class="ai-case-study-{{ ai_gen_id }}__arrow" aria-hidden="true">→</span>
+          </a>
+        {% else %}
+          <span class="ai-case-study-{{ ai_gen_id }}__cta"><span>{{ block.settings.cta_label | escape }}</span><span class="ai-case-study-{{ ai_gen_id }}__arrow" aria-hidden="true">→</span></span>
+        {% endif %}
+      </div>
+      <div class="ai-case-study-{{ ai_gen_id }}__results" aria-label="導入成果">
+        <p class="ai-case-study-{{ ai_gen_id }}__period">{{ block.settings.period_label | escape }}</p>
+        <div class="ai-case-study-{{ ai_gen_id }}__metric"><span class="ai-case-study-{{ ai_gen_id }}__metric-label">{{ block.settings.metric_one_label | escape }}</span><span class="ai-case-study-{{ ai_gen_id }}__metric-value">{{ block.settings.metric_one_value | escape }}</span></div>
+        <div class="ai-case-study-{{ ai_gen_id }}__metric"><span class="ai-case-study-{{ ai_gen_id }}__metric-label">{{ block.settings.metric_two_label | escape }}</span><span class="ai-case-study-{{ ai_gen_id }}__metric-value">{{ block.settings.metric_two_value | escape }}</span></div>
+        <div class="ai-case-study-{{ ai_gen_id }}__metric"><span class="ai-case-study-{{ ai_gen_id }}__metric-label">{{ block.settings.metric_three_label | escape }}</span><span class="ai-case-study-{{ ai_gen_id }}__metric-value">{{ block.settings.metric_three_value | escape }}</span></div>
+        <p class="ai-case-study-{{ ai_gen_id }}__comparison">{{ block.settings.comparison_note | escape }}</p>
+      </div>
+    </article>
+  </div>
+</section>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "Japanese case study",
+  "settings": [
+    { "type": "header", "content": "Content" },
+    { "type": "text", "id": "section_heading", "label": "Section heading", "default": "来店計測データを店舗改善につなげた事例" },
+    { "type": "text", "id": "company", "label": "Company", "default": "株式会社デイトナ・インターナショナル様" },
+    { "type": "text", "id": "headline", "label": "Case headline", "default": "来店者数6.3%増、買い上げ率5.3ポイント改善" },
+    { "type": "textarea", "id": "body", "label": "Case description", "default": "Flowで来店数・店前通行量・売上データを可視化し、店舗施策の検証と改善に活用。6か月間の検証では、導入店舗の売上高が前年同期比25%増、来店者数が6.3%増加し、買い上げ率は19.9%から25.2%へ改善しました。" },
+    { "type": "text", "id": "cta_label", "label": "CTA label", "default": "デイトナ・インターナショナル様の導入事例を見る" },
+    { "type": "url", "id": "cta_link", "label": "CTA destination" },
+    { "type": "header", "content": "Outcome metrics" },
+    { "type": "text", "id": "period_label", "label": "Verification period", "default": "6か月間の検証結果" },
+    { "type": "text", "id": "metric_one_label", "label": "Metric one label", "default": "来店者数" },
+    { "type": "text", "id": "metric_one_value", "label": "Metric one value", "default": "+6.3%" },
+    { "type": "text", "id": "metric_two_label", "label": "Metric two label", "default": "買い上げ率" },
+    { "type": "text", "id": "metric_two_value", "label": "Metric two value", "default": "+5.3ポイント" },
+    { "type": "text", "id": "metric_three_label", "label": "Metric three label", "default": "売上高" },
+    { "type": "text", "id": "metric_three_value", "label": "Metric three value", "default": "+25%" },
+    { "type": "text", "id": "comparison_note", "label": "Sales comparison note", "default": "売上高は前年同期比" },
+    { "type": "header", "content": "Colors" },
+    { "type": "color", "id": "section_background", "label": "Section background", "default": "#F4F6F2" },
+    { "type": "color", "id": "card_background", "label": "Card background", "default": "#FFFFFF" },
+    { "type": "color", "id": "results_background", "label": "Results background", "default": "#F8FAF6" },
+    { "type": "color", "id": "text_color", "label": "Text", "default": "#24332B" },
+    { "type": "color", "id": "accent_color", "label": "Green accent", "default": "#376B45" },
+    { "type": "color", "id": "border_color", "label": "Borders", "default": "#DCE4DA" },
+    { "type": "color", "id": "button_background", "label": "CTA background", "default": "#FFFFFF" },
+    { "type": "color", "id": "button_text_color", "label": "CTA text", "default": "#284F34" },
+    { "type": "color", "id": "button_hover_text", "label": "CTA hover text", "default": "#FFFFFF" },
+    { "type": "header", "content": "Spacing and size" },
+    { "type": "range", "id": "desktop_width_percent", "label": "Desktop width", "min": 50, "max": 100, "step": 5, "unit": "%", "default": 100 },
+    { "type": "range", "id": "section_padding", "label": "Section padding", "min": 20, "max": 100, "step": 5, "unit": "px", "default": 60 },
+    { "type": "range", "id": "mobile_padding", "label": "Mobile padding", "min": 10, "max": 50, "step": 5, "unit": "px", "default": 25 },
+    { "type": "range", "id": "card_padding", "label": "Card padding", "min": 24, "max": 64, "step": 4, "unit": "px", "default": 48 },
+    { "type": "range", "id": "heading_size", "label": "Heading size", "min": 26, "max": 48, "step": 2, "unit": "px", "default": 36 },
+    { "type": "range", "id": "body_size", "label": "Body text size", "min": 14, "max": 20, "step": 1, "unit": "px", "default": 16 },
+    { "type": "range", "id": "card_radius", "label": "Card corner radius", "min": 0, "max": 24, "step": 2, "unit": "px", "default": 12 },
+    { "type": "range", "id": "button_radius", "label": "CTA corner radius", "min": 0, "max": 24, "step": 2, "unit": "px", "default": 4 }
+  ],
+  "presets": [
+    { "name": "Japanese case study" }
+  ],
+  "tag": null,
+  "class": "japanese-case-study-block"
+}
 {% endschema %}
