@@ -2986,7 +2986,8 @@
         "item_6BJbyc"
       ],
       "custom_css": [
-        ".multi-column__item .h1 {color: #a0b842 !important;}"
+        ".multi-column__item .h1 {color: #a0b842 !important;}",
+        "button {margin-top: auto !important; padding-top: 0rem;}"
       ],
       "name": "Multi-column",
       "settings": {
