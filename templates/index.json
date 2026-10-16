@@ -34,19 +34,28 @@
         },
         "subheading_BrM8M7": {
           "type": "subheading",
+          "disabled": true,
           "settings": {
             "text": "リテールには、より良い判断が必要だ。",
             "icon": "none"
           }
         },
+        "richtext_pUQBc9": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>来店計測・POS・人員データをつなぎ、Flow AIが課題と優先するアクションを整理します。</p>"
+          }
+        },
         "richtext_JWfj6P": {
           "type": "richtext",
+          "disabled": true,
           "settings": {
             "content": "<p>Flowは、来店計測・POS・人員・店舗情報を一元化し、本部・エリア・店舗が同じデータをもとに改善できる小売店舗分析プラットフォームです。Flow AIが課題と機会を整理し、次のアクションを支援します。</p>"
           }
         },
         "richtext_LcTpMq": {
           "type": "richtext",
+          "disabled": true,
           "settings": {
             "content": "<p>来店計測 × POS連携 × 現場情報 × Flow AI</p>"
           }
@@ -62,7 +71,7 @@
             "text_color_1": "#f9fafb",
             "style_2": "outline",
             "size_2": "lg",
-            "text_2": "小売企業の導入事例を見る",
+            "text_2": "導入事例を見る",
             "url_2": "shopify://pages/case-studies",
             "background_2": "",
             "text_color_2": ""
@@ -70,12 +79,14 @@
         },
         "richtext_EhWFc8": {
           "type": "richtext",
+          "disabled": true,
           "settings": {
             "content": "<p>店舗数、確認したいKPI、現在のPOS・来店計測環境をもとに、Flowの活用方法をご案内します。</p>"
           }
         },
         "richtext_gyC73r": {
           "type": "richtext",
+          "disabled": true,
           "settings": {
             "content": "<p>期間限定｜3店舗導入で、4店舗目が6ヶ月無料。</p>"
           }
@@ -95,6 +106,7 @@
         "liquid_jh6HwD",
         "richtext_h8WqcX",
         "subheading_BrM8M7",
+        "richtext_pUQBc9",
         "richtext_JWfj6P",
         "richtext_LcTpMq",
         "buttons_pt4Ted",
