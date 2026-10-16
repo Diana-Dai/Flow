@@ -923,8 +923,8 @@
         "full_width": true,
         "image": "shopify://shop_images/Lifestyle_Hotspots_3.png",
         "mobile_image": "shopify://shop_images/Mobile_Hotspot.png",
-        "title": "店舗向けAIカメラによる店内計測の例",
-        "content": "<p>店舗向けAIカメラによる店内計測の例</p>",
+        "title": "",
+        "content": "<h3>AIカメラの店内計測例</h3><p>＋を押して、計測内容を確認</p>",
         "button_text": "",
         "button_url": "",
         "desktop_text_position": "place-self-start text-start",
@@ -1389,16 +1389,34 @@
           "settings": {
             "content": "<p>AIカメラは、店舗で起きていることを正確に取得する計測レイヤーです。来店数・店前通行量・入店率の比較は「来店客数分析」、滞在時間・導線・ゾーンの解釈は「店内行動分析」、POS・売上・人員データとの統合は「Flowプラットフォーム」で行います。</p><p>•<a href=\"https://flow-solutions.com/pages/traffic-analytics\" title=\"https://flow-solutions.com/pages/traffic-analytics\"> 来店数・店前通行量・入店率を分析</a><br/>•<a href=\"https://flow-solutions.com/pages/store-analytics\" title=\"https://flow-solutions.com/pages/store-analytics\"> 滞在・導線・ゾーンを分析</a><br/>• <a href=\"https://flow-solutions.com/pages/flow-platform-overview\" title=\"https://flow-solutions.com/pages/flow-platform-overview\">AIカメラとPOS・人員データを統合</a></p>"
           }
+        },
+        "buttons_dB4t8W": {
+          "type": "buttons",
+          "settings": {
+            "style_1": "fill",
+            "size_1": "xl",
+            "text_1": "Button text",
+            "url_1": "",
+            "background_1": "",
+            "text_color_1": "",
+            "style_2": "fill",
+            "size_2": "xl",
+            "text_2": "Button text",
+            "url_2": "",
+            "background_2": "",
+            "text_color_2": ""
+          }
         }
       },
       "block_order": [
         "heading_DPYLE6",
-        "richtext_PXzMzb"
+        "richtext_PXzMzb",
+        "buttons_dB4t8W"
       ],
       "name": "Rich text",
       "settings": {
         "full_width": true,
-        "content_width": "medium",
+        "content_width": "large",
         "text_position": "center",
         "background": "",
         "background_gradient": "",
