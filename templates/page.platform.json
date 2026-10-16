@@ -2015,7 +2015,7 @@
             "banner_icon_color": "#ffffff",
             "banner_text_color": "#ffffff",
             "description_size": 20,
-            "step_title_size": 20,
+            "step_title_size": 22,
             "step_desc_size": 17,
             "banner_text_size": 19,
             "icon_border_radius": 15,
