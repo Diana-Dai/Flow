@@ -15,7 +15,7 @@
         "liquid_74Ndmm": {
           "type": "liquid",
           "settings": {
-            "liquid": "<h1 class=\"h1\">来店・POS・人員データを統合し、売上改善につなげる店舗分析システム。\n</h1>"
+            "liquid": "<h1 class=\"h1\">来店・POS・人員データを統合し、<br>売上改善につなげる店舗分析システム。\n</h1>"
           }
         },
         "heading_W76pLA": {
@@ -1099,7 +1099,7 @@
             "subheading": "",
             "content": "<p>高精度な来店計測と顧客行動分析。</p>",
             "link_url": "https://flow-solutions.com/pages/store-analytics",
-            "link_text": "高精度店内計測 → 店内行動・店舗導線分析を見る",
+            "link_text": "店内行動・導線分析を見る",
             "link_style": "button",
             "button_background_2": "",
             "button_text_color_2": "",
@@ -1135,7 +1135,7 @@
             "subheading": "",
             "content": "<p>来店・売上・人員配置を統合分析。</p>",
             "link_url": "https://flow-solutions.com/pages/store-performance-platform",
-            "link_text": "FIDA分析基盤 → 多店舗KPI管理・店舗パフォーマンス分析を見る",
+            "link_text": "多店舗KPI管理・比較を見る",
             "link_style": "button",
             "button_background_2": "",
             "button_text_color_2": "",
@@ -1171,7 +1171,7 @@
             "subheading": "",
             "content": "<p>現場実行につながる推奨アクション。</p>",
             "link_url": "https://flow-solutions.com/pages/flow-ai-fida",
-            "link_text": "判断・実行支援 → Flow AIによる店舗意思決定支援を見る",
+            "link_text": "Flow AIによる店舗意思決定支援を見る",
             "link_style": "button",
             "button_background_2": "",
             "button_text_color_2": "",
