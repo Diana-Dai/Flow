@@ -924,7 +924,7 @@
         "image": "shopify://shop_images/Lifestyle_Hotspots_3.png",
         "mobile_image": "shopify://shop_images/Mobile_Hotspot.png",
         "title": "",
-        "content": "<h3>AIカメラの店内計測例</h3><p>＋を押して、計測内容を確認</p>",
+        "content": "<h4><strong>AIカメラの店内計測例</strong></h4>",
         "button_text": "",
         "button_url": "",
         "desktop_text_position": "place-self-start text-start",
