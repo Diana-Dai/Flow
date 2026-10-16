@@ -2249,183 +2249,6 @@
         "padding_bottom": 0
       }
     },
-    "multi_column_HCGJea11": {
-      "type": "multi-column",
-      "blocks": {
-        "item_9cWFC9": {
-          "type": "item",
-          "settings": {
-            "icon": "none",
-            "icon_width": 32,
-            "icon_background_type": "square",
-            "icon_background": "#e5e9d1",
-            "icon_color": "#a0b842",
-            "background_color": "#40536c",
-            "text_color": "#ffffff",
-            "border_color": "#40536c",
-            "card_padding": 0,
-            "button_background": "",
-            "button_text_color": "",
-            "button_font_size": 0,
-            "heading_font_size": 0,
-            "subheading_font_size": 0,
-            "content_font_size": 0,
-            "show_controls": false,
-            "column_size": "4",
-            "title": "",
-            "heading_tag": "h4",
-            "subheading": "",
-            "content": "<h3>Sensing</h3><p>Capture high-precision traffic, sales, and operational data</p>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link",
-            "button_background_2": "",
-            "button_text_color_2": "",
-            "button_font_size_2": 0,
-            "link_url_2": "",
-            "link_text_2": "",
-            "link_style_2": "button"
-          }
-        },
-        "item_aqpNXK": {
-          "type": "item",
-          "settings": {
-            "icon": "none",
-            "icon_width": 32,
-            "icon_background_type": "square",
-            "icon_background": "#e5e9d1",
-            "icon_color": "#a0b842",
-            "background_color": "#40536c",
-            "text_color": "",
-            "border_color": "#40536c",
-            "card_padding": 0,
-            "button_background": "",
-            "button_text_color": "",
-            "button_font_size": 0,
-            "heading_font_size": 0,
-            "subheading_font_size": 0,
-            "content_font_size": 0,
-            "show_controls": false,
-            "column_size": "4",
-            "title": "",
-            "heading_tag": "h4",
-            "subheading": "",
-            "content": "<h3>Analysis</h3><p>Identify performance leaks, surges, and execution gaps</p>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link",
-            "button_background_2": "",
-            "button_text_color_2": "",
-            "button_font_size_2": 0,
-            "link_url_2": "",
-            "link_text_2": "",
-            "link_style_2": "button"
-          }
-        },
-        "item_tTyycj": {
-          "type": "item",
-          "settings": {
-            "icon": "none",
-            "icon_width": 32,
-            "icon_background_type": "square",
-            "icon_background": "#e5e9d1",
-            "icon_color": "#a0b842",
-            "background_color": "#40536c",
-            "text_color": "#ffffff",
-            "border_color": "#40536c",
-            "card_padding": 0,
-            "button_background": "",
-            "button_text_color": "",
-            "button_font_size": 0,
-            "heading_font_size": 0,
-            "subheading_font_size": 0,
-            "content_font_size": 0,
-            "show_controls": false,
-            "column_size": "4",
-            "title": "",
-            "heading_tag": "h4",
-            "subheading": "",
-            "content": "<h3>Recommendation</h3><p>AI-driven operational tasks and staffing adjustments</p>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link",
-            "button_background_2": "",
-            "button_text_color_2": "",
-            "button_font_size_2": 0,
-            "link_url_2": "",
-            "link_text_2": "",
-            "link_style_2": "button"
-          }
-        },
-        "item_ztJTym": {
-          "type": "item",
-          "settings": {
-            "icon": "none",
-            "icon_width": 32,
-            "icon_background_type": "square",
-            "icon_background": "#a0b842",
-            "icon_color": "#ffffff",
-            "background_color": "#40536c",
-            "text_color": "#ffffff",
-            "border_color": "#36465c",
-            "card_padding": 0,
-            "button_background": "",
-            "button_text_color": "",
-            "button_font_size": 0,
-            "heading_font_size": 0,
-            "subheading_font_size": 0,
-            "content_font_size": 0,
-            "show_controls": false,
-            "column_size": "4",
-            "title": "",
-            "heading_tag": "h4",
-            "subheading": "",
-            "content": "<h3>Execution</h3><p>Store teams take action via Flow Assistant notifications</p>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link",
-            "button_background_2": "",
-            "button_text_color_2": "",
-            "button_font_size_2": 0,
-            "link_url_2": "",
-            "link_text_2": "",
-            "link_style_2": "button"
-          }
-        }
-      },
-      "block_order": [
-        "item_9cWFC9",
-        "item_aqpNXK",
-        "item_tTyycj",
-        "item_ztJTym"
-      ],
-      "disabled": true,
-      "custom_css": [
-        ".multi-column__item .prose p {font-size: 1rem;}",
-        ".multi-column__item .h4 {padding-bottom: 0;}"
-      ],
-      "name": "Multi-column",
-      "settings": {
-        "bottom_button_text": "",
-        "bottom_button_url": "",
-        "bottom_button_background": "#172033",
-        "bottom_button_text_color": "#ffffff",
-        "full_width": true,
-        "stack_on_mobile": false,
-        "gap": "medium",
-        "text_alignment": "start",
-        "subheading": "END-TO-END",
-        "title": "DATA TO EXECUTION IN REAL-TIME.",
-        "content": "<p>Average Response Time: &lt;2 minutes from detection to action</p>",
-        "background": "#0e366a",
-        "background_gradient": "",
-        "text_color": "#ffffff",
-        "subheading_background_color": "",
-        "subheading_text_color": "",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
     "section-15": {
       "type": "feature-chart",
       "blocks": {
@@ -2541,46 +2364,6 @@
         "chart_background": "",
         "chart_text_color": "",
         "chart_true_false_color": ""
-      }
-    },
-    "media_with_text_mRGejd": {
-      "type": "media-with-text",
-      "blocks": {
-        "image_enedX8": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/44.png",
-            "media_width": 50,
-            "media_position": "start",
-            "text_position": "place-self-center-start text-start",
-            "icon": "none",
-            "icon_width": 48,
-            "subheading": "RAPID DEPLOYMENT WINDOW",
-            "title": "30 MINS.",
-            "content": "<p></p><p>PoE Interface: Single standard Ethernet cable for simultaneous power and data transmission.</p><p>Zero-Config: Automatic node discovery and network handshake. Reduces onsite engineering time by 90%.</p>",
-            "link_text": "",
-            "link_url": "",
-            "background": "#f9fafb",
-            "background_gradient": "",
-            "text_color": "#11243e",
-            "text_gradient": "",
-            "button_background": "",
-            "button_text_color": ""
-          }
-        }
-      },
-      "block_order": [
-        "image_enedX8"
-      ],
-      "disabled": true,
-      "custom_css": [
-        "* {background: white;}"
-      ],
-      "name": "Media with text",
-      "settings": {
-        "full_width": false,
-        "alternate_media_position": false,
-        "spacing": "small"
       }
     },
     "multi_column_ELgLhR": {
@@ -2798,6 +2581,7 @@
         },
         "item_yNyAhh": {
           "type": "item",
+          "disabled": true,
           "settings": {
             "icon": "none",
             "icon_width": 32,
@@ -2833,6 +2617,7 @@
         },
         "item_UY8BbC": {
           "type": "item",
+          "disabled": true,
           "settings": {
             "icon": "none",
             "icon_width": 32,
@@ -2868,6 +2653,7 @@
         },
         "item_wDP74j": {
           "type": "item",
+          "disabled": true,
           "settings": {
             "icon": "none",
             "icon_width": 32,
@@ -2903,6 +2689,7 @@
         },
         "item_zpPAbq": {
           "type": "item",
+          "disabled": true,
           "settings": {
             "icon": "none",
             "icon_width": 32,
@@ -2920,7 +2707,7 @@
             "subheading_font_size": 0,
             "content_font_size": 0,
             "show_controls": false,
-            "column_size": "3",
+            "column_size": "2",
             "title": "",
             "heading_tag": "h3",
             "subheading": "",
@@ -2938,6 +2725,7 @@
         },
         "item_6BJbyc": {
           "type": "item",
+          "disabled": true,
           "settings": {
             "icon": "none",
             "icon_width": 32,
@@ -2955,7 +2743,7 @@
             "subheading_font_size": 0,
             "content_font_size": 0,
             "show_controls": false,
-            "column_size": "3",
+            "column_size": "2",
             "title": "",
             "heading_tag": "h3",
             "subheading": "",
@@ -3007,6 +2795,176 @@
         "text_color": "",
         "subheading_background_color": "#a1b847",
         "subheading_text_color": "#f9fafb",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "rich_text_aryeYj": {
+      "type": "rich-text",
+      "blocks": {
+        "buttons_yL99dY": {
+          "type": "buttons",
+          "settings": {
+            "style_1": "outline",
+            "size_1": "xl",
+            "text_1": "多店舗運営の判断を標準化する方法を見る",
+            "url_1": "https://flow-solutions.com/pages/standardize-store-decisions",
+            "background_1": "",
+            "text_color_1": "",
+            "style_2": "fill",
+            "size_2": "xl",
+            "text_2": "来店データを活用したスタッフ配置最適化を見る",
+            "url_2": "",
+            "background_2": "",
+            "text_color_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "buttons_yL99dY"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "large",
+        "text_position": "center",
+        "background": "#F9FAFB",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "multi_column_X9LJAW": {
+      "type": "multi-column",
+      "blocks": {
+        "item_QYgDTz": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "#A1B847",
+            "card_padding": 0,
+            "button_background": "",
+            "button_text_color": "",
+            "button_font_size": 0,
+            "heading_font_size": 0,
+            "subheading_font_size": 0,
+            "content_font_size": 0,
+            "show_controls": false,
+            "column_size": "3",
+            "title": "自店舗の変化を確認し、記録する",
+            "heading_tag": "h4",
+            "subheading": "<h3><strong>店長</strong></h3>",
+            "content": "<p>来店数・購買率・売上の変化を確認し、現場の状況や対応内容を記録します。</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link",
+            "button_background_2": "",
+            "button_text_color_2": "",
+            "button_font_size_2": 0,
+            "link_url_2": "",
+            "link_text_2": "",
+            "link_style_2": "button"
+          }
+        },
+        "item_jriJTc": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "#A1B847",
+            "card_padding": 0,
+            "button_background": "",
+            "button_text_color": "",
+            "button_font_size": 0,
+            "heading_font_size": 0,
+            "subheading_font_size": 0,
+            "content_font_size": 0,
+            "show_controls": false,
+            "column_size": "3",
+            "title": "支援が必要な店舗を見極める",
+            "heading_tag": "h4",
+            "subheading": "<h4><strong>エリアマネージャー</strong></h4>",
+            "content": "<p>店舗間のKPIを比較し、優先して確認・支援する店舗を特定します。</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link",
+            "button_background_2": "",
+            "button_text_color_2": "",
+            "button_font_size_2": 0,
+            "link_url_2": "",
+            "link_text_2": "",
+            "link_style_2": "button"
+          }
+        },
+        "item_4DWANE": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 32,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "background_color": "",
+            "text_color": "",
+            "border_color": "#A1B847",
+            "card_padding": 0,
+            "button_background": "",
+            "button_text_color": "",
+            "button_font_size": 0,
+            "heading_font_size": 0,
+            "subheading_font_size": 0,
+            "content_font_size": 0,
+            "show_controls": false,
+            "column_size": "3",
+            "title": "成果につながった施策を横展開する",
+            "heading_tag": "h4",
+            "subheading": "<h3><strong>本部</strong></h3>",
+            "content": "<p>店舗ごとの成果と取り組みを比較し、効果的な施策を他店舗へ共有します。</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link",
+            "button_background_2": "",
+            "button_text_color_2": "",
+            "button_font_size_2": 0,
+            "link_url_2": "",
+            "link_text_2": "",
+            "link_style_2": "button"
+          }
+        }
+      },
+      "block_order": [
+        "item_QYgDTz",
+        "item_jriJTc",
+        "item_4DWANE"
+      ],
+      "name": "Multi-column",
+      "settings": {
+        "bottom_button_text": "",
+        "bottom_button_url": "",
+        "bottom_button_background": "#172033",
+        "bottom_button_text_color": "#ffffff",
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "start",
+        "subheading": "",
+        "title": "",
+        "content": "<h2>役割別のFlow活用</h2><p>店舗の状況を共通のデータで把握し、それぞれの役割に応じた判断と行動につなげます。</p>",
+        "background": "#11161C",
+        "background_gradient": "",
+        "text_color": "#F9FAFB",
+        "subheading_background_color": "",
+        "subheading_text_color": "",
         "padding_top": 0,
         "padding_bottom": 0
       }
@@ -3447,10 +3405,10 @@
     "multi_column_QjMJiW11",
     "blocks_4YeEQJ",
     "multi_column_qz9jhR",
-    "multi_column_HCGJea11",
     "section-15",
-    "media_with_text_mRGejd",
     "multi_column_ELgLhR",
+    "rich_text_aryeYj",
+    "multi_column_X9LJAW",
     "rich_text_xGPNdH",
     "blocks_rwYEMm",
     "blocks_nwzRNT",
