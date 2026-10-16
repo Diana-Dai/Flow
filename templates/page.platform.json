@@ -21,7 +21,7 @@
         "liquid_arWN7U": {
           "type": "liquid",
           "settings": {
-            "liquid": "<h1 class=\"h1\">多店舗のKPIを比較し、全店の店舗パフォーマンス改善につなげる\n\n</h1>"
+            "liquid": "<h1 class=\"h1\">多店舗のKPIを比較し、<br>全店の店舗パフォーマンス改善につなげる\n</h1>"
           }
         },
         "heading_frXnfn": {
@@ -469,8 +469,8 @@
         "gap": "small",
         "text_alignment": "start",
         "subheading": "",
-        "title": "多店舗管理に必要な店舗データと社内情報を一元化",
-        "content": "<p>売上、来店、スタッフ、天候、店舗報告、マニュアルをひとつの基盤に集約し、店舗運営の判断に使える状態にします。</p>",
+        "title": "",
+        "content": "<h2>多店舗管理に必要な店舗データと<br/>社内情報を一元化</h2><p>売上、来店、スタッフ、天候、店舗報告、マニュアルをひとつの基盤に集約し、店舗運営の判断に使える状態にします。</p>",
         "background": "#ffffff",
         "background_gradient": "",
         "text_color": "",
@@ -517,10 +517,10 @@
             "content_font_size": 0,
             "show_controls": false,
             "column_size": "3",
-            "title": "",
+            "title": "既存データを接続",
             "heading_tag": "h4",
-            "subheading": "",
-            "content": "<h3>01. 既存データを接続</h3><p>POS、来店計測、スタッフ、天候、店舗属性など、店舗運営に必要なデータをFlowに取り込みます。</p>",
+            "subheading": "<h6><strong>レイヤー01</strong></h6>",
+            "content": "<p>POS、来店計測、スタッフ、天候、店舗属性など、店舗運営に必要なデータをFlowに取り込みます。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link",
@@ -553,10 +553,10 @@
             "content_font_size": 0,
             "show_controls": false,
             "column_size": "3",
-            "title": "",
+            "title": "店舗の状況として整理",
             "heading_tag": "h4",
-            "subheading": "",
-            "content": "<h3>02. 店舗の状況として整理</h3><p>売上、来店、店舗報告、メモ、マニュアルを店舗ごとの状況として整理し、比較しやすくします。</p>",
+            "subheading": "<h6><strong>レイヤー02</strong></h6>",
+            "content": "<p>売上、来店、店舗報告、メモ、マニュアルを店舗ごとの状況として整理し、比較しやすくします。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link",
@@ -589,10 +589,10 @@
             "content_font_size": 0,
             "show_controls": false,
             "column_size": "3",
-            "title": "",
+            "title": "日々の実行につなげる",
             "heading_tag": "h4",
-            "subheading": "",
-            "content": "<h3>03. 日々の実行につなげる</h3><p>店長、エリアマネージャー、本部が同じ情報をもとに、次の確認・報告・打ち手を進められます。</p>",
+            "subheading": "<h6><strong>レイヤー03</strong></h6>",
+            "content": "<p>店長、エリアマネージャー、本部が同じ情報をもとに、次の確認・報告・打ち手を進められます。</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link",
@@ -621,8 +621,8 @@
         "gap": "medium",
         "text_alignment": "start",
         "subheading": "データ活用の流れ",
-        "title": "店舗データを、比較・判断・実行につなげる",
-        "content": "<p>既存システムや店舗現場の情報をFlowに集約し、店長・エリアマネージャー・本部が同じ情報をもとに状況を確認できる状態にします。</p>",
+        "title": "",
+        "content": "<h2>店舗データを、比較・判断・実行につなげる</h2><p>既存システムや店舗現場の情報をFlowに集約し、店長・エリアマネージャー・本部が同じ情報をもとに状況を確認できる状態にします。</p>",
         "background": "rgba(0,0,0,0)",
         "background_gradient": "",
         "text_color": "",
@@ -974,8 +974,8 @@
         "gap": "medium",
         "text_alignment": "start",
         "subheading": "可視化できるKPI",
-        "title": "来店数・購買率・売上を、店舗・エリア別に比較",
-        "content": "<p>通行量、来店数、購買率、客単価、売上進捗をつなげて確認し、スタッフ配置や滞在時間と合わせて改善余地を見つけやすくします。</p>",
+        "title": "",
+        "content": "<h2>来店数・購買率・売上を、店舗・エリア別に比較</h2><p>通行量、来店数、購買率、客単価、売上進捗をつなげて確認し、スタッフ配置や滞在時間と合わせて改善余地を見つけやすくします。</p>",
         "background": "#ffffff",
         "background_gradient": "",
         "text_color": "",
@@ -1527,8 +1527,8 @@
         "gap": "medium",
         "text_alignment": "start",
         "subheading": "可視化の先へ",
-        "title": "KPIレポートを、店舗パフォーマンス改善の判断につなげる",
-        "content": "",
+        "title": "",
+        "content": "<h2>KPIレポートを、<br/>店舗パフォーマンス改善の判断につなげる</h2>",
         "background": "rgba(0,0,0,0)",
         "background_gradient": "",
         "text_color": "",
@@ -1979,7 +1979,7 @@
           "type": "ai_gen_block_3504708",
           "settings": {
             "badge_text": "エリア管理",
-            "headline": "エリアマネージャーが、担当店舗の変化と優先順位を把握",
+            "headline": "エリアマネージャーが、<br>\n担当店舗の変化と優先順位を把握",
             "description": "Flowは、担当店舗のKPI、Pulse、メモ、店舗報告をまとめて確認できるようにし、優先して見るべき店舗や変化を把握しやすくします。",
             "step1_icon": "document",
             "step1_title": "レポートをサマリー",
@@ -3000,7 +3000,7 @@
         "gap": "medium",
         "text_alignment": "start",
         "subheading": "実行改善",
-        "title": "店舗パフォーマンスの変化を、改善行動まで確認",
+        "title": "店舗パフォーマンスの変化を、<br>改善行動まで確認",
         "content": "<p>Flowは、KPIの変化だけでなく、店舗報告、メモ、Pulse、対応内容を同じ文脈で確認できるようにし、改善活動を振り返りやすくします。</p>",
         "background": "#ffffff",
         "background_gradient": "",
@@ -3017,7 +3017,7 @@
         "richtext_Da8wQP": {
           "type": "richtext",
           "settings": {
-            "content": "<h2>多店舗KPI管理で、購買率と売上を改善した導入事例</h2><h3>124店舗の共通KPI運用で、売上18億円増</h3><p>大手セレクトショップ様は、124店舗で来店数・購買率・POS売上データを統合し、店長とエリアマネージャーが同じデータをもとに週単位でPDCAを実施しました。1年間で購買率は前年比8.93%改善、売上は前年比8.25%増加し、売上増加額は18億円となりました。その後、Flowの活用は220店舗以上へ拡大しています。<br/></p>"
+            "content": "<h2>多店舗KPI管理で、<br/>購買率と売上を改善した導入事例</h2><h3>124店舗の共通KPI運用で、売上18億円増</h3><p>大手セレクトショップ様は、124店舗で来店数・購買率・POS売上データを統合し、店長とエリアマネージャーが同じデータをもとに週単位でPDCAを実施しました。1年間で購買率は前年比8.93%改善、売上は前年比8.25%増加し、売上増加額は18億円となりました。その後、Flowの活用は220店舗以上へ拡大しています。<br/></p>"
           }
         },
         "button_yXNDFb": {
@@ -3071,7 +3071,7 @@
           "type": "rich-text",
           "name": "Rich text",
           "settings": {
-            "text": "<h2>既存システムに合わせて、多店舗へ段階的に導入</h2><p>Flowは、現在のPOS、来店計測、スタッフデータ、店舗運用に合わせて連携方法を確認します。すべてを一度に変える必要はありません。必要なデータから接続し、店舗・エリア・本部で使える形に整えていきます。</p>",
+            "text": "<h2>既存システムに合わせて、<br/>多店舗へ段階的に導入</h2><p>Flowは、現在のPOS、来店計測、スタッフデータ、店舗運用に合わせて連携方法を確認します。すべてを一度に変える必要はありません。必要なデータから接続し、店舗・エリア・本部で使える形に整えていきます。</p>",
             "content_width": "large",
             "text_alignment": "left"
           },
@@ -3371,7 +3371,7 @@
         "richtext_qzAkak": {
           "type": "richtext",
           "settings": {
-            "content": "<h2>多店舗のKPI管理と店舗比較を、Flowで始めませんか</h2><p>現在利用しているPOS、来店計測、スタッフデータと、店舗・エリア・本部で確認したいKPIをお聞かせください。既存システムを活用しながら、多店舗の比較と改善を始める方法をご提案します。</p>"
+            "content": "<h2>多店舗のKPI管理と店舗比較を、<br/>Flowで始めませんか</h2><p>現在利用しているPOS、来店計測、スタッフデータと、店舗・エリア・本部で確認したいKPIをお聞かせください。既存システムを活用しながら、多店舗の比較と改善を始める方法をご提案します。</p>"
           }
         },
         "richtext_3C9AkL": {
