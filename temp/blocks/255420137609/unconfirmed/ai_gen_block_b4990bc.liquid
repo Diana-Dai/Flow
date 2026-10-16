@@ -1,6 +1,119 @@
+{% doc %}
+  @prompt
+    Create a replacement for the Camera comparison block on the /pages/ai-camera page. Match the existing Camera comparison block's content, table structure, and styling as closely as possible, but add comprehensive color picker settings. Include independent background and text colors for each column, header background and text colors, row background and text colors including alternating rows, feature-label background and text colors, border and divider colors, and colors for any icons, highlights, or accents present. Clearly group and label the color settings. Preserve the existing appearance as defaults. Keep the comparison readable on desktop and mobile, and keep its content editable.
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+{% assign feature_rows = block.settings.feature_labels | newline_to_br | split: '<br />' %}
+{% assign camera_one_rows = block.settings.camera_one_values | newline_to_br | split: '<br />' %}
+{% assign camera_two_rows = block.settings.camera_two_values | newline_to_br | split: '<br />' %}
+{% assign camera_three_rows = block.settings.camera_three_values | newline_to_br | split: '<br />' %}
+
+{% style %}
+  .ai-camera-compare-{{ ai_gen_id }} {
+    display: block;
+    width: {{ block.settings.desktop_width_percent }}%;
+    max-width: 100%;
+    color: {{ block.settings.row_text }};
+    font-family: inherit;
+  }
+  .ai-camera-compare-{{ ai_gen_id }}__title { margin: 0 0 20px; color: {{ block.settings.header_text }}; font-size: clamp(22px, 3vw, 32px); }
+  .ai-camera-compare-{{ ai_gen_id }}__scroll { width: 100%; overflow-x: auto; border: 1px solid {{ block.settings.border_color }}; border-radius: 8px; -webkit-overflow-scrolling: touch; }
+  .ai-camera-compare-{{ ai_gen_id }}__table { width: 100%; min-width: 620px; border-collapse: collapse; table-layout: fixed; }
+  .ai-camera-compare-{{ ai_gen_id }}__table th,
+  .ai-camera-compare-{{ ai_gen_id }}__table td { padding: 14px 16px; text-align: center; vertical-align: middle; border-right: 1px solid {{ block.settings.divider_color }}; border-bottom: 1px solid {{ block.settings.divider_color }}; overflow-wrap: anywhere; }
+  .ai-camera-compare-{{ ai_gen_id }}__table tr:last-child td { border-bottom: 0; }
+  .ai-camera-compare-{{ ai_gen_id }}__table th:last-child,
+  .ai-camera-compare-{{ ai_gen_id }}__table td:last-child { border-right: 0; }
+  .ai-camera-compare-{{ ai_gen_id }}__table thead th { background: {{ block.settings.header_background }}; color: {{ block.settings.header_text }}; font-weight: 700; }
+  .ai-camera-compare-{{ ai_gen_id }}__table th:first-child { width: 26%; }
+  .ai-camera-compare-{{ ai_gen_id }}__table td { background: {{ block.settings.row_background }}; color: {{ block.settings.row_text }}; }
+  .ai-camera-compare-{{ ai_gen_id }}__table tbody tr:nth-child(even) td { background: {{ block.settings.alternate_background }}; }
+  .ai-camera-compare-{{ ai_gen_id }}__table td:first-child { background: {{ block.settings.feature_background }}; color: {{ block.settings.feature_text }}; text-align: left; font-weight: 600; }
+  .ai-camera-compare-{{ ai_gen_id }}__table tbody tr:nth-child(even) td:first-child { background: {{ block.settings.feature_alt_background }}; }
+  .ai-camera-compare-{{ ai_gen_id }}__table th:nth-child(2), .ai-camera-compare-{{ ai_gen_id }}__table td:nth-child(2) { background-color: {{ block.settings.column_one_background }}; color: {{ block.settings.column_one_text }}; }
+  .ai-camera-compare-{{ ai_gen_id }}__table th:nth-child(3), .ai-camera-compare-{{ ai_gen_id }}__table td:nth-child(3) { background-color: {{ block.settings.column_two_background }}; color: {{ block.settings.column_two_text }}; }
+  .ai-camera-compare-{{ ai_gen_id }}__table th:nth-child(4), .ai-camera-compare-{{ ai_gen_id }}__table td:nth-child(4) { background-color: {{ block.settings.column_three_background }}; color: {{ block.settings.column_three_text }}; }
+  .ai-camera-compare-{{ ai_gen_id }}__table thead th:nth-child(n+2) { background-color: {{ block.settings.header_background }}; color: {{ block.settings.header_text }}; }
+  .ai-camera-compare-{{ ai_gen_id }}__accent { color: {{ block.settings.accent_color }}; font-weight: 700; }
+  .ai-camera-compare-{{ ai_gen_id }}__icon { color: {{ block.settings.icon_color }}; font-weight: 700; }
+  @media screen and (max-width: 749px) {
+    .ai-camera-compare-{{ ai_gen_id }}__table th, .ai-camera-compare-{{ ai_gen_id }}__table td { padding: 11px 10px; font-size: 14px; }
+    .ai-camera-compare-{{ ai_gen_id }}__title { margin-bottom: 14px; }
+  }
+{% endstyle %}
+
+<div class="ai-camera-compare-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  {% if block.settings.title != blank %}<h2 class="ai-camera-compare-{{ ai_gen_id }}__title">{{ block.settings.title | escape }}</h2>{% endif %}
+  <div class="ai-camera-compare-{{ ai_gen_id }}__scroll" role="region" aria-label="{{ block.settings.table_label | escape }}" tabindex="0">
+    <table class="ai-camera-compare-{{ ai_gen_id }}__table">
+      <thead><tr>
+        <th scope="col">{{ block.settings.feature_heading | escape }}</th>
+        <th scope="col">{{ block.settings.camera_one_name | escape }}</th>
+        <th scope="col">{{ block.settings.camera_two_name | escape }}</th>
+        <th scope="col">{{ block.settings.camera_three_name | escape }}</th>
+      </tr></thead>
+      <tbody>
+        {% for feature in feature_rows %}
+          {% assign row_index = forloop.index0 %}
+          {% assign value_one = camera_one_rows[row_index] | strip %}
+          {% assign value_two = camera_two_rows[row_index] | strip %}
+          {% assign value_three = camera_three_rows[row_index] | strip %}
+          {% if feature != blank %}
+            <tr>
+              <th scope="row">{{ feature | strip | escape }}</th>
+              <td>{{ value_one | escape }}</td><td>{{ value_two | escape }}</td><td>{{ value_three | escape }}</td>
+            </tr>
+          {% endif %}
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "Camera comparison",
+  "settings": [
+    { "type": "header", "content": "Table content" },
+    { "type": "range", "id": "desktop_width_percent", "label": "Desktop width", "min": 50, "max": 100, "step": 5, "unit": "%", "default": 100 },
+    { "type": "text", "id": "title", "label": "Heading", "default": "Camera comparison" },
+    { "type": "text", "id": "table_label", "label": "Accessible table label", "default": "Camera features comparison" },
+    { "type": "text", "id": "feature_heading", "label": "Feature column heading", "default": "Features" },
+    { "type": "text", "id": "camera_one_name", "label": "Camera 1 heading", "default": "Camera 1" },
+    { "type": "text", "id": "camera_two_name", "label": "Camera 2 heading", "default": "Camera 2" },
+    { "type": "text", "id": "camera_three_name", "label": "Camera 3 heading", "default": "Camera 3" },
+    { "type": "textarea", "id": "feature_labels", "label": "Feature labels (one per line)", "default": "Resolution\nVideo quality\nNight vision\nMotion detection" },
+    { "type": "textarea", "id": "camera_one_values", "label": "Camera 1 values (match feature order)", "default": "1080p\nFull HD\nIncluded\nIncluded" },
+    { "type": "textarea", "id": "camera_two_values", "label": "Camera 2 values (match feature order)", "default": "2K\n2K UHD\nIncluded\nIncluded" },
+    { "type": "textarea", "id": "camera_three_values", "label": "Camera 3 values (match feature order)", "default": "4K\n4K UHD\nIncluded\nIncluded" },
+    { "type": "header", "content": "Header colors" },
+    { "type": "color", "id": "header_background", "label": "Background", "default": "#1e316a" },
+    { "type": "color", "id": "header_text", "label": "Text", "default": "#ffffff" },
+    { "type": "header", "content": "Camera 1 colors" },
+    { "type": "color", "id": "column_one_background", "label": "Background", "default": "#ffffff" },
+    { "type": "color", "id": "column_one_text", "label": "Text", "default": "#11243e" },
+    { "type": "header", "content": "Camera 2 colors" },
+    { "type": "color", "id": "column_two_background", "label": "Background", "default": "#f9fafb" },
+    { "type": "color", "id": "column_two_text", "label": "Text", "default": "#11243e" },
+    { "type": "header", "content": "Camera 3 colors" },
+    { "type": "color", "id": "column_three_background", "label": "Background", "default": "#ffffff" },
+    { "type": "color", "id": "column_three_text", "label": "Text", "default": "#11243e" },
+    { "type": "header", "content": "Row colors" },
+    { "type": "color", "id": "row_background", "label": "Background", "default": "#ffffff" },
+    { "type": "color", "id": "row_text", "label": "Text", "default": "#11243e" },
+    { "type": "color", "id": "alternate_background", "label": "Alternating background", "default": "#f3f5f6" },
+    { "type": "header", "content": "Feature label colors" },
+    { "type": "color", "id": "feature_background", "label": "Background", "default": "#f3f5f6" },
+    { "type": "color", "id": "feature_alt_background", "label": "Alternating background", "default": "#e9edef" },
+    { "type": "color", "id": "feature_text", "label": "Text", "default": "#11243e" },
+    { "type": "header", "content": "Borders and accents" },
+    { "type": "color", "id": "border_color", "label": "Outer border", "default": "#c9d0d5" },
+    { "type": "color", "id": "divider_color", "label": "Row and column dividers", "default": "#d9dee2" },
+    { "type": "color", "id": "icon_color", "label": "Icons", "default": "#00a341" },
+    { "type": "color", "id": "accent_color", "label": "Highlights and accents", "default": "#0e366a" }
+  ],
+  "presets": [{ "name": "Camera comparison" }],
+  "tag": null,
+  "class": "camera-comparison-block"
+}
 {% endschema %}
