@@ -371,8 +371,15 @@
             "icon": "none"
           }
         },
+        "liquid_nj4LdJ": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<h2 class=\"h1\">店舗データを実行につなげる、<br>店舗分析システムの3つの基盤\n</h2>"
+          }
+        },
         "heading_EyFYM9": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "text": "店舗データを実行につなげる、店舗分析システムの3つの基盤",
             "heading_tag": "h1",
@@ -383,19 +390,20 @@
         "richtext_fA7CVd": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Flowは、①店舗データの取得、②データの統合・分析、③改善判断の支援という3つの基盤で、来店・POS・人員データを店舗の改善行動につなげる店舗分析システムです。<br/></p>"
+            "content": "<p>Flowは、来店数・POS・人員配置などの店舗データを取得・統合・分析し、店舗の課題把握から改善判断・実行までを支援します。<br/></p>"
           }
         }
       },
       "block_order": [
         "subheading_RVUamX",
+        "liquid_nj4LdJ",
         "heading_EyFYM9",
         "richtext_fA7CVd"
       ],
       "name": "Rich text",
       "settings": {
-        "full_width": true,
-        "content_width": "medium",
+        "full_width": false,
+        "content_width": "large",
         "text_position": "center",
         "background": "",
         "background_gradient": "",
