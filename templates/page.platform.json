@@ -480,6 +480,63 @@
         "padding_bottom": 0
       }
     },
+    "rich_text_peMmaV": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_DDAQPW": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "text": "AI CAMERA",
+            "icon": "none"
+          }
+        },
+        "heading_GM8FNx": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "text": "THE SENSING ARRAY",
+            "heading_tag": "h0",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_DF74kd": {
+          "type": "richtext",
+          "disabled": true,
+          "settings": {
+            "content": "<p>Edge-intelligent nodes transforming physical movement into data truth.</p>"
+          }
+        },
+        "image_GR6JYr": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/iPad_Dashboard_1.png",
+            "width_mode": "full_width",
+            "max_width": 600,
+            "mobile_max_width": 350
+          }
+        }
+      },
+      "block_order": [
+        "subheading_DDAQPW",
+        "heading_GM8FNx",
+        "richtext_DF74kd",
+        "image_GR6JYr"
+      ],
+      "custom_css": [
+        "* {padding-top: 0;}"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "large",
+        "text_position": "center",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
     "custom_liquid_WefWEp": {
       "type": "custom-liquid",
       "name": "Custom Liquid",
@@ -983,63 +1040,6 @@
         "subheading_text_color": "#f9fafb",
         "padding_top": 0,
         "padding_bottom": 0
-      }
-    },
-    "rich_text_peMmaV": {
-      "type": "rich-text",
-      "blocks": {
-        "subheading_DDAQPW": {
-          "type": "subheading",
-          "disabled": true,
-          "settings": {
-            "text": "AI CAMERA",
-            "icon": "none"
-          }
-        },
-        "heading_GM8FNx": {
-          "type": "heading",
-          "disabled": true,
-          "settings": {
-            "text": "THE SENSING ARRAY",
-            "heading_tag": "h0",
-            "text_color": "",
-            "gradient": ""
-          }
-        },
-        "richtext_DF74kd": {
-          "type": "richtext",
-          "disabled": true,
-          "settings": {
-            "content": "<p>Edge-intelligent nodes transforming physical movement into data truth.</p>"
-          }
-        },
-        "image_GR6JYr": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/iPad_Dashboard_1.png",
-            "width_mode": "full_width",
-            "max_width": 600,
-            "mobile_max_width": 350
-          }
-        }
-      },
-      "block_order": [
-        "subheading_DDAQPW",
-        "heading_GM8FNx",
-        "richtext_DF74kd",
-        "image_GR6JYr"
-      ],
-      "custom_css": [
-        "* {padding-top: 0;}"
-      ],
-      "name": "Rich text",
-      "settings": {
-        "full_width": true,
-        "content_width": "large",
-        "text_position": "center",
-        "background": "#ffffff",
-        "background_gradient": "",
-        "text_color": ""
       }
     },
     "multi_column_q8BX4d": {
@@ -3392,10 +3392,10 @@
     "blocks_6PjPxD",
     "rich_text_B8Y9rV",
     "multi_column_QjMJiW",
+    "rich_text_peMmaV",
     "custom_liquid_WefWEp",
     "multi_column_Rqk3xG",
     "multi_column_rPwdDt",
-    "rich_text_peMmaV",
     "multi_column_q8BX4d",
     "multi_column_HCGJea",
     "media_with_text_hMPTmL",
