@@ -64,7 +64,7 @@
   }
 
   .ai-saas-presentation__headline-{{ ai_gen_id }} {
-    font-size: max(16px, {{ block.settings.headline_size_mobile }}px);
+    font-size: {{ block.settings.headline_size_mobile }}px;
     font-weight: 700;
     line-height: 1.15;
     letter-spacing: -0.03em;
@@ -75,12 +75,12 @@
 
   @media screen and (min-width: 750px) {
     .ai-saas-presentation__headline-{{ ai_gen_id }} {
-      font-size: max(16px, {{ block.settings.headline_size_desktop }}px);
+      font-size: {{ block.settings.headline_size_desktop }}px;
     }
   }
 
   .ai-saas-presentation__description-{{ ai_gen_id }} {
-    font-size: max(16px, {{ block.settings.description_size }}px);
+    font-size: {{ block.settings.description_size }}px;
     line-height: 1.65;
     color: {{ block.settings.description_color }};
     margin: 0;
@@ -144,7 +144,7 @@
   }
 
   .ai-saas-presentation__feature-title-{{ ai_gen_id }} {
-    font-size: max(16px, {{ block.settings.feature_title_size }}px);
+    font-size: {{ block.settings.feature_title_size }}px;
     font-weight: 700;
     color: {{ block.settings.feature_title_color }};
     margin: 0 0 4px 0;
@@ -152,7 +152,7 @@
   }
 
   .ai-saas-presentation__feature-text-{{ ai_gen_id }} {
-    font-size: max(16px, {{ block.settings.feature_text_size }}px);
+    font-size: {{ block.settings.feature_text_size }}px;
     line-height: 1.55;
     color: {{ block.settings.feature_text_color }};
     margin: 0;
@@ -172,7 +172,7 @@
   }
 
   .ai-saas-presentation__card-title-{{ ai_gen_id }} {
-    font-size: max(16px, {{ block.settings.card_title_size }}px);
+    font-size: {{ block.settings.card_title_size }}px;
     font-weight: 700;
     color: {{ block.settings.card_title_color }};
     margin: 0;
@@ -190,7 +190,7 @@
   .ai-saas-presentation__status-item-{{ ai_gen_id }} {
     background-color: {{ block.settings.card_background }};
     border: 1px solid {{ block.settings.card_border_color }};
-    border-radius: max(18px, {{ block.settings.card_border_radius }}px);
+    border-radius: {{ block.settings.card_border_radius }}px;
     padding: 18px;
     box-shadow:
       0 1px 2px rgba(26, 43, 74, 0.04),
@@ -198,7 +198,7 @@
   }
 
   .ai-saas-presentation__status-question-{{ ai_gen_id }} {
-    font-size: max(16px, {{ block.settings.status_name_size }}px);
+    font-size: {{ block.settings.status_name_size }}px;
     font-weight: 700;
     color: {{ block.settings.status_name_color }};
     margin: 0 0 14px;
@@ -208,7 +208,7 @@
 
   .ai-saas-presentation__status-body-{{ ai_gen_id }} {
     background-color: {{ block.settings.status_item_background }};
-    border-radius: max(14px, {{ block.settings.status_item_radius }}px);
+    border-radius: {{ block.settings.status_item_radius }}px;
     padding: 14px 16px 6px;
   }
 
@@ -218,7 +218,7 @@
   }
 
   .ai-saas-presentation__field-label-{{ ai_gen_id }} {
-    font-size: max(16px, {{ block.settings.field_label_size }}px);
+    font-size: {{ block.settings.field_label_size }}px;
     font-weight: 700;
     color: {{ block.settings.field_label_color }};
     margin: 0 0 4px;
@@ -227,7 +227,7 @@
   }
 
   .ai-saas-presentation__field-text-{{ ai_gen_id }} {
-    font-size: max(16px, {{ block.settings.answer_text_size }}px);
+    font-size: {{ block.settings.answer_text_size }}px;
     color: {{ block.settings.answer_text_color }};
     margin: 0;
     line-height: 1.75;
@@ -241,7 +241,7 @@
     background: {{ block.settings.card_background }};
     border-radius: 12px;
     box-shadow: 0 6px 16px rgba(26, 43, 74, 0.04);
-    font-size: max(16px, {{ block.settings.answer_text_size }}px);
+    font-size: {{ block.settings.answer_text_size }}px;
     line-height: 1.7;
     color: {{ block.settings.status_name_color }};
     overflow-wrap: break-word;
@@ -249,7 +249,7 @@
 
   .ai-saas-presentation__system-banner-{{ ai_gen_id }} {
     background-color: {{ block.settings.banner_background }};
-    border-radius: max(16px, {{ block.settings.banner_border_radius }}px);
+    border-radius: {{ block.settings.banner_border_radius }}px;
     padding: 22px 24px;
     display: flex;
     align-items: center;
@@ -284,7 +284,7 @@
   }
 
   .ai-saas-presentation__banner-label-{{ ai_gen_id }} {
-    font-size: max(16px, {{ block.settings.banner_label_size }}px);
+    font-size: {{ block.settings.banner_label_size }}px;
     font-weight: 700;
     color: {{ block.settings.banner_label_color }};
     margin: 0;
@@ -293,7 +293,7 @@
   }
 
   .ai-saas-presentation__banner-message-{{ ai_gen_id }} {
-    font-size: max(16px, {{ block.settings.banner_message_size }}px);
+    font-size: {{ block.settings.banner_message_size }}px;
     font-weight: 700;
     color: {{ block.settings.banner_message_color }};
     margin: 0;
@@ -301,7 +301,7 @@
   }
 
   .ai-saas-presentation__banner-meta-{{ ai_gen_id }} {
-    font-size: max(16px, {{ block.settings.banner_meta_size }}px);
+    font-size: {{ block.settings.banner_meta_size }}px;
     color: {{ block.settings.banner_meta_color }};
     margin: 0;
     line-height: 1.5;
@@ -542,7 +542,7 @@
       "type": "range",
       "id": "description_size",
       "label": "Size",
-      "min": 16,
+      "min": 0,
       "max": 24,
       "step": 1,
       "unit": "px",
@@ -648,7 +648,7 @@
       "type": "range",
       "id": "feature_title_size",
       "label": "Title size",
-      "min": 16,
+      "min": 0,
       "max": 24,
       "step": 1,
       "unit": "px",
@@ -664,7 +664,7 @@
       "type": "range",
       "id": "feature_text_size",
       "label": "Text size",
-      "min": 16,
+      "min": 0,
       "max": 22,
       "step": 1,
       "unit": "px",
@@ -718,7 +718,7 @@
       "type": "range",
       "id": "card_title_size",
       "label": "Title size",
-      "min": 16,
+      "min": 0,
       "max": 28,
       "step": 2,
       "unit": "px",
@@ -908,7 +908,7 @@
       "type": "range",
       "id": "status_name_size",
       "label": "Question size",
-      "min": 16,
+      "min": 0,
       "max": 24,
       "step": 1,
       "unit": "px",
@@ -924,7 +924,7 @@
       "type": "range",
       "id": "field_label_size",
       "label": "Label size",
-      "min": 16,
+      "min": 0,
       "max": 22,
       "step": 1,
       "unit": "px",
@@ -940,7 +940,7 @@
       "type": "range",
       "id": "answer_text_size",
       "label": "Body size",
-      "min": 16,
+      "min": 0,
       "max": 22,
       "step": 1,
       "unit": "px",
@@ -1000,7 +1000,7 @@
       "type": "range",
       "id": "banner_label_size",
       "label": "Label size",
-      "min": 16,
+      "min": 0,
       "max": 22,
       "step": 1,
       "unit": "px",
@@ -1016,7 +1016,7 @@
       "type": "range",
       "id": "banner_message_size",
       "label": "Message size",
-      "min": 16,
+      "min": 0,
       "max": 22,
       "step": 1,
       "unit": "px",
@@ -1032,7 +1032,7 @@
       "type": "range",
       "id": "banner_meta_size",
       "label": "Meta size",
-      "min": 16,
+      "min": 0,
       "max": 22,
       "step": 1,
       "unit": "px",
