@@ -949,7 +949,7 @@
             "positive_icon_color": "#a0b842",
             "title_size": 24,
             "metric_size": 32,
-            "list_item_size": 16
+            "list_item_size": 14
           },
           "blocks": {}
         }
