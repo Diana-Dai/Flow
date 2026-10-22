@@ -21,13 +21,13 @@
         "liquid_TTFXy3": {
           "type": "liquid",
           "settings": {
-            "liquid": "<h1 class=\"h1\">小売AI「Flow AI」で、<br>\n店舗データを次の一手へ\n</h1>"
+            "liquid": "<h1 class=\"h1\">Flow AIで、<br>\n店舗データを判断と行動へ。\n</h1>"
           }
         },
         "richtext_HwhtPj": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Flow AIは、来店数・購買率・売上・人員配置・店舗報告・SOPをFIDAでひとつの文脈に整理し、店長・エリアマネージャー・本部に、根拠とともに次の改善アクションを提案する店舗AIです。提案は人が確認・実行し、その結果を次の改善に活かします。</p>"
+            "content": "<p>来店・売上・人員データと店舗報告・SOPをつなぎ、店長や本部の次の行動を支援します。</p>"
           }
         },
         "button_7Prq3W": {
