@@ -1632,7 +1632,7 @@
         "gap": "medium",
         "text_alignment": "start",
         "subheading": "利用部門",
-        "title": "必要な判断を、店長・エリアマネージャー・本部に、必要な判断を届けるな人へ。",
+        "title": "店長・エリア・本部の判断を支える",
         "content": "<p>Flow AIは、店長・エリアマネージャー・本部がそれぞれの役割に応じて、確認すべき変化と次の行動を整理できるようにします。</p>",
         "background": "rgba(0,0,0,0)",
         "background_gradient": "",
@@ -1679,7 +1679,7 @@
           "type": "ai_gen_block_3504708",
           "settings": {
             "badge_text": "人の判断を支援",
-            "headline": "AIの提案を人が確認し、実行結果を次の改善へ",
+            "headline": "AIの提案を人が確認し、<br>実行結果を次の改善へ",
             "description": "Flow AIは、提案の確認から実行、結果確認までを一つの流れで支援します。人が判断し、現場の結果を次の改善に活かします。",
             "step1_icon": "checklist",
             "step1_title": "提案を確認",
@@ -1757,7 +1757,7 @@
           "type": "rich-text",
           "name": "Rich text",
           "settings": {
-            "text": "<h2>既存システムと店舗運用に合わせて、小売AIを段階的に導入</h2><p>Flowは、現在のPOS、来店計測、スタッフデータ、店舗運用に合わせて連携方法を確認します。すべてを一度に変える必要はありません。必要なデータから接続し、店舗・エリア・本部で使える形に整えていきます。</p>",
+            "text": "<h2>既存システムと店舗運用に合わせて、<br/>小売AIを段階的に導入</h2><p>Flowは、現在のPOS、来店計測、スタッフデータ、店舗運用に合わせて連携方法を確認します。すべてを一度に変える必要はありません。必要なデータから接続し、店舗・エリア・本部で使える形に整えていきます。</p>",
             "content_width": "large",
             "text_alignment": "left"
           },
@@ -1967,7 +1967,7 @@
           "type": "ai_gen_block_0c78d27",
           "name": "FAQ accordion item",
           "settings": {
-            "category": "",
+            "category": "AIの違い",
             "question": "般的な生成AIとFlow AIの違いは何ですか？",
             "answer": "Flow AIは、Flowに連携した売上、来店、人員、店舗報告と、登録したSOPや社内資料を店舗ごとの文脈で参照する小売業向けAIです。一般的な質問への回答だけでなく、店長・エリアマネージャー・本部が確認すべき変化と次の行動を整理することを目的としています。",
             "default_open": false,
@@ -1985,7 +1985,7 @@
           "type": "ai_gen_block_0c78d27",
           "name": "FAQ accordion item",
           "settings": {
-            "category": "",
+            "category": "提案の根拠",
             "question": "Flow AIの提案の根拠や参照データを確認できますか？",
             "answer": "Flow AIが提案を作成する際に参照したKPI、比較期間、店舗メモ、SOPなどを確認し、人が実行可否を判断できる形で提示します。実際に表示できる項目は、導入設定や連携しているデータによって異なります。",
             "default_open": false,
@@ -2003,7 +2003,7 @@
           "type": "ai_gen_block_0c78d27",
           "name": "FAQ accordion item",
           "settings": {
-            "category": "",
+            "category": "権限管理",
             "question": "店舗・エリア・本部で表示内容や権限を分けられますか？",
             "answer": "はい。店長、エリアマネージャー、本部など、それぞれの役割に応じて必要な店舗や情報を確認できるように権限を設定できます。具体的な設定範囲は、組織構成と運用方法を確認したうえで設計します。",
             "default_open": false,
