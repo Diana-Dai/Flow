@@ -601,11 +601,11 @@
             "icon_background_type": "square",
             "icon_background": "#ffffff",
             "icon_color": "#a0b842",
-            "background_color": "#0E366A",
+            "background_color": "#0e366a",
             "text_color": "#ffffff",
             "border_color": "#f2f2f2",
             "card_padding": 0,
-            "button_background": "#A1B847",
+            "button_background": "#a1b847",
             "button_text_color": "",
             "button_font_size": 0,
             "heading_font_size": 0,
@@ -687,7 +687,7 @@
             "section_padding_mobile": 40,
             "section_padding_desktop": 80,
             "background_color": "#f5f5f5",
-            "headline": "小売AIで分析を効率化し、<br>判断と行動に時間を。",
+            "headline": "小売AIで分析を効率化し、判断と行動に時間を。",
             "headline_size_mobile": 24,
             "headline_size_desktop": 36,
             "headline_color": "#1a2b4a",
@@ -1389,8 +1389,8 @@
             "size": "xl",
             "text": "Flowの店舗分析システム全体を見る",
             "url": "https://flow-solutions.com/pages/flow-platform-overview",
-            "background": "",
-            "text_color": ""
+            "background": "#A0B955",
+            "text_color": "#142F45"
           }
         }
       },
