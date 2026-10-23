@@ -21,7 +21,7 @@
   @media screen and (min-width: 750px) {
     .ai-saas-presentation-{{ ai_gen_id }} {
       padding: {{ block.settings.section_padding_desktop }}px 40px;
-    }
+  }
   }
 
   .ai-saas-presentation__container-{{ ai_gen_id }} {
@@ -401,9 +401,9 @@
             {% if card_question != blank or card_data != blank or card_answer != blank %}
               <article class="ai-saas-presentation__status-item-{{ ai_gen_id }}">
                 {% if card_question != blank %}
-                  <h4 class="ai-saas-presentation__status-question-{{ ai_gen_id }}">
+                  <p class="ai-saas-presentation__status-question-{{ ai_gen_id }}">
                     {{ card_question }}
-                  </h4>
+                  </p>
                 {% endif %}
                 {% if card_data != blank or card_answer != blank %}
                   <div class="ai-saas-presentation__status-body-{{ ai_gen_id }}">
