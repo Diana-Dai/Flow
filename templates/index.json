@@ -176,75 +176,6 @@
         "text_color": ""
       }
     },
-    "logo_list_bzafjC": {
-      "type": "logo-list",
-      "blocks": {
-        "logo_xLkXDj": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify://shop_images/Baycrews_White_1.png",
-            "logo_width": 120,
-            "link": ""
-          }
-        },
-        "logo_E8jiQ6": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify://shop_images/Cole_Haan_White_836317d3-12dd-4e9a-b647-80aab91df0b2.png",
-            "logo_width": 120,
-            "link": ""
-          }
-        },
-        "logo_i8qW8H": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify://shop_images/Stripe_White_f1ba215a-c741-4fa7-8b23-cd0b45a74f31.png",
-            "logo_width": 120,
-            "link": ""
-          }
-        },
-        "logo_gHbbQF": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify://shop_images/Daytona_logo.png",
-            "logo_width": 120,
-            "link": ""
-          }
-        },
-        "logo_B8XxPT": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify://shop_images/Plaza_White_d4060480-52ad-4a29-b53d-1f7b116f8343.png",
-            "logo_width": 120,
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "logo_xLkXDj",
-        "logo_E8jiQ6",
-        "logo_i8qW8H",
-        "logo_gHbbQF",
-        "logo_B8XxPT"
-      ],
-      "disabled": true,
-      "name": "Logo list",
-      "settings": {
-        "full_width": true,
-        "stack_mobile": true,
-        "title": "",
-        "content": "<h5><strong>100以上のブランドで、店舗運営を支援</strong></h5>",
-        "text_alignment": "center",
-        "items_per_row": 5,
-        "background": "",
-        "background_gradient": "",
-        "text_color": "",
-        "heading_color": "",
-        "heading_gradient": "",
-        "logo_item_background": "",
-        "logo_item_border": ""
-      }
-    },
     "blocks_zWDEgd": {
       "type": "_blocks",
       "blocks": {
@@ -263,32 +194,32 @@
             "benefit_2_text": "店舗売上のどこに改善余地があるかを把握する",
             "benefit_3_title": "次の改善施策を判断",
             "benefit_3_text": "店頭訴求・VMD・店舗運営の打ち手を考える",
-            "section_background": "#FFFFFF",
-            "card_background": "#11243E",
+            "section_background": "#ffffff",
+            "card_background": "#11243e",
             "card_border_color": "#e5e7eb",
             "card_border_radius": 16,
             "card_shadow_opacity": 10,
             "label_background": "#a0b842",
-            "label_text_color": "#11243E",
+            "label_text_color": "#11243e",
             "label_font_size": 13,
-            "heading_color": "#FFFFFF",
+            "heading_color": "#ffffff",
             "heading_font_size": 32,
             "heading_font_size_mobile": 29,
-            "text_color": "#FFFFFF",
+            "text_color": "#ffffff",
             "text_font_size": 16,
             "description_font_size_mobile": 16,
-            "condition_text_color": "#B8C0CF",
+            "condition_text_color": "#b8c0cf",
             "condition_font_size": 12,
-            "button_background": "#FFFFFF",
-            "button_hover_background": "#B8C0CF",
-            "button_text_color": "#11243E",
+            "button_background": "#ffffff",
+            "button_hover_background": "#b8c0cf",
+            "button_text_color": "#11243e",
             "button_font_size": 16,
             "button_border_radius": 8,
             "benefit_icon_background": "#a0b842",
             "benefit_icon_color": "#ffffff",
-            "benefit_title_color": "#FFFFFF",
+            "benefit_title_color": "#ffffff",
             "benefit_title_font_size": 15,
-            "benefit_text_color": "#FFFFFF",
+            "benefit_text_color": "#ffffff",
             "benefit_text_font_size": 13
           },
           "blocks": {}
@@ -303,6 +234,107 @@
         "full_width": true,
         "remove_vertical_spacing": false,
         "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "images_with_text_scrolling_VMxP8R": {
+      "type": "images-with-text-scrolling",
+      "blocks": {
+        "item_PVmfij": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/webinar_bnr_20261111_hlab.png",
+            "icon": "none",
+            "icon_width": 48,
+            "title": "",
+            "content": "<h2><strong>集客を増やすべきか、<br/>売場を改善すべきか。</strong></h2><h5>Googleを活用した集客改善</h5><p>✓　Googleマップ・Googleショッピングで来店機会を増やす</p><h5>通行・入店・購買のデータ分析</h5><p>✓　店舗売上のどこに改善余地があるかを把握する</p><h5>次の改善施策を判断</h5><p>✓　店頭訴求・VMD・店舗運営の打ち手を考える</p>",
+            "link_url": "https://us02web.zoom.us/webinar/register/WN_iJhUtvqUQqClpeXyScLazw#/registration",
+            "link_text": "無料セミナーに申し込む",
+            "link_style": "button"
+          }
+        }
+      },
+      "block_order": [
+        "item_PVmfij"
+      ],
+      "name": "Images and text scrolling",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "show_counter": false,
+        "desktop_image_effect": "reveal",
+        "image_position": "end",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": ""
+      }
+    },
+    "rich_text_kaCiEH": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_LqrG4J": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "text": "Subheading",
+            "icon": "none"
+          }
+        },
+        "image_E7UDWi": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/webinar_bnr_20261111_corp.png",
+            "width_mode": "full_width",
+            "max_width": 600,
+            "mobile_max_width": 400
+          }
+        },
+        "button_gwCEDB": {
+          "type": "button",
+          "settings": {
+            "style": "fill",
+            "size": "xl",
+            "text": "無料セミナーに申し込む",
+            "url": "",
+            "background": "",
+            "text_color": ""
+          }
+        },
+        "heading_HA8PHg": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "text": "Heading",
+            "heading_tag": "h1",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_wBJEB7": {
+          "type": "richtext",
+          "disabled": true,
+          "settings": {
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_LqrG4J",
+        "image_E7UDWi",
+        "button_gwCEDB",
+        "heading_HA8PHg",
+        "richtext_wBJEB7"
+      ],
+      "disabled": true,
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
         "background": "",
         "background_gradient": "",
         "text_color": ""
@@ -360,6 +392,7 @@
       "block_order": [
         "ai_gen_block_2daa5f2_XFW7cb"
       ],
+      "disabled": true,
       "custom_css": [],
       "settings": {
         "full_width": true,
@@ -545,35 +578,6 @@
         "subheading_text_color": "",
         "padding_top": 0,
         "padding_bottom": 0
-      }
-    },
-    "rich_text_HU78y7": {
-      "type": "rich-text",
-      "blocks": {
-        "button_CHckw7": {
-          "type": "button",
-          "settings": {
-            "style": "fill",
-            "size": "xl",
-            "text": "Flowの店舗分析プラットフォーム全体を見る",
-            "url": "https://flow-solutions.com/pages/flow-platform-overview",
-            "background": "#11243e",
-            "text_color": "#f9fafb"
-          }
-        }
-      },
-      "block_order": [
-        "button_CHckw7"
-      ],
-      "disabled": true,
-      "name": "Rich text",
-      "settings": {
-        "full_width": true,
-        "content_width": "small",
-        "text_position": "center",
-        "background": "rgba(0,0,0,0)",
-        "background_gradient": "",
-        "text_color": ""
       }
     },
     "multi_column_LJEQgi": {
@@ -1483,94 +1487,6 @@
     },
     "section-15": {
       "type": "feature-chart",
-      "blocks": {
-        "block-1": {
-          "type": "headings",
-          "settings": {
-            "heading_1": "主な提供価値",
-            "heading_2": "コアの設計思想",
-            "heading_3": "来店データの位置づけ",
-            "heading_4": "データの即時性",
-            "heading_5": "店舗での使いやすさ",
-            "heading_6": "判断へのつながり",
-            "heading_7": "店舗ごとの判断差",
-            "heading_8": "本部と店舗の連携",
-            "heading_9": "運用負荷",
-            "heading_10": "拡張性",
-            "heading_11": "",
-            "heading_12": "",
-            "heading_13": "",
-            "heading_14": "",
-            "heading_15": "",
-            "heading_16": "",
-            "heading_17": "",
-            "heading_18": "",
-            "heading_19": "",
-            "heading_20": ""
-          }
-        },
-        "block-2": {
-          "type": "values",
-          "settings": {
-            "product": "",
-            "value_1": "<p>40mm Beryllium</p>",
-            "value_2": "<p>245g</p>",
-            "value_3": "<p>165mm x 190mm x 66mm</p>",
-            "value_4": "<p>24 hours</p>",
-            "value_5": "",
-            "value_6": "",
-            "value_7": "",
-            "value_8": "",
-            "value_9": "",
-            "value_10": "",
-            "value_11": "",
-            "value_12": "",
-            "value_13": "",
-            "value_14": "",
-            "value_15": "",
-            "value_16": "",
-            "value_17": "",
-            "value_18": "",
-            "value_19": "",
-            "value_20": "",
-            "view_button_background": "",
-            "view_button_text_color": ""
-          }
-        },
-        "block-3": {
-          "type": "values",
-          "settings": {
-            "product": "",
-            "value_1": "<p>40mm Beryllium</p>",
-            "value_2": "<p>205g (On-Ear), 239g (Over-Ear)</p>",
-            "value_3": "<p>190mm x 155mm x 34mm (On-Ear), 200mm x 165mm x 40mm (Over-Ear)</p>",
-            "value_4": "<p>16 hours</p>",
-            "value_5": "",
-            "value_6": "",
-            "value_7": "",
-            "value_8": "",
-            "value_9": "",
-            "value_10": "",
-            "value_11": "",
-            "value_12": "",
-            "value_13": "",
-            "value_14": "",
-            "value_15": "",
-            "value_16": "",
-            "value_17": "",
-            "value_18": "",
-            "value_19": "",
-            "value_20": "",
-            "view_button_background": "",
-            "view_button_text_color": ""
-          }
-        }
-      },
-      "block_order": [
-        "block-1",
-        "block-2",
-        "block-3"
-      ],
       "disabled": true,
       "settings": {
         "full_width": true,
@@ -2491,11 +2407,11 @@
   "order": [
     "rich_text_AGR3yT",
     "blocks_h6rJNw",
-    "logo_list_bzafjC",
     "blocks_zWDEgd",
+    "images_with_text_scrolling_VMxP8R",
+    "rich_text_kaCiEH",
     "1779530497bf2195e7",
     "multi_column_UyyJC7",
-    "rich_text_HU78y7",
     "multi_column_LJEQgi",
     "impact_text_gi97zd",
     "rich_text_E4i7Ea",
