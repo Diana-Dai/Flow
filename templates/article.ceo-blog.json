@@ -34,6 +34,40 @@
         "content_width": "950px"
       }
     },
+    "images_with_text_scrolling_LpzhGk": {
+      "type": "images-with-text-scrolling",
+      "blocks": {
+        "item_KnQ8bK": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/webinar_bnr_20261111_hlab.png",
+            "icon": "none",
+            "icon_width": 48,
+            "title": "",
+            "content": "<h2><strong>集客を増やすべきか、<br/>売場を改善すべきか。</strong></h2><h5>Googleを活用した集客改善</h5><p>✓　Googleマップ・Googleショッピングで来店機会を増やす</p><h5>通行・入店・購買のデータ分析</h5><p>✓　店舗売上のどこに改善余地があるかを把握する</p><h5>次の改善施策を判断</h5><p>✓　店頭訴求・VMD・店舗運営の打ち手を考える</p>",
+            "link_url": "https://us02web.zoom.us/webinar/register/WN_iJhUtvqUQqClpeXyScLazw#/registration",
+            "link_text": "無料セミナーに申し込む",
+            "link_style": "button"
+          }
+        }
+      },
+      "block_order": [
+        "item_KnQ8bK"
+      ],
+      "name": "Images and text scrolling",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "show_counter": false,
+        "desktop_image_effect": "reveal",
+        "image_position": "end",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": ""
+      }
+    },
     "178013800944ced893": {
       "type": "_blocks",
       "blocks": {
@@ -79,6 +113,7 @@
   },
   "order": [
     "main",
+    "images_with_text_scrolling_LpzhGk",
     "178013800944ced893"
   ]
 }
