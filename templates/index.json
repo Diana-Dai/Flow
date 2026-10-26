@@ -297,6 +297,7 @@
       "block_order": [
         "ai_gen_block_2daa5f2_H9agNt"
       ],
+      "disabled": true,
       "name": "Campaign banner",
       "settings": {
         "full_width": true,
