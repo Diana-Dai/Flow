@@ -44,7 +44,7 @@
             "icon": "none",
             "icon_width": 48,
             "title": "",
-            "content": "<h2><strong>集客を増やすべきか、<br/>売場を改善すべきか。</strong></h2><h5>Googleを活用した集客改善</h5><p>✓　Googleマップ・Googleショッピングで来店機会を増やす</p><h5>通行・入店・購買のデータ分析</h5><p>✓　店舗売上のどこに改善余地があるかを把握する</p><h5>次の改善施策を判断</h5><p>✓　店頭訴求・VMD・店舗運営の打ち手を考える</p>",
+            "content": "<h3><strong>集客を増やすべきか、<br/>売場を改善すべきか。</strong></h3><h5>Googleを活用した集客改善</h5><p>✓　Googleマップ・Googleショッピングで来店機会を増やす</p><h5>通行・入店・購買のデータ分析</h5><p>✓　店舗売上のどこに改善余地があるかを把握する</p><h5>次の改善施策を判断</h5><p>✓　店頭訴求・VMD・店舗運営の打ち手を考える</p>",
             "link_url": "https://us02web.zoom.us/webinar/register/WN_iJhUtvqUQqClpeXyScLazw#/registration",
             "link_text": "無料セミナーに申し込む",
             "link_style": "button"
@@ -56,8 +56,8 @@
       ],
       "name": "Images and text scrolling",
       "settings": {
-        "full_width": true,
-        "stack_on_mobile": false,
+        "full_width": false,
+        "stack_on_mobile": true,
         "show_counter": false,
         "desktop_image_effect": "reveal",
         "image_position": "end",
