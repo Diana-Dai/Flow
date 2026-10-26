@@ -14,6 +14,14 @@
     "announcement-bar": {
       "type": "announcement-bar",
       "blocks": {
+        "message_zLhRjE": {
+          "type": "message",
+          "disabled": true,
+          "settings": {
+            "text": "11/11（水）mov × Flow 無料セミナー開催",
+            "url": ""
+          }
+        },
         "message": {
           "type": "message",
           "settings": {
@@ -23,6 +31,7 @@
         }
       },
       "block_order": [
+        "message_zLhRjE",
         "message"
       ],
       "settings": {
