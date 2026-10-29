@@ -300,7 +300,7 @@
             "style": "fill",
             "size": "xl",
             "text": "無料セミナーに申し込む",
-            "url": "",
+            "url": "https://honichi.com/events/seminars/202611_flowsolutions/",
             "background": "",
             "text_color": ""
           }
@@ -330,7 +330,6 @@
         "heading_HA8PHg",
         "richtext_wBJEB7"
       ],
-      "disabled": true,
       "name": "Rich text",
       "settings": {
         "full_width": true,
@@ -393,6 +392,7 @@
       "block_order": [
         "ai_gen_block_2daa5f2_XFW7cb"
       ],
+      "disabled": true,
       "custom_css": [],
       "settings": {
         "full_width": true,
