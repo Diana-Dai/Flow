@@ -259,7 +259,6 @@
       "block_order": [
         "item_PVmfij"
       ],
-      "disabled": true,
       "name": "Images and text scrolling",
       "settings": {
         "full_width": true,
@@ -330,6 +329,7 @@
         "heading_HA8PHg",
         "richtext_wBJEB7"
       ],
+      "disabled": true,
       "name": "Rich text",
       "settings": {
         "full_width": true,
