@@ -42,8 +42,14 @@
         {%- form 'contact', id: contact_form_id, class: 'form' -%}
           <div class="fieldset">
             {%- if form.posted_successfully? -%}
-              {%- capture content -%}{{- 'contact.form.success_message' | t -}}{%- endcapture -%}
-              {%- render 'banner', status: 'success', content: content -%}
+              <script>
+                window.location.replace('/pages/contact-thank-you');
+              </script>
+              <noscript>
+                {%- capture content -%}{{- 'contact.form.success_message' | t -}}{%- endcapture -%}
+                {%- render 'banner', status: 'success', content: content -%}
+                <a href="/pages/contact-thank-you">Continue</a>
+              </noscript>
             {%- endif -%}
 
             {%- if form.errors -%}
