@@ -1,0 +1,153 @@
+{% doc %}
+  @prompt
+    Create a replacement case-study block for the ai-camera page containing exactly ONE card, with only the following four text elements in this order. Company name: 株式会社デイトナ・インターナショナル様
+    Headline: 来店者数6.3%増、買い上げ率5.3ポイント改善
+    Body: Flowで来店数・店前通行量・売上データを可視化し、店舗施策の検証と改善に活用。6か月間の検証では、導入店舗の売上高が前年同期比25%増、来店者数が6.3%増加し、買い上げ率は19.9%から25.2%へ改善しました。
+    CTA: デイトナ・インターナショナル様の導入事例を見る
+    Use these Japanese strings verbatim. Do not add a section heading, second or right-hand card, separate metrics panel, images, icons, badges, disclaimer, or any other text. Match the current theme styling with a simple single-card layout. Make the four texts editable and provide an editable CTA link without inventing its destination. This block is intended to replace the previous two-column case-study block, not add content to it; do not alter any unrelated content.
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-case-study-{{ ai_gen_id }} {
+    display: block;
+    width: {{ block.settings.desktop_width_percent }}%;
+    max-width: 100%;
+    margin-inline: auto;
+    color: #11243e;
+    font-family: var(--text-font-family, inherit);
+  }
+
+  .ai-case-study-{{ ai_gen_id }}__card {
+    box-sizing: border-box;
+    width: 100%;
+    padding: clamp(24px, 5vw, 56px);
+    border-radius: 12px;
+    background: #f9fafb;
+    border: 1px solid rgba(17, 36, 62, 0.12);
+  }
+
+  .ai-case-study-{{ ai_gen_id }}__company {
+    margin: 0 0 14px;
+    color: #11243e;
+    font-size: 15px;
+    line-height: 1.6;
+    font-weight: 600;
+  }
+
+  .ai-case-study-{{ ai_gen_id }}__headline {
+    margin: 0 0 18px;
+    color: #11243e;
+    font-size: clamp(22px, 3vw, 32px);
+    line-height: 1.4;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+  }
+
+  .ai-case-study-{{ ai_gen_id }}__body {
+    margin: 0 0 24px;
+    color: #11243e;
+    font-size: 16px;
+    line-height: 1.9;
+  }
+
+  .ai-case-study-{{ ai_gen_id }}__cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 48px;
+    padding: 12px 22px;
+    border: 1px solid #0e366a;
+    border-radius: 14px;
+    background: #0e366a;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.5;
+    text-align: center;
+    text-decoration: none;
+    transition: opacity 0.2s ease;
+  }
+
+  .ai-case-study-{{ ai_gen_id }}__cta:hover {
+    opacity: 0.86;
+  }
+
+  .ai-case-study-{{ ai_gen_id }}__cta:focus-visible {
+    outline: 3px solid #a0b842;
+    outline-offset: 3px;
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-case-study-{{ ai_gen_id }} {
+      width: 100%;
+    }
+
+    .ai-case-study-{{ ai_gen_id }}__card {
+      padding: 24px 20px;
+    }
+  }
+{% endstyle %}
+
+<div class="ai-case-study-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <article class="ai-case-study-{{ ai_gen_id }}__card">
+    <p class="ai-case-study-{{ ai_gen_id }}__company">{{ block.settings.company_name | escape }}</p>
+    <h2 class="ai-case-study-{{ ai_gen_id }}__headline">{{ block.settings.headline | escape }}</h2>
+    <p class="ai-case-study-{{ ai_gen_id }}__body">{{ block.settings.body | escape }}</p>
+    <a class="ai-case-study-{{ ai_gen_id }}__cta" href="{{ block.settings.cta_link }}">{{ block.settings.cta_label | escape }}</a>
+  </article>
+</div>
+
+{% schema %}
+{
+  "name": "Single case study",
+  "settings": [
+    {
+      "type": "text",
+      "id": "company_name",
+      "label": "Company name",
+      "default": "株式会社デイトナ・インターナショナル様"
+    },
+    {
+      "type": "text",
+      "id": "headline",
+      "label": "Headline",
+      "default": "来店者数6.3%増、買い上げ率5.3ポイント改善"
+    },
+    {
+      "type": "textarea",
+      "id": "body",
+      "label": "Body",
+      "default": "Flowで来店数・店前通行量・売上データを可視化し、店舗施策の検証と改善に活用。6か月間の検証では、導入店舗の売上高が前年同期比25%増、来店者数が6.3%増加し、買い上げ率は19.9%から25.2%へ改善しました。"
+    },
+    {
+      "type": "text",
+      "id": "cta_label",
+      "label": "CTA label",
+      "default": "デイトナ・インターナショナル様の導入事例を見る"
+    },
+    {
+      "type": "url",
+      "id": "cta_link",
+      "label": "CTA link"
+    },
+    {
+      "type": "range",
+      "id": "desktop_width_percent",
+      "label": "Desktop width",
+      "min": 50,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "default": 100
+    }
+  ],
+  "presets": [
+    {
+      "name": "Single case study"
+    }
+  ],
+  "tag": null,
+  "class": "single-case-study-block"
+}
+{% endschema %}

@@ -1,108 +1,73 @@
 {% doc %}
-  @prompt
-    Create a premium enterprise SaaS presentation section with a split two-column layout on a soft light gray background. The design should feel modern, minimal, and highly polished, similar to a Figma product strategy deck or B2B analytics platform.
-    
-    Left side:
-    
-    Massive bold dark navy headline in uppercase:
-    “CONTINUOUS DATA MONITORING.”
-    Typography should be oversized, geometric, and impactful
-    Below the headline, include a muted gray paragraph explaining the platform:
-    “Integration isn't a one-time setup. Flow continuously monitors your data connections to ensure information is present, current, and ready for analysis and decision-making.”
-    Under the paragraph, create four vertically stacked feature items
-    Each feature includes:
-    Rounded olive-green icon badge with a thin white outlined checkmark
-    Bold dark navy feature title
-    Smaller muted gray supporting description
-    Spacious vertical rhythm and premium UI spacing
-    
-    Feature items:
-    
-    Availability Checks
-    Confirms data arrives on schedule and is available for display
-    Freshness Monitoring
-    Detects when data is delayed or stale compared to expected update frequency
-    Format Validation
-    Ensures incoming data matches expected structure and can be processed correctly
-    Proactive Alerts
-    Automatic notifications when data issues are detected, before they impact decisions
-    
-    Right side:
-    
-    Large rounded white card with subtle border and soft shadow
-    Title:
-    “Integration Health Status”
-    Inside the card, create four stacked integration status panels with soft cream backgrounds
-    Each panel contains:
-    Data source title in bold navy
-    Last update information in muted gray
-    Green “HEALTHY” status aligned right with circular green indicator
-    Refresh cadence text aligned right underneath
-    
-    Status cards:
-    
-    POS Sales Data — Last update: 2 minutes ago — Daily refresh
-    Traffic Counting — Last update: Real-time — 15-minute intervals
-    Staffing Schedules — Last update: 1 hour ago — Weekly refresh
-    Weather Data — Last update: 15 minutes ago — Hourly refresh
-    
-    At the bottom:
-    
-    Dark navy rounded system status banner
-    Lime-green shield icon
-    Lime-green uppercase label:
-    “SYSTEM STATUS”
-    White bold message:
-    “All data sources connected and current”
-    Supporting text:
-    “4/4 integrations running normally • 99.8% uptime last 30 days”
-    
-    Design style:
-    high-end SaaS dashboard UI, enterprise analytics platform, modern consulting presentation aesthetic, soft shadows, rounded corners, navy + gray + olive-green palette, minimal typography, structured spacing, clean Figma-style interface, professional B2B technology branding.
+  Split presentation section. The left column stretches with the right card
+  stack so the feature list and system banner fill the column. Each example
+  on the right is its own rounded card.
 {% enddoc %}
 {% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
 
 {% style %}
+  .ai-saas-presentation-{{ ai_gen_id }},
+  .ai-saas-presentation-{{ ai_gen_id }} * {
+    box-sizing: border-box;
+  }
+
   .ai-saas-presentation-{{ ai_gen_id }} {
     display: block;
     background-color: {{ block.settings.background_color }};
-    padding: {{ block.settings.section_padding_mobile }}px 0;
+    padding: {{ block.settings.section_padding_mobile }}px 20px;
     width: 100%;
   }
 
   @media screen and (min-width: 750px) {
     .ai-saas-presentation-{{ ai_gen_id }} {
       padding: {{ block.settings.section_padding_desktop }}px 40px;
-    }
+  }
   }
 
   .ai-saas-presentation__container-{{ ai_gen_id }} {
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr;
-    gap: 40px;
-    align-items: start;
+    gap: 28px;
+    align-items: stretch;
   }
 
   @media screen and (min-width: 990px) {
     .ai-saas-presentation__container-{{ ai_gen_id }} {
-      grid-template-columns: 1fr 1fr;
-      gap: 80px;
+      grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
+      grid-template-areas: "left right";
+      gap: 36px 48px;
       width: {{ block.settings.desktop_width_percent }}%;
+      align-items: stretch;
     }
   }
 
   .ai-saas-presentation__left-{{ ai_gen_id }} {
     display: flex;
     flex-direction: column;
-    gap: 32px;
+    gap: 22px;
+    min-width: 0;
+  }
+
+  @media screen and (min-width: 990px) {
+    .ai-saas-presentation__left-{{ ai_gen_id }} {
+      grid-area: left;
+      align-self: stretch;
+      gap: 24px;
+    }
+  }
+
+  .ai-saas-presentation__intro-{{ ai_gen_id }} {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
   }
 
   .ai-saas-presentation__headline-{{ ai_gen_id }} {
     font-size: {{ block.settings.headline_size_mobile }}px;
-    font-weight: 500;
-    line-height: 1.1;
-    letter-spacing: -0.02em;
+    font-weight: 700;
+    line-height: 1.15;
+    letter-spacing: -0.03em;
     color: {{ block.settings.headline_color }};
     margin: 0;
     text-transform: uppercase;
@@ -116,22 +81,42 @@
 
   .ai-saas-presentation__description-{{ ai_gen_id }} {
     font-size: {{ block.settings.description_size }}px;
-    line-height: 1.6;
+    line-height: 1.65;
     color: {{ block.settings.description_color }};
     margin: 0;
+    max-width: 42rem;
   }
 
   .ai-saas-presentation__features-{{ ai_gen_id }} {
     display: flex;
     flex-direction: column;
-    gap: 28px;
-    margin-top: 8px;
+    gap: 14px;
+  }
+
+  @media screen and (min-width: 990px) {
+    .ai-saas-presentation__features-{{ ai_gen_id }} {
+      flex: 1 1 auto;
+      gap: 16px;
+    }
   }
 
   .ai-saas-presentation__feature-{{ ai_gen_id }} {
     display: flex;
     gap: 16px;
     align-items: flex-start;
+    background-color: {{ block.settings.card_background }};
+    border: 1px solid {{ block.settings.card_border_color }};
+    border-radius: 18px;
+    padding: 18px 18px 16px;
+    box-shadow: 0 8px 22px rgba(26, 43, 74, 0.05);
+  }
+
+  @media screen and (min-width: 990px) {
+    .ai-saas-presentation__feature-{{ ai_gen_id }} {
+      flex: 1 1 0;
+      align-items: center;
+      padding: 20px 22px;
+    }
   }
 
   .ai-saas-presentation__feature-icon-{{ ai_gen_id }} {
@@ -143,7 +128,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 2px;
   }
 
   .ai-saas-presentation__feature-icon-{{ ai_gen_id }} svg {
@@ -156,19 +140,20 @@
 
   .ai-saas-presentation__feature-content-{{ ai_gen_id }} {
     flex: 1;
+    min-width: 0;
   }
 
   .ai-saas-presentation__feature-title-{{ ai_gen_id }} {
     font-size: {{ block.settings.feature_title_size }}px;
-    font-weight: 600;
+    font-weight: 700;
     color: {{ block.settings.feature_title_color }};
-    margin: 0 0 6px 0;
-    line-height: 1.3;
+    margin: 0 0 4px 0;
+    line-height: 1.35;
   }
 
   .ai-saas-presentation__feature-text-{{ ai_gen_id }} {
     font-size: {{ block.settings.feature_text_size }}px;
-    line-height: 1.5;
+    line-height: 1.55;
     color: {{ block.settings.feature_text_color }};
     margin: 0;
   }
@@ -176,119 +161,112 @@
   .ai-saas-presentation__right-{{ ai_gen_id }} {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 16px;
+    min-width: 0;
   }
 
-  .ai-saas-presentation__card-{{ ai_gen_id }} {
-    background-color: {{ block.settings.card_background }};
-    border: 1px solid {{ block.settings.card_border_color }};
-    border-radius: {{ block.settings.card_border_radius }}px;
-    padding: 32px;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, {{ block.settings.card_shadow_opacity }});
-  }
-  @media (max-width: 768px) {
-    .ai-saas-presentation__card-{{ ai_gen_id }} {
-      padding: 16px;
+  @media screen and (min-width: 990px) {
+    .ai-saas-presentation__right-{{ ai_gen_id }} {
+      grid-area: right;
     }
-
   }
 
   .ai-saas-presentation__card-title-{{ ai_gen_id }} {
     font-size: {{ block.settings.card_title_size }}px;
-    font-weight: 600;
+    font-weight: 700;
     color: {{ block.settings.card_title_color }};
-    margin: 0 0 24px 0;
+    margin: 0;
+    line-height: 1.35;
+    letter-spacing: -0.02em;
   }
 
   .ai-saas-presentation__status-list-{{ ai_gen_id }} {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    align-items: stretch;
+    gap: 16px;
   }
 
   .ai-saas-presentation__status-item-{{ ai_gen_id }} {
+    background-color: {{ block.settings.card_background }};
+    border: 1px solid {{ block.settings.card_border_color }};
+    border-radius: {{ block.settings.card_border_radius }}px;
+    padding: 18px;
+    box-shadow:
+      0 1px 2px rgba(26, 43, 74, 0.04),
+      0 16px 36px rgba(26, 43, 74, {{ block.settings.card_shadow_opacity }});
+  }
+
+  .ai-saas-presentation__status-question-{{ ai_gen_id }} {
+    font-size: {{ block.settings.status_name_size }}px;
+    font-weight: 700;
+    color: {{ block.settings.status_name_color }};
+    margin: 0 0 14px;
+    line-height: 1.5;
+    overflow-wrap: break-word;
+  }
+
+  .ai-saas-presentation__status-body-{{ ai_gen_id }} {
     background-color: {{ block.settings.status_item_background }};
     border-radius: {{ block.settings.status_item_radius }}px;
-    padding: 16px 20px;
-    display: grid;
-    grid-template-columns: 1fr auto;
-    gap: 12px;
-    align-items: center;
-  }
-  @media (max-width: 768px) {
-  .ai-saas-presentation__status-item-{{ ai_gen_id }} {
-      display: block;
-    }
+    padding: 14px 16px 6px;
   }
 
-  .ai-saas-presentation__status-left-{{ ai_gen_id }} {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
+  .ai-saas-presentation__field-{{ ai_gen_id }} {
+    width: 100%;
+    margin: 0 0 12px;
   }
 
-  .ai-saas-presentation__status-name-{{ ai_gen_id }} {
-    font-size: {{ block.settings.status_name_size }}px;
-    font-weight: 600;
+  .ai-saas-presentation__field-label-{{ ai_gen_id }} {
+    font-size: {{ block.settings.field_label_size }}px;
+    font-weight: 700;
+    color: {{ block.settings.field_label_color }};
+    margin: 0 0 4px;
+    line-height: 1.4;
+    letter-spacing: 0.01em;
+  }
+
+  .ai-saas-presentation__field-text-{{ ai_gen_id }} {
+    font-size: {{ block.settings.answer_text_size }}px;
+    color: {{ block.settings.answer_text_color }};
+    margin: 0;
+    line-height: 1.75;
+    overflow-wrap: break-word;
+  }
+
+  .ai-saas-presentation__example-note-{{ ai_gen_id }} {
+    margin: 0;
+    padding: 14px 16px;
+    border-left: 3px solid {{ block.settings.field_label_color }};
+    background: {{ block.settings.card_background }};
+    border-radius: 12px;
+    box-shadow: 0 6px 16px rgba(26, 43, 74, 0.04);
+    font-size: {{ block.settings.answer_text_size }}px;
+    line-height: 1.7;
     color: {{ block.settings.status_name_color }};
-    margin: 0;
-  }
-
-  .ai-saas-presentation__status-update-{{ ai_gen_id }} {
-    font-size: {{ block.settings.status_meta_size }}px;
-    color: {{ block.settings.status_meta_color }};
-    margin: 0;
-  }
-
-  .ai-saas-presentation__status-right-{{ ai_gen_id }} {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    gap: 4px;
-  }
-
-  .ai-saas-presentation__status-badge-{{ ai_gen_id }} {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-  }
-
-  .ai-saas-presentation__status-indicator-{{ ai_gen_id }} {
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background-color: {{ block.settings.status_healthy_color }};
-  }
-
-  .ai-saas-presentation__status-label-{{ ai_gen_id }} {
-    font-size: {{ block.settings.status_label_size }}px;
-    font-weight: 600;
-    color: {{ block.settings.status_healthy_color }};
-    margin: 0;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-  }
-
-  .ai-saas-presentation__status-cadence-{{ ai_gen_id }} {
-    font-size: {{ block.settings.status_meta_size }}px;
-    color: {{ block.settings.status_meta_color }};
-    margin: 0;
-    text-align: right;
+    overflow-wrap: break-word;
   }
 
   .ai-saas-presentation__system-banner-{{ ai_gen_id }} {
     background-color: {{ block.settings.banner_background }};
     border-radius: {{ block.settings.banner_border_radius }}px;
-    padding: 20px 24px;
+    padding: 22px 24px;
     display: flex;
     align-items: center;
     gap: 16px;
+    margin-top: 4px;
+  }
+
+  @media screen and (min-width: 990px) {
+    .ai-saas-presentation__system-banner-{{ ai_gen_id }} {
+      margin-top: auto;
+    }
   }
 
   .ai-saas-presentation__banner-icon-{{ ai_gen_id }} {
     flex-shrink: 0;
-    width: 24px;
-    height: 24px;
+    width: 28px;
+    height: 28px;
   }
 
   .ai-saas-presentation__banner-icon-{{ ai_gen_id }} svg {
@@ -302,11 +280,12 @@
     display: flex;
     flex-direction: column;
     gap: 4px;
+    min-width: 0;
   }
 
   .ai-saas-presentation__banner-label-{{ ai_gen_id }} {
     font-size: {{ block.settings.banner_label_size }}px;
-    font-weight: 500;
+    font-weight: 700;
     color: {{ block.settings.banner_label_color }};
     margin: 0;
     text-transform: uppercase;
@@ -315,32 +294,36 @@
 
   .ai-saas-presentation__banner-message-{{ ai_gen_id }} {
     font-size: {{ block.settings.banner_message_size }}px;
-    font-weight: 600;
+    font-weight: 700;
     color: {{ block.settings.banner_message_color }};
     margin: 0;
+    line-height: 1.4;
   }
 
   .ai-saas-presentation__banner-meta-{{ ai_gen_id }} {
     font-size: {{ block.settings.banner_meta_size }}px;
     color: {{ block.settings.banner_meta_color }};
     margin: 0;
+    line-height: 1.5;
   }
 {% endstyle %}
 
 <div class="ai-saas-presentation-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
   <div class="ai-saas-presentation__container-{{ ai_gen_id }}">
     <div class="ai-saas-presentation__left-{{ ai_gen_id }}">
-      {% if block.settings.headline != blank %}
-        <h2 class="ai-saas-presentation__headline-{{ ai_gen_id }}">
-          {{ block.settings.headline }}
-        </h2>
-      {% endif %}
+      <div class="ai-saas-presentation__intro-{{ ai_gen_id }}">
+        {% if block.settings.headline != blank %}
+          <h2 class="ai-saas-presentation__headline-{{ ai_gen_id }}">
+            {{ block.settings.headline }}
+          </h2>
+        {% endif %}
 
-      {% if block.settings.description != blank %}
-        <div class="ai-saas-presentation__description-{{ ai_gen_id }}">
-          {{ block.settings.description }}
-        </div>
-      {% endif %}
+        {% if block.settings.description != blank %}
+          <div class="ai-saas-presentation__description-{{ ai_gen_id }}">
+            {{ block.settings.description }}
+          </div>
+        {% endif %}
+      </div>
 
       <div class="ai-saas-presentation__features-{{ ai_gen_id }}">
         {% for i in (1..4) %}
@@ -352,7 +335,7 @@
           {% if feature_title != blank %}
             <div class="ai-saas-presentation__feature-{{ ai_gen_id }}">
               <div class="ai-saas-presentation__feature-icon-{{ ai_gen_id }}">
-                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                   <polyline points="20 6 9 17 4 12" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
               </div>
@@ -370,59 +353,10 @@
           {% endif %}
         {% endfor %}
       </div>
-    </div>
-
-    <div class="ai-saas-presentation__right-{{ ai_gen_id }}">
-      <div class="ai-saas-presentation__card-{{ ai_gen_id }}">
-        {% if block.settings.card_title != blank %}
-          <h3 class="ai-saas-presentation__card-title-{{ ai_gen_id }}">
-            {{ block.settings.card_title }}
-          </h3>
-        {% endif %}
-
-        <div class="ai-saas-presentation__status-list-{{ ai_gen_id }}">
-          {% for i in (1..4) %}
-            {% assign status_name_key = 'status_' | append: i | append: '_name' %}
-            {% assign status_update_key = 'status_' | append: i | append: '_update' %}
-            {% assign status_cadence_key = 'status_' | append: i | append: '_cadence' %}
-            {% assign status_name = block.settings[status_name_key] %}
-            {% assign status_update = block.settings[status_update_key] %}
-            {% assign status_cadence = block.settings[status_cadence_key] %}
-
-            {% if status_name != blank %}
-              <div class="ai-saas-presentation__status-item-{{ ai_gen_id }}">
-                <div class="ai-saas-presentation__status-left-{{ ai_gen_id }}">
-                  <p class="ai-saas-presentation__status-name-{{ ai_gen_id }}">
-                    {{ status_name }}
-                  </p>
-                  {% if status_update != blank %}
-                    <p class="ai-saas-presentation__status-update-{{ ai_gen_id }}">
-                      {{ status_update }}
-                    </p>
-                  {% endif %}
-                </div>
-                <div class="ai-saas-presentation__status-right-{{ ai_gen_id }}">
-                  <div class="ai-saas-presentation__status-badge-{{ ai_gen_id }}">
-                    <span class="ai-saas-presentation__status-indicator-{{ ai_gen_id }}"></span>
-                    <p class="ai-saas-presentation__status-label-{{ ai_gen_id }}">
-                      {{ block.settings.status_label }}
-                    </p>
-                  </div>
-                  {% if status_cadence != blank %}
-                    <p class="ai-saas-presentation__status-cadence-{{ ai_gen_id }}">
-                      {{ status_cadence }}
-                    </p>
-                  {% endif %}
-                </div>
-              </div>
-            {% endif %}
-          {% endfor %}
-        </div>
-      </div>
 
       <div class="ai-saas-presentation__system-banner-{{ ai_gen_id }}">
         <div class="ai-saas-presentation__banner-icon-{{ ai_gen_id }}">
-          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
             <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
           </svg>
         </div>
@@ -444,6 +378,72 @@
           {% endif %}
         </div>
       </div>
+    </div>
+
+    <div class="ai-saas-presentation__right-{{ ai_gen_id }}">
+      {% if block.settings.card_title != blank %}
+        <h3 class="ai-saas-presentation__card-title-{{ ai_gen_id }}">
+          {{ block.settings.card_title }}
+        </h3>
+      {% endif %}
+
+      <div class="ai-saas-presentation__status-list-{{ ai_gen_id }}">
+        {% assign card_count = block.settings.card_count | plus: 0 %}
+        {% for i in (1..6) %}
+          {% if i <= card_count %}
+            {% assign card_question_key = 'card_' | append: i | append: '_question' %}
+            {% assign card_data_key = 'card_' | append: i | append: '_data' %}
+            {% assign card_answer_key = 'card_' | append: i | append: '_answer' %}
+            {% assign card_question = block.settings[card_question_key] %}
+            {% assign card_data = block.settings[card_data_key] %}
+            {% assign card_answer = block.settings[card_answer_key] %}
+
+            {% if card_question != blank or card_data != blank or card_answer != blank %}
+              <article class="ai-saas-presentation__status-item-{{ ai_gen_id }}">
+                {% if card_question != blank %}
+                  <p class="ai-saas-presentation__status-question-{{ ai_gen_id }}">
+                    {{ card_question }}
+                  </p>
+                {% endif %}
+                {% if card_data != blank or card_answer != blank %}
+                  <div class="ai-saas-presentation__status-body-{{ ai_gen_id }}">
+                    {% if card_data != blank %}
+                      <div class="ai-saas-presentation__field-{{ ai_gen_id }}">
+                        {% if block.settings.data_label != blank %}
+                          <p class="ai-saas-presentation__field-label-{{ ai_gen_id }}">
+                            {{ block.settings.data_label }}
+                          </p>
+                        {% endif %}
+                        <p class="ai-saas-presentation__field-text-{{ ai_gen_id }}">
+                          {{ card_data }}
+                        </p>
+                      </div>
+                    {% endif %}
+                    {% if card_answer != blank %}
+                      <div class="ai-saas-presentation__field-{{ ai_gen_id }}">
+                        {% if block.settings.answer_label != blank %}
+                          <p class="ai-saas-presentation__field-label-{{ ai_gen_id }}">
+                            {{ block.settings.answer_label }}
+                          </p>
+                        {% endif %}
+                        <p class="ai-saas-presentation__field-text-{{ ai_gen_id }}">
+                          {{ card_answer }}
+                        </p>
+                      </div>
+                    {% endif %}
+                  </div>
+                {% endif %}
+              </article>
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+      </div>
+
+      {% if block.settings.example_note != blank %}
+        <p class="ai-saas-presentation__example-note-{{ ai_gen_id }}">
+          {{ block.settings.example_note }}
+        </p>
+      {% endif %}
     </div>
   </div>
 </div>
@@ -542,7 +542,7 @@
       "type": "range",
       "id": "description_size",
       "label": "Size",
-      "min": 14,
+      "min": 0,
       "max": 24,
       "step": 1,
       "unit": "px",
@@ -648,7 +648,7 @@
       "type": "range",
       "id": "feature_title_size",
       "label": "Title size",
-      "min": 14,
+      "min": 0,
       "max": 24,
       "step": 1,
       "unit": "px",
@@ -664,11 +664,11 @@
       "type": "range",
       "id": "feature_text_size",
       "label": "Text size",
-      "min": 12,
-      "max": 18,
+      "min": 0,
+      "max": 22,
       "step": 1,
       "unit": "px",
-      "default": 14
+      "default": 16
     },
     {
       "type": "color",
@@ -681,16 +681,44 @@
       "content": "Status card"
     },
     {
+      "type": "range",
+      "id": "card_count",
+      "label": "Visible cards",
+      "min": 1,
+      "max": 6,
+      "step": 1,
+      "default": 3,
+      "info": "Raise to add a card, lower to remove the last card. Card text stays saved."
+    },
+    {
       "type": "text",
       "id": "card_title",
       "label": "Card title",
-      "default": "Integration Health Status"
+      "default": "小売AI「Flow AI」の店舗別活用例"
+    },
+    {
+      "type": "text",
+      "id": "data_label",
+      "label": "Data label",
+      "default": "参照データ:"
+    },
+    {
+      "type": "text",
+      "id": "answer_label",
+      "label": "Answer label",
+      "default": "回答表示例:"
+    },
+    {
+      "type": "textarea",
+      "id": "example_note",
+      "label": "Note",
+      "default": "上記はFlow AIの回答イメージです。実際に参照できる情報と提案内容は、連携データ、設定、権限、登録されたSOPや社内資料によって異なります。"
     },
     {
       "type": "range",
       "id": "card_title_size",
       "label": "Title size",
-      "min": 16,
+      "min": 0,
       "max": 28,
       "step": 2,
       "unit": "px",
@@ -735,101 +763,136 @@
     },
     {
       "type": "header",
-      "content": "Status 1"
+      "content": "Card 1"
     },
     {
-      "type": "text",
-      "id": "status_1_name",
-      "label": "Name",
-      "default": "POS Sales Data"
+      "type": "textarea",
+      "id": "card_1_question",
+      "label": "Question",
+      "default": "店長｜今日、優先して改善すべきKPIと時間帯は？"
     },
     {
-      "type": "text",
-      "id": "status_1_update",
-      "label": "Last update",
-      "default": "2 minutes ago"
+      "type": "textarea",
+      "id": "card_1_data",
+      "label": "参照データ",
+      "default": "売上・予算・来店数・購買率・スタッフ配置・店舗メモ"
     },
     {
-      "type": "text",
-      "id": "status_1_cadence",
-      "label": "Cadence",
-      "default": "Daily refresh"
-    },
-    {
-      "type": "header",
-      "content": "Status 2"
-    },
-    {
-      "type": "text",
-      "id": "status_2_name",
-      "label": "Name",
-      "default": "Traffic Counting"
-    },
-    {
-      "type": "text",
-      "id": "status_2_update",
-      "label": "Last update",
-      "default": "Real-time"
-    },
-    {
-      "type": "text",
-      "id": "status_2_cadence",
-      "label": "Cadence",
-      "default": "15-minute intervals"
+      "type": "textarea",
+      "id": "card_1_answer",
+      "label": "回答表示例",
+      "default": "設定した比較期間と比べて来店数は維持していますが、午後の購買率が低下しています。スタッフ配置と店舗メモを確認し、同時間帯の接客体制の見直しを検討してください。"
     },
     {
       "type": "header",
-      "content": "Status 3"
+      "content": "Card 2"
     },
     {
-      "type": "text",
-      "id": "status_3_name",
-      "label": "Name",
-      "default": "Staffing Schedules"
+      "type": "textarea",
+      "id": "card_2_question",
+      "label": "Question",
+      "default": "エリアマネージャー｜今週、優先して確認すべき店舗は？"
     },
     {
-      "type": "text",
-      "id": "status_3_update",
-      "label": "Last update",
-      "default": "1 hour ago"
+      "type": "textarea",
+      "id": "card_2_data",
+      "label": "参照データ",
+      "default": "店舗別KPI・予算進捗・Pulse・店舗報告・対応履歴"
     },
     {
-      "type": "text",
-      "id": "status_3_cadence",
-      "label": "Cadence",
-      "default": "Weekly refresh"
-    },
-    {
-      "type": "header",
-      "content": "Status 4"
-    },
-    {
-      "type": "text",
-      "id": "status_4_name",
-      "label": "Name",
-      "default": "Weather Data"
-    },
-    {
-      "type": "text",
-      "id": "status_4_update",
-      "label": "Last update",
-      "default": "15 minutes ago"
-    },
-    {
-      "type": "text",
-      "id": "status_4_cadence",
-      "label": "Cadence",
-      "default": "Hourly refresh"
+      "type": "textarea",
+      "id": "card_2_answer",
+      "label": "回答表示例",
+      "default": "担当店舗を比較すると、来店数を維持している一方、購買率と売上進捗が継続して低い店舗があります。直近の店舗報告とスタッフ配置を確認し、訪問・支援の優先候補にしてください。"
     },
     {
       "type": "header",
-      "content": "Status item style"
+      "content": "Card 3"
+    },
+    {
+      "type": "textarea",
+      "id": "card_3_question",
+      "label": "Question",
+      "default": "本部｜全店に共有すべき改善テーマは？"
+    },
+    {
+      "type": "textarea",
+      "id": "card_3_data",
+      "label": "参照データ",
+      "default": "全店KPI・店舗比較・成功店舗の施策・SOP・店舗報告"
+    },
+    {
+      "type": "textarea",
+      "id": "card_3_answer",
+      "label": "回答表示例",
+      "default": "複数店舗で午後の購買率低下が共通しています。成果が出ている店舗の接客手順と現在のSOPを比較し、改善手順の全店共有を検討してください。"
+    },
+    {
+      "type": "header",
+      "content": "Card 4"
+    },
+    {
+      "type": "textarea",
+      "id": "card_4_question",
+      "label": "Question"
+    },
+    {
+      "type": "textarea",
+      "id": "card_4_data",
+      "label": "参照データ"
+    },
+    {
+      "type": "textarea",
+      "id": "card_4_answer",
+      "label": "回答表示例"
+    },
+    {
+      "type": "header",
+      "content": "Card 5"
+    },
+    {
+      "type": "textarea",
+      "id": "card_5_question",
+      "label": "Question"
+    },
+    {
+      "type": "textarea",
+      "id": "card_5_data",
+      "label": "参照データ"
+    },
+    {
+      "type": "textarea",
+      "id": "card_5_answer",
+      "label": "回答表示例"
+    },
+    {
+      "type": "header",
+      "content": "Card 6"
+    },
+    {
+      "type": "textarea",
+      "id": "card_6_question",
+      "label": "Question"
+    },
+    {
+      "type": "textarea",
+      "id": "card_6_data",
+      "label": "参照データ"
+    },
+    {
+      "type": "textarea",
+      "id": "card_6_answer",
+      "label": "回答表示例"
+    },
+    {
+      "type": "header",
+      "content": "Card style"
     },
     {
       "type": "color",
       "id": "status_item_background",
       "label": "Background",
-      "default": "#faf9f7"
+      "default": "#edf1e1"
     },
     {
       "type": "range",
@@ -844,56 +907,50 @@
     {
       "type": "range",
       "id": "status_name_size",
-      "label": "Name size",
-      "min": 13,
-      "max": 20,
+      "label": "Question size",
+      "min": 0,
+      "max": 24,
       "step": 1,
       "unit": "px",
-      "default": 15
+      "default": 17
     },
     {
       "type": "color",
       "id": "status_name_color",
-      "label": "Name color",
+      "label": "Question color",
       "default": "#1a2b4a"
     },
     {
       "type": "range",
-      "id": "status_meta_size",
-      "label": "Meta text size",
-      "min": 11,
-      "max": 16,
+      "id": "field_label_size",
+      "label": "Label size",
+      "min": 0,
+      "max": 22,
       "step": 1,
       "unit": "px",
-      "default": 13
+      "default": 16
     },
     {
       "type": "color",
-      "id": "status_meta_color",
-      "label": "Meta text color",
-      "default": "#9ca3af"
-    },
-    {
-      "type": "text",
-      "id": "status_label",
-      "label": "Status label",
-      "default": "Healthy"
+      "id": "field_label_color",
+      "label": "Label color",
+      "default": "#0e366a"
     },
     {
       "type": "range",
-      "id": "status_label_size",
-      "label": "Label size",
-      "min": 10,
-      "max": 16,
+      "id": "answer_text_size",
+      "label": "Body size",
+      "min": 0,
+      "max": 22,
       "step": 1,
       "unit": "px",
-      "default": 12
+      "default": 16
     },
     {
       "type": "color",
-      "id": "status_healthy_color",
-      "label": "Healthy color",
-      "default": "#10b981"
+      "id": "answer_text_color",
+      "label": "Body color",
+      "default": "#1a2b4a"
     },
     {
       "type": "header",
@@ -943,11 +1000,11 @@
       "type": "range",
       "id": "banner_label_size",
       "label": "Label size",
-      "min": 10,
-      "max": 16,
+      "min": 0,
+      "max": 22,
       "step": 1,
       "unit": "px",
-      "default": 11
+      "default": 16
     },
     {
       "type": "color",
@@ -959,11 +1016,11 @@
       "type": "range",
       "id": "banner_message_size",
       "label": "Message size",
-      "min": 13,
-      "max": 20,
+      "min": 0,
+      "max": 22,
       "step": 1,
       "unit": "px",
-      "default": 15
+      "default": 16
     },
     {
       "type": "color",
@@ -975,11 +1032,11 @@
       "type": "range",
       "id": "banner_meta_size",
       "label": "Meta size",
-      "min": 11,
-      "max": 16,
+      "min": 0,
+      "max": 22,
       "step": 1,
       "unit": "px",
-      "default": 13
+      "default": 16
     },
     {
       "type": "color",
