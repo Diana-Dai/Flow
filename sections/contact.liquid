@@ -39,19 +39,8 @@
       <div {% render 'surface', class: 'contact-form rounded', background: section.settings.contact_background, text_color: section.settings.contact_text_color, background_fallback: 'bg-secondary' %}>
         {%- capture contact_form_id -%}contact-form-{{ section.id }}{%- endcapture -%}
 
-        {%- form 'contact', id: contact_form_id, class: 'form' -%}
+        {%- form 'contact', id: contact_form_id, class: 'form', return_to: '/pages/contact-thank-you' -%}
           <div class="fieldset">
-            {%- if form.posted_successfully? -%}
-              <script>
-                window.location.replace('/pages/contact-thank-you');
-              </script>
-              <noscript>
-                {%- capture content -%}{{- 'contact.form.success_message' | t -}}{%- endcapture -%}
-                {%- render 'banner', status: 'success', content: content -%}
-                <a href="/pages/contact-thank-you">Continue</a>
-              </noscript>
-            {%- endif -%}
-
             {%- if form.errors -%}
               {%- capture content -%}{{ form.errors.translated_fields[form.errors.first] | capitalize }} {{ form.errors.messages[form.errors.first] }}{%- endcapture -%}
               {%- render 'banner', status: 'error', content: content -%}
