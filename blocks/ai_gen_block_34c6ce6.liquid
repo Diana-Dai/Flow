@@ -363,7 +363,7 @@
 
 <enterprise-inquiry-form-{{ ai_gen_id }} class="ai-enterprise-form-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
   <div class="ai-enterprise-form__card-{{ ai_gen_id }}">
-    {%- form 'contact', return_to: '/pages/contact-thank-you' -%}
+    {%- form 'contact' -%}
       {%- if form.posted_successfully? -%}
   <script>
     window.location.replace('/pages/contact-thank-you');
