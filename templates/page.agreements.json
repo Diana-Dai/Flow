@@ -114,6 +114,13 @@
             "background_color": "",
             "text_color": "",
             "border_color": "",
+            "card_padding": 0,
+            "button_background": "",
+            "button_text_color": "",
+            "button_font_size": 0,
+            "heading_font_size": 0,
+            "subheading_font_size": 0,
+            "content_font_size": 0,
             "show_controls": false,
             "column_size": "3",
             "title": "利用規約",
@@ -122,7 +129,13 @@
             "content": "<p>Flowのサービスをご利用いただく際の基本条件をご確認いただけます。</p>",
             "link_url": "https://cdn.shopify.com/s/files/1/0704/4582/6185/files/Master_Service_Agreement_072026.pdf?v=1784793562",
             "link_text": "詳細を読む",
-            "link_style": "button"
+            "link_style": "button",
+            "button_background_2": "",
+            "button_text_color_2": "",
+            "button_font_size_2": 0,
+            "link_url_2": "",
+            "link_text_2": "",
+            "link_style_2": "button"
           }
         },
         "item_PzYTyE": {
@@ -136,6 +149,13 @@
             "background_color": "",
             "text_color": "",
             "border_color": "",
+            "card_padding": 0,
+            "button_background": "",
+            "button_text_color": "",
+            "button_font_size": 0,
+            "heading_font_size": 0,
+            "subheading_font_size": 0,
+            "content_font_size": 0,
             "show_controls": false,
             "column_size": "3",
             "title": "ハードウェアサービス契約",
@@ -144,7 +164,13 @@
             "content": "<p>ハードウェアサービス契約に関する条件をご確認いただけます。</p>",
             "link_url": "https://cdn.shopify.com/s/files/1/0704/4582/6185/files/Hardware_Services_Agreement_072026-1.pdf?v=1784793043",
             "link_text": "詳細を読む",
-            "link_style": "button"
+            "link_style": "button",
+            "button_background_2": "",
+            "button_text_color_2": "",
+            "button_font_size_2": 0,
+            "link_url_2": "",
+            "link_text_2": "",
+            "link_style_2": "button"
           }
         },
         "item_MCEeT9": {
@@ -158,6 +184,13 @@
             "background_color": "",
             "text_color": "",
             "border_color": "",
+            "card_padding": 0,
+            "button_background": "",
+            "button_text_color": "",
+            "button_font_size": 0,
+            "heading_font_size": 0,
+            "subheading_font_size": 0,
+            "content_font_size": 0,
             "show_controls": false,
             "column_size": "3",
             "title": "デモサイト利用規約",
@@ -166,7 +199,13 @@
             "content": "<p>デモサイトをご利用いただく際の条件をご確認いただけます。</p>",
             "link_url": "https://cdn.shopify.com/s/files/1/0704/4582/6185/files/Website_Terms_and_Conditions.pdf?v=1750579391",
             "link_text": "詳細を読む",
-            "link_style": "button"
+            "link_style": "button",
+            "button_background_2": "",
+            "button_text_color_2": "",
+            "button_font_size_2": 0,
+            "link_url_2": "",
+            "link_text_2": "",
+            "link_style_2": "button"
           }
         }
       },
@@ -177,6 +216,10 @@
       ],
       "name": "Multi-column",
       "settings": {
+        "bottom_button_text": "",
+        "bottom_button_url": "",
+        "bottom_button_background": "#172033",
+        "bottom_button_text_color": "#ffffff",
         "full_width": true,
         "stack_on_mobile": true,
         "gap": "small",
@@ -188,7 +231,9 @@
         "background_gradient": "",
         "text_color": "",
         "subheading_background_color": "",
-        "subheading_text_color": ""
+        "subheading_text_color": "",
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
     "multi_column_b9kbW4": {
@@ -205,6 +250,13 @@
             "background_color": "",
             "text_color": "",
             "border_color": "",
+            "card_padding": 0,
+            "button_background": "",
+            "button_text_color": "",
+            "button_font_size": 0,
+            "heading_font_size": 0,
+            "subheading_font_size": 0,
+            "content_font_size": 0,
             "show_controls": false,
             "column_size": "2",
             "title": "テンプレートを確認する",
@@ -213,7 +265,13 @@
             "content": "<p>店内分析サービスの申込書テンプレートをダウンロードしてご利用いただけます。</p>",
             "link_url": "https://cdn.shopify.com/s/files/1/0704/4582/6185/files/Template.pdf?v=1750581326",
             "link_text": "テンプレートを見る",
-            "link_style": "button"
+            "link_style": "button",
+            "button_background_2": "",
+            "button_text_color_2": "",
+            "button_font_size_2": 0,
+            "link_url_2": "",
+            "link_text_2": "",
+            "link_style_2": "button"
           }
         },
         "item_YnALka": {
@@ -227,6 +285,13 @@
             "background_color": "",
             "text_color": "",
             "border_color": "",
+            "card_padding": 0,
+            "button_background": "",
+            "button_text_color": "",
+            "button_font_size": 0,
+            "heading_font_size": 0,
+            "subheading_font_size": 0,
+            "content_font_size": 0,
             "show_controls": false,
             "column_size": "2",
             "title": "チャネルパートナー契約書",
@@ -235,7 +300,13 @@
             "content": "<p>チャネルパートナー契約に関する条件をご確認いただけます。<br/></p><p></p>",
             "link_url": "https://cdn.shopify.com/s/files/1/0704/4582/6185/files/Channel_Partner_Agreement.pdf?v=1749635216",
             "link_text": "詳細を読む",
-            "link_style": "button"
+            "link_style": "button",
+            "button_background_2": "",
+            "button_text_color_2": "",
+            "button_font_size_2": 0,
+            "link_url_2": "",
+            "link_text_2": "",
+            "link_style_2": "button"
           }
         },
         "item_mtUhEm": {
@@ -250,6 +321,13 @@
             "background_color": "",
             "text_color": "",
             "border_color": "",
+            "card_padding": 0,
+            "button_background": "",
+            "button_text_color": "",
+            "button_font_size": 0,
+            "heading_font_size": 0,
+            "subheading_font_size": 0,
+            "content_font_size": 0,
             "show_controls": false,
             "column_size": "3",
             "title": "Column title",
@@ -258,7 +336,13 @@
             "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "link_url": "",
             "link_text": "",
-            "link_style": "link"
+            "link_style": "link",
+            "button_background_2": "",
+            "button_text_color_2": "",
+            "button_font_size_2": 0,
+            "link_url_2": "",
+            "link_text_2": "",
+            "link_style_2": "button"
           }
         }
       },
@@ -269,6 +353,10 @@
       ],
       "name": "Multi-column",
       "settings": {
+        "bottom_button_text": "",
+        "bottom_button_url": "",
+        "bottom_button_background": "#172033",
+        "bottom_button_text_color": "#ffffff",
         "full_width": true,
         "stack_on_mobile": true,
         "gap": "medium",
@@ -280,7 +368,9 @@
         "background_gradient": "",
         "text_color": "",
         "subheading_background_color": "",
-        "subheading_text_color": ""
+        "subheading_text_color": "",
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
     "multi_column_rhPmUg": {
@@ -297,6 +387,13 @@
             "background_color": "",
             "text_color": "",
             "border_color": "",
+            "card_padding": 0,
+            "button_background": "",
+            "button_text_color": "",
+            "button_font_size": 0,
+            "heading_font_size": 0,
+            "subheading_font_size": 0,
+            "content_font_size": 0,
             "show_controls": false,
             "column_size": "2",
             "title": "プライバシーポリシー",
@@ -305,7 +402,13 @@
             "content": "<p>個人情報保護に関するFlowのプライバシーポリシーをご確認いただけます。</p>",
             "link_url": "https://cdn.shopify.com/s/files/1/0704/4582/6185/files/Privacy_Policy.pdf?v=1749635230",
             "link_text": "詳細を読む",
-            "link_style": "button"
+            "link_style": "button",
+            "button_background_2": "",
+            "button_text_color_2": "",
+            "button_font_size_2": 0,
+            "link_url_2": "",
+            "link_text_2": "",
+            "link_style_2": "button"
           }
         },
         "item_VxhUUY": {
@@ -319,15 +422,28 @@
             "background_color": "",
             "text_color": "",
             "border_color": "",
+            "card_padding": 0,
+            "button_background": "",
+            "button_text_color": "",
+            "button_font_size": 0,
+            "heading_font_size": 0,
+            "subheading_font_size": 0,
+            "content_font_size": 0,
             "show_controls": false,
             "column_size": "2",
             "title": "データ保護方針",
             "heading_tag": "h4",
             "subheading": "",
             "content": "<p>Flowのサービスにおけるデータの取扱いおよび保護方針をご確認いただけます。<br/></p><p></p>",
-            "link_url": "https://cdn.shopify.com/s/files/1/0704/4582/6185/files/Data_Protection_Policy.pdf?v=1773121905",
+            "link_url": "https://cdn.shopify.com/s/files/1/0704/4582/6185/files/Data_Protection_Policy.pdf?v=1793870973",
             "link_text": "詳細を読む",
-            "link_style": "button"
+            "link_style": "button",
+            "button_background_2": "",
+            "button_text_color_2": "",
+            "button_font_size_2": 0,
+            "link_url_2": "",
+            "link_text_2": "",
+            "link_style_2": "button"
           }
         },
         "item_H7BaWh": {
@@ -342,6 +458,13 @@
             "background_color": "",
             "text_color": "",
             "border_color": "",
+            "card_padding": 0,
+            "button_background": "",
+            "button_text_color": "",
+            "button_font_size": 0,
+            "heading_font_size": 0,
+            "subheading_font_size": 0,
+            "content_font_size": 0,
             "show_controls": false,
             "column_size": "3",
             "title": "Column title",
@@ -350,7 +473,13 @@
             "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "link_url": "",
             "link_text": "",
-            "link_style": "link"
+            "link_style": "link",
+            "button_background_2": "",
+            "button_text_color_2": "",
+            "button_font_size_2": 0,
+            "link_url_2": "",
+            "link_text_2": "",
+            "link_style_2": "button"
           }
         }
       },
@@ -361,6 +490,10 @@
       ],
       "name": "Multi-column",
       "settings": {
+        "bottom_button_text": "",
+        "bottom_button_url": "",
+        "bottom_button_background": "#172033",
+        "bottom_button_text_color": "#ffffff",
         "full_width": true,
         "stack_on_mobile": true,
         "gap": "medium",
@@ -372,7 +505,9 @@
         "background_gradient": "",
         "text_color": "",
         "subheading_background_color": "",
-        "subheading_text_color": ""
+        "subheading_text_color": "",
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
     "multi_column_AgMkWw": {
@@ -389,6 +524,13 @@
             "background_color": "",
             "text_color": "",
             "border_color": "",
+            "card_padding": 0,
+            "button_background": "",
+            "button_text_color": "",
+            "button_font_size": 0,
+            "heading_font_size": 0,
+            "subheading_font_size": 0,
+            "content_font_size": 0,
             "show_controls": false,
             "column_size": "2",
             "title": "サポートチームサービス契約・SLA",
@@ -397,7 +539,13 @@
             "content": "<p>Flowサポートチームサービス契約・SLAの詳細情報をご確認いただけます。<br/></p><p><br/></p>",
             "link_url": "https://cdn.shopify.com/s/files/1/0704/4582/6185/files/Service_Level_Agreement.pdf?v=1749635231",
             "link_text": "詳細を読む",
-            "link_style": "button"
+            "link_style": "button",
+            "button_background_2": "",
+            "button_text_color_2": "",
+            "button_font_size_2": 0,
+            "link_url_2": "",
+            "link_text_2": "",
+            "link_style_2": "button"
           }
         },
         "item_EYgUti": {
@@ -411,6 +559,13 @@
             "background_color": "",
             "text_color": "",
             "border_color": "",
+            "card_padding": 0,
+            "button_background": "",
+            "button_text_color": "",
+            "button_font_size": 0,
+            "heading_font_size": 0,
+            "subheading_font_size": 0,
+            "content_font_size": 0,
             "show_controls": false,
             "column_size": "2",
             "title": "RMA（商品返品承認）のガイドライン",
@@ -419,7 +574,13 @@
             "content": "<p>商品返品・RMAの手続きについて詳しくご確認いただけます。<br/></p><p></p>",
             "link_url": "https://cdn.shopify.com/s/files/1/0704/4582/6185/files/Return_Material_Authorization.pdf?v=1749635230",
             "link_text": "詳細を読む",
-            "link_style": "button"
+            "link_style": "button",
+            "button_background_2": "",
+            "button_text_color_2": "",
+            "button_font_size_2": 0,
+            "link_url_2": "",
+            "link_text_2": "",
+            "link_style_2": "button"
           }
         },
         "item_ycbtAm": {
@@ -434,6 +595,13 @@
             "background_color": "",
             "text_color": "",
             "border_color": "",
+            "card_padding": 0,
+            "button_background": "",
+            "button_text_color": "",
+            "button_font_size": 0,
+            "heading_font_size": 0,
+            "subheading_font_size": 0,
+            "content_font_size": 0,
             "show_controls": false,
             "column_size": "3",
             "title": "Column title",
@@ -442,7 +610,13 @@
             "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "link_url": "",
             "link_text": "",
-            "link_style": "link"
+            "link_style": "link",
+            "button_background_2": "",
+            "button_text_color_2": "",
+            "button_font_size_2": 0,
+            "link_url_2": "",
+            "link_text_2": "",
+            "link_style_2": "button"
           }
         }
       },
@@ -453,6 +627,10 @@
       ],
       "name": "Multi-column",
       "settings": {
+        "bottom_button_text": "",
+        "bottom_button_url": "",
+        "bottom_button_background": "#172033",
+        "bottom_button_text_color": "#ffffff",
         "full_width": true,
         "stack_on_mobile": true,
         "gap": "medium",
@@ -464,7 +642,9 @@
         "background_gradient": "",
         "text_color": "",
         "subheading_background_color": "",
-        "subheading_text_color": ""
+        "subheading_text_color": "",
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
     "multi_column_UX6aTj": {
@@ -481,6 +661,13 @@
             "background_color": "",
             "text_color": "",
             "border_color": "",
+            "card_padding": 0,
+            "button_background": "",
+            "button_text_color": "",
+            "button_font_size": 0,
+            "heading_font_size": 0,
+            "subheading_font_size": 0,
+            "content_font_size": 0,
             "show_controls": false,
             "column_size": "1",
             "title": "環境持続可能性に関する方針",
@@ -489,7 +676,13 @@
             "content": "<p>Flowの環境持続可能性ポリシーをご確認いただけます。<br/></p><p></p>",
             "link_url": "https://cdn.shopify.com/s/files/1/0704/4582/6185/files/Flow_Environmental_Policy.pdf?v=1750581362",
             "link_text": "詳細を読む",
-            "link_style": "button"
+            "link_style": "button",
+            "button_background_2": "",
+            "button_text_color_2": "",
+            "button_font_size_2": 0,
+            "link_url_2": "",
+            "link_text_2": "",
+            "link_style_2": "button"
           }
         },
         "item_qUqBQw": {
@@ -504,6 +697,13 @@
             "background_color": "",
             "text_color": "",
             "border_color": "",
+            "card_padding": 0,
+            "button_background": "",
+            "button_text_color": "",
+            "button_font_size": 0,
+            "heading_font_size": 0,
+            "subheading_font_size": 0,
+            "content_font_size": 0,
             "show_controls": false,
             "column_size": "3",
             "title": "Column title",
@@ -512,7 +712,13 @@
             "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "link_url": "",
             "link_text": "",
-            "link_style": "link"
+            "link_style": "link",
+            "button_background_2": "",
+            "button_text_color_2": "",
+            "button_font_size_2": 0,
+            "link_url_2": "",
+            "link_text_2": "",
+            "link_style_2": "button"
           }
         },
         "item_mgtW4y": {
@@ -527,6 +733,13 @@
             "background_color": "",
             "text_color": "",
             "border_color": "",
+            "card_padding": 0,
+            "button_background": "",
+            "button_text_color": "",
+            "button_font_size": 0,
+            "heading_font_size": 0,
+            "subheading_font_size": 0,
+            "content_font_size": 0,
             "show_controls": false,
             "column_size": "3",
             "title": "Column title",
@@ -535,7 +748,13 @@
             "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "link_url": "",
             "link_text": "",
-            "link_style": "link"
+            "link_style": "link",
+            "button_background_2": "",
+            "button_text_color_2": "",
+            "button_font_size_2": 0,
+            "link_url_2": "",
+            "link_text_2": "",
+            "link_style_2": "button"
           }
         }
       },
@@ -546,6 +765,10 @@
       ],
       "name": "Multi-column",
       "settings": {
+        "bottom_button_text": "",
+        "bottom_button_url": "",
+        "bottom_button_background": "#172033",
+        "bottom_button_text_color": "#ffffff",
         "full_width": true,
         "stack_on_mobile": true,
         "gap": "medium",
@@ -557,7 +780,9 @@
         "background_gradient": "",
         "text_color": "",
         "subheading_background_color": "",
-        "subheading_text_color": ""
+        "subheading_text_color": "",
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
     "rich_text_wCrJiX": {
